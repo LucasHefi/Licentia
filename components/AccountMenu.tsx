@@ -44,7 +44,7 @@ export default function AccountMenu({ account }: { account: AppIdentity }) {
         <div className="account-popover" role="menu">
           <div className="account-summary"><span>{initials}</span><div><strong>{account.name}</strong><small>{account.email}</small><em>{account.providerLabel}</em></div></div>
           {account.authSource === "licentia" && <button type="button" role="menuitem" onClick={addPasskey}>⌁ Přidat passkey</button>}
-          {account.authSource === "chatgpt" ? (
+          {account.signOutPath ? (
             <a role="menuitem" className="danger" href={account.signOutPath}>Odhlásit se</a>
           ) : (
             <button type="button" role="menuitem" className="danger" onClick={signOut}>Odhlásit se</button>

@@ -35,6 +35,7 @@ yarn-error.log*
 next-env.d.ts
 /dist/
 /desktop-dist/
+/apache-dist/
 /src-tauri/target/
 /.wrangler/
 /outputs/

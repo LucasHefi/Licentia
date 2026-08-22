@@ -1,4 +1,8 @@
-# Licentia Hub: návrh licenčního datového ekosystému
+# Licentia Hub: licenční datový ekosystém
+
+## Implementovaný stav
+
+Web i Apache balíček publikují REST API `/v1` a stateless Streamable HTTP MCP endpoint `/mcp`. Implementované jsou vyhledávání, detail a text licence, výjimky, snapshot verze, doporučení, validace SPDX výrazů, orientační kompatibilita a analýza JSON SBOM. Kanonický katalog je pevný snapshot SPDX 3.28.0; aktualizace probíhá reprodukovatelným generátorem.
 
 ## Co již existuje
 
@@ -27,7 +31,7 @@ GitHub rules ─┘                         │
 
 Synchronizace musí být reprodukovatelná podle upstream verze, ukládat SHA-256 každého znění a nikdy tiše nepřepsat vydaný snapshot. Vlastní klasifikace a překlady musí být oddělené od kanonického textu a opatřené zdrojem, verzí pravidel a datem revize.
 
-## Návrh REST API
+## REST API
 
 | Metoda | Endpoint | Účel |
 |---|---|---|
@@ -43,7 +47,7 @@ Synchronizace musí být reprodukovatelná podle upstream verze, ukládat SHA-25
 
 Odpověď doporučení má vracet `rule_version`, kandidáty, bodové příspěvky jednotlivých pravidel, varování a odkazy na zdroje. Nemá vydávat binární verdikt „legální/nelegální“.
 
-## Návrh MCP serveru
+## MCP server
 
 Resources:
 

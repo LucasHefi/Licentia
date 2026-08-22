@@ -10,12 +10,14 @@
     "build": "vinext build",
     "dev:desktop": "vite --config vite.desktop.config.ts --host 127.0.0.1 --port 1420",
     "build:desktop": "vite build --config vite.desktop.config.ts",
+    "build:apache": "vite build --config vite.apache.config.ts && node scripts/package-apache.mjs",
     "tauri": "tauri",
     "tauri:dev": "tauri dev",
     "tauri:build": "tauri build",
     "data:build": "node scripts/build-app-data.mjs",
+    "data:normalize": "node scripts/normalize-profile-data.mjs",
     "start": "vinext start",
-    "lint": "eslint . --ignore-pattern dist --ignore-pattern desktop-dist --ignore-pattern src-tauri/target --ignore-pattern .next"
+    "lint": "eslint . --ignore-pattern dist --ignore-pattern desktop-dist --ignore-pattern apache-dist --ignore-pattern src-tauri/target --ignore-pattern .next"
   },
   "dependencies": {
     "@better-auth/passkey": "^1.7.1",

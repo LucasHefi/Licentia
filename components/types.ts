@@ -63,3 +63,18 @@ export interface AppIdentity {
   providerLabel: string;
   signOutPath?: string;
 }
+
+export interface ActivityEntry {
+  id: string;
+  kind: "detail" | "guide" | "comparison";
+  label: string;
+  createdAt: string;
+}
+
+export interface WorkspaceState {
+  favorites: string[];
+  compareIds: string[];
+  guideAnswers: GuideAnswers;
+  history: ActivityEntry[];
+  updatedAt?: string;
+}

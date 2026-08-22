@@ -4,14 +4,16 @@ import { useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import { familyOf, recommendLicenses, ruleLabels } from "../lib/recommend";
 import AccountMenu from "./AccountMenu";
 import type {
+  ActivityEntry,
   AppIdentity,
   GuideAnswers,
   LicenseDetail,
   LicenseSummary,
   LicenseType,
+  WorkspaceState,
 } from "./types";
 
-type View = "catalog" | "guide" | "compare" | "ecosystem";
+type View = "catalog" | "guide" | "compare" | "saved" | "ecosystem";
 type StatusFilter = "current" | "all" | "deprecated";
 type ApprovalFilter = "all" | "osi" | "fsf" | "profiled";
 
@@ -171,6 +173,36 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
   const [compareDetails, setCompareDetails] = useState<LicenseDetail[]>([]);
   const [guideStep, setGuideStep] = useState(0);
   const [answers, setAnswers] = useState<GuideAnswers>({});
+  const [favorites, setFavorites] = useState<string[]>([]);
+  const [history, setHistory] = useState<ActivityEntry[]>([]);
+  const [workspaceReady, setWorkspaceReady] = useState(false);
+  const guideRecorded = useRef(false);
+
+  useEffect(() => {
+    const load = async () => {
+      try {
+        const state = account
+          ? await fetch("./api/state", { credentials: "include" }).then((response) => response.ok ? response.json() : Promise.reject()) as WorkspaceState
+          : JSON.parse(localStorage.getItem("licentia-workspace") ?? "{}") as Partial<WorkspaceState>;
+        setFavorites(Array.isArray(state.favorites) ? state.favorites : []);
+        setCompareIds(Array.isArray(state.compareIds) ? state.compareIds.slice(0, 4) : []);
+        setAnswers(state.guideAnswers && typeof state.guideAnswers === "object" ? state.guideAnswers : {});
+        setHistory(Array.isArray(state.history) ? state.history.slice(0, 100) : []);
+      } catch { /* nový nebo nedostupný pracovní prostor */ }
+      finally { setWorkspaceReady(true); }
+    };
+    load();
+  }, [account]);
+
+  useEffect(() => {
+    if (!workspaceReady) return;
+    const state: WorkspaceState = { favorites, compareIds, guideAnswers: answers, history };
+    const timer = window.setTimeout(() => {
+      if (account) fetch("./api/state", { method: "PUT", credentials: "include", headers: { "Content-Type": "application/json" }, body: JSON.stringify(state) }).catch(() => undefined);
+      else localStorage.setItem("licentia-workspace", JSON.stringify(state));
+    }, 450);
+    return () => window.clearTimeout(timer);
+  }, [workspaceReady, account, favorites, compareIds, answers, history]);
 
   useEffect(() => {
     fetch(`${DATA_ROOT}/catalog.json`)
@@ -257,6 +289,10 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
   );
   const searchLoading = fullText && deferredQuery.length >= 3 && !searchIndex && !searchFailed;
 
+  function recordActivity(kind: ActivityEntry["kind"], label: string) {
+    setHistory((current) => [{ id: crypto.randomUUID(), kind, label, createdAt: new Date().toISOString() }, ...current].slice(0, 100));
+  }
+
   async function openDetail(license: LicenseSummary) {
     setDetailLoading(true);
     setDetailTab("overview");
@@ -265,6 +301,7 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
       const response = await fetch(detailUrl(license.type, license.id));
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       setDetail(await response.json());
+      recordActivity("detail", `${license.id} · ${license.name}`);
     } catch {
       setError(`Detail ${license.id} se nepodařilo načíst.`);
     } finally {
@@ -278,6 +315,10 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
       if (current.length >= 4) return current;
       return [...current, id];
     });
+  }
+
+  function toggleFavorite(id: string) {
+    setFavorites((current) => current.includes(id) ? current.filter((item) => item !== id) : [...current, id]);
   }
 
   async function copyText() {
@@ -306,6 +347,12 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
   const guideComplete = guideStep >= guideQuestions.length;
   const currentQuestion = guideQuestions[guideStep];
 
+  useEffect(() => {
+    if (!guideComplete || guideRecorded.current || recommendations.length === 0) return;
+    guideRecorded.current = true;
+    recordActivity("guide", `Doporučení: ${recommendations.slice(0, 3).map(item => item.license.id).join(", ")}`);
+  }, [guideComplete, recommendations]);
+
   return (
     <main className="app-shell">
       <header className="topbar">
@@ -318,6 +365,7 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
           <button className={view === "compare" ? "active" : ""} onClick={() => navigate("compare")}>
             Porovnání {compareIds.length > 0 && <b>{compareIds.length}</b>}
           </button>
+          <button className={view === "saved" ? "active" : ""} onClick={() => navigate("saved")}>Moje {favorites.length > 0 && <b>{favorites.length}</b>}</button>
           <button className={view === "ecosystem" ? "active" : ""} onClick={() => navigate("ecosystem")}>API a ekosystém</button>
         </nav>
         <div className="topbar-account">
@@ -387,11 +435,10 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
                         <h3>{license.name}</h3>
                         <LicenseBadges license={license} />
                       </div>
-                      {license.type === "license" && (
-                        <button className={`compare-toggle ${compareIds.includes(license.id) ? "selected" : ""}`} onClick={() => toggleCompare(license.id)} disabled={!compareIds.includes(license.id) && compareIds.length >= 4}>
-                          {compareIds.includes(license.id) ? "✓ V porovnání" : "+ Porovnat"}
-                        </button>
-                      )}
+                      <div className="card-actions">
+                        <button className={`favorite-toggle ${favorites.includes(license.id) ? "selected" : ""}`} onClick={() => toggleFavorite(license.id)}>{favorites.includes(license.id) ? "★ Uloženo" : "☆ Uložit"}</button>
+                        {license.type === "license" && <button className={`compare-toggle ${compareIds.includes(license.id) ? "selected" : ""}`} onClick={() => toggleCompare(license.id)} disabled={!compareIds.includes(license.id) && compareIds.length >= 4}>{compareIds.includes(license.id) ? "✓ V porovnání" : "+ Porovnat"}</button>}
+                      </div>
                     </article>
                   ))}
                 </div>
@@ -427,7 +474,7 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
               </>
             ) : (
               <div className="recommendations">
-                <div className="recommend-heading"><div><span className="section-kicker">Výsledek průvodce</span><h2>Nejbližší kandidáti</h2></div><button onClick={() => { setAnswers({}); setGuideStep(0); }}>Začít znovu</button></div>
+                <div className="recommend-heading"><div><span className="section-kicker">Výsledek průvodce</span><h2>Nejbližší kandidáti</h2></div><button onClick={() => { guideRecorded.current = false; setAnswers({}); setGuideStep(0); }}>Začít znovu</button></div>
                 {answers.openness === "closed" && <div className="proprietary-callout"><strong>Zvažte také proprietární licenci / EULA.</strong><span>Pokud nechcete dát veřejnosti právo software používat, upravovat a distribuovat, open-source licence není správný nástroj. Vytvoření vlastních podmínek patří právníkovi.</span></div>}
                 <div className="recommend-list">
                   {recommendations.map((item, index) => (
@@ -461,6 +508,16 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
         </section>
       )}
 
+      {view === "saved" && (
+        <section className="saved-view">
+          <div className="page-heading"><span className="section-kicker">Osobní pracovní prostor</span><h1>Uložené licence a historie</h1><p>{account ? "Výběry se synchronizují s vaším účtem." : "Výběry jsou uložené pouze v tomto zařízení."}</p></div>
+          <div className="saved-columns">
+            <section><div className="saved-heading"><h2>Oblíbené</h2><span>{favorites.length}</span></div>{favorites.length ? <div className="saved-list">{favorites.map((id) => { const item = catalog.find((license) => license.id === id); return item ? <article key={id}><div><code>{id}</code><strong>{item.name}</strong></div><button onClick={() => openDetail(item)}>Otevřít</button><button className="danger" onClick={() => toggleFavorite(id)}>Odebrat</button></article> : null; })}</div> : <div className="empty-state"><strong>Žádné uložené licence.</strong><span>V katalogu použijte tlačítko „Uložit“.</span></div>}</section>
+            <section><div className="saved-heading"><h2>Nedávná aktivita</h2><button onClick={() => setHistory([])} disabled={!history.length}>Vymazat</button></div>{history.length ? <ol className="history-list">{history.slice(0, 30).map((entry) => <li key={entry.id}><span>{{ detail: "Detail", guide: "Průvodce", comparison: "Porovnání" }[entry.kind]}</span><strong>{entry.label}</strong><time dateTime={entry.createdAt}>{new Intl.DateTimeFormat("cs", { dateStyle: "medium", timeStyle: "short" }).format(new Date(entry.createdAt))}</time></li>)}</ol> : <div className="empty-state"><strong>Historie je prázdná.</strong><span>Otevřené licence a výsledky průvodce se zobrazí zde.</span></div>}</section>
+          </div>
+        </section>
+      )}
+
       {view === "ecosystem" && (
         <section className="ecosystem-view" id="ekosystem">
           <div className="page-heading"><span className="section-kicker">Napojení a architektura</span><h1>Jedno rozhraní nad licenčními zdroji.</h1><p>SPDX už je centrálním katalogem znění. Licentia nad něj přidává cache, vyhledávání, lidsky čitelné profily a rozhraní pro aplikace i AI agenty.</p></div>
@@ -468,10 +525,10 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
             {ecosystemSources.map((source) => <article key={source.title}><span className="source-badge">{source.badge}</span><h2>{source.title}</h2><p>{source.description}</p><div className="endpoint-list">{source.endpoints.map((endpoint) => <code key={endpoint}>{endpoint}</code>)}</div><a href={source.url} target="_blank" rel="noreferrer">Otevřít dokumentaci ↗</a></article>)}
           </div>
           <div className="architecture-map">
-            <div className="architecture-copy"><span className="section-kicker light">Navržený ekosystém</span><h2>Licentia Hub</h2><p>Synchronizační služba verzuje upstream data, kontroluje jejich integritu a publikuje jedno stabilní API. Stejný základ používá web, desktop, CLI, IDE plugin i MCP server.</p><ul><li>Podepsané snapshoty a offline režim</li><li>REST + GraphQL + MCP nad jedním datovým modelem</li><li>Auditovatelný pravidlový engine bez skrytého skórování</li><li>Rozšíření o SBOM a kontrolu kompatibility závislostí</li></ul></div>
+            <div className="architecture-copy"><span className="section-kicker light">Aktivní ekosystém</span><h2>Licentia Hub</h2><p>Jedna verzovaná vrstva publikuje katalog pro web, desktop, REST klienty a AI agenty.</p><ul><li>Verzovaný snapshot a offline režim</li><li>REST + MCP nad jedním datovým modelem</li><li>Auditovatelný pravidlový engine</li><li>SPDX výrazy, SBOM a orientační kompatibilita</li></ul></div>
             <div className="architecture-flow" aria-label="Tok dat ekosystému"><div className="flow-source"><span>SPDX</span><span>OSI</span><span>GitHub</span></div><b>→</b><div className="flow-hub"><small>centrální vrstva</small><strong>Licentia Hub</strong><code>licenses · rules · versions</code></div><b>→</b><div className="flow-target"><span>Web / Desktop</span><span>REST / CLI</span><span>MCP / IDE</span></div></div>
           </div>
-          <div className="api-proposal"><div><span className="section-kicker">Návrh veřejného API</span><h2>Malé, stabilní a verzované.</h2></div><div className="api-code"><code><i>GET</i> /v1/licenses?q=apache&amp;osi=true</code><code><i>GET</i> /v1/licenses/Apache-2.0</code><code><i>GET</i> /v1/licenses/Apache-2.0/text</code><code><i>POST</i> /v1/recommendations</code><code><i>POST</i> /v1/compatibility/check</code><code><i>GET</i> /v1/snapshots/3.28.0</code></div></div>
+          <div className="api-proposal"><div><span className="section-kicker">Veřejné API je aktivní</span><h2>Malé, stabilní a verzované.</h2><p>Stejné funkce jsou dostupné také přes Streamable HTTP MCP na <code>/mcp</code>.</p></div><div className="api-code"><code><i>GET</i> /v1/licenses?q=apache&amp;osi=true</code><code><i>GET</i> /v1/licenses/Apache-2.0</code><code><i>GET</i> /v1/licenses/Apache-2.0/text</code><code><i>POST</i> /v1/recommendations</code><code><i>POST</i> /v1/compatibility/check</code><code><i>POST</i> /v1/sbom/analyze</code><code><i>MCP</i> /mcp</code></div></div>
         </section>
       )}
 

@@ -38,7 +38,9 @@ function parseChooserFrontMatter(raw) {
     const scalar = line.match(/^([a-z-]+):\s*(.+)$/);
     if (scalar) {
       arrayKey = null;
-      result[scalar[1]] = cleanHtml(scalar[2].trim());
+      result[scalar[1]] = ["permissions", "conditions", "limitations"].includes(scalar[1]) && scalar[2].trim() === "[]"
+        ? []
+        : cleanHtml(scalar[2].trim());
     } else if (line.trim() && !line.startsWith(" ")) {
       arrayKey = null;
     }

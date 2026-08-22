@@ -83,7 +83,7 @@ export default function SignIn({ providers, chatGPTSignInPath }: Props) {
           <div className="auth-heading">
             <span className="section-kicker">Přihlášení</span>
             <h2>Pokračujte do Licentie</h2>
-            <p>Vyberte účet, který chcete používat na webu i v desktopové aplikaci.</p>
+            <p>Vyberte účet, který chcete používat pro práci v Licentii.</p>
           </div>
 
           <div className="auth-provider-list">

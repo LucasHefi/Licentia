@@ -36,3 +36,11 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           args: ${{ matrix.args }}
+          tagName: v__VERSION__
+          releaseName: Licentia v__VERSION__
+          releaseBody: |
+            Licentia desktop release with installers for Linux, Windows and macOS.
+            The guide is an orientation aid, not legal advice.
+          releaseDraft: false
+          prerelease: false
+          generateReleaseNotes: true

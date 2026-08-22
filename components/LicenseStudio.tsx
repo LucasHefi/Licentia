@@ -2,7 +2,9 @@
 
 import { useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import { familyOf, recommendLicenses, ruleLabels } from "../lib/recommend";
+import AccountMenu from "./AccountMenu";
 import type {
+  AppIdentity,
   GuideAnswers,
   LicenseDetail,
   LicenseSummary,
@@ -146,7 +148,7 @@ function LicenseBadges({ license }: { license: LicenseSummary }) {
   );
 }
 
-export default function LicenseStudio() {
+export default function LicenseStudio({ account }: { account?: AppIdentity | null }) {
   const [view, setView] = useState<View>("catalog");
   const [catalog, setCatalog] = useState<LicenseSummary[]>([]);
   const [loading, setLoading] = useState(true);
@@ -318,7 +320,10 @@ export default function LicenseStudio() {
           </button>
           <button className={view === "ecosystem" ? "active" : ""} onClick={() => navigate("ecosystem")}>API a ekosystém</button>
         </nav>
-        <span className="version-pill">SPDX 3.28.0</span>
+        <div className="topbar-account">
+          <span className="version-pill">SPDX 3.28.0</span>
+          {account && <AccountMenu account={account} />}
+        </div>
       </header>
 
       {error && <div className="error-banner" role="alert">{error}<button onClick={() => setError("")}>×</button></div>}

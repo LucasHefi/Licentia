@@ -53,3 +53,13 @@ export interface Recommendation {
   score: number;
   reasons: string[];
 }
+
+export interface AppIdentity {
+  id: string;
+  name: string;
+  email: string;
+  image?: string | null;
+  authSource: "chatgpt" | "licentia";
+  providerLabel: string;
+  signOutPath?: string;
+}

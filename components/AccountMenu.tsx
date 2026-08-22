@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { authClient } from "../lib/auth-client";
 import type { AppIdentity } from "./types";
 
 export default function AccountMenu({ account }: { account: AppIdentity }) {
@@ -21,8 +20,14 @@ export default function AccountMenu({ account }: { account: AppIdentity }) {
 
   async function signOut() {
     setNotice("Odhlašuji…");
-    const result = await authClient.signOut();
-    if (result.error) {
+    try {
+      const { authClient } = await import("../lib/auth-client");
+      const result = await authClient.signOut();
+      if (result.error) {
+        setNotice("Odhlášení se nepodařilo.");
+        return;
+      }
+    } catch {
       setNotice("Odhlášení se nepodařilo.");
       return;
     }
@@ -31,8 +36,13 @@ export default function AccountMenu({ account }: { account: AppIdentity }) {
 
   async function addPasskey() {
     setNotice("Potvrďte passkey v zařízení…");
-    const result = await authClient.passkey.addPasskey({ name: "Licentia passkey" });
-    setNotice(result?.error ? "Passkey se nepodařilo přidat." : "Passkey je přidaný.");
+    try {
+      const { authClient } = await import("../lib/auth-client");
+      const result = await authClient.passkey.addPasskey({ name: "Licentia passkey" });
+      setNotice(result?.error ? "Passkey se nepodařilo přidat." : "Passkey je přidaný.");
+    } catch {
+      setNotice("Passkey se nepodařilo přidat.");
+    }
   }
 
   return (

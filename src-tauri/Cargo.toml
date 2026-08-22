@@ -1,6 +1,6 @@
 [package]
 name = "licentia"
-version = "0.1.1"
+version = "0.1.2"
 description = "Offline SPDX license catalog and selection guide"
 authors = ["Licentia contributors"]
 edition = "2021"

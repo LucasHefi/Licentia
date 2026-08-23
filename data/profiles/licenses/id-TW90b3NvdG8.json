@@ -10,25 +10,68 @@
   "review": {
     "status": "pending",
     "recommendable": false,
-    "evidenceLevel": "unknown"
+    "evidenceLevel": "weak"
   },
   "semantic": {
     "family": "unknown",
     "copyleftScope": "unknown",
     "permissions": [
-      "unknown"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "patent-grant",
+      "sublicensing"
     ],
     "obligations": [
-      "unknown"
+      "include-copyright",
+      "provide-corresponding-source"
     ],
     "triggers": [
       "unknown"
     ],
     "restrictions": [
-      "unknown"
+      "liability",
+      "trademark",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "defensive-termination",
+    "noticeBurden": "standard"
   },
-  "evidence": []
+  "evidence": [
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "text",
+      "ruleId": "lic-007.notice-requirement",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "text",
+      "ruleId": "lic-007.explicit-obligations",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "text",
+      "ruleId": "lic-007.patent-termination",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "text",
+      "ruleId": "lic-007.explicit-permissions",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "text",
+      "ruleId": "lic-007.explicit-restrictions",
+      "ruleVersion": "lic-007-v1"
+    }
+  ]
 }

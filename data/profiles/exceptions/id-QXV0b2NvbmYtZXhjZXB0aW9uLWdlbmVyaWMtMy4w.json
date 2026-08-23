@@ -10,19 +10,34 @@
   "review": {
     "status": "pending",
     "recommendable": false,
-    "evidenceLevel": "unknown"
+    "evidenceLevel": "weak"
   },
   "semantic": {
-    "exceptionApplicability": "unknown",
+    "exceptionApplicability": "conditional",
     "permissions": [
       "unknown"
     ],
     "triggers": [
-      "unknown"
+      "combination"
     ],
     "restrictions": [
       "unknown"
     ]
   },
-  "evidence": []
+  "evidence": [
+    {
+      "field": "exceptionApplicability",
+      "sourceId": "spdx-exception-list",
+      "locator": "text",
+      "ruleId": "lic-007.exception-scope",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-exception-list",
+      "locator": "text",
+      "ruleId": "lic-007.exception-combination",
+      "ruleVersion": "lic-007-v1"
+    }
+  ]
 }

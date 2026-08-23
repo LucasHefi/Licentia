@@ -14,7 +14,7 @@
   },
   "semantic": {
     "family": "permissive",
-    "copyleftScope": "unknown",
+    "copyleftScope": "none",
     "permissions": [
       "commercial-use",
       "distribution",
@@ -36,19 +36,11 @@
   },
   "evidence": [
     {
-      "field": "permissions",
-      "sourceId": "choose-a-license",
-      "locator": "profile.permissions"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "choose-a-license",
-      "locator": "profile.conditions"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "choose-a-license",
-      "locator": "profile.limitations"
+      "field": "copyleftScope",
+      "sourceId": "spdx-license-list",
+      "locator": "text",
+      "ruleId": "lic-007.no-copyleft",
+      "ruleVersion": "lic-007-v1"
     },
     {
       "field": "family",
@@ -56,9 +48,38 @@
       "locator": "profile.description"
     },
     {
+      "field": "family",
+      "sourceId": "spdx-license-list",
+      "locator": "text",
+      "ruleId": "lic-007.permissive-grant",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
       "field": "noticeBurden",
       "sourceId": "choose-a-license",
       "locator": "profile.conditions"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "text",
+      "ruleId": "lic-007.notice-requirement",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "choose-a-license",
+      "locator": "profile.conditions"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "text"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "choose-a-license",
+      "locator": "profile.permissions"
     },
     {
       "field": "permissions",
@@ -66,9 +87,16 @@
       "locator": "text"
     },
     {
-      "field": "obligations",
+      "field": "restrictions",
+      "sourceId": "choose-a-license",
+      "locator": "profile.limitations"
+    },
+    {
+      "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text"
+      "locator": "text",
+      "ruleId": "lic-007.explicit-restrictions",
+      "ruleVersion": "lic-007-v1"
     },
     {
       "field": "restrictions",

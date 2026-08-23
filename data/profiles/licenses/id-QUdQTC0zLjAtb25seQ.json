@@ -43,32 +43,19 @@
   },
   "evidence": [
     {
-      "field": "permissions",
-      "sourceId": "choose-a-license",
-      "locator": "profile.permissions"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "choose-a-license",
-      "locator": "profile.conditions"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "choose-a-license",
-      "locator": "profile.limitations"
-    },
-    {
-      "field": "family",
-      "sourceId": "choose-a-license",
-      "locator": "profile.description"
-    },
-    {
       "field": "copyleftScope",
       "sourceId": "choose-a-license",
       "locator": "profile.description"
     },
     {
-      "field": "patentPosition",
+      "field": "copyleftScope",
+      "sourceId": "spdx-license-list",
+      "locator": "text",
+      "ruleId": "lic-007.network-trigger",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "family",
       "sourceId": "choose-a-license",
       "locator": "profile.description"
     },
@@ -78,14 +65,16 @@
       "locator": "profile.conditions"
     },
     {
-      "field": "triggers",
-      "sourceId": "choose-a-license",
-      "locator": "profile.conditions"
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "text",
+      "ruleId": "lic-007.notice-requirement",
+      "ruleVersion": "lic-007-v1"
     },
     {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text"
+      "field": "obligations",
+      "sourceId": "choose-a-license",
+      "locator": "profile.conditions"
     },
     {
       "field": "obligations",
@@ -93,9 +82,41 @@
       "locator": "text"
     },
     {
+      "field": "patentPosition",
+      "sourceId": "choose-a-license",
+      "locator": "profile.description"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "text",
+      "ruleId": "lic-007.patent-grant",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "choose-a-license",
+      "locator": "profile.permissions"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "text"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "choose-a-license",
+      "locator": "profile.limitations"
+    },
+    {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
       "locator": "text"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "choose-a-license",
+      "locator": "profile.conditions"
     }
   ]
 }

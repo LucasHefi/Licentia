@@ -10,7 +10,7 @@
   "review": {
     "status": "pending",
     "recommendable": false,
-    "evidenceLevel": "unknown"
+    "evidenceLevel": "weak"
   },
   "semantic": {
     "family": "unknown",
@@ -25,10 +25,18 @@
       "unknown"
     ],
     "restrictions": [
-      "unknown"
+      "liability"
     ],
     "patentPosition": "unknown",
     "noticeBurden": "unknown"
   },
-  "evidence": []
+  "evidence": [
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "text",
+      "ruleId": "lic-007.explicit-restrictions",
+      "ruleVersion": "lic-007-v1"
+    }
+  ]
 }

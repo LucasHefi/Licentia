@@ -37,14 +37,29 @@
   },
   "evidence": [
     {
-      "field": "permissions",
+      "field": "family",
       "sourceId": "choose-a-license",
-      "locator": "profile.permissions"
+      "locator": "profile.description"
     },
     {
       "field": "obligations",
       "sourceId": "choose-a-license",
       "locator": "profile.conditions"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "text"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "choose-a-license",
+      "locator": "profile.permissions"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "text"
     },
     {
       "field": "restrictions",
@@ -52,29 +67,14 @@
       "locator": "profile.limitations"
     },
     {
-      "field": "family",
-      "sourceId": "choose-a-license",
-      "locator": "profile.description"
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "text"
     },
     {
       "field": "triggers",
       "sourceId": "choose-a-license",
       "locator": "profile.conditions"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text"
     }
   ]
 }

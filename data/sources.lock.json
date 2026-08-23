@@ -19,15 +19,15 @@
       "id": "spdx-exception-list",
       "identity": "SPDX Exception List",
       "sourcePaths": ["public/data/exceptions", "public/data/manifest.json"],
-      "revision": {"status": "unresolved", "value": null, "reason": "The current snapshot has no recorded upstream revision."},
-      "contentHash": {"status": "unresolved", "value": null, "reason": "The current snapshot has no recorded content hash."}
+      "revision": {"status": "resolved", "value": "v3.28.0 (c4a7237ec8f4654e867546f9f409749300f1bf4c)"},
+      "contentHash": {"status": "resolved", "value": "sha256:bd145bb558f44432fcd6f0d7e956ed0124dff72af7641a7cfcb1b557dc390a5b"}
     },
     {
       "id": "spdx-license-list",
       "identity": "SPDX License List",
       "sourcePaths": ["public/data/licenses", "public/data/manifest.json"],
-      "revision": {"status": "unresolved", "value": null, "reason": "The current snapshot has no recorded upstream revision."},
-      "contentHash": {"status": "unresolved", "value": null, "reason": "The current snapshot has no recorded content hash."}
+      "revision": {"status": "resolved", "value": "v3.28.0 (c4a7237ec8f4654e867546f9f409749300f1bf4c)"},
+      "contentHash": {"status": "resolved", "value": "sha256:f728c534d8bd1044fc515a2ddb2292be99559021d830bfa3281be0bcd36302ee"}
     }
   ]
 }

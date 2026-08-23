@@ -10,13 +10,14 @@
   "review": {
     "status": "pending",
     "recommendable": false,
-    "evidenceLevel": "unknown"
+    "evidenceLevel": "weak"
   },
   "semantic": {
     "family": "unknown",
     "copyleftScope": "unknown",
     "permissions": [
-      "unknown"
+      "distribution",
+      "modifications"
     ],
     "obligations": [
       "unknown"
@@ -30,5 +31,13 @@
     "patentPosition": "unknown",
     "noticeBurden": "unknown"
   },
-  "evidence": []
+  "evidence": [
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "text",
+      "ruleId": "lic-007.explicit-permissions",
+      "ruleVersion": "lic-007-v1"
+    }
+  ]
 }

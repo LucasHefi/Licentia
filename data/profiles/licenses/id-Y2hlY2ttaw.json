@@ -10,13 +10,13 @@
   "review": {
     "status": "pending",
     "recommendable": false,
-    "evidenceLevel": "unknown"
+    "evidenceLevel": "weak"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "strong-copyleft",
+    "copyleftScope": "whole-work",
     "permissions": [
-      "unknown"
+      "distribution"
     ],
     "obligations": [
       "unknown"
@@ -30,5 +30,27 @@
     "patentPosition": "unknown",
     "noticeBurden": "unknown"
   },
-  "evidence": []
+  "evidence": [
+    {
+      "field": "copyleftScope",
+      "sourceId": "spdx-license-list",
+      "locator": "text",
+      "ruleId": "lic-007.whole-work-copyleft",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "family",
+      "sourceId": "spdx-license-list",
+      "locator": "text",
+      "ruleId": "lic-007.copyleft-family",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "text",
+      "ruleId": "lic-007.explicit-permissions",
+      "ruleVersion": "lic-007-v1"
+    }
+  ]
 }

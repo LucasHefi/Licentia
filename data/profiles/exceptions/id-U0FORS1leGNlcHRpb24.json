@@ -1,0 +1,28 @@
+{
+  "id": "SANE-exception",
+  "kind": "exception",
+  "schemaVersion": "1.0.0",
+  "sourceFingerprint": {
+    "sourceId": "spdx-exception-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:8210be13688a95abca55dc17eb01aec8232061c9639c8c778cfaefb70eb8e5f2"
+  },
+  "review": {
+    "status": "pending",
+    "recommendable": false,
+    "evidenceLevel": "unknown"
+  },
+  "semantic": {
+    "exceptionApplicability": "unknown",
+    "permissions": [
+      "unknown"
+    ],
+    "triggers": [
+      "unknown"
+    ],
+    "restrictions": [
+      "unknown"
+    ]
+  },
+  "evidence": []
+}

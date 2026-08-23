@@ -1,0 +1,34 @@
+{
+  "id": "CC-BY-1.0",
+  "kind": "license",
+  "schemaVersion": "1.0.0",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:589c8f82903c51c05c928facaaa2b8bd3d2e99c9f94cd0569171cd529e33b6c8"
+  },
+  "review": {
+    "status": "pending",
+    "recommendable": false,
+    "evidenceLevel": "unknown"
+  },
+  "semantic": {
+    "family": "unknown",
+    "copyleftScope": "unknown",
+    "permissions": [
+      "unknown"
+    ],
+    "obligations": [
+      "unknown"
+    ],
+    "triggers": [
+      "unknown"
+    ],
+    "restrictions": [
+      "unknown"
+    ],
+    "patentPosition": "unknown",
+    "noticeBurden": "unknown"
+  },
+  "evidence": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "romic-exception",
+  "kind": "exception",
+  "schemaVersion": "1.0.0",
+  "sourceFingerprint": {
+    "sourceId": "spdx-exception-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:5bb4a07e47e0d4d3ed0b4de6a644c01e66b69f3e444e7e2554154e09422b87cb"
+  },
+  "review": {
+    "status": "pending",
+    "recommendable": false,
+    "evidenceLevel": "unknown"
+  },
+  "semantic": {
+    "exceptionApplicability": "unknown",
+    "permissions": [
+      "unknown"
+    ],
+    "triggers": [
+      "unknown"
+    ],
+    "restrictions": [
+      "unknown"
+    ]
+  },
+  "evidence": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "PCRE2-exception",
+  "kind": "exception",
+  "schemaVersion": "1.0.0",
+  "sourceFingerprint": {
+    "sourceId": "spdx-exception-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:2daa504f7f893fd460fabf5e50ebfde16edd784d3b33cf92671db0707ac28c3a"
+  },
+  "review": {
+    "status": "pending",
+    "recommendable": false,
+    "evidenceLevel": "unknown"
+  },
+  "semantic": {
+    "exceptionApplicability": "unknown",
+    "permissions": [
+      "unknown"
+    ],
+    "triggers": [
+      "unknown"
+    ],
+    "restrictions": [
+      "unknown"
+    ]
+  },
+  "evidence": []
+}

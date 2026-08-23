@@ -1,0 +1,28 @@
+{
+  "id": "cryptsetup-OpenSSL-exception",
+  "kind": "exception",
+  "schemaVersion": "1.0.0",
+  "sourceFingerprint": {
+    "sourceId": "spdx-exception-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:1e89557a15af89c650d8324bb29ce2cea64a76307f9018f46fead2ce295001c1"
+  },
+  "review": {
+    "status": "pending",
+    "recommendable": false,
+    "evidenceLevel": "unknown"
+  },
+  "semantic": {
+    "exceptionApplicability": "unknown",
+    "permissions": [
+      "unknown"
+    ],
+    "triggers": [
+      "unknown"
+    ],
+    "restrictions": [
+      "unknown"
+    ]
+  },
+  "evidence": []
+}

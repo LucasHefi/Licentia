@@ -1,0 +1,34 @@
+{
+  "id": "OGL-UK-2.0",
+  "kind": "license",
+  "schemaVersion": "1.0.0",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:77b51c1b4308739edd5ab7ff1a0eab1e10822a4eba45f634a33f68e6d5a3effd"
+  },
+  "review": {
+    "status": "pending",
+    "recommendable": false,
+    "evidenceLevel": "unknown"
+  },
+  "semantic": {
+    "family": "unknown",
+    "copyleftScope": "unknown",
+    "permissions": [
+      "unknown"
+    ],
+    "obligations": [
+      "unknown"
+    ],
+    "triggers": [
+      "unknown"
+    ],
+    "restrictions": [
+      "unknown"
+    ],
+    "patentPosition": "unknown",
+    "noticeBurden": "unknown"
+  },
+  "evidence": []
+}

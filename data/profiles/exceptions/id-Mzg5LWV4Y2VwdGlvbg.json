@@ -1,0 +1,28 @@
+{
+  "id": "389-exception",
+  "kind": "exception",
+  "schemaVersion": "1.0.0",
+  "sourceFingerprint": {
+    "sourceId": "spdx-exception-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:1645d191e5d9c202e04a3eb57b1e32355402d0662358cc95de0dc7af554edac4"
+  },
+  "review": {
+    "status": "pending",
+    "recommendable": false,
+    "evidenceLevel": "unknown"
+  },
+  "semantic": {
+    "exceptionApplicability": "unknown",
+    "permissions": [
+      "unknown"
+    ],
+    "triggers": [
+      "unknown"
+    ],
+    "restrictions": [
+      "unknown"
+    ]
+  },
+  "evidence": []
+}

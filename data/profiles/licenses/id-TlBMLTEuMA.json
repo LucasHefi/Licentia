@@ -1,0 +1,34 @@
+{
+  "id": "NPL-1.0",
+  "kind": "license",
+  "schemaVersion": "1.0.0",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:17a680d9b775d919f74c0473c3ecc09d56076aec315dc6dbddd4a3b1d0dfe42e"
+  },
+  "review": {
+    "status": "pending",
+    "recommendable": false,
+    "evidenceLevel": "unknown"
+  },
+  "semantic": {
+    "family": "unknown",
+    "copyleftScope": "unknown",
+    "permissions": [
+      "unknown"
+    ],
+    "obligations": [
+      "unknown"
+    ],
+    "triggers": [
+      "unknown"
+    ],
+    "restrictions": [
+      "unknown"
+    ],
+    "patentPosition": "unknown",
+    "noticeBurden": "unknown"
+  },
+  "evidence": []
+}

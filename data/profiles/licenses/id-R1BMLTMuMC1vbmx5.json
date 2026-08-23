@@ -1,0 +1,99 @@
+{
+  "id": "GPL-3.0-only",
+  "kind": "license",
+  "schemaVersion": "1.0.0",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:cdfcd62f98db2c84f724635bc5ad60a15825834f5c016534c2cd67b025a08ee1"
+  },
+  "review": {
+    "status": "pending",
+    "recommendable": false,
+    "evidenceLevel": "weak"
+  },
+  "semantic": {
+    "family": "strong-copyleft",
+    "copyleftScope": "whole-work",
+    "permissions": [
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use",
+      "unknown"
+    ],
+    "obligations": [
+      "disclose-source",
+      "include-copyright",
+      "mark-modifications",
+      "same-license"
+    ],
+    "triggers": [
+      "distribution",
+      "modification"
+    ],
+    "restrictions": [
+      "liability",
+      "warranty"
+    ],
+    "patentPosition": "express-grant",
+    "noticeBurden": "standard"
+  },
+  "evidence": [
+    {
+      "field": "permissions",
+      "sourceId": "choose-a-license",
+      "locator": "profile.permissions"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "choose-a-license",
+      "locator": "profile.conditions"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "choose-a-license",
+      "locator": "profile.limitations"
+    },
+    {
+      "field": "family",
+      "sourceId": "choose-a-license",
+      "locator": "profile.description"
+    },
+    {
+      "field": "copyleftScope",
+      "sourceId": "choose-a-license",
+      "locator": "profile.description"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "choose-a-license",
+      "locator": "profile.description"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "choose-a-license",
+      "locator": "profile.conditions"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "choose-a-license",
+      "locator": "profile.conditions"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "text"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "text"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "text"
+    }
+  ]
+}

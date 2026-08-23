@@ -1,0 +1,34 @@
+{
+  "id": "SGI-B-1.1",
+  "kind": "license",
+  "schemaVersion": "1.0.0",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:44fe3bf35f8b277f4be83518c2c49c53fc5a3259f6f682c1001a57c05692080e"
+  },
+  "review": {
+    "status": "pending",
+    "recommendable": false,
+    "evidenceLevel": "unknown"
+  },
+  "semantic": {
+    "family": "unknown",
+    "copyleftScope": "unknown",
+    "permissions": [
+      "unknown"
+    ],
+    "obligations": [
+      "unknown"
+    ],
+    "triggers": [
+      "unknown"
+    ],
+    "restrictions": [
+      "unknown"
+    ],
+    "patentPosition": "unknown",
+    "noticeBurden": "unknown"
+  },
+  "evidence": []
+}

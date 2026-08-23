@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0.0",
+  "sources": [
+    {
+      "id": "choose-a-license",
+      "identity": "Choose a License",
+      "sourcePaths": ["https://choosealicense.com/"],
+      "revision": {"status": "unresolved", "value": null, "reason": "No reviewed upstream revision was recorded for this snapshot."},
+      "contentHash": {"status": "unresolved", "value": null, "reason": "No reviewed content hash was recorded for this snapshot."}
+    },
+    {
+      "id": "osi-api",
+      "identity": "Open Source Initiative API",
+      "sourcePaths": ["https://opensource.org/api/"],
+      "revision": {"status": "unresolved", "value": null, "reason": "No reviewed upstream revision was recorded for this snapshot."},
+      "contentHash": {"status": "unresolved", "value": null, "reason": "No reviewed content hash was recorded for this snapshot."}
+    },
+    {
+      "id": "spdx-exception-list",
+      "identity": "SPDX Exception List",
+      "sourcePaths": ["public/data/exceptions", "public/data/manifest.json"],
+      "revision": {"status": "unresolved", "value": null, "reason": "The current snapshot has no recorded upstream revision."},
+      "contentHash": {"status": "unresolved", "value": null, "reason": "The current snapshot has no recorded content hash."}
+    },
+    {
+      "id": "spdx-license-list",
+      "identity": "SPDX License List",
+      "sourcePaths": ["public/data/licenses", "public/data/manifest.json"],
+      "revision": {"status": "unresolved", "value": null, "reason": "The current snapshot has no recorded upstream revision."},
+      "contentHash": {"status": "unresolved", "value": null, "reason": "The current snapshot has no recorded content hash."}
+    }
+  ]
+}

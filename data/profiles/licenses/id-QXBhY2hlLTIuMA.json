@@ -1,0 +1,92 @@
+{
+  "id": "Apache-2.0",
+  "kind": "license",
+  "schemaVersion": "1.0.0",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:535659213358d59ec9cfcec92c1761fa6dae4a607e733ddc8b26d211cf7dd7a5"
+  },
+  "review": {
+    "status": "pending",
+    "recommendable": false,
+    "evidenceLevel": "weak"
+  },
+  "semantic": {
+    "family": "permissive",
+    "copyleftScope": "unknown",
+    "permissions": [
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use",
+      "unknown"
+    ],
+    "obligations": [
+      "include-copyright",
+      "mark-modifications"
+    ],
+    "triggers": [
+      "modification"
+    ],
+    "restrictions": [
+      "liability",
+      "trademark",
+      "warranty"
+    ],
+    "patentPosition": "express-grant",
+    "noticeBurden": "standard"
+  },
+  "evidence": [
+    {
+      "field": "permissions",
+      "sourceId": "choose-a-license",
+      "locator": "profile.permissions"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "choose-a-license",
+      "locator": "profile.conditions"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "choose-a-license",
+      "locator": "profile.limitations"
+    },
+    {
+      "field": "family",
+      "sourceId": "choose-a-license",
+      "locator": "profile.description"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "choose-a-license",
+      "locator": "profile.description"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "choose-a-license",
+      "locator": "profile.conditions"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "choose-a-license",
+      "locator": "profile.conditions"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "text"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "text"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "text"
+    }
+  ]
+}

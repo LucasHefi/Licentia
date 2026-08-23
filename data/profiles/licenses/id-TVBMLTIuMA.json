@@ -1,0 +1,103 @@
+{
+  "id": "MPL-2.0",
+  "kind": "license",
+  "schemaVersion": "1.0.0",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:a73715962e99654d9e803467836f1ef0cacaf72d8dc66995ec22fe64e8c752b8"
+  },
+  "review": {
+    "status": "pending",
+    "recommendable": false,
+    "evidenceLevel": "weak"
+  },
+  "semantic": {
+    "family": "weak-copyleft",
+    "copyleftScope": "file",
+    "permissions": [
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use",
+      "unknown"
+    ],
+    "obligations": [
+      "disclose-source",
+      "include-copyright",
+      "same-license"
+    ],
+    "triggers": [
+      "distribution"
+    ],
+    "restrictions": [
+      "liability",
+      "trademark",
+      "warranty"
+    ],
+    "patentPosition": "express-grant",
+    "noticeBurden": "standard"
+  },
+  "evidence": [
+    {
+      "field": "permissions",
+      "sourceId": "choose-a-license",
+      "locator": "profile.permissions"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "choose-a-license",
+      "locator": "profile.conditions"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "choose-a-license",
+      "locator": "profile.limitations"
+    },
+    {
+      "field": "copyleftScope",
+      "sourceId": "choose-a-license",
+      "locator": "profile.conditions"
+    },
+    {
+      "field": "family",
+      "sourceId": "choose-a-license",
+      "locator": "profile.description"
+    },
+    {
+      "field": "copyleftScope",
+      "sourceId": "choose-a-license",
+      "locator": "profile.description"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "choose-a-license",
+      "locator": "profile.description"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "choose-a-license",
+      "locator": "profile.conditions"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "choose-a-license",
+      "locator": "profile.conditions"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "text"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "text"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "text"
+    }
+  ]
+}

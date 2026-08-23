@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://license-studio.invalid/schema/license-profile.schema.json",
+  "title": "Curated license profile",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "kind", "schemaVersion", "sourceFingerprint", "review", "semantic", "evidence"],
+  "properties": {
+    "id": {"type": "string", "minLength": 1},
+    "kind": {"const": "license"},
+    "schemaVersion": {"const": "1.0.0"},
+    "sourceFingerprint": {"$ref": "#/$defs/sourceFingerprint"},
+    "review": {"$ref": "#/$defs/review"},
+    "semantic": {"$ref": "#/$defs/semantic"},
+    "evidence": {"$ref": "#/$defs/evidence"}
+  },
+  "allOf": [
+    {"if": {"required": ["review"], "properties": {"review": {"required": ["status"], "properties": {"status": {"const": "reviewed"}}}}}, "then": {"required": ["evidence", "review", "sourceFingerprint"], "properties": {"evidence": {"minItems": 1}, "review": {"required": ["evidenceLevel"], "properties": {"evidenceLevel": {"enum": ["sufficient", "strong"]}}}, "sourceFingerprint": {"required": ["revision", "contentHash"], "properties": {"revision": {"not": {"const": "unresolved"}}, "contentHash": {"not": {"const": "unresolved"}}}}}}},
+    {"if": {"required": ["review"], "properties": {"review": {"required": ["recommendable"], "properties": {"recommendable": {"const": true}}}}}, "then": {"required": ["evidence", "review", "sourceFingerprint"], "properties": {"evidence": {"minItems": 1}, "review": {"required": ["evidenceLevel"], "properties": {"evidenceLevel": {"enum": ["sufficient", "strong"]}}}, "sourceFingerprint": {"required": ["revision", "contentHash"], "properties": {"revision": {"not": {"const": "unresolved"}}, "contentHash": {"not": {"const": "unresolved"}}}}}}}
+  ],
+  "$defs": {
+    "sourceFingerprint": {"type": "object", "additionalProperties": false, "required": ["sourceId", "revision", "contentHash"], "properties": {"sourceId": {"type": "string", "minLength": 1}, "revision": {"type": "string", "minLength": 1}, "contentHash": {"type": "string", "minLength": 1}}},
+    "review": {"type": "object", "additionalProperties": false, "required": ["status", "recommendable", "evidenceLevel"], "properties": {"status": {"enum": ["blocked", "not-recommendable", "pending", "reviewed", "stale"]}, "recommendable": {"type": "boolean"}, "evidenceLevel": {"enum": ["strong", "sufficient", "unknown", "weak"]}}},
+    "semantic": {"type": "object", "additionalProperties": false, "required": ["family", "copyleftScope", "permissions", "obligations", "triggers", "restrictions", "patentPosition", "noticeBurden"], "properties": {"family": {"type": "string", "enum": ["network-copyleft", "nonstandard", "permissive", "public-domain-equivalent", "strong-copyleft", "unknown", "weak-copyleft"]}, "copyleftScope": {"type": "string", "enum": ["file", "library", "network", "none", "unknown", "whole-work"]}, "permissions": {"type": "array", "uniqueItems": true, "items": {"enum": ["commercial-use", "distribution", "modifications", "patent-grant", "private-use", "sublicensing", "unknown"]}}, "obligations": {"type": "array", "uniqueItems": true, "items": {"enum": ["disclose-source", "include-copyright", "include-license-text", "include-notice", "mark-modifications", "network-use-disclose", "provide-corresponding-source", "provide-installation-information", "same-license", "unknown"]}}, "triggers": {"type": "array", "uniqueItems": true, "items": {"enum": ["combination", "distribution", "linking", "modification", "network-use", "patent-claim", "unknown"]}}, "restrictions": {"type": "array", "uniqueItems": true, "items": {"enum": ["additional-terms", "liability", "patent-claim", "trademark", "unknown", "warranty"]}}, "patentPosition": {"type": "string", "enum": ["defensive-termination", "express-grant", "none-stated", "retaliatory-termination", "unknown"]}, "noticeBurden": {"type": "string", "enum": ["material", "minimal", "none", "standard", "unknown"]}}},
+    "evidence": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["field", "sourceId", "locator"], "properties": {"field": {"type": "string", "minLength": 1}, "sourceId": {"type": "string", "minLength": 1}, "locator": {"type": "string", "minLength": 1}}}}
+  }
+}

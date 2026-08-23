@@ -1,0 +1,79 @@
+{
+  "id": "BSD-3-Clause",
+  "kind": "license",
+  "schemaVersion": "1.0.0",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:9c6e4311dd00e0869ab384c29074dc3fe7889ebbc63f259e204963e7bc348f59"
+  },
+  "review": {
+    "status": "pending",
+    "recommendable": false,
+    "evidenceLevel": "weak"
+  },
+  "semantic": {
+    "family": "permissive",
+    "copyleftScope": "unknown",
+    "permissions": [
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
+    ],
+    "obligations": [
+      "include-copyright"
+    ],
+    "triggers": [
+      "unknown"
+    ],
+    "restrictions": [
+      "liability",
+      "warranty"
+    ],
+    "patentPosition": "unknown",
+    "noticeBurden": "standard"
+  },
+  "evidence": [
+    {
+      "field": "permissions",
+      "sourceId": "choose-a-license",
+      "locator": "profile.permissions"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "choose-a-license",
+      "locator": "profile.conditions"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "choose-a-license",
+      "locator": "profile.limitations"
+    },
+    {
+      "field": "family",
+      "sourceId": "choose-a-license",
+      "locator": "profile.description"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "choose-a-license",
+      "locator": "profile.conditions"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "text"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "text"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "text"
+    }
+  ]
+}

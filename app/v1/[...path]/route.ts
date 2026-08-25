@@ -36,7 +36,7 @@ export async function POST(request: Request, context: { params: Promise<{ path: 
     const { path } = await context.params;
     const payload = await body(request);
     const catalog = await loadCatalog(originOf(request));
-    if (path.join("/") === "recommendations") return json(recommend(catalog, (payload.requirements ?? payload) as never));
+    if (path.join("/") === "recommendations") return json(recommend(catalog, payload));
     if (path.join("/") === "expressions/validate") return json(validateExpression(catalog, String(payload.expression ?? "")));
     if (path.join("/") === "compatibility/check") return json(checkCompatibility(catalog, Array.isArray(payload.ids) ? payload.ids.map(String) : [], payload.context as Record<string, unknown> | undefined));
     if (path.join("/") === "sbom/analyze") return json(analyzeSbom(catalog, payload.document ?? payload));

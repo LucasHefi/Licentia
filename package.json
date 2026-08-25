@@ -1,6 +1,6 @@
 {
   "name": "sites-project",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "private": true,
   "engines": {
     "node": ">=22.13.0"
@@ -25,6 +25,7 @@
     "test:data": "node --test scripts/validate-license-data.test.mjs",
     "test:metadata-audit": "node --test scripts/metadata-audit.test.mjs",
     "test:recommendation-contract": "node --experimental-strip-types --test scripts/recommendation-contract.test.ts",
+    "test:apache-recommendation-contract": "php scripts/apache-recommendation-contract.test.php",
     "test:curation": "node --test scripts/curate-legacy-profiles.test.mjs",
     "test:data-build": "node --test scripts/build-app-data.test.mjs",
     "test:runtime-metadata": "node --test scripts/runtime-metadata-adapter.test.mjs",

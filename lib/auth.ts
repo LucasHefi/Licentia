@@ -1,17 +1,52 @@
 import { passkey } from "@better-auth/passkey";
 import { betterAuth } from "better-auth";
-import { env } from "cloudflare:workers";
 
 export const SITE_ORIGIN = "https://licentia-spdx.breakbonescrew.chatgpt.site";
 
-export function configuredSocialProviders() {
+type AuthRuntimeEnv = {
+  DB?: D1Database;
+  BETTER_AUTH_SECRET?: string;
+  BETTER_AUTH_URL?: string;
+  GOOGLE_CLIENT_ID?: string;
+  GOOGLE_CLIENT_SECRET?: string;
+  GITHUB_CLIENT_ID?: string;
+  GITHUB_CLIENT_SECRET?: string;
+};
+
+function getProcessEnv(): AuthRuntimeEnv {
+  if (typeof process === "undefined") return {};
+  return {
+    BETTER_AUTH_SECRET: process.env.BETTER_AUTH_SECRET,
+    BETTER_AUTH_URL: process.env.BETTER_AUTH_URL,
+    GOOGLE_CLIENT_ID: process.env.GOOGLE_CLIENT_ID,
+    GOOGLE_CLIENT_SECRET: process.env.GOOGLE_CLIENT_SECRET,
+    GITHUB_CLIENT_ID: process.env.GITHUB_CLIENT_ID,
+    GITHUB_CLIENT_SECRET: process.env.GITHUB_CLIENT_SECRET,
+  };
+}
+
+async function getRuntimeEnv(): Promise<AuthRuntimeEnv> {
+  try {
+    const workers = await import("cloudflare:workers");
+    return workers.env as AuthRuntimeEnv;
+  } catch (error) {
+    if (error instanceof Error && error.name === "Error" && "code" in error && error.code === "ERR_UNSUPPORTED_ESM_URL_SCHEME") {
+      return getProcessEnv();
+    }
+    throw error;
+  }
+}
+
+export async function configuredSocialProviders() {
+  const env = await getRuntimeEnv();
   return {
     google: Boolean(env.GOOGLE_CLIENT_ID && env.GOOGLE_CLIENT_SECRET),
     github: Boolean(env.GITHUB_CLIENT_ID && env.GITHUB_CLIENT_SECRET),
   };
 }
 
-export function getAuth() {
+export async function getAuth() {
+  const env = await getRuntimeEnv();
   const baseURL = env.BETTER_AUTH_URL || SITE_ORIGIN;
   const secret = env.BETTER_AUTH_SECRET;
   if (!secret || secret.length < 32) {
@@ -86,5 +121,5 @@ export function getAuth() {
 }
 
 export async function getBetterAuthSession(requestHeaders: Headers) {
-  return getAuth().api.getSession({ headers: requestHeaders });
+  return (await getAuth()).api.getSession({ headers: requestHeaders });
 }

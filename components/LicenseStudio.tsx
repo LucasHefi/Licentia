@@ -1,12 +1,13 @@
 "use client";
 
 import { useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
-import { familyOf, recommendLicenses, ruleLabels } from "../lib/recommend";
+import { familyOf, ruleLabels } from "../lib/recommend";
+import { candidateStatusLabels, evidenceLabels, guideMessage, outcomeLabels } from "../lib/guide-copy";
+import { buildGuideModel, GUIDE_MODEL_VERSION, recommendFromCatalog, runtimeSourceLockResolved, type GuideAnswers } from "../lib/recommendation-contract";
 import AccountMenu from "./AccountMenu";
 import type {
   ActivityEntry,
   AppIdentity,
-  GuideAnswers,
   LicenseDetail,
   LicenseSummary,
   LicenseType,
@@ -20,73 +21,14 @@ type ApprovalFilter = "all" | "osi" | "fsf" | "profiled";
 const DATA_ROOT = "./data";
 const PAGE_SIZE = 48;
 
-const guideQuestions: Array<{
-  key: keyof GuideAnswers;
-  title: string;
-  hint: string;
-  options: Array<{ value: string; label: string; description: string }>;
-}> = [
-  {
-    key: "openness",
-    title: "Má být možné odvozený software uzavřít?",
-    hint: "Jde o to, zda smí někdo váš kód použít uvnitř proprietárního produktu.",
-    options: [
-      { value: "open", label: "Chci zachovat otevřenost", description: "Odvozeniny mají zůstat otevřené podle zvolené síly copyleftu." },
-      { value: "closed", label: "Ano, dovolím uzavřené použití", description: "Upřednostním permisivní licenci a širokou adopci." },
-      { value: "undecided", label: "Nejsem rozhodnutý/á", description: "Průvodce ponechá otevřené obě skupiny." },
-    ],
-  },
-  {
-    key: "reciprocity",
-    title: "Kde má vzniknout povinnost sdílet změny?",
-    hint: "Copyleft může působit na soubor, knihovnu, celé distribuované dílo nebo také síťovou službu.",
-    options: [
-      { value: "none", label: "Nikde", description: "Stačí zachovat oznámení; odvozeniny mohou mít jinou licenci." },
-      { value: "file", label: "Jen upravené soubory", description: "Slabý copyleft na úrovni souborů, typicky MPL." },
-      { value: "library", label: "Samotná knihovna", description: "Změny knihovny zůstávají otevřené, aplikace může mít jinou licenci." },
-      { value: "strong", label: "Celé distribuované dílo", description: "Silný copyleft při distribuci, typicky GPL." },
-      { value: "network", label: "I provozované jako služba", description: "Síťový copyleft pokrývá také uživatele služby, typicky AGPL." },
-    ],
-  },
-  {
-    key: "delivery",
-    title: "Jak software lidé dostanou?",
-    hint: "Způsob dodání ovlivňuje, kdy se licenční povinnosti aktivují.",
-    options: [
-      { value: "application", label: "Aplikace nebo CLI", description: "Distribuovaný spustitelný program pro koncové uživatele." },
-      { value: "library", label: "Knihovna nebo SDK", description: "Kód, který budou jiné aplikace linkovat nebo importovat." },
-      { value: "saas", label: "SaaS / webová služba", description: "Software běží u vás a uživatelé s ním komunikují po síti." },
-      { value: "internal", label: "Pouze interně", description: "Bez předávání kopií mimo vaši organizaci." },
-    ],
-  },
-  {
-    key: "patents",
-    title: "Je důležité výslovné patentové oprávnění?",
-    hint: "Některé licence výslovně udělují patentová práva přispěvatelů a upravují jejich ukončení.",
-    options: [
-      { value: "important", label: "Ano, chci patentovou klauzuli", description: "Zvýhodní licence s výslovným patentovým oprávněním." },
-      { value: "neutral", label: "Není to rozhodující", description: "Patentová klauzule nebude hlavním kritériem." },
-    ],
-  },
-  {
-    key: "notices",
-    title: "Kolik administrativy při distribuci snesete?",
-    hint: "U každé licence je vždy potřeba dodržet přesné podmínky; liší se jejich rozsah.",
-    options: [
-      { value: "minimal", label: "Absolutní minimum", description: "Upřednostnit co nejkratší text a minimum oznámení." },
-      { value: "standard", label: "Běžná oznámení jsou v pořádku", description: "LICENSE, copyright, NOTICE nebo popis změn nejsou problém." },
-    ],
-  },
-  {
-    key: "jurisdiction",
-    title: "Má být licence zvlášť ukotvena v prostředí EU?",
-    hint: "Pro většinu projektů je vhodný globální výběr; EUPL může být relevantní pro evropský veřejný sektor.",
-    options: [
-      { value: "global", label: "Globální projekt", description: "Bez zvláštní preference jurisdikce." },
-      { value: "eu", label: "EU / evropský veřejný sektor", description: "Zvýhodnit EUPL, ale zachovat i ostatní kandidáty." },
-    ],
-  },
-];
+const guideModel = buildGuideModel();
+const guideQuestions = guideModel.questions.map((question) => ({
+  ...question,
+  hint: `${question.help} Model ${GUIDE_MODEL_VERSION}.`,
+  options: question.options.map((option) => ({ ...option, description: question.help })),
+}));
+const quickGuideQuestionCount = guideQuestions.filter((question) => question.mode === "quick").length;
+
 
 const ecosystemSources = [
   {
@@ -172,6 +114,7 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
   const [compareIds, setCompareIds] = useState<string[]>([]);
   const [compareDetails, setCompareDetails] = useState<LicenseDetail[]>([]);
   const [guideStep, setGuideStep] = useState(0);
+  const [guideMode, setGuideMode] = useState<"quick" | "advanced">("quick");
   const [answers, setAnswers] = useState<GuideAnswers>({});
   const [favorites, setFavorites] = useState<string[]>([]);
   const [history, setHistory] = useState<ActivityEntry[]>([]);
@@ -182,11 +125,11 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
     const load = async () => {
       try {
         const state = account
-          ? await fetch("./api/state", { credentials: "include" }).then((response) => response.ok ? response.json() : Promise.reject()) as WorkspaceState
+          ? await fetch("./api/state", { credentials: "include" }).then((response) => response.ok ? response.json() as Promise<WorkspaceState> : Promise.reject())
           : JSON.parse(localStorage.getItem("licentia-workspace") ?? "{}") as Partial<WorkspaceState>;
         setFavorites(Array.isArray(state.favorites) ? state.favorites : []);
         setCompareIds(Array.isArray(state.compareIds) ? state.compareIds.slice(0, 4) : []);
-        setAnswers(state.guideAnswers && typeof state.guideAnswers === "object" ? state.guideAnswers : {});
+        setAnswers(state.guideAnswers && typeof state.guideAnswers === "object" ? state.guideAnswers as GuideAnswers : {});
         setHistory(Array.isArray(state.history) ? state.history.slice(0, 100) : []);
       } catch { /* nový nebo nedostupný pracovní prostor */ }
       finally { setWorkspaceReady(true); }
@@ -196,7 +139,7 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
 
   useEffect(() => {
     if (!workspaceReady) return;
-    const state: WorkspaceState = { favorites, compareIds, guideAnswers: answers, history };
+    const state: WorkspaceState = { favorites, compareIds, guideAnswers: answers as WorkspaceState["guideAnswers"], history };
     const timer = window.setTimeout(() => {
       if (account) fetch("./api/state", { method: "PUT", credentials: "include", headers: { "Content-Type": "application/json" }, body: JSON.stringify(state) }).catch(() => undefined);
       else localStorage.setItem("licentia-workspace", JSON.stringify(state));
@@ -208,7 +151,7 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
     fetch(`${DATA_ROOT}/catalog.json`)
       .then((response) => {
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
-        return response.json();
+        return response.json() as Promise<LicenseSummary[]>;
       })
       .then((data: LicenseSummary[]) => setCatalog(data))
       .catch(() => setError("Datový katalog se nepodařilo načíst."))
@@ -241,7 +184,7 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
     if (!fullText || deferredQuery.length < 3 || searchIndex || searchRequested.current) return;
     searchRequested.current = true;
     fetch(`${DATA_ROOT}/search-index.json`)
-      .then((response) => response.json())
+      .then((response) => response.json() as Promise<Array<{ id: string; type: LicenseType; haystack: string }>>)
       .then(setSearchIndex)
       .catch(() => {
         setSearchFailed(true);
@@ -284,8 +227,14 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
   }), [catalog, deferredQuery, fullTextMatches, statusFilter, approvalFilter, typeFilter]);
 
   const recommendations = useMemo(
-    () => recommendLicenses(catalog, answers),
-    [catalog, answers],
+    () => {
+      const activeKeys = new Set(guideQuestions.filter((question) => question.mode === guideMode && (!question.showWhen || answers[question.showWhen.key] === question.showWhen.equals)).map((question) => question.key));
+      const scopedAnswers = Object.fromEntries(Object.entries(answers).filter(([key]) => activeKeys.has(key as keyof GuideAnswers))) as GuideAnswers;
+      const knownIdentifiers = catalog.filter((item) => item.type === "license").map((item) => item.id);
+      const knownExceptionIdentifiers = catalog.filter((item) => item.type === "exception").map((item) => item.id);
+      return recommendFromCatalog(catalog, scopedAnswers, { sourceLockResolved: runtimeSourceLockResolved(catalog), ruleVersion: "1.0.0", knownIdentifiers, knownExceptionIdentifiers, guideMode });
+    },
+    [catalog, answers, guideMode],
   );
   const searchLoading = fullText && deferredQuery.length >= 3 && !searchIndex && !searchFailed;
 
@@ -344,13 +293,23 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
-  const guideComplete = guideStep >= guideQuestions.length;
-  const currentQuestion = guideQuestions[guideStep];
+  function changeGuideMode(nextMode: "quick" | "advanced") {
+    setGuideMode(nextMode);
+    setGuideStep(0);
+    guideRecorded.current = false;
+    // Answers are keyed by the versioned model, but clearing on a mode change
+    // prevents a hidden/conditional answer from making a new step look done.
+    setAnswers({});
+  }
+
+  const activeGuideQuestions = guideQuestions.filter((question) => question.mode === guideMode && (!question.showWhen || answers[question.showWhen.key] === question.showWhen.equals));
+  const guideComplete = guideStep >= activeGuideQuestions.length;
+  const currentQuestion = activeGuideQuestions[guideStep];
 
   useEffect(() => {
-    if (!guideComplete || guideRecorded.current || recommendations.length === 0) return;
+    if (!guideComplete || guideRecorded.current || recommendations.candidates.length === 0) return;
     guideRecorded.current = true;
-    recordActivity("guide", `Doporučení: ${recommendations.slice(0, 3).map(item => item.license.id).join(", ")}`);
+    recordActivity("guide", `Doporučení: ${recommendations.candidates.slice(0, 3).map(item => item.id).join(", ")}`);
   }, [guideComplete, recommendations]);
 
   return (
@@ -455,35 +414,41 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
           <div className="guide-intro">
             <span className="section-kicker light">Pravidlový průvodce</span>
             <h1>Vyberme vhodný licenční směr.</h1>
-            <p>Šest rozhodnutí zúží kurátorovaný výběr běžných licencí. Výsledek vysvětlíme a ukážeme jeho povinnosti.</p>
+             <p>{quickGuideQuestionCount} otázek zúží kurátorovaný výběr běžných licencí. Výsledek stručně vysvětlíme a ukážeme jeho povinnosti.</p>
             <div className="legal-note"><strong>Důležité</strong><span>Jde o orientační pomůcku, nikoli právní stanovisko. Kompatibilitu závislostí a konkrétní jurisdikci posuďte zvlášť.</span></div>
           </div>
           <div className="guide-panel">
             {!guideComplete && currentQuestion ? (
               <>
-                <div className="progress-row"><span>Krok {guideStep + 1} z {guideQuestions.length}</span><div><i style={{ width: `${((guideStep + 1) / guideQuestions.length) * 100}%` }} /></div></div>
+                <div className="progress-row"><span>{guideMode === "quick" ? "Rychlý" : "Pokročilý"} režim · krok {guideStep + 1} z {activeGuideQuestions.length}</span><div><i style={{ width: `${((guideStep + 1) / activeGuideQuestions.length) * 100}%` }} /></div></div>
                 <h2>{currentQuestion.title}</h2><p className="question-hint">{currentQuestion.hint}</p>
-                <div className="answer-grid">
+                 <div className="answer-grid">
                   {currentQuestion.options.map((option) => (
                     <button key={option.value} className={answers[currentQuestion.key] === option.value ? "chosen" : ""} onClick={() => setAnswers((current) => ({ ...current, [currentQuestion.key]: option.value }))}>
                       <span className="radio-dot" /><strong>{option.label}</strong><small>{option.description}</small>
                     </button>
                   ))}
+                {currentQuestion.key === "dependencies" && !["unknown", "not-applicable", "undecided"].includes(answers.dependencies ?? "") && <input aria-label="SPDX výraz závislostí" placeholder="např. MIT AND Apache-2.0" value={typeof answers.dependencies === "string" ? answers.dependencies : ""} onChange={(event) => setAnswers((current) => ({ ...current, dependencies: event.target.value }))} />}
                 </div>
-                <div className="guide-actions"><button className="secondary" disabled={guideStep === 0} onClick={() => setGuideStep((step) => step - 1)}>← Zpět</button><button className="primary" disabled={!answers[currentQuestion.key]} onClick={() => setGuideStep((step) => step + 1)}>{guideStep === guideQuestions.length - 1 ? "Zobrazit doporučení" : "Pokračovat →"}</button></div>
+                <div className="guide-actions"><button className="secondary" disabled={guideStep === 0} onClick={() => setGuideStep((step) => step - 1)}>← Zpět</button><button className="primary" disabled={typeof answers[currentQuestion.key] !== "string" || answers[currentQuestion.key] === ""} onClick={() => setGuideStep((step) => step + 1)}>{guideStep === activeGuideQuestions.length - 1 ? "Zobrazit doporučení" : "Pokračovat →"}</button></div>
               </>
             ) : (
               <div className="recommendations">
-                <div className="recommend-heading"><div><span className="section-kicker">Výsledek průvodce</span><h2>Nejbližší kandidáti</h2></div><button onClick={() => { guideRecorded.current = false; setAnswers({}); setGuideStep(0); }}>Začít znovu</button></div>
+                 <div className="recommend-heading"><div><span className="section-kicker">Výsledek průvodce</span><h2>Nejbližší kandidáti</h2></div><div><button onClick={() => changeGuideMode(guideMode === "quick" ? "advanced" : "quick")}>{guideMode === "quick" ? "Pokročilý režim" : "Rychlý režim"}</button><button onClick={() => { guideRecorded.current = false; setAnswers({}); setGuideStep(0); }}>Začít znovu</button></div></div>
                 {answers.openness === "closed" && <div className="proprietary-callout"><strong>Zvažte také proprietární licenci / EULA.</strong><span>Pokud nechcete dát veřejnosti právo software používat, upravovat a distribuovat, open-source licence není správný nástroj. Vytvoření vlastních podmínek patří právníkovi.</span></div>}
                 <div className="recommend-list">
-                  {recommendations.map((item, index) => (
-                    <article key={item.license.id}>
-                      <span className="rank">0{index + 1}</span><div className="recommend-copy"><code>{item.license.id}</code><h3>{item.license.name}</h3><p>{item.reasons.join(" · ")}</p><LicenseBadges license={item.license} /></div>
-                      <div className="recommend-score"><strong>{Math.max(0, Math.min(99, item.score))}</strong><span>shoda</span></div>
-                      <div className="recommend-actions"><button onClick={() => openDetail(item.license)}>Otevřít detail</button><button onClick={() => toggleCompare(item.license.id)}>{compareIds.includes(item.license.id) ? "✓ V porovnání" : "+ Porovnat"}</button></div>
-                    </article>
-                  ))}
+                 {recommendations.candidates.map((item, index) => (
+                     <article key={item.id}>
+                       <span className="rank">0{index + 1}</span><div className="recommend-copy"><code>{item.id}</code><h3>{catalog.find((license) => license.id === item.id)?.name ?? item.id}</h3><p>{candidateStatusLabels[item.status]} ({item.status}) · {evidenceLabels[item.evidenceConfidence]} ({item.evidenceConfidence}) · {item.reasons.map(guideMessage).join(" · ")}</p><small>{[...item.conflicts, ...item.unknowns, ...item.obligations, ...item.evidence.map((evidence) => `${evidence.sourceId}#${evidence.locator}`)].join(" · ")}</small></div>
+                       <div className="recommend-score"><strong>{item.status === "good fit" ? item.fit : "—"}</strong><span>{candidateStatusLabels[item.status]} ({item.status})</span></div>
+                       <div className="recommend-actions"><button onClick={() => { const license = catalog.find((entry) => entry.id === item.id); if (license) openDetail(license); }}>Otevřít detail</button><button onClick={() => toggleCompare(item.id)}>{compareIds.includes(item.id) ? "✓ V porovnání" : "+ Porovnat"}</button></div>
+                     </article>
+                   ))}
+                 {recommendations.alternatives.length > 0 && <div className="question-hint">Alternativy: {recommendations.alternatives.map((item) => item.id).join(", ")}</div>}
+                 {recommendations.nextQuestion && <div className="question-hint">Další rozlišující otázka: {String(recommendations.nextQuestion)}</div>}
+                 <p className="question-hint">Výsledek: {outcomeLabels[recommendations.outcome]} ({recommendations.outcome})</p>
+                 {recommendations.guidance.concat(recommendations.trace, recommendations.conflicts).map((message) => <p key={message} className="question-hint">{guideMessage(message)}</p>)}
+                 {recommendations.unknowns.map((message) => <p key={message} className="question-hint">Neznámé údaje: {message}</p>)}
                 </div>
               </div>
             )}

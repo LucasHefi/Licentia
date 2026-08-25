@@ -39,7 +39,13 @@ export default async function Home() {
   }
 
   if (!account) {
-    return <SignIn providers={configuredSocialProviders()} chatGPTSignInPath={chatGPTSignInPath("/")} />;
+    let socialProviders = { google: false, github: false };
+    try {
+      socialProviders = await configuredSocialProviders();
+    } catch {
+      socialProviders = { google: false, github: false };
+    }
+    return <SignIn providers={socialProviders} chatGPTSignInPath={chatGPTSignInPath("/")} />;
   }
 
   return <LicenseStudio account={account} />;

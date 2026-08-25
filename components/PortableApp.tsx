@@ -12,7 +12,7 @@ export default function PortableApp() {
 
   useEffect(() => {
     fetch("./api/auth/session", { credentials: "include" })
-      .then(response => response.ok ? response.json() : Promise.reject())
+      .then(response => response.ok ? response.json() as Promise<SessionResponse> : Promise.reject())
       .then(setSession)
       .catch(() => setSession({ user: null }));
   }, []);
@@ -21,7 +21,7 @@ export default function PortableApp() {
     event.preventDefault(); setBusy(true); setError("");
     const form = new FormData(event.currentTarget);
     const response = await fetch(`./api/auth/${mode === "signin" ? "login" : "register"}`, { method: "POST", credentials: "include", headers: { "Content-Type": "application/json" }, body: JSON.stringify(Object.fromEntries(form)) });
-    const value = await response.json().catch(() => ({}));
+    const value = await response.json().catch(() => ({} as { error?: string })) as { error?: string };
     if (!response.ok) { setError(value.error ?? "Přihlášení se nepodařilo."); setBusy(false); return; }
     window.location.reload();
   }

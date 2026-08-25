@@ -1,4 +1,5 @@
 import { analyzeSbom, checkCompatibility, DATA_VERSION, loadCatalog, loadDetail, recommend, searchCatalog, validateExpression } from "../../lib/catalog-service";
+import { GUIDE_ANSWER_INPUT_SCHEMA } from "../../lib/recommendation-contract";
 
 export const dynamic = "force-dynamic";
 
@@ -6,7 +7,7 @@ const tools = [
   { name: "search_licenses", description: "Vyhledá a filtruje licence a výjimky SPDX.", inputSchema: { type: "object", properties: { query: { type: "string" }, type: { enum: ["license", "exception", "all"] }, osi: { type: "boolean" }, fsf: { type: "boolean" }, limit: { type: "integer", minimum: 1, maximum: 200 } } } },
   { name: "get_license", description: "Vrátí metadata a úplné znění SPDX licence nebo výjimky.", inputSchema: { type: "object", required: ["id"], properties: { id: { type: "string" }, type: { enum: ["license", "exception"] } } } },
   { name: "compare_licenses", description: "Provede orientační kontrolu kombinace licencí.", inputSchema: { type: "object", required: ["ids"], properties: { ids: { type: "array", minItems: 2, maxItems: 20, items: { type: "string" } }, context: { type: "object" } } } },
-  { name: "recommend_license", description: "Doporučí licence podle explicitních požadavků a vysvětlí skóre.", inputSchema: { type: "object", properties: { openness: { enum: ["open", "closed", "undecided"] }, reciprocity: { enum: ["none", "file", "library", "strong", "network"] }, delivery: { enum: ["library", "application", "saas", "internal"] }, patents: { enum: ["important", "neutral"] }, notices: { enum: ["minimal", "standard"] }, jurisdiction: { enum: ["eu", "global"] } } } },
+  { name: "recommend_license", description: "Vrátí typovaný, auditovatelný a fail-closed orientační výsledek; nízká evidence není jisté doporučení.", inputSchema: GUIDE_ANSWER_INPUT_SCHEMA },
   { name: "validate_spdx_expression", description: "Ověří syntaxi a identifikátory SPDX výrazu.", inputSchema: { type: "object", required: ["expression"], properties: { expression: { type: "string" } } } },
   { name: "analyze_sbom", description: "Najde SPDX licence v JSON dokumentu SPDX nebo CycloneDX.", inputSchema: { type: "object", required: ["document"], properties: { document: {} } } },
 ];
@@ -33,13 +34,18 @@ export async function POST(request: Request) {
       return result(id, { contents: [{ uri: rpc.params?.uri, mimeType: "application/json", text: JSON.stringify({ dataVersion: DATA_VERSION, ...detail }) }] });
     }
     if (rpc.method !== "tools/call") return failure(id, -32601, "Method not found");
-    const args = rpc.params?.arguments ?? {};
+    const rawArgs = rpc.params?.arguments;
+    if (rpc.params?.name === "recommend_license" && (rawArgs !== undefined && (typeof rawArgs !== "object" || rawArgs === null || Array.isArray(rawArgs)))) return failure(id, -32602, "Recommendation arguments must be an object.");
+    const args = rawArgs ?? {};
     const catalog = await loadCatalog(origin);
     let value: unknown;
     if (rpc.params?.name === "search_licenses") { const q = new URLSearchParams(); if (args.query) q.set("q", String(args.query)); if (args.type) q.set("type", String(args.type)); if (args.osi !== undefined) q.set("osi", String(args.osi)); if (args.fsf !== undefined) q.set("fsf", String(args.fsf)); if (args.limit) q.set("limit", String(args.limit)); value = searchCatalog(catalog, q); }
     else if (rpc.params?.name === "get_license") value = { dataVersion: DATA_VERSION, ...await loadDetail(origin, args.type === "exception" ? "exception" : "license", String(args.id ?? "")) };
     else if (rpc.params?.name === "compare_licenses") value = checkCompatibility(catalog, Array.isArray(args.ids) ? args.ids.map(String) : [], args.context as Record<string, unknown> | undefined);
-    else if (rpc.params?.name === "recommend_license") value = recommend(catalog, args as never);
+    else if (rpc.params?.name === "recommend_license") {
+      try { value = recommend(catalog, args); }
+      catch (error) { return failure(id, -32602, error instanceof Error ? error.message : "Invalid recommendation arguments."); }
+    }
     else if (rpc.params?.name === "validate_spdx_expression") value = validateExpression(catalog, String(args.expression ?? ""));
     else if (rpc.params?.name === "analyze_sbom") value = analyzeSbom(catalog, args.document);
     else return failure(id, -32602, "Unknown tool");

@@ -1,5 +1,6 @@
-import type { GuideAnswers, LicenseDetail, LicenseSummary } from "../components/types";
-import { familyOf, recommendLicenses } from "./recommend";
+import type { LicenseDetail, LicenseSummary } from "../components/types";
+import { familyOf } from "./recommend";
+import { parseRecommendationInput, recommendFromCatalog, runtimeSourceLockResolved, type GuideAnswers, type GuideMode } from "./recommendation-contract";
 
 export const DATA_VERSION = "3.28.0";
 
@@ -36,8 +37,11 @@ export function searchCatalog(catalog: LicenseSummary[], query: URLSearchParams)
   return { dataVersion: DATA_VERSION, total: matches.length, offset, limit, items: matches.slice(offset, offset + limit) };
 }
 
-export function recommend(catalog: LicenseSummary[], answers: GuideAnswers) {
-  return { dataVersion: DATA_VERSION, ruleVersion: "1.0.0", advisory: true, candidates: recommendLicenses(catalog, answers) };
+export function recommend(catalog: LicenseSummary[], input: GuideAnswers | Record<string, unknown>) {
+  const parsed = parseRecommendationInput(input);
+  const knownIdentifiers = catalog.filter((item) => item.type === "license").map((item) => item.id);
+  const knownExceptions = catalog.filter((item) => item.type === "exception").map((item) => item.id);
+  return { dataVersion: DATA_VERSION, ...recommendFromCatalog(catalog, parsed.answers, { sourceLockResolved: runtimeSourceLockResolved(catalog), ruleVersion: "1.0.0", knownIdentifiers, knownExceptionIdentifiers: knownExceptions, guideMode: parsed.mode as GuideMode }) };
 }
 
 class ExpressionParser {

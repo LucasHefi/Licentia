@@ -14,7 +14,7 @@ import type {
   WorkspaceState,
 } from "./types";
 
-type View = "catalog" | "guide" | "compare" | "saved" | "ecosystem";
+type View = "catalog" | "guide" | "compare" | "saved" | "ecosystem" | "about";
 type StatusFilter = "current" | "all" | "deprecated";
 type ApprovalFilter = "all" | "osi" | "fsf" | "profiled";
 
@@ -326,6 +326,7 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
           </button>
           <button className={view === "saved" ? "active" : ""} onClick={() => navigate("saved")}>Moje {favorites.length > 0 && <b>{favorites.length}</b>}</button>
           <button className={view === "ecosystem" ? "active" : ""} onClick={() => navigate("ecosystem")}>API a ekosystém</button>
+          <button type="button" className={view === "about" ? "active" : ""} aria-current={view === "about" ? "page" : undefined} onClick={() => navigate("about")}>O Licentii</button>
         </nav>
         <div className="topbar-account">
           <span className="version-pill">SPDX 3.28.0</span>
@@ -497,7 +498,22 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
         </section>
       )}
 
-      <footer><div className="brand"><span className="brand-mark">L</span><span>Licentia</span></div><p>Data SPDX 3.28.0 · Nejde o právní radu.</p><button onClick={() => navigate("ecosystem")}>Zdroje a API</button></footer>
+      {view === "about" && (
+        <section className="about-view">
+          <div className="page-heading"><span className="section-kicker">Veřejný About</span><h1>Licence s dohledatelným původem.</h1><p>Licentia pomáhá orientovat se v licenčních datech. Nehraje si na právní stanovisko a jasně odděluje zdroj, kuraci a odvozený výsledek.</p></div>
+          <div className="about-grid">
+            <article><span className="about-label">Identita</span><h2>Licentia</h2><p>Interní projekt Bucifálek.cz s.r.o. Veřejný repozitář:</p><a href="https://github.com/LucasHefi/Licentia" target="_blank" rel="noreferrer">github.com/LucasHefi/Licentia ↗</a></article>
+            <article><span className="about-label">Otevřená hranice</span><h2>Autorství a licence</h2><p>Osobní autor není v aktuálních důkazech deklarován. Aplikační licence je OPEN / neuvedena, protože repozitář nemá LICENSE.</p><strong>Bez tvrzení MIT / Apache / GPL.</strong></article>
+            <article><span className="about-label">Evidence</span><h2>Tři vrstvy</h2><ol><li>Kanonická data ze SPDX.</li><li>Kurátorovaná metadata odděleně.</li><li>Odvozené doporučení z pravidel.</li></ol></article>
+            <article><span className="about-label">Soukromí</span><h2>Anonymně napoprvé</h2><p>Prohlížení funguje bez účtu. Anonymní pracovní prostor zůstává v localStorage; účetní stav je chráněný. Veřejné API používá rate limit a Licentia netvrdí ukládání plaintextových IP auditů.</p></article>
+          </div>
+          <div className="about-panel"><div><span className="section-kicker light">REST + MCP</span><h2>Veřejné rozhraní pro nástroje.</h2><p>Čtení katalogu, validace a doporučení používají explicitní vstupy. Kompatibilita není právní verdikt.</p></div><div className="about-api"><code>GET /v1/licenses?q=apache</code><code>POST /v1/recommendations</code><code>MCP /mcp</code><a href="https://github.com/LucasHefi/Licentia/blob/main/docs/ECOSYSTEM.md" target="_blank" rel="noreferrer">Dokumentace API a ekosystému ↗</a></div></div>
+          <div className="about-links"><div><span className="about-label">Oficiální zdroje</span><a href="https://spdx.org/licenses/" target="_blank" rel="noreferrer">SPDX License List ↗</a><a href="https://opensource.org/licenses" target="_blank" rel="noreferrer">OSI licence ↗</a></div><div><span className="about-label">Další nástroje</span><a href="https://docs.github.com/en/rest/licenses" target="_blank" rel="noreferrer">GitHub Licenses API ↗</a><a href="https://v2.tauri.app/" target="_blank" rel="noreferrer">Tauri ↗</a></div></div>
+          <div className="about-disclaimer"><strong>Právní a kontaktní hranice</strong><p>Obsah je orientační technická dokumentace, nikoli právní rada. Připomínky patří do veřejného repozitáře; konkrétní e-mail ani osobní kontaktní osoba nejsou v aktuálních důkazech deklarovány a zůstávají OPEN.</p></div>
+        </section>
+      )}
+
+      <footer><div className="brand"><span className="brand-mark">L</span><span>Licentia</span></div><p>Data SPDX 3.28.0 · Nejde o právní radu.</p><div className="footer-links"><button onClick={() => navigate("ecosystem")}>Zdroje a API</button><button onClick={() => navigate("about")}>O Licentii</button></div></footer>
 
       {detailLoading && <div className="detail-loading">Načítám detail…</div>}
       {detail && (

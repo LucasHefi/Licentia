@@ -1,5 +1,10 @@
 # Licentia Hub: licenční datový ekosystém
 
+Identitu produktu, vlastnický kontext, licenční status a hranici mezi
+kanonickými daty, kurátorovanými metadaty a odvozenými výsledky shrnuje
+[veřejná stránka About](ABOUT.md). Licentia je interní projekt Bucifálek.cz
+s.r.o.; externí zdroje a adaptéry uvedené níže nejsou licencí aplikace.
+
 ## Implementovaný stav
 
 Web i Apache balíček publikují REST API `/v1` a stateless Streamable HTTP MCP endpoint `/mcp`. Implementované jsou vyhledávání, detail a text licence, výjimky, snapshot verze, doporučení, validace SPDX výrazů, orientační kompatibilita a analýza JSON SBOM. Kanonický katalog je pevný snapshot SPDX 3.28.0; aktualizace probíhá reprodukovatelným generátorem.
@@ -32,6 +37,29 @@ GitHub rules ─┘                         │
 Synchronizace musí být reprodukovatelná podle upstream verze, ukládat SHA-256 každého znění a nikdy tiše nepřepsat vydaný snapshot. Vlastní klasifikace a překlady musí být oddělené od kanonického textu a opatřené zdrojem, verzí pravidel a datem revize.
 
 ## REST API
+
+### Anonymous access policy
+
+The anonymous public allowlist is limited to `/v1` discovery and the documented
+`/v1/licenses`, `/v1/exceptions`, `/v1/versions`, `/v1/snapshots/{version}`,
+`/v1/recommendations`, `/v1/expressions/validate`, `/v1/compatibility/check`,
+`/v1/sbom/analyze`, and `/mcp` endpoints. `/api/state` and `/api/auth/*` remain
+protected application routes and are never part of the public allowlist.
+
+GET requests use a 60 requests/minute/IP bucket; POST and MCP requests use a
+20 requests/minute/IP bucket. Responses expose `RateLimit-Limit`,
+`RateLimit-Remaining`, and `RateLimit-Reset`; exhausted requests return 429 and
+`Retry-After`. Rate-limit storage errors fail closed with 503. Requests larger
+than 128 KiB are rejected. In direct mode the adapter must provide the actual
+remote address; `X-Forwarded-For` is never trusted. Set `TRUSTED_PROXY_MODE=true`
+and explicitly configure `TRUSTED_PROXY_HEADER` (or use Cloudflare's
+`CF-Connecting-IP`) only when the ingress proxy is trusted. If no address is
+available, the public request is rejected rather than placed in a shared bucket.
+Configure a long random `RATE_LIMIT_SECRET` in the Cloudflare Worker binding or
+the process environment; it is required for the web limiter and missing secrets
+fail closed with 503. The same prerequisite applies to the Apache example's
+`rate_limit_secret` before deployment. Trusted proxy mode and its header must
+only be enabled when the ingress proxy is controlled by the deployment.
 
 | Metoda | Endpoint | Účel |
 |---|---|---|

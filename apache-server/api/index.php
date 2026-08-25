@@ -28,6 +28,7 @@ function db(): PDO {
     $text = str_starts_with($config['db_dsn'], 'mysql:') ? 'LONGTEXT' : 'TEXT';
     $pdo->exec("CREATE TABLE IF NOT EXISTS users (id $id PRIMARY KEY, email VARCHAR(255) NOT NULL UNIQUE, name VARCHAR(255) NOT NULL, password_hash VARCHAR(255), provider VARCHAR(32) NOT NULL, provider_id VARCHAR(255), created_at VARCHAR(32) NOT NULL)");
     $pdo->exec("CREATE TABLE IF NOT EXISTS user_state (user_id $id PRIMARY KEY, favorites $text NOT NULL, compare_ids $text NOT NULL, guide_answers $text NOT NULL, history $text NOT NULL, updated_at VARCHAR(32) NOT NULL)");
+    $pdo->exec("CREATE TABLE IF NOT EXISTS public_rate_limit (key VARCHAR(128) PRIMARY KEY, window_start INTEGER NOT NULL, count INTEGER NOT NULL)");
     return $pdo;
 }
 
@@ -51,7 +52,10 @@ function respond(mixed $data, int $status = 200, bool $public = false): never {
 }
 
 function body(): array {
-    $value = json_decode(file_get_contents('php://input'), true);
+    if ((int)($_SERVER['CONTENT_LENGTH'] ?? 0) > 131072) respond(['error' => 'Tělo požadavku je příliš velké.'], 413);
+    $raw = file_get_contents('php://input');
+    if ($raw === false || strlen($raw) > 131072) respond(['error' => 'Tělo požadavku je příliš velké.'], 413);
+    $value = json_decode($raw, true);
     if (!is_array($value)) respond(['error' => 'Tělo požadavku musí být platný JSON.'], 400);
     return $value;
 }
@@ -83,6 +87,33 @@ function user(): ?array {
 function required_user(): array { $value = user(); if (!$value) respond(['error' => 'Přihlášení je vyžadováno.'], 401); return $value; }
 function public_user(array $value): array { return ['id' => $value['id'], 'email' => $value['email'], 'name' => $value['name'], 'authSource' => 'licentia', 'providerLabel' => ucfirst($value['provider'] ?: 'Apache')]; }
 function uuid(): string { return bin2hex(random_bytes(16)); }
+
+function public_ip(): string {
+    global $config;
+    $raw = !empty($config['trusted_proxy']) ? ($_SERVER[$config['trusted_proxy_header'] ?? 'HTTP_CF_CONNECTING_IP'] ?? '') : ($_SERVER['REMOTE_ADDR'] ?? 'unknown');
+    $ip = filter_var(trim((string)$raw), FILTER_VALIDATE_IP);
+    return $ip ?: 'unknown';
+}
+
+function public_limit(bool $expensive): void {
+    global $config;
+    $limit = $expensive ? 20 : 60; $now = time(); $window = intdiv($now, 60) * 60;
+    try {
+        $ip = public_ip();
+        if ($ip === 'unknown') throw new RuntimeException('remote address unavailable');
+        $key = hash_hmac('sha256', ($expensive ? 'expensive:' : 'normal:') . $ip, (string)($config['rate_limit_secret'] ?? 'missing-secret'));
+        if (str_starts_with($config['db_dsn'], 'mysql:')) {
+            $query = db()->prepare('INSERT INTO public_rate_limit(`key`,window_start,count) VALUES(?,?,1) ON DUPLICATE KEY UPDATE count=IF(public_rate_limit.window_start<>VALUES(window_start),1,public_rate_limit.count+1), window_start=VALUES(window_start)');
+        } else {
+            $query = db()->prepare('INSERT INTO public_rate_limit(key,window_start,count) VALUES(?,?,1) ON CONFLICT(key) DO UPDATE SET window_start=excluded.window_start,count=CASE WHEN public_rate_limit.window_start<>excluded.window_start THEN 1 ELSE public_rate_limit.count+1 END');
+        }
+        $query->execute([$key, $window]);
+        $query = db()->prepare('SELECT window_start,count FROM public_rate_limit WHERE key=?'); $query->execute([$key]); $row = $query->fetch();
+        if (!$row || (int)$row['window_start'] !== $window) throw new RuntimeException('rate limiter unavailable');
+        header('RateLimit-Limit: ' . $limit); header('RateLimit-Remaining: ' . max(0, $limit - (int)$row['count'])); header('RateLimit-Reset: ' . (string)($window + 60 - $now));
+        if ((int)$row['count'] > $limit) { header('Retry-After: ' . (string)($window + 60 - $now)); respond(['error' => 'Příliš mnoho požadavků.'], 429, true); }
+    } catch (Throwable) { respond(['error' => 'Veřejné API je dočasně nedostupné.'], 503, true); }
+}
 
 function base_url(): string {
     global $secure;
@@ -474,6 +505,7 @@ function analyze_sbom(mixed $document): array {
 }
 
 $route = route_path(); $method = $_SERVER['REQUEST_METHOD'] ?? 'GET';
+if ($method !== 'OPTIONS' && (str_starts_with($route, 'v1') || $route === 'mcp')) public_limit($route === 'mcp' || $method === 'POST');
 if ($method === 'OPTIONS') { header('Access-Control-Allow-Origin: *'); header('Access-Control-Allow-Headers: content-type, authorization, mcp-protocol-version'); header('Access-Control-Allow-Methods: GET, POST, PUT, OPTIONS'); http_response_code(204); exit; }
 if (in_array($method, ['POST', 'PUT', 'DELETE'], true) && !str_starts_with($route, 'v1/') && $route !== 'mcp') { $origin = $_SERVER['HTTP_ORIGIN'] ?? ''; if ($origin && parse_url($origin, PHP_URL_HOST) !== ($_SERVER['HTTP_HOST'] ?? '')) respond(['error' => 'Neplatný původ požadavku.'], 403); }
 

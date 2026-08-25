@@ -1,9 +1,8 @@
 import { headers } from "next/headers";
-import { chatGPTSignInPath, chatGPTSignOutPath, getChatGPTUser } from "./chatgpt-auth";
+import { chatGPTSignOutPath, getChatGPTUser } from "./chatgpt-auth";
 import LicenseStudio from "../components/LicenseStudio";
-import SignIn from "../components/SignIn";
 import type { AppIdentity } from "../components/types";
-import { configuredSocialProviders, getBetterAuthSession } from "../lib/auth";
+import { getBetterAuthSession } from "../lib/auth";
 
 export const dynamic = "force-dynamic";
 
@@ -36,16 +35,6 @@ export default async function Home() {
     } catch {
       account = null;
     }
-  }
-
-  if (!account) {
-    let socialProviders = { google: false, github: false };
-    try {
-      socialProviders = await configuredSocialProviders();
-    } catch {
-      socialProviders = { google: false, github: false };
-    }
-    return <SignIn providers={socialProviders} chatGPTSignInPath={chatGPTSignInPath("/")} />;
   }
 
   return <LicenseStudio account={account} />;

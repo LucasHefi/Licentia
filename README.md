@@ -82,6 +82,11 @@ Bez OAuth konfigurace fungují účty přes e-mail a heslo. Databáze se při pr
 
 Po nahrání ověřte `/v1`, `/v1/licenses?q=MIT` a MCP inicializaci přes `POST /mcp`. Soubor `checksums.sha256` umožňuje ověřit úplnost přenosu.
 
+Před nasazením veřejného API nastavte dlouhý náhodný rate-limit secret
+(`RATE_LIMIT_SECRET` v Cloudflare/procesním prostředí, nebo `rate_limit_secret`
+v Apache konfiguraci). `TRUSTED_PROXY_MODE=true` a příslušný proxy header
+zapínejte pouze za kontrolovaným ingress proxy.
+
 ## Aktualizace dat
 
 Generátor očekává checkouty pevné verze `spdx/license-list-data` a `github/choosealicense.com`:
@@ -103,3 +108,15 @@ Výstup obsahuje katalog metadat, detailní JSON každé položky a plnotextový
 - `docs/screenshots/` — screenshoty aktuální desktopové webové sestavy;
 - `apache-server/` — PHP runtime a bezpečnostní konfigurace pro sdílený hosting;
 - `apache-dist/` — artefakt vytvořený příkazem `npm run build:apache`.
+
+## About, identita a datová hranice
+
+Licentia je interní projekt Bucifálek.cz s.r.o. Osobní autorství není v aktuálních
+repozitářových důkazech deklarováno a zůstává OPEN k potvrzení vlastníkem.
+Repozitář neobsahuje `LICENSE` a aplikace je proto OPEN / bez deklarované
+aplikační licence; MIT, Apache ani GPL zde nejsou tvrzeny. SPDX poskytuje
+kanonická data podle vlastních podmínek, zatímco OSI, GitHub a MCP jsou externí
+zdroje nebo adaptéry. Podrobnosti jsou v [docs/ABOUT.md](docs/ABOUT.md).
+
+Veřejné API `/v1` a MCP `/mcp`, včetně anonymního přístupu a hranic dat,
+popisuje [dokumentace API a ekosystému](docs/ECOSYSTEM.md).

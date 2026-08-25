@@ -5,6 +5,7 @@ $root = dirname(__DIR__);
 $tempRoot = sys_get_temp_dir() . '/licentia-apache-contract-' . bin2hex(random_bytes(6));
 $process = null;
 $pipes = [];
+$requestSequence = 0;
 
 function fail_test(string $message): never
 {
@@ -26,10 +27,13 @@ function assert_same(mixed $expected, mixed $actual, string $message): void
 
 function request_json(string $baseUrl, string $path, ?array $payload = null): array
 {
-    $options = ['http' => ['ignore_errors' => true, 'timeout' => 5]];
+    global $requestSequence;
+    $requestSequence++;
+    $testIp = '198.51.100.' . (($requestSequence - 1) % 254 + 1);
+    $options = ['http' => ['ignore_errors' => true, 'timeout' => 5, 'header' => "X-Test-Client-IP: $testIp\r\n"]];
     if ($payload !== null) {
         $options['http']['method'] = 'POST';
-        $options['http']['header'] = "Content-Type: application/json\r\nAccept: application/json\r\n";
+        $options['http']['header'] .= "Content-Type: application/json\r\nAccept: application/json\r\n";
         $options['http']['content'] = json_encode($payload, JSON_THROW_ON_ERROR);
     }
     $context = stream_context_create($options);
@@ -82,14 +86,16 @@ function start_server(string $tempRoot, &$process, array &$pipes, string &$baseU
     $descriptors = [1 => ['pipe', 'w'], 2 => ['pipe', 'w']];
     $port = random_int(18000, 28000);
     $address = "127.0.0.1:$port";
-    $process = proc_open([PHP_BINARY, '-S', $address, $tempRoot . '/router.php'], $descriptors, $pipes, $tempRoot);
+    $extensionDir = (string) ini_get('extension_dir');
+    $process = proc_open([PHP_BINARY, '-d', 'extension_dir=' . $extensionDir, '-S', $address, $tempRoot . '/router.php'], $descriptors, $pipes, $tempRoot);
     if (!is_resource($process)) fail_test('could not start PHP built-in server');
 
     $baseUrl = 'http://' . $address;
     $ready = false;
     for ($attempt = 0; $attempt < 40; $attempt++) {
         usleep(50000);
-        $probe = @file_get_contents($baseUrl . '/v1');
+        $probeContext = stream_context_create(['http' => ['ignore_errors' => true, 'timeout' => 5, 'header' => "X-Test-Client-IP: 198.51.100.254\r\n"]]);
+        $probe = @file_get_contents($baseUrl . '/v1', false, $probeContext);
         if ($probe !== false) { $ready = true; break; }
     }
     assert_true($ready, 'PHP built-in server did not become ready');
@@ -100,6 +106,10 @@ try {
     mkdir($tempRoot . '/data', 0700, true);
     copy($root . '/apache-server/api/index.php', $tempRoot . '/api/index.php');
     copy($root . '/apache-server/api/config.example.php', $tempRoot . '/api/config.example.php');
+    $testConfig = require $tempRoot . '/api/config.example.php';
+    $testConfig['trusted_proxy'] = true;
+    $testConfig['trusted_proxy_header'] = 'HTTP_X_TEST_CLIENT_IP';
+    file_put_contents($tempRoot . '/api/config.php', "<?php\nreturn " . var_export($testConfig, true) . ";\n");
     copy($root . '/public/data/catalog.json', $tempRoot . '/data/catalog.json');
     $catalogPath = $tempRoot . '/data/catalog.json';
     $catalogData = json_decode(file_get_contents($catalogPath), true, 512, JSON_THROW_ON_ERROR);

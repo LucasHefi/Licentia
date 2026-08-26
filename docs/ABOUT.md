@@ -31,12 +31,12 @@ osobní jméno.
 
 ## Licence aplikace a zdroje
 
-### Aplikace: OPEN / neuvedeno
+### Aplikace: MIT
 
-Repozitář v současnosti neobsahuje soubor `LICENSE` a `package.json` je
-označen jako private. Pole licence aplikace je proto **OPEN / undeclared**,
-dokud vlastník neschválí a nepřidá LICENSE. Licentia není v této dokumentaci
-označena jako MIT, Apache, GPL ani jiná konkrétní aplikační licence.
+Zdrojový kód Licentie v tomto repozitáři je poskytován pod licencí MIT.
+Úplné znění je v souboru [`LICENSE`](../LICENSE); copyright notice uvádí
+`Bucifálek.cz s.r.o.`. Licence MIT se nevztahuje automaticky na externí zdroje
+ani na kanonická data, která si zachovávají vlastní licenční a jiné podmínky.
 
 ### Třetí strany a zdrojová data
 

@@ -113,12 +113,12 @@ Výstup obsahuje katalog metadat, detailní JSON každé položky a plnotextový
 
 ## About, identita a datová hranice
 
-Licentia je interní projekt Bucifálek.cz s.r.o. Osobní autorství není v aktuálních
-repozitářových důkazech deklarováno a zůstává OPEN k potvrzení vlastníkem.
-Repozitář neobsahuje `LICENSE` a aplikace je proto OPEN / bez deklarované
-aplikační licence; MIT, Apache ani GPL zde nejsou tvrzeny. SPDX poskytuje
-kanonická data podle vlastních podmínek, zatímco OSI, GitHub a MCP jsou externí
-zdroje nebo adaptéry. Podrobnosti jsou v [docs/ABOUT.md](docs/ABOUT.md).
+Licentia je interní projekt Bucifálek.cz s.r.o. Zdrojový kód repozitáře je
+poskytován pod licencí MIT; úplné znění je v souboru [LICENSE](LICENSE).
+Osobní autorství není v aktuálních repozitářových důkazech deklarováno.
+Licence MIT se nevztahuje automaticky na kanonická data SPDX ani na externí
+zdroje a adaptéry OSI, GitHub a MCP, které si zachovávají vlastní podmínky.
+Podrobnosti jsou v [docs/ABOUT.md](docs/ABOUT.md).
 
 Veřejné API `/v1` a MCP `/mcp`, včetně anonymního přístupu a hranic dat,
 popisuje [dokumentace API a ekosystému](docs/ECOSYSTEM.md).

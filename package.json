@@ -31,6 +31,7 @@
     "test:runtime-metadata": "node --test scripts/runtime-metadata-adapter.test.mjs",
     "test:public-api-policy": "node --experimental-strip-types --test scripts/public-api-policy.test.ts",
     "test:apache-public-api-policy": "php scripts/apache-public-api-policy.test.php",
+    "test:apache-anonymous-entry": "node --experimental-strip-types --test scripts/apache-anonymous-entry.test.ts",
     "start": "vinext start",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern desktop-dist --ignore-pattern apache-dist --ignore-pattern src-tauri/target --ignore-pattern .next"
   },

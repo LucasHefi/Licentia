@@ -80,6 +80,8 @@ https://vase-domena.cz/api/auth/oauth/callback
 
 Bez OAuth konfigurace fungují účty přes e-mail a heslo. Databáze se při prvním požadavku vytvoří v `api/var/`; adresář musí být zapisovatelný pro PHP.
 
+Přihlašovací a registrační obrazovka nabízí také volitelnou cestu „Pokračovat bez registrace a přihlášení“. Účetní funkce zůstávají k dispozici; stav anonymního pracovního prostoru se ukládá pouze v `localStorage` prohlížeče a nepersistuje se na serveru ani k účtu.
+
 Po nahrání ověřte `/v1`, `/v1/licenses?q=MIT` a MCP inicializaci přes `POST /mcp`. Soubor `checksums.sha256` umožňuje ověřit úplnost přenosu.
 
 Před nasazením veřejného API nastavte dlouhý náhodný rate-limit secret

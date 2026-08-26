@@ -46,6 +46,14 @@ The anonymous public allowlist is limited to `/v1` discovery and the documented
 `/v1/sbom/analyze`, and `/mcp` endpoints. `/api/state` and `/api/auth/*` remain
 protected application routes and are never part of the public allowlist.
 
+### Apache anonymous workspace
+
+The Apache login/registration screen also offers “Pokračovat bez registrace a
+přihlášení”. Account features remain available for signed-in users, while an
+anonymous workspace is kept only in browser `localStorage`; it has no server or
+account persistence. This does not change the protected `/api/state` and
+`/api/auth/*` boundary.
+
 GET requests use a 60 requests/minute/IP bucket; POST and MCP requests use a
 20 requests/minute/IP bucket. Responses expose `RateLimit-Limit`,
 `RateLimit-Remaining`, and `RateLimit-Reset`; exhausted requests return 429 and

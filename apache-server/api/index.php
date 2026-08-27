@@ -776,7 +776,9 @@ if ($route === 'mcp' && $method === 'POST') {
     $protocolVersion = (string)($_SERVER['HTTP_MCP_PROTOCOL_VERSION'] ?? '2025-03-26');
     if (!in_array($protocolVersion, mcp_supported_versions(), true)) mcp_error($id, -32602, 'Unsupported MCP protocol version.', 400, ['supported' => mcp_supported_versions()]);
     header('MCP-Protocol-Version: ' . $protocolVersion);
-    $success = static fn(mixed $value): never => respond(['jsonrpc' => '2.0', 'id' => $GLOBALS['mcp_response_id'], 'result' => $value], 200, true);
+    $success = static function (mixed $value): never {
+        respond(['jsonrpc' => '2.0', 'id' => $GLOBALS['mcp_response_id'], 'result' => $value], 200, true);
+    };
     $GLOBALS['mcp_response_id'] = $id; $GLOBALS['mcp_error_id'] = $id;
 
     if ($rpcMethod === 'ping') $success((object)[]);

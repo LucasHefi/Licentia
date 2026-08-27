@@ -25,12 +25,13 @@ function assert_same(mixed $expected, mixed $actual, string $message): void
     }
 }
 
-function request_json(string $baseUrl, string $path, ?array $payload = null): array
+function request_json(string $baseUrl, string $path, ?array $payload = null, array $extraHeaders = []): array
 {
     global $requestSequence;
     $requestSequence++;
     $testIp = '198.51.100.' . (($requestSequence - 1) % 254 + 1);
     $options = ['http' => ['ignore_errors' => true, 'timeout' => 5, 'header' => "X-Test-Client-IP: $testIp\r\n"]];
+    foreach ($extraHeaders as $name => $headerValue) $options['http']['header'] .= $name . ': ' . $headerValue . "\r\n";
     if ($payload !== null) {
         $options['http']['method'] = 'POST';
         $options['http']['header'] .= "Content-Type: application/json\r\nAccept: application/json\r\n";
@@ -261,6 +262,38 @@ PHP_ROUTER
     canonical_fields($mcpResult);
     assert_same($catalogWithFixture['body'], $mcpResult, 'REST and MCP recommendation result contracts must match');
 
+    $guideModel = request_json($baseUrl, '/v1/guide?mode=quick');
+    assert_same(200, $guideModel['status'], 'guide model status');
+    assert_same('lic-008-guide-v1', $guideModel['body']['guideModelVersion'] ?? null, 'guide model version');
+    assert_true(count($guideModel['body']['questions'] ?? []) >= 6, 'quick guide questions must be discoverable');
+    $openApi = request_json($baseUrl, '/v1/openapi.json');
+    assert_same('3.1.0', $openApi['body']['openapi'] ?? null, 'Apache OpenAPI document version');
+    assert_true(isset($openApi['body']['paths']['/v1/guide']['get'], $openApi['body']['paths']['/v1/guide']['post']), 'Apache OpenAPI guide operations');
+    $guideStart = request_json($baseUrl, '/v1/guide', ['mode' => 'quick', 'answers' => []]);
+    assert_same('awaiting-input', $guideStart['body']['state'] ?? null, 'REST guide starts without server state');
+    assert_same('openness', $guideStart['body']['nextQuestion']['key'] ?? null, 'REST guide first question');
+    $guideComplete = request_json($baseUrl, '/v1/guide', ['mode' => 'quick', 'answers' => ['openness' => 'open', 'projectForm' => 'application', 'reciprocity' => 'none', 'commercialUse' => 'allowed', 'delivery' => 'internal', 'patents' => 'neutral']]);
+    assert_same('complete', $guideComplete['body']['state'] ?? null, 'REST guide completion');
+    canonical_fields($guideComplete['body']['recommendation']);
+
+    $initialize = request_json($baseUrl, '/mcp', ['jsonrpc' => '2.0', 'id' => 20, 'method' => 'initialize', 'params' => ['protocolVersion' => '2025-11-25', 'capabilities' => [], 'clientInfo' => ['name' => 'contract-test', 'version' => '1.0']]]);
+    assert_same('2025-11-25', $initialize['body']['result']['protocolVersion'] ?? null, 'MCP protocol negotiation');
+    $protocolHeaders = ['MCP-Protocol-Version' => '2025-11-25'];
+    $modernTools = request_json($baseUrl, '/mcp', ['jsonrpc' => '2.0', 'id' => 21, 'method' => 'tools/list'], $protocolHeaders);
+    $toolNames = array_column($modernTools['body']['result']['tools'] ?? [], 'name');
+    assert_true(in_array('start_license_guide', $toolNames, true), 'MCP start guide tool');
+    assert_true(in_array('continue_license_guide', $toolNames, true), 'MCP continue guide tool');
+    $firstModernTool = $modernTools['body']['result']['tools'][0] ?? [];
+    assert_true(isset($firstModernTool['outputSchema'], $firstModernTool['annotations']), 'modern MCP tool metadata');
+    $mcpGuideStart = request_json($baseUrl, '/mcp', ['jsonrpc' => '2.0', 'id' => 22, 'method' => 'tools/call', 'params' => ['name' => 'start_license_guide', 'arguments' => ['mode' => 'quick']]], $protocolHeaders);
+    assert_same('openness', $mcpGuideStart['body']['result']['structuredContent']['nextQuestion']['key'] ?? null, 'MCP guide first question');
+    $resources = request_json($baseUrl, '/mcp', ['jsonrpc' => '2.0', 'id' => 23, 'method' => 'resources/list'], $protocolHeaders);
+    assert_true(in_array('licentia://guide/model', array_column($resources['body']['result']['resources'] ?? [], 'uri'), true), 'MCP guide resource');
+    $prompts = request_json($baseUrl, '/mcp', ['jsonrpc' => '2.0', 'id' => 24, 'method' => 'prompts/list'], $protocolHeaders);
+    assert_true(in_array('choose_license', array_column($prompts['body']['result']['prompts'] ?? [], 'name'), true), 'MCP guide prompt');
+    $forbiddenOrigin = request_json($baseUrl, '/mcp', ['jsonrpc' => '2.0', 'id' => 25, 'method' => 'ping'], ['Origin' => 'https://evil.example']);
+    assert_same(403, $forbiddenOrigin['status'], 'MCP rejects untrusted browser origins');
+
     $generatedFixture = [
         'id' => 'LIC-008-generated-fixture',
         'name' => 'Generated envelope fixture',
@@ -350,11 +383,11 @@ PHP_ROUTER
     assert_same($advancedEnvelope['body'], $advancedMcpResult, 'advanced REST and MCP result contracts must match');
 
     $invalidMcpEnvelope = request_json($baseUrl, '/mcp', ['jsonrpc' => '2.0', 'id' => 4, 'method' => 'tools/call', 'params' => ['name' => 'recommend_license', 'arguments' => ['mode' => 'advanced', 'requirements' => [], 'unexpected' => true]]]);
-    assert_same(400, $invalidMcpEnvelope['status'], 'invalid MCP recommendation envelope status');
+    assert_same(200, $invalidMcpEnvelope['status'], 'valid JSON-RPC transport returns protocol errors in a JSON-RPC response');
     assert_same(-32602, $invalidMcpEnvelope['body']['error']['code'] ?? null, 'invalid MCP recommendation envelope must use invalid params');
 
     $nonObjectMcpArguments = request_json($baseUrl, '/mcp', ['jsonrpc' => '2.0', 'id' => 5, 'method' => 'tools/call', 'params' => ['name' => 'recommend_license', 'arguments' => 'invalid']]);
-    assert_same(400, $nonObjectMcpArguments['status'], 'non-object MCP recommendation arguments status');
+    assert_same(200, $nonObjectMcpArguments['status'], 'non-object MCP arguments return a JSON-RPC protocol error');
     assert_same(-32602, $nonObjectMcpArguments['body']['error']['code'] ?? null, 'non-object MCP recommendation arguments must use invalid params');
 
     $malformedGenerated = $generatedFixture;

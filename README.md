@@ -84,12 +84,17 @@ Bez OAuth konfigurace fungují účty přes e-mail a heslo. Nadřazené adresá�
 
 Přihlašovací a registrační obrazovka nabízí také volitelnou cestu „Pokračovat bez registrace a přihlášení“. Účetní funkce zůstávají k dispozici; stav anonymního pracovního prostoru se ukládá pouze v `localStorage` prohlížeče a nepersistuje se na serveru ani k účtu.
 
-Po nahrání ověřte `/v1`, `/v1/licenses?q=MIT` a MCP inicializaci přes `POST /mcp`. Soubor `checksums.sha256` umožňuje ověřit úplnost přenosu.
+Po nahrání ověřte `/v1`, `/v1/openapi.json`, `/v1/licenses?q=MIT`, zahájení
+průvodce přes `POST /v1/guide` a MCP inicializaci přes `POST /mcp`. Soubor
+`checksums.sha256` umožňuje ověřit úplnost přenosu.
 
 Před nasazením veřejného API nastavte dlouhý náhodný rate-limit secret
 (`RATE_LIMIT_SECRET` v Cloudflare/procesním prostředí, nebo `rate_limit_secret`
 v Apache konfiguraci). `TRUSTED_PROXY_MODE=true` a příslušný proxy header
 zapínejte pouze za kontrolovaným ingress proxy.
+Browserové MCP klienty z jiných domén povolujte explicitně přes
+`MCP_ALLOWED_ORIGINS` (Apache: `mcp_allowed_origins`); vlastní origin a klienti
+bez hlavičky `Origin` fungují automaticky.
 
 ## Aktualizace dat
 

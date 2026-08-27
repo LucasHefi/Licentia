@@ -1,4 +1,4 @@
-export type RuntimeEnv = { DB?: D1Database; RATE_LIMIT_SECRET?: string; TRUSTED_PROXY_MODE?: string; TRUSTED_PROXY_HEADER?: string };
+export type RuntimeEnv = { DB?: D1Database; RATE_LIMIT_SECRET?: string; TRUSTED_PROXY_MODE?: string; TRUSTED_PROXY_HEADER?: string; MCP_ALLOWED_ORIGINS?: string };
 type RequestAdapter = Request & { remoteAddress?: string; ip?: string; cf?: { connectingIP?: string } };
 
 export const PUBLIC_LIMIT = 60;
@@ -8,7 +8,7 @@ const MAX_BODY_BYTES = 128 * 1024;
 
 async function runtimeEnv(): Promise<RuntimeEnv> {
   try { const workers = await import("cloudflare:workers"); return workers.env as RuntimeEnv; }
-  catch { const env = (globalThis as { process?: { env?: Record<string, string | undefined> } }).process?.env ?? {}; return { RATE_LIMIT_SECRET: env.RATE_LIMIT_SECRET, TRUSTED_PROXY_MODE: env.TRUSTED_PROXY_MODE, TRUSTED_PROXY_HEADER: env.TRUSTED_PROXY_HEADER }; }
+  catch { const env = (globalThis as { process?: { env?: Record<string, string | undefined> } }).process?.env ?? {}; return { RATE_LIMIT_SECRET: env.RATE_LIMIT_SECRET, TRUSTED_PROXY_MODE: env.TRUSTED_PROXY_MODE, TRUSTED_PROXY_HEADER: env.TRUSTED_PROXY_HEADER, MCP_ALLOWED_ORIGINS: env.MCP_ALLOWED_ORIGINS }; }
 }
 
 export function canonicalizeIp(value: string) {
@@ -81,3 +81,16 @@ export function boundedBody(request: Request) {
 }
 
 export function mergeHeaders(response: Response, extra: Headers) { const headers = new Headers(response.headers); extra.forEach((value, key) => headers.set(key, value)); return new Response(response.body, { status: response.status, headers }); }
+
+export async function mcpOriginGuard(request: Request, suppliedEnv?: RuntimeEnv) {
+  const origin = request.headers.get("origin");
+  if (!origin) return { headers: new Headers({ "Access-Control-Allow-Origin": "*" }) };
+  const env = suppliedEnv ?? await runtimeEnv();
+  const allowed = new Set([new URL(request.url).origin, ...(env.MCP_ALLOWED_ORIGINS ?? "").split(",").map((item) => item.trim()).filter(Boolean)]);
+  let normalized: string;
+  try { normalized = new URL(origin).origin; } catch { normalized = ""; }
+  if (!normalized || normalized !== origin || !allowed.has(normalized)) {
+    return Response.json({ jsonrpc: "2.0", id: null, error: { code: -32000, message: "Forbidden Origin header." } }, { status: 403, headers: { "Cache-Control": "no-store", "X-Content-Type-Options": "nosniff" } });
+  }
+  return { headers: new Headers({ "Access-Control-Allow-Origin": normalized, "Access-Control-Allow-Credentials": "true", Vary: "Origin" }) };
+}

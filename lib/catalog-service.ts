@@ -1,6 +1,6 @@
 import type { LicenseDetail, LicenseSummary } from "../components/types.ts";
 import { familyOf } from "./recommend.ts";
-import { parseRecommendationInput, recommendFromCatalog, runtimeSourceLockResolved, type GuideAnswers, type GuideMode } from "./recommendation-contract.ts";
+import { buildGuideModel, guideProgress, parseRecommendationInput, recommendFromCatalog, runtimeSourceLockResolved, type GuideAnswers, type GuideMode } from "./recommendation-contract.ts";
 
 export const DATA_VERSION = "3.28.0";
 
@@ -42,6 +42,31 @@ export function recommend(catalog: LicenseSummary[], input: GuideAnswers | Recor
   const knownIdentifiers = catalog.filter((item) => item.type === "license").map((item) => item.id);
   const knownExceptions = catalog.filter((item) => item.type === "exception").map((item) => item.id);
   return { dataVersion: DATA_VERSION, ...recommendFromCatalog(catalog, parsed.answers, { sourceLockResolved: runtimeSourceLockResolved(catalog), ruleVersion: "1.0.0", knownIdentifiers, knownExceptionIdentifiers: knownExceptions, guideMode: parsed.mode as GuideMode }) };
+}
+
+export function guideModel(mode?: unknown) {
+  if (mode !== undefined && mode !== "quick" && mode !== "advanced") throw new Error("Guide mode must be quick or advanced.");
+  const model = buildGuideModel();
+  return {
+    dataVersion: DATA_VERSION,
+    guideModelVersion: model.version,
+    modes: ["quick", "advanced"] as const,
+    mode: mode ?? null,
+    questions: mode ? model.questions.filter((question) => question.mode === mode) : model.questions,
+    stateless: true,
+    advisory: true,
+  };
+}
+
+export function continueGuide(catalog: LicenseSummary[], input: unknown) {
+  const progress = guideProgress(input);
+  return {
+    dataVersion: DATA_VERSION,
+    ...progress,
+    state: progress.complete ? "complete" as const : "awaiting-input" as const,
+    recommendation: progress.complete ? recommend(catalog, { mode: progress.mode, requirements: progress.answers }) : null,
+    advisory: true as const,
+  };
 }
 
 class ExpressionParser {

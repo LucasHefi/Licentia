@@ -15,4 +15,7 @@ return [
     'trusted_proxy_header' => 'HTTP_CF_CONNECTING_IP',
     // Replace with a long random secret before exposing the public API. Worker/process deployments use RATE_LIMIT_SECRET.
     'rate_limit_secret' => '',
+    // Extra browser origins allowed to call /mcp. Same-origin and clients
+    // without an Origin header are allowed automatically.
+    'mcp_allowed_origins' => [],
 ];

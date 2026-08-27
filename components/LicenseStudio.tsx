@@ -28,7 +28,6 @@ const guideQuestions = guideModel.questions.map((question) => ({
   hint: `${question.help} Model ${GUIDE_MODEL_VERSION}.`,
   options: question.options.map((option) => ({ ...option, description: question.help })),
 }));
-const quickGuideQuestionCount = guideQuestions.filter((question) => question.mode === "quick").length;
 
 
 const ecosystemSources = [
@@ -347,9 +346,6 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
     setGuideMode(nextMode);
     setGuideStep(0);
     guideRecorded.current = false;
-    // Answers are keyed by the versioned model, but clearing on a mode change
-    // prevents a hidden/conditional answer from making a new step look done.
-    setAnswers({});
   }
 
   const activeGuideQuestions = guideQuestions.filter((question) => question.mode === guideMode && (!question.showWhen || answers[question.showWhen.key] === question.showWhen.equals));
@@ -465,7 +461,7 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
           <div className="guide-intro">
             <span className="section-kicker light">Pravidlový průvodce</span>
             <h1>Vyberme vhodný licenční směr.</h1>
-             <p>{quickGuideQuestionCount} otázek zúží výběr licencí s dokončenou odbornou revizí. Aktuálně je jako doporučitelných schváleno {reviewedRecommendationCount}; bez revize průvodce nevydá kandidáta.</p>
+             <p>Otázky se přizpůsobí vašemu scénáři a zúží výběr licencí s dokončenou odbornou revizí. Aktuálně je jako doporučitelných schváleno {reviewedRecommendationCount}; bez revize průvodce nevydá kandidáta.</p>
             <div className="legal-note"><strong>Důležité</strong><span>Jde o orientační pomůcku, nikoli právní stanovisko. Kompatibilitu závislostí a konkrétní jurisdikci posuďte zvlášť.</span></div>
           </div>
           <div className="guide-panel">
@@ -475,7 +471,7 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
                 <h2>{currentQuestion.title}</h2><p className="question-hint">{currentQuestion.hint}</p>
                  <div className="answer-grid">
                   {currentQuestion.options.map((option) => (
-                    <button key={option.value} className={answers[currentQuestion.key] === option.value ? "chosen" : ""} onClick={() => setAnswers((current) => ({ ...current, [currentQuestion.key]: option.value }))}>
+                    <button key={option.value} type="button" aria-pressed={answers[currentQuestion.key] === option.value} className={answers[currentQuestion.key] === option.value ? "chosen" : ""} onClick={() => setAnswers((current) => ({ ...current, [currentQuestion.key]: option.value }))}>
                       <span className="radio-dot" /><strong>{option.label}</strong><small>{option.description}</small>
                     </button>
                   ))}

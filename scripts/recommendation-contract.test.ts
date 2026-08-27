@@ -152,8 +152,26 @@ test("the versioned guide has quick and advanced questions with conditional depe
   assert.ok(advanced.some((question) => question.key === "delivery"));
   assert.ok(advanced.some((question) => question.key === "dependencies"));
   assert.ok(advanced.some((question) => question.key === "patents"));
+  assert.ok(advanced.some((question) => question.key === "openness"));
+  assert.ok(advanced.some((question) => question.key === "commercialUse"));
+  assert.ok(advanced.some((question) => question.key === "notices"));
   const dependencyQuestion = advanced.find((question) => question.key === "dependencies");
   assert.deepEqual(dependencyQuestion?.showWhen, { key: "delivery", equals: "application" });
+});
+
+test("patent and obligation answers match the catalog semantics", () => {
+  const gpl = profile({
+    id: "GPL-3.0-only",
+    semantic: {
+      ...profile().semantic,
+      family: "strong-copyleft",
+      copyleftScope: "whole-work",
+      patentPosition: "retaliatory-termination",
+      obligations: ["disclose-source", "provide-corresponding-source", "same-license"],
+    },
+  });
+  assert.equal(recommendationEligibility(gpl, { patents: "important" }, context).eligible, true);
+  assert.equal(recommendationEligibility(gpl, { obligations: "minimal" }, context).eligible, false);
 });
 
 test("guide copy translates explanatory messages while preserving technical enum values", () => {

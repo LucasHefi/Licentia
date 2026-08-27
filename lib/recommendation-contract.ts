@@ -94,6 +94,16 @@ export interface GuideQuestion {
 
 export interface GuideModel { version: string; questions: readonly GuideQuestion[]; }
 
+export interface GuideProgress {
+  guideModelVersion: string;
+  mode: GuideMode;
+  answers: GuideAnswers;
+  activeQuestions: readonly GuideQuestion[];
+  progress: { answered: number; total: number; percent: number };
+  complete: boolean;
+  nextQuestion: GuideQuestion | null;
+}
+
 export interface RecommendationContext {
   sourceLockResolved: boolean;
   ruleVersion: string;
@@ -164,16 +174,21 @@ const uncertaintyOptions: readonly { value: AnswerState; label: string }[] = [
 const guideQuestions: GuideQuestion[] = [
   { id: "q-openness", key: "openness", mode: "quick", title: "Má zůstat software otevřený?", help: "Rozlišuje open-source větev od proprietární strategie.", options: [{ value: "open", label: "Ano" }, { value: "closed", label: "Povolím uzavřené použití" }, ...uncertaintyOptions] },
   { id: "q-project-form", key: "projectForm", mode: "quick", title: "Co distribuujete?", help: "Forma projektu určuje relevantní povinnosti.", options: [{ value: "application", label: "Aplikaci" }, { value: "library", label: "Knihovnu" }, { value: "service", label: "Službu" }, ...uncertaintyOptions] },
-  { id: "q-reciprocity", key: "reciprocity", mode: "quick", title: "Jaký rozsah sdílení změn chcete?", help: "Copyleft se může týkat souboru, knihovny, díla nebo síťového užití.", options: [{ value: "none", label: "Žádný" }, { value: "file", label: "Soubor" }, { value: "library", label: "Knihovna" }, { value: "strong", label: "Celé dílo" }, { value: "network", label: "Síťová služba" }, ...uncertaintyOptions] },
+  { id: "q-reciprocity", key: "reciprocity", mode: "quick", title: "Jaký rozsah sdílení změn chcete?", help: "Průvodce nyní nabízí rozsahy, pro které má katalog bezpečné kandidáty: žádný copyleft nebo celé dílo.", options: [{ value: "none", label: "Žádný" }, { value: "strong", label: "Celé dílo" }, ...uncertaintyOptions] },
   { id: "q-commercial-use", key: "commercialUse", mode: "quick", title: "Bude software komerčně použit?", help: "Neznámá odpověď nesmí splnit hard constraint.", options: [{ value: "allowed", label: "Ano" }, { value: "restricted", label: "Omezeně" }, ...uncertaintyOptions] },
   { id: "q-delivery-quick", key: "delivery", mode: "quick", title: "Jak software dodáte?", help: "Distribuce a SaaS aktivují odlišné povinnosti.", options: [{ value: "application", label: "Aplikace" }, { value: "library", label: "Knihovna" }, { value: "saas", label: "SaaS" }, { value: "internal", label: "Interně" }, ...uncertaintyOptions] },
   { id: "q-dependencies-quick", key: "dependencies", mode: "quick", title: "Jaké máte závislosti?", help: "U distribuované aplikace je potřeba nejprve ověřit licence závislostí.", options: uncertaintyOptions, showWhen: { key: "delivery", equals: "application" } },
   { id: "q-patents-quick", key: "patents", mode: "quick", title: "Jsou důležité patenty?", help: "Výslovné oprávnění je evidence-backed kritérium.", options: [{ value: "important", label: "Ano" }, { value: "neutral", label: "Neřeším" }, ...uncertaintyOptions] },
   { id: "q-delivery-advanced", key: "delivery", mode: "advanced", title: "Jak software dodáte?", help: "Distribuce a SaaS aktivují odlišné povinnosti.", options: [{ value: "application", label: "Aplikace" }, { value: "library", label: "Knihovna" }, { value: "saas", label: "SaaS" }, { value: "internal", label: "Interně" }, ...uncertaintyOptions] },
-  { id: "q-dependencies", key: "dependencies", mode: "advanced", title: "Jaké máte závislosti?", help: "SPDX výraz nebo SBOM lze ověřit bez tichého přijetí chyby.", options: uncertaintyOptions, showWhen: { key: "delivery", equals: "application" } },
+  { id: "q-dependencies-advanced", key: "dependencies", mode: "advanced", title: "Jaké máte závislosti?", help: "SPDX výraz nebo SBOM lze ověřit bez tichého přijetí chyby.", options: uncertaintyOptions, showWhen: { key: "delivery", equals: "application" } },
   { id: "q-copyleft-trigger", key: "copyleftTrigger", mode: "advanced", title: "Kdy se má povinnost aktivovat?", help: "Rozlišuje distribuci od síťového poskytnutí.", options: [{ value: "distribution", label: "Při distribuci" }, { value: "network", label: "I v síti" }, { value: "none", label: "Bez copyleftu" }, ...uncertaintyOptions] },
-  { id: "q-patents-advanced", key: "patents", mode: "advanced", title: "Jsou důležité patenty?", help: "Výslovné oprávnění je evidence-backed kritérium.", options: [{ value: "important", label: "Ano" }, { value: "neutral", label: "Neřeším" }, ...uncertaintyOptions] },
-  { id: "q-trademarks", key: "trademarks", mode: "advanced", title: "Potřebujete řešit ochranné známky?", help: "Licence obvykle neposkytuje trademark práva.", options: [{ value: "important", label: "Ano" }, { value: "neutral", label: "Ne" }, ...uncertaintyOptions] },
+  { id: "q-openness-advanced", key: "openness", mode: "advanced", title: "Má zůstat software otevřený?", help: "Rozlišuje open-source větev od proprietární strategie.", options: [{ value: "open", label: "Ano" }, { value: "closed", label: "Povolím uzavřené použití" }, ...uncertaintyOptions] },
+  { id: "q-project-form-advanced", key: "projectForm", mode: "advanced", title: "Co distribuujete?", help: "Forma projektu určuje relevantní povinnosti.", options: [{ value: "application", label: "Aplikaci" }, { value: "library", label: "Knihovnu" }, { value: "service", label: "Službu" }, ...uncertaintyOptions] },
+  { id: "q-reciprocity-advanced", key: "reciprocity", mode: "advanced", title: "Jaký rozsah sdílení změn chcete?", help: "Průvodce nyní nabízí rozsahy, pro které má katalog bezpečné kandidáty: žádný copyleft nebo celé dílo.", options: [{ value: "none", label: "Žádný" }, { value: "strong", label: "Celé dílo" }, ...uncertaintyOptions] },
+  { id: "q-commercial-use-advanced", key: "commercialUse", mode: "advanced", title: "Bude software komerčně použit?", help: "Neznámá odpověď nesmí splnit hard constraint.", options: [{ value: "allowed", label: "Ano" }, { value: "restricted", label: "Omezeně" }, ...uncertaintyOptions] },
+  { id: "q-patents-advanced", key: "patents", mode: "advanced", title: "Jsou důležité patenty?", help: "Posuzuje se existence patentového oprávnění i obranné ukončení.", options: [{ value: "important", label: "Ano" }, { value: "neutral", label: "Neřeším" }, ...uncertaintyOptions] },
+  { id: "q-notices-advanced", key: "notices", mode: "advanced", title: "Jakou zátěž oznámení zvládnete?", help: "Rozlišuje licence bez notice povinnosti od standardních a materiálních oznámení.", options: [{ value: "minimal", label: "Minimum" }, { value: "standard", label: "Standard" }, ...uncertaintyOptions] },
+  { id: "q-trademarks", key: "trademarks", mode: "advanced", title: "Potřebujete řešit ochranné známky?", help: "Licence obvykle neposkytuje trademark práva; omezení se zobrazí jako upozornění.", options: [{ value: "important", label: "Ano" }, { value: "neutral", label: "Ne" }, ...uncertaintyOptions] },
   { id: "q-obligations", key: "obligations", mode: "advanced", title: "Jaké povinnosti zvládnete?", help: "Notices, zdroj a instalační informace se posuzují explicitně.", options: [{ value: "minimal", label: "Minimum" }, { value: "notices", label: "Notices" }, { value: "source", label: "Zdroj" }, { value: "installation", label: "Zdroj a instalace" }, ...uncertaintyOptions] },
 ];
 
@@ -531,6 +546,49 @@ function nextActiveQuestion(answers: GuideAnswers, mode: GuideMode): keyof Guide
   return undefined;
 }
 
+/**
+ * Builds a stateless, API-safe guide cursor from cumulative answers. Hidden
+ * conditional answers are deliberately removed so they cannot influence a
+ * recommendation after the branch that exposed them is changed.
+ */
+export function guideProgress(value: unknown): GuideProgress {
+  if (!answerRecord(value)) throw new Error("Guide input must be an object with mode and answers.");
+  const outerKeys = Object.keys(value);
+  if (!outerKeys.every((key) => key === "mode" || key === "answers")) throw new Error("Guide input may contain only mode and answers.");
+  const mode = value.mode ?? DEFAULT_NON_UI_GUIDE_MODE;
+  if (mode !== "quick" && mode !== "advanced") throw new Error("Guide mode must be quick or advanced.");
+  const rawAnswers = value.answers ?? {};
+  const safeAnswers = safeAnswerRecord(rawAnswers);
+  if (!safeAnswers) throw new Error("Guide answers must be an object.");
+
+  const modelQuestions = buildGuideModel().questions.filter((question) => question.mode === mode);
+  const modelKeys = new Set(modelQuestions.map((question) => question.key));
+  for (const [key, answer] of Object.entries(safeAnswers)) {
+    if (!Object.hasOwn(answerValues, key) || !modelKeys.has(key as keyof GuideAnswers)) throw new Error(`answers.${key}: field is not part of the ${mode} guide.`);
+    if (typeof answer !== "string" || answer.length === 0 || answer.length > 4096) throw new Error(`answers.${key}: expected a non-empty string up to 4096 characters.`);
+    if (key !== "dependencies" && !answerValues[key as keyof GuideAnswers].includes(answer) && !uncertaintyStates.has(answer)) throw new Error(`answers.${key}: invalid value.`);
+  }
+
+  const activeQuestions = modelQuestions.filter((question) => !question.showWhen || safeAnswers[question.showWhen.key] === question.showWhen.equals);
+  const activeKeys = new Set(activeQuestions.map((question) => question.key));
+  const answers: GuideAnswers = {};
+  for (const [key, answer] of Object.entries(safeAnswers)) {
+    if (activeKeys.has(key as keyof GuideAnswers)) (answers as Record<string, unknown>)[key] = answer;
+  }
+  const answered = activeQuestions.filter((question) => typeof answers[question.key] === "string").length;
+  const nextQuestion = activeQuestions.find((question) => answers[question.key] === undefined) ?? null;
+  const total = activeQuestions.length;
+  return {
+    guideModelVersion: GUIDE_MODEL_VERSION,
+    mode,
+    answers,
+    activeQuestions,
+    progress: { answered, total, percent: total === 0 ? 100 : Math.round((answered / total) * 100) },
+    complete: nextQuestion === null,
+    nextQuestion,
+  };
+}
+
 function activeGuideMode(context: RecommendationContext): GuideMode {
   return context.guideMode ?? DEFAULT_NON_UI_GUIDE_MODE;
 }
@@ -569,7 +627,7 @@ function match(profile: MetadataLicenseProfile, answers: GuideAnswers): { score:
   const reciprocity: Record<string, CopyleftScope> = { none: "none", file: "file", library: "library", strong: "whole-work", network: "network" };
   const reciprocityScope = typeof answers.reciprocity === "string" ? reciprocity[answers.reciprocity] : undefined;
   if (reciprocityScope !== undefined && semantic.copyleftScope === reciprocityScope) add("copyleftScope", 20, `matches reciprocity=${answers.reciprocity}`);
-  if (answers.patents === "important" && semantic.patentPosition === "express-grant") add("patentPosition", 12, "matches patents=important");
+  if (answers.patents === "important" && ["express-grant", "defensive-termination", "retaliatory-termination"].includes(semantic.patentPosition)) add("patentPosition", semantic.patentPosition === "express-grant" ? 12 : 8, "matches patents=important");
   if (answers.patents === "neutral" && knownPatents.has(semantic.patentPosition)) add("patentPosition", 4, "matches patents=neutral");
   if (answers.notices === "minimal" && ["minimal", "none"].includes(semantic.noticeBurden)) add("noticeBurden", 8, "matches notices=minimal");
   if (answers.notices === "standard" && ["standard", "material"].includes(semantic.noticeBurden)) add("noticeBurden", 5, "matches notices=standard");
@@ -628,7 +686,7 @@ function recommendationEligibilityUnsafe(profile: MetadataLicenseProfile, answer
   const reciprocityScopes: Record<string, CopyleftScope> = { none: "none", file: "file", library: "library", strong: "whole-work", network: "network" };
   const reciprocityScope = typeof safeAnswers?.reciprocity === "string" ? reciprocityScopes[safeAnswers.reciprocity] : undefined;
   if (reciprocityScope !== undefined && profile.semantic.copyleftScope !== reciprocityScope) exclusion(result, `semantic.copyleftScope: required ${reciprocityScope} is not evidenced`);
-  if (safeAnswers?.patents === "important" && profile.semantic.patentPosition !== "express-grant") exclusion(result, "semantic.patentPosition: express grant is not evidenced");
+  if (safeAnswers?.patents === "important" && !["express-grant", "defensive-termination", "retaliatory-termination"].includes(profile.semantic.patentPosition)) exclusion(result, "semantic.patentPosition: a patent grant or defensive termination is not evidenced");
   if (safeAnswers?.notices === "minimal" && !["minimal", "none"].includes(profile.semantic.noticeBurden)) exclusion(result, "semantic.noticeBurden: minimal burden is not evidenced");
   if (safeAnswers?.notices === "standard" && !["standard", "material"].includes(profile.semantic.noticeBurden)) exclusion(result, "semantic.noticeBurden: standard burden is not evidenced");
   if (safeAnswers?.commercialUse === "allowed") {
@@ -651,6 +709,10 @@ function recommendationEligibilityUnsafe(profile: MetadataLicenseProfile, answer
   if (safeAnswers?.obligations === "notices" && !profile.semantic?.obligations?.some((value) => ["include-notice", "include-copyright", "include-license-text"].includes(value))) exclusion(result, "semantic.obligations: notice obligations are not evidenced");
   if (safeAnswers?.obligations === "source" && !profile.semantic?.obligations?.some((value) => ["disclose-source", "provide-corresponding-source"].includes(value))) exclusion(result, "semantic.obligations: source obligation is not evidenced");
   if (safeAnswers?.obligations === "installation" && !profile.semantic?.obligations?.includes("provide-installation-information")) exclusion(result, "semantic.obligations: installation information is not evidenced");
+  if (safeAnswers?.obligations === "minimal") {
+    const heavyObligations = ["disclose-source", "network-use-disclose", "provide-corresponding-source", "provide-installation-information", "same-license", "mark-modifications"];
+    if (profile.semantic?.obligations?.some((value) => heavyObligations.includes(value))) exclusion(result, "semantic.obligations: minimum-burden requirement is not met");
+  }
   for (const key of ["versionStrategy", "dualLicensing", "futureDistribution"] as const) {
     if (safeAnswers?.[key] !== undefined) {
       result.unsupportedFields.push(`semantic.${key}`);
@@ -725,7 +787,9 @@ function recommendFromProfilesUnsafe(profiles: readonly MetadataLicenseProfile[]
   const equalFit = candidates.length > 1 && candidates[0]?.fit === candidates[1]?.fit;
   if (equalFit) trace.push("equal fit preserved; deterministic ID order is not a fabricated score difference");
   const nextQuestion = nextActiveQuestion(safeAnswers, activeGuideMode(context));
-  const guidance = [...new Set(exclusionReasons)];
+  // Do not surface catalog-wide readiness failures next to valid candidates;
+  // they describe excluded profiles rather than the user's selected constraints.
+  const guidance = [...new Set(exclusionReasons.filter((reason) => !/^(review\.|context\.sourceLockResolved|sourceFingerprint\.|evidence:)/.test(reason)))];
   const unknowns = [...new Set(candidates.flatMap((candidate) => candidate.unknowns.map((field) => `${candidate.id}: ${field}`)))];
   if (unknowns.length) {
     trace.push("insufficient semantic evidence prevents a recommendation claim");

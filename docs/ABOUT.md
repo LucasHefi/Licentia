@@ -74,6 +74,8 @@ API je určeno pro čtení katalogu a pro explicitní vstupy nástrojů. Příkl
 ```text
 GET  /v1/licenses?q=apache&osi=true
 GET  /v1/licenses/Apache-2.0/text
+GET  /v1/openapi.json
+POST /v1/guide
 POST /v1/recommendations
 POST /v1/compatibility/check
 MCP  /mcp

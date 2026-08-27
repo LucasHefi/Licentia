@@ -36,74 +36,179 @@ GitHub rules ─┘                         │
 
 Synchronizace musí být reprodukovatelná podle upstream verze, ukládat SHA-256 každého znění a nikdy tiše nepřepsat vydaný snapshot. Vlastní klasifikace a překlady musí být oddělené od kanonického textu a opatřené zdrojem, verzí pravidel a datem revize.
 
-## REST API
+## REST API 1.1
 
-### Anonymous access policy
-
-The anonymous public allowlist is limited to `/v1` discovery and the documented
-`/v1/licenses`, `/v1/exceptions`, `/v1/versions`, `/v1/snapshots/{version}`,
-`/v1/recommendations`, `/v1/expressions/validate`, `/v1/compatibility/check`,
-`/v1/sbom/analyze`, and `/mcp` endpoints. `/api/state` and `/api/auth/*` remain
-protected application routes and are never part of the public allowlist.
-
-### Apache anonymous workspace
-
-The Apache login/registration screen also offers “Pokračovat bez registrace a
-přihlášení”. Account features remain available for signed-in users, while an
-anonymous workspace is kept only in browser `localStorage`; it has no server or
-account persistence. This does not change the protected `/api/state` and
-`/api/auth/*` boundary.
-
-GET requests use a 60 requests/minute/IP bucket; POST and MCP requests use a
-20 requests/minute/IP bucket. Responses expose `RateLimit-Limit`,
-`RateLimit-Remaining`, and `RateLimit-Reset`; exhausted requests return 429 and
-`Retry-After`. Rate-limit storage errors fail closed with 503. Requests larger
-than 128 KiB are rejected. In direct mode the adapter must provide the actual
-remote address; `X-Forwarded-For` is never trusted. Set `TRUSTED_PROXY_MODE=true`
-and explicitly configure `TRUSTED_PROXY_HEADER` (or use Cloudflare's
-`CF-Connecting-IP`) only when the ingress proxy is trusted. If no address is
-available, the public request is rejected rather than placed in a shared bucket.
-Configure a long random `RATE_LIMIT_SECRET` in the Cloudflare Worker binding or
-the process environment; it is required for the web limiter and missing secrets
-fail closed with 503. The same prerequisite applies to the Apache example's
-`rate_limit_secret` before deployment. Trusted proxy mode and its header must
-only be enabled when the ingress proxy is controlled by the deployment.
+Webová i Apache varianta poskytují stejný veřejný kontrakt. `GET /v1` vrací
+discovery dokument a `GET /v1/openapi.json` úplný strojově čitelný popis ve
+formátu OpenAPI 3.1. Všechny JSON požadavky používají `Content-Type:
+application/json`.
 
 | Metoda | Endpoint | Účel |
 |---|---|---|
-| `GET` | `/v1/licenses` | hledání a filtrování licencí |
-| `GET` | `/v1/licenses/{id}` | metadata, profil a provenance |
-| `GET` | `/v1/licenses/{id}/text` | kanonické znění jako text nebo JSON |
-| `GET` | `/v1/exceptions/{id}` | licenční výjimka |
+| `GET` | `/v1/openapi.json` | OpenAPI 3.1 dokumentace |
+| `GET` | `/v1/licenses` | hledání a filtrování licencí a výjimek |
+| `GET` | `/v1/licenses/{id}` | metadata, profil, evidence a kanonické znění |
+| `GET` | `/v1/licenses/{id}/text` | kanonické znění jako `text/plain` |
+| `GET` | `/v1/exceptions/{id}` | detail licenční výjimky |
 | `GET` | `/v1/versions` | dostupné snapshoty SPDX |
-| `POST` | `/v1/recommendations` | vysvětlitelné skóre nad explicitními vstupy |
-| `POST` | `/v1/expressions/validate` | syntaktická kontrola SPDX výrazu |
-| `POST` | `/v1/compatibility/check` | kontextová kontrola kombinace komponent |
-| `POST` | `/v1/sbom/analyze` | souhrn licencí a rizik v SPDX/CycloneDX SBOM |
+| `GET` | `/v1/guide` | celý verzovaný model průvodce |
+| `POST` | `/v1/guide` | zahájení nebo pokračování bezstavového průvodce |
+| `POST` | `/v1/recommendations` | přímé vyhodnocení již známých požadavků |
+| `POST` | `/v1/expressions/validate` | kontrola syntaxe a identifikátorů SPDX výrazu |
+| `POST` | `/v1/compatibility/check` | orientační kontrola kombinace komponent |
+| `POST` | `/v1/sbom/analyze` | souhrn licencí v SPDX/CycloneDX JSON SBOM |
 
-Odpověď doporučení má vracet `rule_version`, kandidáty, bodové příspěvky jednotlivých pravidel, varování a odkazy na zdroje. Nemá vydávat binární verdikt „legální/nelegální“.
+### Průvodce přes API
 
-Kontrola kompatibility vždy vrací stav vyžadující lidské posouzení; rodina licence sama o sobě kompatibilitu neprokazuje. SBOM analyzátor čte pouze licenční pole dokumentu (například `licenseDeclared`, `licenseConcluded`, `licenses` a `expression`), aby názvy balíčků nebo volný popis nevytvářely falešné nálezy.
+Průvodce je bezstavový. Server nevydává session ID a neukládá odpovědi. Klient
+v každém volání posílá režim a všechny dosud získané odpovědi. Díky tomu lze
+požadavek bezpečně opakovat, přenášet mezi instancemi a auditovat. Pokud změna
+odpovědi deaktivuje podmíněnou otázku (například závislosti), server její starou
+odpověď z výsledného kurzoru odstraní.
 
-## MCP server
+Model rychlého režimu:
 
-Resources:
+```http
+GET /v1/guide?mode=quick
+```
 
-- `spdx://licenses/{id}`
-- `spdx://exceptions/{id}`
-- `spdx://versions/{version}/licenses/{id}`
-- `licentia://profiles/{id}`
+Zahájení průvodce:
+
+```http
+POST /v1/guide
+Content-Type: application/json
+
+{"mode":"quick","answers":{}}
+```
+
+Odpověď obsahuje `guideModelVersion`, normalizované `answers`, právě aktivní
+`activeQuestions`, počítadlo `progress`, stav `awaiting-input` a celý objekt
+`nextQuestion` včetně povolených voleb. Pokračování používá kumulativní
+odpovědi:
+
+```json
+{
+  "mode": "quick",
+  "answers": {
+    "openness": "open",
+    "projectForm": "application",
+    "reciprocity": "none",
+    "commercialUse": "allowed",
+    "delivery": "internal",
+    "patents": "neutral"
+  }
+}
+```
+
+Po zodpovězení všech aktivních otázek je `state` rovno `complete`,
+`nextQuestion` je `null` a pole `recommendation` obsahuje stejný kanonický
+výsledek jako `/v1/recommendations`. Do té doby je `recommendation` vždy `null`.
+Volby `unknown`, `not-applicable` a `undecided` jsou legitimní odpovědi
+průvodce, ale doporučovací engine s nimi pracuje fail-closed a nevydává je za
+jisté doporučení.
+
+Pro jednorázové vyhodnocení bez dialogu lze nadále poslat přímo odpovědi nebo
+obálku s explicitním režimem:
+
+```json
+{"mode":"advanced","requirements":{"delivery":"saas","copyleftTrigger":"network"}}
+```
+
+Výsledek vždy obsahuje verzi dat, modelu a pravidel, auditní `trace`, konflikty,
+neznámé hodnoty, povinnosti, kandidáty a evidenci. Jde o orientační pomůcku,
+nikoli binární verdikt „legální/nelegální“.
+
+### Přístup, limity a chyby
+
+Veřejný allowlist zahrnuje discovery `/v1`, všechny výše popsané `/v1/*`
+endpointy a `/mcp`. `/api/state` a `/api/auth/*` jsou oddělené aplikační cesty a
+nejsou součástí veřejného API. Apache anonymní pracovní prostor zůstává pouze v
+`localStorage`; stav účtu ani privátní API tím nejsou zpřístupněny.
+
+GET používá limit 60 požadavků za minutu a IP, POST a MCP 20 požadavků.
+Odpovědi obsahují `RateLimit-Limit`, `RateLimit-Remaining` a `RateLimit-Reset`;
+při vyčerpání vracejí 429 a `Retry-After`. Výpadek úložiště limiteru nebo
+neurčitelná adresa klienta skončí fail-closed stavem 503. Tělo požadavku je
+omezeno na 128 KiB.
+
+V přímém režimu se nepoužívá `X-Forwarded-For`. `TRUSTED_PROXY_MODE=true` a
+`TRUSTED_PROXY_HEADER` (Apache: `trusted_proxy` a `trusted_proxy_header`) se smí
+zapnout pouze za řízenou ingress proxy. Web vyžaduje dlouhý
+`RATE_LIMIT_SECRET`, Apache `rate_limit_secret`.
+
+## MCP server 1.1
+
+Endpoint `/mcp` implementuje Streamable HTTP s JSON odpověďmi. Neposkytuje
+serverový SSE stream, takže `GET /mcp` korektně vrací 405. Každá zpráva klienta
+se posílá samostatným `POST`; notifikace a odpovědi přijaté od klienta končí
+stavem 202 bez těla.
+
+Server podporuje stabilní revize `2025-11-25`, `2025-06-18` a `2025-03-26`.
+Klient navrhne revizi v `initialize.params.protocolVersion`; ve všech dalších
+požadavcích ji posílá v hlavičce `MCP-Protocol-Version`. Bez hlavičky se kvůli
+zpětné kompatibilitě předpokládá `2025-03-26`. Server je bezstavový a nevydává
+`MCP-Session-Id`.
+
+Inicializace:
+
+```bash
+curl -sS https://example.cz/mcp \
+  -H 'Content-Type: application/json' \
+  -H 'Accept: application/json, text/event-stream' \
+  --data '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"2025-11-25","capabilities":{},"clientInfo":{"name":"example","version":"1.0"}}}'
+```
+
+Následující volání nástroje:
+
+```bash
+curl -sS https://example.cz/mcp \
+  -H 'Content-Type: application/json' \
+  -H 'Accept: application/json, text/event-stream' \
+  -H 'MCP-Protocol-Version: 2025-11-25' \
+  --data '{"jsonrpc":"2.0","id":2,"method":"tools/call","params":{"name":"start_license_guide","arguments":{"mode":"quick"}}}'
+```
+
+### MCP capabilities
 
 Tools:
 
-- `search_licenses(query, filters)`
-- `get_license_text(id, version)`
-- `compare_licenses(ids, context)`
-- `recommend_license(requirements)`
-- `validate_spdx_expression(expression)`
-- `analyze_sbom(document, distribution_context)`
+- `search_licenses` — katalogové hledání a filtry;
+- `get_license` — detail, provenance a úplné znění licence nebo výjimky;
+- `compare_licenses` — orientační kontrola kombinace;
+- `start_license_guide` — první krok rychlého nebo pokročilého průvodce;
+- `continue_license_guide` — další krok z kumulativních odpovědí;
+- `recommend_license` — přímé vyhodnocení známých požadavků;
+- `validate_spdx_expression` — syntaktická a identifikátorová kontrola;
+- `analyze_sbom` — analýza licenčních polí JSON SBOM.
 
-MCP odpovědi musí odlišovat kanonická data, kurátorované metadata a odvozené doporučení. Každý právně významný závěr má obsahovat upozornění, že nejde o právní stanovisko.
+Resources:
+
+- `licentia://guide/model`;
+- `licentia://api/discovery`;
+- šablony `spdx://licenses/{id}` a `spdx://exceptions/{id}`.
+
+Prompt `choose_license` instruuje klienta, aby použil průvodce po jedné otázce a
+neprezentoval výsledek jako právní radu. Moderní definice nástrojů obsahují
+`title`, read-only/idempotent anotace a `outputSchema`. Výsledek nástroje vrací
+jak JSON text pro kompatibilitu, tak `structuredContent` a `isError`.
+
+Neplatná JSON-RPC obálka používá standardní kódy `-32700` nebo `-32600` a HTTP
+400. Chyby platného JSON-RPC požadavku (`-32601`, `-32602`) jsou JSON-RPC
+odpovědi přes HTTP 200. Provozní chyba nástroje se vrací jako tool result s
+`isError: true`, aby ji model mohl opravit. Neznámá nebo nepodporovaná revize v
+hlavičce končí HTTP 400.
+
+### Bezpečnost browserových MCP klientů
+
+Pokud požadavek obsahuje `Origin`, server jej povolí jen pro vlastní origin nebo
+explicitní allowlist. Web používá čárkou oddělené `MCP_ALLOWED_ORIGINS`, Apache
+pole `mcp_allowed_origins`. CLI a serverové klienty bez hlavičky `Origin` toto
+nastavení neomezuje. Není vhodné povolit univerzální browserový origin.
+
+Implementace sleduje oficiální specifikaci MCP pro
+[transport](https://modelcontextprotocol.io/specification/2025-11-25/basic/transports),
+[životní cyklus](https://modelcontextprotocol.io/specification/2025-11-25/basic/lifecycle)
+a [tools](https://modelcontextprotocol.io/specification/2025-06-18/server/tools).
 
 ## Další produkty ekosystému
 

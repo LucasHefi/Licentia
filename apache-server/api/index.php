@@ -352,7 +352,7 @@ function validate_expression(string $expression): array {
     }
 }
 
-function validate_guide_answers(array $answers): array {
+function validate_guide_answers(array $answers, bool $allowUncertainty = false): array {
     $allowed = [
         'openness' => ['open', 'closed'], 'reciprocity' => ['none', 'file', 'library', 'strong', 'network'],
         'delivery' => ['library', 'application', 'saas', 'internal'], 'patents' => ['important', 'neutral'],
@@ -367,18 +367,23 @@ function validate_guide_answers(array $answers): array {
     foreach ($answers as $key => $value) {
         if ($key === 'dependencies') {
             if (!is_string($value)) { $errors[] = 'answers.dependencies: invalid value type'; $unsupported[] = 'answers.dependencies'; continue; }
-            if (in_array(strtolower($value), $uncertain, true)) { $errors[] = "answers.dependencies: uncertainty state $value is not recommendable"; $missing[] = 'answers.dependencies'; continue; }
+            if (in_array(strtolower($value), $uncertain, true)) {
+                if ($allowUncertainty) continue;
+                $errors[] = "answers.dependencies: uncertainty state $value is not recommendable"; $missing[] = 'answers.dependencies'; continue;
+            }
             $parsed = validate_expression($value);
             if (!$parsed['valid']) { $errors[] = 'answers.dependencies: ' . ($parsed['errors'][0] ?? 'invalid dependency expression'); $unsupported[] = 'answers.dependencies'; }
             continue;
         }
         if (!array_key_exists($key, $allowed)) { $errors[] = "answers.$key: unknown answer key"; $unsupported[] = "answers.$key"; continue; }
         if (!is_string($value)) { $errors[] = "answers.$key: invalid value type"; $unsupported[] = "answers.$key"; continue; }
-        if (in_array($value, $uncertain, true)) { $errors[] = "answers.$key: uncertainty state $value is not recommendable"; $missing[] = "answers.$key"; continue; }
+        if (in_array($value, $uncertain, true)) {
+            if ($allowUncertainty) continue;
+            $errors[] = "answers.$key: uncertainty state $value is not recommendable"; $missing[] = "answers.$key"; continue;
+        }
         if (!in_array($value, $allowed[$key], true)) { $errors[] = "answers.$key: invalid enum value"; $unsupported[] = "answers.$key"; continue; }
         if ($key === 'jurisdiction') { $errors[] = 'jurisdiction: unsupported until metadata provides jurisdiction'; $unsupported[] = 'jurisdiction'; }
         if (in_array($key, ['versionStrategy', 'dualLicensing', 'futureDistribution'], true)) { $errors[] = "semantic.$key: no validated metadata field exists"; $unsupported[] = "semantic.$key"; }
-        if ($key === 'commercialUse' && $value === 'restricted') { $errors[] = 'semantic.commercialUse: commercialUse=restricted is not represented by the metadata contract'; $unsupported[] = 'semantic.commercialUse'; }
     }
     if (($answers['delivery'] ?? null) === 'application' && !array_key_exists('dependencies', $answers)) { $errors[] = 'answers.dependencies: dependency analysis is required for application delivery'; $missing[] = 'dependencies'; }
     return ['valid' => !$errors, 'errors' => $errors, 'missing' => array_values(array_unique($missing)), 'unsupported' => array_values(array_unique($unsupported))];
@@ -388,7 +393,7 @@ function dependency_analysis_state(array $answers): string {
     if (!array_key_exists('dependencies', $answers)) return 'not-requested';
     if (!is_string($answers['dependencies'])) return 'malformed';
     $expression = trim($answers['dependencies']);
-    if (strtolower($expression) === 'unknown') return 'unknown';
+    if (in_array(strtolower($expression), ['unknown', 'not-applicable', 'undecided'], true)) return 'unknown';
     $parsed = validate_expression($expression);
     if ($parsed['valid']) return 'valid';
     $known = [];
@@ -430,15 +435,30 @@ function canonical_recommendation(array $answers, string $mode = 'quick'): array
         ? 'dependencies'
         : guide_next_question($answers, $mode);
     if ($nextQuestion !== null) $result['nextQuestion'] = $nextQuestion;
-    $validation = validate_guide_answers($answers);
+    $validation = validate_guide_answers($answers, true);
     if (!$validation['valid']) { $result['unknowns'] = $validation['missing']; $result['conflicts'] = $validation['unsupported']; $result['guidance'] = $validation['errors']; $result['trace'] = array_merge($result['trace'], $validation['errors']); return $result; }
-    if ($proprietary) { $result['guidance'][] = 'Proprietary or source-available intent requires separate terms; no OSI/open-source recommendation is shown.'; $result['trace'][] = 'open-source candidates suppressed for proprietary branch'; return $result; }
+    if ($proprietary) { $result['guidance'][] = 'Proprietární nebo source-available záměr zůstává viditelný pro porovnání; open-source kandidáti nejsou právní doporučení a samostatné podmínky musí posoudit právník.'; $result['trace'][] = 'proprietary or source-available intent retained for score comparison'; }
     $profiles = [];
     foreach (catalog() as $record) { $profile = metadata_profile(is_array($record) ? $record : []); if ($profile !== null) $profiles[] = $profile; }
     if (!$profiles) { $result['unknowns'][] = 'catalog metadata'; $result['guidance'][] = 'No safe match: runtime catalog metadata is absent or unresolved. Review evidence before recommending a license.'; return $result; }
+    $uncertain = ['unknown', 'not-applicable', 'undecided'];
+    $scoringAnswers = array_filter($answers, static fn($value): bool => !is_string($value) || !in_array(strtolower($value), $uncertain, true));
+    $scoreMax = 0;
+    if (array_key_exists('openness', $scoringAnswers)) $scoreMax += 10;
+    if (array_key_exists('commercialUse', $scoringAnswers) && in_array($scoringAnswers['commercialUse'], ['allowed', 'restricted'], true)) $scoreMax += 10;
+    if (array_key_exists('reciprocity', $scoringAnswers)) $scoreMax += 20;
+    if (array_key_exists('patents', $scoringAnswers)) $scoreMax += 12;
+    if (($scoringAnswers['notices'] ?? null) === 'minimal') $scoreMax += 8;
+    if (($scoringAnswers['notices'] ?? null) === 'standard') $scoreMax += 5;
+    if (array_key_exists('copyleftTrigger', $scoringAnswers)) $scoreMax += 15;
+    if (($scoringAnswers['trademarks'] ?? null) === 'important') $scoreMax += 6;
+    if (array_key_exists('obligations', $scoringAnswers)) $scoreMax += match ($scoringAnswers['obligations']) { 'notices' => 8, 'source' => 12, 'installation' => 14, 'minimal' => 12, default => 0 };
     $candidates = []; $unknowns = []; $conflicts = [];
     foreach ($profiles as $profile) {
-        $candidate = metadata_candidate($profile, $answers);
+        $candidate = metadata_candidate($profile, $scoringAnswers);
+        $candidate['score'] = $scoreMax === 0 ? 0 : (int)round(($candidate['score'] / $scoreMax) * 100);
+        $candidate['fit'] = $candidate['score'];
+        if (!$candidate['unknowns'] && !$candidate['conflicts'] && $scoreMax === 0) $candidate['status'] = 'review required';
         $candidates[] = $candidate;
         $conflicts = array_merge($conflicts, $candidate['conflicts']);
         $unknowns = array_merge($unknowns, array_map(static fn($field) => $candidate['id'] . ': ' . $field, $candidate['unknowns']));
@@ -449,8 +469,12 @@ function canonical_recommendation(array $answers, string $mode = 'quick'): array
     $result['candidates'] = array_slice($candidates, 0, 5); $result['alternatives'] = array_slice($candidates, 5);
     $result['obligations'] = $candidates[0]['obligations'];
     $result['guidance'][] = 'Licence se řadí podle skóre odpovědí; nedostatky jsou uvedené u každého kandidáta.';
-    if ($result['unknowns']) { $result['outcome'] = 'insufficient-evidence'; $result['guidance'][] = 'Insufficient evidence remains in candidate metadata; no recommendation claim is made.'; $result['trace'][] = 'insufficient semantic evidence prevents a recommendation claim'; }
+    if ($scoreMax === 0) { $result['outcome'] = 'insufficient-evidence'; $result['guidance'][] = 'Nebyl zadán žádný konkrétní požadavek; licence jsou zobrazené s nulovým skóre.'; $result['trace'][] = 'no concrete requirement was available for scoring'; }
+    elseif ($result['unknowns']) { $result['outcome'] = 'insufficient-evidence'; $result['guidance'][] = 'Insufficient evidence remains in candidate metadata; no recommendation claim is made.'; $result['trace'][] = 'insufficient semantic evidence prevents a recommendation claim'; }
     else $result['outcome'] = 'recommendation';
+    if (($answers['commercialUse'] ?? null) === 'restricted') { $result['guidance'][] = 'Omezení komerčního použití není v metadatech ověřitelné; kandidáti jsou proto pouze k ruční kontrole.'; }
+    if ($proprietary || (($answers['commercialUse'] ?? null) === 'restricted')) $result['outcome'] = 'insufficient-evidence';
+    if (array_key_exists('dependencies', $answers) && is_string($answers['dependencies']) && in_array(strtolower(trim($answers['dependencies'])), $uncertain, true)) $result['guidance'][] = 'Závislosti byly označeny jako neznámé; skóre nezohledňuje jejich kompatibilitu.';
     return $result;
 }
 
@@ -589,6 +613,7 @@ function metadata_candidate(array $profile, array $answers): array {
     if (($answers['notices'] ?? null) === 'standard' && !in_array($semantic['noticeBurden'], ['standard', 'material'], true)) $conflicts[] = 'semantic.noticeBurden: standard burden is not evidenced';
     if (($answers['commercialUse'] ?? null) === 'allowed' && !in_array('commercial-use', $semantic['permissions'], true)) $conflicts[] = 'semantic.permissions: commercial-use permission is not evidenced';
     if (($answers['commercialUse'] ?? null) === 'restricted') $conflicts[] = 'semantic.commercialUse: commercialUse=restricted is not represented by the metadata contract';
+    if (in_array($answers['proprietary'] ?? null, ['preferred', 'required'], true)) $conflicts[] = 'semantic.proprietary: proprietary intent requires separate terms';
     if (array_key_exists('copyleftTrigger', $answers)) {
         $trigger = $answers['copyleftTrigger'] === 'network' ? 'network-use' : ($answers['copyleftTrigger'] === 'distribution' ? 'distribution' : null);
         if ($answers['copyleftTrigger'] === 'none' && $semantic['copyleftScope'] !== 'none') $conflicts[] = 'semantic.copyleftScope: no-copyleft requirement is not met';
@@ -606,7 +631,7 @@ function metadata_candidate(array $profile, array $answers): array {
     if (($answers['commercialUse'] ?? null) === 'allowed' && in_array('commercial-use', $semantic['permissions'], true)) $match('permissions', 10, 'matches commercialUse=allowed');
     $reciprocity = ['none' => 'none', 'file' => 'file', 'library' => 'library', 'strong' => 'whole-work', 'network' => 'network'];
     if (array_key_exists('reciprocity', $answers) && ($semantic['copyleftScope'] ?? null) === ($reciprocity[$answers['reciprocity']] ?? null)) $match('copyleftScope', 20, "matches reciprocity={$answers['reciprocity']}");
-    if (($answers['patents'] ?? null) === 'important' && in_array($semantic['patentPosition'], ['express-grant', 'defensive-termination', 'retaliatory-termination'], true)) $match('patentPosition', $semantic['patentPosition'] === 'express-grant' ? 12 : 8, 'matches patents=important');
+    if (($answers['patents'] ?? null) === 'important' && in_array($semantic['patentPosition'], ['express-grant', 'defensive-termination', 'retaliatory-termination'], true)) $match('patentPosition', 12, 'matches patents=important');
     if (($answers['patents'] ?? null) === 'neutral' && in_array($semantic['patentPosition'], $knownPatents, true)) $match('patentPosition', 4, 'matches patents=neutral');
     if (($answers['notices'] ?? null) === 'minimal' && in_array($semantic['noticeBurden'], ['minimal', 'none'], true)) $match('noticeBurden', 8, 'matches notices=minimal');
     if (($answers['notices'] ?? null) === 'standard' && in_array($semantic['noticeBurden'], ['standard', 'material'], true)) $match('noticeBurden', 5, 'matches notices=standard');

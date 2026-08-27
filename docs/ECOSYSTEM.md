@@ -104,8 +104,10 @@ Po zodpovězení všech aktivních otázek je `state` rovno `complete`,
 `nextQuestion` je `null` a pole `recommendation` obsahuje stejný kanonický
 výsledek jako `/v1/recommendations`. Do té doby je `recommendation` vždy `null`.
 Volby `unknown`, `not-applicable` a `undecided` jsou legitimní odpovědi
-průvodce, ale doporučovací engine s nimi pracuje fail-closed a nevydává je za
-jisté doporučení.
+průvodce. Při doporučení se takové pole vynechá ze skóre a licence se stále
+zobrazí podle ostatních známých požadavků; pokud není známý žádný konkrétní
+požadavek, zobrazí se s nulovým skóre a výsledkem `insufficient-evidence`.
+Neplatné odpovědi a neznámé či nevalidní SPDX výrazy zůstávají fail-closed.
 
 Pro jednorázové vyhodnocení bez dialogu lze nadále poslat přímo odpovědi nebo
 obálku s explicitním režimem:

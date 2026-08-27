@@ -223,15 +223,15 @@ test("ranking keeps the closest licence and exposes answer deficits instead of f
   });
   const result = recommendFromProfiles([profile(), strong], { openness: "open", reciprocity: "strong" }, context);
   assert.deepEqual(result.candidates.map((candidate) => candidate.id), ["GPL-3.0-only", "MIT"]);
-  assert.equal(result.candidates[0]?.score, 30);
+  assert.equal(result.candidates[0]?.score, 100);
   assert.equal(result.candidates[0]?.conflicts.length, 0);
   assert.equal(result.candidates[0]?.status, "good fit");
-  assert.equal(result.candidates[1]?.score, 10);
+  assert.equal(result.candidates[1]?.score, 33);
   assert.equal(result.candidates[1]?.status, "review required");
   assert.ok(result.candidates[1]?.conflicts.some((conflict) => conflict.includes("reciprocity=strong")));
 });
 
-test("closed and proprietary intent are separate no-safe-match branches", () => {
+test("closed and proprietary intent stay visible as scored review candidates", () => {
   const cases: GuideAnswers[] = [
     { openness: "closed" },
     { proprietary: "required" },
@@ -240,11 +240,12 @@ test("closed and proprietary intent are separate no-safe-match branches", () => 
   ];
   for (const answers of cases) {
     const result = recommendFromProfiles([profile()], answers, context);
-    assert.equal(result.outcome, "no-safe-match", JSON.stringify(answers));
+    assert.equal(result.outcome, "insufficient-evidence", JSON.stringify(answers));
     assert.equal(result.branch, "source-available-or-proprietary", JSON.stringify(answers));
-    assert.deepEqual(result.candidates, [], JSON.stringify(answers));
+    assert.equal(result.candidates.length, 1, JSON.stringify(answers));
+    assert.equal(typeof result.candidates[0]?.fit, "number", JSON.stringify(answers));
     assert.deepEqual(result.alternatives, [], JSON.stringify(answers));
-    assert.match(result.guidance.join(" "), /no OSI|open-source|propriet/i, JSON.stringify(answers));
+    assert.match(result.guidance.join(" "), /source-available|open-source|propriet/i, JSON.stringify(answers));
   }
 });
 
@@ -301,26 +302,35 @@ test("project form is contextual while commercial use remains evidence-backed", 
   assert.ok(missingCommercialPermission.exclusionReasons.some((reason) => reason.includes("commercial-use")));
 
   const restricted = recommendFromProfiles([profile()], { commercialUse: "restricted" }, context);
-  assert.equal(restricted.outcome, "no-safe-match");
-  assert.deepEqual(restricted.candidates, []);
-  assert.match(restricted.guidance.join(" "), /restricted|unsupported/i);
+  assert.equal(restricted.outcome, "insufficient-evidence");
+  assert.equal(restricted.candidates[0]?.fit, 0);
+  assert.equal(restricted.candidates[0]?.status, "review required");
+  assert.ok(restricted.candidates[0]?.conflicts.some((reason) => reason.includes("commercial-use restriction")));
+  assert.match(restricted.guidance.join(" "), /omezení|restricted|unsupported/i);
 });
 
-test("runtime answer boundary rejects unknown keys, invalid types/enums, and uncertainty states on every recommendation path", () => {
-  const cases: Array<[string, unknown]> = [
+test("runtime answer boundary rejects malformed answers while uncertainty states still produce scored candidates", () => {
+  const invalidCases: Array<[string, unknown]> = [
     ["unknown key", { unexpected: "value" }],
     ["inherited-looking key", { toString: "open" }],
     ["invalid type", { openness: 42 }],
     ["invalid enum", { reciprocity: "bogus" }],
-    ["unknown", { openness: "unknown" }],
-    ["not-applicable", { openness: "not-applicable" }],
-    ["undecided", { openness: "undecided" }],
   ];
-  for (const [label, rawAnswers] of cases) {
+  for (const [label, rawAnswers] of invalidCases) {
     const answers = rawAnswers as GuideAnswers;
     assert.equal(recommendationEligibility(profile(), answers, context).eligible, false, label);
     assert.deepEqual(recommendFromProfiles([profile()], answers, context).candidates, [], label);
     assert.deepEqual(recommendFromCatalog([catalogRecord()], answers, { ...context, knownIdentifiers: ["MIT"] }).candidates, [], label);
+  }
+  for (const state of ["unknown", "not-applicable", "undecided"] as const) {
+    const answers: GuideAnswers = { openness: state };
+    assert.equal(recommendationEligibility(profile(), answers, context).eligible, false, state);
+    const direct = recommendFromProfiles([profile()], answers, context);
+    const catalog = recommendFromCatalog([catalogRecord()], answers, { ...context, knownIdentifiers: ["MIT"] });
+    assert.equal(direct.outcome, "insufficient-evidence", state);
+    assert.equal(direct.candidates[0]?.fit, 0, state);
+    assert.equal(direct.candidates[0]?.status, "review required", state);
+    assert.equal(catalog.candidates[0]?.fit, 0, state);
   }
 });
 
@@ -454,7 +464,7 @@ test("LIC-008 correction: SPDX WITH keeps license and exception namespaces separ
   const direct = recommendFromCatalog(records, answers, uiContext);
   const catalogAdapter = recommendFromCatalog(records, answers, catalogAdapterContext);
 
-  assert.equal(direct.outcome, "recommendation");
+  assert.equal(direct.outcome, "insufficient-evidence");
   assert.deepEqual(
     {
       outcome: direct.outcome,
@@ -640,8 +650,9 @@ test("LIC-008 bounded correction: every interactive question exposes explicit un
 
   const uncertain: GuideAnswers = { delivery: "undecided" };
   const result = recommendFromProfiles([profile()], uncertain, context);
-  assert.equal(result.outcome, "no-safe-match");
-  assert.deepEqual(result.candidates, []);
+  assert.equal(result.outcome, "insufficient-evidence");
+  assert.equal(result.candidates[0]?.fit, 0);
+  assert.equal(result.candidates[0]?.status, "review required");
 });
 
 test("LIC-008 bounded correction: hostile profile kind and extra keys fail closed without coercion", () => {

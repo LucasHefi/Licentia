@@ -169,8 +169,6 @@ PHP_ROUTER
 
     foreach ([
         ['invalid-key' => ['unexpected' => 'value']],
-        ['uncertain' => ['openness' => 'unknown']],
-        ['not-applicable' => ['openness' => 'not-applicable']],
         ['malformed-dependency' => ['delivery' => 'application', 'dependencies' => 'MIT OR']],
         ['unknown-dependency' => ['delivery' => 'application', 'dependencies' => 'No-Such-License']],
     ] as $case) {
@@ -185,7 +183,7 @@ PHP_ROUTER
     $proprietary = request_json($baseUrl, '/v1/recommendations', ['proprietary' => 'required']);
     canonical_fields($proprietary['body']);
     assert_same('source-available-or-proprietary', $proprietary['body']['branch'], 'proprietary branch must be separate');
-    assert_same('no-safe-match', $proprietary['body']['outcome'], 'proprietary branch outcome');
+    assert_same('no-safe-match', $proprietary['body']['outcome'], 'proprietary branch without validated metadata remains fail closed');
     assert_true(str_contains(implode(' ', $proprietary['body']['guidance']), 'open-source'), 'proprietary branch guidance');
 
     $validExpression = request_json($baseUrl, '/v1/expressions/validate', ['expression' => 'MIT OR Apache-2.0']);
@@ -234,13 +232,11 @@ PHP_ROUTER
     canonical_fields($fixtureRecommendation['body']);
     assert_same('recommendation', $fixtureRecommendation['body']['outcome'], 'synthetic fixture recommendation outcome');
     assert_same('LIC-008-synthetic-fixture', $fixtureRecommendation['body']['candidates'][0]['id'] ?? null, 'synthetic fixture candidate id');
-    assert_same(27, $fixtureRecommendation['body']['candidates'][0]['score'] ?? null, 'TypeScript-parity synthetic fixture score');
+    assert_same(100, $fixtureRecommendation['body']['candidates'][0]['score'] ?? null, 'TypeScript-parity synthetic fixture percentage score');
     assert_same(['family', 'patentPosition', 'noticeBurden'], $fixtureRecommendation['body']['candidates'][0]['matchedFields'] ?? null, 'TypeScript-parity matched fields');
     assert_true(in_array('dependency-analysis=not-requested', $fixtureRecommendation['body']['trace'], true), 'canonical trace must include dependency analysis');
     foreach ([
         ['invalid-key' => ['unexpected' => 'value']],
-        ['uncertain' => ['openness' => 'unknown']],
-        ['not-applicable' => ['openness' => 'not-applicable']],
         ['missing-dependency' => ['delivery' => 'application']],
         ['malformed-dependency' => ['delivery' => 'application', 'dependencies' => 'MIT OR']],
         ['unknown-dependency' => ['delivery' => 'application', 'dependencies' => 'No-Such-License']],
@@ -255,12 +251,35 @@ PHP_ROUTER
         if ($label === 'missing-dependency') assert_same('dependencies', $result['body']['nextQuestion'] ?? null, 'quick mode must request dependencies for application delivery');
     }
 
+    foreach (['unknown', 'not-applicable'] as $uncertainty) {
+        $result = request_json($baseUrl, '/v1/recommendations', ['openness' => $uncertainty]);
+        canonical_fields($result['body']);
+        assert_same('insufficient-evidence', $result['body']['outcome'], "$uncertainty must continue to scored candidates");
+        assert_same('LIC-008-synthetic-fixture', $result['body']['candidates'][0]['id'] ?? null, "$uncertainty candidate id");
+        assert_same(0, $result['body']['candidates'][0]['score'] ?? null, "$uncertainty candidate score");
+        assert_same('review required', $result['body']['candidates'][0]['status'] ?? null, "$uncertainty candidate status");
+    }
+
+    foreach ([
+        ['proprietary' => 'required'],
+        ['commercialUse' => 'restricted'],
+    ] as $comparisonAnswers) {
+        $result = request_json($baseUrl, '/v1/recommendations', $comparisonAnswers);
+        canonical_fields($result['body']);
+        $label = json_encode($comparisonAnswers, JSON_UNESCAPED_UNICODE);
+        assert_same('insufficient-evidence', $result['body']['outcome'], "valid conflicting intent must still return a scored candidate: $label");
+        assert_same('LIC-008-synthetic-fixture', $result['body']['candidates'][0]['id'] ?? null, "valid conflicting intent candidate id: $label");
+        assert_same(0, $result['body']['candidates'][0]['score'] ?? null, "valid conflicting intent candidate score: $label");
+        assert_same('review required', $result['body']['candidates'][0]['status'] ?? null, "valid conflicting intent candidate status: $label");
+        assert_true($result['body']['candidates'][0]['conflicts'] !== [], "valid conflicting intent must expose a deficit: $label");
+    }
+
     $mismatchedProjectForm = request_json($baseUrl, '/v1/recommendations', ['projectForm' => 'application']);
-    assert_same('recommendation', $mismatchedProjectForm['body']['outcome'], 'project form is context, not a license-wide hard constraint');
+    assert_same('insufficient-evidence', $mismatchedProjectForm['body']['outcome'], 'project form is context and does not create a scored requirement');
     assert_same('LIC-008-synthetic-fixture', $mismatchedProjectForm['body']['candidates'][0]['id'] ?? null, 'project form must not exclude an otherwise eligible license');
 
     $catalogWithFixture = request_json($baseUrl, '/v1/recommendations', []);
-    assert_same('recommendation', $catalogWithFixture['body']['outcome'], 'empty valid answers should use the synthetic metadata fixture');
+    assert_same('insufficient-evidence', $catalogWithFixture['body']['outcome'], 'empty valid answers should show the synthetic metadata fixture with zero score');
 
     $mcpTools = request_json($baseUrl, '/mcp', ['jsonrpc' => '2.0', 'id' => 1, 'method' => 'tools/list']);
     $recommendTool = null;
@@ -367,7 +386,7 @@ PHP_ROUTER
     $generatedCandidates = $generatedRecommendation['body']['candidates'];
     assert_same(2, count($generatedCandidates), 'generated envelope must rank all metadata-ready candidates');
     assert_same(['LIC-008-generated-fixture', 'LIC-008-synthetic-fixture'], array_column($generatedCandidates, 'id'), 'generated envelope candidate ranking');
-    assert_same(40, $generatedCandidates[0]['score'] ?? null, 'generated envelope best candidate score');
+    assert_same(100, $generatedCandidates[0]['score'] ?? null, 'generated envelope best candidate percentage score');
     assert_same([], $generatedCandidates[0]['conflicts'] ?? null, 'best candidate must have no conflicts');
     assert_same([], $generatedCandidates[0]['unknowns'] ?? null, 'best candidate must have no deficits');
     assert_same('review required', $generatedCandidates[1]['status'] ?? null, 'deficit candidate status');

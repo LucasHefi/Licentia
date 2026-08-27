@@ -175,7 +175,7 @@ const guideQuestions: GuideQuestion[] = [
   { id: "q-openness", key: "openness", mode: "quick", title: "Má zůstat software otevřený?", help: "Rozlišuje open-source větev od proprietární strategie.", options: [{ value: "open", label: "Ano" }, { value: "closed", label: "Povolím uzavřené použití" }, ...uncertaintyOptions] },
   { id: "q-project-form", key: "projectForm", mode: "quick", title: "Co distribuujete?", help: "Forma projektu určuje relevantní povinnosti.", options: [{ value: "application", label: "Aplikaci" }, { value: "library", label: "Knihovnu" }, { value: "service", label: "Službu" }, ...uncertaintyOptions] },
   { id: "q-reciprocity", key: "reciprocity", mode: "quick", title: "Jaký rozsah sdílení změn chcete?", help: "Průvodce nyní nabízí rozsahy, pro které má katalog bezpečné kandidáty: žádný copyleft nebo celé dílo.", options: [{ value: "none", label: "Žádný" }, { value: "strong", label: "Celé dílo" }, ...uncertaintyOptions] },
-  { id: "q-commercial-use", key: "commercialUse", mode: "quick", title: "Bude software komerčně použit?", help: "Neznámá odpověď nesmí splnit hard constraint.", options: [{ value: "allowed", label: "Ano" }, { value: "restricted", label: "Omezeně" }, ...uncertaintyOptions] },
+  { id: "q-commercial-use", key: "commercialUse", mode: "quick", title: "Bude software komerčně použit?", help: "Neznámá odpověď se nezapočítá do skóre a zobrazí se jako nejistota.", options: [{ value: "allowed", label: "Ano" }, { value: "restricted", label: "Omezeně" }, ...uncertaintyOptions] },
   { id: "q-delivery-quick", key: "delivery", mode: "quick", title: "Jak software dodáte?", help: "Distribuce a SaaS aktivují odlišné povinnosti.", options: [{ value: "application", label: "Aplikace" }, { value: "library", label: "Knihovna" }, { value: "saas", label: "SaaS" }, { value: "internal", label: "Interně" }, ...uncertaintyOptions] },
   { id: "q-dependencies-quick", key: "dependencies", mode: "quick", title: "Jaké máte závislosti?", help: "U distribuované aplikace je potřeba nejprve ověřit licence závislostí.", options: uncertaintyOptions, showWhen: { key: "delivery", equals: "application" } },
   { id: "q-patents-quick", key: "patents", mode: "quick", title: "Jsou důležité patenty?", help: "Výslovné oprávnění je evidence-backed kritérium.", options: [{ value: "important", label: "Ano" }, { value: "neutral", label: "Neřeším" }, ...uncertaintyOptions] },
@@ -185,7 +185,7 @@ const guideQuestions: GuideQuestion[] = [
   { id: "q-openness-advanced", key: "openness", mode: "advanced", title: "Má zůstat software otevřený?", help: "Rozlišuje open-source větev od proprietární strategie.", options: [{ value: "open", label: "Ano" }, { value: "closed", label: "Povolím uzavřené použití" }, ...uncertaintyOptions] },
   { id: "q-project-form-advanced", key: "projectForm", mode: "advanced", title: "Co distribuujete?", help: "Forma projektu určuje relevantní povinnosti.", options: [{ value: "application", label: "Aplikaci" }, { value: "library", label: "Knihovnu" }, { value: "service", label: "Službu" }, ...uncertaintyOptions] },
   { id: "q-reciprocity-advanced", key: "reciprocity", mode: "advanced", title: "Jaký rozsah sdílení změn chcete?", help: "Průvodce nyní nabízí rozsahy, pro které má katalog bezpečné kandidáty: žádný copyleft nebo celé dílo.", options: [{ value: "none", label: "Žádný" }, { value: "strong", label: "Celé dílo" }, ...uncertaintyOptions] },
-  { id: "q-commercial-use-advanced", key: "commercialUse", mode: "advanced", title: "Bude software komerčně použit?", help: "Neznámá odpověď nesmí splnit hard constraint.", options: [{ value: "allowed", label: "Ano" }, { value: "restricted", label: "Omezeně" }, ...uncertaintyOptions] },
+  { id: "q-commercial-use-advanced", key: "commercialUse", mode: "advanced", title: "Bude software komerčně použit?", help: "Neznámá odpověď se nezapočítá do skóre a zobrazí se jako nejistota.", options: [{ value: "allowed", label: "Ano" }, { value: "restricted", label: "Omezeně" }, ...uncertaintyOptions] },
   { id: "q-patents-advanced", key: "patents", mode: "advanced", title: "Jsou důležité patenty?", help: "Posuzuje se existence patentového oprávnění i obranné ukončení.", options: [{ value: "important", label: "Ano" }, { value: "neutral", label: "Neřeším" }, ...uncertaintyOptions] },
   { id: "q-notices-advanced", key: "notices", mode: "advanced", title: "Jakou zátěž oznámení zvládnete?", help: "Rozlišuje licence bez notice povinnosti od standardních a materiálních oznámení.", options: [{ value: "minimal", label: "Minimum" }, { value: "standard", label: "Standard" }, ...uncertaintyOptions] },
   { id: "q-trademarks", key: "trademarks", mode: "advanced", title: "Potřebujete řešit ochranné známky?", help: "Licence obvykle neposkytuje trademark práva; omezení se zobrazí jako upozornění.", options: [{ value: "important", label: "Ano" }, { value: "neutral", label: "Ne" }, ...uncertaintyOptions] },
@@ -338,6 +338,10 @@ interface AnswerValidation {
   exclusionReasons: string[];
 }
 
+interface AnswerValidationOptions {
+  allowUncertainty?: boolean;
+}
+
 function answerRecord(value: unknown): value is Record<string, unknown> {
   if (typeof value !== "object" || value === null || Array.isArray(value)) return false;
   try {
@@ -369,7 +373,7 @@ function safeAnswerRecord(value: unknown): GuideAnswers | null {
   }
 }
 
-function validateAnswers(answers: unknown, context: RecommendationContext): AnswerValidation {
+function validateAnswers(answers: unknown, context: RecommendationContext, options: AnswerValidationOptions = {}): AnswerValidation {
   const validation: AnswerValidation = { valid: true, missingFields: [], unsupportedFields: [], exclusionReasons: [] };
   const reject = (field: string, reason: string, missing = false): void => {
     validation.valid = false;
@@ -393,6 +397,7 @@ function validateAnswers(answers: unknown, context: RecommendationContext): Answ
       reject(`answers.${key}`, "invalid value type");
       continue;
     }
+    if (uncertaintyStates.has(value) && options.allowUncertainty === true) continue;
     if (uncertaintyStates.has(value)) {
       reject(`answers.${key}`, `uncertainty state ${value} is not recommendable`, true);
       continue;
@@ -620,6 +625,7 @@ interface MatchResult {
   reasons: string[];
   matchedFields: string[];
   conflicts: string[];
+  evaluatedFields: number;
 }
 
 /**
@@ -629,13 +635,17 @@ interface MatchResult {
  */
 function match(profile: MetadataLicenseProfile, answers: GuideAnswers): MatchResult {
   const { semantic } = profile;
-  let score = 0;
+  let earned = 0;
+  let possible = 0;
+  let evaluatedFields = 0;
   const reasons: string[] = [];
   const matchedFields: string[] = [];
   const conflicts: string[] = [];
   const evaluate = (field: string, points: number, condition: boolean, reason: string, deficit: string) => {
+    possible += points;
+    evaluatedFields += 1;
     if (condition) {
-      score += points;
+      earned += points;
       matchedFields.push(field);
       reasons.push(`${field}: ${reason}`);
     } else {
@@ -646,10 +656,11 @@ function match(profile: MetadataLicenseProfile, answers: GuideAnswers): MatchRes
   if (answers.openness === "open") evaluate("family", 10, knownFamilies.has(semantic.family), "matches openness=open", "does not confirm an open-source family");
   if (answers.openness === "closed") evaluate("family", 10, ["permissive", "public-domain-equivalent"].includes(semantic.family), "matches openness=closed", "open-source terms do not provide a closed/proprietary strategy");
   if (answers.commercialUse === "allowed") evaluate("permissions", 10, semantic.permissions.includes("commercial-use"), "matches commercialUse=allowed", "commercial use is not evidenced");
+  if (answers.commercialUse === "restricted") evaluate("permissions", 10, false, "matches commercialUse=restricted", "the metadata cannot evidence a commercial-use restriction");
   const reciprocity: Record<string, CopyleftScope> = { none: "none", file: "file", library: "library", strong: "whole-work", network: "network" };
   const reciprocityScope = typeof answers.reciprocity === "string" ? reciprocity[answers.reciprocity] : undefined;
   if (reciprocityScope !== undefined) evaluate("copyleftScope", 20, semantic.copyleftScope === reciprocityScope, `matches reciprocity=${answers.reciprocity}`, `does not match reciprocity=${answers.reciprocity}`);
-  if (answers.patents === "important") evaluate("patentPosition", semantic.patentPosition === "express-grant" ? 12 : 8, ["express-grant", "defensive-termination", "retaliatory-termination"].includes(semantic.patentPosition), "matches patents=important", "does not evidence a patent grant or defensive termination");
+  if (answers.patents === "important") evaluate("patentPosition", 12, ["express-grant", "defensive-termination", "retaliatory-termination"].includes(semantic.patentPosition), "matches patents=important", "does not evidence a patent grant or defensive termination");
   if (answers.patents === "neutral") evaluate("patentPosition", 4, knownPatents.has(semantic.patentPosition), "matches patents=neutral", "has no evidenced patent position");
   if (answers.notices === "minimal") evaluate("noticeBurden", 8, ["minimal", "none"].includes(semantic.noticeBurden), "matches notices=minimal", "requires more than a minimal notice burden");
   if (answers.notices === "standard") evaluate("noticeBurden", 5, ["standard", "material"].includes(semantic.noticeBurden), "matches notices=standard", "does not fit a standard notice burden");
@@ -666,7 +677,8 @@ function match(profile: MetadataLicenseProfile, answers: GuideAnswers): MatchRes
   for (const key of ["versionStrategy", "dualLicensing", "futureDistribution"] as const) {
     if (answers[key] !== undefined) conflicts.push(`semantic.${key}: no validated metadata field exists`);
   }
-  return { score, reasons, matchedFields, conflicts };
+  if (answers.proprietary === "preferred" || answers.proprietary === "required") conflicts.push("semantic.proprietary: proprietary intent requires separate terms");
+  return { score: possible === 0 ? 0 : Math.round((earned / possible) * 100), reasons, matchedFields, conflicts, evaluatedFields };
 }
 
 function unknownSemanticFields(profile: MetadataLicenseProfile): string[] {
@@ -771,7 +783,7 @@ export function recommendationEligibility(profile: MetadataLicenseProfile, answe
 }
 
 function recommendFromProfilesUnsafe(profiles: readonly MetadataLicenseProfile[], answers: GuideAnswers, context: RecommendationContext): RecommendationResult {
-  const validation = validateAnswers(answers, context);
+  const validation = validateAnswers(answers, context, { allowUncertainty: true });
   const safeAnswers: GuideAnswers = safeAnswerRecord(answers) ?? {};
   const proprietaryIntent = ["allowed", "preferred", "required"].includes(safeAnswers.proprietary ?? "") || safeAnswers.openness === "closed";
   const branch = proprietaryIntent ? "source-available-or-proprietary" : "open-source";
@@ -797,14 +809,6 @@ function recommendFromProfilesUnsafe(profiles: readonly MetadataLicenseProfile[]
       nextQuestion: "dependencies",
     };
   }
-  if (branch === "source-available-or-proprietary") {
-    const guidance = ["Proprietary or source-available intent requires separate terms; no OSI/open-source recommendation is shown."];
-    return { outcome: "no-safe-match", ruleVersion: context.ruleVersion, advisory: true, candidates: [], alternatives: [], trace: [...trace, "open-source candidates suppressed for proprietary branch"], conflicts: [], unknowns: [], obligations: [], guidance, branch, nextQuestion: nextActiveQuestion(safeAnswers, activeGuideMode(context)) };
-  }
-  if (safeAnswers.commercialUse === "restricted") {
-    const guidance = ["Restricted commercial-use intent is not represented by validated catalog metadata; no safe match is shown."];
-    return { outcome: "no-safe-match", ruleVersion: context.ruleVersion, advisory: true, candidates: [], alternatives: [], trace: [...trace, "commercial-use restriction is unsupported by metadata"], conflicts: [], unknowns: ["semantic.commercialUse"], obligations: [], guidance, branch };
-  }
   const exclusionReasons: string[] = [];
   const candidates = profiles.flatMap((profile) => {
     // User requirements are scored below. Only a catalogue/profile readiness
@@ -816,7 +820,7 @@ function recommendFromProfilesUnsafe(profiles: readonly MetadataLicenseProfile[]
     }
     const scored = match(profile, safeAnswers);
     const unknowns = unknownSemanticFields(profile);
-    const status: CandidateStatus = unknowns.length ? "insufficient evidence" : scored.conflicts.length ? "review required" : "good fit";
+    const status: CandidateStatus = unknowns.length ? "insufficient evidence" : scored.conflicts.length || scored.evaluatedFields === 0 ? "review required" : "good fit";
     const evidence = validEvidence(profile.evidence) ? profile.evidence.map((item) => ({ ...item })) : [];
     return [{ profile, id: profile.id, score: scored.score, fit: scored.score, reasons: scored.reasons, matchedFields: scored.matchedFields, status, evidenceConfidence: profile.review.evidenceLevel, conflicts: scored.conflicts, unknowns, obligations: profile.semantic.obligations, evidence }];
   });
@@ -828,12 +832,23 @@ function recommendFromProfilesUnsafe(profiles: readonly MetadataLicenseProfile[]
   // they describe excluded profiles rather than the user's selected constraints.
   const guidance = [...new Set(exclusionReasons.filter((reason) => !/^(review\.|context\.sourceLockResolved|sourceFingerprint\.|evidence:)/.test(reason)))];
   if (candidates.length) guidance.unshift("Licence se řadí podle skóre odpovědí; nedostatky jsou uvedené u každého kandidáta.");
+  if (branch === "source-available-or-proprietary") {
+    trace.push("proprietary or source-available intent retained for score comparison");
+    guidance.push("Proprietární nebo source-available záměr zůstává viditelný pro porovnání; samostatné podmínky musí posoudit právník.");
+  }
+  if (safeAnswers.commercialUse === "restricted") guidance.push("Omezení komerčního použití není v metadatech ověřitelné; kandidáti jsou proto pouze k ruční kontrole.");
   const unknowns = [...new Set(candidates.flatMap((candidate) => candidate.unknowns.map((field) => `${candidate.id}: ${field}`)))];
   if (unknowns.length) {
     trace.push("insufficient semantic evidence prevents a recommendation claim");
     guidance.push("Insufficient evidence remains in candidate metadata; no recommendation claim is made.");
   }
-  const outcome = !candidates.length ? "no-safe-match" : unknowns.length ? "insufficient-evidence" : "recommendation";
+  const noScoredRequirements = candidates.length > 0 && candidates.every((candidate) => candidate.score === 0 && candidate.conflicts.length === 0);
+  if (noScoredRequirements) {
+    trace.push("no concrete requirement was available for scoring");
+    guidance.push("Nebyl zadán žádný konkrétní požadavek; licence jsou zobrazené s nulovým skóre.");
+  }
+  const intentNeedsReview = branch === "source-available-or-proprietary" || safeAnswers.commercialUse === "restricted";
+  const outcome = !candidates.length ? "no-safe-match" : unknowns.length || noScoredRequirements || intentNeedsReview ? "insufficient-evidence" : "recommendation";
   const candidateConflicts = [...new Set(candidates.flatMap((candidate) => candidate.conflicts))];
   return { outcome, ruleVersion: context.ruleVersion, advisory: true, candidates: candidates.slice(0, 5), alternatives: candidates.slice(5), trace, conflicts: candidateConflicts, unknowns, obligations: candidates[0]?.obligations ?? [], guidance: [...new Set(guidance)], branch, nextQuestion };
 }
@@ -874,12 +889,13 @@ export function metadataProfileFromCatalog(record: CatalogMetadataRecord): Metad
 }
 
 function recommendFromCatalogUnsafe(records: readonly CatalogMetadataRecord[], answers: GuideAnswers, context: RecommendationContext): RecommendationResult {
-  const validation = validateAnswers(answers, context);
+  const validation = validateAnswers(answers, context, { allowUncertainty: true });
   const safeAnswers: GuideAnswers = safeAnswerRecord(answers) ?? {};
   const dependency = parseDependencyInput(safeAnswers.dependencies, context.knownIdentifiers ?? [], context.knownExceptionIdentifiers ?? []);
   const dependencyState = safeAnswers.dependencies === undefined ? "not-requested" : dependency.state;
   const dependencyRequired = safeAnswers.delivery === "application" && safeAnswers.dependencies === undefined;
-  const dependencyInvalid = safeAnswers.dependencies !== undefined && dependency.state !== "valid";
+  const dependencyUncertainty = typeof safeAnswers.dependencies === "string" && uncertaintyStates.has(safeAnswers.dependencies);
+  const dependencyInvalid = safeAnswers.dependencies !== undefined && !dependencyUncertainty && dependency.state !== "valid";
   const proprietaryIntent = ["allowed", "preferred", "required"].includes(safeAnswers.proprietary ?? "") || safeAnswers.openness === "closed";
   const branch = proprietaryIntent ? "source-available-or-proprietary" : "open-source";
   const trace = ["metadata readiness evaluated before ranking", "answered requirements are scored; mismatches are reported per candidate", `branch=${branch}`, `dependency-analysis=${dependencyState}`];
@@ -889,7 +905,7 @@ function recommendFromCatalogUnsafe(records: readonly CatalogMetadataRecord[], a
     : dependency.state === "malformed"
       ? "Dependency SPDX expression is malformed; no safe match is shown."
       : dependency.expression.toLowerCase() === "unknown"
-        ? "Dependencies were explicitly marked unknown; no safe match is shown."
+      ? "Dependencies were explicitly marked unknown; scoring continues without dependency compatibility."
         : "Dependency identifiers are not all known; no safe match is shown.";
 
   if (!validation.valid || dependencyRequired || dependencyInvalid) {
@@ -925,6 +941,7 @@ function recommendFromCatalogUnsafe(records: readonly CatalogMetadataRecord[], a
     result.alternatives = [];
     result.outcome = "no-safe-match";
   }
+  if (dependencyUncertainty) result.guidance.push("Závislosti byly označeny jako neznámé; skóre nezohledňuje jejich kompatibilitu.");
   return result;
 }
 

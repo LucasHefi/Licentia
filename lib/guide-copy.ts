@@ -17,6 +17,7 @@ export function guideMessage(message: string): string {
     "Dependency analysis is incomplete; provide an SPDX expression or explicitly mark it unknown.": "Analýza závislostí není dokončená; zadejte SPDX výraz nebo výslovně označte neznámou hodnotu.",
     "Dependency SPDX expression is malformed; no safe match is shown.": "SPDX výraz závislostí má chybný formát; bezpečná shoda se nezobrazuje.",
     "Dependencies were explicitly marked unknown; no safe match is shown.": "Závislosti byly výslovně označeny jako neznámé; bezpečná shoda se nezobrazuje.",
+    "Dependencies were explicitly marked unknown; scoring continues without dependency compatibility.": "Závislosti byly označeny jako neznámé; skóre pokračuje bez vyhodnocení jejich kompatibility.",
     "Dependency identifiers are not all known; no safe match is shown.": "Ne všechny identifikátory závislostí jsou známé; bezpečná shoda se nezobrazuje.",
     "No safe match: runtime catalog metadata is absent or unresolved. Review evidence before recommending a license.": "Bez bezpečné shody: metadata katalogu za běhu chybí nebo nejsou vyřešená. Před doporučením licence zkontrolujte evidenci.",
     "Proprietary or source-available intent requires separate terms; no OSI/open-source recommendation is shown.": "Proprietární záměr nebo záměr se zpřístupněným zdrojovým kódem vyžaduje samostatné podmínky; doporučení OSI/open-source se nezobrazuje.",

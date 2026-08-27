@@ -364,8 +364,19 @@ PHP_ROUTER
     assert_same(200, $generatedRecommendation['status'], 'generated envelope recommendation status');
     canonical_fields($generatedRecommendation['body']);
     assert_same('recommendation', $generatedRecommendation['body']['outcome'], 'generated envelope recommendation outcome');
-    assert_same(1, count($generatedRecommendation['body']['candidates']), 'generated envelope must produce exactly one candidate');
-    assert_same('LIC-008-generated-fixture', $generatedRecommendation['body']['candidates'][0]['id'] ?? null, 'generated envelope candidate id');
+    $generatedCandidates = $generatedRecommendation['body']['candidates'];
+    assert_same(2, count($generatedCandidates), 'generated envelope must rank all metadata-ready candidates');
+    assert_same(['LIC-008-generated-fixture', 'LIC-008-synthetic-fixture'], array_column($generatedCandidates, 'id'), 'generated envelope candidate ranking');
+    assert_same(40, $generatedCandidates[0]['score'] ?? null, 'generated envelope best candidate score');
+    assert_same([], $generatedCandidates[0]['conflicts'] ?? null, 'best candidate must have no conflicts');
+    assert_same([], $generatedCandidates[0]['unknowns'] ?? null, 'best candidate must have no deficits');
+    assert_same('review required', $generatedCandidates[1]['status'] ?? null, 'deficit candidate status');
+    assert_same(['semantic.noticeBurden: minimal burden is not evidenced'], $generatedCandidates[1]['conflicts'] ?? null, 'deficit candidate conflicts');
+    assert_same([], $generatedCandidates[1]['unknowns'] ?? null, 'deficit candidate must not report unknown metadata');
+    assert_same([], $generatedRecommendation['body']['alternatives'], 'all ranked fixtures fit within candidate limit');
+    foreach (['LIC-008-deprecated-fixture', 'LIC-008-exception-fixture', 'LIC-008-extra-fixture', 'LIC-008-malformed-fixture'] as $excludedId) {
+        assert_true(!in_array($excludedId, array_column($generatedCandidates, 'id'), true), "$excludedId must remain excluded");
+    }
     assert_same('reciprocity', $generatedRecommendation['body']['nextQuestion'] ?? null, 'generated envelope must preserve TypeScript default quick nextQuestion');
 
     $quickQuestionCases = [

@@ -211,6 +211,26 @@ test("recommendation result exposes status, confidence, trace, ties and next que
   assert.equal(result.nextQuestion, "projectForm");
 });
 
+test("ranking keeps the closest licence and exposes answer deficits instead of filtering mismatches", () => {
+  const strong = profile({
+    id: "GPL-3.0-only",
+    semantic: {
+      ...profile().semantic,
+      family: "strong-copyleft",
+      copyleftScope: "whole-work",
+      obligations: ["disclose-source", "provide-corresponding-source", "same-license"],
+    },
+  });
+  const result = recommendFromProfiles([profile(), strong], { openness: "open", reciprocity: "strong" }, context);
+  assert.deepEqual(result.candidates.map((candidate) => candidate.id), ["GPL-3.0-only", "MIT"]);
+  assert.equal(result.candidates[0]?.score, 30);
+  assert.equal(result.candidates[0]?.conflicts.length, 0);
+  assert.equal(result.candidates[0]?.status, "good fit");
+  assert.equal(result.candidates[1]?.score, 10);
+  assert.equal(result.candidates[1]?.status, "review required");
+  assert.ok(result.candidates[1]?.conflicts.some((conflict) => conflict.includes("reciprocity=strong")));
+});
+
 test("closed and proprietary intent are separate no-safe-match branches", () => {
   const cases: GuideAnswers[] = [
     { openness: "closed" },

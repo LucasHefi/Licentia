@@ -425,7 +425,7 @@ function recommendation_input(array $input, bool $mcp = false): array {
 function canonical_recommendation(array $answers, string $mode = 'quick'): array {
     $proprietary = in_array($answers['proprietary'] ?? null, ['allowed', 'preferred', 'required'], true) || ($answers['openness'] ?? null) === 'closed';
     $branch = $proprietary ? 'source-available-or-proprietary' : 'open-source';
-    $result = ['dataVersion' => DATA_VERSION, 'guideModelVersion' => GUIDE_MODEL_VERSION, 'guideMode' => $mode, 'ruleVersion' => RULE_VERSION, 'advisory' => true, 'outcome' => 'no-safe-match', 'branch' => $branch, 'candidates' => [], 'alternatives' => [], 'trace' => ['hard constraints evaluated before ranking', "branch=$branch", 'dependency-analysis=' . dependency_analysis_state($answers)], 'conflicts' => [], 'unknowns' => [], 'obligations' => [], 'guidance' => []];
+    $result = ['dataVersion' => DATA_VERSION, 'guideModelVersion' => GUIDE_MODEL_VERSION, 'guideMode' => $mode, 'ruleVersion' => RULE_VERSION, 'advisory' => true, 'outcome' => 'no-safe-match', 'branch' => $branch, 'candidates' => [], 'alternatives' => [], 'trace' => ['metadata readiness evaluated before ranking', 'answered requirements are scored; mismatches are reported per candidate', "branch=$branch", 'dependency-analysis=' . dependency_analysis_state($answers)], 'conflicts' => [], 'unknowns' => [], 'obligations' => [], 'guidance' => []];
     $nextQuestion = $mode === 'quick' && ($answers['delivery'] ?? null) === 'application' && !array_key_exists('dependencies', $answers)
         ? 'dependencies'
         : guide_next_question($answers, $mode);
@@ -439,15 +439,16 @@ function canonical_recommendation(array $answers, string $mode = 'quick'): array
     $candidates = []; $unknowns = []; $conflicts = [];
     foreach ($profiles as $profile) {
         $candidate = metadata_candidate($profile, $answers);
-        if ($candidate['conflicts']) { $conflicts = array_merge($conflicts, $candidate['conflicts']); continue; }
         $candidates[] = $candidate;
+        $conflicts = array_merge($conflicts, $candidate['conflicts']);
         $unknowns = array_merge($unknowns, array_map(static fn($field) => $candidate['id'] . ': ' . $field, $candidate['unknowns']));
     }
     usort($candidates, static fn($a, $b) => $b['score'] <=> $a['score'] ?: strcmp($a['id'], $b['id']));
     $result['conflicts'] = array_values(array_unique($conflicts)); $result['unknowns'] = array_values(array_unique($unknowns));
-    if (!$candidates) { $result['guidance'][] = 'No safe match: validated metadata does not satisfy the requested hard constraints.'; return $result; }
+    if (!$candidates) { $result['guidance'][] = 'No safe match: validated metadata is absent or unresolved.'; return $result; }
     $result['candidates'] = array_slice($candidates, 0, 5); $result['alternatives'] = array_slice($candidates, 5);
     $result['obligations'] = $candidates[0]['obligations'];
+    $result['guidance'][] = 'Licence se řadí podle skóre odpovědí; nedostatky jsou uvedené u každého kandidáta.';
     if ($result['unknowns']) { $result['outcome'] = 'insufficient-evidence'; $result['guidance'][] = 'Insufficient evidence remains in candidate metadata; no recommendation claim is made.'; $result['trace'][] = 'insufficient semantic evidence prevents a recommendation claim'; }
     else $result['outcome'] = 'recommendation';
     return $result;
@@ -583,7 +584,7 @@ function metadata_candidate(array $profile, array $answers): array {
     }
     $reciprocityScopes = ['none' => 'none', 'file' => 'file', 'library' => 'library', 'strong' => 'whole-work', 'network' => 'network'];
     if (array_key_exists('reciprocity', $answers) && $semantic['copyleftScope'] !== ($reciprocityScopes[$answers['reciprocity']] ?? null)) $conflicts[] = "semantic.copyleftScope: required {$reciprocityScopes[$answers['reciprocity']]} is not evidenced";
-    if (($answers['patents'] ?? null) === 'important' && $semantic['patentPosition'] !== 'express-grant') $conflicts[] = 'semantic.patentPosition: express grant is not evidenced';
+    if (($answers['patents'] ?? null) === 'important' && !in_array($semantic['patentPosition'], ['express-grant', 'defensive-termination', 'retaliatory-termination'], true)) $conflicts[] = 'semantic.patentPosition: patent grant or defensive termination is not evidenced';
     if (($answers['notices'] ?? null) === 'minimal' && !in_array($semantic['noticeBurden'], ['minimal', 'none'], true)) $conflicts[] = 'semantic.noticeBurden: minimal burden is not evidenced';
     if (($answers['notices'] ?? null) === 'standard' && !in_array($semantic['noticeBurden'], ['standard', 'material'], true)) $conflicts[] = 'semantic.noticeBurden: standard burden is not evidenced';
     if (($answers['commercialUse'] ?? null) === 'allowed' && !in_array('commercial-use', $semantic['permissions'], true)) $conflicts[] = 'semantic.permissions: commercial-use permission is not evidenced';
@@ -597,6 +598,7 @@ function metadata_candidate(array $profile, array $answers): array {
     foreach ([['notices', ['include-notice', 'include-copyright', 'include-license-text']], ['source', ['disclose-source', 'provide-corresponding-source']], ['installation', ['provide-installation-information']]] as [$answer, $values]) {
         if (($answers['obligations'] ?? null) === $answer && !array_intersect($values, $semantic['obligations'])) $conflicts[] = "semantic.obligations: $answer obligation is not evidenced";
     }
+    if (($answers['obligations'] ?? null) === 'minimal' && array_intersect(['disclose-source', 'network-use-disclose', 'provide-corresponding-source', 'provide-installation-information', 'same-license', 'mark-modifications'], $semantic['obligations'])) $conflicts[] = 'semantic.obligations: minimum-burden requirement is not met';
     foreach (['versionStrategy', 'dualLicensing', 'futureDistribution'] as $key) if (array_key_exists($key, $answers)) $conflicts[] = "semantic.$key: no validated metadata field exists";
     $match = static function (string $field, int $points, string $reason) use (&$score, &$matched, &$reasons): void { $score += $points; $matched[] = $field; $reasons[] = "$field: $reason"; };
     if (($answers['openness'] ?? null) === 'open' && in_array($semantic['family'], $knownFamilies, true)) $match('family', 10, 'matches openness=open');
@@ -604,11 +606,19 @@ function metadata_candidate(array $profile, array $answers): array {
     if (($answers['commercialUse'] ?? null) === 'allowed' && in_array('commercial-use', $semantic['permissions'], true)) $match('permissions', 10, 'matches commercialUse=allowed');
     $reciprocity = ['none' => 'none', 'file' => 'file', 'library' => 'library', 'strong' => 'whole-work', 'network' => 'network'];
     if (array_key_exists('reciprocity', $answers) && ($semantic['copyleftScope'] ?? null) === ($reciprocity[$answers['reciprocity']] ?? null)) $match('copyleftScope', 20, "matches reciprocity={$answers['reciprocity']}");
-    if (($answers['patents'] ?? null) === 'important' && $semantic['patentPosition'] === 'express-grant') $match('patentPosition', 12, 'matches patents=important');
+    if (($answers['patents'] ?? null) === 'important' && in_array($semantic['patentPosition'], ['express-grant', 'defensive-termination', 'retaliatory-termination'], true)) $match('patentPosition', $semantic['patentPosition'] === 'express-grant' ? 12 : 8, 'matches patents=important');
     if (($answers['patents'] ?? null) === 'neutral' && in_array($semantic['patentPosition'], $knownPatents, true)) $match('patentPosition', 4, 'matches patents=neutral');
     if (($answers['notices'] ?? null) === 'minimal' && in_array($semantic['noticeBurden'], ['minimal', 'none'], true)) $match('noticeBurden', 8, 'matches notices=minimal');
     if (($answers['notices'] ?? null) === 'standard' && in_array($semantic['noticeBurden'], ['standard', 'material'], true)) $match('noticeBurden', 5, 'matches notices=standard');
-    $status = $unknowns ? 'insufficient evidence' : 'good fit';
+    if (($answers['copyleftTrigger'] ?? null) === 'none' && $semantic['copyleftScope'] === 'none') $match('triggers', 15, 'matches copyleftTrigger=none');
+    if (($answers['copyleftTrigger'] ?? null) === 'distribution' && in_array('distribution', $semantic['triggers'], true)) $match('triggers', 15, 'matches copyleftTrigger=distribution');
+    if (($answers['copyleftTrigger'] ?? null) === 'network' && in_array('network-use', $semantic['triggers'], true)) $match('triggers', 15, 'matches copyleftTrigger=network');
+    if (($answers['trademarks'] ?? null) === 'important' && in_array('trademark', $semantic['restrictions'], true)) $match('restrictions', 6, 'matches trademarks=important');
+    if (($answers['obligations'] ?? null) === 'notices' && array_intersect(['include-notice', 'include-copyright', 'include-license-text'], $semantic['obligations'])) $match('obligations', 8, 'matches obligations=notices');
+    if (($answers['obligations'] ?? null) === 'source' && array_intersect(['disclose-source', 'provide-corresponding-source'], $semantic['obligations'])) $match('obligations', 12, 'matches obligations=source');
+    if (($answers['obligations'] ?? null) === 'installation' && in_array('provide-installation-information', $semantic['obligations'], true)) $match('obligations', 14, 'matches obligations=installation');
+    if (($answers['obligations'] ?? null) === 'minimal' && !array_intersect(['disclose-source', 'network-use-disclose', 'provide-corresponding-source', 'provide-installation-information', 'same-license', 'mark-modifications'], $semantic['obligations'])) $match('obligations', 12, 'matches obligations=minimal');
+    $status = $unknowns ? 'insufficient evidence' : ($conflicts ? 'review required' : 'good fit');
     return ['profile' => ['id' => $record['id'], 'kind' => 'license', 'review' => $metadata['review'], 'sourceFingerprint' => $metadata['sourceFingerprint'], 'semantic' => $semantic, 'evidence' => $metadata['evidence']], 'id' => $record['id'], 'score' => $score, 'reasons' => $reasons ?: ['validated metadata has no distinguishing preference'], 'matchedFields' => $matched, 'status' => $status, 'fit' => $score, 'evidenceConfidence' => $metadata['review']['evidenceLevel'], 'conflicts' => array_values(array_unique($conflicts)), 'unknowns' => $unknowns, 'obligations' => $semantic['obligations'], 'evidence' => $metadata['evidence']];
 }
 

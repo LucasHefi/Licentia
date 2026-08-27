@@ -133,6 +133,7 @@ kbd { padding: 5px 8px; border: 1px solid var(--line); border-radius: 6px; backg
 .recommend-list article { display: grid; grid-template-columns: 38px minmax(0,1fr) 58px auto; gap: 12px; align-items: center; padding: 15px; border: 1px solid var(--line); border-radius: 10px; background: #faf9f3; }
 .rank { align-self: start; color: #8a958f; font: 10px var(--font-geist-mono),monospace; }.recommend-copy code { color: var(--muted); font-size: 9px; }.recommend-copy h3 { margin: 3px 0; font: 500 18px Georgia,serif; }.recommend-copy p { margin: 0 0 7px; color: var(--muted); font-size: 9px; }
 .recommend-score { text-align: center; }.recommend-score strong,.recommend-score span { display: block; }.recommend-score strong { font: 500 25px Georgia,serif; }.recommend-score span { color: var(--muted); font-size: 8px; text-transform: uppercase; }
+.recommend-deficits { display: grid; gap: 3px; margin: 9px 0 7px; padding: 8px 9px; border-left: 2px solid #d79b43; background: #f7ecd6; }.recommend-deficits strong { color: #735f3e; font-size: 9px; }.recommend-deficits span { color: #735f3e; font-size: 10px; line-height: 1.45; }
 .recommend-actions { display: grid; gap: 5px; }.recommend-actions button { border: 1px solid var(--line); border-radius: 6px; padding: 7px 9px; background: white; font-size: 9px; cursor: pointer; }
 
 .page-heading { max-width: 850px; margin: 0 auto 48px; text-align: center; }.page-heading h1 { font-size: clamp(45px,6vw,72px); }.page-heading > p { max-width: 690px; margin: 0 auto; color: var(--muted); line-height: 1.65; }

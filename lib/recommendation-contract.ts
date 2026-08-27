@@ -615,23 +615,58 @@ function requiredSemantic(profile: MetadataLicenseProfile, field: string, value:
   return true;
 }
 
-function match(profile: MetadataLicenseProfile, answers: GuideAnswers): { score: number; reasons: string[]; matchedFields: string[] } {
+interface MatchResult {
+  score: number;
+  reasons: string[];
+  matchedFields: string[];
+  conflicts: string[];
+}
+
+/**
+ * Score only the requirements the client actually answered. A mismatch is
+ * deliberately reported as a conflict instead of removing the licence from
+ * the result set; this lets the guide explain the closest alternatives.
+ */
+function match(profile: MetadataLicenseProfile, answers: GuideAnswers): MatchResult {
   const { semantic } = profile;
   let score = 0;
   const reasons: string[] = [];
   const matchedFields: string[] = [];
-  const add = (field: string, points: number, reason: string) => { score += points; matchedFields.push(field); reasons.push(`${field}: ${reason}`); };
-  if (answers.openness === "open" && knownFamilies.has(semantic.family)) add("family", 10, "matches openness=open");
-  if (answers.openness === "closed" && ["permissive", "public-domain-equivalent"].includes(semantic.family)) add("family", 10, "matches openness=closed");
-  if (answers.commercialUse === "allowed" && semantic.permissions.includes("commercial-use")) add("permissions", 10, "matches commercialUse=allowed");
+  const conflicts: string[] = [];
+  const evaluate = (field: string, points: number, condition: boolean, reason: string, deficit: string) => {
+    if (condition) {
+      score += points;
+      matchedFields.push(field);
+      reasons.push(`${field}: ${reason}`);
+    } else {
+      conflicts.push(`${field}: ${deficit}`);
+    }
+  };
+
+  if (answers.openness === "open") evaluate("family", 10, knownFamilies.has(semantic.family), "matches openness=open", "does not confirm an open-source family");
+  if (answers.openness === "closed") evaluate("family", 10, ["permissive", "public-domain-equivalent"].includes(semantic.family), "matches openness=closed", "open-source terms do not provide a closed/proprietary strategy");
+  if (answers.commercialUse === "allowed") evaluate("permissions", 10, semantic.permissions.includes("commercial-use"), "matches commercialUse=allowed", "commercial use is not evidenced");
   const reciprocity: Record<string, CopyleftScope> = { none: "none", file: "file", library: "library", strong: "whole-work", network: "network" };
   const reciprocityScope = typeof answers.reciprocity === "string" ? reciprocity[answers.reciprocity] : undefined;
-  if (reciprocityScope !== undefined && semantic.copyleftScope === reciprocityScope) add("copyleftScope", 20, `matches reciprocity=${answers.reciprocity}`);
-  if (answers.patents === "important" && ["express-grant", "defensive-termination", "retaliatory-termination"].includes(semantic.patentPosition)) add("patentPosition", semantic.patentPosition === "express-grant" ? 12 : 8, "matches patents=important");
-  if (answers.patents === "neutral" && knownPatents.has(semantic.patentPosition)) add("patentPosition", 4, "matches patents=neutral");
-  if (answers.notices === "minimal" && ["minimal", "none"].includes(semantic.noticeBurden)) add("noticeBurden", 8, "matches notices=minimal");
-  if (answers.notices === "standard" && ["standard", "material"].includes(semantic.noticeBurden)) add("noticeBurden", 5, "matches notices=standard");
-  return { score, reasons, matchedFields };
+  if (reciprocityScope !== undefined) evaluate("copyleftScope", 20, semantic.copyleftScope === reciprocityScope, `matches reciprocity=${answers.reciprocity}`, `does not match reciprocity=${answers.reciprocity}`);
+  if (answers.patents === "important") evaluate("patentPosition", semantic.patentPosition === "express-grant" ? 12 : 8, ["express-grant", "defensive-termination", "retaliatory-termination"].includes(semantic.patentPosition), "matches patents=important", "does not evidence a patent grant or defensive termination");
+  if (answers.patents === "neutral") evaluate("patentPosition", 4, knownPatents.has(semantic.patentPosition), "matches patents=neutral", "has no evidenced patent position");
+  if (answers.notices === "minimal") evaluate("noticeBurden", 8, ["minimal", "none"].includes(semantic.noticeBurden), "matches notices=minimal", "requires more than a minimal notice burden");
+  if (answers.notices === "standard") evaluate("noticeBurden", 5, ["standard", "material"].includes(semantic.noticeBurden), "matches notices=standard", "does not fit a standard notice burden");
+  // projectForm is contextual: the catalogue does not claim that a licence
+  // is valid only for one project form, so it must not create a false deficit.
+  if (answers.copyleftTrigger === "none") evaluate("triggers", 15, semantic.copyleftScope === "none", "matches copyleftTrigger=none", "has copyleft obligations");
+  if (answers.copyleftTrigger === "distribution") evaluate("triggers", 15, semantic.triggers.includes("distribution"), "matches copyleftTrigger=distribution", "does not evidence a distribution trigger");
+  if (answers.copyleftTrigger === "network") evaluate("triggers", 15, semantic.triggers.includes("network-use"), "matches copyleftTrigger=network", "does not evidence a network-use trigger");
+  if (answers.trademarks === "important") evaluate("restrictions", 6, semantic.restrictions.includes("trademark"), "matches trademarks=important", "does not evidence a trademark restriction or clarification");
+  if (answers.obligations === "notices") evaluate("obligations", 8, semantic.obligations.some((value) => ["include-notice", "include-copyright", "include-license-text"].includes(value)), "matches obligations=notices", "does not evidence notice obligations");
+  if (answers.obligations === "source") evaluate("obligations", 12, semantic.obligations.some((value) => ["disclose-source", "provide-corresponding-source"].includes(value)), "matches obligations=source", "does not evidence a source obligation");
+  if (answers.obligations === "installation") evaluate("obligations", 14, semantic.obligations.includes("provide-installation-information"), "matches obligations=installation", "does not evidence an installation-information obligation");
+  if (answers.obligations === "minimal") evaluate("obligations", 12, !semantic.obligations.some((value) => ["disclose-source", "network-use-disclose", "provide-corresponding-source", "provide-installation-information", "same-license", "mark-modifications"].includes(value)), "matches obligations=minimal", "has obligations beyond the requested minimum");
+  for (const key of ["versionStrategy", "dualLicensing", "futureDistribution"] as const) {
+    if (answers[key] !== undefined) conflicts.push(`semantic.${key}: no validated metadata field exists`);
+  }
+  return { score, reasons, matchedFields, conflicts };
 }
 
 function unknownSemanticFields(profile: MetadataLicenseProfile): string[] {
@@ -740,7 +775,7 @@ function recommendFromProfilesUnsafe(profiles: readonly MetadataLicenseProfile[]
   const safeAnswers: GuideAnswers = safeAnswerRecord(answers) ?? {};
   const proprietaryIntent = ["allowed", "preferred", "required"].includes(safeAnswers.proprietary ?? "") || safeAnswers.openness === "closed";
   const branch = proprietaryIntent ? "source-available-or-proprietary" : "open-source";
-  const trace = ["hard constraints evaluated before ranking", `branch=${branch}`];
+  const trace = ["metadata readiness evaluated before ranking", "answered requirements are scored; mismatches are reported per candidate", `branch=${branch}`];
   if (!validation.valid) {
     trace.push(...validation.exclusionReasons);
     return { outcome: "no-safe-match", ruleVersion: context.ruleVersion, advisory: true, candidates: [], alternatives: [], trace, conflicts: [], unknowns: validation.missingFields, obligations: [], guidance: validation.exclusionReasons, branch };
@@ -772,16 +807,18 @@ function recommendFromProfilesUnsafe(profiles: readonly MetadataLicenseProfile[]
   }
   const exclusionReasons: string[] = [];
   const candidates = profiles.flatMap((profile) => {
-    const eligibility = recommendationEligibility(profile, safeAnswers, context);
-    if (!eligibility.eligible) {
-      exclusionReasons.push(...eligibility.exclusionReasons);
+    // User requirements are scored below. Only a catalogue/profile readiness
+    // failure is allowed to remove a candidate from the ranked result set.
+    const readiness = recommendationEligibility(profile, {}, context);
+    if (!readiness.eligible) {
+      exclusionReasons.push(...readiness.exclusionReasons);
       return [];
     }
     const scored = match(profile, safeAnswers);
     const unknowns = unknownSemanticFields(profile);
-    const status: CandidateStatus = unknowns.length ? "insufficient evidence" : "good fit";
+    const status: CandidateStatus = unknowns.length ? "insufficient evidence" : scored.conflicts.length ? "review required" : "good fit";
     const evidence = validEvidence(profile.evidence) ? profile.evidence.map((item) => ({ ...item })) : [];
-    return [{ profile, id: profile.id, score: scored.score, fit: scored.score, reasons: scored.reasons, matchedFields: scored.matchedFields, status, evidenceConfidence: profile.review.evidenceLevel, conflicts: [], unknowns, obligations: profile.semantic.obligations, evidence }];
+    return [{ profile, id: profile.id, score: scored.score, fit: scored.score, reasons: scored.reasons, matchedFields: scored.matchedFields, status, evidenceConfidence: profile.review.evidenceLevel, conflicts: scored.conflicts, unknowns, obligations: profile.semantic.obligations, evidence }];
   });
   candidates.sort((a, b) => b.score - a.score || stableCompare(a.id, b.id));
   const equalFit = candidates.length > 1 && candidates[0]?.fit === candidates[1]?.fit;
@@ -790,13 +827,15 @@ function recommendFromProfilesUnsafe(profiles: readonly MetadataLicenseProfile[]
   // Do not surface catalog-wide readiness failures next to valid candidates;
   // they describe excluded profiles rather than the user's selected constraints.
   const guidance = [...new Set(exclusionReasons.filter((reason) => !/^(review\.|context\.sourceLockResolved|sourceFingerprint\.|evidence:)/.test(reason)))];
+  if (candidates.length) guidance.unshift("Licence se řadí podle skóre odpovědí; nedostatky jsou uvedené u každého kandidáta.");
   const unknowns = [...new Set(candidates.flatMap((candidate) => candidate.unknowns.map((field) => `${candidate.id}: ${field}`)))];
   if (unknowns.length) {
     trace.push("insufficient semantic evidence prevents a recommendation claim");
     guidance.push("Insufficient evidence remains in candidate metadata; no recommendation claim is made.");
   }
   const outcome = !candidates.length ? "no-safe-match" : unknowns.length ? "insufficient-evidence" : "recommendation";
-  return { outcome, ruleVersion: context.ruleVersion, advisory: true, candidates: candidates.slice(0, 5), alternatives: candidates.slice(5), trace, conflicts: [], unknowns, obligations: candidates[0]?.obligations ?? [], guidance: [...new Set(guidance)], branch, nextQuestion };
+  const candidateConflicts = [...new Set(candidates.flatMap((candidate) => candidate.conflicts))];
+  return { outcome, ruleVersion: context.ruleVersion, advisory: true, candidates: candidates.slice(0, 5), alternatives: candidates.slice(5), trace, conflicts: candidateConflicts, unknowns, obligations: candidates[0]?.obligations ?? [], guidance: [...new Set(guidance)], branch, nextQuestion };
 }
 
 export function recommendFromProfiles(profiles: readonly MetadataLicenseProfile[], answers: GuideAnswers, context: RecommendationContext): RecommendationResult {
@@ -843,7 +882,7 @@ function recommendFromCatalogUnsafe(records: readonly CatalogMetadataRecord[], a
   const dependencyInvalid = safeAnswers.dependencies !== undefined && dependency.state !== "valid";
   const proprietaryIntent = ["allowed", "preferred", "required"].includes(safeAnswers.proprietary ?? "") || safeAnswers.openness === "closed";
   const branch = proprietaryIntent ? "source-available-or-proprietary" : "open-source";
-  const trace = ["hard constraints evaluated before ranking", `branch=${branch}`, `dependency-analysis=${dependencyState}`];
+  const trace = ["metadata readiness evaluated before ranking", "answered requirements are scored; mismatches are reported per candidate", `branch=${branch}`, `dependency-analysis=${dependencyState}`];
   const dependencyUnknowns = ["dependencies", ...dependency.unknown];
   const dependencyGuidance = dependencyRequired
     ? "Dependency analysis is incomplete; provide an SPDX expression or explicitly mark it unknown."

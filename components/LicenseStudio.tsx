@@ -461,7 +461,7 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
           <div className="guide-intro">
             <span className="section-kicker light">Pravidlový průvodce</span>
             <h1>Vyberme vhodný licenční směr.</h1>
-             <p>Otázky se přizpůsobí vašemu scénáři a zúží výběr licencí s dokončenou odbornou revizí. Aktuálně je jako doporučitelných schváleno {reviewedRecommendationCount}; bez revize průvodce nevydá kandidáta.</p>
+             <p>Otázky se přizpůsobí vašemu scénáři. Licence se seřadí podle skóre a u každé uvidíte, co vašemu zadání chybí. Aktuálně je jako doporučitelných schváleno {reviewedRecommendationCount}.</p>
             <div className="legal-note"><strong>Důležité</strong><span>Jde o orientační pomůcku, nikoli právní stanovisko. Kompatibilitu závislostí a konkrétní jurisdikci posuďte zvlášť.</span></div>
           </div>
           <div className="guide-panel">
@@ -481,21 +481,21 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
               </>
             ) : (
               <div className="recommendations">
-                 <div className="recommend-heading"><div><span className="section-kicker">Výsledek průvodce</span><h2>Nejbližší kandidáti</h2></div><div><button onClick={() => changeGuideMode(guideMode === "quick" ? "advanced" : "quick")}>{guideMode === "quick" ? "Pokročilý režim" : "Rychlý režim"}</button><button onClick={() => { guideRecorded.current = false; setAnswers({}); setGuideStep(0); }}>Začít znovu</button></div></div>
+                 <div className="recommend-heading"><div><span className="section-kicker">Výsledek průvodce</span><h2>Nejbližší licence podle skóre</h2></div><div><button onClick={() => changeGuideMode(guideMode === "quick" ? "advanced" : "quick")}>{guideMode === "quick" ? "Pokročilý režim" : "Rychlý režim"}</button><button onClick={() => { guideRecorded.current = false; setAnswers({}); setGuideStep(0); }}>Začít znovu</button></div></div>
                 {answers.openness === "closed" && <div className="proprietary-callout"><strong>Zvažte také proprietární licenci / EULA.</strong><span>Pokud nechcete dát veřejnosti právo software používat, upravovat a distribuovat, open-source licence není správný nástroj. Vytvoření vlastních podmínek patří právníkovi.</span></div>}
                 {reviewedRecommendationCount === 0 && <div className="proprietary-callout"><strong>Datová sada zatím neobsahuje právně zkontrolované doporučitelné profily.</strong><span>Průvodce proto bezpečně nevydá kandidáta. Katalog a úplná znění zůstávají dostupné, ale doporučení vyžaduje dokončenou lidskou revizi zdrojů a metadat.</span></div>}
                 <div className="recommend-list">
                  {recommendations.candidates.map((item, index) => (
                      <article key={item.id}>
-                       <span className="rank">0{index + 1}</span><div className="recommend-copy"><code>{item.id}</code><h3>{catalog.find((license) => license.id === item.id)?.name ?? item.id}</h3><p>{candidateStatusLabels[item.status]} ({item.status}) · {evidenceLabels[item.evidenceConfidence]} ({item.evidenceConfidence}) · {item.reasons.map(guideMessage).join(" · ")}</p><small>{[...item.conflicts, ...item.unknowns, ...item.obligations, ...item.evidence.map((evidence) => `${evidence.sourceId}#${evidence.locator}`)].join(" · ")}</small></div>
-                       <div className="recommend-score"><strong>{item.status === "good fit" ? item.fit : "—"}</strong><span>{candidateStatusLabels[item.status]} ({item.status})</span></div>
+                       <span className="rank">0{index + 1}</span><div className="recommend-copy"><code>{item.id}</code><h3>{catalog.find((license) => license.id === item.id)?.name ?? item.id}</h3><p>{candidateStatusLabels[item.status]} ({item.status}) · {evidenceLabels[item.evidenceConfidence]} ({item.evidenceConfidence}){item.reasons.length > 0 && <> · {item.reasons.map(guideMessage).join(" · ")}</>}</p>{item.conflicts.length > 0 && <div className="recommend-deficits"><strong>Nedostatky podle zadání</strong><span>{item.conflicts.map(guideMessage).join(" · ")}</span></div>}<small>{[...item.unknowns, ...item.obligations, ...item.evidence.map((evidence) => `${evidence.sourceId}#${evidence.locator}`)].join(" · ")}</small></div>
+                       <div className="recommend-score"><strong>{item.fit}</strong><span>Skóre shody</span></div>
                        <div className="recommend-actions"><button onClick={() => { const license = catalog.find((entry) => entry.id === item.id); if (license) openDetail(license); }}>Otevřít detail</button><button onClick={() => toggleCompare(item.id)}>{compareIds.includes(item.id) ? "✓ V porovnání" : "+ Porovnat"}</button></div>
                      </article>
                    ))}
                  {recommendations.alternatives.length > 0 && <div className="question-hint">Alternativy: {recommendations.alternatives.map((item) => item.id).join(", ")}</div>}
                  {recommendations.nextQuestion && <div className="question-hint">Další rozlišující otázka: {String(recommendations.nextQuestion)}</div>}
                  <p className="question-hint">Výsledek: {outcomeLabels[recommendations.outcome]} ({recommendations.outcome})</p>
-                 {recommendations.guidance.concat(recommendations.trace, recommendations.conflicts).map((message) => <p key={message} className="question-hint">{guideMessage(message)}</p>)}
+                 {[...new Set(recommendations.guidance.concat(recommendations.trace, recommendations.conflicts))].map((message) => <p key={message} className="question-hint">{guideMessage(message)}</p>)}
                  {recommendations.unknowns.map((message) => <p key={message} className="question-hint">Neznámé údaje: {message}</p>)}
                 </div>
               </div>

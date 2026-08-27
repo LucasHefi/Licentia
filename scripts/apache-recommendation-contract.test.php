@@ -48,7 +48,27 @@ function request_json(string $baseUrl, string $path, ?array $payload = null, arr
             break;
         }
     }
-    return ['status' => $status, 'body' => json_decode($raw, true, 512, JSON_THROW_ON_ERROR)];
+    $body = null;
+    try {
+        $body = json_decode($raw, true, 512, JSON_THROW_ON_ERROR);
+    } catch (JsonException $error) {
+        global $pipes;
+        $serverStderr = [];
+        foreach ($pipes as $pipe) {
+            if (!is_resource($pipe)) continue;
+            stream_set_blocking($pipe, false);
+            $serverStderr[] = stream_get_contents($pipe) ?: '';
+        }
+        fail_test(
+            "invalid JSON response for $path (HTTP $status): raw="
+            . json_encode(substr($raw, 0, 4000), JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES)
+            . " stderr="
+            . json_encode(implode('', $serverStderr), JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES)
+            . " error=" . $error->getMessage()
+        );
+    }
+    if (!is_array($body)) fail_test("JSON response for $path is not an object/array");
+    return ['status' => $status, 'body' => $body];
 }
 
 function canonical_fields(array $result): void

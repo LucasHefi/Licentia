@@ -10,7 +10,7 @@
   "review": {
     "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
     "family": "network-copyleft",
@@ -20,73 +20,81 @@
       "distribution",
       "modifications",
       "patent-grant",
-      "sublicensing"
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
       "include-license-text",
-      "provide-corresponding-source"
+      "include-notice",
+      "mark-modifications",
+      "network-use-disclose",
+      "provide-corresponding-source",
+      "provide-installation-information",
+      "same-license"
     ],
     "triggers": [
-      "unknown"
+      "combination",
+      "distribution",
+      "linking",
+      "modification",
+      "network-use",
+      "patent-claim"
     ],
     "restrictions": [
+      "additional-terms",
       "liability",
+      "patent-claim",
       "trademark",
       "warranty"
     ],
-    "patentPosition": "express-grant",
-    "noticeBurden": "standard"
+    "patentPosition": "retaliatory-termination",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.network-trigger",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.copyleft-family",
-      "ruleVersion": "lic-007-v1"
+      "locator": "Preamble; Section 13 (Remote Network Interaction; Use with the GNU General Public License)"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "Sections 5(c) and 13"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "Sections 2, 4-6, and 11"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "Sections 4, 5(a)-(d), 6, 7, and 13"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "Sections 4-6, 8, 10, and 13"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "Sections 7, 10, 15, and 16"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "Sections 8, 10, and 11"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "Section 0 (Appropriate Legal Notices); Sections 4, 5(a), 5(b), 5(d), and 7"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "SPDX metadata: deprecated=true; Section 14 (version choice depends on the Program notice, so AGPL-3.0 does not distinguish AGPL-3.0-only from AGPL-3.0-or-later)"
     }
   ]
 }

@@ -8,9 +8,9 @@
     "contentHash": "sha256:0ca6b2014f57f4580ae9bfc5034512ac592031e1450e77b2b29d1a68484f01f9"
   },
   "review": {
-    "status": "pending",
+    "status": "reviewed",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "sufficient"
   },
   "semantic": {
     "family": "unknown",
@@ -60,6 +60,41 @@
       "sourceId": "spdx-license-list",
       "locator": "text",
       "ruleId": "lic-007.explicit-restrictions",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "family",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CECILL-C.json#text",
+      "ruleId": "lic-007.profile-review",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "copyleftScope",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CECILL-C.json#text",
+      "ruleId": "lic-007.profile-review",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CECILL-C.json#text",
+      "ruleId": "lic-007.profile-review",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CECILL-C.json#text",
+      "ruleId": "lic-007.profile-review",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CECILL-C.json#text",
+      "ruleId": "lic-007.profile-review",
       "ruleVersion": "lic-007-v1"
     }
   ]

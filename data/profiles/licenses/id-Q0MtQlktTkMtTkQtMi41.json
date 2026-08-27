@@ -8,9 +8,9 @@
     "contentHash": "sha256:d32e4b158e81c706fa5af64c531806471a96fd13aef524477ca01407013862ca"
   },
   "review": {
-    "status": "pending",
+    "status": "reviewed",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "sufficient"
   },
   "semantic": {
     "family": "unknown",
@@ -61,6 +61,41 @@
       "sourceId": "spdx-license-list",
       "locator": "text",
       "ruleId": "lic-007.explicit-restrictions",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "family",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-BY-NC-ND-2.5.json#text",
+      "ruleId": "lic-007.profile-review",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "copyleftScope",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-BY-NC-ND-2.5.json#text",
+      "ruleId": "lic-007.profile-review",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-BY-NC-ND-2.5.json#text",
+      "ruleId": "lic-007.profile-review",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-BY-NC-ND-2.5.json#text",
+      "ruleId": "lic-007.profile-review",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-BY-NC-ND-2.5.json#text",
+      "ruleId": "lic-007.profile-review",
       "ruleVersion": "lic-007-v1"
     }
   ]

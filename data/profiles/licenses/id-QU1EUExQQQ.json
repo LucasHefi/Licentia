@@ -8,58 +8,83 @@
     "contentHash": "sha256:432d587992d853f5368d6bb7984da168757e8901e2bf2f089960c97b1dc1fccb"
   },
   "review": {
-    "status": "pending",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "provide-corresponding-source"
+      "include-license-text",
+      "unknown"
     ],
     "triggers": [
+      "distribution",
       "unknown"
     ],
     "restrictions": [
+      "additional-terms",
       "liability",
-      "trademark"
+      "trademark",
+      "unknown",
+      "warranty"
     ],
-    "patentPosition": "unknown",
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
+      "field": "copyleftScope",
+      "sourceId": "spdx-license-list",
+      "locator": "text: complete license, especially the opening grant and the source- and binary-redistribution conditions (redistribution with modification is allowed subject to retaining the copyright notice and license terms; no same-license, source-disclosure, or corresponding-source condition is stated)"
+    },
+    {
+      "field": "family",
+      "sourceId": "spdx-license-list",
+      "locator": "text: opening grant ('this material and any product thereof including software') read with the U.S.-Government restricted-rights, immediate-revocation, allocation-of-risk, export-control, entire-agreement, and Texas-law/forum paragraphs; the grant is non-reciprocal but material-specific and carries atypical nonstandard terms"
+    },
+    {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: source-redistribution condition (retain the copyright notice and all license terms as part of the code) and binary-redistribution condition (reproduce them in related documentation and/or other materials)"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: source- and binary-redistribution conditions (retain or reproduce the copyright notice and all license terms); U.S.-Government restricted-rights paragraph ('constitutes acknowledgment'); allocation-of-risk paragraph ('agrees to release' the licensors from liabilities, obligations, claims, or demands above US $10); the acknowledgment/release duties have no dedicated vocabulary value, represented by unknown"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "text: complete license (the affirmative grant concerns redistribution and use of the material and products, including software; no express patent grant, patent condition, or patent-termination clause is stated)"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: opening grant ('Redistribution and use in any form of this material and any product thereof including software in source or binary forms ... with or without modification ... is permitted'); no private-use or commercial-purpose limitation is stated"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: non-endorsement paragraph; U.S.-Government restricted-rights paragraph; immediate-revocation paragraph; 'AS IS', warranty-disclaimer, liability-cap, release, and termination paragraph; export-control paragraph; and final no-modification-or-waiver, Texas-law, and Austin-forum provisions; government-rights, export, release, termination, and forum predicates are not represented losslessly, represented by unknown"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "metadata: id=AMDPLPA, name=\"AMD's plpa_map.c License\", deprecated=false, osi=false, fsf=false; text: the grant is tied to 'this material' and is combined with U.S.-Government restricted rights, breach-based immediate revocation, access/use acknowledgment and release, export controls, non-waiver, and mandatory Texas law/forum provisions that vocabulary 1.0.0 cannot communicate losslessly, so it is not a safe general recommendation"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "text: source- and binary-redistribution conditions activate notice/license retention; U.S.-Government, allocation-of-risk, export-control, and termination paragraphs also attach consequences to access or use, for which the vocabulary has no trigger value, represented by unknown"
     }
   ]
 }

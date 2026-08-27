@@ -8,9 +8,9 @@
     "contentHash": "sha256:857c1364b572739ae742b2b9260ac3196e9e1e150901b0e8a12ecf4aaed1b671"
   },
   "review": {
-    "status": "pending",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
     "family": "permissive",
@@ -20,73 +20,76 @@
       "distribution",
       "modifications",
       "patent-grant",
+      "private-use",
       "sublicensing"
     ],
     "obligations": [
       "include-copyright",
-      "include-license-text",
-      "provide-corresponding-source"
+      "include-notice",
+      "mark-modifications",
+      "provide-corresponding-source",
+      "unknown"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification",
+      "patent-claim"
     ],
     "restrictions": [
       "liability",
+      "patent-claim",
       "trademark",
+      "unknown",
       "warranty"
     ],
     "patentPosition": "defensive-termination",
-    "noticeBurden": "standard"
+    "noticeBurden": "material"
   },
   "evidence": [
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.no-copyleft",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Sections 1-3, 6, 9, and 15, and complete license review (the broad grants and conditions impose no same-license or reciprocal licensing requirement on the Original Work or Derivative Works)"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.permissive-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Sections 1-2 and 15 (world-wide, royalty-free, non-exclusive, perpetual, sublicenseable copyright and patent grants, plus a right to use the Original Work in all ways not otherwise restricted or conditioned)"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: opening application notice; Section 3, repository alternative; Section 6; and Section 9, first sentence (placement and preservation of licensing, copyright, patent, trademark, attribution, modification, and repository-address notices, together with reasonable efforts to obtain recipients' express assent, create a material burden)"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Section 3 (Licensor must accompany each Licensor-distributed Original Work with machine-readable Source Code or maintain the specified repository and publish its address); Section 6 (retain copyright, patent, trademark, licensing, and Attribution Notices in Derivative Work Source Code and add a prominent modification notice); and Section 9, first sentence (reasonable effort to obtain recipients' express assent); the vocabulary cannot encode the distinct Licensor actor, the source-delivery alternative, or the express-assent duty, represented by unknown; the text does not expressly require inclusion of a copy of the full license"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-termination",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Section 2 (express patent grant for Licensor-controlled claims embodied in the Original Work as furnished) and Section 10 (automatic termination when You bring the specified patent action alleging that the Original Work infringes, with an exception for combination claims)"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Section 1(a)-(e), Section 2, and Section 15 (reproduce, prepare Derivative Works, distribute, publicly perform and display, sublicense, make, use, sell, and offer for sale, and use the Original Work in all otherwise unrestricted ways; royalty-free grants permit commercial as well as private use)"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Section 4 (endorsement, trademark, and ungranted-right exclusions); Section 7 (affirmative provenance warranty plus broad warranty disclaimer); Section 8 (liability limitation); Section 10 (patent-action termination); Sections 11-12 (mandatory forum/governing law and prevailing-party fees); and Section 13 (complete agreement); the vocabulary has no values for the affirmative provenance warranty, forum/governing-law clause, attorneys' fees, or assent mechanism, represented by unknown; Section 9 expressly permits another written agreement rather than prohibiting additional terms"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "metadata: deprecated=false and osi=true; id and name identify version 2.1; text: Sections 3, 7, 9, and 11-12 (although recognized and non-deprecated, this older version contains actor-specific source availability, an affirmative provenance warranty, recipient express-assent efforts, mandatory forum/governing law, and prevailing-party fees that the guide vocabulary cannot communicate losslessly, so it is not a safe general recommendation)"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "text: Section 3 (each copy of the Original Work that Licensor distributes); Section 6 (creation of Derivative Works); Section 9 (distribution activates the recipient-assent effort and exercise of Section 1 rights indicates acceptance); and Section 10 (commencement of the specified patent action automatically terminates the License)"
     }
   ]
 }

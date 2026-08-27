@@ -10,6 +10,9 @@ const schemaPaths = [
   path.join(root, 'data/schema/license-profile.schema.json'),
   path.join(root, 'data/schema/license-exception-profile.schema.json'),
 ];
+const licenseFieldsForTest = ['family', 'copyleftScope', 'permissions', 'obligations', 'triggers', 'restrictions', 'patentPosition', 'noticeBurden'];
+const resolvedSemantic = { family: 'permissive', copyleftScope: 'none', permissions: ['commercial-use'], obligations: ['include-license-text'], triggers: ['distribution'], restrictions: ['warranty'], patentPosition: 'none-stated', noticeBurden: 'standard' };
+const completeEvidence = [...licenseFieldsForTest, 'review'].map(field => ({ field, sourceId: 'spdx-license-list', locator: 'license text' }));
 
 const base = {
   id: 'Example-1.0', kind: 'license', schemaVersion: '1.0.0',
@@ -29,12 +32,15 @@ test('requires sorted unique vocabulary arrays and explicit unknown choices', ()
 });
 test('rejects malformed structured fingerprints', () => assert.throws(() => validateProfile({ ...base, sourceFingerprint: 'sha256:old' }), /\$\.sourceFingerprint: expected object/));
 test('rejects reviewed profiles without sufficient evidence', () => assert.throws(() => validateProfile({ ...base, review: { status: 'reviewed', recommendable: false, evidenceLevel: 'weak' } }), /require sufficient or strong evidence/));
-test('requires field-level evidence for recommendable profiles', () => assert.throws(() => validateProfile({ ...base, review: { status: 'pending', recommendable: true, evidenceLevel: 'sufficient' } }), /field-level evidence/));
+test('requires complete resolved field evidence for recommendable profiles', () => {
+  assert.throws(() => validateProfile({ ...base, review: { status: 'pending', recommendable: true, evidenceLevel: 'sufficient' } }), /cannot contain unknown fields/);
+  assert.throws(() => validateProfile({ ...base, semantic: resolvedSemantic, review: { status: 'reviewed', recommendable: true, evidenceLevel: 'sufficient' }, evidence: [{ field: 'family', sourceId: 'spdx-license-list', locator: 'license text' }] }), /evidence for every semantic field and review/);
+});
 test('rejects unresolved fingerprints for reviewed or recommendable profiles', () => {
   const reviewed = { ...base, review: { status: 'reviewed', recommendable: false, evidenceLevel: 'sufficient' }, evidence: [{ field: 'family', sourceId: 'spdx-license-list', locator: 'license text' }] };
   assert.throws(() => validateProfile({ ...reviewed, sourceFingerprint: { ...base.sourceFingerprint, revision: 'unresolved' } }), /\$\.sourceFingerprint\.revision: unresolved/);
   assert.throws(() => validateProfile({ ...reviewed, sourceFingerprint: { ...base.sourceFingerprint, contentHash: 'unresolved' } }), /\$\.sourceFingerprint\.contentHash: unresolved/);
-  assert.throws(() => validateProfile({ ...reviewed, review: { status: 'pending', recommendable: true, evidenceLevel: 'sufficient' }, sourceFingerprint: { ...base.sourceFingerprint, revision: 'unresolved' } }), /\$\.sourceFingerprint\.revision: unresolved/);
+  assert.throws(() => validateProfile({ ...reviewed, semantic: resolvedSemantic, evidence: completeEvidence, review: { status: 'pending', recommendable: true, evidenceLevel: 'sufficient' }, sourceFingerprint: { ...base.sourceFingerprint, revision: 'unresolved' } }), /\$\.sourceFingerprint\.revision: unresolved/);
 });
 test('rejects an unknown source lock id on gated profiles', () => {
   const profile = { ...base, sourceFingerprint: { ...base.sourceFingerprint, sourceId: 'unknown-source' }, review: { status: 'reviewed', recommendable: false, evidenceLevel: 'sufficient' }, evidence: [{ field: 'family', sourceId: 'spdx-license-list', locator: 'license text' }] };
@@ -57,9 +63,14 @@ test('provides the release data validation script', () => {
   assert.equal(packageJson.scripts['data:validate:release'], 'node scripts/validate-license-data.mjs --release');
 });
 test('accepts reviewed field evidence and rejects aggregate evidence', () => {
-  const evidence = [{ field: 'family', sourceId: 'spdx-license-list', locator: 'license text' }];
-  assert.equal(validateProfile({ ...base, review: { status: 'reviewed', recommendable: true, evidenceLevel: 'strong' }, evidence }).status, 'reviewed');
+  const evidence = completeEvidence;
+  assert.equal(validateProfile({ ...base, semantic: resolvedSemantic, review: { status: 'reviewed', recommendable: true, evidenceLevel: 'strong' }, evidence }).status, 'reviewed');
   assert.throws(() => validateProfile({ ...base, evidence: { level: 'strong', sources: ['spdx-license-list'] } }), /\$\.evidence: expected array/);
+});
+test('release validation permits pending auxiliary evidence but blocks unresolved sources used by reviewed profiles', () => {
+  const evidence = [{ field: 'family', sourceId: 'choose-a-license', locator: 'profile.permissions' }];
+  assert.doesNotThrow(() => validateProfile({ ...base, evidence }, { release: true }));
+  assert.throws(() => validateProfile({ ...base, semantic: resolvedSemantic, review: { status: 'reviewed', recommendable: true, evidenceLevel: 'strong' }, evidence: completeEvidence.map(item => ({ ...item, sourceId: 'choose-a-license' })) }, { release: true }), /release refuses unresolved source choose-a-license/);
 });
 test('keeps exception and license semantic shapes distinct', () => {
   const exception = { ...base, id: 'Exception-1', kind: 'exception', semantic: { exceptionApplicability: 'unknown', permissions: ['unknown'], triggers: ['unknown'], restrictions: ['unknown'] } };

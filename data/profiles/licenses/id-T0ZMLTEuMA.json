@@ -8,9 +8,9 @@
     "contentHash": "sha256:f87c1f1037d0b6211cef11b1e053fa7e0896d3190acd1afd866ff68666678951"
   },
   "review": {
-    "status": "pending",
+    "status": "reviewed",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "sufficient"
   },
   "semantic": {
     "family": "permissive",
@@ -76,6 +76,27 @@
       "sourceId": "spdx-license-list",
       "locator": "text",
       "ruleId": "lic-007.explicit-restrictions",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OFL-1.0.json#text",
+      "ruleId": "lic-007.profile-review",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OFL-1.0.json#text",
+      "ruleId": "lic-007.profile-review",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OFL-1.0.json#text",
+      "ruleId": "lic-007.profile-review",
       "ruleVersion": "lic-007-v1"
     }
   ]

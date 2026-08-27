@@ -8,9 +8,9 @@
     "contentHash": "sha256:8fce3bc3048afcff6742522606a5e2936dc3a72127e4dcfdeb23468823620efc"
   },
   "review": {
-    "status": "pending",
+    "status": "reviewed",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "sufficient"
   },
   "semantic": {
     "family": "unknown",
@@ -61,6 +61,41 @@
       "sourceId": "spdx-license-list",
       "locator": "text",
       "ruleId": "lic-007.explicit-restrictions",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "family",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/YPL-1.1.json#text",
+      "ruleId": "lic-007.profile-review",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "copyleftScope",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/YPL-1.1.json#text",
+      "ruleId": "lic-007.profile-review",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/YPL-1.1.json#text",
+      "ruleId": "lic-007.profile-review",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/YPL-1.1.json#text",
+      "ruleId": "lic-007.profile-review",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/YPL-1.1.json#text",
+      "ruleId": "lic-007.profile-review",
       "ruleVersion": "lic-007-v1"
     }
   ]

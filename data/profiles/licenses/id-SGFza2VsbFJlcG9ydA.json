@@ -8,9 +8,9 @@
     "contentHash": "sha256:49d0d39e090079a313e88633b2c5445123829424bca18312d71ea57fbafc02e2"
   },
   "review": {
-    "status": "pending",
+    "status": "reviewed",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "sufficient"
   },
   "semantic": {
     "family": "unknown",
@@ -36,6 +36,62 @@
       "sourceId": "spdx-license-list",
       "locator": "text",
       "ruleId": "lic-007.explicit-permissions",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "family",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/HaskellReport.json#text",
+      "ruleId": "lic-007.profile-review",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "copyleftScope",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/HaskellReport.json#text",
+      "ruleId": "lic-007.profile-review",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/HaskellReport.json#text",
+      "ruleId": "lic-007.profile-review",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/HaskellReport.json#text",
+      "ruleId": "lic-007.profile-review",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/HaskellReport.json#text",
+      "ruleId": "lic-007.profile-review",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/HaskellReport.json#text",
+      "ruleId": "lic-007.profile-review",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/HaskellReport.json#text",
+      "ruleId": "lic-007.profile-review",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/HaskellReport.json#text",
+      "ruleId": "lic-007.profile-review",
       "ruleVersion": "lic-007-v1"
     }
   ]

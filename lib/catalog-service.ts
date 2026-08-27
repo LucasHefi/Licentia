@@ -1,6 +1,6 @@
-import type { LicenseDetail, LicenseSummary } from "../components/types";
-import { familyOf } from "./recommend";
-import { parseRecommendationInput, recommendFromCatalog, runtimeSourceLockResolved, type GuideAnswers, type GuideMode } from "./recommendation-contract";
+import type { LicenseDetail, LicenseSummary } from "../components/types.ts";
+import { familyOf } from "./recommend.ts";
+import { parseRecommendationInput, recommendFromCatalog, runtimeSourceLockResolved, type GuideAnswers, type GuideMode } from "./recommendation-contract.ts";
 
 export const DATA_VERSION = "3.28.0";
 
@@ -46,7 +46,14 @@ export function recommend(catalog: LicenseSummary[], input: GuideAnswers | Recor
 
 class ExpressionParser {
   private position = 0;
-  constructor(private readonly tokens: string[], private readonly licenses: Set<string>, private readonly exceptions: Set<string>) {}
+  private readonly tokens: string[];
+  private readonly licenses: Set<string>;
+  private readonly exceptions: Set<string>;
+  constructor(tokens: string[], licenses: Set<string>, exceptions: Set<string>) {
+    this.tokens = tokens;
+    this.licenses = licenses;
+    this.exceptions = exceptions;
+  }
   parse() { this.or(); if (this.position !== this.tokens.length) throw new Error(`Neočekávaný token „${this.tokens[this.position]}“.`); }
   private or() { this.and(); while (this.peek("OR")) { this.position++; this.and(); } }
   private and() { this.term(); while (this.peek("AND")) { this.position++; this.term(); } }
@@ -85,12 +92,26 @@ export function checkCompatibility(catalog: LicenseSummary[], ids: string[], con
   if (unknown.length) warnings.push(`Neznámé identifikátory: ${unknown.join(", ")}.`);
   if (strong.length > 1) warnings.push("Kombinace více silných copyleft licencí vyžaduje ruční kontrolu kompatibility a případných výjimek.");
   if (items.some(item => item.deprecated)) warnings.push("Výběr obsahuje historický SPDX identifikátor.");
-  if (!warnings.length) warnings.push("Nebyl nalezen zjevný konflikt v orientačních metadatech; výsledek není právním stanoviskem.");
-  return { dataVersion: DATA_VERSION, advisory: true, compatible: unknown.length === 0 && strong.length < 2 ? "likely" : "review", licenses: families, context: context ?? {}, warnings };
+  warnings.push("Automatická kontrola neprokazuje kompatibilitu licencí; způsob kombinace, distribuce a výjimky musí posoudit člověk.");
+  return { dataVersion: DATA_VERSION, advisory: true, compatible: "review", licenses: families, context: context ?? {}, warnings: [...new Set(warnings)] };
+}
+
+const sbomLicenseKeys = new Set(["license", "licenses", "licenseconcluded", "licensedeclared", "licenseinfofromfiles", "licenseinfoinfiles", "expression", "licenseexpression"]);
+
+function sbomLicenseValues(value: unknown, licenseContext = false): string[] {
+  if (typeof value === "string") return licenseContext ? [value] : [];
+  if (value === null || typeof value !== "object") return [];
+  const result: string[] = [];
+  for (const [key, child] of Object.entries(value)) {
+    const normalized = key.toLowerCase();
+    const childContext = licenseContext || sbomLicenseKeys.has(normalized) || (licenseContext && ["id", "name", "expression"].includes(normalized));
+    result.push(...sbomLicenseValues(child, childContext));
+  }
+  return result;
 }
 
 export function analyzeSbom(catalog: LicenseSummary[], document: unknown) {
-  const serialized = JSON.stringify(document);
+  const serialized = sbomLicenseValues(document).join(" ");
   const found = catalog.filter(item => item.type === "license" && new RegExp(`(^|[^A-Za-z0-9.-])${item.id.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}([^A-Za-z0-9.-]|$)`).test(serialized));
   return { dataVersion: DATA_VERSION, advisory: true, licenseCount: found.length, licenses: found.map(item => ({ id: item.id, name: item.name, family: familyOf(item), deprecated: item.deprecated })), warnings: found.some(item => item.deprecated) ? ["SBOM obsahuje historické SPDX identifikátory."] : [] };
 }

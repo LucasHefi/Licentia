@@ -8,9 +8,9 @@
     "contentHash": "sha256:a98a0965f61e0ebbe220797d962c0c3a3730ecc264b5b148e2dcb80d53ea825b"
   },
   "review": {
-    "status": "pending",
+    "status": "reviewed",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "sufficient"
   },
   "semantic": {
     "family": "unknown",
@@ -64,6 +64,41 @@
       "sourceId": "spdx-license-list",
       "locator": "text",
       "ruleId": "lic-007.explicit-restrictions",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "family",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SISSL.json#text",
+      "ruleId": "lic-007.profile-review",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "copyleftScope",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SISSL.json#text",
+      "ruleId": "lic-007.profile-review",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SISSL.json#text",
+      "ruleId": "lic-007.profile-review",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SISSL.json#text",
+      "ruleId": "lic-007.profile-review",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SISSL.json#text",
+      "ruleId": "lic-007.profile-review",
       "ruleVersion": "lic-007-v1"
     }
   ]

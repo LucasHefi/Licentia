@@ -8,71 +8,89 @@
     "contentHash": "sha256:9a0d008ca3ddccd3e1353c91ab2d2d4bc69063aea2a4f47f0bf1d90f49157067"
   },
   "review": {
-    "status": "pending",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "weak-copyleft",
+    "copyleftScope": "file",
     "permissions": [
       "commercial-use",
       "distribution",
       "modifications",
       "patent-grant",
+      "private-use",
       "sublicensing"
     ],
     "obligations": [
-      "include-copyright",
       "include-license-text",
-      "provide-corresponding-source"
+      "include-notice",
+      "provide-corresponding-source",
+      "same-license",
+      "unknown"
     ],
     "triggers": [
+      "distribution",
+      "patent-claim",
       "unknown"
     ],
     "restrictions": [
+      "additional-terms",
       "liability",
+      "patent-claim",
       "trademark",
+      "unknown",
       "warranty"
     ],
     "patentPosition": "defensive-termination",
-    "noticeBurden": "standard"
+    "noticeBurden": "material"
   },
   "evidence": [
     {
+      "field": "copyleftScope",
+      "sourceId": "spdx-license-list",
+      "locator": "text: Sections 2 and 4(a), 4(f), and Glossary definition of Modifications (reciprocal licensing and source duties attach to distributed modifications, defined as changes to a file containing Licensed Product or a new file containing any part of it; a Derivative Work may use another license if this license remains fulfilled for the Licensed Product and its modifications)"
+    },
+    {
+      "field": "family",
+      "sourceId": "spdx-license-list",
+      "locator": "text: Sections 2 and 4(a), 4(b), and 4(f) (distributed file-level modifications remain governed by this license and their source must remain available, while larger Derivative Works may be distributed under another license), establishing file-scoped weak copyleft"
+    },
+    {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Sections 4(a), 4(c)(i)-(ii), 4(d)-(e), and 5, plus Exhibit A (license copies in distributed modifications and relevant documentation, a source-file notice, conspicuous executable/documentation/collateral notice with source-location details, and conditional LEGAL-file disclosures create a material notice burden)"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Sections 4(a)-(e) and 5 (distributed modifications must remain under this or a future version, carry the license and Exhibit A notice, and make source available without charge for as long as other forms are distributed; knowledge-based LEGAL-file updates, third-party notification, executable source-location notices, indemnity, and statutory-noncompliance descriptions have no complete vocabulary values and are represented by unknown); no network-use disclosure or installation-information duty is stated"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-termination",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Sections 1(b), 2(b), 3, and 9(b)-(c) (express royalty-free patent grants cover only claims necessary for covered Modifications or their Derivative Works, exclude deleted code and combinations, and grants from a Respondent terminate after the notice period for specified patent litigation unless withdrawn or licensed), supporting defensive-termination as the controlling classification"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Sections 1(a)-(b), 2(a)-(b), and 4(e)-(g), read with the Preamble statements permitting any-purpose use and compensation in specified cases (use, reproduction, modification, distribution, sublicensing, patent rights, private use, and conditional commercial exploitation are express)"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Sections 3, 4(a), 4(d)-(e), 4(g), 5, 7(c), and 8-10, and Section 13 (restrictions cover additional terms, trademarks, patent claims, warranty, and liability; fee/compensation limits, indemnities, special noncompliance and license-renaming rules, general breach termination, California governing law, prevailing-party costs, and other litigation terms are not losslessly represented and therefore require unknown)"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "metadata: id=BitTorrent-1.1, name='BitTorrent Open Source License v1.1', deprecated=false, osi=false, fsf=true, and comments note the upstream Exhibit A version-number defect; text: Sections 3-5, 7(c), 9, and 13 contain material fee, disclosure, indemnity, termination, governing-law, and litigation-cost conditions outside the guide vocabulary, so this non-OSI version is not a safe general recommendation"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "text: Sections 4(a)-(g), 5, and 9(a)-(b), with complete-text review (distribution activates same-license, source, license, notice, and executable duties; specified patent litigation activates defensive termination; knowledge, compensation, statutory impossibility, license modification, and uncured breach are additional trigger dimensions represented by unknown; private modification, linking, and network or external deployment alone are not stated triggers)"
     }
   ]
 }

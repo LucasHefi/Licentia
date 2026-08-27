@@ -30,6 +30,7 @@ export default async function Home() {
           image: session.user.image,
           authSource: "licentia",
           providerLabel: "Licentia účet",
+          canAddPasskey: true,
         };
       }
     } catch {

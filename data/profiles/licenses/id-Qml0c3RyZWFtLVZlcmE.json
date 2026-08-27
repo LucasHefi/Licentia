@@ -8,73 +8,85 @@
     "contentHash": "sha256:11afe18edc5736e0ba0b3a6526246b0848f083bf6c7740b7a795d9841c3d5698"
   },
   "review": {
-    "status": "pending",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
     "family": "permissive",
     "copyleftScope": "none",
     "permissions": [
       "commercial-use",
-      "distribution"
+      "distribution",
+      "modifications",
+      "private-use",
+      "sublicensing"
     ],
     "obligations": [
-      "include-license-text"
+      "include-copyright",
+      "include-license-text",
+      "include-notice",
+      "unknown"
     ],
     "triggers": [
+      "distribution",
+      "modification",
       "unknown"
     ],
     "restrictions": [
       "liability",
       "trademark",
+      "unknown",
       "warranty"
     ],
-    "patentPosition": "unknown",
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.no-copyleft",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.permissive-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "license text, permission paragraph beginning 'Permission is hereby granted' (a broad free-of-charge grant to reproduce, use, copy, merge, publish, distribute, sell, and permit recipients to do the same) together with the following notice, modified-font naming, and sale conditions; the grant is permissive rather than reciprocal"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "license text, paragraphs beginning 'The above copyright and trademark notices', 'The Font Software may be modified', and 'This License becomes null and void' (copy-level notices, modified-font renaming, and loss of rights for distribution under reserved names are required, but no source-disclosure, corresponding-source, or same-license condition is stated)"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "license text, permission paragraph beginning 'Permission is hereby granted' (reproduce, distribute, use, copy, merge, publish, sell, and permit persons receiving the Font Software to do so) and paragraph beginning 'The Font Software may be modified' (modification, alteration, and addition are expressly allowed subject to renaming); these grants support commercial use, distribution, modifications, private use, and sublicensing"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "license text, paragraph beginning 'The above copyright and trademark notices' (all font copies must include the copyright notice, trademark notice, and permission notice), supporting include-copyright, include-notice, and include-license-text; paragraph beginning 'The Font Software may be modified' (modified fonts must be renamed without 'Bitstream' or 'Vera'), a font-renaming obligation with no exact vocabulary value, represented by unknown"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "license text, paragraphs beginning 'The above copyright and trademark notices' (copies, including distributed copies, activate notice retention), 'The Font Software may be modified' and 'This License becomes null and void' (modification activates renaming, and modification plus distribution under reserved names voids the license); copying, sale, larger-package inclusion, advertising, and name use are additional trigger dimensions without dedicated vocabulary values, represented by unknown"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "license text, paragraphs beginning 'The Font Software may be modified' and 'This License becomes null and void' (reserved-font-name conditions), 'The Font Software may be sold' (sale only as part of a larger software package, not by itself), the all-capitals disclaimer (warranty exclusion and liability limitation), and final paragraph beginning 'Except as contained in this notice' (advertising and promotion limits on GNOME and Bitstream names); trademark, warranty, and liability are captured, while the exact reserved-name, standalone-sale, packaging, and conditional-void rules are not losslessly represented and require unknown"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "license text, complete-text review, including the permission grant and all-capitals disclaimer (patent appears only in the noninfringement warranty disclaimer; no express patent grant, patent condition, patent-claim restriction, or patent-litigation termination is stated)"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "license text, paragraph beginning 'The above copyright and trademark notices' (every copy of one or more Font Software typefaces must include the copyright notice, trademark notice, and permission notice, constituting a standard copy-level notice burden)"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "license metadata, id=Bitstream-Vera, name='Bitstream Vera Font License', deprecated=false, osi=false, and fsf=false; license text, opening grant and paragraphs on notices, modified-font naming, modified distribution under reserved names, standalone sale, warranty/liability, and promotional name use (the terms are confined to accompanying fonts and documentation, and vocabulary 1.0.0 cannot losslessly encode font embedding, copying, sale/package context, reserved-font-name rules, or all relevant triggers), so it is unsuitable for automatic recommendation as a generally reusable software license"
     }
   ]
 }

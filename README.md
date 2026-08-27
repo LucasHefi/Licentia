@@ -11,7 +11,7 @@ Licentia je česká webová a desktopová aplikace pro práci s katalogem SPDX L
 - filtrování podle typu záznamu, aktuálnosti, OSI/FSF metadat a profilu licence;
 - detailní zobrazení kanonického textu a povinností;
 - porovnání licencí a ukládání položek do osobního pracovního prostoru;
-- šestikrokový průvodce výběrem běžného licenčního směru;
+- průvodce výběrem s rychlým a rozšířeným režimem a povinnou kontrolou závislostí pro distribuované aplikace;
 - veřejné REST API `/v1`;
 - Streamable HTTP MCP endpoint `/mcp`;
 - validaci SPDX výrazů, orientační kontrolu kompatibility a analýzu SPDX/CycloneDX SBOM;
@@ -46,10 +46,10 @@ Produkční sestavení:
 npm run build
 ```
 
-Kontrola stylu a statických pravidel:
+Úplná kontrola typů, stylu, datových smluv a testů:
 
 ```bash
-npm run lint
+npm run check
 ```
 
 ## Desktop: Linux, Windows a macOS
@@ -62,6 +62,8 @@ npm run tauri:dev
 npm run tauri:build
 ```
 
+Na Linuxu lze sestavit ověřené balíčky bez aktuálně problematického AppImage kroku příkazem `npm run tauri:build -- --bundles deb,rpm`. Release workflow používá tuto variantu, protože upstream balicí nástroj Tauri 2.11 může při tvorbě AppImage zůstat bez výstupu viset.
+
 Instalátory se sestavují na cílovém systému. Linux potřebuje WebKitGTK 4.1, macOS Xcode Command Line Tools a Windows Microsoft C++ Build Tools plus WebView2. Přesné aktuální požadavky jsou v [oficiální dokumentaci Tauri](https://v2.tauri.app/start/prerequisites/).
 
 ## Sdílený Apache hosting
@@ -72,13 +74,13 @@ Požadavky: Apache 2.4 s `mod_rewrite`, HTTPS, PHP 8.2+, rozšíření PDO SQLit
 npm run build:apache
 ```
 
-Výsledný adresář `apache-dist/` nahrajte do kořene webu. Pro Google/GitHub přihlášení zkopírujte `api/config.example.php` jako `api/config.php`, doplňte OAuth klíče a nastavte callback na:
+Výsledný adresář `apache-dist/` nahrajte do kořene webu. Vždy zkopírujte `api/config.example.php` jako `api/config.php`, nastavte přesnou veřejnou HTTPS adresu (`base_url`), dlouhý náhodný `rate_limit_secret` a cestu pro relace a SQLite databázi mimo veřejný kořen. OAuth klíče jsou volitelné. Callback je:
 
 ```text
 https://vase-domena.cz/api/auth/oauth/callback
 ```
 
-Bez OAuth konfigurace fungují účty přes e-mail a heslo. Databáze se při prvním požadavku vytvoří v `api/var/`; adresář musí být zapisovatelný pro PHP.
+Bez OAuth konfigurace fungují účty přes e-mail a heslo. Nadřazené adresáře databáze a relací musí existovat a být zapisovatelné pouze pro PHP proces; aplikace úmyslně odmítne konfiguraci uvnitř veřejného webového kořene.
 
 Přihlašovací a registrační obrazovka nabízí také volitelnou cestu „Pokračovat bez registrace a přihlášení“. Účetní funkce zůstávají k dispozici; stav anonymního pracovního prostoru se ukládá pouze v `localStorage` prohlížeče a nepersistuje se na serveru ani k účtu.
 

@@ -8,20 +8,22 @@
     "contentHash": "sha256:059471428039a71fc6534e49d50c2a631f1cbcddd4b4cda696f22a24e24c930c"
   },
   "review": {
-    "status": "pending",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "weak-copyleft",
-    "copyleftScope": "library",
+    "family": "nonstandard",
+    "copyleftScope": "unknown",
     "permissions": [
-      "distribution"
+      "distribution",
+      "unknown"
     ],
     "obligations": [
       "unknown"
     ],
     "triggers": [
+      "distribution",
       "unknown"
     ],
     "restrictions": [
@@ -32,25 +34,49 @@
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.library-copyleft",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.copyleft-family",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: first paragraph, sentences 1-2 ('under the terms of the GPL, LGPL, modified BSD, or Artistic license, or any of the other OSI approved licenses' and 'all of these licenses, or any smaller subset ... or just one'); the record delegates operative terms to a distributor-selected license or set of licenses instead of defining one fixed license family"
+    },
+    {
+      "field": "copyleftScope",
+      "sourceId": "spdx-license-list",
+      "locator": "text: first paragraph, sentences 1-2; the selectable GPL, LGPL, modified BSD, Artistic, and other OSI-approved terms do not establish one invariant reciprocal scope, while the note that the text is used in Perl modules does not itself impose library-level copyleft"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: first paragraph ('This software may be redistributed' and 'Distribution is allowed'); distribution is expressly permitted, but all other vocabulary permissions depend on the selected license or licenses and are therefore represented by unknown"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "text: first paragraph ('under the terms of' a selectable license or subset) and second paragraph ('please refer to the package metadata' and a distributor 'may choose' to replace the LICENSE section and/or include a LICENSE file); the wrapper states no invariant mandatory obligation from the vocabulary"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "text: first paragraph expressly addresses redistribution and distribution, establishing distribution as a trigger context; modification, linking, combination, network-use, and patent-claim triggers vary with the selected license or licenses and are represented by unknown"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "text: complete text, especially first paragraph ('under the terms of' the selectable license or licenses); the wrapper states no invariant liability, warranty, trademark, additional-terms, or patent-claim restriction, and those restrictions may vary with the selected terms"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "text: complete text; the wrapper contains no express patent grant or termination clause, but delegates operative terms to a selectable and open-ended set of OSI-approved licenses whose patent positions are not invariant"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "text: second paragraph ('please refer to the package metadata' and a distributor 'may choose' to replace the LICENSE section and/or include a LICENSE file); this is not one fixed notice obligation, and the selected license or licenses may impose differing notice burdens"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "record metadata: id=any-OSI-perl-modules, isOsiApproved=false, isDeprecatedLicenseId=false; text: both paragraphs delegate current operative terms to one or more distributor-selected licenses and allow packaged metadata to identify a narrower choice, so a single static semantic profile cannot represent the grant, scope, obligations, restrictions, patent position, notices, and triggers losslessly"
     }
   ]
 }

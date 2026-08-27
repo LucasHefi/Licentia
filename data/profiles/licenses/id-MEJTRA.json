@@ -8,67 +8,78 @@
     "contentHash": "sha256:a59ce35b3fbd8ffdc1d7b91e52c8b77a5c062c2119edfe5f2321e5b83b690adc"
   },
   "review": {
-    "status": "pending",
-    "recommendable": false,
-    "evidenceLevel": "weak"
+    "status": "reviewed",
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
       "commercial-use",
       "distribution",
       "modifications",
       "private-use"
     ],
-    "obligations": [
-      "unknown"
-    ],
-    "triggers": [
-      "unknown"
-    ],
+    "obligations": [],
+    "triggers": [],
     "restrictions": [
       "liability",
       "warranty"
     ],
-    "patentPosition": "unknown",
+    "patentPosition": "none-stated",
     "noticeBurden": "none"
   },
   "evidence": [
     {
+      "field": "copyleftScope",
+      "sourceId": "spdx-license-list",
+      "locator": "text: complete grant/condition text (grant paragraph and warranty/liability paragraph; no reciprocal condition)"
+    },
+    {
+      "field": "family",
+      "sourceId": "spdx-license-list",
+      "locator": "text: grant paragraph ('for any purpose with or without fee') and complete grant/condition text (no reciprocal condition)"
+    },
+    {
       "field": "noticeBurden",
-      "sourceId": "choose-a-license",
-      "locator": "profile.description"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "choose-a-license",
-      "locator": "profile.conditions"
+      "sourceId": "spdx-license-list",
+      "locator": "text: complete grant/condition text (grant paragraph and warranty/liability paragraph; no notice-retention condition)"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text"
+      "locator": "text: complete grant/condition text (grant paragraph and warranty/liability paragraph; no obligations or conditions stated)"
     },
     {
-      "field": "permissions",
-      "sourceId": "choose-a-license",
-      "locator": "profile.permissions"
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "text: complete grant/condition text (grant paragraph and warranty/liability paragraph; no patent grant or patent clause)"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "choose-a-license",
-      "locator": "profile.limitations"
+      "locator": "text: grant paragraph ('use, copy, modify, and/or distribute ... for any purpose with or without fee')"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text"
+      "locator": "text: warranty/liability paragraph ('AS IS', warranty disclaimer, and limitation of liability)"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "metadata: deprecated=false"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "metadata: osi=true"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "text: complete grant/condition text (grant paragraph and warranty/liability paragraph; no condition-triggering event stated)"
     }
   ]
 }

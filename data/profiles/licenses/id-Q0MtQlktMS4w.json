@@ -8,59 +8,84 @@
     "contentHash": "sha256:589c8f82903c51c05c928facaaa2b8bd3d2e99c9f94cd0569171cd529e33b6c8"
   },
   "review": {
-    "status": "pending",
+    "status": "reviewed",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "sublicensing"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "include-license-text"
+      "include-license-text",
+      "include-notice",
+      "unknown"
     ],
     "triggers": [
+      "distribution",
       "unknown"
     ],
     "restrictions": [
+      "additional-terms",
       "liability",
-      "trademark"
+      "trademark",
+      "unknown",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "SPDX official text, Sections 1-4 and metadata: Creative Commons Attribution 1.0 Generic (CC-BY-1.0), deprecated=false, osi=false, fsf=false; the broad copyright/content-work grant is paired with attribution, public-display/performance, no-sublicensing, and technological-measure conditions, so it is nonstandard for this software-oriented guide"
     },
     {
-      "field": "obligations",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "SPDX official text, Section 3 and Section 4(a)-(b): the grant permits creation of Derivative Works and does not require source disclosure or licensing a larger work under the same license; the Collective Work apart from the Work is expressly not subject to this license"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "SPDX official text, Section 3(a)-(d): worldwide, royalty-free, non-exclusive, perpetual rights to reproduce, create and reproduce Derivative Works, distribute, publicly display, publicly perform, and digitally perform the Work and Derivative Works, in all media and formats; no commercial or private-use limitation is stated, while sublicensing is expressly excluded by Section 4(a)"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "SPDX official text, Section 4(a)-(b): every distributed, publicly displayed, publicly performed, or digitally performed Work/Derivative Work must carry the license copy or URI, retain copyright/license/disclaimer notices, and provide Original Author/title/use credit; attribution and the public-display/performance surfaces are not represented losslessly by the obligation vocabulary, retained as unknown"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "SPDX official text, Section 4(a)-(b): notice and attribution duties attach to distribution, public display, public performance, and public digital performance of the Work, Derivative Works, or Collective Works; distribution is represented directly, while the distinct display/performance triggers have no vocabulary value and are retained as unknown"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "SPDX official text, Section 4(a): distribution/display/performance must remain under this license, no altered or restrictive terms may be imposed, sublicensing is prohibited, notices must remain intact, and inconsistent technological access measures are prohibited; Sections 5(b)-6 disclaim warranties and limit liability, and the closing paragraph restricts Creative Commons trademark use; the non-sublicensing/technology and attribution details are not losslessly represented and are retained as unknown"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "SPDX official text, complete Sections 1-8: the grant covers copyright rights and contains no express patent grant, patent covenant, patent-claim restriction, or patent-termination clause"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "SPDX official text, Section 4(a)-(b): license copy/URI, intact license/disclaimer/copyright notices, and author/title/derivative-use credit are required across distribution, public display, public performance, and public digital performance, creating a material multi-surface attribution and notice burden"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "SPDX official metadata and text: CC-BY-1.0 is non-deprecated but is a Creative Commons content-work license (osi=false, fsf=false) with attribution, public display/performance triggers, no sublicensing, technological-measure, and trademark conditions; those legal/content dimensions are not all represented exactly by vocabulary 1.0.0, so the profile is reviewed but not recommendable"
     }
   ]
 }

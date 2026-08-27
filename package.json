@@ -1,6 +1,6 @@
 {
   "name": "sites-project",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "private": true,
   "license": "MIT",
   "engines": {
@@ -20,6 +20,8 @@
     "data:validate": "node scripts/validate-license-data.mjs",
     "data:validate:release": "node scripts/validate-license-data.mjs --release",
     "data:profiles:check": "node scripts/sync-license-profiles.mjs --check",
+    "data:runtime:check": "node scripts/sync-runtime-metadata.mjs --check",
+    "data:runtime:write": "node scripts/sync-runtime-metadata.mjs --write",
     "data:audit": "node scripts/metadata-audit.mjs",
     "data:profiles:write": "node scripts/sync-license-profiles.mjs --write",
     "data:curate:legacy": "node scripts/curate-legacy-profiles.mjs",
@@ -34,7 +36,13 @@
     "test:apache-public-api-policy": "php scripts/apache-public-api-policy.test.php",
     "test:apache-anonymous-entry": "node --experimental-strip-types --test scripts/apache-anonymous-entry.test.ts",
     "start": "vinext start",
-    "lint": "eslint . --ignore-pattern dist --ignore-pattern desktop-dist --ignore-pattern apache-dist --ignore-pattern src-tauri/target --ignore-pattern .next"
+    "typecheck": "tsc --noEmit --incremental false",
+    "test": "npm run test:data && npm run test:metadata-audit && npm run test:recommendation-contract && npm run test:catalog-service && npm run test:apache-recommendation-contract && npm run test:curation && npm run test:data-build && npm run test:runtime-metadata && npm run test:public-api-policy && npm run test:apache-public-api-policy && npm run test:apache-anonymous-entry && npm run test:workspace-state && npm run test:service-worker-policy",
+    "test:catalog-service": "node --experimental-strip-types --test scripts/catalog-service.test.ts",
+    "test:workspace-state": "node --experimental-strip-types --test scripts/workspace-state.test.ts",
+    "test:service-worker-policy": "node --test scripts/service-worker-policy.test.mjs",
+    "check": "npm run typecheck && npm run lint -- --max-warnings=0 && npm test && npm run data:validate:release && npm run data:profiles:check && npm run data:runtime:check",
+    "lint": "eslint ."
   },
   "dependencies": {
     "@better-auth/passkey": "^1.7.1",

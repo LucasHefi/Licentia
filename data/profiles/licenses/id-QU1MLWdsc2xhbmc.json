@@ -8,58 +8,81 @@
     "contentHash": "sha256:ecb88bd02ba8d49b329201431014b922551332f8a57f79dc6264936d81fcf890"
   },
   "review": {
-    "status": "pending",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "include-copyright"
+      "include-copyright",
+      "include-license-text",
+      "include-notice"
     ],
     "triggers": [
-      "unknown"
+      "distribution"
     ],
     "restrictions": [
       "liability",
-      "trademark"
+      "trademark",
+      "unknown",
+      "warranty"
     ],
     "patentPosition": "unknown",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
+      "field": "copyleftScope",
+      "sourceId": "spdx-license-list",
+      "locator": "text: copyright-license grant and redistribution proviso (use, reproduction, modification, and source/binary redistribution are allowed subject to notice retention; no same-license, source-disclosure, or other reciprocal condition is stated)"
+    },
+    {
+      "field": "family",
+      "sourceId": "spdx-license-list",
+      "locator": "text: copyright-license grant paragraph (personal, non-exclusive rights to use, reproduce, modify, and redistribute source and/or binary forms, with or without modifications) and redistribution proviso"
+    },
+    {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: redistribution proviso (all redistributions must retain NVIDIA's copyright notice, this notice, and the following text and disclaimers)"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: redistribution proviso (retain NVIDIA's copyright notice, this notice, and the following text and disclaimers in all redistributions)"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "text: rights-exclusion paragraph ('no other rights or licenses express or implied' including patent rights, and 'No hardware is licensed hereunder'); the vocabulary has no value for an express patent-rights exclusion, so the position is represented by unknown rather than none-stated"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: copyright-license grant paragraph (use, reproduce, modify, and redistribute, with or without modifications, in source and/or binary forms, with no private-use or commercial-purpose limitation)"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: endorsement paragraph (NVIDIA names, trademarks, service marks, and logos); rights-exclusion paragraph (no unexpressed rights, including patent rights, and no hardware license); and final two paragraphs ('AS IS' warranty disclaimer and limitation of liability); the vocabulary cannot represent the express patent-rights and hardware-scope exclusions, represented by unknown"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "metadata: deprecated=false and osi=false; text: the express exclusion of patent rights and hardware scope cannot be represented losslessly by the available patent-position and restriction vocabulary, so the profile is not recommendable"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "text: redistribution proviso ('if you redistribute' and 'in all such redistributions'); modification is permitted but does not independently activate an obligation"
     }
   ]
 }

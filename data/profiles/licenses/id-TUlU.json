@@ -8,9 +8,9 @@
     "contentHash": "sha256:40baf755d3d2c5fce4d2d495e70809f8c08f44d361b650cd9be82c655f08c431"
   },
   "review": {
-    "status": "pending",
-    "recommendable": false,
-    "evidenceLevel": "weak"
+    "status": "reviewed",
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
     "family": "permissive",
@@ -19,89 +19,83 @@
       "commercial-use",
       "distribution",
       "modifications",
-      "private-use"
+      "private-use",
+      "sublicensing"
     ],
     "obligations": [
-      "include-copyright"
+      "include-copyright",
+      "include-license-text"
     ],
     "triggers": [
-      "unknown"
+      "distribution"
     ],
     "restrictions": [
       "liability",
       "warranty"
     ],
-    "patentPosition": "unknown",
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.no-copyleft",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "family",
-      "sourceId": "choose-a-license",
-      "locator": "profile.description"
+      "locator": "text: grant paragraph"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.permissive-grant",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "noticeBurden",
-      "sourceId": "choose-a-license",
-      "locator": "profile.conditions"
+      "locator": "text: grant paragraph"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "choose-a-license",
-      "locator": "profile.conditions"
+      "locator": "text: condition paragraph"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text"
+      "locator": "text: condition paragraph"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "text: condition paragraph"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "text: grant paragraph"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "text: warranty/liability paragraph"
     },
     {
       "field": "permissions",
-      "sourceId": "choose-a-license",
-      "locator": "profile.permissions"
-    },
-    {
-      "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "choose-a-license",
-      "locator": "profile.limitations"
+      "locator": "text: grant paragraph"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: warranty/liability paragraph"
     },
     {
-      "field": "restrictions",
+      "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "text"
+      "locator": "metadata: deprecated=false"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "metadata: osi=true"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "text: condition paragraph"
     }
   ]
 }

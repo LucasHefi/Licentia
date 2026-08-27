@@ -4,6 +4,7 @@ import { useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import { familyOf, ruleLabels } from "../lib/recommend";
 import { candidateStatusLabels, evidenceLabels, guideMessage, outcomeLabels } from "../lib/guide-copy";
 import { buildGuideModel, GUIDE_MODEL_VERSION, recommendFromCatalog, runtimeSourceLockResolved, type GuideAnswers } from "../lib/recommendation-contract";
+import { safeStoredWorkspaceState } from "../lib/workspace-state";
 import AccountMenu from "./AccountMenu";
 import type {
   ActivityEntry,
@@ -70,6 +71,15 @@ function includesLoose(value: string, query: string) {
   return value.toLocaleLowerCase("cs").includes(query.toLocaleLowerCase("cs"));
 }
 
+function safeExternalUrl(value: string): string | null {
+  try {
+    const url = new URL(value);
+    return url.protocol === "https:" || url.protocol === "http:" ? url.href : null;
+  } catch {
+    return null;
+  }
+}
+
 function RuleList({ title, values, tone }: { title: string; values: string[]; tone: string }) {
   return (
     <div className={`rule-group ${tone}`}>
@@ -119,33 +129,72 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
   const [favorites, setFavorites] = useState<string[]>([]);
   const [history, setHistory] = useState<ActivityEntry[]>([]);
   const [workspaceReady, setWorkspaceReady] = useState(false);
+  const [remoteSaveEnabled, setRemoteSaveEnabled] = useState(!account);
+  const workspaceVersion = useRef<string | null>(null);
+  const lastPersistedWorkspace = useRef("");
   const guideRecorded = useRef(false);
 
   useEffect(() => {
     const load = async () => {
+      setWorkspaceReady(false);
+      setRemoteSaveEnabled(!account);
+      workspaceVersion.current = null;
+      lastPersistedWorkspace.current = "";
       try {
-        const state = account
-          ? await fetch("./api/state", { credentials: "include" }).then((response) => response.ok ? response.json() as Promise<WorkspaceState> : Promise.reject())
-          : JSON.parse(localStorage.getItem("licentia-workspace") ?? "{}") as Partial<WorkspaceState>;
-        setFavorites(Array.isArray(state.favorites) ? state.favorites : []);
-        setCompareIds(Array.isArray(state.compareIds) ? state.compareIds.slice(0, 4) : []);
-        setAnswers(state.guideAnswers && typeof state.guideAnswers === "object" ? state.guideAnswers as GuideAnswers : {});
-        setHistory(Array.isArray(state.history) ? state.history.slice(0, 100) : []);
-      } catch { /* nový nebo nedostupný pracovní prostor */ }
+        let raw: unknown;
+        if (account) {
+          const response = await fetch("./api/state", { credentials: "include", cache: "no-store" });
+          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+          raw = await response.json();
+          workspaceVersion.current = typeof (raw as WorkspaceState).updatedAt === "string" ? (raw as WorkspaceState).updatedAt! : null;
+        } else {
+          raw = JSON.parse(localStorage.getItem("licentia-workspace") ?? "{}");
+        }
+        const state = safeStoredWorkspaceState(raw);
+        setFavorites(state.favorites);
+        setCompareIds(state.compareIds);
+        setAnswers(state.guideAnswers as GuideAnswers);
+        setHistory(state.history);
+        lastPersistedWorkspace.current = JSON.stringify(state);
+        setRemoteSaveEnabled(true);
+      } catch {
+        if (account) setError("Pracovní prostor se nepodařilo načíst. Synchronizace je pozastavena, aby nedošlo k přepsání dat.");
+        else {
+          const state = safeStoredWorkspaceState({});
+          lastPersistedWorkspace.current = JSON.stringify(state);
+          setRemoteSaveEnabled(true);
+        }
+      }
       finally { setWorkspaceReady(true); }
     };
     load();
   }, [account]);
 
   useEffect(() => {
-    if (!workspaceReady) return;
+    if (!workspaceReady || !remoteSaveEnabled) return;
     const state: WorkspaceState = { favorites, compareIds, guideAnswers: answers as WorkspaceState["guideAnswers"], history };
+    const serialized = JSON.stringify(state);
+    if (serialized === lastPersistedWorkspace.current) return;
     const timer = window.setTimeout(() => {
-      if (account) fetch("./api/state", { method: "PUT", credentials: "include", headers: { "Content-Type": "application/json" }, body: JSON.stringify(state) }).catch(() => undefined);
-      else localStorage.setItem("licentia-workspace", JSON.stringify(state));
+      if (account) {
+        fetch("./api/state", { method: "PUT", credentials: "include", headers: { "Content-Type": "application/json", ...(account.csrfToken ? { "X-CSRF-Token": account.csrfToken } : {}) }, body: JSON.stringify({ ...state, baseUpdatedAt: workspaceVersion.current }) })
+          .then(async (response) => {
+            const value = await response.json().catch(() => ({})) as { updatedAt?: string; error?: string };
+            if (!response.ok) throw Object.assign(new Error(value.error ?? "Synchronizace se nepodařila."), { conflict: response.status === 409 });
+            workspaceVersion.current = value.updatedAt ?? workspaceVersion.current;
+            lastPersistedWorkspace.current = serialized;
+          })
+          .catch((syncError: Error & { conflict?: boolean }) => {
+            if (syncError.conflict) setRemoteSaveEnabled(false);
+            setError(syncError.conflict ? "Pracovní prostor byl změněn na jiném zařízení. Obnovte stránku, aby nedošlo k přepsání změn." : "Změny se nepodařilo synchronizovat. Zůstanou v této relaci a další změna vyvolá nový pokus.");
+          });
+      } else {
+        localStorage.setItem("licentia-workspace", serialized);
+        lastPersistedWorkspace.current = serialized;
+      }
     }, 450);
     return () => window.clearTimeout(timer);
-  }, [workspaceReady, account, favorites, compareIds, answers, history]);
+  }, [workspaceReady, remoteSaveEnabled, account, favorites, compareIds, answers, history]);
 
   useEffect(() => {
     fetch(`${DATA_ROOT}/catalog.json`)
@@ -236,6 +285,7 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
     },
     [catalog, answers, guideMode],
   );
+  const reviewedRecommendationCount = useMemo(() => catalog.filter((item) => item.type === "license" && item.metadata?.review.recommendable === true).length, [catalog]);
   const searchLoading = fullText && deferredQuery.length >= 3 && !searchIndex && !searchFailed;
 
   function recordActivity(kind: ActivityEntry["kind"], label: string) {
@@ -415,7 +465,7 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
           <div className="guide-intro">
             <span className="section-kicker light">Pravidlový průvodce</span>
             <h1>Vyberme vhodný licenční směr.</h1>
-             <p>{quickGuideQuestionCount} otázek zúží kurátorovaný výběr běžných licencí. Výsledek stručně vysvětlíme a ukážeme jeho povinnosti.</p>
+             <p>{quickGuideQuestionCount} otázek zúží výběr licencí s dokončenou odbornou revizí. Aktuálně je jako doporučitelných schváleno {reviewedRecommendationCount}; bez revize průvodce nevydá kandidáta.</p>
             <div className="legal-note"><strong>Důležité</strong><span>Jde o orientační pomůcku, nikoli právní stanovisko. Kompatibilitu závislostí a konkrétní jurisdikci posuďte zvlášť.</span></div>
           </div>
           <div className="guide-panel">
@@ -437,6 +487,7 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
               <div className="recommendations">
                  <div className="recommend-heading"><div><span className="section-kicker">Výsledek průvodce</span><h2>Nejbližší kandidáti</h2></div><div><button onClick={() => changeGuideMode(guideMode === "quick" ? "advanced" : "quick")}>{guideMode === "quick" ? "Pokročilý režim" : "Rychlý režim"}</button><button onClick={() => { guideRecorded.current = false; setAnswers({}); setGuideStep(0); }}>Začít znovu</button></div></div>
                 {answers.openness === "closed" && <div className="proprietary-callout"><strong>Zvažte také proprietární licenci / EULA.</strong><span>Pokud nechcete dát veřejnosti právo software používat, upravovat a distribuovat, open-source licence není správný nástroj. Vytvoření vlastních podmínek patří právníkovi.</span></div>}
+                {reviewedRecommendationCount === 0 && <div className="proprietary-callout"><strong>Datová sada zatím neobsahuje právně zkontrolované doporučitelné profily.</strong><span>Průvodce proto bezpečně nevydá kandidáta. Katalog a úplná znění zůstávají dostupné, ale doporučení vyžaduje dokončenou lidskou revizi zdrojů a metadat.</span></div>}
                 <div className="recommend-list">
                  {recommendations.candidates.map((item, index) => (
                      <article key={item.id}>
@@ -522,7 +573,7 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
             <header><div><code>{detail.id}</code><h2 id="detail-title">{detail.name}</h2></div><button className="close-button" onClick={() => setDetail(null)} aria-label="Zavřít">×</button></header>
             <nav className="detail-tabs"><button className={detailTab === "overview" ? "active" : ""} onClick={() => setDetailTab("overview")}>Přehled</button><button className={detailTab === "text" ? "active" : ""} onClick={() => setDetailTab("text")}>Úplné znění</button><button className={detailTab === "template" ? "active" : ""} onClick={() => setDetailTab("template")}>Šablona variant</button></nav>
             <div className="detail-content">
-              {detailTab === "overview" && <div className="overview-content"><div className="detail-summary"><span className={detail.deprecated ? "status deprecated" : "status"}>{detail.deprecated ? "Historický identifikátor" : "Aktuální SPDX záznam"}</span><p>{detail.profile?.description ?? detail.comments ?? "SPDX poskytuje kanonické znění, ale pro tuto položku není k dispozici zjednodušený profil podmínek."}</p><div className="detail-meta"><span><small>Typ</small>{detail.type === "license" ? "Licence" : "Výjimka"}</span><span><small>OSI</small>{detail.osi ? "Schválená" : "Ne / neuvedeno"}</span><span><small>FSF</small>{detail.fsf ? "Free/Libre" : "Ne / neuvedeno"}</span></div></div>{detail.profile ? <div className="rules-grid"><RuleList title="Oprávnění" values={detail.profile.permissions} tone="allow" /><RuleList title="Podmínky" values={detail.profile.conditions} tone="condition" /><RuleList title="Omezení" values={detail.profile.limitations} tone="limit" /></div> : <div className="unprofiled-note">Podrobnou právní klasifikaci nelze bezpečně automaticky odvodit pouze z textu. Prostudujte úplné znění.</div>}{detail.seeAlso.length > 0 && <div className="source-links"><h3>Další zdroje</h3>{detail.seeAlso.slice(0, 5).map((url) => <a href={url} target="_blank" rel="noreferrer" key={url}>{url} ↗</a>)}</div>}</div>}
+              {detailTab === "overview" && <div className="overview-content"><div className="detail-summary"><span className={detail.deprecated ? "status deprecated" : "status"}>{detail.deprecated ? "Historický identifikátor" : "Aktuální SPDX záznam"}</span><p>{detail.profile?.description ?? detail.comments ?? "SPDX poskytuje kanonické znění, ale pro tuto položku není k dispozici zjednodušený profil podmínek."}</p><div className="detail-meta"><span><small>Typ</small>{detail.type === "license" ? "Licence" : "Výjimka"}</span><span><small>OSI</small>{detail.osi ? "Schválená" : "Ne / neuvedeno"}</span><span><small>FSF</small>{detail.fsf ? "Free/Libre" : "Ne / neuvedeno"}</span></div></div>{detail.profile ? <div className="rules-grid"><RuleList title="Oprávnění" values={detail.profile.permissions} tone="allow" /><RuleList title="Podmínky" values={detail.profile.conditions} tone="condition" /><RuleList title="Omezení" values={detail.profile.limitations} tone="limit" /></div> : <div className="unprofiled-note">Podrobnou právní klasifikaci nelze bezpečně automaticky odvodit pouze z textu. Prostudujte úplné znění.</div>}{detail.seeAlso.some((url) => safeExternalUrl(url)) && <div className="source-links"><h3>Další zdroje</h3>{detail.seeAlso.slice(0, 5).flatMap((url) => { const safeUrl = safeExternalUrl(url); return safeUrl ? [<a href={safeUrl} target="_blank" rel="noreferrer" key={safeUrl}>{safeUrl} ↗</a>] : []; })}</div>}</div>}
               {detailTab === "text" && <div className="text-view"><div className="text-actions"><span>Doslovné znění ze SPDX 3.28.0</span><div><button onClick={copyText}>{copied ? "Zkopírováno ✓" : "Kopírovat"}</button><button onClick={downloadText}>Stáhnout .txt</button></div></div><pre>{detail.text}</pre></div>}
               {detailTab === "template" && <div className="text-view"><p className="template-note">SPDX šablona popisuje volitelné a proměnné části pro automatické rozpoznávání textových variant.</p><pre>{detail.template ?? "Pro tuto položku není samostatná šablona k dispozici."}</pre></div>}
             </div>

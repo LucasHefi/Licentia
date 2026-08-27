@@ -5,7 +5,10 @@ DirectoryIndex index.html
   Header always set X-Content-Type-Options "nosniff"
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
   Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
-  Header always set Content-Security-Policy "default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self' https://spdx.org https://opensource.org https://api.github.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://accounts.google.com https://github.com"
+  Header always set Content-Security-Policy "default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'"
+  Header always set Cross-Origin-Opener-Policy "same-origin"
+  Header always set Cross-Origin-Resource-Policy "same-origin"
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains" env=HTTPS
 </IfModule>
 
 <IfModule mod_rewrite.c>
@@ -16,6 +19,6 @@ DirectoryIndex index.html
   RewriteRule ^ index.html [L]
 </IfModule>
 
-<FilesMatch "^(?:\.env|config\.php|composer\.(?:json|lock))$">
+<FilesMatch "^(?:\.env|config\.php|composer\.(?:json|lock)|.*\.(?:sqlite|sqlite3|db))$">
   Require all denied
 </FilesMatch>

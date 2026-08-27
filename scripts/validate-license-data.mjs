@@ -67,7 +67,7 @@ function validateSchemaContract(kind, vocabulary) {
   validateSchemaGate(schema, 'recommendable', schemaPaths[kind]);
 }
 
-export function validateContract({ release = false } = {}) {
+export function validateContract() {
   const vocabulary = readJson(vocabularyPath);
   requireObject(vocabulary, '$'); exactKeys(vocabulary, vocabularyKeys, '$'); requireString(vocabulary.vocabularyVersion, '$.vocabularyVersion');
   for (const key of vocabularyKeys.slice(1)) { sortedUnique(vocabulary[key], `$.${key}`); vocabulary[key].forEach((value, index) => enumValue(value, vocabulary[key], `$.${key}[${index}]`)); }
@@ -82,12 +82,14 @@ export function validateContract({ release = false } = {}) {
     if (!Array.isArray(source.sourcePaths) || source.sourcePaths.length === 0) fail(`${at}.sourcePaths: expected non-empty array`);
     for (const field of ['revision', 'contentHash']) { requireObject(source[field], `${at}.${field}`); exactKeys(source[field], ['status', 'value', 'reason'], `${at}.${field}`); if (source[field].status !== 'resolved' && source[field].status !== 'unresolved') fail(`${at}.${field}.status: expected resolved or unresolved`); if (source[field].status === 'unresolved') { if (source[field].value !== null) fail(`${at}.${field}.value: unresolved value must be null`); requireString(source[field].reason, `${at}.${field}.reason`); } else requireString(source[field].value, `${at}.${field}.value`); }
   });
-  if (release && lock.sources.some(source => source.revision.status !== 'resolved' || source.contentHash.status !== 'resolved')) fail('$.sources: release validation refuses unresolved revision/content placeholders');
   validateSchemaContract('license', vocabulary); validateSchemaContract('exception', vocabulary);
   return { vocabulary, sources: lock.sources };
 }
 
-export function validateProfile(profile, { file = '<profile>', vocabulary = validateContract().vocabulary } = {}) {
+export function validateProfile(profile, { file = '<profile>', vocabulary, sources, release = false } = {}) {
+  const contract = vocabulary && sources ? { vocabulary, sources } : validateContract();
+  vocabulary ??= contract.vocabulary;
+  sources ??= contract.sources;
   requireObject(profile, '$'); exactKeys(profile, topLevel, '$'); requireString(profile.id, '$.id');
   if (!['license', 'exception'].includes(profile.kind)) fail('$.kind: expected "license" or "exception"');
   if (profile.schemaVersion !== '1.0.0') fail('$.schemaVersion: expected "1.0.0"');
@@ -101,17 +103,34 @@ export function validateProfile(profile, { file = '<profile>', vocabulary = vali
   for (const field of fields) { const vocabularyKey = field === 'family' ? 'licenseFamilies' : field === 'copyleftScope' ? 'copyleftScopes' : field === 'patentPosition' ? 'patentPositions' : field; if (!(field in profile.semantic)) fail(`$.semantic.${field}: required field`); const value = profile.semantic[field]; if (Array.isArray(value)) arrayOfEnums(value, vocabulary[vocabularyKey], `$.semantic.${field}`); else enumValue(value, vocabulary[vocabularyKey], `$.semantic.${field}`); }
   if (!Array.isArray(profile.evidence)) fail('$.evidence: expected array');
   profile.evidence.forEach((item, index) => { const at = `$.evidence[${index}]`; requireObject(item, at); exactKeys(item, ['field', 'sourceId', 'locator', 'ruleId', 'ruleVersion'], at); requireString(item.field, `${at}.field`); requireString(item.sourceId, `${at}.sourceId`); requireString(item.locator, `${at}.locator`); if (item.ruleId !== undefined || item.ruleVersion !== undefined) { requireString(item.ruleId, `${at}.ruleId`); requireString(item.ruleVersion, `${at}.ruleVersion`); } if (!fields.includes(item.field) && item.field !== 'review') fail(`${at}.field: unknown evidence field`); });
+  if (profile.review.recommendable === true) {
+    const unresolvedFields = fields.filter(field => {
+      const value = profile.semantic[field];
+      return value === 'unknown' || (Array.isArray(value) && value.includes('unknown'));
+    });
+    if (unresolvedFields.length) fail(`$.semantic: recommendable profiles cannot contain unknown fields (${unresolvedFields.join(', ')})`);
+    const evidenced = new Set(profile.evidence.map(item => item.field));
+    const missingEvidence = [...fields, 'review'].filter(field => !evidenced.has(field));
+    if (missingEvidence.length) fail(`$.evidence: recommendable profiles require evidence for every semantic field and review (${missingEvidence.join(', ')})`);
+  }
   const gated = profile.review.status === 'reviewed' || profile.review.recommendable === true;
   if (gated) {
-    const sources = validateContract().sources;
     if (!sources.some(source => source.id === profile.sourceFingerprint.sourceId)) fail('$.sourceFingerprint.sourceId: unknown source lock id');
     for (const field of ['revision', 'contentHash']) if (profile.sourceFingerprint[field] === 'unresolved') fail(`$.sourceFingerprint.${field}: unresolved fingerprints are not allowed for reviewed/recommendable profiles`);
   }
   if (gated && !['sufficient', 'strong'].includes(profile.review.evidenceLevel)) fail('$.review.evidenceLevel: reviewed/recommendable profiles require sufficient or strong evidence');
   if (gated && profile.evidence.length === 0) fail('$.evidence: reviewed/recommendable profiles require field-level evidence');
+  if (release && gated) {
+    const usedSources = new Set([profile.sourceFingerprint.sourceId, ...profile.evidence.map(item => item.sourceId)]);
+    for (const sourceId of usedSources) {
+      const lock = sources.find(source => source.id === sourceId);
+      if (!lock) fail(`$.evidence: source ${sourceId} is missing from the source lock`);
+      if (lock.revision.status !== 'resolved' || lock.contentHash.status !== 'resolved') fail(`$.evidence: release refuses unresolved source ${sourceId} for a reviewed/recommendable profile`);
+    }
+  }
   return { file, id: profile.id, status: profile.review.status };
 }
 
-export function validatePaths(paths, options = {}) { const contract = validateContract(options); return paths.map(file => validateProfile(readJson(path.resolve(file)), { ...options, file, vocabulary: contract.vocabulary })); }
+export function validatePaths(paths, options = {}) { const contract = validateContract(options); return paths.map(file => validateProfile(readJson(path.resolve(file)), { ...options, file, vocabulary: contract.vocabulary, sources: contract.sources })); }
 
-if (import.meta.url === `file://${process.argv[1]}`) { try { const args = process.argv.slice(2); validatePaths(args.filter(arg => arg !== '--release'), { release: args.includes('--release') }); process.stdout.write(`license data contract valid${args.includes('--release') ? ' (release)' : ''}\n`); } catch (error) { process.stderr.write(`license data contract invalid: ${error.message}\n`); process.exitCode = 1; } }
+if (import.meta.url === `file://${process.argv[1]}`) { try { const args = process.argv.slice(2); const requested = args.filter(arg => arg !== '--release'); const profilePaths = requested.length ? requested : ['licenses', 'exceptions'].flatMap(kind => fs.readdirSync(path.join(root, 'data/profiles', kind)).filter(name => name.endsWith('.json')).map(name => path.join(root, 'data/profiles', kind, name))); validatePaths(profilePaths, { release: args.includes('--release') }); process.stdout.write(`license data contract valid: ${profilePaths.length} profiles${args.includes('--release') ? ' (release)' : ''}\n`); } catch (error) { process.stderr.write(`license data contract invalid: ${error.message}\n`); process.exitCode = 1; } }

@@ -83,6 +83,8 @@ only be enabled when the ingress proxy is controlled by the deployment.
 
 Odpověď doporučení má vracet `rule_version`, kandidáty, bodové příspěvky jednotlivých pravidel, varování a odkazy na zdroje. Nemá vydávat binární verdikt „legální/nelegální“.
 
+Kontrola kompatibility vždy vrací stav vyžadující lidské posouzení; rodina licence sama o sobě kompatibilitu neprokazuje. SBOM analyzátor čte pouze licenční pole dokumentu (například `licenseDeclared`, `licenseConcluded`, `licenses` a `expression`), aby názvy balíčků nebo volný popis nevytvářely falešné nálezy.
+
 ## MCP server
 
 Resources:

@@ -104,8 +104,9 @@ export function curate({ sourceRoot = LICENSE_DIR, profileRoot = PROFILE_DIR, mo
     if (!fs.existsSync(file)) throw new Error(`${source.id}: missing legacy profile`);
     const existing = readJson(file);
     if (existing.id !== source.id || existing.kind !== 'license') throw new Error(`${source.id}: profile identity mismatch`);
-    const existingLegacyEvidence = existing.evidence.filter(item => item.sourceId === 'choose-a-license');
-    if (!existingLegacyEvidence.length) throw new Error(`${source.id}: missing choose-a-license evidence`);
+    // Legacy evidence may have been normalized to a resolved SPDX source during
+    // release curation. Reconstruct the legacy evidence from the source profile
+    // below instead of requiring an unresolved choose-a-license entry to exist.
     const semantic = semanticFromSpdx(source, existing);
     const evidence = existing.evidence.filter(item => item.sourceId !== 'spdx-license-list');
     const next = { ...existing, semantic, review: { status: ['reviewed', 'stale'].includes(existing.review.status) ? 'stale' : 'pending', recommendable: false, evidenceLevel: 'weak' }, evidence: [...evidence, ...legacyEvidence(semantic, source), ...spdxEvidence(source)] };

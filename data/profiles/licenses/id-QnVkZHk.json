@@ -8,71 +8,82 @@
     "contentHash": "sha256:906c8258e3247f07808c9ce923503b2c4904457d5524f4c1fdb431b5c2cde95b"
   },
   "review": {
-    "status": "pending",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
     "family": "permissive",
     "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "provide-corresponding-source"
+      "include-license-text",
+      "include-notice",
+      "mark-modifications"
     ],
     "triggers": [
+      "distribution",
+      "modification",
       "unknown"
     ],
     "restrictions": [
-      "liability"
+      "liability",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.no-copyleft",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.permissive-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: permission paragraph (\"Permission is hereby granted, without written agreement and without license or royalty fees, to use, reproduce, prepare derivative works, distribute, and display this software and its documentation for any purpose\"); this is a broad non-reciprocal permissive grant"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: permission paragraph and substantial-modifications sentence (the grant is non-reciprocal; no same-license, source-disclosure, corresponding-source, linking, or network-use condition is stated)"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: permission paragraph (\"use, reproduce, prepare derivative works, distribute, and display ... for any purpose\" and \"without ... license or royalty fees\"); the broad purpose-neutral grant supports commercial/private use, distribution, and modification, but does not expressly grant sublicensing or patent rights"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "text: permission paragraph proviso (the copyright notice and following two paragraphs must appear in all source-code copies; redistributions, including binaries, must reproduce these notices in supporting documentation); substantial-modifications sentence requires clearly indicating new terms in every file where they apply"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "text: permission proviso and substantial-modifications sentence (notice duties attach to source copies and source/binary redistribution; substantial modification activates the clearly-indicated-new-terms condition, while copying/display and the substantiality threshold have no dedicated vocabulary trigger and require unknown)"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: liability paragraph (\"IN NO EVENT SHALL ... BE LIABLE\" for listed direct, indirect, special, incidental, or consequential damages) and warranty paragraph (\"SPECIFICALLY DISCLAIM ANY WARRANTIES\" and \"AS IS\"); complete text contains no trademark/name endorsement restriction"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "text: complete canonical license text, including permission, notice, substantial-modifications, liability, and warranty paragraphs; no express patent grant, patent condition, patent-claim restriction, or patent-termination clause is stated"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "text: permission proviso (copyright notice and two disclaimer paragraphs in every source-code copy, plus reproduction of these notices in supporting documentation for source and binary redistributions) and substantial-modifications sentence (new terms in every applicable file); this is a material multi-surface notice burden"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "metadata: id=Buddy, name=Buddy License, deprecated=false, osi=false, fsf=false; text: broad permissive grant, source/binary notice conditions, substantial-modification new-terms condition, explicit warranty/liability disclaimers, and no endorsement or patent clause are clear, but copying/display triggers and the conditional substantiality/new-terms rule are not losslessly represented by vocabulary 1.0.0, so it is not safe for automatic recommendation"
     }
   ]
 }

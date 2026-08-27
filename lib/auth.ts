@@ -7,6 +7,7 @@ type AuthRuntimeEnv = {
   DB?: D1Database;
   BETTER_AUTH_SECRET?: string;
   BETTER_AUTH_URL?: string;
+  SITE_ORIGIN?: string;
   GOOGLE_CLIENT_ID?: string;
   GOOGLE_CLIENT_SECRET?: string;
   GITHUB_CLIENT_ID?: string;
@@ -18,6 +19,7 @@ function getProcessEnv(): AuthRuntimeEnv {
   return {
     BETTER_AUTH_SECRET: process.env.BETTER_AUTH_SECRET,
     BETTER_AUTH_URL: process.env.BETTER_AUTH_URL,
+    SITE_ORIGIN: process.env.SITE_ORIGIN,
     GOOGLE_CLIENT_ID: process.env.GOOGLE_CLIENT_ID,
     GOOGLE_CLIENT_SECRET: process.env.GOOGLE_CLIENT_SECRET,
     GITHUB_CLIENT_ID: process.env.GITHUB_CLIENT_ID,
@@ -48,6 +50,11 @@ export async function configuredSocialProviders() {
 export async function getAuth() {
   const env = await getRuntimeEnv();
   const baseURL = env.BETTER_AUTH_URL || SITE_ORIGIN;
+  const authOrigin = new URL(baseURL).origin;
+  const siteOrigin = new URL(env.SITE_ORIGIN || SITE_ORIGIN).origin;
+  if (!authOrigin.startsWith("https://") && !/^http:\/\/(?:localhost|127\.0\.0\.1)(?::\d+)?$/.test(authOrigin)) {
+    throw new Error("BETTER_AUTH_URL must use HTTPS outside local development.");
+  }
   const secret = env.BETTER_AUTH_SECRET;
   if (!secret || secret.length < 32) {
     throw new Error("BETTER_AUTH_SECRET must contain at least 32 characters.");
@@ -79,7 +86,7 @@ export async function getAuth() {
     baseURL,
     secret,
     database: env.DB,
-    trustedOrigins: [SITE_ORIGIN],
+    trustedOrigins: [...new Set([siteOrigin, authOrigin])],
     emailAndPassword: {
       enabled: true,
       minPasswordLength: 12,
@@ -112,9 +119,9 @@ export async function getAuth() {
     },
     plugins: [
       passkey({
-        rpID: new URL(baseURL).hostname,
+        rpID: new URL(authOrigin).hostname,
         rpName: "Licentia",
-        origin: baseURL,
+        origin: authOrigin,
       }),
     ],
   });

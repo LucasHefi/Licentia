@@ -8,57 +8,81 @@
     "contentHash": "sha256:9d0a19590c0a82981e96b2159af0cf0cbb15a238af07c53fc6189c722e4402c4"
   },
   "review": {
-    "status": "pending",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "provide-corresponding-source"
+      "include-license-text",
+      "include-notice"
     ],
     "triggers": [
+      "distribution",
       "unknown"
     ],
     "restrictions": [
-      "liability"
+      "liability",
+      "trademark",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "metadata: id=BSD-4-Clause-UC, osi=false, fsf=false; text: opening grant and conditions 1-4 (broad non-reciprocal BSD-style permission with additional UC advertising and name-use conditions)"
     },
     {
-      "field": "obligations",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: opening grant and conditions 1-4 (permissions are non-reciprocal; no same-license, source-disclosure, or corresponding-source condition is stated)"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: opening grant: redistribution and use in source and binary forms, with or without modification, are permitted; no commercial, private-use, or field-of-use limitation is stated"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "text: condition 1 (source redistributions retain the copyright notice, list of conditions, and disclaimer); condition 2 (binary redistributions reproduce the same in documentation and/or other materials); condition 3 (advertising materials mentioning features or use must display the specified University of California, Berkeley and contributors acknowledgement)"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "text: conditions 1-2 (notice duties attach to source or binary redistribution) and condition 3 (the separate UC Berkeley acknowledgement duty attaches to advertising materials mentioning features or use; advertising is not a dedicated vocabulary trigger and is therefore retained as unknown; modification alone has no separate condition)"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: condition 4 (neither the name of the University nor the names of its contributors may be used to endorse or promote derived products without specific prior written permission); final disclaimer paragraph (express/implied warranty disclaimer and limitation of liability)"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "text: complete BSD-4-Clause-UC license text, including opening grant, conditions 1-4, and final disclaimer (no express patent grant, patent condition, patent-claim restriction, or patent-termination clause is stated)"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "text: conditions 1-2 require retaining/reproducing the copyright notice, list of conditions, and disclaimer in source and binary redistributions, while condition 3 requires a prescribed UC Berkeley acknowledgement in advertising materials; this creates a material multi-surface notice burden"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "metadata: id=BSD-4-Clause-UC, name=BSD-4-Clause (University of California-Specific), deprecated=false, osi=false, fsf=false; notes identify the UC-specific copyright notice and the historical advertising-clause change; text: conditions 1-4 and final warranty/liability disclaimer are explicit, but the UC Berkeley advertising acknowledgement and University/contributor endorsement/name restriction are not suitable for a general automatic recommendation"
     }
   ]
 }

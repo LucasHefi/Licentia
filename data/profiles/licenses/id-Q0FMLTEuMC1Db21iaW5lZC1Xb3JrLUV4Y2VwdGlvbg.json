@@ -8,66 +8,107 @@
     "contentHash": "sha256:6fcaa729a240ce404db03fb531a30f3ac48d46614465f0ed66df5370b732f173"
   },
   "review": {
-    "status": "pending",
+    "status": "reviewed",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "network-copyleft",
+    "copyleftScope": "network",
     "permissions": [
+      "commercial-use",
       "distribution",
       "modifications",
-      "patent-grant"
+      "patent-grant",
+      "private-use"
     ],
     "obligations": [
-      "include-license-text",
-      "provide-corresponding-source"
-    ],
-    "triggers": [
+      "include-copyright",
+      "include-notice",
+      "network-use-disclose",
+      "provide-corresponding-source",
+      "provide-installation-information",
       "unknown"
     ],
-    "restrictions": [
-      "liability",
-      "trademark"
+    "triggers": [
+      "combination",
+      "distribution",
+      "network-use",
+      "patent-claim"
     ],
-    "patentPosition": "express-grant",
-    "noticeBurden": "standard"
+    "restrictions": [
+      "additional-terms",
+      "liability",
+      "patent-claim",
+      "trademark",
+      "unknown",
+      "warranty"
+    ],
+    "patentPosition": "retaliatory-termination",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
+      "locator": "text: sections 1-4 and 4.5 (source-access and autonomy conditions apply on distribution/network receipt; the Combined Work Exception permits marked files in a Larger Work)",
+      "ruleId": "lic-007.copyleft-family",
       "ruleVersion": "lic-007-v1"
     },
     {
-      "field": "obligations",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
+      "locator": "text: section 4 opening and sections 4.1-4.4 (conditions apply when the Work is distributed, communicated, made available, made perceptible, or provided via network connection to a non-Affiliate Recipient; section 4.5 qualifies the source condition for marked files)",
+      "ruleId": "lic-007.network-trigger",
       "ruleVersion": "lic-007-v1"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
+      "locator": "text: sections 1 and 3.1-3.2 (unlimited private use/modification; worldwide permission for non-patent rights and embodied Licensor patent claims, subject to patent and trademark limitations)",
       "ruleId": "lic-007.explicit-permissions",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "text: sections 4.1-4.3 and 4.2.1 (corresponding Source Code including installation materials, Notices/attribution, and User Data access; User Data/autonomy conditions are not represented losslessly by vocabulary 1.0.0)",
+      "ruleId": "lic-007.explicit-obligations",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "text: section 4 opening; sections 4.1.2, 4.5, and 5.3 (distribution/network receipt, Modified Work, combination into a Larger Work, and patent litigation activate conditions or termination)",
+      "ruleId": "lic-007.trigger-conditions",
       "ruleVersion": "lic-007-v1"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
+      "locator": "text: sections 3.2, 4.2-4.3, 4.5, 5.2-5.3, 6, and 7.3 (patent/trademark limits, autonomy/User Data controls, source/notices conditions, termination, warranty/liability disclaimer, and no sublicensing/additional terms; autonomy/User Data controls are not represented losslessly by vocabulary 1.0.0)",
       "ruleId": "lic-007.explicit-restrictions",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "text: sections 3.1(b), 3.2(a), and 5.3 (limited express embodied-claim grant, exclusion for modification/combination, and patent-litigation termination)",
+      "ruleId": "lic-007.patent-termination",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "text: sections 4.1.1 and 4.3 (network access to Notices/Source Code must persist for the license period and one year thereafter; Notices and acknowledgment must be provided to each Recipient)",
+      "ruleId": "lic-007.notice-requirement",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "metadata: deprecated=false and osi=true; notes: this entry is specifically for the Combined Work Exception; text section 4.5 and sections 4.2.1-4.2.3 impose User Data/autonomy, anti-technical-measure, and anti-contractual restrictions that vocabulary 1.0.0 cannot represent losslessly, so recommendable=false",
+      "ruleId": "lic-007.review-evidence",
       "ruleVersion": "lic-007-v1"
     }
   ]

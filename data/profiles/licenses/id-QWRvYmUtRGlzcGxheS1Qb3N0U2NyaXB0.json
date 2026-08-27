@@ -8,60 +8,81 @@
     "contentHash": "sha256:78d052b41e4d74b536241d7013d98d13ea4269794d59e72f4f62967c9100a97d"
   },
   "review": {
-    "status": "pending",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
       "modifications",
+      "private-use",
       "sublicensing"
     ],
     "obligations": [
       "include-copyright",
-      "include-license-text"
+      "include-license-text",
+      "include-notice"
     ],
     "triggers": [
-      "unknown"
+      "distribution"
     ],
     "restrictions": [
       "liability",
-      "trademark"
+      "trademark",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "license text, permission/trademark paragraph, sentence 1 (permission to use, copy, modify, distribute, and sublicense for any purpose); whole-text review (no reciprocal terms)"
     },
     {
-      "field": "obligations",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "license text, all four paragraphs; permission/trademark paragraph, sentence 1 (grant is conditioned only on notices, name use, and trademark terms, with no source-disclosure or same-license condition)"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "license text, permission/trademark paragraph, sentence 1 (use, copy, modify, distribute, and sublicense for any purpose and without fee)"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "license text, permission/trademark paragraph, sentence 1 (copyright notices in all copies and copyright plus permission notices in supporting documentation) and sentence 4 (proper trademark attribution whenever Display PostScript is referenced)"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "license text, permission/trademark paragraph, sentence 1 (conditions on copies/supporting documentation and advertising or publicity pertaining to distribution) and sentence 4 (attribution whenever a Display PostScript reference is made)"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "license text, permission/trademark paragraph, sentences 1-4 (Adobe name and trademark limits); warranty/liability paragraph, sentences 2-4 (as-is, warranty disclaimer, and limitation of liability)"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "license text, all four paragraphs (no express patent grant and no patent-claim termination term)"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "license text, permission/trademark paragraph, sentence 1 (notices in copies and supporting documentation) and sentence 4 (conditional trademark attribution whenever Display PostScript is referenced)"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "license metadata, isOsiApproved=false and isFsfLibre=false; license text, permission/trademark paragraph, sentences 1-4 (Adobe- and Display PostScript-specific conditions make the text unsuitable as a generally reusable recommendation)"
     }
   ]
 }

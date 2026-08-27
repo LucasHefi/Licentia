@@ -10,82 +10,88 @@
   "review": {
     "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "strong-copyleft",
-    "copyleftScope": "whole-work",
+    "family": "network-copyleft",
+    "copyleftScope": "network",
     "permissions": [
+      "commercial-use",
       "distribution",
       "modifications",
-      "patent-grant",
-      "sublicensing"
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
       "include-license-text",
+      "include-notice",
       "mark-modifications",
-      "provide-corresponding-source"
+      "network-use-disclose",
+      "provide-corresponding-source",
+      "same-license",
+      "unknown"
     ],
     "triggers": [
+      "combination",
+      "distribution",
+      "modification",
+      "network-use",
       "unknown"
     ],
     "restrictions": [
+      "additional-terms",
       "liability",
+      "unknown",
       "warranty"
     ],
-    "patentPosition": "express-grant",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.whole-work-copyleft",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Section 2(b)-(d) and the three paragraphs following Section 2(d) (same-license terms apply to a distributed or published work based on the Program as a whole, while the source-request facility additionally reaches qualifying modified programs used through a network; separate independent works and mere aggregation are excluded)"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.copyleft-family",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: introductory paragraph before the Preamble (GPL modification adding Section 2(d) to cover network use), Preamble, and Section 2(b)-(d) (whole-work same-license copyleft plus a network source-request condition)"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Section 1 and Sections 2(a), 2(c), and 2(d) (copies must carry copyright, warranty, and license notices and the license; modified files need dated change notices; qualifying interactive and network programs require operational user-facing announcements or source-request facilities)"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Section 1; Sections 2(a)-2(d) and the whole-work paragraphs following Section 2(d); Section 3; and Section 6 (preserve copyright/license/warranty notices and provide the license, mark changes, license a covered whole under this License, provide corresponding source on object-code distribution, preserve an existing network source-request facility in qualifying modified versions, and impose no further restrictions); Section 2(d)'s actor, inherited-facility, modification, network-interaction, immediacy, HTTP, and complete-source conditions are not losslessly represented by the vocabulary, represented by unknown"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: final Preamble paragraph and Section 7, together with complete license review (the text states a patent-policy objective and conditions distribution when external patent obligations conflict, but contains neither an express patent grant from contributors nor patent-litigation termination)"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Section 0, second paragraph; Sections 1-2; and Sections 4-6 (running is unrestricted; copying, distribution for a fee, and modification are permitted subject to conditions; recipients obtain their license directly from the original licensor, and no express patent grant or general sublicensing permission is stated)"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Sections 4 and 6-8 and Sections 11-12 (noncompliant acts terminate rights, further restrictions are prohibited, conflicting patent or other obligations can bar distribution, optional geographic limitations may be added, and warranty and liability are disclaimed); the vocabulary has no geographic-limitation value and cannot fully encode Section 7's conflict rule, represented by unknown"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "metadata: deprecated=true; comments: 'Use the license identifier AGPL-1.0-only instead of AGPL-1.0'; text: Section 9 (a later-version choice exists only when the Program's own notice says 'any later version', while an omitted version number has a separate any-version rule, so this deprecated bare identifier must not substitute for the explicit -only/-or-later choice)"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "text: Sections 1-3 and 5 (distribution and modification activate stated conditions); Section 2 opening, Section 2(b), and the whole-work/aggregation paragraphs (covered derivative or collective combinations activate whole-work terms, but mere aggregation does not); Section 2(d) (network interaction triggers its source-request duty only for a modified version when the received Program was network-interactive and already offered users such a facility); linking is not expressly addressed and the conditional conjunction for Section 2(d) is not losslessly represented, represented by unknown"
     }
   ]
 }

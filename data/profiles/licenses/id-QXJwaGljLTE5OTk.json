@@ -8,69 +8,87 @@
     "contentHash": "sha256:b051f0cb8886b06abac0a7f024427bae3d3fb8cd6dd9e93ebd8bb3b844e07811"
   },
   "review": {
-    "status": "pending",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "whole-work",
     "permissions": [
       "commercial-use",
       "distribution",
       "modifications",
-      "patent-grant",
-      "sublicensing"
+      "private-use",
+      "unknown"
     ],
     "obligations": [
       "include-copyright",
-      "include-license-text"
+      "include-license-text",
+      "include-notice",
+      "mark-modifications",
+      "same-license",
+      "unknown"
     ],
     "triggers": [
+      "distribution",
+      "modification",
       "unknown"
     ],
     "restrictions": [
+      "additional-terms",
       "liability",
+      "unknown",
       "warranty"
     ],
-    "patentPosition": "express-grant",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "license text, Section 0 definition of 'Font' and Section 2 Modification, especially clauses (b)-(c) and the following scope paragraph; this is a custom license limited to four named Arphic TrueType fonts and their derivatives, with GPL-like whole-font reciprocity and special font-file conditions, rather than a general software-license family"
     },
     {
-      "field": "obligations",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "license text, Section 2(b) and the paragraph following Section 2(c): modifications must be Freely Available as a whole under this License, and the requirements apply to the modified work as a whole, while independent separate works and mere aggregation are excluded"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "license text, Preamble; Section 0 definition of 'Freely Available'; Sections 1-2 and 4: use, verbatim distribution, and modification of the defined Font are permitted, including charging for the copying or redistribution service; changing glyphs, format, character coverage, and font name is expressly permitted, but embedding and the breadth of commercial exploitation or sublicensing are not stated in vocabulary-equivalent terms and are represented by unknown"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "license text, Section 1 and Sections 2(a)-(c): every copy must retain ARPHICPL.TXT unaltered; each modified file must prominently state how and when it changed; modifications must be Freely Available as a whole under this License; and a qualifying interactive modified font must display copyright, warranty, redistribution, and license-access notices; the special availability and interactive-announcement details are represented by unknown"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "license text, Sections 1-2 and 5: distribution activates license-file retention, automatic receipt, and no-further-restrictions terms, while modification activates file marking and whole-font same-license availability; copying and starting a qualifying interactive modified font are additional triggers absent from the vocabulary and are represented by unknown"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "license text, Sections 3, 5, 7, and 8: unauthorized copying, modification, sublicensing, or distribution voids rights; recipients may not face further restrictions; warranty is disclaimed and liability is limited; embedding treatment, the special availability condition, and automatic retroactive termination are not represented losslessly and are represented by unknown"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "license text, Section 6 Contradiction and whole-text review: patent infringement and royalty-bearing patent licenses are discussed only as potentially conflicting obligations that can bar distribution; no express patent grant or patent-litigation termination is stated"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "license text, Section 1 and Sections 2(a)-(c): all copies must retain the unaltered license file, every modified file needs a prominent dated change notice, and qualifying interactive modified fonts need a multi-part runtime announcement, creating a material file-level notice burden"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "license metadata, deprecated=false, osi=false, fsf=false; license text, Section 0 and Sections 1-8: the license is confined to four named Arphic fonts and their derivatives, and the recommendation vocabulary cannot losslessly encode font embedding, font-name changes, the precise commercial-service permission, modification availability, conditional interactive notices, patent-conflict consequences, or the font-only whole-work scope, so it is unsuitable for automatic recommendation as a general software license"
     }
   ]
 }

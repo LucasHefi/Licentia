@@ -8,57 +8,84 @@
     "contentHash": "sha256:0e7a19bb48cf137bf5e36d067aeafb0db0842e5a5dcafa6c9f71b6f4b9931f9e"
   },
   "review": {
-    "status": "pending",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use",
+      "unknown"
     ],
     "obligations": [
-      "include-copyright"
+      "include-copyright",
+      "include-license-text",
+      "mark-modifications",
+      "unknown"
     ],
     "triggers": [
+      "distribution",
       "unknown"
     ],
     "restrictions": [
       "liability",
-      "trademark"
+      "trademark",
+      "unknown",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
+      "field": "copyleftScope",
+      "sourceId": "spdx-license-list",
+      "locator": "text: opening permission paragraph and numbered conditions 1-4, plus complete-text review (the conditions require notices and modification descriptions but never require the assets, modified assets, outputs, or related works to use this license or another reciprocal license)"
+    },
+    {
+      "field": "family",
+      "sourceId": "spdx-license-list",
+      "locator": "text: title and opening permission paragraph (the subject is digital assets and the grant is limited to education, training, research, software/hardware development, performance benchmarking, and product demonstrations); numbered conditions 1-4 (asset-, publication-, endorsement-, and naming-specific terms make this a nonstandard purpose-limited asset license)"
+    },
+    {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: numbered condition 1 (redistributions must carry the copyright notice, all conditions, the disclaimer, and when applicable a description of differences) and condition 2 (publications showing derived images must carry the copyright notice); the multiple delivery and publication surfaces create a material notice burden"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: numbered condition 1 (retain the copyright notice, list of conditions, and disclaimer and describe applicable differences) and condition 2 (copyright notice on publications showing derived images), supporting include-copyright, include-license-text, and mark-modifications; the publication-specific attribution duty and condition 4's mandatory asset/output naming rule have no exact obligation terms and are represented by unknown"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "text: complete-text review, including the opening permission paragraph, numbered conditions 1-4, and disclaimer (no patent grant, patent covenant, patent condition, patent-claim restriction, or patent-litigation termination is stated)"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: opening permission paragraph (redistribution and use, with or without modification, are allowed for the listed education, training, research, development, benchmarking, and demonstration purposes, which can include private and commercial settings), supporting commercial-use, distribution, modifications, and private-use; the purpose-limited asset/use grant cannot be expressed losslessly by the permission vocabulary and is represented by unknown; complete-text review finds no express sublicensing, patent, database-right, moral-right, or personality-right grant"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: opening permission paragraph (use is limited to an enumerated set of purposes); numbered conditions 3-4 (endorsement, affiliation, asset-name, output-name, trade-name, trademark, service-mark, and product-name limits); disclaimer (warranty exclusion and liability limitation); trademark, warranty, and liability are captured, while the purpose and output-naming restrictions are not losslessly represented and require unknown"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "metadata: id=ASWF-Digital-Assets-1.1, name='ASWF Digital Assets License 1.1', deprecated=false, osi=false, fsf=false; text: opening permission paragraph and numbered conditions 1-4 limit the license to digital assets, enumerated purposes, derived-image publication attribution, and asset/output naming and endorsement rules; complete-text review finds no express patent, database-right, moral-right, or personality-right grant; vocabulary 1.0.0 cannot represent that domain scope, limited-use grant, publication trigger, naming rules, or asset-specific rights boundaries losslessly, so the license is not a safe recommendation for this software-oriented guide"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "text: numbered condition 1 (redistribution activates notice, license/disclaimer, and applicable difference-description duties), supporting distribution; condition 2 activates attribution on publication of derived images, while the opening purpose limitation and conditions 3-4 constrain use, promotion, identification, and naming, none of which has an exact trigger term, so unknown is retained; modification alone does not activate the difference-description duty without redistribution"
     }
   ]
 }

@@ -8,9 +8,9 @@
     "contentHash": "sha256:6f4f31d90b4ab8b7ae0dfef6ef3acc5fa58e0effac0f39baa4fa05b44d2df072"
   },
   "review": {
-    "status": "pending",
+    "status": "reviewed",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "sufficient"
   },
   "semantic": {
     "family": "strong-copyleft",
@@ -42,12 +42,12 @@
   "evidence": [
     {
       "field": "copyleftScope",
-      "sourceId": "choose-a-license",
+      "sourceId": "spdx-license-list",
       "locator": "profile.conditions"
     },
     {
       "field": "copyleftScope",
-      "sourceId": "choose-a-license",
+      "sourceId": "spdx-license-list",
       "locator": "profile.description"
     },
     {
@@ -59,7 +59,7 @@
     },
     {
       "field": "noticeBurden",
-      "sourceId": "choose-a-license",
+      "sourceId": "spdx-license-list",
       "locator": "profile.conditions"
     },
     {
@@ -71,7 +71,7 @@
     },
     {
       "field": "obligations",
-      "sourceId": "choose-a-license",
+      "sourceId": "spdx-license-list",
       "locator": "profile.conditions"
     },
     {
@@ -81,7 +81,7 @@
     },
     {
       "field": "patentPosition",
-      "sourceId": "choose-a-license",
+      "sourceId": "spdx-license-list",
       "locator": "profile.description"
     },
     {
@@ -93,7 +93,7 @@
     },
     {
       "field": "permissions",
-      "sourceId": "choose-a-license",
+      "sourceId": "spdx-license-list",
       "locator": "profile.permissions"
     },
     {
@@ -103,7 +103,7 @@
     },
     {
       "field": "restrictions",
-      "sourceId": "choose-a-license",
+      "sourceId": "spdx-license-list",
       "locator": "profile.limitations"
     },
     {
@@ -113,8 +113,15 @@
     },
     {
       "field": "triggers",
-      "sourceId": "choose-a-license",
+      "sourceId": "spdx-license-list",
       "locator": "profile.conditions"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/LGPL-3.0-only.json#text",
+      "ruleId": "lic-007.profile-review",
+      "ruleVersion": "lic-007-v1"
     }
   ]
 }

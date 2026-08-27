@@ -8,71 +8,78 @@
     "contentHash": "sha256:97d899c440380edefc7b3fb1ddd965bcc2d6c41677df2da2ae7637822a3e9e23"
   },
   "review": {
-    "status": "pending",
-    "recommendable": false,
-    "evidenceLevel": "weak"
+    "status": "reviewed",
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
     "family": "permissive",
     "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "include-copyright"
+      "include-copyright",
+      "include-license-text"
     ],
     "triggers": [
-      "unknown"
+      "distribution"
     ],
     "restrictions": [
       "liability",
       "warranty"
     ],
-    "patentPosition": "unknown",
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.no-copyleft",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: grant and condition paragraphs (broad non-reciprocal permission; no same-license, source-disclosure, corresponding-source, linking, or network-use condition)"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.permissive-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: opening grant paragraph (royalty-free permission to use, reproduce, display, distribute, execute, transmit, prepare derivative works, and permit third parties)"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: condition paragraph (copyright notices and the entire statement must be included in all copies and derivative works, with the machine-executable object-code exception)"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: condition paragraph ('copyright notices ... entire statement ... must be included in all copies ... and all derivative works')"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "text: complete license text (no express patent grant, patent condition, patent-claim restriction, or patent-termination clause)"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: opening grant paragraph ('to use, reproduce, display, distribute, execute, and transmit ... prepare derivative works ... permit third-parties')"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: final disclaimer paragraph ('AS IS', express/implied warranty disclaimer, and limitation of liability for damages or other liability)"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "metadata: id=BSL-1.0, deprecated=false, osi=true, fsf=true; text: complete grant, notice condition with object-code exception, and warranty/liability disclaimer are explicit; all eight guide fields are represented without unknown"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "text: condition paragraph (notice duty attaches to furnishing copies and derivative works; no standalone modification, linking, network-use, or patent-claim trigger)"
     }
   ]
 }

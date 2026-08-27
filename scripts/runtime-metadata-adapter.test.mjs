@@ -62,5 +62,5 @@ test("joins are exact and reject duplicate or schema-invalid semantic metadata",
   const recommendable = profile("MIT", "license", { status: "pending", recommendable: true, evidenceLevel: "strong" });
   recommendable.evidence = [{ field: "family", sourceId: "spdx-license-list", locator: "fixture" }];
   const gatedProfiles = await fixture([["license", "MIT", recommendable]]);
-  await assert.rejects(() => loadCuratedProfile(gatedProfiles, "license", "MIT"), /recommendable invariant/);
+  await assert.rejects(() => loadCuratedProfile(gatedProfiles, "license", "MIT"), /recommendable invariant|recommendable profiles cannot contain unknown/);
 });

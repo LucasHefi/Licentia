@@ -8,57 +8,81 @@
     "contentHash": "sha256:3843c7c41d886abe3cdba344ae873c8840703302b5bb8f0dd876a43a26731d35"
   },
   "review": {
-    "status": "pending",
-    "recommendable": false,
-    "evidenceLevel": "weak"
+    "status": "reviewed",
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
+      "include-copyright",
       "include-license-text",
-      "provide-corresponding-source"
+      "mark-modifications"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification"
     ],
     "restrictions": [
-      "liability"
+      "liability",
+      "trademark",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: opening grant paragraph (\"Redistribution and use in source and binary forms, with or without modification, are permitted\" subject to conditions 1-4; broad non-reciprocal permission identifies a permissive family)"
     },
     {
-      "field": "obligations",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: opening grant and conditions 1-4 (permission is non-reciprocal; no same-license, source-disclosure, corresponding-source, linking, or network-use condition is stated)"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: opening grant paragraph (redistribution and use in source and binary forms, with or without modification, are permitted; no purpose, field-of-use, fee, sublicense, or patent grant limitation is stated)"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "text: conditions 1-2 (source redistributions retain, and binary redistributions reproduce, the copyright notice, list of conditions, and disclaimer) and condition 3 (all source modifications must be clearly marked and binaries based on modified source must be marked as modified versions)"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "text: conditions 1-2 and 3 (notice-retention/reproduction duties attach to source or binary redistribution; modification marking attaches to source modification and distribution of binaries based on modified source)"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: condition 4 (the name of Geoff Kuenning may not endorse or promote derived products without specific prior written permission); final disclaimer paragraph (express/implied warranty disclaimer and limitation of liability)"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "text: complete license text (grant, conditions 1-4, and disclaimer contain no express patent grant, patent condition, patent-claim restriction, or defensive/retaliatory patent-termination clause)"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "text: conditions 1-2 require retaining/reproducing the copyright notice, list of conditions, and disclaimer for source and binary redistributions; condition 3 additionally requires clearly marking source modifications and modified binaries, creating a material multi-surface notice burden"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "metadata: id=BSD-Mark-Modifications, name=BSD Mark Modifications License, deprecated=false, osi=false, fsf=false; text: broad permissive grant, source/binary notice conditions, explicit modification-marking condition, Geoff Kuenning name/endorsement restriction, and warranty/liability disclaimer are explicit; all eight guide fields are represented without unknown and the modification/marking scope fits the vocabulary"
     }
   ]
 }

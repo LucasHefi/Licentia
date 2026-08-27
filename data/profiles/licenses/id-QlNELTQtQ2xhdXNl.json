@@ -8,57 +8,81 @@
     "contentHash": "sha256:c16d364ac7aa112dfd565d591b4dcf165812174c29c47d721e4e9991f062d5de"
   },
   "review": {
-    "status": "pending",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "provide-corresponding-source"
+      "include-license-text",
+      "include-notice"
     ],
     "triggers": [
+      "distribution",
       "unknown"
     ],
     "restrictions": [
-      "liability"
+      "liability",
+      "trademark",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "metadata: id=BSD-4-Clause, osi=false, fsf=true; text: opening grant and conditions 1-4 (broad non-reciprocal BSD-style permission with additional advertising and name-use conditions)"
     },
     {
-      "field": "obligations",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: opening grant and conditions 1-4 (permissions are non-reciprocal; no same-license, source-disclosure, or corresponding-source condition is stated)"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: opening grant: redistribution and use in source and binary forms, with or without modification, are permitted; no commercial, private-use, or field-of-use limitation is stated"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "text: condition 1 (source redistributions retain the copyright notice, list of conditions, and disclaimer); condition 2 (binary redistributions reproduce the same in documentation and/or other materials); condition 3 (advertising materials mentioning features or use must display the specified acknowledgement)"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "text: conditions 1-2 (notice duties attach to source or binary redistribution) and condition 3 (the separate acknowledgement duty attaches to advertising materials mentioning features or use; advertising is not a dedicated vocabulary trigger and is therefore retained as unknown; modification alone has no separate condition)"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: condition 4 (copyright-holder and contributor names may not be used to endorse or promote derived products without specific prior written permission); final disclaimer paragraph (express/implied warranty disclaimer and limitation of liability)"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "text: complete license text, including opening grant, conditions 1-4, and final disclaimer (no express patent grant, patent condition, patent-claim restriction, or patent-termination clause is stated)"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "text: conditions 1-2 require retaining/reproducing the copyright notice, list of conditions, and disclaimer in source and binary redistributions, while condition 3 requires a prescribed acknowledgement in advertising materials; this creates a material multi-surface notice burden"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "metadata: id=BSD-4-Clause, name=BSD 4-Clause \"Original\" or \"Old\" License, deprecated=false, osi=false, fsf=true; comments: the license was rescinded by the author on 22 July 1999; text: conditions 1-4 and final warranty/liability disclaimer are explicit, but the advertising acknowledgement and endorsement/name restriction are not suitable for a general automatic recommendation"
     }
   ]
 }

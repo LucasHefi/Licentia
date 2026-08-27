@@ -8,51 +8,85 @@
     "contentHash": "sha256:7bb45263769b90c101bfbb94b0e8d3acf7a81fb3e5257d6b2ec4a7f3aa919998"
   },
   "review": {
-    "status": "pending",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "none",
     "permissions": [
       "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "include-copyright"
+      "disclose-source",
+      "include-copyright",
+      "include-notice",
+      "mark-modifications",
+      "provide-corresponding-source",
+      "unknown"
     ],
     "triggers": [
-      "unknown"
+      "combination",
+      "distribution",
+      "modification"
     ],
     "restrictions": [
-      "unknown"
+      "trademark",
+      "unknown",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
+      "field": "copyleftScope",
+      "sourceId": "spdx-license-list",
+      "locator": "text: Definitions of 'Standard Version' and 'Freely Available' and clauses 1-7 (the license uses source-availability, private-use, executable-naming/documentation, Standard-Version, aggregation, and direct-arrangement alternatives, but never requires the Package or a derivative to be licensed under this license or another same license; linked subroutines are expressly outside the Package)"
+    },
+    {
+      "field": "family",
+      "sourceId": "spdx-license-list",
+      "locator": "text: Preamble; Definitions; clauses 1-7 (use, distribution, and modification are permitted through Package-specific Standard-Version and Freely-Available concepts and multiple alternative compliance paths rather than a conventional permissive grant or a same-license copyleft rule)"
+    },
+    {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: clauses 1, 3, and 4(a), 4(c) (source copies preserve original copyright notices and disclaimers; every otherwise-changed file needs a prominent how-and-when notice; executable-distribution alternatives can require instructions, non-standard names, and separate manual-page documentation, creating a material burden)"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: clause 1; clause 3 opening and alternatives (a)-(d); clause 4 alternatives (a)-(d); clause 5 (copyright/disclaimer preservation, per-file change notices, Freely Available modifications, machine-readable source, Standard-Version executables and acquisition instructions, non-standard executable names/manual pages, fee limits, no own-product advertising, or a separate arrangement with the Copyright Holder); disclose-source and provide-corresponding-source each represent only one alternative, while the vocabulary cannot encode the disjunctions, Standard-Version delivery, naming/manual duties, fee rules, or individualized arrangement, represented by unknown"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "text: complete-text review, including Preamble, clauses 1-8 grants and conditions, and clause 9 disclaimer (no express patent grant, patent covenant, patent condition, or patent-claim termination is stated)"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Preamble; clauses 1-7, especially clauses 2-5 and 6 (use, source and executable distribution, modification, internal organizational use, commercial aggregation, paid support, and commercial sale of generated scripts and library files support commercial use, distribution, modifications, and private use; no sublicensing or patent grant is express)"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "text: clause 3(c); clause 4(c); clause 5; clause 8; clause 9 (non-standard executable naming and documentation, copying-fee and Package-fee limits, no advertising the Package as one's own product, and Copyright Holder name-use limits accompany the warranty disclaimer); trademark and warranty capture the named categories, while the special naming, fee, advertising, and alternative-arrangement restrictions are not losslessly represented, so unknown is retained; no liability limitation is stated"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "metadata: id=Artistic-1.0, name='Artistic License 1.0', deprecated=false, osi=true, fsf=false; comments state that v2.0 superseded this license and that this identifier is the OSI-site text excluding clause 8; text: Definitions and clauses 3-5 contain alternative modification and executable-distribution paths, Standard-Version duties, fee/aggregation/name conditions, and direct arrangements with the Copyright Holder that the vocabulary cannot express losslessly, so this superseded version is not a safe general recommendation"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "text: clauses 1 and 4-5 (source or executable distribution and commercial aggregation activate conditions); clause 3 (otherwise modifying the Package activates a changed-file notice plus one alternative path); clauses 6-7 exclude generated scripts/library files and linked subroutines from automatically becoming part of the Package"
     }
   ]
 }

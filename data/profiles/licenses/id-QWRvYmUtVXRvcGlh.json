@@ -8,56 +8,79 @@
     "contentHash": "sha256:1bc799031ef6a7515dc0a3a2d190225740501b23c423fdd30dbf8a2bec53dff0"
   },
   "review": {
-    "status": "pending",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "private-use",
+      "unknown"
     ],
     "obligations": [
-      "include-copyright"
+      "include-copyright",
+      "include-notice"
     ],
     "triggers": [
+      "distribution",
       "unknown"
     ],
     "restrictions": [
-      "trademark"
+      "trademark",
+      "unknown"
     ],
-    "patentPosition": "unknown",
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "license text, permission paragraph and donated-typefaces paragraph (the grant is limited to four named Adobe Utopia typefaces and places different notice conditions on all copies and on unmodified copies, making it a font-asset-specific, nonstandard license)"
     },
     {
-      "field": "obligations",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "license text, permission paragraph (the conditions require copyright and trademark attribution on copies but state no source-disclosure, same-license, or other reciprocal condition)"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "license text, permission paragraph, opening grant (permission to use, reproduce, display, and distribute the listed typefaces without a private- or commercial-purpose limitation); whole-text review (modification and sublicensing are not expressly addressed, represented by unknown)"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "license text, permission paragraph, first condition (Adobe Copyright notice in all whole and partial copies) and second condition (the stated trademark symbol and attribution in all unmodified copies)"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "license text, permission paragraph, proviso (the notice conditions apply when whole or partial copies are made, including copies that are distributed, while copying itself and the unmodified-copy state have no dedicated trigger values and are represented by unknown)"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "license text, permission paragraph, second condition (trademark symbol and attribution on unmodified copies); whole-text review (no express modified-font naming rule or modification grant is stated, and that ambiguity is represented by unknown; no warranty disclaimer or liability limitation appears)"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "license text, whole-text review (no express patent grant, patent condition, or patent-termination clause is stated)"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "license text, permission paragraph, proviso (copyright notice in all whole and partial copies plus trademark symbol and attribution in unmodified copies constitutes a standard copy-level notice burden)"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "license metadata, osi=false, fsf=false, and deprecated=false; license text, permission paragraph and donated-typefaces paragraph (the grant is confined to four named Adobe Utopia font assets, does not expressly address modified versions or sublicensing, and uses a special unmodified-copy trademark-attribution condition that the guide vocabulary cannot represent losslessly), so it is unsuitable as a generally reusable software-license recommendation"
     }
   ]
 }

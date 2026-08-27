@@ -8,57 +8,80 @@
     "contentHash": "sha256:553e1a78845d4a89d933fcab1248e0b586e3c45fd4601a740ee73ddc2d0b5de1"
   },
   "review": {
-    "status": "pending",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "provide-corresponding-source"
+      "include-license-text",
+      "include-notice"
     ],
     "triggers": [
-      "unknown"
+      "distribution"
     ],
     "restrictions": [
-      "liability"
+      "liability",
+      "trademark",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "license text, opening grant and clauses 1-6 (use and redistribution in source and binary forms, with or without modification, subject to notice, acknowledgment, and name-use conditions but no reciprocal licensing term)"
     },
     {
-      "field": "obligations",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "license text, opening grant and clauses 1-6 (no source-disclosure, corresponding-source, or same-license condition)"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "license text, opening grant (redistribution and use in source and binary forms, with or without modification, are permitted)"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "license text, clauses 1-3 and 6 (source and binary notice/disclaimer preservation plus acknowledgment in advertising and every redistribution)"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "license text, opening grant and clauses 1, 2, and 6 (redistribution conditions); clause 3 separately imposes an acknowledgment on advertising mentioning the software"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "license text, clauses 4-5 (Apache names, product naming, and endorsement limits) and final warranty/liability paragraph"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "license text, opening grant, clauses 1-6, and final disclaimer (no express patent grant or patent-claim termination term)"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "license text, clauses 1-3 and 6 (license notices in source/binary distributions and a prescribed Apache acknowledgment in advertising and all redistributions)"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "license metadata, deprecated=false and osi=false; license text, clauses 3-6 (advertising acknowledgment and Apache-specific acknowledgment, naming, and endorsement conditions are not fully expressible by the recommendation vocabulary)"
     }
   ]
 }

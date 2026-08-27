@@ -8,115 +8,93 @@
     "contentHash": "sha256:e0a5382c56c481b6541347c0977231d34f845772ebef481141ca45d7835a24ff"
   },
   "review": {
-    "status": "pending",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "strong-copyleft",
+    "family": "network-copyleft",
     "copyleftScope": "network",
     "permissions": [
       "commercial-use",
       "distribution",
       "modifications",
-      "private-use",
-      "unknown"
+      "patent-grant",
+      "private-use"
     ],
     "obligations": [
       "disclose-source",
       "include-copyright",
+      "include-license-text",
+      "include-notice",
       "mark-modifications",
       "network-use-disclose",
+      "provide-corresponding-source",
+      "provide-installation-information",
       "same-license"
     ],
     "triggers": [
+      "combination",
       "distribution",
+      "linking",
       "modification",
-      "network-use"
+      "network-use",
+      "patent-claim"
     ],
     "restrictions": [
+      "additional-terms",
       "liability",
+      "patent-claim",
       "warranty"
     ],
-    "patentPosition": "express-grant",
+    "patentPosition": "retaliatory-termination",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
       "field": "copyleftScope",
-      "sourceId": "choose-a-license",
-      "locator": "profile.description"
-    },
-    {
-      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.network-trigger",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: section 5(c), section 5 aggregate paragraph, and section 13 first paragraph"
     },
     {
       "field": "family",
-      "sourceId": "choose-a-license",
-      "locator": "profile.description"
-    },
-    {
-      "field": "noticeBurden",
-      "sourceId": "choose-a-license",
-      "locator": "profile.conditions"
+      "sourceId": "spdx-license-list",
+      "locator": "text: Preamble opening paragraph and paragraphs beginning 'A secondary benefit...' and 'The GNU Affero...'; section 5(c); section 13 first paragraph"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "choose-a-license",
-      "locator": "profile.conditions"
+      "locator": "text: section 0 Appropriate Legal Notices definition; section 4; sections 5(a), 5(b), and 5(d)"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "choose-a-license",
-      "locator": "profile.description"
+      "locator": "text: section 1 Corresponding Source definition; section 4; sections 5(a)-5(d); section 6 opening plus paragraphs defining Installation Information and requiring it for a conveyed User Product; section 13 first paragraph"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "choose-a-license",
-      "locator": "profile.permissions"
+      "locator": "text: section 8 first paragraph; section 10 patent-litigation sentence; section 11 patent-grant paragraph"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "choose-a-license",
-      "locator": "profile.limitations"
+      "locator": "text: section 2; section 4 both paragraphs; sections 5-6; section 11 patent-grant paragraph"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text"
+      "locator": "text: section 7; section 10 further-restrictions and patent-litigation sentences; sections 15-16"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "metadata: deprecated=false and osi=true; comments distinguishing AGPL-3.0-only; text: section 13 second paragraph (split AGPLv3/GPLv3 terms cannot be represented by vocabulary 1.0.0)"
     },
     {
       "field": "triggers",
-      "sourceId": "choose-a-license",
-      "locator": "profile.conditions"
+      "sourceId": "spdx-license-list",
+      "locator": "text: section 0 definitions of modify, propagate, and convey; section 5 opening and 5(c); section 6 opening and User Product paragraphs; section 8 first paragraph; section 10 patent-litigation sentence; section 13 both paragraphs"
     }
   ]
 }

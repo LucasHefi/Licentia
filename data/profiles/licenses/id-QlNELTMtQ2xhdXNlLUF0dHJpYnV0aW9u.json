@@ -8,57 +8,80 @@
     "contentHash": "sha256:a4e6ec9e72ad034f59fcccbdf47e03c71e2185aa4540a64b25d36dbfc5648a40"
   },
   "review": {
-    "status": "pending",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "provide-corresponding-source"
+      "include-license-text",
+      "include-notice"
     ],
     "triggers": [
-      "unknown"
+      "distribution"
     ],
     "restrictions": [
-      "liability"
+      "liability",
+      "trademark",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: opening grant paragraph (\"Redistribution and use in source and binary forms, with or without modification, are permitted\")"
     },
     {
-      "field": "obligations",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: opening grant and conditions 1-4 (non-reciprocal permission; no same-license, source-disclosure, or corresponding-source condition is stated)"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: opening grant paragraph (redistribution and use in source and binary forms, with or without modification, are permitted; no purpose limitation, fee condition, sublicense, or patent grant is stated)"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "text: conditions 1-2 (source redistributions must retain, and binary redistributions must reproduce, the copyright notice, list of conditions, and disclaimer) and condition 4 (redistributions of any form whatsoever must retain the fixed acknowledgment)"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "text: conditions 1-2 and 4 (notice and acknowledgment duties attach to source, binary, or \"Redistributions of any form whatsoever\"; modification alone creates no separate duty)"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: condition 3 (copyright-holder and contributor names may not endorse or promote derived products without specific prior written permission); final disclaimer paragraph (warranty disclaimer and limitation of liability)"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "text: complete license text; no express patent grant, patent condition, patent-claim restriction, or patent-termination clause is stated"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "text: conditions 1-2 require retaining/reproducing the copyright notice, list of conditions, and disclaimer, while condition 4 requires a fixed Universidad de Palermo acknowledgment (\"Redistributions of any form whatsoever must retain the following acknowledgment\"); this is a material attribution notice burden"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "metadata: id=BSD-3-Clause-Attribution, name=BSD with attribution, deprecated=false, osi=false, fsf=false; text: broad permissive grant, four explicit conditions, fixed attribution acknowledgment, name/endorsement restriction, and explicit warranty/liability disclaimer; the project-specific attribution burden is not a generally suitable default"
     }
   ]
 }

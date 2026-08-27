@@ -8,49 +8,79 @@
     "contentHash": "sha256:705aa0d7c0f472909a8773c3bb732fa63d733cfd6931cc16e29cc6476a28b301"
   },
   "review": {
-    "status": "pending",
-    "recommendable": false,
-    "evidenceLevel": "weak"
+    "status": "reviewed",
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "provide-corresponding-source"
+      "include-copyright",
+      "include-license-text"
     ],
     "triggers": [
-      "unknown"
+      "distribution"
     ],
     "restrictions": [
-      "liability"
+      "liability",
+      "trademark",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "none-stated",
+    "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "obligations",
+      "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: opening grant paragraph (\"Redistribution and use in source and binary forms, with or without modification, are permitted\" subject to conditions 1-3; broad non-reciprocal permission identifies a permissive family)"
+    },
+    {
+      "field": "copyleftScope",
+      "sourceId": "spdx-license-list",
+      "locator": "text: opening grant and conditions 1-3 (permission is non-reciprocal; no same-license, source-disclosure, corresponding-source, linking, or network-use condition is stated)"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: opening grant paragraph (\"Redistribution and use in source and binary forms, with or without modification, are permitted\"; no purpose, field-of-use, or commercial-use limitation is stated)"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "text: condition 1 (source redistributions must retain the above copyright notice, list of conditions, and following disclaimer) and condition 2 (binary redistributions must reproduce them in documentation and/or other materials)"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "text: conditions 1-2 (notice-retention/reproduction duties attach to source or binary redistribution; modification alone creates no separate condition, and no linking, network-use, or patent-claim trigger is stated)"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: condition 3 (neither the name of the HP nor contributor names may be used to endorse or promote derived products without specific prior written permission); final disclaimer paragraphs (express/implied warranty disclaimer and limitation of liability, including patent infringement among listed damages)"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "text: final liability disclaimer (\"PATENT INFRINGEMENT\" appears only in the excluded-damages list); complete license text contains no express patent grant, patent condition, patent-claim restriction, or defensive/retaliatory patent-termination clause, so patent position is none-stated"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "text: conditions 1-2 require retaining/reproducing the copyright notice, list of conditions, and disclaimer for source and binary redistributions (standard two-surface notice burden)"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "metadata: id=BSD-3-Clause-HP, name=Hewlett-Packard BSD variant license, deprecated=false, osi=false, fsf=false; notes: almost identical to BSD-3-Clause but adds \"patent infringement\" to the disclaimer; text: complete three-condition grant, HP name/endorsement restriction, notice conditions, and warranty/liability disclaimer are explicit with no unknown semantic values"
     }
   ]
 }

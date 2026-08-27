@@ -8,57 +8,80 @@
     "contentHash": "sha256:3e1482d824bf42b71f03476f379bf9bd9010989f330829200d56e25ffd99275d"
   },
   "review": {
-    "status": "pending",
-    "recommendable": false,
-    "evidenceLevel": "weak"
+    "status": "reviewed",
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "provide-corresponding-source"
+      "include-license-text"
     ],
     "triggers": [
-      "unknown"
+      "distribution"
     ],
     "restrictions": [
-      "liability"
+      "liability",
+      "patent-claim",
+      "trademark",
+      "warranty"
     ],
-    "patentPosition": "unknown",
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: opening grant paragraph (\"Redistribution and use in source and binary forms, with or without modification, are permitted\" subject to the stated conditions; broad non-reciprocal permission identifies a permissive family)"
     },
     {
-      "field": "obligations",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: opening grant and conditions 1-3 (permission is non-reciprocal; no same-license, source-disclosure, corresponding-source, linking, or network-use condition is stated)"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: opening grant paragraph (redistribution and use in source and binary forms, with or without modification, are permitted; no field-of-use or commercial-use limitation is stated)"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "text: conditions 1-2 (source redistributions must retain, and binary redistributions must reproduce in documentation or other materials, the copyright notice, list of conditions, and following disclaimer)"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "text: conditions 1-2 (notice-retention/reproduction duties attach to source or binary redistribution; modification alone creates no separate duty, and no linking, network-use, or patent-claim trigger is stated)"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: condition 3 (copyright-holder and contributor names may not endorse or promote derived products without specific prior written permission); explicit patent-rights disclaimer (no express or implied patent rights are granted); final disclaimer paragraph (warranty disclaimer and limitation of liability)"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "text: dedicated sentence \"NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY'S PATENT RIGHTS ARE GRANTED BY THIS LICENSE\"; complete text contains no express patent grant or defensive/retaliatory patent-termination clause, so patent position is none-stated"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "text: conditions 1-2 require retaining/reproducing the copyright notice, list of conditions, and disclaimer for source and binary redistributions (standard two-surface notice burden)"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "metadata: id=BSD-3-Clause-Clear, name=BSD 3-Clause Clear License, deprecated=false, osi=false, fsf=true; notes: same as BSD-3-Clause with explicit statement that no patent rights are granted; text: complete canonical three-condition grant, endorsement/name restriction, patent disclaimer, and warranty/liability disclaimer are explicit and generally reusable"
     }
   ]
 }

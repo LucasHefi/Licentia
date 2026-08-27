@@ -7,7 +7,6 @@ import { curate, discoverTargets } from './curate-legacy-profiles.mjs';
 
 const root = path.resolve(new URL('..', import.meta.url).pathname);
 const targetIds = discoverTargets({ sourceRoot: path.join(root, 'public/data/licenses') }).map(source => source.id);
-const profileFile = id => path.join(root, 'data/profiles/licenses', `id-${Buffer.from(id).toString('base64url')}.json`);
 
 test('curates the dynamically discovered legacy batch only and is idempotent', () => {
   const temp = fs.mkdtempSync(path.join(os.tmpdir(), 'lic-004-'));

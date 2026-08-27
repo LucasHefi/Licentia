@@ -8,49 +8,80 @@
     "contentHash": "sha256:bf6d7ed53498e37478792c7c4d26c6a5499435203b1ce54d34c9a5cbdfe3e834"
   },
   "review": {
-    "status": "pending",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "provide-corresponding-source"
+      "include-copyright",
+      "include-license-text",
+      "include-notice"
     ],
     "triggers": [
+      "distribution",
       "unknown"
     ],
     "restrictions": [
-      "liability"
+      "liability",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "obligations",
+      "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: opening grant (\"Redistribution and use in source and binary forms, with or without modification, are permitted\"; broad non-reciprocal BSD-style permission identifies a permissive family)"
+    },
+    {
+      "field": "copyleftScope",
+      "sourceId": "spdx-license-list",
+      "locator": "text: opening grant and conditions 1-4 (permissions are non-reciprocal; no same-license, source-disclosure, corresponding-source, linking, or network-use condition is stated)"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: opening grant (\"Redistribution and use in source and binary forms, with or without modification, are permitted\"; no purpose or field-of-use limitation is stated; modification is expressly permitted)"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "text: conditions 1-2 (source redistributions must retain, and binary redistributions must reproduce, the copyright notice, list of conditions, and disclaimer) and condition 3 (advertising materials mentioning features or use must display the specified David Giffin acknowledgement); condition 4 requires retaining the same acknowledgement in redistributions of any form"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "text: conditions 1-2 and 4 (notice and acknowledgement duties attach to source, binary, or any-form redistribution) and condition 3 (the separate acknowledgement duty attaches to advertising materials mentioning features or use; advertising is not a dedicated vocabulary trigger and is therefore retained as unknown; modification alone has no separate condition)"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: final disclaimer paragraph (express/implied warranty disclaimer and limitation of liability); complete conditions 1-4 contain no endorsement, promotion, name-use, or trademark restriction"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "text: complete license text, including opening grant, conditions 1-4, and final disclaimer (no express patent grant, patent condition, patent-claim restriction, or patent-termination clause is stated)"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "text: conditions 1-2 require retaining/reproducing the copyright notice, list of conditions, and disclaimer in source and binary redistributions; conditions 3-4 require a prescribed David Giffin acknowledgement in advertising materials and redistributions of any form, creating a material multi-surface notice burden"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "metadata: id=BSD-Advertising-Acknowledgement, name=BSD Advertising Acknowledgement License, deprecated=false, osi=false, fsf=false; text: broad permissive grant, mandatory copyright/license notices, advertising and all-form acknowledgement conditions, and explicit warranty/liability disclaimer; the advertising acknowledgement is outside the guide vocabulary, so this variant is not recommendable"
     }
   ]
 }

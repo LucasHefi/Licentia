@@ -8,50 +8,85 @@
     "contentHash": "sha256:6ab6bed6b583619981568b4c2063144c37526e779fe66e64323abb858e61e7db"
   },
   "review": {
-    "status": "pending",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "provide-corresponding-source"
+      "include-copyright",
+      "include-license-text",
+      "include-notice"
     ],
     "triggers": [
-      "unknown"
+      "distribution"
     ],
     "restrictions": [
       "liability",
-      "trademark"
+      "trademark",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
+      "field": "copyleftScope",
+      "sourceId": "spdx-license-list",
+      "locator": "text: opening grant paragraph and Conditions 1-4 (no reciprocal licensing or source-disclosure condition)"
+    },
+    {
+      "field": "family",
+      "sourceId": "spdx-license-list",
+      "locator": "text: opening grant paragraph and Conditions 1-4"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "text: Conditions 1 and 2, including Condition 2(a)-(c)"
+    },
+    {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Conditions 1 and 2, including Condition 2(a)-(c)"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "text: complete license text (no patent grant, patent condition, or patent-termination clause)"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: opening grant paragraph ('Redistribution and use in source and binary forms, with or without modification, are permitted')"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Condition 3 and final warranty/liability paragraph"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "metadata: deprecated=false and osi=true"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "text: Condition 2, first sentence (prominent author-attribution display each time an executable or dependent program is launched)"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "text: opening grant paragraph and Conditions 1-2 (redistributions in source and binary form)"
     }
   ]
 }

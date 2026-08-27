@@ -8,67 +8,79 @@
     "contentHash": "sha256:5618a8801960cb27a75811bcfb4b1f3efbbaaf5a78e6bcd5822572a0e3f6b32b"
   },
   "review": {
-    "status": "pending",
-    "recommendable": false,
-    "evidenceLevel": "weak"
+    "status": "reviewed",
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
       "commercial-use",
       "distribution",
-      "patent-grant"
+      "modifications",
+      "patent-grant",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "include-license-text",
-      "provide-corresponding-source"
+      "include-license-text"
     ],
     "triggers": [
-      "unknown"
+      "distribution"
     ],
     "restrictions": [
-      "liability"
+      "liability",
+      "warranty"
     ],
     "patentPosition": "express-grant",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
+      "field": "copyleftScope",
+      "sourceId": "spdx-license-list",
+      "locator": "text: opening grant paragraph and conditions 1-2 (non-reciprocal permission; no same-license, source-disclosure, or corresponding-source condition)"
+    },
+    {
+      "field": "family",
+      "sourceId": "spdx-license-list",
+      "locator": "text: opening grant paragraph (redistribution and use in source and binary forms, with or without modification, are permitted subject only to conditions 1-2)"
+    },
+    {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: conditions 1-2 (source copies retain, and binary copies reproduce, the copyright notice, list of conditions, and disclaimer)"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: conditions 1-2 (source redistributions retain the copyright notice, list of conditions, and disclaimer; binary redistributions reproduce the same in documentation or other materials)"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: dedicated patent-grant paragraph (each copyright holder and contributor 'hereby grants ... a ... patent license'); complete license text contains no defensive or retaliatory patent-termination clause"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: opening grant paragraph ('Redistribution and use in source and binary forms, with or without modification, are permitted') and dedicated patent-grant paragraph ('grants ... patent license to make, have made, use, offer to sell, sell, import, and otherwise transfer')"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: final DISCLAIMER paragraph ('AS IS' warranty disclaimer and 'IN NO EVENT ... BE LIABLE' limitation of liability)"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "metadata: id=BSD-2-Clause-Patent, deprecated=false, osi=true; notes: simple permissive license with an express patent grant; text: complete grant, conditions 1-2, patent paragraph, and disclaimer are explicit and bounded"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "text: conditions 1-2 (notice-retention/reproduction duties are activated by source or binary redistribution; modification alone has no separate condition)"
     }
   ]
 }

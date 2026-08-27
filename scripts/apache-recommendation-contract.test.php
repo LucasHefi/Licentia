@@ -107,12 +107,20 @@ try {
     copy($root . '/apache-server/api/index.php', $tempRoot . '/api/index.php');
     copy($root . '/apache-server/api/config.example.php', $tempRoot . '/api/config.example.php');
     $testConfig = require $tempRoot . '/api/config.example.php';
+    $testConfig['base_url'] = 'http://127.0.0.1';
+    $testConfig['db_dsn'] = 'sqlite:' . $tempRoot . '-private/licentia.sqlite';
+    $testConfig['session_path'] = $tempRoot . '-private/sessions';
+    $testConfig['rate_limit_secret'] = str_repeat('t', 64);
     $testConfig['trusted_proxy'] = true;
     $testConfig['trusted_proxy_header'] = 'HTTP_X_TEST_CLIENT_IP';
     file_put_contents($tempRoot . '/api/config.php', "<?php\nreturn " . var_export($testConfig, true) . ";\n");
     copy($root . '/public/data/catalog.json', $tempRoot . '/data/catalog.json');
     $catalogPath = $tempRoot . '/data/catalog.json';
     $catalogData = json_decode(file_get_contents($catalogPath), true, 512, JSON_THROW_ON_ERROR);
+    // The first phase intentionally exercises fail-closed behavior when the
+    // catalog contains only legacy source rows without curated metadata.
+    foreach ($catalogData as &$catalogEntry) unset($catalogEntry['metadata']);
+    unset($catalogEntry);
     $catalogData[] = ['id' => 'LIC-008-deprecated-fixture', 'type' => 'license', 'deprecated' => true, 'metadata' => []];
     $catalogData[] = ['id' => 'LIC-008-exception-fixture', 'type' => 'exception', 'deprecated' => false, 'metadata' => []];
     $catalogData[] = ['id' => 'LIC-008-extra-fixture', 'type' => 'license', 'deprecated' => false, 'metadata' => ['contractVersion' => '1.0.0', 'kind' => 'license', 'id' => 'LIC-008-extra-fixture', 'extra' => true]];
@@ -227,8 +235,8 @@ PHP_ROUTER
     }
 
     $mismatchedProjectForm = request_json($baseUrl, '/v1/recommendations', ['projectForm' => 'application']);
-    assert_same('no-safe-match', $mismatchedProjectForm['body']['outcome'], 'hard project-form mismatch must be excluded');
-    assert_same([], $mismatchedProjectForm['body']['candidates'], 'hard project-form mismatch candidates');
+    assert_same('recommendation', $mismatchedProjectForm['body']['outcome'], 'project form is context, not a license-wide hard constraint');
+    assert_same('LIC-008-synthetic-fixture', $mismatchedProjectForm['body']['candidates'][0]['id'] ?? null, 'project form must not exclude an otherwise eligible license');
 
     $catalogWithFixture = request_json($baseUrl, '/v1/recommendations', []);
     assert_same('recommendation', $catalogWithFixture['body']['outcome'], 'empty valid answers should use the synthetic metadata fixture');

@@ -8,9 +8,9 @@
     "contentHash": "sha256:a73715962e99654d9e803467836f1ef0cacaf72d8dc66995ec22fe64e8c752b8"
   },
   "review": {
-    "status": "pending",
+    "status": "reviewed",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "sufficient"
   },
   "semantic": {
     "family": "weak-copyleft",
@@ -41,17 +41,17 @@
   "evidence": [
     {
       "field": "copyleftScope",
-      "sourceId": "choose-a-license",
+      "sourceId": "spdx-license-list",
       "locator": "profile.conditions"
     },
     {
       "field": "copyleftScope",
-      "sourceId": "choose-a-license",
+      "sourceId": "spdx-license-list",
       "locator": "profile.description"
     },
     {
       "field": "family",
-      "sourceId": "choose-a-license",
+      "sourceId": "spdx-license-list",
       "locator": "profile.description"
     },
     {
@@ -63,7 +63,7 @@
     },
     {
       "field": "noticeBurden",
-      "sourceId": "choose-a-license",
+      "sourceId": "spdx-license-list",
       "locator": "profile.conditions"
     },
     {
@@ -75,7 +75,7 @@
     },
     {
       "field": "obligations",
-      "sourceId": "choose-a-license",
+      "sourceId": "spdx-license-list",
       "locator": "profile.conditions"
     },
     {
@@ -85,7 +85,7 @@
     },
     {
       "field": "patentPosition",
-      "sourceId": "choose-a-license",
+      "sourceId": "spdx-license-list",
       "locator": "profile.description"
     },
     {
@@ -97,7 +97,7 @@
     },
     {
       "field": "permissions",
-      "sourceId": "choose-a-license",
+      "sourceId": "spdx-license-list",
       "locator": "profile.permissions"
     },
     {
@@ -107,7 +107,7 @@
     },
     {
       "field": "restrictions",
-      "sourceId": "choose-a-license",
+      "sourceId": "spdx-license-list",
       "locator": "profile.limitations"
     },
     {
@@ -124,8 +124,15 @@
     },
     {
       "field": "triggers",
-      "sourceId": "choose-a-license",
+      "sourceId": "spdx-license-list",
       "locator": "profile.conditions"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/MPL-2.0.json#text",
+      "ruleId": "lic-007.profile-review",
+      "ruleVersion": "lic-007-v1"
     }
   ]
 }

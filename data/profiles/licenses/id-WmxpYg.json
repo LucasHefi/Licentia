@@ -8,9 +8,9 @@
     "contentHash": "sha256:1ed0ee458e939269b43231a6821e73f8aa5862fb262f9286dc71722230c681b7"
   },
   "review": {
-    "status": "pending",
+    "status": "reviewed",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "sufficient"
   },
   "semantic": {
     "family": "permissive",
@@ -38,12 +38,12 @@
   "evidence": [
     {
       "field": "family",
-      "sourceId": "choose-a-license",
+      "sourceId": "spdx-license-list",
       "locator": "profile.description"
     },
     {
       "field": "obligations",
-      "sourceId": "choose-a-license",
+      "sourceId": "spdx-license-list",
       "locator": "profile.conditions"
     },
     {
@@ -53,7 +53,7 @@
     },
     {
       "field": "permissions",
-      "sourceId": "choose-a-license",
+      "sourceId": "spdx-license-list",
       "locator": "profile.permissions"
     },
     {
@@ -63,7 +63,7 @@
     },
     {
       "field": "restrictions",
-      "sourceId": "choose-a-license",
+      "sourceId": "spdx-license-list",
       "locator": "profile.limitations"
     },
     {
@@ -73,8 +73,36 @@
     },
     {
       "field": "triggers",
-      "sourceId": "choose-a-license",
+      "sourceId": "spdx-license-list",
       "locator": "profile.conditions"
+    },
+    {
+      "field": "copyleftScope",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Zlib.json#text",
+      "ruleId": "lic-007.profile-review",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Zlib.json#text",
+      "ruleId": "lic-007.profile-review",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Zlib.json#text",
+      "ruleId": "lic-007.profile-review",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Zlib.json#text",
+      "ruleId": "lic-007.profile-review",
+      "ruleVersion": "lic-007-v1"
     }
   ]
 }

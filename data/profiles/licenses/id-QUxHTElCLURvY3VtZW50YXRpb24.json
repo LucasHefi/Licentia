@@ -8,56 +8,78 @@
     "contentHash": "sha256:df644645820ea458ee710bbc10b8d1c3fa90c85a6e033aafc90f0af7d7f2f9c8"
   },
   "review": {
-    "status": "pending",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "include-copyright"
+      "include-copyright",
+      "include-license-text"
     ],
     "triggers": [
-      "unknown"
+      "distribution"
     ],
     "restrictions": [
-      "liability"
+      "liability",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
+      "field": "copyleftScope",
+      "sourceId": "spdx-license-list",
+      "locator": "text: complete three-paragraph license, especially the grant and its sole proviso (redistribution is conditioned only on retaining the stated material; no same-license, source-disclosure, or other reciprocal condition appears)"
+    },
+    {
+      "field": "family",
+      "sourceId": "spdx-license-list",
+      "locator": "text: grant paragraph ('Redistribution and use of this document (ALGLIB Reference Manual) with or without modification, are permitted'); the grant is permissive but expressly document-specific rather than a software-license grant"
+    },
+    {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: grant paragraph proviso (redistributions must retain the copyright notice, condition, and disclaimer 'as the first (or last) lines of this file'; the mandatory placement makes the burden material)"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: grant paragraph proviso (redistributions must retain 'the above copyright notice, this condition and the following disclaimer' as the first or last lines of the file)"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "text: complete three-paragraph license (no patent grant, patent condition, or patent-termination clause is stated)"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: grant paragraph ('Redistribution and use of this document ... with or without modification, are permitted'); the unrestricted use grant permits commercial and private use as well as distribution and modification"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: final two paragraphs ('AS IS', disclaimer of express and implied warranties, and exclusion of direct, indirect, incidental, special, exemplary, and consequential damages)"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "metadata: id=ALGLIB-Documentation, name='ALGLIB Documentation License', deprecated=false, osi=true, fsf=false; text: the grant is limited to 'this document (ALGLIB Reference Manual)', so OSI approval does not make it a safe recommendation for the guide's software project forms and the vocabulary cannot represent the document-only subject losslessly"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "text: grant paragraph proviso ('provided that such redistributions will retain'); redistribution activates the retention and placement duties, while modification alone does not"
     }
   ]
 }

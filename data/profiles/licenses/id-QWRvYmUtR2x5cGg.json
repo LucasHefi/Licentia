@@ -8,16 +8,18 @@
     "contentHash": "sha256:48539ecbfe6e33dfccf31444a22143e83fa5db3d84d0722c412d6b582d2c93cc"
   },
   "review": {
-    "status": "pending",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "permissive",
+    "family": "nonstandard",
     "copyleftScope": "none",
     "permissions": [
       "commercial-use",
       "distribution",
+      "modifications",
+      "private-use",
       "sublicensing"
     ],
     "obligations": [
@@ -25,56 +27,63 @@
       "include-license-text"
     ],
     "triggers": [
+      "distribution",
+      "modification",
       "unknown"
     ],
     "restrictions": [
-      "liability"
+      "liability",
+      "unknown",
+      "warranty"
     ],
-    "patentPosition": "unknown",
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.no-copyleft",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.permissive-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "license text, first permission paragraph and conditions 1-2 (the documentation file may be copied and distributed only without alteration and with notices) and second permission paragraph (derivative works may instead be created from the document's content subject to a representation condition); these document-specific dual grants are nonstandard for a software license"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "license text, first and second permission paragraphs (conditions prohibit alteration of the documentation file, require notices in its copies, and prevent misrepresenting a derivative work, but impose no source-disclosure, same-license, or other reciprocal condition)"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "license text, first permission paragraph (use, copy, publish, distribute, sublicense, and sell copies of the documentation) and second permission paragraph (create derivative works from the content, then use, copy, publish, distribute, sublicense, and sell them)"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "license text, first permission paragraph, condition 2 (the copyright notice and permission notice must be included in all copies of the documentation)"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "license text, first permission paragraph and conditions 1-2 (copying the documentation, including copies not necessarily distributed, activates the no-alteration and notice conditions) and second permission paragraph, final proviso (creation and use of a derivative work activates the no-misrepresentation condition); distribution and modification are represented directly, while the separate copying trigger has no matching vocabulary value"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "license text, first permission paragraph, condition 1 (no modification, editing, or alteration of the documentation file); second permission paragraph, final proviso (a derived work must not be represented as a copy or version of the document); final paragraph (liability exclusion, AS IS provision, and express, statutory, and implied warranty disclaimers); the two document-specific restrictions have no matching vocabulary value"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "license text, all four paragraphs (no express patent grant, patent condition, or patent-termination clause is stated)"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "license text, first permission paragraph, condition 2 (both copyright and permission notices must accompany every copy of the documentation); second permission paragraph (no notice-retention condition is stated for derivative works created from the content)"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "license metadata, osi=false, fsf=false, and deprecated=false; license text, first and second permission paragraphs (the grant is for a documentation file and its content, separates immutable copies from derivative works, and contains no-alteration and no-misrepresentation conditions that the software-license guide vocabulary cannot represent losslessly), so it is unsuitable as a generally reusable software-license recommendation"
     }
   ]
 }

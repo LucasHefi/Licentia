@@ -8,70 +8,96 @@
     "contentHash": "sha256:48e15329486e6c77360debea85618ca30fa7eaa4144e8e3d34d02942698de7ad"
   },
   "review": {
-    "status": "pending",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "network-copyleft",
+    "copyleftScope": "file",
     "permissions": [
+      "commercial-use",
       "distribution",
       "modifications",
       "patent-grant",
+      "private-use",
       "sublicensing"
     ],
     "obligations": [
+      "disclose-source",
+      "include-copyright",
       "include-license-text",
+      "include-notice",
       "mark-modifications",
-      "provide-corresponding-source"
+      "network-use-disclose",
+      "provide-corresponding-source",
+      "same-license",
+      "unknown"
     ],
     "triggers": [
+      "combination",
+      "distribution",
+      "modification",
+      "network-use",
+      "patent-claim",
       "unknown"
     ],
     "restrictions": [
+      "additional-terms",
       "liability",
+      "patent-claim",
       "trademark",
+      "unknown",
       "warranty"
     ],
-    "patentPosition": "express-grant",
-    "noticeBurden": "standard"
+    "patentPosition": "retaliatory-termination",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "APSL-2.0 text Sections 1.4, 1.6, and 2.2(c) (External Deployment includes providing an electronically communicated service to another client, and source disclosure plus APSL licensing applies to file-defined Modifications externally deployed in that manner)"
     },
     {
-      "field": "obligations",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "APSL-2.0 text Sections 1.3, 1.5-1.6, 2.2(c), and 4 (Modifications are defined by additions to or deletions from Covered Code files and new files containing Covered Code; a Larger Work may combine other code, but APSL requirements remain confined to Covered Code and its portions)"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "APSL-2.0 text Sections 1.4, 2, 2.1-2.2, 3, and 4 (worldwide royalty-free copyright and Applicable Patent Rights grants cover commercial or non-commercial use, reproduction, modification, internal distribution, sublicensing/External Deployment, distribution, and creation and distribution of Larger Works)"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "APSL-2.0 text Sections 2.1(a)-(b), 2.2(a)-(c), 2.3, 3, and Exhibit A (retain copyright/proprietary/license notices, include the License, duplicate the per-file Exhibit A notice, mark changes and dates, disclose externally deployed Modifications under APSL including on network service deployment, and state source availability for executable deployment; Section 3's perpetual contributor copyright/patent grant and Section 2.2(c)'s disclosure duration have no exact vocabulary values and are represented by unknown; complete-text review confirms APSL-2.0 contains no separate Apple-notification duty)"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "APSL-2.0 text Sections 1.4-1.6, 2.1-2.3, 4, 12.1(c), and 13.5(b) (conditions are activated by distribution/External Deployment, modification, network service use, combination in a Larger Work, and a patent action against Apple; use, reproduction, display, performance, internal distribution, sublicensing, and legal prohibition or unenforceability are additional triggers without exact vocabulary values and are represented by unknown)"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "APSL-2.0 text Sections 2.1(b), 2.4, 5-6, 8-10, 12, and 13.5-13.7 (limits on additional terms and patent rights, third-party-right responsibility and indemnity, warranty/liability disclaimers, Apple and Contributor trademark limits, breach/patent/legal-enforceability termination, destruction and cessation duties, Northern District of California forum, and United States/California governing law; the latter termination, remedy, forum, and governing-law terms have no exact vocabulary values and are represented by unknown)"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "APSL-2.0 text Sections 1.1, 2, 3, 5, and 12.1(c) (Apple grants Applicable Patent Rights for Original Code, You grant Applicable Patent Rights in Your Modifications to recipients, and all licensed rights terminate if You commence patent litigation against Apple unless Apple initiated patent litigation against You first)"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "APSL-2.0 text Sections 2.1(a)-(b), 2.2(a)-(b), 2.3, and Exhibit A (copyright, proprietary, disclaimer, license-reference, full-license, prescribed per-file, changed-file/date, and executable source-availability notices create a material multi-part notice burden)"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "APSL-2.0 metadata: id=APSL-2.0, name='Apple Public Source License 2.0', deprecated=false, osi=true, fsf=true, released 6 August 2003; text Sections 1-13 and Exhibit A: despite current and approved metadata, the guide vocabulary cannot losslessly represent Section 2.2(c)'s disclosure duration, Section 3's mandatory contributor grants, the non-enumerated triggers in Sections 2.1-2.2 and 13.5(b), or Sections 12 and 13.5-13.7 termination, destruction, governing-law, and forum terms; complete-text review also confirms there is no Apple-notification clause, so the profile is not recommendable"
     }
   ]
 }

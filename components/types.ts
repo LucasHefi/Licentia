@@ -11,6 +11,7 @@ export interface LicenseSummary {
   permissions: string[];
   conditions: string[];
   limitations: string[];
+  metadata?: import("../lib/recommendation-contract").CatalogMetadataRecord["metadata"];
 }
 
 export interface LicenseProfile {
@@ -37,16 +38,10 @@ export interface LicenseDetail {
   comments?: string | null;
   seeAlso: string[];
   profile?: LicenseProfile | null;
+  metadata?: import("../lib/recommendation-contract").CatalogMetadataRecord["metadata"];
 }
 
-export interface GuideAnswers {
-  openness?: "open" | "closed" | "undecided";
-  reciprocity?: "none" | "file" | "library" | "strong" | "network";
-  delivery?: "library" | "application" | "saas" | "internal";
-  patents?: "important" | "neutral";
-  notices?: "minimal" | "standard";
-  jurisdiction?: "eu" | "global";
-}
+export type GuideAnswers = import("../lib/recommendation-contract").GuideAnswers;
 
 export interface Recommendation {
   license: LicenseSummary;
@@ -62,6 +57,9 @@ export interface AppIdentity {
   authSource: "chatgpt" | "licentia";
   providerLabel: string;
   signOutPath?: string;
+  signOutMethod?: "GET" | "POST";
+  csrfToken?: string;
+  canAddPasskey?: boolean;
 }
 
 export interface ActivityEntry {

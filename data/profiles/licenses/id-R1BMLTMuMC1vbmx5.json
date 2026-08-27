@@ -8,9 +8,9 @@
     "contentHash": "sha256:cdfcd62f98db2c84f724635bc5ad60a15825834f5c016534c2cd67b025a08ee1"
   },
   "review": {
-    "status": "pending",
-    "recommendable": false,
-    "evidenceLevel": "weak"
+    "status": "reviewed",
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
     "family": "strong-copyleft",
@@ -19,109 +19,80 @@
       "commercial-use",
       "distribution",
       "modifications",
-      "private-use",
-      "unknown"
+      "patent-grant",
+      "private-use"
     ],
     "obligations": [
       "disclose-source",
       "include-copyright",
+      "include-license-text",
+      "include-notice",
       "mark-modifications",
+      "provide-corresponding-source",
+      "provide-installation-information",
       "same-license"
     ],
     "triggers": [
+      "combination",
       "distribution",
-      "modification"
+      "linking",
+      "modification",
+      "patent-claim"
     ],
     "restrictions": [
+      "additional-terms",
       "liability",
+      "patent-claim",
       "warranty"
     ],
-    "patentPosition": "express-grant",
+    "patentPosition": "retaliatory-termination",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
       "field": "copyleftScope",
-      "sourceId": "choose-a-license",
-      "locator": "profile.description"
-    },
-    {
-      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.whole-work-copyleft",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "family",
-      "sourceId": "choose-a-license",
-      "locator": "profile.description"
+      "locator": "text: section 5(c) and section 5 aggregate paragraph"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.copyleft-family",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "noticeBurden",
-      "sourceId": "choose-a-license",
-      "locator": "profile.conditions"
+      "locator": "text: Preamble and section 5(c)"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "choose-a-license",
-      "locator": "profile.conditions"
+      "locator": "text: section 4 and sections 5(a), 5(b), and 5(d)"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "choose-a-license",
-      "locator": "profile.description"
+      "locator": "text: section 4; sections 5(a)-5(d); section 6 opening and User Product paragraphs"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "choose-a-license",
-      "locator": "profile.permissions"
+      "locator": "text: section 8; section 10 patent-litigation sentence; section 11 patent grant"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "choose-a-license",
-      "locator": "profile.limitations"
+      "locator": "text: Preamble; sections 2 and 4-6; section 11 patent grant"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text"
+      "locator": "text: sections 7 and 10; sections 15-16"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "metadata: osi=true"
     },
     {
       "field": "triggers",
-      "sourceId": "choose-a-license",
-      "locator": "profile.conditions"
+      "sourceId": "spdx-license-list",
+      "locator": "text: section 0 definitions of propagate and convey; section 1 Corresponding Source; sections 5, 8, and 10"
     }
   ]
 }

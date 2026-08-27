@@ -8,57 +8,78 @@
     "contentHash": "sha256:00da44f660a3b17ac8e9fce47f3ebca08f7aefaac1ea8e7d7164b6e4b8b13f85"
   },
   "review": {
-    "status": "pending",
-    "recommendable": false,
-    "evidenceLevel": "weak"
+    "status": "reviewed",
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "provide-corresponding-source"
+      "include-license-text"
     ],
     "triggers": [
-      "unknown"
+      "distribution"
     ],
     "restrictions": [
-      "liability"
+      "liability",
+      "warranty"
     ],
-    "patentPosition": "unknown",
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: opening grant paragraph (redistribution and use in source and binary forms, with or without modification, are permitted subject only to conditions 1-2; the closing views sentence adds no reciprocal term)"
     },
     {
-      "field": "obligations",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: opening grant paragraph and conditions 1-2 (broad non-reciprocal permission; no same-license, source-disclosure, corresponding-source, linking, or network-use condition; the closing views sentence is not a copyleft condition)"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: opening grant paragraph (redistribution and use in source and binary forms, with or without modification, are permitted; no purpose limitation, fee condition, sublicensing term, or patent grant is stated)"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "text: conditions 1-2 (source redistributions must retain, and binary redistributions must reproduce, the copyright notice, list of conditions, and disclaimer; no corresponding-source or third-clause endorsement/name-use requirement)"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "text: conditions 1-2 (notice-retention/reproduction duties attach to source or binary redistribution; modification alone creates no separate duty, and the closing views sentence creates no additional trigger)"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: final warranty/liability disclaimer paragraph ('AS IS', express/implied warranty disclaimer, and limitation of liability for listed damages); the closing views-and-conclusions sentence only disclaims representation of official policies and adds no trademark, name-use, or endorsement prohibition"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "text: complete license text (opening grant, conditions 1-2, warranty/liability disclaimer, and closing views sentence contain no express patent grant, patent scope, patent condition, or defensive/retaliatory patent-claim termination)"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "text: conditions 1-2 (source copies retain, and binary copies reproduce, the copyright notice, list of conditions, and disclaimer in documentation or other distribution materials; standard two-clause notice burden)"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "metadata: id=BSD-2-Clause-Views, name='BSD 2-Clause with views sentence', deprecated=false, osi=false, fsf=false; SPDX notes this is identical to BSD-2-Clause with the addition of the closing views-and-conclusions sentence; complete canonical text has explicit bounded semantics for all guide fields"
     }
   ]
 }

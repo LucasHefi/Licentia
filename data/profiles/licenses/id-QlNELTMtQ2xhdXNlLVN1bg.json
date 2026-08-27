@@ -8,49 +8,79 @@
     "contentHash": "sha256:c46dc917403e8bcc0f592f10699329ed39d7a821ddc946e23a0f95e40d77100e"
   },
   "review": {
-    "status": "pending",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "provide-corresponding-source"
+      "include-copyright",
+      "include-license-text"
     ],
     "triggers": [
-      "unknown"
+      "distribution"
     ],
     "restrictions": [
-      "liability"
+      "liability",
+      "trademark",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "none-stated",
+    "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "obligations",
+      "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: opening grant (\"Redistribution and use in source and binary forms, with or without modification, are permitted\") subject to conditions 1-3; the broad non-reciprocal grant identifies a permissive family"
+    },
+    {
+      "field": "copyleftScope",
+      "sourceId": "spdx-license-list",
+      "locator": "text: opening grant and conditions 1-3; permission is non-reciprocal and no same-license, source-disclosure, corresponding-source, linking, or network-use condition is stated"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: opening grant (\"Redistribution and use in source and binary forms, with or without modification, are permitted\"; no purpose or field-of-use limitation is stated in the grant)"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "text: conditions 1-2 (source redistributions must retain, and binary redistributions must reproduce in the documentation and/or other materials, the copyright notice, list of conditions, and following disclaimer)"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "text: conditions 1-2 (notice-retention/reproduction duties attach to source or binary distribution; modification alone creates no separate condition, and no linking, network-use, or patent-claim trigger is stated)"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Sun name/endorsement condition (\"Neither the name of Sun Microsystems, Inc. or the names of contributors may be used to endorse or promote products derived from this software without specific prior written permission\"); disclaimer paragraphs exclude warranties and limit Sun/licensor liability"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "text: complete license text; \"NON-INFRINGEMENT\" appears only in the excluded warranty conditions, with no express patent grant, patent condition, patent-claim restriction, or defensive/retaliatory patent-termination clause"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "text: conditions 1-2 require retaining/reproducing the copyright notice, list of conditions, and disclaimer for source and binary redistributions (standard two-surface notice burden)"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "metadata: id=BSD-3-Clause-Sun, name=BSD 3-Clause Sun Microsystems, deprecated=false, osi=false, fsf=false; notes: variant has disclaimer wording differences and omits a no-nuclear-warranty sentence; text: complete permissive grant, source/binary notice conditions, Sun name/endorsement restriction, and warranty/liability disclaimer are explicit, but the Sun-specific endorsement condition makes it unsuitable for general automatic recommendation"
     }
   ]
 }

@@ -8,71 +8,90 @@
     "contentHash": "sha256:c9b3c90d4569fa9506b9ef63514795736e6f54a3b6d30be6d18903799a337d4f"
   },
   "review": {
-    "status": "pending",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
       "commercial-use",
       "distribution",
       "modifications",
       "patent-grant",
+      "private-use",
       "sublicensing"
     ],
     "obligations": [
       "include-copyright",
-      "include-license-text",
-      "provide-corresponding-source"
+      "include-notice",
+      "mark-modifications",
+      "provide-corresponding-source",
+      "unknown"
     ],
     "triggers": [
+      "distribution",
+      "modification",
+      "network-use",
+      "patent-claim",
       "unknown"
     ],
     "restrictions": [
       "liability",
+      "patent-claim",
       "trademark",
+      "unknown",
       "warranty"
     ],
-    "patentPosition": "defensive-termination",
+    "patentPosition": "retaliatory-termination",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
+      "field": "copyleftScope",
+      "sourceId": "spdx-license-list",
+      "locator": "text: Sections 1(c), 3, 5-6, and 15, read with the complete license text (Original Work and Derivative Works may be distributed under any non-contradictory license; the source promise is actor-specific to Licensor and no same-license or derivative-source reciprocity is imposed)"
+    },
+    {
+      "field": "family",
+      "sourceId": "spdx-license-list",
+      "locator": "text: Sections 1(a)-(e) and 15 (broad copyright and use rights), especially Section 1(c) (distribution of Original Work and Derivative Works under any license that does not contradict AFL-3.0), with no reciprocal licensing condition in Sections 2-16"
+    },
+    {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: application notice preceding Section 1 and Section 6 (Derivative Work Source Code must retain copyright, patent, trademark, licensing, descriptive Attribution Notices and carry a prominent modification Attribution Notice), constituting a standard source-level notice burden"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Section 3 (Licensor provides machine-readable Original Work Source Code with each Licensor-distributed copy or through the stated repository alternative); Section 6 (retain specified notices and add a prominent modification notice in Derivative Work Source Code); and Section 9, first paragraph (a distributor must make a reasonable effort to obtain recipients' express assent); the vocabulary cannot encode the distinct Licensor actor, limited Original Work source promise, repository alternative, or express-assent duty, represented by unknown"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-termination",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Section 2 (express, worldwide, royalty-free, non-exclusive and sublicensable patent grant for claims embodied in the furnished Original Work) and Section 10 (automatic termination of the entire License upon the specified patent action against Licensor or any licensee, except combination claims)"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Sections 1(a)-(e), 2, and 15 (worldwide, royalty-free, non-exclusive and sublicensable rights to reproduce, create Derivative Works, distribute or communicate under a qualifying license of choice, perform, display, make, use, sell, offer for sale, have made, import, and otherwise use for unrestricted purposes)"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Section 4 (endorsement, trademark, and patent-scope limits); Sections 7-8 (affirmative provenance warranty, broad warranty disclaimer, and liability limitation); Sections 9-10 (condition-based and patent-action termination); Sections 11-12 (exclusive venue, governing law, CISG exclusion, and prevailing-party costs and attorneys' fees); and Section 16 (conditions on modified license text and AFL/OSI naming or claims); the vocabulary cannot encode these litigation, assent, provenance-warranty, termination, and license-document conditions losslessly, represented by unknown"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "metadata: id=AFL-3.0, deprecated=false, osi=true; text: Sections 3, 5, 7, 9-12, and 16 and complete-license review (despite current OSI approval, the actor-specific and limited source promise, broad External Deployment condition, affirmative provenance warranty, recipient-assent duty, whole-license patent retaliation, governing-law and venue clause, fee shifting, and modified-license conditions are significant terms the guide vocabulary cannot communicate losslessly, so the profile is not recommendable)"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "text: Section 3 (each copy the Licensor distributes); Section 5 (External Deployment, including network availability and any other use by anyone other than You, is treated as Section 1(c) distribution); Section 6 (creation of Derivative Works); Section 9, first paragraph (distribution activates the reasonable-effort express-assent duty); and Section 10 (commencement of the specified patent action, including a cross-claim or counterclaim); External Deployment is broader than the available network-use and distribution values, represented by unknown"
     }
   ]
 }

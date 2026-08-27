@@ -10,55 +10,82 @@
   "review": {
     "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "provide-corresponding-source"
+      "include-license-text",
+      "mark-modifications",
+      "unknown"
     ],
     "triggers": [
+      "distribution",
+      "modification",
       "unknown"
     ],
     "restrictions": [
-      "liability"
+      "liability",
+      "trademark",
+      "unknown",
+      "warranty"
     ],
-    "patentPosition": "unknown",
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: opening grant (\"Redistribution and use in source and binary forms, with or without modification, are permitted\") and conditions 1-4; non-reciprocal conditions identify a permissive family"
     },
     {
-      "field": "obligations",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: opening grant and conditions 1-4 (no same-license, source-disclosure, or corresponding-source condition; permission is non-reciprocal)"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: opening grant (\"Redistribution and use in source and binary forms, with or without modification, are permitted\"; no purpose or field-of-use limitation is stated)"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "text: condition 1 (source redistributions retain the copyright notice, list of conditions, and disclaimer) and condition 3 (altered source versions must be plainly marked); condition 2 origin/acknowledgment language has no lossless attribution value in vocabulary 1.0.0, represented by unknown"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "text: conditions 1-4 (source redistribution activates retention; altered source versions activate marking; condition 2 applies to use in a product and origin/acknowledgment, for which vocabulary 1.0.0 has no dedicated use/attribution trigger, represented by unknown)"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: condition 2 (origin must not be misrepresented) and condition 4 (author name may not endorse/promote products without specific prior written permission); final disclaimer (warranty disclaimer and limitation of liability); origin/misrepresentation is not separately representable, represented by unknown"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "text: PATENTS paragraph (author reports no known patented algorithms but gives no guarantee and performed no patent search); no express patent grant, patent condition, patent-claim restriction, or patent-termination clause is stated"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "text: condition 1 requires retaining the copyright notice, list of conditions, and disclaimer in source redistributions; condition 2 says product acknowledgment is appreciated but not required, yielding a standard rather than material notice burden"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "metadata: id=bzip2-1.0.5, deprecated=true, osi=false, fsf=false; notes: deprecated in favor of bzip2-1.0.6; text: broad permissive grant with source-notice, altered-source marking, origin/acknowledgment, author-name endorsement, warranty/liability, and non-assuring patent clauses; attribution/origin nuance is not losslessly representable by vocabulary 1.0.0, so not-recommendable"
     }
   ]
 }

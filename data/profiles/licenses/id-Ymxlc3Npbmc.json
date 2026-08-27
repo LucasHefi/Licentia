@@ -8,42 +8,71 @@
     "contentHash": "sha256:5366e24c958f2f3c42bd0d29d49a299a40ce201571c95e300ef8a040afd8b9c3"
   },
   "review": {
-    "status": "pending",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "public-domain-equivalent",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use",
+      "sublicensing"
     ],
-    "obligations": [
-      "provide-corresponding-source"
-    ],
-    "triggers": [
-      "unknown"
-    ],
-    "restrictions": [
-      "unknown"
-    ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "obligations": [],
+    "triggers": [],
+    "restrictions": [],
+    "patentPosition": "none-stated",
+    "noticeBurden": "none"
   },
   "evidence": [
     {
+      "field": "copyleftScope",
+      "sourceId": "spdx-license-list",
+      "locator": "text: sentence 1 and complete-text review (the author disclaims copyright to the source code, and no same-license, reciprocal-source, or other copyleft condition appears)"
+    },
+    {
+      "field": "family",
+      "sourceId": "spdx-license-list",
+      "locator": "metadata: name='SQLite Blessing'; text: sentence 1 ('The author disclaims copyright to this source code'), which states a public-domain dedication rather than a conditional copyright license"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "text: sentences 1-4 and complete-text review (the blessing is expressly 'in place of a legal notice'; no copyright, attribution, license-text, or notice-retention requirement is stated)"
+    },
+    {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: sentences 1-4 and complete-text review (the three blessing lines are wishes, not conditions; no source-disclosure, corresponding-source, attribution, notice, modification-marking, or same-license duty is stated)"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "text: complete-text review (the copyright disclaimer and blessing contain no patent grant, patent license, patent covenant, or patent-claim termination)"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: sentence 1 ('The author disclaims copyright to this source code') and sentence 4 ('May you share freely'); the stated copyright disclaimer supports unrestricted commercial and private use, copying/distribution, modification, and downstream relicensing/sublicensing as the dedication's intended effect, but not an express patent grant"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "text: complete-text review (no warranty disclaimer, liability limitation, trademark restriction, patent-claim restriction, or additional-term restriction is stated)"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "metadata: id=blessing, name='SQLite Blessing', deprecated=false, osi=false, fsf=false; text ends after a bare copyright disclaimer and three-line blessing, with no jurisdictional fallback copyright license, express copying/distribution/modification grant for jurisdictions that do not recognize the disclaimer, warranty disclaimer, liability limitation, or patent terms, so it is not a safe general recommendation"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "text: sentences 1-4 and complete-text review (the copyright disclaimer is not conditioned on distribution, modification, combination, linking, network use, or patent claims; the blessing creates no legal trigger)"
     }
   ]
 }

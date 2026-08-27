@@ -8,44 +8,82 @@
     "contentHash": "sha256:1701b8f6b4922cd4f8859394d4a1fee033e4817d6d327c67f1f2cf81b374b713"
   },
   "review": {
-    "status": "pending",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "unknown"
+      "include-copyright",
+      "include-license-text",
+      "include-notice"
     ],
     "triggers": [
+      "distribution",
       "unknown"
     ],
     "restrictions": [
       "liability",
-      "trademark"
+      "trademark",
+      "unknown",
+      "warranty"
     ],
     "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "noticeBurden": "standard"
   },
   "evidence": [
     {
+      "field": "copyleftScope",
+      "sourceId": "spdx-license-list",
+      "locator": "text: copyright-grant paragraph, especially the permission to redistribute with or without modifications in source and/or binary forms and the notice proviso limited to the entire unmodified Apple Software; no source-disclosure, same-license, or other reciprocal condition appears in the complete text"
+    },
+    {
+      "field": "family",
+      "sourceId": "spdx-license-list",
+      "locator": "text: acceptance paragraph and copyright-grant paragraph (a non-reciprocal grant confined to the defined original Apple Software, stated as personal and non-exclusive, with an atypical notice condition applying only when that software is redistributed in its entirety and without modifications)"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "text: copyright-grant paragraph, proviso requiring retention of 'this notice and the following text and disclaimers' in every qualifying redistribution of the Apple Software in its entirety and without modifications; the retained copyright, license text, and legal notices constitute a standard burden, while the conjunctive scope is recorded under triggers"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "text: copyright line and copyright-grant paragraph, notice proviso (qualifying redistributions must retain this notice and the following text and disclaimers, encompassing the copyright statement, license terms, and associated legal notice)"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "text: copyright-grant paragraph, final sentence (except for expressly stated rights, Apple grants no other express or implied licenses, including patent rights potentially infringed by derivative or incorporated works); vocabulary 1.0.0 has no value for an express exclusion of patent rights, represented by unknown"
+    },
+    {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: copyright-grant paragraph (personal, non-exclusive copyright license to use, reproduce, modify, and redistribute the Apple Software, with or without modifications, in source and/or binary forms, without a private or commercial purpose limitation; no sublicensing or patent grant is stated)"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: copyright-grant paragraph (Apple names, trademarks, service marks, and logos may not endorse or promote derived products; the grant is personal, confined to the defined original Apple Software, and expressly excludes other rights including patents) and final two paragraphs ('AS IS', express and implied warranty disclaimers, and limitation of liability); the personal/product-specific grant and express patent exclusion lack dedicated restriction values, represented by unknown"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "metadata: id=AML, name='Apple MIT License', deprecated=false, osi=false, fsf=false; text: acceptance and copyright-grant paragraphs restrict the grant to this original Apple Software, call it personal, expressly exclude patent rights, and condition notice retention only on redistribution of the software both in its entirety and without modifications; these product-specific and conjunctive nuances cannot be represented losslessly by vocabulary 1.0.0, so the profile is not recommendable"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "text: acceptance paragraph (use, installation, modification, or redistribution constitutes acceptance) and copyright-grant paragraph, notice proviso (retention is activated by redistribution only when the Apple Software is simultaneously in its entirety and without modifications); distribution is represented directly, while the conjunctive whole-and-unmodified predicate and acceptance-by-installation/use have no matching trigger values, represented by unknown"
     }
   ]
 }

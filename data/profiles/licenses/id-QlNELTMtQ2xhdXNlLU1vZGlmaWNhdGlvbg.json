@@ -8,59 +8,81 @@
     "contentHash": "sha256:ad233b19476c66ae99dc5e1676d633c47df60381cad04ab3e11e438ba99242b6"
   },
   "review": {
-    "status": "pending",
-    "recommendable": false,
-    "evidenceLevel": "weak"
+    "status": "reviewed",
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "mark-modifications",
-      "provide-corresponding-source"
+      "include-license-text",
+      "mark-modifications"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification"
     ],
     "restrictions": [
-      "liability"
+      "liability",
+      "trademark",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: opening grant paragraph (redistribution and use in source and binary forms, with or without modification, are permitted subject to conditions 1-4; broad non-reciprocal permission identifies a permissive family)"
     },
     {
-      "field": "obligations",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: opening grant and conditions 1-4 (permission is non-reciprocal; no same-license, source-disclosure, corresponding-source, linking, or network-use condition is stated)"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: opening grant paragraph (redistribution and use in source and binary forms, with or without modification, are permitted; no field-of-use or commercial-use limitation is stated)"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "text: conditions 1-2 (source redistributions retain, and binary redistributions reproduce, the accompanying copyright notice, list of conditions, and disclaimer) and condition 4 (each modified file must carry a prominent notice stating that it was changed and the date of change; no corresponding-source requirement is stated)"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "text: conditions 1-2 and 4 (notice-retention/reproduction duties attach to source or binary redistribution; any file modification activates the prominent changed-file/date notice; no linking, network-use, or patent-claim trigger is stated)"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: condition 3 (copyright-holder names may not be used to endorse or promote products derived from the software without prior written permission); Disclaimer paragraph (express/implied warranty disclaimer and limitation of liability)"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "text: complete license text (no express patent grant, patent condition, patent-claim restriction, or defensive/retaliatory patent-termination clause is stated)"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "text: conditions 1-2 require retaining/reproducing the copyright notice, list of conditions, and disclaimer for source and binary redistributions; condition 4 additionally requires a prominent changed-file/date notice in every modified file, creating a material file-level notice burden"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "metadata: id=BSD-3-Clause-Modification, name=BSD 3-Clause Modification, deprecated=false, osi=false, fsf=false; text: complete four-condition permissive grant, source/binary notice conditions, modification marking condition, endorsement/name restriction, and warranty/liability disclaimer are explicit with no unknown semantic values"
     }
   ]
 }

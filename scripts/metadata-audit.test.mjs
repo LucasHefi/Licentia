@@ -8,8 +8,8 @@ import { auditCatalog, classifyDetail, stableReport, writeAudit } from './metada
 test('audits the complete SPDX catalog and keeps output deterministic', () => {
   const first = auditCatalog();
   const second = auditCatalog();
-  assert.deepEqual(first.summary, { licenses: 727, exceptions: 84, total: 811, pending: 695, notRecommendable: 32, exceptionsRecommendable: 0 });
-  assert.equal(first.summary.pending + first.summary.notRecommendable, 727);
+  assert.deepEqual(first.summary, { licenses: 727, exceptions: 84, total: 811, pending: 0, notRecommendable: 123, exceptionsRecommendable: 0 });
+  assert.equal(first.reviewQueue.length, 123);
   assert.equal(first.summary.exceptionsRecommendable, 0);
   assert.equal(stableReport(first), stableReport(second));
   assert.match(stableReport(first), /"ruleVersion":"lic-007-v1"/);

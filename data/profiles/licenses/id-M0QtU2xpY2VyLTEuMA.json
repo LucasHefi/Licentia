@@ -8,62 +8,89 @@
     "contentHash": "sha256:c838d1479774a6fb2225f0bd014f32f058c213c7cd91498ccf27a236c158ce12"
   },
   "review": {
-    "status": "pending",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
       "commercial-use",
       "distribution",
       "modifications",
+      "patent-grant",
+      "private-use",
       "sublicensing"
     ],
     "obligations": [
       "include-copyright",
       "include-license-text",
-      "provide-corresponding-source"
+      "include-notice",
+      "mark-modifications"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification"
     ],
     "restrictions": [
       "liability",
-      "trademark"
+      "trademark",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "express-grant",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
+      "field": "copyleftScope",
+      "sourceId": "spdx-license-list",
+      "locator": "text: complete Agreement, especially Part B sections 1(e) and 2 (source publication is optional; proprietary incorporation and additional or different terms for modified sublicenses are expressly allowed; no reciprocal licensing condition appears elsewhere)"
+    },
+    {
+      "field": "family",
+      "sourceId": "spdx-license-list",
+      "locator": "text: complete Agreement, especially Part B sections 1-2 (royalty-free rights to use, reproduce, modify, display, distribute, and sublicense, including incorporation into proprietary programs, without a reciprocal source condition)"
+    },
+    {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: introductory distribution paragraph and Part B sections 1(b)-1(c) (all Part B paragraphs, prescribed preface, attributions, copyright notices, and licenses must accompany copies and sublicenses, including executable forms and user documentation)"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: introductory distribution paragraph and Part B sections 1(b)-1(d) (include all Part B terms and prescribed preface, preserve attributions/copyright notices/licenses, and mark modified versions)"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "text: Part A section 4, second sentence (express patent license from a contributor to Brigham, with the right to sublicense)"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Part A section 4 and Part B sections 1-2 and 4 (use, reproduce, make derivative works, distribute, sublicense, patent grant to Brigham, proprietary incorporation, and commercialization)"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Part B sections 5-6 (warranty disclaimer, liability limitation and indemnity, and prohibition on endorsement or promotion using names, logos, or trademarks)"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "metadata: deprecated=false"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "metadata: osi=false"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "text: introductory distribution paragraph and Part B sections 1(b)-1(d) and 7 (copying, sublicensing, distribution, and modification activate stated conditions; noncompliant use, reproduction, or distribution revokes the grant)"
     }
   ]
 }

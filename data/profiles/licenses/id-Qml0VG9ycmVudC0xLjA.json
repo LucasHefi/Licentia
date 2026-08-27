@@ -8,70 +8,92 @@
     "contentHash": "sha256:f6c332c41362420427328e67115d30ae51958465a634580eefb399cb6f2df2e5"
   },
   "review": {
-    "status": "pending",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "weak-copyleft",
+    "copyleftScope": "file",
     "permissions": [
       "commercial-use",
       "distribution",
       "modifications",
       "patent-grant",
+      "private-use",
       "sublicensing"
     ],
     "obligations": [
-      "include-copyright",
-      "provide-corresponding-source"
+      "disclose-source",
+      "include-license-text",
+      "include-notice",
+      "provide-corresponding-source",
+      "same-license",
+      "unknown"
     ],
     "triggers": [
+      "combination",
+      "distribution",
+      "modification",
+      "patent-claim",
       "unknown"
     ],
     "restrictions": [
+      "additional-terms",
       "liability",
+      "patent-claim",
       "trademark",
+      "unknown",
       "warranty"
     ],
     "patentPosition": "defensive-termination",
-    "noticeBurden": "standard"
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "BitTorrent-1.0 text Sections 2, 4(a)-(b), and 4(f), plus the definition of Modifications in Section 2 (distributed Licensed Product and file-defined Modifications remain under reciprocal source and licensing duties, while other code in a Derivative Work may be distributed under another license, establishing weak copyleft)"
     },
     {
-      "field": "obligations",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-termination",
-      "ruleVersion": "lic-007-v1"
+      "locator": "BitTorrent-1.0 text Sections 2 and 4(a), 4(f) (Modifications are additions to or deletions from a Licensed Product file, or a new file containing part of Licensed Product; other code in a Derivative Work may use another license, so reciprocity is confined to the Licensed Product and modified files)"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "BitTorrent-1.0 text opening paragraph; Preamble items 1-3 and 6; Sections 1-2 and 4(e)-(f) (use for any purpose, sale, reproduction, modification, display, performance, distribution, sublicensing, executable and Derivative Work distribution, and express contributor patent grants support commercial use, distribution, modifications, private use, sublicensing, and patent-grant)"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "BitTorrent-1.0 text Sections 4(a)-(e), 5, and Exhibit A (distributed Modifications must remain under this or a later BitTorrent license; the license copy, Source Code, per-file Exhibit A notice, and executable source-availability notice are required; Source Code availability periods, LEGAL-file disclosures and updates, community notifications, inability-to-comply disclosures, and indemnity duties have no exact vocabulary values and are represented by unknown; complete-text review confirms there is no mandatory copyright-retention or modification-marking duty)"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "BitTorrent-1.0 text Sections 2, 4(a)-(f), 5, and 9(a)-(b) (distribution of Licensed Product, Modifications, executables, or combined Derivative Works activates source, license, and notice conditions; creating and distributing Modifications activates file-level reciprocity; a specified patent infringement action activates termination; knowledge of third-party claims or API patent licenses, legal inability to comply, and uncured breach are material non-enumerated triggers represented by unknown; complete-text review confirms no network-use or linking trigger)"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "BitTorrent-1.0 text Sections 3, 4(a), 4(d)-(e), 7(c), 8-10, and 13 (no trademark grant; limits on altered or restrictive downstream terms; defensive patent-litigation termination; warranty and liability exclusions; no-fee Source Code rule, indemnities, breach termination, California governing law, mandatory Northern District of California or Santa Clara County forum, fee shifting, CISG exclusion, and jury waiver; the latter commercial, remedy, termination, governing-law, forum, and procedure terms have no exact vocabulary values and are represented by unknown)"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "BitTorrent-1.0 text Sections 1(b), 2(2), 3, and 9(b)-(c) (Licensor and Contributors grant limited patent rights necessary for the Licensed Product and Modifications, while rights granted by a Respondent terminate after notice when You bring a patent-infringement action alleging that Licensed Product infringes unless the claim is withdrawn or a royalty arrangement is reached)"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "BitTorrent-1.0 text Sections 4(a), 4(c)-(e), 5, and Exhibit A (full-license delivery, a prescribed notice in every distributed Source Code file or a likely-to-be-found substitute location, conspicuous executable and documentation source-availability notices, and conditional LEGAL-file notices create a material multi-part notice burden)"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "BitTorrent-1.0 metadata: id=BitTorrent-1.0, name='BitTorrent Open Source License v1.0', deprecated=false, osi=false, fsf=false; SPDX separately lists the newer BitTorrent-1.1, and Section 7 permits migration to subsequent Licensor-published versions; complete-text review of Sections 4, 5, 9, and 13 finds material LEGAL-file, notification, source-availability-duration, no-fee, indemnity, breach-termination, governing-law, forum, fee-shifting, CISG, and jury-waiver terms that the guide vocabulary cannot represent losslessly, so this older version is not recommendable"
     }
   ]
 }

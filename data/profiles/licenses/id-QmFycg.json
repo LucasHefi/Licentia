@@ -8,36 +8,79 @@
     "contentHash": "sha256:52da84c33db2c8607a3d33b02b999d877e8d04c0f11d273446118a0ba4222f1f"
   },
   "review": {
-    "status": "pending",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use",
+      "unknown"
     ],
     "obligations": [
       "unknown"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification"
     ],
     "restrictions": [
-      "unknown"
+      "unknown",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "none-stated",
+    "noticeBurden": "none"
   },
   "evidence": [
     {
+      "field": "family",
+      "sourceId": "spdx-license-list",
+      "locator": "license text, first sentence and sentences beginning 'Its use is unrestricted' through 'Inclusion in a commercial software package is also permitted' (the grant is tied to one package of commutative-diagram macros, limits the express distribution permission to unchanged copies, and imposes a package-renaming condition on changes, making it a package-specific nonstandard license)"
+    },
+    {
+      "field": "copyleftScope",
+      "sourceId": "spdx-license-list",
+      "locator": "license text, sentences beginning 'It may be freely distributed' and 'If changed' (unchanged distribution is allowed and a changed package must be renamed, but no source-disclosure, same-license, or other reciprocal licensing condition is stated)"
+    },
+    {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "license text, sentences beginning 'Its use is unrestricted', 'It may be freely distributed', 'If changed', and 'Inclusion in a commercial software package' (private and commercial use, unchanged distribution, changes subject to renaming, and commercial-package inclusion are permitted); whole-text review (copying and sublicensing are not expressly granted, source and binary forms are not distinguished, and the relationship between the unchanged-distribution sentence and changed versions is not explicit, represented by unknown)"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "license text, sentence 'If changed, it must be renamed' (the mandatory renaming condition has no dedicated obligation value in the vocabulary and is represented by unknown); sentence beginning 'Inclusion in a commercial software package' (sending the author a free copy is phrased only as an appreciation request, not a mandatory duty); whole-text review (no copyright-, license-, or notice-retention duty is stated)"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "license text, sentence beginning 'It may be freely distributed' (the express distribution permission applies to an unchanged package) and sentence 'If changed, it must be renamed' (modification activates the renaming condition); the requested free copy for commercial-package inclusion is nonmandatory and therefore does not create an obligation trigger"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "license text, sentence 'If changed, it must be renamed' (the package-name restriction has no dedicated vocabulary value and is represented by unknown) and sentence 'There are no guarantees that this package is good for anything' (warranty disclaimer); whole-text review (no liability exclusion, endorsement or trademark clause, additional-terms restriction, or patent-claim restriction is stated)"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "license text, whole-text review (no express patent grant, patent condition, or patent-termination clause is stated)"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "license text, whole-text review (no copyright notice, license text, attribution, acknowledgement, or other notice must accompany use, copying, distribution, modification, or commercial-package inclusion; the free-copy request and changed-package renaming condition are not notice-retention duties)"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "license metadata, osi=false, fsf=false, and deprecated=false; license text, first sentence and sentences beginning 'It may be freely distributed' and 'If changed' (the grant is confined to a particular macro package, expressly describes only unchanged distribution, and uses a mandatory renaming condition that the guide vocabulary cannot represent losslessly; copying, sublicensing, source/binary forms, and distribution of changed versions are not resolved expressly), so it is unsuitable for automatic recommendation as a generally reusable software license"
     }
   ]
 }

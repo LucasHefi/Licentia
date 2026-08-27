@@ -1,11 +1,10 @@
-import { cp, mkdir, rm, writeFile, readdir, readFile, stat } from "node:fs/promises";
+import { cp, rm, writeFile, readdir, readFile, stat } from "node:fs/promises";
 import { createHash } from "node:crypto";
 import path from "node:path";
 
 const root = path.resolve(new URL("..", import.meta.url).pathname);
 const output = path.join(root, "apache-dist");
 await cp(path.join(root, "apache-server"), output, { recursive: true, force: true });
-await mkdir(path.join(output, "api", "var"), { recursive: true });
 const manifest = [];
 async function walk(dir) {
   for (const name of await readdir(dir)) {

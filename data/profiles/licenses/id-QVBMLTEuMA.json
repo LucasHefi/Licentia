@@ -8,71 +8,91 @@
     "contentHash": "sha256:a264965a8361e3ef8baf3b2adbd275b0f937affa2f93ad163a4236dfba89443f"
   },
   "review": {
-    "status": "pending",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
+    "family": "weak-copyleft",
     "copyleftScope": "unknown",
     "permissions": [
       "commercial-use",
       "distribution",
       "modifications",
       "patent-grant",
-      "sublicensing"
+      "private-use",
+      "sublicensing",
+      "unknown"
     ],
     "obligations": [
-      "include-copyright",
+      "disclose-source",
       "include-license-text",
-      "provide-corresponding-source"
+      "include-notice",
+      "provide-corresponding-source",
+      "same-license",
+      "unknown"
     ],
     "triggers": [
+      "combination",
+      "distribution",
       "unknown"
     ],
     "restrictions": [
+      "additional-terms",
       "liability",
+      "patent-claim",
       "trademark",
+      "unknown",
       "warranty"
     ],
-    "patentPosition": "defensive-termination",
-    "noticeBurden": "standard"
+    "patentPosition": "unknown",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
+      "field": "copyleftScope",
+      "sourceId": "spdx-license-list",
+      "locator": "text: Sections 1.7, 1.10-1.11, and 1.18; Sections 3.3 and 3.5-3.7 (reciprocity follows the Licensed Work and Subsequent Works while Independent Modules and the non-Licensed-Work portion of a Larger Work remain outside it, but the directory/reference-based Independent Module test is not represented losslessly by file, library, or whole-work, so scope is unknown)"
+    },
+    {
+      "field": "family",
+      "sourceId": "spdx-license-list",
+      "locator": "text: Sections 1.7, 1.10-1.11, and 1.18; Sections 3.1-3.7 (distributed Licensed Work and modifications remain reciprocal, while Independent Modules and other code in a Larger Work may remain under separate terms, establishing weak copyleft)"
+    },
+    {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Sections 3.1(b), 3.4, 3.8, and 3.10; Exhibit A Parts 5 and 7 (license.txt and the License Notice must be prominent, notices reach every source file and executable, and a Supplement File may add change-documentation and launch-time attribution requirements, creating a material notice burden)"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Sections 3.1-3.5 and 3.7-3.11; Exhibit A Part 5 (Subsequent Works must be publicly available for at least twelve months, executable distributions require corresponding source or a thirty-six-month offer and availability, Source Code and distributed Internal Use Modifications remain under this License, and license and file/executable notices are required); optional Supplement File change-description, copyright/attribution, and launch-display duties are not representable as conditional obligations, represented by unknown"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-termination",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Section 2.2 and Exhibit A Part 6, especially paragraphs B-E (the Initial Contributor may select no patent license or an express contributor/distributor patent grant coupled to patent-litigation termination; the scalar vocabulary cannot express this adaptive, copy-specific choice, so the position is unknown)"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Sections 2.1-2.2, 3.5-3.7, and 4.1 (world-wide royalty-free rights to reproduce, modify, display, perform, distribute, sublicense, use privately, combine in Larger Works, and offer commercial services; Exhibit A Part 6 can add a patent grant, but that conditional permission cannot be represented losslessly, represented by unknown)"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Sections 2.2-2.4, 3.8-3.11, 4.1-4.2, 5.1-5.2, 6.1, 8.1-8.2, and 9.1-9.3; Exhibit A Parts 3 and 6 (conditional patent-litigation termination, trademark and ungranted-right reservations, Supplement File terms, commercial-distributor indemnity, Initial-Contributor version stewardship, warranty/liability exclusions, selectable governing law and forum, one-year limitation period, jury waiver, and prevailing-party fees); the vocabulary cannot encode the adaptive terms, indemnity, steward, choice-of-law/forum, limitations period, jury waiver, or fee shifting, represented by unknown"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "metadata: deprecated=false and osi=true; text: opening IMPORTANT NOTE; Sections 2.2, 3.1-3.11, 4.2, 5.1-5.2, and 9.1-9.3; Exhibit A Parts 3-6 (although OSI-approved and non-deprecated, each concrete APL can vary patent coverage, Third Party boundaries, modification documentation, runtime attribution, governing jurisdiction, and stewardship, while other material indemnity and litigation terms also exceed the guide vocabulary; explicit unknown values therefore make the profile not recommendable)"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "text: Sections 1.3 and 1.17, 2.2(d), 3.1-3.8, 3.10, and 4.2; Exhibit A Part 6(E) (distribution to a Person or selected Third Party activates source, same-license, notice, attribution, and commercial-indemnity duties; combining patent-included and patent-excluded copies changes the applicable patent terms; a patent claim triggers termination only when Part 6 is selected, represented by unknown); Section 3.5 and complete-text review show internal use is exempt and no network-use or external-deployment trigger is stated"
     }
   ]
 }

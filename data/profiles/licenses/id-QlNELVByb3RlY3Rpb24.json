@@ -8,61 +8,83 @@
     "contentHash": "sha256:d350c7cf89ef3241387d897b1a68c53dce620cff5610b924e4b38aefda5fb468"
   },
   "review": {
-    "status": "pending",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "whole-work",
     "permissions": [
       "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
       "include-license-text",
+      "include-notice",
       "mark-modifications",
-      "provide-corresponding-source"
+      "same-license"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification"
     ],
     "restrictions": [
-      "liability"
+      "additional-terms",
+      "liability",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Preamble and Sections 3-4 (the license provides separate closed-license and open-license modification paths, including a prohibition on further derivatives or whole-work licensing under this License; this atypical protection mechanism is nonstandard rather than a conventional permissive license)"
     },
     {
-      "field": "obligations",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Section 4(c) (any work distributed or published that in whole or in part contains or is derived from the Program must be licensed as a whole at no charge to all third parties under this License)"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Sections 1-4 (running the Program is not restricted; verbatim copying/distribution and modification with redistribution are permitted in any medium, with both commercial and non-commercial settings stated in the Preamble; no purpose or private-use limitation is stated)"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "text: Section 2 (publish a copyright notice, keep intact License and no-warranty notices, and give recipients a copy of this License); Sections 3(a)-(b) and 4(a)-(b) (reproduce notices/disclaimer and clearly identify the derivative and the nature/date of changes); Section 4(c) (license the covered work as a whole under this License)"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "text: Sections 2-4 (copying/distribution activates notice and license-copy duties; modification together with distribution of a derivative activates derivative-identification, change-marking, and either closed-license or whole-work same-license conditions; no separate linking, network-use, or patent-claim trigger is stated)"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Section 3(c) (a closed-license derivative must expressly prohibit distribution of further derivative works) and Section 4(c) (an open-licensed covered work must be licensed as a whole under this License at no charge); Section 6 (warranty disclaimer and limitation of liability); no endorsement or trademark restriction is stated"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "text: complete Sections 0-6 (no express patent grant, patent covenant, patent condition, patent-claim restriction, or patent-termination clause is stated)"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "text: Section 2 and Sections 3(a)-(b), 4(a)-(b) (each copy and the source code, documentation, and/or other normally distributed materials must carry the copyright/license/no-warranty notices and derivative/change identification; the dated nature-of-change marking on modified files creates a material multi-surface notice burden)"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "metadata: id=BSD-Protection, name=BSD Protection License, deprecated=false, osi=false, fsf=false; text: complete Sections 1-4 impose the special closed-license prohibition or open-license whole-work/no-charge condition, while Section 6 disclaims warranties and limits liability; these specific protection terms make the license unsuitable for general automatic recommendation"
     }
   ]
 }

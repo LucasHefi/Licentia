@@ -34,6 +34,18 @@ export default function AccountMenu({ account }: { account: AppIdentity }) {
     window.location.assign("/");
   }
 
+  async function portableSignOut() {
+    if (!account.signOutPath || !account.csrfToken) return;
+    setNotice("Odhlašuji…");
+    try {
+      const response = await fetch(account.signOutPath, { method: "POST", credentials: "include", headers: { "X-CSRF-Token": account.csrfToken } });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      window.location.assign("./");
+    } catch {
+      setNotice("Odhlášení se nepodařilo.");
+    }
+  }
+
   async function addPasskey() {
     setNotice("Potvrďte passkey v zařízení…");
     try {
@@ -53,8 +65,10 @@ export default function AccountMenu({ account }: { account: AppIdentity }) {
       {open && (
         <div className="account-popover" role="menu">
           <div className="account-summary"><span>{initials}</span><div><strong>{account.name}</strong><small>{account.email}</small><em>{account.providerLabel}</em></div></div>
-          {account.authSource === "licentia" && <button type="button" role="menuitem" onClick={addPasskey}>⌁ Přidat passkey</button>}
-          {account.signOutPath ? (
+          {account.canAddPasskey && <button type="button" role="menuitem" onClick={addPasskey}>⌁ Přidat passkey</button>}
+          {account.signOutPath && account.signOutMethod === "POST" ? (
+            <button type="button" role="menuitem" className="danger" onClick={portableSignOut}>Odhlásit se</button>
+          ) : account.signOutPath ? (
             <a role="menuitem" className="danger" href={account.signOutPath}>Odhlásit se</a>
           ) : (
             <button type="button" role="menuitem" className="danger" onClick={signOut}>Odhlásit se</button>

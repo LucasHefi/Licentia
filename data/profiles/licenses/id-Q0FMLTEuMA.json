@@ -8,66 +8,107 @@
     "contentHash": "sha256:19372a4925d1667165fa16df84fcebb8855dc3f2146fd9ff8756e094386f1b76"
   },
   "review": {
-    "status": "pending",
+    "status": "reviewed",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "network-copyleft",
+    "copyleftScope": "network",
     "permissions": [
+      "commercial-use",
       "distribution",
       "modifications",
-      "patent-grant"
+      "patent-grant",
+      "private-use"
     ],
     "obligations": [
-      "include-license-text",
-      "provide-corresponding-source"
-    ],
-    "triggers": [
+      "include-copyright",
+      "include-notice",
+      "network-use-disclose",
+      "provide-corresponding-source",
+      "provide-installation-information",
       "unknown"
     ],
-    "restrictions": [
-      "liability",
-      "trademark"
+    "triggers": [
+      "combination",
+      "distribution",
+      "network-use",
+      "patent-claim"
     ],
-    "patentPosition": "express-grant",
-    "noticeBurden": "standard"
+    "restrictions": [
+      "additional-terms",
+      "liability",
+      "patent-claim",
+      "trademark",
+      "unknown",
+      "warranty"
+    ],
+    "patentPosition": "retaliatory-termination",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
+      "locator": "text.1-4",
+      "ruleId": "lic-007.copyleft-family",
       "ruleVersion": "lic-007-v1"
     },
     {
-      "field": "obligations",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
+      "locator": "text.4",
+      "ruleId": "lic-007.network-trigger",
       "ruleVersion": "lic-007-v1"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
+      "locator": "text.3.1-3.2",
       "ruleId": "lic-007.explicit-permissions",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "text.4.1-4.3",
+      "ruleId": "lic-007.explicit-obligations",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "text.4; text.5.3",
+      "ruleId": "lic-007.trigger-conditions",
       "ruleVersion": "lic-007-v1"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
+      "locator": "text.3.2; text.4.2; text.5.3; text.6; text.7.3",
       "ruleId": "lic-007.explicit-restrictions",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "text.3.1-3.2; text.5.3",
+      "ruleId": "lic-007.patent-termination",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "text.4.1.1-4.3",
+      "ruleId": "lic-007.notice-requirement",
+      "ruleVersion": "lic-007-v1"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "text.2-7",
+      "ruleId": "lic-007.review-evidence",
       "ruleVersion": "lic-007-v1"
     }
   ]

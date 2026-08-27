@@ -2,7 +2,7 @@ import { FormEvent, useEffect, useState } from "react";
 import LicenseStudio from "./LicenseStudio";
 import type { AppIdentity } from "./types";
 
-type SessionResponse = { user: AppIdentity | null; providers?: { google?: boolean; github?: boolean } };
+type SessionResponse = { user: AppIdentity | null; csrfToken?: string; providers?: { google?: boolean; github?: boolean } };
 
 export default function PortableApp() {
   const [session, setSession] = useState<SessionResponse | null>(null);
@@ -21,7 +21,7 @@ export default function PortableApp() {
   async function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault(); setBusy(true); setError("");
     const form = new FormData(event.currentTarget);
-    const response = await fetch(`./api/auth/${mode === "signin" ? "login" : "register"}`, { method: "POST", credentials: "include", headers: { "Content-Type": "application/json" }, body: JSON.stringify(Object.fromEntries(form)) });
+    const response = await fetch(`./api/auth/${mode === "signin" ? "login" : "register"}`, { method: "POST", credentials: "include", headers: { "Content-Type": "application/json", "X-CSRF-Token": session?.csrfToken ?? "" }, body: JSON.stringify(Object.fromEntries(form)) });
     const value = await response.json().catch(() => ({} as { error?: string })) as { error?: string };
     if (!response.ok) { setError(value.error ?? "Přihlášení se nepodařilo."); setBusy(false); return; }
     window.location.reload();
@@ -29,7 +29,7 @@ export default function PortableApp() {
 
   if (!session) return <main className="portable-loading">Načítám Licentii…</main>;
   if (anonymous) return <LicenseStudio />;
-  if (session.user) return <LicenseStudio account={{ ...session.user, authSource: "licentia", providerLabel: session.user.providerLabel || "Apache účet", signOutPath: "./api/auth/logout" }} />;
+  if (session.user) return <LicenseStudio account={{ ...session.user, authSource: "licentia", providerLabel: session.user.providerLabel || "Apache účet", signOutPath: "./api/auth/logout", signOutMethod: "POST", csrfToken: session.csrfToken }} />;
 
   return <main className="auth-page">
     <section className="auth-story" aria-label="O aplikaci Licentia"><div className="auth-brand"><span className="brand-mark">L</span><span>Licentia</span></div><div className="auth-story-copy"><span className="section-kicker light">Přenosný licenční pracovní prostor</span><h1>Správná licence.<br />Bez hádání.</h1><p>Úplný katalog SPDX, průvodce, API i MCP na vašem vlastním Apache hostingu.</p><div className="auth-proof"><span>727 licencí</span><span>84 výjimek</span><span>REST + MCP</span></div></div><p className="auth-legal">Data účtu zůstávají na vašem hostingu. Licentia neposkytuje právní radu.</p></section>

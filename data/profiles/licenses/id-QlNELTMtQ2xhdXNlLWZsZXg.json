@@ -8,50 +8,79 @@
     "contentHash": "sha256:dc3b6d2aaae8dee20b138b0f6f273ce91930b0a50b00d30c615f5eaa77033350"
   },
   "review": {
-    "status": "pending",
-    "recommendable": false,
-    "evidenceLevel": "weak"
+    "status": "reviewed",
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "provide-corresponding-source"
+      "include-license-text"
     ],
     "triggers": [
-      "unknown"
+      "distribution"
     ],
     "restrictions": [
-      "unknown"
+      "liability",
+      "trademark",
+      "warranty"
     ],
-    "patentPosition": "unknown",
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: lines 35-37 (opening grant permits redistribution and use in source and binary forms, with or without modification)"
     },
     {
-      "field": "obligations",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: lines 35-38 and complete text (non-reciprocal BSD grant; no same-license, source-disclosure, or corresponding-source condition)"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: lines 35-37 (redistribution and use in source and binary forms, with or without modification, are permitted; no field-of-use limitation is stated)"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "text: lines 36-37 (conditions 1-2 require retaining/reproducing the copyright notice, list of conditions, and disclaimer in source/binary redistributions)"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "text: lines 36-37 (notice-retention/reproduction duties are triggered by source or binary redistribution; modification alone has no separate condition)"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "text: line 38 (third endorsement restriction: University/contributor names may not endorse or promote derived products without specific prior written permission); line 40 (AS IS warranty disclaimer and liability limitation)"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "text: complete license text, lines 28-43 (no express patent grant, patent condition, patent-claim restriction, or patent-termination clause is stated)"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "text: lines 36-37 (source copies retain and binary copies reproduce the copyright notice, conditions, and disclaimer; standard BSD notice burden)"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "metadata: id=BSD-3-Clause-flex, deprecated=false, osi=false; text: lines 35-43 (complete grant, two notice conditions, third endorsement restriction, disclaimer, and Flex-specific flex.skl carve-out are explicit)"
     }
   ]
 }

@@ -8,61 +8,88 @@
     "contentHash": "sha256:765bbf3c62f478d089ca8512ca27390375664aa5c76f57ff3e0d4fe1269e9d3e"
   },
   "review": {
-    "status": "pending",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "whole-work",
     "permissions": [
       "distribution",
       "modifications",
-      "sublicensing"
+      "private-use",
+      "unknown"
     ],
     "obligations": [
+      "disclose-source",
       "include-copyright",
       "include-license-text",
-      "provide-corresponding-source"
+      "include-notice",
+      "mark-modifications",
+      "provide-corresponding-source",
+      "same-license"
     ],
     "triggers": [
+      "combination",
+      "distribution",
+      "modification",
       "unknown"
     ],
     "restrictions": [
+      "additional-terms",
       "liability",
+      "unknown",
       "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
+      "field": "copyleftScope",
+      "sourceId": "spdx-license-list",
+      "locator": "text: Section 0 definition of a work based on the Program and Section 2(c) opening plus Section 2(c)(ii) (a distributed or published Work that in whole or in part contains or is derived from the Program must be licensed as a whole under this License)"
+    },
+    {
+      "field": "family",
+      "sourceId": "spdx-license-list",
+      "locator": "text: Sections 1-2, especially Section 2(a) and Section 2(c)(ii) (the text combines a whole-work same-license condition with a prohibition on payment-connected distribution by commercial organizations and narrow channel-specific exceptions, so it is a nonstandard source-available license rather than a generally open-source copyleft license)"
+    },
+    {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Section 1 opening and Sections 2(c)(i), 2(c)(iii), and 2(c)(v) (distribution carries the unmodified license; modified Works and each modified source file need prominent detailed change notices; qualifying interactive Works need a recurring copyright, warranty, redistribution, and license-access announcement; accompanying written material needs the license or prominent coverage and access instructions)"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Section 1 opening and Sections 2(c)(i)-2(c)(vi) (include the unmodified license and its copyright notice, mark the Work and every modified source file with detailed change notices, provide applicable interactive and written-material notices, license the covered Work as a whole under this License, accompany it with complete corresponding machine-readable source, and impose no further restrictions)"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "text: complete license text, including Sections 1-6; no express patent grant or patent-litigation termination appears, and Section 5's noninfringement disclaimer is a warranty disclaimer rather than a patent license"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Sections 1(a)-1(b), 2(a)-2(b), and 3 (source copying/distribution and modification are expressly granted, and functional use is unrestricted; no general sublicensing grant appears; payment-connected distribution by a commercial organization is broadly prohibited subject to narrow exceptions, so a general commercial-use permission is omitted and the vocabulary's inability to qualify distribution is represented by unknown)"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Sections 2(a), 2(c)(ii), and 2(c)(vi); Sections 3-5 (payment-connected distribution by a commercial organization is prohibited except for narrow service/media exceptions; a covered whole must be licensed at no charge and without further restrictions; noncompliant rights terminate; optional geographic limitations may apply; warranty and liability are disclaimed); the vocabulary cannot losslessly encode the commercial/payment, distribution-channel, no-charge, or geographic restrictions, represented by unknown"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "metadata: osi=false; fsf=false; deprecated=false; text: Section 2(a) prohibits payment-connected distribution by commercial organizations, including indirect payment tied to a related product or service, and permits only narrow channel-specific exceptions; this field cannot be represented losslessly by the recommendation vocabulary and the license must not be recommended as open source"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "text: Section 0 acceptance paragraph; Section 1 opening; Sections 2(a) and 2(c) opening; Sections 2(c)(i)-2(c)(v) (distribution and modification activate conditions, and distributing or publishing a Work that contains or derives from any part of the Program activates whole-work terms; publication and commencement of a qualifying interactive Work are additional triggers absent from the vocabulary, represented by unknown)"
     }
   ]
 }

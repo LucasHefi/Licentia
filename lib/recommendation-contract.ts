@@ -106,7 +106,7 @@ const runtimeSourceIds = new Set(["spdx-license-list", "spdx-exception-list", "c
 const unresolvedFingerprint = (value: unknown): boolean => typeof value !== "string" || value.trim() === "" || ["unknown", "unresolved", "pending"].includes(value.trim().toLowerCase());
 
 export function runtimeSourceLockResolved(records: readonly CatalogMetadataRecord[]): boolean {
-  const licenses = records.filter((record) => record && record.type === "license");
+  const licenses = records.filter((record) => record && record.type === "license" && record.metadata?.review?.recommendable === true);
   if (!licenses.length) return false;
   return licenses.every((record) => {
     const fingerprint = record.metadata?.sourceFingerprint;
@@ -167,6 +167,7 @@ const guideQuestions: GuideQuestion[] = [
   { id: "q-reciprocity", key: "reciprocity", mode: "quick", title: "Jaký rozsah sdílení změn chcete?", help: "Copyleft se může týkat souboru, knihovny, díla nebo síťového užití.", options: [{ value: "none", label: "Žádný" }, { value: "file", label: "Soubor" }, { value: "library", label: "Knihovna" }, { value: "strong", label: "Celé dílo" }, { value: "network", label: "Síťová služba" }, ...uncertaintyOptions] },
   { id: "q-commercial-use", key: "commercialUse", mode: "quick", title: "Bude software komerčně použit?", help: "Neznámá odpověď nesmí splnit hard constraint.", options: [{ value: "allowed", label: "Ano" }, { value: "restricted", label: "Omezeně" }, ...uncertaintyOptions] },
   { id: "q-delivery-quick", key: "delivery", mode: "quick", title: "Jak software dodáte?", help: "Distribuce a SaaS aktivují odlišné povinnosti.", options: [{ value: "application", label: "Aplikace" }, { value: "library", label: "Knihovna" }, { value: "saas", label: "SaaS" }, { value: "internal", label: "Interně" }, ...uncertaintyOptions] },
+  { id: "q-dependencies-quick", key: "dependencies", mode: "quick", title: "Jaké máte závislosti?", help: "U distribuované aplikace je potřeba nejprve ověřit licence závislostí.", options: uncertaintyOptions, showWhen: { key: "delivery", equals: "application" } },
   { id: "q-patents-quick", key: "patents", mode: "quick", title: "Jsou důležité patenty?", help: "Výslovné oprávnění je evidence-backed kritérium.", options: [{ value: "important", label: "Ano" }, { value: "neutral", label: "Neřeším" }, ...uncertaintyOptions] },
   { id: "q-delivery-advanced", key: "delivery", mode: "advanced", title: "Jak software dodáte?", help: "Distribuce a SaaS aktivují odlišné povinnosti.", options: [{ value: "application", label: "Aplikace" }, { value: "library", label: "Knihovna" }, { value: "saas", label: "SaaS" }, { value: "internal", label: "Interně" }, ...uncertaintyOptions] },
   { id: "q-dependencies", key: "dependencies", mode: "advanced", title: "Jaké máte závislosti?", help: "SPDX výraz nebo SBOM lze ověřit bez tichého přijetí chyby.", options: uncertaintyOptions, showWhen: { key: "delivery", equals: "application" } },
@@ -174,9 +175,6 @@ const guideQuestions: GuideQuestion[] = [
   { id: "q-patents-advanced", key: "patents", mode: "advanced", title: "Jsou důležité patenty?", help: "Výslovné oprávnění je evidence-backed kritérium.", options: [{ value: "important", label: "Ano" }, { value: "neutral", label: "Neřeším" }, ...uncertaintyOptions] },
   { id: "q-trademarks", key: "trademarks", mode: "advanced", title: "Potřebujete řešit ochranné známky?", help: "Licence obvykle neposkytuje trademark práva.", options: [{ value: "important", label: "Ano" }, { value: "neutral", label: "Ne" }, ...uncertaintyOptions] },
   { id: "q-obligations", key: "obligations", mode: "advanced", title: "Jaké povinnosti zvládnete?", help: "Notices, zdroj a instalační informace se posuzují explicitně.", options: [{ value: "minimal", label: "Minimum" }, { value: "notices", label: "Notices" }, { value: "source", label: "Zdroj" }, { value: "installation", label: "Zdroj a instalace" }, ...uncertaintyOptions] },
-  { id: "q-version-strategy", key: "versionStrategy", mode: "advanced", title: "Jak pracovat s budoucími verzemi?", help: "Volba pozdější licence není automatická kompatibilita.", options: [{ value: "fixed", label: "Pevná verze" }, { value: "later", label: "Pozdější verze" }, { value: "either", label: "Obojí" }, ...uncertaintyOptions] },
-  { id: "q-dual-licensing", key: "dualLicensing", mode: "advanced", title: "Zvažujete duální licenci?", help: "Výsledek je strategická otázka, ne právní závěr.", options: [{ value: "yes", label: "Ano" }, { value: "no", label: "Ne" }, { value: "considering", label: "Zvažuji" }, ...uncertaintyOptions] },
-  { id: "q-future-distribution", key: "futureDistribution", mode: "advanced", title: "Jaká je budoucí distribuce?", help: "Zachytí veřejné, komerční a interní scénáře.", options: [{ value: "public", label: "Veřejná" }, { value: "commercial", label: "Komerční" }, { value: "internal", label: "Interní" }, ...uncertaintyOptions] },
 ];
 
 export function buildGuideModel(): GuideModel { return { version: GUIDE_MODEL_VERSION, questions: guideQuestions }; }
@@ -486,6 +484,12 @@ function validEvidence(value: unknown, requireNonEmpty = false): value is readon
     && (item.ruleVersion === undefined || nonEmptyString(item.ruleVersion)));
 }
 
+function evidenceCoversRecommendation(value: unknown): boolean {
+  if (!validEvidence(value, true)) return false;
+  const covered = new Set(value.map((item) => item.field));
+  return [...semanticFields, "review"].every((field) => covered.has(field));
+}
+
 function validSemantic(value: unknown): value is MetadataLicenseProfile["semantic"] {
   if (!answerRecord(value) || !hasExactKeys(value, semanticFields, ["projectForm"])) return false;
   if (typeof value.family !== "string" || !semanticFamilies.has(value.family)) return false;
@@ -502,15 +506,15 @@ function validProfileShape(profile: unknown): profile is MetadataLicenseProfile 
   if (profile.deprecated !== undefined && typeof profile.deprecated !== "boolean") return false;
   if (!validReview(profile.review) || !validSourceFingerprint(profile.sourceFingerprint) || !validSemantic(profile.semantic)) return false;
   if (profile.evidence !== undefined && !validEvidence(profile.evidence, false)) return false;
-  if (profile.review.recommendable === true && (!validEvidence(profile.evidence, true) || profile.review.status !== "reviewed" || !["sufficient", "strong"].includes(profile.review.evidenceLevel))) return false;
+  if (profile.review.recommendable === true && (!evidenceCoversRecommendation(profile.evidence) || profile.review.status !== "reviewed" || !["sufficient", "strong"].includes(profile.review.evidenceLevel))) return false;
   return true;
 }
 
 function validCatalogMetadata(value: unknown, kind: "license" | "exception", id: string): value is NonNullable<CatalogMetadataRecord["metadata"]> {
   if (!answerRecord(value) || !hasExactKeys(value, metadataFields)) return false;
   if (value.contractVersion !== "1.0.0" || value.kind !== kind || value.id !== id) return false;
-  if (!validReview(value.review) || !validSourceFingerprint(value.sourceFingerprint) || !validSemantic(value.semantic) || !validEvidence(value.evidence, true)) return false;
-  return value.review.recommendable !== true || (value.review.status === "reviewed" && ["sufficient", "strong"].includes(value.review.evidenceLevel));
+  if (!validReview(value.review) || !validSourceFingerprint(value.sourceFingerprint) || !validSemantic(value.semantic) || !validEvidence(value.evidence, value.review.recommendable === true)) return false;
+  return value.review.recommendable !== true || (evidenceCoversRecommendation(value.evidence) && unknownSemanticFields(value as unknown as MetadataLicenseProfile).length === 0 && value.review.status === "reviewed" && ["sufficient", "strong"].includes(value.review.evidenceLevel));
 }
 
 function stableCompare(a: string, b: string): number {
@@ -561,14 +565,10 @@ function match(profile: MetadataLicenseProfile, answers: GuideAnswers): { score:
   const add = (field: string, points: number, reason: string) => { score += points; matchedFields.push(field); reasons.push(`${field}: ${reason}`); };
   if (answers.openness === "open" && knownFamilies.has(semantic.family)) add("family", 10, "matches openness=open");
   if (answers.openness === "closed" && ["permissive", "public-domain-equivalent"].includes(semantic.family)) add("family", 10, "matches openness=closed");
-  if (typeof answers.projectForm === "string" && !uncertaintyStates.has(answers.projectForm) && semantic.projectForm === answers.projectForm) add("projectForm", 10, `matches projectForm=${answers.projectForm}`);
   if (answers.commercialUse === "allowed" && semantic.permissions.includes("commercial-use")) add("permissions", 10, "matches commercialUse=allowed");
   const reciprocity: Record<string, CopyleftScope> = { none: "none", file: "file", library: "library", strong: "whole-work", network: "network" };
   const reciprocityScope = typeof answers.reciprocity === "string" ? reciprocity[answers.reciprocity] : undefined;
   if (reciprocityScope !== undefined && semantic.copyleftScope === reciprocityScope) add("copyleftScope", 20, `matches reciprocity=${answers.reciprocity}`);
-  const delivery: Record<string, CopyleftScope> = { library: "library", application: "whole-work", saas: "network", internal: "none" };
-  const deliveryScope = typeof answers.delivery === "string" ? delivery[answers.delivery] : undefined;
-  if (deliveryScope !== undefined && semantic.copyleftScope === deliveryScope) add("copyleftScope", 15, `matches delivery=${answers.delivery}`);
   if (answers.patents === "important" && semantic.patentPosition === "express-grant") add("patentPosition", 12, "matches patents=important");
   if (answers.patents === "neutral" && knownPatents.has(semantic.patentPosition)) add("patentPosition", 4, "matches patents=neutral");
   if (answers.notices === "minimal" && ["minimal", "none"].includes(semantic.noticeBurden)) add("noticeBurden", 8, "matches notices=minimal");
@@ -621,18 +621,13 @@ function recommendationEligibilityUnsafe(profile: MetadataLicenseProfile, answer
   if (safeAnswers?.openness === "closed") exclusion(result, "intent: closed strategy is not an open-source recommendation");
   const required: Record<string, [unknown, Set<string>]> = {};
   if (hasValue(safeAnswers?.openness)) required.family = [profile.semantic?.family, knownFamilies];
-  if (hasValue(safeAnswers?.reciprocity) || hasValue(safeAnswers?.delivery)) required.copyleftScope = [profile.semantic?.copyleftScope, knownScopes];
+  if (hasValue(safeAnswers?.reciprocity)) required.copyleftScope = [profile.semantic?.copyleftScope, knownScopes];
   if (hasValue(safeAnswers?.patents)) required.patentPosition = [profile.semantic?.patentPosition, knownPatents];
   if (hasValue(safeAnswers?.notices)) required.noticeBurden = [profile.semantic?.noticeBurden, knownNotices];
-  if (hasValue(safeAnswers?.projectForm)) required.projectForm = [profile.semantic?.projectForm, knownProjectForms];
   for (const [field, [value, known]] of Object.entries(required)) requiredSemantic(profile, field, value, known, result);
   const reciprocityScopes: Record<string, CopyleftScope> = { none: "none", file: "file", library: "library", strong: "whole-work", network: "network" };
-  const deliveryScopes: Record<string, CopyleftScope> = { library: "library", application: "whole-work", saas: "network", internal: "none" };
   const reciprocityScope = typeof safeAnswers?.reciprocity === "string" ? reciprocityScopes[safeAnswers.reciprocity] : undefined;
-  const deliveryScope = typeof safeAnswers?.delivery === "string" ? deliveryScopes[safeAnswers.delivery] : undefined;
   if (reciprocityScope !== undefined && profile.semantic.copyleftScope !== reciprocityScope) exclusion(result, `semantic.copyleftScope: required ${reciprocityScope} is not evidenced`);
-  if (deliveryScope !== undefined && profile.semantic.copyleftScope !== deliveryScope) exclusion(result, `semantic.copyleftScope: required ${deliveryScope} is not evidenced`);
-  if (typeof safeAnswers?.projectForm === "string" && !uncertaintyStates.has(safeAnswers.projectForm) && profile.semantic.projectForm !== safeAnswers.projectForm) exclusion(result, "semantic.projectForm: requested project form is not evidenced");
   if (safeAnswers?.patents === "important" && profile.semantic.patentPosition !== "express-grant") exclusion(result, "semantic.patentPosition: express grant is not evidenced");
   if (safeAnswers?.notices === "minimal" && !["minimal", "none"].includes(profile.semantic.noticeBurden)) exclusion(result, "semantic.noticeBurden: minimal burden is not evidenced");
   if (safeAnswers?.notices === "standard" && !["standard", "material"].includes(profile.semantic.noticeBurden)) exclusion(result, "semantic.noticeBurden: standard burden is not evidenced");

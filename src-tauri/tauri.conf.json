@@ -1,7 +1,7 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
   "productName": "Licentia",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "identifier": "eu.licentia.desktop",
   "build": {
     "beforeDevCommand": "npm run dev:desktop",
@@ -23,7 +23,7 @@
       }
     ],
     "security": {
-      "csp": "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self' https://spdx.org https://opensource.org https://api.github.com"
+      "csp": "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'"
     }
   },
   "bundle": {

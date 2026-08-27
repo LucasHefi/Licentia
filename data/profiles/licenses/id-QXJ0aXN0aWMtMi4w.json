@@ -8,68 +8,93 @@
     "contentHash": "sha256:0e470f69727e27174dd5321f0d1277545dc509e9c0f9dbbea49a8149f812e64f"
   },
   "review": {
-    "status": "pending",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "weak-copyleft",
+    "copyleftScope": "library",
     "permissions": [
       "commercial-use",
       "distribution",
       "modifications",
-      "patent-grant"
+      "patent-grant",
+      "private-use",
+      "sublicensing"
     ],
     "obligations": [
+      "disclose-source",
       "include-copyright",
-      "provide-corresponding-source"
+      "include-notice",
+      "mark-modifications",
+      "provide-corresponding-source",
+      "same-license",
+      "unknown"
     ],
     "triggers": [
+      "combination",
+      "distribution",
+      "linking",
+      "modification",
+      "patent-claim",
       "unknown"
     ],
     "restrictions": [
       "liability",
-      "trademark"
+      "patent-claim",
+      "trademark",
+      "unknown",
+      "warranty"
     ],
-    "patentPosition": "express-grant",
-    "noticeBurden": "standard"
+    "patentPosition": "defensive-termination",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Preamble; Definitions of Package, Standard Version, Modified Version, Source, and Compiled; Sections 4, 6, and 8-9 (Package-level source reciprocity and alternative licensing coexist with aggregation, linking, embedding, and extension boundaries, making weak-copyleft the closest family rather than a conventional permissive or whole-work copyleft classification)"
     },
     {
-      "field": "obligations",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Definition of Package; Sections 4 and 6-9 (source conditions attach to the Package and its Modified Versions, while aggregations, qualifying linked or embedded results, and works that merely extend or use the Package remain outside; library is the closest available scope, although the direct-interface boundary in Section 8 is not exactly representable)"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Preamble; Sections 1-8 and 13 (use for any purpose, private modification, source and compiled distribution, Distributor Fees, aggregation, linking and embedding, alternative licensing of Modified Versions, and the express patent grant support commercial use, distribution, modifications, private use, sublicensing, and patent use)"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "text: Sections 2; 4 opening and alternatives (a)-(c)(ii); 5-6; and 10-11 (preserve original copyright notices and associated disclaimers, document differences, provide or make source obtainable, and use the Original License or a qualifying reciprocal license on specified paths); disclose-source, provide-corresponding-source, and same-license each capture only some branches, while installation non-interference, different-name, live source-instruction, thirty-day cure, Original-License-version, and alternative-relicensing duties have no lossless flat representation, so unknown is retained"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "text: Definition of Distribute; Sections 1-8 and 13 (external distribution and modification activate conditions, aggregation and linking define separate paths, and a patent claim terminates the license); Section 5 also turns invalid source instructions, awareness, demand, and a thirty-day cure into conditions, while Section 8 depends on exposure of a direct interface, none of which has an exact trigger value, so unknown is retained"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Sections 4(b)-(c)(ii), 5, 7-8, and 12-14 (different-name and installation rules, licensing-fee prohibition, source-instruction maintenance, direct-interface condition, trademark exclusion, patent-litigation termination, warranty disclaimer, and liability exclusion); patent-claim, trademark, warranty, and liability are represented directly, while the naming, fee, installation, timing, and interface restrictions require unknown"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "text: Section 13, both sentences (non-exclusive, worldwide, free-of-charge patent grant for necessarily infringed Copyright-Holder claims, followed by termination when You institute litigation against any party alleging that the Package directly or contributorily infringes; the controlling combined position is defensive-termination)"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "text: Sections 2, 4 opening, and 5-6 (Standard-Version source copies retain all original copyright notices and associated disclaimers; Modified Versions require clear difference documentation; source-less compiled distribution requires complete, continuously valid source instructions, with replacement on demand or cessation, creating a material multi-part notice and documentation burden)"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "metadata: id=Artistic-2.0, name='Artistic License 2.0', deprecated=false, osi=true, fsf=true, comments='This license was released: 2006'; text: Preamble, Definitions, and Sections 2-14, especially the alternative Modified-Version routes in Section 4, Source/Compiled paths in Sections 5-6, fee and aggregation rules in Section 7, direct-interface and Package boundaries in Sections 8-9, trademark, patent, and warranty/liability terms in Sections 12-14; the flat vocabulary cannot preserve these conditional alternatives losslessly, so OSI approval and non-deprecated status do not make the profile safely recommendable"
     }
   ]
 }

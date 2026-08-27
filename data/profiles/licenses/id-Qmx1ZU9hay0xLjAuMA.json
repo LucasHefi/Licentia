@@ -8,43 +8,84 @@
     "contentHash": "sha256:562364b1aa13797ce24adb01d8e34096ce7fd326045d6be26e41b67ef39d1d6c"
   },
   "review": {
-    "status": "pending",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "patent-grant",
+      "private-use",
+      "sublicensing"
     ],
     "obligations": [
-      "unknown"
+      "include-license-text"
     ],
     "triggers": [
-      "unknown"
+      "distribution"
     ],
     "restrictions": [
-      "liability"
+      "liability",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "express-grant",
+    "noticeBurden": "standard"
   },
   "evidence": [
     {
+      "field": "copyleftScope",
+      "sourceId": "spdx-license-list",
+      "locator": "text: Copyright and Notices sections (broad contributor grant and license-text-or-link condition; no source-disclosure, same-license, or other reciprocal condition)"
+    },
+    {
+      "field": "family",
+      "sourceId": "spdx-license-list",
+      "locator": "text: Purpose, Copyright, and Notices sections (maximum permission, broad copyright grant, and only a downstream license-notice condition)"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "text: Notices and Excuse sections (each downstream recipient must get the license text or its link, with a 30-day cure after written notice)"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "text: Acceptance, Notices, and Excuse sections (rules are obligations and license conditions; downstream copies require the license text or its link, subject to cure)"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "text: Patent and Reliability sections (broad express contributor patent grant with no patent-litigation termination and no revocation)"
+    },
+    {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Purpose, Copyright, and Patent sections ('as much permission ... as possible' and grants to do everything otherwise infringing contributor copyright or licensable patent claims)"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: No Liability section (software is as-is without warranty or condition, and contributors disclaim damages liability)"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "metadata: id=BlueOak-1.0.0, deprecated=false, osi=true"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "text: Acceptance, Copyright, Notices, Excuse, Patent, and Reliability sections; vocabulary 1.0.0 cannot losslessly represent affirmative agreement and contract characterization, the license-text-or-link alternative, the 30-day notice-and-cure termination mechanism, irrevocability, or the each-contributor grant model, so the profile is not recommendable"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "text: Acceptance, Notices, and Excuse sections (giving anyone a copy of any part, with or without changes, triggers the notice rule; written notice starts the 30-day cure period)"
     }
   ]
 }

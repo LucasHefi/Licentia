@@ -8,70 +8,96 @@
     "contentHash": "sha256:a76cd61ce86ad80a9f90c5cce0357ab4dffb0e51f2af93cb9623b64c74207713"
   },
   "review": {
-    "status": "pending",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "weak-copyleft",
+    "copyleftScope": "file",
     "permissions": [
+      "commercial-use",
       "distribution",
       "modifications",
       "patent-grant",
+      "private-use",
       "sublicensing"
     ],
     "obligations": [
+      "disclose-source",
+      "include-copyright",
       "include-license-text",
+      "include-notice",
       "mark-modifications",
-      "provide-corresponding-source"
+      "network-use-disclose",
+      "provide-corresponding-source",
+      "same-license",
+      "unknown"
     ],
     "triggers": [
+      "combination",
+      "distribution",
+      "modification",
+      "network-use",
+      "patent-claim",
       "unknown"
     ],
     "restrictions": [
+      "additional-terms",
       "liability",
+      "patent-claim",
       "trademark",
+      "unknown",
       "warranty"
     ],
-    "patentPosition": "express-grant",
-    "noticeBurden": "standard"
+    "patentPosition": "retaliatory-termination",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
+      "field": "copyleftScope",
+      "sourceId": "spdx-license-list",
+      "locator": "text: Sections 1.3, 1.5-1.6, 2.2(b), and 4 (only Deployed Modifications must be published under this License; a Modification is a changed Covered-Code file or a new file containing Covered Code, while other code in a Larger Work remains outside the License, establishing file-level copyleft)"
+    },
+    {
+      "field": "family",
+      "sourceId": "spdx-license-list",
+      "locator": "text: Sections 1.3-1.6, 2.2(b), and 4 (reciprocity applies to Deployed Modifications and Covered-Code portions, including modified files, but Section 4 permits distribution of a Larger Work with unrelated code outside this License, so the family is weak copyleft rather than whole-work copyleft)"
+    },
+    {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Sections 2.1(a)-2.1(c), 2.2(c)-2.2(d), and Exhibit A (preserve copyright, proprietary, disclaimer, and license notices; distribute the license; document every modification, date, and Original-Code version in a prominent file; repeat Exhibit A in every modified source file; report how to obtain modifications to Apple if its form is available; and place a prominent source-availability notice in object code and documentation)"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Sections 1.4, 2.1(a)-2.1(c), 2.2(a)-2.2(d), 3(a)-3(b), and Exhibit A (preserve notices and license text, mark and date modifications, publish Deployed Modifications in source form under this License for the stated availability period, and provide source-location notices; Deploy includes network and other non-R&D use, while the mandatory submission to Apple's modification form and broad grants of patent and other IP rights to Apple and third parties have no lossless obligation value, so unknown is retained)"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Sections 1.2, 2 opening paragraph, 3(a)-3(b), 5, and 12.1(c) (Apple grants a royalty-free license under Applicable Patent Rights, contributors grant patent rights over their Modifications, and commencing any patent-infringement action against Apple automatically terminates the License; the single patentPosition value records the controlling retaliatory-termination feature)"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Sections 1.4, 2 opening paragraph, 2.1, and 2.2 (the worldwide royalty-free copyright and patent license permits use, copying, modification, distribution, and Deploy, whose definition expressly includes use and sublicensing outside internal R&D; this supports commercial use, distribution, modification, patent use, private use, and sublicensing)"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "text: Sections 2.1(b), 6, 8, 9.1-9.2, 10, 12, and 13.5-13.7 (limits additional terms, disclaims warranties and limits liability, permits infringement-claim suspension, restricts Apple marks, terminates for patent action, breach, or legal inability to comply, requires cessation and destruction, and imposes California law and Northern District of California venue; suspension, destruction, governing-law, forum, and related conditions have no dedicated restriction values, so unknown is retained)"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "metadata: id=APSL-1.1, name='Apple Public Source License 1.1', deprecated=false, osi=true, fsf=false, comments='This license was released 19 April 1999', and seeAlso identifies an historical Apple source copy; the SPDX snapshot also contains later APSL-1.2 and APSL-2.0 records. Text: Sections 1.4, 2.2, 3, 9.1, 12, and 13.5-13.7 impose unusually broad non-R&D-use disclosure, Apple reporting and contributor grants, unilateral suspension, destruction, termination, governing-law, and forum conditions that vocabulary 1.0.0 cannot communicate losslessly; despite the non-deprecated SPDX identifier, this superseded historical version is not a safe general recommendation"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "text: Sections 1.4-1.6, 2.1-2.2, 4, 9.1, 12.1, and 13.5(b) (distribution, qualifying modification or combination, network use, and a patent claim activate stated conditions; Deploy additionally includes every internal use outside R&D, and rights may be suspended on an infringement allegation or terminate for uncured breach or legal inability to comply, none of which has a lossless trigger value, so unknown is retained)"
     }
   ]
 }

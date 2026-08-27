@@ -38,8 +38,12 @@ function profile(overrides: Partial<MetadataLicenseProfile> = {}): MetadataLicen
       { field: "family", sourceId: "spdx-license-list", locator: "text" },
       { field: "permissions", sourceId: "spdx-license-list", locator: "text" },
       { field: "copyleftScope", sourceId: "spdx-license-list", locator: "text" },
+      { field: "obligations", sourceId: "spdx-license-list", locator: "text" },
+      { field: "triggers", sourceId: "spdx-license-list", locator: "text" },
+      { field: "restrictions", sourceId: "spdx-license-list", locator: "text" },
       { field: "patentPosition", sourceId: "spdx-license-list", locator: "text" },
       { field: "noticeBurden", sourceId: "spdx-license-list", locator: "text" },
+      { field: "review", sourceId: "spdx-license-list", locator: "isOsiApproved=true" },
     ],
     ...overrides,
   };
@@ -140,9 +144,10 @@ test("the versioned guide has quick and advanced questions with conditional depe
   const model = buildGuideModel();
   assert.equal(model.version, GUIDE_MODEL_VERSION);
   const quick = model.questions.filter((question) => question.mode === "quick");
-  assert.equal(quick.length, 6);
+  assert.equal(quick.length, 7);
   assert.ok(quick.some((question) => question.key === "delivery"));
   assert.ok(quick.some((question) => question.key === "patents"));
+  assert.deepEqual(quick.find((question) => question.key === "dependencies")?.showWhen, { key: "delivery", equals: "application" });
   const advanced = model.questions.filter((question) => question.mode === "advanced");
   assert.ok(advanced.some((question) => question.key === "delivery"));
   assert.ok(advanced.some((question) => question.key === "dependencies"));
@@ -233,18 +238,17 @@ test("catalog recommendation uses the metadata namespace without deriving legal 
   assert.equal(result.candidates[0]?.evidence.some((reference) => reference.field === "sourceFingerprint"), false);
 });
 
-test("project form and commercial use answers are supported or fail closed on missing metadata", () => {
+test("project form is contextual while commercial use remains evidence-backed", () => {
   const applicationProfile = profile({
     semantic: { ...profile().semantic, projectForm: "application" } as MetadataLicenseProfile["semantic"],
   });
   assert.equal(recommendationEligibility(applicationProfile, { projectForm: "application" }, context).eligible, true);
 
   const missingProjectForm = recommendationEligibility(profile(), { projectForm: "application" }, context);
-  assert.equal(missingProjectForm.eligible, false);
-  assert.ok(missingProjectForm.missingFields.includes("semantic.projectForm"));
-  assert.equal(missingProjectForm.exclusionReasons.some((reason) => reason.includes("not implemented")), false);
+  assert.equal(missingProjectForm.eligible, true);
+  assert.deepEqual(missingProjectForm.missingFields, []);
   const mismatchedProjectForm = recommendationEligibility(profile({ semantic: { ...profile().semantic, projectForm: "library" } as MetadataLicenseProfile["semantic"] }), { projectForm: "application" }, context);
-  assert.equal(mismatchedProjectForm.eligible, false);
+  assert.equal(mismatchedProjectForm.eligible, true);
 
   const mismatchedReciprocity = recommendationEligibility(profile(), { reciprocity: "strong" }, context);
   assert.equal(mismatchedReciprocity.eligible, false);

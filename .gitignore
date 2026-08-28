@@ -31,6 +31,9 @@ yarn-error.log*
 !.env.example
 .dev.vars
 
+# agent and local hosting metadata
+.openai/
+
 # deployment and generated files
 .vercel
 next-env.d.ts

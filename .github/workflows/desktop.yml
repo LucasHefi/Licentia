@@ -1,7 +1,6 @@
 name: Desktop installers
 
 on:
-  workflow_dispatch:
   push:
     tags: ["v*"]
 
@@ -13,21 +12,53 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  release-identity:
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: read
+    outputs:
+      version: ${{ steps.verify.outputs.version }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 22.14.0
+          cache: npm
+      - name: Verify annotated tag, package version and source SHA
+        id: verify
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          version=$(node -p "JSON.parse(require('fs').readFileSync('package.json', 'utf8')).version")
+          expected_tag="v${version}"
+          test "${GITHUB_REF_TYPE}" = "tag"
+          test "${GITHUB_REF_NAME}" = "${expected_tag}"
+          test "$(git cat-file -t "${GITHUB_REF}")" = "tag"
+          test "$(git rev-parse HEAD)" = "${GITHUB_SHA}"
+          test "$(git rev-list -n 1 "${GITHUB_REF}")" = "${GITHUB_SHA}"
+          printf 'version=%s\n' "${version}" >> "${GITHUB_OUTPUT}"
+
   quality:
+    needs: release-identity
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
-          node-version: 22
+          node-version: 22.14.0
           cache: npm
       - run: npm ci
       - run: npm run check
 
-  build:
+  desktop-build:
     needs: quality
     permissions:
-      contents: write
+      contents: read
     strategy:
       fail-fast: false
       matrix:
@@ -42,9 +73,11 @@ jobs:
     runs-on: ${{ matrix.platform }}
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
-          node-version: 22
+          node-version: 22.14.0
           cache: npm
       - uses: dtolnay/rust-toolchain@4360b52568e2003a75bf9bc1d59f33a8e3fc893c # stable
         with:
@@ -53,16 +86,134 @@ jobs:
         if: matrix.platform == 'ubuntu-22.04'
         run: sudo apt-get update && sudo apt-get install -y libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev patchelf
       - run: npm ci
-      - uses: tauri-apps/tauri-action@1deb371b0cd8bd54025b384f1cd735e725c4060f # v1.0.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Build desktop installers
+        run: npm run tauri:build -- ${{ matrix.args }}
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
-          args: ${{ matrix.args }}
-          tagName: v__VERSION__
-          releaseName: Licentia v__VERSION__
-          releaseBody: |
-            Licentia desktop release with installers for Linux, Windows and macOS.
-            The guide is an orientation aid, not legal advice.
-          releaseDraft: false
-          prerelease: false
-          generateReleaseNotes: true
+          name: licentia-desktop-${{ matrix.platform }}
+          path: src-tauri/target/release/bundle
+          if-no-files-found: error
+          retention-days: 1
+
+  apache-build:
+    needs: [release-identity, desktop-build]
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 22.14.0
+          cache: npm
+      - run: npm ci
+      - name: Build Apache distribution
+        run: npm run build:apache
+      - name: Validate Apache output
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          test -s apache-dist/index.html
+          test -s apache-dist/sw.js
+          test -s apache-dist/api/.htaccess
+          test -s apache-dist/api/config.example.php
+          test -d apache-dist/assets
+          test -d apache-dist/data/licenses
+          test -d apache-dist/data/exceptions
+          (cd apache-dist && sha256sum --quiet --check checksums.sha256)
+          python3 - apache-dist <<'PY'
+          from pathlib import Path
+          import sys
+
+          root = Path(sys.argv[1])
+          files = [path for path in root.rglob('*') if path.is_file()]
+          if not any(path.is_relative_to(root / 'assets') for path in files):
+              raise SystemExit('Apache assets directory is empty')
+          if not any(path.is_relative_to(root / 'data' / 'licenses') for path in files):
+              raise SystemExit('Apache license data directory is empty')
+          if not any(path.is_relative_to(root / 'data' / 'exceptions') for path in files):
+              raise SystemExit('Apache exception data directory is empty')
+          if any(path.is_symlink() for path in root.rglob('*')):
+              raise SystemExit('Apache output contains a symlink')
+          PY
+      - name: Create deterministic Apache archive
+        id: archive
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          version="${{ needs.release-identity.outputs.version }}"
+          asset="Licentia_${version}_apache.tar.gz"
+          stage=$(mktemp -d)
+          trap 'rm -rf "$stage"' EXIT
+          cp -a apache-dist/. "$stage/"
+          python3 - "$stage" <<'PY'
+          from pathlib import Path
+          import sys
+
+          root = Path(sys.argv[1])
+          for path in root.rglob('*'):
+              if path.is_symlink():
+                  raise SystemExit(f'Archive staging contains a symlink: {path}')
+              path.chmod(0o755 if path.is_dir() else 0o644)
+          PY
+          tar --sort=name --mtime='UTC 1970-01-01' --owner=0 --group=0 --numeric-owner -C "$stage" -cf - . | gzip -n > "$asset"
+          sha256sum "$asset" > "$asset.sha256"
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "asset=$asset" >> "$GITHUB_OUTPUT"
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: licentia-apache-release
+          path: |
+            Licentia_*.tar.gz
+            Licentia_*.tar.gz.sha256
+          if-no-files-found: error
+          retention-days: 1
+
+  release-publish:
+    needs: [release-identity, desktop-build, apache-build]
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          pattern: licentia-desktop-*
+          path: desktop-release
+          merge-multiple: true
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          name: licentia-apache-release
+          path: apache-release
+      - name: Create GitHub Release and upload assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -Eeuo pipefail
+          version="${{ needs.release-identity.outputs.version }}"
+          tag="v${version}"
+          mapfile -d '' desktop_assets < <(
+            find desktop-release -type f \( \
+              -name '*.deb' -o \
+              -name '*.rpm' -o \
+              -name '*.dmg' -o \
+              -name '*.app.tar.gz' -o \
+              -name '*.msi' -o \
+              -name '*.exe' \
+            \) -print0 | sort -z
+          )
+          test "${#desktop_assets[@]}" -eq 6
+          apache_asset="apache-release/Licentia_${version}_apache.tar.gz"
+          test -s "$apache_asset"
+          test -s "$apache_asset.sha256"
+          gh release create "$tag" \
+            --repo "$GITHUB_REPOSITORY" \
+            --verify-tag \
+            --title "Licentia v${version}" \
+            --generate-notes
+          gh release upload "$tag" \
+            "${desktop_assets[@]}" \
+            "$apache_asset" \
+            "$apache_asset.sha256" \
+            --repo "$GITHUB_REPOSITORY"

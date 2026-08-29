@@ -24,10 +24,8 @@ posouzení.
 
 ### Autorství a údržba
 
-V aktuálních důkazech v repozitáři není deklarováno osobní jméno autora ani
-konkrétní osoba maintaineru. Toto osobní autorství je záměrně **OPEN / k
-potvrzení vlastníkem**. Licentia proto zde nevymýšlí ani nepřisuzuje žádné
-osobní jméno.
+Autorem aplikace je Lukáš Hefner. Vlastníkem a kontextem produktu je interní
+projekt společnosti Bucifálek.cz s.r.o.
 
 ## Licence aplikace a zdroje
 

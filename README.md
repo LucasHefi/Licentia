@@ -120,9 +120,9 @@ Výstup obsahuje katalog metadat, detailní JSON každé položky a plnotextový
 
 ## About, identita a datová hranice
 
-Licentia je interní projekt Bucifálek.cz s.r.o. Zdrojový kód repozitáře je
-poskytován pod licencí MIT; úplné znění je v souboru [LICENSE](LICENSE).
-Osobní autorství není v aktuálních repozitářových důkazech deklarováno.
+Licentia je interní projekt Bucifálek.cz s.r.o. Autorem aplikace je Lukáš
+Hefner. Zdrojový kód repozitáře je poskytován pod licencí MIT; úplné znění je
+v souboru [LICENSE](LICENSE).
 Licence MIT se nevztahuje automaticky na kanonická data SPDX ani na externí
 zdroje a adaptéry OSI, GitHub a MCP, které si zachovávají vlastní podmínky.
 Podrobnosti jsou v [docs/ABOUT.md](docs/ABOUT.md).

@@ -1,6 +1,7 @@
 "use client";
 
 import { useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
+import packageJson from "../package.json";
 import { familyOf, ruleLabels } from "../lib/recommend";
 import { candidateStatusLabels, evidenceLabels, guideMessage, outcomeLabels } from "../lib/guide-copy";
 import { buildGuideModel, GUIDE_MODEL_VERSION, recommendFromCatalog, runtimeSourceLockResolved, type GuideAnswers } from "../lib/recommendation-contract";
@@ -18,9 +19,21 @@ import type {
 type View = "catalog" | "guide" | "compare" | "saved" | "ecosystem" | "about";
 type StatusFilter = "current" | "all" | "deprecated";
 type ApprovalFilter = "all" | "osi" | "fsf" | "profiled";
+type UpdateState =
+  | { status: "idle" }
+  | { status: "checking" }
+  | { status: "up-to-date"; version: string }
+  | { status: "available"; version: string; url: string }
+  | { status: "error"; message: string };
 
 const DATA_ROOT = "./data";
 const PAGE_SIZE = 48;
+const APP_VERSION = packageJson.version;
+const APP_REPOSITORY_URL = "https://github.com/LucasHefi/Licentia";
+const APP_RELEASES_API_URL = "https://api.github.com/repos/LucasHefi/Licentia/releases/latest";
+const APP_RELEASES_PAGE_URL = `${APP_REPOSITORY_URL}/releases`;
+const APP_LICENSE_URL = `${APP_REPOSITORY_URL}/blob/main/LICENSE`;
+const APP_AUTHOR = "Lukáš Hefner";
 
 const guideModel = buildGuideModel();
 const guideQuestions = guideModel.questions.map((question) => ({
@@ -79,6 +92,21 @@ function safeExternalUrl(value: string): string | null {
   }
 }
 
+function versionParts(value: string): [number, number, number] | null {
+  const match = value.trim().match(/^v?(\d+)\.(\d+)\.(\d+)(?:[-+].*)?$/i);
+  return match ? [Number(match[1]), Number(match[2]), Number(match[3])] : null;
+}
+
+function isNewerVersion(current: string, candidate: string): boolean {
+  const currentParts = versionParts(current);
+  const candidateParts = versionParts(candidate);
+  if (!currentParts || !candidateParts) return false;
+  for (let index = 0; index < currentParts.length; index += 1) {
+    if (candidateParts[index] !== currentParts[index]) return candidateParts[index] > currentParts[index];
+  }
+  return false;
+}
+
 function RuleList({ title, values, tone }: { title: string; values: string[]; tone: string }) {
   return (
     <div className={`rule-group ${tone}`}>
@@ -128,6 +156,7 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
   const [favorites, setFavorites] = useState<string[]>([]);
   const [history, setHistory] = useState<ActivityEntry[]>([]);
   const [workspaceReady, setWorkspaceReady] = useState(false);
+  const [updateState, setUpdateState] = useState<UpdateState>({ status: "idle" });
   const [remoteSaveEnabled, setRemoteSaveEnabled] = useState(!account);
   const workspaceVersion = useRef<string | null>(null);
   const lastPersistedWorkspace = useRef("");
@@ -291,6 +320,31 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
     setHistory((current) => [{ id: crypto.randomUUID(), kind, label, createdAt: new Date().toISOString() }, ...current].slice(0, 100));
   }
 
+  async function checkForUpdates() {
+    setUpdateState({ status: "checking" });
+    const controller = new AbortController();
+    const timeout = window.setTimeout(() => controller.abort(), 10000);
+    try {
+      const response = await fetch(APP_RELEASES_API_URL, {
+        headers: { Accept: "application/vnd.github+json" },
+        cache: "no-store",
+        signal: controller.signal,
+      });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      const payload: unknown = await response.json();
+      if (!payload || typeof payload !== "object") throw new Error("Neplatná odpověď GitHubu.");
+      const release = payload as { tag_name?: unknown; html_url?: unknown };
+      if (typeof release.tag_name !== "string" || !versionParts(release.tag_name)) throw new Error("GitHub nevrátil platnou verzi.");
+      const latestVersion = release.tag_name.replace(/^v/i, "");
+      const releaseUrl = typeof release.html_url === "string" && safeExternalUrl(release.html_url) ? release.html_url : APP_RELEASES_PAGE_URL;
+      setUpdateState(isNewerVersion(APP_VERSION, latestVersion) ? { status: "available", version: latestVersion, url: releaseUrl } : { status: "up-to-date", version: APP_VERSION });
+    } catch (error) {
+      setUpdateState({ status: "error", message: error instanceof Error && error.name === "AbortError" ? "Kontrola trvá příliš dlouho." : "Aktualizace se nepodařilo ověřit." });
+    } finally {
+      window.clearTimeout(timeout);
+    }
+  }
+
   async function openDetail(license: LicenseSummary) {
     setDetailLoading(true);
     setDetailTab("overview");
@@ -375,7 +429,7 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
           <button type="button" className={view === "about" ? "active" : ""} aria-current={view === "about" ? "page" : undefined} onClick={() => navigate("about")}>O Licentii</button>
         </nav>
         <div className="topbar-account">
-          <span className="version-pill">SPDX 3.28.0</span>
+          <span className="version-pill" title="Verze aplikace">v{APP_VERSION}</span>
           {account && <AccountMenu account={account} />}
         </div>
       </header>
@@ -550,7 +604,7 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
           <div className="page-heading"><span className="section-kicker">Veřejný About</span><h1>Licence s dohledatelným původem.</h1><p>Licentia pomáhá orientovat se v licenčních datech. Nehraje si na právní stanovisko a jasně odděluje zdroj, kuraci a odvozený výsledek.</p></div>
           <div className="about-grid">
             <article><span className="about-label">Identita</span><h2>Licentia</h2><p>Interní projekt Bucifálek.cz s.r.o. Veřejný repozitář:</p><a href="https://github.com/LucasHefi/Licentia" target="_blank" rel="noreferrer">github.com/LucasHefi/Licentia ↗</a></article>
-            <article><span className="about-label">Otevřená licence</span><h2>Autorství a licence</h2><p>Osobní autor není v aktuálních důkazech deklarován. Zdrojový kód repozitáře je poskytován pod licencí MIT.</p><strong>Copyright © 2026 Bucifálek.cz s.r.o.</strong></article>
+            <article><span className="about-label">Otevřená licence</span><h2>Autorství a licence</h2><p>Autorem aplikace je Lukáš Hefner. Zdrojový kód repozitáře je poskytován pod licencí MIT.</p><strong>Copyright © 2026 Bucifálek.cz s.r.o.</strong></article>
             <article><span className="about-label">Evidence</span><h2>Tři vrstvy</h2><ol><li>Kanonická data ze SPDX.</li><li>Kurátorovaná metadata odděleně.</li><li>Odvozené doporučení z pravidel.</li></ol></article>
             <article><span className="about-label">Soukromí</span><h2>Anonymně napoprvé</h2><p>Prohlížení funguje bez účtu. Anonymní pracovní prostor zůstává v localStorage; účetní stav je chráněný. Veřejné API používá rate limit a Licentia netvrdí ukládání plaintextových IP auditů.</p></article>
           </div>
@@ -560,7 +614,25 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
         </section>
       )}
 
-      <footer><div className="brand"><span className="brand-mark">L</span><span>Licentia</span></div><p>Data SPDX 3.28.0 · Nejde o právní radu.</p><div className="footer-links"><button onClick={() => navigate("ecosystem")}>Zdroje a API</button><button onClick={() => navigate("about")}>O Licentii</button></div></footer>
+      <footer className="app-footer">
+        <div className="brand"><span className="brand-mark">L</span><span>Licentia</span></div>
+        <div className="footer-meta" aria-label="Informace o aplikaci">
+          <span>v{APP_VERSION}</span>
+          <span>Autor / vlastník: {APP_AUTHOR}</span>
+          <a href={APP_REPOSITORY_URL} target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a href={APP_LICENSE_URL} target="_blank" rel="noreferrer">MIT licence ↗</a>
+        </div>
+        <div className="footer-update" aria-live="polite">
+          <button className="footer-update-button" type="button" onClick={checkForUpdates} disabled={updateState.status === "checking"}>
+            {updateState.status === "checking" ? "Kontroluji aktualizace…" : "Zkontrolovat aktualizace"}
+          </button>
+          {updateState.status === "available" && <a className="footer-update-link" href={updateState.url} target="_blank" rel="noreferrer">Nová verze v{updateState.version} ↗</a>}
+          {updateState.status === "up-to-date" && <span className="footer-update-status">Aktuální v{updateState.version}</span>}
+          {updateState.status === "error" && <span className="footer-update-error">{updateState.message}</span>}
+        </div>
+        <p>Data SPDX 3.28.0 · Nejde o právní radu.</p>
+        <div className="footer-links"><button onClick={() => navigate("ecosystem")}>Zdroje a API</button><button onClick={() => navigate("about")}>O Licentii</button></div>
+      </footer>
 
       {detailLoading && <div className="detail-loading">Načítám detail…</div>}
       {detail && (

@@ -91,6 +91,15 @@ jobs:
       - run: npm ci
       - name: Build desktop installers
         run: npm run tauri:build -- ${{ matrix.args }}
+      - name: Create macOS updater archive
+        if: matrix.platform == 'macos-14'
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          version=$(node -p "JSON.parse(require('fs').readFileSync('package.json', 'utf8')).version")
+          bundle_dir="src-tauri/target/universal-apple-darwin/release/bundle/macos"
+          test -d "$bundle_dir/Licentia.app"
+          COPYFILE_DISABLE=1 tar -czf "$bundle_dir/Licentia_${version}_universal.app.tar.gz" -C "$bundle_dir" Licentia.app
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: licentia-desktop-${{ matrix.platform }}

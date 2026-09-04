@@ -1,6 +1,6 @@
 {
   "name": "sites-project",
-  "version": "0.1.16",
+  "version": "0.1.17",
   "private": true,
   "license": "MIT",
   "engines": {
@@ -32,6 +32,7 @@
     "test:guide-contract": "node --experimental-strip-types --test scripts/guide-contract.test.ts",
     "test:mcp-contract": "node --experimental-strip-types --test scripts/mcp-contract.test.ts",
     "test:apache-recommendation-contract": "php scripts/apache-recommendation-contract.test.php",
+    "test:signals-contract": "node --experimental-strip-types --test scripts/signals-contract.test.ts",
     "test:curation": "node --test scripts/curate-legacy-profiles.test.mjs",
     "test:data-build": "node --test scripts/build-app-data.test.mjs",
     "test:runtime-metadata": "node --test scripts/runtime-metadata-adapter.test.mjs",
@@ -40,7 +41,7 @@
     "test:apache-anonymous-entry": "node --experimental-strip-types --test scripts/apache-anonymous-entry.test.ts",
     "start": "vinext start",
     "typecheck": "tsc --noEmit --incremental false",
-    "test": "npm run test:data && npm run test:hosting-config-boundary && npm run test:metadata-audit && npm run test:recommendation-contract && npm run test:guide-contract && npm run test:mcp-contract && npm run test:catalog-service && npm run test:apache-recommendation-contract && npm run test:curation && npm run test:data-build && npm run test:runtime-metadata && npm run test:public-api-policy && npm run test:apache-public-api-policy && npm run test:apache-anonymous-entry && npm run test:workspace-state && npm run test:service-worker-policy",
+    "test": "npm run test:data && npm run test:hosting-config-boundary && npm run test:metadata-audit && npm run test:recommendation-contract && npm run test:guide-contract && npm run test:mcp-contract && npm run test:catalog-service && npm run test:apache-recommendation-contract && npm run test:curation && npm run test:data-build && npm run test:runtime-metadata && npm run test:public-api-policy && npm run test:signals-contract && npm run test:apache-public-api-policy && npm run test:apache-anonymous-entry && npm run test:workspace-state && npm run test:service-worker-policy",
     "test:catalog-service": "node --experimental-strip-types --test scripts/catalog-service.test.ts",
     "test:workspace-state": "node --experimental-strip-types --test scripts/workspace-state.test.ts",
     "test:service-worker-policy": "node --test scripts/service-worker-policy.test.mjs",

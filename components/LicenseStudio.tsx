@@ -6,6 +6,7 @@ import { familyOf, ruleLabels } from "../lib/recommend";
 import { candidateStatusLabels, evidenceLabels, guideMessage, outcomeLabels } from "../lib/guide-copy";
 import { buildGuideModel, GUIDE_MODEL_VERSION, recommendFromCatalog, runtimeSourceLockResolved, type GuideAnswers } from "../lib/recommendation-contract";
 import { safeStoredWorkspaceState } from "../lib/workspace-state";
+import { decodeGithubSignalPayload, type GithubSignal } from "../lib/public-signals";
 import AccountMenu from "./AccountMenu";
 import type {
   ActivityEntry,
@@ -16,7 +17,7 @@ import type {
   WorkspaceState,
 } from "./types";
 
-type View = "catalog" | "guide" | "compare" | "saved" | "ecosystem" | "about";
+type View = "catalog" | "guide" | "compare" | "saved" | "signals" | "ecosystem" | "about";
 type StatusFilter = "current" | "all" | "deprecated";
 type ApprovalFilter = "all" | "osi" | "fsf" | "profiled";
 type UpdateState =
@@ -25,6 +26,11 @@ type UpdateState =
   | { status: "up-to-date"; version: string }
   | { status: "available"; version: string; url: string }
   | { status: "error"; message: string };
+type GithubSignalState =
+  | { status: "idle" }
+  | { status: "ready" | "partial"; fetchedAt: string; source: string; caveat: string; signals: GithubSignal[] }
+  | { status: "error" }
+  | { status: "unavailable"; reason: string };
 
 const DATA_ROOT = "./data";
 const PAGE_SIZE = 48;
@@ -74,6 +80,53 @@ const ecosystemSources = [
   },
 ];
 
+const publicSignalSources = [
+  {
+    badge: "Aktivita",
+    title: "GitHub",
+    description: "Veřejné repozitáře, hvězdy, forky a poslední aktivita. Jde o signál viditelnosti projektu, nikoli o počet uživatelů.",
+    url: "https://docs.github.com/en/rest/licenses/licenses",
+  },
+  {
+    badge: "Balíčky",
+    title: "npm a crates.io",
+    description: "Download statistiky konkrétních balíčků v časovém okně. Jedno stažení není totéž co jeden uživatel nebo instalace.",
+    url: "https://github.com/npm/registry/blob/main/docs/download-counts.md",
+  },
+  {
+    badge: "Kontext",
+    title: "deps.dev",
+    description: "Licence, závislosti, vazby na repozitáře a dostupné signály zdraví projektu z více ekosystémů.",
+    url: "https://docs.deps.dev/api/v3/",
+  },
+  {
+    badge: "Kvalita údajů",
+    title: "ClearlyDefined",
+    description: "Porovnání deklarované a detekované licence, kurace a úplnost licenčních údajů u balíčků.",
+    url: "https://docs.clearlydefined.io/docs/get-involved/using-data",
+  },
+];
+
+const trackedPublicLicenses = [
+  ["MIT", "mit"],
+  ["Apache-2.0", "apache-2.0"],
+  ["GPL-3.0", "gpl-3.0"],
+  ["BSD-3-Clause", "bsd-3-clause"],
+  ["MPL-2.0", "mpl-2.0"],
+  ["LGPL-3.0", "lgpl-3.0"],
+  ["AGPL-3.0", "agpl-3.0"],
+] as const;
+
+const familyLabels: Record<string, string> = {
+  "Permisivní": "Permisivní",
+  "Maximálně volná": "Maximálně volná",
+  "Síťový copyleft": "Síťový copyleft",
+  "Silný copyleft": "Silný copyleft",
+  "Knihovní copyleft": "Knihovní copyleft",
+  "Souborový copyleft": "Souborový copyleft",
+  "Neklasifikováno": "Neklasifikováno",
+};
+
 function detailUrl(type: LicenseType, id: string) {
   const folder = type === "license" ? "licenses" : "exceptions";
   return `${DATA_ROOT}/${folder}/${encodeURIComponent(id)}.json`;
@@ -92,6 +145,12 @@ function safeExternalUrl(value: string): string | null {
   }
 }
 
+function initialGithubSignalState(): GithubSignalState {
+  return typeof document !== "undefined" && document.documentElement.dataset.licentiaStaticTarget === "true"
+    ? { status: "unavailable", reason: "Živá data jsou dostupná pouze ve webové variantě." }
+    : { status: "idle" };
+}
+
 function versionParts(value: string): [number, number, number] | null {
   const match = value.trim().match(/^v?(\d+)\.(\d+)\.(\d+)(?:[-+].*)?$/i);
   return match ? [Number(match[1]), Number(match[2]), Number(match[3])] : null;
@@ -105,6 +164,10 @@ function isNewerVersion(current: string, candidate: string): boolean {
     if (candidateParts[index] !== currentParts[index]) return candidateParts[index] > currentParts[index];
   }
   return false;
+}
+
+function formatCount(value: number) {
+  return new Intl.NumberFormat("cs-CZ").format(value);
 }
 
 function RuleList({ title, values, tone }: { title: string; values: string[]; tone: string }) {
@@ -157,6 +220,8 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
   const [history, setHistory] = useState<ActivityEntry[]>([]);
   const [workspaceReady, setWorkspaceReady] = useState(false);
   const [updateState, setUpdateState] = useState<UpdateState>({ status: "idle" });
+  const [githubSignalState, setGithubSignalState] = useState<GithubSignalState>(initialGithubSignalState);
+  const githubSignalRequested = useRef(false);
   const [remoteSaveEnabled, setRemoteSaveEnabled] = useState(!account);
   const workspaceVersion = useRef<string | null>(null);
   const lastPersistedWorkspace = useRef("");
@@ -280,6 +345,30 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
     ).then(setCompareDetails).catch(() => setError("Porovnání se nepodařilo načíst."));
   }, [view, compareIds, catalog]);
 
+  useEffect(() => {
+    if (view !== "signals" || githubSignalRequested.current) return;
+    githubSignalRequested.current = true;
+    if (document.documentElement.dataset.licentiaStaticTarget === "true") {
+      return;
+    }
+    fetch("./api/signals", { cache: "no-store" })
+      .then((response) => {
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return response.json() as Promise<unknown>;
+      })
+      .then((payload) => {
+        const decoded = decodeGithubSignalPayload(payload);
+        if (!decoded) throw new Error("Neplatná odpověď.");
+        if (decoded.status === "unavailable") {
+          const reason = decoded.caveat.trim() || decoded.signals.find((signal) => signal.error)?.error || "Živá data nejsou momentálně dostupná.";
+          setGithubSignalState({ status: "unavailable", reason });
+        } else {
+          setGithubSignalState({ status: decoded.status === "complete" ? "ready" : "partial", fetchedAt: decoded.fetchedAt, source: decoded.source, caveat: decoded.caveat, signals: decoded.signals });
+        }
+      })
+      .catch(() => setGithubSignalState({ status: "error" }));
+  }, [view, githubSignalState.status]);
+
   const fullTextMatches = useMemo(() => {
     if (!fullText || deferredQuery.length < 3 || !searchIndex) return null;
     const terms = deferredQuery.toLocaleLowerCase("cs").split(/\s+/).filter(Boolean);
@@ -314,6 +403,25 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
     [catalog, answers, guideMode],
   );
   const reviewedRecommendationCount = useMemo(() => catalog.filter((item) => item.type === "license" && item.metadata?.review.recommendable === true).length, [catalog]);
+  const catalogStats = useMemo(() => {
+    const licenses = catalog.filter((item) => item.type === "license");
+    const families = new Map<string, number>();
+    licenses.forEach((license) => {
+      const family = familyOf(license);
+      families.set(family, (families.get(family) ?? 0) + 1);
+    });
+    return {
+      total: catalog.length,
+      licenses: licenses.length,
+      exceptions: catalog.filter((item) => item.type === "exception").length,
+      current: licenses.filter((item) => !item.deprecated).length,
+      osi: licenses.filter((item) => item.osi).length,
+      fsf: licenses.filter((item) => item.fsf).length,
+      profiled: licenses.filter((item) => item.profiled).length,
+      recommendable: reviewedRecommendationCount,
+      families: [...families.entries()].sort(([, left], [, right]) => right - left),
+    };
+  }, [catalog, reviewedRecommendationCount]);
   const searchLoading = fullText && deferredQuery.length >= 3 && !searchIndex && !searchFailed;
 
   function recordActivity(kind: ActivityEntry["kind"], label: string) {
@@ -425,6 +533,7 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
             Porovnání {compareIds.length > 0 && <b>{compareIds.length}</b>}
           </button>
           <button className={view === "saved" ? "active" : ""} onClick={() => navigate("saved")}>Moje {favorites.length > 0 && <b>{favorites.length}</b>}</button>
+          <button className={view === "signals" ? "active" : ""} onClick={() => navigate("signals")}>Statistiky</button>
           <button className={view === "ecosystem" ? "active" : ""} onClick={() => navigate("ecosystem")}>API a ekosystém</button>
           <button type="button" className={view === "about" ? "active" : ""} aria-current={view === "about" ? "page" : undefined} onClick={() => navigate("about")}>O Licentii</button>
         </nav>
@@ -585,6 +694,44 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
         </section>
       )}
 
+      {view === "signals" && (
+        <section className="signals-view">
+          <div className="page-heading"><span className="section-kicker">Ověřitelné signály</span><h1>Co se o licencích dá zjistit z veřejných dat.</h1><p>Nejdříve ukazujeme fakta z vlastního katalogu. Veřejné zdroje přidáváme jako kontext a vždy uvádíme jejich původ, datum a omezení.</p></div>
+
+          <div className="stats-grid" aria-label="Statistiky katalogu">
+            <article><span>Celkem položek</span><strong>{loading ? "…" : catalogStats.total}</strong><small>SPDX licence a výjimky</small></article>
+            <article><span>Aktuální licence</span><strong>{loading ? "…" : catalogStats.current}</strong><small>bez historických identifikátorů</small></article>
+            <article><span>OSI schválené</span><strong>{loading ? "…" : catalogStats.osi}</strong><small>podle katalogových metadat</small></article>
+            <article><span>Profilované</span><strong>{loading ? "…" : catalogStats.profiled}</strong><small>srozumitelný strukturovaný profil</small></article>
+          </div>
+
+          <div className="signals-columns">
+            <section className="signals-panel">
+              <div className="signals-heading"><div><span className="section-kicker">Vlastní katalog</span><h2>Licenční rodiny</h2></div><span>{catalogStats.licenses} licencí</span></div>
+              <div className="family-list">
+                {catalogStats.families.map(([family, count]) => <div className="family-row" key={family}><div><span>{familyLabels[family] ?? family}</span><strong>{count}</strong></div><i><em style={{ width: `${catalogStats.licenses ? (count / catalogStats.licenses) * 100 : 0}%` }} /></i></div>)}
+              </div>
+              <p className="signals-note">Toto jsou statistiky datové sady Licentia, nikoli globální statistiky používání licencí. Katalog obsahuje také {catalogStats.exceptions} výjimek a {catalogStats.fsf} položek označených jako FSF Free/Libre.</p>
+            </section>
+
+            <section className="signals-panel">
+              <div className="signals-heading"><div><span className="section-kicker">Připravené zdroje</span><h2>Veřejné signály</h2></div><span>bez osobních údajů</span></div>
+              <div className="signal-source-list">{publicSignalSources.map((source) => <a className="signal-source" href={source.url} target="_blank" rel="noreferrer" key={source.title}><span className="source-badge">{source.badge}</span><div><strong>{source.title} ↗</strong><p>{source.description}</p></div></a>)}</div>
+            </section>
+          </div>
+
+           <section className="github-signals">
+             <div><span className="section-kicker light">GitHub průzkum</span><h2>Licence, které můžeme transparentně sledovat.</h2><p>Počty repozitářů jsou pouze počet veřejných projektů, u kterých GitHub licenci rozpoznal — nikoli počet uživatelů, instalací ani všech závislostí.</p>{githubSignalState.status === "idle" && <p className="github-status">Načítám veřejné údaje z GitHubu…</p>}{githubSignalState.status === "error" && <p className="github-status">Živé údaje nejsou momentálně dostupné. Veřejné vyhledávání zůstává k dispozici u každé licence.</p>}{githubSignalState.status === "unavailable" && <p className="github-status">{githubSignalState.reason}</p>}{githubSignalState.status === "partial" && <p className="github-status">Načteno částečně — některé údaje nejsou dostupné. {githubSignalState.caveat}</p>}{githubSignalState.status === "ready" && <p className="github-status">Načteno {new Intl.DateTimeFormat("cs-CZ", { dateStyle: "medium", timeStyle: "short" }).format(new Date(githubSignalState.fetchedAt))} · {githubSignalState.source}</p>}</div>
+            <div className="github-license-links">{trackedPublicLicenses.map(([label, queryValue]) => {
+               const signal = githubSignalState.status === "ready" || githubSignalState.status === "partial" ? githubSignalState.signals.find((item) => item.id === label) : undefined;
+              return <a href={`https://github.com/search?q=license%3A${queryValue}&type=repositories`} target="_blank" rel="noreferrer" key={label}><code>{label}</code>{signal?.repositoryCount !== null && signal?.repositoryCount !== undefined ? <strong>{formatCount(signal.repositoryCount)}</strong> : <span>Údaj zatím není dostupný</span>}<span>{signal?.repositoryCount !== null && signal?.repositoryCount !== undefined ? `veřejných repozitářů${signal.incompleteResults ? " · výsledek může být neúplný" : ""}` : "Otevřít veřejné vyhledávání ↗"}</span>{signal?.topRepositories.slice(0, 2).map((repo) => <small key={repo.name}>{repo.name} · ★ {formatCount(repo.stars)}</small>)}</a>;
+            })}</div>
+          </section>
+
+          <div className="signals-methodology"><strong>Metodika</strong><span>GitHub údaje jsou veřejný agregát načítaný přes Licentia endpoint s cache. U každého údaje zůstává zdroj, datum načtení a vysvětlení, co číslo neznamená. Download statistiky dalších ekosystémů přidáme stejným způsobem.</span><button onClick={() => navigate("ecosystem")}>Zdroje a architektura →</button></div>
+        </section>
+      )}
+
       {view === "ecosystem" && (
         <section className="ecosystem-view" id="ekosystem">
           <div className="page-heading"><span className="section-kicker">Napojení a architektura</span><h1>Jedno rozhraní nad licenčními zdroji.</h1><p>SPDX už je centrálním katalogem znění. Licentia nad něj přidává cache, vyhledávání, lidsky čitelné profily a rozhraní pro aplikace i AI agenty.</p></div>
@@ -631,7 +778,7 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
           {updateState.status === "error" && <span className="footer-update-error">{updateState.message}</span>}
         </div>
         <p>Data SPDX 3.28.0 · Nejde o právní radu.</p>
-        <div className="footer-links"><button onClick={() => navigate("ecosystem")}>Zdroje a API</button><button onClick={() => navigate("about")}>O Licentii</button></div>
+        <div className="footer-links"><button onClick={() => navigate("signals")}>Statistiky</button><button onClick={() => navigate("ecosystem")}>Zdroje a API</button><button onClick={() => navigate("about")}>O Licentii</button></div>
       </footer>
 
       {detailLoading && <div className="detail-loading">Načítám detail…</div>}

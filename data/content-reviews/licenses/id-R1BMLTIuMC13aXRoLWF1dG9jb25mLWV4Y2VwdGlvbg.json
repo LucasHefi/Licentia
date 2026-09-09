@@ -1,0 +1,30 @@
+{
+  "id": "GPL-2.0-with-autoconf-exception",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:5ca97f49b90c3328a8cd34411f0d4281d00664f559b5958adc866358a110a8cf"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Připnutý záznam nahrazuje GPL v2 placeholderem a obsahuje Autoconf výjimku pro výstupní configure skripty. Upravený Autoconf může výjimku převzít jen tehdy, nemůže-li do výstupu kopírovat původní non-data části; jinak se oznámení výjimky musí odstranit.",
+  "blockersCs": [
+    "Základní GPL je nahrazena insert GPL v2 license text here. Pro úplný profil je třeba doložit základní text i jeho vazbu na výjimku; nelze převzít zdrojové, patentové a zárukové podmínky z nepřítomného grantu.",
+    "Jde o deprecated složený identifikátor; pro nový projekt je třeba aktuální základní GPL identifikátor s odpovídající Autoconf výjimkou a ověření zacházení s data/non-data částmi."
+  ],
+  "analysis": {
+    "subjectCs": "Autoconf program versus configure výstup: data části se mohou kopírovat, non-data jsou komentáře a výkonný kód rozhodující o výstupu.",
+    "grantCs": "Výjimka dává neomezená práva kopírovat, šířit a měnit výstupní configure skripty bez GPL; zbytek programu zůstává GPL, jejíž text chybí.",
+    "conditionsCs": "Upravené distribuované verzi lze výjimku rozšířit, pokud nemůže přesunout/kopírovat původní non-data do výstupu. Pokud takovou možnost má, oznámení výjimky se musí smazat.",
+    "limitationsCs": "Výjimka platí pro FSF vydání Autoconf; základní záruky, odpovědnost, zdrojové povinnosti a patenty placeholder neobsahuje.",
+    "compatibilityCs": "Výstupní výjimka není obecná GPL kompatibilita či volba verze; podmínka převzetí závisí na konkrétní modifikaci programu."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/GPL-2.0-with-autoconf-exception.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Nadpis Autoconf Exception a text GPL governs all other use odkazují na základní copyleft chybějící v placeholderu."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "MMIXware",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.6",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:c3fa84c8bef0cb701d524e8d611d557360b788618b842936fc3d4d68fa628252"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Nezměněné soubory lze kopírovat a šířit. Upravený soubor musí dostat jméno odlišné od všech existujících jmen v balíku MMIXware a být jasně označen jako nepatřící do balíku. Text doporučuje mechanismus change files; obecné označení změn samo o sobě podmínku názvu nesplňuje. Znění odmítá záruky.",
+  "blockersCs": [
+    "Doplnit kontrolu názvu proti celému jmennému prostoru balíku, identifikaci souboru jako nepatřícího do MMIXware a posouzení mechanismu change files. Nestačí mark-modifications ani prosté přejmenování původního souboru. Upřesnit rozsah grantu pro obecné užití před zařazením do průvodce."
+  ],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/MMIXware.html",
+      "note": "Dřívější individuální revize 2026-09-09.6; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

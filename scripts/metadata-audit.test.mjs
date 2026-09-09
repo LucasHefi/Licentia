@@ -8,8 +8,11 @@ import { auditCatalog, classifyDetail, stableReport, writeAudit } from './metada
 test('audits the complete SPDX catalog and keeps output deterministic', () => {
   const first = auditCatalog();
   const second = auditCatalog();
-  assert.deepEqual(first.summary, { licenses: 727, exceptions: 84, total: 811, pending: 0, notRecommendable: 123, exceptionsRecommendable: 0 });
-  assert.equal(first.reviewQueue.length, 123);
+  const reviewDirectory = new URL('../data/content-reviews/licenses/', import.meta.url);
+  const blocked = fs.readdirSync(reviewDirectory).filter(file => file.endsWith('.json')).map(file => JSON.parse(fs.readFileSync(new URL(file, reviewDirectory), 'utf8'))).filter(review => review.disposition === 'blocked').map(review => review.id).sort();
+  assert.deepEqual(first.summary, { licenses: 727, exceptions: 84, total: 811, pending: 0, notRecommendable: blocked.length, exceptionsRecommendable: 0 });
+  assert.deepEqual(first.reviewQueue, blocked);
+  for (const id of ['JSON', 'MS-PL']) assert.ok(first.reviewQueue.includes(id), id);
   assert.equal(first.summary.exceptionsRecommendable, 0);
   assert.equal(stableReport(first), stableReport(second));
   assert.match(stableReport(first), /"ruleVersion":"lic-007-v1"/);

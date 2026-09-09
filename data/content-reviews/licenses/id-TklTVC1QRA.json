@@ -1,0 +1,29 @@
+{
+  "id": "NIST-PD",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:538ef6784559cec69efe989b48a9f676a730cd262f9a329f9d0577182d77619b"
+  },
+  "disposition": "blocked",
+  "summaryCs": "NIST popisuje software svých zaměstnanců a dalších osob jako věnovaný do public domain a tvrdí, že formální licence není potřebná. Záruky včetně přesnosti dat jsou vyloučeny; uvedený zákonný odkaz je v připnutém textu chybný.",
+  "blockersCs": [
+    "Text odvozuje public-domain status od původu díla NIST, uvádí také blíže neurčené další autory a cituje title 15 Untied States Code Section 105. Pro nový projekt je nutná vlastní licence/dedikace; u tohoto materiálu je třeba ověřit příspěvky dalších autorů a chybný zákonný odkaz v primárním kontextu, nikoli měnit připnutý text."
+  ],
+  "analysis": {
+    "subjectCs": "Software zaměstnanců NIST a dalších neurčených osob.",
+    "grantCs": "Deklaruje příspěvek do public domain a absenci copyrightu děl NIST v USA; neobsahuje výslovnou patentovou licenci.",
+    "conditionsCs": "Neukládá informační, zdrojové či reciproční povinnosti.",
+    "limitationsCs": "AS IS bez výslovných, odvozených i zákonných záruk včetně non-infringement a data accuracy; samostatné odpovědnostní ustanovení chybí.",
+    "compatibilityCs": "Nenabízí náhradní grant ani jinou licenci/verzi; historická formulace zákonného odkazu se nepřepisuje."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/NIST-PD.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; První odstavec contributed to public domain a formální licence není potřebná podle tvrzeného federálního statusu."
+    }
+  ]
+}

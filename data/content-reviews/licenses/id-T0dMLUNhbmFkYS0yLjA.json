@@ -1,0 +1,30 @@
+{
+  "id": "OGL-Canada-2.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:d0d336848e8c5f7b23d2e8dd1e06f198c77015611ab98a3fe9d5e61fd4c09d44"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Kanadská OGL 2.0 dovoluje použití, změny a šíření informací i komerčně s předepsanou atribucí a případným odkazem. Nevztahuje se na osobní informace, cizí neudělená práva, oficiální symboly ani patenty; platí verze účinná v den přístupu.",
+  "blockersCs": [
+    "Předmětem jsou Information nabízené kanadským poskytovatelem s výjimkami osobních údajů, cizích práv a symbolů. Je třeba identifikovat konkrétní data a jejich atribuci/oprávnění a použít informační model, nikoli licenci pro nový obecný software.",
+    "Porušení ukončuje i podobné licence poskytovatele a verze se určuje datem přístupu. Je třeba modelovat tyto navázané licence a časový výběr; nejedná se o volitelnou pozdější verzi."
+  ],
+  "analysis": {
+    "subjectCs": "Copyrightově chráněné či jiné nabízené Information; poskytovatel definován historicky jako Her Majesty the Queen in right of Canada.",
+    "grantCs": "Worldwide/royalty-free/perpetual/nonexclusive use včetně commercial, copy/modify/publish/translate/adapt/distribute pro lawful purpose. Patenty a jiná vyloučená IP práva grant výslovně nepokrývá.",
+    "conditionsCs": "Při libovolném uvedeném užití uvede provider attribution a kde možné odkaz licence; pokud chybí nebo více zdrojů nepraktické, předepsaná věta Contains information licensed... . Use znamená souhlas.",
+    "limitationsCs": "Exemptions osobní informace, neudělená cizí práva, názvy/loga/symboly/patenty; žádný endorsement/status. Automatický zánik této i similar licences při porušení; AS IS a warranty/liability. Ontario/Canada právo, Ontario či Federal Court.",
+    "compatibilityCs": "Versioning určuje licenci účinnou při získání dat, nikoli libovolnou budoucí verzi; zvláštní attribution fallback neuděluje cizí práva."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/OGL-Canada-2.0.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Grant Information s vyjmutými osobními/externími/symbolovými právy a datem přístupu je informační licence."
+    }
+  ]
+}

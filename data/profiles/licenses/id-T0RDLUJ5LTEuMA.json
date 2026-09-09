@@ -8,95 +8,103 @@
     "contentHash": "sha256:0ae70c566453b5e251d021d9351b6cff9aded6ea84c6309f7ba48195212eda8a"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
       "commercial-use",
       "distribution",
       "modifications",
-      "sublicensing"
+      "private-use"
     ],
     "obligations": [
-      "include-license-text"
-    ],
-    "triggers": [
+      "include-copyright",
+      "include-license-text",
+      "include-notice",
+      "include-use-acknowledgment",
       "unknown"
     ],
-    "restrictions": [
-      "liability",
-      "trademark"
+    "triggers": [
+      "distribution",
+      "use"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "restrictions": [
+      "additional-terms",
+      "liability",
+      "trademark",
+      "unknown",
+      "warranty"
+    ],
+    "patentPosition": "express-exclusion",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/ODC-By-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ODC-By-1.0.json#text; ODC Attribution1.0 licencuje autorské/sousedské a sui generis právo databáze a smluvní přístup;§2.3 výslovně vylučuje software vytvářející/provozující databázi a§2.4 samostatná práva k jednotlivým Contents. §3.1 výslovně dovoluje komerční použití bez oborových výluk, vytěžení/opětovné užití podstatné části, derivované i kolektivní databáze, reprodukci, šíření, půjčování a veřejný výkon. Podstatnost je kvantitativní či kvalitativní i opakovaným soustavným vytěžením malých částí;§4.4 nepovoluje podlicence. §4.2 zachovává licence/notice původní databáze i v derivátu;§4.4 rozlišuje vlastní práva k derivátu a neposkytuje jejich automatický grant všem ani zdrojový ShareAlike. Produced Work má pouze samostatnou atribuci§4.3.; https://spdx.org/licenses/ODC-By-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/ODC-By-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ODC-By-1.0.json#text; §4.2 zachovává licence/notice původní databáze i v derivátu;§4.4 rozlišuje vlastní práva k derivátu a neposkytuje jejich automatický grant všem ani zdrojový ShareAlike. Produced Work má pouze samostatnou atribuci§4.3.; https://spdx.org/licenses/ODC-By-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/ODC-By-1.0.json#text; §3.1 výslovně dovoluje komerční použití bez oborových výluk, vytěžení/opětovné užití podstatné části, derivované i kolektivní databáze, reprodukci, šíření, půjčování a veřejný výkon. Podstatnost je kvantitativní či kvalitativní i opakovaným soustavným vytěžením malých částí;§4.4 nepovoluje podlicence.; https://spdx.org/licenses/ODC-By-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/ODC-By-1.0.json#text; §4.2 při Publicly Convey databáze, derivátu nebo databáze v kolekci uchovává copyright/databázové notices a původní licenci, poskytuje text/URI uvnitř databáze i související dokumentace; struktura souboru může odůvodnit očekávatelné umístění v adresáři. §4.3 u veřejného Produced Work dává samostatné přiměřené oznámení původu dat a ODC licence, s názvem/linky nebo čitelnými URI; bez převodu databáze není síťová interakce Convey a nepotřebuje stejné databázové notices. Publicly vyjímá ovládané osoby podle podílu nad50% či směrování činnosti.; https://spdx.org/licenses/ODC-By-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/ODC-By-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ODC-By-1.0.json#text; §4.2 při Publicly Convey databáze, derivátu nebo databáze v kolekci uchovává copyright/databázové notices a původní licenci, poskytuje text/URI uvnitř databáze i související dokumentace; struktura souboru může odůvodnit očekávatelné umístění v adresáři. §4.3 u veřejného Produced Work dává samostatné přiměřené oznámení původu dat a ODC licence, s názvem/linky nebo čitelnými URI; bez převodu databáze není síťová interakce Convey a nepotřebuje stejné databázové notices. Publicly vyjímá ovládané osoby podle podílu nad50% či směrování činnosti.; https://spdx.org/licenses/ODC-By-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/ODC-By-1.0.json#text; §4.4 zakazuje další omezení a přičítá vlastní změny jejich zadavateli. §5 se v možném rozsahu vzdává osobnostních práv, jinak je neprosazuje; zákonné neprominutelné odměny§3.2 zůstávají. §7 AS IS,§8 výluka škod a při nemožnosti pouze skutečná přímá finanční ztráta z prokázané nedbalosti. §9 okamžitě ukončuje s prozatímní obnovou po zastavení porušení, definitivní po60 dnech bez oznámení nebo při první výzvě s nápravou do30 dnů. §10.3 vlastní porušení odnímá dovolávání licence či stížnosti na porušení poskytovatelem.; https://spdx.org/licenses/ODC-By-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/ODC-By-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ODC-By-1.0.json#text; §2.3(b) výslovně vylučuje patenty nad databází i obsahem, bez žalobní odvety;§2.3(c) samostatně vylučuje známky.; https://spdx.org/licenses/ODC-By-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/ODC-By-1.0.json#text; §4.2 při Publicly Convey databáze, derivátu nebo databáze v kolekci uchovává copyright/databázové notices a původní licenci, poskytuje text/URI uvnitř databáze i související dokumentace; struktura souboru může odůvodnit očekávatelné umístění v adresáři. §4.3 u veřejného Produced Work dává samostatné přiměřené oznámení původu dat a ODC licence, s názvem/linky nebo čitelnými URI; bez převodu databáze není síťová interakce Convey a nepotřebuje stejné databázové notices. Publicly vyjímá ovládané osoby podle podílu nad50% či směrování činnosti. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/ODC-By-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/ODC-By-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ODC-By-1.0.json#text; Individuální kontrola celého připnutého textu ODC-By-1.0 dne 2026-09-09. ODC Attribution1.0 licencuje autorské/sousedské a sui generis právo databáze a smluvní přístup;§2.3 výslovně vylučuje software vytvářející/provozující databázi a§2.4 samostatná práva k jednotlivým Contents. §2.3 software výslovně vylučuje; databázový model musí rozlišit Database, Contents, Derivative/Collective Database a Produced Work, včetně kvantitativní/kvalitativní podstatnosti a veřejného užití. §10.3 omezuje vlastní uplatnění nároků při porušení a§9.1 odkazuje na neexistující4.8; tyto právní podmínky potřebují reprezentaci a pro alternativní survival ověření autoritativního znění. §4.4 nabízí původní databázi přímo od původního licencora, zároveň dovoluje vymáhat vlastní práva k Derivative Database; zdroje derivátu ani jejich ShareAlike nevyžaduje. Primární https://opendatacommons.org/licenses/by/summary/ potvrzuje atribuční povahu, právně řídí plný text. §9.1 obsahuje odkaz na neexistující§4.8; survival při splnění této licence je jasné, alternativní odkaz nelze domýšlet. §10.4 volí právo místa vymáhání a přidává odpovídající standardní práva.; https://spdx.org/licenses/ODC-By-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

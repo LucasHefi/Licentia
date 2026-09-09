@@ -1,0 +1,22 @@
+{
+  "id": "OFFIS",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.6",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:9529398a00580e36317bf284fc0ab9dd5cccd8c3e725fabca37e070ed17b1765"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Text dovoluje užití, kopírování a tvorbu odvozených děl. Při šíření zdrojů, podpůrné dokumentace a jejich odvozených podob požaduje tři odstavce copyrightového oznámení. Rozsah grantu a povinností pro binární podobu vyžaduje doložení. Text vylučuje záruky, ale neobsahuje výslovné omezení odpovědnosti ani povinnost zdroje poskytovat.",
+  "blockersCs": [
+    "Doložit rozsah licenčního grantu a oznámení při binární distribuci; aktuální odstavec výslovně pracuje se zdroji a podpůrnou dokumentací. Zachovat tři požadované odstavce a ověřit copyrighty jednotlivých souborů. Podmínka zachování oznámení není příkaz poskytovat zdroje."
+  ],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/OFFIS.html",
+      "note": "Dřívější individuální revize 2026-09-09.6; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

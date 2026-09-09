@@ -8,92 +8,96 @@
     "contentHash": "sha256:2eeb745797c48e4abcf5dd984b92ee6275159edd8ea572e0adb0103dfa4d0237"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "none",
     "permissions": [
-      "commercial-use",
-      "distribution"
+      "unknown"
     ],
     "obligations": [
+      "include-use-acknowledgment",
       "unknown"
     ],
     "triggers": [
-      "unknown"
+      "unknown",
+      "use"
     ],
     "restrictions": [
-      "liability"
+      "liability",
+      "trademark",
+      "unknown",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/JPL-image.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/JPL-image.json#text; Úvod JPL public website images/videos a Special Cases vymezují mediální politiku s výjimkami.; https://spdx.org/licenses/JPL-image.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/JPL-image.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/JPL-image.json#text; Celý text bez softwarového zdrojového nebo stejnolicenčního copyleftu.; https://spdx.org/licenses/JPL-image.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/JPL-image.json#text; Any purpose je podřízeno captions/special cases/third-party owners; globální commercial/modify/distribute práva pro neurčené dílo nelze potvrdit.; https://spdx.org/licenses/JPL-image.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/JPL-image.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/JPL-image.json#text; Body1–3 credit line, release/hold harmless, neendorsement; loga/komerční cizí snímky předchozí svolení mimo software model.; https://spdx.org/licenses/JPL-image.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/JPL-image.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/JPL-image.json#text; Download acceptance, image use credit a zvláštní logo/commercial/contractor události; use samo nevystihuje všechny role.; https://spdx.org/licenses/JPL-image.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/JPL-image.json#text; No ownership/quality warranty, hold harmless a naming/likeness/sponsor omezení; nejsou jen warranty/trademark disclaimer.; https://spdx.org/licenses/JPL-image.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/JPL-image.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/JPL-image.json#text; Celý obrazový grant neposkytuje výslovnou patentovou licenci či patentové ukončení.; https://spdx.org/licenses/JPL-image.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/JPL-image.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/JPL-image.json#text; Kredit podle popisku a individuální souhlasy/role představují materiální mediální povinnosti.; https://spdx.org/licenses/JPL-image.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/JPL-image.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/JPL-image.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. Politika se týká obrázků a videí na veřejných webech JPL, s výjimkami podle popisků a vlastníků. Vyžaduje kredit, zakazuje endorsement a má zvláštní souhlasy pro loga, osoby a cizí komerčně užívané snímky; nejde o softwarovou licenci. Blokace: Grant je obrazová politika pro konkrétní webový materiál s individuálními caption/owner výjimkami a komerčními omezeními cizích snímků. Je třeba určit konkrétní snímek, jeho vlastníka/popisek a případná osobnostní či známková svolení; nelze doporučit jako licenci nového softwaru. Stažení znamená souhlas s release/hold harmless Caltech za veškeré použití a dalšími obrazovými podmínkami. Model softwarových povinností nevyjadřuje toto odškodnění, zvláštní loga a souhlasy; nutný oddělený mediální model.; https://spdx.org/licenses/JPL-image.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

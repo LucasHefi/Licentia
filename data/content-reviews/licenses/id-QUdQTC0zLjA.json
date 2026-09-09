@@ -1,0 +1,29 @@
+{
+  "id": "AGPL-3.0",
+  "reviewedAt": "2026-09-10",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:f23e4502fe502810f4da274baf9020dc2bb4a536822177309d7f49cf41d9f87b"
+  },
+  "disposition": "blocked",
+  "summaryCs": "GNU AGPL 3 poskytuje silný copyleft a u změněné verze požaduje prominentní bezplatnou nabídku zdroje jejím vzdáleným síťovým uživatelům. Dovoluje spojení s GPL 3 při zachování licencí obou částí; starý identifikátor AGPL-3.0 je deprecated.",
+  "blockersCs": [
+    "Identifikátor AGPL-3.0 je deprecated. Před novým doporučením ověřit skutečné oznámení a použít explicitní AGPL-3.0-only nebo AGPL-3.0-or-later; obsah GNU AGPL 3 je jinak zachycen známými poli včetně přesných síťových a kombinačních podmínek."
+  ],
+  "analysis": {
+    "subjectCs": "§0 copyrightově chráněný program či jiné dílo včetně obdobných práv k maskám; covered work původní nebo odvozená změna. Propagate vyjímá spuštění a soukromou úpravu, convey znamená možnost získat kopii, pouhá síťová interakce nikoli. §1 source preferovaná forma, Corresponding Source build/install/run/modify, skripty/interfaces a specificky vyžadované dynamické subprogramy; System Libraries, nezměněné obecné/free nástroje mimo dílo a automaticky regenerované části vyňaty. Jde o GNU AGPL, preambule odlišuje starší licenci Affero.",
+    "grantCs": "§2 trvale po copyright a neodvolatelně při plnění, neomezené spuštění originálu, output jen pokud sám odvozený; neconveyovaná tvorba/provoz/propagation bez dalších podmínek při platné licenci, s předností speciálního§13. Kontraktoři výlučně pro vlastní změny/provoz pod řízením a omezením kopírování vlastního copyrightu, cizí materiál dle licence. §4 libovolná cena kopií a placená podpora, §5 změny, §10 přímé downstream licence bez sublicencí. §11 světový bezroyalty nevýhradní patentový grant essential claims přispěvatelovy verze pro make/use/sell/offer/import a další oprávněné úkony, ne nové nároky až po dalších změnách. §13 GPL3 kombinace, §14 další verze jen se skutečnou autorizací.",
+    "conditionsCs": "§3 při convey vzdání práv bránit obcházení technických opatření v rozsahu legálních úprav/provozu. §§4–5 copyright/licence/warranty/§7 notices a text, u změn datum a prominentní označení, celý odvozený celek AGPL; UI notices pokud původní příslušné UI nebylo bez nich. §6 object s machine-readable source: fyzické médium, fyzický produkt s nejméně3letou nabídkou platnou i po dobu podpory/náhradních dílů (každému držiteli objectu nákladové médium NEBO zdarma síť), příležitostné nekomerční předání převzaté nabídky, ekvivalentní download bez další ceny se zřetelným odkazem i na cizí server, nebo P2P informace o bezplatném veřejném object/source. User Product při převodu držby/užití trvale či na dobu s Installation Information včetně klíčů pro změněnou verzi, leda nikdo neumí změny nainstalovat např.ROM; veřejné formáty se source implementací, bez zvláštních čtecích/rozbalovacích klíčů. §13 POKUD program změníte a verze podporuje vzdálenou síťovou interakci, prominentně všem takto interagujícím uživatelům nabídnout zdarma serverový download Corresponding Source této verze standardním způsobem, včetně začleněné GPL3 části.",
+    "limitationsCs": "§7 pro oprávněný přidaný materiál dovoluje konkrétní odchylky záruk, notices/atribuce, původu a označení, publicity jmen, trademark nebo indemnity; nepřidávám je všechny automaticky. Further restrictions lze odstranit, další permissions odstranit či s oprávněním doplnit a uvést ve zdrojích. §8 porušení ruší i patentovou licenci; po nápravě provizorní obnova, trvalá pokud holder neoznámí do60dní, nebo první jeho notice pro jakékoli dílo napravený před30dny, řádní downstream nezasaženi. §10 zákaz licence fees/further restrictions a patentové žaloby včetně cross/counter k Programu/částem. §11 při vědomé patentové licenci bez veřejného source: zveřejnění NEBO ztráta výhody NEBO rozšíření downstream; selektivní grant v jedné transakci rozšířen všem, diskriminační placená distributor dohoda brání convey mimo výjimku před28.3.2007. §12 kolize zakazuje convey, nikoli SSPL zákaz všeho use. §§15–17 as-is a škody s místním/písemným limitem, bez automatické podpory změněných User Products a s možností odmítnout škodlivé síťové změny.",
+    "compatibilityCs": "§5 nezávislý agregát není rozšíření ani větší program a jeho copyright neomezuje podkladová práva, ostatní části mimo. §13 výslovně link/combination s dílem GPL3, výsledný celek lze convey, původní části si ponechají AGPL/GPL3 a síťová nabídka zahrne GPL3 zdroje. Nejde o obecné přelicencování AGPL díla na GPL ani o zveřejnění nezávislého hostingu jako v SSPL. §10 entity transaction přenese práva a source od předchůdce, pokud má či rozumně získá, bez povinného vymáhání třetích. §14 or-later či určený proxy dovoluje další FSF verze; bare deprecated ID vyžaduje konkretizaci skutečného oznámení. Návod po END dává příklad Source odkazu a employer disclaimer, nezaměňuji jej za nové univerzální povinnosti."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/AGPL-3.0.html",
+      "note": "Individuální revize celého připnutého textu; §0 copyrightově chráněný program či jiné dílo včetně obdobných práv k maskám; covered work původní nebo odvozená změna. Propagate vyjímá spuštění a soukromou úpravu, convey znamená možnost získat kopii, pouhá síťová interakce nikoli. §1 source preferovaná forma, Corresponding Source build/install/run/modify, skripty/interfaces a specificky vyžadované dynamické subprogramy; System Libraries, nezměněné obecné/free nástroje mimo dílo a automaticky regenerované části vyňaty. Jde o GNU AGPL, preambule odlišuje starší licenci Affero."
+    }
+  ]
+}

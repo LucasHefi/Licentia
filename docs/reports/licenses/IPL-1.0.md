@@ -1,0 +1,62 @@
+# IPL-1.0 — obsahová revize
+
+IBM Public License v1.0
+
+Revize: **2026-09-09** · pravidlo **2026-09-09.10**.
+
+Výsledek: **zpracována, nezařazena do průvodce**.
+
+IBM IPL 1.0 vyžaduje zdroje pokrytého Programu pod IPL a dovoluje vlastní objektovou licenci chránící přispěvatele. Rozsah tvoří původní program, změny a dodatky, s výjimkou samostatně licencovaných nederivativních modulů; tuto komponentovou hranici nynější průvodce neumí přesně vyjádřit.
+
+## Předmět a rozsah
+
+§1 IBM Original Program zahrnuje zdroj, objekt a dokumentaci; Contributions jsou distribuované vlastní změny/dodatky. Výjimka platí pouze pro současně oddělené moduly s vlastní licencí a bez povahy derivátu. Contributor je IBM či kterýkoli další distributor.
+
+## Udělená práva
+
+§2a celosvětově bezroyalty copyright reprodukce, deriváty, public display/performance, distribuce a sublicence source/object. §2b nutné patentové nároky make/use/sell/offer/import/transfer pro vlastní Contribution a tehdejší kombinaci s Program, nikoli jiné kombinace či hardware per se. §2d znalostní prohlášení dostatečných copyright práv, §2c žádná garance cizích IP a odpovědnost příjemce za jejich obstarání.
+
+## Podmínky a spouštěče
+
+§3 objekt může mít vlastní licenci pouze s účinnou výlukou warranty/liability všech Contributors, připsáním odlišných podmínek sobě a informací o zdrojích dostupných u tohoto distributora rozumným způsobem na obvyklém médiu. Zdrojové kopie pod IPL s textem IPL. Povinný výrazný IBM1996,1999-and-others copyright a identifikace původce Contribution. §4 komerční nabídka zavazuje bránit a odškodnit jiné Contributors za vlastní jednání/opomenutí, mimo actual/alleged IP infringement; vyžaduje rychlou písemnou notifikaci a kontrolu/spolupráci obrany.
+
+## Omezení, výjimky a ukončení
+
+§§5–6 as-is a liability výluka kromě výslovných ujednání. §7 patentová žaloba včetně cross/counter proti Contributor ohledně softwarového patentu ruší jeho grant; proti komukoli pro samotný Program bez kombinací ruší všechna §2b práva. Materiální porušení končí až bez nápravy v rozumné době od vědomosti, pak co nejrychleji zastavit use/distribution; závazky a downstream licence přežijí. Žádná další IP práva mimo grant, včetně známek.
+
+## Verze a kombinování
+
+§7 IBM jako jediný vydává změněné číslované verze, Contributor může přejít na novou nebo zachovat přijatou. Právo New York + US IP, roční limit pro žalobu, waiver jury. Vlastní objektové podmínky nemění zdrojovou IPL reciprocitu ani automatickou kompatibilitu s jinými copylefty.
+
+## Překážky a navazující práce
+
+- §§ 1 a 3 vážou reciprocitu na Program a distribuované Contributions a kumulativně vyjímají oddělené samostatně licencované nederivativní moduly. Doplnit komponentový rozsah s touto výjimkou; nenahrazovat jej nesprávně souborovou ani knihovní hranicí.
+
+## Metadata a jejich doložení
+
+| Pole | Hodnota | Doložení znění |
+|---|---|---|
+| family | "weak-copyleft" | public/data/licenses/IPL-1.0.json#text; §§1,3 weak copyleft na Program/Contributions s nedervativní modulovou výjimkou. Rozsah není souborový ani specificky knihovní a whole-work by bez kvalifikace pohltil nezávislé moduly; scope unknown označuje chybějící komponentový model. |
+| copyleftScope | "unknown" | public/data/licenses/IPL-1.0.json#text; §§1,3 weak copyleft na Program/Contributions s nedervativní modulovou výjimkou. Rozsah není souborový ani specificky knihovní a whole-work by bez kvalifikace pohltil nezávislé moduly; scope unknown označuje chybějící komponentový model. |
+| permissions | ["commercial-use","conditional-relicensing","distribution","modifications","patent-grant","private-use","sublicensing"] | public/data/licenses/IPL-1.0.json#text; §2a celosvětově bezroyalty copyright reprodukce, deriváty, public display/performance, distribuce a sublicence source/object. §2b nutné patentové nároky make/use/sell/offer/import/transfer pro vlastní Contribution a tehdejší kombinaci s Program, nikoli jiné kombinace či hardware per se. §2d znalostní prohlášení dostatečných copyright práv, §2c žádná garance cizích IP a odpovědnost příjemce za jejich obstarání. |
+| obligations | ["defend-commercial-distribution","include-copyright","include-license-text","include-notice","mark-modifications","pass-disclaimer-requirement","provide-corresponding-source","same-license"] | public/data/licenses/IPL-1.0.json#text; §3 objekt může mít vlastní licenci pouze s účinnou výlukou warranty/liability všech Contributors, připsáním odlišných podmínek sobě a informací o zdrojích dostupných u tohoto distributora rozumným způsobem na obvyklém médiu. Zdrojové kopie pod IPL s textem IPL. Povinný výrazný IBM1996,1999-and-others copyright a identifikace původce Contribution. §4 komerční nabídka zavazuje bránit a odškodnit jiné Contributors za vlastní jednání/opomenutí, mimo actual/alleged IP infringement; vyžaduje rychlou písemnou notifikaci a kontrolu/spolupráci obrany. |
+| triggers | ["combination","distribution","modification","patent-claim"] | public/data/licenses/IPL-1.0.json#text; §3 objekt může mít vlastní licenci pouze s účinnou výlukou warranty/liability všech Contributors, připsáním odlišných podmínek sobě a informací o zdrojích dostupných u tohoto distributora rozumným způsobem na obvyklém médiu. Zdrojové kopie pod IPL s textem IPL. Povinný výrazný IBM1996,1999-and-others copyright a identifikace původce Contribution. §4 komerční nabídka zavazuje bránit a odškodnit jiné Contributors za vlastní jednání/opomenutí, mimo actual/alleged IP infringement; vyžaduje rychlou písemnou notifikaci a kontrolu/spolupráci obrany. |
+| restrictions | ["liability","patent-claim","trademark","warranty"] | public/data/licenses/IPL-1.0.json#text; §§5–6 as-is a liability výluka kromě výslovných ujednání. §7 patentová žaloba včetně cross/counter proti Contributor ohledně softwarového patentu ruší jeho grant; proti komukoli pro samotný Program bez kombinací ruší všechna §2b práva. Materiální porušení končí až bez nápravy v rozumné době od vědomosti, pak co nejrychleji zastavit use/distribution; závazky a downstream licence přežijí. Žádná další IP práva mimo grant, včetně známek. |
+| patentPosition | "retaliatory-termination" | public/data/licenses/IPL-1.0.json#text; §2a celosvětově bezroyalty copyright reprodukce, deriváty, public display/performance, distribuce a sublicence source/object. §2b nutné patentové nároky make/use/sell/offer/import/transfer pro vlastní Contribution a tehdejší kombinaci s Program, nikoli jiné kombinace či hardware per se. §2d znalostní prohlášení dostatečných copyright práv, §2c žádná garance cizích IP a odpovědnost příjemce za jejich obstarání. |
+| noticeBurden | "material" | public/data/licenses/IPL-1.0.json#text; §3 objekt může mít vlastní licenci pouze s účinnou výlukou warranty/liability všech Contributors, připsáním odlišných podmínek sobě a informací o zdrojích dostupných u tohoto distributora rozumným způsobem na obvyklém médiu. Zdrojové kopie pod IPL s textem IPL. Povinný výrazný IBM1996,1999-and-others copyright a identifikace původce Contribution. §4 komerční nabídka zavazuje bránit a odškodnit jiné Contributors za vlastní jednání/opomenutí, mimo actual/alleged IP infringement; vyžaduje rychlou písemnou notifikaci a kontrolu/spolupráci obrany. |
+
+## Zdroje
+
+- [Primární zdroj](https://spdx.org/licenses/IPL-1.0.html) — Individuální revize celého připnutého textu; §1 IBM Original Program zahrnuje zdroj, objekt a dokumentaci; Contributions jsou distribuované vlastní změny/dodatky. Výjimka platí pouze pro současně oddělené moduly s vlastní licencí a bez povahy derivátu. Contributor je IBM či kterýkoli další distributor.
+- [Kurátorovaný profil](../../../data/profiles/licenses/id-SVBMLTEuMA.json)
+- [Uložené úplné znění](../../../public/data/licenses/IPL-1.0.json)
+
+## Otisk zdroje
+
+```json
+{
+  "sourceId": "spdx-license-list",
+  "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+  "contentHash": "sha256:461a23b5996f54dbeeafe2f9e25e91e10a601b1938fe30bf9cdbcdbdac7f5227"
+}
+```

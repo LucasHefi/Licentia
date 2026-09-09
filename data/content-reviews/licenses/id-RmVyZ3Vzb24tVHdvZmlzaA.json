@@ -1,0 +1,20 @@
+{
+  "id": "Ferguson-Twofish",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.6",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:793e3a67d03b782e0a641dfe368e22034b88c71d8acbdff200b6cfc650509384"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Copyright autora zachovejte ve zdrojích tohoto kódu i odvozených děl. Text výslovně dovoluje použití v komerčním produktu bez zpřístupnění zdrojů i šíření pod jinou licencí, například GPL. Poděkování a sdělení, kde jste kód použili, jsou dobrovolné. Text neobsahuje vyloučení záruk ani odpovědnosti.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Ferguson-Twofish.html",
+      "note": "Dřívější individuální revize 2026-09-09.6; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

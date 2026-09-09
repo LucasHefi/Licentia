@@ -9,97 +9,103 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
     "family": "strong-copyleft",
     "copyleftScope": "whole-work",
     "permissions": [
+      "commercial-use",
       "distribution",
       "modifications",
-      "patent-grant",
-      "sublicensing"
+      "private-use"
     ],
     "obligations": [
+      "disclose-source",
       "include-copyright",
       "include-license-text",
+      "include-notice",
       "mark-modifications",
-      "provide-corresponding-source"
+      "provide-corresponding-source",
+      "same-license"
     ],
     "triggers": [
-      "unknown"
+      "combination",
+      "distribution",
+      "modification"
     ],
     "restrictions": [
+      "additional-terms",
       "liability",
       "warranty"
     ],
-    "patentPosition": "express-grant",
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.whole-work-copyleft",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GPL-2.0-only.json#text; section 2(b) and following paragraphs: derived whole-work scope; separate independent works and mere aggregation excluded; https://spdx.org/licenses/GPL-2.0-only.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.copyleft-family",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GPL-2.0-only.json#text; preamble; section 2(b): distributed derivative work under GPL as a whole; https://spdx.org/licenses/GPL-2.0-only.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GPL-2.0-only.json#text; sections 1, 2(a), 2(c): retained notices, changes and conditional interactive announcements; https://spdx.org/licenses/GPL-2.0-only.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GPL-2.0-only.json#text; sections 1, 2(a)-(c), 3(a)-(c): notices, mark changes and dates, same license, interactive notices when applicable, corresponding source or qualifying written offer; https://spdx.org/licenses/GPL-2.0-only.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GPL-2.0-only.json#text; whole text including preamble and section 7: addresses patent conflicts but contains no express contributor patent grant and no patent-litigation termination clause; https://spdx.org/licenses/GPL-2.0-only.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GPL-2.0-only.json#text; sections 0-3: running unrestricted, copy, modify and distribute, including fees; sections 4 and 6 do not grant free sublicensing; https://spdx.org/licenses/GPL-2.0-only.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "triggers",
-      "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/GPL-2.0-only.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GPL-2.0-only.json#text; sections 4, 6-8: no further restrictions, incompatible obligations may prevent distribution; sections 11-12: warranty and liability; https://spdx.org/licenses/GPL-2.0-only.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/GPL-2.0-only.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GPL-2.0-only.json#text; whole-text editorial review on 2026-09-09; Silný copyleft při distribuci odvozeného díla; zachovejte oznámení, označte změny a splňte podmínky poskytování odpovídajících zdrojů podle § 3. GPL 2.0 neobsahuje výslovný patentový grant. Identifikátor only ponechává pouze verzi 2.0.; https://spdx.org/licenses/GPL-2.0-only.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/GPL-2.0-only.json#text; sections 0-3: modifying/distributing covered works and combining into derived whole; whole text: no remote-network disclosure trigger; https://spdx.org/licenses/GPL-2.0-only.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
     }
   ]
 }

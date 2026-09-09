@@ -1,0 +1,29 @@
+{
+  "id": "HIDAPI",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:878ca9881b4f50ff40073eeee4a08481ef3b5875aeb658f948459dbfc12e6dce"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Kdokoli smí software používat z libovolného důvodu, pokud copyright ve zdrojových souborech zůstane beze změn. Samostatné právo upravovat či redistribuovat není v tomto krátkém textu výslovně popsáno.",
+  "blockersCs": [
+    "Text uvádí pouze used by anyone for any reason a zachování copyrightu ve zdrojových souborech; před doporučením pro nový projekt je třeba doložit, zda grant zahrnuje úpravy a redistribuci, bez převzetí práv z jiných alternativ HIDAPI."
+  ],
+  "analysis": {
+    "subjectCs": "Grant se týká tohoto softwaru a copyrightu v jeho zdrojových souborech.",
+    "grantCs": "Výslovně dovoluje použití komukoli a z jakéhokoli důvodu, tedy i komerčně a soukromě. Úpravy, redistribuce a patentová práva nejsou výslovně uděleny.",
+    "conditionsCs": "Copyright ve zdrojových souborech musí zůstat neporušen; nevzniká povinnost poskytovat zdroje k binárním kopiím.",
+    "limitationsCs": "Jde o jedinou větu bez vyloučení záruk a odpovědnosti, ustanovení o ukončení či jurisdikci.",
+    "compatibilityCs": "Připnutý text neobsahuje alternativní licenci ani její verzi; jiné licenční možnosti projektu nejsou součástí tohoto grantu."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/HIDAPI.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Celá věta: obecné užívací oprávnění je podmíněno zachováním copyrightu; bez reciprocity."
+    }
+  ]
+}

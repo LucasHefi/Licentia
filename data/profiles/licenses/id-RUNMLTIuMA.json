@@ -9,98 +9,104 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
       "commercial-use",
       "distribution",
       "modifications",
       "patent-grant",
+      "private-use",
       "sublicensing"
     ],
     "obligations": [
       "include-copyright",
       "include-license-text",
-      "mark-modifications",
-      "provide-corresponding-source"
+      "include-notice",
+      "mark-modifications"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification",
+      "patent-claim"
     ],
     "restrictions": [
+      "additional-terms",
       "liability",
-      "trademark"
+      "patent-claim",
+      "trademark",
+      "warranty"
     ],
-    "patentPosition": "express-grant",
+    "patentPosition": "defensive-termination",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ECL-2.0.json#text; sections 2-3: copyright sublicense/distribution/derivatives and expressly narrowed patent grant; section 4 permits different terms for modifications/derivative works; whole text: no reciprocal source-disclosure or same-license condition; https://spdx.org/licenses/ECL-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.2"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/ECL-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ECL-2.0.json#text; sections 2-3: copyright sublicense/distribution/derivatives and expressly narrowed patent grant; section 4 permits different terms for modifications/derivative works; https://spdx.org/licenses/ECL-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.2"
     },
     {
-      "field": "copyleftScope",
+      "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/ECL-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ECL-2.0.json#text; section 4(a)-(d): license copy, modified-file notices, retain relevant source IP notices, reproduce relevant NOTICE attribution if provided; section 3 patent-litigation trigger; https://spdx.org/licenses/ECL-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.2"
     },
     {
-      "field": "triggers",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/ECL-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ECL-2.0.json#text; section 4(a)-(d): license copy, modified-file notices, retain relevant source IP notices, reproduce relevant NOTICE attribution if provided; section 3 patent-litigation trigger; https://spdx.org/licenses/ECL-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.2"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/ECL-2.0.json#text; section 3: necessarily infringed contribution/original combination claims; employee contributions limited to claims whose inventor is the work author AND whose institution may license under research/funding agreements; no other express/implied licenses; patent-litigation terminates patent rights; https://spdx.org/licenses/ECL-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.2"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/ECL-2.0.json#text; sections 2-3: copyright sublicense/distribution/derivatives and expressly narrowed patent grant; section 4 permits different terms for modifications/derivative works; https://spdx.org/licenses/ECL-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.2"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/ECL-2.0.json#text; sections 3,6-9: narrowed patents and patent-litigation termination, no trademark grant, warranty/liability disclaimers, optional additional liability only on own behalf with indemnification; section 5 default inbound contribution terms; https://spdx.org/licenses/ECL-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.2"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/ECL-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ECL-2.0.json#text; whole-text editorial review on 2026-09-09, batch 2; Přiložte licenci, označte změny a zachovejte relevantní oznámení včetně NOTICE, existuje-li. Patentový grant je užší než u Apache 2.0: u zaměstnanců musí autor být i vynálezcem a instituce smět patent licencovat podle výzkumných a grantových smluv. Patentový spor může grant ukončit. Poskytování zdrojů se nevyžaduje.; https://spdx.org/licenses/ECL-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.2"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/ECL-2.0.json#text; section 4(a)-(d): license copy, modified-file notices, retain relevant source IP notices, reproduce relevant NOTICE attribution if provided; section 3 patent-litigation trigger; https://spdx.org/licenses/ECL-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.2"
     }
   ]
 }

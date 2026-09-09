@@ -1,0 +1,29 @@
+{
+  "id": "CC-BY-3.0-NL",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:63ae63f3c2210ab6ca60c30025df57ba5115ab7fecd22bb8dac398b3f5093824"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Nizozemská CC BY 3.0 dovoluje i komerční kopírování, úpravy, veřejné provozování a online zpřístupnění obsahu. Vyžaduje označit změny, uvést autora a další určené údaje a zachovat oznámení s kopií licence nebo jejím odkazem; na žádost se proveditelně odstraňuje přiznání původu. Poskytovatel se vzdává zvláštních databázových práv a části chráněné pouze jimi mají výjimku z těchto podmínek. Průvodce potřebuje tuto hranici odlišit od autorských práv a zachytit obsahové i osobnostní podmínky.",
+  "blockersCs": [
+    "§3–4 vyžadují rozlišit copyright a prominuté sui generis databázové právo bez atribučních podmínek, veřejná provedení, osobnostní práva a odstranění atribuce. Je potřeba obsahový/databázový model, který zachová konkrétní nizozemské odchylky."
+  ],
+  "analysis": {
+    "subjectCs": "Nizozemský CC BY3.0 zahrnuje autorská díla, výkony, fonogramy, filmové záznamy, vysílání a databáze; jeho nizozemský text rozlišuje samostatné Verzamelwerk a Afgeleid werk včetně hudební synchronizace.",
+    "grantCs": "§3 dovoluje komerční i nekomerční kopie, adaptace, distribuci, veřejné zobrazení/provádění, online zpřístupnění a databázové vytěžení/opětovné použití. Neodstranitelné odměny se rezervují, prominutelné zákonné i kolektivní se promíjejí. Závěr§3 se výslovně vzdává výlučných práv národní implementace evropské databázové směrnice; podlicence§4(a) není dovolena.",
+    "conditionsCs": "§3(b) jasně označuje změny/překlady. §4(a,b) při šíření či online/veřejném užití zachovává copyright, licenční/disclaimer notices, připojuje text nebo URI licence a autora i určené sponzory/vydavatele, titul, relevantní URI a původ derivátu; ve společných kreditech minimálně stejně výrazně. Na žádost poskytovatele se prakticky možným způsobem odstraňuje atribuce z kolekce či derivátu. §4(c) tyto podmínky výslovně neuplatňuje na části chráněné pouze sui generis databázovým právem.",
+    "limitationsCs": "§4 zakazuje omezující další podmínky a technologické prostředky, dojem podpory a v neprominutelném rozsahu chrání osobnostní právo proti poškození cti/pověsti. §5 AS IS bez záruk,§6 vylučuje zvláštní, náhodné a následné škody v zákonném rozsahu. §7 porušení okamžitě ukončuje bez automatické nápravy; survival věta výslovně mluví o příjemcích Verzamelwerken.",
+    "compatibilityCs": "Úvod vyžaduje obsah licence předem dostatečně zřetelný příjemci. §8 dává původní licenci příjemci díla i originálu uvnitř derivátu, nikoli licenci celého derivátu. Není ShareAlike ani automatický přechod verzí. CC známková doložka je výslovně mimo samotnou licenci."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/CC-BY-3.0-NL.html",
+      "note": "Individuálně přečten celý připnutý text; §3(b) jasně označuje změny/překlady. §4(a,b) při šíření či online/veřejném užití zachovává copyright, licenční/disclaimer notices, připojuje text nebo URI licence a autora i určené sponzory/vydavatele, titul, relevantní URI a původ derivátu; ve společných kreditech minimálně stejně výrazně. Na žádost poskytovatele se prakticky možným způsobem odstraňuje atribuce z kolekce či derivátu. §4(c) tyto podmínky výslovně neuplatňuje na části chráněné pouze sui generis databázovým právem. Přečtený nizozemský grant§3 zahrnuje autorská/sousedská/databázová práva a odměny, nikoli výslovný patentový grant či žalobní odvetu."
+    }
+  ]
+}

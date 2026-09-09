@@ -1,0 +1,29 @@
+{
+  "id": "SSH-OpenSSH",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:fff2d5e236d678bb397794acc229407707f7d47457db21e9876917c3cf669766"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Text dovoluje autorův vlastní kód používat pro libovolný účel, měnit a dále šířit s jasným označením odvozenin. Verze nekompatibilní s protokolem v odkazovaném RFC musejí mít jiné jméno než ssh nebo Secure Shell. Průvodce jej nezařazuje bez určení tohoto technického odkazu a podmínky přejmenování; popis odstraněných či externích komponent neuděluje práva k cizím knihovnám.",
+  "blockersCs": [
+    "Grant podmiňuje jméno odvozeniny kompatibilitou s RFC souborem; před doporučením je nutné identifikovat technický referenční text a modelovat povinné podmíněné přejmenování."
+  ],
+  "analysis": {
+    "subjectCs": "Text obsahuje Ylonenův grant vlastnímu kódu a redakční vysvětlení odstranění či externalizace dřívějších omezených komponent z OpenSSH.",
+    "grantCs": "Úvod dovoluje vlastní kód volně použít pro libovolný účel a výslovně počítá s odvozeninami; závěrečná liability věta potvrzuje dovolené modifikace/redistribuce.",
+    "conditionsCs": "Odvozeniny se jasně označí; při nekompatibilitě s popisem protokolu v RFC musejí mít jiné jméno než ssh/Secure Shell. Text přenáší na uživatele odpovědnost za právní důsledky držení a užití v jeho zemi.",
+    "limitationsCs": "AS IS vylučuje záruky a odpovědnost v mezích místního práva či písemné dohody. Výčet RSA/IDEA/DES/GMP/Zlib aj. popisuje odstranění/externalizaci, nikoli nové udělení práv k externím knihovnám.",
+    "compatibilityCs": "Sám text vysvětluje, že dříve restriktivní vestavěné komponenty byly odstraněny; z této poznámky se neodvozuje obecná kompatibilita libovolného OpenSSL/Zlib balíku."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/SSH-OpenSSH.html",
+      "note": "Individuálně přečten celý připnutý text; Odvozeniny se jasně označí; při nekompatibilitě s popisem protokolu v RFC musejí mít jiné jméno než ssh/Secure Shell. Text přenáší na uživatele odpovědnost za právní důsledky držení a užití v jeho zemi. Ylonen výslovně odmítá udělit licence k patentům a copyrightům třetích stran; tato express-exclusion se týká cizích práv. Text neuděluje ani vlastní výslovný patentový grant a neobsahuje patentové ukončení."
+    }
+  ]
+}

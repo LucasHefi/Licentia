@@ -1,0 +1,27 @@
+{
+  "id": "Buddy",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:906c8258e3247f07808c9ce923503b2c4904457d5524f4c1fdb431b5c2cde95b"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Licence dovoluje software používat, kopírovat, upravovat, distribuovat a zobrazovat pro libovolný účel bez poplatku. Původní oznámení a dva navazující odstavce se zachovávají ve zdrojích a při redistribuci také v dokumentaci. Podstatné změny lze vydat pod jinými jasně uvedenými podmínkami; autoři neposkytují záruky, podporu ani povinné aktualizace.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Licence Jorna Lind-Nielsena z let 1996–2002 pokrývá software a dokumentaci.",
+    "grantCs": "Bez smlouvy a poplatků dovoluje užití, reprodukci, odvozená díla, distribuci a zobrazení pro jakýkoli účel. Podstatné změny smějí mít copyright autorů a jiné licenční podmínky.",
+    "conditionsCs": "Copyright a následující dva odstavce jsou ve všech zdrojových kopiích; redistribuce včetně binárních je reprodukují v dokumentaci. Jiné podmínky podstatných změn musí být jasně uvedeny ve všech dotčených souborech.",
+    "limitationsCs": "Autor i distributoři vylučují odpovědnost za škody a záruky; nejsou povinni poskytovat údržbu, podporu, aktualizace ani změny.",
+    "compatibilityCs": "Jiné podmínky jsou výslovně dovoleny pro substantial modifications s označením souborů; nejde o obecné odstranění původních notices."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Buddy.html",
+      "note": "Individuálně přečten celý připnutý text; Copyright a následující dva odstavce jsou ve všech zdrojových kopiích; redistribuce včetně binárních je reprodukují v dokumentaci. Jiné podmínky podstatných změn musí být jasně uvedeny ve všech dotčených souborech. Celý grant a disclaimery neobsahují patentový grant ani patentové ukončení."
+    }
+  ]
+}

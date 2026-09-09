@@ -1,0 +1,20 @@
+{
+  "id": "BSD-3-Clause-Sun",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.4",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:c46dc917403e8bcc0f592f10699329ed39d7a821ddc946e23a0f95e40d77100e"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Zachovejte copyright, podmínky a disclaimer ve zdrojích; u binární distribuce je přiložte v dokumentaci nebo dalších materiálech. Jména Sun Microsystems a přispěvatelů nelze bez písemného souhlasu použít k propagaci. Text vylučuje záruky včetně neporušení práv a omezuje odpovědnost Sun i jeho poskytovatelů licence. Neobsahuje jadernou doložku ani povinnost poskytovat zdroje.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/BSD-3-Clause-Sun.html",
+      "note": "Dřívější individuální revize 2026-09-09.4; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

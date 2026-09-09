@@ -1,0 +1,22 @@
+{
+  "id": "Brian-Gladman-3-Clause",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.5",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:f493987905c0a52e38c5e0dcb32d4db41bf803527b1e67cad63ec174662f62f8"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Znění nabízí dvě cesty: tři permisivní podmínky se zachováním oznámení a omezením použití jména, nebo GPL, která je nahrazuje při zachování celého oznámení. Konkrétní verze GPL není v tomto textu uvedena. Průvodce zatím nevyhodnocuje výběr těchto cest; profil proto zůstává nezařazen.",
+  "blockersCs": [
+    "Zavést explicitní volbu tříklauzulové cesty nebo GPL a doložit konkrétní použitelnou verzi GPL. Odstavec ALTERNATIVELY stanoví náhradní, nikoli kumulativní podmínky. Do vyřešení se nesmí profil zploštit na BSD, označit za automatický copyleft ani převzít patentový grant z GPL 3.0. Zachovat celé oznámení při volbě GPL."
+  ],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Brian-Gladman-3-Clause.html",
+      "note": "Dřívější individuální revize 2026-09-09.5; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

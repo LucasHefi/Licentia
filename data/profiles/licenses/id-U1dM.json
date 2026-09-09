@@ -8,93 +8,103 @@
     "contentHash": "sha256:21f058046d5b689f52e2904e29273f4d9f4ab01c5a8fa8eb6176b76c2859df04"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
+      "conditional-relicensing",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use",
+      "sublicensing"
     ],
     "obligations": [
       "include-copyright",
-      "include-license-text"
-    ],
-    "triggers": [
+      "include-license-text",
+      "mark-modifications",
       "unknown"
     ],
-    "restrictions": [
-      "liability"
+    "triggers": [
+      "distribution",
+      "modification",
+      "use"
     ],
-    "patentPosition": "unknown",
+    "restrictions": [
+      "liability",
+      "unknown",
+      "warranty"
+    ],
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SWL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SWL.json#text; SWL pokrývá software a dokumentaci a obsahuje zvláštní oddíl vládního pořízení. První odstavec dovoluje bez poplatků užití, kopie, změny, distribuci a licencování pro libovolný účel; změny mohou mít vlastní copyright a odlišné podmínky. Změny výslovně nemusejí následovat původní podmínky; jejich označení není copyleft.; https://spdx.org/licenses/SWL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SWL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SWL.json#text; Změny výslovně nemusejí následovat původní podmínky; jejich označení není copyleft.; https://spdx.org/licenses/SWL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SWL.json#text; První odstavec dovoluje bez poplatků užití, kopie, změny, distribuci a licencování pro libovolný účel; změny mohou mít vlastní copyright a odlišné podmínky.; https://spdx.org/licenses/SWL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SWL.json#text; Copyrighty zůstávají ve všech kopiích a toto oznámení doslovně ve všech distribucích; nové podmínky změn jsou jasně na první straně každého dotčeného souboru. Government use odkazuje FAR 52.227.19(c)(2) a DFARS 252.227-7013(c)(1), ale notwithstanding uděluje vládě a jejím zástupcům užití a distribuci podle SWL.; https://spdx.org/licenses/SWL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SWL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SWL.json#text; Copyrighty zůstávají ve všech kopiích a toto oznámení doslovně ve všech distribucích; nové podmínky změn jsou jasně na první straně každého dotčeného souboru. Government use odkazuje FAR 52.227.19(c)(2) a DFARS 252.227-7013(c)(1), ale notwithstanding uděluje vládě a jejím zástupcům užití a distribuci podle SWL.; https://spdx.org/licenses/SWL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SWL.json#text; AS IS vylučuje záruky, odpovědnost a povinnost podpory/údržby; instalace potvrzuje porozumění a souhlas. Vládní omezení jsou formulována vedle výslovné výjimky pro užití/distribuci.; https://spdx.org/licenses/SWL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SWL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SWL.json#text; Celý SWL text nemá výslovný patentový grant nebo patentové ukončení.; https://spdx.org/licenses/SWL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SWL.json#text; Copyrighty zůstávají ve všech kopiích a toto oznámení doslovně ve všech distribucích; nové podmínky změn jsou jasně na první straně každého dotčeného souboru. Government use odkazuje FAR 52.227.19(c)(2) a DFARS 252.227-7013(c)(1), ale notwithstanding uděluje vládě a jejím zástupcům užití a distribuci podle SWL. Rozsah notifikační zátěže: standard.; https://spdx.org/licenses/SWL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SWL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SWL.json#text; Individuální kontrola celého připnutého textu SWL dne 2026-09-09. SWL pokrývá software a dokumentaci a obsahuje zvláštní oddíl vládního pořízení. Government-use oddíl kombinuje historická Restricted Rights s výslovnou výjimkou pro use/distribute, ale nevyjasňuje zbytek práv vlády; před doporučením je nutné určit použitelné externí doložky a rozsah jejich překrytí. Odlišné podmínky změn vyžadují označení prvních stran souborů. Vládní notwithstanding grant nezmiňuje všechna práva původního grantu a jeho vztah k historickým doložkám není úplně vymezen.; https://spdx.org/licenses/SWL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

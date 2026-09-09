@@ -8,93 +8,100 @@
     "contentHash": "sha256:5bb421d9cad7a0bc5ff02c9c978b9e53e3813baa0de163dd810ada49d124eb13"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
+      "include-advertising-acknowledgment",
       "include-copyright",
-      "provide-corresponding-source"
+      "include-license-text"
     ],
     "triggers": [
-      "unknown"
+      "advertising",
+      "distribution"
     ],
     "restrictions": [
-      "liability"
+      "additional-terms",
+      "liability",
+      "trademark",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Caldera.json#text; preamble fee-free use/modify/distribute named source and derived binaries ONLY for 32V UNIX and 16-bit UNIX versions 1-7 on PDP-11; explicitly EXCLUDES System III, System V and successors; subsequent source/binary grant operates within this historical subject matter; whole text has no reciprocal source-disclosure, same-license, relinking or network-use requirement; https://spdx.org/licenses/Caldera.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.9"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Caldera.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Caldera.json#text; preamble fee-free use/modify/distribute named source and derived binaries ONLY for 32V UNIX and 16-bit UNIX versions 1-7 on PDP-11; explicitly EXCLUDES System III, System V and successors; subsequent source/binary grant operates within this historical subject matter; https://spdx.org/licenses/Caldera.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.9"
     },
     {
-      "field": "copyleftScope",
+      "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Caldera.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Caldera.json#text; unnumbered conditions: retain copyright/conditions/disclaimer in SOURCE AND DOCUMENTATION; binary redistribution reproduces them in accompanying documentation/materials; ALL advertising mentioning features/use must credit software developed OR OWNED by Caldera International, Inc.; no separate every-redistribution acknowledgment clause; https://spdx.org/licenses/Caldera.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.9"
     },
     {
-      "field": "triggers",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Caldera.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Caldera.json#text; unnumbered conditions: retain copyright/conditions/disclaimer in SOURCE AND DOCUMENTATION; binary redistribution reproduces them in accompanying documentation/materials; ALL advertising mentioning features/use must credit software developed OR OWNED by Caldera International, Inc.; no separate every-redistribution acknowledgment clause; https://spdx.org/licenses/Caldera.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.9"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Caldera.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Caldera.json#text; whole-text review: no EXPRESS patent grant and no patent-litigation termination; no conclusion about implied patent rights; https://spdx.org/licenses/Caldera.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.9"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Caldera.json#text; preamble fee-free use/modify/distribute named source and derived binaries ONLY for 32V UNIX and 16-bit UNIX versions 1-7 on PDP-11; explicitly EXCLUDES System III, System V and successors; subsequent source/binary grant operates within this historical subject matter; https://spdx.org/licenses/Caldera.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.9"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Caldera.json#text; preamble source availability NOT guaranteed; grant subject limited to enumerated historical UNIX systems, not an arbitrary new project; no endorsement/promotion with Caldera or contributor names without specific prior written permission; AS IS warranty/liability disclaimer; whole text contains no patent grant, source-supply obligation or license-fee prohibition; https://spdx.org/licenses/Caldera.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.9"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Caldera.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Caldera.json#text; Whole-text editorial review 2026-09-09, batch 9. Reklamní povinnost je již modelována. Zbývá rozlišit historický grant pro 32V UNIX a 16bitové UNIX 1–7 od licence pro nový projekt; ověřit konkrétní pokrytý kód a výluky System III/V a následníků. Samotné odstranění unknown nesmí povolit obecné doporučení.; https://spdx.org/licenses/Caldera.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.9"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Caldera.json#text; unnumbered conditions: retain copyright/conditions/disclaimer in SOURCE AND DOCUMENTATION; binary redistribution reproduces them in accompanying documentation/materials; ALL advertising mentioning features/use must credit software developed OR OWNED by Caldera International, Inc.; no separate every-redistribution acknowledgment clause; https://spdx.org/licenses/Caldera.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.9"
     }
   ]
 }

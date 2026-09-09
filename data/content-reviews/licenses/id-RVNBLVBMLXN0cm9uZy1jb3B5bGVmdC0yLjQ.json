@@ -1,0 +1,30 @@
+{
+  "id": "ESA-PL-strong-copyleft-2.4",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:da76bbe3e8b2ce70e6c577b824f6b5fa63c48e1118692b04ec12c62a18197399"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Silně reciproční ESA 2.4 vyžaduje stejnou licenci odvozeného celku včetně připojených knihoven, s vymezenými výjimkami nezávislých částí. Zdroje dostávají příjemci binárního kódu i uživatelé zpřístupněných funkcí či služeb; lze využít přímé dodání nebo předepsaný volný přístup podle způsobu poskytování. Licence vyžaduje oznámení, záznam změn, seznam vlastních patentových nároků a právní ujištění. Patentová inventura, exportní závazky a závazná arbitráž vyžadují další posouzení, proto ji průvodce nenabízí.",
+  "blockersCs": [
+    "§4.5 vyžaduje aktivní inventuru a zveřejnění vlastních patentových nároků v LEGAL a§5.1 ujištění o oprávnění přispěvatele; prosté include-notice toto nezachycuje.",
+    "§9.2–4 zavazují k ICC arbitráži, exportnímu souladu a popisu právně nemožných podmínek v LEGAL; softwarový model potřebuje tyto další závazky."
+  ],
+  "analysis": {
+    "subjectCs": "ESA Type1 v2.4 pokrývá software a široce odvozené Modifications;§1.7 výslovně zahrnuje připojení knihovny.",
+    "grantCs": "§2.1 uděluje použití, rozmnožování, úpravy, veřejné sdělování/výkon, šíření, podlicence, půjčování i nájem. §2.2 uděluje podlicencovatelné patenty přispěvatele pro jeho změny v Contributor Version s výlukou dalších změn a neplánovaných kombinací.",
+    "conditionsCs": "§3.1 vyžaduje stejnou či povolenou pozdější licenci na celek. §3.3 k objektovému kódu přiloží zdroj každému nebo zajistí volný rozumný přístup pro všechny držitele objektu/příjemce s návodem v NOTICE, po dobu distribuce a nejméně3 roky po poslední. §3.4 vyžaduje volné zdroje a návod všem, jimž je zpřístupněn software, funkce nebo jakékoli služby pomocí něj, po dobu služby. §4 zachovává licenci/notices, CHANGELOG s datem a kontaktovatelným původcem a LEGAL s čísly všech vlastních Patent Claims a kontakty;§6 odškodňuje cizí poskytovatele za dobrovolné přidané závazky.",
+    "limitationsCs": "§5.1 přispěvatel aktivně ujišťuje o dostatečných právech, jinak AS IS a vyloučení škod s kogentními výjimkami. §2.3 zakazuje dojem schválení ESA a poskytovatelem. §8 má30 dnů od vědomosti k nápravě, patentová žaloba ruší obě licence dnem podání, dřívější platné podlicence přežívají. §9 závazně stanoví ICC arbitráž v Kolíně, exportní odpovědnost a popis zákonem vynucených odchylek v LEGAL.",
+    "compatibilityCs": "§3.2 vyjímá nezávislé agregace, běžné systémové knihovny a externí moduly ve vzájemně volajících oddělených adresních prostorech. Pozdější verze je povolena, pokud přispěvatel neurčil výhradní verzi;§3.5 nepřidává další dual-licensing svolení. Právo státu sídla ESA poskytovatele, jinak německé."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/ESA-PL-strong-copyleft-2.4.html",
+      "note": "Individuálně přečten celý připnutý text; §3.1 vyžaduje stejnou či povolenou pozdější licenci na celek. §3.3 k objektovému kódu přiloží zdroj každému nebo zajistí volný rozumný přístup pro všechny držitele objektu/příjemce s návodem v NOTICE, po dobu distribuce a nejméně3 roky po poslední. §3.4 vyžaduje volné zdroje a návod všem, jimž je zpřístupněn software, funkce nebo jakékoli služby pomocí něj, po dobu služby. §4 zachovává licenci/notices, CHANGELOG s datem a kontaktovatelným původcem a LEGAL s čísly všech vlastních Patent Claims a kontakty;§6 odškodňuje cizí poskytovatele za dobrovolné přidané závazky. §2.2 výslovný patentový grant se zachováním zamýšlených kombinací;§8.2 žaloba včetně protinároku na Software ukončuje patentová i autorská práva."
+    }
+  ]
+}

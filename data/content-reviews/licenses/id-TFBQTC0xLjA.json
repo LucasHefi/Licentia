@@ -1,0 +1,29 @@
+{
+  "id": "LPPL-1.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:333477af17bc7b33a9599b92be93f90ce35606507271a735c7f8df190d91251b"
+  },
+  "disposition": "blocked",
+  "summaryCs": "LPPL 1.0 dovoluje neměnné soubory pouze v úplné distribuci včetně dokumentace a seznamu souborů. Změny obvykle vyžadují přejmenování před úpravou, trvalý zákaz původních jmen u derivátů, změnu identifikace a chybové adresy; LaTeX .ins/.fd/.cfg mají samostatná pravidla.",
+  "blockersCs": [
+    "LPPL 1.0 vyžaduje celé původní balení, přejmenování před úpravou a děděný zákaz původních jmen i změnu error-report adres; .ins/.fd/.cfg a další file notices mění povolení úprav. Doplnit model těchto podmínek a připnout konkrétní souborové výjimky/odkazovanou dokumentaci před doporučením."
+  ],
+  "analysis": {
+    "subjectCs": "Preambule dovoluje libovolný i ne-TeX software označený LPPL; Program je určeno copyrightovým notice a může obsahovat jednotlivé další modifikační výjimky.",
+    "grantCs": "Distribution dovoluje úplné neměnné distribuce a podmíněně změněné soubory/reuse kódu, bez cenového/komerčního zákazu. Další file notices mohou změny výslovně zakázat. Patentový grant a výslovná sublicence chybějí.",
+    "conditionsCs": "Originál musí obsahovat všechny soubory/dokumentaci a prominentní seznam pokrytých souborů. Změny jen pokud file notice nezakazuje, předem přejmenovat (leda výjimka), licencovat všechny deriváty se zákazem původních jmen, změnit identification string a existující error-report adresu, uvést původ/autorství v souboru a přiložit originál NEBO informace k jeho získání. Výjimka pro aktualizaci na identickou nejnovější verzi.",
+    "limitationsCs": "LaTeX .ins nelze upravit; .fd stejné jméno jen pro dostupnost fontů a nesmí nahradit originál; .cfg pro konfiguraci s odkazem cfgguide. Souborové modifikační výjimky se uvádějí v prominentním seznamu, nikoli jiné distribuční podmínky. Warranty odmítá záruky a náklady oprav přebírá uživatel; škody vyloučeny mimo zákon/písemnou dohodu.",
+    "compatibilityCs": "Vzor or-later je příklad nasazení, ne automatická volba každé instance. Text dovoluje použít části jako jinou licenci jen bez dojmu LPPL. Pinned neobsahuje konkrétní souborové výjimky ani odkazované cfgguide/modguide; formálně stejná licence derivátů vyžadována není, pouze děděný zákaz původních jmen."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/LPPL-1.0.html",
+      "note": "Individuální revize celého připnutého textu; Preambule dovoluje libovolný i ne-TeX software označený LPPL; Program je určeno copyrightovým notice a může obsahovat jednotlivé další modifikační výjimky."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "TMate",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.7",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:2fea9286fc00f557915d2cf151c31245c4a0e854691a060f4875d7211f1716f8"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Zachovejte copyright, podmínky a disclaimer. Každou redistribuci musí doprovázet návod, jak získat úplné zdroje softwaru používajícího SVNKit i přiloženého softwaru, který používá tento software. Zdroje lze přiložit nebo zpřístupnit za distribuční náklady a nominální poplatek; musejí být volně redistribuovatelné za přiměřených podmínek. Výjimka vyžaduje souhlas TMate. Externí knihovny a uvedené části JavaHL mají jiné licence.",
+  "blockersCs": [
+    "Vyjádřit zdrojovou povinnost i pro přiložený software, který používá software používající SVNKit, včetně informací o získání, cenového limitu a přiměřených podmínek redistribuce. Model whole-work ani library tento dosah sám nepopisuje. Doplnit systémovou výjimku, individuální souhlas TMate a oddělené licence JavaHL/externích knihoven; nevymýšlet stejnou licenci všech zdrojů."
+  ],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/TMate.html",
+      "note": "Dřívější individuální revize 2026-09-09.7; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

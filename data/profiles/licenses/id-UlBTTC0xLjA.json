@@ -8,100 +8,116 @@
     "contentHash": "sha256:27e3d1e4e34c4267a9d98a411fa11c2bd8a83e54cf683b9bd03f6d641c33a04f"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "weak-copyleft",
-    "copyleftScope": "library",
+    "family": "network-copyleft",
+    "copyleftScope": "whole-work",
     "permissions": [
       "commercial-use",
+      "conditional-relicensing",
       "distribution",
       "modifications",
       "patent-grant",
+      "private-use",
       "sublicensing"
     ],
     "obligations": [
+      "defend-added-warranty",
+      "disclose-source",
       "include-copyright",
       "include-license-text",
+      "include-notice",
       "mark-modifications",
-      "provide-corresponding-source"
-    ],
-    "triggers": [
+      "network-use-disclose",
+      "same-license",
       "unknown"
     ],
+    "triggers": [
+      "combination",
+      "distribution",
+      "linking",
+      "modification",
+      "network-use",
+      "patent-claim",
+      "use"
+    ],
     "restrictions": [
+      "additional-terms",
       "liability",
+      "patent-claim",
       "trademark",
+      "unknown",
       "warranty"
     ],
-    "patentPosition": "express-grant",
-    "noticeBurden": "standard"
+    "patentPosition": "retaliatory-termination",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.library-copyleft",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.copyleft-family",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/RPSL-1.0.json#text; RealNetworks Public Source License 1.0 z 28.10.2002 pokrývá výslovně označený Original Code ve zdroji i objektu. Deploy zahrnuje i vnitřní organizační provoz mimo R&D a čistě osobní nekomerční užití; External Deployment navíc zahrnuje služby a dodávání obsahu jiným, nikoli jen předání kopií. §2 uděluje copyright pro kopie, změny, provozování a Deploy a výslovné patenty poskytovatele nutné pro původní kód samotný. §3(a) dává všem patentová a jiná práva k vašim Modifications; §3(b) navíc poskytovateli a dcerám neodvolatelná široká práva včetně libovolného sublicencování. §3(c) zakazuje použít informace z četby kódu k vymáhání vlastních patentů či pomoci cizí žalobě proti poskytovateli/přispěvateli. §1.6 a §4.1 zahrnují celý derivative produkt včetně kombinací; §4.2 dává úzkou výjimku plně kompatibilně licencovaných nezávislých modulů a jejich aplikací. Síťové služby i dodání obsahu jiným spouštějí §2.1(d)/4.1, nikoli pouze úpravy jednoho souboru podle definice Modifications.; https://spdx.org/licenses/RPSL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/RPSL-1.0.json#text; §1.6 a §4.1 zahrnují celý derivative produkt včetně kombinací; §4.2 dává úzkou výjimku plně kompatibilně licencovaných nezávislých modulů a jejich aplikací. Síťové služby i dodání obsahu jiným spouštějí §2.1(d)/4.1, nikoli pouze úpravy jednoho souboru podle definice Modifications.; https://spdx.org/licenses/RPSL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/RPSL-1.0.json#text; §2 uděluje copyright pro kopie, změny, provozování a Deploy a výslovné patenty poskytovatele nutné pro původní kód samotný. §3(a) dává všem patentová a jiná práva k vašim Modifications; §3(b) navíc poskytovateli a dcerám neodvolatelná široká práva včetně libovolného sublicencování. §3(c) zakazuje použít informace z četby kódu k vymáhání vlastních patentů či pomoci cizí žalobě proti poskytovateli/přispěvateli.; https://spdx.org/licenses/RPSL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "restrictions",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/RPSL-1.0.json#text; §2.1 uchovává ve všech kopiích původní notices/disclaimery, licenci se zdroji i distribuovanou dokumentací, Exhibit A v upravených souborech a změny s daty. Externě nasazené změny musí být veřejně ve zdroji po dobu Deploy nebo 12 měsíců od počátku, podle delší lhůty. Object-only Deploy vyžaduje výraznou zdrojovou cestu v kódu i dokumentaci a Object Code Notice v about či jiném vhodném copyright místě včetně balení. §4.1 stejným zdrojovým režimem váže celý publikovaný/distribuovaný/externě nasazený Derivative Work. §6 přidané záruky a další práva vyžadují souhlas příjemce, že je nabízíte jen vy, a obranu/odškodnění ostatních. §11.2/12.5 vyžadují po zániku ihned zničit všechny kontrolované kopie.; https://spdx.org/licenses/RPSL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/RPSL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/RPSL-1.0.json#text; §2.1 uchovává ve všech kopiích původní notices/disclaimery, licenci se zdroji i distribuovanou dokumentací, Exhibit A v upravených souborech a změny s daty. Externě nasazené změny musí být veřejně ve zdroji po dobu Deploy nebo 12 měsíců od počátku, podle delší lhůty. Object-only Deploy vyžaduje výraznou zdrojovou cestu v kódu i dokumentaci a Object Code Notice v about či jiném vhodném copyright místě včetně balení. §4.1 stejným zdrojovým režimem váže celý publikovaný/distribuovaný/externě nasazený Derivative Work. §6 přidané záruky a další práva vyžadují souhlas příjemce, že je nabízíte jen vy, a obranu/odškodnění ostatních. §11.2/12.5 vyžadují po zániku ihned zničit všechny kontrolované kopie.; https://spdx.org/licenses/RPSL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/RPSL-1.0.json#text; §2.2 přenáší zajištění jiných nutných IP práv na uživatele. §5 vylučuje známky, oddělené patenty a jiné kombinace; §8/9 AS IS bez podpory, upozornění na nevhodnost rizikových aktivit a limit odpovědnosti poskytovatele 10 USD. §10 vlastní změny poskytovatele nejsou automaticky pod RPSL. §11 má 30 dnů nápravy od zjištění, ale jakákoli patentová žaloba včetně counterclaim proti poskytovateli automaticky ukončí grant, žaloba na samotný Covered Code proti třetímu po oznámení. §12.5 okamžitý zánik při zákonné nemožnosti §§2/3; §12.6–8 Seattle, právo Washington/USA a samostatná exportní/importní odpovědnost.; https://spdx.org/licenses/RPSL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/RPSL-1.0.json#text; §1.1/2.3 výslovný patentový grant poskytovatele pro nutné nároky původního kódu, §3 grant vašich nároků k úpravám; kombinace mohou potřebovat zvláštní licenci (§5). §11.1(c) odveta za jakoukoli patentovou žalobu proti poskytovateli včetně obranného counterclaim, §11.1(d) za žalobu na samotný kód vůči třetímu.; https://spdx.org/licenses/RPSL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/RPSL-1.0.json#text; §2.1 uchovává ve všech kopiích původní notices/disclaimery, licenci se zdroji i distribuovanou dokumentací, Exhibit A v upravených souborech a změny s daty. Externě nasazené změny musí být veřejně ve zdroji po dobu Deploy nebo 12 měsíců od počátku, podle delší lhůty. Object-only Deploy vyžaduje výraznou zdrojovou cestu v kódu i dokumentaci a Object Code Notice v about či jiném vhodném copyright místě včetně balení. §4.1 stejným zdrojovým režimem váže celý publikovaný/distribuovaný/externě nasazený Derivative Work. §6 přidané záruky a další práva vyžadují souhlas příjemce, že je nabízíte jen vy, a obranu/odškodnění ostatních. §11.2/12.5 vyžadují po zániku ihned zničit všechny kontrolované kopie. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/RPSL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/RPSL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/RPSL-1.0.json#text; Individuální kontrola celého připnutého textu RPSL-1.0 dne 2026-09-10. RealNetworks Public Source License 1.0 z 28.10.2002 pokrývá výslovně označený Original Code ve zdroji i objektu. Deploy zahrnuje i vnitřní organizační provoz mimo R&D a čistě osobní nekomerční užití; External Deployment navíc zahrnuje služby a dodávání obsahu jiným, nikoli jen předání kopií. §3(b), §10 a §4.2 dávají roli poskytovatele zvláštní proprietární licenci vašich úprav a určují neobvyklou povinnost kompletně otevřených kombinací nezávislých modulů; model běžného whole-work copyleftu to bez těchto samostatných podmínek nevystihuje. §3(c) zakazuje využití získaných informací a pomoc při patentových nárocích, §11.2/12.5 nařizují zničení kopií po zániku; tyto konkrétní závazky model neobsahuje. Exhibit B/C odkazují na průběžně spravované kompatibilní licence a závazné trademark guidelines, které nebylo možné ověřit; před využitím těchto cest je třeba získat autoritativní podmínky a posoudit obě kombinované licence. Historický seznam sám výslovně negarantuje GPL kompatibilitu. §4.2 umožňuje nezávislé moduly jen pod Compatible Source License, a to včetně všeho s nimi jakkoli propojeného či integrovaného; jejich zdroje musí být snadno dostupné bez licenční odměny (§1.2). §4.3 vyjímá pouhý agregát, nikoli dodání k integraci s dřívější aplikací. Exhibit B má historický seznam k 25.10.2002; u GPL/LGPL/CPL výslovně upozorňuje na možný konflikt a zakazuje aplikovat ne-RPSL na Covered Code, takže seznam není potvrzení GPL kompatibility. Aktuální odkaz https://www.helixcommunity.org/content/complicense ani trademark guidelines https://www.realnetworks.com/info/helixlogo.html se nepodařilo ověřit. §7 umožňuje pozdější RPSL, RCSL v Exhibit A platí jen při skutečně získané příslušné licenci.; https://spdx.org/licenses/RPSL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

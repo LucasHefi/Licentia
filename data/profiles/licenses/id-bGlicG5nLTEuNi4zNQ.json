@@ -9,92 +9,97 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
     "family": "permissive",
     "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "provide-corresponding-source"
+      "include-license-text",
+      "mark-modifications"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification"
     ],
     "restrictions": [
-      "liability"
+      "liability",
+      "warranty"
     ],
-    "patentPosition": "unknown",
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.no-copyleft",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.permissive-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/libpng-1.6.35.json#text; Grant a body1–3 permisivní pro krytý zdroj; historie výslovně odděluje contrib/configure jiné licence.; https://spdx.org/licenses/libpng-1.6.35.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/libpng-1.6.35.json#text; Hlavní licenční text nevyžaduje stejné licencování či dodání zdrojů binárním příjemcům.; https://spdx.org/licenses/libpng-1.6.35.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/libpng-1.6.35.json#text; Grant source code/portions any purpose a výslovná commercial product komponenta; jiné licence explicitně odděleny.; https://spdx.org/licenses/libpng-1.6.35.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "restrictions",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/libpng-1.6.35.json#text; Body1–3 původ/označení změn/notice v source distributions; acknowledgment not required. Sémantika se vztahuje na hlavní grant, nikoli neidentifikované vnější soubory.; https://spdx.org/licenses/libpng-1.6.35.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/libpng-1.6.35.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/libpng-1.6.35.json#text; Source/altered-source distribution zachovává notice; altered versions značeny; soukromé použití nemá povinné product acknowledgment.; https://spdx.org/licenses/libpng-1.6.35.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/libpng-1.6.35.json#text; Původní AS IS/warranty/liability a novější disclaimer enjoyment/infringement/all faults/risk; žádný use-field zákaz.; https://spdx.org/licenses/libpng-1.6.35.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/libpng-1.6.35.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/libpng-1.6.35.json#text; Celý hlavní grant bez výslovné patentové licence/ukončení; infringement je pouze záruková výluka.; https://spdx.org/licenses/libpng-1.6.35.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/libpng-1.6.35.json#text; Hlavní grant má standardní zdrojové notices a marking; product acknowledgment je výslovně dobrovolný. Vyňaté contrib/configure soubory vyžadují samostatnou inventuru při auditu balíku, nikoli další podmínky tohoto grantu.; https://spdx.org/licenses/libpng-1.6.35.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/libpng-1.6.35.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/libpng-1.6.35.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. Licence kryté části libpng dovoluje použití, kopie, úpravy a šíření včetně komerčních komponent. Zdrojové distribuce zachovají celé oznámení, změny se označí a původ nezkreslí; poděkování v produktu je dobrovolné. Některé contrib a generované configure soubory mají jiné licence.; https://spdx.org/licenses/libpng-1.6.35.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

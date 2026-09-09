@@ -1,0 +1,27 @@
+{
+  "id": "LOOP",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:35b1e82c038c848b5f1f518d4ce45eb77a7024bacf94f791dd6c545a92455c09"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Dvě části LOOP mají souběžná povolení MIT a Symbolics pro libovolné užití, změny a šíření. Každé zachovává vlastní copyright a dokumentační povolení včetně výslovné informace, že kopírování/distribuce probíhá se svolením příslušného držitele.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Části LOOP MIT 1986 a části Symbolics 1989–1992; software a dokumentace obou.",
+    "grantCs": "Oba oddíly výslovně use/copy/modify/distribute any purpose without fee; patentový grant ani sublicensing samostatně uvedeny nejsou.",
+    "conditionsCs": "Pro každou část copyright ve všech kopiích, copyright/permission v podpůrné dokumentaci a sdělení copying distribution by permission MIT nebo Symbolics.",
+    "limitationsCs": "Každý držitel zakazuje své jméno v reklamě/publicitě distribuce bez písemného souhlasu a poskytuje AS IS bez záruk vhodnosti. Symbolics uvádí své známky; samostatná odpovědnostní výluka chybí.",
+    "compatibilityCs": "Oba granty se vztahují ke svým částem souběžně, nejsou alternativní volbou. Žádná stejná licence výsledku ani volba pozdější verze."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/LOOP.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Oba oddíly MIT i Symbolics mají paralelní any-purpose grant a notice/naming podmínky."
+    }
+  ]
+}

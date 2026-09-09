@@ -10,83 +10,109 @@
   "review": {
     "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "strong-copyleft",
-    "copyleftScope": "whole-work",
+    "family": "weak-copyleft",
+    "copyleftScope": "library",
     "permissions": [
       "commercial-use",
+      "conditional-relicensing",
       "distribution",
       "modifications",
       "patent-grant",
-      "sublicensing"
+      "private-use"
     ],
     "obligations": [
+      "allow-relinking",
+      "allow-reverse-engineering",
       "include-copyright",
       "include-license-text",
-      "provide-corresponding-source"
+      "include-notice",
+      "mark-modifications",
+      "provide-corresponding-source",
+      "provide-installation-information",
+      "same-license"
     ],
     "triggers": [
-      "unknown"
+      "combination",
+      "distribution",
+      "linking",
+      "modification",
+      "patent-claim"
     ],
     "restrictions": [
+      "additional-terms",
       "liability",
-      "trademark",
+      "patent-claim",
       "warranty"
     ],
-    "patentPosition": "express-grant",
-    "noticeBurden": "standard"
+    "patentPosition": "defensive-termination",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.whole-work-copyleft",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.copyleft-family",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LGPL-3.0+.json#text; LGPL-3.0+ je zastaralý identifikátor LGPL 3 s volbou pozdější verze. Celé připnuté znění bylo přečteno včetně LGPL §0–6 a plně vložené GPLv3 §0–17 s dodatkem; LGPL přidává konkrétní knihovní výjimky k GPL, nikoli samostatný neomezený grant. GPL §2/4 a LGPL §0–4 dovolují soukromý i komerční běh, úpravy, placené kopie a kombinaci knihovny s jinak licencovanou aplikací. Application používá rozhraní a jinak není založena na knihovně; dědění třídy je výslovně používáním rozhraní. GPL §11 dává nutné patenty Contributor Version, GPL §10 příjemcům přímé licence místo sublicencí. LGPL §2 dovoluje při vazbě změny na funkci/data aplikace buď dobrou víru v zachování smysluplné funkce bez této funkce/dat, nebo distribuci pod GPL bez LGPL výjimek. LGPL §0 přesně odděluje Library, samostatnou Application a Combined Work; §4 nevyžaduje zdroj Application, může postačit relinkovatelný objekt nebo vhodná sdílená knihovna. Minimal Corresponding Source zahrnuje knihovní odvozenou část, nikoli části založené pouze na aplikaci.; https://spdx.org/licenses/LGPL-3.0+.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LGPL-3.0+.json#text; LGPL §0 přesně odděluje Library, samostatnou Application a Combined Work; §4 nevyžaduje zdroj Application, může postačit relinkovatelný objekt nebo vhodná sdílená knihovna. Minimal Corresponding Source zahrnuje knihovní odvozenou část, nikoli části založené pouze na aplikaci.; https://spdx.org/licenses/LGPL-3.0+.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LGPL-3.0+.json#text; GPL §2/4 a LGPL §0–4 dovolují soukromý i komerční běh, úpravy, placené kopie a kombinaci knihovny s jinak licencovanou aplikací. Application používá rozhraní a jinak není založena na knihovně; dědění třídy je výslovně používáním rozhraní. GPL §11 dává nutné patenty Contributor Version, GPL §10 příjemcům přímé licence místo sublicencí. LGPL §2 dovoluje při vazbě změny na funkci/data aplikace buď dobrou víru v zachování smysluplné funkce bez této funkce/dat, nebo distribuci pod GPL bez LGPL výjimek.; https://spdx.org/licenses/LGPL-3.0+.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/LGPL-3.0+.json#text; Knihovna a její změny zachovávají GPL/LGPL zdroje, copyright, licenci a změnová notices. LGPL §3 u objektu aplikace s významnějším kódem z hlaviček požaduje výrazné oznámení použití knihovny a obě licence; pouze číselné parametry, layouty/accessory a makra/inline/template do 10 řádků tuto povinnost nemají. LGPL §4 Combined Work dovoluje vlastní podmínky, které neomezují změnu knihovní části a reverse engineering k ladění změn; vyžaduje notices použití, obě licence a knihovní copyright v existujícím runtime seznamu. Volí se buď Minimal Corresponding Source plus objektový či zdrojový Corresponding Application Code včetně potřebných dat/nástrojů k opětovnému propojení, nebo vhodný runtime mechanismus s uživatelovou vyměnitelnou rozhraním kompatibilní knihovnou. Instalační informace jsou jen za podmínek GPL §6 pro User Product a v nutném rozsahu k instalaci změněné kombinace. LGPL §5 spojené knihovny provází nespojená kopie pokryté knihovní části a odkaz na ni.; https://spdx.org/licenses/LGPL-3.0+.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/LGPL-3.0+.json#text; Knihovna a její změny zachovávají GPL/LGPL zdroje, copyright, licenci a změnová notices. LGPL §3 u objektu aplikace s významnějším kódem z hlaviček požaduje výrazné oznámení použití knihovny a obě licence; pouze číselné parametry, layouty/accessory a makra/inline/template do 10 řádků tuto povinnost nemají. LGPL §4 Combined Work dovoluje vlastní podmínky, které neomezují změnu knihovní části a reverse engineering k ladění změn; vyžaduje notices použití, obě licence a knihovní copyright v existujícím runtime seznamu. Volí se buď Minimal Corresponding Source plus objektový či zdrojový Corresponding Application Code včetně potřebných dat/nástrojů k opětovnému propojení, nebo vhodný runtime mechanismus s uživatelovou vyměnitelnou rozhraním kompatibilní knihovnou. Instalační informace jsou jen za podmínek GPL §6 pro User Product a v nutném rozsahu k instalaci změněné kombinace. LGPL §5 spojené knihovny provází nespojená kopie pokryté knihovní části a odkaz na ni.; https://spdx.org/licenses/LGPL-3.0+.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LGPL-3.0+.json#text; LGPL §1 vyjímá předání podle LGPL §3/4 z GPL §3 anti-circumvention podmínky; knihovní relinking a ladění zůstávají. GPL §6 má fyzické zdroje, nabídku nejméně 3 roky a po dobu podpory/náhradních dílů, příležitostné nekomerční předání nabídky, ekvivalentní stažení či P2P odkaz; instalační klíče se nevyžadují, nemůže-li měnit objekt nikdo, ani další podpora změn. GPL §7 stanoví odstranitelná dodatečná oprávnění a uzavřený okruh vlastních podmínek. §10–11 zakazují další omezení a patentové žaloby na Program, upravují veřejné zdroje/nevyužití patentové výhody/rozšíření patentu jako alternativy i diskriminační dohody s historickou výjimkou před 28.3.2007. GPL §8 obnovuje zaniklá práva po ukončení porušování, trvale při 60 dnech bez oznámení nebo prvním upozornění s nápravou do 30 dnů; §15–17 AS IS a omezení odpovědnosti.; https://spdx.org/licenses/LGPL-3.0+.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/LGPL-3.0+.json#text; Vložená GPL §11 dává výslovně essential patent claims Contributor Version včetně make/use/sell/import a vylučuje nároky způsobené pouze další změnou. §10 zákaz žaloby na Program s §8 zánikem je obranné patentové ukončení; LGPL tyto patentové podmínky neruší.; https://spdx.org/licenses/LGPL-3.0+.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/LGPL-3.0+.json#text; Knihovna a její změny zachovávají GPL/LGPL zdroje, copyright, licenci a změnová notices. LGPL §3 u objektu aplikace s významnějším kódem z hlaviček požaduje výrazné oznámení použití knihovny a obě licence; pouze číselné parametry, layouty/accessory a makra/inline/template do 10 řádků tuto povinnost nemají. LGPL §4 Combined Work dovoluje vlastní podmínky, které neomezují změnu knihovní části a reverse engineering k ladění změn; vyžaduje notices použití, obě licence a knihovní copyright v existujícím runtime seznamu. Volí se buď Minimal Corresponding Source plus objektový či zdrojový Corresponding Application Code včetně potřebných dat/nástrojů k opětovnému propojení, nebo vhodný runtime mechanismus s uživatelovou vyměnitelnou rozhraním kompatibilní knihovnou. Instalační informace jsou jen za podmínek GPL §6 pro User Product a v nutném rozsahu k instalaci změněné kombinace. LGPL §5 spojené knihovny provází nespojená kopie pokryté knihovní části a odkaz na ni. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/LGPL-3.0+.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/LGPL-3.0+.json#text; Individuální kontrola celého připnutého textu LGPL-3.0+ dne 2026-09-10. LGPL-3.0+ je zastaralý identifikátor LGPL 3 s volbou pozdější verze. Celé připnuté znění bylo přečteno včetně LGPL §0–6 a plně vložené GPLv3 §0–17 s dodatkem; LGPL přidává konkrétní knihovní výjimky k GPL, nikoli samostatný neomezený grant. LGPL-3.0+ je v připnutých datech deprecated; pro nový projekt je nutné zvolit aktuální LGPL-3.0-or-later odpovídající skutečné volbě pozdějších verzí. Obsah LGPL i celé začleněné GPL je individuálně posouzen a knihovní alternativy jsou popsány. LGPL §4 dovoluje proprietární Application při konkrétních podmínkách výměny knihovny, nikoli odstranění licence změn knihovny. LGPL §6 pro plus variantu dovoluje pozdější vydanou LGPL a případně určené proxy, GPL §7 dovoluje odstranit LGPL dodatečná oprávnění a přejít na odpovídající GPL; §13 GPL má zvláštní AGPLv3 kombinaci se síťovým účinkem pro tento celek. Samotné síťové užití není GPL convey. Pro nový výběr použít aktuální LGPL-3.0-or-later místo deprecated plus ID.; https://spdx.org/licenses/LGPL-3.0+.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

@@ -9,91 +9,97 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "unknown"
+      "include-license-text",
+      "include-notice"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification",
+      "use"
     ],
     "restrictions": [
-      "liability"
+      "liability",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "none-stated",
+    "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Rdisc.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Rdisc.json#text; Licence se vztahuje na Rdisc vyvinutý Sun Microsystems, včetně celku i částí programu. První odstavec dovoluje neomezené užití, bezplatné kopírování a změny i volnou distribuci. Zachování legendy v médiu/programu není copyleft ani zdrojový požadavek.; https://spdx.org/licenses/Rdisc.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Rdisc.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Rdisc.json#text; Zachování legendy v médiu/programu není copyleft ani zdrojový požadavek.; https://spdx.org/licenses/Rdisc.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Rdisc.json#text; První odstavec dovoluje neomezené užití, bezplatné kopírování a změny i volnou distribuci.; https://spdx.org/licenses/Rdisc.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Rdisc.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Rdisc.json#text; Celá legenda se zahrne na všechna pásková média a jako součást softwaru v celku nebo části; text nepožaduje zveřejnit zdroj.; https://spdx.org/licenses/Rdisc.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Rdisc.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Rdisc.json#text; Celá legenda se zahrne na všechna pásková média a jako součást softwaru v celku nebo části; text nepožaduje zveřejnit zdroj.; https://spdx.org/licenses/Rdisc.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Rdisc.json#text; Rdisc je AS IS bez záruk včetně designu a praxe obchodování, bez podpory a povinnosti asistence. Sun nenese odpovědnost za porušení copyrightu, tajemství či patentů ani ztracené výnosy a nepřímé škody.; https://spdx.org/licenses/Rdisc.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Rdisc.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Rdisc.json#text; Patentový odstavec pouze vylučuje odpovědnost za porušení patentů; neposkytuje patentový grant a neukončuje práva při žalobě.; https://spdx.org/licenses/Rdisc.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Rdisc.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Rdisc.json#text; Celá legenda se zahrne na všechna pásková média a jako součást softwaru v celku nebo části; text nepožaduje zveřejnit zdroj. Rozsah notifikační zátěže: standard.; https://spdx.org/licenses/Rdisc.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Rdisc.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Rdisc.json#text; Individuální kontrola celého připnutého textu Rdisc dne 2026-09-09. Licence se vztahuje na Rdisc vyvinutý Sun Microsystems, včetně celku i částí programu. Všechny uvedené podmínky jsou zachyceny slovníkem 1.4.0; zjištěný rozsah nebrání softwarovému průvodci. Text nenabízí jinou licenci ani verzi; uvedená adresa Sun není oznamovací povinnost.; https://spdx.org/licenses/Rdisc.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

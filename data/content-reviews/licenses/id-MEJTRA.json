@@ -1,0 +1,27 @@
+{
+  "id": "0BSD",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:a59ce35b3fbd8ffdc1d7b91e52c8b77a5c062c2119edfe5f2321e5b83b690adc"
+  },
+  "disposition": "eligible",
+  "summaryCs": "0BSD dovoluje software používat, kopírovat, měnit a distribuovat pro libovolný účel, s poplatkem i bez něj. Nevyžaduje zachování copyrightu, licenčního textu nebo jiného oznámení ani zveřejnění zdrojového kódu. Software poskytuje bez záruk a omezuje odpovědnost autora za škody; výslovné patentové oprávnění neobsahuje.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "0BSD je obecný grant k softwaru s volitelnými údaji autora a roku v copyrightu.",
+    "grantCs": "Grant dovoluje užití, kopírování, změny a distribuci pro jakýkoli účel s poplatkem nebo bez něj.",
+    "conditionsCs": "Celý grant nemá podmínku zachování copyrightu, licence či jiného oznámení a nevyžaduje zveřejnění zdrojů.",
+    "limitationsCs": "Software je AS IS; autor odmítá všechny záruky včetně prodejnosti/vhodnosti a odpovědnost za vyjmenované i jiné škody včetně ztráty užití, dat a zisku.",
+    "compatibilityCs": "Text nenabízí verze nebo alternativní licenci."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/0BSD.html",
+      "note": "Individuálně přečten celý připnutý text; Celý grant nemá podmínku zachování copyrightu, licence či jiného oznámení a nevyžaduje zveřejnění zdrojů. Celý text neobsahuje výslovný patentový grant nebo odvetné ukončení; nulové notice podmínky takový grant nevytvářejí."
+    }
+  ]
+}

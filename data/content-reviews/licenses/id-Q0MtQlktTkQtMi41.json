@@ -1,0 +1,29 @@
+{
+  "id": "CC-BY-ND-2.5",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:e09113f6878a7f1329a4fb9ef2e78a64b70cec4718e9367d0423824363d27512"
+  },
+  "disposition": "blocked",
+  "summaryCs": "CC BY-ND 2.5 dovoluje i komerční kopie a veřejné šíření nezměněného díla, ale nepovoluje adaptace kromě nutných formátových změn. Zachovává licenci nebo odkaz, copyright a atribuci autora i dalších přiměřeně určených osob či institucí. Ve sborníku má být atribuce stejně výrazná jako ostatní a na žádost se prakticky odstraní. Zákaz adaptací a tyto obsahové podmínky vyžadují samostatné posouzení, proto licenci průvodce novému softwaru nenabízí.",
+  "blockersCs": [
+    "Licence obsahu zakazuje věcné adaptace a vyžaduje credit i dalších určených stran s odstraněním na žádost; před doporučením softwaru je třeba model ND a těchto obsahových podmínek."
+  ],
+  "analysis": {
+    "subjectCs": "CC Attribution-NoDerivs 2.5 Generic chrání nezměněné dílo/sborník; hudební synchronizace je odvozenina.",
+    "grantCs": "§3 dovoluje reprodukci, sdílení, veřejné a digitální audio provedení i komerčně, včetně výkonových/mechanických/webcast royalty vzdání; tvorbu odvozenin mimo nezbytné formátové změny nepovoluje.",
+    "conditionsCs": "§4 předává licenci/URI a notices, zachová copyright a credit. Oproti 2.0 §4b výslovně zahrnuje i další přiměřeně určené osoby/instituce (sponzor, vydavatel, časopis), vedle autora, titulu a licenčního URI. Credit ve sborníku má srovnatelnou výraznost a na žádost se proveditelně odstraní credit podle §4b.",
+    "limitationsCs": "Sublicence/dodatečné omezení/rozporné technické ochrany jsou zakázány. §5 AS IS bez provenance záruky a §6 liability v mezích práva; §7 zánik při každém porušení chrání řádné příjemce sborníků.",
+    "compatibilityCs": "Celý sborník mimo původní složku nemá povinnou CC licenci. §8 přímo nabízí licenci příjemci; poskytovatel může přestat šířit či licencovat jinak, ale udělená práva zůstanou. CC značky jen pro licenční označení nebo souhlas."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/CC-BY-ND-2.5.html",
+      "note": "Individuálně přečten celý připnutý text; §4 předává licenci/URI a notices, zachová copyright a credit. Oproti 2.0 §4b výslovně zahrnuje i další přiměřeně určené osoby/instituce (sponzor, vydavatel, časopis), vedle autora, titulu a licenčního URI. Credit ve sborníku má srovnatelnou výraznost a na žádost se proveditelně odstraní credit podle §4b. Plný text nemá výslovný patentový grant ani patentové ukončení; royalty vzdání se týká uvedených hudebních práv."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "Inner-Net-2.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.7",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:16c099e9022f53993b175c1d405cf590b9b3ae0270634ef1aa193261270c2c1c"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Nejdříve zkontrolujte označení verze a README: verzi výslovně označenou jako nešiřitelnou nesmíte redistribuovat v žádné podobě. U ostatních verzí zachovejte copyright, podmínky a disclaimer ve zdrojích nebo materiálech k binárním kopiím a dodržte další platné licence. Jména autorů a přispěvatelů nepoužívejte k propagaci bez písemného souhlasu. Záruky a odpovědnost jsou vyloučeny.",
+  "blockersCs": [
+    "Doplnit kontrolu konkrétní verze, její zprávy a README pro zákaz redistribuce podle článku 0. Nelze doporučit obecné distribuční oprávnění bez tohoto stavu. Zachovat další platné licence; odstraněný článek 4 neobnovovat jako reklamní poděkování."
+  ],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Inner-Net-2.0.html",
+      "note": "Dřívější individuální revize 2026-09-09.7; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

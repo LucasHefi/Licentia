@@ -8,91 +8,90 @@
     "contentHash": "sha256:538ef6784559cec69efe989b48a9f676a730cd262f9a329f9d0577182d77619b"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "public-domain-equivalent",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
-    "obligations": [
-      "unknown"
-    ],
-    "triggers": [
-      "unknown"
-    ],
+    "obligations": [],
+    "triggers": [],
     "restrictions": [
-      "liability"
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "none-stated",
+    "noticeBurden": "none"
   },
   "evidence": [
     {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NIST-PD.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NIST-PD.json#text; První odstavec contributed to public domain a formální licence není potřebná podle tvrzeného federálního statusu.; https://spdx.org/licenses/NIST-PD.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NIST-PD.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NIST-PD.json#text; Celý text nemá zdrojovou reciprocitu ani stejné licencování.; https://spdx.org/licenses/NIST-PD.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/NIST-PD.json#text; První odstavec deklaruje public domain pro software NIST and others; rozsah práv třetích přispěvatelů nedokládá.; https://spdx.org/licenses/NIST-PD.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NIST-PD.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NIST-PD.json#text; Celý text nepožaduje zachování oznámení ani zpřístupnění zdroje.; https://spdx.org/licenses/NIST-PD.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NIST-PD.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NIST-PD.json#text; Celý text nemá závazný distribuční, užívací, modifikační, síťový nebo reklamní trigger.; https://spdx.org/licenses/NIST-PD.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/NIST-PD.json#text; Druhý odstavec NO WARRANTY OF ANY KIND včetně statutory, data accuracy a non-infringement; neobsahuje náhradu škod.; https://spdx.org/licenses/NIST-PD.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NIST-PD.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NIST-PD.json#text; Celý text bez výslovné patentové licence či patentového ukončení.; https://spdx.org/licenses/NIST-PD.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NIST-PD.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NIST-PD.json#text; Ani public-domain tvrzení ani disclaimer nevyžadují připojení oznámení.; https://spdx.org/licenses/NIST-PD.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NIST-PD.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NIST-PD.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. NIST popisuje software svých zaměstnanců a dalších osob jako věnovaný do public domain a tvrdí, že formální licence není potřebná. Záruky včetně přesnosti dat jsou vyloučeny; uvedený zákonný odkaz je v připnutém textu chybný. Blokace: Text odvozuje public-domain status od původu díla NIST, uvádí také blíže neurčené další autory a cituje title 15 Untied States Code Section 105. Pro nový projekt je nutná vlastní licence/dedikace; u tohoto materiálu je třeba ověřit příspěvky dalších autorů a chybný zákonný odkaz v primárním kontextu, nikoli měnit připnutý text.; https://spdx.org/licenses/NIST-PD.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

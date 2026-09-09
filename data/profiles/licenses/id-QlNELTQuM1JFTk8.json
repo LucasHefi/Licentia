@@ -18,8 +18,8 @@
     "permissions": [
       "commercial-use",
       "distribution",
-      "modifications",
-      "private-use"
+      "private-use",
+      "unknown"
     ],
     "obligations": [
       "include-copyright",
@@ -34,53 +34,71 @@
       "warranty"
     ],
     "patentPosition": "none-stated",
-    "noticeBurden": "material"
+    "noticeBurden": "standard"
   },
   "evidence": [
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant (\"Redistribution and use in source and binary forms are permitted\"; broad non-reciprocal BSD-style permission identifies a permissive family)"
+      "locator": "public/data/licenses/BSD-4.3RENO.json#text; Licence se vztahuje na software Regents of the University of California z roku 1987. Hlavní odstavec výslovně dovoluje redistribuci a užití ve zdrojové i binární formě. Další věta počítá s odvozenými produkty, ale přesný rozsah oprávnění měnit software nevymezuje; právo modifications proto není bez dalšího přiznáno. Zachování oznámení a credit nejsou požadavkem vydat zdroj nebo licencovat změny stejně.; https://spdx.org/licenses/BSD-4.3RENO.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant and notice/credit condition (permission is non-reciprocal; no same-license, source-disclosure, corresponding-source, linking, or network-use condition is stated)"
+      "locator": "public/data/licenses/BSD-4.3RENO.json#text; Zachování oznámení a credit nejsou požadavkem vydat zdroj nebo licencovat změny stejně.; https://spdx.org/licenses/BSD-4.3RENO.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant (\"Redistribution and use in source and binary forms are permitted\"; no purpose or field-of-use limitation is stated; modification is not separately restricted)"
+      "locator": "public/data/licenses/BSD-4.3RENO.json#text; Hlavní odstavec výslovně dovoluje redistribuci a užití ve zdrojové i binární formě. Další věta počítá s odvozenými produkty, ale přesný rozsah oprávnění měnit software nevymezuje; právo modifications proto není bez dalšího přiznáno.; https://spdx.org/licenses/BSD-4.3RENO.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text: grant condition (\"provided that this notice is preserved\" requires retaining the copyright/license notice) and credit condition (\"due credit is given to the University of California at Berkeley\")"
+      "locator": "public/data/licenses/BSD-4.3RENO.json#text; Oznámení se zachová a University of California at Berkeley se přizná náležité autorství; reklamní materiály nejsou zvláštním spouštěčem.; https://spdx.org/licenses/BSD-4.3RENO.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant condition (notice preservation and due-credit duties attach to redistribution and use in source or binary form; no separate linking, network-use, modification, or patent-claim trigger is stated)"
+      "locator": "public/data/licenses/BSD-4.3RENO.json#text; Oznámení se zachová a University of California at Berkeley se přizná náležité autorství; reklamní materiály nejsou zvláštním spouštěčem.; https://spdx.org/licenses/BSD-4.3RENO.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text: endorsement/name sentence (\"The name of the University may not be used to endorse or promote products derived from this software without specific written prior permission\") is a trademark/name restriction; final sentence (\"provided ``as is'' without express or implied warranty\") is a warranty disclaimer and states no separate liability limitation"
+      "locator": "public/data/licenses/BSD-4.3RENO.json#text; Jméno univerzity nelze bez konkrétního předchozího písemného svolení použít k propagaci odvozených produktů; software je AS IS bez záruk.; https://spdx.org/licenses/BSD-4.3RENO.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "text: complete license text (opening grant, notice/credit condition, endorsement/name restriction, and warranty sentence contain no express patent grant, patent condition, patent-claim restriction, or patent-termination clause)"
+      "locator": "public/data/licenses/BSD-4.3RENO.json#text; Celý text neobsahuje výslovný patentový grant či patentové ukončení.; https://spdx.org/licenses/BSD-4.3RENO.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text: notice/credit condition requires preservation of the notice and due credit to the University of California at Berkeley for source and binary redistribution/use; this adds a material attribution burden beyond a bare notice-retention condition"
+      "locator": "public/data/licenses/BSD-4.3RENO.json#text; Oznámení se zachová a University of California at Berkeley se přizná náležité autorství; reklamní materiály nejsou zvláštním spouštěčem. Rozsah notifikační zátěže: standard.; https://spdx.org/licenses/BSD-4.3RENO.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "metadata: id=BSD-4.3RENO, name=BSD 4.3 RENO License, deprecated=false, osi=false, fsf=false; text: complete permissive grant, notice preservation/due-credit condition, University endorsement/name restriction, and warranty disclaimer are explicit; no advertising acknowledgement clause is present, but the name-use restriction makes this variant unsuitable for general automatic recommendation"
+      "locator": "public/data/licenses/BSD-4.3RENO.json#text; Individuální kontrola celého připnutého textu BSD-4.3RENO dne 2026-09-09. Licence se vztahuje na software Regents of the University of California z roku 1987. Grant dovoluje zdrojovou/binární redistribuci a užití, zatímco o odvozených produktech mluví pouze zákaz endorsementu; před přiznáním obecného práva změn v průvodci je třeba ověřit tento rozsah v původním licenčním kontextu. Text neobsahuje jiné verze ani alternativní licencování.; https://spdx.org/licenses/BSD-4.3RENO.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

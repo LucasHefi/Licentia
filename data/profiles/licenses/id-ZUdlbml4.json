@@ -9,92 +9,96 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-license-text"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "use"
     ],
     "restrictions": [
       "liability",
-      "trademark"
+      "trademark",
+      "warranty"
     ],
-    "patentPosition": "unknown",
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/eGenix.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/eGenix.json#text; Bod2 široký grant se zachováním smlouvy;6 výslovně oddělené licence nevytvářejí copyleft.; https://spdx.org/licenses/eGenix.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/eGenix.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/eGenix.json#text; Body1–8 bez stejné licence a zdrojového zveřejnění; retained Agreement v derivátu je notice, ne příkaz přelicencovat vlastní části.; https://spdx.org/licenses/eGenix.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/eGenix.json#text; Bod2 reproduce/analyze/test/perform/display/derivatives/distribute/otherwise use worldwide royalty-free.; https://spdx.org/licenses/eGenix.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/eGenix.json#text; Bod2 retained eGenix Agreement v Software/derivatives;6 jiné portions výslovně nejsou pod tímto Agreement a nemají přisouzeny zdejší podmínky.; https://spdx.org/licenses/eGenix.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/eGenix.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/eGenix.json#text; Use i distribuční grant podmíněn uchováním Agreement;8 download/copy/install/use vyjadřuje assent, nikoli další plnění.; https://spdx.org/licenses/eGenix.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/eGenix.json#text; 3–4 warranty/liability s statutory výjimkami;5 material-breach automatic termination;7 trademark endorsement není povolen.; https://spdx.org/licenses/eGenix.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/eGenix.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/eGenix.json#text; Celý vlastní eGenix grant bez výslovné patentové licence či patentového ukončení; third-party portions výslovně mimo jeho rozsah.; https://spdx.org/licenses/eGenix.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/eGenix.json#text; Zachovat celý Agreement; žádné reklamní acknowledgment, zdrojová nabídka ani povinné hlášení změn.; https://spdx.org/licenses/eGenix.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/eGenix.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/eGenix.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. eGenix 1.1.0 dovoluje užití, analýzu, změny i distribuci při zachování smlouvy v softwaru a derivátech. Samostatně licencované přibalené části jsou výslovně vyňaty; materiální porušení smlouvu automaticky ukončí. Řídí se německým právem a rozhodující je anglické znění.; https://spdx.org/licenses/eGenix.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

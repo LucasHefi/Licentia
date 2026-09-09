@@ -9,90 +9,95 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "unknown"
+      "include-notice",
+      "include-use-acknowledgment"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "use"
     ],
     "restrictions": [
-      "unknown"
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/PADL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/PADL.json#text; Zdrojový/binární grant nemá vzájemné licencování či zveřejnění zdrojů; permisivní charakter, rozsah none.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/PADL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/PADL.json#text; Zdrojový/binární grant nemá vzájemné licencování či zveřejnění zdrojů; permisivní charakter, rozsah none.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/PADL.json#text; Redistribution and use povoluje zdrojové i binární formy, modifikované i nemodifikované, bez zákazu komerce. Patentová licence ani sublicence nejsou výslovné.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/PADL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/PADL.json#text; Provided that vyžaduje zachované oznámení a samostatně due credit PADL při redistribuci i užití. Místo a forma tohoto náležitého uznání nejsou určeny a podmínka není omezena na šíření. Povinnost při samotném užití nyní zachycuje trigger use ve slovníku 1.4.0. Povinné přiznání zásluh při užití je samostatné include-use-acknowledgment (1.4.0), nikoli dobrovolná žádost.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/PADL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/PADL.json#text; Provided that vyžaduje zachované oznámení a samostatně due credit PADL při redistribuci i užití. Místo a forma tohoto náležitého uznání nejsou určeny a podmínka není omezena na šíření. Povinnost při samotném užití nyní zachycuje trigger use ve slovníku 1.4.0. Povinné přiznání zásluh při užití je samostatné include-use-acknowledgment (1.4.0), nikoli dobrovolná žádost.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/PADL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/PADL.json#text; As is a without express or implied warranty odmítají záruky; žádná samostatná odpovědnostní či patentová terminace není uvedena.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/PADL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/PADL.json#text; Redistribution and use povoluje zdrojové i binární formy, modifikované i nemodifikované, bez zákazu komerce. Patentová licence ani sublicence nejsou výslovné.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/PADL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/PADL.json#text; Provided that vyžaduje zachované oznámení a samostatně due credit PADL při redistribuci i užití. Místo a forma tohoto náležitého uznání nejsou určeny a podmínka není omezena na šíření. Povinnost při samotném užití nyní zachycuje trigger use ve slovníku 1.4.0. Povinné přiznání zásluh při užití je samostatné include-use-acknowledgment (1.4.0), nikoli dobrovolná žádost.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/PADL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/PADL.json#text; Individuální plná revize; povinné uznání při užití přesně modelováno slovníkem 1.4.0. Zdrojové i binární podoby lze používat a šířit se změnami i bez nich, musí však zůstat oznámení a být přiznána náležitá zásluha PADL Software. Software je bez záruky. ",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

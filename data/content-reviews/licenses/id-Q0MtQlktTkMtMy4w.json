@@ -1,0 +1,30 @@
+{
+  "id": "CC-BY-NC-3.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:3bf8b3d06cc28d5b850eb1550b820640553c12da8c48a5d4ea18a9443461c2ae"
+  },
+  "disposition": "blocked",
+  "summaryCs": "CC BY-NC 3.0 dovoluje kopírování, úpravy a veřejné šíření obsahu pouze pro nekomerční účel; neplacená výměna děl má výjimku. Vyžaduje označit změny, přiznat původ a zachovat oznámení s kopií licence nebo odkazem, přičemž na žádost se proveditelně odstraňují kredity. Celá adaptace nemusí převzít stejnou licenci, ale přetrvává zákaz dalších omezení a ochrana autorovy cti a pověsti. Průvodce potřebuje model nekomerčního účelu a těchto obsahových povinností.",
+  "blockersCs": [
+    "§4(b) omezuje práva na NC účel; software model musí zachytit skutečný zákaz, nikoli jej skrýt pouhým vynecháním commercial-use.",
+    "§1,4 vyžadují obsahový model kolekcí, veřejného provádění, odstranění atribuce, technických opatření a osobnostních práv; tyto podmínky současný průvodce plně nezachycuje."
+  ],
+  "analysis": {
+    "subjectCs": "CC BY-NC3.0 Unported zahrnuje literární/umělecká díla, výkony, vysílání, fonogramy a autorské datové kompilace; rozlišuje Adaptation včetně hudební synchronizace a nezměněnou samostatnou Collection.",
+    "grantCs": "§3 dovoluje kopie, kolekce, tvorbu adaptací, distribuci a veřejné provádění, ale§4(b) všechna práva omezuje na účel bez primární obchodní výhody či soukromé peněžní odměny. Neplacená výměna autorských děl má výjimku; podlicence§4(a) není udělena.",
+    "conditionsCs": "§3(b) rozumně označuje změny a překlady. §4(a,c) při distribuci/provádění zachovává copyright a licenční/disclaimer notices, přidává text nebo URI licence, dodané autora a určené Attribution Parties, titul, relevantní URI a kredit původu adaptace alespoň stejně výrazný jako společné autorské kredity. Na žádost poskytovatele se kredit prakticky možným způsobem odstraní z kolekce/adaptace.",
+    "limitationsCs": "§4 zakazuje další omezující podmínky, technické prostředky bránící právům a dojem schválení. §4(d) rezervuje neprominutelné zákonné odměny a jiné odměny pro mimo-NC použití; jeho dobrovolná větev chybně odkazuje na4(c), přičemž nekomerční definice je4(b), což evidence výslovně zachovává. §4(e) chrání čest/pověst autora, s výjimkou jurisdikcí, kde by samotná adaptace vždy znamenala újmu. §5–6 AS IS a omezení škod;§7 okamžité ukončení bez automatické30denní nápravy a ochrana dodržujících příjemců.",
+    "compatibilityCs": "§8(f) používá národní implementaci uvedených mezinárodních autorských úmluv a doplňuje standardní autorská práva. §4(a) nešíří licenci na zbytek kolekce a§8(b) licencuje pouze originál uvnitř adaptace. Není ShareAlike, volba novější verze ani IGO arbitráž; závěrečná CC známková politika je mimo licenci."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/CC-BY-NC-3.0.html",
+      "note": "Individuálně přečten celý připnutý text; §3(b) rozumně označuje změny a překlady. §4(a,c) při distribuci/provádění zachovává copyright a licenční/disclaimer notices, přidává text nebo URI licence, dodané autora a určené Attribution Parties, titul, relevantní URI a kredit původu adaptace alespoň stejně výrazný jako společné autorské kredity. Na žádost poskytovatele se kredit prakticky možným způsobem odstraní z kolekce/adaptace. §3 a8(f) autorský grant neobsahuje patentovou licenci;§4(d) se týká odměn z autorských schémat, nikoli patentové odvety."
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "OCLC-2.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:016caabd09d905803890b71fb19937deaf9ce9c5df4f8369e946e207e644f8a3"
+  },
+  "disposition": "blocked",
+  "summaryCs": "OCLC2.0 dovoluje komerční užití a úpravy, ale Program i integrované Combined Work se distribuují pod touto licencí pouze za náklady fyzického předání. Neintegrovaný Aggregate Work lze prodávat, přičemž Program si drží vlastní podmínky. Modifikovatelné soubory nesou rozsáhlý notice; u nemodifikovatelného kódu se přikládají zdroje nebo poskytují na žádost. Licence ukládá zvláštní patentový závazek, nápravu zjištěných cizích práv a široké IP žalobní ukončení. Záruky a škody jsou výslovně vyloučeny.",
+  "blockersCs": [
+    "§§3.A,3.D zakazují cenu Programu i integrovaného Combined Work nad fyzické přenosové náklady, ale výslovně dovolují prodej neintegrovaného Aggregate Work. Model nemá tuto cenovou restrikci a nesmí ji zaměnit za zákaz komerčního použití; potřebuje ji odděleně s výjimkou agregace.",
+    "§6 požaduje u patentu kterékoliv strany na Program ustanovení zajišťující bezplatné trvalé neomezené komerční i nekomerční užití třetím stranám. Nejde o jasný přítomný patentový grant §1; je nutné modelovat povinnost udělit patentová práva. §5 ukončuje grant žalobou za jakékoli IP porušení proti dotčenému přispěvateli, nejen patentovou žalobou.",
+    "§3.A vyžaduje prohlášení vlastní tvorby a kompletní detaily cizích práv v každé změně; §6 ukládá po zjištění nároku znovu upravit již distribuovaný Program a rozumně informovat příjemce. §6 také váže nové stažené kopie na později zveřejněnou novelu poskytovatele. Tyto povinnosti a dynamika verzí vyžadují samostatný model před doporučením."
+  ],
+  "analysis": {
+    "subjectCs": "Program tvoří originální kód OCLC a Modifications jako změny souborů či nové soubory s částí Programu. Combined Work je integrace s jiným kódem; výslovná pravidla §3.D na něj dopadají jako celek. Aggregate Work je soužití bez integrace na médiu a ostatní jeho části jsou vyňaty.",
+    "grantCs": "§1 uděluje bezplatnou nevýhradní celosvětovou převoditelnou licenci ke spuštění, odvozeninám a interní/externí distribuci pro komerční i nekomerční účely. §4 vyžaduje od autora změn velmi široký převoditelný sublicencovatelný grant OCLC a ostatním příjemcům, který přežívá ukončení. Ten není důvodem tvrdit bezpodmínečné sublicencování celého původního Programu. §6 nepřipouští implicitní IP licence a stanoví zvláštní povinnost pro získané patenty.",
+    "conditionsCs": "§3.A distribuce bez dalších omezení s výjimkou nutného respektování cizích práv, za fyzické náklady a s výrazným celým Warranty Disclaimer/Limitation of Liability včetně waiver claims. Přispěvatel prohlašuje vlastní tvorbu a dle nejlepšího vědomí absenci cizích nároků; uvádí úplné podmínky všech známých cizích omezení s licencemi. §3.B každý zdrojový i datový soubor a změna nese přesně stanovený notice s aktuálním rokem, identitou originálu/vývojáře/přispěvatelů. §3.C nemodifikovatelná forma vyžaduje nápadný copyright a zdroje přiložené NEBO na žádost příjemce. §3.D aplikuje relevantní B/C na Combined Work. §6 zachovává všechny proprietární notices, vyžaduje dodržet export/import a aktivní opravu a upozornění po objevení cizího nároku.",
+    "limitationsCs": "§5 ukončuje grant od konkrétního Contributor okamžikem žaloby za IP porušení Programem proti němu. Jiné porušení lze napravit do30 dnů od zjištění; předchozí řádné sublicence a vlastní povinnosti přežívají. §3.A výslovně vylučuje záruky včetně neporušování a všechny škody a obsahuje vzdání nároků; §6 omezuje známky kromě povinných copyrightů a při neslučitelných externích podmínkách zakazuje distribuci. §6 volí Ohio/USA a vyhrazuje aplikaci nové publikované licence na následně stažené kopie.",
+    "compatibilityCs": "Definice změn je souborová, ale §3.D výslovně rozšiřuje licenční režim na integrované Combined Work, proto nelze přiřadit pouze file copyleft. Agregaci lze prodávat a nezávislé části nepodléhají OCLC, Program však ano i po extrakci. Výjimka uznání třetích práv není obecné povolení jiné licence celého díla. Jednostranné nové podmínky následných stažení nejsou běžná volba or-later příjemce."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/OCLC-2.0.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; §2 distribuce Programu pod touto licencí a §3.D celé integrované Combined Work; copyleft nad rámec jednotlivých změněných souborů"
+    }
+  ]
+}

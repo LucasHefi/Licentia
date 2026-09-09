@@ -8,94 +8,101 @@
     "contentHash": "sha256:47159f53855b88593156ddab057ab803a69e9a7e74867d3f188f0feadeb2b578"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "none",
     "permissions": [
       "distribution",
-      "modifications"
-    ],
-    "obligations": [
-      "include-license-text"
-    ],
-    "triggers": [
+      "modifications",
+      "private-use",
       "unknown"
     ],
+    "obligations": [
+      "include-license-text",
+      "unknown"
+    ],
+    "triggers": [
+      "distribution",
+      "modification",
+      "use"
+    ],
     "restrictions": [
+      "additional-terms",
       "liability",
       "trademark",
+      "unknown",
       "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Unicode-TOU.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Unicode-TOU.json#text; Podmíněný informační grant s konformitou a zákazem některých způsobů užití není copyleft, ale nonstandard licence s nevyřešeným externím rozsahem.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Unicode-TOU.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Unicode-TOU.json#text; Podmíněný informační grant s konformitou a zákazem některých způsobů užití není copyleft, ale nonstandard licence s nevyřešeným externím rozsahem.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Unicode-TOU.json#text; A.2 dovoluje změny jen legendou Modification is permitted označených souborů k odvozeninám conforming Unicode Standard; A.3 view/use/reproduce/distribute pouze informativně pro produkty podporující standard. Patentový grant ani obecná sublicence nejsou uvedeny.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Unicode-TOU.json#text; A.7 tento dokument pouze doslovně a bez modifikací; A.4–5 vyžadují zjistit UCD Exhibit1, titulní podmínky knih do5.0 a specifická online charts. E.2 smluvně začleňuje proměnlivou Trademark Policy; F.3 příjemce platí daně z přístupu/užití kromě čistého příjmu Unicode. Placený mirror A.6 není licencován.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Unicode-TOU.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Unicode-TOU.json#text; A.7 tento dokument pouze doslovně a bez modifikací; A.4–5 vyžadují zjistit UCD Exhibit1, titulní podmínky knih do5.0 a specifická online charts. E.2 smluvně začleňuje proměnlivou Trademark Policy; F.3 příjemce platí daně z přístupu/užití kromě čistého příjmu Unicode. Placený mirror A.6 není licencován.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Unicode-TOU.json#text; B obsahuje vládní restricted-rights režim. C.2 výhradní náprava zakoupeného vadného nosiče výměnou do90 dnů; jinak C.3 as is/no warranties a D výluka škod. E uznává světová známková práva. F volí Kalifornii a výlučné Santa Clara fórum, dovoluje jednostranné změny zveřejněním a zakazuje postoupení bez svolení, má severability/entire agreement.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Unicode-TOU.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Unicode-TOU.json#text; A.2 dovoluje změny jen legendou Modification is permitted označených souborů k odvozeninám conforming Unicode Standard; A.3 view/use/reproduce/distribute pouze informativně pro produkty podporující standard. Patentový grant ani obecná sublicence nejsou uvedeny.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Unicode-TOU.json#text; A.7 tento dokument pouze doslovně a bez modifikací; A.4–5 vyžadují zjistit UCD Exhibit1, titulní podmínky knih do5.0 a specifická online charts. E.2 smluvně začleňuje proměnlivou Trademark Policy; F.3 příjemce platí daně z přístupu/užití kromě čistého příjmu Unicode. Placený mirror A.6 není licencován.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Unicode-TOU.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Unicode-TOU.json#text; Individuálně přečten celý připnutý text. A pokrývá webové dokumenty/soubory Unicode 1991–2014 a různé verze standardu; Exhibit1 pro UCD ani zvláštní titulní/code-chart podmínky nejsou v pinned textu zahrnuty. Historické Unicode Terms of Use povolují dokumenty/soubory jen informačně pro produkty podporující Unicode; změny pouze u výslovně označených souborů a s konformním výsledkem. Obsahují zvláštní práva databáze/exemplářů, proměnlivou známkovou politiku a zákaz placeného mirroru webu. A.2–5 odkazují na označení položek, nepřiložený Exhibit1 a specifická práva jednotlivých standardů/charts; E.2 začleňuje proměnlivou Trademark Policy. Připnout dobové primární texty a konkrétní předmět a doplnit účel/konformitu i placený mirror zákaz; dnešní TOU nejsou důkazem historického rozsahu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

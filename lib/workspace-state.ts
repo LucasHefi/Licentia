@@ -7,6 +7,7 @@ const GUIDE_KEYS = new Set<keyof GuideAnswers>([
   "reciprocity",
   "delivery",
   "patents",
+  "advertising",
   "notices",
   "jurisdiction",
   "projectForm",

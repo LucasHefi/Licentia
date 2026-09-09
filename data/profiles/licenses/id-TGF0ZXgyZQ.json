@@ -8,92 +8,93 @@
     "contentHash": "sha256:5a47d741edd038d1c62f59f26beefcc6a4412f5ca46471d9d9317f414e41d5d9"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "strong-copyleft",
+    "copyleftScope": "whole-work",
     "permissions": [
-      "distribution"
+      "distribution",
+      "modifications"
     ],
     "obligations": [
       "include-copyright",
-      "include-license-text"
+      "include-license-text",
+      "same-license"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification"
     ],
-    "restrictions": [
-      "unknown"
-    ],
-    "patentPosition": "unknown",
+    "restrictions": [],
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Latex2e.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Latex2e.json#text; Text licencuje manuál s copyrighty Berryho, Gilmora a Martinsena, včetně jazykových překladů. První odstavec dovoluje doslovné kopie, druhý upravené verze a třetí výslovně překlady do jiného jazyka. Druhý odstavec výslovně vztahuje identické podmínky na entire resulting derived work, tedy celý odvozený manuál.; https://spdx.org/licenses/Latex2e.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Latex2e.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Latex2e.json#text; Druhý odstavec výslovně vztahuje identické podmínky na entire resulting derived work, tedy celý odvozený manuál.; https://spdx.org/licenses/Latex2e.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Latex2e.json#text; První odstavec dovoluje doslovné kopie, druhý upravené verze a třetí výslovně překlady do jiného jazyka.; https://spdx.org/licenses/Latex2e.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Latex2e.json#text; Ve všech kopiích se zachovají copyright a svolení; celé výsledné odvozené dílo musí mít totožné svolení. Překlady podléhají stejným podmínkám jako změny.; https://spdx.org/licenses/Latex2e.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Latex2e.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Latex2e.json#text; Ve všech kopiích se zachovají copyright a svolení; celé výsledné odvozené dílo musí mít totožné svolení. Překlady podléhají stejným podmínkám jako změny.; https://spdx.org/licenses/Latex2e.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Latex2e.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Latex2e.json#text; Text nemá záruky, odpovědnostní výluku ani povinnost dodat konkrétní zdrojový formát.; https://spdx.org/licenses/Latex2e.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Latex2e.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Latex2e.json#text; Celé tři grantové odstavce nemají výslovné patentové právo ani patentové ukončení.; https://spdx.org/licenses/Latex2e.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Latex2e.json#text; Ve všech kopiích se zachovají copyright a svolení; celé výsledné odvozené dílo musí mít totožné svolení. Překlady podléhají stejným podmínkám jako změny. Rozsah notifikační zátěže: standard.; https://spdx.org/licenses/Latex2e.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Latex2e.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Latex2e.json#text; Individuální kontrola celého připnutého textu Latex2e dne 2026-09-09. Text licencuje manuál s copyrighty Berryho, Gilmora a Martinsena, včetně jazykových překladů. Text licencuje manuál a jeho překlady, nikoli obecný software; je třeba oddělený dokumentační průvodce nebo samostatné softwarové oprávnění. Totožné svolení je povinné pro upravené manuály a překlady; jiné licence či verze nejsou nabízeny.; https://spdx.org/licenses/Latex2e.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

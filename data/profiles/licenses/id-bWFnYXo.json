@@ -9,90 +9,94 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "include-copyright"
+      "include-copyright",
+      "include-license-text"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification",
+      "use"
     ],
-    "restrictions": [
-      "unknown"
-    ],
-    "patentPosition": "unknown",
+    "restrictions": [],
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/magaz.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/magaz.json#text; Jedna podmínka uchování copyrightu a svolení nezavádí copyleft; software má permisivní grant.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/magaz.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/magaz.json#text; Jedna podmínka uchování copyrightu a svolení nezavádí copyleft; software má permisivní grant.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/magaz.json#text; This software povoluje svobodné užití, přenos, rozmnožování a úpravy bez zákazu komerce; neobsahuje výslovný patentový grant nebo sublicenci.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/magaz.json#text; Podmínka provided that vyžaduje zachovat copyright a toto svolení u všech uvedených činností, včetně samotného užití; nevyžaduje stejné licencování ani zdroje. Povinnost při samotném užití nyní zachycuje trigger use ve slovníku 1.4.0.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/magaz.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/magaz.json#text; Podmínka provided that vyžaduje zachovat copyright a toto svolení u všech uvedených činností, včetně samotného užití; nevyžaduje stejné licencování ani zdroje. Povinnost při samotném užití nyní zachycuje trigger use ve slovníku 1.4.0.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/magaz.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/magaz.json#text; Úplný text nemá záruky, odpovědnost, ochranné známky, terminaci ani jurisdikci.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/magaz.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/magaz.json#text; This software povoluje svobodné užití, přenos, rozmnožování a úpravy bez zákazu komerce; neobsahuje výslovný patentový grant nebo sublicenci.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/magaz.json#text; Podmínka provided that vyžaduje zachovat copyright a toto svolení u všech uvedených činností, včetně samotného užití; nevyžaduje stejné licencování ani zdroje. Povinnost při samotném užití nyní zachycuje trigger use ve slovníku 1.4.0.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/magaz.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/magaz.json#text; Individuální plná revize aktualizována po doplnění use ve slovníku 1.4.0. Užití, šíření, rozmnožování a úpravy jsou dovoleny při zachování copyrightu i tohoto svolení, včetně užití bez distribuce. ",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

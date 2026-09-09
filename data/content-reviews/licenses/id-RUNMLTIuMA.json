@@ -1,0 +1,20 @@
+{
+  "id": "ECL-2.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.2",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:4807936cc11acc92c502ca9708c0dab8c2203c26c3d32bceb3b90b8ca473d0a6"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Přiložte licenci, označte změny a zachovejte relevantní oznámení včetně NOTICE, existuje-li. Patentový grant je užší než u Apache 2.0: u zaměstnanců musí autor být i vynálezcem a instituce smět patent licencovat podle výzkumných a grantových smluv. Patentový spor může grant ukončit. Poskytování zdrojů se nevyžaduje.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/ECL-2.0.html",
+      "note": "Dřívější individuální revize 2026-09-09.2; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

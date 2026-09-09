@@ -8,91 +8,89 @@
     "contentHash": "sha256:8ef79e67b216c1f0a5192fe634dc319cd7658939820b730bafe8d2575643879a"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
-    ],
-    "obligations": [
+      "private-use",
       "unknown"
     ],
-    "triggers": [
-      "unknown"
-    ],
+    "obligations": [],
+    "triggers": [],
     "restrictions": [
-      "liability"
+      "liability",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "none-stated",
+    "noticeBurden": "none"
   },
   "evidence": [
     {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MPEG-SSG.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MPEG-SSG.json#text; Text MPEG Software Simulation Group z roku 1994 je nadepsán Disclaimer of Warranty pro poskytované programy. Uvádí dostupnost programů bez licenčního poplatku či royalty AS IS; výslovná práva kopírovat, měnit a redistribuovat neuděluje. Disclaimer nezavádí copyleft nebo stejnou licenci; absence však sama neuděluje distribuční práva.; https://spdx.org/licenses/MPEG-SSG.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MPEG-SSG.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MPEG-SSG.json#text; Disclaimer nezavádí copyleft nebo stejnou licenci; absence však sama neuděluje distribuční práva.; https://spdx.org/licenses/MPEG-SSG.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/MPEG-SSG.json#text; Uvádí dostupnost programů bez licenčního poplatku či royalty AS IS; výslovná práva kopírovat, měnit a redistribuovat neuděluje.; https://spdx.org/licenses/MPEG-SSG.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MPEG-SSG.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MPEG-SSG.json#text; Celý text neobsahuje notifikační ani zdrojovou povinnost; zmínka o patentových royalties není licencí k těmto patentům.; https://spdx.org/licenses/MPEG-SSG.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MPEG-SSG.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MPEG-SSG.json#text; Celý text neobsahuje notifikační ani zdrojovou povinnost; zmínka o patentových royalties není licencí k těmto patentům.; https://spdx.org/licenses/MPEG-SSG.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/MPEG-SSG.json#text; Vylučuje záruky a odpovědnost za náhodné, sankční i následné škody; výluku rozšiřuje na zákazníky, zaměstnance, zástupce a nástupce. Nezaručuje neporušování cizích patentů a upozorňuje na royalties komerčních MPEG-1/2 implementací včetně shareware.; https://spdx.org/licenses/MPEG-SSG.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MPEG-SSG.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MPEG-SSG.json#text; Odstavce o patentech výslovně odmítají neporušování a upozorňují na cizí poplatky; patentový grant neobsahují.; https://spdx.org/licenses/MPEG-SSG.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MPEG-SSG.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MPEG-SSG.json#text; Celý text neobsahuje notifikační ani zdrojovou povinnost; zmínka o patentových royalties není licencí k těmto patentům. Rozsah notifikační zátěže: none.; https://spdx.org/licenses/MPEG-SSG.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MPEG-SSG.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MPEG-SSG.json#text; Individuální kontrola celého připnutého textu MPEG-SSG dne 2026-09-09. Text MPEG Software Simulation Group z roku 1994 je nadepsán Disclaimer of Warranty pro poskytované programy. Připnutý text poskytuje disclaimer a dostupnost bez poplatku, nikoli výslovný grant změn a redistribuce; před doporučením je třeba dohledat vlastní oprávnění k programům, patentové upozornění je nenahrazuje. Neobsahuje jinou licenci nebo verzi; historické tvrzení o patentových poplatcích neověřuje současnou platnost konkrétních patentů.; https://spdx.org/licenses/MPEG-SSG.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

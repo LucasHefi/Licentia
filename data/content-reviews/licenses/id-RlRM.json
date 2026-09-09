@@ -1,0 +1,27 @@
+{
+  "id": "FTL",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:ee4df29a5211f326b6c55c5746f9512116284366b65a7008af857e3ad924a012"
+  },
+  "disposition": "eligible",
+  "summaryCs": "FreeType dovoluje trvalé neodvolatelné užití, změny, distribuci i podlicence v komerčních produktech. Zdrojové distribuce zachovají FTL.TXT a dokumentují změny; binární dokumentace uvádí podíl FreeType Team. Použití i linkování programu vyžaduje dokumentační kredit, doporučený text a URL jsou dobrovolné.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "FreeType engine/testy/dokumentace/makefiles a další originální soubory kromě těch s vlastní explicitní licencí; using výslovně zahrnuje kompilaci a linkování.",
+    "grantCs": "§2 worldwide royalty-free perpetual irrevocable use/execute/perform/compile/display/copy/derivatives/distribute/sublicense source/object a autorizace dalších; bez výslovného patentového grantu.",
+    "conditionsCs": "§2 source FTL.TXT nezměněný, změny/additions/deletions v dokumentaci a copyright původních souborů zachovat; binární dokumentace based in part on FreeType Team. Používající program dokumentuje credit i části; URL/preferred wording dobrovolné. §0 při skutečné nejistotě pokrytí souboru kontaktovat autory.",
+    "limitationsCs": "§1 AS IS/warranty/liability. §3 obě strany nesmějí použít jméno druhé komerčně/reklamně bez písemného souhlasu; doporučené názvy nejsou povinné. Užívání/distribuce/úpravy znamenají přijetí, bez povinné podpory.",
+    "compatibilityCs": "Samostatně licencované soubory výslovně mimo grant a potřebují inventuru při auditu balíku; nejde o neznámé podmínky inkorporované do této licence. Jiná smlouva vyžaduje skutečné uzavření; LGPL/GPL alternativa není v tomto textu udělena."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/FTL.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; §2 široký neodvolatelný grant s source/binary notices a uživatelským credit,bez reciprocity."
+    }
+  ]
+}

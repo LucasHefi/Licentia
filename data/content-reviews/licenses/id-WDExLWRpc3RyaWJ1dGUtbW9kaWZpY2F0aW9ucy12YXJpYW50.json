@@ -1,0 +1,20 @@
+{
+  "id": "X11-distribute-modifications-variant",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.3",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:ad3c72d7cb2bd6ff04683d5c463a8e1fdbed7090c69c32b598616d9cb4d5b7cb"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Zachovejte copyright a licenční oznámení. Text výslovně připouští distribuci s úpravami a podlicencování; reklamní či propagační použití jmen nositelů práv vyžaduje souhlas.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/X11-distribute-modifications-variant.html",
+      "note": "Dřívější individuální revize 2026-09-09.3; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

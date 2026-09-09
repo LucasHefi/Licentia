@@ -1,0 +1,33 @@
+{
+  "id": "CC-PDDC",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:caf1b9110289f5d6a16d9ded94f934f5164b1554e082fbe377db10466ba7e9d3"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Dokument kombinuje certifikaci veřejné domény v zemi zveřejnění s trvalým vzdáním se vlastního copyrightu; i certifikující osoba věnuje případná vlastní práva. Creative Commons nástroj v roce 2010 stáhlo a nedoporučuje jej pro nová díla.",
+  "blockersCs": [
+    "Text nabízí certifikaci historického statusu nebo copyrightovou dedikaci bez náhradního grantu; oficiální Creative Commons stránka výslovně uvádí stažení nástroje 11. 10. 2010 a nedoporučení novým dílům. Pro nový projekt je třeba vybrat podporovanou dedikaci/licenci, například samostatně posouzenou CC0, nikoli měnit tento text."
+  ],
+  "analysis": {
+    "subjectCs": "Identifikované dílo, copyright dedikující/certifikující osoby a status v zemi, ze které je dílo zveřejněno.",
+    "grantCs": "Certifikace veřejné domény nebo dedikace vlastních práv; certifikující také dedikuje případná vlastní práva. Cílem je volné užití/šíření/změny i komerčně; patentový grant chybí.",
+    "conditionsCs": "Certifikující osoba učinila rozumné kroky ověření; příjemcům nejsou uloženy notices, zdroje ani reciprocita. Nejde o souběžnou povinnost každého uživatele certifikovat původ.",
+    "limitationsCs": "Trvalé vzdání se současných i budoucích copyrightových nároků včetně žalob, i k újmě dědiců/nástupců. Dobrá víra nemusí chránit chybnou certifikaci před odpovědností; obecný disclaimer chybí.",
+    "compatibilityCs": "Dvě role/alternativy mají dedikaci vlastních práv společnou. Oficiální zdroj nástroj označuje za založený na právu USA a již nedoporučený; to nemění připnutý text."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/CC-PDDC.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; První/třetí odstavec certifikace nebo trvalá copyrightová dedikace; i certifier věnuje vlastní práva."
+    },
+    {
+      "url": "https://creativecommons.org/publicdomain/certification/1.0/us/",
+      "note": "Oficiální CC stránka: Notice uvádí retirement 2010-10-11 a nedoporučení použít nástroj na nová díla; závěr doporučuje pro nové dedikace CC0 a uvádí základ v právu USA."
+    }
+  ]
+}

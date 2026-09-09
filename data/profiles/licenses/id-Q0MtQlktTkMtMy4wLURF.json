@@ -8,91 +8,102 @@
     "contentHash": "sha256:17165402a50c9aa9b4ec0767771f3003907b945dc78b2b2afdfb04bf31022300"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "none",
     "permissions": [
-      "commercial-use"
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
+      "include-copyright",
+      "include-notice",
+      "mark-modifications",
       "unknown"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification",
+      "use"
     ],
     "restrictions": [
-      "unknown"
+      "additional-terms",
+      "liability",
+      "trademark",
+      "unknown",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-NC-3.0-DE.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-NC-3.0-DE.json#text; Německá Creative Commons Namensnennung – Keine kommerzielle Nutzung 3.0 upravuje literární, umělecký a vědecký obsah, související práva a databáze (§1.f). §1.a definuje Abwandlung jako změnu se zachovanými osobitými rysy původního předmětu a vlastní vzniklou ochranou; sborník samostatných prvků ani volné užití za ni nepovažuje. Samostatně bylo přečteno celé německé znění včetně závěrečného notice. §8.f volí německé právo při přípustné volbě a absenci jiné dohody. §3 dává bezúplatné nevýhradní celosvětové oprávnění po dobu ochrany kopírovat v libovolné podobě a množství, tvořit sborníky, zpracovávat včetně překladů a technicky nutných změn a původní i zpracovaný obsah šířit a veřejně ukazovat. §4.b však omezuje všechny tyto úkony na účel, který není přednostně zaměřen na obchodní výhodu nebo peněžně ocenitelné protiplnění. Soukromé užití, změny a distribuce jsou zachyceny pouze v této nekomerční větvi; commercial-use není uděleno. Výměna jiného chráněného předmětu bez smluvní povinnosti, například file sharing, se nepovažuje za komerční, pokud při výměně skutečně není platba ani peněžně ocenitelné protiplnění. §4.a zakazuje sublicence. Závěr §3 se vzdává zvláštních databázových práv, nikoli autorských práv k jednotlivým chráněným prvkům; §4.d z podmínek 4.a–c vyjímá části chráněné pouze tímto zvláštním databázovým právem. §4.b omezuje účel na nekomerční a proto family nonstandard, nikoli obecně permisivní software. §3 dovoluje zpracování, §4.a výslovně odděluje celý sborník a nikde není ShareAlike ani zpřístupnění zdroje; copyleftScope none. Trvání NC na převzatém obsahu není povinnost převést vlastní příspěvky na stejnou licenci.; https://spdx.org/licenses/CC-BY-NC-3.0-DE.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-NC-3.0-DE.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-NC-3.0-DE.json#text; §4.b omezuje účel na nekomerční a proto family nonstandard, nikoli obecně permisivní software. §3 dovoluje zpracování, §4.a výslovně odděluje celý sborník a nikde není ShareAlike ani zpřístupnění zdroje; copyleftScope none. Trvání NC na převzatém obsahu není povinnost převést vlastní příspěvky na stejnou licenci.; https://spdx.org/licenses/CC-BY-NC-3.0-DE.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-BY-NC-3.0-DE.json#text; §3 dává bezúplatné nevýhradní celosvětové oprávnění po dobu ochrany kopírovat v libovolné podobě a množství, tvořit sborníky, zpracovávat včetně překladů a technicky nutných změn a původní i zpracovaný obsah šířit a veřejně ukazovat. §4.b však omezuje všechny tyto úkony na účel, který není přednostně zaměřen na obchodní výhodu nebo peněžně ocenitelné protiplnění. Soukromé užití, změny a distribuce jsou zachyceny pouze v této nekomerční větvi; commercial-use není uděleno. Výměna jiného chráněného předmětu bez smluvní povinnosti, například file sharing, se nepovažuje za komerční, pokud při výměně skutečně není platba ani peněžně ocenitelné protiplnění. §4.a zakazuje sublicence. Závěr §3 se vzdává zvláštních databázových práv, nikoli autorských práv k jednotlivým chráněným prvkům; §4.d z podmínek 4.a–c vyjímá části chráněné pouze tímto zvláštním databázovým právem.; https://spdx.org/licenses/CC-BY-NC-3.0-DE.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-NC-3.0-DE.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-NC-3.0-DE.json#text; §3.b požaduje zřetelně označit zpracování. §4.a při šíření nebo veřejném ukazování vyžaduje kopii licence NEBO úplné URI, zachování licenčních a odpovědnostních notices a žádné další podmínky ani technická opatření bránící licenčním právům. U vytvořeného sborníku nebo zpracování musí být na oznámení poskytovatele odstraněny kredity podle §4.c; tato německá varianta nepřidává podmínku praktické proveditelnosti odstranění. §4.c zachovává právní notices a požaduje přiměřeně uvést známé nositele práv či pseudonym, určené třetí osoby, titul, prakticky uveditelné URI k právům nebo licenci a povahu zpracování. Při společném uvedení více nositelů musí být kredity nejméně stejně výrazné. §1.h pod veřejné ukazování řadí i výstavy, přednes, vysílání a internet, proto use zachycuje tyto obsahové úkony; neznamená povinnost zveřejnit zdroj serveru. §4.d vyjímá čistě zvláštním databázovým právem chráněné části nejen z atribuce a notice, ale i z NC podmínky 4.b. Odstranění kreditů a tyto přesně vymezené obsahové větve vyžadují unknown v obligations; žádná povinnost dodat softwarový zdroj nevzniká.; https://spdx.org/licenses/CC-BY-NC-3.0-DE.html Terminologické upřesnění 2026-09-10: § 4(a) při šíření nebo veřejném ukazování dovoluje kopii této licence NEBO její úplnou internetovou adresu ve formě URI. Výjimka § 4(d) pro části chráněné pouze zvláštním databázovým právem zůstává zachována. include-notice zachycuje požadované licenční oznámení s touto alternativou; include-license-text se neuvádí jako bezpodmínečná povinnost.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-NC-3.0-DE.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-NC-3.0-DE.json#text; §3.b požaduje zřetelně označit zpracování. §4.a při šíření nebo veřejném ukazování vyžaduje kopii licence NEBO úplné URI, zachování licenčních a odpovědnostních notices a žádné další podmínky ani technická opatření bránící licenčním právům. U vytvořeného sborníku nebo zpracování musí být na oznámení poskytovatele odstraněny kredity podle §4.c; tato německá varianta nepřidává podmínku praktické proveditelnosti odstranění. §4.c zachovává právní notices a požaduje přiměřeně uvést známé nositele práv či pseudonym, určené třetí osoby, titul, prakticky uveditelné URI k právům nebo licenci a povahu zpracování. Při společném uvedení více nositelů musí být kredity nejméně stejně výrazné. §1.h pod veřejné ukazování řadí i výstavy, přednes, vysílání a internet, proto use zachycuje tyto obsahové úkony; neznamená povinnost zveřejnit zdroj serveru. §4.d vyjímá čistě zvláštním databázovým právem chráněné části nejen z atribuce a notice, ale i z NC podmínky 4.b. Odstranění kreditů a tyto přesně vymezené obsahové větve vyžadují unknown v obligations; žádná povinnost dodat softwarový zdroj nevzniká.; https://spdx.org/licenses/CC-BY-NC-3.0-DE.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-NC-3.0-DE.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-NC-3.0-DE.json#text; §2 zachovává zákonné výjimky a užití nechráněného obsahu. §4.c nepřipouští naznačovat podporu, schválení či spojení s poskytovatelem nebo určeným příjemcem atribuce bez předchozího samostatného písemného souhlasu. §4.f ponechává osobnostní práva nedotčená. §4.e zachovává nezcizitelné zákonné odměny, odměny při nucených licencích pro komerční účely a odměny za ostatní komerční užití; pro řádnou nekomerční větev se ostatních odměn vzdává. Výhrada odměny neuděluje sama komerční licenci. §5 vylučuje záruky s výjimkou odlišné písemné dohody, podvodného zatajení vady a případů odpovědnosti §6. §6 ponechává odpovědnost za život, tělo a zdraví už při nedbalosti, za jiné škody při hrubé nedbalosti nebo úmyslu. §7.a ukončuje práva do budoucna při porušení bez dalšího kroku, zachovává řádná práva navazujících příjemců a §1, 2, 5–8; třicetidenní automatické obnovení zde není. §1.g připouští další užívání po porušení s výslovným svolením. restrictions unknown vyznačuje zákaz převážně komerčního účelu, který slovník neobsahuje. Samostatná pravidla značek Creative Commons jsou v závěru výslovně vyloučena z této licence.; https://spdx.org/licenses/CC-BY-NC-3.0-DE.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-NC-3.0-DE.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-NC-3.0-DE.json#text; §3 vymezuje autorská a související oprávnění i vzdání se zvláštních databázových práv; žádný článek výslovně nedává patentovou licenci ani nestanoví patentovou odvetu. Proto none-stated bez patent-grant, nikoli express-exclusion.; https://spdx.org/licenses/CC-BY-NC-3.0-DE.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-NC-3.0-DE.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-NC-3.0-DE.json#text; §3.b požaduje zřetelně označit zpracování. §4.a při šíření nebo veřejném ukazování vyžaduje kopii licence NEBO úplné URI, zachování licenčních a odpovědnostních notices a žádné další podmínky ani technická opatření bránící licenčním právům. U vytvořeného sborníku nebo zpracování musí být na oznámení poskytovatele odstraněny kredity podle §4.c; tato německá varianta nepřidává podmínku praktické proveditelnosti odstranění. §4.c zachovává právní notices a požaduje přiměřeně uvést známé nositele práv či pseudonym, určené třetí osoby, titul, prakticky uveditelné URI k právům nebo licenci a povahu zpracování. Při společném uvedení více nositelů musí být kredity nejméně stejně výrazné. §1.h pod veřejné ukazování řadí i výstavy, přednes, vysílání a internet, proto use zachycuje tyto obsahové úkony; neznamená povinnost zveřejnit zdroj serveru. §4.d vyjímá čistě zvláštním databázovým právem chráněné části nejen z atribuce a notice, ale i z NC podmínky 4.b. Odstranění kreditů a tyto přesně vymezené obsahové větve vyžadují unknown v obligations; žádná povinnost dodat softwarový zdroj nevzniká. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/CC-BY-NC-3.0-DE.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-NC-3.0-DE.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-NC-3.0-DE.json#text; Individuální kontrola celého připnutého textu CC-BY-NC-3.0-DE dne 2026-09-10. Německá Creative Commons Namensnennung – Keine kommerzielle Nutzung 3.0 upravuje literární, umělecký a vědecký obsah, související práva a databáze (§1.f). §1.a definuje Abwandlung jako změnu se zachovanými osobitými rysy původního předmětu a vlastní vzniklou ochranou; sborník samostatných prvků ani volné užití za ni nepovažuje. Samostatně bylo přečteno celé německé znění včetně závěrečného notice. §8.f volí německé právo při přípustné volbě a absenci jiné dohody. §4.b dovoluje jen úkony, které nejsou přednostně určeny obchodní výhodě nebo peněžně ocenitelnému protiplnění; §4.d z toho vyjímá pouze části chráněné zvláštním databázovým právem. Průvodce nemá reprezentaci nekomerčního účelu s touto výjimkou. Je nutné doplnit tento model; commercial-use nelze obecně přiznat a restrictions obsahují unknown. §1.h a 4 vyžadují obsahový model veřejného ukazování včetně výstav a internetu, atribuce a odstranění kreditů ze sborníku či zpracování na oznámení poskytovatele bez výslovné výhrady proveditelnosti. Tyto činnosti a výjimky pro čistě databázová práva nelze věrně nahradit seznamem softwarových notices; je nutné rozšíření modelu obsahu. §4.a nevyžaduje tutéž licenci celého sborníku a text neobsahuje ShareAlike pro vlastní autorský vklad zpracovatele; NC omezení k převzatému obsahu přesto trvá. §8.a–b dávají příjemci přímou nabídku původního grantu od poskytovatele, ne právo distributora sublicencovat. §7.b dovoluje další jiné licence nebo ukončení vlastní distribuce poskytovatele bez odvolání existujícího grantu. §8.e dovoluje jen písemnou dvoustrannou změnu účinnou mezi stranami, nikoli vůči nabídkám dalším příjemcům. Není zde automatická volba novější CC licence ani souhlas s GPL; databázovou výjimku a nepodmíněné odstranění kreditů nelze převzít z jiné jurisdikční varianty.; https://spdx.org/licenses/CC-BY-NC-3.0-DE.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

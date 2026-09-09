@@ -8,9 +8,9 @@
     "contentHash": "sha256:b26743b65f4574663c05560055b73e4de880b39a60d3d7bcab970d33af3074cd"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
     "family": "permissive",
@@ -18,85 +18,92 @@
     "permissions": [
       "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
+      "include-copyright",
       "include-license-text",
-      "provide-corresponding-source"
+      "mark-modifications"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification",
+      "use"
     ],
     "restrictions": [
+      "additional-terms",
       "liability",
+      "trademark",
+      "unknown",
       "warranty"
     ],
-    "patentPosition": "unknown",
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.no-copyleft",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.permissive-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Unicode-DFS-2015.json#text; Vlastní DFS grant je permisivní s datovaným označením změn, bez copyleftu; externí Terms of Use zůstávají samostatně nevyřešené.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Unicode-DFS-2015.json#text; Vlastní DFS grant je permisivní s datovaným označením změn, bez copyleftu; externí Terms of Use zůstávají samostatně nevyřešené.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Unicode-DFS-2015.json#text; Permission dovoluje use/copy/modify/merge/publish/distribute/sell a umožnit totéž příjemcům; sublicensing není výslovně vyjmenováno. Patentový grant není uveden.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "restrictions",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Unicode-DFS-2015.json#text; Body (a) a (b) kumulativně vyžadují copyright/svolení u všech kopií A v dokumentaci; (c) jasné oznámení změn v každém změněném Data File nebo Software A v dokumentaci. Stažení/instalace/kopie/užití znamenají souhlas. Nejde o copy-or-documentation alternativu z jiných verzí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Unicode-DFS-2015.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Unicode-DFS-2015.json#text; Body (a) a (b) kumulativně vyžadují copyright/svolení u všech kopií A v dokumentaci; (c) jasné oznámení změn v každém změněném Data File nebo Software A v dokumentaci. Stažení/instalace/kopie/užití znamenají souhlas. Nejde o copy-or-documentation alternativu z jiných verzí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Unicode-DFS-2015.json#text; As is odmítá záruky včetně cizích práv a škody; jméno držitele mimo notice nesmí sloužit reklamě/propagaci bez svolení. Copyright věta odkazuje na Terms of Use copyright.html; dnešní primární stránka obsahuje jiný rozsah a Unicode v3, takže nedokládá stav 2015.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Unicode-DFS-2015.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Unicode-DFS-2015.json#text; Permission dovoluje use/copy/modify/merge/publish/distribute/sell a umožnit totéž příjemcům; sublicensing není výslovně vyjmenováno. Patentový grant není uveden.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Unicode-DFS-2015.json#text; Body (a) a (b) kumulativně vyžadují copyright/svolení u všech kopií A v dokumentaci; (c) jasné oznámení změn v každém změněném Data File nebo Software A v dokumentaci. Stažení/instalace/kopie/užití znamenají souhlas. Nejde o copy-or-documentation alternativu z jiných verzí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Unicode-DFS-2015.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Unicode-DFS-2015.json#text; Individuálně přečten celý připnutý text. Úvod definuje data a kód z Public/reports/cldr/data či Unicode Standardu a výslovně vylučuje PDF online code charts. Unicode DFS 2015 dovoluje neomezené nakládání s vymezenými daty a softwarem, ale současně vyžaduje copyright a svolení v kopiích i dokumentaci a označení změn v souboru/softwaru i dokumentaci. PDF code charts jsou vyňaty; historický odkaz Terms of Use je proměnlivý. Text výslovně říká Distributed under the Terms of Use na proměnlivém copyright.html. Dnešní primární stránka již odkazuje na Unicode License v3 a další politiky, nikoli znění 2015; opatřit dobovou primární verzi a vyhodnotit její začlenění před doporučením.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

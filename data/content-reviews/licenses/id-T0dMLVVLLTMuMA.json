@@ -1,0 +1,27 @@
+{
+  "id": "OGL-UK-3.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:dc360636f7a2d134037469e3871c2c84c03c58c634b61a75f8f87cc2577a3dcf"
+  },
+  "disposition": "eligible",
+  "summaryCs": "OGL 3.0 dovoluje komerční i nekomerční kopie, změny a šíření nabídnutých informací včetně zdrojového kódu. Produkt nebo aplikace uvede předepsané poděkování, případně stanovený náhradní text; více nepraktických atribucí lze nahradit odkazem na jejich soupis. Licence vylučuje zejména osobní údaje, neoprávněná cizí práva, patenty a známky a nedovoluje naznačovat oficiální podporu. U adaptovaných informací výslovně připouští splnění podmínek prostřednictvím CC BY 4.0 nebo ODC Attribution.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "OGL 3.0 výslovně zahrnuje copyrightové/databázové Information včetně source code, takže lze posoudit i tento softwarový rozsah.",
+    "grantCs": "Grant dovoluje celosvětově, bezplatně a trvale kopie, publikaci, distribuci, přenos, adaptaci a komerční/nekomerční využití; fair use/dealing a výjimky nejsou omezeny.",
+    "conditionsCs": "Při těchto činnostech produkt/aplikace obsahuje nebo odkazuje na určený credit a pokud lze licenci. Bez určeného credit je povinný text Contains public sector information licensed under the Open Government Licence v3.0. Nepraktické více creditů lze nahradit odkazem na zdroj obsahující všechny.",
+    "limitationsCs": "Není právo naznačovat oficiální status/endorsement. Vyňaty jsou osobní/nepovoleně zveřejněné informace, určité insignie/loga, neoprávněná cizí práva, patenty/známky/design a identity documents. Porušení ruší grant i podobné licence poskytovatele; AS IS vylučuje záruky/odpovědnost i trvalé dodávky.",
+    "compatibilityCs": "Licence výslovně uznává splnění OGL pro adaptované Information pod CC BY 4.0 nebo ODC Attribution při dodržení zvolené licence; nejde o tvrzení pro libovolné kombinace. Dřívější OGL verze nadále řídí dříve užívané informace. Platí právo sídla poskytovatele, neurčí-li jinak."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/OGL-UK-3.0.html",
+      "note": "Individuálně přečten celý připnutý text; Při těchto činnostech produkt/aplikace obsahuje nebo odkazuje na určený credit a pokud lze licenci. Bez určeného credit je povinný text Contains public sector information licensed under the Open Government Licence v3.0. Nepraktické více creditů lze nahradit odkazem na zdroj obsahující všechny. Exemptions výslovně vylučuje patentová práva z tohoto grantu; patentová žalobní doložka není stanovena."
+    }
+  ]
+}

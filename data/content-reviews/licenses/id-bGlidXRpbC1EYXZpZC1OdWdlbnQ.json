@@ -1,0 +1,27 @@
+{
+  "id": "libutil-David-Nugent",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:4c75d17d18dab053cd5264e4b65326e4efdf0c91ce7f55f4f440f4683ff4fcab"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Permisivní grant dovoluje užití a redistribuci zdrojové i binární podoby s úpravami i bez nich. Ve zdrojích musí copyright zůstat nezměněný bezprostředně na začátku souboru, spolu s podmínkami a disclaimerem; binárky je předávají v dokumentaci nebo doprovodných materiálech. Při jiném užití než začlenění do FreeBSD je povinná poznámka o tomto původu. Úpravy zachovávají uvedené podmínky. Text vylučuje záruku funkce či účelu, nikoli výslovně odpovědnost; neobsahuje patentový grant ani povinnost poskytovat zdroje.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Grant pokrývá soubor a zdrojovou i binární podobu softwaru. Zmínka o FreeBSD neomezuje použití jen na tento projekt: §3 výslovně připouští jiné užití s poznámkou o původu.",
+    "grantCs": "Úvod a §5 dovolují redistribuci a užití s úpravami i bez nich; účel není omezen na nekomerční. Samostatné podlicencování ani patentový grant nejsou výslovně uvedeny.",
+    "conditionsCs": "§1 požaduje copyright nezměněný bezprostředně na začátku zdrojového souboru, podmínky a disclaimer. §2 je předává v doprovodu binárek. §3 váže poznámku o původu na jiné užití než FreeBSD; §5 zachovává podmínky při úpravách. Umístění téhož notice je konkrétní detail, nikoli nový druh povinnosti.",
+    "limitationsCs": "§4 vylučuje záruku funkce nebo účelu. Text nemá samostatné omezení odpovědnosti, patentové ukončení ani zákaz propagace jménem autora.",
+    "compatibilityCs": "Znění neukládá stejnou licenci celému odvozenému dílu ani poskytování zdrojů. Neobsahuje alternativní licenční cestu či pravidlo pozdější verze; právní kompatibilita konkrétní kombinace z něj není automaticky odvozena."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/libutil-David-Nugent.html",
+      "note": "Úplné uložené znění jednotlivě přečteno a porovnáno s primární stránkou SPDX; nové vyjádření podmínek use zachovává původní rozsah a otisk zdroje."
+    }
+  ]
+}

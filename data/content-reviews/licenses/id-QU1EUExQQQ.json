@@ -1,0 +1,29 @@
+{
+  "id": "AMDPLPA",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:432d587992d853f5368d6bb7984da168757e8901e2bf2f089960c97b1dc1fccb"
+  },
+  "disposition": "blocked",
+  "summaryCs": "AMDPLPA dovoluje užití a distribuci se změnami i bez nich, pokud zdroje či binární doprovod zachovají všechny podmínky. Práva jsou podmíněna také uvedenými vládními a exportními pravidly a jména AMD ani přispěvatelů nesmějí bez svolení podporovat produkty. Licence stanoví výluky záruk a odpovědnosti, strop 10 USD a okamžitý zánik práv i při některých selháních těchto výluk. Průvodce zatím neumí přesně zachytit tento soubor podmínek a důvodů ukončení.",
+  "blockersCs": [
+    "Text podmiňuje všechna práva externími vládními/exportními pravidly a okamžitým zánikem i při neúčinnosti či neprospěšnosti výluk; před doporučením je nutný model těchto rozsahů a ukončovacích podmínek."
+  ],
+  "analysis": {
+    "subjectCs": "AMD licence 2006–2007 pokrývá materiál i produkty z něj včetně softwaru/dokumentace a vládní/exportní režim.",
+    "grantCs": "Úvod dovoluje jakoukoli formu redistribuce a užití se změnami i bez pod všemi podmínkami textu.",
+    "conditionsCs": "Zdroj zachová copyright a všechny podmínky v kódu; binární doprovod je reprodukuje. Vládní užití podléhá celému rozsahu FAR52.227/DFARS252.227 a následných pravidel. Materiál se nesmí užít, uvolnit, převést, importovat/exportovat/reexportovat v rozporu s uvedenými právními předpisy.",
+    "limitationsCs": "Jména/známky AMD a přispěvatelů nesmějí bez svolení podporovat produkty. Porušení ihned ruší všechna práva; AS IS vylučuje podporu, indemnity, záruky i odpovědnost, stanoví agregovaný strop 10 USD a vzdání nároků nad něj. Neúčinnost/neprospěšnost klíčových výluk rovněž ukončuje práva; výluky/export přežívají.",
+    "compatibilityCs": "Změny či prominutí vyžadují podpis dotčených stran; minimální reforma neplatných ustanovení zachovává smlouvu. Texas právo, Austin soudy a vzdání obran jurisdikce/místa; CISG je vyloučena."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/AMDPLPA.html",
+      "note": "Individuálně přečten celý připnutý text; Zdroj zachová copyright a všechny podmínky v kódu; binární doprovod je reprodukuje. Vládní užití podléhá celému rozsahu FAR52.227/DFARS252.227 a následných pravidel. Materiál se nesmí užít, uvolnit, převést, importovat/exportovat/reexportovat v rozporu s uvedenými právními předpisy. Patentové neporušování je pouze v záruční výluce; výslovný grant patentů ani patentové žalobní ukončení text nemá."
+    }
+  ]
+}

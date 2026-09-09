@@ -8,91 +8,104 @@
     "contentHash": "sha256:b9996ec9577c01fca8f46bd6e87cdc4f1f05e619830ed8b5fdb522aac6ff172e"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "whole-work",
     "permissions": [
-      "commercial-use"
+      "conditional-relicensing",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
+      "include-copyright",
+      "include-notice",
+      "mark-modifications",
+      "same-license",
       "unknown"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification",
+      "use"
     ],
     "restrictions": [
-      "unknown"
+      "additional-terms",
+      "liability",
+      "trademark",
+      "unknown",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-NC-SA-3.0-DE.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-NC-SA-3.0-DE.json#text; Německý CC BY-NC-SA3.0 chrání literární/vědecký/umělecký Schutzgegenstand a vedlejší i databázová práva; Abwandlung vyžaduje přežití osobních rysů originálu a vlastní nová práva, samostatný Sammelwerk je vyňat. §3 dává kopie libovolnou formou/množstvím, jasně označené adaptace/překlady, veřejné zobrazení i šíření, avšak§4(c) obecně pouze nekomerčně. §3 se vzdává sui generis databázových práv a§4(e) části chráněné jen jimi výslovně vyjímá ze všech podmínek4(a–d), tedy i NC a ShareAlike; nemůže se popsat jednotně omezením všech databázových dat. Podlicence je zakázána. §4(b) ShareAlike celé autorské adaptace, ale výslovně ne celého Sammelwerk;§4(e) navíc vyjímá pouze sui generis databázové části. Nejde o požadavek softwarového zdroje.; https://spdx.org/licenses/CC-BY-NC-SA-3.0-DE.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-NC-SA-3.0-DE.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-NC-SA-3.0-DE.json#text; §4(b) ShareAlike celé autorské adaptace, ale výslovně ne celého Sammelwerk;§4(e) navíc vyjímá pouze sui generis databázové části. Nejde o požadavek softwarového zdroje.; https://spdx.org/licenses/CC-BY-NC-SA-3.0-DE.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-BY-NC-SA-3.0-DE.json#text; §3 dává kopie libovolnou formou/množstvím, jasně označené adaptace/překlady, veřejné zobrazení i šíření, avšak§4(c) obecně pouze nekomerčně. §3 se vzdává sui generis databázových práv a§4(e) části chráněné jen jimi výslovně vyjímá ze všech podmínek4(a–d), tedy i NC a ShareAlike; nemůže se popsat jednotně omezením všech databázových dat. Podlicence je zakázána.; https://spdx.org/licenses/CC-BY-NC-SA-3.0-DE.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-NC-SA-3.0-DE.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-NC-SA-3.0-DE.json#text; §4(a,d) při šíření/veřejném zobrazení zachovává právní/licenční/disclaimer notices, připojuje text nebo URI licence, známého nositele práv a určené příjemce atribuce, titul, praktický URI a označení adaptace. Společné kredity jsou stejně výrazné; na oznámení poskytovatele je nutno odstranit údaje4(d) z kolekce i adaptace bez dodatečné obecné praktické výjimky v této větě. §4(b) adaptace podléhá BY-NC-SA3DE, pozdější téže, ported nebo unported3+ se stejnými prvky, s licencí a bez omezujících podmínek/techniky.; https://spdx.org/licenses/CC-BY-NC-SA-3.0-DE.html Terminologické upřesnění 2026-09-10: § 4(a) pro originál a § 4(b) pro zpracování při šíření nebo veřejném ukazování dovolují kopii příslušné licence NEBO její úplnou internetovou adresu ve formě URI. Volba použitelné licence zpracování i výjimka čistě databázových částí podle § 4(e) zůstávají zachovány. include-notice zachycuje požadované licenční oznámení s touto alternativou; include-license-text se neuvádí jako bezpodmínečná povinnost.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-NC-SA-3.0-DE.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-NC-SA-3.0-DE.json#text; §4(a,d) při šíření/veřejném zobrazení zachovává právní/licenční/disclaimer notices, připojuje text nebo URI licence, známého nositele práv a určené příjemce atribuce, titul, praktický URI a označení adaptace. Společné kredity jsou stejně výrazné; na oznámení poskytovatele je nutno odstranit údaje4(d) z kolekce i adaptace bez dodatečné obecné praktické výjimky v této větě. §4(b) adaptace podléhá BY-NC-SA3DE, pozdější téže, ported nebo unported3+ se stejnými prvky, s licencí a bez omezujících podmínek/techniky.; https://spdx.org/licenses/CC-BY-NC-SA-3.0-DE.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-NC-SA-3.0-DE.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-NC-SA-3.0-DE.json#text; §4(c) nepovažuje neplacenou výměnu bez smluvní povinnosti za komerční;§4(f) rezervuje neprominutelné odměny a další pro mimo-NC užití, jiné promíjí. Zakazuje implikovanou podporu a zachovává osobnostní práva. §5 výluka záruk kromě písemné dohody, podvodného zatajení a§6;§6 zachovává újmu na zdraví od nedbalosti a jiné škody při hrubé nedbalosti či úmyslu. §7 ukončuje do budoucna bez automatické nápravy a chrání dodržující příjemce.; https://spdx.org/licenses/CC-BY-NC-SA-3.0-DE.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-NC-SA-3.0-DE.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-NC-SA-3.0-DE.json#text; Autorský a databázový grant§3 neuděluje patentovou licenci a žádná část neobsahuje patentovou odvetu.; https://spdx.org/licenses/CC-BY-NC-SA-3.0-DE.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-NC-SA-3.0-DE.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-NC-SA-3.0-DE.json#text; §4(a,d) při šíření/veřejném zobrazení zachovává právní/licenční/disclaimer notices, připojuje text nebo URI licence, známého nositele práv a určené příjemce atribuce, titul, praktický URI a označení adaptace. Společné kredity jsou stejně výrazné; na oznámení poskytovatele je nutno odstranit údaje4(d) z kolekce i adaptace bez dodatečné obecné praktické výjimky v této větě. §4(b) adaptace podléhá BY-NC-SA3DE, pozdější téže, ported nebo unported3+ se stejnými prvky, s licencí a bez omezujících podmínek/techniky. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/CC-BY-NC-SA-3.0-DE.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-NC-SA-3.0-DE.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-NC-SA-3.0-DE.json#text; Individuální kontrola celého připnutého textu CC-BY-NC-SA-3.0-DE dne 2026-09-09. Německý CC BY-NC-SA3.0 chrání literární/vědecký/umělecký Schutzgegenstand a vedlejší i databázová práva; Abwandlung vyžaduje přežití osobních rysů originálu a vlastní nová práva, samostatný Sammelwerk je vyňat. §3–4 vyžadují model NC/ShareAlike a výjimek pro pouze sui generis databázové části; obecný software scope/permissions by tyto hranice zkreslily. §4(a,d,g) obsahují odstranění atribuce a osobnostní práva,§5–6 specifické německé zárukové/odpovědnostní podmínky; je nutný obsahový model těchto požadavků. §8(f) výchozí německé právo při možnosti volby; písemné bilaterální změny nezasahují přímé downstream licence. §4(b) nabízí jen určené CC verze se stejnými prvky, ne obecnou kompatibilitu ne-CC licencí. Závěrečné známkové podmínky CC jsou mimo vlastní licenci.; https://spdx.org/licenses/CC-BY-NC-SA-3.0-DE.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

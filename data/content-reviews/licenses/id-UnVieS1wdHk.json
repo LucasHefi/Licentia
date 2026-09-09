@@ -1,0 +1,29 @@
+{
+  "id": "Ruby-pty",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:55a076beb3329ee06c112f5158ef99e5763bc8d4aa8e0ee3c80aee7b7528741d"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Software Akinoriho Ita lze volně redistribuovat celý i po částech pro neurčený účel „this purpose“. Celé oznámení musí být v kopiích softwaru, aplikacích i odvozeninách; záruky jsou vyloučeny.",
+  "blockersCs": [
+    "Redistribuční grant je omezen slovy for this purpose, ale připnutý text účel nedefinuje a neobsahuje obecné povolení úprav. Je třeba dohledat původní kontext účelu a doložit rozsah užití/úprav před doporučením novému projektu."
+  ],
+  "analysis": {
+    "subjectCs": "Software s copyrightem Akinoriho Ita 1998, včetně kopií, aplikací a odvozenin pro neurčený účel.",
+    "grantCs": "Výslovně povoluje volnou redistribuci celku i části, ale jen for this purpose; výslovný grant úprav a patentů chybí.",
+    "conditionsCs": "Celé copyrightové oznámení musí doprovázet kopie softwaru, aplikace i odvozeniny.",
+    "limitationsCs": "AS IS bez jakékoli výslovné či odvozené záruky, zejména vhodnosti, prodejnosti a výsledků použití. Účelový limit je nevyjasněný.",
+    "compatibilityCs": "Text neobsahuje Ruby/GPL alternativu nebo verzi; samotný identifikátor Ruby-pty takové právo nedokládá."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Ruby-pty.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Grant v druhém odstavci omezuje redistribuci na neurčený účel; nelze jej považovat za úplný obecný permisivní grant."
+    }
+  ]
+}

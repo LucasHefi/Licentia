@@ -1,0 +1,29 @@
+{
+  "id": "IEC-Code-Components-EULA",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:2578c5e6bfa4efcd881b8742506fb883f9d521b44c04c2511d652816fae92c84"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Licence se vztahuje jen na komponenty schválené k licencování v příslušné normě IEC a dovoluje pouze změny, které norma připouští. Vyžaduje zachovat licenční oznámení a při užití uvést IEC i číslo a rok normy. Průvodce ji nezařazuje bez určení konkrétní normy, označených komponent a dovolených úprav; obecný text tyto hranice sám neurčuje.",
+  "blockersCs": [
+    "Grant dovoluje jen komponenty schválené k licencování a změny dovolené neidentifikovanou IEC normou; před doporučením je třeba určit normu, její licencované komponenty a přípustné změny."
+  ],
+  "analysis": {
+    "subjectCs": "EULA pokrývá pouze Code Components identifikované a schválené pro licencování v konkrétních IEC normách, specifikacích nebo technických zprávách.",
+    "grantCs": "Grant se vztahuje na licencované komponenty a jen úpravy dovolené příslušnou normou a upřesnění/opravy schválené IEC; neurčuje neomezené právo měnit jakýkoli kód.",
+    "conditionsCs": "Redistribuce zachovává copyright, podmínky a disclaimer. Každý uživatel přiřadí komponentu IEC a určí číslo/rok normy, v kódu nebo jiném rozumném místě; formulace příkladové poznámky Please reproduce je pouze součást vzoru.",
+    "limitationsCs": "Jména IEC/přispěvatelů nesmějí bez písemného souhlasu podporovat produkt, ale normu lze citovat při tvrzení shody. AS IS vylučuje záruky/odpovědnost. Komponenty vymezují CODE BEGINS/ENDS či jiné označení.",
+    "compatibilityCs": "Příslušná norma a schválení jsou externím vymezením grantu, nikoli alternativní licencí; konkrétní norma není v obecném EULA určena."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/IEC-Code-Components-EULA.html",
+      "note": "Individuálně přečten celý připnutý text; Redistribuce zachovává copyright, podmínky a disclaimer. Každý uživatel přiřadí komponentu IEC a určí číslo/rok normy, v kódu nebo jiném rozumném místě; formulace příkladové poznámky Please reproduce je pouze součást vzoru. Celý EULA text nemá výslovný patentový grant nebo patentové ukončení."
+    }
+  ]
+}

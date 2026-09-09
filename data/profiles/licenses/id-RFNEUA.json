@@ -9,92 +9,97 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
     "family": "permissive",
     "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "include-copyright"
+      "include-copyright",
+      "include-license-text",
+      "include-notice"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification"
     ],
     "restrictions": [
       "liability",
-      "trademark"
+      "warranty"
     ],
-    "patentPosition": "unknown",
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.no-copyleft",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DSDP.json#text; copyright notification expressly grants copy/modify software and documentation, then use/reproduce/prepare derivative works/redistribute without field-of-use restriction; no reciprocal source-supply or same-license condition; https://spdx.org/licenses/DSDP.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.permissive-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DSDP.json#text; copyright notification expressly grants copy/modify software and documentation, then use/reproduce/prepare derivative works/redistribute without field-of-use restriction; https://spdx.org/licenses/DSDP.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DSDP.json#text; first grant retain THIS notice on original, all copies and modifications; second grant retain original copyright notice; publication SHOULD cite is a recommendation outside the mandatory provided-that/so-long-as conditions; https://spdx.org/licenses/DSDP.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "triggers",
-      "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/DSDP.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DSDP.json#text; first grant retain THIS notice on original, all copies and modifications; second grant retain original copyright notice; publication SHOULD cite is a recommendation outside the mandatory provided-that/so-long-as conditions; https://spdx.org/licenses/DSDP.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/DSDP.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DSDP.json#text; whole text: no express patent grant or patent-litigation termination; no inference of patent rights from copyright, trademarks or non-infringement disclaimers; https://spdx.org/licenses/DSDP.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/DSDP.json#text; copyright notification expressly grants copy/modify software and documentation, then use/reproduce/prepare derivative works/redistribute without field-of-use restriction; https://spdx.org/licenses/DSDP.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/DSDP.json#text; AS IS and government DISCLAIMER exclude warranty and legal liability/responsibility for accuracy/completeness/usefulness; references do NOT NECESSARILY imply government endorsement, no prohibition on name use and no patent grant; https://spdx.org/licenses/DSDP.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/DSDP.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DSDP.json#text; whole-text editorial review on 2026-09-09, batch 7; Zachovejte copyrightové a svolovací oznámení na softwaru, dokumentaci i jejich kopiích a úpravách. Užití, tvorba odvozených děl a redistribuce jsou dovoleny. Citace dokumentu ve výzkumných publikacích je formulována jako doporučení. Prohlášení, že zmínka o produktu neznamená podporu vládou, samo nezakazuje použití jmen. Text vylučuje záruky a uvedenou odpovědnost.; https://spdx.org/licenses/DSDP.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/DSDP.json#text; first grant retain THIS notice on original, all copies and modifications; second grant retain original copyright notice; publication SHOULD cite is a recommendation outside the mandatory provided-that/so-long-as conditions; https://spdx.org/licenses/DSDP.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     }
   ]
 }

@@ -1,0 +1,27 @@
+{
+  "id": "TPDL",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:43fb18faccdb5adc7b9d7e73b34e185c1b0c654c2b8322af2a8b7f61b53df0c4"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Modul lze užívat, upravovat a redistribuovat na vlastní riziko. Zaslání užitečných změn autorovi je žádost, nikoli povinnost.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Grant se vztahuje na modul s copyrighty Davida Muir Sharnoffa a Google.",
+    "grantCs": "License hereby granted dovoluje komukoli užití, úpravy a redistribuci, bez omezení komerčního účelu; patentový grant a výslovná sublicence nejsou uvedeny.",
+    "conditionsCs": "Grant nestanoví uchování oznámení ani vydání zdrojů. Please feed useful changes back je zdvořilá žádost, nikoli podmínka; nejsou tedy povinnosti ani jejich distribuční/síťové spouštěče.",
+    "limitationsCs": "At their own risk přenáší riziko užití na příjemce; text neobsahuje podrobné záruky, názvová omezení nebo patentovou terminaci.",
+    "compatibilityCs": "Text neurčuje další licenci, novější verzi ani konkrétní kompatibilitu."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/TPDL.html",
+      "note": "Individuální revize celého připnutého textu; Grant se vztahuje na modul s copyrighty Davida Muir Sharnoffa a Google."
+    }
+  ]
+}

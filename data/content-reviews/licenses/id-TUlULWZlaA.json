@@ -1,0 +1,20 @@
+{
+  "id": "MIT-feh",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.3",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:7c83d9e141551c8e0aafa57100f4d0b30abaa79e0de57a7cd5958e54998fce5e"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Zachovejte copyright a svolovací oznámení v softwaru i dokumentaci. Navíc uveďte použití tohoto softwaru v dokumentaci i softwarových balíčcích; nejde jen o běžnou kopii MIT oznámení.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/MIT-feh.html",
+      "note": "Dřívější individuální revize 2026-09-09.3; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

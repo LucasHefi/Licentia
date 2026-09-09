@@ -8,92 +8,99 @@
     "contentHash": "sha256:64bb078df79d7cbaf6e280b6f362858aa55f01a716950693b94ff656b4cad59c"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "strong-copyleft",
+    "copyleftScope": "whole-work",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "provide-corresponding-source"
-    ],
-    "triggers": [
+      "include-license-text",
+      "provide-corresponding-source",
       "unknown"
     ],
-    "restrictions": [
-      "liability"
+    "triggers": [
+      "combination",
+      "distribution"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "restrictions": [
+      "liability",
+      "warranty"
+    ],
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/TOSL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/TOSL.json#text; Trusster Open Source License 1.0a pokrývá software Mintze/Ekendahla a při distribuci zdrojově zasahuje doprovodný software, který jej používá. Úvod dovoluje užití a redistribuci zdrojů/binárek se změnami i bez nich. Zdrojová reciprocita výslovně zasahuje doprovodný software používající dílo a všechny moduly executable s OS výjimkou; nejde jen o změněné soubory.; https://spdx.org/licenses/TOSL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/TOSL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/TOSL.json#text; Zdrojová reciprocita výslovně zasahuje doprovodný software používající dílo a všechny moduly executable s OS výjimkou; nejde jen o změněné soubory.; https://spdx.org/licenses/TOSL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/TOSL.json#text; Úvod dovoluje užití a redistribuci zdrojů/binárek se změnami i bez nich.; https://spdx.org/licenses/TOSL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/TOSL.json#text; První dvě odrážky zachovávají copyright/podmínky/disclaimer ve zdroji či doprovodu binárek. Třetí vyžaduje u každé distribuce informaci, jak získat úplný zdroj softwaru i doprovodného software, který jej používá; zdroj je přiložen nebo dostupný včas nejvýše za distribuci plus nominální poplatek a volně redistribuovatelný za rozumných ne restriktivnějších podmínek.; https://spdx.org/licenses/TOSL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/TOSL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/TOSL.json#text; První dvě odrážky zachovávají copyright/podmínky/disclaimer ve zdroji či doprovodu binárek. Třetí vyžaduje u každé distribuce informaci, jak získat úplný zdroj softwaru i doprovodného software, který jej používá; zdroj je přiložen nebo dostupný včas nejvýše za distribuci plus nominální poplatek a volně redistribuovatelný za rozumných ne restriktivnějších podmínek.; https://spdx.org/licenses/TOSL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/TOSL.json#text; Úplný zdroj executable zahrnuje všechny moduly kromě souborů typicky doprovázejících hlavní OS komponenty. AS IS vylučuje záruky včetně noninfringement i odpovědnost.; https://spdx.org/licenses/TOSL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/TOSL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/TOSL.json#text; Celý text nemá výslovný patentový grant ani patentové ukončení.; https://spdx.org/licenses/TOSL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/TOSL.json#text; První dvě odrážky zachovávají copyright/podmínky/disclaimer ve zdroji či doprovodu binárek. Třetí vyžaduje u každé distribuce informaci, jak získat úplný zdroj softwaru i doprovodného software, který jej používá; zdroj je přiložen nebo dostupný včas nejvýše za distribuci plus nominální poplatek a volně redistribuovatelný za rozumných ne restriktivnějších podmínek. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/TOSL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/TOSL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/TOSL.json#text; Individuální kontrola celého připnutého textu TOSL dne 2026-09-09. Trusster Open Source License 1.0a pokrývá software Mintze/Ekendahla a při distribuci zdrojově zasahuje doprovodný software, který jej používá. Třetí odrážka požaduje redistribuovatelný zdroj pod reasonable and no more restrictive conditions i pro doprovodný software; před zařazením je třeba modelovat tuto méně či stejně omezující licenční podmínku bez její záměny za striktní same-license. Přiložený zdroj a včasná placená dostupnost do stanoveného stropu jsou alternativy; podmínky zdroje smějí být i méně omezující, nikoli nutně totožná licence.; https://spdx.org/licenses/TOSL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

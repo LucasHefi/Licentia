@@ -1,0 +1,27 @@
+{
+  "id": "BSD-3-Clause-HP",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:705aa0d7c0f472909a8773c3bb732fa63d733cfd6931cc16e29cc6476a28b301"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Zdrojové i binární formy lze používat a šířit s úpravami či bez nich. Zdroj zachová copyright, podmínky a disclaimer; binární distribuce je připojí do dokumentace či materiálů. HP a přispěvatelé nesmějí bez písemného svolení sloužit k propagaci odvozených produktů.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Software a jeho zdrojové/binární formy, včetně modifikací.",
+    "grantCs": "Redistribution/use source and binary with or without modification; bez účelového zákazu a bez patentového grantu.",
+    "conditionsCs": "Bod 1 notices ve zdrojích; bod 2 stejné texty v dokumentaci a/nebo materiálech binární distribuce.",
+    "limitationsCs": "Bod 3 zákaz endorsementu jmény HP/přispěvatelů bez specific prior written permission. AS IS, výluky záruk a škod včetně patent infringement.",
+    "compatibilityCs": "Bez jiné licence/verze či reciprocity; zmínka patent infringement v disclaimeru není patentová licence."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/BSD-3-Clause-HP.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Grant source/binary s třemi BSD podmínkami a rozšířeným patent-infringement příkladem škod."
+    }
+  ]
+}

@@ -8,94 +8,99 @@
     "contentHash": "sha256:5418863dd9c1f7d1bcb824dba6d30a3f2b9378ffe52e2109f9e9f649259594f2"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "include-license-text",
-      "provide-corresponding-source"
+      "include-use-acknowledgment"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification",
+      "use"
     ],
     "restrictions": [
       "liability",
-      "trademark"
+      "trademark",
+      "unknown",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "express-exclusion",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OPL-UK-3.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OPL-UK-3.0.json#text; Grant parlamentních copyright/databázových informací má konkrétní licencující orgány a veřejnosektorové výjimky.; https://spdx.org/licenses/OPL-UK-3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OPL-UK-3.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OPL-UK-3.0.json#text; Celý text bez stejné licence nebo zdrojové reciprocity, i když Information obsahuje source code.; https://spdx.org/licenses/OPL-UK-3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OPL-UK-3.0.json#text; You are free to výslovně copy/publish/distribute/transmit/adapt/commercial exploit; fair exceptions zachovány.; https://spdx.org/licenses/OPL-UK-3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OPL-UK-3.0.json#text; You must product/application acknowledgment přesnou větou a possible link při všech uvedených činnostech.; https://spdx.org/licenses/OPL-UK-3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OPL-UK-3.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OPL-UK-3.0.json#text; Use/copy/adapt/distribute spouští acknowledgment; failure ukončuje i similar licence, nejen tuto distribuci.; https://spdx.org/licenses/OPL-UK-3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OPL-UK-3.0.json#text; Exemptions/neendorsement/warranty/liability; cross-licence termination a datové/symbolové výjimky nejsou plně ve slovníku.; https://spdx.org/licenses/OPL-UK-3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OPL-UK-3.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OPL-UK-3.0.json#text; Exemptions does not cover information subject to other IP including patents je express-exclusion patentových práv.; https://spdx.org/licenses/OPL-UK-3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OPL-UK-3.0.json#text; Povinná produktová atribuce při využití parlamentních informací je materiální.; https://spdx.org/licenses/OPL-UK-3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OPL-UK-3.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OPL-UK-3.0.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. Open Parliament 3.0 dovoluje komerční i nekomerční použití parlamentních informací včetně dat a zdrojového kódu s přesnou produktovou atribucí. Vylučuje osobní/nezveřejněná data, královské symboly a cizí práva; při porušení zanikají i podobné licence poskytovatele. Blokace: Licensor je výslovně definován parlamentními orgány pro copyright a databázová práva, nikoli libovolným vývojářem. Pro nový soukromý software je třeba vlastní grant; při použití parlamentních materiálů odděleně určit rozsah dat, zveřejnění a vyloučených práv. Automatický zánik se vztahuje i na any similar licence poskytovatele a režim zahrnuje zvláštní veřejné symboly/databázová práva. Je třeba modelovat tuto návaznost a veřejnosektorový předmět; běžný softwarový profil je nevyjadřuje.; https://spdx.org/licenses/OPL-UK-3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

@@ -17,24 +17,22 @@
     "copyleftScope": "unknown",
     "permissions": [
       "commercial-use",
+      "conditional-relicensing",
       "distribution",
       "modifications",
       "private-use",
       "sublicensing"
     ],
     "obligations": [
-      "disclose-source",
       "include-copyright",
       "include-notice",
       "mark-modifications",
-      "provide-corresponding-source",
       "unknown"
     ],
     "triggers": [
       "combination",
       "distribution",
-      "modification",
-      "unknown"
+      "modification"
     ],
     "restrictions": [
       "trademark",
@@ -46,49 +44,67 @@
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text: Definitions of 'Package', 'Standard Version', and 'Freely Available'; clauses 3-4 and 7 (conditions use alternative source-availability, private-use, naming/manual, Standard-Version, direct-arrangement, and name-connection tests; clause 7 keeps reused parts under this license unless its program-name condition is met, a component/name-dependent scope not expressible as file, library, network, or whole-work)"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text: Preamble; Definitions; clauses 1-7 (Package-specific Standard-Version and Freely-Available concepts, multiple disjunctive compliance paths, and the special reuse-and-relicensing rule in clause 7 do not form a conventional permissive or vocabulary-defined copyleft pattern)"
+      "locator": "public/data/licenses/Artistic-dist.json#text; Preambule a7 výslovně reuse parts under other terms,vedle3/4 one-of režimu.; https://spdx.org/licenses/Artistic-dist.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text: clauses 1, 3, 4(a), 4(c), and 7 (copyright notices and disclaimers must be duplicated; each changed file needs a prominent how-and-when notice; executable paths can require acquisition instructions, non-standard names, and separate manual-page documentation; reused parts require source attribution, notices, disclaimers, and change marking)"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text: clause 1; clause 3 opening and alternatives (a)-(d); clause 4 alternatives (a)-(d); clauses 5 and 7 (duties include preserving copyright/disclaimers, per-file change notices, making modifications Freely Available, supplying machine-readable modified source, Standard-Version executables and acquisition instructions, non-standard names/manual pages, source attribution for reused parts, fee and own-product-advertising limits, or a separate Copyright Holder arrangement; disclose-source and provide-corresponding-source are alternatives, while the vocabulary cannot encode the disjunctions and special duties, represented by unknown)"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text: complete-text review, including the Preamble, clauses 1-8 grants and conditions, and clause 9 disclaimer (no express patent grant, patent covenant, patent condition, or patent-claim termination is stated)"
+      "locator": "public/data/licenses/Artistic-dist.json#text; Podmíněný reused-part escape7 a3/4 alternativy vyžadují jemnější rozsah než jediný software scope.; https://spdx.org/licenses/Artistic-dist.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text: Preamble; clauses 1-7, especially clauses 2-5 and 7 (use, source and executable distribution, modification, internal organizational use, commercial aggregation, paid support, and commercial sale of generated files support commercial use, distribution, modifications, and private use; clause 7 permits qualifying reused parts to leave this license and bear whatever restrictions the reuser chooses, supporting downstream relicensing/sublicensing; no patent grant is express)"
+      "locator": "public/data/licenses/Artistic-dist.json#text; 1–4 základní grants;7 apply whatever restrictions nebo publicdomain při splnění názvu/notices,tedy conditional-relicensing nikoli blanket sublicense.; https://spdx.org/licenses/Artistic-dist.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "restrictions",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text: clauses 3(c), 4(c), 5, 6 final sentence, 7, 8, and 9 (executable and program-name conditions, copying-fee and Package-fee limits, no own-product advertising, source attribution, and Copyright Holder name-use limits accompany the warranty disclaimer); trademark and warranty capture named categories, but fee, identity, attribution-location, and name-connection restrictions are not losslessly represented, so unknown is retained; no liability limitation is stated"
-    },
-    {
-      "field": "review",
-      "sourceId": "spdx-license-list",
-      "locator": "metadata: id=Artistic-dist, name='Artistic License 1.0 (dist)', deprecated=false, osi=false, fsf=false; comments say this variant differs from Artistic-1.0-Perl in clause 7 and clause 5; seeAlso identifies the pinned pexip/os-perl distribution copyright file; text: clauses 3-7 contain alternative compliance paths, fee and naming limits, distribution-specific undump/unexec treatment, and a clause-7 license-scope exit keyed to program-name connection that the vocabulary cannot express losslessly, so this distribution-specific non-OSI variant is not a safe general recommendation"
+      "locator": "public/data/licenses/Artistic-dist.json#text; 3 how/when aone path;4 one path;7 source origin/copyright/disclaimers/marking povinné,documentation courtesy,context/name podmínka nezastoupena.; https://spdx.org/licenses/Artistic-dist.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "text: clauses 1 and 4-5 (source/executable distribution and aggregation activate conditions); clause 3 (otherwise modifying the Package activates a change notice plus one alternative path); clauses 6-7 (combination/reuse rules depend on undump/unexec treatment, representation as a Standard Version, and whether program names have an immediate connection to the Package); combination, distribution, and modification are captured, while the representation- and name-dependent tests have no exact trigger term and are represented by unknown"
+      "locator": "public/data/licenses/Artistic-dist.json#text; Modify3,object-distribute4,undump/unexec aggregation6 a reuse7 mají odlišné triggery a výjimky.; https://spdx.org/licenses/Artistic-dist.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Artistic-dist.json#text; 5 fee/own-product zákaz,7 immediate-name connection podmínka;8 trademark consent a9 warranty,bez liability.; https://spdx.org/licenses/Artistic-dist.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Artistic-dist.json#text; Celý text včetně7 nepřidává výslovná patentová práva ani patentové ukončení.; https://spdx.org/licenses/Artistic-dist.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Artistic-dist.json#text; Alternativy a původ/označení převzatých částí v konkrétním kontextu představují materiální požadavky.; https://spdx.org/licenses/Artistic-dist.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Artistic-dist.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. Artistic-dist kromě alternativ změn a distribuce dovoluje převzít části pod jinými podmínkami v rámci vlastního balíku, pokud zdroj uvede původ, copyrighty, výluky a změny a název programu nemá přímou souvislost s původním balíkem. Dokumentační credit této cesty je dobrovolný. Blokace: Body3/4 mají nezávislé alternativy a bod7 zvláštní únik převzatých částí z licence jen v rámci vlastního balíku při nesouvisejícím názvu a zdrojových notices. Je třeba modelovat tyto podmíněné licenční cesty a jmennou hranici; nelze tvrdit bezpodmínečné přelicencování ani kumulativní source/rename. Bod5 rozlišuje zakázanou cenu balíku od kopírování, podpory a komerční agregace; běžný obchodní příznak toto omezení nevyjadřuje.; https://spdx.org/licenses/Artistic-dist.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

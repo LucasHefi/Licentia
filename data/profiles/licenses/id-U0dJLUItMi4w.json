@@ -9,8 +9,8 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
     "family": "permissive",
@@ -19,85 +19,87 @@
       "commercial-use",
       "distribution",
       "modifications",
+      "private-use",
       "sublicensing"
     ],
     "obligations": [
       "include-copyright",
-      "include-license-text"
+      "include-notice"
     ],
     "triggers": [
-      "unknown"
+      "distribution"
     ],
     "restrictions": [
       "liability",
+      "trademark",
       "warranty"
     ],
-    "patentPosition": "unknown",
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.no-copyleft",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SGI-B-2.0.json#text; permission paragraph: unrestricted use/modification/distribution including sublicense/sell; whole text: no reciprocal source-disclosure or same-license condition; https://spdx.org/licenses/SGI-B-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.3"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.permissive-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SGI-B-2.0.json#text; permission paragraph: unrestricted use/modification/distribution including sublicense/sell; https://spdx.org/licenses/SGI-B-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.3"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SGI-B-2.0.json#text; condition paragraph: copyright INCLUDING dates of first publication plus permission notice OR reference to SGI FreeB URL in copies/substantial portions; full license copy is not unconditional; https://spdx.org/licenses/SGI-B-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.3"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "triggers",
-      "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SGI-B-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SGI-B-2.0.json#text; condition paragraph: copyright INCLUDING dates of first publication plus permission notice OR reference to SGI FreeB URL in copies/substantial portions; full license copy is not unconditional; https://spdx.org/licenses/SGI-B-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.3"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SGI-B-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SGI-B-2.0.json#text; whole text: no express patent grant or patent-litigation termination is stated; no inference about implied rights; https://spdx.org/licenses/SGI-B-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.3"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SGI-B-2.0.json#text; permission paragraph: unrestricted use/modification/distribution including sublicense/sell; https://spdx.org/licenses/SGI-B-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.3"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SGI-B-2.0.json#text; AS IS paragraph: warranty/liability; final paragraph: no SGI name in advertising or promotion without written authorization; https://spdx.org/licenses/SGI-B-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.3"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SGI-B-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SGI-B-2.0.json#text; whole-text editorial review on 2026-09-09, batch 3; Zachovejte copyright včetně dat prvního vydání a svolovací oznámení nebo uvedený odkaz na SGI FreeB. Celá kopie licence není jedinou povolenou cestou. Použití jména SGI k propagaci vyžaduje souhlas.; https://spdx.org/licenses/SGI-B-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.3"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SGI-B-2.0.json#text; condition paragraph: copyright INCLUDING dates of first publication plus permission notice OR reference to SGI FreeB URL in copies/substantial portions; full license copy is not unconditional; https://spdx.org/licenses/SGI-B-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.3"
     }
   ]
 }

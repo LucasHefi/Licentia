@@ -1,0 +1,20 @@
+{
+  "id": "Saxpath",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.7",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:e409fbd4a482a392e3b4214406465ca1fa9351376873d3aabcabbcb958f39725"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Copyright, podmínky a disclaimer zachovejte ve zdrojích nebo materiálech k binárním kopiím. Písemný souhlas je nutný pro propagaci jménem SAXPath i použití SAXPath v názvu odvozeného produktu. Poděkování projektu v dokumentaci či softwaru je výslovně dobrovolné; grafické logo je pouze nabízenou alternativou. Záruky a odpovědnost jsou vyloučeny.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Saxpath.html",
+      "note": "Dřívější individuální revize 2026-09-09.7; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

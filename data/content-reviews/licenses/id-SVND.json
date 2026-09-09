@@ -1,0 +1,20 @@
+{
+  "id": "ISC",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:b933c16973dd40e0a33e338ce0a98f1712fd831cb1c3580b2074c12eaa58c344"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Permisivní licence: zachovejte copyright a licenční oznámení ve všech kopiích. Výslovný patentový grant není uveden.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/ISC.html",
+      "note": "Dřívější individuální revize 2026-09-09; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

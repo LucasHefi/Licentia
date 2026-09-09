@@ -1,0 +1,64 @@
+# BitTorrent-1.1 — obsahová revize
+
+BitTorrent Open Source License v1.1
+
+Revize: **2026-09-09** · pravidlo **2026-09-09.10**.
+
+Výsledek: **zpracována, nezařazena do průvodce**.
+
+BitTorrent 1.1 vyžaduje bezplatné zdroje po celou dobu distribuce a zakazuje za ně i dary; odměnu za binárky připouští pouze při materiálně přidané hodnotě. Vedle oznámení ukládá aktivní informování dřívějších příjemců o cizích právech, poučení přidružených subjektů a spolupráci na rozdělení odpovědnosti. Nejasný původní grant a povinné oznámení s verzí 1.0 uvnitř textu 1.1 potřebují autoritativní objasnění. Průvodce ji nezařazuje kvůli těmto nejasnostem, omezeným obchodním možnostem a dalším aktivním povinnostem.
+
+## Předmět a rozsah
+
+BitTorrent Open Source License 1.1 upravuje klient, související produkty a aktualizace BitTorrent, Inc. Preambule je výslovně nezávazná; normativní §4(g) činí z této verze zdrojově dostupný grant se zvláštním omezením odměn.
+
+## Udělená práva
+
+§2 uděluje práva užít, kopírovat, upravovat, sublicencovat a šířit příspěvky včetně nutných patentových oprávnění. §4(e,f) povolují executable a derivative produkty, §4(g) ale dovoluje prodej, dary či jinou kompenzaci za executable pouze při materiálním příspěvku či kombinaci přidávající materiální hodnotu, funkci nebo vlastnost. Za Source Code je jakákoli uvedená odměna zakázána; nelze zapsat obecný neomezený commercial-use. §1 opět formuluje grant původního poskytovatele pouze pro Contributor Modifications a jeho patenty, takže rozsah původních práv zůstává konkrétně nejistý.
+
+## Podmínky a spouštěče
+
+§4(a,b) vyžaduje licenci pro pokryté zdrojové soubory a změny, bezplatné zdroje na stejném médiu nebo elektronicky po celou dobu vaší distribuce jakékoli formy produktu; nepřebírá se 12/6měsíční lhůta verze 1.0. §4(c) ukládá LEGAL pro známé cizí IP/API patenty, rychlou aktualizaci a aktivní přiměřené vyrozumění dřívějších příjemců i prohlášení o původnosti a právech. §4(d,e) vyžadují Exhibit A v každém souboru či vhodném náhradním místě, licenci v dokumentaci a výrazná oznámení o zdroji v executable, dokumentaci i materiálech. Přidané záruky či jiné binární podmínky jsou jen vaše a odškodníte ostatní. §14 samostatně vyžaduje poučit každou affiliated entity o licenci a omezeních.
+
+## Omezení, výjimky a ukončení
+
+§3 zakazuje bez předchozího písemného souhlasu mimo grant použití IP poskytovatele i přispěvatelů, výslovně i známek v doménách, cestách adresářů, reklamách a odkazech; jde nad pouhou absenci grantů známek. §5 právní nemožnost uvést v LEGAL a plnit maximum. §8/10 AS IS a omezení odpovědnosti. §9(a) má pouze 10 dnů od oznámení poskytovatele, jako dostatečné bere doručený email do WHOIS či určené adresy; §9(b) zachovává 60denní patentovou obranu a možnost stažení/dohody, deklaratorní žaloby vyňaty. §11 spolupráce na rozdělení škod; §13 kalifornské právo a náklady poraženého, bez specifické soudní doložky a vzdání se poroty verze 1.0.
+
+## Verze a kombinování
+
+§4(e,f) dovolují jinou licenci executable/derivative zbytku při zachování všech práv pokrytých souborů. §7 dovoluje pozdější, výslovně nikoli předchozí verzi, pokud aktuální grant trvá; původní 1.0 nelze automaticky zvolit. Exhibit A povinně zkopírovaný podle §4(d) přesto obsahuje Version 1.0, což je skutečná nesrovnalost vyžadující objasnění u oznámení. Žádná obecná OSI/GPL kompatibilita neplyne z genealogie preambule.
+
+## Překážky a navazující práce
+
+- §4(g) zakazuje veškeré odměny včetně darů za zdroje a za executable bez materiálně přidané hodnoty; je třeba model omezené komerční distribuce a posouzení konkrétního přínosu, nelze doporučit jako obecnou softwarovou licenci.
+- §4(c), §11 a §14 vyžadují aktivní IP hlášení, spolupráci na rozdělení odpovědnosti a poučení přidružených subjektů, které model samostatně neumí.
+- §1 neurčuje čistě původní grant a povinné Exhibit A uvádí 1.0 uvnitř licence 1.1; před použitím je potřeba autoritativně objasnit rozsah a správné aplikované oznámení.
+
+## Metadata a jejich doložení
+
+| Pole | Hodnota | Doložení znění |
+|---|---|---|
+| family | "nonstandard" | public/data/licenses/BitTorrent-1.1.json#text; BitTorrent Open Source License 1.1 upravuje klient, související produkty a aktualizace BitTorrent, Inc. Preambule je výslovně nezávazná; normativní §4(g) činí z této verze zdrojově dostupný grant se zvláštním omezením odměn. §2 uděluje práva užít, kopírovat, upravovat, sublicencovat a šířit příspěvky včetně nutných patentových oprávnění. §4(e,f) povolují executable a derivative produkty, §4(g) ale dovoluje prodej, dary či jinou kompenzaci za executable pouze při materiálním příspěvku či kombinaci přidávající materiální hodnotu, funkci nebo vlastnost. Za Source Code je jakákoli uvedená odměna zakázána; nelze zapsat obecný neomezený commercial-use. §1 opět formuluje grant původního poskytovatele pouze pro Contributor Modifications a jeho patenty, takže rozsah původních práv zůstává konkrétně nejistý. §2 definuje Modifications změněným souborem nebo novým souborem s původní částí, §4(f) dovoluje jinak licencovaný derivative zbytek. Souborová reciprocita je známá, obchodní omezení §4(g) brání klasifikaci běžné svobodné slabé licence.; https://spdx.org/licenses/BitTorrent-1.1.html |
+| copyleftScope | "file" | public/data/licenses/BitTorrent-1.1.json#text; §2 definuje Modifications změněným souborem nebo novým souborem s původní částí, §4(f) dovoluje jinak licencovaný derivative zbytek. Souborová reciprocita je známá, obchodní omezení §4(g) brání klasifikaci běžné svobodné slabé licence.; https://spdx.org/licenses/BitTorrent-1.1.html |
+| permissions | ["conditional-relicensing","distribution","modifications","patent-grant","private-use","sublicensing","unknown"] | public/data/licenses/BitTorrent-1.1.json#text; §2 uděluje práva užít, kopírovat, upravovat, sublicencovat a šířit příspěvky včetně nutných patentových oprávnění. §4(e,f) povolují executable a derivative produkty, §4(g) ale dovoluje prodej, dary či jinou kompenzaci za executable pouze při materiálním příspěvku či kombinaci přidávající materiální hodnotu, funkci nebo vlastnost. Za Source Code je jakákoli uvedená odměna zakázána; nelze zapsat obecný neomezený commercial-use. §1 opět formuluje grant původního poskytovatele pouze pro Contributor Modifications a jeho patenty, takže rozsah původních práv zůstává konkrétně nejistý.; https://spdx.org/licenses/BitTorrent-1.1.html |
+| obligations | ["defend-added-warranty","disclose-source","include-copyright","include-license-text","include-notice","same-license","unknown"] | public/data/licenses/BitTorrent-1.1.json#text; §4(a,b) vyžaduje licenci pro pokryté zdrojové soubory a změny, bezplatné zdroje na stejném médiu nebo elektronicky po celou dobu vaší distribuce jakékoli formy produktu; nepřebírá se 12/6měsíční lhůta verze 1.0. §4(c) ukládá LEGAL pro známé cizí IP/API patenty, rychlou aktualizaci a aktivní přiměřené vyrozumění dřívějších příjemců i prohlášení o původnosti a právech. §4(d,e) vyžadují Exhibit A v každém souboru či vhodném náhradním místě, licenci v dokumentaci a výrazná oznámení o zdroji v executable, dokumentaci i materiálech. Přidané záruky či jiné binární podmínky jsou jen vaše a odškodníte ostatní. §14 samostatně vyžaduje poučit každou affiliated entity o licenci a omezeních.; https://spdx.org/licenses/BitTorrent-1.1.html |
+| triggers | ["distribution","modification","patent-claim","use"] | public/data/licenses/BitTorrent-1.1.json#text; §4(a,b) vyžaduje licenci pro pokryté zdrojové soubory a změny, bezplatné zdroje na stejném médiu nebo elektronicky po celou dobu vaší distribuce jakékoli formy produktu; nepřebírá se 12/6měsíční lhůta verze 1.0. §4(c) ukládá LEGAL pro známé cizí IP/API patenty, rychlou aktualizaci a aktivní přiměřené vyrozumění dřívějších příjemců i prohlášení o původnosti a právech. §4(d,e) vyžadují Exhibit A v každém souboru či vhodném náhradním místě, licenci v dokumentaci a výrazná oznámení o zdroji v executable, dokumentaci i materiálech. Přidané záruky či jiné binární podmínky jsou jen vaše a odškodníte ostatní. §14 samostatně vyžaduje poučit každou affiliated entity o licenci a omezeních.; https://spdx.org/licenses/BitTorrent-1.1.html |
+| restrictions | ["additional-terms","liability","patent-claim","trademark","unknown","warranty"] | public/data/licenses/BitTorrent-1.1.json#text; §3 zakazuje bez předchozího písemného souhlasu mimo grant použití IP poskytovatele i přispěvatelů, výslovně i známek v doménách, cestách adresářů, reklamách a odkazech; jde nad pouhou absenci grantů známek. §5 právní nemožnost uvést v LEGAL a plnit maximum. §8/10 AS IS a omezení odpovědnosti. §9(a) má pouze 10 dnů od oznámení poskytovatele, jako dostatečné bere doručený email do WHOIS či určené adresy; §9(b) zachovává 60denní patentovou obranu a možnost stažení/dohody, deklaratorní žaloby vyňaty. §11 spolupráce na rozdělení škod; §13 kalifornské právo a náklady poraženého, bez specifické soudní doložky a vzdání se poroty verze 1.0.; https://spdx.org/licenses/BitTorrent-1.1.html |
+| patentPosition | "defensive-termination" | public/data/licenses/BitTorrent-1.1.json#text; §2 poskytuje nutná patentová oprávnění Contributor Modifications; §3 vyjímá oddělené patenty, odstraněný kód a cizí kombinace. §1 nejasně opakuje Contributor místo jasného původního grantu. §9(b) obranné ukončení všech grantů za patentovou žalobu na Licensed Product má 60denní možnost dohody nebo stažení.; https://spdx.org/licenses/BitTorrent-1.1.html |
+| noticeBurden | "material" | public/data/licenses/BitTorrent-1.1.json#text; §4(a,b) vyžaduje licenci pro pokryté zdrojové soubory a změny, bezplatné zdroje na stejném médiu nebo elektronicky po celou dobu vaší distribuce jakékoli formy produktu; nepřebírá se 12/6měsíční lhůta verze 1.0. §4(c) ukládá LEGAL pro známé cizí IP/API patenty, rychlou aktualizaci a aktivní přiměřené vyrozumění dřívějších příjemců i prohlášení o původnosti a právech. §4(d,e) vyžadují Exhibit A v každém souboru či vhodném náhradním místě, licenci v dokumentaci a výrazná oznámení o zdroji v executable, dokumentaci i materiálech. Přidané záruky či jiné binární podmínky jsou jen vaše a odškodníte ostatní. §14 samostatně vyžaduje poučit každou affiliated entity o licenci a omezeních. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/BitTorrent-1.1.html |
+
+## Zdroje
+
+- [Primární zdroj](https://spdx.org/licenses/BitTorrent-1.1.html) — Individuálně přečten celý připnutý text; §4(a,b) vyžaduje licenci pro pokryté zdrojové soubory a změny, bezplatné zdroje na stejném médiu nebo elektronicky po celou dobu vaší distribuce jakékoli formy produktu; nepřebírá se 12/6měsíční lhůta verze 1.0. §4(c) ukládá LEGAL pro známé cizí IP/API patenty, rychlou aktualizaci a aktivní přiměřené vyrozumění dřívějších příjemců i prohlášení o původnosti a právech. §4(d,e) vyžadují Exhibit A v každém souboru či vhodném náhradním místě, licenci v dokumentaci a výrazná oznámení o zdroji v executable, dokumentaci i materiálech. Přidané záruky či jiné binární podmínky jsou jen vaše a odškodníte ostatní. §14 samostatně vyžaduje poučit každou affiliated entity o licenci a omezeních. §2 poskytuje nutná patentová oprávnění Contributor Modifications; §3 vyjímá oddělené patenty, odstraněný kód a cizí kombinace. §1 nejasně opakuje Contributor místo jasného původního grantu. §9(b) obranné ukončení všech grantů za patentovou žalobu na Licensed Product má 60denní možnost dohody nebo stažení.
+- [Kurátorovaný profil](../../../data/profiles/licenses/id-Qml0VG9ycmVudC0xLjE.json)
+- [Uložené úplné znění](../../../public/data/licenses/BitTorrent-1.1.json)
+
+## Otisk zdroje
+
+```json
+{
+  "sourceId": "spdx-license-list",
+  "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+  "contentHash": "sha256:9a0d008ca3ddccd3e1353c91ab2d2d4bc69063aea2a4f47f0bf1d90f49157067"
+}
+```

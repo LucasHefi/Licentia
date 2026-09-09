@@ -1,0 +1,29 @@
+{
+  "id": "Zimbra-1.4",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:59f0c0ec3f1953ef180ec098c1cfa47f46743e8bc655c805ac710349c1c67fae"
+  },
+  "disposition": "blocked",
+  "summaryCs": "ZPL 1.4 dovoluje kopírování, úpravy, kompilaci a distribuci softwaru Zimbra. Zdrojové distribuce zůstávají pod ZPL; binární lze licencovat jinak, ale příjemci musí získat přístup ke zdrojům s ZPL a zachovat zdrojová práva. Zcela vlastní přidané soubory bez původního kódu jsou oddělené. Zachovávají se všechny notices ve stejné podobě včetně log v rozhraní. Grant je pouze autorský; postoupení práv a povinností včetně podnikových přeměn vyžaduje písemný souhlas Zimbra.",
+  "blockersCs": [
+    "§7 zakazuje bez předchozího písemného souhlasu Zimbra postoupení práv, delegaci povinností i převod dohody, výslovně také při prodeji aktiv, fúzi a konsolidaci, a nesouhlasný převod prohlašuje za od počátku neplatný. Slovník neobsahuje takové omezení převodu; před doporučením je nutné samostatně modelovat tuto podmínku a její dopad na nového poskytovatele podle §1.3."
+  ],
+  "analysis": {
+    "subjectCs": "Software poskytovaný Zimbra, Inc., Texas, a jeho Modifications. §1.1 výslovně vylučuje přidaný soubor neobsahující žádnou část originálu z definice Modification. Předání uvnitř téže oprávněně zastupované společnosti není distribuce (§1.2).",
+    "grantCs": "§1.1 poskytuje bezúplatné nevýhradní nepřevoditelné autorské právo kopírovat, měnit, kompilovat, vykonávat a distribuovat. §1.4 dovoluje jinou licenci binární distribuce s ochranou práv ke zdrojům; §1.5 zcela vlastní oddělené soubory za libovolných podmínek. §3.1 výslovně vyhrazuje vše kromě autorského grantu, proto neposkytuje patentová práva ani implicitní grant.",
+    "conditionsCs": "§1.3 vyžaduje při distribuci zdrojů ZPL a celý text; distributor změn vstupuje do role Zimbra s výjimkou texaské soudní příslušnosti. §1.4 vyžaduje přístup příjemců binárek ke zdrojům s licencí, jasné označení odlišných podmínek jako vlastních a zákaz omezit zdrojová práva. §3.2 vyžaduje v každé kopii i vytvořené změně zachovat copyright, patentové, známkové a atribuční notices ve stejné podobě včetně UI log. Nenařizuje obecný změnový deník.",
+    "limitationsCs": "§3.3 dovoluje značky pouze pro splnění zachování notices. §§4–5 výslovně vylučují záruky a přímé i další škody; §2 neukládá podporu, aktualizace ani licenci jiného vydání. Podle §6 může Zimbra při porušení dohodu ukončit bez uvedené nápravné lhůty. §7 volí Delaware/USA, vylučuje CISG a pro spory zahrnující Zimbra či rodiče/dceřiné společnosti stanoví severní Texas, Dallas; omezuje převody i právní přeměny.",
+    "compatibilityCs": "Jasná souborová hranice umožňuje nezávislé vlastní soubory za jiných podmínek. Jiné binární podmínky nesmějí omezit práva ke zdrojům a musí být připsány pouze distributorovi. Text nenabízí pozdější verzi ani obecnou kompatibilitu s jinou zdrojovou licencí."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Zimbra-1.4.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; §§1.3–1.5: copyleft pro zdroje Software/Modifications, jiná binární licence přípustná, vlastní samostatné soubory odděleny"
+    }
+  ]
+}

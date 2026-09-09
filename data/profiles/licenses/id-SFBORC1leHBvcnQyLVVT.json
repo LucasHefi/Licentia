@@ -8,93 +8,99 @@
     "contentHash": "sha256:f5ce862cd31546c380df7d7964365f3f86d08080c47486e1af31e59967026a08"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "include-license-text"
+      "include-license-text",
+      "unknown"
     ],
     "triggers": [
+      "distribution",
       "unknown"
     ],
     "restrictions": [
-      "unknown"
+      "trademark",
+      "unknown",
+      "warranty"
     ],
-    "patentPosition": "unknown",
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/HPND-export2-US.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/HPND-export2-US.json#text; Apple grant s copyrightem 2004–2008 pokrývá software a jeho dokumentaci. WITHIN THAT CONSTRAINT dovoluje použití, kopírování, změny a distribuci pro libovolný účel bez poplatku pod exportní podmínkou. Notice a exportní podmínky neukládají zdroje ani copyleft.; https://spdx.org/licenses/HPND-export2-US.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/HPND-export2-US.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/HPND-export2-US.json#text; Notice a exportní podmínky neukládají zdroje ani copyleft.; https://spdx.org/licenses/HPND-export2-US.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/HPND-export2-US.json#text; WITHIN THAT CONSTRAINT dovoluje použití, kopírování, změny a distribuci pro libovolný účel bez poplatku pod exportní podmínkou.; https://spdx.org/licenses/HPND-export2-US.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/HPND-export2-US.json#text; Copyright je ve všech kopiích a copyright se svolením v dokumentaci; osoba zvažující export odpovídá za získání potřebné americké licence před exportem.; https://spdx.org/licenses/HPND-export2-US.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/HPND-export2-US.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/HPND-export2-US.json#text; Copyright je ve všech kopiích a copyright se svolením v dokumentaci; osoba zvažující export odpovídá za získání potřebné americké licence před exportem.; https://spdx.org/licenses/HPND-export2-US.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/HPND-export2-US.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/HPND-export2-US.json#text; Apple jméno nesmí bez předchozího písemného svolení do reklamy či publicity distribuce. Dvě AS IS doložky odmítají vhodnost a výslovné/předpokládané záruky včetně prodejnosti.; https://spdx.org/licenses/HPND-export2-US.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/HPND-export2-US.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/HPND-export2-US.json#text; Celý text včetně obou záručních odstavců nemá patentový grant nebo patentové ukončení.; https://spdx.org/licenses/HPND-export2-US.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/HPND-export2-US.json#text; Copyright je ve všech kopiích a copyright se svolením v dokumentaci; osoba zvažující export odpovídá za získání potřebné americké licence před exportem. Rozsah notifikační zátěže: standard.; https://spdx.org/licenses/HPND-export2-US.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/HPND-export2-US.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/HPND-export2-US.json#text; Individuální kontrola celého připnutého textu HPND-export2-US dne 2026-09-09. Apple grant s copyrightem 2004–2008 pokrývá software a jeho dokumentaci. Grant je výslovně podmíněn předchozím získáním případně požadované americké exportní licence; před doporučením je třeba model exportního spouštěče a podmínky, které ve slovníku chybějí. Není nabídka jiné licence ani verze; jde o samostatně přečtené Apple znění se závěrečnou doplňkovou výlukou záruk.; https://spdx.org/licenses/HPND-export2-US.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

@@ -1,0 +1,20 @@
+{
+  "id": "diffmark",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.7",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:80b2ab4781fe8ddd57d5805ee6c6770afc07e9697adf86dd4a3a1ee983c2339c"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Text dovoluje libovolné nakládání s dílem a odmítá odpovědnost za následky. Neukládá zachování oznámení ani sdílení zdrojů. Neobsahuje samostatné výslovné vyloučení záruk ani patentový grant.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/diffmark.html",
+      "note": "Dřívější individuální revize 2026-09-09.7; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

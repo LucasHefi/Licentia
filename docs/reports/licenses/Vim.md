@@ -1,0 +1,62 @@
+# Vim — obsahová revize
+
+Vim License
+
+Revize: **2026-09-09** · pravidlo **2026-09-09.10**.
+
+Výsledek: **zpracována, nezařazena do průvodce**.
+
+Původní Vim i jeho části se šíří s licencí. Modifikace mají pět alternativ: poskytnutí správci na žádost, nezměněná redistribuce takové varianty, zdroje změn s kopií, tříletá dostupnost změn na žádost nebo za podmínek GPL 2+. Modifikační hláška patří do :version i úvodu.
+
+## Předmět a rozsah
+
+Text pokrývá Vim, části, upravené/rozšířené verze a vlastní příklady/skripty přidané k executable původních zdrojů.
+
+## Udělená práva
+
+I a II dovolují distribuci původních částí i modifikovaných zdrojů/executables, bez zákazu komerčního účelu. II.2(e) povoluje GPL2-or-later jen pokud GPL platí na změny. Patentový grant a výslovná sublicence chybějí.
+
+## Podmínky a spouštěče
+
+I/II.1/IV zachovávají neměnnou licenci. II.2(a) kontakt a změny zdarma na žádost správce s vyjednatelným grantem; (b) nezměněné přeposlání této varianty; (c) všechny změny se zdroji/diffem, nová licence nesmí brzdit změny oficiálního Vimu; (d) bez zdrojů se svolením správci a 3 roky uchovat změny/kontakt pro správce i své příjemce; (e) GPL2+ při GPL změnách. II.3 hláška změn v :version a intro, s GPL kolizní výjimkou; II.4 kontakty neměnit mimo opravy vlastníka.
+
+## Omezení, výjimky a ukončení
+
+II.2(a) povinnost správci končí při úplné nemožnosti jej kontaktovat a neopakuje se po potvrzení příjmu. Historicky jmenuje Brama Moolenaara s mechanismem změny správce; dnešní osoba se nedosazuje. Text nemá výluku záruk ani škod. III pouze doporučuje zaslat změny.
+
+## Verze a kombinování
+
+II.2 nabízí alternativy, ne současně zdroje každému a správci. IV dovoluje tuto licenci místo licence předchozích Vim vydání; GPL2+ cesta závisí na GPL grantu změn, nikoli jen na přání distributora.
+
+## Překážky a navazující práce
+
+- II.2 obsahuje pět skutečných alternativ s kontaktem, žádostí správce/příjemce, tříletým uchováním a podmíněnou GPL cestou; II.3 navíc výjimku modifikační hlášky. Doplnit model voleb, lhůt a request-trigger místo kumulativních source povinností.
+
+## Metadata a jejich doložení
+
+| Pole | Hodnota | Doložení znění |
+|---|---|---|
+| family | "nonstandard" | public/data/licenses/Vim.json#text; Pět cest má odlišné příjemce zdrojů, délky uchování a licence změn; jeden copyleftScope by nepravdivě sjednotil odlišné režimy. |
+| copyleftScope | "unknown" | public/data/licenses/Vim.json#text; Pět cest má odlišné příjemce zdrojů, délky uchování a licence změn; jeden copyleftScope by nepravdivě sjednotil odlišné režimy. |
+| permissions | ["commercial-use","conditional-relicensing","distribution","modifications","private-use"] | public/data/licenses/Vim.json#text; I a II dovolují distribuci původních částí i modifikovaných zdrojů/executables, bez zákazu komerčního účelu. II.2(e) povoluje GPL2-or-later jen pokud GPL platí na změny. Patentový grant a výslovná sublicence chybějí. |
+| obligations | ["include-license-text","mark-modifications","unknown"] | public/data/licenses/Vim.json#text; I/II.1/IV zachovávají neměnnou licenci. II.2(a) kontakt a změny zdarma na žádost správce s vyjednatelným grantem; (b) nezměněné přeposlání této varianty; (c) všechny změny se zdroji/diffem, nová licence nesmí brzdit změny oficiálního Vimu; (d) bez zdrojů se svolením správci a 3 roky uchovat změny/kontakt pro správce i své příjemce; (e) GPL2+ při GPL změnách. II.3 hláška změn v :version a intro, s GPL kolizní výjimkou; II.4 kontakty neměnit mimo opravy vlastníka. |
+| triggers | ["distribution","modification"] | public/data/licenses/Vim.json#text; I/II.1/IV zachovávají neměnnou licenci. II.2(a) kontakt a změny zdarma na žádost správce s vyjednatelným grantem; (b) nezměněné přeposlání této varianty; (c) všechny změny se zdroji/diffem, nová licence nesmí brzdit změny oficiálního Vimu; (d) bez zdrojů se svolením správci a 3 roky uchovat změny/kontakt pro správce i své příjemce; (e) GPL2+ při GPL změnách. II.3 hláška změn v :version a intro, s GPL kolizní výjimkou; II.4 kontakty neměnit mimo opravy vlastníka. |
+| restrictions | ["additional-terms","unknown"] | public/data/licenses/Vim.json#text; II.2(a) povinnost správci končí při úplné nemožnosti jej kontaktovat a neopakuje se po potvrzení příjmu. Historicky jmenuje Brama Moolenaara s mechanismem změny správce; dnešní osoba se nedosazuje. Text nemá výluku záruk ani škod. III pouze doporučuje zaslat změny. |
+| patentPosition | "none-stated" | public/data/licenses/Vim.json#text; I a II dovolují distribuci původních částí i modifikovaných zdrojů/executables, bez zákazu komerčního účelu. II.2(e) povoluje GPL2-or-later jen pokud GPL platí na změny. Patentový grant a výslovná sublicence chybějí. |
+| noticeBurden | "material" | public/data/licenses/Vim.json#text; I/II.1/IV zachovávají neměnnou licenci. II.2(a) kontakt a změny zdarma na žádost správce s vyjednatelným grantem; (b) nezměněné přeposlání této varianty; (c) všechny změny se zdroji/diffem, nová licence nesmí brzdit změny oficiálního Vimu; (d) bez zdrojů se svolením správci a 3 roky uchovat změny/kontakt pro správce i své příjemce; (e) GPL2+ při GPL změnách. II.3 hláška změn v :version a intro, s GPL kolizní výjimkou; II.4 kontakty neměnit mimo opravy vlastníka. |
+
+## Zdroje
+
+- [Primární zdroj](https://spdx.org/licenses/Vim.html) — Individuální revize celého připnutého textu; Text pokrývá Vim, části, upravené/rozšířené verze a vlastní příklady/skripty přidané k executable původních zdrojů.
+- [Kurátorovaný profil](../../../data/profiles/licenses/id-Vmlt.json)
+- [Uložené úplné znění](../../../public/data/licenses/Vim.json)
+
+## Otisk zdroje
+
+```json
+{
+  "sourceId": "spdx-license-list",
+  "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+  "contentHash": "sha256:6ed44a2cbe3d6df9890b9bc58a8adf10bb652be1a013cffa26f1f0bcff3b2f0a"
+}
+```

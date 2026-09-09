@@ -1,0 +1,20 @@
+{
+  "id": "Python-2.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.8",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:37699b0cd0e2d48c579b0e7eaf2f7f6146a0af99727780ff53f9e05da5da786f"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Tento záznam sdružuje podmínky PSF, BeOpen, CNRI a CWI. Zachovejte jejich požadované licence a oznámení; u CNRI lze místo celého textu použít přesné oznámení s identifikátorem 1895.22/1011. Při zpřístupnění odvozené verze shrňte změny Pythonu; CNRI požaduje popis změn při veřejném zpřístupnění. CWI vyžaduje oznámení také v dokumentaci. Platí omezení použití jmen a známek, kalifornské právo u BeOpen a virginské u CNRI. PSF, BeOpen a CNRI ukončují oprávnění při podstatném porušení. Licence nevyžaduje poskytování zdrojů a neuděluje výslovný patentový grant.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Python-2.0.html",
+      "note": "Dřívější individuální revize 2026-09-09.8; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

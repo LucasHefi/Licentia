@@ -1,0 +1,27 @@
+{
+  "id": "BSD-Inferno-Nettverk",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:60911b76cbafd131f1689cac939894430dca94b9a55a4e0a4e44e1d978619351"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Kopie, odvozeniny, změny i jejich jakékoli části a veškerá podpůrná dokumentace zachovají celý licenční text. Reklama zmiňující funkce či použití musí připojit přesné poděkování Inferno Nettverk; zasílání vylepšení a práv k nim je pouze žádost.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Software Inferno Nettverk A/S 1997–2020 ve zdrojové/binární podobě a všechny části/odvozeniny.",
+    "grantCs": "Redistribution/use source and binary with or without modification; bez účelového omezení a výslovného patentového grantu.",
+    "conditionsCs": "Bod 1 copyright/conditions/disclaimer ve všech kopiích, libovolných částech a podpůrné dokumentaci. Bod 2 přesné reklamní acknowledgment pro materials mentioning features/use.",
+    "limitationsCs": "Bod 3 endorsement jménem autora jen s předchozím písemným svolením; AS IS a warranty/liability. Závěrečná requests users to return improvements and grant rights je dobrovolná.",
+    "compatibilityCs": "Žádná jiná licence/verze či reciprocity; žádost o příspěvky není podmínkou pokračování grantu."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/BSD-Inferno-Nettverk.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; BSD-style grant s povinnou reklamní větou a širokým notice rozsahem; příspěvky na konci requested."
+    }
+  ]
+}

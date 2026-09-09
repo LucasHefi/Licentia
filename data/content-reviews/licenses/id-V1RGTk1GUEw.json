@@ -1,0 +1,27 @@
+{
+  "id": "WTFNMFPL",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:b303e8ad7e2248bc0bd6cae6808543d4e760ab285bf3f0ce7e4e9ff6efaab1ce"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Bod 0 dovoluje libovolné nakládání s dílem; bod 1 vylučuje odpovědnost autorů, tvůrců, vývojářů a distributorů za následky užití. Přejmenování se týká změněné licence samotné.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Operativní body 0–1 se vztahují na dílo; úvodní svolení k úpravám licenčního dokumentu je samostatné.",
+    "grantCs": "Bod 0 dává neomezenou volnost, včetně komerce, úprav, distribuce a sublicencování; neobsahuje výslovně pojmenovanou patentovou licenci.",
+    "conditionsCs": "Body 0–1 nepožadují copyright, text licence, zdroje či stejnou licenci při distribuci. Úvodní přejmenování platí jen při změně tohoto licenčního dokumentu, nikoli při změně licencovaného díla.",
+    "limitationsCs": "Bod 1 požaduje nečinit autory/tvůrce/vývojáře/distributory odpovědnými za cokoli související s užitím. Samostatná výluka záruk a patentová terminace uvedeny nejsou.",
+    "compatibilityCs": "Version 1 October 2013 není doložkou pozdějších verzí; svoboda měnit licenci samotnou podléhá změně jejího názvu."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/WTFNMFPL.html",
+      "note": "Individuální revize celého připnutého textu; Operativní body 0–1 se vztahují na dílo; úvodní svolení k úpravám licenčního dokumentu je samostatné."
+    }
+  ]
+}

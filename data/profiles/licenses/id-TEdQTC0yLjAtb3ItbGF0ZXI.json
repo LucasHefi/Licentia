@@ -9,96 +9,106 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "weak-copyleft",
+    "copyleftScope": "library",
     "permissions": [
+      "commercial-use",
       "distribution",
       "modifications",
-      "patent-grant",
-      "sublicensing"
+      "private-use"
     ],
     "obligations": [
+      "allow-relinking",
+      "allow-reverse-engineering",
+      "disclose-source",
       "include-copyright",
       "include-license-text",
-      "provide-corresponding-source"
+      "include-notice",
+      "mark-modifications",
+      "provide-corresponding-source",
+      "same-license"
     ],
     "triggers": [
-      "unknown"
+      "combination",
+      "distribution",
+      "linking",
+      "modification"
     ],
     "restrictions": [
+      "additional-terms",
       "liability",
       "warranty"
     ],
-    "patentPosition": "express-grant",
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LGPL-2.0-or-later.json#text; sections 0,2,5-7: whole covered library, not independent application alone; section 6 permits chosen terms for linked executable if conditions satisfied; independent works/aggregation excluded; https://spdx.org/licenses/LGPL-2.0-or-later.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.3"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LGPL-2.0-or-later.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LGPL-2.0-or-later.json#text; sections 0,2,5-7: copyleft of library and its derivatives, conditional linking permission for a work using library; https://spdx.org/licenses/LGPL-2.0-or-later.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.3"
     },
     {
-      "field": "copyleftScope",
+      "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LGPL-2.0-or-later.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LGPL-2.0-or-later.json#text; sections 1,2(b),6-7: notices, modified-file dates, library-use notice, conditional runtime-copyright announcement, uncombined-form location; https://spdx.org/licenses/LGPL-2.0-or-later.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.3"
     },
     {
-      "field": "triggers",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LGPL-2.0-or-later.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LGPL-2.0-or-later.json#text; sections 1,2,4-7: source and license for library, copyright/disclaimers, changes and dates; linked work must allow user modification for own use and reverse engineering to debug it; 6(a) library source plus relinkable application object/source/data/utilities OR 6(b) at-least-three-year offer OR 6(c) equivalent download access OR 6(d) verified prior delivery; section 6 has NO separate suitable-shared-library alternative found in LGPL2.1; 7 uncombined library copy and prominent notice; application source not mandatory if sufficient objects supplied; no installation-information duty beyond source/build materials; https://spdx.org/licenses/LGPL-2.0-or-later.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.3"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/LGPL-2.0-or-later.json#text; whole text including preamble and sections 10-12: patent-conflict provisions but no express contributor patent grant and no patent-litigation termination; https://spdx.org/licenses/LGPL-2.0-or-later.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.3"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/LGPL-2.0-or-later.json#text; sections 0-7: running unrestricted; use/copy/modify/distribute with fees; sections 8 and 10 exclude a general sublicensing right and give direct downstream rights; https://spdx.org/licenses/LGPL-2.0-or-later.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.3"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/LGPL-2.0-or-later.json#text; sections 2(a),(d),3,6,8-12,15-16: modified work remains library, good-faith operation without optional application facilities, irreversible GPL conversion for a copy, relinking-compatible terms, breach termination, no further restrictions, patent conflicts and optional geographic limit; warranty/liability disclaimers; https://spdx.org/licenses/LGPL-2.0-or-later.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.3"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LGPL-2.0-or-later.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LGPL-2.0-or-later.json#text; whole-text editorial review on 2026-09-09, batch 3; GNU Library GPL 2.0 vyžaduje při distribuci zachovat licenci, oznámení a zdroje pokryté knihovny. U propojeného díla dovolte uživatelské úpravy a reverzní inženýrství pro jejich ladění a splňte jednu z cest § 6(a)–(d) pro předání či nabídnutí materiálů k novému slinkování. Aplikační objektové soubory mohou stačit. Verze 2.0 nemá samostatnou alternativu sdílené knihovny z LGPL 2.1 ani výslovný patentový grant. Or-later umožňuje novější LGPL; tento profil hodnotí verzi 2.0.; https://spdx.org/licenses/LGPL-2.0-or-later.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.3"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/LGPL-2.0-or-later.json#text; sections 0-7: modifying/distributing library, covered headers or linked/combined works; no remote-network disclosure or patent-litigation termination trigger; https://spdx.org/licenses/LGPL-2.0-or-later.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.3"
     }
   ]
 }

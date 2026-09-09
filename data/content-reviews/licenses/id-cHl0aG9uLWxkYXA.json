@@ -1,0 +1,22 @@
+{
+  "id": "python-ldap",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.5",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:d4492acc8b0824c4ad4f8fe92c9f20ff64f657173bfc1a0208b7023f2f6b15cd"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Krátký text odkazuje pouze na licenci ve stylu Pythonu a poté uvádí disclaimer. Samotný odkaz neurčuje konkrétní licenci, verzi ani úplný rozsah práv a povinností. Profil proto nepřebírá podmínky PSF 2.0 a zůstává mimo průvodce, dokud nebudou doloženy související licenční podklady.",
+  "blockersCs": [
+    "Dohledat přesné licenční soubory a verzi pro pokrytý balík nebo soubor. Python-style neurčuje PSF-2.0 ani složenou Python-2.0; disclaimer nenahrazuje grant. Do doložení ponechat rozsah, oprávnění, povinnosti a patentovou pozici jako unknown, bez automatického kopírování jiného profilu."
+  ],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/python-ldap.html",
+      "note": "Dřívější individuální revize 2026-09-09.5; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

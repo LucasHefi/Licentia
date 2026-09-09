@@ -9,91 +9,97 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "provide-corresponding-source"
+      "include-license-text",
+      "include-notice"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification",
+      "use"
     ],
     "restrictions": [
-      "unknown"
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/libutil-David-Nugent.json#text; whole text: no same-license/source-sharing condition; FreeBSD inclusion is context not a prohibition on other use; https://spdx.org/licenses/libutil-David-Nugent.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/libutil-David-Nugent.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/libutil-David-Nugent.json#text; opening source/binary use/redistribution permission with or without modification; no reciprocal source condition; https://spdx.org/licenses/libutil-David-Nugent.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "copyleftScope",
+      "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/libutil-David-Nugent.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/libutil-David-Nugent.json#text; §1–3 combine source and binary notices with a source-file placement and a conditional FreeBSD-origin notation on other use; material burden retained and all conditions stated in the individual summary.; https://spdx.org/licenses/libutil-David-Nugent.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "triggers",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/libutil-David-Nugent.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/libutil-David-Nugent.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/libutil-David-Nugent.json#text; clauses 1-3: source copyright unmodified at immediate beginning of file plus conditions/disclaimer; same notices in binary accompanying material; FreeBSD-origin notation for other use; https://spdx.org/licenses/libutil-David-Nugent.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/libutil-David-Nugent.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/libutil-David-Nugent.json#text; whole text: no express patent grant or patent-litigation termination is stated; no inference about implied rights; https://spdx.org/licenses/libutil-David-Nugent.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/libutil-David-Nugent.json#text; opening grant and clause 5 permit use/redistribution/modification; clause 3 expressly permits other use if notation included; no purpose/fee restriction; https://spdx.org/licenses/libutil-David-Nugent.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/libutil-David-Nugent.json#text; clause 4: no warranty of function or purpose; whole text: no explicit liability or trademark/name-use prohibition; https://spdx.org/licenses/libutil-David-Nugent.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/libutil-David-Nugent.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/libutil-David-Nugent.json#text; Individuální opětovná revize celého znění pro slovník 1.4.0: Permisivní grant dovoluje užití a redistribuci zdrojové i binární podoby s úpravami i bez nich. Ve zdrojích musí copyright zůstat nezměněný bezprostředně na začátku souboru, spolu s podmínkami a disclaimerem; binárky je předávají v dokumentaci nebo doprovodných materiálech. Při jiném užití než začlenění do FreeBSD je povinná poznámka o tomto původu. Úpravy zachovávají uvedené podmínky. Text vylučuje záruku funkce či účelu, nikoli výslovně odpovědnost; neobsahuje patentový grant ani povinnost poskytovat zdroje.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/libutil-David-Nugent.json#text; §1–2 distribution, §5 modification; §3 use outside FreeBSD inclusion requires the existing origin notation, accurately represented by use with the stated condition. Notice placement is explicitly preserved in evidence.; https://spdx.org/licenses/libutil-David-Nugent.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

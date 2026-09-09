@@ -8,8 +8,8 @@
     "contentHash": "sha256:87b93118fea1b38e58db4414103b2594a417a595b1d62519de30a2d7054fedc2"
   },
   "review": {
-    "status": "not-recommendable",
-    "recommendable": false,
+    "status": "reviewed",
+    "recommendable": true,
     "evidenceLevel": "strong"
   },
   "semantic": {
@@ -36,49 +36,67 @@
   },
   "evidence": [
     {
-      "field": "family",
-      "sourceId": "spdx-license-list",
-      "locator": "license text, permission lead-in beginning 'The redistribution and use of this software' and the two following source-code and binary-distribution conditions (use and redistribution, with or without changes, are allowed without fees or royalties subject only to notice retention; no reciprocal licensing condition is stated)"
-    },
-    {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "license text, complete text, especially the two conditions beginning 'source code distributions include' and 'binary distributions include' (distribution requires notices but not source disclosure, corresponding source, same-license distribution, or any other reciprocal condition)"
+      "locator": "public/data/licenses/Brian-Gladman-2-Clause.json#text; opening grant: redistribution and use with/without changes without fees or royalties; no field-of-use restriction; no reciprocal source-disclosure or same-license condition; https://spdx.org/licenses/Brian-Gladman-2-Clause.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
     },
     {
-      "field": "permissions",
+      "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "license text, permission lead-in beginning 'The redistribution and use of this software' (use and redistribution are allowed without payment of fees or royalties, supporting private and commercial use and distribution; 'with or without changes' expressly supports modification; no express sublicensing or patent grant is stated)"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "license text, the two conditions beginning 'source code distributions include' and 'binary distributions include' (both forms must include the copyright notice, list of conditions, and disclaimer, with binary copies placing them in the documentation), supporting include-copyright and include-license-text; no corresponding-source duty is stated"
-    },
-    {
-      "field": "triggers",
-      "sourceId": "spdx-license-list",
-      "locator": "license text, permission lead-in ending 'provided that' together with the source-code and binary-distribution conditions (redistribution activates the retention duties in either form; modification is permitted 'with or without changes' but does not independently activate a duty)"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "license text, final sentence beginning 'This software is provided as is' (explicit and implied warranties, including correctness and fitness for purpose, are disclaimed); complete-text review confirms no liability, endorsement/trademark, patent-claim, or additional-terms restriction, and the omitted Brian-Gladman-3-Clause endorsement condition is not part of this text"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "license text, complete-text review of the permission lead-in, both distribution conditions, and final warranty sentence (no express patent grant, patent covenant, patent condition, patent-claim restriction, or patent-litigation termination is stated)"
+      "locator": "public/data/licenses/Brian-Gladman-2-Clause.json#text; opening grant: redistribution and use with/without changes without fees or royalties; no field-of-use restriction; https://spdx.org/licenses/Brian-Gladman-2-Clause.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "license text, the two conditions beginning 'source code distributions include' and 'binary distributions include' (ordinary copyright-and-license retention applies to source distributions and to documentation for binary distributions, constituting a standard notice burden)"
+      "locator": "public/data/licenses/Brian-Gladman-2-Clause.json#text; first condition: source distributions retain copyright, conditions and disclaimer; second condition: binary distributions include them specifically in documentation; https://spdx.org/licenses/Brian-Gladman-2-Clause.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Brian-Gladman-2-Clause.json#text; first condition: source distributions retain copyright, conditions and disclaimer; second condition: binary distributions include them specifically in documentation; https://spdx.org/licenses/Brian-Gladman-2-Clause.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Brian-Gladman-2-Clause.json#text; whole text: no express patent grant or patent-litigation termination; no inference about implied patent rights; https://spdx.org/licenses/Brian-Gladman-2-Clause.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Brian-Gladman-2-Clause.json#text; opening grant: redistribution and use with/without changes without fees or royalties; no field-of-use restriction; https://spdx.org/licenses/Brian-Gladman-2-Clause.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Brian-Gladman-2-Clause.json#text; final AS IS paragraph: no explicit/implied operation/correctness/fitness warranties; no liability exclusion, endorsement restriction or GPL alternative; https://spdx.org/licenses/Brian-Gladman-2-Clause.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "license metadata, id=Brian-Gladman-2-Clause, name='Brian Gladman 2-Clause License', deprecated=false, osi=false, fsf=false, comments stating that this variant omits the third clause, and seeAlso links identifying its use by the Brian Gladman AES implementation; license text, permission lead-in scoped to 'this software' and its source/binary distributions (a non-OSI, code-specific grant is unsuitable for automatic recommendation as a generally reusable software license, despite its permissive two-clause terms)"
+      "locator": "public/data/licenses/Brian-Gladman-2-Clause.json#text; whole-text editorial review on 2026-09-09, batch 5; Replaces prior exclusion based on non-OSI and named implementation: the full two-condition text has complete grants and obligations that the guide can represent, with no GPL alternative imported from the 3-Clause identifier.; https://spdx.org/licenses/Brian-Gladman-2-Clause.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Brian-Gladman-2-Clause.json#text; first condition: source distributions retain copyright, conditions and disclaimer; second condition: binary distributions include them specifically in documentation; https://spdx.org/licenses/Brian-Gladman-2-Clause.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
     }
   ]
 }

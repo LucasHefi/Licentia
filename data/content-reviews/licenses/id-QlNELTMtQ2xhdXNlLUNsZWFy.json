@@ -1,0 +1,27 @@
+{
+  "id": "BSD-3-Clause-Clear",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:3e1482d824bf42b71f03476f379bf9bd9010989f330829200d56e25ffd99275d"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Clear BSD dovoluje zdrojové i binární užití a šíření s běžnými notice a endorsement podmínkami. Výslovně neposkytuje žádnou výslovnou ani implicitní licenci k patentům jakékoli strany; záruky a odpovědnost jsou vyloučeny.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Software ve zdrojové/binární formě, s úpravami i bez.",
+    "grantCs": "Redistribution/use source and binary with or without modification; patentová práva jsou výslovně vyloučena včetně implicitních licencí.",
+    "conditionsCs": "Zdroj zachová copyright, podmínky a disclaimer; binární distribuce je uvede v dokumentaci/materiálech.",
+    "limitationsCs": "Jména organizace/přispěvatelů k propagaci derivátů jen s předchozím písemným svolením. AS IS, výluky záruk/škod; grant je subject to disclaimer limitations.",
+    "compatibilityCs": "Žádná alternativní licence/verze či reciprocita. Licence nesplňuje požadavek výslovného patentového grantu."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/BSD-3-Clause-Clear.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Source/binary grant má notice/nonendorsement podmínky a express patent exclusion, nikoli copyleft."
+    }
+  ]
+}

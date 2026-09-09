@@ -1,0 +1,20 @@
+{
+  "id": "Furuseth",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.6",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:494f159c5a12f22d90e6af4775ac29d8242754455c6e5473dfd831fea14d7482"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Zachovejte celé uvedené oznámení. Zdrojové i binární šíření s úpravami i bez nich je dovoleno. Jména nositelů copyrightu nepoužívejte k propagaci bez jejich předchozího písemného souhlasu. Text vylučuje záruky, ale neobsahuje výslovné omezení odpovědnosti.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Furuseth.html",
+      "note": "Dřívější individuální revize 2026-09-09.6; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

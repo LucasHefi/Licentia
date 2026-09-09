@@ -1,0 +1,20 @@
+{
+  "id": "UCAR",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.8",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:411f18337baa232ec10da39825a291497f285786089b21981be0d53db38b4184"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Copyright, podmínky a disclaimer zachovejte ve zdrojích nebo materiálech k binárním kopiím. Propagační použití jmen vyžaduje písemný souhlas. Zahájením patentového sporu proti držiteli práv či přispěvateli automaticky zanikají všechna licenční oprávnění; zahrnuty jsou i protinároky. Výjimkou jsou spory o kombinaci s jiným softwarem či hardwarem. Výslovný patentový grant zde není, takže licence nesplňuje požadavek průvodce na jeho udělení.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/UCAR.html",
+      "note": "Dřívější individuální revize 2026-09-09.8; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

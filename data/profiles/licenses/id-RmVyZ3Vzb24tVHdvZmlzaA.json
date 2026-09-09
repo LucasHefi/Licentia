@@ -9,91 +9,91 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "provide-corresponding-source"
+      "include-copyright"
     ],
     "triggers": [
-      "unknown"
+      "distribution"
     ],
-    "restrictions": [
-      "unknown"
-    ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "restrictions": [],
+    "patentPosition": "none-stated",
+    "noticeBurden": "minimal"
   },
   "evidence": [
     {
-      "field": "obligations",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Ferguson-Twofish.json#text; first paragraph perpetual any-purpose license; second explicitly allows modifications, GPL distribution, commercial inclusion WITHOUT releasing source and web distribution; no reciprocal source-supply or same-license condition; https://spdx.org/licenses/Ferguson-Twofish.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Ferguson-Twofish.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Ferguson-Twofish.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "triggers",
-      "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Ferguson-Twofish.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Ferguson-Twofish.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Ferguson-Twofish.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Ferguson-Twofish.json#text; first paragraph perpetual any-purpose license; second explicitly allows modifications, GPL distribution, commercial inclusion WITHOUT releasing source and web distribution; https://spdx.org/licenses/Ferguson-Twofish.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Ferguson-Twofish.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Ferguson-Twofish.json#text; first/third paragraphs: copyright in source of original/derived work, not binary notice or source supply; documentation/credits and use reports in last paragraph are appreciated, not required; https://spdx.org/licenses/Ferguson-Twofish.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Ferguson-Twofish.json#text; first/third paragraphs: copyright in source of original/derived work, not binary notice or source supply; documentation/credits and use reports in last paragraph are appreciated, not required; https://spdx.org/licenses/Ferguson-Twofish.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Ferguson-Twofish.json#text; whole text: no express patent grant or patent-litigation termination; no inference of patent rights from copyright, trademarks or non-infringement disclaimers; https://spdx.org/licenses/Ferguson-Twofish.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Ferguson-Twofish.json#text; first paragraph perpetual any-purpose license; second explicitly allows modifications, GPL distribution, commercial inclusion WITHOUT releasing source and web distribution; https://spdx.org/licenses/Ferguson-Twofish.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Ferguson-Twofish.json#text; complete text has no warranty/liability/endorsement restriction; GPL is an example of permitted licensing, not a required version or automatic compatibility finding; https://spdx.org/licenses/Ferguson-Twofish.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Ferguson-Twofish.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Ferguson-Twofish.json#text; whole-text editorial review on 2026-09-09, batch 6; Copyright autora zachovejte ve zdrojích tohoto kódu i odvozených děl. Text výslovně dovoluje použití v komerčním produktu bez zpřístupnění zdrojů i šíření pod jinou licencí, například GPL. Poděkování a sdělení, kde jste kód použili, jsou dobrovolné. Text neobsahuje vyloučení záruk ani odpovědnosti.; https://spdx.org/licenses/Ferguson-Twofish.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Ferguson-Twofish.json#text; first/third paragraphs: copyright in source of original/derived work, not binary notice or source supply; documentation/credits and use reports in last paragraph are appreciated, not required; https://spdx.org/licenses/Ferguson-Twofish.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     }
   ]
 }

@@ -10,40 +10,99 @@
   "review": {
     "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "unknown"
+      "include-copyright",
+      "include-license-text",
+      "include-notice",
+      "include-use-acknowledgment",
+      "mark-modifications"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification",
+      "use"
     ],
     "restrictions": [
-      "liability"
+      "liability",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
+      "field": "family",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Nunit.json#text; Deprecated Nunit obsahuje copyrighty uvedených autorů z let 2000–2004 a tři omezení. Grant dovoluje každému užití pro libovolný účel včetně komerčních aplikací, úpravy a volnou redistribuci. Označení změn a produktové uznání nevyžadují stejnou licenci ani vydání zdrojů.; https://spdx.org/licenses/Nunit.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "copyleftScope",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Nunit.json#text; Označení změn a produktové uznání nevyžadují stejnou licenci ani vydání zdrojů.; https://spdx.org/licenses/Nunit.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Nunit.json#text; Grant dovoluje každému užití pro libovolný účel včetně komerčních aplikací, úpravy a volnou redistribuci.; https://spdx.org/licenses/Nunit.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Nunit.json#text; Bod 1 zakazuje přisvojit si původní autorství a při použití v produktu vyžaduje předepsaný copyrightový acknowledgment v jeho dokumentaci. Body 2–3 vyžadují označit změněné zdroje a neměnit/neodstraňovat notice ze zdrojové distribuce.; https://spdx.org/licenses/Nunit.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Nunit.json#text; Bod 1 zakazuje přisvojit si původní autorství a při použití v produktu vyžaduje předepsaný copyrightový acknowledgment v jeho dokumentaci. Body 2–3 vyžadují označit změněné zdroje a neměnit/neodstraňovat notice ze zdrojové distribuce.; https://spdx.org/licenses/Nunit.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Nunit.json#text; AS IS vylučuje záruky a odpovědnost za škody z užívání; zákaz klamání o původu zůstává i u změn.; https://spdx.org/licenses/Nunit.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Nunit.json#text; Celý grant se třemi body nemá výslovný patentový grant ani patentové ukončení.; https://spdx.org/licenses/Nunit.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Nunit.json#text; Bod 1 zakazuje přisvojit si původní autorství a při použití v produktu vyžaduje předepsaný copyrightový acknowledgment v jeho dokumentaci. Body 2–3 vyžadují označit změněné zdroje a neměnit/neodstraňovat notice ze zdrojové distribuce. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/Nunit.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Nunit.json#text; Individuální kontrola celého připnutého textu Nunit dne 2026-09-09. Deprecated Nunit obsahuje copyrighty uvedených autorů z let 2000–2004 a tři omezení. Identifikátor Nunit je deprecated; podmínka uznání v dokumentaci při užití v produktu je nyní reprezentována spouštěčem use, ale před doporučením je nutné určit nezastaralé odpovídající znění. Identifikátor je deprecated; nejsou nabídnuty jiné licence nebo verze.; https://spdx.org/licenses/Nunit.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

@@ -1,0 +1,29 @@
+{
+  "id": "OLDAP-1.3",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:eba41fa5ec238aca7b2c1e46f98dfa0e5017e1f3a1c89690260ead9355889ee3"
+  },
+  "disposition": "blocked",
+  "summaryCs": "OpenLDAP 1.3 zachovává Artistic alternativy modifikací a binárek a omezený prodej samotného balíku. Zvlášť vyjímá vlastní linkovaný software používající subrutiny/proměnné balíku: výsledné executables lze libovolně užít, šířit a prodávat.",
+  "blockersCs": [
+    "§§ 3–4 mají odlišné distribuční alternativy, § 5 limit prodeje a §§ 7–8 dvě různé linkovací výjimky. Doplnit model těchto cest a hranic; nepřenášet širší § 8 na OLDAP1.1 ani předpokládat povinné zdroje všech binárek."
+  ],
+  "analysis": {
+    "subjectCs": "Verze 1.3 z 17.1.1999 definuje Package, Standard Version, rozumné kopírovné a Freely Available; musí být čtena samostatně od Artistic i OLDAP1.1.",
+    "grantCs": "§§1–4 dovolují zdroje, opravy, modifikace a binárky za samostatných alternativ; §5 dovoluje podporu/kopírovné/komerční agregaci, ne prodej balíku samotného. §8 výslovně dovoluje komerční redistribuci executables vlastního linkujícího softwaru. Patentový grant chybí.",
+    "conditionsCs": "§1 zachovává copyright/disclaimery. §3 každý změněný soubor označí jak/kdy a volí veřejně volné změny/přijetí držitelem, interní organizaci, přejmenované se standardními binárkami/manuály, či dohodu. §4 binárky volí standardní+instrukce, zdroje změn, standardní+nestandardní s dokumentací/odkazem, či dohodu. Obě sady nejsou kumulativní seznam všech možností.",
+    "limitationsCs": "§6 vstupy/výstupy nepatří automaticky balíku. §7 emulační C subrutiny nesmějí změnit chování Package tak, aby padaly regresní testy; §8 širší vlastní používající software není součást Package. §9 zákaz endorsementu, §10 bez záruk, nikoli samostatná výluka škod.",
+    "compatibilityCs": "§8 rozšiřuje volnost oproti OLDAP1.1 a nesmí být připsán starší verzi; §7 zde mluví o chování/regresních testech Package, nikoli jazyka. Žádná obecná GPL či novější licenční volba uvedena není."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/OLDAP-1.3.html",
+      "note": "Individuální revize celého připnutého textu; Verze 1.3 z 17.1.1999 definuje Package, Standard Version, rozumné kopírovné a Freely Available; musí být čtena samostatně od Artistic i OLDAP1.1."
+    }
+  ]
+}

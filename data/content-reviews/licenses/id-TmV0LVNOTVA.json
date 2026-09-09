@@ -1,0 +1,29 @@
+{
+  "id": "Net-SNMP",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:77ce255ec681074b0566f425a858d8d96b11155eb590af19c2f42469fc506282"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Net-SNMP zde představuje souhrn devíti licenčních bloků, které dovolují užití, změny a zdrojovou i binární distribuci příslušných částí. Zachovávají se jejich copyrighty, podmínky a výluky záruk; zdroje k binární distribuci se nevyžadují. Jména držitelů práv a přispěvatelů nesmějí bez svolení sloužit k podpoře produktů. Jde o historický identifikátor, proto je pro nový projekt třeba zvolit konkrétní licenci a při auditu balíku přiřadit podmínky jednotlivým souborům.",
+  "blockersCs": [
+    "SPDX označuje tento souhrnný identifikátor deprecated; pro doporučení nové licence použít konkrétní současné licence a pro audit Net-SNMP doložit jejich souborové přiřazení."
+  ],
+  "analysis": {
+    "subjectCs": "Připnutý Net-SNMP je souhrn devíti samostatně uvedených bloků CMU/UCD, Networks Associates, Cambridge Broadband, Sun, Sparta, Cisco/BUPTNIC, Fabasoft, Apple a ScienceLogic; jednotlivé části se vztahují k jejich kódu.",
+    "grantCs": "CMU/UCD dovoluje use/copy/modify/distribute softwaru i dokumentace pro jakýkoli účel; všech dalších osm bloků výslovně dovoluje zdrojovou i binární redistribuci a užití se změnami i bez nich. Samostatný patentový ani obecný podlicenční grant není napsán.",
+    "conditionsCs": "Část1 váže užití a kopie na copyright ve všech kopiích a copyright+permission v podpůrné dokumentaci. Části2–9 zachovávají copyright, podmínky a disclaimer ve zdroji a reprodukují je v dokumentaci či materiálech binární distribuce; zdroj k binárnímu kódu dodávat nemusí.",
+    "limitationsCs": "Část1 omezuje reklamní/publicitní použití CMU a Regents; ostatní zakazují podporu/propagaci jmény uvedených držitelů a případných přispěvatelů. Fabasoft navíc zmiňuje subsidiaries, brand a product names. Všechny bloky obsahují výluku záruk a odpovědnosti, s konkrétní formulací CMU/UCD a běžným AS IS u zbytku.",
+    "compatibilityCs": "Jde o deprecated identifikátor, nikoli doporučitelnou jednu licenci nového projektu. Pro skutečný Net-SNMP balík je třeba přiřadit notice konkrétním souborům; Sun výslovně připomíná možné materiály třetích stran. Text neobsahuje copyleft ani volbu pozdější verze."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Net-SNMP.html",
+      "note": "Individuálně přečten celý připnutý text; Část1 váže užití a kopie na copyright ve všech kopiích a copyright+permission v podpůrné dokumentaci. Části2–9 zachovávají copyright, podmínky a disclaimer ve zdroji a reprodukují je v dokumentaci či materiálech binární distribuce; zdroj k binárnímu kódu dodávat nemusí. Všech devět přečtených grantů mluví o použití a autorském kopírování/distribuci, žádný neuděluje patentovou licenci ani stanoví patentové ukončení."
+    }
+  ]
+}

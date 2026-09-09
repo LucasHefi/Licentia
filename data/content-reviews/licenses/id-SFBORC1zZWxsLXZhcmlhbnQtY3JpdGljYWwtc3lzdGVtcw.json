@@ -1,0 +1,27 @@
+{
+  "id": "HPND-sell-variant-critical-systems",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:c599d7b8c6e48fd9ddd4a6db11fe1d06e4f6529f0ca364178d1bdd31d703e069"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Licence dovoluje software a dokumentaci používat, měnit, kopírovat, distribuovat a prodávat se zachováním copyrightu a svolení. Vyjmenovaná jména nelze bez písemného souhlasu použít v reklamě na distribuci a text vylučuje záruky i odpovědnost. Upozornění, že software nebyl navržen pro bezpečnostně kritické systémy, samo takové použití nezakazuje.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Text Alana Coxe licencuje software a dokumentaci a obsahuje zvláštní upozornění na kritické systémy.",
+    "grantCs": "Grant výslovně dovoluje užití, kopírování, změny, distribuci a prodej pro jakýkoli účel bez poplatku.",
+    "conditionsCs": "Copyright musí být ve všech kopiích a copyright se svolením v podpůrné dokumentaci; další notifikace nebo zdrojové povinnosti nejsou.",
+    "limitationsCs": "Jména Red Hat, Alan Cox a Henrik Harmsen nesmějí bez předchozího písemného svolení do reklamy distribuce. AS IS odmítá záruky a jmenovitě Richard Hecker odpovědnost za škody. Poslední věta říká, že software není navržen pro safety critical systems; nezakazuje takové užití.",
+    "compatibilityCs": "Alternativní licence nebo volba verze nejsou nabídnuty; nesoulad jmen ve výluce je zachován podle textu."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/HPND-sell-variant-critical-systems.html",
+      "note": "Individuálně přečten celý připnutý text; Copyright musí být ve všech kopiích a copyright se svolením v podpůrné dokumentaci; další notifikace nebo zdrojové povinnosti nejsou. Celý text včetně critical-systems upozornění neobsahuje patentový grant či patentové ukončení."
+    }
+  ]
+}

@@ -8,92 +8,97 @@
     "contentHash": "sha256:7bcd1befa17e90cfd3f745d72377569bd940ab7fbdee1db3e7f2acda1bd69c93"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
       "commercial-use",
-      "modifications"
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "unknown"
+      "include-license-text",
+      "include-notice",
+      "include-use-acknowledgment",
+      "mark-modifications"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification",
+      "use"
     ],
-    "restrictions": [
-      "unknown"
-    ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "restrictions": [],
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/DL-DE-BY-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DL-DE-BY-2.0.json#text; Německé a anglické znění Datenlizenz Deutschland BY 2.0 pokrývají data a metadata. §1 obou znění dovoluje komerční/nekomerční kopie, tisk, prezentaci, změny, předání, spojení s vlastními i cizími daty a začlenění do veřejných i neveřejných sítí/aplikací. Zdrojová poznámka a značení datových změn nepožadují stejnou licenci ani vydání zdrojů programu.; https://spdx.org/licenses/DL-DE-BY-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/DL-DE-BY-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DL-DE-BY-2.0.json#text; Zdrojová poznámka a značení datových změn nepožadují stejnou licenci ani vydání zdrojů programu.; https://spdx.org/licenses/DL-DE-BY-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/DL-DE-BY-2.0.json#text; §1 obou znění dovoluje komerční/nekomerční kopie, tisk, prezentaci, změny, předání, spojení s vlastními i cizími daty a začlenění do veřejných i neveřejných sítí/aplikací.; https://spdx.org/licenses/DL-DE-BY-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/DL-DE-BY-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DL-DE-BY-2.0.json#text; §2 vyžaduje při užití zdrojovou poznámku s poskytovatelem, názvem či zkratkou licence a odkazem na text a URI datasetu, jen pokud tyto údaje poskytovatel dodal. §3 vyžaduje v poznámce uvést, že data byla změněna.; https://spdx.org/licenses/DL-DE-BY-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/DL-DE-BY-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DL-DE-BY-2.0.json#text; §2 vyžaduje při užití zdrojovou poznámku s poskytovatelem, názvem či zkratkou licence a odkazem na text a URI datasetu, jen pokud tyto údaje poskytovatel dodal. §3 vyžaduje v poznámce uvést, že data byla změněna.; https://spdx.org/licenses/DL-DE-BY-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/DL-DE-BY-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DL-DE-BY-2.0.json#text; Obě plná znění neobsahují výluky záruk/odpovědnosti, patentové sankce nebo zákaz komerčního užití.; https://spdx.org/licenses/DL-DE-BY-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/DL-DE-BY-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DL-DE-BY-2.0.json#text; Celé oba jazykové texty nemají výslovný patentový grant nebo odvetné ukončení.; https://spdx.org/licenses/DL-DE-BY-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/DL-DE-BY-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DL-DE-BY-2.0.json#text; §2 vyžaduje při užití zdrojovou poznámku s poskytovatelem, názvem či zkratkou licence a odkazem na text a URI datasetu, jen pokud tyto údaje poskytovatel dodal. §3 vyžaduje v poznámce uvést, že data byla změněna. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/DL-DE-BY-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/DL-DE-BY-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DL-DE-BY-2.0.json#text; Individuální kontrola celého připnutého textu DL-DE-BY-2.0 dne 2026-09-09. Německé a anglické znění Datenlizenz Deutschland BY 2.0 pokrývají data a metadata. Předmětem jsou data/metadata a atribuce i při neveřejném datovém užití; před doporučením novému softwaru je třeba samostatný model dat. Licence uvádí německou i anglickou formulaci, nenabízí jinou licenci/verzi; odkaz govdata je licenční text pro zdrojovou poznámku.; https://spdx.org/licenses/DL-DE-BY-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

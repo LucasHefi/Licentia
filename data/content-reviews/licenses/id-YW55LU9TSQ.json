@@ -1,0 +1,29 @@
+{
+  "id": "any-OSI",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:23d83648f3f3acec7a44330f3f21d54f596e92e202d9f1b8a06c996a847e98ad"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Prohlášení dovoluje zvolit libovolnou licenci schválenou OSI, samo však neurčuje jednotná práva ani povinnosti. Záruky, patenty a podmínky dalšího šíření závisejí na skutečně zvolené licenci. Průvodce je proto nemůže doporučit jako samostatnou licenci; nejprve je potřeba zaznamenat konkrétní volbu a její verzi.",
+  "blockersCs": [
+    "Text odkazuje na volbu z externího seznamu OSI bez určení konkrétní licence; pro průvodce je nutné zaznamenat zvolený identifikátor/verzi a modelovat alternativu, nikoli jí přisoudit jednotné podmínky."
+  ],
+  "analysis": {
+    "subjectCs": "Dvouřádkové prohlášení dovoluje zvolit oblíbenou licenci schválenou OSI.",
+    "grantCs": "Věta „Pick your favourite“ neuděluje jednotný soubor práv; práva závisejí na skutečné volbě licence.",
+    "conditionsCs": "Odkaz na abecední seznam OSI nahrazuje vlastní podmínky; povinnosti jednotlivých možností nelze sečíst.",
+    "limitationsCs": "Text sám neobsahuje odpovědnostní, patentová ani ukončovací pravidla; určuje je zvolená licence.",
+    "compatibilityCs": "Volba je výslovná, ale konkrétní licence ani její verze není určena."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/any-OSI.html",
+      "note": "Individuálně přečten celý připnutý text; Odkaz na abecední seznam OSI nahrazuje vlastní podmínky; povinnosti jednotlivých možností nelze sečíst. Prohlášení neobsahuje patentové ujednání; patentovou pozici určuje vybraná licence."
+    }
+  ]
+}

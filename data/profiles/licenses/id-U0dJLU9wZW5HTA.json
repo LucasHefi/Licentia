@@ -8,95 +8,100 @@
     "contentHash": "sha256:1d51ff2509b17c30f9a13fd055bb390646f1e90c09c9c1d68931357d382d6a59"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "include-license-text"
+      "include-license-text",
+      "unknown"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "use"
     ],
     "restrictions": [
       "liability",
       "trademark",
+      "unknown",
       "warranty"
     ],
-    "patentPosition": "unknown",
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SGI-OpenGL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SGI-OpenGL.json#text; SGI grant z roku 1993 má zvláštní oddíl US Government Users Restricted Rights. Úvod dovoluje užití, kopírování, změny a distribuci pro jakýkoli účel bez poplatku; vládní užití/duplikace/zpřístupnění se dále podřizují odkazovaným FAR/DFARS či nástupnickým doložkám. Vlastní notice grant nevyžaduje zdroje nebo stejnou licenci; externí vládní omezení nelze redukovat na copyleft.; https://spdx.org/licenses/SGI-OpenGL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SGI-OpenGL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SGI-OpenGL.json#text; Vlastní notice grant nevyžaduje zdroje nebo stejnou licenci; externí vládní omezení nelze redukovat na copyleft.; https://spdx.org/licenses/SGI-OpenGL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SGI-OpenGL.json#text; Úvod dovoluje užití, kopírování, změny a distribuci pro jakýkoli účel bez poplatku; vládní užití/duplikace/zpřístupnění se dále podřizují odkazovaným FAR/DFARS či nástupnickým doložkám.; https://spdx.org/licenses/SGI-OpenGL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SGI-OpenGL.json#text; Copyright je ve všech kopiích a copyright se svolením v dokumentaci; vládní příjemci mají další omezení z FAR 52.227.19(c)(2), DFARS 252.227-7013(c)(1)(ii) a obdobných/nástupnických doložek.; https://spdx.org/licenses/SGI-OpenGL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SGI-OpenGL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SGI-OpenGL.json#text; Copyright je ve všech kopiích a copyright se svolením v dokumentaci; vládní příjemci mají další omezení z FAR 52.227.19(c)(2), DFARS 252.227-7013(c)(1)(ii) a obdobných/nástupnických doložek.; https://spdx.org/licenses/SGI-OpenGL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SGI-OpenGL.json#text; SGI jméno nesmí bez písemného souhlasu do publicity distribuce; AS IS vylučuje záruky/odpovědnost. OpenGL je označena za známku SGI a práva k nezveřejněnému dílu jsou rezervována.; https://spdx.org/licenses/SGI-OpenGL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SGI-OpenGL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SGI-OpenGL.json#text; Vlastní text nemá výslovný patentový grant nebo patentové ukončení.; https://spdx.org/licenses/SGI-OpenGL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SGI-OpenGL.json#text; Copyright je ve všech kopiích a copyright se svolením v dokumentaci; vládní příjemci mají další omezení z FAR 52.227.19(c)(2), DFARS 252.227-7013(c)(1)(ii) a obdobných/nástupnických doložek. Rozsah notifikační zátěže: standard.; https://spdx.org/licenses/SGI-OpenGL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SGI-OpenGL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SGI-OpenGL.json#text; Individuální kontrola celého připnutého textu SGI-OpenGL dne 2026-09-09. SGI grant z roku 1993 má zvláštní oddíl US Government Users Restricted Rights. Vládní oddíl odkazuje na historická i nástupnická FAR/DFARS omezení pro konkrétní příjemce; před doporučením je třeba určit použitelné smluvní znění a modelovat tento příjemcovský rozsah. Vládní oddíl je externí podmínka, nikoli jiná licence. Aktuální oficiální FAR https://www.acquisition.gov/far/52.227-19 a DFARS https://www.acquisition.gov/dfars/252.227-7013-rights-technical-data%E2%80%94other-commercial-products-and-commercial-services. upravují vládní smluvní práva; neprokazují automaticky historické znění citované v roce 1993.; https://spdx.org/licenses/SGI-OpenGL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

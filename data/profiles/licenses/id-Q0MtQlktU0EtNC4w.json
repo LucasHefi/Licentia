@@ -8,96 +8,105 @@
     "contentHash": "sha256:e172cb60ffe7b8c027d72414b61254ffcc1e36df080000ca382106fb7f35046d"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "strong-copyleft",
+    "copyleftScope": "whole-work",
     "permissions": [
+      "commercial-use",
+      "conditional-relicensing",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "include-license-text",
+      "include-notice",
       "mark-modifications",
-      "same-license"
-    ],
-    "triggers": [
+      "same-license",
       "unknown"
     ],
-    "restrictions": [
-      "liability",
-      "trademark"
+    "triggers": [
+      "distribution",
+      "modification",
+      "use"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "restrictions": [
+      "additional-terms",
+      "liability",
+      "trademark",
+      "unknown",
+      "warranty"
+    ],
+    "patentPosition": "express-exclusion",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-SA-4.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-SA-4.0.json#text; CC BY-SA4.0 International pokrývá autorský obsah, výkony, nahrávky a sui generis databáze; Adapted Material je oprávnění vyžadující změna včetně synchronizace hudby s obrazem. §2 dovoluje reprodukovat i veřejně Share původní a adaptovaný materiál komerčně i nekomerčně; licence je neodvolatelná a nepodlicencovatelná. Technické mediální změny včetně nezbytného obcházení opatření jsou dovoleny a samy netvoří adaptaci; každému příjemci je nabídnuta licence původního i adaptovaného materiálu podle příslušného Adapter’s License. §3(b) ukládá ShareAlike Adapted Material a§4(b) nové chráněné databázi, nikoli každému samostatnému obsahu; není požadavek softwarových zdrojů. Scope whole-work zde popisuje obsahový derivát a vyžaduje obsahový model.; https://spdx.org/licenses/CC-BY-SA-4.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-SA-4.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-SA-4.0.json#text; §3(b) ukládá ShareAlike Adapted Material a§4(b) nové chráněné databázi, nikoli každému samostatnému obsahu; není požadavek softwarových zdrojů. Scope whole-work zde popisuje obsahový derivát a vyžaduje obsahový model.; https://spdx.org/licenses/CC-BY-SA-4.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-BY-SA-4.0.json#text; §2 dovoluje reprodukovat i veřejně Share původní a adaptovaný materiál komerčně i nekomerčně; licence je neodvolatelná a nepodlicencovatelná. Technické mediální změny včetně nezbytného obcházení opatření jsou dovoleny a samy netvoří adaptaci; každému příjemci je nabídnuta licence původního i adaptovaného materiálu podle příslušného Adapter’s License.; https://spdx.org/licenses/CC-BY-SA-4.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-BY-SA-4.0.json#text; §3(a) při Share zachovává dodané tvůrce a určené osoby, copyright, licenční/disclaimer notices a prakticky dostupné URI, označuje vlastní a předchozí změny a uvádí licenci textem nebo hyperlinkem. Rozumný odkaz může splnit atribuci; na žádost se přiměřeně odstraní údaje§3(a)(1)(A). §3(b) vyžaduje pro vlastní sdílené adaptace BY-SA této/pozdější verze nebo BY-SA Compatible License a její text/odkaz, bez dalších podmínek či technických opatření bránících právům. §4 vztahuje ShareAlike i na databázi s podstatným převzatým obsahem a vlastním sui generis právem, nikoli automaticky na jednotlivý obsah.; https://spdx.org/licenses/CC-BY-SA-4.0.html Terminologické upřesnění 2026-09-10: § 3(a)(1)(C) při Share vyžaduje označení této Public License a její text NEBO URI či hyperlink; § 3(a)(2) připouští rozumný způsob podle média, prostředku a kontextu. § 3(b)(2) zvlášť dovoluje text NEBO URI či hyperlink použité Adapter’s License pro sdílenou adaptaci, opět rozumným způsobem. include-notice zachycuje požadované licenční oznámení s touto alternativou; include-license-text se neuvádí jako bezpodmínečná povinnost.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-SA-4.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-SA-4.0.json#text; §3(a) při Share zachovává dodané tvůrce a určené osoby, copyright, licenční/disclaimer notices a prakticky dostupné URI, označuje vlastní a předchozí změny a uvádí licenci textem nebo hyperlinkem. Rozumný odkaz může splnit atribuci; na žádost se přiměřeně odstraní údaje§3(a)(1)(A). §3(b) vyžaduje pro vlastní sdílené adaptace BY-SA této/pozdější verze nebo BY-SA Compatible License a její text/odkaz, bez dalších podmínek či technických opatření bránících právům. §4 vztahuje ShareAlike i na databázi s podstatným převzatým obsahem a vlastním sui generis právem, nikoli automaticky na jednotlivý obsah.; https://spdx.org/licenses/CC-BY-SA-4.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-BY-SA-4.0.json#text; §2 brání dojmu schválení, nelicencuje osobnostní práva, ale omezeně se jich vzdává/neprosazuje je; výslovně vylučuje patenty a známky a v možném rozsahu odměny promíjí. §5 AS IS/as-available a zákonně možné vyloučení škod. §6 porušení ukončuje, s obnovením při nápravě do30 dnů od zjištění nebo výslovně; zastavení distribuce poskytovatelem licenci neodvolá.; https://spdx.org/licenses/CC-BY-SA-4.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-SA-4.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-SA-4.0.json#text; §2(b)(2) výslovně nelicencuje patentová práva; žádný patentový grant nebo ukončení žalobou z tohoto nelze dovodit.; https://spdx.org/licenses/CC-BY-SA-4.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-BY-SA-4.0.json#text; §3(a) při Share zachovává dodané tvůrce a určené osoby, copyright, licenční/disclaimer notices a prakticky dostupné URI, označuje vlastní a předchozí změny a uvádí licenci textem nebo hyperlinkem. Rozumný odkaz může splnit atribuci; na žádost se přiměřeně odstraní údaje§3(a)(1)(A). §3(b) vyžaduje pro vlastní sdílené adaptace BY-SA této/pozdější verze nebo BY-SA Compatible License a její text/odkaz, bez dalších podmínek či technických opatření bránících právům. §4 vztahuje ShareAlike i na databázi s podstatným převzatým obsahem a vlastním sui generis právem, nikoli automaticky na jednotlivý obsah. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/CC-BY-SA-4.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-SA-4.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-SA-4.0.json#text; Individuální kontrola celého připnutého textu CC-BY-SA-4.0 dne 2026-09-09. CC BY-SA4.0 International pokrývá autorský obsah, výkony, nahrávky a sui generis databáze; Adapted Material je oprávnění vyžadující změna včetně synchronizace hudby s obrazem. §1,3–4 vyžadují obsahový a databázový model ShareAlike, odstranění atribuce na žádost, technických opatření a omezeného vzdání se osobnostních práv; současný software průvodce tuto licenci neumí věrně doporučit. §1(c) a3(b) odkazují na závazný seznam CC. Ověřený primární https://creativecommons.org/compatible-licenses/ uvádí pro4.0 Free Art License1.3 a GPLv3, u GPL výslovně pouze jednosměrně pro příspěvky k adaptacím; nejde o obecné oboustranné přelicencování libovolného programu. Úvodní doporučení a závěrečná známková politika CC jsou mimo Public License.; https://spdx.org/licenses/CC-BY-SA-4.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

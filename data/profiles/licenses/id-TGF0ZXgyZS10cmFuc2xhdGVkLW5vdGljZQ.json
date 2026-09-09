@@ -8,92 +8,93 @@
     "contentHash": "sha256:0b6faa31fedc9377165056fde6a3b6dbcda3353d8e5a34e1507810aba6e2abb3"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "strong-copyleft",
+    "copyleftScope": "whole-work",
     "permissions": [
-      "distribution"
+      "distribution",
+      "modifications"
     ],
     "obligations": [
       "include-copyright",
-      "include-license-text"
+      "include-license-text",
+      "same-license"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification"
     ],
-    "restrictions": [
-      "unknown"
-    ],
-    "patentPosition": "unknown",
+    "restrictions": [],
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Latex2e-translated-notice.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Latex2e-translated-notice.json#text; Grant se týká manuálu s uvedenými copyrighty FSF a jednotlivých autorů i jeho překladů. Tři odstavce dovolují doslovné kopie, upravené verze a jazykové překlady manuálu. Druhý odstavec vztahuje stejné svolení na celé odvozené dílo manuálu; třetí tuto podmínku zachovává i pro překlady.; https://spdx.org/licenses/Latex2e-translated-notice.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Latex2e-translated-notice.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Latex2e-translated-notice.json#text; Druhý odstavec vztahuje stejné svolení na celé odvozené dílo manuálu; třetí tuto podmínku zachovává i pro překlady.; https://spdx.org/licenses/Latex2e-translated-notice.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Latex2e-translated-notice.json#text; Tři odstavce dovolují doslovné kopie, upravené verze a jazykové překlady manuálu.; https://spdx.org/licenses/Latex2e-translated-notice.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Latex2e-translated-notice.json#text; Copyright a svolení zůstanou ve všech kopiích; celé odvozené dílo musí mít identické svolení. U překladu smí být i svolení přeloženo, jen pokud překlad schválila Foundation.; https://spdx.org/licenses/Latex2e-translated-notice.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Latex2e-translated-notice.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Latex2e-translated-notice.json#text; Copyright a svolení zůstanou ve všech kopiích; celé odvozené dílo musí mít identické svolení. U překladu smí být i svolení přeloženo, jen pokud překlad schválila Foundation.; https://spdx.org/licenses/Latex2e-translated-notice.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Latex2e-translated-notice.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Latex2e-translated-notice.json#text; Záruky a odpovědnost se neřeší; schvalování se týká překladu licenčního svolení, nikoli obecně každého překladu manuálu.; https://spdx.org/licenses/Latex2e-translated-notice.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Latex2e-translated-notice.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Latex2e-translated-notice.json#text; Celé tři grantové odstavce nemají patentový grant ani patentové ukončení.; https://spdx.org/licenses/Latex2e-translated-notice.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Latex2e-translated-notice.json#text; Copyright a svolení zůstanou ve všech kopiích; celé odvozené dílo musí mít identické svolení. U překladu smí být i svolení přeloženo, jen pokud překlad schválila Foundation. Rozsah notifikační zátěže: standard.; https://spdx.org/licenses/Latex2e-translated-notice.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Latex2e-translated-notice.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Latex2e-translated-notice.json#text; Individuální kontrola celého připnutého textu Latex2e-translated-notice dne 2026-09-09. Grant se týká manuálu s uvedenými copyrighty FSF a jednotlivých autorů i jeho překladů. Grant pokrývá manuál a překlady s možností schváleného překladu svolení; před doporučením novému softwaru je třeba samostatný model dokumentace. Výjimka oproti Latex2e dovoluje Foundation schválený překlad notice; jiné licence nebo verze nenabízí.; https://spdx.org/licenses/Latex2e-translated-notice.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

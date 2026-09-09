@@ -1,0 +1,22 @@
+{
+  "id": "Graphics-Gems",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.6",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:d2aec550d12f7ab5d2978c2e9dcd52a6cb88296e3a877229504b7cbcb71bf196"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Text dovoluje použití kódu v komerčních i nekomerčních programech, produktech a knihovnách a zakazuje vydávat jeho text za vlastní a tak jej přeprodávat. Uvedení autorů je dobrovolné. Rozsah úprav a samostatného šíření zdrojového kódu není jednoznačně vymezen, proto zůstává k posouzení.",
+  "blockersCs": [
+    "Posoudit přesný dosah grantů na úpravy a samostatné zdrojové šíření a význam zákazu přivlastnění textu při přeprodeji. Nezaměňovat jej za obecný zákaz komerčního použití, které je výslovně dovoleno. Dobrovolné uvedení autorů a neurčitou behaviorální větu nepřevádět bez podkladu na standardní povinnosti."
+  ],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Graphics-Gems.html",
+      "note": "Dřívější individuální revize 2026-09-09.6; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

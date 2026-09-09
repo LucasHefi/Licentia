@@ -1,0 +1,29 @@
+{
+  "id": "radvd",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:7126a7b5f6183b50e15aa4b3ff350c9f449959735aab618ea386fe18ea711d54"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Zdroje/binárky lze používat a šířit, avšak verze označené jako nerozšiřovatelné se nesmějí redistribuovat vůbec. Platí další použitelné licence, notice, reklamní uznání autorů a zákaz endorsementu.",
+  "blockersCs": [
+    "Bod 0 podmiňuje distribuční právo konkrétním označením verze v README/version message a bod 1 vyžaduje všechny další použitelné licence. Prověřit balík a modelovat podmíněnou redistribuci i konkrétní externí licenční závislosti před doporučením."
+  ],
+  "analysis": {
+    "subjectCs": "Předmětem je software a dokumentace radvd; oprávnění distribuce závisí na označení konkrétní verze ve version message či README.",
+    "grantCs": "Úvod uděluje redistribution/use obou forem i modifikací, ale bod 0 odnímá distribuci jakékoli podoby verze výslovně labelled not for redistribution. Patentový grant a sublicence nejsou uvedeny.",
+    "conditionsCs": "Bod 1 zachovává všechny další použitelné copyrighty/licence. Body 2–3 požadují copyrighty, podmínky a disclaimer ve zdrojích/materiálech binárek. Bod 4 vyžaduje předepsané uznání autorů dle zdrojových copyrightů a přispěvatelů v reklamě zmiňující vlastnosti/užití.",
+    "limitationsCs": "Bod 0 obsahuje úplný podmíněný zákaz redistribuce podle externího označení verze. Bod 5 zakazuje endorsement jmény autorů/přispěvatelů bez písemného svolení; disclaimer odmítá záruky a škody.",
+    "compatibilityCs": "Bod 1 začleňuje další skutečně použitelné licence, jejichž konkrétní soubor není součástí pinned textu. Reklamní klauzule sama nedokládá kompatibilitu s jiným softwarem."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/radvd.html",
+      "note": "Individuální revize celého připnutého textu; Předmětem je software a dokumentace radvd; oprávnění distribuce závisí na označení konkrétní verze ve version message či README."
+    }
+  ]
+}

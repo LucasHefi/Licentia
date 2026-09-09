@@ -8,95 +8,105 @@
     "contentHash": "sha256:44074ea4363a2c7db3e4b316e7eac649e09c2fd0e63a522318a233b6e2089689"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "weak-copyleft",
+    "copyleftScope": "file",
     "permissions": [
+      "commercial-use",
+      "conditional-relicensing",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
+      "disclose-source",
+      "include-copyright",
       "include-license-text",
-      "provide-corresponding-source"
+      "include-notice",
+      "same-license"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification",
+      "use"
     ],
     "restrictions": [
+      "additional-terms",
       "liability",
       "trademark",
+      "unknown",
       "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "express-exclusion",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Zimbra-1.3.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Zimbra-1.3.json#text; §§1.3–1.5 zachovávají ZPL na zdrojích a připouštějí jiné binární podmínky i nezávislé soubory; jde o slabý copyleft; https://spdx.org/licenses/Zimbra-1.3.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Zimbra-1.3.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Zimbra-1.3.json#text; §1.1 výslovná file výjimka nových souborů bez části Software a §1.5 vlastní samostatné soubory zakládají souborovou hranici; https://spdx.org/licenses/Zimbra-1.3.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Zimbra-1.3.json#text; §1.1 explicitně copy/modify/compile/execute/distribute s nulovou royalty; §1.4 odlišné binární podmínky pouze při přístupu ke zdrojům a zachování jejich práv; https://spdx.org/licenses/Zimbra-1.3.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Zimbra-1.3.json#text; §1.3 celý text a zdroje pod ZPL, §1.4 zdrojový přístup příjemcům binárek a notice vlastních podmínek, §3.2 zachovat původní notices včetně UI log v téže formě; https://spdx.org/licenses/Zimbra-1.3.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Zimbra-1.3.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Zimbra-1.3.json#text; §§1.3–1.4 distribuce s výjimkou interního předání §1.2; §3.2 každá kopie i vytvořená změna, včetně zachovaných UI notices při použití; žádný network-source trigger; https://spdx.org/licenses/Zimbra-1.3.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Zimbra-1.3.json#text; §1.4 zákaz omezit zdrojová práva, §3.3 úzká výjimka značek pro notices, §§4–5 výluky; §7 souhlas VMware k převodu při fúzi/prodeji aktiv je nemodelovaná restrikce; https://spdx.org/licenses/Zimbra-1.3.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Zimbra-1.3.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Zimbra-1.3.json#text; §3.1 výslovně ponechává jen copyright grant §1.1 a vylučuje jiné licence výslovné či implicitní/exhaustion/estoppel; patentová práva tak nejsou poskytnuta; https://spdx.org/licenses/Zimbra-1.3.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Zimbra-1.3.json#text; §3.2 původní forma všech notices a UI log, §§1.3–1.4 úplná licence a jasný původ odlišných binárních podmínek; materiální informační režim; https://spdx.org/licenses/Zimbra-1.3.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Zimbra-1.3.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Zimbra-1.3.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. ZPL 1.3 je zde licence VMware: zdroje Software a změn musí zůstat pod ZPL, binárky mohou mít jinou vlastní licenci jen s přístupem příjemců ke zdrojům a zachováním jejich práv. Nové soubory bez originálního kódu jsou oddělené. Ve všech kopiích a změnách se zachovávají notices ve stejné podobě včetně UI log. Grant pokrývá pouze autorská práva; převody práv či dohody včetně fúze vyžadují předchozí písemný souhlas VMware. Blokace: §7 činí převod dohody, postoupení práv a delegaci povinností bez písemného souhlasu VMware od počátku neplatnými, včetně prodeje aktiv, fúze a konsolidace. Dostupná restrictions tento dopad na podnikové přeměny neumějí vyjádřit; je nutné doplnit odpovídající model před doporučením licence.; https://spdx.org/licenses/Zimbra-1.3.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

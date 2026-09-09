@@ -8,94 +8,105 @@
     "contentHash": "sha256:6b2372a44ba5c8b6f864352883c3ab798991d80f27259ce392a08913d4f94d41"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
+    "family": "nonstandard",
     "copyleftScope": "unknown",
     "permissions": [
       "commercial-use",
+      "conditional-relicensing",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "include-copyright"
-    ],
-    "triggers": [
+      "include-copyright",
+      "include-license-text",
+      "include-notice",
+      "mark-modifications",
+      "provide-corresponding-source",
       "unknown"
     ],
+    "triggers": [
+      "distribution",
+      "modification",
+      "use"
+    ],
     "restrictions": [
+      "additional-terms",
       "liability",
+      "unknown",
       "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LPPL-1.3a.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LPPL-1.3a.json#text; LPPL1.3a z1.10.2004 upravuje Work a jeho komponenty, Compiled Work, Base Interpreter a roli Current Maintainer. Výchozí interpret je LaTeX-Format, ale lze určit jiný. §1 neomezuje běh ani nabídky podpory;§2 dovoluje kompletní nezměněné kopie, částečné kopie považuje za změnu. §3 dovoluje compiled originálu jen při instalaci přesně jako z originálu. §4 dává správci volné změny/distribuci jako aktualizace;§5–7 ostatním dovoluje změny a distribuci s odlišnými podmínkami. Zdrojový požadavek§7 platí pro compiled derivát nespravující osoby, ale§10 jiná licence musí zachovat pouze§6; role správce a komponentové hranice neodpovídají jediné file/library/whole-work hodnotě.; https://spdx.org/licenses/LPPL-1.3a.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LPPL-1.3a.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LPPL-1.3a.json#text; Zdrojový požadavek§7 platí pro compiled derivát nespravující osoby, ale§10 jiná licence musí zachovat pouze§6; role správce a komponentové hranice neodpovídají jediné file/library/whole-work hodnotě.; https://spdx.org/licenses/LPPL-1.3a.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/LPPL-1.3a.json#text; §1 neomezuje běh ani nabídky podpory;§2 dovoluje kompletní nezměněné kopie, částečné kopie považuje za změnu. §3 dovoluje compiled originálu jen při instalaci přesně jako z originálu. §4 dává správci volné změny/distribuci jako aktualizace;§5–7 ostatním dovoluje změny a distribuci s odlišnými podmínkami.; https://spdx.org/licenses/LPPL-1.3a.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/LPPL-1.3a.json#text; §6(a) nenařizuje plošné přejmenování jako1.2, ale záměnná komponenta se při interaktivním užití s Base Interpreter musí jednoznačně identifikovat jako změněná tam, kde to činil originál. Každá komponenta má popis změn nebo odkaz na úplný log, nesmí implikovat nepřislíbenou podporu původních osob a přiloží originální celek nebo dostatečné údaje k jeho získání; ekvivalentní download může být na stejném či podobném místě. §7 všem příjemcům compiled derivátu dodává Derived Work. Výjimky z§6 může v copyright notice udělit pouze Current Maintainer.; https://spdx.org/licenses/LPPL-1.3a.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LPPL-1.3a.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LPPL-1.3a.json#text; §6(a) nenařizuje plošné přejmenování jako1.2, ale záměnná komponenta se při interaktivním užití s Base Interpreter musí jednoznačně identifikovat jako změněná tam, kde to činil originál. Každá komponenta má popis změn nebo odkaz na úplný log, nesmí implikovat nepřislíbenou podporu původních osob a přiloží originální celek nebo dostatečné údaje k jeho získání; ekvivalentní download může být na stejném či podobném místě. §7 všem příjemcům compiled derivátu dodává Derived Work. Výjimky z§6 může v copyright notice udělit pouze Current Maintainer.; https://spdx.org/licenses/LPPL-1.3a.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/LPPL-1.3a.json#text; §8 přesná aktualizace na správcovu verzi má výjimku; alternativní formát§9 povinnosti neobchází. AS IS a vyloučení škod mají zákonné/písemné výjimky. Maintenance rozlišuje author-maintained, maintained a po6 měsících nedostupnosti bez aktivity unmaintained; převzetí vyžaduje dohledání, dotaz/oznámení a příslušné1/3měsíční lhůty, s právem návratu původního správce za vymezených podmínek.; https://spdx.org/licenses/LPPL-1.3a.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LPPL-1.3a.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LPPL-1.3a.json#text; Text definuje autorské a správcovské podmínky a záruky; patentový grant ani patentovou odvetu neobsahuje.; https://spdx.org/licenses/LPPL-1.3a.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/LPPL-1.3a.json#text; §6(a) nenařizuje plošné přejmenování jako1.2, ale záměnná komponenta se při interaktivním užití s Base Interpreter musí jednoznačně identifikovat jako změněná tam, kde to činil originál. Každá komponenta má popis změn nebo odkaz na úplný log, nesmí implikovat nepřislíbenou podporu původních osob a přiloží originální celek nebo dostatečné údaje k jeho získání; ekvivalentní download může být na stejném či podobném místě. §7 všem příjemcům compiled derivátu dodává Derived Work. Výjimky z§6 může v copyright notice udělit pouze Current Maintainer. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/LPPL-1.3a.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LPPL-1.3a.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LPPL-1.3a.json#text; Individuální kontrola celého připnutého textu LPPL-1.3a dne 2026-09-09. LPPL1.3a z1.10.2004 upravuje Work a jeho komponenty, Compiled Work, Base Interpreter a roli Current Maintainer. Výchozí interpret je LaTeX-Format, ale lze určit jiný. §3–7 a Maintenance vyžadují role správce, stav údržby, přesnou instalovatelnost, interaktivní identitu Base Interpreter a podmíněný proces převzetí; tyto povinnosti potřebují vlastní model. §6(d),7,10 mají odlišné cesty dodání originálu, zdroje derivátu a přelicencování s pouze podmnožinou povinností; jednoznačný softwarový copyleftScope nelze bez této rozhodovací struktury přidělit. §10(a) dovoluje jinou licenci derivátu zachovávající podmínky§6, nikoli nutně ostatní LPPL;§10(b) derivát pod LPPL musí dokumentovat původní změny. §11 neomezuje nesouvisející díla ani agregace. Aplikační příklad1.3-or-later není automatická volba pro každý Work; obecné doporučení soukromých úprav není povinnost.; https://spdx.org/licenses/LPPL-1.3a.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

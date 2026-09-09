@@ -9,92 +9,95 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
       "include-license-text"
     ],
     "triggers": [
-      "unknown"
+      "distribution"
     ],
     "restrictions": [
-      "trademark"
+      "trademark",
+      "warranty"
     ],
-    "patentPosition": "unknown",
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NTP.json#text; permission paragraph: use, copy, modify and distribute for any purpose with or without fee; whole text: no reciprocal source-disclosure or same-license requirement; https://spdx.org/licenses/NTP.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NTP.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NTP.json#text; permission paragraph: use, copy, modify and distribute for any purpose with or without fee; https://spdx.org/licenses/NTP.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
     },
     {
-      "field": "copyleftScope",
+      "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NTP.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NTP.json#text; permission paragraph: copyright in all copies; copyright and permission notice in supporting documentation; https://spdx.org/licenses/NTP.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
     },
     {
-      "field": "triggers",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NTP.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NTP.json#text; permission paragraph: copyright in all copies; copyright and permission notice in supporting documentation; https://spdx.org/licenses/NTP.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NTP.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NTP.json#text; whole text: no express patent grant or patent-litigation termination clause is stated; this is not a conclusion about implied rights; https://spdx.org/licenses/NTP.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/NTP.json#text; permission paragraph: use, copy, modify and distribute for any purpose with or without fee; https://spdx.org/licenses/NTP.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/NTP.json#text; same paragraph: advertising/publicity name restriction and express/implied warranty disclaimer; whole text: no explicit limitation of liability; https://spdx.org/licenses/NTP.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NTP.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NTP.json#text; whole-text editorial review on 2026-09-09; Zachovejte copyright v kopiích a copyright i licenční oznámení v dokumentaci. Jméno nositele práv nepoužívejte k reklamě bez souhlasu. Text vylučuje záruky, výslovné omezení odpovědnosti neuvádí.; https://spdx.org/licenses/NTP.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/NTP.json#text; permission paragraph: copyright in all copies; copyright and permission notice in supporting documentation; https://spdx.org/licenses/NTP.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
     }
   ]
 }

@@ -9,92 +9,98 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "provide-corresponding-source"
+      "include-license-text",
+      "include-notice"
     ],
     "triggers": [
-      "unknown"
+      "distribution"
     ],
     "restrictions": [
-      "liability"
+      "additional-terms",
+      "liability",
+      "trademark",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/PHP-3.01.json#text; opening source/binary redistribution and use with/without modification; §5 permits continuing received license version OR subsequent PHP Group version, not arbitrary alteration of covered-code terms; no reciprocal source-supply or same-license condition; https://spdx.org/licenses/PHP-3.01.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.8"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/PHP-3.01.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/PHP-3.01.json#text; opening source/binary redistribution and use with/without modification; §5 permits continuing received license version OR subsequent PHP Group version, not arbitrary alteration of covered-code terms; https://spdx.org/licenses/PHP-3.01.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.8"
     },
     {
-      "field": "copyleftScope",
+      "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/PHP-3.01.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/PHP-3.01.json#text; §§1-2 source/binary copyright/conditions/disclaimer; §6 EVERY redistribution prescribed PHP software acknowledgment with http://www.php.net/software/; no source duty; https://spdx.org/licenses/PHP-3.01.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.8"
     },
     {
-      "field": "triggers",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/PHP-3.01.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/PHP-3.01.json#text; §§1-2 source/binary copyright/conditions/disclaimer; §6 EVERY redistribution prescribed PHP software acknowledgment with http://www.php.net/software/; no source duty; https://spdx.org/licenses/PHP-3.01.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.8"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/PHP-3.01.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/PHP-3.01.json#text; whole text: no express patent grant or patent-litigation termination; no inference of patent rights from copyright, trademarks or non-infringement disclaimers; https://spdx.org/licenses/PHP-3.01.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.8"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/PHP-3.01.json#text; opening source/binary redistribution and use with/without modification; §5 permits continuing received license version OR subsequent PHP Group version, not arbitrary alteration of covered-code terms; https://spdx.org/licenses/PHP-3.01.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.8"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/PHP-3.01.json#text; §3 PHP endorsement written permission; §4 derived product name prohibition without permission but expressly permits Foo for PHP functional description; §5 license steward/version control; final warranty/liability disclaimer; https://spdx.org/licenses/PHP-3.01.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.8"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/PHP-3.01.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/PHP-3.01.json#text; whole-text editorial review on 2026-09-09, batch 8; Copyright, podmínky a disclaimer zachovejte ve zdrojích nebo materiálech k binárním kopiím. Každá redistribuce musí obsahovat předepsané poděkování a odkaz na PHP software. Propagace jménem PHP a použití PHP v názvu odvozeného produktu vyžadují písemný souhlas; označení typu Foo for PHP je výslovně dovoleno. Lze zůstat u původně použité verze licence nebo zvolit pozdější verzi vydanou PHP Group. Licence nevyžaduje poskytování zdrojů a neobsahuje patentový grant.; https://spdx.org/licenses/PHP-3.01.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.8"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/PHP-3.01.json#text; §§1-2 source/binary copyright/conditions/disclaimer; §6 EVERY redistribution prescribed PHP software acknowledgment with http://www.php.net/software/; no source duty; https://spdx.org/licenses/PHP-3.01.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.8"
     }
   ]
 }

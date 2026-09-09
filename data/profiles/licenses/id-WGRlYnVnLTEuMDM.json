@@ -9,91 +9,99 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
+      "conditional-relicensing",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "provide-corresponding-source"
+      "include-copyright",
+      "include-license-text",
+      "include-notice"
     ],
     "triggers": [
-      "unknown"
+      "distribution"
     ],
     "restrictions": [
-      "liability"
+      "additional-terms",
+      "liability",
+      "trademark",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Xdebug-1.03.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Xdebug-1.03.json#text; Oznamovací a jmenné podmínky nevytvářejí copyleft; permisivní, none.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Xdebug-1.03.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Xdebug-1.03.json#text; Oznamovací a jmenné podmínky nevytvářejí copyleft; permisivní, none.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Xdebug-1.03.json#text; Úvod dovoluje use/redistribution obou forem s úpravami i bez nich bez zákazu komerce. Bod 5 dovoluje tuto nebo následnou verzi vydanou Rethansem; patentový grant ani sublicence nejsou výslovné.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Xdebug-1.03.json#text; Body 1–2 copyright/podmínky/disclaimer ve zdrojích nebo materiálech binárek. Bod 6 přesné uznání Xdebug software s https://xdebug.org/ ve všech redistribucích. Žádná povinná zdrojová nabídka nebo stejná licence není uvedena.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Xdebug-1.03.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Xdebug-1.03.json#text; Body 1–2 copyright/podmínky/disclaimer ve zdrojích nebo materiálech binárek. Bod 6 přesné uznání Xdebug software s https://xdebug.org/ ve všech redistribucích. Žádná povinná zdrojová nabídka nebo stejná licence není uvedena.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Xdebug-1.03.json#text; Body 3–4 chrání Xdebug před endorsementem a použitím v názvu bez písemného svolení; text nemá PHP styl výjimku Foo for Xdebug. Warranty část jmenuje Dericka Rethanse, liability část doslovně PHP Development Team/přispěvatele; tato nesourodost se neopravuje domněnkou.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Xdebug-1.03.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Xdebug-1.03.json#text; Úvod dovoluje use/redistribution obou forem s úpravami i bez nich bez zákazu komerce. Bod 5 dovoluje tuto nebo následnou verzi vydanou Rethansem; patentový grant ani sublicence nejsou výslovné.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Xdebug-1.03.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Xdebug-1.03.json#text; Body 1–2 copyright/podmínky/disclaimer ve zdrojích nebo materiálech binárek. Bod 6 přesné uznání Xdebug software s https://xdebug.org/ ve všech redistribucích. Žádná povinná zdrojová nabídka nebo stejná licence není uvedena.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Xdebug-1.03.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Xdebug-1.03.json#text; Individuálně přečten celý připnutý text. Licence je pro Xdebug Dericka Rethanse 2003–2022; poznámka Based on PHP 3.01 nepřebírá automaticky další PHP výjimky. Xdebug 1.03 zachovává source/binary notices a předepsané uznání Xdebug v každé redistribuci. Jméno Xdebug vyžaduje svolení pro endorsement i názvy odvozenin; lze zvolit budoucí verzi Dericka Rethanse. Disclaimer ponechává zvláštní rozdíl mezi autorem a PHP Development Team. ",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

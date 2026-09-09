@@ -1,0 +1,27 @@
+{
+  "id": "blessing",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:5366e24c958f2f3c42bd0d29d49a299a40ce201571c95e300ef8a040afd8b9c3"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Autor se vzdává copyrightu ke zdrojovému kódu. Následující přání dobrého jednání, odpuštění a sdílení nahrazuje právní oznámení a není formulováno jako licenční podmínka.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Tento zdrojový kód a autorův copyright k němu.",
+    "grantCs": "Prohlášení author disclaims copyright zamýšlí volné užívání, úpravy a šíření bez účelových omezení; samostatná patentová licence chybí.",
+    "conditionsCs": "Neukládá zachování oznámení, předání zdrojů ani reciprocitu. Tři věty začínající May you jsou přání, nikoli podmínky grantu.",
+    "limitationsCs": "Text neobsahuje náhradní licenci pro případ neúčinného vzdání se práv ani zárukovou či odpovědnostní výluku; účinnost vzdání se závisí na použitelném právu.",
+    "compatibilityCs": "Neobsahuje licenční verzi či alternativní licenční cestu; nemluví za práva jiných držitelů."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/blessing.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; První věta výslovně author disclaims copyright to this source code; následuje blessing namísto právního oznámení."
+    }
+  ]
+}

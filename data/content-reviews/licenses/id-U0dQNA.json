@@ -1,0 +1,29 @@
+{
+  "id": "SGP4",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:f5bfab0a8cce49d83bb4a94583224888dc3711c38f5040c4198767edc12071a4"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Prohlášení výslovně dovoluje osobní i komerční užití kódu SGP4 pro libovolný účel. Citace v dokumentaci a zdroji i odkaz na hlavní stránku jsou pouze zdvořilou žádostí. Práva změn a redistribuce však text nevyjasňuje a úvod popírá existenci připojené licence, proto jej průvodce bez doložení zamýšleného rozsahu grantu nezařazuje.",
+  "blockersCs": [
+    "Text výslovně dovoluje osobní/komerční užití pro libovolný účel, ale úvod popírá přítomnost licence a změny/redistribuci neřeší; před přiznáním těchto práv pro nový software je nutné doložit zamýšlený rozsah grantu."
+  ],
+  "analysis": {
+    "subjectCs": "Prohlášení pokrývá příslušný kód SGP4 a jeho použití.",
+    "grantCs": "Věta „you may use it for any purpose“ výslovně dovoluje osobní a komerční užití kódu. Samostatná práva změn a redistribuce nevyjmenovává a jejich šíře za úvodním „There is no license associated“ zůstává nejasná.",
+    "conditionsCs": "Citace v dokumentaci a zdrojovém kódu a odkazy na hlavní stránku jsou formulovány jako žádost „We ask only“, ne jako podmínka grantu; celý text nevyžaduje zdroje ani stejnou licenci.",
+    "limitationsCs": "Úvodní „There is no license associated“ doprovází dovolení užití; nejde o výslovné věnování do public domain. Záruky ani odpovědnost se neřeší.",
+    "compatibilityCs": "Text nenabízí jiné licence nebo verze; odkaz na hlavní stránku má usnadnit komunikaci o kódu a teorii."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/SGP4.html",
+      "note": "Individuálně přečten celý připnutý text; Citace v dokumentaci a zdrojovém kódu a odkazy na hlavní stránku jsou formulovány jako žádost „We ask only“, ne jako podmínka grantu; celý text nevyžaduje zdroje ani stejnou licenci. Celé prohlášení neobsahuje výslovný patentový grant ani ukončení za patentový nárok."
+    }
+  ]
+}

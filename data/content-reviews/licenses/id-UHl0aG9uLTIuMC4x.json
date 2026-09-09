@@ -1,0 +1,35 @@
+{
+  "id": "Python-2.0.1",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:3760dd3961d041fb25b3040a4f78d35c43724c7abb67f349a1ee54efb60db22c"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Připnutý Python-2.0.1 obsahuje čtyři vrstvy: PSFv2, BeOpen, CNRI pro Python1.6.1 a CWI. Umožňují komerční užití a úpravy bez povinného zveřejnění zdrojů nebo stejné licence vlastních změn, ale zachovávají příslušné licence a copyrighty; PSF a CNRI navíc u zpřístupněných odvozenin vyžadují stručný přehled změn. CNRI text lze nahradit přesným referenčním notice. Každá vrstva obsahuje výluku záruk a odpovědnosti a omezuje propagační užití jmen či známek.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Celý připnutý text pokrývá Python ve zdrojové i binární formě a dokumentaci prostřednictvím všech čtyř výslovně přiložených historických grantů. Nejde jen o krátkou samostatnou licenci PSF; při aplikaci na konkrétní balík je třeba zachovat relevantní vrstvy a copyrighty. Primární stránka Python2.0.1 potvrzuje historii této kombinace; připnutý PSF copyright sahá do2022 a není zaměněn za historický rok2001 na webu.",
+    "grantCs": "PSF§2, BeOpen§2 a CNRI§2 bez royalty, celosvětově a nevýhradně dovolují reprodukci, analýzu, testování, veřejné předvádění/zobrazení, odvozeniny, distribuci a ostatní užití. CWI dovoluje use/copy/modify/distribute pro jakýkoli účel bez poplatku. Žádná vrstva neobsahuje výslovný patentový grant; výluky záruk neporušení práv jej nenahrazují.",
+    "conditionsCs": "PSF§2 zachovává licenci i copyright v originálu a odvozených verzích; BeOpen§2 svou licenci. CNRI§2 zachovává copyright a buď celou dohodu, nebo přesně stanovené referenční oznámení s handle1895.22/1013. PSF§3 a CNRI§3 vyžadují stručný souhrn změn při zpřístupnění odvozeného díla ostatním. CWI vyžaduje copyright ve všech kopiích a copyright i permission notice v podpůrné dokumentaci. Podmínky nerozlišují povinné dodávání zdrojů proti binárkám.",
+    "limitationsCs": "Všechny vrstvy výslovně vylučují záruky a vymezené škody. PSF§6, BeOpen§5 a CNRI§6 automaticky ukončují dohodu při podstatném porušení. PSF, BeOpen a CNRI neudělují známkové použití pro endorsement; CWI zakazuje své jméno v reklamě/publicitě bez předchozího písemného souhlasu. BeOpen§6 uvádí volitelnou výjimku pro konkrétní loga dle samostatné stránky; stránka nebyla při ověření dostupná, proto z ní žádné právo k logům nedovozuji. Software lze používat bez této volitelné výjimky. BeOpen volí Kalifornii; CNRI přednostně federální IP právo a podpůrně Virginii.",
+    "compatibilityCs": "CNRI§7 u odvozenin s neoddělitelnou dříve GPL distribuovanou částí omezuje použití virginského práva na §§4,5,7; nejde o náhradu celého souboru licencí GPL. Primární historická stránka vysvětluje změnu CNRI pro GPL kombinace, ale profil netvrdí kompatibilitu každého dalšího balíku. Zachování původních podmínek nepředepisuje licenci vlastním novým změnám ani source disclosure."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Python-2.0.1.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; PSF§2, BeOpen§2, CNRI§2 a CWI grant dovolují změny i distribuci s notices; žádná ze čtyř plně přiložených vrstev neukládá copyleft odvozenin"
+    },
+    {
+      "url": "https://www.python.org/download/releases/2.0.1/license/",
+      "note": "Primární stránka potvrzuje historický soubor PSF/BeOpen/CNRI/CWI a účel úpravy CNRI pro GPL kombinace; dnešní pinned PSF copyright není přepisován historickým webem."
+    },
+    {
+      "url": "http://www.pythonlabs.com/logos.html",
+      "note": "Volitelná logo výjimka BeOpen odkazuje sem; při pokusu o otevření nebyla stránka dostupná, práva k logům z ní nebyla dovozena. Nejde o podmínku běžného softwarového grantu."
+    }
+  ]
+}

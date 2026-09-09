@@ -1,0 +1,40 @@
+# EPL-2.0 — obsahová revize
+
+Eclipse Public License 2.0
+
+Revize: **2026-09-09** · pravidlo **2026-09-09.8**.
+
+Výsledek: **způsobilá pro průvodce podle kurátorovaného profilu**.
+
+Zpřístupněte zdroje pokrytého programu a uveďte, jak je získat; zachovejte licenci a existující oznámení. Pokryty jsou i nové soubory obsahující kód programu, nikoli pouhé deklarace či rozhraní sloužící k propojení. Jiná distribuční licence musí chránit zdrojová práva příjemců a odmítnout záruky i odpovědnost ostatních přispěvatelů. Sekundární GPL je možná jen při kombinaci s příslušnými samostatnými soubory a po oznámení původního přispěvatele; samotná příloha A nestačí. Při komerční distribuci hájíte a odškodňujete ostatní za nároky způsobené vaším jednáním; spory o duševní vlastnictví jsou vyňaty. Patentový grant má vymezený rozsah a při patentové žalobě podle § 7 zaniká.
+
+Tento záznam zachovává již dokončenou individuální revizi z předchozích várek. Nejde o novou revizi provedenou při vytvoření tohoto souboru.
+
+## Metadata a jejich doložení
+
+| Pole | Hodnota | Doložení znění |
+|---|---|---|
+| family | "weak-copyleft" | public/data/licenses/EPL-2.0.json#text; §§1,2(a)-(e): use/reproduce/derive/display/perform/distribute/SUBLICENSE Contributions and derivatives; §2(b) Licensed Patents grant; Modified Works includes new files containing Program contents but EXCLUDES declarations/interfaces/types/classes/structures/files used solely to link/bind/subclass; §3.1(b) alternate distribution license preserves rights, §3.2(a) CONDITIONAL GPL secondary license; https://spdx.org/licenses/EPL-2.0.html |
+| copyleftScope | "file" | public/data/licenses/EPL-2.0.json#text; §1 Modified Works includes changed Program files and new files containing Program contents, excludes declarations/interfaces etc SOLELY for linking/binding/subclassing; §§3.1-3.2 source rights of covered Program, not unrelated combined works, with conditional secondary-license option preserved explicitly; https://spdx.org/licenses/EPL-2.0.html |
+| permissions | ["commercial-use","conditional-relicensing","distribution","modifications","patent-grant","private-use","sublicensing"] | public/data/licenses/EPL-2.0.json#text; §§1,2(a)-(e): use/reproduce/derive/display/perform/distribute/SUBLICENSE Contributions and derivatives; §2(b) Licensed Patents grant; Modified Works includes new files containing Program contents but EXCLUDES declarations/interfaces/types/classes/structures/files used solely to link/bind/subclass; §3.1(b) alternate distribution license preserves rights, §3.2(a) CONDITIONAL GPL secondary license; https://spdx.org/licenses/EPL-2.0.html |
+| obligations | ["defend-commercial-distribution","include-copyright","include-license-text","include-notice","provide-corresponding-source","same-license"] | public/data/licenses/EPL-2.0.json#text; §3.1 ANY distribution must make Program source available and tell recipients how; alternative distribution license disclaims other-contributor warranties/liability, preserves §3.2 source rights and passes §3 onward; §3.2 source EPL or secondary GPL ONLY with separate secondary-licensed files AND initial-contributor Exhibit A notice (copy of Exhibit NOT sufficient), always include Agreement; §3.3 retain all IP/attribution/disclaimer notices, may add own; §4 DEFEND/INDEMNIFY other contributors for third-party losses CAUSED by own commercial-product distribution acts/omissions, IP claims EXCLUDED, prompt written notice and control/cooperation in defense required; https://spdx.org/licenses/EPL-2.0.html |
+| triggers | ["combination","distribution","patent-claim"] | public/data/licenses/EPL-2.0.json#text; §3.1 ANY distribution must make Program source available and tell recipients how; alternative distribution license disclaims other-contributor warranties/liability, preserves §3.2 source rights and passes §3 onward; §3.2 source EPL or secondary GPL ONLY with separate secondary-licensed files AND initial-contributor Exhibit A notice (copy of Exhibit NOT sufficient), always include Agreement; §3.3 retain all IP/attribution/disclaimer notices, may add own; §4 DEFEND/INDEMNIFY other contributors for third-party losses CAUSED by own commercial-product distribution acts/omissions, IP claims EXCLUDED, prompt written notice and control/cooperation in defense required; https://spdx.org/licenses/EPL-2.0.html |
+| restrictions | ["additional-terms","liability","patent-claim","trademark","warranty"] | public/data/licenses/EPL-2.0.json#text; preamble assent; §2(c) recipient responsible for obtaining other needed IP rights; §2(d) knowledge-qualified copyright authority representation; §4 conditional commercial indemnity; §§5-6 qualified warranty/liability disclaimers; §7 patent litigation terminates ONLY §2(b), material noncompliance terminates all rights after reasonable cure period, obligations/downstream licenses survive; steward later-version option and reserved IP rights; https://spdx.org/licenses/EPL-2.0.html |
+| patentPosition | "defensive-termination" | public/data/licenses/EPL-2.0.json#text; §1 Licensed Patents and §2(b): necessarily infringed claims licensable by contributor, contribution alone or with Program WHEN added, NO other combinations/hardware per se; §7 patent action against ANY entity incl cross/counterclaim for Program itself (NOT combinations with other software/hardware) terminates §2(b) patent rights on filing, not all rights; secondary licensing adds no grants per §2(e); https://spdx.org/licenses/EPL-2.0.html |
+| noticeBurden | "material" | public/data/licenses/EPL-2.0.json#text; §3.1 ANY distribution must make Program source available and tell recipients how; alternative distribution license disclaims other-contributor warranties/liability, preserves §3.2 source rights and passes §3 onward; §3.2 source EPL or secondary GPL ONLY with separate secondary-licensed files AND initial-contributor Exhibit A notice (copy of Exhibit NOT sufficient), always include Agreement; §3.3 retain all IP/attribution/disclaimer notices, may add own; §4 DEFEND/INDEMNIFY other contributors for third-party losses CAUSED by own commercial-product distribution acts/omissions, IP claims EXCLUDED, prompt written notice and control/cooperation in defense required; https://spdx.org/licenses/EPL-2.0.html |
+
+## Zdroje
+
+- [Primární zdroj](https://spdx.org/licenses/EPL-2.0.html) — Dřívější individuální revize 2026-09-09.8; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu.
+- [Kurátorovaný profil](../../../data/profiles/licenses/id-RVBMLTIuMA.json)
+- [Uložené úplné znění](../../../public/data/licenses/EPL-2.0.json)
+
+## Otisk zdroje
+
+```json
+{
+  "sourceId": "spdx-license-list",
+  "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+  "contentHash": "sha256:56869f0a704dd67cba61a4b0406d13bd2f3701bf510d480426870b02185a9ba8"
+}
+```

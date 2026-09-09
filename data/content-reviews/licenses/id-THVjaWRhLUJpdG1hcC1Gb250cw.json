@@ -1,0 +1,30 @@
+{
+  "id": "Lucida-Bitmap-Fonts",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:0bbadc1b08368223bbea1f1c38307db28cd556c2104f238ed9ce2b0c4da13879"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Uživatelé získávají copyrightovou a designově patentovou licenci k užití bitmapových fontů/ikon v individuálním i komerčním softwaru. Značka Lucida smí označovat pouze nezměněné fonty; licence OPEN LOOK compatible se získává od AT&T s validačními podmínkami.",
+  "blockersCs": [
+    "Předmětem jsou fonty/ikony, grant výslovně uvádí use code a nevymezuje obecné právo upravovat/redistribuovat. Je třeba doložit rozsah těchto práv pro konkrétní soubory a oddělit fontový model.",
+    "OPEN LOOK trademark licence je pouze available from AT&T při podmínkách vzhledu/výstupu a validaci; Lucida licence platí jen při nezměněných fontech. Je třeba doložit příslušné svolení/validaci a modelovat tyto podmíněné známkové cesty."
+  ],
+  "analysis": {
+    "subjectCs": "Lucida fonts/bitmap images a zdroj zahrnující OPEN LOOK glyphs/icons; držitelé Sun, AT&T, Bigelow & Holmes mají odlišná práva.",
+    "grantCs": "Sun copyright/design patent nonexclusive royalty-free licence k use code in individual/commercial software. Lucida známka omezeně pro nezměněné fonty; OPEN LOOK licence pouze dostupná samostatně od AT&T.",
+    "conditionsCs": "Při jakémkoli použití zdroje přiložit dva předepsané notices v uživatelské dokumentaci i interních komentářích kódu. OPEN LOOK cesta vyžaduje neměnit vzhled mimo rozlišení, povolené změny a validaci AT&T.",
+    "limitationsCs": "AS IS a společné/individuální výluky záruk a škod. Lucida známka jen pokud fonty/bitmapy uživatel nijak nezmění; zmíněné patentové přihlášky nejsou ověřením současného trvání.",
+    "compatibilityCs": "Tři právní oblasti nejsou alternativní licence k celému softwaru; dodatečné známkové svolení nesmí být předpokládáno."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Lucida-Bitmap-Fonts.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Předmět fontů/ikon kombinuje různé copyright/design-patent/trademark granty s podmínkami, ne obecný software grant."
+    }
+  ]
+}

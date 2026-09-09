@@ -1,0 +1,27 @@
+{
+  "id": "GPL-1.0-only",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:e189b3343046a992fccf94529504db3c75e233333de825c33f25d8fdd6319407"
+  },
+  "disposition": "eligible",
+  "summaryCs": "GPL 1.0-only dovoluje komerční šíření a změny programu, ale celé šířené dílo obsahující jeho kód ponechává pod GPL 1.0. Vyžaduje licenci, copyrighty, označení a datum změn a u běžně interaktivní upravené verze také úvodní oznámení. Binární distribuce poskytne zdroj, tříletou nabídku komukoli nebo za vymezených nekomerčních okolností informaci o získání zdroje. Tento identifikátor nedává automatickou volbu pozdější GPL a licence neobsahuje výslovný patentový grant.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "GNU GPL v1 z února 1989 se zde posuzuje jako GPL-1.0-only pro program nebo dílo obsahující program/část.",
+    "grantCs": "§1 dovoluje doslovné zdroje a poplatek za fyzický přenos; §2 změny a šíření, placená záruka je volitelná. Preambule dovoluje prodej kopií a soukromé užití není vyloučeno.",
+    "conditionsCs": "§1 zachová copyright, no-warranty a GPL notices a předá licenci. §2 označuje změny s datem, celé šířené/publikované dílo obsahující kód licencuje bez licenčního poplatku pod GPL a u běžně interaktivní změněné verze při spuštění zobrazí copyright/záruku/práva/umístění licence. §3 binárky nesou kompletní preferovaný zdroj, nebo tříletou nabídku komukoli za nominální distribuci, nebo u nekomerčně přijatých samotných binárek informaci o získání zdroje.",
+    "limitationsCs": "Source zahrnuje všechny moduly, ale vyjímá standardní OS knihovny/hlavičky/definice. §4 neoprávněné jednání automaticky ruší práva, řádní příjemci jsou chráněni; §6 zakazuje další omezení. §9–10 AS IS záruky/liability v mezích práva či písemné dohody.",
+    "compatibilityCs": "§7 dovoluje later verze jen s programovým or-later notice nebo při neudané verzi; tento ID only takovou volbu nepřiznává. Or-later vzor v příloze není změnou vybraného grantu. §8 jiná kombinace vyžaduje svolení autora, není automatická kompatibilita."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/GPL-1.0-only.html",
+      "note": "Individuálně přečten celý připnutý text; §1 zachová copyright, no-warranty a GPL notices a předá licenci. §2 označuje změny s datem, celé šířené/publikované dílo obsahující kód licencuje bez licenčního poplatku pod GPL a u běžně interaktivní změněné verze při spuštění zobrazí copyright/záruku/práva/umístění licence. §3 binárky nesou kompletní preferovaný zdroj, nebo tříletou nabídku komukoli za nominální distribuci, nebo u nekomerčně přijatých samotných binárek informaci o získání zdroje. Celé GPLv1 §0–10 i příloha nemají výslovný patentový grant ani patentové žalobní ukončení; pravidla pozdějších GPL se sem nepřenášejí."
+    }
+  ]
+}

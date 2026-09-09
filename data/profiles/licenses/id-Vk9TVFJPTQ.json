@@ -8,93 +8,106 @@
     "contentHash": "sha256:e18d8d3dd4b631565e169b733c5b1b034f357ad6605c1a594d47f2ab8f1deb20"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "weak-copyleft",
+    "copyleftScope": "library",
     "permissions": [
       "commercial-use",
-      "distribution"
+      "conditional-relicensing",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
+      "disclose-source",
       "include-copyright",
-      "provide-corresponding-source"
-    ],
-    "triggers": [
+      "include-license-text",
+      "include-notice",
+      "same-license",
       "unknown"
     ],
-    "restrictions": [
-      "liability"
+    "triggers": [
+      "combination",
+      "distribution",
+      "modification",
+      "use"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "restrictions": [
+      "liability",
+      "trademark",
+      "unknown",
+      "warranty"
+    ],
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/VOSTROM.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/VOSTROM.json#text; VOSTROM licence 2007 pokrývá Distribution tvořenou kódem a dokumentací a osm podmínek změněných verzí. Grant dovoluje změny, kopie, distribuci a veřejné zobrazení/provedení originálu i změn. Bod 6 podmíněně dovoluje jinou open-source licenci vyžadovanou začleněným materiálem. Reciprocita bodu 1 míří na změněnou Distribution kódu a dokumentace, s výjimkou bodu 6; nelze ji rozšířit na každý okolní program.; https://spdx.org/licenses/VOSTROM.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/VOSTROM.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/VOSTROM.json#text; Reciprocita bodu 1 míří na změněnou Distribution kódu a dokumentace, s výjimkou bodu 6; nelze ji rozšířit na každý okolní program.; https://spdx.org/licenses/VOSTROM.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/VOSTROM.json#text; Grant dovoluje změny, kopie, distribuci a veřejné zobrazení/provedení originálu i změn. Bod 6 podmíněně dovoluje jinou open-source licenci vyžadovanou začleněným materiálem.; https://spdx.org/licenses/VOSTROM.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/VOSTROM.json#text; Bod 1 vyžaduje ke změněným distribucím zdroj a dokumentaci s původními oprávněními. Bod 2 doporučuje should označení původu za číslem verze ve zdroji, dokumentaci a runtime. Bod 4 zachovává identifikátor/verzi/copyright/licenci. Bod 5 připouští VOSTROM bez omezení obchodně využívat podobné změny.; https://spdx.org/licenses/VOSTROM.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/VOSTROM.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/VOSTROM.json#text; Bod 1 vyžaduje ke změněným distribucím zdroj a dokumentaci s původními oprávněními. Bod 2 doporučuje should označení původu za číslem verze ve zdroji, dokumentaci a runtime. Bod 4 zachovává identifikátor/verzi/copyright/licenci. Bod 5 připouští VOSTROM bez omezení obchodně využívat podobné změny.; https://spdx.org/licenses/VOSTROM.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/VOSTROM.json#text; Bod 3 přesouvá riziko na uživatele; bod 7 zakazuje distribuci/veřejné předvedení změn z proprietárních materiálů, které nelze vydat ve zdroji pod těmito podmínkami. Bod 8 zakazuje propagační užití jména bez souhlasu; AS IS vylučuje záruky/odpovědnost.; https://spdx.org/licenses/VOSTROM.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/VOSTROM.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/VOSTROM.json#text; Celý text neobsahuje výslovný patentový grant ani patentové ukončení.; https://spdx.org/licenses/VOSTROM.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/VOSTROM.json#text; Bod 1 vyžaduje ke změněným distribucím zdroj a dokumentaci s původními oprávněními. Bod 2 doporučuje should označení původu za číslem verze ve zdroji, dokumentaci a runtime. Bod 4 zachovává identifikátor/verzi/copyright/licenci. Bod 5 připouští VOSTROM bez omezení obchodně využívat podobné změny. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/VOSTROM.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/VOSTROM.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/VOSTROM.json#text; Individuální kontrola celého připnutého textu VOSTROM dne 2026-09-09. VOSTROM licence 2007 pokrývá Distribution tvořenou kódem a dokumentací a osm podmínek změněných verzí. Body 5–7 kombinují neomezené podobné změny poskytovatele, podmíněnou open-source alternativu a zákaz veřejného předvedení proprietárních změn; před doporučením je nutné modelovat tyto větve a spouštěč veřejného předvedení bez kumulace. Bod 6 dovoluje nutné open-source přelicencování kombinované změny, ale nemění samotnou Distribution, ostatní změny ani jiné VOSTROM dohody; placená/proprietární ujednání je nutné sjednat zvlášť.; https://spdx.org/licenses/VOSTROM.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

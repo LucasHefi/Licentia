@@ -8,8 +8,8 @@
     "contentHash": "sha256:6ab56eb9e4b544d5981bf0ab699178a5d66d194e61aa702119bd33716e8f2426"
   },
   "review": {
-    "status": "reviewed",
-    "recommendable": true,
+    "status": "not-recommendable",
+    "recommendable": false,
     "evidenceLevel": "strong"
   },
   "semantic": {
@@ -19,18 +19,18 @@
       "commercial-use",
       "distribution",
       "modifications",
-      "private-use",
-      "sublicensing"
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "include-license-text"
+      "include-license-text",
+      "unknown"
     ],
     "triggers": [
-      "distribution"
+      "distribution",
+      "modification"
     ],
     "restrictions": [
-      "additional-terms",
       "liability",
       "trademark",
       "warranty"
@@ -42,47 +42,65 @@
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant paragraph (\"Redistribution and use in source and binary forms, with or without modification, are permitted\" subject to conditions 1-3; broad non-reciprocal permission identifies a permissive family)"
+      "locator": "public/data/licenses/BSD-3-Clause-LBNL.json#text; Regents/LBNL znění 2003 uvádí případně potřebná schválení DOE a zvláštní zacházení s dobrovolně zpřístupněnými Enhancements. Grant dovoluje zdrojovou/binární redistribuci a užití se změnami i bez; závěr při veřejném či přímém předání Enhancements bez samostatné písemné licence automaticky uděluje široká trvalá bezplatná nevýlučná práva k nim. Výslovně není povinnost vydat změny; dobrovolné předání však aktivuje vlastní grant, nikoli celoprogramový copyleft.; https://spdx.org/licenses/BSD-3-Clause-LBNL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant and conditions 1-3, plus the Enhancements paragraph (permissions are non-reciprocal; no same-license, source-disclosure, corresponding-source, linking, or network-use condition is stated)"
+      "locator": "public/data/licenses/BSD-3-Clause-LBNL.json#text; Výslovně není povinnost vydat změny; dobrovolné předání však aktivuje vlastní grant, nikoli celoprogramový copyleft.; https://spdx.org/licenses/BSD-3-Clause-LBNL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant paragraph (redistribution and use in source and binary forms, with or without modification, are permitted without a purpose limitation) and Enhancements paragraph (explicit non-exclusive, royalty-free, perpetual rights to install, use, modify, prepare derivatives, incorporate, distribute, and sublicense Enhancements)"
+      "locator": "public/data/licenses/BSD-3-Clause-LBNL.json#text; Grant dovoluje zdrojovou/binární redistribuci a užití se změnami i bez; závěr při veřejném či přímém předání Enhancements bez samostatné písemné licence automaticky uděluje široká trvalá bezplatná nevýlučná práva k nim.; https://spdx.org/licenses/BSD-3-Clause-LBNL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text: conditions (1) and (2) (source redistributions must retain, and binary redistributions must reproduce in documentation or other materials, the copyright notice, list of conditions, and following disclaimer; no source-disclosure or corresponding-source duty is stated)"
+      "locator": "public/data/licenses/BSD-3-Clause-LBNL.json#text; Body 1–2 zachovávají copyright/podmínky/disclaimer ve zdroji či doprovodu binárek. Není povinnost poskytovat opravy, patche nebo vylepšení; při dobrovolném zpřístupnění bez oddělené písemné licence vzniká grant instalace, užití, změn, odvozenin, začlenění, distribuce a sublicencí v obou formách.; https://spdx.org/licenses/BSD-3-Clause-LBNL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "text: conditions (1)-(2) (notice duties attach to source or binary redistribution) and Enhancements paragraph (the additional grant applies when an Enhancement is made publicly or directly available to LBNL without a separate written license agreement; modification alone has no separate condition)"
+      "locator": "public/data/licenses/BSD-3-Clause-LBNL.json#text; Body 1–2 zachovávají copyright/podmínky/disclaimer ve zdroji či doprovodu binárek. Není povinnost poskytovat opravy, patche nebo vylepšení; při dobrovolném zpřístupnění bez oddělené písemné licence vzniká grant instalace, užití, změn, odvozenin, začlenění, distribuce a sublicencí v obou formách.; https://spdx.org/licenses/BSD-3-Clause-LBNL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text: condition (3) (University of California, Lawrence Berkeley National Laboratory, U.S. Dept. of Energy, and contributor names may not endorse or promote derived products without specific prior written permission); warranty/liability disclaimer paragraph; Enhancements paragraph (conditional default contribution-licensing term is an additional term)"
+      "locator": "public/data/licenses/BSD-3-Clause-LBNL.json#text; Jména UC, LBNL, DOE a přispěvatelů nesmějí bez písemného souhlasu podporovat produkty; AS IS vylučuje záruky a odpovědnost.; https://spdx.org/licenses/BSD-3-Clause-LBNL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "text: complete BSD-3-Clause-LBNL license text; no express patent grant, patent condition, patent-claim restriction, or defensive/retaliatory patent-termination clause is stated"
+      "locator": "public/data/licenses/BSD-3-Clause-LBNL.json#text; Celý text včetně grantu Enhancements nemá výslovná patentová práva ani patentové ukončení.; https://spdx.org/licenses/BSD-3-Clause-LBNL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text: conditions (1)-(2) require retaining/reproducing the copyright notice, list of conditions, and disclaimer for source and binary redistributions (standard two-surface notice burden)"
+      "locator": "public/data/licenses/BSD-3-Clause-LBNL.json#text; Body 1–2 zachovávají copyright/podmínky/disclaimer ve zdroji či doprovodu binárek. Není povinnost poskytovat opravy, patche nebo vylepšení; při dobrovolném zpřístupnění bez oddělené písemné licence vzniká grant instalace, užití, změn, odvozenin, začlenění, distribuce a sublicencí v obou formách. Rozsah notifikační zátěže: standard.; https://spdx.org/licenses/BSD-3-Clause-LBNL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "metadata: id=BSD-3-Clause-LBNL, name=Lawrence Berkeley National Labs BSD variant license, deprecated=false, osi=true, fsf=false; notes: same as BSD-3-Clause with an additional default contribution licensing clause; text: complete three-condition permissive grant, name/endorsement restriction, warranty/liability disclaimer, and conditional Enhancements license are explicit with no unknown semantic values"
+      "locator": "public/data/licenses/BSD-3-Clause-LBNL.json#text; Individuální kontrola celého připnutého textu BSD-3-Clause-LBNL dne 2026-09-09. Regents/LBNL znění 2003 uvádí případně potřebná schválení DOE a zvláštní zacházení s dobrovolně zpřístupněnými Enhancements. Dobrovolné veřejné či přímé předání Enhancements bez samostatné písemné licence automaticky zakládá široký další grant; před doporučením je třeba model podmíněného grantu k vlastním změnám, nikoli jej zaměnit za zdrojovou povinnost. Samostatná písemná licence Enhancements zabrání popsanému výchozímu grantu; to není povinnost odeslat změny ani obecná volba jiné verze.; https://spdx.org/licenses/BSD-3-Clause-LBNL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

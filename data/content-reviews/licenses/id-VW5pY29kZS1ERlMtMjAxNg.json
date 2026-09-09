@@ -1,0 +1,20 @@
+{
+  "id": "Unicode-DFS-2016",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.3",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:3e07b8fc952e6a6fa7f981afd3a35b930f7062bc83819ae8a2b98c4155cd99e2"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Zachovejte copyright a svolovací oznámení s kopiemi nebo v přidružené dokumentaci. Text zahrnuje vymezený software a datové soubory Unicode, nikoli PDF tabulky znaků. Jméno nositele práv nepoužívejte bez souhlasu k propagaci. Zmínka o zdrojovém kódu neurčuje povinnost jej poskytovat.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Unicode-DFS-2016.html",
+      "note": "Dřívější individuální revize 2026-09-09.3; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

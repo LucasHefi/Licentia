@@ -1,0 +1,22 @@
+{
+  "id": "Martin-Birgmeier",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.5",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:5e686fce7a1f05f659320c2b85bb5fcc65e77eb5538d3ec0f16b35d05d224fcf"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Text výslovně povoluje redistribuci původních nebo upravených verzí zdrojového kódu při zachování copyrightu a podmínek. Samostatně nevymezuje binární distribuci ani úplný rozsah užití. Průvodce tuto hranici zatím nedokáže vyhodnotit. Znění obsahuje vyloučení záruk a odpovědnosti, nikoli povinnost zdroje poskytovat.",
+  "blockersCs": [
+    "Posoudit dosah grantu pro redistribuci zdrojového kódu na binární formu a další užití, případně doplnit pravidlo podle distribuované formy. Text nelze bez doložení rozšířit na všechny scénáře průvodce. Zachování oznámení není povinností zveřejnit nebo poskytnout zdroje; doplnit konkrétní evidenci rozsahu oprávnění."
+  ],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Martin-Birgmeier.html",
+      "note": "Dřívější individuální revize 2026-09-09.5; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

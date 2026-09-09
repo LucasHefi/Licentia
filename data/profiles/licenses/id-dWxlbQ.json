@@ -9,90 +9,92 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification"
     ],
-    "restrictions": [
-      "unknown"
-    ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "restrictions": [],
+    "patentPosition": "none-stated",
+    "noticeBurden": "minimal"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/ulem.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ulem.json#text; Grant pro libovolný účel a jediná podmínka copyrightu představují permisivní licenci bez copyleftového rozsahu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/ulem.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ulem.json#text; Grant pro libovolný účel a jediná podmínka copyrightu představují permisivní licenci bez copyleftového rozsahu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/ulem.json#text; Odstavec This software dovoluje přenos, rozmnožování a úpravy pro jakýkoli účel, tedy i komerční; patentová práva a sublicencování výslovně neřeší.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/ulem.json#text; Při šíření, rozmnožování a úpravách musí copyrightové oznámení zůstat neporušené. Žádná povinnost zdrojů, stejné licence, označování změn či reklamy uvedena není.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/ulem.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ulem.json#text; Při šíření, rozmnožování a úpravách musí copyrightové oznámení zůstat neporušené. Žádná povinnost zdrojů, stejné licence, označování změn či reklamy uvedena není.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/ulem.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ulem.json#text; Úplný text nemá záruční nebo odpovědnostní doložku, omezení názvů, patentovou odvetu ani volbu soudu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/ulem.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ulem.json#text; Odstavec This software dovoluje přenos, rozmnožování a úpravy pro jakýkoli účel, tedy i komerční; patentová práva a sublicencování výslovně neřeší.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/ulem.json#text; Při šíření, rozmnožování a úpravách musí copyrightové oznámení zůstat neporušené. Žádná povinnost zdrojů, stejné licence, označování změn či reklamy uvedena není.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/ulem.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ulem.json#text; Individuálně přečten celý připnutý text. Grant se vztahuje na software ulem s uvedeným copyrightem 1989–2019. Software lze pro libovolný účel šířit, rozmnožovat a upravovat při zachování neporušeného copyrightu Donalda Arseneaua. ",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

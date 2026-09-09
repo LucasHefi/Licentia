@@ -8,92 +8,98 @@
     "contentHash": "sha256:01038c09d8c563c47fdd8f2324f4c8b1d3891e935f2907241d38cec87a128400"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "include-license-text"
+      "include-copyright",
+      "include-license-text",
+      "unknown"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification"
     ],
     "restrictions": [
-      "unknown"
+      "additional-terms",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/XSkat.json#text; opening free-redistribution statement and modified-version permission; no commercial field-of-use restriction; whole text: no reciprocal source-disclosure or same-license condition; https://spdx.org/licenses/XSkat.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.4"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/XSkat.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/XSkat.json#text; opening free-redistribution statement and modified-version permission; no commercial field-of-use restriction; https://spdx.org/licenses/XSkat.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.4"
     },
     {
-      "field": "copyleftScope",
+      "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/XSkat.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/XSkat.json#text; modified redistribution clause 1: retain all copyright/permission notices; clause 2(a) packaging/porting ONLY OR 2(b) last modifier identification AND rename OR specific x.y.z version suffix; this alternative is not equivalent to generic mark-modifications; https://spdx.org/licenses/XSkat.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.4"
     },
     {
-      "field": "triggers",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/XSkat.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/XSkat.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/XSkat.json#text; modified redistribution clause 1: retain all copyright/permission notices; clause 2(a) packaging/porting ONLY OR 2(b) last modifier identification AND rename OR specific x.y.z version suffix; this alternative is not equivalent to generic mark-modifications; https://spdx.org/licenses/XSkat.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.4"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/XSkat.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/XSkat.json#text; whole text: no express patent grant or patent-litigation termination; no inference about implied patent rights; https://spdx.org/licenses/XSkat.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.4"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/XSkat.json#text; opening free-redistribution statement and modified-version permission; no commercial field-of-use restriction; https://spdx.org/licenses/XSkat.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.4"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/XSkat.json#text; opening NO WARRANTY sentence; modified-version naming/versioning conditions 2(a)-(b); no express liability exclusion; https://spdx.org/licenses/XSkat.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.4"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/XSkat.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/XSkat.json#text; whole-text editorial review on 2026-09-09, batch 4; Doplnit alternativní pravidlo pro distribuci úprav: pouze balení/portování, nebo identifikace posledního autora změn a přejmenování či zvláštní číslo verze x.y.z. Obecné mark-modifications nevyjadřuje výjimku ani povinný název/verzi. Povinnost zdroje poskytovat z textu neplyne; automatické zařazení zůstává vypnuté.; https://spdx.org/licenses/XSkat.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.4"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/XSkat.json#text; modified redistribution clause 1: retain all copyright/permission notices; clause 2(a) packaging/porting ONLY OR 2(b) last modifier identification AND rename OR specific x.y.z version suffix; this alternative is not equivalent to generic mark-modifications; https://spdx.org/licenses/XSkat.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.4"
     }
   ]
 }

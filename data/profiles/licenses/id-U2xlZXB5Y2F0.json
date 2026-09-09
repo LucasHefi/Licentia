@@ -8,92 +8,100 @@
     "contentHash": "sha256:5f3b9448820b8c333f05dd44d56d80145f0f80f6817006702d62cdad4ae46c1e"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "strong-copyleft",
+    "copyleftScope": "whole-work",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "provide-corresponding-source"
-    ],
-    "triggers": [
+      "include-license-text",
+      "provide-corresponding-source",
       "unknown"
     ],
-    "restrictions": [
-      "liability"
+    "triggers": [
+      "combination",
+      "distribution"
     ],
-    "patentPosition": "unknown",
+    "restrictions": [
+      "liability",
+      "trademark",
+      "warranty"
+    ],
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Sleepycat.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Sleepycat.json#text; Složený Sleepycat text obsahuje vlastní DB podmínky a samostatné notice/disclaimer bloky Regents of California a Harvard. Všechny tři granty dovolují zdrojovou/binární redistribuci a užití se změnami i bez. Sleepycat zdrojová podmínka výslovně zahrnuje doprovodný software používající DB a moduly executable, nikoli jen změny knihovny.; https://spdx.org/licenses/Sleepycat.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Sleepycat.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Sleepycat.json#text; Sleepycat zdrojová podmínka výslovně zahrnuje doprovodný software používající DB a moduly executable, nikoli jen změny knihovny.; https://spdx.org/licenses/Sleepycat.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Sleepycat.json#text; Všechny tři granty dovolují zdrojovou/binární redistribuci a užití se změnami i bez.; https://spdx.org/licenses/Sleepycat.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Sleepycat.json#text; Každý blok zachovává svůj copyright, podmínky a disclaimer ve zdroji či doprovodu binárek. Sleepycat třetí odrážka vyžaduje informaci o úplném zdroji DB i doprovodného software, který DB používá: přiložený nebo nejvýše za distribuční náklady+nominální poplatek a volně redistribuovatelný za reasonable conditions.; https://spdx.org/licenses/Sleepycat.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Sleepycat.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Sleepycat.json#text; Každý blok zachovává svůj copyright, podmínky a disclaimer ve zdroji či doprovodu binárek. Sleepycat třetí odrážka vyžaduje informaci o úplném zdroji DB i doprovodného software, který DB používá: přiložený nebo nejvýše za distribuční náklady+nominální poplatek a volně redistribuovatelný za reasonable conditions.; https://spdx.org/licenses/Sleepycat.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Sleepycat.json#text; Úplný zdroj executable zahrnuje všechny moduly s výjimkou souborů běžně doprovázejících hlavní OS komponenty. California/Harvard zakazují endorsement jmény univerzit/přispěvatelů bez svolení; všechny bloky vylučují záruky/odpovědnost.; https://spdx.org/licenses/Sleepycat.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Sleepycat.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Sleepycat.json#text; Všechny tři plné bloky nemají výslovný patentový grant nebo patentové ukončení.; https://spdx.org/licenses/Sleepycat.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Sleepycat.json#text; Každý blok zachovává svůj copyright, podmínky a disclaimer ve zdroji či doprovodu binárek. Sleepycat třetí odrážka vyžaduje informaci o úplném zdroji DB i doprovodného software, který DB používá: přiložený nebo nejvýše za distribuční náklady+nominální poplatek a volně redistribuovatelný za reasonable conditions. Rozsah notifikační zátěže: standard.; https://spdx.org/licenses/Sleepycat.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Sleepycat.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Sleepycat.json#text; Individuální kontrola celého připnutého textu Sleepycat dne 2026-09-09. Složený Sleepycat text obsahuje vlastní DB podmínky a samostatné notice/disclaimer bloky Regents of California a Harvard. Zdroj DB i doprovodného programu musí být volně redistribuovatelný za reasonable conditions, což není totožné se same-license; před zařazením je třeba model této podmínky bez zploštění licenčního rozsahu. Tři bloky se zachovávají podle jejich částí, nejsou tři alternativní licence. Zdroj má dvě dodací cesty a reasonable conditions není výslovná identical-license povinnost.; https://spdx.org/licenses/Sleepycat.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

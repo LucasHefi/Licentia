@@ -16,11 +16,7 @@
     "family": "public-domain-equivalent",
     "copyleftScope": "none",
     "permissions": [
-      "commercial-use",
-      "distribution",
-      "modifications",
-      "private-use",
-      "sublicensing"
+      "unknown"
     ],
     "obligations": [],
     "triggers": [],
@@ -35,47 +31,65 @@
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text: public-domain declaration and complete-text review (no same-license, source-disclosure, reciprocal, linking, combination, modification, distribution, or network-use condition is stated; the later numbered items are expressly voluntary suggestions)"
+      "locator": "public/data/licenses/BOLA-1.1.json#text; Public Domain paragraph is a bare designation for this work; opening motivation and conditional social suggestions do not supply an express fallback license when dedication fails; no reciprocal source-supply or same-license condition; https://spdx.org/licenses/BOLA-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text: sentence 'To all effects and purposes, this work is to be considered Public Domain', which states the intended legal effect as a public-domain dedication rather than a conditional copyright license"
+      "locator": "public/data/licenses/BOLA-1.1.json#text; Public Domain paragraph is a bare designation for this work; opening motivation and conditional social suggestions do not supply an express fallback license when dedication fails; https://spdx.org/licenses/BOLA-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text: lead-in 'However, if you want to be buena onda, you should' and numbered item 1 (recognition is framed as a voluntary suggestion, not a condition; no copyright, attribution, license-text, or notice-retention requirement is stated)"
+      "locator": "public/data/licenses/BOLA-1.1.json#text; However if you WANT to be buena onda, you SHOULD items 1-6 are voluntary; no binding attribution/source-sharing/payment/volunteering obligation; https://spdx.org/licenses/BOLA-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text: lead-in and numbered items 1-6 plus complete-text review (recognition, sharing modifications, helping others, conservation, and tolerance are introduced conditionally as things one 'should' do to be 'buena onda', not as duties attached to permission; no enforceable modeled obligation is stated)"
+      "locator": "public/data/licenses/BOLA-1.1.json#text; However if you WANT to be buena onda, you SHOULD items 1-6 are voluntary; no binding attribution/source-sharing/payment/volunteering obligation; https://spdx.org/licenses/BOLA-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "text: complete-text review (no patent grant, patent license, patent covenant, or patent-claim termination is stated)"
+      "locator": "public/data/licenses/BOLA-1.1.json#text; whole text: no express patent grant or patent-litigation termination; no inference of patent rights from copyright, trademarks or non-infringement disclaimers; https://spdx.org/licenses/BOLA-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text: introductory statement that the author does not mind anyone using the software and public-domain declaration (the stated public-domain effect supports commercial and private use, copying/distribution, modification, and downstream relicensing/sublicensing, but not an express patent grant)"
+      "locator": "public/data/licenses/BOLA-1.1.json#text; Public Domain paragraph is a bare designation for this work; opening motivation and conditional social suggestions do not supply an express fallback license when dedication fails; https://spdx.org/licenses/BOLA-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text: first operative paragraph (the work is provided 'as-is' without express or implied warranty, and the authors disclaim liability for damages arising from use); complete-text review finds no trademark, patent-claim, or enforceable additional-term restriction"
+      "locator": "public/data/licenses/BOLA-1.1.json#text; AS IS paragraph expressly excludes warranty and damages liability; no field-of-use restriction in social/environmental suggestions; https://spdx.org/licenses/BOLA-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "metadata: id=BOLA-1.1, name='Buena Onda License Agreement v1.1', deprecated=false, osi=false, fsf=false; text contains only a bare public-domain declaration without a jurisdictional fallback copyright license or patent terms, followed by unusual informal social and environmental suggestions outside the semantic model, so it is not a safe general recommendation"
+      "locator": "public/data/licenses/BOLA-1.1.json#text; whole-text editorial review on 2026-09-09, batch 6; Ověřit účinek veřejného prohlášení o public domain a případný náhradní grant pro konkrétní dílo a jurisdikci. Znění nenabízí fallback jako bcrypt-Solar-Designer. Společenská doporučení jsou dobrovolná; nepřevádět je na povinnost zveřejnit úpravy, platit nebo zachovat autorství.; https://spdx.org/licenses/BOLA-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "text: public-domain declaration, lead-in to numbered items 1-6, and complete-text review (exercise of the intended unrestricted use is not conditioned on distribution, modification, combination, linking, network use, or patent claims; the expressly voluntary suggestions create no legal trigger)"
+      "locator": "public/data/licenses/BOLA-1.1.json#text; However if you WANT to be buena onda, you SHOULD items 1-6 are voluntary; no binding attribution/source-sharing/payment/volunteering obligation; https://spdx.org/licenses/BOLA-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     }
   ]
 }

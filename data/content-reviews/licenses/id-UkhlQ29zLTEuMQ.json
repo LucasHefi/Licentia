@@ -1,0 +1,30 @@
+{
+  "id": "RHeCos-1.1",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:28f72eb3d1fe59c6d05f3ac4d9ce30e719c1595c0aefe1baa4472ce5eca60b0c"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Red Hat eCos 1.1 vyžaduje zpřístupnit změněné zdroje příjemcům binárek i původnímu vývojáři a při známém kontaktu mu oznámit změny a umístění zdrojů. Obsahuje patentový grant, ale také zvláštní práva Red Hat k jinému licencování a aktivní oznamování zjištěných cizích práv příjemcům. Při zákonné nemožnosti plnit podmínky zakazuje další užití do nového svolení Red Hat. Průvodce ji nezařazuje kvůli těmto rozdílným rolím, schvalování a dalším závazkům k arbitráži a rozdělení odpovědnosti.",
+  "blockersCs": [
+    "§3.2,3.4 požadují předávání změn původci, oznámení a aktivní IP/API LEGAL informace;§5,13 dávají zvláštní práva Red Hat. Je potřeba role poskytovatele a tyto povinnosti, nikoli symetrická běžná file-copyleft licence.",
+    "§4 při zákonné nemožnosti podmiňuje jakékoli použití novým svolením Red Hat a§11–12 přidávají arbitráž a dělení škod; model musí zachytit tento schvalovací a odpovědnostní režim."
+  ],
+  "analysis": {
+    "subjectCs": "Red Hat eCos1.1 je úplná licence pro eCos s vlastními privilegii Red Hat a souborovou definicí Modifications; není to pozdější eCos GPL výjimka.",
+    "grantCs": "§2 dává užití, reprodukci, změny, zobrazení, výkon, podlicence a distribuci původního kódu i příspěvků a rozumně nezbytné patenty pro Original Code/Contributor Version bez dalších změn či kombinací. §5,13 dávají Red Hat zvláštní možnost jiné licence Red Hat Branded Code a dalších produktů, nikoli stejné právo všem.",
+    "conditionsCs": "§3.1 zdroje pod RHeCos s kopií licence;§3.2 každou vytvořenou změnu elektronicky dává příjemcům executable i Initial Developer, dostupnou12 měsíců od počátku nebo6 od nové verze, odpovědnost i za cizí hosting. Je-li kontakt, oznámí původci změnu i místo. §3.3 datuje změny a uvádí původ;§3.4 LEGAL popisuje známé IP nároky, vlastní patenty nutné API a nová zjištění oznamuje příjemcům. §3.5–6 připojuje zdrojový Exhibit A, licenci a návod ke zdroji, binární Exhibit B v materiálech produktu; vlastní další podmínky/záruky odškodňují původce/přispěvatele.",
+    "limitationsCs": "§4 při zákonné nemožnosti požaduje citace zákonů a popis v LEGAL, zaslání Red Hat k posouzení a zakazuje jakékoli další použití, dokud Red Hat neudělí svolení. §7,9 aB vylučují záruky/škody v konkrétním rozsahu,§8 má30dnů od vědomosti a přežití podlicencí. §11 při americké účasti závazná JAMS arbitráž mimo IP spory, jinak kalifornské fórum a náklady neúspěšné strany;§12 povinná spolupráce na spravedlivém rozdělení škod.",
+    "compatibilityCs": "§3.7 ponechává jiný kód Larger Work mimo podmínky Covered Code a§3.6 dovoluje jinou binární licenci bez omezení zdrojů. §6 volí pozdější Red Hat verze. §13 smluvní výjimka dovoluje Red Hat začlenit třetí kód bez jeho zdrojů i pokud by jinak byl Modifications; neznamená, že tato licence uděluje všechna jeho práva. Známky Red Hat/eCos se nepovolují nad povinný Exhibit B."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/RHeCos-1.1.html",
+      "note": "Individuálně přečten celý připnutý text; §3.1 zdroje pod RHeCos s kopií licence;§3.2 každou vytvořenou změnu elektronicky dává příjemcům executable i Initial Developer, dostupnou12 měsíců od počátku nebo6 od nové verze, odpovědnost i za cizí hosting. Je-li kontakt, oznámí původci změnu i místo. §3.3 datuje změny a uvádí původ;§3.4 LEGAL popisuje známé IP nároky, vlastní patenty nutné API a nová zjištění oznamuje příjemcům. §3.5–6 připojuje zdrojový Exhibit A, licenci a návod ke zdroji, binární Exhibit B v materiálech produktu; vlastní další podmínky/záruky odškodňují původce/přispěvatele. §2.1(b),2.2(b) výslovné rozumně nezbytné patentové svolení pro příslušný kód/verzi;§8 nemá patentovou žalobní odvetu."
+    }
+  ]
+}

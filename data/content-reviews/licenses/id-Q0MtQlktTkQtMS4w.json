@@ -1,0 +1,29 @@
+{
+  "id": "CC-BY-ND-1.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:d4f0dafddad86e76cd0bbb9fa6c8b10df4828ee424d5526bcb851b8b61b07843"
+  },
+  "disposition": "blocked",
+  "summaryCs": "CC BY-ND 1.0 dovoluje komerční kopie a veřejné užití neměnného díla i v kolekci, nikoli obecné adaptace; technické formátové změny jsou dovoleny. Atribuce zahrnuje autora a titul, licenci lze předat textem/URI. Verze 1.0 skutečně poskytuje omezené záruky právního původu a jejich výjimku z omezení škod.",
+  "blockersCs": [
+    "§ 3 neposkytuje obecné adaptace a § 4 zakazuje neslučitelné technologické řízení přístupu/užití i ukládá odstranění identifikace na žádost. Doplnit ND/technické výjimky, DRM a request-removal model; licence navíc není vhodná jako otevřená licence nového softwaru."
+  ],
+  "analysis": {
+    "subjectCs": "§1 Work je autorské dílo a Collective Work obsahuje úplný nezměněný originál vedle samostatných prací, není Derivative Work.",
+    "grantCs": "§3 celosvětově bezroyalty nevýhradně po copyrightovou dobu dovoluje reprodukce, kolekce, distribuci/phonorecords, public display/perform/digital audio. Neuděluje deriváty, pouze technicky nezbytné formátové změny. Patentový grant a sublicence nejsou uděleny; §2 zachovává fair use/first sale/výjimky.",
+    "conditionsCs": "§4(a) licencované veřejné/distribuční užití jen pod CCPL s kopií NEBO URI, bez dodatečných omezení/sublicence/neslučitelných access/use DRM, se zachováním licence/warranty notices; kolekce jinak nemusí být CC. Na žádost poskytovatele odstranit z kolekce jeho či autorovu identifikaci, pokud prakticky možné. §4(b) copyright, dodané jméno/pseudonym a titul, v kolekci nejméně stejně výrazně jako srovnatelný kredit.",
+    "limitationsCs": "§5(a) poskytovatel po rozumném ověření dle nejlepší znalosti garantuje získaná práva bez dalších plateb a neporušení cizích práv včetně publicity/privacy. §5(b) jen ostatní záruky as-is. §6 výluka některých škod výslovně neplatí pro third-party liability z porušení §5 záruk. §7 automatické ukončení při porušení, řádní kolekční příjemci zachováni; nové licence/ukončení distribuce neruší již udělené právo.",
+    "compatibilityCs": "§8 přímá stejná licence od původního poskytovatele každému příjemci, severability, písemná waiver a entire agreement. Žádná SA alternativní verze ani právo adaptací; CC není stranou, leda samo poskytovatel. CC známky pouze k identifikaci CCPL nebo písemně dle známkové politiky."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/CC-BY-ND-1.0.html",
+      "note": "Individuální revize celého připnutého textu; §1 Work je autorské dílo a Collective Work obsahuje úplný nezměněný originál vedle samostatných prací, není Derivative Work."
+    }
+  ]
+}

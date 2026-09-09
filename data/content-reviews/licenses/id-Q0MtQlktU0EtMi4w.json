@@ -1,0 +1,29 @@
+{
+  "id": "CC-BY-SA-2.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:78e7007b8c85c0ad4a9783a082933e5046a8cc7b1a513fa3497e6a61d5d3c4e0"
+  },
+  "disposition": "blocked",
+  "summaryCs": "CC BY-SA 2.0 umožňuje komerční adaptace pod touto, pozdější nebo iCommons licencí se stejnými BY-SA prvky. Hudebních odměn se výslovně vzdává. Atribuce a DRM/request-removal pravidla se vztahují k veřejnému šíření; nejde o zdrojovou softwarovou reciprocitu.",
+  "blockersCs": [
+    "§ 4a–b ukládají odstranění referencí na žádost a neslučitelné access/use DRM omezení. Doplnit tyto povinnosti a obsahový SA model; tuto obecnou CC licenci nenabízet jako hotový software-guide profil."
+  ],
+  "analysis": {
+    "subjectCs": "§1 copyrightové dílo a adaptace (hudební synching výslovně derivát), kolekce celého neměnného originálu se samostatnými díly není derivát. License Elements jsou Attribution, ShareAlike; You vylučuje dřívějšího porušovatele bez nové licence.",
+    "grantCs": "§3 světový bezroyalty nevýhradní grant kopie/kolekce/deriváty a jejich veřejná provedení/displej/digital-audio/distribuce, všechna média a nutné technické změny. §3e–f se vzdává performance/mechanical/webcast odměn dle popsaných statutory regimes; na rozdíl od UK2.0 neobsahuje obecnou rezervaci komerčních royalties. Patenty nejsou licencovány, sublicence Work §4a zakázána.",
+    "conditionsCs": "§4a kopie NEBO URI licence pro původní Work, zachované licence/warranty notices, bez dalších podmínek a neslučitelných access/use DRM; prakticky odstranit požadované reference na autora/poskytovatele z adaptace či kolekce po notifikaci. §4b celá odvozenina tato/pozdější/iCommons se stejnými Elements, zvolený text/URI, bez dalších omezení a neslučitelného DRM. §4c copyright, dodaný autor/pseudonym, titul a rozumně dosažitelné relevantní URI, u derivátu identifikace použití originálu a alespoň srovnatelná prominence kreditu. Bez2.5 požadavku na dodatečné designované sponsor strany.",
+    "limitationsCs": "§5 as-is bez záruk/representations, leda písemná dohoda či kogentní právo; §6 výluka určených škod v zákonných mezích. §7 automatické ukončení při porušení, plnící downstream derivátů/kolekcí zachován, poskytovatelova nová jiná licence neodnímá existující grant. CC známky jen identifikace či písemný souhlas dle guidelines.",
+    "compatibilityCs": "§4b je výslovná same-Elements pozdější/iCommons alternativa, nikoli obecná softwarová copyleft kompatibilita. §8 přímá licence původního Work příjemci, severability/waiver/entire agreement; CC stranou jen jako poskytovatel. Samostatné části kolekce mimo vložené Work/derivát nejsou SA."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/CC-BY-SA-2.0.html",
+      "note": "Individuální revize celého připnutého textu; §1 copyrightové dílo a adaptace (hudební synching výslovně derivát), kolekce celého neměnného originálu se samostatnými díly není derivát. License Elements jsou Attribution, ShareAlike; You vylučuje dřívějšího porušovatele bez nové licence."
+    }
+  ]
+}

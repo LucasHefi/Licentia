@@ -1,0 +1,29 @@
+{
+  "id": "AGPL-1.0",
+  "reviewedAt": "2026-09-10",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:4806f8560cb5cde5bfbb6701684407f354dcfe47f5662651577ddd257e0fabc5"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Affero GPL v1 vyžaduje GPL-like copyleft a dostupnost zdrojů při distribuci. Síťová podmínka §2(d) se aktivuje pouze u přijatého programu určeného síťové interakci, který již nabízel vyžádání úplných zdrojů: změněná verze tuto funkci zachová a všem síťovým uživatelům nabídne okamžitý přenos vlastních úplných zdrojů přes HTTP. Nejde o obecné pravidlo každého síťového programu podle GNU AGPLv3. SPDX identifikátor AGPL-1.0 je deprecated a pro nový projekt vyžaduje výslovné only/or-later rozhodnutí.",
+  "blockersCs": [
+    "Připnutá položka AGPL-1.0 je deprecated a nerozlišuje only od or-later. §9 podmiňuje pozdější Affero verze konkrétním notice programu; tento historický identifikátor nemá být doporučen pro nový projekt. Je nutné zvolit AGPL-1.0-only nebo AGPL-1.0-or-later a zachovat specifickou podmínku existujícího zdrojového tlačítka/funkce §2(d)."
+  ],
+  "analysis": {
+    "subjectCs": "Affero Inc. verze 1, březen 2002, odvozená s povolením z GNU GPL s novým §2(d). §0 Program a autorské odvozeniny; samostatný běh není omezen a výstupy jsou pokryty jen jsou-li samy odvozeninou. Nejde o identické znění GNU AGPL verze 3.",
+    "grantCs": "§§1–3 dovolují kopie, změny a zdrojovou/objektovou distribuci včetně placeného fyzického předání a dobrovolné záruky. §6 poskytuje přímou licenci příjemci, nikoli obecné právo přepsat originál sublicencí. §9 při notice umožňuje pozdější Affero verze; zvláštní možnost GPLv3+ pro upravené verze je navíc výslovně podmíněna substantially equivalent terms. Výslovný patentový grant není uveden.",
+    "conditionsCs": "§1 copyright/disclaimer na kopiích, zachované licenční/warranty notices a celý text. §2(a) změny souborů s datem, (b) celý publikovaný/distribuovaný derivát pod Affero GPL bez licenčního poplatku, (c) obvyklý interaktivní copyright/warranty/redistribuční notice s výjimkou původního interaktivního programu bez oznámení. §2(d) pouze pokud přijatý síťový program již poskytoval vyžádání zdrojů, zachovat funkci a nabídnout všem síťovým uživatelům okamžitý HTTP přenos kompletních zdrojů změněné verze. §3 binárky: přiložené zdroje NEBO písemná nabídka všem třetím stranám nejméně 3 roky za fyzické náklady NEBO nekomerčně převzatá nabídka u takto přijaté binárky; ekvivalentní download téhož místa je uznaný. Zdroj zahrnuje moduly, rozhraní a kompilační/instalační skripty, s OS výjimkou mimo komponenty přiložené k binárce.",
+    "limitationsCs": "§4 nepovolené činnosti automaticky ruší práva bez nápravné lhůty, compliant downstream zůstává. §§6–7 zakazují další restrikce a distribuci při neslučitelných vnějších závazcích, včetně patentových plateb; žádná patentová žalobní odveta ani grant z toho nevzniká. §8 dovoluje výslovné zeměpisné omezení původního držitele, v této předloze žádné země určeny nejsou. §§11–12 výluky záruk/škod s právními a písemnými výjimkami.",
+    "compatibilityCs": "§2 odděleně šířené nezávislé části a mere aggregation vyjímá, ale celek skutečné odvozeniny zůstává pod licencí. §9 není bezpodmínečné povolení standardní GPLv3: vyžaduje podstatnou ekvivalenci podmínek, zejména nelze zahodit §2(d) jen podle čísla verze. Právo na pozdější Affero verze závisí na skutečném or-later notice, které deprecated ID samo bezpečně neurčuje. §10 jiné kombinace odkazuje na svolení autora."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/AGPL-1.0.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; §2(b) copyleft celého odvozeného díla a podmíněný §2(d) zachování síťového vyžádání zdrojů tvoří síťovou rodinu s přesně omezeným triggerem"
+    }
+  ]
+}

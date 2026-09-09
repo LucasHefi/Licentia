@@ -1,0 +1,27 @@
+{
+  "id": "BSD-2-Clause-first-lines",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:8efdaaa4ec42434fe27658166ae05ed8ab8dfd80672ff4079cd08571a9706ab7"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Licence dovoluje užití a redistribuci zdrojů i binárek s úpravami nebo bez nich. Ve zdrojovém souboru musejí copyright, podmínky a výluka záruk zůstat beze změny na prvních řádcích; binární distribuce je připojuje v dokumentaci či jiných materiálech. Software je bez záruk a text omezuje odpovědnost NTT, zveřejnění zdrojů však nevyžaduje.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Text NTT licencuje zdrojové i binární formy softwaru s copyrighty 2006, 2007 a 2009.",
+    "grantCs": "Úvod výslovně dovoluje redistribuci a užití obou forem se změnami i bez nich.",
+    "conditionsCs": "Bod 1 vyžaduje copyright, podmínky a disclaimer beze změn jako první řádky zdrojového souboru. Bod 2 vyžaduje jejich reprodukci v dokumentaci či jiných materiálech doprovázejících binární distribuci.",
+    "limitationsCs": "AS IS vylučuje záruky a rozsáhlou odpovědnost NTT bez ohledu na právní teorii nebo upozornění na škodu; známkové omezení není.",
+    "compatibilityCs": "Jiná licence ani verze není nabízena; umístění na prvních řádcích je závazná vlastnost tohoto znění."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/BSD-2-Clause-first-lines.html",
+      "note": "Individuálně přečten celý připnutý text; Bod 1 vyžaduje copyright, podmínky a disclaimer beze změn jako první řádky zdrojového souboru. Bod 2 vyžaduje jejich reprodukci v dokumentaci či jiných materiálech doprovázejících binární distribuci. Celý grant a dvě podmínky nemají patentový grant ani patentové ukončení."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "Adobe-Glyph",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:48539ecbfe6e33dfccf31444a22143e83fa5db3d84d0722c412d6b582d2c93cc"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Licence rozlišuje nezměněné kopie dokumentu Adobe a samostatná díla odvozená z jeho obsahu. Kopie dokumentu musejí zachovat copyright a svolení a nesmějí být upravovány; odvozená díla jsou dovolena, ale nesmějí se vydávat za kopii či verzi původního dokumentu. Průvodce ji nezařazuje pro nový software, protože tyto dvě dokumentační cesty vyžadují samostatné posouzení.",
+  "blockersCs": [
+    "Licence míří na dokumentaci a rozlišuje zákaz úprav dokumentu od dovoleného samostatného odvozeného díla; před doporučením je nutný dokumentační model těchto alternativ, nikoli obecné softwarové modification oprávnění."
+  ],
+  "analysis": {
+    "subjectCs": "Adobe text licencuje konkrétní dokumentační soubor a zvlášť samostatná odvozená díla z jeho obsahu.",
+    "grantCs": "První grant dovoluje užití, kopie, publikaci, distribuci, sublicence a prodej dokumentu bez úprav. Druhý dovoluje tvořit a stejně využívat odvozená díla z obsahu.",
+    "conditionsCs": "Kopie dokumentu musí zachovat copyright i svolení a nesmějí být upravovány. Odvozené dílo nesmí být vydáváno za kopii nebo verzi tohoto dokumentu; druhý grant notice podmínku neopakuje.",
+    "limitationsCs": "Adobe vylučuje výnosové/následné škody i záruky včetně neporušování práv; zákaz úprav původního dokumentu se musí odlišit od povolených odvozenin.",
+    "compatibilityCs": "Jsou zde dvě odlišné cesty pro doslovný dokument a vlastní odvozené dílo; nejsou to kumulativní povinnosti pro každý výstup."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Adobe-Glyph.html",
+      "note": "Individuálně přečten celý připnutý text; Kopie dokumentu musí zachovat copyright i svolení a nesmějí být upravovány. Odvozené dílo nesmí být vydáváno za kopii nebo verzi tohoto dokumentu; druhý grant notice podmínku neopakuje. Celý dokumentační grant neobsahuje patentový grant ani patentové ukončení."
+    }
+  ]
+}

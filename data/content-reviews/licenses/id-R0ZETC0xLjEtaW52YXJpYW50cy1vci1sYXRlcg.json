@@ -1,0 +1,31 @@
+{
+  "id": "GFDL-1.1-invariants-or-later",
+  "reviewedAt": "2026-09-10",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:adc9714d944e7e6afd8218e89a733f2656a533b2621ab219922b824dd7af059e"
+  },
+  "disposition": "blocked",
+  "summaryCs": "GFDL 1.1 s invariantními oddíly a možností pozdější verze je dokumentový copyleft: změněný dokument se šíří pod stejnou licencí, s neměnnými určenými oddíly, copyrighty, historií a zvláštními údaji titulní strany. Více než100 neprůhledných kopií vyžaduje upravitelnou Transparent kopii u každé nebo volně dostupné síťové místo. U velkých tištěných vydání mohou být povinné texty obálek. Komerční šíření je dovoleno, patentový grant ani vlastní výluka záruk či odpovědnosti zde nejsou.",
+  "blockersCs": [
+    "§§1,3–8 ukládají neměnné sekundární oddíly včetně názvů, zvláštní titulní/obálkové texty, zachování podstaty a tónu poděkování/věnování a odstraňování Endorsements. Model tyto obsahové zásahy nevyjadřuje; je třeba dokumentová větev s explicitními invariants/covertexts a pravidly úprav, nikoli pouhá povinnost zachovat licence.",
+    "§2 zakazuje technické prostředky bránící čtení či dalšímu kopírování; §7 vyjímá agregát jen při neuplatnění kompilačního copyrightu. Je nutné modelovat technologické omezení a tuto konkrétní podmínku agregace.",
+    "Preambule a dodatek výslovně řeší manuály a textové dokumenty a doporučují pro významné programové příklady paralelní softwarovou licenci. Licence není samostatným vhodným grantem pro nový software; je třeba oddělit dokumentový režim včetně prahu>100 a Transparent formy od povinností zdrojového kódu."
+  ],
+  "analysis": {
+    "subjectCs": "§1 dokument s licenčním notice; Modified Version obsahuje celek nebo část i nezměněnou či přeloženou. Secondary Section smí řešit jen vztah autorů/vydavatelů k tématu, ne vlastní výklad tématu; jen takový oddíl může být invariantní. Tento identifikátor počítá s invariantní variantou a later volbou; konkrétní tituly a texty určuje notice dokumentu. Transparent je přímo upravitelný formát s veřejnou specifikací a vhodný ke zpracování; úmyslně obfuskované značkování nestačí, běžné výstupní PDF/PostScript či strojové HTML text řadí mezi Opaque.",
+    "grantCs": "§2 kopie/šíření v každém médiu, komerčně i nekomerčně, půjčování a veřejné vystavení; §4 dovoluje upravené verze za dokumentového copyleftu. §8 překlad je modifikace, náhrada invariantních oddílů překladem vyžaduje zvláštní svolení, doplňkový překlad při originálu lze. Patenty neuděluje, sublicence mimo výslovně dovolený režim§9 nejsou samostatným širokým grantem.",
+    "conditionsCs": "§2 každá kopie plný text licence, copyrighty a licenční notice, bez dalších podmínek. §3>100 tištěných kopií s předepsanými Cover Texts: čitelné správné obálky, vydavatel, na přední celý stejně výrazný titul; přesah na sousední strany. >100 Opaque: Transparent s každou kopií NEBO veřejná anonymní bezplatná síťová kopie bez přidaného obsahu po standardních protokolech, s rozumnými kroky zajistit dostupnost nejméně rok od posledního veřejného šíření edice i přes zástupce. Kontakt autorům před velkým vydáním je pouze žádost. §4 jiný titul kromě svolení předchozího vydavatele, autor změn a nejméně pět hlavních původních autorů nebo všichni při menším počtu, vydavatel, copyright změn a licence, seznamy invariantů/obálek, historie; původní síťová místa s výjimkou verze nejméně4roky před Dokumentem nebo svolení vydavatele. Zachovat poděkování/věnování v podstatě i tónu a invariants doslovně. Staré Endorsements odstranit, nové jen k upravené verzi. Nové obálkové pasáže nejvýše5/25slov a jedna od entity, výměna jen se svolením předchozího vydavatele.",
+    "limitationsCs": "§4 nepřiznává reklamní/endorsement užití jmen autorů/vydavatelů. §5 kombinace zachová všechny invariants, sloučí stejné, rozliší shodné názvy s různým obsahem a sloučí History/Acknowledgements/Dedications, odstraní Endorsements. §7 agregát bez nároku na kompilační copyright nevztahuje licenci na samostatná díla; při podílu Dokumentu<1/4 mohou Cover Texts obklopovat jen Dokument, jinak celek. §9 nepovolené jednání automaticky ukončí práva, řádní příjemci zachováni, bez30denní obnovy pozdějších verzí. Text nemá obecnou výluku záruk/odpovědnosti; preambule o nepřičítání cizích změn ji nenahrazuje.",
+    "compatibilityCs": "§4 stejná licence celé Modified Version, §6 kolekce smí sdílet jedinou kopii licence, vyjmutý dokument ji dostane znovu. §10 podle notice or-any-later lze zvolit1.1 nebo pozdější nevydraftovanou verzi FSF; bez čísla libovolnou takovou verzi. Nelze automaticky převzít podmínky/obnovu práv z1.3 při analýze1.1. §8 anglický originál licence doprovází překlad a má přednost. Není převod do CC-BY-SA ani GPL; dodatek programové příklady jen doporučuje licencovat paralelně."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/GFDL-1.1-invariants-or-later.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; §4 Modified Version přesně pod touto licencí, §5 kombinované dokumenty totéž; silný dokumentový copyleft"
+    }
+  ]
+}

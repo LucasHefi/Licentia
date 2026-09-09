@@ -1,0 +1,29 @@
+{
+  "id": "Parity-7.0.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:dec70c3122b292370c982c2856977cda2f8039230cdee28a3555433b1076f3e2"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Licence uděluje autorská i patentová práva, ale do 30 dnů požaduje veřejný zdroj také softwaru, který se jejím prostřednictvím vyvíjí, provozuje nebo analyzuje. Má úzce vymezené výjimky pro prototypy a zpětnou analýzu a omezuje patentové nároky proti softwaru i kombinacím. Průvodce ji nezařazuje, protože tento rozsah přesahuje běžné licencování vlastních změn.",
+  "blockersCs": [
+    "Povinnost zveřejnit do 30 dnů i software pouze vyvíjený, provozovaný nebo analyzovaný nástrojem má kumulativní prototypovou a reverse-engineering výjimku; před doporučením je třeba model tohoto rozsahu a lhůt, nikoli běžný copyleft."
+  ],
+  "analysis": {
+    "subjectCs": "Parity 7.0.0 vymezuje přispěvatele Artless Devices a zdrojový odkaz; povinnost se týká i softwaru vyvíjeného, provozovaného nebo analyzovaného nástrojem.",
+    "grantCs": "Copyright a Patent dovolují vše, co by jinak porušovalo autorská práva a patenty, které přispěvatel může nyní nebo v budoucnu licencovat; Reliability znemožňuje odvolání licence.",
+    "conditionsCs": "Notices přenáší licenci a contributor/source lines všem příjemcům. Copyleft/Contribute požaduje do 30 dnů veřejně přístupný preferovaný zdroj vyvíjeného/provozovaného/analyzovaného software pod touto nebo stejně vše dovolující licencí. Výjimka prototypů kumulativně vyžaduje max 30 dní, nesdílení mimo tým kromě nonproduction testu a práci pouze pro tým.",
+    "limitationsCs": "Reverse Engineering dovoluje analyzovat nepřispívatelný software pro vývoj přispívané alternativy. Excuse dává 30 dní od zjištění nevědomého porušení k příspěvku/zastavení či praktické opravě notices. Defense zakazuje patentové nároky proti komukoli na tento software i kombinace; AS IS vylučuje záruky/odpovědnost.",
+    "compatibilityCs": "Contribute uvádí Blue Oak/Apache/MIT/BSD jako příklady dostatečně široké licence pro nový software, ale výslovně nedovoluje změnit licenci tohoto software."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Parity-7.0.0.html",
+      "note": "Individuálně přečten celý připnutý text; Notices přenáší licenci a contributor/source lines všem příjemcům. Copyleft/Contribute požaduje do 30 dnů veřejně přístupný preferovaný zdroj vyvíjeného/provozovaného/analyzovaného software pod touto nebo stejně vše dovolující licencí. Výjimka prototypů kumulativně vyžaduje max 30 dní, nesdílení mimo tým kromě nonproduction testu a práci pouze pro tým. Patent odstavec výslovně uděluje nynější i budoucí licencovatelné patenty. Defense je zákaz patentových nároků jako licenční podmínka, bez samostatně popsaného patentového ukončovacího mechanismu."
+    }
+  ]
+}

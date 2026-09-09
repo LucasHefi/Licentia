@@ -1,0 +1,29 @@
+{
+  "id": "Vim",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:6ed44a2cbe3d6df9890b9bc58a8adf10bb652be1a013cffa26f1f0bcff3b2f0a"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Původní Vim i jeho části se šíří s licencí. Modifikace mají pět alternativ: poskytnutí správci na žádost, nezměněná redistribuce takové varianty, zdroje změn s kopií, tříletá dostupnost změn na žádost nebo za podmínek GPL 2+. Modifikační hláška patří do :version i úvodu.",
+  "blockersCs": [
+    "II.2 obsahuje pět skutečných alternativ s kontaktem, žádostí správce/příjemce, tříletým uchováním a podmíněnou GPL cestou; II.3 navíc výjimku modifikační hlášky. Doplnit model voleb, lhůt a request-trigger místo kumulativních source povinností."
+  ],
+  "analysis": {
+    "subjectCs": "Text pokrývá Vim, části, upravené/rozšířené verze a vlastní příklady/skripty přidané k executable původních zdrojů.",
+    "grantCs": "I a II dovolují distribuci původních částí i modifikovaných zdrojů/executables, bez zákazu komerčního účelu. II.2(e) povoluje GPL2-or-later jen pokud GPL platí na změny. Patentový grant a výslovná sublicence chybějí.",
+    "conditionsCs": "I/II.1/IV zachovávají neměnnou licenci. II.2(a) kontakt a změny zdarma na žádost správce s vyjednatelným grantem; (b) nezměněné přeposlání této varianty; (c) všechny změny se zdroji/diffem, nová licence nesmí brzdit změny oficiálního Vimu; (d) bez zdrojů se svolením správci a 3 roky uchovat změny/kontakt pro správce i své příjemce; (e) GPL2+ při GPL změnách. II.3 hláška změn v :version a intro, s GPL kolizní výjimkou; II.4 kontakty neměnit mimo opravy vlastníka.",
+    "limitationsCs": "II.2(a) povinnost správci končí při úplné nemožnosti jej kontaktovat a neopakuje se po potvrzení příjmu. Historicky jmenuje Brama Moolenaara s mechanismem změny správce; dnešní osoba se nedosazuje. Text nemá výluku záruk ani škod. III pouze doporučuje zaslat změny.",
+    "compatibilityCs": "II.2 nabízí alternativy, ne současně zdroje každému a správci. IV dovoluje tuto licenci místo licence předchozích Vim vydání; GPL2+ cesta závisí na GPL grantu změn, nikoli jen na přání distributora."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Vim.html",
+      "note": "Individuální revize celého připnutého textu; Text pokrývá Vim, části, upravené/rozšířené verze a vlastní příklady/skripty přidané k executable původních zdrojů."
+    }
+  ]
+}

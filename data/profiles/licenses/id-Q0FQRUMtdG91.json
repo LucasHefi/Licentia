@@ -17,7 +17,7 @@
     "copyleftScope": "none",
     "permissions": [
       "commercial-use",
-      "distribution",
+      "private-use",
       "unknown"
     ],
     "obligations": [
@@ -25,11 +25,9 @@
       "include-license-text"
     ],
     "triggers": [
-      "distribution"
+      "unknown"
     ],
     "restrictions": [
-      "additional-terms",
-      "unknown",
       "warranty"
     ],
     "patentPosition": "none-stated",
@@ -39,65 +37,65 @@
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text: complete license (the grant is specific to the named Common Attack Pattern Enumeration and Classification (CAPEC) material rather than a generally reusable software work; the non-OSI, purpose-limited form is nonstandard)",
-      "ruleId": "lic-007.nonstandard-family",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CAPEC-tou.json#text; Grant k CAPEC datům bez povinnosti stejné licence je nonstandard s none copyleftovým rozsahem.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text: complete license (the grant requires preserving notices in copies but imposes no same-license, source-disclosure, or reciprocal condition)",
-      "ruleId": "lic-007.no-copyleft",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CAPEC-tou.json#text; Grant k CAPEC datům bez povinnosti stejné licence je nonstandard s none copyleftovým rozsahem.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text: LICENSE grant sentence (royalty-free use for research, development, and commercial purposes; any copy made for those purposes is authorized). The purpose-limited grant and lack of express modification, private-use, or sublicensing rights are not representable losslessly and are retained as unknown",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CAPEC-tou.json#text; LICENSE dává nevýhradní bezlicenčně-poplatkové užití pro research/development/commercial a zhotovení kopií pro tyto účely. Výslovné oprávnění redistribuce, úprav, sublicence a patentový grant chybějí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text: LICENSE grant sentence (every authorized copy must reproduce MITRE's copyright designation and this license)",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CAPEC-tou.json#text; Any copy ... for such purposes musí obsahovat copyright MITRE a tuto licenci; kopírování může nastat i bez distribuce, pro což chybí obecný use/copy spouštěč.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "text: LICENSE grant sentence (the notice conditions attach when a copy is made; distribution is the vocabulary value representing the copying/distribution context)",
-      "ruleId": "lic-007.trigger-conditions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CAPEC-tou.json#text; Any copy ... for such purposes musí obsahovat copyright MITRE a tuto licenci; kopírování může nastat i bez distribuce, pro což chybí obecný use/copy spouštěč.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text: LICENSE grant sentence and DISCLAIMERS section (use is confined to research, development, and commercial purposes; all documents and information are provided AS IS and all warranties are disclaimed; the purpose restriction is outside the vocabulary and represented by additional-terms and unknown)",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CAPEC-tou.json#text; DISCLAIMERS poskytuje dokumenty a informace as is; contributor, zastupovaná/sponzorující organizace a MITRE orgány/personál odmítají záruky včetně neporušení práv, obchodovatelnosti a vhodnosti. Samostatná výluka škod chybí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "text: complete license (no express patent grant, patent license, patent-claim condition, or patent-termination clause is stated; the non-infringement wording appears only as a warranty disclaimer)",
-      "ruleId": "lic-007.no-patent-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CAPEC-tou.json#text; LICENSE dává nevýhradní bezlicenčně-poplatkové užití pro research/development/commercial a zhotovení kopií pro tyto účely. Výslovné oprávnění redistribuce, úprav, sublicence a patentový grant chybějí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text: LICENSE grant sentence (each authorized copy must reproduce both MITRE's copyright designation and the license, creating a standard notice burden)",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CAPEC-tou.json#text; Any copy ... for such purposes musí obsahovat copyright MITRE a tuto licenci; kopírování může nastat i bez distribuce, pro což chybí obecný use/copy spouštěč.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "metadata: deprecated=false, osi=false, fsf=false; text: complete license limits use to research, development, and commercial purposes, authorizes copies only for those purposes, and requires MITRE copyright/license reproduction; the purpose/asset-specific restriction and unspecified modification/private-use/sublicensing boundaries cannot be represented losslessly by vocabulary 1.0.0, so the profile is not recommendable",
-      "ruleId": "lic-007.review-evidence",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CAPEC-tou.json#text; Individuálně přečten celý připnutý text. Předmětem je databáze Common Attack Pattern Enumeration and Classification a její informace, nikoli obecný softwarový projekt. MITRE dovoluje užití CAPEC pro výzkum, vývoj a komerční účely a kopie pro tyto účely s copyrightem a licencí. Samostatný rozsah úprav a redistribuce není v krátkém grantu určen. LICENSE výslovně dovoluje pouze užití CAPEC a účelové kopie; nedokládá obecnou redistribuci či úpravy a jde o databázovou publikaci. Ověřit původní MITRE rozsah těchto práv a doplnit datový předmět i spouštěč kopírování před software doporučením.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

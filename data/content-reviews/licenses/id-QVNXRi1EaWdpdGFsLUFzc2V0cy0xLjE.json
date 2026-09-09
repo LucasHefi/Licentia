@@ -1,0 +1,29 @@
+{
+  "id": "ASWF-Digital-Assets-1.1",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:0e7a19bb48cf137bf5e36d067aeafb0db0842e5a5dcafa6c9f71b6f4b9931f9e"
+  },
+  "disposition": "blocked",
+  "summaryCs": "ASWF v1.1 omezuje použití digitálních assets na vzdělávání, výzkum, vývoj, benchmarky a demonstrace. Vedle oznámení a copyrightu v publikovaných obrazech vyžaduje při distribuci změněných assets popsat jejich rozdíly oproti originálu.",
+  "blockersCs": [
+    "Výlučný seznam povolených účelů, assetový předmět a povinné jméno assets/výstupů nejsou modelovány. Doplnit je před doporučením a zachovat v1.1-specifickou povinnost popsat změny oproti originálu."
+  ],
+  "analysis": {
+    "subjectCs": "Licence v1.1 se vztahuje na konkrétní digitální assets a jejich výstupy označené Asset Name, nikoli obecný kód.",
+    "grantCs": "Úvod dovoluje užití a redistribuci i změněných assets výlučně pro vyjmenované účely včetně veřejných/reprodukovatelných benchmarků; obecný komerční grant a patentová licence chybějí.",
+    "conditionsCs": "Bod 1 vyžaduje copyright, podmínky, disclaimer a je-li to relevantní popis rozdílů redistribuované verze proti originálu. Bod 2 copyright u publikovaných odvozených obrazů; bod 4 pouze Asset Name pro assets i output a pouze identifikační použití názvu.",
+    "limitationsCs": "Bod 3 zakazuje nepovolený endorsement, sponzoring či afiliaci jmény držitele/přispěvatelů u produktů i benchmarků. Další známky/jména jsou bodem 4 zakázány; disclaimer odmítá záruky a škody.",
+    "compatibilityCs": "Nový popis rozdílů z bodu 1 této verze se nepřenáší na 1.0. Text nemá share-alike, alternativní licenci nebo obecnou produkční licenci k assets."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/ASWF-Digital-Assets-1.1.html",
+      "note": "Individuální revize celého připnutého textu; Licence v1.1 se vztahuje na konkrétní digitální assets a jejich výstupy označené Asset Name, nikoli obecný kód."
+    }
+  ]
+}

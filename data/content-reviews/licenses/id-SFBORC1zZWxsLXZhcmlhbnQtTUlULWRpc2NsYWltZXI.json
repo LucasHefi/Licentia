@@ -1,0 +1,20 @@
+{
+  "id": "HPND-sell-variant-MIT-disclaimer",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.3",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:99c3c89f29f2168fb45eba5a523a1766615b9d12af964f85dfba55218c4a6de8"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Zachovejte copyright v kopiích a copyright i svolovací oznámení v doprovodné dokumentaci. Oproti jiné sell variantě zde není zákaz propagačního použití jména; text obsahuje disclaimer ve stylu MIT.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/HPND-sell-variant-MIT-disclaimer.html",
+      "note": "Dřívější individuální revize 2026-09-09.3; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

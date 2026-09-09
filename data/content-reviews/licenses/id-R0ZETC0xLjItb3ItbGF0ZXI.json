@@ -1,0 +1,29 @@
+{
+  "id": "GFDL-1.2-or-later",
+  "reviewedAt": "2026-09-10",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:0c4f9ee0c839c7ea4042eda3f0f597a0fab193380683c2d12c69cb72ae57d0bb"
+  },
+  "disposition": "blocked",
+  "summaryCs": "GFDL 1.2 nebo pozdější vydaná verze FSF dovoluje i komerční šíření a úpravy dokumentace; konkrétní oznámení určuje případné invarianty a obálkové texty. Nad 100 netransparentních kopií požaduje upravitelnou kopii nebo veřejné stažení s rozumně zajištěnou dostupností nejméně rok po poslední distribuci vydání. Zachovává také pravidla názvu, autorů, historie, poděkování a neměnných částí. Průvodce potřebuje dokumentový model těchto povinností; volba pozdější verze nepotvrzuje absenci invariantů ani obecné přelicencování pod jinou licencí.",
+  "blockersCs": [
+    "§3–8 požadují množstevní Transparent kopie, titulní autory, historii, odlišný název a případné invarianty/obálkové texty, které softwarový model neumí. Je potřeba dokumentový model a skutečný seznam v licenčním oznámení; přípona or-later není potvrzením varianty bez invariantů."
+  ],
+  "analysis": {
+    "subjectCs": "GFDL 1.2-or-later je dokumentový copyleft s oprávněním zvolit pozdější vydanou GNU FDL. Obecný identifikátor neříká, zda konkrétní oznámení určuje Invariant Sections nebo přední/zadní Cover Texts; celý připnutý text §0–10 i dodatek je přečten zvlášť.",
+    "grantCs": "§1–4 dávají celosvětově bez odměny práva k užití, úpravám, překladům, kopírování i komerční distribuci dokumentu a jeho částí. Půjčování a veřejné vystavování kopií je dovolené. Invariantní mohou být jen vedlejší oddíly bez obsahu vlastního tématu dokumentu; jejich případný text a název se změnám vyhýbá. Patenty uděleny nejsou.",
+    "conditionsCs": "§2 všechny kopie zachovávají copyright, licenční oznámení a plnou licenci. §3 nad 100 Opaque kopií stanoví přiloženou Transparent kopii nebo veřejné standardní síťové stažení s přiměřeně zajištěnou dostupností nejméně rok po poslední distribuci edice. Nad 100 tištěných kusů při požadovaných Cover Texts vyžaduje obálky s texty, celým názvem a vydavatelem. §4 požaduje odlišný název leda svolení, autory změn a nejméně pět původních leda prominutí, copyright změn, vydavatele, historii, odkazy se čtyřletou výjimkou, tón poděkování/věnování, disclaimery a neměnné oddíly. Původní Endorsements se odstraňují; nové mohou podporovat upravenou verzi. Vlastní nové Secondary Sections lze učinit invariantními a v předepsaných mezích přidat jednu sadu obálkových 5/25 slov na entitu.",
+    "limitationsCs": "§2 nepovoluje technické překážky čtení/kopírování ani jiné podmínky. §4 nevydává jména autorů či vydavatelů pro propagaci/podporu. §8 dovoluje překlady invariantů vedle originálu, náhradu jen s výslovným souhlasem; originály licence a oznámení/disclaimerů se uchovávají s předností. §1 pouze začleňuje přiložené Warranty Disclaimers pro jejich záruční účinek a sám nestanoví všeobecné AS IS. §9 automatický zánik nemá 30/60denní obnovu verze 1.3; řádní downstream příjemci zůstávají oprávněni.",
+    "compatibilityCs": "§5 spojení zachovává všechny invarianty a slučuje historii/poděkování/věnování; §6 sbírka smí mít jedinou licenci, jednotlivě vyjmutý dokument ji musí dostat. §7 nezávislá díla agregátu nejsou přelicencována; při dokumentu pod polovinou celku mohou jeho cover texty obklopit jen jej. §10 pro tento or-later grant dovoluje 1.2 či pozdější nedraftovou verzi FSF, nikoli libovolnou cizí licenci. Samotný text 1.2 žádné MMC přelicencování na CC neobsahuje a pozdější verzi je nutno použít s jejími vlastními podmínkami. Dodatek doporučuje programové příklady zvlášť softwarově licencovat."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/GFDL-1.2-or-later.html",
+      "note": "Individuálně přečten celý připnutý text; §2 všechny kopie zachovávají copyright, licenční oznámení a plnou licenci. §3 nad 100 Opaque kopií stanoví přiloženou Transparent kopii nebo veřejné standardní síťové stažení s přiměřeně zajištěnou dostupností nejméně rok po poslední distribuci edice. Nad 100 tištěných kusů při požadovaných Cover Texts vyžaduje obálky s texty, celým názvem a vydavatelem. §4 požaduje odlišný název leda svolení, autory změn a nejméně pět původních leda prominutí, copyright změn, vydavatele, historii, odkazy se čtyřletou výjimkou, tón poděkování/věnování, disclaimery a neměnné oddíly. Původní Endorsements se odstraňují; nové mohou podporovat upravenou verzi. Vlastní nové Secondary Sections lze učinit invariantními a v předepsaných mezích přidat jednu sadu obálkových 5/25 slov na entitu. Připnuté §0–10 a dodatek nedávají výslovná patentová práva, patentovou výluku ani odvetné ukončení."
+    }
+  ]
+}

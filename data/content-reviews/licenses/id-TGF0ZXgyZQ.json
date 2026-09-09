@@ -1,0 +1,29 @@
+{
+  "id": "Latex2e",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:5a47d741edd038d1c62f59f26beefcc6a4412f5ca46471d9d9317f414e41d5d9"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Licence dovoluje vytvářet a šířit doslovné i upravené kopie manuálu včetně překladů. Ve všech kopiích musí zůstat copyright a svolení a celé odvozené dílo musí být dostupné pod totožným oprávněním. Protože grant míří na dokumentaci, průvodce jej nezařazuje jako licenci pro nový software; konkrétní zdrojový formát ani výluku záruk text neurčuje.",
+  "blockersCs": [
+    "Text licencuje manuál a jeho překlady, nikoli obecný software; je třeba oddělený dokumentační průvodce nebo samostatné softwarové oprávnění."
+  ],
+  "analysis": {
+    "subjectCs": "Text licencuje manuál s copyrighty Berryho, Gilmora a Martinsena, včetně jazykových překladů.",
+    "grantCs": "První odstavec dovoluje doslovné kopie, druhý upravené verze a třetí výslovně překlady do jiného jazyka.",
+    "conditionsCs": "Ve všech kopiích se zachovají copyright a svolení; celé výsledné odvozené dílo musí mít totožné svolení. Překlady podléhají stejným podmínkám jako změny.",
+    "limitationsCs": "Text nemá záruky, odpovědnostní výluku ani povinnost dodat konkrétní zdrojový formát.",
+    "compatibilityCs": "Totožné svolení je povinné pro upravené manuály a překlady; jiné licence či verze nejsou nabízeny."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Latex2e.html",
+      "note": "Individuálně přečten celý připnutý text; Ve všech kopiích se zachovají copyright a svolení; celé výsledné odvozené dílo musí mít totožné svolení. Překlady podléhají stejným podmínkám jako změny. Celé tři grantové odstavce nemají výslovné patentové právo ani patentové ukončení."
+    }
+  ]
+}

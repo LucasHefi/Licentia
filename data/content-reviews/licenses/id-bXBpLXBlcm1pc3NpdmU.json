@@ -1,0 +1,20 @@
+{
+  "id": "mpi-permissive",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.6",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:07d66562414972d538369f93986f31e5fdd3b4ed7e08ea9ee3074b3c721b81ce"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Užití, reprodukce, odvozená díla a redistribuce jsou povoleny. Text neukládá zachování oznámení ani poskytování zdrojů. Vylučuje záruky a odpovědnost za uvedené vlastnosti a neuděluje patentový grant; prohlášení o právech třetích osob je disclaimer.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/mpi-permissive.html",
+      "note": "Dřívější individuální revize 2026-09-09.6; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

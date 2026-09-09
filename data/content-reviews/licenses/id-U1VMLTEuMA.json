@@ -1,0 +1,29 @@
+{
+  "id": "SUL-1.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:3bb39adccf801d502f938e3f0de41a65f200499e3e444ec92c4aef0d1041e219"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Sustainable Use 1.0 dovoluje vlastní interní podnikové nebo nekomerční/osobní užití; předání jiným jen zdarma a nekomerčně. Uděluje omezenou patentovou licenci, vyžaduje notices a označení změn a umožňuje jednorázovou nápravu porušení do 30 dnů od výzvy.",
+  "blockersCs": [
+    "Limitations rozlišují vlastní interní business, nekomerční/osobní užití a výhradně bezplatné nekomerční předání jiným. Doplnit tento účelový/distribuční model, aby commercial-use/distribution nepředstíraly obecný komerční grant."
+  ],
+  "analysis": {
+    "subjectCs": "Grant pokrývá software a jeho části; your company zahrnuje práci pro organizaci i přímé/nepřímé kontrolující, kontrolované a společně kontrolované subjekty.",
+    "grantCs": "Copyright License dává nevýhradná, celosvětová, bezplatná, nepřevoditelná a nesublicencovatelná práva use/copy/distribute/make available/derivatives s účelovými limity. Patents výslovně zahrnuje současné/budoucí licencovatelné nároky, nikoli nároky porušené vlastními změnami/doplňky.",
+    "conditionsCs": "Limitations omezují use/modify na interní business nebo nekomerční/osobní účely, distribuci pouze zdarma nekomerčně; licenční/copyright/jiná oznámení nesmějí být měněna, mazána nebo zneviditelněna. Notices předávají podmínky každému příjemci části a prominentně označují modifikace.",
+    "limitationsCs": "Písemné patentové tvrzení příjemce nebo společnosti okamžitě ruší patentovou licenci, u firemní žaloby pro práci jejím jménem. Porušení ukončí licenci; po výzvě náprava všech porušení do 30 dnů obnoví zpětně, další porušení po obnově je trvalé. Záruky/škody vyloučeny v zákonném rozsahu; známky dle práva.",
+    "compatibilityCs": "Licence nemá source-offer či same-license; interní business svolení není obecné komerční distribuční právo. No Other Rights vylučuje nevyřčené licence a text nenabízí alternativní verzi."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/SUL-1.0.html",
+      "note": "Individuální revize celého připnutého textu; Grant pokrývá software a jeho části; your company zahrnuje práci pro organizaci i přímé/nepřímé kontrolující, kontrolované a společně kontrolované subjekty."
+    }
+  ]
+}

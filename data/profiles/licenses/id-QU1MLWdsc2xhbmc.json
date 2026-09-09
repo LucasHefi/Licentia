@@ -8,8 +8,8 @@
     "contentHash": "sha256:ecb88bd02ba8d49b329201431014b922551332f8a57f79dc6264936d81fcf890"
   },
   "review": {
-    "status": "not-recommendable",
-    "recommendable": false,
+    "status": "reviewed",
+    "recommendable": true,
     "evidenceLevel": "strong"
   },
   "semantic": {
@@ -23,66 +23,84 @@
     ],
     "obligations": [
       "include-copyright",
-      "include-license-text",
-      "include-notice"
+      "include-license-text"
     ],
     "triggers": [
-      "distribution"
+      "distribution",
+      "use"
     ],
     "restrictions": [
+      "additional-terms",
       "liability",
       "trademark",
-      "unknown",
       "warranty"
     ],
-    "patentPosition": "unknown",
+    "patentPosition": "express-exclusion",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text: copyright-license grant and redistribution proviso (use, reproduction, modification, and source/binary redistribution are allowed subject to notice retention; no same-license, source-disclosure, or other reciprocal condition is stated)"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text: copyright-license grant paragraph (personal, non-exclusive rights to use, reproduce, modify, and redistribute source and/or binary forms, with or without modifications) and redistribution proviso"
+      "locator": "public/data/licenses/AML-glslang.json#text; Copyrightový grant se zachováním notices nemá source-offer ani same-license; permisivní bez copyleftu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text: redistribution proviso (all redistributions must retain NVIDIA's copyright notice, this notice, and the following text and disclaimers)"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text: redistribution proviso (retain NVIDIA's copyright notice, this notice, and the following text and disclaimers in all redistributions)"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text: rights-exclusion paragraph ('no other rights or licenses express or implied' including patent rights, and 'No hardware is licensed hereunder'); the vocabulary has no value for an express patent-rights exclusion, so the position is represented by unknown rather than none-stated"
+      "locator": "public/data/licenses/AML-glslang.json#text; Copyrightový grant se zachováním notices nemá source-offer ani same-license; permisivní bez copyleftu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text: copyright-license grant paragraph (use, reproduce, modify, and redistribute, with or without modifications, in source and/or binary forms, with no private-use or commercial-purpose limitation)"
+      "locator": "public/data/licenses/AML-glslang.json#text; Druhý odstavec osobně a nevýhradně pod NVIDIA copyrights dovoluje use/reproduce/modify/redistribute obou forem i upravených. Výslovně vylučuje jiné výslovné/implicitní licence, zejména patenty odvozenin či kombinací; sublicence není uvedena.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "restrictions",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text: endorsement paragraph (NVIDIA names, trademarks, service marks, and logos); rights-exclusion paragraph (no unexpressed rights, including patent rights, and no hardware license); and final two paragraphs ('AS IS' warranty disclaimer and limitation of liability); the vocabulary cannot represent the express patent-rights and hardware-scope exclusions, represented by unknown"
-    },
-    {
-      "field": "review",
-      "sourceId": "spdx-license-list",
-      "locator": "metadata: deprecated=false and osi=false; text: the express exclusion of patent rights and hardware scope cannot be represented losslessly by the available patent-position and restriction vocabulary, so the profile is not recommendable"
+      "locator": "public/data/licenses/AML-glslang.json#text; Při každé redistribuci zůstane copyright NVIDIA, toto oznámení, další text a disclaimery. Úvodní užití/instalace/změna/redistribuce znamená souhlas; nejsou vyžadovány zdroje, stejná licence ani reklamní uznání.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "text: redistribution proviso ('if you redistribute' and 'in all such redistributions'); modification is permitted but does not independently activate an obligation"
+      "locator": "public/data/licenses/AML-glslang.json#text; Při každé redistribuci zůstane copyright NVIDIA, toto oznámení, další text a disclaimery. Úvodní užití/instalace/změna/redistribuce znamená souhlas; nejsou vyžadovány zdroje, stejná licence ani reklamní uznání.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/AML-glslang.json#text; Jména, známky, servisní známky a loga NVIDIA nesmějí podporovat odvozeniny bez konkrétního písemného svolení. As is odmítá záruky/podmínky titulu, neporušení práv, vhodnosti a provozu samostatně i v kombinaci; NVIDIA odmítá uvedené škody.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/AML-glslang.json#text; Druhý odstavec osobně a nevýhradně pod NVIDIA copyrights dovoluje use/reproduce/modify/redistribute obou forem i upravených. Výslovně vylučuje jiné výslovné/implicitní licence, zejména patenty odvozenin či kombinací; sublicence není uvedena.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/AML-glslang.json#text; Při každé redistribuci zůstane copyright NVIDIA, toto oznámení, další text a disclaimery. Úvodní užití/instalace/změna/redistribuce znamená souhlas; nejsou vyžadovány zdroje, stejná licence ani reklamní uznání.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/AML-glslang.json#text; Individuálně přečten celý připnutý text. Předmětem je original NVIDIA Software; žádný hardware není licencován a cizí práva nejsou tímto notice rozšířena. NVIDIA uděluje osobní nevýhradní copyrightový grant k originálnímu softwaru pro užití, kopie, změny a redistribuci zdrojů/binárek s celým oznámením. Neposkytuje patentová práva ani hardware; užití či instalace znamenají souhlas. ",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

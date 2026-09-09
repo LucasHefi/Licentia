@@ -1,0 +1,34 @@
+{
+  "id": "CC-BY-SA-3.0-IGO",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:122b442a52087c46ce9da74a690e3945e59d47f19b32b1686fcd5ea18645ddd3"
+  },
+  "disposition": "blocked",
+  "summaryCs": "CC BY-SA 3.0 IGO dovoluje i komerční šíření a adaptace obsahu s přiznáním původu, označením změn a licencí nebo odkazem. Sdílené adaptace podléhají dovolené licenci ShareAlike; na žádost se proveditelně odstraňují kredity včetně značek. Je-li poskytovatel mezivládní organizací, může po mediaci a 45 dnech následovat na volbu strany závazná arbitráž. Průvodce potřebuje model těchto obsahových podmínek i postavení poskytovatele a řešení sporů.",
+  "blockersCs": [
+    "§1,3–4 potřebují obsahový model ShareAlike, kolekcí, odstranění kreditů a ochrany cti/pověsti, nikoli pouhé same-license softwaru.",
+    "§8(h) při statusu IGO zavazuje k podmíněné mediaci/arbitráži s možnými pravidly z copyright notice; model musí zachytit status poskytovatele a tento postup."
+  ],
+  "analysis": {
+    "subjectCs": "CC BY-SA3.0 IGO upravuje literární/umělecké Work včetně tvůrčích databází a hudebních výkonů/nahrávek; IGO status poskytovatele je podmíněný, nikoli automatický.",
+    "grantCs": "§3 dovoluje komerční i nekomerční kopie, distribuci, veřejné provádění, kolekce a adaptace s jasným označením změn. Technické změny médií jsou zahrnuty; neprominutelné odměny zůstávají, prominutelné zákonné a dobrovolné se v možném rozsahu promíjejí. Podlicence§4(a) zakazuje.",
+    "conditionsCs": "§4(a,c) zachovává copyright a licenční/disclaimer notices, připojuje text nebo URI, atribuce určené copyright notice, titul, relevantní URI a původ adaptace s alespoň srovnatelným kreditem. Na žádost se prakticky možným způsobem odstraní kredit včetně loga, ochranné/úřední známky či emblému z kolekce/adaptace. §4(b) sdílené adaptace dovoluje pod tímto/pozdějším BY-SA, unported či ported stejné/pozdější verze nebo schválenou Compatible License; konkrétní zvolenou licenci je nutné dodržet.",
+    "limitationsCs": "§4 zakazuje další omezení a technické prostředky bránící právům, dojem schválení a poškozování cti či pověsti poskytovatele tam, kde platí osobnostní práva. §5 AS IS bez ujištění a§6 výluka vyjmenovaných škod. §7 má automatické ukončení, obnovení při nápravě do30 dnů od zjištění či výslovně a ochranu dodržujících příjemců; zastavení dalšího poskytování licenci neodvolá.",
+    "compatibilityCs": "§8(f–h) interpretuje mezinárodní autorské principy a zachovává imunity; pro IGO vyžaduje mediaci a po45 dnech na volbu strany konečnou arbitráž, výchozí UNCITRAL, jeden rozhodce, anglicky v sídle poskytovatele a prakticky vzdáleně. Primární https://creativecommons.org/compatible-licenses/ nemá pro BY-SA3.0 schválenou ne-CC licenci; seznam4.0 se na3.0 automaticky nepřenáší. Kolekce mimo adaptaci/licencované Work nemá ShareAlike."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/CC-BY-SA-3.0-IGO.html",
+      "note": "Individuálně přečten celý připnutý text; §4(a,c) zachovává copyright a licenční/disclaimer notices, připojuje text nebo URI, atribuce určené copyright notice, titul, relevantní URI a původ adaptace s alespoň srovnatelným kreditem. Na žádost se prakticky možným způsobem odstraní kredit včetně loga, ochranné/úřední známky či emblému z kolekce/adaptace. §4(b) sdílené adaptace dovoluje pod tímto/pozdějším BY-SA, unported či ported stejné/pozdější verze nebo schválenou Compatible License; konkrétní zvolenou licenci je nutné dodržet. §3 uděluje autorská práva a upravuje odměny, bez patentového grantu, výslovné patentové výluky či žalobní odvety."
+    },
+    {
+      "url": "https://creativecommons.org/compatible-licenses/",
+      "note": "Primární seznam pro BY-SA3.0 k datu kontroly neuvádí ne-CC kompatibilní licenci, na rozdíl od4.0."
+    }
+  ]
+}

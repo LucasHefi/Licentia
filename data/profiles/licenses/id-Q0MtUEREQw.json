@@ -8,91 +8,88 @@
     "contentHash": "sha256:caf1b9110289f5d6a16d9ded94f934f5164b1554e082fbe377db10466ba7e9d3"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "public-domain-equivalent",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
-    "obligations": [
-      "unknown"
-    ],
-    "triggers": [
-      "unknown"
-    ],
-    "restrictions": [
-      "liability"
-    ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "obligations": [],
+    "triggers": [],
+    "restrictions": [],
+    "patentPosition": "none-stated",
+    "noticeBurden": "none"
   },
   "evidence": [
     {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-PDDC.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-PDDC.json#text; První/třetí odstavec certifikace nebo trvalá copyrightová dedikace; i certifier věnuje vlastní práva.; https://spdx.org/licenses/CC-PDDC.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-PDDC.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-PDDC.json#text; Celý text bez reciprocity a podmínky zveřejnit zdroje.; https://spdx.org/licenses/CC-PDDC.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-PDDC.json#text; Poslední odstavec freely reproduced/distributed/transmitted/used/modified/built upon pro commercial/non-commercial purpose.; https://spdx.org/licenses/CC-PDDC.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-PDDC.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-PDDC.json#text; Žádné downstream notice/source povinnosti; reasonable steps verification patří osobě certifier, nikoli každému příjemci.; https://spdx.org/licenses/CC-PDDC.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-PDDC.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-PDDC.json#text; Celý text nemá příjemcovské distribuční, užívací, modifikační či síťové plnění.; https://spdx.org/licenses/CC-PDDC.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-PDDC.json#text; Druhý odstavec warns good faith may not shield certifier from liability, nevylučuje obecně záruky či odpovědnost.; https://spdx.org/licenses/CC-PDDC.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-PDDC.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-PDDC.json#text; Dedikace výslovně copyright law a jeho vymáhání; patentový grant/ukončení není.; https://spdx.org/licenses/CC-PDDC.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-PDDC.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-PDDC.json#text; Celý text nevyžaduje zachovat dokument či připojit autorství ke kopiím.; https://spdx.org/licenses/CC-PDDC.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-PDDC.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-PDDC.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. Dokument kombinuje certifikaci veřejné domény v zemi zveřejnění s trvalým vzdáním se vlastního copyrightu; i certifikující osoba věnuje případná vlastní práva. Creative Commons nástroj v roce 2010 stáhlo a nedoporučuje jej pro nová díla. Blokace: Text nabízí certifikaci historického statusu nebo copyrightovou dedikaci bez náhradního grantu; oficiální Creative Commons stránka výslovně uvádí stažení nástroje 11. 10. 2010 a nedoporučení novým dílům. Pro nový projekt je třeba vybrat podporovanou dedikaci/licenci, například samostatně posouzenou CC0, nikoli měnit tento text.; https://spdx.org/licenses/CC-PDDC.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

@@ -9,91 +9,95 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "unknown"
+      "include-license-text",
+      "include-notice"
     ],
     "triggers": [
-      "unknown"
+      "distribution"
     ],
     "restrictions": [
-      "liability"
+      "liability",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "none-stated",
+    "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NIST-PD-fallback.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NIST-PD-fallback.json#text; Fallback má notice podmínku a je permisivní bez copyleftu; neoznačuje se jako čisté bezpodmínečné public-domain-ekvivalentní vzdání práv.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NIST-PD-fallback.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NIST-PD-fallback.json#text; Fallback má notice podmínku a je permisivní bez copyleftu; neoznačuje se jako čisté bezpodmínečné public-domain-ekvivalentní vzdání práv.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/NIST-PD-fallback.json#text; První odstavec nevýhradně dovoluje use/copy/modify/create derivative works/distribute bez poplatku v USA i cizině v rozsahu copyrightu NIST. Patentová práva a sublicence výslovně nejsou uděleny.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NIST-PD-fallback.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NIST-PD-fallback.json#text; Náhradní grant vyžaduje toto oznámení a záruční disclaimer ve všech kopiích. Nevyžaduje zdroje, stejnou licenci, reklamu ani síťovou nabídku.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NIST-PD-fallback.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NIST-PD-fallback.json#text; Náhradní grant vyžaduje toto oznámení a záruční disclaimer ve všech kopiích. Nevyžaduje zdroje, stejnou licenci, reklamu ani síťovou nabídku.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/NIST-PD-fallback.json#text; Disclaimer odmítá výslovné, implicitní i zákonné záruky včetně shody se specifikací, neporušení práv, souladu dokumentace a bezchybnosti. NIST nenese odpovědnost za škody na osobách/majetku ani další uvedené škody.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NIST-PD-fallback.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NIST-PD-fallback.json#text; První odstavec nevýhradně dovoluje use/copy/modify/create derivative works/distribute bez poplatku v USA i cizině v rozsahu copyrightu NIST. Patentová práva a sublicence výslovně nejsou uděleny.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NIST-PD-fallback.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NIST-PD-fallback.json#text; Náhradní grant vyžaduje toto oznámení a záruční disclaimer ve všech kopiích. Nevyžaduje zdroje, stejnou licenci, reklamu ani síťovou nabídku.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NIST-PD-fallback.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NIST-PD-fallback.json#text; Individuálně přečten celý připnutý text. Předmětem je software vytvořený zaměstnanci NIST a dokumentace; původ podle §105 je oddělen od výslovného zahraničního grantu. Pro software zaměstnanců NIST text vysvětluje americký public-domain status a výslovně uděluje náhradní copyrightový grant v USA i zahraničí, pokud NIST práva má. Kopie nesou oznámení a výluku záruk; NIST odmítá záruky i škody. ",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

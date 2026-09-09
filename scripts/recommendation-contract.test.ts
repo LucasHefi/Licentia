@@ -113,6 +113,36 @@ test("reviewed sufficient profile is eligible and gives explicit match reasons",
   assert.deepEqual(recommendation.candidates[0]?.matchedFields, ["family", "patentPosition", "noticeBurden"]);
 });
 
+test("a use-triggered notice is valid without implying distribution, network use or copyleft", () => {
+  const source = profile();
+  source.semantic.triggers = ["use"];
+  source.semantic.obligations = ["include-notice"];
+  const record = catalogRecord(source);
+  const runtime = metadataProfileFromCatalog(record)!;
+  assert.ok(runtime);
+  assert.equal(recommendationEligibility(runtime, { copyleftTrigger: "none", obligations: "minimal" }, context).eligible, true);
+  for (const trigger of ["distribution", "network"] as const) {
+    assert.equal(recommendationEligibility(runtime, { copyleftTrigger: trigger }, context).eligible, false);
+  }
+  assert.equal(recommendationEligibility(runtime, { obligations: "source" }, context).eligible, false);
+  source.semantic.triggers = ["invented-trigger"];
+  assert.equal(metadataProfileFromCatalog(catalogRecord(source)), null);
+});
+
+test("express patent exclusion and required use acknowledgment remain known but do not imply other rights or duties", () => {
+  const source = profile();
+  source.semantic.patentPosition = "express-exclusion";
+  source.semantic.permissions = source.semantic.permissions.filter(value => value !== "patent-grant");
+  source.semantic.obligations = ["include-use-acknowledgment"];
+  source.semantic.triggers = ["use"];
+  const runtime = metadataProfileFromCatalog(catalogRecord(source))!;
+  assert.ok(runtime);
+  assert.equal(recommendationEligibility(runtime, { advertising: "avoid" }, context).eligible, true);
+  for (const answers of [{ patents: "important" }, { obligations: "minimal" }, { obligations: "source" }] as const) {
+    assert.equal(recommendationEligibility(runtime, answers, context).eligible, false);
+  }
+});
+
 test("unknown required fields and jurisdiction exclude rather than scoring", () => {
   const unknown = profile({ semantic: { ...profile().semantic, family: "unknown" } });
   const missing = recommendationEligibility(unknown, { openness: "open" }, context);
@@ -144,7 +174,7 @@ test("the versioned guide has quick and advanced questions with conditional depe
   const model = buildGuideModel();
   assert.equal(model.version, GUIDE_MODEL_VERSION);
   const quick = model.questions.filter((question) => question.mode === "quick");
-  assert.equal(quick.length, 7);
+  assert.equal(quick.length, 8);
   assert.ok(quick.some((question) => question.key === "delivery"));
   assert.ok(quick.some((question) => question.key === "patents"));
   assert.deepEqual(quick.find((question) => question.key === "dependencies")?.showWhen, { key: "delivery", equals: "application" });

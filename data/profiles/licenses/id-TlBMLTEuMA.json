@@ -8,96 +8,111 @@
     "contentHash": "sha256:17a680d9b775d919f74c0473c3ecc09d56076aec315dc6dbddd4a3b1d0dfe42e"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "weak-copyleft",
+    "copyleftScope": "file",
     "permissions": [
       "commercial-use",
+      "conditional-relicensing",
       "distribution",
       "modifications",
+      "patent-grant",
+      "private-use",
       "sublicensing"
     ],
     "obligations": [
-      "provide-corresponding-source"
-    ],
-    "triggers": [
+      "defend-added-warranty",
+      "disclose-source",
+      "include-copyright",
+      "include-license-text",
+      "include-notice",
+      "mark-modifications",
+      "same-license",
       "unknown"
     ],
+    "triggers": [
+      "combination",
+      "distribution",
+      "modification",
+      "use"
+    ],
     "restrictions": [
+      "additional-terms",
       "liability",
       "trademark",
+      "unknown",
       "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "express-grant",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NPL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NPL-1.0.json#text; §1.9 změněný soubor nebo nový s jakoukoli částí Covered Code,§3.7 oddělené jiné části Larger Work mimo; weak file copyleft. DodatekIV–V asymetricky vyjímá konkrétní Netscape činnosti, tuto hranici nelze vydávat za shodnou pro každého poskytovatele.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NPL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NPL-1.0.json#text; §1.9 změněný soubor nebo nový s jakoukoli částí Covered Code,§3.7 oddělené jiné části Larger Work mimo; weak file copyleft. DodatekIV–V asymetricky vyjímá konkrétní Netscape činnosti, tuto hranici nelze vydávat za shodnou pro každého poskytovatele.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/NPL-1.0.json#text; §2 světové bezroyalty nevýhradní copyright granty use/reproduce/modify/display/perform/sublicense/distribute originálu i Contributor změn samostatně/vkombinaci/Larger Work. Výslovné patenty Initial Developer nutné k originálu a Contributor k jeho Contributor Version pro make/have-made/use/sell, nepokrývají rozsáhlejší další změny/kombinace. Patentová odveta zde není. §3.6 objekt lze vlastní licencí bez omezení zdrojových práv, §6 následná Netscape verze volitelná. DodatekV vyhrazuje zvláštní relicensing Netscape, nikoli všem příjemcům.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/NPL-1.0.json#text; §3.1 vlastní změny i grant2.2 pod NPL, distribuované zdroje jen NPL/následná a text licence bez omezení. §3.2 zdroje změn příjemcům Executable na stejném médiu nebo uznaným elektronickým mechanismem po nejméně12měsíců od prvního zpřístupnění NEBO6měsíců po následné verzi změny příjemcům, i za cizího hostitele odpovídá distributor. §3.3 soubor změn+dat a prominentní původ+Initial Developer ve zdroji a relevantních původových object/docs notices. §3.4 LEGAL popis známých IP nároků/kontaktů a vlastních nutných API patentů; nová znalost vyžaduje aktualizovat další kopie A přiměřeně aktivně vyrozumět dřívější příjemce. §3.5 ExhibitA každý zdroj nebo rozumné sousední místo, licence v práva vysvětlujících docs; vlastní extra závazky jasně oddělit a odškodnit poskytovatele. §3.6 executable notice zdroj/how/where v práva popisujících notices/docs/collateral, totéž indemnity při vlastních object podmínkách. §4 právní nemožnost maximální plnění a přesný LEGAL popis s distribucemi.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NPL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NPL-1.0.json#text; §3.1 vlastní změny i grant2.2 pod NPL, distribuované zdroje jen NPL/následná a text licence bez omezení. §3.2 zdroje změn příjemcům Executable na stejném médiu nebo uznaným elektronickým mechanismem po nejméně12měsíců od prvního zpřístupnění NEBO6měsíců po následné verzi změny příjemcům, i za cizího hostitele odpovídá distributor. §3.3 soubor změn+dat a prominentní původ+Initial Developer ve zdroji a relevantních původových object/docs notices. §3.4 LEGAL popis známých IP nároků/kontaktů a vlastních nutných API patentů; nová znalost vyžaduje aktualizovat další kopie A přiměřeně aktivně vyrozumět dřívější příjemce. §3.5 ExhibitA každý zdroj nebo rozumné sousední místo, licence v práva vysvětlujících docs; vlastní extra závazky jasně oddělit a odškodnit poskytovatele. §3.6 executable notice zdroj/how/where v práva popisujících notices/docs/collateral, totéž indemnity při vlastních object podmínkách. §4 právní nemožnost maximální plnění a přesný LEGAL popis s distribucemi.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/NPL-1.0.json#text; §7 as-is bez záruk, uživatel opravy platí;§9 škodové výluky se zákonnou výjimkou smrti/úrazu z nedbalosti. §8 automatický konec30dní od znalosti bez nápravy, řádné sublicence trvají. §12 odpovědnost za škody podle kopií/příjmů/jiných faktorů a aktivní spravedlivé rozdělení s dotčenými, s výjimkou cizího porušení3.4. DodatekIII žádné Netscape/logo značky;IV Netscape může smluvně vázaný cizí kód znovu začlenit bez jeho zdrojů i kdyby šlo o změnu. V.2 jiné produkty vydané do2let od vydání originálu lze jinými podmínkami;V.3 Branded Code včetně začleněných změn může Netscape přelicencovat, bez stejného dvouletého omezení.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NPL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NPL-1.0.json#text; §2 světové bezroyalty nevýhradní copyright granty use/reproduce/modify/display/perform/sublicense/distribute originálu i Contributor změn samostatně/vkombinaci/Larger Work. Výslovné patenty Initial Developer nutné k originálu a Contributor k jeho Contributor Version pro make/have-made/use/sell, nepokrývají rozsáhlejší další změny/kombinace. Patentová odveta zde není. §3.6 objekt lze vlastní licencí bez omezení zdrojových práv, §6 následná Netscape verze volitelná. DodatekV vyhrazuje zvláštní relicensing Netscape, nikoli všem příjemcům.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NPL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NPL-1.0.json#text; §3.1 vlastní změny i grant2.2 pod NPL, distribuované zdroje jen NPL/následná a text licence bez omezení. §3.2 zdroje změn příjemcům Executable na stejném médiu nebo uznaným elektronickým mechanismem po nejméně12měsíců od prvního zpřístupnění NEBO6měsíců po následné verzi změny příjemcům, i za cizího hostitele odpovídá distributor. §3.3 soubor změn+dat a prominentní původ+Initial Developer ve zdroji a relevantních původových object/docs notices. §3.4 LEGAL popis známých IP nároků/kontaktů a vlastních nutných API patentů; nová znalost vyžaduje aktualizovat další kopie A přiměřeně aktivně vyrozumět dřívější příjemce. §3.5 ExhibitA každý zdroj nebo rozumné sousední místo, licence v práva vysvětlujících docs; vlastní extra závazky jasně oddělit a odškodnit poskytovatele. §3.6 executable notice zdroj/how/where v práva popisujících notices/docs/collateral, totéž indemnity při vlastních object podmínkách. §4 právní nemožnost maximální plnění a přesný LEGAL popis s distribucemi.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NPL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NPL-1.0.json#text; Individuálně přečten celý připnutý text. §§1,5 Covered Code označený originál/změny/části, změna souboru nebo nový soubor s původním kódem, Contributor Version s předchozími změnami. ExhibitA konkrétně Mozilla Communicator client vydaný31.3.1998/Netscape1998. DodatekI platí pro tento klient i všechen Covered Code; II Branded Code určují nelicencované Netscape značky. Zdroj preferovaná forma včetně modulů/interfaces/build/install nebo diff k dostupné známé bázi, komprese s široce dostupným bezplatným dekodérem. NPL 1.0 má souborové zdrojové povinnosti, LEGAL oznámení a společné rozdělení škod. Dodatek výslovně privileguje Netscape pro cizí začleněný kód a přelicencování vlastních branded produktů i převzatých změn; původní omezení arbitráže rozšiřuje na všechny spory. § 3.4 vyžaduje aktivní pozdější upozornění starých příjemců na IP nárok a § 12 spolupráci na rozdělení škod. Dodatek IV–V navíc dovoluje výhradně Netscape neveřejný reintegrovaný smluvní kód a odlišné přelicencování branded změn/jiných produktů. Doplnit role, časové alternativy a tyto aktivní povinnosti; obecný file/same-license profil by asymetrii a kroky skryl.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

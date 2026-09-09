@@ -1,0 +1,29 @@
+{
+  "id": "BSD-2-Clause-NetBSD",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:9935d9032d3666cc99f171dc4b443b6d3b6643a8eaf5df690871e8b4f096c7c5"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Licence dovoluje užití a redistribuci zdrojů i binárek s úpravami nebo bez nich, pokud zůstanou předepsané copyrighty, podmínky a výluka záruk. U binárek se tyto údaje uvádějí v dokumentaci či doprovodných materiálech. Průvodce záznam nezařazuje, protože identifikátor je zastaralý a je třeba zvolit současné odpovídající označení se zachováním konkrétního původu.",
+  "blockersCs": [
+    "Záznam je deprecated, přestože dvě notice podmínky jsou plně reprezentovatelné; před doporučením je nutné zvolit odpovídající nezastaralý identifikátor a zachovat konkrétní copyright/původ."
+  ],
+  "analysis": {
+    "subjectCs": "Deprecated NetBSD znění obsahuje copyright Foundation 2008 a nevyplněný řádek o původu příspěvku.",
+    "grantCs": "Úvod dovoluje užití i redistribuci zdrojů a binárních forem se změnami nebo bez nich.",
+    "conditionsCs": "Bod 1 ponechává copyright, podmínky a disclaimer ve zdrojích; bod 2 je reprodukuje v dokumentaci či materiálech binární distribuce.",
+    "limitationsCs": "Foundation a přispěvatelé vylučují záruky i odpovědnost včetně přímých/následných škod a obchodního přerušení; známkové omezení není.",
+    "compatibilityCs": "ID je deprecated; licence sama neobsahuje alternativní verzi nebo relikencování."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/BSD-2-Clause-NetBSD.html",
+      "note": "Individuálně přečten celý připnutý text; Bod 1 ponechává copyright, podmínky a disclaimer ve zdrojích; bod 2 je reprodukuje v dokumentaci či materiálech binární distribuce. Celý text nemá patentový grant ani patentové ukončení."
+    }
+  ]
+}

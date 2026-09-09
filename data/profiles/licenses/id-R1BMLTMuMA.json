@@ -10,7 +10,7 @@
   "review": {
     "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
     "family": "strong-copyleft",
@@ -20,73 +20,96 @@
       "distribution",
       "modifications",
       "patent-grant",
-      "sublicensing"
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
       "include-license-text",
-      "provide-corresponding-source"
+      "include-notice",
+      "mark-modifications",
+      "provide-corresponding-source",
+      "provide-installation-information",
+      "same-license"
     ],
     "triggers": [
-      "unknown"
+      "combination",
+      "distribution",
+      "linking",
+      "modification",
+      "patent-claim"
     ],
     "restrictions": [
+      "additional-terms",
       "liability",
-      "trademark",
+      "patent-claim",
       "warranty"
     ],
-    "patentPosition": "express-grant",
-    "noticeBurden": "standard"
+    "patentPosition": "defensive-termination",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.whole-work-copyleft",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.copyleft-family",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GPL-3.0.json#text; GNU GPL verze 3 z 29.6.2007 je zde deprecated obecný identifikátor; celý text §0–17 i aplikační dodatek jsou přečteny. Působí na označený program a autorsky odvozená díla, včetně jiných autorskoprávně chráněných druhů práce. §2 povoluje neomezený běh původního programu, soukromé změny i propagaci bez convey a úzce vymezené řízené zpracování pro uživatele. §4 dovoluje za kopie libovolnou cenu i placenou podporu. §5 dovoluje upravený celek pod GPL. Sublicence jsou zakázány, přímá automatická licence příjemce je v §10. §11 výslovně uděluje nutné patenty Contributor Version včetně make/use/sell/import, ne patenty způsobené pouze další změnou. Výstup programu není automaticky GPL, jen je-li sám covered work (§2). §0 definuje změnu autorským převzetím/adaptací, §5(c) požaduje GPL celého odvozeného programu bez ohledu na balení. Nezávislá neodvozená díla agregátu jsou vyňata, §1 Corresponding Source zahrnuje potřebné sdílené/dynamicky propojené podprogramy a vylučuje System Libraries.; https://spdx.org/licenses/GPL-3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GPL-3.0.json#text; §0 definuje změnu autorským převzetím/adaptací, §5(c) požaduje GPL celého odvozeného programu bez ohledu na balení. Nezávislá neodvozená díla agregátu jsou vyňata, §1 Corresponding Source zahrnuje potřebné sdílené/dynamicky propojené podprogramy a vylučuje System Libraries.; https://spdx.org/licenses/GPL-3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GPL-3.0.json#text; §2 povoluje neomezený běh původního programu, soukromé změny i propagaci bez convey a úzce vymezené řízené zpracování pro uživatele. §4 dovoluje za kopie libovolnou cenu i placenou podporu. §5 dovoluje upravený celek pod GPL. Sublicence jsou zakázány, přímá automatická licence příjemce je v §10. §11 výslovně uděluje nutné patenty Contributor Version včetně make/use/sell/import, ne patenty způsobené pouze další změnou. Výstup programu není automaticky GPL, jen je-li sám covered work (§2).; https://spdx.org/licenses/GPL-3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/GPL-3.0.json#text; §4–5 vyžadují copyright, licenci, relevantní notices/výluky, označení změn a data, GPL celého upraveného díla a vhodná právní oznámení v interaktivních rozhraních s výjimkou původních rozhraní bez nich. §6 u objektů vyžaduje Corresponding Source v jedné z alternativ: fyzické médium; písemná nabídka nejméně 3 roky a po dobu podpory/náhradních dílů s fyzickou kopií za náklady nebo bezplatným serverem; příležitostné nekomerční předání obdržené nabídky; rovnocenné stažení bez dalšího poplatku; P2P informace o bezplatné objektové i zdrojové cestě. §1 zahrnuje build/install/run skripty a konkrétně potřebné propojené moduly, vyjímá System Libraries a obecné nezměněné nástroje. U předávaného User Product §6 přidává potřebné instalační metody a klíče, leda nikdo nemůže instalovat změněný objekt; bez povinnosti další podpory a s dovoleným odmítnutím změny škodící síti. Zdroj a instalační informace mají veřejně dokumentovaný formát bez zvláštního klíče pro čtení.; https://spdx.org/licenses/GPL-3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/GPL-3.0.json#text; §4–5 vyžadují copyright, licenci, relevantní notices/výluky, označení změn a data, GPL celého upraveného díla a vhodná právní oznámení v interaktivních rozhraních s výjimkou původních rozhraní bez nich. §6 u objektů vyžaduje Corresponding Source v jedné z alternativ: fyzické médium; písemná nabídka nejméně 3 roky a po dobu podpory/náhradních dílů s fyzickou kopií za náklady nebo bezplatným serverem; příležitostné nekomerční předání obdržené nabídky; rovnocenné stažení bez dalšího poplatku; P2P informace o bezplatné objektové i zdrojové cestě. §1 zahrnuje build/install/run skripty a konkrétně potřebné propojené moduly, vyjímá System Libraries a obecné nezměněné nástroje. U předávaného User Product §6 přidává potřebné instalační metody a klíče, leda nikdo nemůže instalovat změněný objekt; bez povinnosti další podpory a s dovoleným odmítnutím změny škodící síti. Zdroj a instalační informace mají veřejně dokumentovaný formát bez zvláštního klíče pro čtení.; https://spdx.org/licenses/GPL-3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GPL-3.0.json#text; §3 brání využít právní zákaz obcházení technických opatření proti oprávněným změnám. §7 dovoluje odstranitelné dodatečné výjimky a uzavřený okruh podmínek k vlastním příspěvkům: notices, původ, známky, záruky a odškodnění za vlastní smluvní odpovědnost; jiné další omezení lze odstranit. §10 zakazuje další licenční poplatky za výkon práv i patentové žaloby na Program včetně counterclaim. §11 při vědomém spoléhání na patent vyžaduje alternativně veřejný zdroj, vzdání se patentové výhody nebo rozšíření licence downstream; diskriminační dohody mají přesně vymezenou výjimku před 28.3.2007. §8 zánik při porušení s prozatímní obnovou po ukončení a trvalou po 60 dnech bez oznámení nebo při první nápravě do 30 dnů; downstream práva přežijí. §15–17 AS IS a omezení odpovědnosti s právními výjimkami.; https://spdx.org/licenses/GPL-3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/GPL-3.0.json#text; §11 třetí odstavec je výslovný bezplatný celosvětový patentový grant contributorových essential claims; další odstavce výslovně rozlišují i covenant pro pravidla patentových dohod. §10 zákaz žaloby na Program ve spojení s §8 zánikem dává obranné ukončení, nikoli širší odvetu za jiné produkty.; https://spdx.org/licenses/GPL-3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/GPL-3.0.json#text; §4–5 vyžadují copyright, licenci, relevantní notices/výluky, označení změn a data, GPL celého upraveného díla a vhodná právní oznámení v interaktivních rozhraních s výjimkou původních rozhraní bez nich. §6 u objektů vyžaduje Corresponding Source v jedné z alternativ: fyzické médium; písemná nabídka nejméně 3 roky a po dobu podpory/náhradních dílů s fyzickou kopií za náklady nebo bezplatným serverem; příležitostné nekomerční předání obdržené nabídky; rovnocenné stažení bez dalšího poplatku; P2P informace o bezplatné objektové i zdrojové cestě. §1 zahrnuje build/install/run skripty a konkrétně potřebné propojené moduly, vyjímá System Libraries a obecné nezměněné nástroje. U předávaného User Product §6 přidává potřebné instalační metody a klíče, leda nikdo nemůže instalovat změněný objekt; bez povinnosti další podpory a s dovoleným odmítnutím změny škodící síti. Zdroj a instalační informace mají veřejně dokumentovaný formát bez zvláštního klíče pro čtení. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/GPL-3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/GPL-3.0.json#text; Individuální kontrola celého připnutého textu GPL-3.0 dne 2026-09-10. GNU GPL verze 3 z 29.6.2007 je zde deprecated obecný identifikátor; celý text §0–17 i aplikační dodatek jsou přečteny. Působí na označený program a autorsky odvozená díla, včetně jiných autorskoprávně chráněných druhů práce. GPL-3.0 je v připnutých datech deprecated nejednoznačný identifikátor; pro nový průvodce je nutné podle skutečného licenčního oznámení použít GPL-3.0-only nebo GPL-3.0-or-later. Vlastní obsah verze 3 je známý a popsaný, nikoli čekající na obecnou revizi. §5 vyjímá nezávislé agregáty; §12 při neřešitelném konfliktu zakazuje convey. §13 dovoluje kombinaci s AGPLv3: GPL část zůstává GPL, síťová podmínka AGPL dopadá na kombinaci; samotná GPL za pouhé síťové užívání zdroje nežádá (§0). §14 pozdější verze či proxy vyžadují skutečné programové oznámení; obecný deprecated GPL-3.0 ani vzor or-later v dodatku tuto volbu za držitele neurčí. Pro další volbu je třeba GPL-3.0-only nebo GPL-3.0-or-later dle skutečného grantu, bez domnělé kompatibility z parseru.; https://spdx.org/licenses/GPL-3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

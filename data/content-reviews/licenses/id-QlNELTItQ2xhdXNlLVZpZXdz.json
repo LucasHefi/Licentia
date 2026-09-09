@@ -1,0 +1,27 @@
+{
+  "id": "BSD-2-Clause-Views",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:00da44f660a3b17ac8e9fce47f3ebca08f7aefaac1ea8e7d7164b6e4b8b13f85"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Dvě distribuční podmínky zachovávají copyright, licenci a disclaimer ve zdrojích nebo materiálech binárek. Závěrečná věta vymezuje názory autorů vůči oficiální politice držitelů a přispěvatelů; nejde o zákaz endorsementu.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Grant pokrývá software v obou formách a doprovodná vyjádření v softwaru/dokumentaci.",
+    "grantCs": "Redistribution and use v úvodu dovoluje zdroje i binárky, změněné i původní, bez omezení komerce; výslovný patentový grant a sublicence chybějí.",
+    "conditionsCs": "Bod 1 zachovává copyright, podmínky a disclaimer ve zdrojích. Bod 2 je reprodukuje v dokumentaci a/nebo jiných materiálech binárních distribucí; nejsou povinné zdroje nebo stejná licence.",
+    "limitationsCs": "Disclaimer odmítá záruky a odpovědnost za uvedené škody. Závěrečné Views určuje, že názory/závěry autorů nereprezentují oficiální politiku držitelů/přispěvatelů; není to samostatný zákaz užití jmen nebo propagace.",
+    "compatibilityCs": "Verze Views nenabízí jinou licenci ani volbu novější verze a nevytváří share-alike."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/BSD-2-Clause-Views.html",
+      "note": "Individuální revize celého připnutého textu; Grant pokrývá software v obou formách a doprovodná vyjádření v softwaru/dokumentaci."
+    }
+  ]
+}

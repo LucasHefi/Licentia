@@ -1,0 +1,27 @@
+{
+  "id": "fwlw",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:2d61823210c0600fcbaa5ba286b209a62eae19ae16dfcf86f586f9731ecb9bb0"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Licence dovoluje balíček Donalda Arseneaua volně používat, předávat, kopírovat a měnit, včetně komerčních účelů. Celé původní oznámení s copyrightem a svolením musí zůstat neporušené i při samotném užití. Zveřejnění zdrojů nevyžaduje; výluku záruk či odpovědnosti, patentový grant ani alternativní licenci text neobsahuje.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Licence chrání softwarový balíček Donalda Arseneaua s oznámením 1993 a 1995.",
+    "grantCs": "Hlavní věta dovoluje volné užívání, přenos, reprodukci i změny bez omezení na nekomerční účely.",
+    "conditionsCs": "Podmínka „this notice is left intact“ vyžaduje zachovat celé oznámení včetně copyrightu a grantu.",
+    "limitationsCs": "Celý text neobsahuje výluku záruk či odpovědnosti ani zákaz použití jména nebo jiné zvláštní omezení.",
+    "compatibilityCs": "Alternativní licenci nebo možnost jiné verze text neurčuje."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/fwlw.html",
+      "note": "Individuálně přečten celý připnutý text; Podmínka „this notice is left intact“ vyžaduje zachovat celé oznámení včetně copyrightu a grantu. Copyright a hlavní věta neobsahují výslovné patentové oprávnění ani patentové ukončení."
+    }
+  ]
+}

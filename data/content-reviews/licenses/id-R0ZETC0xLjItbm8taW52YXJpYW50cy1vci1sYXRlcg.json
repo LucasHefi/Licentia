@@ -1,0 +1,29 @@
+{
+  "id": "GFDL-1.2-no-invariants-or-later",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:ca0f94e6bd238176317a5c1259144bda925926a5941ede9d45c1244be370656c"
+  },
+  "disposition": "blocked",
+  "summaryCs": "GFDL 1.2 nebo pozdější zveřejněná verze FSF zde dovoluje i placené šíření a úpravy dokumentace bez původních invariantních oddílů a obálkových textů. Nad 100 netransparentních kopií stále vyžaduje upravitelnou kopii nebo veřejné stažení, u něhož je nutné rozumně zajistit dostupnost nejméně rok po poslední distribuci vydání. Trvají pravidla pro změnu titulu, autory, historii, poděkování a připojené výluky záruk. Absence invariantů tyto dokumentové podmínky neruší, a průvodce pro ně proto potřebuje samostatný model.",
+  "blockersCs": [
+    "§1,3–8 i bez invariantů ukládají specifické dokumentové formy, práh100 kopií, změnu titulu, historii a zachování zvláštních oddílů; je potřeba dokumentový model namísto doporučení softwarové licence."
+  ],
+  "analysis": {
+    "subjectCs": "GFDL1.2-no-invariants-or-later je dokumentová licence z listopadu2002 bez původních Invariant Sections a Front/Back-Cover Texts, s volbou pozdější zveřejněné nedraftové verze FSF.",
+    "grantCs": "§1–4 poskytují celosvětové bezpoplatkové užití, placené/neplacené kopie, půjčování, vystavení a úpravy i překlady. No-invariants nevypíná ostatní podmínky změn a transparentních forem. Autorský grant neobsahuje patenty ani samostatné obecné sublicencování.",
+    "conditionsCs": "§2 zachovává copyright, licenci a aplikační notice. §3 nad100 Opaque kopií vyžaduje Transparent s každou kopií nebo kompletní veřejné standardní síťové stažení, zajištěné rozumnou péčí nejméně rok po poslední distribuci vydání včetně prodejců; bez obalových textů se obalová větev nespouští. §4 ponechává povinnost nového titulu bez svolení, původních alespoň5 autorů či všech s možností prominutí, vydavatele, copyright, historie, relevantních URL, poděkování/věnování a případných Warranty Disclaimers. Původní Endorsements odstranit; nové vlastní hodnocení je dovolené.",
+    "limitationsCs": "§1 Transparent může být lidsky editovatelné PDF/PostScript i obrazové formáty, nikoli obrázek podstatného textu; obstrukční markup i jeho absence průhlednost ruší. Vložené Warranty Disclaimers jsou závazné pouze jako výluky záruk, nejde o paušální disclaimer v generickém textu. §2 zakazuje technické kontroly čtení/kopírování a§4 neuděluje propagaci jmény autorů. §9 okamžitý konec bez automatické obnovy chrání dodržující downstream příjemce.",
+    "compatibilityCs": "§4 obecně umožňuje nově přidat vlastní invariantní Secondary Sections a obalové texty5/25 slov, čímž nová verze přestane být no-invariants. §5–6 slučují dokumenty/sekce a mohou sdílet jednu licenci;§7 agregace nesmí jejím copyrightem omezit původní práva. §8 překlady licence/notices/disclaimer musí připojit rozhodné originály a zachovat význam názvů oddílů. §10 skutečná or-later volba dovoluje pozdější nedraftovou GFDL, nikoli libovolné převedení na GPL."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/GFDL-1.2-no-invariants-or-later.html",
+      "note": "Individuálně přečten celý připnutý text; §2 zachovává copyright, licenci a aplikační notice. §3 nad100 Opaque kopií vyžaduje Transparent s každou kopií nebo kompletní veřejné standardní síťové stažení, zajištěné rozumnou péčí nejméně rok po poslední distribuci vydání včetně prodejců; bez obalových textů se obalová větev nespouští. §4 ponechává povinnost nového titulu bez svolení, původních alespoň5 autorů či všech s možností prominutí, vydavatele, copyright, historie, relevantních URL, poděkování/věnování a případných Warranty Disclaimers. Původní Endorsements odstranit; nové vlastní hodnocení je dovolené. §0–10 ani dodatek neobsahují výslovný patentový grant, vyloučení patentů či ukončení při žalobě."
+    }
+  ]
+}

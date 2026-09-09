@@ -8,93 +8,101 @@
     "contentHash": "sha256:a7e4d077ef3ece0a40910cac3936f93adaee743f55d33fc97b13c2129c79cbfa"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
+    "family": "nonstandard",
     "copyleftScope": "unknown",
     "permissions": [
       "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "include-copyright"
+      "include-copyright",
+      "include-notice",
+      "mark-modifications",
+      "unknown"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "linking",
+      "modification"
     ],
     "restrictions": [
-      "unknown"
+      "trademark",
+      "unknown",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OLDAP-1.2.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OLDAP-1.2.json#text; 1.2 body3/4 ONE alternatives a5 fee regime nejsou jednoduchá jednotná reciproční licence.; https://spdx.org/licenses/OLDAP-1.2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OLDAP-1.2.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OLDAP-1.2.json#text; 3/4 alternativní source/interní/renaming cesty a7 podmíněná C-exemption neumožňují jeden věrný copyleft scope.; https://spdx.org/licenses/OLDAP-1.2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OLDAP-1.2.json#text; 1–4 copy/modify/binary grants,5 paid support/commercial aggregate a6 output sale; patent neuveden.; https://spdx.org/licenses/OLDAP-1.2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OLDAP-1.2.json#text; 1 copyright/disclaimers;3 how/when vždy a jedna cesta;4 nezávislá jedna cesta. Unknown brání kumulativnímu source/rename modelu.; https://spdx.org/licenses/OLDAP-1.2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OLDAP-1.2.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OLDAP-1.2.json#text; Otherwise modification3,object/executable distribution4 a C-subroutine linking7 mají odlišné podmínky;2 approved fixes standard.; https://spdx.org/licenses/OLDAP-1.2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OLDAP-1.2.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OLDAP-1.2.json#text; 5 standalone price/own-product advertising omezení,8 name endorsement,9 warranty; fee/role cesty mimo slovník.; https://spdx.org/licenses/OLDAP-1.2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OLDAP-1.2.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OLDAP-1.2.json#text; Celých9 bodů bez výslovné patentové licence či patentového ukončení.; https://spdx.org/licenses/OLDAP-1.2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OLDAP-1.2.json#text; Alternativy standardních protějšků/manuálů či source a cenové podmínky jsou materiální.; https://spdx.org/licenses/OLDAP-1.2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OLDAP-1.2.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OLDAP-1.2.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. OpenLDAP 1.2 má oddělené alternativy pro změny a binární distribuci: zveřejnění změn, interní užití, přejmenované/standardní protějšky s manuály či dohoda s držitelem. Zdroj není vždy povinný; samotný balík nesmí mít cenu, ale kopírování, podpora a komerční agregace jsou dovoleny. Blokace: Body3a–d a4a–d jsou dvě samostatné volby ONE z různých cest, včetně interního užití, zdroje, standardních protějšků/manuálů a jiné dohody. Je třeba modelovat alternativy bez souběžného vynucení source+rename a zvlášť komerční agregaci/poplatky. Bod7 vyjímá vlastní emulační C subroutines jen pokud nemění jazyk způsobem vedoucím k neúspěchu regression tests. Je třeba zachovat testově podmíněnou hranici balíku, nikoli univerzální library nebo whole-work scope.; https://spdx.org/licenses/OLDAP-1.2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

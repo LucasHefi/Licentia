@@ -8,95 +8,105 @@
     "contentHash": "sha256:e900e90013eae44903e40bb129c2c028d84795b4811d771a61c52654e1beb018"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "whole-work",
     "permissions": [
+      "commercial-use",
+      "conditional-relicensing",
       "distribution",
       "modifications",
-      "patent-grant"
+      "patent-grant",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "include-license-text"
+      "include-license-text",
+      "same-license"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification",
+      "patent-claim",
+      "use"
     ],
     "restrictions": [
       "liability",
-      "trademark"
+      "patent-claim",
+      "trademark",
+      "unknown",
+      "warranty"
     ],
-    "patentPosition": "express-grant",
+    "patentPosition": "retaliatory-termination",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/FSL-1.1-ALv2.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/FSL-1.1-ALv2.json#text; FSL 1.1 ALv2 licencuje každou poskytnutou verzi a po dvou letech jí uděluje další Apache 2.0 licenci. Současný grant dovoluje užití, kopie, změny, odvozeniny, veřejné provedení/zobrazení a redistribuci pouze pro Permitted Purpose; zahrnuje patenty nutně porušené tímto dovoleným užitím. Současné FSL podmínky se vztahují na všechny kopie, změny a odvozeniny, ale nevyžadují zveřejnit zdroje; po dvou letech je samostatná Apache cesta.; https://spdx.org/licenses/FSL-1.1-ALv2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/FSL-1.1-ALv2.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/FSL-1.1-ALv2.json#text; Současné FSL podmínky se vztahují na všechny kopie, změny a odvozeniny, ale nevyžadují zveřejnit zdroje; po dvou letech je samostatná Apache cesta.; https://spdx.org/licenses/FSL-1.1-ALv2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/FSL-1.1-ALv2.json#text; Současný grant dovoluje užití, kopie, změny, odvozeniny, veřejné provedení/zobrazení a redistribuci pouze pro Permitted Purpose; zahrnuje patenty nutně porušené tímto dovoleným užitím.; https://spdx.org/licenses/FSL-1.1-ALv2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/FSL-1.1-ALv2.json#text; Competing Use zahrnuje komerční zpřístupnění nahrazující software, existující nabídku poskytovatele s tímto softwarem nebo stejnou/podstatně obdobnou funkcí. Výslovně jsou dovoleny interní přístup, nekomerční výuka/výzkum a služby řádnému držiteli licence. Redistribuce připojí text či odkaz a neodstraní copyrighty; podmínky platí i pro změny/odvozeniny.; https://spdx.org/licenses/FSL-1.1-ALv2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/FSL-1.1-ALv2.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/FSL-1.1-ALv2.json#text; Competing Use zahrnuje komerční zpřístupnění nahrazující software, existující nabídku poskytovatele s tímto softwarem nebo stejnou/podstatně obdobnou funkcí. Výslovně jsou dovoleny interní přístup, nekomerční výuka/výzkum a služby řádnému držiteli licence. Redistribuce připojí text či odkaz a neodstraní copyrighty; podmínky platí i pro změny/odvozeniny.; https://spdx.org/licenses/FSL-1.1-ALv2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/FSL-1.1-ALv2.json#text; Patentový nárok proti komukoli na porušování či spoluporušování softwarem ihned ruší patentovou licenci. Známky jsou dovoleny jen pro licenční údaje a určení původu. AS IS vylučuje záruky/odpovědnost.; https://spdx.org/licenses/FSL-1.1-ALv2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/FSL-1.1-ALv2.json#text; Patentový grant je omezen na nutné zásahy při Permitted Purpose; vlastní patentový nárok na software proti komukoli jej okamžitě ukončí.; https://spdx.org/licenses/FSL-1.1-ALv2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/FSL-1.1-ALv2.json#text; Competing Use zahrnuje komerční zpřístupnění nahrazující software, existující nabídku poskytovatele s tímto softwarem nebo stejnou/podstatně obdobnou funkcí. Výslovně jsou dovoleny interní přístup, nekomerční výuka/výzkum a služby řádnému držiteli licence. Redistribuce připojí text či odkaz a neodstraní copyrighty; podmínky platí i pro změny/odvozeniny. Rozsah notifikační zátěže: standard.; https://spdx.org/licenses/FSL-1.1-ALv2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/FSL-1.1-ALv2.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/FSL-1.1-ALv2.json#text; Individuální kontrola celého připnutého textu FSL-1.1-ALv2 dne 2026-09-09. FSL 1.1 ALv2 licencuje každou poskytnutou verzi a po dvou letech jí uděluje další Apache 2.0 licenci. FSL kombinuje zákaz Competing Use s časově oddělenou Apache 2.0 licencí od druhého výročí konkrétní verze; před doporučením je třeba model konkurenčního účelu, data vydání a časové alternativy. Neodvolatelná další Apache 2.0 licence začíná druhým výročím dostupnosti konkrétní verze; před tím se konkurence nelegalizuje. Připnutý text odkazuje na úplnou Apache 2.0.; https://spdx.org/licenses/FSL-1.1-ALv2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

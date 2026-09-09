@@ -9,8 +9,8 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
     "family": "permissive",
@@ -19,6 +19,7 @@
       "commercial-use",
       "distribution",
       "modifications",
+      "private-use",
       "sublicensing"
     ],
     "obligations": [
@@ -26,78 +27,80 @@
       "include-license-text"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "use"
     ],
     "restrictions": [
       "liability",
+      "trademark",
       "warranty"
     ],
-    "patentPosition": "unknown",
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.no-copyleft",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.permissive-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/X11-swapped.json#text; Široký grant s notice a nepropagační naming podmínkou, bez reciprocity.; https://spdx.org/licenses/X11-swapped.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/X11-swapped.json#text; Celý text nevyžaduje stejnou licenci a předání zdroje.; https://spdx.org/licenses/X11-swapped.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/X11-swapped.json#text; Grant jmenuje use/copy/modify/merge/publish/distribute/sublicense/sell a downstream permissions.; https://spdx.org/licenses/X11-swapped.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "restrictions",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/X11-swapped.json#text; Copyright and permission notice in all copies or substantial portions.; https://spdx.org/licenses/X11-swapped.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/X11-swapped.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/X11-swapped.json#text; Grant k use i distribuci je podmíněn zachováním notice v kopiích; reklama zde pouze omezuje jméno, nevyžaduje reklamní acknowledgment.; https://spdx.org/licenses/X11-swapped.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/X11-swapped.json#text; Předposlední odstavec prior written authorization pro propagaci jmény s výjimkou notice; poslední warranty/liability disclaimer.; https://spdx.org/licenses/X11-swapped.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/X11-swapped.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/X11-swapped.json#text; Celý text bez výslovného patentového grantu/ukončení.; https://spdx.org/licenses/X11-swapped.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/X11-swapped.json#text; Copyright/permission v kopiích nebo podstatných částech; žádná pozitivní reklamní povinnost.; https://spdx.org/licenses/X11-swapped.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/X11-swapped.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/X11-swapped.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. Široké povolení zahrnuje úpravy, prodej i podlicence. Copyright a povolení zůstanou ve všech kopiích nebo podstatných částech; jména držitelů se mimo oznámení nesmějí použít k propagaci bez předchozího písemného souhlasu.; https://spdx.org/licenses/X11-swapped.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

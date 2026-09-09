@@ -1,0 +1,27 @@
+{
+  "id": "BSD-2-Clause-Patent",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:5618a8801960cb27a75811bcfb4b1f3efbbaaf5a78e6bcd5822572a0e3f6b32b"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Dvě notice podmínky doplňuje výslovný patentový grant držitelů a přispěvatelů pro nutně zasažené nároky jejich příspěvků a původního spojení při přidání. Jiné kombinace grant nepokrývá; neodvolatelnost trvá při splnění licenčních podmínek.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Software a Contributions, zahrnující copyrightové příspěvky držitelů i neautorské přírůstky přispěvatelů, source/binary.",
+    "grantCs": "Redistribution/use with/without modification; patent make/have made/use/offer/sell/import/transfer, perpetual/worldwide/no-charge. Jen licencovatelné současné/budoucí nároky nutně zasažené příspěvkem nebo jeho spojením při přidání.",
+    "conditionsCs": "Body 1–2 copyright/conditions/disclaimer ve zdroji či binárních materiálech. Patentový grant závisí na dodržení licence, bez zvláštní odvetné žalobní doložky.",
+    "limitationsCs": "Odstavec (b) vylučuje jiné kombinace; kromě uvedených práv nic express/implied/estoppel. AS IS a výluky záruk/škod.",
+    "compatibilityCs": "Původní kombinace je přesná patentová hranice v okamžiku přidání, nikoli všeobecná kompatibilita. Žádná jiná licence/verze či copyleft."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/BSD-2-Clause-Patent.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Dvouklauzulový permisivní grant doplněn scoped patent license, bez zdrojové reciprocity."
+    }
+  ]
+}

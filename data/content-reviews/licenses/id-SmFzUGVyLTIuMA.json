@@ -1,0 +1,29 @@
+{
+  "id": "JasPer-2.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:e2413a59da3a4251e447f8772a27b1f2de4c04dca13cec6d6c094f29b7232757"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Licence dovoluje software používat, kopírovat, měnit, spojovat, distribuovat a prodávat se zachováním copyrightů, svolení a výluky záruk. Uživatel však výslovně přebírá odpovědnost za zajištění všech dalších potřebných práv duševního vlastnictví. Průvodce ji zatím nezařazuje kvůli této zvláštní povinnosti; upozornění na rizikové systémy samo jejich použití nezakazuje.",
+  "blockersCs": [
+    "Text jako podmínku výkonu práv ukládá uživateli výhradní odpovědnost zajistit všechna potřebná další IP práva; před doporučením je nutné tuto zvláštní povinnost reprezentovat mimo běžné záruční výluky."
+  ],
+  "analysis": {
+    "subjectCs": "JasPer License 2.0 pokrývá software a dokumentaci tří uvedených držitelů copyrightu.",
+    "grantCs": "Široký grant dovoluje užití, kopírování, změny, spojení, publikaci, distribuci a prodej a stejná jednání příjemců; slovo sublicense výslovně nevyjmenovává.",
+    "conditionsCs": "Bod 1 zahrnuje copyrighty i svolení s disclaimerem do kopií/podstatných částí. Disclaimer je nezbytnou podmínkou každého užití a uživatel přebírá výhradní odpovědnost za zajištění dalších potřebných IP práv.",
+    "limitationsCs": "Bod 2 zakazuje endorsement jménem držitele bez písemného svolení; AS IS vylučuje záruky/odpovědnost i za cizí IP nároky. High-risk odstavec říká not intended a vylučuje vhodnost pro jaderné/letecké/život udržující/zbraňové systémy, neříká not licensed.",
+    "compatibilityCs": "Jiná licence/verze není nabízena; výslovné zabezpečení dalších práv nelze vydávat za grant těchto práv."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/JasPer-2.0.html",
+      "note": "Individuálně přečten celý připnutý text; Bod 1 zahrnuje copyrighty i svolení s disclaimerem do kopií/podstatných částí. Disclaimer je nezbytnou podmínkou každého užití a uživatel přebírá výhradní odpovědnost za zajištění dalších potřebných IP práv. Licence výslovně nejišťuje patentové neporušování a ukládá uživateli zajistit potřebná cizí práva; patentový grant ani patentové ukončení není."
+    }
+  ]
+}

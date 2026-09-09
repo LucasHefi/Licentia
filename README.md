@@ -106,6 +106,45 @@ node scripts/build-app-data.mjs /cesta/license-list-data /cesta/choosealicense p
 
 Výstup obsahuje katalog metadat, detailní JSON každé položky a plnotextový index. Desktop jej balí přímo do aplikace; web jej servíruje jako verzovaná statická data.
 
+Průvodce používá samostatně revidované profily v `data/profiles/`. Systematická
+obsahová revize pokrývá všech 727 licencí pevné verze katalogu. Každá licence má
+v `data/content-reviews/licenses/` vlastní rozhodnutí, otisk zdroje, doložení
+metadat a konkrétní navazující úkol, pokud ji nelze doporučit pro nový softwarový
+projekt. Dřívější individuální revize zůstávají dohledatelné; generický stav
+`reviewed` se za obsahovou revizi nepovažuje.
+
+[Systematický přehled a jednotlivé revize](docs/reports/systematic-review.md)
+rozlišují dokončené posouzení od způsobilosti pro průvodce.
+[Report zařazení](docs/reports/guide-inclusion.md) ověřuje skutečné zařazení podle
+profilu, otisku, katalogu, detailu a vstupní kontroly průvodce. Uvádí aktuální
+počty i všechny překážky. 84 výjimek není samostatnými licencemi; jejich zbývající
+nedostatky pro použití ve výrazech `WITH` jsou uvedeny zvlášť.
+
+Model `lic-008-guide-v6` rozlišuje souborový, knihovní a síťový copyleft,
+podmíněné patentové granty, povinnosti kombinovaných děl, poděkování v reklamě
+a poděkování při stanoveném užití. Slovník 1.4.0 odlišuje samotný spouštěč `use`,
+povinné `include-use-acknowledgment` a výslovnou patentovou výluku
+`express-exclusion`. Poděkování při užití není minimální zátěž ani samo o sobě
+povinnost poskytnout zdroje; patentová výluka nesplňuje požadavek na patentový
+grant. Přesné podmínky a alternativy zachovávají poznámky každé licence.
+
+Katalog včetně historických položek, detail a porovnání zobrazují kurátorovaná
+metadata. Průvodce vybírá pouze způsobilé profily. České poznámky a historie
+várek v `data/guide-expansion.json` vycházejí z individuálních revizí; nepřepisují
+kanonická znění ani příznaky SPDX.
+
+Po změně profilů aktualizujte data i reporty:
+
+```bash
+npm run data:runtime:write
+npm run data:guide:report
+npm run data:reviews:report
+npm run check
+```
+
+Kontroly `data:guide:check` a `data:reviews:check` ověřují shodu reportů s daty,
+pokrytí všech licencí a shodu rozhodnutí se vstupní kontrolou průvodce.
+
 ## Struktura
 
 - `app/` — webový vstup pro Sites/Vinext;

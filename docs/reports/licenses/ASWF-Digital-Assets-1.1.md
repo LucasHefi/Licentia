@@ -1,0 +1,62 @@
+# ASWF-Digital-Assets-1.1 — obsahová revize
+
+ASWF Digital Assets License 1.1
+
+Revize: **2026-09-09** · pravidlo **2026-09-09.10**.
+
+Výsledek: **zpracována, nezařazena do průvodce**.
+
+ASWF v1.1 omezuje použití digitálních assets na vzdělávání, výzkum, vývoj, benchmarky a demonstrace. Vedle oznámení a copyrightu v publikovaných obrazech vyžaduje při distribuci změněných assets popsat jejich rozdíly oproti originálu.
+
+## Předmět a rozsah
+
+Licence v1.1 se vztahuje na konkrétní digitální assets a jejich výstupy označené Asset Name, nikoli obecný kód.
+
+## Udělená práva
+
+Úvod dovoluje užití a redistribuci i změněných assets výlučně pro vyjmenované účely včetně veřejných/reprodukovatelných benchmarků; obecný komerční grant a patentová licence chybějí.
+
+## Podmínky a spouštěče
+
+Bod 1 vyžaduje copyright, podmínky, disclaimer a je-li to relevantní popis rozdílů redistribuované verze proti originálu. Bod 2 copyright u publikovaných odvozených obrazů; bod 4 pouze Asset Name pro assets i output a pouze identifikační použití názvu.
+
+## Omezení, výjimky a ukončení
+
+Bod 3 zakazuje nepovolený endorsement, sponzoring či afiliaci jmény držitele/přispěvatelů u produktů i benchmarků. Další známky/jména jsou bodem 4 zakázány; disclaimer odmítá záruky a škody.
+
+## Verze a kombinování
+
+Nový popis rozdílů z bodu 1 této verze se nepřenáší na 1.0. Text nemá share-alike, alternativní licenci nebo obecnou produkční licenci k assets.
+
+## Překážky a navazující práce
+
+- Výlučný seznam povolených účelů, assetový předmět a povinné jméno assets/výstupů nejsou modelovány. Doplnit je před doporučením a zachovat v1.1-specifickou povinnost popsat změny oproti originálu.
+
+## Metadata a jejich doložení
+
+| Pole | Hodnota | Doložení znění |
+|---|---|---|
+| family | "nonstandard" | public/data/licenses/ASWF-Digital-Assets-1.1.json#text; Účelově omezená digitální aktiva s notice a mark-modifications jsou nonstandard bez copyleftu. |
+| copyleftScope | "none" | public/data/licenses/ASWF-Digital-Assets-1.1.json#text; Účelově omezená digitální aktiva s notice a mark-modifications jsou nonstandard bez copyleftu. |
+| permissions | ["distribution","modifications","private-use","unknown"] | public/data/licenses/ASWF-Digital-Assets-1.1.json#text; Úvod dovoluje užití a redistribuci i změněných assets výlučně pro vyjmenované účely včetně veřejných/reprodukovatelných benchmarků; obecný komerční grant a patentová licence chybějí. |
+| obligations | ["include-copyright","include-license-text","include-use-acknowledgment","mark-modifications","unknown"] | public/data/licenses/ASWF-Digital-Assets-1.1.json#text; Bod 1 vyžaduje copyright, podmínky, disclaimer a je-li to relevantní popis rozdílů redistribuované verze proti originálu. Bod 2 copyright u publikovaných odvozených obrazů; bod 4 pouze Asset Name pro assets i output a pouze identifikační použití názvu. |
+| triggers | ["distribution","modification","use"] | public/data/licenses/ASWF-Digital-Assets-1.1.json#text; Bod 1 vyžaduje copyright, podmínky, disclaimer a je-li to relevantní popis rozdílů redistribuované verze proti originálu. Bod 2 copyright u publikovaných odvozených obrazů; bod 4 pouze Asset Name pro assets i output a pouze identifikační použití názvu. |
+| restrictions | ["liability","trademark","unknown","warranty"] | public/data/licenses/ASWF-Digital-Assets-1.1.json#text; Bod 3 zakazuje nepovolený endorsement, sponzoring či afiliaci jmény držitele/přispěvatelů u produktů i benchmarků. Další známky/jména jsou bodem 4 zakázány; disclaimer odmítá záruky a škody. |
+| patentPosition | "none-stated" | public/data/licenses/ASWF-Digital-Assets-1.1.json#text; Úvod dovoluje užití a redistribuci i změněných assets výlučně pro vyjmenované účely včetně veřejných/reprodukovatelných benchmarků; obecný komerční grant a patentová licence chybějí. |
+| noticeBurden | "material" | public/data/licenses/ASWF-Digital-Assets-1.1.json#text; Bod 1 vyžaduje copyright, podmínky, disclaimer a je-li to relevantní popis rozdílů redistribuované verze proti originálu. Bod 2 copyright u publikovaných odvozených obrazů; bod 4 pouze Asset Name pro assets i output a pouze identifikační použití názvu. |
+
+## Zdroje
+
+- [Primární zdroj](https://spdx.org/licenses/ASWF-Digital-Assets-1.1.html) — Individuální revize celého připnutého textu; Licence v1.1 se vztahuje na konkrétní digitální assets a jejich výstupy označené Asset Name, nikoli obecný kód.
+- [Kurátorovaný profil](../../../data/profiles/licenses/id-QVNXRi1EaWdpdGFsLUFzc2V0cy0xLjE.json)
+- [Uložené úplné znění](../../../public/data/licenses/ASWF-Digital-Assets-1.1.json)
+
+## Otisk zdroje
+
+```json
+{
+  "sourceId": "spdx-license-list",
+  "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+  "contentHash": "sha256:0e7a19bb48cf137bf5e36d067aeafb0db0842e5a5dcafa6c9f71b6f4b9931f9e"
+}
+```

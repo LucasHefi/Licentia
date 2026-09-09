@@ -1,0 +1,29 @@
+{
+  "id": "BSD-Systemics-W3Works",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:4c03d39be4acbe82ed99b4225f4ab6cfc6949a01916c1845f124531f707799d3"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Licence dovoluje komerční i nekomerční užití a redistribuci s úpravami při zachování obou sad oznámení Systemics a W3Works. Reklama zmiňující funkce nebo užití musí obsahovat předepsaná uznání a veřejné verze či odvozeniny nesmějí změnit licenční podmínky. Průvodce ji nezařazuje, dokud není vyjasněna hranice této povinnosti vůči kombinovanému dílu.",
+  "blockersCs": [
+    "Závěr má totožný zákaz změny podmínek veřejných verzí/odvozenin jako BSD-Systemics a úvod pokrývá knihovnu i aplikace; před doporučením je třeba doložit hranici odvozeného kódu vůči kombinovanému dílu, nikoli předpokládat library scope."
+  ],
+  "analysis": {
+    "subjectCs": "Text spojuje původní Systemics 1995–1996 podmínky a dodatky W3Works 2000 pro upravenou implementaci.",
+    "grantCs": "Původní grant dovoluje komerční/nekomerční užití a zdrojovou/binární redistribuci se změnami i bez nich, s oběma sadami podmínek.",
+    "conditionsCs": "Copyright W3Works i jeho změny zůstávají s balíčkem; zdroj/binary zachovává copyright/podmínky/disclaimer. Reklama zmiňující funkce/užití obsahuje předepsané W3Works i Systemics uznání. Formulace should o produktové atribuci uvádí startup nebo dokumentaci jako možnosti.",
+    "limitationsCs": "Obě části vylučují záruky a Systemics též odpovědnost; závěr zakazuje změnit licenční/distribuční podmínky veřejných verzí nebo odvozenin, výslovně i převod pod GNU Public Licence.",
+    "compatibilityCs": "Obě notice/reklamní sady jsou kumulativní; výslovný zákaz změny podmínek se neinterpretuje jako nabídka GPL alternativy."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/BSD-Systemics-W3Works.html",
+      "note": "Individuálně přečten celý připnutý text; Copyright W3Works i jeho změny zůstávají s balíčkem; zdroj/binary zachovává copyright/podmínky/disclaimer. Reklama zmiňující funkce/užití obsahuje předepsané W3Works i Systemics uznání. Formulace should o produktové atribuci uvádí startup nebo dokumentaci jako možnosti. Celý spojený text nemá patentový grant nebo patentové ukončení."
+    }
+  ]
+}

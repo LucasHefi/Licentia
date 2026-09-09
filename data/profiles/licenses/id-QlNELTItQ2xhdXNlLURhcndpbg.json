@@ -39,47 +39,65 @@
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant paragraph (redistribution and use in source and binary forms, with or without modification, are permitted subject to conditions 1-2)"
+      "locator": "public/data/licenses/BSD-2-Clause-Darwin.json#text; Dvouklauzulový grant s přesnou pozicí copyrightu a samostatným exportním tvrzením, ne exportní licenční podmínkou.; https://spdx.org/licenses/BSD-2-Clause-Darwin.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant paragraph and conditions 1-2 (non-reciprocal permission; no same-license, source-disclosure, or corresponding-source condition)"
+      "locator": "public/data/licenses/BSD-2-Clause-Darwin.json#text; Celý text nevyžaduje zdroje ani shodnou licenci.; https://spdx.org/licenses/BSD-2-Clause-Darwin.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant paragraph (redistribution and use in source and binary forms, with or without modification, are permitted; no purpose limitation)"
+      "locator": "public/data/licenses/BSD-2-Clause-Darwin.json#text; Grant source/binary with or without modification; úvod tvrdí volný export bez nové smluvní povinnosti.; https://spdx.org/licenses/BSD-2-Clause-Darwin.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text: conditions 1-2 (retain/reproduce the above copyright notice, list of conditions, and disclaimer; no corresponding-source requirement)"
+      "locator": "public/data/licenses/BSD-2-Clause-Darwin.json#text; Bod 1 copyright immediately at beginning without modification plus conditions/disclaimer; bod 2 tyto texty v binárních materiálech.; https://spdx.org/licenses/BSD-2-Clause-Darwin.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "text: conditions 1-2 (notice-retention/reproduction duties are activated by source or binary redistribution; modification alone has no separate condition)"
+      "locator": "public/data/licenses/BSD-2-Clause-Darwin.json#text; Body 1–2 výslovně redistributions source/binary; samotné interní užití nemá další notice trigger.; https://spdx.org/licenses/BSD-2-Clause-Darwin.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text: final disclaimer paragraph ('AS IS', warranty disclaimer, and limitation of liability)"
+      "locator": "public/data/licenses/BSD-2-Clause-Darwin.json#text; Závěr warranty/liability autora a přispěvatelů; úvodní exportní tvrzení není omezení použití.; https://spdx.org/licenses/BSD-2-Clause-Darwin.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "text: complete license text (no express patent grant, patent condition, or patent-claim termination clause)"
+      "locator": "public/data/licenses/BSD-2-Clause-Darwin.json#text; Celý text bez výslovné patentové licence či patentového ukončení.; https://spdx.org/licenses/BSD-2-Clause-Darwin.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text: conditions 1-2 (source copies retain the notice/list/disclaimer immediately at the beginning; binary copies reproduce them in documentation/materials)"
+      "locator": "public/data/licenses/BSD-2-Clause-Darwin.json#text; Zachování notices dle formy; přesná počáteční pozice copyrightu nemění typ povinnosti.; https://spdx.org/licenses/BSD-2-Clause-Darwin.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "metadata: deprecated=false and osi=false"
+      "locator": "public/data/licenses/BSD-2-Clause-Darwin.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. Zdrojové a binární formy lze používat i šířit s úpravami. Zdrojová distribuce zachová copyright nezměněně hned na začátku souboru; podmínky a disclaimer zůstanou také. Binární distribuce je reprodukuje v dokumentaci či doprovodných materiálech.; https://spdx.org/licenses/BSD-2-Clause-Darwin.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

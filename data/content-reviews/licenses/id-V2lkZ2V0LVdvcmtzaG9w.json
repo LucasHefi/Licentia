@@ -1,0 +1,27 @@
+{
+  "id": "Widget-Workshop",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:787b12722cca47759f34fe3447558b5db6c2fe74e5199989ab4e889689ff43c1"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Software a dokumentaci lze používat, měnit a šířit komerčně i nekomerčně se zachováním celého oznámení. Text vylučuje záruky a odpovědnost; vysoce riziková prostředí uvádí jako nevhodné zamýšlené použití a zvláštní výluku záruky, nikoli jako zákaz.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Software/dokumentace Widget Workshop 1996, včetně odvozenin.",
+    "grantCs": "Výslovné use/copy/modify/distribute pro NON-COMMERCIAL or COMMERCIAL purposes bez poplatku; bez patentového grantu.",
+    "conditionsCs": "Copyright notice musí zůstat intact; jde o celý souvislý licenční komentář, bez zdrojové reciprocity.",
+    "limitationsCs": "Záruky včetně vhodnosti, prodejnosti a non-infringement i škody z užití/úprav/distribuce jsou vyloučeny. High risk activities jsou not designed or intended a výluka fitness, nikoli must not use.",
+    "compatibilityCs": "Žádná jiná licence/verze nebo kombinovací výjimka; popis rizik nezavádí zákaz konkrétního odvětví."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Widget-Workshop.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Grant výslovně komerční/nekomerční, zachování notice; high-risk pasáž je disclaimer vhodnosti."
+    }
+  ]
+}

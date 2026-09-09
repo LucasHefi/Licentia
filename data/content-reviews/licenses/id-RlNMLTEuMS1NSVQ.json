@@ -1,0 +1,29 @@
+{
+  "id": "FSL-1.1-MIT",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:b9e511728c671b077cd870c288f9c1fef88a2f494dab1027dba5d9fdd627c582"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Licence dovoluje užití, změny a distribuci pro vymezené účely, ale omezuje konkurenční komerční produkty a služby. Od druhého výročí zpřístupnění konkrétní verze nabízí navíc neodvolatelnou licenci MIT; před tímto datem její volnější podmínky nelze použít. Průvodce ji nezařazuje, dokud nejsou zachyceny datum verze, dovolený účel a časově oddělená alternativa.",
+  "blockersCs": [
+    "Licence má zákaz konkurenčního komerčního užití a MIT alternativu až po dvou letech od konkrétní verze; před doporučením je potřeba model data vydání, účelu a časového přechodu."
+  ],
+  "analysis": {
+    "subjectCs": "FSL 1.1 MIT pokrývá každou poskytnutou verzi a obsahuje úplné znění další MIT licence účinné o dva roky později.",
+    "grantCs": "Současný grant dovoluje užití, kopie, změny, odvozeniny, veřejné zobrazení/provedení a redistribuci pouze pro Permitted Purpose; patenty jsou uděleny v rozsahu nutném pro toto užití.",
+    "conditionsCs": "Competing Use je komerční služba/produkt nahrazující software, existující nabídku poskytovatele nebo nabízející obdobné funkce. Dovolené jsou interní užití, nekomerční výuka/výzkum a služby řádně licencovanému uživateli. Všechny kopie/změny nesou FSL podmínky; redistribuce připojí text/odkaz a ponechá copyright.",
+    "limitationsCs": "Vlastní patentový nárok proti komukoli na software ruší patentovou licenci; známky jen identifikují původ/licenční údaje. Současný FSL i budoucí MIT obsahují AS IS výluky záruk/odpovědnosti.",
+    "compatibilityCs": "Od druhého výročí zpřístupnění konkrétní verze platí neodvolatelná možnost MIT: její úplný grant navíc výslovně uvádí sublicence/prodej a ponechání copyrightu/svolení v kopiích či podstatných částech. Před výročím se tato alternativa nesmí aplikovat."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/FSL-1.1-MIT.html",
+      "note": "Individuálně přečten celý připnutý text; Competing Use je komerční služba/produkt nahrazující software, existující nabídku poskytovatele nebo nabízející obdobné funkce. Dovolené jsou interní užití, nekomerční výuka/výzkum a služby řádně licencovanému uživateli. Všechny kopie/změny nesou FSL podmínky; redistribuce připojí text/odkaz a ponechá copyright. FSL patentový grant je nutný rozsah Permitted Purpose a okamžitě zaniká patentovým nárokem; vložené MIT znění vlastní výslovný patentový grant nemá."
+    }
+  ]
+}

@@ -9,91 +9,90 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
-    "obligations": [
-      "unknown"
-    ],
-    "triggers": [
-      "unknown"
-    ],
+    "obligations": [],
+    "triggers": [],
     "restrictions": [
-      "unknown"
+      "liability",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "none-stated",
+    "noticeBurden": "none"
   },
   "evidence": [
     {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/TPDL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/TPDL.json#text; Volný grant modulu a nezávazná žádost o změny nevyžadují stejnou licenci nebo zdroje; permisivní bez copyleftu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/TPDL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/TPDL.json#text; Volný grant modulu a nezávazná žádost o změny nevyžadují stejnou licenci nebo zdroje; permisivní bez copyleftu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/TPDL.json#text; License hereby granted dovoluje komukoli užití, úpravy a redistribuci, bez omezení komerčního účelu; patentový grant a výslovná sublicence nejsou uvedeny.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/TPDL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/TPDL.json#text; Grant nestanoví uchování oznámení ani vydání zdrojů. Please feed useful changes back je zdvořilá žádost, nikoli podmínka; nejsou tedy povinnosti ani jejich distribuční/síťové spouštěče.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/TPDL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/TPDL.json#text; Grant nestanoví uchování oznámení ani vydání zdrojů. Please feed useful changes back je zdvořilá žádost, nikoli podmínka; nejsou tedy povinnosti ani jejich distribuční/síťové spouštěče.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/TPDL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/TPDL.json#text; At their own risk přenáší riziko užití na příjemce; text neobsahuje podrobné záruky, názvová omezení nebo patentovou terminaci.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/TPDL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/TPDL.json#text; License hereby granted dovoluje komukoli užití, úpravy a redistribuci, bez omezení komerčního účelu; patentový grant a výslovná sublicence nejsou uvedeny.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/TPDL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/TPDL.json#text; Grant nestanoví uchování oznámení ani vydání zdrojů. Please feed useful changes back je zdvořilá žádost, nikoli podmínka; nejsou tedy povinnosti ani jejich distribuční/síťové spouštěče.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/TPDL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/TPDL.json#text; Individuálně přečten celý připnutý text. Grant se vztahuje na modul s copyrighty Davida Muir Sharnoffa a Google. Modul lze užívat, upravovat a redistribuovat na vlastní riziko. Zaslání užitečných změn autorovi je žádost, nikoli povinnost. ",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

@@ -1,0 +1,27 @@
+{
+  "id": "CryptoSwift",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:5021c51f281850e887bccae5eed271d1a588f351451ac25b09cb7995199b62c5"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Permisivní licence dovoluje libovolné, včetně komerčního užití, úpravy a redistribuci. Při použití v produktu vyžaduje poděkování v jeho dokumentaci. Každá redistribuce navíc zachovává předepsané poděkování Marcinovi Krzyzanowskému; celé oznámení nesmí být odstraněno ani změněno ve zdrojové ani binární distribuci. Změněné zdroje musí být zřetelně označeny a původ nesmí být zkreslen. Zdroje se poskytovat nemusí; text obsahuje výluky záruk a odpovědnosti, nikoli výslovný patentový grant.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Grant pokrývá software; první odrážka zvlášť stanoví poděkování při jeho použití v produktu. Nejde o licenci k reklamním materiálům ani o obecný zákaz komerčních produktů.",
+    "grantCs": "Operativní grant dovoluje použití pro jakýkoli účel včetně komerčních aplikací, úpravy a volnou redistribuci. Text neuděluje samostatný výslovný patentový grant ani výslovné právo podlicencování.",
+    "conditionsCs": "Odrážka 1 požaduje nezkreslit původ a poděkovat v dokumentaci produktu při produktovém užití. Odrážka 2 značí změněné zdroje. Odrážka 3 zachovává celé oznámení ve zdrojové i binární distribuci a odrážka 4 předepsané poděkování autora v každé redistribuci. Tyto tři podmínky oznámení se neslučují do jedné distribuční povinnosti.",
+    "limitationsCs": "Úvod obsahuje poskytnutí as-is, vyloučení výslovných i odvozených záruk a odpovědnosti autorů za škody z použití. Nepravdivé přisvojení autorství a vydávání změn za původní software jsou zakázány.",
+    "compatibilityCs": "Žádná odrážka neukládá poskytovat zdroje nebo licencovat celek stejnou licencí. Povinné poděkování je rozdíl proti dobrovolné žádosti ve Zlib. Znění neřeší alternativní verze ani samo neprokazuje kompatibilitu závislostí."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/CryptoSwift.html",
+      "note": "Úplné uložené znění jednotlivě přečteno a porovnáno s primární stránkou SPDX; nové vyjádření podmínek use zachovává původní rozsah a otisk zdroje."
+    }
+  ]
+}

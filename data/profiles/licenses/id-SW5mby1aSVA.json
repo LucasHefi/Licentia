@@ -9,92 +9,100 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "provide-corresponding-source"
+      "include-license-text",
+      "include-notice",
+      "mark-modifications"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification"
     ],
     "restrictions": [
+      "additional-terms",
       "liability",
+      "trademark",
       "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Info-ZIP.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Info-ZIP.json#text; Podmíněné notices a zákaz zkreslení původu nevyžadují zdroje ani stejnou licenci; permisivní bez copyleftu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Info-ZIP.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Info-ZIP.json#text; Podmíněné notices a zákaz zkreslení původu nevyžadují zdroje ani stejnou licenci; permisivní bez copyleftu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Info-ZIP.json#text; Permission dovoluje libovolný účel včetně komerčních aplikací, úpravy a volnou redistribuci. Výslovný patentový grant ani samostatná sublicence nejsou uvedeny.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Info-ZIP.json#text; Zdroje i části zachovají copyright, definici Info-ZIP, disclaimer a podmínky. Binárky je mají v materiálech; další dokumentace není nutná při CLI license option a odkazu ve startup banneru. Standardní UnZipSFX/SFXWiz v SFX archivu je výjimka bez licence, zachová-li se normální neodstraněný/nevypnutý SFX banner. Upraveniny včetně portů/GUI/knihoven musí být jasně označeny.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Info-ZIP.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Info-ZIP.json#text; Zdroje i části zachovají copyright, definici Info-ZIP, disclaimer a podmínky. Binárky je mají v materiálech; další dokumentace není nutná při CLI license option a odkazu ve startup banneru. Standardní UnZipSFX/SFXWiz v SFX archivu je výjimka bez licence, zachová-li se normální neodstraněný/nevypnutý SFX banner. Upraveniny včetně portů/GUI/knihoven musí být jasně označeny.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Info-ZIP.json#text; Upraveniny nesmějí předstírat původní zdroje/binárky/Info-ZIP vydání, používat varianty vyjmenovaných názvů bez svolení ani zavádějící podpůrné emaily/URL. Info-ZIP si vyhrazuje vlastní názvy vydání. Disclaimer odmítá záruky i škody z užití/nemožnosti užití.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Info-ZIP.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Info-ZIP.json#text; Permission dovoluje libovolný účel včetně komerčních aplikací, úpravy a volnou redistribuci. Výslovný patentový grant ani samostatná sublicence nejsou uvedeny.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Info-ZIP.json#text; Zdroje i části zachovají copyright, definici Info-ZIP, disclaimer a podmínky. Binárky je mají v materiálech; další dokumentace není nutná při CLI license option a odkazu ve startup banneru. Standardní UnZipSFX/SFXWiz v SFX archivu je výjimka bez licence, zachová-li se normální neodstraněný/nevypnutý SFX banner. Upraveniny včetně portů/GUI/knihoven musí být jasně označeny.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Info-ZIP.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Info-ZIP.json#text; Individuálně přečten celý připnutý text. Info-ZIP je pro tuto licenci výslovně definován seznamem osob; grant pokrývá software, executables a knihovny i vymezený SFX scénář. Info-ZIP dovoluje komerční užití a úpravy; distribuce zachovává copyright, definici autorů, disclaimer a podmínky. Binární notice lze zpřístupnit licenční volbou příkazu se startup odkazem; standardní UnZipSFX v samorozbalovacím archivu má výjimku při zachování banneru. ",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

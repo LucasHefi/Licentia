@@ -8,99 +8,114 @@
     "contentHash": "sha256:809a5525cfcf038d3b9541398801e568928c27eb32542a2d6d4fdb1d0e0a603d"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
+    "family": "nonstandard",
     "copyleftScope": "unknown",
     "permissions": [
       "commercial-use",
+      "conditional-relicensing",
       "distribution",
       "modifications",
       "patent-grant",
-      "sublicensing"
+      "private-use"
     ],
     "obligations": [
+      "disclose-source",
       "include-copyright",
       "include-license-text",
-      "provide-corresponding-source"
-    ],
-    "triggers": [
+      "include-notice",
+      "mark-modifications",
+      "network-use-disclose",
+      "provide-corresponding-source",
+      "provide-installation-information",
+      "same-license",
       "unknown"
     ],
+    "triggers": [
+      "combination",
+      "distribution",
+      "modification",
+      "network-use",
+      "patent-claim",
+      "use"
+    ],
     "restrictions": [
+      "additional-terms",
       "liability",
-      "trademark",
+      "patent-claim",
+      "unknown",
       "warranty"
     ],
-    "patentPosition": "express-grant",
-    "noticeBurden": "standard"
+    "patentPosition": "defensive-termination",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SSPL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SSPL-1.0.json#text; §5 same-license pro celý covered derivative, ale §13 zdrojový/SSPL rozsah zahrnuje všechny programy používané pro službu včetně nezávislé infrastruktury a platí i pro nezměněný Program. File/library/whole-work ani obyčejná network hranice tuto další service hranici plně nepopisuje; copyleftScope unknown je konkrétní chybějící model.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SSPL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SSPL-1.0.json#text; §5 same-license pro celý covered derivative, ale §13 zdrojový/SSPL rozsah zahrnuje všechny programy používané pro službu včetně nezávislé infrastruktury a platí i pro nezměněný Program. File/library/whole-work ani obyčejná network hranice tuto další service hranici plně nepopisuje; copyleftScope unknown je konkrétní chybějící model.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SSPL-1.0.json#text; §2 trvání po copyright a neodvolatelnost při plnění; použití původního i soukromé neconveyované změny výslovně podléhá§13. Vlastní kontraktoři pro výlučné změny/provoz pod vlastním řízením mohou dostat kopie s omezením nakládání s vlastním copyrightem; cizí části dle licence. §4 libovolná cena kopií a placená podpora, §5 změny pod SSPL. Žádné sublicence, přímý downstream§10. §11 výslovná bezroyalty světová patentová licence essential claims Contributor Version, nikoli nároky vyvolané teprve další změnou. §14 následné MongoDB verze jen při skutečném or-later, bez čísla volitelné vydané, proxy veřejná trvalá autorizace pokud určen.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SSPL-1.0.json#text; §§3–5 při convey vzdání pravomoci zakazovat obcházení technických opatření při výkonu práv, copyright/licence/disclaimer a§7 notices, licence s každou kopií; změny prominentně s datem a celý odvozený celek SSPL. UI legal notices včetně copyright, záruk a licence, s výjimkou původního UI, které je nezobrazuje. §6 object plus Corresponding Source alternativně fyzické médium, fyzický produkt s nejméně3letou nabídkou platnou i po dobu podpory/náhradních dílů pro každého držitele objectu (nákladové médium nebo zdarma síť), příležitostný nekomerční přenos převzaté nabídky, ekvivalentní download bez další ceny se zřetelným odkazem i na cizí server, nebo P2P odkaz na bezplatný veřejný object/source. User Product při převodu držby/užití trvale či na dobu vyžaduje Installation Information včetně klíčů, leda nikdo nemůže instalovat změněný objekt např.ROM; bez další podpory, síť lze odmítnout při skutečném narušení/protokolové kolizi. Formáty veřejné se source implementací, bez zvláštního klíče ke čtení/rozbalení. §13 původní NEBO změněná funkčnost jako služba třetím: zdarma všem síťovým downloadem Service Source Code pod SSPL; zahrnuje management, UI/API, automatizaci, monitoring, backup, storage, hosting a prakticky spustitelnou službu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SSPL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SSPL-1.0.json#text; §§3–5 při convey vzdání pravomoci zakazovat obcházení technických opatření při výkonu práv, copyright/licence/disclaimer a§7 notices, licence s každou kopií; změny prominentně s datem a celý odvozený celek SSPL. UI legal notices včetně copyright, záruk a licence, s výjimkou původního UI, které je nezobrazuje. §6 object plus Corresponding Source alternativně fyzické médium, fyzický produkt s nejméně3letou nabídkou platnou i po dobu podpory/náhradních dílů pro každého držitele objectu (nákladové médium nebo zdarma síť), příležitostný nekomerční přenos převzaté nabídky, ekvivalentní download bez další ceny se zřetelným odkazem i na cizí server, nebo P2P odkaz na bezplatný veřejný object/source. User Product při převodu držby/užití trvale či na dobu vyžaduje Installation Information včetně klíčů, leda nikdo nemůže instalovat změněný objekt např.ROM; bez další podpory, síť lze odmítnout při skutečném narušení/protokolové kolizi. Formáty veřejné se source implementací, bez zvláštního klíče ke čtení/rozbalení. §13 původní NEBO změněná funkčnost jako služba třetím: zdarma všem síťovým downloadem Service Source Code pod SSPL; zahrnuje management, UI/API, automatizaci, monitoring, backup, storage, hosting a prakticky spustitelnou službu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SSPL-1.0.json#text; §7 dovoluje pro vlastní oprávněný materiál přesně vyjmenované další notices, změnová/endorsement/trademark pravidla, záruky a indemnity; nejsou automaticky přítomné všechny. Nepřípustné further restrictions lze odstranit, další permissions odstranit či přidat jen dle oprávnění a označit ve zdrojích. §8 porušení ruší i patentové licence; po nápravě provizorní obnova, trvalá při neoznámení do60dní nebo prvním holder notice pro jakékoli dílo napraveném před30dny, downstream přežije. §10 zákaz dalších omezení a patentové žaloby včetně cross/counter k Programu/části. §11 při vědomém spoléhání na patentovou licenci bez veřejného source tři alternativy: source zveřejnit, vzdát se patentové výhody, nebo rozšířit práva příjemcům; jednou transakcí selektivně daná licence se rozšiřuje všem. Diskriminační placená software-distributor dohoda blokuje convey s výjimkou uspořádání/grantu před28.3.2007. §12 neslučitelná povinnost zakazuje USE, propagate i convey, ne pouze distribuci. §§15–17 as-is a škody se zákonnou/písemnou výjimkou a místním nejbližším výkladem.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SSPL-1.0.json#text; §2 trvání po copyright a neodvolatelnost při plnění; použití původního i soukromé neconveyované změny výslovně podléhá§13. Vlastní kontraktoři pro výlučné změny/provoz pod vlastním řízením mohou dostat kopie s omezením nakládání s vlastním copyrightem; cizí části dle licence. §4 libovolná cena kopií a placená podpora, §5 změny pod SSPL. Žádné sublicence, přímý downstream§10. §11 výslovná bezroyalty světová patentová licence essential claims Contributor Version, nikoli nároky vyvolané teprve další změnou. §14 následné MongoDB verze jen při skutečném or-later, bez čísla volitelné vydané, proxy veřejná trvalá autorizace pokud určen.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SSPL-1.0.json#text; §§3–5 při convey vzdání pravomoci zakazovat obcházení technických opatření při výkonu práv, copyright/licence/disclaimer a§7 notices, licence s každou kopií; změny prominentně s datem a celý odvozený celek SSPL. UI legal notices včetně copyright, záruk a licence, s výjimkou původního UI, které je nezobrazuje. §6 object plus Corresponding Source alternativně fyzické médium, fyzický produkt s nejméně3letou nabídkou platnou i po dobu podpory/náhradních dílů pro každého držitele objectu (nákladové médium nebo zdarma síť), příležitostný nekomerční přenos převzaté nabídky, ekvivalentní download bez další ceny se zřetelným odkazem i na cizí server, nebo P2P odkaz na bezplatný veřejný object/source. User Product při převodu držby/užití trvale či na dobu vyžaduje Installation Information včetně klíčů, leda nikdo nemůže instalovat změněný objekt např.ROM; bez další podpory, síť lze odmítnout při skutečném narušení/protokolové kolizi. Formáty veřejné se source implementací, bez zvláštního klíče ke čtení/rozbalení. §13 původní NEBO změněná funkčnost jako služba třetím: zdarma všem síťovým downloadem Service Source Code pod SSPL; zahrnuje management, UI/API, automatizaci, monitoring, backup, storage, hosting a prakticky spustitelnou službu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SSPL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SSPL-1.0.json#text; Individuálně přečten celý připnutý text. §0 jakékoli licencované copyrightové dílo včetně obdobných práv k maskám; covered work originál či autorskoprávně odvozená změna. Propagate nezahrnuje spuštění ani úpravu soukromé kopie, convey vyžaduje možnost získat kopii; pouhá síťová interakce sama convey není. §1 Corresponding Source zahrnuje build/install/run/modify skripty, interfaces a specificky požadované dynamické subprogramy; vyjímá System Libraries, nezměněné obecné/free nástroje mimo dílo a automaticky regenerovatelné části. §13 samostatně rozšiřuje Service Source Code na všechny programy používané k nabízení služby tak, aby šla celá služba spustit. SSPL 1.0 vyžaduje při nabízení funkčnosti původního i změněného programu jako služby zveřejnit zdarma všem zdroje celé obsluhy služby pod SSPL, včetně správy, monitoringu, záloh a hostingu. Tento rozsah překračuje samotné odvozené dílo i obyčejný síťový copyleft. § 13 požaduje veřejné zdroje celé reprodukovatelné služby pod SSPL včetně nezávislé správy, monitoringu, záloh a hostingu, a to i pro původní program. Doplnit rozsah všech programů služby a jeho triggery i § 12 zákaz dalšího užití při kolizi povinností; běžný network-use-disclose jen pro covered work by podmínky zásadně zúžil.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

@@ -8,94 +8,103 @@
     "contentHash": "sha256:cb09d79abcd51ebc3b336db3606f47b18d3d01254f3ec13322f7a6b5cd743db4"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
+      "conditional-relicensing",
       "distribution",
       "modifications",
+      "private-use",
       "sublicensing"
     ],
     "obligations": [
-      "include-license-text"
+      "include-license-text",
+      "include-notice",
+      "include-use-acknowledgment",
+      "unknown"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification",
+      "use"
     ],
     "restrictions": [
       "liability",
-      "trademark"
+      "trademark",
+      "unknown"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "express-exclusion",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OGDL-Taiwan-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OGDL-Taiwan-1.0.json#text; Taiwanská Open Government Data License 1.0 v čínštině i angličtině pokrývá veřejná otevřená data včetně kompilací; čisté nechráněné Information mají kromě grantu ostatní podmínky také. §2 dovoluje bez účelového/časového/územního omezení neodvolatelně užití, kopie, distribuci, veřejné přenosy/provedení a adaptace dat do produktů/služeb, včetně sublicencí. Povinná atribuce a podmíněné CC BY splnění nepředepisují zdroje ani stejnou licenci softwaru.; https://spdx.org/licenses/OGDL-Taiwan-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OGDL-Taiwan-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OGDL-Taiwan-1.0.json#text; Povinná atribuce a podmíněné CC BY splnění nepředepisují zdroje ani stejnou licenci softwaru.; https://spdx.org/licenses/OGDL-Taiwan-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OGDL-Taiwan-1.0.json#text; §2 dovoluje bez účelového/časového/územního omezení neodvolatelně užití, kopie, distribuci, veřejné přenosy/provedení a adaptace dat do produktů/služeb, včetně sublicencí.; https://spdx.org/licenses/OGDL-Taiwan-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OGDL-Taiwan-1.0.json#text; §3 při užití dat i odvozenin vyžaduje přesný exhibit credit s institucí, rokem, názvem/verzí dat a textem/odkazem licence; při chybě credit se grant považuje za neexistující od počátku. Uživatel respektuje osobnostní práva třetích stran.; https://spdx.org/licenses/OGDL-Taiwan-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OGDL-Taiwan-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OGDL-Taiwan-1.0.json#text; §3 při užití dat i odvozenin vyžaduje přesný exhibit credit s institucí, rokem, názvem/verzí dat a textem/odkazem licence; při chybě credit se grant považuje za neexistující od počátku. Uživatel respektuje osobnostní práva třetích stran.; https://spdx.org/licenses/OGDL-Taiwan-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OGDL-Taiwan-1.0.json#text; §5 dovoluje zastavit dodávku pro veřejný zájem nebo riziko cizích práv bez kompenzace. §6 odmítá endorsement/odpovědnost poskytovatele, ukládá opravit známé chyby a uživatel hradí škody poskytovateli i jím uhrazené cizí nároky způsobené úmyslným/nedbalým pochybením.; https://spdx.org/licenses/OGDL-Taiwan-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OGDL-Taiwan-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OGDL-Taiwan-1.0.json#text; §2.4 obou jazyků výslovně vylučuje patenty a známky; patentové ukončení není uvedeno.; https://spdx.org/licenses/OGDL-Taiwan-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OGDL-Taiwan-1.0.json#text; §3 při užití dat i odvozenin vyžaduje přesný exhibit credit s institucí, rokem, názvem/verzí dat a textem/odkazem licence; při chybě credit se grant považuje za neexistující od počátku. Uživatel respektuje osobnostní práva třetích stran. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/OGDL-Taiwan-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OGDL-Taiwan-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OGDL-Taiwan-1.0.json#text; Individuální kontrola celého připnutého textu OGDL-Taiwan-1.0 dne 2026-09-09. Taiwanská Open Government Data License 1.0 v čínštině i angličtině pokrývá veřejná otevřená data včetně kompilací; čisté nechráněné Information mají kromě grantu ostatní podmínky také. Licence míří na vládní data včetně nechráněných informací a vyžaduje náhradu škod poskytovateli za vlastní zavinění; před doporučením je nutný datový model a zvláštní podmínka náhrady nároků. §4 dovoluje pozdější verzi, neurčil-li poskytovatel konkrétní; dodržení CC BY 4.0 při dalším užití splní tuto licenci. §7 používá právo Taiwanu.; https://spdx.org/licenses/OGDL-Taiwan-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

@@ -9,90 +9,97 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
     "family": "permissive",
     "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "include-copyright"
+      "include-copyright",
+      "include-license-text",
+      "include-notice"
     ],
     "triggers": [
-      "unknown"
+      "distribution"
     ],
     "restrictions": [
-      "liability"
+      "additional-terms",
+      "liability",
+      "warranty"
     ],
-    "patentPosition": "unknown",
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.no-copyleft",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/mpich2.json#text; permission paragraph: use, reproduce, prepare derivative works and redistribute; no commercial-purpose restriction; whole text: no reciprocal source-disclosure or same-license condition; https://spdx.org/licenses/mpich2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.3"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.permissive-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/mpich2.json#text; permission paragraph: use, reproduce, prepare derivative works and redistribute; no commercial-purpose restriction; https://spdx.org/licenses/mpich2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.3"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/mpich2.json#text; opening paragraph: copyright/availability notice and disclaimer in code prologue AND all source listings; source listings are a retention location, not a requirement to publish sources; https://spdx.org/licenses/mpich2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.3"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "triggers",
-      "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/mpich2.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/mpich2.json#text; opening paragraph: copyright/availability notice and disclaimer in code prologue AND all source listings; source listings are a retention location, not a requirement to publish sources; https://spdx.org/licenses/mpich2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.3"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/mpich2.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/mpich2.json#text; whole text: no express patent grant or patent-litigation termination is stated; no inference about implied rights; https://spdx.org/licenses/mpich2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.3"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/mpich2.json#text; permission paragraph: use, reproduce, prepare derivative works and redistribute; no commercial-purpose restriction; https://spdx.org/licenses/mpich2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.3"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/mpich2.json#text; GOVERNMENT LICENSE reserves scoped government/acting-on-behalf rights, not a general patent grant; DISCLAIMER excludes express/implied warranty and liability/responsibility incl accuracy/non-infringement; https://spdx.org/licenses/mpich2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.3"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/mpich2.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/mpich2.json#text; whole-text editorial review on 2026-09-09, batch 3; Zachovejte oznámení a disclaimer v úvodu kódu i ve všech výpisech zdrojů. U části vzniklé z vládního kontraktu text uvádí zvláštní oprávnění vlády USA. Nejde o výslovný patentový grant ani o povinnost zveřejnit zdroje.; https://spdx.org/licenses/mpich2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.3"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/mpich2.json#text; opening paragraph: copyright/availability notice and disclaimer in code prologue AND all source listings; source listings are a retention location, not a requirement to publish sources; https://spdx.org/licenses/mpich2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.3"
     }
   ]
 }

@@ -1,0 +1,20 @@
+{
+  "id": "Giftware",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.6",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:e54bd6c8a52d3ce7e1c47edfd397a5b6082c5a4bca9a6d99fb66d90562265e7d"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Software smíte užívat, upravovat a šířit bez povinného protiplnění. Dárky komunitě, zasílání vylepšení, zveřejnění vlastních zdrojů a uvedení Allegra v titulcích jsou dobrovolná doporučení. Text neukládá zachování oznámení ani poskytování zdrojů. Obsahuje vyloučení záruk a odpovědnosti.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Giftware.html",
+      "note": "Dřívější individuální revize 2026-09-09.6; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

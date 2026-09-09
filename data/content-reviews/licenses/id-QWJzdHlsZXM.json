@@ -1,0 +1,29 @@
+{
+  "id": "Abstyles",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:725eb852ae1df0093d9c23962d0de92b9f651ba033695e810a28b74805efebe8"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Dokument lze kopírovat s copyrightem a svolením; upravené verze musí zachovat oznámení a celé výsledné odvozené dílo šířit pod totožným svolením. Text současně označuje program APREAMBL.TEX.",
+  "blockersCs": [
+    "Připnutý text označuje v úvodu program, ale grant práv vztahuje na this document. Je třeba ověřit primární kontext APREAMBL.TEX/APREAMBL.DOC a rozlišit kód od dokumentace; bez něj není vhodné doporučit text jako obecnou licenci nového softwaru."
+  ],
+  "analysis": {
+    "subjectCs": "Úvod označuje program APREAMBL.TEX 1.10e, ale oba operativní granty opakovaně říkají this document; předmět kódu vůči dokumentaci není jednoznačný.",
+    "grantCs": "Dva permission odstavce dovolují doslovné i modifikované kopie a distribuci bez účelového omezení. Patentový grant a výslovná sublicence chybějí.",
+    "conditionsCs": "Doslovné kopie zachovají copyright a svolení. Modifikované kopie plní totéž a entire resulting derived work musí být distribuováno pod totožným permission notice; zdrojová forma není výslovně vyžadována.",
+    "limitationsCs": "Úvod odmítá veškeré výslovné/implicitní záruky; samostatná odpovědnost, známky či jurisdikce chybějí.",
+    "compatibilityCs": "Požadavek identical permission notice neposkytuje automatickou alternativu jiné licence. Odkaz na APREAMBL.DOC je dokumentace, ne výslovné začlenění další licence."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Abstyles.html",
+      "note": "Individuální revize celého připnutého textu; Úvod označuje program APREAMBL.TEX 1.10e, ale oba operativní granty opakovaně říkají this document; předmět kódu vůči dokumentaci není jednoznačný."
+    }
+  ]
+}

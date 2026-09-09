@@ -9,95 +9,102 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
       "modifications",
+      "private-use",
       "sublicensing"
     ],
     "obligations": [
       "include-copyright",
-      "mark-modifications",
-      "provide-corresponding-source"
+      "include-license-text",
+      "include-notice",
+      "include-use-acknowledgment",
+      "mark-modifications"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification",
+      "use"
     ],
     "restrictions": [
       "liability",
+      "trademark",
       "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Catharon.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Catharon.json#text; Catharon licence ze 4. července 2000 pokrývá zdroje, binárky i dokumentaci původních balíčků kromě souborů s vlastní výslovnou licencí. §2 uděluje celosvětově, bezplatně, trvale a neodvolatelně užití, spuštění, provedení, kompilaci, zobrazení, kopie, odvozeniny, distribuci a sublicence v obou formách i oprávnění poskytovat tato práva dalším. Notices, popis změn a uznání při užití se vztahují i na odvozeniny, avšak nevyžadují zdroje ani stejnou licenci programu.; https://spdx.org/licenses/Catharon.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Catharon.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Catharon.json#text; Notices, popis změn a uznání při užití se vztahují i na odvozeniny, avšak nevyžadují zdroje ani stejnou licenci programu.; https://spdx.org/licenses/Catharon.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Catharon.json#text; §2 uděluje celosvětově, bezplatně, trvale a neodvolatelně užití, spuštění, provedení, kompilaci, zobrazení, kopie, odvozeniny, distribuci a sublicence v obou formách i oprávnění poskytovat tato práva dalším.; https://spdx.org/licenses/Catharon.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Catharon.json#text; Zdrojová redistribuce zachová nezměněný license.txt, původní copyrighty a v dokumentaci označí přidání/odebrání/změny; binární doprovod uzná, že je dílo založeno na Catharon práci. Úvod i závěr §2 ukládají acknowledgment při užití kódu v programu. Konkrétní Typography Project fráze v §3 je pouze návrh.; https://spdx.org/licenses/Catharon.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Catharon.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Catharon.json#text; Zdrojová redistribuce zachová nezměněný license.txt, původní copyrighty a v dokumentaci označí přidání/odebrání/změny; binární doprovod uzná, že je dílo založeno na Catharon práci. Úvod i závěr §2 ukládají acknowledgment při užití kódu v programu. Konkrétní Typography Project fráze v §3 je pouze návrh.; https://spdx.org/licenses/Catharon.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Catharon.json#text; §1 vylučuje záruky/odpovědnost. §3 oboustranně zakazuje použít jméno druhé strany ke komerční propagaci bez písemného svolení. Užití/distribuce/změny znamenají souhlas; nejistý rozsah konkrétního souboru se dle §0 ověřuje u Catharon.; https://spdx.org/licenses/Catharon.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Catharon.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Catharon.json#text; Celý úvod a §0–3 nemají výslovný patentový grant ani patentové ukončení.; https://spdx.org/licenses/Catharon.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Catharon.json#text; Zdrojová redistribuce zachová nezměněný license.txt, původní copyrighty a v dokumentaci označí přidání/odebrání/změny; binární doprovod uzná, že je dílo založeno na Catharon práci. Úvod i závěr §2 ukládají acknowledgment při užití kódu v programu. Konkrétní Typography Project fráze v §3 je pouze návrh. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/Catharon.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Catharon.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Catharon.json#text; Individuální kontrola celého připnutého textu Catharon dne 2026-09-09. Catharon licence ze 4. července 2000 pokrývá zdroje, binárky i dokumentaci původních balíčků kromě souborů s vlastní výslovnou licencí. Všechny uvedené podmínky jsou zachyceny slovníkem 1.4.0; zjištěný rozsah nebrání softwarovému průvodci. Soubory s vlastní licencí jsou výslovně vyloučeny; alternativní smlouva může být sjednána, ale nevzniká automaticky.; https://spdx.org/licenses/Catharon.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

@@ -16,13 +16,12 @@
     "family": "nonstandard",
     "copyleftScope": "whole-work",
     "permissions": [
+      "commercial-use",
       "distribution",
       "modifications",
-      "private-use",
-      "unknown"
+      "private-use"
     ],
     "obligations": [
-      "disclose-source",
       "include-copyright",
       "include-license-text",
       "include-notice",
@@ -31,10 +30,9 @@
       "same-license"
     ],
     "triggers": [
-      "combination",
       "distribution",
       "modification",
-      "unknown"
+      "use"
     ],
     "restrictions": [
       "additional-terms",
@@ -47,49 +45,67 @@
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text: Section 0 definition of a work based on the Program and Section 2(c) opening plus Section 2(c)(ii) (a distributed or published Work that in whole or in part contains or is derived from the Program must be licensed as a whole under this License)"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text: Sections 1-2, especially Section 2(a) and Section 2(c)(ii) (the text combines a whole-work same-license condition with a prohibition on payment-connected distribution by commercial organizations and narrow channel-specific exceptions, so it is a nonstandard source-available license rather than a generally open-source copyleft license)"
+      "locator": "public/data/licenses/Aladdin.json#text; §2(a) účelově vymezený zákaz placené distribuce komerční organizací a přesné kanálové výjimky činí licenci nestandardní i při copyleftu; https://spdx.org/licenses/Aladdin.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text: Section 1 opening and Sections 2(c)(i), 2(c)(iii), and 2(c)(v) (distribution carries the unmodified license; modified Works and each modified source file need prominent detailed change notices; qualifying interactive Works need a recurring copyright, warranty, redistribution, and license-access announcement; accompanying written material needs the license or prominent coverage and access instructions)"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text: Section 1 opening and Sections 2(c)(i)-2(c)(vi) (include the unmodified license and its copyright notice, mark the Work and every modified source file with detailed change notices, provide applicable interactive and written-material notices, license the covered Work as a whole under this License, accompany it with complete corresponding machine-readable source, and impose no further restrictions)"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text: complete license text, including Sections 1-6; no express patent grant or patent-litigation termination appears, and Section 5's noninfringement disclaimer is a warranty disclaimer rather than a patent license"
+      "locator": "public/data/licenses/Aladdin.json#text; §2(c)(ii) Work obsahující či odvozený z Programu jako celek pod touto licencí; §2(b) běh a nederivativní výstup mimo působnost; https://spdx.org/licenses/Aladdin.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text: Sections 1(a)-1(b), 2(a)-2(b), and 3 (source copying/distribution and modification are expressly granted, and functional use is unrestricted; no general sublicensing grant appears; payment-connected distribution by a commercial organization is broadly prohibited subject to narrow exceptions, so a general commercial-use permission is omitted and the vocabulary's inability to qualify distribution is represented by unknown)"
+      "locator": "public/data/licenses/Aladdin.json#text; §1 zdrojové kopie a odvozeniny/distribuce, §2(b) neomezený funkční běh včetně komerčního; právo k patentům či obecně jiné sublicenci není uvedeno; https://spdx.org/licenses/Aladdin.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "restrictions",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text: Sections 2(a), 2(c)(ii), and 2(c)(vi); Sections 3-5 (payment-connected distribution by a commercial organization is prohibited except for narrow service/media exceptions; a covered whole must be licensed at no charge and without further restrictions; noncompliant rights terminate; optional geographic limitations may apply; warranty and liability are disclaimed); the vocabulary cannot losslessly encode the commercial/payment, distribution-channel, no-charge, or geographic restrictions, represented by unknown"
-    },
-    {
-      "field": "review",
-      "sourceId": "spdx-license-list",
-      "locator": "metadata: osi=false; fsf=false; deprecated=false; text: Section 2(a) prohibits payment-connected distribution by commercial organizations, including indirect payment tied to a related product or service, and permits only narrow channel-specific exceptions; this field cannot be represented losslessly by the recommendation vocabulary and the license must not be recommended as open source"
+      "locator": "public/data/licenses/Aladdin.json#text; §1 celý text, §2(c) stejné podmínky, konkrétní změnové notices, kompletní zdroje se skripty a interaktivní notices s výjimkami; tištěná licence NEBO pokyny je zachovaná alternativa; https://spdx.org/licenses/Aladdin.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "text: Section 0 acceptance paragraph; Section 1 opening; Sections 2(a) and 2(c) opening; Sections 2(c)(i)-2(c)(v) (distribution and modification activate conditions, and distributing or publishing a Work that contains or derives from any part of the Program activates whole-work terms; publication and commencement of a qualifying interactive Work are additional triggers absent from the vocabulary, represented by unknown)"
+      "locator": "public/data/licenses/Aladdin.json#text; §2(c) distribuovaný/publikovaný Work, upravené soubory a podmíněný interaktivní start; §2(a) placená distribuce, nikoli samotné soukromé či komerční spouštění; https://spdx.org/licenses/Aladdin.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Aladdin.json#text; §2(a) obchodní/cenové/kanálové restrikce nemají enum; §2(c)(vi) další podmínky zakázány, §5 záruky/škody s výjimkami; §4 jen možnost výslovné geografie, ne nalezený zákaz konkrétních zemí; https://spdx.org/licenses/Aladdin.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Aladdin.json#text; Úplné §§0–6 neobsahují patentový grant ani patentovou žalobní odvetu; §5 noninfringement disclaimer není patentové oprávnění; https://spdx.org/licenses/Aladdin.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Aladdin.json#text; §2(c)(i),(iii),(v) jméno/e-mail/data/účel změn v souborech, interaktivní notice s About/no-notice výjimkami a obsah tištěných materiálů; materiální zátěž; https://spdx.org/licenses/Aladdin.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Aladdin.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. Aladdin Free Public License verze8 dovoluje neomezený běh včetně komerčního, ale komerční organizaci zpravidla zakazuje distribuci spojenou s přímou či nepřímou platbou. Výjimky pro veřejné online úložiště a samostatná média mají přesné podmínky. Distribuované dílo obsahující Program zůstává celé pod touto licencí, s kompletními zdroji, změnovými údaji a případnými interaktivními notices. Výstup podléhá licenci jen je-li sám odvozeninou. Nejde o GNU licenci. Blokace: §2(a) zakazuje komerční organizaci distribuovat Program/odvozeniny při jakékoli související přímé i nepřímé platbě, ale dovoluje přesně omezené veřejné úložiště s obsahově nezávislou cenou a samostatná doslovná média. Model neobsahuje tento test organizace, ceny a distribučního kanálu; commercial-use nelze vypnout, protože §2(b) běh výslovně neomezuje. Před doporučením je nutná samostatná reprezentace těchto restrikcí a alternativ.; https://spdx.org/licenses/Aladdin.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

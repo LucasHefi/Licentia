@@ -1,0 +1,29 @@
+{
+  "id": "CC-BY-2.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:48ba9def9aab395b427e676edb9566985d02976c57ad3232a44a79fa845b9acf"
+  },
+  "disposition": "blocked",
+  "summaryCs": "CC BY 2.0 dovoluje i komerční kopie, adaptace a veřejné užití obsahu bez povinnosti stejné licence celé odvozeniny. Zachovává copyright, licenční oznámení, autorství, titul a určený odkaz; adaptace přiznává využití originálu. Na žádost se prakticky odstraní zmínky o autorovi či poskytovateli a nesmějí se přidávat rozporné technické ochrany. Tyto obsahové podmínky vyžadují samostatné posouzení, proto licenci průvodce pro nový software nenabízí.",
+  "blockersCs": [
+    "Licence obecného obsahu vyžaduje odstranění zmínek na žádost a upravuje technické ochrany/veřejné výkony; před doporučením softwaru je nutný model těchto podmínek a obsahového rozsahu."
+  ],
+  "analysis": {
+    "subjectCs": "CC Attribution 2.0 licencuje autorské dílo, odvozeniny a sborníky; hudební synching je výslovně odvozenina.",
+    "grantCs": "§3 dovoluje reprodukci, odvozeniny, veřejné zobrazení/provedení a sdílení všech forem i komerčně a vzdává se vyjmenovaných výkonových, mechanických a webcast royalties.",
+    "conditionsCs": "§4 přenáší licenci/URI a notices, zachovává copyright a dodané autorovo jméno/pseudonym, titul, rozumně proveditelné určené licenční URI a credit původu odvozeniny. Ve sborníku/odvozenině je stejně výrazný jako ostatní; na žádost se proveditelně odstraní zmínky o autorovi/poskytovateli.",
+    "limitationsCs": "§4 zakazuje sublicence, další omezení a rozporné technické ochrany. §5 AS IS výslovně bez titulu/neporušování/přesnosti/bezvadnosti, ne provenance warranty v1.0; §6 liability v mezích zákona. §7 zánik při porušení chrání řádný downstream.",
+    "compatibilityCs": "§8 automaticky nabízí příjemci originál pod stejnými právy; celé odvozené dílo/sborník nemá povinnou CC-BY licenci. Poskytovatel může nabídku ukončit, ne odvolat již udělená práva; jiné licence/verze nejsou výslovnou uživatelskou volbou."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/CC-BY-2.0.html",
+      "note": "Individuálně přečten celý připnutý text; §4 přenáší licenci/URI a notices, zachovává copyright a dodané autorovo jméno/pseudonym, titul, rozumně proveditelné určené licenční URI a credit původu odvozeniny. Ve sborníku/odvozenině je stejně výrazný jako ostatní; na žádost se proveditelně odstraní zmínky o autorovi/poskytovateli. Celá licence nemá výslovný patentový grant či patentové ukončení; hudební royalty vzdání není patentové oprávnění."
+    }
+  ]
+}

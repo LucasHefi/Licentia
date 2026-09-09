@@ -1,0 +1,27 @@
+{
+  "id": "eGenix",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:a8b4b8eabfea183091edb257f8bdc0dac8554e9acc5420216acf5e0c3bc3901d"
+  },
+  "disposition": "eligible",
+  "summaryCs": "eGenix 1.1.0 dovoluje užití, analýzu, změny i distribuci při zachování smlouvy v softwaru a derivátech. Samostatně licencované přibalené části jsou výslovně vyňaty; materiální porušení smlouvu automaticky ukončí. Řídí se německým právem a rozhodující je anglické znění.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Software a dokumentace eGenix; bod6 zřetelně vylučuje části s vlastním samostatným licenčním dokumentem přiloženým k distribuci.",
+    "grantCs": "Bod2 nonexclusive/royalty-free/worldwide reproduce/analyze/test/public perform/display/derivatives/distribute/otherwise use; výslovný patentový grant chybí.",
+    "conditionsCs": "Bod2 zachovat celý eGenix Public License Agreement v software nebo derivátech; další zdrojové, oznamovací či marking povinnosti nejsou uvedeny. Vnější vyňaté části podléhají svým smlouvám, nikoli tomuto profilu.",
+    "limitationsCs": "Body3–4 AS IS/warranty/liability se zachováním neodstranitelných zákonných práv;5 automatický zánik při material breach.7 žádná trademark endorsement licence, severability, německé právo bez kolizí/CISG, angličtina rozhoduje.",
+    "compatibilityCs": "Úvodní odvození z CNRI není alternativní licence. Bod6 je výslovné oddělení jiných částí, ne potvrzení kompatibility celého balíčku; žádná volba nové verze."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/eGenix.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Bod2 široký grant se zachováním smlouvy;6 výslovně oddělené licence nevytvářejí copyleft."
+    }
+  ]
+}

@@ -9,93 +9,104 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "weak-copyleft",
+    "copyleftScope": "file",
     "permissions": [
       "commercial-use",
       "distribution",
       "modifications",
-      "patent-grant"
+      "patent-grant",
+      "private-use"
     ],
     "obligations": [
-      "provide-corresponding-source"
+      "disclose-source",
+      "include-copyright",
+      "include-license-text",
+      "include-notice",
+      "provide-corresponding-source",
+      "same-license"
     ],
     "triggers": [
-      "unknown"
+      "combination",
+      "distribution",
+      "modification",
+      "patent-claim"
     ],
     "restrictions": [
-      "trademark"
+      "patent-claim",
+      "trademark",
+      "warranty"
     ],
-    "patentPosition": "express-grant",
-    "noticeBurden": "unknown"
+    "patentPosition": "defensive-termination",
+    "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "obligations",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MS-RL.json#text; section 3(A): file boundary applies to source AND binary format; own files without licensed code excluded; https://spdx.org/licenses/MS-RL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.2"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MS-RL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MS-RL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "triggers",
-      "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MS-RL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MS-RL.json#text; section 3(A): provide source under this license for each distributed file containing licensed code; own separate files may use any terms; https://spdx.org/licenses/MS-RL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.2"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MS-RL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MS-RL.json#text; sections 3(A),(D)-(E): full license and existing copyright/patent/trademark/attribution notices; https://spdx.org/licenses/MS-RL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.2"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/MS-RL.json#text; sections 3(A),(D)-(E): supply source of covered files and full license; preserve copyright/patent/trademark/attribution notices; compliant binary terms; https://spdx.org/licenses/MS-RL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.2"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/MS-RL.json#text; sections 1,2(B),3(C): express patents reading directly on contribution; patent rights from sued contributor terminate automatically; no copyright termination in this clause; https://spdx.org/licenses/MS-RL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.2"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/MS-RL.json#text; sections 1,2(A)-(B): reproduce, derivatives, distribute and express contribution patent rights including commercial use; no general sublicensing grant; https://spdx.org/licenses/MS-RL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.2"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/MS-RL.json#text; sections 3(B),(C),(F): no name/logo/trademark rights; contributor patent claim ends that contributor patent license; warranty disclaimer preserves mandatory consumer rights; no explicit liability exclusion; https://spdx.org/licenses/MS-RL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.2"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MS-RL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MS-RL.json#text; whole-text editorial review on 2026-09-09, batch 2; Souborový copyleft: příjemcům poskytněte zdroje každého distribuovaného souboru obsahujícího pokrytý kód a kopii MS-RL. Vlastní oddělené soubory mohou mít jiné podmínky. Zachovejte oznámení; patentový nárok proti přispěvateli ukončuje patentový grant od tohoto přispěvatele.; https://spdx.org/licenses/MS-RL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.2"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/MS-RL.json#text; sections 3(A),(C)-(E): distribution of covered files, including modified/combined files, and contributor patent claim; no network-only disclosure; https://spdx.org/licenses/MS-RL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.2"
     }
   ]
 }

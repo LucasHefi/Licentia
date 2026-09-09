@@ -8,8 +8,8 @@
     "contentHash": "sha256:395122139d20802409659300c8379982a5c3f6940d73138f8abdb3fa886e7d0d"
   },
   "review": {
-    "status": "not-recommendable",
-    "recommendable": false,
+    "status": "reviewed",
+    "recommendable": true,
     "evidenceLevel": "strong"
   },
   "semantic": {
@@ -26,11 +26,10 @@
       "include-notice"
     ],
     "triggers": [
-      "distribution",
-      "modification",
-      "unknown"
+      "distribution"
     ],
     "restrictions": [
+      "additional-terms",
       "liability",
       "warranty"
     ],
@@ -41,47 +40,65 @@
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text: complete license, especially the permission sentence (copying, display, modification, redistribution, and incorporation are allowed subject only to notice preservation; no same-license, source-disclosure, or other reciprocal condition is stated)"
+      "locator": "public/data/licenses/ADSL.json#text; sole paragraph: copy/display/modify/redistribute software alone OR incorporated in own code, with no commercial/private-use restriction; no reciprocal source-supply or same-license condition; https://spdx.org/licenses/ADSL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text: permission sentence (broad non-reciprocal rights to copy, display, modify, and redistribute the software alone or incorporated into other code, subject to preserving proprietary notices)"
+      "locator": "public/data/licenses/ADSL.json#text; sole paragraph: copy/display/modify/redistribute software alone OR incorporated in own code, with no commercial/private-use restriction; https://spdx.org/licenses/ADSL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text: permission sentence, proviso ('provided that you do not remove any proprietary notices')"
+      "locator": "public/data/licenses/ADSL.json#text; provided-that condition: do not REMOVE ANY PROPRIETARY NOTICES, not necessarily the whole license text or corresponding source; https://spdx.org/licenses/ADSL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text: permission sentence, proviso ('provided that you do not remove any proprietary notices'), read with the concluding Amazon copyright notice"
+      "locator": "public/data/licenses/ADSL.json#text; provided-that condition: do not REMOVE ANY PROPRIETARY NOTICES, not necessarily the whole license text or corresponding source; https://spdx.org/licenses/ADSL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "text: complete license (the only affirmative permissions are to copy, display, modify, and redistribute software code; no patent grant, patent condition, or patent-termination clause is stated)"
+      "locator": "public/data/licenses/ADSL.json#text; whole text: no express patent grant or patent-litigation termination; no inference of patent rights from copyright, trademarks or non-infringement disclaimers; https://spdx.org/licenses/ADSL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text: permission sentence ('You may copy, display, modify and redistribute' the software alone or incorporated into other code, with no private-use or commercial-purpose limitation)"
+      "locator": "public/data/licenses/ADSL.json#text; sole paragraph: copy/display/modify/redistribute software alone OR incorporated in own code, with no commercial/private-use restriction; https://spdx.org/licenses/ADSL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening sentence ('AS IS' and 'without warranties of any kind') and final sentence ('at your own risk' and waiver of 'any claim' against Amazon Digital Services, Inc. or its affiliates)"
+      "locator": "public/data/licenses/ADSL.json#text; AS IS/no warranties, own-risk and express WAIVER OF ANY CLAIM against Amazon Digital Services/affiliates with respect to use; waiver is retained separately as additional terms; https://spdx.org/licenses/ADSL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "metadata: deprecated=false and osi=false; text: the notice-preservation proviso applies to copying and display as well as modification and redistribution, but the guide vocabulary has no copying or display trigger, so the condition cannot be represented losslessly"
+      "locator": "public/data/licenses/ADSL.json#text; whole-text editorial review on 2026-09-09, batch 6; Corrects prior exclusion based on missing copying/display triggers: continuous proprietary-notice preservation is recorded, while the separate claim waiver is explicitly displayed and classified additional-terms. No public product notice or patent grant is inferred.; https://spdx.org/licenses/ADSL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "text: permission sentence and its notice-preservation proviso (copying, display, modification, and redistribution are conditioned on not removing proprietary notices); distribution and modification are represented directly, while copying and display have no matching trigger values in the vocabulary"
+      "locator": "public/data/licenses/ADSL.json#text; provided-that condition: do not REMOVE ANY PROPRIETARY NOTICES, not necessarily the whole license text or corresponding source; https://spdx.org/licenses/ADSL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     }
   ]
 }

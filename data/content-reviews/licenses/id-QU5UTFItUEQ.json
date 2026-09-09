@@ -1,0 +1,27 @@
+{
+  "id": "ANTLR-PD",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:47d8585e128134963b857f54f2a32a0829bef9f3039ed1a61e33a9f9e79bf8df"
+  },
+  "disposition": "eligible",
+  "summaryCs": "ANTLR 2 a jeho zdrojový i generovaný kód jsou prohlášeny za public domain; výslovně je dovoleno komerční začlenění. Uvedení zásluh a zachování hlaviček jsou žádosti, nikoli podmínky neomezeného grantu.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "ANTLR, zdrojový kód distribuovaný s ANTLR i jím generovaný kód.",
+    "grantCs": "We reserve no legal rights a do whatever they wish včetně začlenění ANTLR/výstupu do komerčního softwaru; patentový grant samostatně není vymezen.",
+    "conditionsCs": "Credits v dokumentaci, zmínka o použití nástroje a zachování hlaviček jsou formulovány jako žádosti. Splnění guidelines souvisí s očekáváním dalšího vývoje, nikoli s odnětím práv.",
+    "limitationsCs": "Chybí výluky záruk a odpovědnosti, náhradní licence i ukončení; text uděluje public-domain status bez povinného oznámení.",
+    "compatibilityCs": "Nadpis ANTLR 2 neuděluje oprávnění k jiným vydáním; žádná alternativní licence/verze uvedena není."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/ANTLR-PD.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; První odstavec fully in the public domain a no legal rights; druhý odstavec requests/guidelines."
+    }
+  ]
+}

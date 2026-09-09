@@ -9,92 +9,98 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "include-license-text",
-      "provide-corresponding-source"
+      "include-license-text"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "use"
     ],
     "restrictions": [
-      "liability"
+      "additional-terms",
+      "liability",
+      "trademark",
+      "warranty"
     ],
-    "patentPosition": "unknown",
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/JPNIC.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/JPNIC.json#text; Podmínky jsou oznamovací a jmenné bez stejné licence odvozenin nebo zdrojové nabídky; permisivní, none.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/JPNIC.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/JPNIC.json#text; Podmínky jsou oznamovací a jmenné bez stejné licence odvozenin nebo zdrojové nabídky; permisivní, none.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/JPNIC.json#text; Bod 1 výslovně dovoluje use/modification/redistribution včetně odvozenin ve zdrojové i binární podobě bez účelového omezení. Patentový grant ani sublicence nejsou uvedeny.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/JPNIC.json#text; Bod 2 zachovává copyrighty tak, jak jsou v každém zdrojovém souboru, a podmínky; bod 3 požaduje přesný copyright JPNIC 2000–2002 a podmínky v dokumentaci/jiných materiálech binárek. Úvodní using file znamená souhlas, nikoli zveřejnění zdrojů.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/JPNIC.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/JPNIC.json#text; Bod 2 zachovává copyrighty tak, jak jsou v každém zdrojovém souboru, a podmínky; bod 3 požaduje přesný copyright JPNIC 2000–2002 a podmínky v dokumentaci/jiných materiálech binárek. Úvodní using file znamená souhlas, nikoli zveřejnění zdrojů.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/JPNIC.json#text; Bod 4 zakazuje endorsement/promotion jménem JPNIC bez specifického písemného souhlasu. Bod 5 odmítá záruky a širokou škálu škod včetně všech uvedených titulů odpovědnosti.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/JPNIC.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/JPNIC.json#text; Bod 1 výslovně dovoluje use/modification/redistribution včetně odvozenin ve zdrojové i binární podobě bez účelového omezení. Patentový grant ani sublicence nejsou uvedeny.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/JPNIC.json#text; Bod 2 zachovává copyrighty tak, jak jsou v každém zdrojovém souboru, a podmínky; bod 3 požaduje přesný copyright JPNIC 2000–2002 a podmínky v dokumentaci/jiných materiálech binárek. Úvodní using file znamená souhlas, nikoli zveřejnění zdrojů.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/JPNIC.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/JPNIC.json#text; Individuálně přečten celý připnutý text. Grant je k souboru/software JPNIC; jiná individuálně získaná licence může nahradit tyto podmínky. Zdrojové i binární verze lze používat, upravovat a šířit. Zdroje zachovají copyrighty v jednotlivých souborech, binárky předepsaný copyright JPNIC a podmínky v materiálech. Užití znamená souhlas; jméno JPNIC nesmí bez písemného svolení podporovat odvozeniny. ",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

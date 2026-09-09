@@ -1,0 +1,29 @@
+{
+  "id": "mplus",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:0538eeaf26e4f62aa17e323a060f671fc33b9ee352ffbe9ce07eb2340c4e04a7"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Prohlášení dovoluje fonty mplus neomezeně používat, kopírovat a distribuovat s úpravami i bez nich, komerčně i nekomerčně. Nevyžaduje zachování oznámení ani zveřejnění zdrojů a poskytuje fonty bez záruky. Průvodce je nezařazuje mezi licence pro nový software, protože výslovný grant se vztahuje pouze k písmům.",
+  "blockersCs": [
+    "Text je výslovně grantem k fontům; pro doporučení novému softwarovému projektu je potřeba oddělený model fontů či doložený obecný softwarový grant."
+  ],
+  "analysis": {
+    "subjectCs": "Prohlášení výslovně licencuje fonty.",
+    "grantCs": "Neomezené oprávnění zahrnuje užívání, kopírování a distribuci s úpravami i bez nich komerčně i nekomerčně.",
+    "conditionsCs": "Celý text neukládá zachování oznámení, označení změn, šíření zdrojů ani reklamní uznání.",
+    "limitationsCs": "Poslední věta poskytuje fonty AS IS bez záruky; samostatnou výluku odpovědnosti neuvádí.",
+    "compatibilityCs": "Jiná licence či verze není nabízena."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/mplus.html",
+      "note": "Individuálně přečten celý připnutý text; Celý text neukládá zachování oznámení, označení změn, šíření zdrojů ani reklamní uznání. Celý text neobsahuje patentová oprávnění ani odvetu za patentové nároky."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "GLWTPL",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:f350dd7e3c26fe720a11350542d66533e1d64b88449023f0285c87d114601018"
+  },
+  "disposition": "blocked",
+  "summaryCs": "GLWTPL poskytuje široká práva včetně změn, prodeje a sublicencování, ale podmiňuje je tím, že uživatel nezanechá stopu k dohledání autora pro obviňování nebo činění odpovědným. Závěr také odmítá odpovědnost za nároky a škody ze softwaru. Průvodce ji nezařazuje, dokud nebude význam této neobvyklé podmínky vyjasněn; nejde pouze o běžnou výluku odpovědnosti.",
+  "blockersCs": [
+    "Bod 0 podmiňuje práva nezanecháním stopy k autorovi pro účely obviňování; před doporučením je třeba vyjasnit a modelovat tuto podmínku, kterou nelze zploštit na běžnou výluku odpovědnosti."
+  ],
+  "analysis": {
+    "subjectCs": "GLWTPL obsahuje široký softwarový grant, žertovnou preambuli a závazně formulovaný bod 0.",
+    "grantCs": "Úvod dovoluje kopírování, distribuci, změny, slučování, prodej, publikaci i sublicencování a další jednání na vlastní riziko.",
+    "conditionsCs": "Bod 0 dovoluje vše pouze pokud uživatel nikdy nezanechá stopu k dohledání autora pro obviňování či činění odpovědným; nejde o běžnou notice povinnost.",
+    "limitationsCs": "Závěr vylučuje odpovědnost autorů za všechny nároky a škody ze softwaru; preambule konstatuje nejistou funkčnost, explicitní klasický záruční grant neobsahuje.",
+    "compatibilityCs": "Jiná licence či verze není nabízena."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/GLWTPL.html",
+      "note": "Individuálně přečten celý připnutý text; Bod 0 dovoluje vše pouze pokud uživatel nikdy nezanechá stopu k dohledání autora pro obviňování či činění odpovědným; nejde o běžnou notice povinnost. Celý text nemá výslovný patentový grant ani patentové ukončení."
+    }
+  ]
+}

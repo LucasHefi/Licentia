@@ -1,0 +1,20 @@
+{
+  "id": "hdparm",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.6",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:fcffec11df625d554212db4e427464dd126fd7de049e553a461fa9c53629cb15"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Jméno autora a copyright zachovejte ve zdrojích beze změny. Užití, úpravy a šíření zdrojové i binární podoby jsou volně povoleny. Text neukládá samostatné oznámení pro binární kopie ani poskytování zdrojů a neobsahuje vyloučení záruk nebo odpovědnosti.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/hdparm.html",
+      "note": "Dřívější individuální revize 2026-09-09.6; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

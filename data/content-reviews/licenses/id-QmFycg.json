@@ -1,0 +1,29 @@
+{
+  "id": "Barr",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:52da84c33db2c8607a3d33b02b999d877e8d04c0f11d273446118a0ba4222f1f"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Licence dovoluje balíček maker komutativních diagramů neomezeně používat a nezměněný šířit i komerčně. Upravený balíček však musí dostat jiné jméno; zaslání bezplatné kopie autorovi je pouze přání. Průvodce jej zatím nezařazuje kvůli povinnému přejmenování a grant neřeší samostatná práva k podkladovému Xy-pic.",
+  "blockersCs": [
+    "Změněný balíček se musí přejmenovat; před zařazením je potřeba model povinného přejmenování upraveného díla, nikoli pouhé označení změn nebo obecné trademark omezení."
+  ],
+  "analysis": {
+    "subjectCs": "Licence Michaela Barra se vztahuje na balíček maker komutativních diagramů vystavěný nad Xy-pic.",
+    "grantCs": "Užití je neomezené a distribuce nezměněného balíčku je dovolena komerčně i nekomerčně včetně začlenění do komerčního softwaru.",
+    "conditionsCs": "Změněný balíček musí být přejmenován. Bezplatná kopie komerčního balíčku pro autora je pouze přání „would appreciate“.",
+    "limitationsCs": "Nejsou záruky užitečnosti; zmínky o testování s LaTeX a Plain TeX nejsou grantem práv k Xy-pic a netvoří technickou podmínku použití.",
+    "compatibilityCs": "Jiná licence ani verze není nabízena; grant tohoto balíčku neřeší samostatné podmínky Xy-pic."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Barr.html",
+      "note": "Individuálně přečten celý připnutý text; Změněný balíček musí být přejmenován. Bezplatná kopie komerčního balíčku pro autora je pouze přání „would appreciate“. Celý odstavec nemá výslovný patentový grant ani ukončení při patentovém sporu."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "NCSA",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:2dbef3cb345a2b9ea067f4c5015f8cbef56da36c608b5ada52d45a84997f0496"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Zachovejte copyright, podmínky a disclaimer ve zdrojích nebo materiálech k binární distribuci. Jména autorů a institucí nelze bez souhlasu použít k propagaci. Poskytnutí zdrojového kódu není podmínkou.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/NCSA.html",
+      "note": "Dřívější individuální revize 2026-09-09; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

@@ -8,94 +8,104 @@
     "contentHash": "sha256:46d4ae388784c9132c6d530ac469f54cee27c5216a9c6764ba3c8117c93eae93"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
+    "family": "nonstandard",
     "copyleftScope": "unknown",
     "permissions": [
       "commercial-use",
+      "conditional-relicensing",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "include-copyright"
-    ],
-    "triggers": [
+      "include-copyright",
+      "include-notice",
+      "mark-modifications",
+      "provide-corresponding-source",
       "unknown"
     ],
+    "triggers": [
+      "distribution",
+      "modification",
+      "use"
+    ],
     "restrictions": [
+      "additional-terms",
       "liability",
+      "unknown",
       "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LPPL-1.3c.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LPPL-1.3c.json#text; §§4–7 rozdílné pravomoci správce/ostatních a §10 přelicencování s pouze§6; nonstandard, nikoli běžný souborový copyleft; https://spdx.org/licenses/LPPL-1.3c.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LPPL-1.3c.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LPPL-1.3c.json#text; §§6(d),7,10 a výjimka nenahrazujících derivátů kombinují různé rozsahy a alternativy; žádná pevná file/library/whole-work hranice, unknown; https://spdx.org/licenses/LPPL-1.3c.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/LPPL-1.3c.json#text; §§1–7 běh, komerční kopie, soukromé změny a podmíněné šíření; §10 explicitní conditional-relicensing; patenty neuvedeny; https://spdx.org/licenses/LPPL-1.3c.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/LPPL-1.3c.json#text; §6 notices/změny a originál NEBO informace, §7 Derived Work všem příjemcům kompilace; role, instalační a maintenance podmínky vyžadují unknown; https://spdx.org/licenses/LPPL-1.3c.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LPPL-1.3c.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LPPL-1.3c.json#text; §§2–7 distribuce/modifikace, §6(a) interaktivní identita při použití náhrady s Base Interpreter; běh sám jinak§1 volný; https://spdx.org/licenses/LPPL-1.3c.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/LPPL-1.3c.json#text; §6(c) žádná nepravdivá podpora, §10 zachování podmínek§6, warranty section výluky; instalační/identitní/maintenance omezení mimo enumy; https://spdx.org/licenses/LPPL-1.3c.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LPPL-1.3c.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LPPL-1.3c.json#text; Úplný grant §§1–12 ani Maintenance neobsahuje výslovné patenty či patentovou odvetu; https://spdx.org/licenses/LPPL-1.3c.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/LPPL-1.3c.json#text; §6 komponentové změnové a interaktivní notices, dokumentace§10(b) a aplikační copyrighty tvoří materiální břemeno, s přesnými výjimkami; https://spdx.org/licenses/LPPL-1.3c.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LPPL-1.3c.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LPPL-1.3c.json#text; Individuální přečtení celého připnutého textu dne 2026-09-10. LPPL 1.3c rozlišuje správce Current Maintainer od ostatních autorů změn. Ostatní mohou soukromě měnit a kompilovat; při šíření nahrazující odvozeniny musí zachovat rozpoznatelnou interaktivní identitu, popsat změny, neimplikovat cizí podporu a dodat originál nebo údaje k jeho získání. Příjemci kompilovaného derivátu dostávají Derived Work. Jiná licence smí zachovat jen podmínky§6; pro odvozeniny nezamýšlené jako náhrady odpadají§6b/6d. Režim správce, převzetí údržby a tyto alternativy dosud brání přesnému zařazení copyleftu. Blokace: §§3–7 a Maintenance rozlišují správce, přesnou instalovatelnost originální kompilace a interaktivní identitu náhrad s Base Interpreter; převzetí údržby vyžaduje dohledání osob, dotazy a komunitní oznámení s několika lhůtami. Model potřebuje tuto podmíněnou strukturu rolí, identifikace a převzetí, nikoli jen mark-modifications. §6(d) dovoluje originální celek NEBO informace k získání, §7 dodává Derived Work příjemcům kompilace, ale §10 dovoluje jinou licenci zachovávající jen§6. Oddíl Derived Works That Are Not Replacements navíc vypíná§6b/6d mimo náhradní účel. K určení scope je nutné modelovat tyto konkrétní cesty; nelze je zploštit na file/library/whole-work copyleft ani univerzální povinnost původních i nových zdrojů.; https://spdx.org/licenses/LPPL-1.3c.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

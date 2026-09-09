@@ -9,91 +9,96 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "include-copyright"
+      "include-copyright",
+      "include-license-text",
+      "include-use-acknowledgment"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "use"
     ],
     "restrictions": [
-      "unknown"
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/GD.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GD.json#text; Hlavní grant copy/distribute/modify any context s credits; JPEG odstavec odkazuje další příspěvkové podmínky.; https://spdx.org/licenses/GD.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/GD.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GD.json#text; Odstavec ownership explicitly unaffected; derived works/all programs using library mají credits, nikoli stejnou licenci.; https://spdx.org/licenses/GD.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/GD.json#text; Hlavní grant včetně commercial application a any context; žádné výslovné patentové právo.; https://spdx.org/licenses/GD.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/GD.json#text; Permission/derived works odstavce: celé notice a credits v user-accessible documentation i programů využívajících knihovnu; README-JPEG odkaz říká for more information, nepřipojuje normativně další podmínky k vlastnímu grantu.; https://spdx.org/licenses/GD.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/GD.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GD.json#text; Použití knihovny programem spouští credits; copy/distribute zachovává notice; nikoli pouze síťové či reklamní použití.; https://spdx.org/licenses/GD.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/GD.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GD.json#text; AS IS odstavec vylučuje výslovné a odvozené záruky včetně prodejnosti/vhodnosti; samostatná výluka odpovědnosti ve vlastním GD grantu není. Jiná JPEG licence z konkrétního balíku se nepřipisuje celému tomuto grantu.; https://spdx.org/licenses/GD.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/GD.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GD.json#text; Celý připnutý GD grant neobsahuje výslovnou patentovou licenci ani patentové ukončení.; https://spdx.org/licenses/GD.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/GD.json#text; Povinné veřejně uživatelské credits pro využívající programy jsou materiální; seznam příspěvků se nezkracuje na jediného autora.; https://spdx.org/licenses/GD.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/GD.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GD.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. GD lze kopírovat, upravovat a šířit včetně komerčních aplikací při uvedení úplného notice v dokumentaci přístupné uživatelům. Credits se vyžadují i od všech programů používajících knihovnu; odkaz README-JPEG.TXT poskytuje další informace o JPEG příspěvcích a nenahrazuje vlastní GD grant.; https://spdx.org/licenses/GD.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

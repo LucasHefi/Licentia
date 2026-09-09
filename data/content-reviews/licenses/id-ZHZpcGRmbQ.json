@@ -1,0 +1,29 @@
+{
+  "id": "dvipdfm",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:69e45a9708425f2b8aafd1ed28683212da4dcfaf9c7ae62412eea174d92f8ee5"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Upravený soubor má být šířen pod jiným názvem a musí být přiložena úplná nezměněná původní distribuce. Krátký text neurčuje obecný rozsah užívacích práv.",
+  "blockersCs": [
+    "Druhá věta vyžaduje kompletní nezměněnou původní distribuci při šíření změněných souborů; slovník nemá odpovídající povinnost ani podmíněné přejmenování. Doplnit model a ověřit širší grant v původním balíku, protože připnutý text dovoluje výslovně jen šíření upravené verze."
+  ],
+  "analysis": {
+    "subjectCs": "Dvě věty upravují distribuci modifikovaných souborů dvipdfm a přiložení celé původní sady.",
+    "grantCs": "První věta výslovně dovoluje distribuci upraveného souboru; samostatný obecný grant užití či prodeje původního balíku a patentová licence chybějí.",
+    "conditionsCs": "První věta žádá jiný název upraveného souboru; druhá závazně vyžaduje šířit změněné soubory společně s úplnou nezměněnou distribucí původních souborů. Nejde automaticky o zpřístupnění vlastních zdrojů ani o běžné oznámení.",
+    "limitationsCs": "Text obsahuje podmínky názvu a úplné původní distribuce, nikoli záruky, odpovědnost nebo patentovou odvetu.",
+    "compatibilityCs": "Text nevyžaduje stejnou licenci pro celou odvozeninu a neurčuje alternativní licenční cestu."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/dvipdfm.html",
+      "note": "Individuální revize celého připnutého textu; Dvě věty upravují distribuci modifikovaných souborů dvipdfm a přiložení celé původní sady."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "gtkbook",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:84e1cd4d1c9522e6c6cfee5346e018cecf5d41810521471e08e2126f44a213c0"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Kód lze užít pro jakýkoli účel bez záruky. Copyright musí doprovázet pouze opětovné publikování nebo šíření kódu v původní podobě, papírově i elektronicky.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Grant se týká kódu s copyrightem Syda Logana 2005, nikoli automaticky celé knihy.",
+    "grantCs": "Free to use this code for any purpose dává neomezené účelové užití; distribuce je výslovně předpokládána. Patentový grant a samostatná sublicence chybějí.",
+    "conditionsCs": "If republished or redistributed in its original form omezuje povinný copyright na šíření původní podoby, v tištěné i elektronické formě. Nejde o bezpodmínečnou povinnost všech modifikovaných verzí; zdroje ani stejná licence se nevyžadují.",
+    "limitationsCs": "Věta This code is distributed without warranty odmítá záruku; celý text neobsahuje samostatnou odpovědnostní či známkovou doložku.",
+    "compatibilityCs": "Žádná konkrétní licence, verze ani alternativní cesta není určena."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/gtkbook.html",
+      "note": "Individuální revize celého připnutého textu; Grant se týká kódu s copyrightem Syda Logana 2005, nikoli automaticky celé knihy."
+    }
+  ]
+}

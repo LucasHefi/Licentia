@@ -1,0 +1,29 @@
+{
+  "id": "softSurfer",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:6092c4a4daff1b35f856f6a429dfdc01ff616c904095f8328318802449ef2585"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Kód lze pro jakýkoli účel užívat a měnit s copyrightem, bez záruky a odpovědnosti. Uživatelé musí ověřit jeho správnost pro vlastní aplikaci.",
+  "blockersCs": [
+    "Users ... must verify correctness ukládá ověřit správnost pro aplikaci; model tuto ověřovací povinnost nemá. Navíc grant used and modified nevymezuje redistribuci; doplnit povinnost a ověřit distribuční rozsah."
+  ],
+  "analysis": {
+    "subjectCs": "Text se vztahuje na kód softSurfer s copyrightem 2001.",
+    "grantCs": "Freely used and modified for any purpose dovoluje libovolné účely a úpravy, bez komerčního zákazu; patentový grant ani samostatná sublicence chybějí.",
+    "conditionsCs": "Providing that vyžaduje přiložit copyright při užití i úpravách. Závěrečná věta Users ... must verify correctness závazně ukládá ověřit správnost pro aplikaci; nejde o zdroje nebo prosté oznámení. Povinnost při samotném užití nyní zachycuje trigger use ve slovníku 1.4.0.",
+    "limitationsCs": "SoftSurfer nedává záruku a nenese odpovědnost za skutečné ani domnělé škody z užití; požadavek ověření je navíc konkrétní uživatelská povinnost.",
+    "compatibilityCs": "Text neobsahuje jinou licenční cestu, volbu verze či explicitní kompatibilitu."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/softSurfer.html",
+      "note": "Individuální revize celého připnutého textu; Text se vztahuje na kód softSurfer s copyrightem 2001."
+    }
+  ]
+}

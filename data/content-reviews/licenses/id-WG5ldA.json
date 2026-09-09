@@ -1,0 +1,20 @@
+{
+  "id": "Xnet",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.3",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:c6f395f26e85eaf79c2746f1c3c083b69eda64bd155f0a339a8601c9fe1dc55e"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Zachovejte copyright a svolovací oznámení v kopiích či podstatných částech. Licence výslovně stanoví právo Kalifornie a USA; průvodce vhodnost jurisdikce neposuzuje. Patentový grant není uveden.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Xnet.html",
+      "note": "Dřívější individuální revize 2026-09-09.3; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

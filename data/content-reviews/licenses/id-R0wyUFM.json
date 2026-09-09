@@ -1,0 +1,29 @@
+{
+  "id": "GL2PS",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:d92a451220d9d52998edd3d4fe4e9712955f06a791fc7e64602d276a1c02f1ab"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Licence dovoluje GL2PS používat, kopírovat, měnit a distribuovat s poplatkem i bez něj při zachování copyrightu a licenčního svolení. Distribuované změny musejí mít stejné podmínky a zdroj musí být přiložen k binárce nebo zpřístupněn elektronicky. Průvodce ji zatím nezařazuje, protože text neurčuje přesnou hranici této povinnosti vůči kombinovanému dílu.",
+  "blockersCs": [
+    "Body 1–2 vyžadují stejnou licenci a zdroje změn, ale nevymezují jejich hranici vůči kombinovanému dílu; před doporučením je třeba doložit recipročně dotčený rozsah, který slovník nerozlišuje jako obecné modifications-only."
+  ],
+  "analysis": {
+    "subjectCs": "GL2PS License v2 z listopadu 2003 pokrývá software a jeho dokumentaci.",
+    "grantCs": "Úvod dovoluje užití, kopírování a distribuci s poplatkem i bez; následující grant výslovně dovoluje změny a šíření změněných verzí.",
+    "conditionsCs": "Copyright je ve všech kopiích a copyright se svolením v podpůrné dokumentaci. Body 1–2 vyžadují stejné podmínky změn a zpřístupnění zdroje distribuovaných změn na stejném médiu jako executable nebo běžně přijímaným elektronickým přenosem.",
+    "limitationsCs": "Závěr vylučuje výslovné i předpokládané záruky AS IS; odpovědnostní a známkové doložky text nemá.",
+    "compatibilityCs": "Zpřístupnění zdroje má dvě alternativní cesty; text nenabízí jiné licence nebo volbu verze."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/GL2PS.html",
+      "note": "Individuálně přečten celý připnutý text; Copyright je ve všech kopiích a copyright se svolením v podpůrné dokumentaci. Body 1–2 vyžadují stejné podmínky změn a zpřístupnění zdroje distribuovaných změn na stejném médiu jako executable nebo běžně přijímaným elektronickým přenosem. Celý grant a body 1–2 neobsahují výslovný patentový grant ani patentové ukončení."
+    }
+  ]
+}

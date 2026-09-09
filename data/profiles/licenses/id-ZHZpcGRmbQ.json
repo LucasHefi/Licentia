@@ -8,92 +8,94 @@
     "contentHash": "sha256:69e45a9708425f2b8aafd1ed28683212da4dcfaf9c7ae62412eea174d92f8ee5"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "none",
     "permissions": [
       "distribution",
-      "modifications"
+      "modifications",
+      "unknown"
     ],
     "obligations": [
       "unknown"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification"
     ],
     "restrictions": [
-      "unknown"
+      "additional-terms"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/dvipdfm.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/dvipdfm.json#text; Dvě věty nepředepisují stejnou licenci odvozeniny; neobvyklé povinné přiložení originálu je nonstandard bez doloženého copyleftu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/dvipdfm.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/dvipdfm.json#text; Dvě věty nepředepisují stejnou licenci odvozeniny; neobvyklé povinné přiložení originálu je nonstandard bez doloženého copyleftu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/dvipdfm.json#text; První věta výslovně dovoluje distribuci upraveného souboru; samostatný obecný grant užití či prodeje původního balíku a patentová licence chybějí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/dvipdfm.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/dvipdfm.json#text; První věta žádá jiný název upraveného souboru; druhá závazně vyžaduje šířit změněné soubory společně s úplnou nezměněnou distribucí původních souborů. Nejde automaticky o zpřístupnění vlastních zdrojů ani o běžné oznámení.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/dvipdfm.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/dvipdfm.json#text; První věta žádá jiný název upraveného souboru; druhá závazně vyžaduje šířit změněné soubory společně s úplnou nezměněnou distribucí původních souborů. Nejde automaticky o zpřístupnění vlastních zdrojů ani o běžné oznámení.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/dvipdfm.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/dvipdfm.json#text; Text obsahuje podmínky názvu a úplné původní distribuce, nikoli záruky, odpovědnost nebo patentovou odvetu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/dvipdfm.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/dvipdfm.json#text; První věta výslovně dovoluje distribuci upraveného souboru; samostatný obecný grant užití či prodeje původního balíku a patentová licence chybějí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/dvipdfm.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/dvipdfm.json#text; První věta žádá jiný název upraveného souboru; druhá závazně vyžaduje šířit změněné soubory společně s úplnou nezměněnou distribucí původních souborů. Nejde automaticky o zpřístupnění vlastních zdrojů ani o běžné oznámení.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/dvipdfm.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/dvipdfm.json#text; Individuálně přečten celý připnutý text. Dvě věty upravují distribuci modifikovaných souborů dvipdfm a přiložení celé původní sady. Upravený soubor má být šířen pod jiným názvem a musí být přiložena úplná nezměněná původní distribuce. Krátký text neurčuje obecný rozsah užívacích práv. Druhá věta vyžaduje kompletní nezměněnou původní distribuci při šíření změněných souborů; slovník nemá odpovídající povinnost ani podmíněné přejmenování. Doplnit model a ověřit širší grant v původním balíku, protože připnutý text dovoluje výslovně jen šíření upravené verze.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

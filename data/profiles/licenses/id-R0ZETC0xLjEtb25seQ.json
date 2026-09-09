@@ -8,95 +8,104 @@
     "contentHash": "sha256:2edf05a10afd241a8273565c9aa85e34990d07ce467085a54dc81a9041b2eaa5"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
     "family": "strong-copyleft",
     "copyleftScope": "whole-work",
     "permissions": [
+      "commercial-use",
       "distribution",
       "modifications",
-      "sublicensing"
+      "private-use"
     ],
     "obligations": [
+      "disclose-source",
       "include-copyright",
       "include-license-text",
-      "mark-modifications"
+      "include-notice",
+      "mark-modifications",
+      "same-license",
+      "unknown"
     ],
     "triggers": [
-      "unknown"
+      "combination",
+      "distribution",
+      "modification"
     ],
     "restrictions": [
+      "additional-terms",
+      "trademark",
       "unknown"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.whole-work-copyleft",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.copyleft-family",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GFDL-1.1-only.json#text; §4 celé upravené dokumenty přesně pod GFDL; §§5,7 rozlišují odvozenou kombinaci a podmíněný nezávislý agregát; https://spdx.org/licenses/GFDL-1.1-only.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GFDL-1.1-only.json#text; §1 Modified Version obsahuje dokument či část, §4 vyžaduje stejnou licenci celku; ne souborová hranice software; https://spdx.org/licenses/GFDL-1.1-only.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GFDL-1.1-only.json#text; §§2,4 komerční/soukromé kopie a změny s invariantními výjimkami§8; neobsahuje patentový grant; https://spdx.org/licenses/GFDL-1.1-only.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/GFDL-1.1-only.json#text; §§2–4 licence/copyright/notices/historie/same-license a Transparent>100; obsahové neměnnosti, názvy a odstranění Endorsements vyžadují unknown; https://spdx.org/licenses/GFDL-1.1-only.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/GFDL-1.1-only.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GFDL-1.1-only.json#text; §§2–3 šíření s počty kopií, §4 modifikace při šíření, §5 kombinace; nikoli prosté provozování síťového softwaru; https://spdx.org/licenses/GFDL-1.1-only.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/GFDL-1.1-only.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GFDL-1.1-only.json#text; §2 bez přidaných podmínek/technických překážek; §4 reklamní užití jmen neuděleno, §§4,7 zvláštní obsahové/agregační restrikce; zárukové výluky chybí; https://spdx.org/licenses/GFDL-1.1-only.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/GFDL-1.1-only.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GFDL-1.1-only.json#text; Úplné §§1–10 nemají výslovnou patentovou licenci, výluku patentů ani odvetný patentový trigger; https://spdx.org/licenses/GFDL-1.1-only.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/GFDL-1.1-only.json#text; §§3–5 rozsáhlá titulní, historická a obálková pravidla i zachování struktury oddílů jsou materiální notice břemeno; https://spdx.org/licenses/GFDL-1.1-only.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/GFDL-1.1-only.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GFDL-1.1-only.json#text; Individuální přečtení celého připnutého textu dne 2026-09-10. GFDL 1.1-only dovoluje komerční kopírování a změny dokumentů s copyleftem celé upravené verze. Vyžaduje licenci, copyrighty, historii, údaje titulní strany a zachování případných invariantních oddílů a obálkových textů určených v notice. Při více než100 Opaque kopiích musí být zajištěna Transparent upravitelná kopie u každé nebo na veřejném síťovém místě. Samotné only neuděluje volbu pozdější verze. Licence neobsahuje patentový grant ani vlastní obecnou výluku záruk či odpovědnosti. Blokace: §§3–5,8 vyžadují zvláštní název upravené verze, údaje titulní strany, zachování tónu/podstaty poděkování a věnování, případných invariantních oddílů a textů obálek a odstranění starých Endorsements. Je třeba dokumentový model těchto povinností a evidence konkrétního notice o invariants/covertexts; obecné include-notice je nepokrývá. §2 zakazuje technické prostředky bránící čtení či dalšímu kopírování a §7 podmiňuje výjimku nezávislého agregátu absencí nároku na kompilační copyright. Před způsobilostí je nutné zachytit tyto konkrétní technologické a agregační podmínky. Preambule/dodatek vymezují dokumentovou licenci a doporučují programové příklady paralelně softwarově licencovat. Pro nový software je nutná oddělená dokumentová větev, která neztotožní prahovou povinnost Transparent dokumentu se softwarovým zdrojovým copyleftem.; https://spdx.org/licenses/GFDL-1.1-only.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

@@ -1,0 +1,27 @@
+{
+  "id": "X11-no-permit-persons",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:cd497d12145ded0179a2d250710fee499cdf5684fdf3cd6884e7df29384c7ded"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Licence dovoluje software a dokumentaci používat, kopírovat, měnit, slučovat, publikovat, distribuovat, sublicencovat a prodávat. Copyright a svolení musejí zůstat ve všech kopiích nebo podstatných částech a jméno DEC nelze mimo oznámení bez písemného souhlasu používat k propagaci. Software je poskytován bez záruk s omezením odpovědnosti.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "DEC grant z let 1991 a 1997 pokrývá software a dokumentační soubory.",
+    "grantCs": "Úvod dovoluje bez omezení užití, kopírování, změny, slučování, publikaci, distribuci, sublicence a prodej; výslovná věta „permit persons“ v této variantě není.",
+    "conditionsCs": "Copyright a svolení musejí být ve všech kopiích nebo podstatných částech softwaru.",
+    "limitationsCs": "AS IS vylučuje záruky včetně neporušování práv a odpovědnost DEC včetně následných a nahodilých škod. Mimo toto oznámení se jméno DEC nesmí bez předchozího písemného souhlasu užít k reklamě či propagaci prodeje, užití nebo jiného nakládání.",
+    "compatibilityCs": "Žádná alternativní licence ani volba verze není nabízena."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/X11-no-permit-persons.html",
+      "note": "Individuálně přečten celý připnutý text; Copyright a svolení musejí být ve všech kopiích nebo podstatných částech softwaru. Celý text nemá patentový grant nebo patentové ukončení; výluka noninfringement je pouze záruční."
+    }
+  ]
+}

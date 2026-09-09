@@ -8,91 +8,90 @@
     "contentHash": "sha256:b7f0f46b5a95c9a48fb2fd5b5ebf927cc4b77f3daa3a90f55b050e18f72da5bb"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "private-use",
+      "unknown"
     ],
     "obligations": [
-      "unknown"
+      "include-copyright"
     ],
     "triggers": [
-      "unknown"
+      "use"
     ],
-    "restrictions": [
-      "unknown"
-    ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "restrictions": [],
+    "patentPosition": "none-stated",
+    "noticeBurden": "minimal"
   },
   "evidence": [
     {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Kastrup.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Kastrup.json#text; Any use nevyžaduje stejnou licenci ani vydání zdrojů; jde o permisivní grant bez copyleftu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Kastrup.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Kastrup.json#text; Any use nevyžaduje stejnou licenci ani vydání zdrojů; jde o permisivní grant bez copyleftu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Kastrup.json#text; Jediná věta Any use výslovně dovoluje libovolné užívání kódu při zachování copyrightu; zda tím autor uděluje samostatná práva změn, redistribuce a prodeje není vymezeno. Výslovný patentový grant a sublicence chybějí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Kastrup.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Kastrup.json#text; Any use podmiňuje každé užití zachováním copyrightu přímo v kódu. Povinnost při samotném užití nyní zachycuje trigger use ve slovníku 1.4.0.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Kastrup.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Kastrup.json#text; Any use podmiňuje každé užití zachováním copyrightu přímo v kódu. Povinnost při samotném užití nyní zachycuje trigger use ve slovníku 1.4.0.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Kastrup.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Kastrup.json#text; Celý text obsahuje pouze copyright a podmínku jeho zachování, nikoli odmítnutí záruk či odpovědnosti, ochranné známky nebo terminaci.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Kastrup.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Kastrup.json#text; Jediná věta Any use výslovně dovoluje libovolné užívání kódu při zachování copyrightu; zda tím autor uděluje samostatná práva změn, redistribuce a prodeje není vymezeno. Výslovný patentový grant a sublicence chybějí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Kastrup.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Kastrup.json#text; Any use podmiňuje každé užití zachováním copyrightu přímo v kódu. Povinnost při samotném užití nyní zachycuje trigger use ve slovníku 1.4.0.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Kastrup.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Kastrup.json#text; Individuální plná revize aktualizována po doplnění use ve slovníku 1.4.0. Jakékoli užití kódu je dovoleno, pokud v něm zůstane copyright Davida Kastrupa. Podmínka se vztahuje i na užití bez distribuce. Jediná věta dovoluje any use kódu, ale výslovně neřeší redistribuci, změny ani prodej; nelze automaticky přiznat celý základní softwarový grant. Ověřit původní kontext nebo autorův výklad těchto práv před doporučením.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

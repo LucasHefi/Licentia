@@ -1,0 +1,29 @@
+{
+  "id": "IJG",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:010b4637c72c8e269d68263a65b3a16398fa96ba320365c33e3fdef084ee4ca2"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Licence dovoluje software používat, měnit a distribuovat včetně komerčních produktů při zachování příslušných oznámení, popisu změn a předepsaných uznání. Komerční prodejce však musí převzít všechny záruční a odpovědnostní nároky, proto ji průvodce zatím nezařazuje. Pomocné soubory, například ansi2knr.c, mají samostatné licence a při auditu celého balíku vyžadují vlastní kontrolu.",
+  "blockersCs": [
+    "Komerční prodejce musí převzít všechny záruční/odpovědnostní nároky; před doporučením je nutný model této povinnosti. Výslovně samostatně licencovaný ansi2knr.c a pomocné skripty nejsou překážkou vlastního IJG grantu, ale vyžadují zvláštní inventuru při auditu celého balíku."
+  ],
+  "analysis": {
+    "subjectCs": "Plné IJG znění licencuje Laneův software 1991–1998 a zvlášť popisuje ansi2knr.c, konfiguraci a historicky odstraněné patentově citlivé funkce.",
+    "grantCs": "Grant dovoluje užití, kopie, změny a distribuci i částí pro libovolný účel bez poplatku; úvodní bod 3 při užití v programu vyžaduje uznání IJG v dokumentaci.",
+    "conditionsCs": "Legalese 1: při libovolných zdrojích přiložit README s nezměněným copyrightem/no-warranty a popsat změny v dokumentaci; 2: pouze executable vyžaduje předepsané IJG uznání; 3: uživatel přijímá plnou odpovědnost. Prodejce komerčního produktu musí převzít všechny warranty/liability claims. Závěr vyžaduje prohlášení o CompuServe GIF copyrightu/service mark.",
+    "limitationsCs": "AS IS vylučuje záruky/odpovědnost; jména autorů/firem nesmějí do reklamy, označení pouze Independent JPEG Group’s software. ansi2knr.c je pod vlastními FSF podmínkami a zdrojovou povinností, není potřebný do generovaného programu; pomocné Autoconf/MIT skripty mají vlastní copyright.",
+    "compatibilityCs": "Podmínky se výslovně vztahují i na odvozené IJG programy. Historické odstavce o odstranění arithmetic coding/LZW nejsou závěrem o dnešní platnosti patentů; přesné podmínky ansi2knr.c odkazují do jeho souboru."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/IJG.html",
+      "note": "Individuálně přečten celý připnutý text; Legalese 1: při libovolných zdrojích přiložit README s nezměněným copyrightem/no-warranty a popsat změny v dokumentaci; 2: pouze executable vyžaduje předepsané IJG uznání; 3: uživatel přijímá plnou odpovědnost. Prodejce komerčního produktu musí převzít všechny warranty/liability claims. Závěr vyžaduje prohlášení o CompuServe GIF copyrightu/service mark. IJG výslovný patentový grant nemá; historické tvrzení o známých patentech/odstraněných funkcích neuděluje patentová práva ani neověřuje jejich současný stav."
+    }
+  ]
+}

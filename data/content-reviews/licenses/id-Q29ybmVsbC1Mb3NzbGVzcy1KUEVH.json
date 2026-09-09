@@ -1,0 +1,27 @@
+{
+  "id": "Cornell-Lossless-JPEG",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:0f76ab97c4c29d84a5a302622ce1be2a5efd434a796423fcc5bab4c4f047f0d3"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Software i dokumentaci lze bez poplatku používat, kopírovat, upravovat a šířit pro libovolný účel. Kopie softwaru zachovají copyright a oba odstavce výluk; Cornell neposkytuje záruky, odpovědnost ani závazek podpory.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Software a dokumentace Cornell University/Kongji Huang 1993.",
+    "grantCs": "Výslovně use/copy/modify/distribute for any purpose without fee or written agreement; bez patentového grantu.",
+    "conditionsCs": "Ve všech kopiích softwaru musí být copyright a následující dva odstavce, tedy odpovědnostní a záruková výluka; samotný grant jako třetí text se výslovně nepožaduje.",
+    "limitationsCs": "Vyloučení přímých i nepřímých škod; AS IS, bez záruk prodejnosti/vhodnosti a bez závazku údržby, podpory či aktualizací.",
+    "compatibilityCs": "Bez reciprocity nebo jiné licence/verze; podmínka nezavazuje dodat zdroje k binárním kopiím."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Cornell-Lossless-JPEG.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Grant software and documentation for any purpose pod notice podmínkou."
+    }
+  ]
+}

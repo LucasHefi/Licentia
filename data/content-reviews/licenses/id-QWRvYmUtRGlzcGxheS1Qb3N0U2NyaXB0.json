@@ -1,0 +1,29 @@
+{
+  "id": "Adobe-Display-PostScript",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:78d052b41e4d74b536241d7013d98d13ea4269794d59e72f4f62967c9100a97d"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Software lze používat, měnit, šířit a podlicencovat se zachováním copyrightu a dokumentačního povolení. Jméno Adobe v propagaci vyžaduje souhlas; odkaz na Display PostScript smí říkat jen spolupráci se systémem a vždy musí přiznat Adobe vlastnictví známky.",
+  "blockersCs": [
+    "Podmínka vzniká při jakékoli zmínce známky Display PostScript, omezuje obsah tvrzení na spolupráci se systémem a vyžaduje známkovou atribuci. Je třeba modelovat trigger odkazu na známku, nikoli jej zaměnit za každé užití softwaru či reklamní poděkování."
+  ],
+  "analysis": {
+    "subjectCs": "Software a dokumentace Adobe 1988/1991; samostatná pravidla pro známku Display PostScript.",
+    "grantCs": "Use/copy/modify/distribute/sublicense any purpose without fee; žádná licence k Adobe známkám ani výslovný patentový grant.",
+    "conditionsCs": "Copyright ve všech kopiích; copyright/permission v dokumentaci. Při použití označení Display PostScript tvrdit pouze spolupráci se systémem a pokaždé uvést vlastnictví Adobe.",
+    "limitationsCs": "Adobe jméno v reklamě/publicitě distribuce jen s předchozím písemným svolením. AS IS, výluky záruk/noninfringement/škod; Adobe nebude školit ani podporovat.",
+    "compatibilityCs": "Bez jiné licence/verze či reciprocity; popis interoperability nenahrazuje známkovou licenci."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Adobe-Display-PostScript.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Široký grant doplněn specifickým obsahem a atribucí každé zmínky Display PostScript."
+    }
+  ]
+}

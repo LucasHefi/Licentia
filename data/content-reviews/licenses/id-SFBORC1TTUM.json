@@ -1,0 +1,20 @@
+{
+  "id": "HPND-SMC",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.4",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:937baaf4f9d878ed7b66bcd7a38d976926e329922ab4d82fa70ae6cdb4045bb5"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Zachovejte uvedené copyrighty ve všech kopiích a copyrighty i svolovací oznámení v podpůrné dokumentaci. Jména Automatrix, Bioreason a Mojam Media nepoužívejte bez písemného souhlasu v reklamě k distribuci. Tento text neobsahuje vyloučení záruk ani omezení odpovědnosti.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/HPND-SMC.html",
+      "note": "Dřívější individuální revize 2026-09-09.4; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

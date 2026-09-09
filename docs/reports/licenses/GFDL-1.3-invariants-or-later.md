@@ -1,0 +1,62 @@
+# GFDL-1.3-invariants-or-later — obsahová revize
+
+GNU Free Documentation License v1.3 or later - invariants
+
+Revize: **2026-09-09** · pravidlo **2026-09-09.10**.
+
+Výsledek: **zpracována, nezařazena do průvodce**.
+
+Tato varianta dovoluje i komerční šíření a úpravy dokumentace pod GFDL 1.3 nebo pozdější vydanou verzí a počítá s invariantními oddíly nebo obálkovými texty. Nad 100 netransparentních kopií vyžaduje upravitelnou kopii nebo veřejné stažení s rozumně zajištěnou dostupností nejméně rok po poslední distribuci vydání. Předepisuje také autory, titul, historii, zachování neměnných částí a poděkování; zvláštní historická cesta k CC BY-SA již vypršela. Průvodce potřebuje dokumentový model a konkrétní seznam invariantů a obálkových textů.
+
+## Předmět a rozsah
+
+GNU FDL 1.3, varianta s neměnnými oddíly nebo obálkovými texty a volbou pozdější verze, je licence dokumentace v libovolném médiu; dodatek výslovně doporučuje programové ukázky licencovat paralelně softwarovou licencí.
+
+## Udělená práva
+
+§1–4 povolují bezplatně celosvětově kopírování, komerční distribuci, půjčování, vystavování i odvozené dokumenty. Invariant Sections mohou být jen vedlejší oddíly o vztahu autorů k tématu, nikoli vlastní výklad tématu; přesto je nelze měnit. Patentová práva udělena nejsou.
+
+## Podmínky a spouštěče
+
+§2 vyžaduje copyright, licenční oznámení a úplnou licenci ve všech kopiích. Při více než 100 Opaque kopiích §3 vyžaduje s každou Transparent kopii nebo uvedené veřejné síťové stažení úplného editovatelného dokumentu; u druhé cesty přiměřené kroky k dostupnosti nejméně rok po poslední distribuci edice. Více než 100 výtisků při předepsaných Cover Texts vyžaduje jejich obálkové umístění, vydavatele a stejně výrazný celý název. §4 požaduje odlišný název leda s povolením, autory změn a nejméně pět hlavních původních autorů leda prominutí, vydavatele, historii, oznámení změn, původní odkazy s čtyřletou výjimkou, zachování poděkování, věnování, disclaimerů a doslovných invariantů. Staré Endorsements se odstraní, nové smějí vyjadřovat jen podporu upravené verze.
+
+## Omezení, výjimky a ukončení
+
+§2 zakazuje technické překážky čtení či kopírování a další podmínky. §4 nedává jména pro reklamu či podporu; invariantní text lze přeložit navíc, nahradit jen s výslovným svolením (§8). Dodané Warranty Disclaimers jsou začleněny pouze v účinku výluky záruk, obecné AS IS tento text sám nestanoví. §9 obnovuje práva po ukončení porušování prozatímně, trvale při neoznámení do 60 dnů, nebo při prvním oznámení a nápravě do 30 dnů; downstream práva nezanikají.
+
+## Verze a kombinování
+
+§4–8 stanoví stejnou licenci pro upravený či spojený dokument, samostatná díla v agregátu jsou vyňata; je-li dokument menší než polovina agregátu, povinné obálkové texty mohou obklopovat jen jej. Identifikátor dovoluje §10 volbu 1.3 či pozdější vydané verze; veřejné schválení určeným proxy platí trvale. §11 byla jednorázová cesta způsobilých veřejně editovatelných MMC na CC BY-SA před 1.8.2009, pro externě vložené části bez invariantů/cover textů a vložené před 1.11.2008; nejde o dnešní obecné přelicencování.
+
+## Překážky a navazující práce
+
+- Dokumentová licence vyžaduje podle §3–8 neměnné oddíly, obálkové texty, pravidla názvů, autorů, historie a Transparent kopií při konkrétním počtu kusů; obecný softwarový model neumí tyto povinnosti ani invariantní výjimky. Je třeba model dokumentů a zjistit konkrétní seznamy invariantů/obálek z oznámení daného díla.
+
+## Metadata a jejich doložení
+
+| Pole | Hodnota | Doložení znění |
+|---|---|---|
+| family | "strong-copyleft" | public/data/licenses/GFDL-1.3-invariants-or-later.json#text; GNU FDL 1.3, varianta s neměnnými oddíly nebo obálkovými texty a volbou pozdější verze, je licence dokumentace v libovolném médiu; dodatek výslovně doporučuje programové ukázky licencovat paralelně softwarovou licencí. §1–4 povolují bezplatně celosvětově kopírování, komerční distribuci, půjčování, vystavování i odvozené dokumenty. Invariant Sections mohou být jen vedlejší oddíly o vztahu autorů k tématu, nikoli vlastní výklad tématu; přesto je nelze měnit. Patentová práva udělena nejsou. §1 Modified Version zahrnuje celé dílo obsahující dokument či část; §4–5 stejná licence celku, §7 výjimka pro nezávislý agregát. Nezaměňovat Transparent dokument s povinností zdroje každého softwarového binárního souboru.; https://spdx.org/licenses/GFDL-1.3-invariants-or-later.html |
+| copyleftScope | "whole-work" | public/data/licenses/GFDL-1.3-invariants-or-later.json#text; §1 Modified Version zahrnuje celé dílo obsahující dokument či část; §4–5 stejná licence celku, §7 výjimka pro nezávislý agregát. Nezaměňovat Transparent dokument s povinností zdroje každého softwarového binárního souboru.; https://spdx.org/licenses/GFDL-1.3-invariants-or-later.html |
+| permissions | ["commercial-use","conditional-relicensing","distribution","modifications","private-use"] | public/data/licenses/GFDL-1.3-invariants-or-later.json#text; §1–4 povolují bezplatně celosvětově kopírování, komerční distribuci, půjčování, vystavování i odvozené dokumenty. Invariant Sections mohou být jen vedlejší oddíly o vztahu autorů k tématu, nikoli vlastní výklad tématu; přesto je nelze měnit. Patentová práva udělena nejsou.; https://spdx.org/licenses/GFDL-1.3-invariants-or-later.html |
+| obligations | ["disclose-source","include-copyright","include-license-text","include-notice","mark-modifications","same-license","unknown"] | public/data/licenses/GFDL-1.3-invariants-or-later.json#text; §2 vyžaduje copyright, licenční oznámení a úplnou licenci ve všech kopiích. Při více než 100 Opaque kopiích §3 vyžaduje s každou Transparent kopii nebo uvedené veřejné síťové stažení úplného editovatelného dokumentu; u druhé cesty přiměřené kroky k dostupnosti nejméně rok po poslední distribuci edice. Více než 100 výtisků při předepsaných Cover Texts vyžaduje jejich obálkové umístění, vydavatele a stejně výrazný celý název. §4 požaduje odlišný název leda s povolením, autory změn a nejméně pět hlavních původních autorů leda prominutí, vydavatele, historii, oznámení změn, původní odkazy s čtyřletou výjimkou, zachování poděkování, věnování, disclaimerů a doslovných invariantů. Staré Endorsements se odstraní, nové smějí vyjadřovat jen podporu upravené verze.; https://spdx.org/licenses/GFDL-1.3-invariants-or-later.html Terminologické sjednocení 2026-09-10: disclose-source zde označuje Transparent kopii dokumentu za přesných výše uvedených podmínek Opaque kopií; nejde o softwarový Corresponding Source. |
+| triggers | ["distribution","modification"] | public/data/licenses/GFDL-1.3-invariants-or-later.json#text; §2 vyžaduje copyright, licenční oznámení a úplnou licenci ve všech kopiích. Při více než 100 Opaque kopiích §3 vyžaduje s každou Transparent kopii nebo uvedené veřejné síťové stažení úplného editovatelného dokumentu; u druhé cesty přiměřené kroky k dostupnosti nejméně rok po poslední distribuci edice. Více než 100 výtisků při předepsaných Cover Texts vyžaduje jejich obálkové umístění, vydavatele a stejně výrazný celý název. §4 požaduje odlišný název leda s povolením, autory změn a nejméně pět hlavních původních autorů leda prominutí, vydavatele, historii, oznámení změn, původní odkazy s čtyřletou výjimkou, zachování poděkování, věnování, disclaimerů a doslovných invariantů. Staré Endorsements se odstraní, nové smějí vyjadřovat jen podporu upravené verze.; https://spdx.org/licenses/GFDL-1.3-invariants-or-later.html |
+| restrictions | ["additional-terms","trademark","warranty"] | public/data/licenses/GFDL-1.3-invariants-or-later.json#text; §2 zakazuje technické překážky čtení či kopírování a další podmínky. §4 nedává jména pro reklamu či podporu; invariantní text lze přeložit navíc, nahradit jen s výslovným svolením (§8). Dodané Warranty Disclaimers jsou začleněny pouze v účinku výluky záruk, obecné AS IS tento text sám nestanoví. §9 obnovuje práva po ukončení porušování prozatímně, trvale při neoznámení do 60 dnů, nebo při prvním oznámení a nápravě do 30 dnů; downstream práva nezanikají.; https://spdx.org/licenses/GFDL-1.3-invariants-or-later.html |
+| patentPosition | "none-stated" | public/data/licenses/GFDL-1.3-invariants-or-later.json#text; Žádné ustanovení §0–11 ani dodatek nedává patentový grant, výslovnou patentovou výluku či patentovou odvetu.; https://spdx.org/licenses/GFDL-1.3-invariants-or-later.html |
+| noticeBurden | "material" | public/data/licenses/GFDL-1.3-invariants-or-later.json#text; §2 vyžaduje copyright, licenční oznámení a úplnou licenci ve všech kopiích. Při více než 100 Opaque kopiích §3 vyžaduje s každou Transparent kopii nebo uvedené veřejné síťové stažení úplného editovatelného dokumentu; u druhé cesty přiměřené kroky k dostupnosti nejméně rok po poslední distribuci edice. Více než 100 výtisků při předepsaných Cover Texts vyžaduje jejich obálkové umístění, vydavatele a stejně výrazný celý název. §4 požaduje odlišný název leda s povolením, autory změn a nejméně pět hlavních původních autorů leda prominutí, vydavatele, historii, oznámení změn, původní odkazy s čtyřletou výjimkou, zachování poděkování, věnování, disclaimerů a doslovných invariantů. Staré Endorsements se odstraní, nové smějí vyjadřovat jen podporu upravené verze. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/GFDL-1.3-invariants-or-later.html |
+
+## Zdroje
+
+- [Primární zdroj](https://spdx.org/licenses/GFDL-1.3-invariants-or-later.html) — Individuálně přečten celý připnutý text; §2 vyžaduje copyright, licenční oznámení a úplnou licenci ve všech kopiích. Při více než 100 Opaque kopiích §3 vyžaduje s každou Transparent kopii nebo uvedené veřejné síťové stažení úplného editovatelného dokumentu; u druhé cesty přiměřené kroky k dostupnosti nejméně rok po poslední distribuci edice. Více než 100 výtisků při předepsaných Cover Texts vyžaduje jejich obálkové umístění, vydavatele a stejně výrazný celý název. §4 požaduje odlišný název leda s povolením, autory změn a nejméně pět hlavních původních autorů leda prominutí, vydavatele, historii, oznámení změn, původní odkazy s čtyřletou výjimkou, zachování poděkování, věnování, disclaimerů a doslovných invariantů. Staré Endorsements se odstraní, nové smějí vyjadřovat jen podporu upravené verze. Žádné ustanovení §0–11 ani dodatek nedává patentový grant, výslovnou patentovou výluku či patentovou odvetu.
+- [Kurátorovaný profil](../../../data/profiles/licenses/id-R0ZETC0xLjMtaW52YXJpYW50cy1vci1sYXRlcg.json)
+- [Uložené úplné znění](../../../public/data/licenses/GFDL-1.3-invariants-or-later.json)
+
+## Otisk zdroje
+
+```json
+{
+  "sourceId": "spdx-license-list",
+  "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+  "contentHash": "sha256:bac21359134e3b6658060e715f74f83bf504d6b05ce7cc69336ea11d8abdd075"
+}
+```

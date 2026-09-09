@@ -1,0 +1,20 @@
+{
+  "id": "PSF-2.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.4",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:dc801c748fa604bdaf3502569779ba9c82ec9685cce7cfa1a3c8621eeb36627e"
+  },
+  "disposition": "eligible",
+  "summaryCs": "V Pythonu i odvozených verzích zachovejte licenci PSF a copyright PSF. Při zpřístupnění odvozeného díla ostatním připojte stručný souhrn změn Pythonu. Licence nevyžaduje poskytování zdrojů ani stejnou licenci celého odvozeného díla. Podstatné porušení podmínek automaticky ukončuje smlouvu; kopírováním, instalací či užitím ji přijímáte. Ochranné známky PSF nelze používat k propagaci bez oprávnění. Profil se týká samotné PSF 2.0, nikoli všech historických licencí obsažených v distribuci Pythonu.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/PSF-2.0.html",
+      "note": "Dřívější individuální revize 2026-09-09.4; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

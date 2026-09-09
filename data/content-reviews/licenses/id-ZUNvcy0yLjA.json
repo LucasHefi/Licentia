@@ -1,0 +1,29 @@
+{
+  "id": "eCos-2.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:75d31e1f8bd63c983fa82818f849a1d8f03e6b633e064a219c57a68a6584b549"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Text dovoluje úpravy a distribuci pod GPL verze 2 nebo novější a výjimkou uvolňuje některé kombinace s šablonami, makry, inline funkcemi či linkováním. Zdroj samotného souboru však zůstává pod požadavky GPL. Průvodce zastaralý záznam nezařazuje, protože úplná základní GPL není přiložena a je nutné určit současný výraz se správnou výjimkou.",
+  "blockersCs": [
+    "Připnutý deprecated záznam odkazuje na nepřiloženou GPL v2-or-later a její §3; před doporučením je nutné použít doložený moderní SPDX výraz se základní licencí a eCos výjimkou."
+  ],
+  "analysis": {
+    "subjectCs": "Deprecated eCos License 2.0 obsahuje hlavičku souboru, odkaz na GPL a výjimku pro šablony, makra, inline funkce a linkování.",
+    "grantCs": "Software je dovoleno měnit/redistribuovat pod GPL v2 nebo pozdější; výjimka brání tomu, aby samotný tento soubor nutil výsledné kombinované dílo pod GPL.",
+    "conditionsCs": "Zdroj tohoto souboru však musí být zpřístupněn podle GPL §3; celé znění GPL není v připnutém textu a je odkazováno jako přiložená kopie.",
+    "limitationsCs": "Text vylučuje záruky prodejnosti/vhodnosti a zdůrazňuje, že jiné důvody pro GPL pokrytí výsledku zůstávají platné.",
+    "compatibilityCs": "Volba GPL v2 nebo pozdější je výslovná. Alternativní licence lze sjednat s Red Hat, nevznikají pouhým kontaktem ani otevřením odkazu."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/eCos-2.0.html",
+      "note": "Individuálně přečten celý připnutý text; Zdroj tohoto souboru však musí být zpřístupněn podle GPL §3; celé znění GPL není v připnutém textu a je odkazováno jako přiložená kopie. Hlavička a výjimka neobsahují vlastní patentový grant; úplná základní licence a její zvolená verze zde nejsou."
+    }
+  ]
+}

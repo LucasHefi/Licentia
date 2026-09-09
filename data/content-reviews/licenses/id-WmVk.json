@@ -1,0 +1,22 @@
+{
+  "id": "Zed",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.4",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:b5dbbcaec9e5f6727b3c6effab7986486ee649bc60c1161eace1c4c2d272f35a"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Text povoluje volné kopírování a distribuci souboru. Upravené výsledky se nemají šířit pod názvem zed-csp.sty. Průvodce zatím nevyjadřuje tuto podmínku názvu konkrétního souboru ani nejasně vymezený rozsah oprávnění. Text neobsahuje povinnost přiložit oznámení, poskytovat zdroje nebo výslovné vyloučení záruk a odpovědnosti.",
+  "blockersCs": [
+    "Doplnit pravidlo pro název konkrétního distribuovaného souboru zed-csp.sty po úpravách a posoudit rozsah stručného grantu i normativní sílu zdvořilé formulace please. Nezaměňovat s obecným označením změn či ochrannou známkou. Text sám neukládá zachování copyrightového oznámení; nejasná pole jsou ponechána jako unknown."
+  ],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Zed.html",
+      "note": "Dřívější individuální revize 2026-09-09.4; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "OpenSSL",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:314da288f86585257f264280dd31865a42e81364495dd32aedd2efd18f9bdafa"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Toto historické znění spojuje podmínky OpenSSL a Original SSLeay, které se zachovávají pro příslušné součásti. Vedle copyrightů a licenčních oznámení vyžaduje poděkování v reklamě a distribuci; některý převzatý kód pro Windows také uznání Tima Hudsona. Názvy produktů a propagace jmény autorů jsou omezeny. Průvodce licenci nezařazuje, protože zákaz změny licence veřejných odvozenin SSLeay neurčuje dostatečně hranici vůči kombinovanému programu.",
+  "blockersCs": [
+    "Original SSLeay zakazuje změnit licenci veřejných verzí a derivative of this code, ale nevymezuje hranici těchto odvozenin vůči kombinovanému programu; před doporučením je třeba tento rozsah doložit a neodvozovat jej z označení knihovna."
+  ],
+  "analysis": {
+    "subjectCs": "Složené OpenSSL znění obsahuje šest OpenSSL Project podmínek 1998–2008 a samostatnou Original SSLeay licenci Erica Younga s dokumentací Tima Hudsona.",
+    "grantCs": "Oba granty dovolují zdrojovou/binární redistribuci a užití se změnami i bez; SSLeay výslovně zahrnuje komerční i nekomerční použití všech uvedených částí distribuce.",
+    "conditionsCs": "Oba bloky zachovávají copyright/podmínky/disclaimery ve zdroji či binárním doprovodu. OpenSSL vyžaduje své uznání v reklamě a každé redistribuci; SSLeay reklama uzná Erica Younga, s volitelným vypuštěním cryptographic u nekryptografických rutin. Začlenění Windows kódu/odvozenin z apps vyžaduje uznání Tima Hudsona. Produktový Eric credit je formulován should.",
+    "limitationsCs": "OpenSSL jména a názvy odvozených produktů vyžadují písemné svolení; oba disclaimery vylučují záruky/odpovědnost. SSLeay závěr zakazuje měnit licenční/distribuční podmínky veřejných verzí a odvozenin včetně převodu pod GNU Public Licence.",
+    "compatibilityCs": "Obě podmínkové sady se aplikují na své součásti, nejsou volbou jedné ze dvou licencí. Zákaz změny SSLeay licence se nepřepisuje jako univerzální současný kompatibilitní výrok."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/OpenSSL.html",
+      "note": "Individuálně přečten celý připnutý text; Oba bloky zachovávají copyright/podmínky/disclaimery ve zdroji či binárním doprovodu. OpenSSL vyžaduje své uznání v reklamě a každé redistribuci; SSLeay reklama uzná Erica Younga, s volitelným vypuštěním cryptographic u nekryptografických rutin. Začlenění Windows kódu/odvozenin z apps vyžaduje uznání Tima Hudsona. Produktový Eric credit je formulován should. Celý OpenSSL i Original SSLeay blok nemají výslovný patentový grant či patentové ukončení."
+    }
+  ]
+}

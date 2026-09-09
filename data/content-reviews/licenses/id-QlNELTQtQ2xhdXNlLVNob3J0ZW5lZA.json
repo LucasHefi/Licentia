@@ -1,0 +1,20 @@
+{
+  "id": "BSD-4-Clause-Shortened",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.9",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:5f87f757e818c733e2cd7254f14bf0e3851372524274d52544fa40d00a686bff"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Zdrojové distribuce zachovávají copyright a celý příslušný odstavec podmínek; distribuce obsahující binární kód je přikládají v dokumentaci nebo jiných materiálech. Reklama zmiňující vlastnosti nebo použití musí uvést předepsané poděkování University of California, Lawrence Berkeley Laboratory a přispěvatelům. Jména univerzity a přispěvatelů nelze bez písemného souhlasu použít k podpoře produktu. Text vylučuje záruky, ale nemá samostatnou výluku odpovědnosti. Nepožaduje zdroje ani výslovně neuděluje patenty.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/BSD-4-Clause-Shortened.html",
+      "note": "Dřívější individuální revize 2026-09-09.9; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

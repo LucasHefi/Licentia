@@ -18,18 +18,20 @@
     "permissions": [
       "distribution",
       "modifications",
-      "private-use"
+      "private-use",
+      "unknown"
     ],
     "obligations": [
       "include-copyright",
-      "include-license-text"
+      "include-license-text",
+      "include-use-acknowledgment",
+      "unknown"
     ],
     "triggers": [
       "distribution",
-      "unknown"
+      "use"
     ],
     "restrictions": [
-      "additional-terms",
       "liability",
       "trademark",
       "unknown",
@@ -42,47 +44,65 @@
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "ASWF-Digital-Assets-1.0 text: title and grant paragraph (the subject is named digital assets and the grant is limited to enumerated education, training, research, development, benchmarking, and product-demonstration purposes, making this a domain- and purpose-specific nonstandard license rather than a conventional permissive software license)"
+      "locator": "public/data/licenses/ASWF-Digital-Assets-1.0.json#text; Omezený asset grant bez same-license či source-offer je nonstandard bez copyleftu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "ASWF-Digital-Assets-1.0 text: grant paragraph and conditions 1-4 (redistribution and modified use are conditioned on notices and name-use limits, but no source disclosure, reciprocal licensing, or same-license requirement is stated)"
+      "locator": "public/data/licenses/ASWF-Digital-Assets-1.0.json#text; Omezený asset grant bez same-license či source-offer je nonstandard bez copyleftu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "ASWF-Digital-Assets-1.0 text: grant paragraph (redistribution and use with or without modification are permitted for the enumerated purposes, supporting distribution, modifications, and private use within that limited scope; no general commercial-use, sublicensing, or patent grant is stated)"
+      "locator": "public/data/licenses/ASWF-Digital-Assets-1.0.json#text; Úvod dovoluje redistribution/use i modifikovaných assets solely pro education/training/research/software-hardware development/benchmarking/demonstrations, včetně publikace a reprodukovatelnosti benchmarků. Neuděluje neomezené komerční užití nebo patentovou licenci.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "ASWF-Digital-Assets-1.0 text: conditions 1-2 (redistributions of all or part of the assets must carry the copyright notice, conditions, and disclaimer; publications showing images derived from the assets must carry the copyright notice)"
+      "locator": "public/data/licenses/ASWF-Digital-Assets-1.0.json#text; Bod 1 požaduje copyright, podmínky a disclaimer při redistribuci jakékoli části. Bod 2 copyright v publikacích obrazů odvozených z assets. Bod 4 vyžaduje odkazovat assets i output pouze jako Asset Name a používat jej jen k identifikaci. Verze 1.0 nevyžaduje popis rozdílů modifikací.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "ASWF-Digital-Assets-1.0 text: grant paragraph and conditions 1-4 (redistribution and publication of derived images activate notice duties, while use and naming restrictions apply more broadly; distribution is represented, but the vocabulary has no exact trigger for use or publication of derived asset output, represented by unknown)"
+      "locator": "public/data/licenses/ASWF-Digital-Assets-1.0.json#text; Bod 1 požaduje copyright, podmínky a disclaimer při redistribuci jakékoli části. Bod 2 copyright v publikacích obrazů odvozených z assets. Bod 4 vyžaduje odkazovat assets i output pouze jako Asset Name a používat jej jen k identifikaci. Verze 1.0 nevyžaduje popis rozdílů modifikací.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "ASWF-Digital-Assets-1.0 text: grant paragraph, conditions 3-4, and disclaimer (use is restricted to enumerated purposes; promotion and implied endorsement are barred; asset and output naming is prescribed; trade-name, trademark, service-mark, and product-name use is restricted; warranties are disclaimed and liability limited; the exact purpose and output-naming constraints are not losslessly expressible, represented by additional-terms and unknown)"
+      "locator": "public/data/licenses/ASWF-Digital-Assets-1.0.json#text; Bod 3 zakazuje jmény držitele/přispěvatelů propagovat nebo naznačovat endorsement/sponzoring/afiliaci produktů i benchmarků bez písemného svolení. Bod 4 jinak zakazuje značky/jména držitele pro jakýkoli účel. Disclaimer odmítá záruky a škody.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "ASWF-Digital-Assets-1.0 text: complete-text review, including the grant paragraph, conditions 1-4, and disclaimer (no express patent grant, patent covenant, patent-condition restriction, or patent-claim termination is stated)"
+      "locator": "public/data/licenses/ASWF-Digital-Assets-1.0.json#text; Úvod dovoluje redistribution/use i modifikovaných assets solely pro education/training/research/software-hardware development/benchmarking/demonstrations, včetně publikace a reprodukovatelnosti benchmarků. Neuděluje neomezené komerční užití nebo patentovou licenci.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "ASWF-Digital-Assets-1.0 text: conditions 1-2 (asset redistributions require the copyright notice, all conditions, and disclaimer, while publications of images derived from the assets separately require the copyright notice, creating a material asset- and output-level notice burden)"
+      "locator": "public/data/licenses/ASWF-Digital-Assets-1.0.json#text; Bod 1 požaduje copyright, podmínky a disclaimer při redistribuci jakékoli části. Bod 2 copyright v publikacích obrazů odvozených z assets. Bod 4 vyžaduje odkazovat assets i output pouze jako Asset Name a používat jej jen k identifikaci. Verze 1.0 nevyžaduje popis rozdílů modifikací.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "ASWF-Digital-Assets-1.0 metadata: id and name match, deprecated=false, osi=false, fsf=false, and seeAlso identifies the Academy Software Foundation v1.0 source; complete-text review confirms a digital-asset-only, purpose-limited grant, special derived-image attribution and asset/output naming rules, no patent language, and no moral-rights or database-rights clauses. The domain scope and unrepresentable use/publication triggers make vocabulary 1.0.0 unsuitable for a lossless general guide recommendation"
+      "locator": "public/data/licenses/ASWF-Digital-Assets-1.0.json#text; Individuálně přečten celý připnutý text. ASWF v1.0 je grant ke konkrétním digitálním assets s doplněným Asset Name/Owner, nikoli všeobecná softwarová licence. Digitální assets se smějí užívat a šířit jen pro vyjmenované vzdělávací, výzkumné, vývojové, benchmarkové a demonstrační účely. Distribuce nese licenci, publikované odvozené obrazy copyright; assets i výstupy se označují pouze předepsaným Asset Name. Grant je omezen solely na vyjmenované účely digitálních assets a určuje povinné pojmenování assets i výstupů. Doplnit assetový předmět, účelová omezení a pravidlo názvů; standardní commercial-use/trademark je bez toho zavádějící.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

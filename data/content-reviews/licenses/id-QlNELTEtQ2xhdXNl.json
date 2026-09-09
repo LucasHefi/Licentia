@@ -1,0 +1,27 @@
+{
+  "id": "BSD-1-Clause",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:0dfb02dfb4445291ba1e1cfe43f355c501b05dad45cdc8e29f11de988d579ff0"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Software lze používat a šířit ve zdrojové i binární formě, s úpravami i bez nich. Jediná podmínka zachování copyrightu, podmínek a disclaimeru se týká redistribuce zdrojů; binární oznámení text nevyžaduje.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Grant se vztahuje na software v obou formách; copyrightový vzor umožňuje doplnit držitele a rok.",
+    "grantCs": "Úvodní redistribution and use dovoluje obě formy a modifikace bez omezení účelu; výslovná sublicence a patentová licence chybějí.",
+    "conditionsCs": "Jediný bod 1 ukládá zachovat copyright, seznam podmínek a disclaimer pouze při redistribuci zdrojového kódu. Pro binární distribuci není další oznamovací povinnost; nevzniká povinnost dodat zdroje.",
+    "limitationsCs": "Disclaimer odmítá výslovné/implicitní záruky a odpovědnost držitelů/přispěvatelů za přímé i nepřímé škody ve všech uvedených právních režimech. Zákaz endorsementu chybí.",
+    "compatibilityCs": "Licence nemá alternativní licenci, verzi ani share-alike; nepřítomnost binární klauzule je záměrná součást připnutého textu."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/BSD-1-Clause.html",
+      "note": "Individuální revize celého připnutého textu; Grant se vztahuje na software v obou formách; copyrightový vzor umožňuje doplnit držitele a rok."
+    }
+  ]
+}

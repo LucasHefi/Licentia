@@ -1,0 +1,20 @@
+{
+  "id": "HPND-sell-regexpr",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.3",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:b52d782cfb2651c916a2eaf447028d62df42cdf4419c50be02861ca1fc58c36d"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Při kopírování zachovejte copyright. Varianta nevyžaduje celé licenční znění, neobsahuje omezení jmen ani výslovné vyloučení odpovědnosti; vylučuje záruky.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/HPND-sell-regexpr.html",
+      "note": "Dřívější individuální revize 2026-09-09.3; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

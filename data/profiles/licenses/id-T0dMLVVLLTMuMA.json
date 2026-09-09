@@ -9,92 +9,100 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
+      "conditional-relicensing",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-license-text",
-      "provide-corresponding-source"
+      "include-notice",
+      "include-use-acknowledgment"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification",
+      "use"
     ],
     "restrictions": [
-      "liability"
+      "liability",
+      "trademark",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "express-exclusion",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OGL-UK-3.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OGL-UK-3.0.json#text; OGL 3.0 výslovně zahrnuje copyrightové/databázové Information včetně source code, takže lze posoudit i tento softwarový rozsah. Grant dovoluje celosvětově, bezplatně a trvale kopie, publikaci, distribuci, přenos, adaptaci a komerční/nekomerční využití; fair use/dealing a výjimky nejsou omezeny. Atribuce a podmíněná cesta CC/ODC nevyžadují zveřejnit zdroje nebo uložit same-license celé aplikaci.; https://spdx.org/licenses/OGL-UK-3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OGL-UK-3.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OGL-UK-3.0.json#text; Atribuce a podmíněná cesta CC/ODC nevyžadují zveřejnit zdroje nebo uložit same-license celé aplikaci.; https://spdx.org/licenses/OGL-UK-3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OGL-UK-3.0.json#text; Grant dovoluje celosvětově, bezplatně a trvale kopie, publikaci, distribuci, přenos, adaptaci a komerční/nekomerční využití; fair use/dealing a výjimky nejsou omezeny.; https://spdx.org/licenses/OGL-UK-3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OGL-UK-3.0.json#text; Při těchto činnostech produkt/aplikace obsahuje nebo odkazuje na určený credit a pokud lze licenci. Bez určeného credit je povinný text Contains public sector information licensed under the Open Government Licence v3.0. Nepraktické více creditů lze nahradit odkazem na zdroj obsahující všechny.; https://spdx.org/licenses/OGL-UK-3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OGL-UK-3.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OGL-UK-3.0.json#text; Při těchto činnostech produkt/aplikace obsahuje nebo odkazuje na určený credit a pokud lze licenci. Bez určeného credit je povinný text Contains public sector information licensed under the Open Government Licence v3.0. Nepraktické více creditů lze nahradit odkazem na zdroj obsahující všechny.; https://spdx.org/licenses/OGL-UK-3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OGL-UK-3.0.json#text; Není právo naznačovat oficiální status/endorsement. Vyňaty jsou osobní/nepovoleně zveřejněné informace, určité insignie/loga, neoprávněná cizí práva, patenty/známky/design a identity documents. Porušení ruší grant i podobné licence poskytovatele; AS IS vylučuje záruky/odpovědnost i trvalé dodávky.; https://spdx.org/licenses/OGL-UK-3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OGL-UK-3.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OGL-UK-3.0.json#text; Exemptions výslovně vylučuje patentová práva z tohoto grantu; patentová žalobní doložka není stanovena.; https://spdx.org/licenses/OGL-UK-3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OGL-UK-3.0.json#text; Při těchto činnostech produkt/aplikace obsahuje nebo odkazuje na určený credit a pokud lze licenci. Bez určeného credit je povinný text Contains public sector information licensed under the Open Government Licence v3.0. Nepraktické více creditů lze nahradit odkazem na zdroj obsahující všechny. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/OGL-UK-3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OGL-UK-3.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OGL-UK-3.0.json#text; Individuální kontrola celého připnutého textu OGL-UK-3.0 dne 2026-09-09. OGL 3.0 výslovně zahrnuje copyrightové/databázové Information včetně source code, takže lze posoudit i tento softwarový rozsah. Všechny uvedené podmínky jsou zachyceny slovníkem 1.4.0; zjištěný rozsah nebrání softwarovému průvodci. Licence výslovně uznává splnění OGL pro adaptované Information pod CC BY 4.0 nebo ODC Attribution při dodržení zvolené licence; nejde o tvrzení pro libovolné kombinace. Dřívější OGL verze nadále řídí dříve užívané informace. Platí právo sídla poskytovatele, neurčí-li jinak.; https://spdx.org/licenses/OGL-UK-3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

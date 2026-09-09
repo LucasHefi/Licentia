@@ -8,98 +8,113 @@
     "contentHash": "sha256:321f5362507353cb75aa71828a424d96ef6c85910f8c5398e95f54812b7b0370"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "weak-copyleft",
+    "copyleftScope": "file",
     "permissions": [
       "commercial-use",
+      "conditional-relicensing",
       "distribution",
       "modifications",
       "patent-grant",
+      "private-use",
       "sublicensing"
     ],
     "obligations": [
+      "defend-added-warranty",
+      "disclose-source",
+      "include-copyright",
+      "include-license-text",
+      "include-notice",
       "mark-modifications",
-      "provide-corresponding-source"
-    ],
-    "triggers": [
+      "same-license",
       "unknown"
     ],
+    "triggers": [
+      "combination",
+      "distribution",
+      "modification",
+      "patent-claim",
+      "use"
+    ],
     "restrictions": [
+      "additional-terms",
       "liability",
+      "patent-claim",
       "trademark",
+      "unknown",
       "warranty"
     ],
-    "patentPosition": "express-grant",
-    "noticeBurden": "unknown"
+    "patentPosition": "retaliatory-termination",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MPL-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MPL-1.1.json#text; §1.9 změněné soubory s Covered Code a nové s libovolnou částí,§3.7 jiné části Larger Work mimo. Slabý file copyleft, žádný samostatný network trigger pro pouhé provozování.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MPL-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MPL-1.1.json#text; §1.9 změněné soubory s Covered Code a nové s libovolnou částí,§3.7 jiné části Larger Work mimo. Slabý file copyleft, žádný samostatný network trigger pro pouhé provozování.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/MPL-1.1.json#text; §§2.1–2.2 světové bezroyalty nevýhradní IP granty mimo patent/trademark, zvlášť výslovné patentové make/have-made/use/sell/offer/dispose pro originál a Contributor změny samy/sjeho verzí. Výluky patentů odstraněného/odděleného kódu, cizích změn/kombinací a nároků porušovaných i bez Contributor příspěvku nejsou celková patentová výluka. Originální grant prvním zveřejněním, Contributor prvním Commercial Use. §3.6 own object licence,§6 následná Netscape verze,§13 pouze explicitně označené alternativní licence. Sublicence výslovně2a.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/MPL-1.1.json#text; §3.1 zdroj pouzeMPL/následná, licence s každou distribucí a žádné omezení zdrojových práv. §3.2 své změny příjemcům Executable na stejném médiu NEBO elektronicky nejméně12měsíců od prvního NEBO6měsíců po nové verzi té změny příjemcům, včetně odpovědnosti za cizí server. §3.3 soubor změn+dat a prominentní původ/jménoInitial Developer ve zdroji a původ/ownership popisujících object/docs notices. §3.4 známá nutná cizí IP licence a API patenty doLEGAL s nárokem/kontaktem; dodatečná znalost aktualizuje další kopie A vyžaduje přiměřené kroky informovat staré příjemce. Prohlášení víry v originalitu/dostatečná práva sLEGAL výjimkou. §3.5 ExhibitA každý zdroj nebo očekávané sousední místo a licence v práva/ownership popisujících docs. Extra záruky/object odchylky jasně vlastní+indemnity všem poskytovatelům; zde bezSNIA IP carve-out. §3.6 object notice zdroj/how/where ve všech relevantních práva popisujících notices/docs/collateral. §4 při zákonné/soudní překážce maximální plnění a konkrétníLEGAL popis.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MPL-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MPL-1.1.json#text; §3.1 zdroj pouzeMPL/následná, licence s každou distribucí a žádné omezení zdrojových práv. §3.2 své změny příjemcům Executable na stejném médiu NEBO elektronicky nejméně12měsíců od prvního NEBO6měsíců po nové verzi té změny příjemcům, včetně odpovědnosti za cizí server. §3.3 soubor změn+dat a prominentní původ/jménoInitial Developer ve zdroji a původ/ownership popisujících object/docs notices. §3.4 známá nutná cizí IP licence a API patenty doLEGAL s nárokem/kontaktem; dodatečná znalost aktualizuje další kopie A vyžaduje přiměřené kroky informovat staré příjemce. Prohlášení víry v originalitu/dostatečná práva sLEGAL výjimkou. §3.5 ExhibitA každý zdroj nebo očekávané sousední místo a licence v práva/ownership popisujících docs. Extra záruky/object odchylky jasně vlastní+indemnity všem poskytovatelům; zde bezSNIA IP carve-out. §3.6 object notice zdroj/how/where ve všech relevantních práva popisujících notices/docs/collateral. §4 při zákonné/soudní překážce maximální plnění a konkrétníLEGAL popis.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/MPL-1.1.json#text; §7 as-is bez záruk/uživatel opravy platí,§9 iYou škodové výluky se zákonnou výjimkou nedbalostní smrti/úrazu. §8.1 automatické ukončení po30dnech od znalosti bez nápravy, řádné sublicence trvají. §8.2 mimo declaratory judgment: žaloba proti Participant Contributor Version ukončí VŠECHNY jeho§2granty prospektivně po60dnech notice leda písemná rozumná royalty dohoda nebo stažení; žaloba proti JINÉMU software/hardware/device ruší jen patentové2.1b/2.2b zpětně k prvnímu vlastnímu využití jeho změn. §8.3 předžalobní vyrovnání musí zohlednit hodnotu licence. §8.4 přežijí platné enduserEULA mimo distributory/resellers. §12 aktivně spravedlivě rozdělit claims/damages meziInitial Developer/Contributors, bez přiznání odpovědnosti.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/MPL-1.1.json#text; §§2.1–2.2 světové bezroyalty nevýhradní IP granty mimo patent/trademark, zvlášť výslovné patentové make/have-made/use/sell/offer/dispose pro originál a Contributor změny samy/sjeho verzí. Výluky patentů odstraněného/odděleného kódu, cizích změn/kombinací a nároků porušovaných i bez Contributor příspěvku nejsou celková patentová výluka. Originální grant prvním zveřejněním, Contributor prvním Commercial Use. §3.6 own object licence,§6 následná Netscape verze,§13 pouze explicitně označené alternativní licence. Sublicence výslovně2a.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MPL-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MPL-1.1.json#text; §3.1 zdroj pouzeMPL/následná, licence s každou distribucí a žádné omezení zdrojových práv. §3.2 své změny příjemcům Executable na stejném médiu NEBO elektronicky nejméně12měsíců od prvního NEBO6měsíců po nové verzi té změny příjemcům, včetně odpovědnosti za cizí server. §3.3 soubor změn+dat a prominentní původ/jménoInitial Developer ve zdroji a původ/ownership popisujících object/docs notices. §3.4 známá nutná cizí IP licence a API patenty doLEGAL s nárokem/kontaktem; dodatečná znalost aktualizuje další kopie A vyžaduje přiměřené kroky informovat staré příjemce. Prohlášení víry v originalitu/dostatečná práva sLEGAL výjimkou. §3.5 ExhibitA každý zdroj nebo očekávané sousední místo a licence v práva/ownership popisujících docs. Extra záruky/object odchylky jasně vlastní+indemnity všem poskytovatelům; zde bezSNIA IP carve-out. §3.6 object notice zdroj/how/where ve všech relevantních práva popisujících notices/docs/collateral. §4 při zákonné/soudní překážce maximální plnění a konkrétníLEGAL popis.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MPL-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MPL-1.1.json#text; Individuálně přečten celý připnutý text. §1 Covered Code označený originál/změny/části, Contributor Version s předchozími příspěvky, Executable vše mimoSource. Source preferovaná forma včetně modulů/interfaces/build/install nebo diff vůči dostupné známé bázi a bezplatně rozbalitelný archiv. Commercial Use je jakékoli zpřístupnění třetímu, ne jen zisk. You skupina řízení nebo VÍCE než50%vlastnictví, nikoli≥50%1.0. §5/ExhibitA skutečná oznámení určují originál a poskytovatele. MPL 1.1 má souborový copyleft a možnost vlastních object podmínek; vedle LEGAL oznámení musí po nové znalosti IP problémů informovat dřívější příjemce a spolupracovat na rozdělení odpovědnosti. Patentový režim odlišuje Contributor Version od jiných produktů a zahrnuje ocenění předžalobního vyrovnání. § 3.4a vyžaduje dodatečné aktivní upozornění starých příjemců na IP znalost, § 12 spolupráci na rozdělení claims/damages a § 8.3 ocenění licencí v předžalobním smíru. Doplnit tyto podmíněné procesní povinnosti do modelu; obyčejné include-notice/retaliatory-termination a file copyleft je plně nevyjadřují.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

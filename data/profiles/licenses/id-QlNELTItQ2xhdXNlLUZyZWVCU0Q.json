@@ -23,7 +23,8 @@
     ],
     "obligations": [
       "include-copyright",
-      "include-license-text"
+      "include-license-text",
+      "include-notice"
     ],
     "triggers": [
       "distribution"
@@ -37,49 +38,67 @@
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text: opening grant and conditions 1-2 (non-reciprocal permission; no same-license, source-disclosure, or corresponding-source condition)"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant paragraph (redistribution and use in source and binary forms, with or without modification, are permitted subject to conditions 1-2)"
+      "locator": "public/data/licenses/BSD-2-Clause-FreeBSD.json#text; Deprecated FreeBSD text obsahuje copyright projektu 1992–2012 a závěrečné oddělení názorů autorů od politik projektu. Grant dovoluje redistribuci a užití zdrojů i binárních forem se změnami nebo bez nich. Notice a oddělení názorů nezavádějí copyleft nebo zveřejnění zdroje.; https://spdx.org/licenses/BSD-2-Clause-FreeBSD.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text: conditions 1-2 (source copies retain, and binary copies reproduce, the copyright notice, list of conditions, and disclaimer)"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text: conditions 1-2 (retain/reproduce the copyright notice, list of conditions, and disclaimer; no corresponding-source requirement)"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text: complete license text (no express patent grant, patent condition, or patent-claim termination clause)"
+      "locator": "public/data/licenses/BSD-2-Clause-FreeBSD.json#text; Notice a oddělení názorů nezavádějí copyleft nebo zveřejnění zdroje.; https://spdx.org/licenses/BSD-2-Clause-FreeBSD.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant paragraph (redistribution and use in source and binary forms, with or without modification, are permitted; no purpose limitation)"
+      "locator": "public/data/licenses/BSD-2-Clause-FreeBSD.json#text; Grant dovoluje redistribuci a užití zdrojů i binárních forem se změnami nebo bez nich.; https://spdx.org/licenses/BSD-2-Clause-FreeBSD.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "restrictions",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text: final disclaimer paragraph ('AS IS' warranty disclaimer and limitation of liability for listed damages)"
-    },
-    {
-      "field": "review",
-      "sourceId": "spdx-license-list",
-      "locator": "metadata: deprecated=true, osi=false; notes: identifier deprecated since 3.10 because BSD-2-Clause-Views supersedes it and the final views sentence is not part of the FreeBSD project's code license"
+      "locator": "public/data/licenses/BSD-2-Clause-FreeBSD.json#text; Bod 1 zachovává copyright, podmínky a disclaimer ve zdrojích; bod 2 je reprodukuje v doprovodných materiálech binární distribuce. Závěrečný disclaimer říká, že názory autorů nejsou oficiální politikou FreeBSD.; https://spdx.org/licenses/BSD-2-Clause-FreeBSD.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "text: conditions 1-2 (notice-retention/reproduction duties are activated by source or binary redistribution; modification alone has no separate condition)"
+      "locator": "public/data/licenses/BSD-2-Clause-FreeBSD.json#text; Bod 1 zachovává copyright, podmínky a disclaimer ve zdrojích; bod 2 je reprodukuje v doprovodných materiálech binární distribuce. Závěrečný disclaimer říká, že názory autorů nejsou oficiální politikou FreeBSD.; https://spdx.org/licenses/BSD-2-Clause-FreeBSD.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/BSD-2-Clause-FreeBSD.json#text; AS IS vylučuje záruky a odpovědnost projektu/přispěvatelů; dodatečný odstavec zakazuje interpretovat vyjádřené závěry jako politiku projektu, nikoli užívat jeho jméno obecně.; https://spdx.org/licenses/BSD-2-Clause-FreeBSD.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/BSD-2-Clause-FreeBSD.json#text; Celý text včetně závěrečného odstavece nemá patentový grant ani patentové ukončení.; https://spdx.org/licenses/BSD-2-Clause-FreeBSD.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/BSD-2-Clause-FreeBSD.json#text; Bod 1 zachovává copyright, podmínky a disclaimer ve zdrojích; bod 2 je reprodukuje v doprovodných materiálech binární distribuce. Závěrečný disclaimer říká, že názory autorů nejsou oficiální politikou FreeBSD. Rozsah notifikační zátěže: standard.; https://spdx.org/licenses/BSD-2-Clause-FreeBSD.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/BSD-2-Clause-FreeBSD.json#text; Individuální kontrola celého připnutého textu BSD-2-Clause-FreeBSD dne 2026-09-09. Deprecated FreeBSD text obsahuje copyright projektu 1992–2012 a závěrečné oddělení názorů autorů od politik projektu. ID je deprecated; před doporučením novému projektu je třeba určit nezastaralý odpovídající identifikátor a zachovat zvláštní odstavec o názorech autorů. ID je deprecated; jiné licence nebo verze text nenabízí.; https://spdx.org/licenses/BSD-2-Clause-FreeBSD.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

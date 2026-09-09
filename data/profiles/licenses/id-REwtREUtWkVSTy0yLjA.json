@@ -8,91 +8,88 @@
     "contentHash": "sha256:4dda43abf6fda364b76aeea98ce4af07df5920754a40b0005ec22a51b4bd8c65"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "public-domain-equivalent",
+    "copyleftScope": "none",
     "permissions": [
-      "commercial-use"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
-    "obligations": [
-      "unknown"
-    ],
-    "triggers": [
-      "unknown"
-    ],
-    "restrictions": [
-      "unknown"
-    ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "obligations": [],
+    "triggers": [],
+    "restrictions": [],
+    "patentPosition": "none-stated",
+    "noticeBurden": "none"
   },
   "evidence": [
     {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/DL-DE-ZERO-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DL-DE-ZERO-2.0.json#text; Neomezený datový grant bez podmínek má public-domain-equivalent účinek a žádný copyleft.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/DL-DE-ZERO-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DL-DE-ZERO-2.0.json#text; Neomezený datový grant bez podmínek má public-domain-equivalent účinek a žádný copyleft.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/DL-DE-ZERO-2.0.json#text; Jede Nutzung/Any use je bez omezení; výčet zahrnuje kopie, tisk, prezentaci, změny, předání třetím, slučování a podnikové/aplikační/síťové začlenění. Patentový grant a výslovná sublicence nejsou uvedeny.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/DL-DE-ZERO-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DL-DE-ZERO-2.0.json#text; Obě jazykové verze výslovně vylučují podmínky; nevyžadují atribuci, text licence, stejnou licenci či síťovou nabídku zdrojů, proto povinnosti i spouštěče jsou prázdné.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/DL-DE-ZERO-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DL-DE-ZERO-2.0.json#text; Obě jazykové verze výslovně vylučují podmínky; nevyžadují atribuci, text licence, stejnou licenci či síťovou nabídku zdrojů, proto povinnosti i spouštěče jsou prázdné.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/DL-DE-ZERO-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DL-DE-ZERO-2.0.json#text; Úplný text neobsahuje výluku záruk či odpovědnosti, známky, patentové ukončení nebo volbu práva.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/DL-DE-ZERO-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DL-DE-ZERO-2.0.json#text; Jede Nutzung/Any use je bez omezení; výčet zahrnuje kopie, tisk, prezentaci, změny, předání třetím, slučování a podnikové/aplikační/síťové začlenění. Patentový grant a výslovná sublicence nejsou uvedeny.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/DL-DE-ZERO-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DL-DE-ZERO-2.0.json#text; Obě jazykové verze výslovně vylučují podmínky; nevyžadují atribuci, text licence, stejnou licenci či síťovou nabídku zdrojů, proto povinnosti i spouštěče jsou prázdné.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/DL-DE-ZERO-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DL-DE-ZERO-2.0.json#text; Individuálně přečten celý připnutý text. Výslovným předmětem jsou poskytovaná data a metadata, nikoli libovolný softwarový kód. Německá a anglická verze dovolují jakékoli užití dat a metadat bez podmínek, včetně komerce, úprav, slučování a začlenění do aplikací i veřejných nebo neveřejných sítí. Licence výslovně pokrývá data a metadata. Před doporučením pro nový software doplnit model datového předmětu; neomezený datový grant nelze bez tohoto rozlišení nabídnout jako obecnou softwarovou licenci.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

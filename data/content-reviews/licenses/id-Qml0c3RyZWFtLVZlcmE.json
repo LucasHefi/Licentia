@@ -1,0 +1,29 @@
+{
+  "id": "Bitstream-Vera",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:11afe18edc5736e0ba0b3a6526246b0848f083bf6c7740b7a795d9841c3d5698"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Fonty Bitstream Vera lze užívat, měnit a šířit, ale upravené fonty musí mít názvy bez Bitstream i Vera. Samostatný prodej písem je zakázán, prodej v širším balíku povolen; distribuce změněných fontů pod původním názvem ruší licenci v dotčeném rozsahu.",
+  "blockersCs": [
+    "Grant je pro fonty a vyžaduje přejmenování po úpravě, zakazuje samostatný prodej a má zvláštní neplatnost při distribuci pod Bitstream Vera. Je třeba fontový model s přejmenováním, balíčkovým prodejem a spouštěčem zániku; obecná softwarová doporučení tyto podmínky nepokrývají."
+  ],
+  "analysis": {
+    "subjectCs": "Fonts a dokumentace společně Font Software, včetně designu glyphů/znaků a jednotlivých typefaces.",
+    "grantCs": "Reprodukce/distribuce/use/copy/merge/publish/sell pod fontovými podmínkami; úpravy dovoleny po přejmenování. Patentový grant není uveden.",
+    "conditionsCs": "Copyright/trademark/permission notices v každé kopii typefaces. Po jakékoli úpravě/přidání glyphů názvy bez Bitstream a Vera; prodej jen v širším softwarovém balíčku, nikoli samostatných typefaces.",
+    "limitationsCs": "Licence null/void v dotčeném rozsahu při změnách distribuovaných pod Bitstream Vera. AS IS, warranty včetně patent/trademark infringement, liability Bitstream/GNOME; jména v propagaci jen s písemným svolením kromě notice.",
+    "compatibilityCs": "Žádná jiná licence/verze či povinná stejná licence celého balíku; možnost prodeje v balíku není volnou licencí samostatného fontu."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Bitstream-Vera.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Fontový grant je omezen přejmenováním, standalone prodejem a zvláštním zánikem; ne obecná permisivní softwarová licence."
+    }
+  ]
+}

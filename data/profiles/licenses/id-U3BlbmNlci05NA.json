@@ -9,90 +9,99 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "unknown"
+      "include-copyright",
+      "include-license-text",
+      "include-notice",
+      "include-use-acknowledgment",
+      "mark-modifications"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification",
+      "use"
     ],
     "restrictions": [
-      "unknown"
+      "liability"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Spencer-94.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Spencer-94.json#text; Grant any purpose/alter/redistribute s notice podmínkami 2–4.; https://spdx.org/licenses/Spencer-94.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Spencer-94.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Spencer-94.json#text; Body 1–4 nevyžadují zdroje ani stejnou licenci.; https://spdx.org/licenses/Spencer-94.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Spencer-94.json#text; Grant výslovně use on any computer system, alter and redistribute.; https://spdx.org/licenses/Spencer-94.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Spencer-94.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Spencer-94.json#text; Body 2–3 credits must appear in documentation; bod 3 mark altered; bod 4 celé notice beze změn. Poděkování související s užitím je include-use-acknowledgment; konkrétní dokumentační umístění zůstává zachováno.; https://spdx.org/licenses/Spencer-94.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Spencer-94.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Spencer-94.json#text; Užití/redistribuce jsou podmíněny zachováním notice; úpravy mají navíc označení a dokumentační credits.; https://spdx.org/licenses/Spencer-94.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Spencer-94.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Spencer-94.json#text; Bod 1 author not responsible for consequences even flaws; warranty samostatně neuvádí.; https://spdx.org/licenses/Spencer-94.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Spencer-94.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Spencer-94.json#text; Celý text nemá výslovný patentový grant/ukončení.; https://spdx.org/licenses/Spencer-94.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Spencer-94.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Spencer-94.json#text; Povinné dokumentační přiznání při stanoveném užití představuje materiální include-use-acknowledgment; zachování existujícího notice je samostatné.; https://spdx.org/licenses/Spencer-94.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Spencer-94.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Spencer-94.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. Libovolné použití, změny a redistribuce jsou dovoleny. Zachovejte celé oznámení, původ a změny pravdivě označte a zásluhy uveďte v dokumentaci; autor odmítá odpovědnost za následky použití.; https://spdx.org/licenses/Spencer-94.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

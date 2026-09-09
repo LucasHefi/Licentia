@@ -1,0 +1,27 @@
+{
+  "id": "OGL-UK-2.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:77b51c1b4308739edd5ab7ff1a0eab1e10822a4eba45f634a33f68e6d5a3effd"
+  },
+  "disposition": "eligible",
+  "summaryCs": "OGL 2 dovoluje trvalé komerční i nekomerční užití copyrightových/databázových informací včetně source code s povinnou atribucí a pokud možno odkazem. Při chybějícím textu nebo nepraktickém množství zdrojů dovoluje souhrnné oznámení. Vyjmenovaná práva a informace, včetně patentů, jsou vyloučena.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Information výslovně zahrnuje obsah, data i source code poskytované oprávněným Information Providerem; grant není automaticky ke všem Crown či neveřejným materiálům.",
+    "grantCs": "Using Information uděluje celosvětovou bezroyalty trvalou nevýhradní licenci copy/publish/distribute/transmit/adapt a komerčně/nekomerčně combine/include. Patenty, známky, design a neoprávněná cizí práva jsou explicitně vyňaty. Závěr dovoluje u adaptací CC-BY4.0 nebo ODC-By při splnění jejich podmínek.",
+    "conditionsCs": "Při užití dle široké definice povinně uvést poskytovatelův attribution statement a kde možno link licence; při chybějícím statementu NEBO nepraktických četných zdrojích lze náhradní Contains public sector information licensed under OGL v2.0. Nevyžaduje plný text licence, zdroje nebo same-license.",
+    "limitationsCs": "Vyňata osobní/nepublikovaná neoprávněně dostupná data, loga/crests/Royal Arms mimo integrální dokumentovou/datovou část, military insignia, identity documents a další práva. Žádný official status/endorsement. Porušení ruší i podobné licence poskytovatele. As is, bez záruk/odpovědnosti/chybové odpovědnosti i příslibu další dodávky; právo dle sídla poskytovatele, není-li určeno jinak.",
+    "compatibilityCs": "About výslovně říká, že adaptované informace licencované CC-BY4.0 nebo ODC Attribution splní OGL podmínky dodržováním těchto licencí. Pozdější OGL se může vydat, ale stávající informace nadále podléhají použité starší verzi: nejde o automatické or-later."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/OGL-UK-2.0.html",
+      "note": "Individuální revize celého připnutého textu; Information výslovně zahrnuje obsah, data i source code poskytované oprávněným Information Providerem; grant není automaticky ke všem Crown či neveřejným materiálům."
+    }
+  ]
+}

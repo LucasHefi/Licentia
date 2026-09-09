@@ -1,9 +1,9 @@
-export const GUIDE_MODEL_VERSION = "lic-008-guide-v1";
+export const GUIDE_MODEL_VERSION = "lic-008-guide-v6";
 export type ReviewStatus = "blocked" | "not-recommendable" | "pending" | "reviewed" | "stale";
 export type EvidenceLevel = "strong" | "sufficient" | "unknown" | "weak";
 export type LicenseFamily = "network-copyleft" | "nonstandard" | "permissive" | "public-domain-equivalent" | "strong-copyleft" | "unknown" | "weak-copyleft";
 export type CopyleftScope = "file" | "library" | "network" | "none" | "unknown" | "whole-work";
-export type PatentPosition = "defensive-termination" | "express-grant" | "none-stated" | "retaliatory-termination" | "unknown";
+export type PatentPosition = "defensive-termination" | "express-exclusion" | "express-grant" | "none-stated" | "retaliatory-termination" | "unknown";
 export type NoticeBurden = "material" | "minimal" | "none" | "standard" | "unknown";
 export type ProjectForm = "library" | "application" | "service" | "plugin" | "unknown";
 export type SemanticValue = string;
@@ -68,6 +68,7 @@ export interface GuideAnswers {
   reciprocity?: "none" | "file" | "library" | "strong" | "network" | AnswerState;
   delivery?: "library" | "application" | "saas" | "internal" | AnswerState;
   patents?: "important" | "neutral" | AnswerState;
+  advertising?: "allowed" | "avoid" | AnswerState;
   notices?: "minimal" | "standard" | AnswerState;
   jurisdiction?: "eu" | "global" | AnswerState;
   projectForm?: "library" | "application" | "service" | "plugin" | AnswerState;
@@ -174,22 +175,24 @@ const uncertaintyOptions: readonly { value: AnswerState; label: string }[] = [
 const guideQuestions: GuideQuestion[] = [
   { id: "q-openness", key: "openness", mode: "quick", title: "Má zůstat software otevřený?", help: "Rozlišuje open-source větev od proprietární strategie.", options: [{ value: "open", label: "Ano" }, { value: "closed", label: "Povolím uzavřené použití" }, ...uncertaintyOptions] },
   { id: "q-project-form", key: "projectForm", mode: "quick", title: "Co distribuujete?", help: "Forma projektu určuje relevantní povinnosti.", options: [{ value: "application", label: "Aplikaci" }, { value: "library", label: "Knihovnu" }, { value: "service", label: "Službu" }, ...uncertaintyOptions] },
-  { id: "q-reciprocity", key: "reciprocity", mode: "quick", title: "Jaký rozsah sdílení změn chcete?", help: "Průvodce nyní nabízí rozsahy, pro které má katalog bezpečné kandidáty: žádný copyleft nebo celé dílo.", options: [{ value: "none", label: "Žádný" }, { value: "strong", label: "Celé dílo" }, ...uncertaintyOptions] },
+  { id: "q-reciprocity", key: "reciprocity", mode: "quick", title: "Jaký rozsah sdílení změn chcete?", help: "Rozlišuje sdílení souborů, knihovny, celého díla a zdrojů při síťovém provozu. Podmínky konkrétní licence upřesňují, kdy povinnost vzniká.", options: [{ value: "none", label: "Žádný" }, { value: "file", label: "Pokryté soubory" }, { value: "library", label: "Knihovnu" }, { value: "strong", label: "Celé dílo" }, { value: "network", label: "Dílo i při síťovém provozu" }, ...uncertaintyOptions] },
   { id: "q-commercial-use", key: "commercialUse", mode: "quick", title: "Bude software komerčně použit?", help: "Neznámá odpověď se nezapočítá do skóre a zobrazí se jako nejistota.", options: [{ value: "allowed", label: "Ano" }, { value: "restricted", label: "Omezeně" }, ...uncertaintyOptions] },
   { id: "q-delivery-quick", key: "delivery", mode: "quick", title: "Jak software dodáte?", help: "Distribuce a SaaS aktivují odlišné povinnosti.", options: [{ value: "application", label: "Aplikace" }, { value: "library", label: "Knihovna" }, { value: "saas", label: "SaaS" }, { value: "internal", label: "Interně" }, ...uncertaintyOptions] },
   { id: "q-dependencies-quick", key: "dependencies", mode: "quick", title: "Jaké máte závislosti?", help: "U distribuované aplikace je potřeba nejprve ověřit licence závislostí.", options: uncertaintyOptions, showWhen: { key: "delivery", equals: "application" } },
-  { id: "q-patents-quick", key: "patents", mode: "quick", title: "Jsou důležité patenty?", help: "Výslovné oprávnění je evidence-backed kritérium.", options: [{ value: "important", label: "Ano" }, { value: "neutral", label: "Neřeším" }, ...uncertaintyOptions] },
+  { id: "q-patents-quick", key: "patents", mode: "quick", title: "Jsou důležité patenty?", help: "Posuzuje se výslovný patentový grant. Samotné ukončení práv při patentovém sporu nestačí.", options: [{ value: "important", label: "Ano" }, { value: "neutral", label: "Neřeším" }, ...uncertaintyOptions] },
+  { id: "q-advertising-quick", key: "advertising", mode: "quick", title: "Přijmete povinné poděkování v reklamě?", help: "Některé licence požadují poděkování v reklamě zmiňující vlastnosti nebo použití softwaru, i bez jeho distribuce. Volba platí pro tuto povinnost, nikoli pro běžná oznámení.", options: [{ value: "allowed", label: "Ano, přijmu ji" }, { value: "avoid", label: "Ne, bez této povinnosti" }, ...uncertaintyOptions] },
   { id: "q-delivery-advanced", key: "delivery", mode: "advanced", title: "Jak software dodáte?", help: "Distribuce a SaaS aktivují odlišné povinnosti.", options: [{ value: "application", label: "Aplikace" }, { value: "library", label: "Knihovna" }, { value: "saas", label: "SaaS" }, { value: "internal", label: "Interně" }, ...uncertaintyOptions] },
   { id: "q-dependencies-advanced", key: "dependencies", mode: "advanced", title: "Jaké máte závislosti?", help: "SPDX výraz nebo SBOM lze ověřit bez tichého přijetí chyby.", options: uncertaintyOptions, showWhen: { key: "delivery", equals: "application" } },
   { id: "q-copyleft-trigger", key: "copyleftTrigger", mode: "advanced", title: "Kdy se má povinnost aktivovat?", help: "Rozlišuje distribuci od síťového poskytnutí.", options: [{ value: "distribution", label: "Při distribuci" }, { value: "network", label: "I v síti" }, { value: "none", label: "Bez copyleftu" }, ...uncertaintyOptions] },
   { id: "q-openness-advanced", key: "openness", mode: "advanced", title: "Má zůstat software otevřený?", help: "Rozlišuje open-source větev od proprietární strategie.", options: [{ value: "open", label: "Ano" }, { value: "closed", label: "Povolím uzavřené použití" }, ...uncertaintyOptions] },
   { id: "q-project-form-advanced", key: "projectForm", mode: "advanced", title: "Co distribuujete?", help: "Forma projektu určuje relevantní povinnosti.", options: [{ value: "application", label: "Aplikaci" }, { value: "library", label: "Knihovnu" }, { value: "service", label: "Službu" }, ...uncertaintyOptions] },
-  { id: "q-reciprocity-advanced", key: "reciprocity", mode: "advanced", title: "Jaký rozsah sdílení změn chcete?", help: "Průvodce nyní nabízí rozsahy, pro které má katalog bezpečné kandidáty: žádný copyleft nebo celé dílo.", options: [{ value: "none", label: "Žádný" }, { value: "strong", label: "Celé dílo" }, ...uncertaintyOptions] },
+  { id: "q-reciprocity-advanced", key: "reciprocity", mode: "advanced", title: "Jaký rozsah sdílení změn chcete?", help: "Rozlišuje sdílení souborů, knihovny, celého díla a zdrojů při síťovém provozu. Podmínky konkrétní licence upřesňují, kdy povinnost vzniká.", options: [{ value: "none", label: "Žádný" }, { value: "file", label: "Pokryté soubory" }, { value: "library", label: "Knihovnu" }, { value: "strong", label: "Celé dílo" }, { value: "network", label: "Dílo i při síťovém provozu" }, ...uncertaintyOptions] },
   { id: "q-commercial-use-advanced", key: "commercialUse", mode: "advanced", title: "Bude software komerčně použit?", help: "Neznámá odpověď se nezapočítá do skóre a zobrazí se jako nejistota.", options: [{ value: "allowed", label: "Ano" }, { value: "restricted", label: "Omezeně" }, ...uncertaintyOptions] },
-  { id: "q-patents-advanced", key: "patents", mode: "advanced", title: "Jsou důležité patenty?", help: "Posuzuje se existence patentového oprávnění i obranné ukončení.", options: [{ value: "important", label: "Ano" }, { value: "neutral", label: "Neřeším" }, ...uncertaintyOptions] },
+  { id: "q-patents-advanced", key: "patents", mode: "advanced", title: "Jsou důležité patenty?", help: "Posuzuje se výslovný patentový grant. Samotné ukončení práv při patentovém sporu nestačí.", options: [{ value: "important", label: "Ano" }, { value: "neutral", label: "Neřeším" }, ...uncertaintyOptions] },
   { id: "q-notices-advanced", key: "notices", mode: "advanced", title: "Jakou zátěž oznámení zvládnete?", help: "Rozlišuje licence bez notice povinnosti od standardních a materiálních oznámení.", options: [{ value: "minimal", label: "Minimum" }, { value: "standard", label: "Standard" }, ...uncertaintyOptions] },
   { id: "q-trademarks", key: "trademarks", mode: "advanced", title: "Potřebujete řešit ochranné známky?", help: "Licence obvykle neposkytuje trademark práva; omezení se zobrazí jako upozornění.", options: [{ value: "important", label: "Ano" }, { value: "neutral", label: "Ne" }, ...uncertaintyOptions] },
   { id: "q-obligations", key: "obligations", mode: "advanced", title: "Jaké povinnosti zvládnete?", help: "Notices, zdroj a instalační informace se posuzují explicitně.", options: [{ value: "minimal", label: "Minimum" }, { value: "notices", label: "Notices" }, { value: "source", label: "Zdroj" }, { value: "installation", label: "Zdroj a instalace" }, ...uncertaintyOptions] },
+  { id: "q-advertising-advanced", key: "advertising", mode: "advanced", title: "Přijmete povinné poděkování v reklamě?", help: "Některé licence požadují poděkování v reklamě zmiňující vlastnosti nebo použití softwaru, i bez jeho distribuce. Volba platí pro tuto povinnost, nikoli pro běžná oznámení.", options: [{ value: "allowed", label: "Ano, přijmu ji" }, { value: "avoid", label: "Ne, bez této povinnosti" }, ...uncertaintyOptions] },
 ];
 
 export function buildGuideModel(): GuideModel { return { version: GUIDE_MODEL_VERSION, questions: guideQuestions }; }
@@ -203,6 +206,7 @@ export const GUIDE_ANSWER_INPUT_SCHEMA = {
     reciprocity: { enum: ["none", "file", "library", "strong", "network", "unknown", "not-applicable", "undecided"] },
     delivery: { enum: ["library", "application", "saas", "internal", "unknown", "not-applicable", "undecided"] },
     patents: { enum: ["important", "neutral", "unknown", "not-applicable", "undecided"] },
+    advertising: { enum: ["allowed", "avoid", "unknown", "not-applicable", "undecided"] },
     notices: { enum: ["minimal", "standard", "unknown", "not-applicable", "undecided"] },
     jurisdiction: { enum: ["eu", "global", "unknown", "not-applicable", "undecided"] },
     projectForm: { enum: ["library", "application", "service", "plugin", "unknown", "not-applicable", "undecided"] },
@@ -223,6 +227,7 @@ export const GUIDE_ANSWER_INPUT_SCHEMA = {
         reciprocity: { enum: ["none", "file", "library", "strong", "network", "unknown", "not-applicable", "undecided"] },
         delivery: { enum: ["library", "application", "saas", "internal", "unknown", "not-applicable", "undecided"] },
         patents: { enum: ["important", "neutral", "unknown", "not-applicable", "undecided"] },
+        advertising: { enum: ["allowed", "avoid", "unknown", "not-applicable", "undecided"] },
         notices: { enum: ["minimal", "standard", "unknown", "not-applicable", "undecided"] },
         jurisdiction: { enum: ["eu", "global", "unknown", "not-applicable", "undecided"] },
         projectForm: { enum: ["library", "application", "service", "plugin", "unknown", "not-applicable", "undecided"] },
@@ -307,7 +312,7 @@ export function parseDependencyInput(input: unknown, knownIdentifiers: readonly 
 
 const knownFamilies = new Set<LicenseFamily>(["network-copyleft", "nonstandard", "permissive", "public-domain-equivalent", "strong-copyleft", "weak-copyleft"]);
 const knownScopes = new Set<CopyleftScope>(["file", "library", "network", "none", "whole-work"]);
-const knownPatents = new Set<PatentPosition>(["defensive-termination", "express-grant", "none-stated", "retaliatory-termination"]);
+const knownPatents = new Set<PatentPosition>(["defensive-termination", "express-exclusion", "express-grant", "none-stated", "retaliatory-termination"]);
 const knownNotices = new Set<NoticeBurden>(["material", "minimal", "none", "standard"]);
 
 const answerValues: Record<keyof GuideAnswers, readonly string[]> = {
@@ -315,6 +320,7 @@ const answerValues: Record<keyof GuideAnswers, readonly string[]> = {
   reciprocity: ["none", "file", "library", "strong", "network"],
   delivery: ["library", "application", "saas", "internal"],
   patents: ["important", "neutral"],
+  advertising: ["allowed", "avoid"],
   notices: ["minimal", "standard"],
   jurisdiction: ["eu", "global"],
   projectForm: ["library", "application", "service", "plugin"],
@@ -427,9 +433,9 @@ function unresolved(value: unknown): boolean {
   return typeof value !== "string" || value.trim() === "" || value === "unresolved";
 }
 
-const knownPermissions = new Set(["commercial-use", "distribution", "modifications", "patent-grant", "private-use", "sublicensing", "unknown"]);
-const knownObligations = new Set(["disclose-source", "include-copyright", "include-license-text", "include-notice", "mark-modifications", "network-use-disclose", "provide-corresponding-source", "provide-installation-information", "same-license", "unknown"]);
-const knownTriggers = new Set(["combination", "distribution", "linking", "modification", "network-use", "patent-claim", "unknown"]);
+const knownPermissions = new Set(["commercial-use", "conditional-relicensing", "distribution", "modifications", "patent-grant", "private-use", "sublicensing", "unknown"]);
+const knownObligations = new Set(["include-use-acknowledgment", "include-advertising-acknowledgment", "pass-disclaimer-requirement", "allow-relinking", "allow-reverse-engineering", "defend-commercial-distribution", "defend-added-warranty", "preserve-combined-license-terms", "disclose-source", "include-copyright", "include-license-text", "include-notice", "mark-modifications", "network-use-disclose", "provide-corresponding-source", "provide-installation-information", "same-license", "unknown"]);
+const knownTriggers = new Set(["advertising", "combination", "distribution", "linking", "modification", "network-use", "patent-claim", "unknown", "use"]);
 const knownRestrictions = new Set(["additional-terms", "liability", "patent-claim", "trademark", "unknown", "warranty"]);
 const knownProjectForms = new Set<string>(["library", "application", "service", "plugin"]);
 const semanticFields = ["family", "copyleftScope", "permissions", "obligations", "triggers", "restrictions", "patentPosition", "noticeBurden"] as const;
@@ -660,8 +666,9 @@ function match(profile: MetadataLicenseProfile, answers: GuideAnswers): MatchRes
   const reciprocity: Record<string, CopyleftScope> = { none: "none", file: "file", library: "library", strong: "whole-work", network: "network" };
   const reciprocityScope = typeof answers.reciprocity === "string" ? reciprocity[answers.reciprocity] : undefined;
   if (reciprocityScope !== undefined) evaluate("copyleftScope", 20, semantic.copyleftScope === reciprocityScope, `matches reciprocity=${answers.reciprocity}`, `does not match reciprocity=${answers.reciprocity}`);
-  if (answers.patents === "important") evaluate("patentPosition", 12, ["express-grant", "defensive-termination", "retaliatory-termination"].includes(semantic.patentPosition), "matches patents=important", "does not evidence a patent grant or defensive termination");
+  if (answers.patents === "important") evaluate("patentPosition", 12, semantic.permissions.includes("patent-grant") && ["express-grant", "defensive-termination", "retaliatory-termination"].includes(semantic.patentPosition), "matches patents=important", "does not evidence an express patent grant");
   if (answers.patents === "neutral") evaluate("patentPosition", 4, knownPatents.has(semantic.patentPosition), "matches patents=neutral", "has no evidenced patent position");
+  if (answers.advertising === "avoid") evaluate("advertising", 8, !semantic.triggers.includes("advertising") && !semantic.obligations.includes("include-advertising-acknowledgment"), "matches advertising=avoid", "requires an advertising acknowledgment");
   if (answers.notices === "minimal") evaluate("noticeBurden", 8, ["minimal", "none"].includes(semantic.noticeBurden), "matches notices=minimal", "requires more than a minimal notice burden");
   if (answers.notices === "standard") evaluate("noticeBurden", 5, ["standard", "material"].includes(semantic.noticeBurden), "matches notices=standard", "does not fit a standard notice burden");
   // projectForm is contextual: the catalogue does not claim that a licence
@@ -673,7 +680,7 @@ function match(profile: MetadataLicenseProfile, answers: GuideAnswers): MatchRes
   if (answers.obligations === "notices") evaluate("obligations", 8, semantic.obligations.some((value) => ["include-notice", "include-copyright", "include-license-text"].includes(value)), "matches obligations=notices", "does not evidence notice obligations");
   if (answers.obligations === "source") evaluate("obligations", 12, semantic.obligations.some((value) => ["disclose-source", "provide-corresponding-source"].includes(value)), "matches obligations=source", "does not evidence a source obligation");
   if (answers.obligations === "installation") evaluate("obligations", 14, semantic.obligations.includes("provide-installation-information"), "matches obligations=installation", "does not evidence an installation-information obligation");
-  if (answers.obligations === "minimal") evaluate("obligations", 12, !semantic.obligations.some((value) => ["disclose-source", "network-use-disclose", "provide-corresponding-source", "provide-installation-information", "same-license", "mark-modifications"].includes(value)), "matches obligations=minimal", "has obligations beyond the requested minimum");
+  if (answers.obligations === "minimal") evaluate("obligations", 12, !semantic.obligations.some((value) => ["include-use-acknowledgment", "include-advertising-acknowledgment", "pass-disclaimer-requirement", "allow-relinking", "allow-reverse-engineering", "defend-commercial-distribution", "defend-added-warranty", "preserve-combined-license-terms", "disclose-source", "network-use-disclose", "provide-corresponding-source", "provide-installation-information", "same-license", "mark-modifications"].includes(value)), "matches obligations=minimal", "has obligations beyond the requested minimum");
   for (const key of ["versionStrategy", "dualLicensing", "futureDistribution"] as const) {
     if (answers[key] !== undefined) conflicts.push(`semantic.${key}: no validated metadata field exists`);
   }
@@ -733,7 +740,8 @@ function recommendationEligibilityUnsafe(profile: MetadataLicenseProfile, answer
   const reciprocityScopes: Record<string, CopyleftScope> = { none: "none", file: "file", library: "library", strong: "whole-work", network: "network" };
   const reciprocityScope = typeof safeAnswers?.reciprocity === "string" ? reciprocityScopes[safeAnswers.reciprocity] : undefined;
   if (reciprocityScope !== undefined && profile.semantic.copyleftScope !== reciprocityScope) exclusion(result, `semantic.copyleftScope: required ${reciprocityScope} is not evidenced`);
-  if (safeAnswers?.patents === "important" && !["express-grant", "defensive-termination", "retaliatory-termination"].includes(profile.semantic.patentPosition)) exclusion(result, "semantic.patentPosition: a patent grant or defensive termination is not evidenced");
+  if (safeAnswers?.patents === "important" && (!profile.semantic.permissions.includes("patent-grant") || !["express-grant", "defensive-termination", "retaliatory-termination"].includes(profile.semantic.patentPosition))) exclusion(result, "semantic.patentPosition: an express patent grant is not evidenced");
+  if (safeAnswers?.advertising === "avoid" && (profile.semantic.triggers.includes("advertising") || profile.semantic.obligations.includes("include-advertising-acknowledgment"))) exclusion(result, "semantic.advertising: requires an advertising acknowledgment");
   if (safeAnswers?.notices === "minimal" && !["minimal", "none"].includes(profile.semantic.noticeBurden)) exclusion(result, "semantic.noticeBurden: minimal burden is not evidenced");
   if (safeAnswers?.notices === "standard" && !["standard", "material"].includes(profile.semantic.noticeBurden)) exclusion(result, "semantic.noticeBurden: standard burden is not evidenced");
   if (safeAnswers?.commercialUse === "allowed") {
@@ -757,7 +765,7 @@ function recommendationEligibilityUnsafe(profile: MetadataLicenseProfile, answer
   if (safeAnswers?.obligations === "source" && !profile.semantic?.obligations?.some((value) => ["disclose-source", "provide-corresponding-source"].includes(value))) exclusion(result, "semantic.obligations: source obligation is not evidenced");
   if (safeAnswers?.obligations === "installation" && !profile.semantic?.obligations?.includes("provide-installation-information")) exclusion(result, "semantic.obligations: installation information is not evidenced");
   if (safeAnswers?.obligations === "minimal") {
-    const heavyObligations = ["disclose-source", "network-use-disclose", "provide-corresponding-source", "provide-installation-information", "same-license", "mark-modifications"];
+    const heavyObligations = ["include-use-acknowledgment", "include-advertising-acknowledgment", "pass-disclaimer-requirement", "allow-relinking", "allow-reverse-engineering", "defend-commercial-distribution", "defend-added-warranty", "preserve-combined-license-terms", "disclose-source", "network-use-disclose", "provide-corresponding-source", "provide-installation-information", "same-license", "mark-modifications"];
     if (profile.semantic?.obligations?.some((value) => heavyObligations.includes(value))) exclusion(result, "semantic.obligations: minimum-burden requirement is not met");
   }
   for (const key of ["versionStrategy", "dualLicensing", "futureDistribution"] as const) {

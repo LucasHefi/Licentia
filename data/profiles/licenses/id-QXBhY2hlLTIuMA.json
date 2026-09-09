@@ -24,6 +24,7 @@
       "sublicensing"
     ],
     "obligations": [
+      "defend-added-warranty",
       "include-copyright",
       "include-license-text",
       "include-notice",
@@ -31,62 +32,82 @@
     ],
     "triggers": [
       "distribution",
+      "modification",
       "patent-claim"
     ],
     "restrictions": [
+      "additional-terms",
       "liability",
       "patent-claim",
       "trademark",
       "warranty"
     ],
-    "patentPosition": "defensive-termination",
-    "noticeBurden": "standard"
+    "patentPosition": "retaliatory-termination",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "Section 4, final paragraph"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "Sections 2 and 4, final paragraph"
+      "locator": "public/data/licenses/Apache-2.0.json#text; §§1/4 mají pouze notice a modifikační podmínky, dovolují jiné licence odvozenin a vylučují pouhé linking jako derivaci; permisivní, copyleft none.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "Section 4(a)-(d)"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "Section 4(a)-(d)"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "Section 3, paragraphs 1-2"
+      "locator": "public/data/licenses/Apache-2.0.json#text; §§1/4 mají pouze notice a modifikační podmínky, dovolují jiné licence odvozenin a vylučují pouhé linking jako derivaci; permisivní, copyleft none.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "Sections 2; 3, paragraph 1; and 9, paragraph 1"
+      "locator": "public/data/licenses/Apache-2.0.json#text; §2 každý Contributor uděluje trvalý celosvětový bezplatný neodvolatelný copyright na reprodukci, deriváty, public display/perform, sublicence a source/object distribuci. §3 patentový grant make/have made/use/offer/sell/import/transfer kryje pouze jeho licencovatelné nároky nutně porušené příspěvkem samotným nebo kombinací s Work, do kterého byl příspěvek zaslán.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "restrictions",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "Section 3, paragraph 2, and Sections 6-8"
-    },
-    {
-      "field": "review",
-      "sourceId": "spdx-license-list",
-      "locator": "metadata.osi=true"
+      "locator": "public/data/licenses/Apache-2.0.json#text; §4(a) licenci všem příjemcům; (b) výrazné označení změněných souborů; (c) v distribuovaných zdrojích derivátů relevantní copyright/patent/trademark/attribution notices; (d) existuje-li NOTICE, relevantní čitelná atribuce v NOTICE NEBO přiložených zdrojích/dokumentaci NEBO obvyklém display. NOTICE nemění licenci a vlastní dodatky ji nesmějí měnit. §9 při dobrovolném převzetí podpory/záruky/indemnity/odpovědnosti pouze vlastním jménem, s odškodněním/obranou ostatních přispěvatelů za takové nároky.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "Section 3, paragraph 2, and Section 4, opening paragraph"
+      "locator": "public/data/licenses/Apache-2.0.json#text; §4(a) licenci všem příjemcům; (b) výrazné označení změněných souborů; (c) v distribuovaných zdrojích derivátů relevantní copyright/patent/trademark/attribution notices; (d) existuje-li NOTICE, relevantní čitelná atribuce v NOTICE NEBO přiložených zdrojích/dokumentaci NEBO obvyklém display. NOTICE nemění licenci a vlastní dodatky ji nesmějí měnit. §9 při dobrovolném převzetí podpory/záruky/indemnity/odpovědnosti pouze vlastním jménem, s odškodněním/obranou ostatních přispěvatelů za takové nároky.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Apache-2.0.json#text; §3 patentová žaloba proti komukoli včetně cross/counter za Work či zahrnutý příspěvek ukončí patentové licence pro Work dnem podání, nikoli celý copyright grant. §6 známky jen obvyklý popis původu a NOTICE. §§7–8 as is/no warranties/no damages s výhradami kogentního práva či písemné dohody; vhodnost/riziko na příjemci.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Apache-2.0.json#text; §2 každý Contributor uděluje trvalý celosvětový bezplatný neodvolatelný copyright na reprodukci, deriváty, public display/perform, sublicence a source/object distribuci. §3 patentový grant make/have made/use/offer/sell/import/transfer kryje pouze jeho licencovatelné nároky nutně porušené příspěvkem samotným nebo kombinací s Work, do kterého byl příspěvek zaslán.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Apache-2.0.json#text; §4(a) licenci všem příjemcům; (b) výrazné označení změněných souborů; (c) v distribuovaných zdrojích derivátů relevantní copyright/patent/trademark/attribution notices; (d) existuje-li NOTICE, relevantní čitelná atribuce v NOTICE NEBO přiložených zdrojích/dokumentaci NEBO obvyklém display. NOTICE nemění licenci a vlastní dodatky ji nesmějí měnit. §9 při dobrovolném převzetí podpory/záruky/indemnity/odpovědnosti pouze vlastním jménem, s odškodněním/obranou ostatních přispěvatelů za takové nároky.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Apache-2.0.json#text; Individuálně přečten celý připnutý text. §1 Work zahrnuje Source/Object; Derivative Works výslovně vylučují oddělitelné práce a pouhé linkování/binding rozhraní. Contributor je autor zařazeného Contribution; You zahrnuje kontrolované entity s 50%/beneficial ownership či řídicí kontrolou. Apache 2 dovoluje široké copyrightové i vymezené patentové užití. Příjemci dostanou licenci, změny se označí a relevantní původní source/NOTICE oznámení zůstanou. Odvozeniny mohou mít jiné podmínky při dodržení původního grantu; dobrovolně převzatá záruka či odpovědnost zahrnuje obranu přispěvatelů. ",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

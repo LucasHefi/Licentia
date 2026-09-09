@@ -9,7 +9,7 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
+    "recommendable": true,
     "evidenceLevel": "strong"
   },
   "semantic": {
@@ -29,56 +29,75 @@
       "distribution"
     ],
     "restrictions": [
-      "liability"
+      "liability",
+      "warranty"
     ],
     "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "family",
-      "sourceId": "spdx-license-list",
-      "locator": "text: broad permission to use, copy, modify, and distribute identifies a permissive, non-reciprocal license"
-    },
-    {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text: permission grant and notice condition; no same-license, source-disclosure, corresponding-source, linking, or network-use condition is stated"
+      "locator": "public/data/licenses/CMU-Mach-nodoc.json#text; permission paragraph: use/copy/modify/distribute software and documentation; uppercase free-use statement, no commercial limitation; no reciprocal source-disclosure or same-license condition; https://spdx.org/licenses/CMU-Mach-nodoc.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
     },
     {
-      "field": "permissions",
+      "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant permits use, copy, modification, and distribution of the software and its documentation without a field-of-use limitation"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text: condition requires both the copyright notice and permission notice in all copies, derivative works, modified versions, and portions"
-    },
-    {
-      "field": "triggers",
-      "sourceId": "spdx-license-list",
-      "locator": "text: notice condition attaches to copies, derivative works, modified versions, and portions distributed with the software; distribution is the represented trigger"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text: NRL as-is clause disclaims liability for any damages resulting from use; no endorsement, field-of-use, or other substantive restriction is stated"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text: complete license text; no express patent grant, patent condition, patent-claim restriction, or patent-termination clause is stated"
+      "locator": "public/data/licenses/CMU-Mach-nodoc.json#text; permission paragraph: use/copy/modify/distribute software and documentation; uppercase free-use statement, no commercial limitation; https://spdx.org/licenses/CMU-Mach-nodoc.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text: condition requires retaining both notices in copies, derivative works, modified versions, and portions, creating a standard redistribution notice burden"
+      "locator": "public/data/licenses/CMU-Mach-nodoc.json#text; permission paragraph: copyright and permission in all copies/derivatives/modifications/portions; NO separate supporting-documentation condition or return-improvements request; https://spdx.org/licenses/CMU-Mach-nodoc.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CMU-Mach-nodoc.json#text; permission paragraph: copyright and permission in all copies/derivatives/modifications/portions; NO separate supporting-documentation condition or return-improvements request; https://spdx.org/licenses/CMU-Mach-nodoc.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CMU-Mach-nodoc.json#text; whole text: no express patent grant or patent-litigation termination; no inference about implied patent rights; https://spdx.org/licenses/CMU-Mach-nodoc.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CMU-Mach-nodoc.json#text; permission paragraph: use/copy/modify/distribute software and documentation; uppercase free-use statement, no commercial limitation; https://spdx.org/licenses/CMU-Mach-nodoc.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CMU-Mach-nodoc.json#text; final uppercase paragraph: AS IS and all damages liability disclaimed; no name-use restriction; https://spdx.org/licenses/CMU-Mach-nodoc.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "metadata: id=CMU-Mach-nodoc, deprecated=false, osi=false, fsf=false; text: broad permissive grant and explicit notice/liability terms are clear, but the specialized NRL wording is nonstandard, so recommendable=false"
+      "locator": "public/data/licenses/CMU-Mach-nodoc.json#text; whole-text editorial review on 2026-09-09, batch 5; Zachovejte copyright a svolovací oznámení ve všech kopiích, částech a odvozených či upravených verzích. Oproti CMU-Mach se zvlášť nepožaduje jejich uvedení v podpůrné dokumentaci a text ani nežádá o zasílání vylepšení. Software je poskytován jak stojí a leží s vyloučením odpovědnosti; poskytování zdrojů se nevyžaduje.; https://spdx.org/licenses/CMU-Mach-nodoc.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CMU-Mach-nodoc.json#text; permission paragraph: copyright and permission in all copies/derivatives/modifications/portions; NO separate supporting-documentation condition or return-improvements request; https://spdx.org/licenses/CMU-Mach-nodoc.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
     }
   ]
 }

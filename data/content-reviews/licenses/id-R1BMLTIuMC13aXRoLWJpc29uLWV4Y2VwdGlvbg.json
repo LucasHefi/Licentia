@@ -1,0 +1,29 @@
+{
+  "id": "GPL-2.0-with-bison-exception",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:59f37db4a2bfeee924e792658a82a2490c9260d7a117988ee4b69635537d1786"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Záznam obsahuje pouze Bison výjimku, která za stanovených podmínek dovoluje vlastní licencování většího díla s kostrou parseru; popsané generátory parserů z ní vyjímá. Při změně či šíření kostry lze výjimku odstranit a ponechat GPL. Průvodce tento zastaralý identifikátor nezařazuje, protože chybí úplná základní licence a je třeba určit současný výraz s odpovídající výjimkou.",
+  "blockersCs": [
+    "Připnutý deprecated záznam obsahuje pouze Bison výjimku bez základní GPL; před použitím je třeba doložit celý základní text a zvolit moderní SPDX výraz s konkrétní Bison výjimkou."
+  ],
+  "analysis": {
+    "subjectCs": "Deprecated identifikátor má v připnutém textu pouze Bison Exception a poznámku o jejím přidání v Bison 2.2.",
+    "grantCs": "Výjimka dovoluje větší dílo obsahující kostru parseru distribuovat pod vlastními podmínkami, není-li samo generátorem parserů používajícím původní či upravenou kostru jako parser skeleton.",
+    "conditionsCs": "Při změně či redistribuci samotné kostry lze výjimku odstranit; pak kostra i výsledné výstupy Bison podléhají GPL bez této výjimky. Plný základní GPL text není přiložen.",
+    "limitationsCs": "Výjimka výslovně nepokrývá popsané generátory parserů; záruky, odpovědnost a ukončení základní licence v připnutém textu chybějí.",
+    "compatibilityCs": "Volitelné odstranění výjimky mění podmínky kostry i vygenerovaných souborů; nejde o všeobecnou možnost převést vlastní kostru na proprietární licenci."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/GPL-2.0-with-bison-exception.html",
+      "note": "Individuálně přečten celý připnutý text; Při změně či redistribuci samotné kostry lze výjimku odstranit; pak kostra i výsledné výstupy Bison podléhají GPL bez této výjimky. Plný základní GPL text není přiložen. Samotná výjimka neobsahuje patentová pravidla a chybějící základní grant nelze dovodit z názvu."
+    }
+  ]
+}

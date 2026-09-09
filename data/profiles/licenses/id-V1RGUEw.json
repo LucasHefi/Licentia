@@ -9,91 +9,88 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "public-domain-equivalent",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use",
+      "sublicensing"
     ],
-    "obligations": [
-      "include-license-text"
-    ],
-    "triggers": [
-      "unknown"
-    ],
-    "restrictions": [
-      "unknown"
-    ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "obligations": [],
+    "triggers": [],
+    "restrictions": [],
+    "patentPosition": "none-stated",
+    "noticeBurden": "none"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/WTFPL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/WTFPL.json#text; TERMS AND CONDITIONS, bod 0 poskytuje zcela neomezené oprávnění, funkčně public-domain-equivalent bez formální dedikace.; https://spdx.org/licenses/WTFPL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/WTFPL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/WTFPL.json#text; Bod 0 nevyžaduje zdroje ani shodné licencování odvozeného díla.; https://spdx.org/licenses/WTFPL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/WTFPL.json#text; Bod 0 dovoluje libovolné nakládání v rámci podmínek pro copying, distribution and modification; včetně komerčního a dalšího licencování.; https://spdx.org/licenses/WTFPL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/WTFPL.json#text; Bod 0 nemá pozitivní povinnosti pro software; úvodní změna názvu se vztahuje výslovně na license document.; https://spdx.org/licenses/WTFPL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/WTFPL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/WTFPL.json#text; Celé softwarové podmínky v bodu 0 bez triggerů plnění; změna textu licence není úprava licencovaného programu.; https://spdx.org/licenses/WTFPL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/WTFPL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/WTFPL.json#text; Bod 0 bez omezení záruk, odpovědnosti, známek či dalších podmínek pro dílo; pravidlo názvu chrání změněný dokument licence.; https://spdx.org/licenses/WTFPL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/WTFPL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/WTFPL.json#text; Celý text neobsahuje výslovně patentový grant či patentové ukončení.; https://spdx.org/licenses/WTFPL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/WTFPL.json#text; Bod 0 nevyžaduje připojení copyrightu, licence ani dalších oznámení k dílu.; https://spdx.org/licenses/WTFPL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/WTFPL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/WTFPL.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. Jediná podmínka verze 2 dovoluje s licencovaným dílem dělat cokoli. Přejmenování se vyžaduje při změně samotného licenčního dokumentu, nikoli při úpravě programu.; https://spdx.org/licenses/WTFPL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

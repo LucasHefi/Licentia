@@ -1,0 +1,29 @@
+{
+  "id": "ParaType-Free-Font-1.3",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:2f6d4c726eb715809f4ea71bdc6a8b91833a08f567761eee68e5353d95211fe9"
+  },
+  "disposition": "blocked",
+  "summaryCs": "PT Sans, PT Serif a PT Mono lze používat, upravovat, vkládat a distribuovat, včetně komerčních balíků; samostatný prodej fontů je zakázán. Změněné názvy nesmí obsahovat původní jméno bez písemného svolení a porušení ruší licenci.",
+  "blockersCs": [
+    "Licence zakazuje prodej fontů samostatně a podmiňuje distribuci modifikací konkrétním názvem. Doplnit fontový předmět, rozlišení bundled/standalone sale a podmíněná jména, aby commercial-use neskrylo zákaz."
+  ],
+  "analysis": {
+    "subjectCs": "Verze 1.3 z 20.1.2012 se vztahuje na fonty s Original Name PT Sans/PT Serif/PT Mono.",
+    "grantCs": "GRANT dovoluje use/copy/modify/distribute, webové bezplatné stahování, embedding dokumentů/webů a komerční/nekomerční bundling. Komerční užití je podmíněno zákazem prodeje fontů samostatně. Výslovný patentový grant a sublicence chybějí.",
+    "conditionsCs": "Distribuce všech verzí musí obsahovat tento nezměněný Licensing Agreement a copyright, buď v textovém souboru, nebo fontu, snadno viditelně. Modifikované fonty nelze distribuovat pod původním jménem či jeho kombinací s dalšími slovy bez písemného svolení ParaType.",
+    "limitationsCs": "První podmínka zakazuje samostatný prodej fontů; TERMINATION nemá územní/časový limit, ale porušení kterékoli podmínky ruší platnost. DISCLAIMER odmítá záruky neporušení copyrightu/patentů/známek a další záruky i škody.",
+    "compatibilityCs": "Povoleno je bundling a embedding, ne samostatný prodej; text nevyžaduje licenci celého dokumentu či produktu a nenabízí alternativu."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/ParaType-Free-Font-1.3.html",
+      "note": "Individuální revize celého připnutého textu; Verze 1.3 z 20.1.2012 se vztahuje na fonty s Original Name PT Sans/PT Serif/PT Mono."
+    }
+  ]
+}

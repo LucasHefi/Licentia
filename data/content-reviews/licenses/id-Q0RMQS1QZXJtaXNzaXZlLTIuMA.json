@@ -1,0 +1,29 @@
+{
+  "id": "CDLA-Permissive-2.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:50bf940ea435e52f0cb9d2ee0105a70a3498e62a94be4ccfcada195720bf0770"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Licence dovoluje data používat, měnit a sdílet, pokud příjemci sdílených dat získají přístup k jejímu textu. Na výsledky výpočetní analýzy, včetně strojově učených modelů a poznatků, výslovně neklade další omezení. Průvodce ji nezařazuje jako licenci pro nový software, protože musí zachovat odlišné zacházení s daty a výsledky; obojí je poskytováno bez záruk.",
+  "blockersCs": [
+    "Předmětem jsou data s výslovně vyňatými výsledky výpočetní analýzy včetně ML modelů; před doporučením novému softwaru je třeba samostatný datový model zachovávající tuto hranici."
+  ],
+  "analysis": {
+    "subjectCs": "CDLA Permissive 2.0 licencuje Data a výslovně odděluje Results získané výpočetní analýzou, včetně ML modelů a jejich poznatků.",
+    "grantCs": "§1.1 dovoluje užití, změny a sdílení dat; §1.2 neomezuje public-domain části ani jiné zákonné výjimky.",
+    "conditionsCs": "§2.1 vyžaduje přístup k textu smlouvy při sdílení dat se změnami i bez nich. §3.1 neklade žádné povinnosti nebo omezení na užití, změny a sdílení Results.",
+    "limitationsCs": "§4 vylučuje AS IS záruky včetně titulu/neporušování a odpovědnost poskytovatele za Data i Results; §5 definuje přímé i nepřímé příjemce.",
+    "compatibilityCs": "Nabídka jiných licencí nebo verzí není; odlišení Data/Results není tvrzením kompatibility s libovolnou licencí datových zdrojů."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/CDLA-Permissive-2.0.html",
+      "note": "Individuálně přečten celý připnutý text; §2.1 vyžaduje přístup k textu smlouvy při sdílení dat se změnami i bez nich. §3.1 neklade žádné povinnosti nebo omezení na užití, změny a sdílení Results. Celá dohoda nemá výslovný patentový grant či patentové ukončení."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "ZPL-2.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.2",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:754322997b944a6a43563f2cfe19ce87d44b46dec42cbc2b7336175e340b3fc3"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Zachovejte copyright, podmínky a disclaimer ve zdrojích nebo materiálech k binární distribuci. Upravené soubory označte včetně data změny. Omezení propagace a známek se vztahuje na Zope Corporation. Poskytování zdrojů není podmínkou.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/ZPL-2.0.html",
+      "note": "Dřívější individuální revize 2026-09-09.2; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

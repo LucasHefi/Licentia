@@ -1,0 +1,20 @@
+{
+  "id": "PostgreSQL",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:bd5aaad07c5e6aecbe559e6cebc8ed0e53d6c58e86a61a9248ebfb0a2a6cd83c"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Ve všech kopiích zachovejte copyright, udělení licence i oba odstavce o odpovědnosti a zárukách. Licence neukládá poskytovat zdrojový kód.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/PostgreSQL.html",
+      "note": "Dřívější individuální revize 2026-09-09; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

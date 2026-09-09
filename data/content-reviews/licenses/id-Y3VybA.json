@@ -1,0 +1,20 @@
+{
+  "id": "curl",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:9242b6df2cdfd9ea81077af34e3ba56ed5f3b5e04bc221c16a8e4225ffbb880a"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Permisivní licence curl: zachovejte copyright a licenční oznámení. Použití jmen nositelů práv v reklamě nebo propagaci vyžaduje souhlas. Výslovný patentový grant není uveden.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/curl.html",
+      "note": "Dřívější individuální revize 2026-09-09; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

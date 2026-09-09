@@ -1,0 +1,27 @@
+{
+  "id": "OSL-1.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:f0f3249026b20fd6760457ae1882e7845259c41efb8aa05070491f310f809b19"
+  },
+  "disposition": "eligible",
+  "summaryCs": "OSL 1.0 vyžaduje stejnou licenci pro šířené dílo i odvozeniny a modifikovatelný zdroj, přiložený nebo dostupný v repozitáři po dobu distribuce. Za distribuci považuje také externí přístup a užití, včetně síťových aplikací, služeb a dodávání obsahu mimo uživatele vymezeného licencí. Poskytuje omezený patentový grant a výslovnou záruku oprávnění k autorským právům, ostatní záruky vylučuje. Vymezená patentová žaloba může ukončit celou licenci.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "OSL 1.0 pokrývá Original Work s předepsaným oznámením a Derivative Works a za distribuci považuje i External Deployment.",
+    "grantCs": "§1 dovoluje reprodukci, odvozeniny, distribuci a veřejné provedení/zobrazení bez sublicencí; §2 uděluje patenty embodied v dodaném původním díle k jeho i odvozenin make/use/sell/offer.",
+    "conditionsCs": "§1c vyžaduje OSL pro distribuované kopie a odvozeniny. §3 požaduje modifikovatelný strojový zdroj s dokumentací u každé distribuce nebo levně/pohodlně přístupný repozitář po dobu distribuce s adresou hned za copyrightem. §5 distribucí činí každý přístup/užití jinou osobou, síťovou aplikaci, služby i dodávání obsahu komukoli mimo You.",
+    "limitationsCs": "§4 vyjímá známky a jiné než Licensed Claims; §6 na rozdíl od běžného AS IS výslovně zaručuje vlastnictví copyrightu nebo platnou licenci, zbytek záruk vylučuje. §7 má výjimku smrti/zranění z nedbalosti dle práva. §8 porušení §1c ihned ruší práva; §9 žaloba na nezbytný patent proti jakémukoli OSI softwaru s touto mutual doložkou ruší celou licenci.",
+    "compatibilityCs": "§10 právo/soudy sídla poskytovatele bez CISG; §11 vítěz vymáhání získá náklady včetně odvolání. §13 You zahrnuje ovládané/společně ovládané subjekty. Licensor smí vlastní dílo nabídnout i jinak, příjemce žádnou automatickou alternativu nemá."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/OSL-1.0.html",
+      "note": "Individuálně přečten celý připnutý text; §1c vyžaduje OSL pro distribuované kopie a odvozeniny. §3 požaduje modifikovatelný strojový zdroj s dokumentací u každé distribuce nebo levně/pohodlně přístupný repozitář po dobu distribuce s adresou hned za copyrightem. §5 distribucí činí každý přístup/užití jinou osobou, síťovou aplikaci, služby i dodávání obsahu komukoli mimo You. §2 uděluje výslovné embodied Licensed Claims; §9 má široké automatické vzájemné ukončení za patentovou žalobu na OSI software s touto doložkou, nikoli pouze žalobu na toto dílo."
+    }
+  ]
+}

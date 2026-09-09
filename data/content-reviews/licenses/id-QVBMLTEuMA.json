@@ -1,0 +1,35 @@
+{
+  "id": "APL-1.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:a264965a8361e3ef8baf3b2adbd275b0f937affa2f93ad163a4236dfba89443f"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Adaptive Public License 1.0 je nastavitelný formulář pro software. Zachovává licenci pokrytého kódu, poskytování zdrojů binárek, předepsaná oznámení a zvláštní veřejnou dostupnost příspěvků. Vyplněné Exhibit A a případný suppfile.txt určují zejména třetí osoby, patenty, označování změn a atribuci při spuštění. Samotný obecný text proto nestačí pro doporučení konkrétní varianty; nevybrané patenty mají výchozí NO, nikoli automatický grant.",
+  "analysis": {
+    "subjectCs": "Úvod výslovně varuje před určením práv z generického formuláře. §1.9/1.11 Initial Work a Subsequent Work obsahují zdroje, případný objekt a dokumentaci počítačového programu z Exhibit A Part 2. §1.7 Independent Module musí být neodvozený a nepřevzatý, navíc se jím nestane vložený modul, reference jiná než function/class call ani modul povinně ve stejném adresáři/podadresáři kódu. §1.18/3.6 jej vyjímají, §3.7 odděluje jiný kód Larger Work. Tato komponentová a adresářová hranice není totožná se souborem, knihovnou ani celým produktem.",
+    "grantCs": "§2.1 původní i následný přispěvatel uděluje celosvětové bezroyalty copyright oprávnění reprodukce, odvozenin, display/performance, distribuce a sublicence zdrojů i Executable. §3.5 výslovně soukromé interní změny; §4.1 komerční služby, ale cena distribuce je omezena na fyzické náklady. §2.2/Exhibit A Part 6 nejsou bezpodmínečný patentový grant: nevybrané YES znamená NO. Jen vybrané YES začlení A–E s patenty původce, následného přispěvatele i distributora, vyjmutím smazaného/cizího kódu a samostatně mimo dodané verze. §2.3 obstarání případných cizích IP práv zůstává příjemci, §2.4 jiná práva včetně známek nejsou udělena.",
+    "conditionsCs": "§3.1(a) Subsequent Contributor, tedy až osoba šířící příspěvek Third Party, zpřístupní Subsequent Work veřejně elektronicky na nejméně 12 měsíců, počínaje rozumně po vzniku a nejpozději 60 dnů po první distribuci. §3.1(b) každá distribuovaná kopie nese license.txt s Exhibit A i doprovodným suppfile.txt; License Notice začíná zdrojové soubory a je viditelné uživateli Executable. §3.2 binárka nese zdroje na stejném médiu/elektronicky NEBO nejméně 36měsíční písemnou nabídku každé třetí straně za fyzické náklady a elektronickou dostupnost zdrojů po tuto dobu. §1.16 zahrnuje moduly/komponenty, rozhraní a build/install skripty. §3.3 stejná licence všech zdrojových distribucí a cena nanejvýš fyzických nákladů; §3.4 strukturálně nutné náhradní umístění notice. §3.5 interní změny nemusí být vydány, ale jejich distribuce jakékoli osobě nese licenci a předání Third Party aktivuje §§3.1–3.4.",
+    "limitationsCs": "§3.8 dokumentování změn vzniká jen dle suppfile.txt Part 1; při jeho absenci není povinné a příklad Exhibit A Part 7 je výslovně dobrovolný. Starší příjemce si může ponechat stará pravidla nebo přijmout nová; dokumentace nesmí měnit grant, vést k zániku licence ani náhradě škody. §3.10 jen vyplněné Part 2 může vyžadovat atribuci při každém spuštění, případně i závislého programu, a na začátku zdrojů: nejvýše copyright/jméno, fráze do 10 slov, jeden obrázek a URL. Bez obsahu Part 2 atribuce nevzniká. §3.9 jméno distributora není k propagaci bez souhlasu. §4.1 přidané služby jen vlastním jménem, nesmějí odepřít zdroje/binárky; §4.2 obrana/odškodnění ostatních distributorů a následných přispěvatelů za vlastní komerční distribuční či servisní jednání, mimo IP claims, s rychlou písemnou výzvou, kontrolou/spoluprací obrany a možností účasti poškozeného na jeho náklady. §§6/8 záruky a odlišná liability původce oproti příjemcům, výjimka neprominutelné smrti/zranění z nedbalosti. §7 podstatné porušení s 60 dny od vědomosti, cross-default ostatních kopií licence, zánik všech práv příjemce a přežití řádných sublicencí.",
+    "compatibilityCs": "§5.2 dovoluje starou verzi ponechat, ale po volbě nové platí pro všechna další vymezená nakládání. §2.2 rozlišuje dřívější Patents-Excluded kopie a budoucí Patents-Included; kombinace obou je od prvního užití/zpřístupnění/distribuce Patents-Included. Volitelná Part 6 E při patentové žalobě včetně counter/cross proti jinému Recipient o software ruší jím udělené copyright/patenty po 90 dnech přesné výzvy, pokud se žaloba nevezme zpět, a jen k právům uvedeným ve výzvě. Part 4 nabízí pět definic Third Party s různými vlastnickými/kontrolními výjimkami, při žádné/více volbách platí A. §9/Part 3 právo zvoleného místa, výchozí New York, nevýhradní soudy, roční lhůta, vzdání se jury a náklady vítězné strany; §10 CISG vyloučeno. Samotný SPDX identifikátor neurčuje výběry ani GPL kompatibilitu."
+  },
+  "blockersCs": [
+    "Zavést parametrizované instance APL: vyplněné Exhibit A a doprovodný suppfile.txt určují Third Party, patenty, dokumentování a atribuci. Zachovat defaulty NO pro patenty, A pro žádnou/více definic Third Party a New York pro jurisdikci. Větve nesmí být sloučeny do jedné bezpodmínečné sady povinností či patentového grantu.",
+    "Doplnit komponentový rozsah §1.7/1.18/3.6 včetně vložení, referencí a nutného adresáře/podadresáře. Samotná neodvozenost ani souborový/knihovní tag nedokládají výjimku Independent Module.",
+    "Modelovat veřejnou elektronickou dostupnost Subsequent Work nejméně 12 měsíců s počátkem do 60 dnů od distribuce (§3.1), omezení ceny distribuce fyzickými náklady (§3.3/4.1) a 36měsíční zdrojovou nabídku. Před doporučením ověřit konkrétní role, výběry a historii kopií, zvláště přechod na Patents-Included při kombinování (§2.2)."
+  ],
+  "sources": [
+    {
+      "url": "https://opensource.org/license/APL-1.0",
+      "note": "Primární znění OSI potvrzuje adaptive upozornění, specifickou hranici Independent Module a rozlišení patentových variant podle vyplněné přílohy; schválení názvu samo neurčuje zvolené podmínky."
+    },
+    {
+      "url": "https://spdx.org/licenses/APL-1.0.html",
+      "note": "Úplný připnutý formulář APL-1.0 včetně Parts 1–7 byl samostatně přečten. Prázdné volby a výchozí NO/A/New York zůstávají popsány, žádná příloha ani patentové YES nebyly domyšleny."
+    }
+  ]
+}

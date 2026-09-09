@@ -1,0 +1,30 @@
+{
+  "id": "CUA-OPL-1.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:54f9fbc223b935cc3257938f48d4b5111139bb3e0cce579c96910f2b952b7603"
+  },
+  "disposition": "blocked",
+  "summaryCs": "CUA Office Public License vyžaduje zpřístupnit změněné zdrojové soubory pod stejnou licencí, zachovat oznámení a uvést změny i cestu ke zdrojům. Dovoluje jiné binární podmínky při zachování zdrojových práv a obsahuje vymezený patentový grant. Navíc ukládá aktivně informovat dřívější příjemce o nově zjištěných cizích právech a spolupracovat na rozdělení odpovědnosti. Průvodce potřebuje tyto povinnosti doplnit a vyjasnit alternativní článek, který místo vlastní licence uvádí NPL.",
+  "blockersCs": [
+    "§3.4 vyžaduje aktivní informování předchozích příjemců o nových IP nárocích a §12 spolupráci na rozdělení odpovědnosti za užití práv; model tyto povinnosti nevyjadřuje, je třeba je doplnit.",
+    "§13 uvádí NPL v rozporu s CUAPL v Exhibit A a §3; případnou alternativní cestu je nutné objasnit autoritativním označením konkrétního kódu, nikoli prohlásit obecnou NPL kompatibilitu."
+  ],
+  "analysis": {
+    "subjectCs": "CUA Office Public License 1.0 se podle §5 a Exhibit A použije na označený Original Code a změny; §1.9 váže reciproční část na soubory obsahující původní nebo změněný kód.",
+    "grantCs": "§2 výslovně dovoluje užití, kopírování, změny, zobrazení/provozování, sublicence a distribuci včetně Larger Work a prodeje. Patentové granty chrání původní kód a vlastní příspěvek v Contributor Version, ne odstraněný kód, samostatné nároky, jiné kombinace či cizí změny. Contributor grant začíná prvním zpřístupněním třetí osobě, které §1.0.1 označuje Commercial Use bez ohledu na úplatu.",
+    "conditionsCs": "§3.1–3.2 zdroje pokrytých souborů zůstávají pod licencí; příjemci executable mají dostat zdroje úprav na stejném médiu nebo elektronickou cestou na 12 měsíců od zveřejnění či 6 měsíců od následné verze. §3.3–3.6 vyžadují soubor změn/dat, identifikaci původního vývojáře, Exhibit A v každém souboru či náhradním dostupném místě a oznámení licence i zdrojové cesty v relevantní dokumentaci/binárních notices. §3.4 LEGAL nese známé nutné cizí IP a API patentové nároky; nová znalost vyvolá rychlou aktualizaci a aktivní přiměřené informování předchozích příjemců. Přispěvatel prohlašuje přesvědčení o původnosti nebo dostatečných právech. §3.5–3.6 vlastní dodatečné záruky a binární podmínky musí být jen jeho a odškodní za ně ostatní.",
+    "limitationsCs": "§4 vyžaduje při zákonné nemožnosti plnění maximum a vysvětlení v LEGAL. §7–9 stanoví AS IS, omezení odpovědnosti a 30denní nápravu od zjištění porušení. §8.2 odvetně ukončuje všechny granty účastníka při žalobě na jeho Contributor Version po 60 dnech bez stažení/dohody o odměně; při žalobě na jiný produkt zpětně jen patentová práva. Deklaratorní žaloby jsou vyňaty a řádné koncové licence přežijí. §11 používá kalifornské právo, při americké straně Northern District/Santa Clara a náklady poraženého; §12 ukládá spolupráci na spravedlivém rozdělení nároků z výkonu práv.",
+    "compatibilityCs": "§3.7 dovoluje Larger Work s jiným kódem a §3.6 jiné binární podmínky bez omezení zdrojových práv. §6.2 dovoluje pozdější vydání od CUA Office Project; odvozený text licence lze použít jen na dosud nepokrytý kód pod jiným názvem. §13 označené Multiple-Licensed části chybně popisuje jako volbu NPL, zatímco Exhibit A a §3 mluví o CUAPL; tuto konkrétní nesrovnalost nelze tiše opravovat na automatickou NPL kompatibilitu. Samotný nepodmíněný základní grant CUA tím není neznámý."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/CUA-OPL-1.0.html",
+      "note": "Individuálně přečten celý připnutý text; §3.1–3.2 zdroje pokrytých souborů zůstávají pod licencí; příjemci executable mají dostat zdroje úprav na stejném médiu nebo elektronickou cestou na 12 měsíců od zveřejnění či 6 měsíců od následné verze. §3.3–3.6 vyžadují soubor změn/dat, identifikaci původního vývojáře, Exhibit A v každém souboru či náhradním dostupném místě a oznámení licence i zdrojové cesty v relevantní dokumentaci/binárních notices. §3.4 LEGAL nese známé nutné cizí IP a API patentové nároky; nová znalost vyvolá rychlou aktualizaci a aktivní přiměřené informování předchozích příjemců. Přispěvatel prohlašuje přesvědčení o původnosti nebo dostatečných právech. §3.5–3.6 vlastní dodatečné záruky a binární podmínky musí být jen jeho a odškodní za ně ostatní. §2 výslovné patentové granty pro Original Code/příspěvek/Contributor Version mají uvedené kombinatorické výluky. §8.2 rozlišuje 60denní zánik všech grantů při žalobě na verzi a retroaktivní patentové odvolání za žalobu na jiný produkt; jde o širší odvetu."
+    }
+  ]
+}

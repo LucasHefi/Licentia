@@ -1,0 +1,30 @@
+{
+  "id": "OFL-1.0-no-RFN",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:306f38d07d43131922a733996ba05fee5e25a4d9d6613dbb78c8e0e7c30371f5"
+  },
+  "disposition": "blocked",
+  "summaryCs": "OFL 1.0 kryje fonty, data, kód, build skripty a dokumentaci; samostatný prodej fontu či komponenty zakazuje a fontové části zachovávají OFL. Přestože ID uvádí no-RFN, připnutý text obsahuje podmínku rezervovaných názvů a jejich širokou definici z verze 1.0.",
+  "blockersCs": [
+    "Font Software zahrnuje fontové komponenty s povinnou stejnou licencí a zákazem samostatného prodeje, ale embedding/bundling nesmí být zaměněn za copyleft celého programu. Je třeba fontový model rozsahu a prodeje.",
+    "Podmínka3 v připnutém textu zůstává a Reserved Font Name ve verzi1.0 zahrnuje název viděný uživateli i další uvedené názvy. Je třeba doložit konkrétní název/deklaraci a vyjasnit no-RFN variantu; suffix sám podmínku neodstraňuje."
+  ],
+  "analysis": {
+    "subjectCs": "Font Software: fonty, data, zdroje, build skripty a dokumentace; Modified Version zahrnuje formátové změny i portování.",
+    "grantCs": "Use/study/copy/merge/embed/modify/redistribute/sell pod podmínkami1–5; patentový grant není uveden.",
+    "conditionsCs": "1 zákaz samostatného prodeje jakékoli komponenty.2 bundling s notices/licencí v textu, čitelných hlavičkách či snadno zobrazitelných metadatech.3 změněné názvy nesmějí obsahovat RFN bez písemného svolení.5 fontové části vždy OFL.",
+    "limitationsCs": "4 jména držitelů/autorů nepropagují změněné verze mimo přiznání příspěvku nebo písemné svolení. Nesplnění kterékoli podmínky null/void; AS IS a warranty/liability včetně patent/trademark infringement.",
+    "compatibilityCs": "Preambule dovoluje bundling/embedding s libovolným softwarem, ne jinou licenci samotných fontů. No-RFN ID se nebere jako alternativní text bez podmínky3; žádná volba pozdější OFL zde není."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/OFL-1.0-no-RFN.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; OFL1.0 fontový grant s komponentovým prodejem/názvy/same-license, ne běžný softwarový rozsah."
+    }
+  ]
+}

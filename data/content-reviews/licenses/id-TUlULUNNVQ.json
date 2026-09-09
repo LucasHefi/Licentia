@@ -1,0 +1,20 @@
+{
+  "id": "MIT-CMU",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.2",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:61ec4121cfb5e3e187d096016542385b4482071fae42cdbc0a9f60d1d1431028"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Zachovejte copyright v kopiích a copyright i licenční oznámení v doprovodné dokumentaci. Reklamní použití jména nositele práv vyžaduje písemný souhlas. Text obsahuje přijetí podmínek užitím či kopírováním.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/MIT-CMU.html",
+      "note": "Dřívější individuální revize 2026-09-09.2; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

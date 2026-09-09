@@ -1,0 +1,20 @@
+{
+  "id": "Caldera-no-preamble",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.9",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:f5c3992642686ebcc6cfdfbc09fc149e96ab2c27e713ceb37bbbad832e6a78db"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Zachovejte copyright, podmínky a disclaimer ve zdrojích i dokumentaci; k binárním kopiím je přiložte v doprovodných materiálech. Reklamní materiály zmiňující vlastnosti nebo použití softwaru musí obsahovat předepsané poděkování za software vyvinutý nebo vlastněný Caldera International, Inc. Jména společnosti a přispěvatelů nelze bez písemného souhlasu používat k podpoře produktu. Varianta nemá preambuli o historických systémech UNIX; toto omezení se na ni nepřenáší. Poskytování zdrojů ani patentový grant text neukládá.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Caldera-no-preamble.html",
+      "note": "Dřívější individuální revize 2026-09-09.9; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

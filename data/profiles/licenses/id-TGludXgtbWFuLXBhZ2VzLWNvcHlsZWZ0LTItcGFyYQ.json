@@ -8,92 +8,93 @@
     "contentHash": "sha256:d2cf6d53f4aa65db11aa7e939416bd198a285f6661dcb7f5b0bb51e7a80d5a3e"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "strong-copyleft",
+    "copyleftScope": "whole-work",
     "permissions": [
-      "distribution"
+      "distribution",
+      "modifications"
     ],
     "obligations": [
       "include-copyright",
-      "include-license-text"
+      "include-license-text",
+      "same-license"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification"
     ],
-    "restrictions": [
-      "unknown"
-    ],
-    "patentPosition": "unknown",
+    "restrictions": [],
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Linux-man-pages-copyleft-2-para.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Linux-man-pages-copyleft-2-para.json#text; Dva odstavce licencují tento manuál a jeho odvozené verze. Odstavec 1 dovoluje vytvářet a distribuovat doslovné kopie; odstavec 2 dovoluje kopírovat a šířit upravené verze. Druhý odstavec výslovně vztahuje identické podmínky na celé výsledné odvozené dílo manuálu, nikoli jen změněný soubor.; https://spdx.org/licenses/Linux-man-pages-copyleft-2-para.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Linux-man-pages-copyleft-2-para.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Linux-man-pages-copyleft-2-para.json#text; Druhý odstavec výslovně vztahuje identické podmínky na celé výsledné odvozené dílo manuálu, nikoli jen změněný soubor.; https://spdx.org/licenses/Linux-man-pages-copyleft-2-para.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Linux-man-pages-copyleft-2-para.json#text; Odstavec 1 dovoluje vytvářet a distribuovat doslovné kopie; odstavec 2 dovoluje kopírovat a šířit upravené verze.; https://spdx.org/licenses/Linux-man-pages-copyleft-2-para.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Linux-man-pages-copyleft-2-para.json#text; Ve všech kopiích se zachová copyright a svolení; celé výsledné odvozené dílo se při distribuci opatří svolením totožným s tímto.; https://spdx.org/licenses/Linux-man-pages-copyleft-2-para.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Linux-man-pages-copyleft-2-para.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Linux-man-pages-copyleft-2-para.json#text; Ve všech kopiích se zachová copyright a svolení; celé výsledné odvozené dílo se při distribuci opatří svolením totožným s tímto.; https://spdx.org/licenses/Linux-man-pages-copyleft-2-para.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Linux-man-pages-copyleft-2-para.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Linux-man-pages-copyleft-2-para.json#text; Text neobsahuje výluku záruk, odpovědnosti ani patentové sankce a nepředepisuje technický formát zdrojů.; https://spdx.org/licenses/Linux-man-pages-copyleft-2-para.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Linux-man-pages-copyleft-2-para.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Linux-man-pages-copyleft-2-para.json#text; Oba odstavce neobsahují patentové oprávnění nebo patentové ukončení.; https://spdx.org/licenses/Linux-man-pages-copyleft-2-para.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Linux-man-pages-copyleft-2-para.json#text; Ve všech kopiích se zachová copyright a svolení; celé výsledné odvozené dílo se při distribuci opatří svolením totožným s tímto. Rozsah notifikační zátěže: standard.; https://spdx.org/licenses/Linux-man-pages-copyleft-2-para.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Linux-man-pages-copyleft-2-para.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Linux-man-pages-copyleft-2-para.json#text; Individuální kontrola celého připnutého textu Linux-man-pages-copyleft-2-para dne 2026-09-09. Dva odstavce licencují tento manuál a jeho odvozené verze. Předmětem je manuál a copyleft celého odvozeného manuálu; pro nový softwarový projekt je třeba dokumentační model nebo samostatný softwarový grant. Identické svolení je podmínkou modifikované distribuce; jiné licence či verze text nenabízí.; https://spdx.org/licenses/Linux-man-pages-copyleft-2-para.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

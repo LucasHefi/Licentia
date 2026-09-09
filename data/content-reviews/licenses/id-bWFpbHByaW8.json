@@ -1,0 +1,27 @@
+{
+  "id": "mailprio",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:9a0d7900840e2bc21fff9aed3b687b5eaab665321ad626e46120ceea6b2d1341"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Licence dovoluje software stahovat, používat, měnit, prodávat, kopírovat a znovu distribuovat. Původní copyright a seznam podmínek musí zůstat neporušené a upravené verze musejí být rozpoznatelné jako změněné. Zaslání změn autorovi je dobrovolná žádost, nikoli povinnost; text neobsahuje výluku záruk či odpovědnosti ani patentový grant.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Licence Tonyho Sanderse pokrývá tento software s copyrightem 1994 a 1996.",
+    "grantCs": "První odstavec uděluje stahování, užití, změny, prodej, kopírování a redistribuci.",
+    "conditionsCs": "Původní copyright i seznam podmínek zůstávají neporušené a upravené verze musí být označeny jako změněné.",
+    "limitationsCs": "Zaslání kopie změn autorovi je výslovně zdvořilá žádost „very much appreciate“, ne povinnost; záruky ani odpovědnost text neřeší.",
+    "compatibilityCs": "Text nenabízí jinou licenci nebo verzi."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/mailprio.html",
+      "note": "Individuálně přečten celý připnutý text; Původní copyright i seznam podmínek zůstávají neporušené a upravené verze musí být označeny jako změněné. Celý text neobsahuje výslovný patentový grant nebo odvetné ukončení."
+    }
+  ]
+}

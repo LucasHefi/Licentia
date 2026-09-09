@@ -1,0 +1,29 @@
+{
+  "id": "Aspell-RU",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:e5847c01a6c3ac0368bb6614f0b19f4a7c35837619ecc735ac01ab7a37c2af5a"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Licence dovoluje zdroje používat, kopírovat a znovu šířit, změny však výslovně připouští k distribuci jako opravné patche nebo zkompilované binární soubory. Šíření úplných upravených zdrojů tím není jednoznačně povoleno a ostatní práva jsou vyhrazena. Průvodce ji proto nezařazuje, dokud nebude tato hranice distribučních forem samostatně zachycena.",
+  "blockersCs": [
+    "Text dovoluje změny distribuovat jen jako patch a binární soubory z upravených zdrojů, zatímco ostatní práva rezervuje; slovník musí před zařazením rozlišit tuto podmínku od obecného práva šířit upravený zdroj."
+  ],
+  "analysis": {
+    "subjectCs": "Krátký grant rozlišuje původní zdroje, opravné patche a binární soubory vzniklé z upravených zdrojů.",
+    "grantCs": "První věta dovoluje použití, kopírování a redistribuci; další dvě dovolují šířit změny jako patch a binární soubory z upravených zdrojů.",
+    "conditionsCs": "Distribuce změn je povolena ve formě patche nebo zkompilovaných binárních souborů; úplné upravené zdrojové soubory grant výslovně nepovoluje. Žádné notifikační požadavky text neobsahuje.",
+    "limitationsCs": "„All other rights reserved“ rezervuje ostatní práva; není zde výluka záruk ani odpovědnosti.",
+    "compatibilityCs": "Nejde o alternativní licenci; jsou vyjmenovány rozdílné dovolené distribuční formy."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Aspell-RU.html",
+      "note": "Individuálně přečten celý připnutý text; Distribuce změn je povolena ve formě patche nebo zkompilovaných binárních souborů; úplné upravené zdrojové soubory grant výslovně nepovoluje. Žádné notifikační požadavky text neobsahuje. Všechny čtyři věty neobsahují výslovný patentový grant ani patentové ukončení."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "ulem",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:7d9952702fb16654ba1129372728adf62b982da0ec4b5ff3539eef8c617bd090"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Software lze pro libovolný účel šířit, rozmnožovat a upravovat při zachování neporušeného copyrightu Donalda Arseneaua.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Grant se vztahuje na software ulem s uvedeným copyrightem 1989–2019.",
+    "grantCs": "Odstavec This software dovoluje přenos, rozmnožování a úpravy pro jakýkoli účel, tedy i komerční; patentová práva a sublicencování výslovně neřeší.",
+    "conditionsCs": "Při šíření, rozmnožování a úpravách musí copyrightové oznámení zůstat neporušené. Žádná povinnost zdrojů, stejné licence, označování změn či reklamy uvedena není.",
+    "limitationsCs": "Úplný text nemá záruční nebo odpovědnostní doložku, omezení názvů, patentovou odvetu ani volbu soudu.",
+    "compatibilityCs": "Jiná licence ani možnost volby novější verze není uvedena; explicitní kompatibilita se netvrdí."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/ulem.html",
+      "note": "Individuální revize celého připnutého textu; Grant se vztahuje na software ulem s uvedeným copyrightem 1989–2019."
+    }
+  ]
+}

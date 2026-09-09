@@ -1,0 +1,22 @@
+{
+  "id": "Ruby",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.8",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:f7547a4f41f4dbdcaafdfbdc8a735f4be1579799091afdd17a86d22c1dcc9d9c"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Zdrojové kopie zachovávají původní copyrighty a disclaimery. Úpravy i binární distribuce mají vlastní seznam alternativ; například interní použití, zpřístupnění úprav, odlišné názvy s pokyny k získání originálu, přiložení zdrojů nebo dohoda s autorem. Části lze zahrnout i do komerčního softwaru, avšak soubory uvedené v LEGAL mají jiné podmínky. Vstupní a výstupní skripty nepřebírají automaticky copyright programu. Text vylučuje záruky, nikoli výslovně odpovědnost.",
+  "blockersCs": [
+    "Modelovat oddělené volby pro úpravy (§2) a binární distribuci (§3), včetně možnosti pouze interního užití a individuální dohody. Doplnit vyhodnocení souboru LEGAL a zvláštní částečné inkorporace podle §4. Nepřidávat obecný copyleft, povinné zdroje ani alternativní GPL/BSD převzatou z dnešní distribuce Ruby; samostatný SPDX text ji neobsahuje."
+  ],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Ruby.html",
+      "note": "Dřívější individuální revize 2026-09-09.8; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

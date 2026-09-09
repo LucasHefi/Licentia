@@ -1,0 +1,27 @@
+{
+  "id": "OpenSSL-standalone",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:d501aca7c424d2460e5d2f906eb6abc71c2b7a8056e2b85169144d003a9c112f"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Samostatná licence OpenSSL dovoluje užití a redistribuci zdrojů i binárek s úpravami při zachování předepsaných oznámení. Požaduje uznání OpenSSL Toolkit při redistribuci a v reklamě zmiňující funkce či užití; propagační použití jmen a názvy odvozených produktů podléhají svolení. Neobsahuje samostatnou licenci SSLeay, takže sama neurčuje práva k celému balíku OpenSSL.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Samostatný text OpenSSL Project z let 1998–2019 má šest podmínek a závěrečné uznání Younga/Hudsona.",
+    "grantCs": "Úvod dovoluje zdrojovou/binární redistribuci a užití se změnami i bez nich.",
+    "conditionsCs": "Body 1–2 zachovávají copyright/podmínky/disclaimer ve zdroji či doprovodu binárek. Bod 3 ukládá předepsané OpenSSL Toolkit uznání ve všech reklamách zmiňujících funkce/užití a bod 6 je zachovává při každé redistribuci.",
+    "limitationsCs": "Body 4–5 vyžadují písemné svolení pro endorsement OpenSSL Toolkit/Project a název odvozeného produktu obsahující OpenSSL; AS IS vylučuje záruky/odpovědnost projektu a přispěvatelů.",
+    "compatibilityCs": "Tento standalone text neobsahuje samostatnou SSLeay licenci; závěrečná zmínka o Ericu Youngovi a Timu Hudsonovi ji nenahrazuje a není závěrem o právech celého cizího balíku."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/OpenSSL-standalone.html",
+      "note": "Individuálně přečten celý připnutý text; Body 1–2 zachovávají copyright/podmínky/disclaimer ve zdroji či doprovodu binárek. Bod 3 ukládá předepsané OpenSSL Toolkit uznání ve všech reklamách zmiňujících funkce/užití a bod 6 je zachovává při každé redistribuci. Celý text nemá patentový grant nebo patentové ukončení."
+    }
+  ]
+}

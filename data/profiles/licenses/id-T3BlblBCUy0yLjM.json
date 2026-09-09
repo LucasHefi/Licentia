@@ -8,94 +8,103 @@
     "contentHash": "sha256:1001778e0450210b3f559073f387435acda9624834f855671be344f2c72aac81"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
+    "family": "nonstandard",
     "copyleftScope": "unknown",
     "permissions": [
       "commercial-use",
-      "distribution"
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
+      "include-advertising-acknowledgment",
       "include-copyright",
-      "provide-corresponding-source"
-    ],
-    "triggers": [
+      "include-license-text",
+      "include-notice",
+      "provide-corresponding-source",
       "unknown"
     ],
+    "triggers": [
+      "advertising",
+      "distribution",
+      "modification"
+    ],
     "restrictions": [
+      "additional-terms",
       "liability",
       "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OpenPBS-2.3.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OpenPBS-2.3.json#text; Časově omezený source/binary grant s povinnou zdrojovou dostupností a neomezenou redistribucí změn, bez jasného copyleft rozsahu.; https://spdx.org/licenses/OpenPBS-2.3.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OpenPBS-2.3.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OpenPBS-2.3.json#text; Bod5 modifications/additions without restriction neurčuje hranici kombinovaného programu; samotný OpenPBS název neprokazuje scope.; https://spdx.org/licenses/OpenPBS-2.3.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OpenPBS-2.3.json#text; Úvod po December31,2001 pouze3–6; commercial/noncommercial restriction1–2 již nedopadá, výslovná use/redistribution/modification práva.; https://spdx.org/licenses/OpenPBS-2.3.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OpenPBS-2.3.json#text; 3–4 notices/ack/disclaimer,5 complete source+info a volnost změn,6 reklama; přesný downstream rozsah mimo model.; https://spdx.org/licenses/OpenPBS-2.3.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OpenPBS-2.3.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OpenPBS-2.3.json#text; Každá redistribuce informace o zdroji; změněné/doplněné části volná redistribuce; reklama features/use ack. Registrace při use již neplatí.; https://spdx.org/licenses/OpenPBS-2.3.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OpenPBS-2.3.json#text; Bod5 nepřidávat downstream restrictions;7 warranty/liability a Virginia law. Dřívější noncommercial zákaz se netváří jako dnešní.; https://spdx.org/licenses/OpenPBS-2.3.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OpenPBS-2.3.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OpenPBS-2.3.json#text; Celý text bez výslovného patentového grantu/ukončení; noninfringement v7 je warranty disclaimer.; https://spdx.org/licenses/OpenPBS-2.3.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OpenPBS-2.3.json#text; Zdrojové informace/dostupnost a dlouhá povinná reklamní věta jsou materiální.; https://spdx.org/licenses/OpenPBS-2.3.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OpenPBS-2.3.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OpenPBS-2.3.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. Po 31. 12. 2001 zůstávají povinnosti 3–6: notice, informace o úplném zdroji včetně změn/doplňků a reklamní poděkování. Dřívější registrace a zákaz komerční distribuce již nejsou podmínkami; změny a doplňky musí zůstat volně redistribuovatelné bez omezení. Blokace: Bod5 vyžaduje complete source včetně modifications/additions a jejich redistribuci jakoukoli stranou without restriction, ale nevymezuje hranici dodatků vůči kombinovanému programu. Je třeba modelovat tuto hranici a downstream svobody, nikoli odvodit library či whole-work copyleft z názvu plánovače.; https://spdx.org/licenses/OpenPBS-2.3.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

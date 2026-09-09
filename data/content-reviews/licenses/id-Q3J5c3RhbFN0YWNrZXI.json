@@ -1,0 +1,20 @@
+{
+  "id": "CrystalStacker",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.6",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:7760bf6e9011903ae4d83bb1d863f8e16b531f1d9611d013f2266ef412a51557"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Při šíření kopií přiložte původní dokument v nezměněné podobě. Se zdrojovým kódem lze nakládat libovolně, ale každá nová distribuce musí tento soubor zachovat beze změn. Podmínka se týká přiloženého dokumentu, ne zákazu upravovat software. Text odmítá záruky a odpovědnost za škody; nabídka pomoci není zárukou podpory.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/CrystalStacker.html",
+      "note": "Dřívější individuální revize 2026-09-09.6; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

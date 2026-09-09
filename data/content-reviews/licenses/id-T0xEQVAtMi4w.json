@@ -1,0 +1,27 @@
+{
+  "id": "OLDAP-2.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:82c84ab2c83c520c6388d18fe5104e943e1469b4a2033ee5012f16412a06f87e"
+  },
+  "disposition": "eligible",
+  "summaryCs": "OpenLDAP 2.0 dovoluje užívání a šíření s úpravami; zachovejte copyrighty a dokument licence, u binárek v doprovodných materiálech. Název OpenLDAP pro propagaci i v názvu odvozeného produktu vyžaduje písemné svolení; další poděkování je doporučené.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Software a související dokumentace definované společně jako Software; licence z 7. 6. 1999.",
+    "grantCs": "Redistribution/use with or without modification bez účelového omezení; výslovný patentový grant chybí.",
+    "conditionsCs": "Bod 1 zdrojové copyright statements/notices a kopie dokumentu při redistribuci; bod 2 binární copyright/conditions/disclaimer v materiálech. Bod 5 due credit should je doporučení.",
+    "limitationsCs": "Body 3–4 OpenLDAP endorsement i název/část názvu derivátu jen s prior written permission; OpenLDAP je registrovaná známka. AS IS a výluky záruk/škod.",
+    "compatibilityCs": "Žádná volba jiné licence či pozdější verze; naming podmínka se týká registrované známky, nikoli obecného přejmenování souborů."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/OLDAP-2.0.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Grant a body 1–5 jsou notice/trademark podmínky bez zdrojové reciprocity."
+    }
+  ]
+}

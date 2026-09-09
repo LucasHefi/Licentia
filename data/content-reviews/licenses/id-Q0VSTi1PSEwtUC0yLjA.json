@@ -1,0 +1,29 @@
+{
+  "id": "CERN-OHL-P-2.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:e0f98f84706e92cb2fa959d19f912b996c320e487ab1a29617d7ad68904d05aa"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Permisivní CERN OHL 2.0 dovoluje změny a šíření návrhových podkladů i výrobu a předání produktů, také pod jinými licenčními podmínkami. Zachovávají se použitelná oznámení a označují změny; při jiné licenci se přikládá také znění CERN a příjemce produktu získá přístup k oznámením. Licence obsahuje obecný závazek chránit poskytovatele před nároky a ukončuje práva při vymezeném patentovém sporu. Kvůli výrobnímu rozsahu a těmto závazkům ji softwarový průvodce nenabízí.",
+  "blockersCs": [
+    "Licence operuje s výrobou/konfigurací Products a poskytovatele chrání obecnou hold-harmless povinností; před doporučením je třeba odpovídající model hardwarových produktů a náhrady nároků."
+  ],
+  "analysis": {
+    "subjectCs": "CERN OHL v2 Permissive definuje Covered Source včetně návrhů/digitálního kódu a Products vzniklé výrobou, sestavením, kompilací či konfigurací.",
+    "grantCs": "§2–4 dovolují užití, kopie, změny, veřejné sdělení/distribuci Source a výrobu/předání Products; §3.4 výslovně dovoluje rozdílné licenční podmínky.",
+    "conditionsCs": "§3 zachovává notices, odstraňuje jen neaplikovatelné a u změn přidává datum a stručný popis; při jiné licenci se poskytne i CERN text. §4 zajistí příjemci Product přístup k použitelným notices. §2.3 zakazuje omezit práva jiných držitelů.",
+    "limitationsCs": "§5 vylučuje záruky/odpovědnost a uživatel drží poskytovatele harmless včetně třetích nároků. §6 patentová žaloba či zpochybnění platnosti/vymahatelnosti licencovaného patentu ruší všechna práva. §7.2 omezuje jména/loga s výjimkou zákona a notices, bez endorsementu.",
+    "compatibilityCs": "§7.3 verze závisí na určení poskytovatele: uvedená varianta bez verze dovoluje libovolnou verzi téže varianty; neurčená varianta znamená S; later volba jen se svolením. §7.4 vylučuje práva třetích beneficientů."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/CERN-OHL-P-2.0.html",
+      "note": "Individuálně přečten celý připnutý text; §3 zachovává notices, odstraňuje jen neaplikovatelné a u změn přidává datum a stručný popis; při jiné licenci se poskytne i CERN text. §4 zajistí příjemci Product přístup k použitelným notices. §2.3 zakazuje omezit práva jiných držitelů. §6.1 uděluje nutně porušené licencovatelné patenty ke Source jak je poskytovatel předal; §6.2 ruší všechna licenční práva i za napadení platnosti tohoto patentu."
+    }
+  ]
+}

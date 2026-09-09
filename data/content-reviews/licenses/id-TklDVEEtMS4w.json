@@ -1,0 +1,20 @@
+{
+  "id": "NICTA-1.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.7",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:2acba84426715f8fb392f35ca27ce513c1af836dc1c5980c5dabd3c22490e27e"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Copyright, podmínky a disclaimery zachovejte ve zdrojích nebo doprovodných materiálech k binárním kopiím. Jméno NICTA nepoužívejte k propagaci bez předchozího písemného souhlasu. Záruky a odpovědnost jsou omezeny v rozsahu dovoleném právem; u nevyloučitelných závazků text stanoví volbu opravy, náhrady, opakování služby nebo příslušných nákladů. Patentový grant neobsahuje.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/NICTA-1.0.html",
+      "note": "Dřívější individuální revize 2026-09-09.7; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

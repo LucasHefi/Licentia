@@ -8,95 +8,108 @@
     "contentHash": "sha256:34b8b521a76f4e1aa880f6d5230bbdd5c459e3ce3befe2c49289d14053f7ec48"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "weak-copyleft",
+    "copyleftScope": "file",
     "permissions": [
       "commercial-use",
       "distribution",
       "modifications",
+      "patent-grant",
+      "private-use",
       "sublicensing"
     ],
     "obligations": [
-      "provide-corresponding-source"
-    ],
-    "triggers": [
+      "defend-added-warranty",
+      "disclose-source",
+      "include-copyright",
+      "include-license-text",
+      "include-notice",
+      "mark-modifications",
+      "same-license",
       "unknown"
     ],
+    "triggers": [
+      "distribution",
+      "modification"
+    ],
     "restrictions": [
+      "additional-terms",
       "liability",
+      "trademark",
+      "unknown",
       "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "express-grant",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/FreeImage.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/FreeImage.json#text; §§1.9,3.1,3.7 zdrojový copyleft změněných/převzatých souborů s výjimkou nezávislého kódu Larger Work; https://spdx.org/licenses/FreeImage.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/FreeImage.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/FreeImage.json#text; §1.9(A),(B) explicitní hranice existujícího souboru a nového souboru obsahujícího původní kód; scope file; https://spdx.org/licenses/FreeImage.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/FreeImage.json#text; §§2.1,2.2 výslovné komerční užití, sublicence, distribuce/modifikace i omezené současné/budoucí patentové granty; https://spdx.org/licenses/FreeImage.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/FreeImage.json#text; §§3.1–3.6 source/license/notices/changes a vlastní přidané záruky; aktivní §3.4(a), širší §3.6,12 a procesní §11 vyžadují unknown; https://spdx.org/licenses/FreeImage.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/FreeImage.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/FreeImage.json#text; §3 vlastní vytvořené změny a distribuce source/executable; žádná vzdálená služba ani reklama jako samostatný spouštěč; https://spdx.org/licenses/FreeImage.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/FreeImage.json#text; §§3.1,3.6 zdrojová práva nelze omezit, §6.3 licenční názvy, §§7,9 výluky; §11 arbitráž a §12 rozdělení škod nemají enum; https://spdx.org/licenses/FreeImage.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/FreeImage.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/FreeImage.json#text; §2.1(b),2.2(b) patenty rozumně potřebné Original Code/Contributor Version, nikoli širší budoucí kombinace; §8 bez patentové odvety; https://spdx.org/licenses/FreeImage.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/FreeImage.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/FreeImage.json#text; §3.3 původ/datované změny, §3.4 LEGAL, §3.5 souborové notice a §3.6 výrazná binární informace o dostupnosti zdrojů; https://spdx.org/licenses/FreeImage.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/FreeImage.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/FreeImage.json#text; Individuální přečtení celého připnutého textu dne 2026-09-10. FreeImage Public License 1.0 udržuje upravené a převzaté zdrojové soubory pod vlastní licencí, přičemž nezávislý kód většího produktu může mít jiné podmínky. Příjemci spustitelné formy získají zdroje na médiu nebo elektronicky s dobou dostupnosti; změny, původ a známé IP nároky musí být zdokumentovány. Poskytuje omezené současné i budoucí patentové granty. Blokují ji aktivní informování dřívějších příjemců, širší odškodnění a rozdělování odpovědnosti i podmíněná závazná arbitráž. Blokace: §3.4(a) po novém zjištění cizího IP nároku vyžaduje vedle aktualizace LEGAL aktivní přiměřené kroky k informování dřívějších příjemců. Je nutné doplnit aktivní notifikaci; statický include-notice tuto povinnost nevyjadřuje. §3.6 ukládá odškodnit autory za jakékoli odlišné podmínky vlastní binární licence a §12 odpovědnost za využívání práv a spolupráci na spravedlivém rozdělení škod, s výjimkou porušení§3.4 jiným přispěvatelem. Model potřebuje tyto širší závazky mimo defend-added-warranty. §11 při straně s nizozemskou vazbou předepisuje konečnou závaznou arbitráž sporů kromě IP a úhradu všech nákladů prohrávající stranou, vedle pravidel soudů v Almelo. Před způsobilostí je nutné modelovat tuto podmíněnou procesní povinnost, nejen zaznamenat rozhodné právo.; https://spdx.org/licenses/FreeImage.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

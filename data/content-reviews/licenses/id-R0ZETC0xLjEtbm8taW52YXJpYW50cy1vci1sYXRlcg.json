@@ -1,0 +1,29 @@
+{
+  "id": "GFDL-1.1-no-invariants-or-later",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:be5dcba051238d6226db0bd9296ebc1f44e71681c2391ce71e7c7c23789ad16e"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Tato varianta GFDL dovoluje komerční i nekomerční šíření a úpravy dokumentace bez původních invariantních oddílů a obálkových textů, pod verzí 1.1 nebo pozdější zveřejněnou verzí FSF. Nad 100 netransparentních kopií přesto vyžaduje upravitelnou kopii nebo veřejné anonymní a bezplatné stažení s rozumně zajištěnou dostupností nejméně rok po poslední distribuci vydání. Změny mají pravidla pro titul, autory, historii a zachování poděkování; přidání vlastních invariantů mění označení výsledného díla. Tyto dokumentové podmínky průvodce zatím neumí věrně vyjádřit.",
+  "blockersCs": [
+    "I bez invariantů§3–4 vyžadují Transparent/Opaque kopie s prahem100, povinně jiný titul, konkrétní autorské/historické údaje a zachování tónu poděkování; je potřeba dokumentový model, nikoli obecná softwarová licence."
+  ],
+  "analysis": {
+    "subjectCs": "GFDL1.1-no-invariants-or-later pokrývá textovou dokumentaci; primární poznámka SPDX určuje současnou absenci všech Invariant Sections i Front/Back-Cover Texts a možnost pozdější nedraftové verze FSF.",
+    "grantCs": "Úplně přečtené§2,4 a8 dovolují placené i bezplatné rozmnožování, půjčování, vystavení a změny včetně překladu. Zvolená varianta nemá původní neměnné části, ale jiné redakční podmínky přetrvávají; obecný patentový ani podlicenční grant text neuděluje.",
+    "conditionsCs": "§2 kopie obsahují copyright, licenci a notice. §3 práh více než100 Opaque kopií vyžaduje Transparent kopii každému nebo kompletní veřejný anonymní bezplatný standardní download, zajištěný s rozumnou péčí alespoň rok od poslední distribuce vydání včetně prostředníků. Obalový odstavec se bez Cover Texts nespustí. §4 přesto vyžaduje změněný titul bez svolení, původních5 autorů či všechny, původního i nového vydavatele v historii, vlastní copyright, licenci, relevantní síťová místa a zachování poděkování/věnování; stará Endorsements odstranit a nová pouze pro vlastní verzi.",
+    "limitationsCs": "§4 obecně dovoluje novým vlastním Secondary Sections invariantní určení a přidání obalových pasáží5/25 slov; takto změněné dílo už nesmí být popisováno jako bez invariantů/obalových textů. Licence zakazuje technické překážky čtení a dalšího kopírování a neuděluje propagaci jmény autorů. Porušení§9 okamžitě ukončuje práva bez automatické obnovy, dodržující příjemci zůstávají. Verze1.1 nemá obecnou zárukovou ani odpovědnostní výluku.",
+    "compatibilityCs": "§5–6 umožňují kombinace a kolekce s licenčními/historickými pravidly;§7 nezávislá agregace nešíří licenci na ostatní díla, pokud se nenárokuje compilation copyright. §8 překlad licence doprovází originální rozhodné anglické znění. §10 v tomto or-later určení dovoluje1.1 či pozdější zveřejněnou nedraftovou verzi FSF; nejde o přelicencování libovolnou softwarovou licencí a kódové příklady dodatek pouze doporučuje licencovat paralelně."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/GFDL-1.1-no-invariants-or-later.html",
+      "note": "Individuálně přečten celý připnutý text; §2 kopie obsahují copyright, licenci a notice. §3 práh více než100 Opaque kopií vyžaduje Transparent kopii každému nebo kompletní veřejný anonymní bezplatný standardní download, zajištěný s rozumnou péčí alespoň rok od poslední distribuce vydání včetně prostředníků. Obalový odstavec se bez Cover Texts nespustí. §4 přesto vyžaduje změněný titul bez svolení, původních5 autorů či všechny, původního i nového vydavatele v historii, vlastní copyright, licenci, relevantní síťová místa a zachování poděkování/věnování; stará Endorsements odstranit a nová pouze pro vlastní verzi. V§0–10 ani dodatku není výslovný patentový grant nebo žalobní odveta; patentPosition none-stated je po individuální četbě, nikoli odvozeno z GPL."
+    }
+  ]
+}

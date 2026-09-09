@@ -1,0 +1,29 @@
+{
+  "id": "SSLeay-standalone",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:dd714080abe4c2c3252484b5df50cba5db3c4136ef13076501cb260af1d2e85a"
+  },
+  "disposition": "blocked",
+  "summaryCs": "SSLeay dovoluje komerční i nekomerční užití se zachováním notices a reklamním poděkováním Ericu Youngovi. Windows kód z apps vyžaduje poděkování Timu Hudsonovi. Veřejně dostupné verze/odvozeniny kódu nesmějí změnit licenční ani distribuční podmínky.",
+  "blockersCs": [
+    "Závěr zakazuje měnit licenční/distribuční podmínky publically available version or derivative of this code, bez hranice vůči celé využívající aplikaci. Je třeba vyjasnit rozsah neměnnosti kódu/derivátů; samotné library označení neopravňuje zvolit library ani whole-work copyleft scope."
+  ],
+  "analysis": {
+    "subjectCs": "Všechen kód distribuce včetně RC4/RSA/lhash/DES, nikoli jen SSL; dokumentace má stejné podmínky s držitelem Tim Hudson.",
+    "grantCs": "Source/binary redistribution/use with/without modification pro commercial/non-commercial; bez výslovného patentového grantu.",
+    "conditionsCs": "Copyright v kódu neodstraňovat; body1–2 notices dle formy; bod3 reklama features/use přesná Eric Young věta s volitelným vypuštěním cryptographic pro nesouvisející rutiny; bod4 zahrnutí Windows apps kódu/derivátů přesný Tim Hudson acknowledgment.",
+    "limitationsCs": "Produktové autorství Eric Young should je doporučení; AS IS a warranty/liability. Závěr zakazuje změnit veřejné licenční/distribuční podmínky včetně GPL.",
+    "compatibilityCs": "Neobsahuje OpenSSL alternativní grant; SSL dokumentace má pouze jiného držitele. Zákaz GPL přelicencování není paušální analýza kompatibility kombinace."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/SSLeay-standalone.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; SSLeay grant s reklamní/windows atribucí a veřejnou neměnností licencování, nikoli čistá notice licence."
+    }
+  ]
+}

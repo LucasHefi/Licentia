@@ -8,98 +8,110 @@
     "contentHash": "sha256:54f9fbc223b935cc3257938f48d4b5111139bb3e0cce579c96910f2b952b7603"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "weak-copyleft",
+    "copyleftScope": "file",
     "permissions": [
       "commercial-use",
+      "conditional-relicensing",
       "distribution",
       "modifications",
       "patent-grant",
+      "private-use",
       "sublicensing"
     ],
     "obligations": [
+      "defend-added-warranty",
+      "disclose-source",
+      "include-copyright",
+      "include-license-text",
+      "include-notice",
       "mark-modifications",
-      "provide-corresponding-source"
-    ],
-    "triggers": [
+      "same-license",
       "unknown"
     ],
+    "triggers": [
+      "distribution",
+      "modification",
+      "patent-claim"
+    ],
     "restrictions": [
+      "additional-terms",
       "liability",
+      "patent-claim",
       "trademark",
       "warranty"
     ],
-    "patentPosition": "express-grant",
-    "noticeBurden": "unknown"
+    "patentPosition": "retaliatory-termination",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CUA-OPL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CUA-OPL-1.0.json#text; CUA Office Public License 1.0 se podle §5 a Exhibit A použije na označený Original Code a změny; §1.9 váže reciproční část na soubory obsahující původní nebo změněný kód. §2 výslovně dovoluje užití, kopírování, změny, zobrazení/provozování, sublicence a distribuci včetně Larger Work a prodeje. Patentové granty chrání původní kód a vlastní příspěvek v Contributor Version, ne odstraněný kód, samostatné nároky, jiné kombinace či cizí změny. Contributor grant začíná prvním zpřístupněním třetí osobě, které §1.0.1 označuje Commercial Use bez ohledu na úplatu. §1.9 zahrnuje změněné soubory a nové soubory s částí Covered Code, §3.7 výslovně dovoluje jinak licencovaný zbytek Larger Work. Zdrojová reciprocita je slabá souborová, bez obecného síťového spouštěče.; https://spdx.org/licenses/CUA-OPL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CUA-OPL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CUA-OPL-1.0.json#text; §1.9 zahrnuje změněné soubory a nové soubory s částí Covered Code, §3.7 výslovně dovoluje jinak licencovaný zbytek Larger Work. Zdrojová reciprocita je slabá souborová, bez obecného síťového spouštěče.; https://spdx.org/licenses/CUA-OPL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CUA-OPL-1.0.json#text; §2 výslovně dovoluje užití, kopírování, změny, zobrazení/provozování, sublicence a distribuci včetně Larger Work a prodeje. Patentové granty chrání původní kód a vlastní příspěvek v Contributor Version, ne odstraněný kód, samostatné nároky, jiné kombinace či cizí změny. Contributor grant začíná prvním zpřístupněním třetí osobě, které §1.0.1 označuje Commercial Use bez ohledu na úplatu.; https://spdx.org/licenses/CUA-OPL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CUA-OPL-1.0.json#text; §3.1–3.2 zdroje pokrytých souborů zůstávají pod licencí; příjemci executable mají dostat zdroje úprav na stejném médiu nebo elektronickou cestou na 12 měsíců od zveřejnění či 6 měsíců od následné verze. §3.3–3.6 vyžadují soubor změn/dat, identifikaci původního vývojáře, Exhibit A v každém souboru či náhradním dostupném místě a oznámení licence i zdrojové cesty v relevantní dokumentaci/binárních notices. §3.4 LEGAL nese známé nutné cizí IP a API patentové nároky; nová znalost vyvolá rychlou aktualizaci a aktivní přiměřené informování předchozích příjemců. Přispěvatel prohlašuje přesvědčení o původnosti nebo dostatečných právech. §3.5–3.6 vlastní dodatečné záruky a binární podmínky musí být jen jeho a odškodní za ně ostatní.; https://spdx.org/licenses/CUA-OPL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CUA-OPL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CUA-OPL-1.0.json#text; §3.1–3.2 zdroje pokrytých souborů zůstávají pod licencí; příjemci executable mají dostat zdroje úprav na stejném médiu nebo elektronickou cestou na 12 měsíců od zveřejnění či 6 měsíců od následné verze. §3.3–3.6 vyžadují soubor změn/dat, identifikaci původního vývojáře, Exhibit A v každém souboru či náhradním dostupném místě a oznámení licence i zdrojové cesty v relevantní dokumentaci/binárních notices. §3.4 LEGAL nese známé nutné cizí IP a API patentové nároky; nová znalost vyvolá rychlou aktualizaci a aktivní přiměřené informování předchozích příjemců. Přispěvatel prohlašuje přesvědčení o původnosti nebo dostatečných právech. §3.5–3.6 vlastní dodatečné záruky a binární podmínky musí být jen jeho a odškodní za ně ostatní.; https://spdx.org/licenses/CUA-OPL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CUA-OPL-1.0.json#text; §4 vyžaduje při zákonné nemožnosti plnění maximum a vysvětlení v LEGAL. §7–9 stanoví AS IS, omezení odpovědnosti a 30denní nápravu od zjištění porušení. §8.2 odvetně ukončuje všechny granty účastníka při žalobě na jeho Contributor Version po 60 dnech bez stažení/dohody o odměně; při žalobě na jiný produkt zpětně jen patentová práva. Deklaratorní žaloby jsou vyňaty a řádné koncové licence přežijí. §11 používá kalifornské právo, při americké straně Northern District/Santa Clara a náklady poraženého; §12 ukládá spolupráci na spravedlivém rozdělení nároků z výkonu práv.; https://spdx.org/licenses/CUA-OPL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CUA-OPL-1.0.json#text; §2 výslovné patentové granty pro Original Code/příspěvek/Contributor Version mají uvedené kombinatorické výluky. §8.2 rozlišuje 60denní zánik všech grantů při žalobě na verzi a retroaktivní patentové odvolání za žalobu na jiný produkt; jde o širší odvetu.; https://spdx.org/licenses/CUA-OPL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CUA-OPL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CUA-OPL-1.0.json#text; §3.1–3.2 zdroje pokrytých souborů zůstávají pod licencí; příjemci executable mají dostat zdroje úprav na stejném médiu nebo elektronickou cestou na 12 měsíců od zveřejnění či 6 měsíců od následné verze. §3.3–3.6 vyžadují soubor změn/dat, identifikaci původního vývojáře, Exhibit A v každém souboru či náhradním dostupném místě a oznámení licence i zdrojové cesty v relevantní dokumentaci/binárních notices. §3.4 LEGAL nese známé nutné cizí IP a API patentové nároky; nová znalost vyvolá rychlou aktualizaci a aktivní přiměřené informování předchozích příjemců. Přispěvatel prohlašuje přesvědčení o původnosti nebo dostatečných právech. §3.5–3.6 vlastní dodatečné záruky a binární podmínky musí být jen jeho a odškodní za ně ostatní. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/CUA-OPL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CUA-OPL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CUA-OPL-1.0.json#text; Individuální kontrola celého připnutého textu CUA-OPL-1.0 dne 2026-09-09. CUA Office Public License 1.0 se podle §5 a Exhibit A použije na označený Original Code a změny; §1.9 váže reciproční část na soubory obsahující původní nebo změněný kód. §3.4 vyžaduje aktivní informování předchozích příjemců o nových IP nárocích a §12 spolupráci na rozdělení odpovědnosti za užití práv; model tyto povinnosti nevyjadřuje, je třeba je doplnit. §13 uvádí NPL v rozporu s CUAPL v Exhibit A a §3; případnou alternativní cestu je nutné objasnit autoritativním označením konkrétního kódu, nikoli prohlásit obecnou NPL kompatibilitu. §3.7 dovoluje Larger Work s jiným kódem a §3.6 jiné binární podmínky bez omezení zdrojových práv. §6.2 dovoluje pozdější vydání od CUA Office Project; odvozený text licence lze použít jen na dosud nepokrytý kód pod jiným názvem. §13 označené Multiple-Licensed části chybně popisuje jako volbu NPL, zatímco Exhibit A a §3 mluví o CUAPL; tuto konkrétní nesrovnalost nelze tiše opravovat na automatickou NPL kompatibilitu. Samotný nepodmíněný základní grant CUA tím není neznámý.; https://spdx.org/licenses/CUA-OPL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

@@ -9,91 +9,94 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "unknown"
+      "include-copyright",
+      "include-license-text"
     ],
     "triggers": [
-      "unknown"
+      "distribution"
     ],
     "restrictions": [
-      "unknown"
+      "liability"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "none-stated",
+    "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "permissions",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Cronyx.json#text; permission paragraph calls covered material SOFTWARE and expressly permits used/modified/copied/distributed/SOLD in SOURCE AND BINARY form; introductory font provenance does not add a naming, embedding or field-of-use condition; no reciprocal source-supply or same-license condition; https://spdx.org/licenses/Cronyx.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Cronyx.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Cronyx.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Cronyx.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "triggers",
-      "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Cronyx.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Cronyx.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Cronyx.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Cronyx.json#text; permission paragraph calls covered material SOFTWARE and expressly permits used/modified/copied/distributed/SOLD in SOURCE AND BINARY form; introductory font provenance does not add a naming, embedding or field-of-use condition; https://spdx.org/licenses/Cronyx.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Cronyx.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Cronyx.json#text; provided-that condition retains copyright AND THESE TERMS in both forms; no source disclosure, same-license or modified-font-name condition; https://spdx.org/licenses/Cronyx.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Cronyx.json#text; provided-that condition retains copyright AND THESE TERMS in both forms; no source disclosure, same-license or modified-font-name condition; https://spdx.org/licenses/Cronyx.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Cronyx.json#text; whole text: no express patent grant or patent-litigation termination; no inference of patent rights from copyright, trademarks or non-infringement disclaimers; https://spdx.org/licenses/Cronyx.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Cronyx.json#text; permission paragraph calls covered material SOFTWARE and expressly permits used/modified/copied/distributed/SOLD in SOURCE AND BINARY form; introductory font provenance does not add a naming, embedding or field-of-use condition; https://spdx.org/licenses/Cronyx.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Cronyx.json#text; last sentence author not responsible for PROPER FUNCTIONING or DAMAGES from use; no name-use restriction or patent grant; https://spdx.org/licenses/Cronyx.html; responsibility for functioning/damages is disclaimed, but there is NO separate express warranty exclusion",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Cronyx.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Cronyx.json#text; whole-text editorial review on 2026-09-09, batch 7; Font origin is recorded, but the operative software grant is unrestricted in purpose and contains no specialized font conditions requiring a separate guide branch. These terms do not replace any other license carried by individual font assets.; https://spdx.org/licenses/Cronyx.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Cronyx.json#text; provided-that condition retains copyright AND THESE TERMS in both forms; no source disclosure, same-license or modified-font-name condition; https://spdx.org/licenses/Cronyx.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     }
   ]
 }

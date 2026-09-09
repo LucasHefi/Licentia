@@ -9,91 +9,94 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "unknown"
+      "include-copyright",
+      "include-license-text"
     ],
     "triggers": [
-      "unknown"
+      "distribution"
     ],
     "restrictions": [
-      "unknown"
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "none-stated",
+    "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OAR.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OAR.json#text; Any software which ... includes rozšiřuje přenos oznámení, nikoli copyleft. Permisivní licence, scope none.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OAR.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OAR.json#text; Any software which ... includes rozšiřuje přenos oznámení, nikoli copyleft. Permisivní licence, scope none.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OAR.json#text; Permission to use/copy/modify/distribute for any purpose without fee povoluje i komerční využití bez poplatku za grant; výslovná sublicence a patentová licence chybějí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OAR.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OAR.json#text; První odstavec požaduje entire notice ve všech kopiích jakéhokoli softwaru, který je kopií nebo obsahuje kopii či modifikaci tohoto softwaru; nedává tak celému balíku stejnou licenci ani povinnost zdrojů.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OAR.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OAR.json#text; První odstavec požaduje entire notice ve všech kopiích jakéhokoli softwaru, který je kopií nebo obsahuje kopii či modifikaci tohoto softwaru; nedává tak celému balíku stejnou licenci ani povinnost zdrojů.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OAR.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OAR.json#text; Závěrečný odstavec odmítá všechny výslovné i implicitní záruky, zejména obchodovatelnosti a vhodnosti; samostatné omezení náhrady škody či názvů chybí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OAR.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OAR.json#text; Permission to use/copy/modify/distribute for any purpose without fee povoluje i komerční využití bez poplatku za grant; výslovná sublicence a patentová licence chybějí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OAR.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OAR.json#text; První odstavec požaduje entire notice ve všech kopiích jakéhokoli softwaru, který je kopií nebo obsahuje kopii či modifikaci tohoto softwaru; nedává tak celému balíku stejnou licenci ani povinnost zdrojů.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OAR.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OAR.json#text; Individuálně přečten celý připnutý text. Grant se vztahuje na software OAR a kopie jiného softwaru obsahující jeho kopii nebo modifikaci. Software lze bez licenčního poplatku používat, kopírovat, měnit a šířit pro libovolný účel. Celé oznámení musí doprovázet všechny kopie softwaru obsahující originál či jeho úpravu; záruky jsou odmítnuty. ",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

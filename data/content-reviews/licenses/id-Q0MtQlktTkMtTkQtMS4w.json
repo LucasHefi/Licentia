@@ -1,0 +1,29 @@
+{
+  "id": "CC-BY-NC-ND-1.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:96423638e3a325f3a6b58bae8a3f561d94b27cb68a2c3e64336afd0078ec512c"
+  },
+  "disposition": "blocked",
+  "summaryCs": "CC BY-NC-ND 1.0 dovoluje nekomerční kopie a veřejné šíření nezměněného díla, také ve sborníku; připouští jen technicky nutné formátové změny. Vyžaduje licenci nebo odkaz, copyright a atribuci a na žádost praktické odstranění zmínek o autorovi či poskytovateli ze sborníku. Oproti pozdějším verzím obsahuje výslovné záruky potřebných práv a neporušování práv třetích osob. Kvůli zákazu komerčního účelu a adaptací i obsahovým podmínkám ji průvodce pro nový software nenabízí.",
+  "blockersCs": [
+    "Text obsahu zakazuje komerční účel a nepovoluje adaptace kromě nezbytných formátových změn; navíc vyžaduje odstranění credit na žádost. Před doporučením je nutný obsahový model těchto omezení a záruk verze 1.0."
+  ],
+  "analysis": {
+    "subjectCs": "CC BY-NC-ND 1.0 licencuje nepozměněné autorské dílo a jeho vložení do sborníku samostatných děl.",
+    "grantCs": "§3 dovoluje reprodukci, sborníky, distribuci a veřejné zobrazení/provedení včetně digitálního audia; nezahrnuje tvorbu adaptací, jen technicky nezbytné formátové změny.",
+    "conditionsCs": "§4a předává licenci/URI a nedotčené licenční/disclaimer notices; zakazuje sublicence, dodatečné restrikce a rozporné technické ochrany. §4b zakazuje primárně komerční prospěch či soukromou peněžní odměnu s výjimkou bezpeněžní výměny děl. §4c zachovává copyright, autorovo jméno/pseudonym a titul; sborník má stejně výrazný credit a na žádost odstraní zmínky o poskytovateli/autorovi.",
+    "limitationsCs": "§5 poskytovatel po rozumném šetření zaručuje dostatečná práva bez dalších plateb a neporušování práv/nepomluvu/neporušení soukromí; ostatní záruky AS IS. §6 liability výluka má výjimku třetích nároků z porušení těchto záruk. §7 automaticky končí při porušení, řádní příjemci sborníku zůstávají chráněni.",
+    "compatibilityCs": "§2 zachovává fair use/first sale; §8 je přímá nabídka licence downstream. Celý sborník mimo vložené dílo licenci přijmout nemusí; zastavení dodávky nezruší udělená práva. CC známky jen pro označení licence nebo se souhlasem."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/CC-BY-NC-ND-1.0.html",
+      "note": "Individuálně přečten celý připnutý text; §4a předává licenci/URI a nedotčené licenční/disclaimer notices; zakazuje sublicence, dodatečné restrikce a rozporné technické ochrany. §4b zakazuje primárně komerční prospěch či soukromou peněžní odměnu s výjimkou bezpeněžní výměny děl. §4c zachovává copyright, autorovo jméno/pseudonym a titul; sborník má stejně výrazný credit a na žádost odstraní zmínky o poskytovateli/autorovi. Celý text nemá výslovný patentový grant či patentové ukončení; záruka neporušování sama patentový grant nevytváří."
+    }
+  ]
+}

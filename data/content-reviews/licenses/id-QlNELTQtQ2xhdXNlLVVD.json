@@ -1,0 +1,22 @@
+{
+  "id": "BSD-4-Clause-UC",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.9",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:9d0a19590c0a82981e96b2159af0cf0cbb15a238af07c53fc6189c722e4402c4"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Uložený historický text zachovává copyright, podmínky a disclaimer ve zdrojích nebo materiálech k binárním kopiím; obsahuje reklamní poděkování UC Berkeley a zákaz propagačního použití jmen bez souhlasu. Doplněk UC Berkeley z 22. 7. 1999 však u dotčených souborů BSD Unix reklamní odstavec zpětně ruší. Metadata zde popisují uložené znění, nikoli automatický závěr o dnešních povinnostech konkrétního souboru. Před doporučením je potřeba propojit původ kódu a použitelný doplněk.",
+  "blockersCs": [
+    "Propojit historický text s dodatkem UC Berkeley z 22. 7. 1999 a původem konkrétních souborů. Doplněk zpětně ruší reklamní odstavec dotčených BSD Unix souborů; průvodce zatím nerozlišuje uložené znění a účinné podmínky po dodatku. Nelze bez ověření reklamu vždy vyžadovat ani vše přepsat na obecnou BSD-3-Clause. Zdroj: https://www.freebsd.org/copyright/license/"
+  ],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/BSD-4-Clause-UC.html",
+      "note": "Dřívější individuální revize 2026-09-09.9; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

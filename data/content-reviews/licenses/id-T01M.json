@@ -1,0 +1,20 @@
+{
+  "id": "OML",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.6",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:3c8d57dbbf21a68dfd4d7721a2db40a14962358566bac4f2bf44be3c11ecdb0b"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Zachovejte existující copyrighty ve všech kopiích a celé oznámení doslova v každé distribuci. Vlastní úpravy mohou mít jiný copyright i jiné podmínky; nové podmínky musí být jasně uvedeny na první straně každého dotčeného souboru. Nejde o obecnou povinnost značit všechny změny ani o copyleft. Ověřte případné výjimky uvedené přímo v souborech. Záruky a odpovědnost jsou vyloučeny.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/OML.html",
+      "note": "Dřívější individuální revize 2026-09-09.6; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

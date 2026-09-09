@@ -1,0 +1,29 @@
+{
+  "id": "FreeBSD-DOC",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:04bdf3a42ea0cb7f93d0d8db7e8d668476411458580455998198022b6402eab2"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Licence dovoluje měnit a distribuovat zdrojovou i převedenou dokumentaci se zachováním copyrightu a podmínek, ve zdrojích na prvních řádcích. Některé manuály navíc obsahují zvlášť povolené přetisky IEEE/POSIX s vlastním původovým oznámením. Průvodce ji nezařazuje pro nový software, protože je nutné odlišit dokumentaci a konkrétní práva k těmto cizím částem.",
+  "blockersCs": [
+    "Licence pokrývá dokumentaci a některé manuály obsahují zvlášť licencované IEEE/POSIX přetisky; před doporučením je třeba dokumentační model a určit, které části a práva podléhají třetí straně."
+  ],
+  "analysis": {
+    "subjectCs": "FreeBSD Documentation License pokrývá SGML DocBook zdroje a převedenou dokumentaci; zvláštní část řeší přetištěné fragmenty IEEE/POSIX 2004.",
+    "grantCs": "Úvod dovoluje distribuci a užití zdroje i compiled dokumentů se změnami i bez; IEEE/The Open Group doložka popisuje svolení přetisknout části, nikoli obecný grant změn celé normy.",
+    "conditionsCs": "Zdroj zachová copyright/podmínky/disclaimer nezměněné jako první řádky; převedené PDF/HTML/RTF aj. je reprodukují v doprovodu. Každý produkt obsahující uvedené IEEE materiály musí mít předepsanou původovou poznámku.",
+    "limitationsCs": "FreeBSD vylučuje záruky/odpovědnost AS IS; při rozporu přetištěných částí je rozhodná původní norma IEEE/Open Group.",
+    "compatibilityCs": "SGML a compiled jsou dokumentační formáty, nikoli software binaries; práva k IEEE fragmentům se neposuzují automaticky jako obecná FreeBSD licence."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/FreeBSD-DOC.html",
+      "note": "Individuálně přečten celý připnutý text; Zdroj zachová copyright/podmínky/disclaimer nezměněné jako první řádky; převedené PDF/HTML/RTF aj. je reprodukují v doprovodu. Každý produkt obsahující uvedené IEEE materiály musí mít předepsanou původovou poznámku. Celý text nemá patentový grant ani patentové ukončení."
+    }
+  ]
+}

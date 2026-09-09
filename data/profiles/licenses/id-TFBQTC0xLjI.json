@@ -8,94 +8,103 @@
     "contentHash": "sha256:a83b1430877cd044b72115702ffce5eb5a2db468d85838b64a5cddec5e9a5152"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
+      "conditional-relicensing",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "mark-modifications"
-    ],
-    "triggers": [
+      "include-license-text",
+      "include-notice",
+      "mark-modifications",
       "unknown"
     ],
+    "triggers": [
+      "distribution",
+      "modification"
+    ],
     "restrictions": [
+      "additional-terms",
       "liability",
+      "unknown",
       "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LPPL-1.2.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LPPL-1.2.json#text; LPPL1.2 z3.9.1999 se vztahuje i na software mimo TeX a definuje The Program jako celý určený souborový balík. Spouštění je mimo omezený rozsah licence; povoluje distribuci kompletního nezměněného programu a změněných souborů za osmi podmínek. Výslovně zakazuje měnit soubory s takovým zákazem a LaTeX .ins soubory, takže nejde o neomezené právo upravit každý soubor. LPPL1.2 nevyžaduje stejnou licenci všech změn: výslovně odnímá ostatní distribuční podmínky změněným souborům, zachovává však rekurzivní zákaz původního filename. Nejde o běžný zdrojový copyleft.; https://spdx.org/licenses/LPPL-1.2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LPPL-1.2.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LPPL-1.2.json#text; LPPL1.2 nevyžaduje stejnou licenci všech změn: výslovně odnímá ostatní distribuční podmínky změněným souborům, zachovává však rekurzivní zákaz původního filename. Nejde o běžný zdrojový copyleft.; https://spdx.org/licenses/LPPL-1.2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/LPPL-1.2.json#text; Spouštění je mimo omezený rozsah licence; povoluje distribuci kompletního nezměněného programu a změněných souborů za osmi podmínek. Výslovně zakazuje měnit soubory s takovým zákazem a LaTeX .ins soubory, takže nejde o neomezené právo upravit každý soubor.; https://spdx.org/licenses/LPPL-1.2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/LPPL-1.2.json#text; Podmínky1–8 vyžadují dodržet zvláštní souborové podmínky, změnit jméno souboru i identifikační řetězce a adresy hlášení chyb, uvést původní autorství/jméno/program a v další licenci vynutit zákaz původního jména také pro všechny deriváty. Dále přiložit celý původní program, nabídnout jej rovnocenně ze stejného místa nebo dát dostatečný návod/URL k jeho získání. Sdílená instalace přístupná jiným uživatelům je distribuce. .fd dovoluje původní jméno jen pro vymezené opravy dostupnosti fontů s přiložením originálu; .cfg může zachovat jméno v rozsahu povolených příkazů.; https://spdx.org/licenses/LPPL-1.2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LPPL-1.2.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LPPL-1.2.json#text; Podmínky1–8 vyžadují dodržet zvláštní souborové podmínky, změnit jméno souboru i identifikační řetězce a adresy hlášení chyb, uvést původní autorství/jméno/program a v další licenci vynutit zákaz původního jména také pro všechny deriváty. Dále přiložit celý původní program, nabídnout jej rovnocenně ze stejného místa nebo dát dostatečný návod/URL k jeho získání. Sdílená instalace přístupná jiným uživatelům je distribuce. .fd dovoluje původní jméno jen pro vymezené opravy dostupnosti fontů s přiložením originálu; .cfg může zachovat jméno v rozsahu povolených příkazů.; https://spdx.org/licenses/LPPL-1.2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/LPPL-1.2.json#text; Pouhé přejmenování je změna; aktualizace na přesnou nejnovější verzi má výjimku. Doporučení dodržet distribuční pravidla i při čistě soukromé změně není povinnost. AS IS a vyloučení škod platí bez zvláštní písemné dohody. Žádný patentový grant ani patentová odveta.; https://spdx.org/licenses/LPPL-1.2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LPPL-1.2.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LPPL-1.2.json#text; Celý text upravuje autorské podmínky, souborové výjimky a záruky; o patentech mlčí.; https://spdx.org/licenses/LPPL-1.2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/LPPL-1.2.json#text; Podmínky1–8 vyžadují dodržet zvláštní souborové podmínky, změnit jméno souboru i identifikační řetězce a adresy hlášení chyb, uvést původní autorství/jméno/program a v další licenci vynutit zákaz původního jména také pro všechny deriváty. Dále přiložit celý původní program, nabídnout jej rovnocenně ze stejného místa nebo dát dostatečný návod/URL k jeho získání. Sdílená instalace přístupná jiným uživatelům je distribuce. .fd dovoluje původní jméno jen pro vymezené opravy dostupnosti fontů s přiložením originálu; .cfg může zachovat jméno v rozsahu povolených příkazů. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/LPPL-1.2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LPPL-1.2.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LPPL-1.2.json#text; Individuální kontrola celého připnutého textu LPPL-1.2 dne 2026-09-09. LPPL1.2 z3.9.1999 se vztahuje i na software mimo TeX a definuje The Program jako celý určený souborový balík. Body3,5–8 zavádějí povinné přejmenování a změnu chybových kontaktů s rekurzivním zákazem původních jmen a alternativami přístupu k původnímu programu; software model musí tyto podmínky vyjádřit. Text normativně dovoluje dodat nebo nahradit podmínky změn v jednotlivých souborech a výslovně zakazuje změny .ins; pro konkrétní program je třeba přečíst jeho závazné hlavičky a modelovat výjimky. Změněné soubory obecně nemusejí zachovat ostatní distribuční pravidla LPPL, pouze navazující zákaz původního jména z bodu7. Vzor pig.dtx ukazuje volbu1.2-or-later, tato ilustrace sama nezmění skutečné licenční určení. Inventura The Program a právních hlaviček je podle textu podstatná.; https://spdx.org/licenses/LPPL-1.2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

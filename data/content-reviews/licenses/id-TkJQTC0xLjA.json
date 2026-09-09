@@ -1,0 +1,30 @@
+{
+  "id": "NBPL-1.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:7921d4dee53deecd87140c598d03f3c003e76cf24d29d42176e7add50f118fbd"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Net Boolean 1.0 dovoluje modifikace a binární distribuci přes samostatně volené cesty. U změn se zachová how/when notice, pak se volí například veřejné změny, interní užití nebo přejmenované protějšky; binární větev může splnit zdroj, standardní verze či jiná dohoda.",
+  "blockersCs": [
+    "Bod3 volí jednu ze čtyř změnových cest a bod4 samostatně jednu ze čtyř binárních cest; dostupný zdroj není jediná povolená možnost. Je třeba modelovat tento rozhodovací postup a cenové omezení5 bez nahrazení alternativ kumulativními povinnostmi.",
+    "Bod7 vyjímá emulační C subroutines jen při zachování regresních testů jazyka; nelze automaticky tvrdit library či whole-work copyleft. Nutný model tohoto podmíněného rozsahu."
+  ],
+  "analysis": {
+    "subjectCs": "Net Boolean Package a textové deriváty, licence Version1 z22.8.1998; Standard Version zahrnuje změny přijaté držitelem.",
+    "grantCs": "1 původní source copies,2 public-domain/holder fixes,3 jiné úpravy,4 binárky;5 komerční agregace/podpora a6 komerční výstupy. Patentový grant chybí.",
+    "conditionsCs": "3 prominentní how/when v každém changed file a jedna možnost: public/free changes, internal corporation, renamed+standard executables/manpages, holder arrangement.4 jedna: standard binary +location, source with changes, renamed+standard/manuals+location, arrangement.1 zachovat copyright/disclaimers.",
+    "limitationsCs": "5 cenu samotného balíku zakazuje, copying fee/support/aggregate dovoluje bez reklamy jako vlastní produkt;7 testově podmíněné C emulační subroutines;8 trademark endorsement svolení;9 AS IS bez záruk, bez liability výluky.",
+    "compatibilityCs": "Poznámka výslovně říká odlišnost od Artistic; nepřebírá její jiné varianty.6 input/output vlastní generujícím a7 omezená výjimka se nesmějí rozšířit na všechny kombinace."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/NBPL-1.0.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; NBPL1 má vlastní3/4 alternativní cesty a5 samostatný fee režim, nikoli jediné source pravidlo."
+    }
+  ]
+}

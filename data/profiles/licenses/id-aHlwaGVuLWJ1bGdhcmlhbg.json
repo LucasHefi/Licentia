@@ -9,90 +9,98 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "unknown"
+      "include-copyright",
+      "include-license-text"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification",
+      "use"
     ],
     "restrictions": [
-      "liability"
+      "liability",
+      "trademark",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "none-stated",
+    "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/hyphen-bulgarian.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/hyphen-bulgarian.json#text; Výslovný široký grant zdrojů i binárek má oznamovací, nikoli reciproční podmínky; permisivní bez copyleftu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/hyphen-bulgarian.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/hyphen-bulgarian.json#text; Výslovný široký grant zdrojů i binárek má oznamovací, nikoli reciproční podmínky; permisivní bez copyleftu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/hyphen-bulgarian.json#text; První věta výslovně povoluje užití, změny, kopírování, distribuci a prodej obou forem; patentová licence ani výslovná sublicence uvedeny nejsou.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/hyphen-bulgarian.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/hyphen-bulgarian.json#text; Provided that podmiňuje všechny uvedené činnosti zachováním copyrightu a těchto podmínek, tedy také samotné užití. Není požadováno vydání zdrojů, reklama ani stejná licence. Povinnost při samotném užití nyní zachycuje trigger use ve slovníku 1.4.0.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/hyphen-bulgarian.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/hyphen-bulgarian.json#text; Provided that podmiňuje všechny uvedené činnosti zachováním copyrightu a těchto podmínek, tedy také samotné užití. Není požadováno vydání zdrojů, reklama ani stejná licence. Povinnost při samotném užití nyní zachycuje trigger use ve slovníku 1.4.0.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/hyphen-bulgarian.json#text; Jméno autora nelze bez předchozího svolení použít k podpoře či propagaci odvozených produktů. As is odmítá výslovné i implicitní záruky a veškerou odpovědnost za škody.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/hyphen-bulgarian.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/hyphen-bulgarian.json#text; První věta výslovně povoluje užití, změny, kopírování, distribuci a prodej obou forem; patentová licence ani výslovná sublicence uvedeny nejsou.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/hyphen-bulgarian.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/hyphen-bulgarian.json#text; Provided that podmiňuje všechny uvedené činnosti zachováním copyrightu a těchto podmínek, tedy také samotné užití. Není požadováno vydání zdrojů, reklama ani stejná licence. Povinnost při samotném užití nyní zachycuje trigger use ve slovníku 1.4.0.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/hyphen-bulgarian.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/hyphen-bulgarian.json#text; Individuální plná revize aktualizována po doplnění use ve slovníku 1.4.0. Zdrojové i binární verze lze používat, upravovat, šířit a prodávat s copyrightem a podmínkami. Jméno autora nesmí bez svolení podporovat odvozené produkty; platí výluka záruk a odpovědnosti. ",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

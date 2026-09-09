@@ -9,91 +9,94 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright"
     ],
     "triggers": [
-      "unknown"
+      "distribution"
     ],
     "restrictions": [
-      "unknown"
+      "trademark",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "minimal"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Sun-PPP.json#text; grant paragraph: nonexclusive redistribute/modify/translate/use in source and binary forms, whole or part; no reciprocal source-disclosure or same-license condition; https://spdx.org/licenses/Sun-PPP.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Sun-PPP.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Sun-PPP.json#text; grant paragraph: nonexclusive redistribute/modify/translate/use in source and binary forms, whole or part; https://spdx.org/licenses/Sun-PPP.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
     },
     {
-      "field": "copyleftScope",
+      "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Sun-PPP.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Sun-PPP.json#text; grant condition: above copyright duplicated in ANY SOURCE FORM; no whole-license or binary-notice requirement; https://spdx.org/licenses/Sun-PPP.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
     },
     {
-      "field": "triggers",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Sun-PPP.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Sun-PPP.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Sun-PPP.json#text; grant condition: above copyright duplicated in ANY SOURCE FORM; no whole-license or binary-notice requirement; https://spdx.org/licenses/Sun-PPP.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Sun-PPP.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Sun-PPP.json#text; whole text: no express patent grant or patent-litigation termination; no inference about implied patent rights; https://spdx.org/licenses/Sun-PPP.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Sun-PPP.json#text; grant paragraph: nonexclusive redistribute/modify/translate/use in source and binary forms, whole or part; https://spdx.org/licenses/Sun-PPP.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Sun-PPP.json#text; grant condition: neither holder nor author name used for endorsement/promotion, without a written-consent exception in this text; final paragraph: AS IS, express/implied warranty exclusions, no express liability disclaimer; https://spdx.org/licenses/Sun-PPP.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Sun-PPP.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Sun-PPP.json#text; whole-text editorial review on 2026-09-09, batch 5; Copyright zachovejte v každé zdrojové podobě. Jména nositele copyrightu ani autora se nesmějí používat k propagaci odvozených produktů. Text neuvádí obecnou výjimku na základě souhlasu. Užití, úpravy, překlad a redistribuce jsou povoleny i v binární podobě; samostatná povinnost oznámení pro binární kopie uvedena není. Text vylučuje záruky, nikoli výslovně odpovědnost.; https://spdx.org/licenses/Sun-PPP.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Sun-PPP.json#text; grant condition: above copyright duplicated in ANY SOURCE FORM; no whole-license or binary-notice requirement; https://spdx.org/licenses/Sun-PPP.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
     }
   ]
 }

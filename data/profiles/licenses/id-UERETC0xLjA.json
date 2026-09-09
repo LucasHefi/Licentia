@@ -8,94 +8,93 @@
     "contentHash": "sha256:809acf4249eb99bb6b3e3e8d5ecdf30aef95d4e0fa19ecd2b2a0d2c5493f4bd0"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "public-domain-equivalent",
+    "copyleftScope": "none",
     "permissions": [
       "commercial-use",
       "distribution",
       "modifications",
+      "private-use",
       "sublicensing"
     ],
-    "obligations": [
-      "unknown"
-    ],
-    "triggers": [
-      "unknown"
-    ],
+    "obligations": [],
+    "triggers": [],
     "restrictions": [
-      "liability"
+      "liability",
+      "trademark",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "express-exclusion",
+    "noticeBurden": "none"
   },
   "evidence": [
     {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/PDDL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/PDDL-1.0.json#text; §§3.1–3.3 stupňovaná public-domain dedikace, waiver a teprve záložní široká licence bez podmínek; public-domain-equivalent pro data; https://spdx.org/licenses/PDDL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/PDDL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/PDDL-1.0.json#text; Preambule/§4.1 dovolují změny utajit a kombinovat bez podmínek; žádná stejná licence nového celku či databázové odvozeniny; https://spdx.org/licenses/PDDL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/PDDL-1.0.json#text; §§1,3.3 Use zahrnuje sublicence a všechny copyright/databázové úkony, výslovně komerci a všechny obory; §§3.1–3.2 preferují úplné uvolnění práv; https://spdx.org/licenses/PDDL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/PDDL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/PDDL-1.0.json#text; Preambule výslovně nevyžaduje atribuci ani předání textu; §4.1 vylučuje další smluvní závazky a Community Norms z licence; prázdné obligations jsou zjištěná absence; https://spdx.org/licenses/PDDL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/PDDL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/PDDL-1.0.json#text; Žádná atribuční/copyleft/source povinnost se nespouští distribucí, změnou ani použitím; tři právní záložní cesty §3 nejsou příjemcovy distribuční triggery; https://spdx.org/licenses/PDDL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/PDDL-1.0.json#text; §§4.2–4.3 výslovně bez patentů/známek, §5 záruky a odpovědnost s kogentními a nedbalostními výjimkami; zachované moral rights §3.4 jen kde neodstranitelné právem; https://spdx.org/licenses/PDDL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/PDDL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/PDDL-1.0.json#text; §2 Rights not covered a §4.2 výslovně neudělují žádnou patentovou licenci, což je express-exclusion, nikoli mlčení nebo patentová odveta; https://spdx.org/licenses/PDDL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/PDDL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/PDDL-1.0.json#text; Preambule výslovně říká bez povinnosti uvést autora či přiložit licenci; §4.1 Community Norms nejsou smlouva, proto noticeBurden none; https://spdx.org/licenses/PDDL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/PDDL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/PDDL-1.0.json#text; Individuální přečtení celého připnutého textu dne 2026-09-10. PDDL 1.0 neodvolatelně uvolňuje databázi, její obsah nebo obojí do public domain; kde to nefunguje, vzdává se nároků a následně poskytuje záložní bezplatnou licenci. Umožňuje komerci, úpravy, vlastní podmínky i technické ochrany bez atribuce a bez přikládání licence. Výslovně však nepokrývá programy pro tvorbu či provoz databáze, patenty ani známky. Nepominutelná osobnostní práva mohou zůstat. Jde o datový nástroj, nikoli licenci pro nový software. Blokace: Preambule a §§1–2 omezují Work na Database/Data a odstavec Rights not covered výslovně vylučuje počítačové programy používané k tvorbě/provozu databáze. Nelze jej doporučit jako licenci softwarového projektu; je nutná samostatná datová větev a přesné označení, zda dedikace pokrývá databázi, její obsah, nebo obojí.; https://spdx.org/licenses/PDDL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

@@ -8,99 +8,106 @@
     "contentHash": "sha256:016caabd09d905803890b71fb19937deaf9ce9c5df4f8369e946e207e644f8a3"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "strong-copyleft",
+    "copyleftScope": "whole-work",
     "permissions": [
       "commercial-use",
       "distribution",
       "modifications",
-      "patent-grant",
-      "sublicensing"
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "include-license-text",
-      "provide-corresponding-source"
-    ],
-    "triggers": [
+      "include-notice",
+      "provide-corresponding-source",
+      "same-license",
       "unknown"
     ],
+    "triggers": [
+      "combination",
+      "distribution",
+      "modification",
+      "unknown",
+      "use"
+    ],
     "restrictions": [
+      "additional-terms",
       "liability",
       "trademark",
+      "unknown",
       "warranty"
     ],
-    "patentPosition": "express-grant",
-    "noticeBurden": "standard"
+    "patentPosition": "unknown",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OCLC-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OCLC-2.0.json#text; §2 distribuce Programu pod touto licencí a §3.D celé integrované Combined Work; copyleft nad rámec jednotlivých změněných souborů; https://spdx.org/licenses/OCLC-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OCLC-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OCLC-2.0.json#text; §3.D explicitně ukládá podmínky Combined Work, pouze neintegrovaný Aggregate Work má oddělené ostatní části; file definice Modification §2 sama rozsah neomezuje; https://spdx.org/licenses/OCLC-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OCLC-2.0.json#text; §1 spouštění/odvozeniny/distribuce výslovně commercial and noncommercial; §3 cenový strop není zákaz komerčního použití, §4 vlastní contributor grant není libovolná licence originálu; https://spdx.org/licenses/OCLC-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OCLC-2.0.json#text; §3.A výrazný celý disclaimer, §3.B každé modifikovatelné zdrojové/datové soubory konkrétní notices, §3.C zdroje přiložené nebo na žádost; §6 patentová a nápravná povinnost jsou unknown; https://spdx.org/licenses/OCLC-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OCLC-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OCLC-2.0.json#text; Distribuce zdrojů/objektů/Combined Work §3, vytvoření a předání změn §§2,4 a zachování notices §6; IP litigation §5 a zjištění cizího nároku §6 nelze redukovat na patent-claim; https://spdx.org/licenses/OCLC-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OCLC-2.0.json#text; §3.A výluky a zákaz dalších restrikcí s cizími právy, §6 známky; cenové stropy Program/Combined a aktivní náprava cizích práv potřebují vlastní omezení; https://spdx.org/licenses/OCLC-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OCLC-2.0.json#text; §6 požaduje free/perpetual/unrestricted patent provision pro třetí strany, ale nepředkládá explicitní přítomný patentový grant; §5 ruší contributor grant pro obecnou IP žalobu, proto nelze určit standardní patentPosition; https://spdx.org/licenses/OCLC-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OCLC-2.0.json#text; §3.B rozsáhlý notice v každém zdrojovém/datovém souboru, §3.C nápadný copyright, §3.A výrazný celý disclaimer a §6 upozornění příjemců na nově zjištěné nároky; https://spdx.org/licenses/OCLC-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OCLC-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OCLC-2.0.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. OCLC2.0 dovoluje komerční užití a úpravy, ale Program i integrované Combined Work se distribuují pod touto licencí pouze za náklady fyzického předání. Neintegrovaný Aggregate Work lze prodávat, přičemž Program si drží vlastní podmínky. Modifikovatelné soubory nesou rozsáhlý notice; u nemodifikovatelného kódu se přikládají zdroje nebo poskytují na žádost. Licence ukládá zvláštní patentový závazek, nápravu zjištěných cizích práv a široké IP žalobní ukončení. Záruky a škody jsou výslovně vyloučeny. Blokace: §§3.A,3.D zakazují cenu Programu i integrovaného Combined Work nad fyzické přenosové náklady, ale výslovně dovolují prodej neintegrovaného Aggregate Work. Model nemá tuto cenovou restrikci a nesmí ji zaměnit za zákaz komerčního použití; potřebuje ji odděleně s výjimkou agregace. §6 požaduje u patentu kterékoliv strany na Program ustanovení zajišťující bezplatné trvalé neomezené komerční i nekomerční užití třetím stranám. Nejde o jasný přítomný patentový grant §1; je nutné modelovat povinnost udělit patentová práva. §5 ukončuje grant žalobou za jakékoli IP porušení proti dotčenému přispěvateli, nejen patentovou žalobou. §3.A vyžaduje prohlášení vlastní tvorby a kompletní detaily cizích práv v každé změně; §6 ukládá po zjištění nároku znovu upravit již distribuovaný Program a rozumně informovat příjemce. §6 také váže nové stažené kopie na později zveřejněnou novelu poskytovatele. Tyto povinnosti a dynamika verzí vyžadují samostatný model před doporučením.; https://spdx.org/licenses/OCLC-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

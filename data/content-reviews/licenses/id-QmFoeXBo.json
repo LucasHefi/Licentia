@@ -1,0 +1,29 @@
+{
+  "id": "Bahyph",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:d7ceadfe7235be0ce96e5955720f5d7fd2356f5161fd50c6a33699b6853d8d48"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Vzory a generující skript lze užívat pro jakýkoli účel s copyrightem. Změny vyžadují komentář kdo/kdy/proč a změněný generátor musí označovat každý výstup. Zaslání změn a hlášení problémů je pouze žádost.",
+  "blockersCs": [
+    "Při úpravě generátoru musí být doplněn kód zajišťující označení každého výstupu; obecné mark-modifications tuto výstupní povinnost nezachytí. Doplnit odpovídající model a ověřit výslovně nevymezený redistribuční grant."
+  ],
+  "analysis": {
+    "subjectCs": "Předmětem jsou dělicí vzory a jejich generující shellový skript GMV 1991.",
+    "grantCs": "You can use ... for any purpose a podmínky změn dovolují užití a modifikace; samostatný obecný distribuční grant není výslovně formulován, byť úvod očekává šíření vzorů. Patentový grant chybí.",
+    "conditionsCs": "Copyright nelze smazat. Při změnách se vkládají komentáře kdo/kdy/proč; při změně generujícího skriptu musí být vložen kód, který každý výstup označí jako vytvořený změněným skriptem. Kindly requested a please report jsou nezávazné výzvy.",
+    "limitationsCs": "Text odmítá záruky a odpovědnost jmenovaných osob/GMV i po upozornění; opravu přenechává uživateli a užití je výslovný souhlas s podmínkami.",
+    "compatibilityCs": "Povinnost označit generovaný výstup není stejná licence výstupu ani konkrétní kompatibilita; jiná licenční cesta není uvedena."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Bahyph.html",
+      "note": "Individuální revize celého připnutého textu; Předmětem jsou dělicí vzory a jejich generující shellový skript GMV 1991."
+    }
+  ]
+}

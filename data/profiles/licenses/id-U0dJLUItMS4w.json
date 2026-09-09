@@ -8,97 +8,107 @@
     "contentHash": "sha256:1015b13c573620f558c118096002a3829395606bb5a702d3b82169e1bd001ab9"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "none",
     "permissions": [
       "commercial-use",
+      "conditional-relicensing",
       "distribution",
       "modifications",
       "patent-grant",
+      "private-use",
       "sublicensing"
     ],
     "obligations": [
+      "include-copyright",
       "include-license-text",
-      "provide-corresponding-source"
-    ],
-    "triggers": [
+      "include-notice",
+      "preserve-combined-license-terms",
       "unknown"
     ],
+    "triggers": [
+      "distribution",
+      "modification",
+      "use"
+    ],
     "restrictions": [
+      "additional-terms",
       "liability",
-      "trademark"
+      "trademark",
+      "unknown",
+      "warranty"
     ],
     "patentPosition": "express-grant",
-    "noticeBurden": "standard"
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SGI-B-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SGI-B-1.0.json#text; SGI Free Software B 1.0 z 25.1.2000 pokrývá Original Code a Modifications definované po souborech a může se použít v Larger Work. §2.1 dovoluje reprodukci, distribuci, deriváty, zobrazení a výkon, spolu s patenty ztělesněnými v Original Code; §2.3 však oba granty vylučuje pro hardwarové implementace algoritmů a §2.4 dovoluje změny jen při úplné shodě s API uvedenými v Additional Notice Provisions. §3.B dovoluje změněné licenční podmínky při zachování vyjmenovaných oddílů; nepožaduje dodání zdrojů ani stejnou licenci celého Larger Work. Definice změn po souborech sama není zdrojový copyleft.; https://spdx.org/licenses/SGI-B-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SGI-B-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SGI-B-1.0.json#text; §3.B dovoluje změněné licenční podmínky při zachování vyjmenovaných oddílů; nepožaduje dodání zdrojů ani stejnou licenci celého Larger Work. Definice změn po souborech sama není zdrojový copyleft.; https://spdx.org/licenses/SGI-B-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SGI-B-1.0.json#text; §2.1 dovoluje reprodukci, distribuci, deriváty, zobrazení a výkon, spolu s patenty ztělesněnými v Original Code; §2.3 však oba granty vylučuje pro hardwarové implementace algoritmů a §2.4 dovoluje změny jen při úplné shodě s API uvedenými v Additional Notice Provisions.; https://spdx.org/licenses/SGI-B-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SGI-B-1.0.json#text; §3.A zachovává Exhibit A v každém komentovatelném zdrojovém souboru a notice s licencí v dokumentaci binární distribuce, včetně dalších konkrétních notices. §3.B nabízí původní licenci, upravenou identitu poskytovatele nebo jinou licenci s povinně nezměněnými §3,4,6,7,10,12,13 a zřetelným přiřazením odchylek příjemci. §7 vyžaduje rychlé oznámení cizích IP nároků SGI; §11 obecnou obhajobu a odškodnění za použití, změny a distribuci, §3.C navíc za alternativní podmínky.; https://spdx.org/licenses/SGI-B-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SGI-B-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SGI-B-1.0.json#text; §3.A zachovává Exhibit A v každém komentovatelném zdrojovém souboru a notice s licencí v dokumentaci binární distribuce, včetně dalších konkrétních notices. §3.B nabízí původní licenci, upravenou identitu poskytovatele nebo jinou licenci s povinně nezměněnými §3,4,6,7,10,12,13 a zřetelným přiřazením odchylek příjemci. §7 vyžaduje rychlé oznámení cizích IP nároků SGI; §11 obecnou obhajobu a odškodnění za použití, změny a distribuci, §3.C navíc za alternativní podmínky.; https://spdx.org/licenses/SGI-B-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SGI-B-1.0.json#text; §6 obsahuje výslovné ujištění o dodržování všech zákonů/exportu a zakazuje distribuci porušující cizí IP či jakékoli příslušné záruky. AS IS a výluka škod zachovávají zákonnou výjimku újmy na zdraví; žádná známková práva. Po nenapraveném porušení do30 dnů končí grant, řádné podlicence přežijí. §12 dává vládním uživatelům pouze zdejší obchodní softwarová práva, §13 určuje Kalifornii a náklady neúspěšné strany.; https://spdx.org/licenses/SGI-B-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SGI-B-1.0.json#text; §2.1(ii) výslovný patentový grant z Original Code; §2.2 vylučuje patenty odděleně, změny a kombinace se software/hardware. Není patentová žalobní terminační klauzule.; https://spdx.org/licenses/SGI-B-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SGI-B-1.0.json#text; §3.A zachovává Exhibit A v každém komentovatelném zdrojovém souboru a notice s licencí v dokumentaci binární distribuce, včetně dalších konkrétních notices. §3.B nabízí původní licenci, upravenou identitu poskytovatele nebo jinou licenci s povinně nezměněnými §3,4,6,7,10,12,13 a zřetelným přiřazením odchylek příjemci. §7 vyžaduje rychlé oznámení cizích IP nároků SGI; §11 obecnou obhajobu a odškodnění za použití, změny a distribuci, §3.C navíc za alternativní podmínky. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/SGI-B-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SGI-B-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SGI-B-1.0.json#text; Individuální kontrola celého připnutého textu SGI-B-1.0 dne 2026-09-09. SGI Free Software B 1.0 z 25.1.2000 pokrývá Original Code a Modifications definované po souborech a může se použít v Larger Work. §2.3–4 vylučují hardwarové implementace a podmiňují změny úplnou shodou s API z dosud nevyplněných Additional Notice Provisions; model musí zachytit tuto funkční podmínku a pro konkrétní kód získat závazné API notice. §3.C,6,7,11 vyžadují právní ujištění, hlášení IP nároků a obecné odškodnění; známé notice a defend-added-warranty tyto povinnosti nevystihují. §8 dovoluje pozdější verze SGI, ale zde je hodnocen plný obsah1.0. Alternativní licence musí zachovat vyjmenované normativní oddíly; pouhá možnost jiné licence nedokazuje obecnou kompatibilitu.; https://spdx.org/licenses/SGI-B-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

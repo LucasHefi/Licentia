@@ -8,95 +8,105 @@
     "contentHash": "sha256:570f6157e216dba96d358e697ea91a3f0e13c47c90ea2a7a30df4bf8d3351d6e"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
       "modifications",
-      "sublicensing"
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "include-license-text"
-    ],
-    "triggers": [
+      "include-notice",
+      "include-use-acknowledgment",
+      "mark-modifications",
       "unknown"
     ],
-    "restrictions": [
-      "liability",
-      "trademark"
+    "triggers": [
+      "distribution",
+      "modification",
+      "unknown",
+      "use"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "restrictions": [
+      "additional-terms",
+      "liability",
+      "trademark",
+      "unknown",
+      "warranty"
+    ],
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-3.0-AU.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-3.0-AU.json#text; §3–4 permissivní adaptace bez copyleftu a bez corresponding-source povinností; práva původního díla zůstávají oddělena od autorství nové adaptace.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-3.0-AU.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-3.0-AU.json#text; §3–4 permissivní adaptace bez copyleftu a bez corresponding-source povinností; práva původního díla zůstávají oddělena od autorství nové adaptace.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-BY-3.0-AU.json#text; §3A–B světový bezroyalty nevýhradní copyright grant po dobu práv: copy, collections, adaptace a jejich veřejná distribuce/provedení, všechna média a technické formátové změny. §3C vzdání royalty za veškerý výkon udělených práv, ostatní práva rezervována. Patenty nejsou výslovně licencovány a §4A zakazuje sublicenci.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-BY-3.0-AU.json#text; §4A originál s textem NEBO URI licence, zachované licence/warranty notices, bez dodatečných omezení a technologií omezujících příjemce; Collection mimo Work ne. §4B copyright, autor/pseudonym a požadované Attribution Parties, dodaný titul a relevantní dosažitelné URI, rozumné kroky zřetelně označit změny. Kredit součástí srovnatelných kreditů stejně výrazný. Na žádost poskytovatele NEBO autora prakticky možné odstranit atribuci z Collection/adaptace. Kredit pouze attribution, bez asociace/endorsement bez samostatného předchozího písemného souhlasu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-3.0-AU.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-3.0-AU.json#text; §4A originál s textem NEBO URI licence, zachované licence/warranty notices, bez dodatečných omezení a technologií omezujících příjemce; Collection mimo Work ne. §4B copyright, autor/pseudonym a požadované Attribution Parties, dodaný titul a relevantní dosažitelné URI, rozumné kroky zřetelně označit změny. Kredit součástí srovnatelných kreditů stejně výrazný. Na žádost poskytovatele NEBO autora prakticky možné odstranit atribuci z Collection/adaptace. Kredit pouze attribution, bez asociace/endorsement bez samostatného předchozího písemného souhlasu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-BY-3.0-AU.json#text; §4C neodvolatelná zákonná moral rights zůstávají. §5 as-is v zákonných mezích s výslovným zachováním spotřebitelských Trade Practices1974/state warranties. §6 případné neodstranitelné závazky limituje na volbu náhrady/opravy či nákladů u zboží a opětovných služeb/nákladů, pouze kde zákon dovolí; domácí/spotřebitelské výjimky výslovné. §7 automatický konec porušením, plnící downstream zůstává. §8 nové poskytovatelovy nabídky stávající licenci neodebírají.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-3.0-AU.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-3.0-AU.json#text; §3A–B světový bezroyalty nevýhradní copyright grant po dobu práv: copy, collections, adaptace a jejich veřejná distribuce/provedení, všechna média a technické formátové změny. §3C vzdání royalty za veškerý výkon udělených práv, ostatní práva rezervována. Patenty nejsou výslovně licencovány a §4A zakazuje sublicenci.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-BY-3.0-AU.json#text; §4A originál s textem NEBO URI licence, zachované licence/warranty notices, bez dodatečných omezení a technologií omezujících příjemce; Collection mimo Work ne. §4B copyright, autor/pseudonym a požadované Attribution Parties, dodaný titul a relevantní dosažitelné URI, rozumné kroky zřetelně označit změny. Kredit součástí srovnatelných kreditů stejně výrazný. Na žádost poskytovatele NEBO autora prakticky možné odstranit atribuci z Collection/adaptace. Kredit pouze attribution, bez asociace/endorsement bez samostatného předchozího písemného souhlasu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-3.0-AU.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-3.0-AU.json#text; Individuálně přečten celý připnutý text. §1 Work zahrnuje copyrightové materiály a other subject matter včetně nahrávek, filmů, vydání a vysílání; Collection je nezměněný originál se samostatnými díly, hudební synching je adaptace. Distribute je široké veřejné zpřístupnění včetně elektronické komunikace/vysílání. Australská CC BY 3.0 dovoluje komerční adaptace s atribucí a označením změn bez SA. Má právo žádat odstranění kreditu, DRM zákaz, výslovně ponechaná neodvolatelná morální práva a podrobné australské zákonné výjimky z warranty/liability omezení. § 4A/B zahrnují DRM zákaz a odstranění atribuce i na žádost Original Author, nikoli pouze poskytovatele. Doplnit tyto mechanismy, obsahový subjekt a morální práva; současný software-guide profil by materiální podmínky zploštil.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

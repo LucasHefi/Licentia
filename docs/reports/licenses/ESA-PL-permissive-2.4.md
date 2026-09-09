@@ -1,0 +1,63 @@
+# ESA-PL-permissive-2.4 — obsahová revize
+
+European Space Agency Public License – v2.4 – Permissive (Type 3)
+
+Revize: **2026-09-09** · pravidlo **2026-09-09.10**.
+
+Výsledek: **zpracována, nezařazena do průvodce**.
+
+Permisivní ESA 2.4 dovoluje změny, distribuci a podlicence pod vlastními podmínkami a poskytuje vymezený patentový grant. Vyžaduje licenci, oznámení, záznam změn s kontaktem na původce a seznam vlastních patentových nároků; distributor také usiluje o další dodržování oznamovacích povinností. Licence obsahuje výslovná právní ujištění, exportní závazky a závaznou arbitráž. Tyto další činnosti a právní závazky vyžadují samostatné posouzení, proto ji průvodce nezařazuje.
+
+## Předmět a rozsah
+
+ESA Type 3 v2.4 upravuje software ve zdrojové i objektové podobě; definice Modification zahrnuje také připojení knihovny.
+
+## Udělená práva
+
+§2 dovoluje použití, rozmnožování, úpravy, veřejné sdělování a výkon, distribuci, podlicence, půjčování a nájem bez poplatků. Přispěvatel poskytuje podlicencovatelný patentový grant pro svou změnu a její kombinaci s Contributor Version, s výlukami dalších změn a neplánovaných kombinací.
+
+## Podmínky a spouštěče
+
+§3.1 dovoluje libovolné podmínky, vyžaduje oznámit použití a použitelnost této licence a vynaložit nejlepší úsilí pro další dodržování obou povinností všemi distributory. §4 požaduje licenci a příslušné notice, CHANGELOG s datem, změnou a identifikovatelným kontaktovatelným původcem a LEGAL se všemi vlastními Patent Claims, čísly a kontakty. §6 kryje obhajobou a odškodněním jen vlastní přidané záruky. §9.4 vyžaduje popsat zákonem vynucené odchylky v LEGAL.
+
+## Omezení, výjimky a ukončení
+
+§5 obsahuje kladné ujištění přispěvatele o právech, jinak AS IS a výluku odpovědnosti se zákonnými výjimkami. Zakazuje zavádějící použití jmen a známek. Porušení se napravuje do 30 dnů od zjištění; patentová žaloba ruší autorské i patentové licence, platné dřívější podlicence přežívají. §9 ukládá závaznou ICC arbitráž v Kolíně a odpovědnost za exportní požadavky včetně případné registrace.
+
+## Verze a kombinování
+
+§10 vyhrazuje změny licence ESA; neobsahuje automatickou volbu novější verze. Rozhodné právo se řídí sídlem poskytovatele ve státě ESA, jinak včetně sporů s ESA německým právem.
+
+## Překážky a navazující práce
+
+- §3.1(b) vyžaduje nejlepší úsilí pro vynucení rekurzivních distribučních oznámení; §4.5 povinně zveřejňuje seznam vlastních patentových nároků a kontakty. Model potřebuje tyto činnosti odlišit od pouhého zachování notice.
+- §5.1 aktivní ujištění o právním titulu a §9.2 závazná arbitráž spolu s §9.3–4 exportními povinnostmi a zveřejněním zákonných odchylek vyžadují zachycení dalších právních závazků.
+
+## Metadata a jejich doložení
+
+| Pole | Hodnota | Doložení znění |
+|---|---|---|
+| family | "permissive" | public/data/licenses/ESA-PL-permissive-2.4.json#text; ESA Type 3 v2.4 upravuje software ve zdrojové i objektové podobě; definice Modification zahrnuje také připojení knihovny. §2 dovoluje použití, rozmnožování, úpravy, veřejné sdělování a výkon, distribuci, podlicence, půjčování a nájem bez poplatků. Přispěvatel poskytuje podlicencovatelný patentový grant pro svou změnu a její kombinaci s Contributor Version, s výlukami dalších změn a neplánovaných kombinací. §3 výslovně No Copyleft: další zdrojový i objektový software může mít libovolnou licenci, s přetrvávajícími informačními podmínkami.; https://spdx.org/licenses/ESA-PL-permissive-2.4.html |
+| copyleftScope | "none" | public/data/licenses/ESA-PL-permissive-2.4.json#text; §3 výslovně No Copyleft: další zdrojový i objektový software může mít libovolnou licenci, s přetrvávajícími informačními podmínkami.; https://spdx.org/licenses/ESA-PL-permissive-2.4.html |
+| permissions | ["commercial-use","distribution","modifications","patent-grant","private-use","sublicensing"] | public/data/licenses/ESA-PL-permissive-2.4.json#text; §2 dovoluje použití, rozmnožování, úpravy, veřejné sdělování a výkon, distribuci, podlicence, půjčování a nájem bez poplatků. Přispěvatel poskytuje podlicencovatelný patentový grant pro svou změnu a její kombinaci s Contributor Version, s výlukami dalších změn a neplánovaných kombinací.; https://spdx.org/licenses/ESA-PL-permissive-2.4.html |
+| obligations | ["defend-added-warranty","include-copyright","include-license-text","include-notice","mark-modifications","unknown"] | public/data/licenses/ESA-PL-permissive-2.4.json#text; §3.1 dovoluje libovolné podmínky, vyžaduje oznámit použití a použitelnost této licence a vynaložit nejlepší úsilí pro další dodržování obou povinností všemi distributory. §4 požaduje licenci a příslušné notice, CHANGELOG s datem, změnou a identifikovatelným kontaktovatelným původcem a LEGAL se všemi vlastními Patent Claims, čísly a kontakty. §6 kryje obhajobou a odškodněním jen vlastní přidané záruky. §9.4 vyžaduje popsat zákonem vynucené odchylky v LEGAL.; https://spdx.org/licenses/ESA-PL-permissive-2.4.html |
+| triggers | ["distribution","modification","patent-claim"] | public/data/licenses/ESA-PL-permissive-2.4.json#text; §3.1 dovoluje libovolné podmínky, vyžaduje oznámit použití a použitelnost této licence a vynaložit nejlepší úsilí pro další dodržování obou povinností všemi distributory. §4 požaduje licenci a příslušné notice, CHANGELOG s datem, změnou a identifikovatelným kontaktovatelným původcem a LEGAL se všemi vlastními Patent Claims, čísly a kontakty. §6 kryje obhajobou a odškodněním jen vlastní přidané záruky. §9.4 vyžaduje popsat zákonem vynucené odchylky v LEGAL.; https://spdx.org/licenses/ESA-PL-permissive-2.4.html |
+| restrictions | ["additional-terms","liability","patent-claim","trademark","unknown","warranty"] | public/data/licenses/ESA-PL-permissive-2.4.json#text; §5 obsahuje kladné ujištění přispěvatele o právech, jinak AS IS a výluku odpovědnosti se zákonnými výjimkami. Zakazuje zavádějící použití jmen a známek. Porušení se napravuje do 30 dnů od zjištění; patentová žaloba ruší autorské i patentové licence, platné dřívější podlicence přežívají. §9 ukládá závaznou ICC arbitráž v Kolíně a odpovědnost za exportní požadavky včetně případné registrace.; https://spdx.org/licenses/ESA-PL-permissive-2.4.html |
+| patentPosition | "retaliatory-termination" | public/data/licenses/ESA-PL-permissive-2.4.json#text; §2.2 výslovný omezený patentový grant; §8.2 patentová žaloba včetně protinároku ruší patentová i autorská práva dnem podání.; https://spdx.org/licenses/ESA-PL-permissive-2.4.html |
+| noticeBurden | "material" | public/data/licenses/ESA-PL-permissive-2.4.json#text; §3.1 dovoluje libovolné podmínky, vyžaduje oznámit použití a použitelnost této licence a vynaložit nejlepší úsilí pro další dodržování obou povinností všemi distributory. §4 požaduje licenci a příslušné notice, CHANGELOG s datem, změnou a identifikovatelným kontaktovatelným původcem a LEGAL se všemi vlastními Patent Claims, čísly a kontakty. §6 kryje obhajobou a odškodněním jen vlastní přidané záruky. §9.4 vyžaduje popsat zákonem vynucené odchylky v LEGAL. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/ESA-PL-permissive-2.4.html |
+
+## Zdroje
+
+- [Primární zdroj](https://spdx.org/licenses/ESA-PL-permissive-2.4.html) — Individuálně přečten celý připnutý text; §3.1 dovoluje libovolné podmínky, vyžaduje oznámit použití a použitelnost této licence a vynaložit nejlepší úsilí pro další dodržování obou povinností všemi distributory. §4 požaduje licenci a příslušné notice, CHANGELOG s datem, změnou a identifikovatelným kontaktovatelným původcem a LEGAL se všemi vlastními Patent Claims, čísly a kontakty. §6 kryje obhajobou a odškodněním jen vlastní přidané záruky. §9.4 vyžaduje popsat zákonem vynucené odchylky v LEGAL. §2.2 výslovný omezený patentový grant; §8.2 patentová žaloba včetně protinároku ruší patentová i autorská práva dnem podání.
+- [Kurátorovaný profil](../../../data/profiles/licenses/id-RVNBLVBMLXBlcm1pc3NpdmUtMi40.json)
+- [Uložené úplné znění](../../../public/data/licenses/ESA-PL-permissive-2.4.json)
+
+## Otisk zdroje
+
+```json
+{
+  "sourceId": "spdx-license-list",
+  "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+  "contentHash": "sha256:9058b0946cf21e66ddacadc16b42e69d58197f7a900491d708b896f0bd0c8aae"
+}
+```

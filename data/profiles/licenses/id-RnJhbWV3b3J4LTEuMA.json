@@ -8,93 +8,107 @@
     "contentHash": "sha256:3ef5984e7794df6fb2159aa2f2ca69a2380cf2656297070b70936bb015c41ec5"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
+    "family": "network-copyleft",
     "copyleftScope": "unknown",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use",
+      "sublicensing"
     ],
     "obligations": [
       "include-copyright",
       "include-license-text",
-      "provide-corresponding-source"
+      "include-notice",
+      "network-use-disclose",
+      "provide-corresponding-source",
+      "same-license",
+      "unknown"
     ],
     "triggers": [
+      "combination",
+      "distribution",
+      "network-use",
       "unknown"
     ],
     "restrictions": [
-      "liability"
+      "additional-terms",
+      "liability",
+      "unknown",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Frameworx-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Frameworx-1.0.json#text; Reciprocita zahrnuje vzdáleně zpřístupněný software funkčně závislý na jakékoli části, i bez převzetí kódu; network-copyleft s rozsahem závislostí přesahujícím běžný whole-work/file.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Frameworx-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Frameworx-1.0.json#text; Reciprocita zahrnuje vzdáleně zpřístupněný software funkčně závislý na jakékoli části, i bez převzetí kódu; network-copyleft s rozsahem závislostí přesahujícím běžný whole-work/file.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Frameworx-1.0.json#text; §2 nevýhradně za nanejvýš nominální fyzické náklady dovoluje use, změny/doplňky/výmazy, větší/odvozená díla a zdrojové/binární zveřejnění kterékoli třetí straně. §4 uděluje nutné sublicenční právo k celé sadě práv/povinností; §5 zmiňuje zachování patentů, ale výslovný patentový grant není uveden.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Frameworx-1.0.json#text; §3(a) úplné zdroje každé Downstream Distribution zdarma všem jejím uživatelům za nejméně tak příznivých práv. §3(b) Value-Added Services za rozumně přiměřenou tržní cenu a v souladu s účelem licence. §3(c) potřebné části/build skripty, identifikační legenda v každém souboru s kódem, všechny notices/komentáře/dokumentace, neměnné frameworx_community_invitation.html a the_frameworx_license.txt a viditelná legenda zdrojů. §4 přímá stejná licence od firmy NEBO úplná sublicence včetně downstream povinností.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Frameworx-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Frameworx-1.0.json#text; §3(a) úplné zdroje každé Downstream Distribution zdarma všem jejím uživatelům za nejméně tak příznivých práv. §3(b) Value-Added Services za rozumně přiměřenou tržní cenu a v souladu s účelem licence. §3(c) potřebné části/build skripty, identifikační legenda v každém souboru s kódem, všechny notices/komentáře/dokumentace, neměnné frameworx_community_invitation.html a the_frameworx_license.txt a viditelná legenda zdrojů. §4 přímá stejná licence od firmy NEBO úplná sublicence včetně downstream povinností.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Frameworx-1.0.json#text; §5 respektuje původní IP, §6 as is/no warranties a všechny škody. §7 porušující přímá/nepřímá distribuce automaticky ruší práva, smlouva přežívá kvůli nápravě a váže právní nástupce. Poskytnutí služby není jen běžný distribuční notice.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Frameworx-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Frameworx-1.0.json#text; §2 nevýhradně za nanejvýš nominální fyzické náklady dovoluje use, změny/doplňky/výmazy, větší/odvozená díla a zdrojové/binární zveřejnění kterékoli třetí straně. §4 uděluje nutné sublicenční právo k celé sadě práv/povinností; §5 zmiňuje zachování patentů, ale výslovný patentový grant není uveden.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Frameworx-1.0.json#text; §3(a) úplné zdroje každé Downstream Distribution zdarma všem jejím uživatelům za nejméně tak příznivých práv. §3(b) Value-Added Services za rozumně přiměřenou tržní cenu a v souladu s účelem licence. §3(c) potřebné části/build skripty, identifikační legenda v každém souboru s kódem, všechny notices/komentáře/dokumentace, neměnné frameworx_community_invitation.html a the_frameworx_license.txt a viditelná legenda zdrojů. §4 přímá stejná licence od firmy NEBO úplná sublicence včetně downstream povinností.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Frameworx-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Frameworx-1.0.json#text; Individuálně přečten celý připnutý text. §1 Downstream Distribution zahrnuje release/distribuci/remote availability s kódem nebo závislostí na jeho intended functioning a s právy odvozenými z této licence; Source Code obsahuje dokumentaci/interface/build/install skripty. Frameworx vyžaduje volné úplné zdroje pro každou přímou/nepřímou distribuci či vzdálené zpřístupnění softwaru obsahujícího nebo funkčně závislého na kódu. Navíc určuje férovou tržní cenu souvisejících služeb, povinné komunitní/licenční soubory a mechanismus vázání downstream příjemců. § 3(b) reguluje cenu a účel souvisejících Value-Added Services; § 3(c) vyžaduje konkrétní neměnné komunitní soubory a § 4 přímou licenci či úplnou sublicenci příjemců. Doplnit model těchto povinností i funkční/remote dependency rozsahu před doporučením.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

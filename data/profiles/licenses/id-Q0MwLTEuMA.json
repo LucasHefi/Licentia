@@ -9,103 +9,91 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
     "family": "public-domain-equivalent",
-    "copyleftScope": "unknown",
+    "copyleftScope": "none",
     "permissions": [
       "commercial-use",
       "distribution",
       "modifications",
       "private-use"
     ],
-    "obligations": [
-      "unknown"
-    ],
-    "triggers": [
-      "unknown"
-    ],
+    "obligations": [],
+    "triggers": [],
     "restrictions": [
       "liability",
       "trademark",
-      "unknown",
       "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "express-exclusion",
+    "noticeBurden": "none"
   },
   "evidence": [
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "profile.description"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "profile.conditions"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "profile.permissions"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "profile.limitations"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text"
+      "locator": "public/data/licenses/CC0-1.0.json#text; CC0 1.0 Universal se vztahuje na autorské dílo či databázi a související práva, pouze pokud náležejí Affirmerovi. §1–2 celosvětově, neodvolatelně, bezpodmínečně a na maximální dobu vzdávají nynější/budoucí copyright a související práva pro jakýkoli účel včetně komerčního/reklamního. §3 při neúčinném vzdání uděluje stejný rozsah neodvolatelnou bezplatnou nevýlučnou licencí a při částečné neúčinnosti i příslibem neuplatňovat práva proti záměru CC0. Žádná ze tří cest §2–3 neukládá reciprocitu ani zveřejnění zdroje.; https://spdx.org/licenses/CC0-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC0-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC0-1.0.json#text; Žádná ze tří cest §2–3 neukládá reciprocitu ani zveřejnění zdroje.; https://spdx.org/licenses/CC0-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC0-1.0.json#text; §1–2 celosvětově, neodvolatelně, bezpodmínečně a na maximální dobu vzdávají nynější/budoucí copyright a související práva pro jakýkoli účel včetně komerčního/reklamního. §3 při neúčinném vzdání uděluje stejný rozsah neodvolatelnou bezplatnou nevýlučnou licencí a při částečné neúčinnosti i příslibem neuplatňovat práva proti záměru CC0.; https://spdx.org/licenses/CC0-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC0-1.0.json#text; Vzdání ani záložní grant neukládají copyrightové notices, credit, licence, zdroje nebo stejné podmínky. Fallback je nepřevoditelný a nesublicencovatelný, ale udělovaný přímo každému dotčenému příjemci.; https://spdx.org/licenses/CC0-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC0-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC0-1.0.json#text; Vzdání ani záložní grant neukládají copyrightové notices, credit, licence, zdroje nebo stejné podmínky. Fallback je nepřevoditelný a nesublicencovatelný, ale udělovaný přímo každému dotčenému příjemci.; https://spdx.org/licenses/CC0-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC0-1.0.json#text; §4a zachovává patentová a známková práva Affirmera nedotčená. §4b poskytuje AS IS bez záruk včetně titulu/bezvadnosti; §4c odmítá odpovědnost za zajištění cizích práv/souhlasů. CC není stranou a nemá povinnosti.; https://spdx.org/licenses/CC0-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC0-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC0-1.0.json#text; §4a výslovně nepromíjí, nevzdává se ani nelicencuje patentová práva; jde o express-exclusion, nikoli patentový grant či žalobní ukončení.; https://spdx.org/licenses/CC0-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC0-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC0-1.0.json#text; Vzdání ani záložní grant neukládají copyrightové notices, credit, licence, zdroje nebo stejné podmínky. Fallback je nepřevoditelný a nesublicencovatelný, ale udělovaný přímo každému dotčenému příjemci. Rozsah notifikační zátěže: none.; https://spdx.org/licenses/CC0-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC0-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC0-1.0.json#text; Individuální kontrola celého připnutého textu CC0-1.0 dne 2026-09-09. CC0 1.0 Universal se vztahuje na autorské dílo či databázi a související práva, pouze pokud náležejí Affirmerovi. Všechny uvedené podmínky jsou zachyceny slovníkem 1.4.0; zjištěný rozsah nebrání softwarovému průvodci. Waiver, fallback a konečný nonassertion se doplňují podle platnosti místního práva, nejsou volbou různých compliance povinností. Rozsah široce zahrnuje copyright softwaru bez zvláštního zdrojového nebo obsahového omezení.; https://spdx.org/licenses/CC0-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

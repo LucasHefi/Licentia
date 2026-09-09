@@ -9,92 +9,96 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "provide-corresponding-source"
+      "include-license-text"
     ],
     "triggers": [
-      "unknown"
+      "distribution"
     ],
     "restrictions": [
-      "unknown"
+      "additional-terms",
+      "liability",
+      "warranty"
     ],
-    "patentPosition": "unknown",
+    "patentPosition": "express-exclusion",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/IBM-pibs.json#text; first paragraph: IBM copyright license to use in ANY way including copy, modify, compile and redistribute with/without modifications; this is a copyright-only grant; no reciprocal source-disclosure or same-license condition; https://spdx.org/licenses/IBM-pibs.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/IBM-pibs.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/IBM-pibs.json#text; first paragraph: IBM copyright license to use in ANY way including copy, modify, compile and redistribute with/without modifications; this is a copyright-only grant; https://spdx.org/licenses/IBM-pibs.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "copyleftScope",
+      "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/IBM-pibs.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/IBM-pibs.json#text; third paragraph: any transfer of source OR derivative work includes IBM copyright notice, this paragraph AND preceding two paragraphs; no separate source-supply obligation; https://spdx.org/licenses/IBM-pibs.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "triggers",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/IBM-pibs.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/IBM-pibs.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/IBM-pibs.json#text; third paragraph: any transfer of source OR derivative work includes IBM copyright notice, this paragraph AND preceding two paragraphs; no separate source-supply obligation; https://spdx.org/licenses/IBM-pibs.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/IBM-pibs.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/IBM-pibs.json#text; paragraph 1 expressly excludes an implied license to IBM patents AND patent applications under this copyright grant (express-exclusion), unlike silence. No express patent grant or patent-litigation termination is stated. https://spdx.org/licenses/IBM-pibs.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/IBM-pibs.json#text; first paragraph: IBM copyright license to use in ANY way including copy, modify, compile and redistribute with/without modifications; this is a copyright-only grant; https://spdx.org/licenses/IBM-pibs.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/IBM-pibs.json#text; first paragraph AS IS and express no-implied-IBM-patent/application license; second paragraph no technical support or responsibility for consequences; https://spdx.org/licenses/IBM-pibs.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/IBM-pibs.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/IBM-pibs.json#text; Opětovná individuální revize celého znění pro vocabulary 1.4.0. IBM uděluje autorskou licenci k libovolnému užití, kopírování, úpravám, kompilaci a redistribuci s úpravami i bez nich. Z této licence se výslovně nesmí dovozovat práva k patentům ani patentovým přihláškám IBM. Při předání zdrojů nebo odvozeného díla musí software obsahovat copyright IBM a všechny tři uvedené odstavce. Zdroje se poskytovat nemusí. Software je as-is, IBM neposkytuje technickou podporu a odmítá odpovědnost za následky použití.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/IBM-pibs.json#text; third paragraph: any transfer of source OR derivative work includes IBM copyright notice, this paragraph AND preceding two paragraphs; no separate source-supply obligation; https://spdx.org/licenses/IBM-pibs.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

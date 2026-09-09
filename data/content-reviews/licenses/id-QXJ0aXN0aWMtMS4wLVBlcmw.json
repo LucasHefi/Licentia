@@ -1,0 +1,30 @@
+{
+  "id": "Artistic-1.0-Perl",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:39566fe4f7467637ebea8dc3a52f511bc87fa83b832bbe7c47767634534e6c37"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Perlovská Artistic 1.0 má samostatné alternativy změn a binární distribuce; zdroj ani přejmenování nejsou vždy povinné současně. Obsahuje zvláštní agregaci kompletního standardního interpretu, undump/unexec výstupů a komerční vložené použití bez zpřístupnění rozhraní koncovému uživateli.",
+  "blockersCs": [
+    "Body3/4 vyžadují nezávislou volbu jedné cesty a5–8 mají odlišné podmíněné výjimky pro celý standardní interpret, undump/unexec, emulační rutiny a skryté rozhraní. Je třeba modelovat tyto alternativy a rozsah, nikoli jednotnou source, rename nebo library-copyleft povinnost.",
+    "Bod5 zakazuje cenu samotného balíku, ale dovoluje rozumný kopírovací poplatek, placenou podporu a komerční agregaci. Je třeba přesné rozlišení obchodních cest; příznak commercial-use sám jej nepokrývá."
+  ],
+  "analysis": {
+    "subjectCs": "Package a textové deriváty; Standard Version zahrnuje změny dle držitele. Freely Available znamená bez ceny věci a stejná downstream práva.",
+    "grantCs": "1 původní source copies,2 publicdomain/holder fixes,3 jiné změny,4 binárky;5 agregace kompletního standardního interpretu,6 výstupy a7 emulační rutiny pod podmínkami,8 embedded commercial use. Patentový grant chybí.",
+    "conditionsCs": "3 how/when v každém changed file +jedna public/free/internal/rename-standard-manual/arrangement cesta.4 jedna standard+source-location/source-with-mods/nonstandard-name+differences+location/arrangement;4c oproti některým variantám nepožaduje přibalit standardní executables.",
+    "limitationsCs": "5 fee restrictions a no advertise as own;6 undump/unexec images nejsou distribuce balíku ani pod3–4 pokud neprezentovány jako Standard.7 regrese jazyka zachována.8 commercial embedded s nezviditelněným rozhraním není distribuce balíku.9 endorsement souhlas;10 warranty, bez liability.",
+    "compatibilityCs": "Přesné5/6/7/8 výjimky nejsou obecná volba GPL a nepřenášejí se na jiné Artistic varianty. Žádná volba nové licenční verze uvedena není."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Artistic-1.0-Perl.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Artistic Perl text kombinuje3/4 one-of a5–8 specifické interpretr/output/embedded výjimky."
+    }
+  ]
+}

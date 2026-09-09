@@ -8,94 +8,104 @@
     "contentHash": "sha256:498d318249c21d7b3b15963895b0151c8c4ab029a9e059ca55adb89cf1f235e1"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "weak-copyleft",
+    "copyleftScope": "file",
     "permissions": [
       "commercial-use",
       "distribution",
       "modifications",
-      "patent-grant"
+      "patent-grant",
+      "private-use"
     ],
     "obligations": [
-      "provide-corresponding-source"
+      "include-copyright",
+      "include-license-text",
+      "include-notice",
+      "same-license"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification",
+      "patent-claim",
+      "use"
     ],
     "restrictions": [
-      "trademark"
+      "patent-claim",
+      "trademark",
+      "unknown",
+      "warranty"
     ],
-    "patentPosition": "express-grant",
-    "noticeBurden": "unknown"
+    "patentPosition": "retaliatory-termination",
+    "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MS-LPL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MS-LPL.json#text; Microsoft Limited Public License vymezuje příspěvky a contributor patents a omezuje grant na software běžící na produktu Microsoft Windows. §2A dovoluje reprodukci, odvozeniny a distribuci; §2B výslovně uděluje patentová práva make/have made/use/sell/import k příspěvku. §3F oba granty omezuje na Windows. Stejné podmínky se vyžadují pro distribuované zdrojové části softwaru; celý samostatný kombinovaný program text nepodrobuje zdrojové povinnosti.; https://spdx.org/licenses/MS-LPL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MS-LPL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MS-LPL.json#text; Stejné podmínky se vyžadují pro distribuované zdrojové části softwaru; celý samostatný kombinovaný program text nepodrobuje zdrojové povinnosti.; https://spdx.org/licenses/MS-LPL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/MS-LPL.json#text; §2A dovoluje reprodukci, odvozeniny a distribuci; §2B výslovně uděluje patentová práva make/have made/use/sell/import k příspěvku. §3F oba granty omezuje na Windows.; https://spdx.org/licenses/MS-LPL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/MS-LPL.json#text; §3C zachovává copyrightové, patentové, známkové a atribuční notices. §3D dovoluje zdroj distribuovat jen pod touto licencí s úplnou kopií; objektový kód pod licencí vyhovující MS-LPL.; https://spdx.org/licenses/MS-LPL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MS-LPL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MS-LPL.json#text; §3C zachovává copyrightové, patentové, známkové a atribuční notices. §3D dovoluje zdroj distribuovat jen pod touto licencí s úplnou kopií; objektový kód pod licencí vyhovující MS-LPL.; https://spdx.org/licenses/MS-LPL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/MS-LPL.json#text; §3A neuděluje jména/loga/známky. §3B žaloba na přispěvatele o patenty údajně porušované softwarem automaticky ruší patentovou licenci tohoto přispěvatele. §3E vylučuje záruky s výhradou neodstranitelných místních spotřebitelských práv.; https://spdx.org/licenses/MS-LPL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/MS-LPL.json#text; §2B je výslovný příspěvkově omezený patentový grant; §3B jej ukončuje od žalovaného přispěvatele při vlastní patentové žalobě.; https://spdx.org/licenses/MS-LPL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MS-LPL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MS-LPL.json#text; §3C zachovává copyrightové, patentové, známkové a atribuční notices. §3D dovoluje zdroj distribuovat jen pod touto licencí s úplnou kopií; objektový kód pod licencí vyhovující MS-LPL. Rozsah notifikační zátěže: standard.; https://spdx.org/licenses/MS-LPL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MS-LPL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MS-LPL.json#text; Individuální kontrola celého připnutého textu MS-LPL dne 2026-09-09. Microsoft Limited Public License vymezuje příspěvky a contributor patents a omezuje grant na software běžící na produktu Microsoft Windows. §3F omezuje autorský i patentový grant na software či odvozeniny běžící na Microsoft Windows; před doporučením je třeba model platformního omezení. Binární compliant licence je odlišná cesta od source-only tohoto textu; žádná volba verze není.; https://spdx.org/licenses/MS-LPL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

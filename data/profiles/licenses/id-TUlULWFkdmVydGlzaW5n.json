@@ -9,8 +9,8 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
     "family": "permissive",
@@ -19,85 +19,89 @@
       "commercial-use",
       "distribution",
       "modifications",
+      "private-use",
       "sublicensing"
     ],
     "obligations": [
+      "include-advertising-acknowledgment",
       "include-copyright",
-      "include-license-text"
+      "include-license-text",
+      "include-notice"
     ],
     "triggers": [
-      "unknown"
+      "advertising",
+      "distribution"
     ],
     "restrictions": [
       "liability",
       "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.no-copyleft",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.permissive-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MIT-advertising.json#text; Grant pokrývá software a připojenou dokumentaci Carstena Haitzlera, Geoffa Harrisona, Kim Woelderse a přispěvatelů. MIT grant výslovně dovoluje užití, kopie, změny, slučování, publikaci, distribuci, sublicence a prodej i stejné jednání příjemců. Rozšířené notices a reklama neukládají zdroje ani stejnou licenci.; https://spdx.org/licenses/MIT-advertising.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MIT-advertising.json#text; Rozšířené notices a reklama neukládají zdroje ani stejnou licenci.; https://spdx.org/licenses/MIT-advertising.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MIT-advertising.json#text; MIT grant výslovně dovoluje užití, kopie, změny, slučování, publikaci, distribuci, sublicence a prodej i stejné jednání příjemců.; https://spdx.org/licenses/MIT-advertising.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "restrictions",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MIT-advertising.json#text; Copyright a svolení musí být ve všech kopiích softwaru, dokumentaci i marketingových a publicitních materiálech; dokumentace, materiály a softwarové balíčky navíc uznají použití tohoto softwaru.; https://spdx.org/licenses/MIT-advertising.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MIT-advertising.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MIT-advertising.json#text; Copyright a svolení musí být ve všech kopiích softwaru, dokumentaci i marketingových a publicitních materiálech; dokumentace, materiály a softwarové balíčky navíc uznají použití tohoto softwaru.; https://spdx.org/licenses/MIT-advertising.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/MIT-advertising.json#text; AS IS vylučuje záruky včetně neporušování práv a odpovědnost autorů za nároky i škody; zvláštní omezení známek není.; https://spdx.org/licenses/MIT-advertising.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MIT-advertising.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MIT-advertising.json#text; Celý text neobsahuje patentový grant ani patentové ukončení; zmínka noninfringement je záruční výluka.; https://spdx.org/licenses/MIT-advertising.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/MIT-advertising.json#text; Copyright a svolení musí být ve všech kopiích softwaru, dokumentaci i marketingových a publicitních materiálech; dokumentace, materiály a softwarové balíčky navíc uznají použití tohoto softwaru. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/MIT-advertising.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MIT-advertising.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MIT-advertising.json#text; Individuální kontrola celého připnutého textu MIT-advertising dne 2026-09-09. Grant pokrývá software a připojenou dokumentaci Carstena Haitzlera, Geoffa Harrisona, Kim Woelderse a přispěvatelů. Všechny uvedené podmínky jsou zachyceny slovníkem 1.3.0; zjištěný rozsah nebrání softwarovému průvodci. Jiná licence nebo verze není nabízena; oproti běžnému MIT je povinná i reklamní dokumentace a acknowledgment.; https://spdx.org/licenses/MIT-advertising.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

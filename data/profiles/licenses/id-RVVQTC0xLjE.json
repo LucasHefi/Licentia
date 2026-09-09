@@ -9,96 +9,110 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "network-copyleft",
+    "copyleftScope": "network",
     "permissions": [
       "commercial-use",
+      "conditional-relicensing",
       "distribution",
-      "modifications"
+      "modifications",
+      "patent-grant",
+      "private-use",
+      "sublicensing"
     ],
     "obligations": [
+      "defend-added-warranty",
       "include-copyright",
       "include-license-text",
+      "include-notice",
       "mark-modifications",
-      "provide-corresponding-source"
+      "network-use-disclose",
+      "provide-corresponding-source",
+      "same-license"
     ],
     "triggers": [
-      "unknown"
+      "combination",
+      "distribution",
+      "modification",
+      "network-use",
+      "use"
     ],
     "restrictions": [
+      "additional-terms",
       "liability",
-      "trademark"
+      "trademark",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "express-grant",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/EUPL-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/EUPL-1.1.json#text; Čl. 1 zahrnuje poskytování essential functionalities a čl. 5 copyleft/zdroje u distribuce a sdělování Work; síťový copyleft této verze; https://spdx.org/licenses/EUPL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/EUPL-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/EUPL-1.1.json#text; Čl. 1 originál i odvozeniny a přístup k jejich podstatným funkcím jiné osobě; čl. 5 dopadá na Work jako takové, nikoli pouze soubory či upravený server; https://spdx.org/licenses/EUPL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/EUPL-1.1.json#text; Čl. 2 široký sublicencovatelný copyright a nutné držené patenty; čl. 5 defaultní later version s výslovným only opt-out a přesná alternativa kompatibilních odvozenin; https://spdx.org/licenses/EUPL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/EUPL-1.1.json#text; Čl. 3 a 5 zdroje/repozitář, celý text a notices, datum změn a síťový dopad; čl. 9 indemnita za vlastní záruku; include-notice zahrnuje čl. 11 veřejné statické informace kanálu o poskytovateli, licenci a přístupu/uzavření/uchování/reprodukci v rozsahu použitelného práva, nikoli získávání souhlasu.; https://spdx.org/licenses/EUPL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/EUPL-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/EUPL-1.1.json#text; Distribuce kopií i podstatných funkcí čl. 1 včetně sítě, změny a uchování notices čl. 5, kompatibilní kombinace; na rozdíl od 1.0 žádný trigger dozvědění nové verze; https://spdx.org/licenses/EUPL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/EUPL-1.1.json#text; Čl. 5 další restrikce a známky s původovou výjimkou; čl. 6 provenanční copyrightová záruka, čl. 7–8 ostatní výluky s úmyslem/přímou újmou osobám/produktovou odpovědností; https://spdx.org/licenses/EUPL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/EUPL-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/EUPL-1.1.json#text; Čl. 2 výslovný bezplatný nevýhradní grant držených patentů v nutném rozsahu užití licencovaných práv; žádné zvláštní ukončení při patentové žalobě; https://spdx.org/licenses/EUPL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/EUPL-1.1.json#text; Čl. 5 kompletní licence a několik kategorií notices plus datum změn, čl. 3 zdrojová adresa za copyrightem, čl. 11 dodatečné veřejné informace elektronického kanálu; https://spdx.org/licenses/EUPL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/EUPL-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/EUPL-1.1.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. EUPL 1.1 zahrnuje do distribuce i zpřístupnění podstatných funkcí jiné osobě, proto copyleft a zdrojové povinnosti dopadají i na takovou síťovou službu. Work se šíří pod EUPL nebo pozdější verzí, pokud originál není výslovně only; u kombinované odvozeniny může nastoupit přesně vyjmenovaná kompatibilní licence. Zachovávají se notices, celý text a datum změn; zdroje lze přiložit nebo držet snadno a zdarma dostupné po dobu zpřístupňování. Veřejné údaje elektronického distribučního kanálu mají zvláštní zákonný režim. Poskytovatel a přispěvatelé zaručují svůj autorský titul, ostatní záruky jsou vyloučeny.; https://spdx.org/licenses/EUPL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

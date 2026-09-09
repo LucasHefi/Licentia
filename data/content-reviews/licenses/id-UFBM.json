@@ -1,0 +1,30 @@
+{
+  "id": "PPL",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:eb150b97e2341d5b0d56587803206eedf7f0b825611cb1a090afbf3398982d71"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Peer Production License dovoluje kopírování, úpravy a šíření obsahu především nekomerčně; komerční užití vyhrazuje podnikům vlastněným pracovníky, které mezi ně rozdělují všechny zisky a přínosy. Zakazuje užití podnikem ziskovým z námezdní práce a vyžaduje přiznání původu, oznámení, licenci nebo odkaz a podmíněné odstranění kreditů. Přes návaznost na CC BY-NC-SA text neukládá stejnou licenci celých adaptací. Průvodce nemá model těchto podnikových omezení a před použitím je nutné vyjasnit chybné vnitřní odkazy na atribuční podmínky.",
+  "blockersCs": [
+    "§4(b–d) potřebují model účelu, zaměstnaneckého vlastnictví, rozdělení všech zisků a zákazu podniků ziskových z námezdní práce; obecné softwarové permissions/restrictions tato omezení nezachycují.",
+    "§4(a,e) mají v připnutém textu chybné vnitřní odkazy na atribuční§4(d), který je ve skutečnosti podnikatelský zákaz; pro přesné použití je třeba vyjasnit oprávněné znění. Nezávisle je třeba obsahový model veřejných výkonů, osobnostních práv a odstranění kreditů."
+  ],
+  "analysis": {
+    "subjectCs": "Peer Production License je úplný připnutý Copyfarleft text pro literární/umělecká díla, výkony, fonogramy, vysílání a autorské datové kompilace, odvozený od CC BY-NC-SA3.0.",
+    "grantCs": "§3 dovoluje kopie, kolekce, změny, distribuci i veřejné provádění, ale§4(b–d) standardně nekomerčně. Komerční výkon mají pouze worker-owned business/collective, který všechny zisky a přínosy rozděluje mezi worker-owners; jakékoli užití soukromě vlastněným a řízeným podnikem ziskovým z placené práce je zakázáno. Proto nelze přidělit obecné commercial-use; podlicence se zakazují.",
+    "conditionsCs": "§3(b) rozumně označuje změny/překlady;§4(a,e) při distribuci či veřejném výkonu uchovává copyright/licenci/disclaimer, přidává licenci či URI, autora a určené Attribution Parties, titul, relevantní URI a kredit derivace stejně výrazný jako společné autorství. Na žádost se prakticky odstraní kredit, avšak§4(a,e) odkazuje na4(d), kde je v připnutém textu zákaz podnikání, zatímco atribuce je4(e).",
+    "limitationsCs": "§4 zakazuje omezující další podmínky/technické prostředky a dojem podpory;§4(g) chrání čest autora s omezenou výjimkou umožňující adaptace tam, kde by byly automaticky hanlivé. §4(f) rezervuje neprominutelné a mimo NC další zákonné/volitelné odměny. §5–6 AS IS a omezení škod,§7 okamžité ukončení bez automatické nápravy a zachování dodržujících příjemců.",
+    "compatibilityCs": "Navzdory genealogii BY-NC-SA v úvodu není v operativním textu ShareAlike článek pro celé adaptace. §8(b) příjemci adaptace uděluje původní Work,§4(a) vyjímá zbytek kolekce; nesmím doplnit vypuštěnou povinnost z předlohy CC. §8(f) přidává standardní autorská práva relevantní národní implementace mezinárodních úmluv."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/PPL.html",
+      "note": "Individuálně přečten celý připnutý text; §3(b) rozumně označuje změny/překlady;§4(a,e) při distribuci či veřejném výkonu uchovává copyright/licenci/disclaimer, přidává licenci či URI, autora a určené Attribution Parties, titul, relevantní URI a kredit derivace stejně výrazný jako společné autorství. Na žádost se prakticky odstraní kredit, avšak§4(a,e) odkazuje na4(d), kde je v připnutém textu zákaz podnikání, zatímco atribuce je4(e). §3 a8(f) poskytují autorská práva a§4(f) řeší odměny; patentový grant či patentová odveta chybí."
+    }
+  ]
+}

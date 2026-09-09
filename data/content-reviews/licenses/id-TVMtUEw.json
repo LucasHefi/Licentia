@@ -1,0 +1,22 @@
+{
+  "id": "MS-PL",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.2",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:671272da3c162361c9a92f9f4f3af1dd2462c8f6caa9f6629d61f68cd2b5cb25"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Při distribuci zdrojů vyžaduje MS-PL stejnou licenci a její úplnou kopii. Binární distribuce smí mít slučitelné podmínky a sama neukládá poskytovat zdroje. Zachovejte oznámení o právech. Patentový nárok proti přispěvateli ukončuje jeho patentový grant. Průvodce tyto rozdílné podmínky podle formy distribuce zatím nevyhodnocuje.",
+  "blockersCs": [
+    "Nezařazena: § 3(D) vyžaduje stejnou licenci pro distribuované zdroje, ale neukládá zdroje poskytovat při binární distribuci. Opraven falešný požadavek na odpovídající zdroje. Doplnit podmínění povinností formou distribuce a vhodnou klasifikaci bez záměny s MS-RL; patentový grant a jeho ukončení jsou již doloženy."
+  ],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/MS-PL.html",
+      "note": "Dřívější individuální revize 2026-09-09.2; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

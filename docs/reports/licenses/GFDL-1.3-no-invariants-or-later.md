@@ -1,0 +1,62 @@
+# GFDL-1.3-no-invariants-or-later — obsahová revize
+
+GNU Free Documentation License v1.3 or later - no invariants
+
+Revize: **2026-09-10** · pravidlo **2026-09-09.10**.
+
+Výsledek: **zpracována, nezařazena do průvodce**.
+
+GFDL-1.3-no-invariants-or-later potvrzuje absenci invariantních oddílů i obou obálkových textů a volbu pozdější FSF verze. Povinnosti historie, autorů, transparentních kopií při více než 100 kusech a zákaz technické kontroly však trvají; absence invariantů z dokumentové licence nedělá běžnou softwarovou licenci.
+
+## Předmět a rozsah
+
+§1 licenčně označený manuál/jiné dílo v libovolném médiu. Pinned komentáře tohoto ID výslovně žádné Invariant Sections, Front-Cover ani Back-Cover Texts; nelze ukládat absentující obálkové povinnosti§3prvního odstavce. Transparent předpokládá obecně specifikovaný editovatelný formát bez obstrukce úprav; podstatný text v obrazovém formátu není Transparent. Publisher ve1.3 jakýkoli veřejný distributor, Title Page i odpovídající místo netiskového díla.
+
+## Udělená práva
+
+§§1–2 světově bezroyalty časově neomezené kopie/šíření obchodně i zdarma, půjčování a veřejné vystavení,§4 úpravy a§8 překlady. §10 or-later opravňuje zvolit1.3 či jakoukoli následnou nedraft FSF verzi; zvláštní proxy rozhodování jen pokud ho dokument určí. Obecná sublicence ani výslovná patentová licence/odveta chybí. Expirující MMC§11 není současná cesta obecně měnit naCCBYSA.
+
+## Podmínky a spouštěče
+
+§2 každá kopie s copyright, licenční notices a GFDL; žádné dodatečné podmínky ani technické maření čtení/dalšího kopírování. I bez invariants/covers §3 při více než100 Opaque kopiích buď Transparent s každou, nebo úplná veřejná síťová kopie standardními protokoly, rozumně zajištěná do nejméně roku po poslední distribuci vydání včetně agentů/prodejců. §4 odlišný titul leda souhlas, vlastní autoři+alespoň5hlavních původních leda zproštění, vydavatel, notices/copyright a nový licenční notice, vytvořit/doplnit History včetně titulu/roku/autorů/vydavatele. Zachovat původní URL leda4letá/souhlasová výjimka, jména a tón Ack/Dedications, Warranty Disclaimers. Původní Endorsements odstranit, vlastní smí být. Dobrovolné nové vlastní Secondary invariants nebo5/25slov obálek§4 mění popis výsledné licence; absence ve vstupu není doživotní zákaz dodat je do vlastní nové verze.
+
+## Omezení, výjimky a ukončení
+
+§1 případné připojené Warranty Disclaimers začleněny pouze co do záruk, žádný jiný účinek; samotný text neobsahuje obecnou výluku záruk/odpovědnosti. §4 jména autorů/vydavatelů nelze bez dalšího použít pro propagaci/endorsement. §9 automatický konec za nepovolené úkony; ukončením všech porušení provizorní obnova do konečného rozhodnutí držitele, trvalá pokud60dní od nápravy bez oznámení nebo první oznámení tohoto držitele pro jakékoli dílo napravené před30dny. Downstream licence nekončí, nově získaná kopie sama neobnoví trvale neobnovená práva. Kontakt autorů před velkou distribucí jen žádost.
+
+## Verze a kombinování
+
+§5 kombinace jiných GFDL dokumentů může mít jejich invariants/disclaimers a slučuje History/Ack/Dedications;§6 kolekce jediný text licence, jednotlivě extrahovaný dokument opět vlastní. §7 nezávislé práce mimo pokud kompilační práva neomezují jejich podklad; cover relativní méně nežpolovina podmínka relevantní jen existují-li covers výsledku. §8 překlady licence/notice/disclaimer s originálem, ten rozhodný. §11 jen MMC site operátor před1.8.2009 mohl na stejném webu CCBYSA3.0/budoucí copyleft, cizí původně jinde vydané GFDL dílo bezcovers/invariants začleněno před1.11.2008; tento rok2009 nepřepisovat na dnešní oprávnění. Doporučení samostatné GPL pro kódové příklady v addendu neuděluje GPL samo.
+
+## Překážky a navazující práce
+
+- I při výslovně prázdných invariants/covers zůstávají §§ 2–4 dokumentové zákazy technické kontroly, transparentní kopie podle formátu/počtu a titul/autoři/History. Doplnit dokumentový model včetně správné nulové vstupní konfigurace a historické MMC cesty; pro nové software doporučení nelze podmínky zploštit na source/notices.
+
+## Metadata a jejich doložení
+
+| Pole | Hodnota | Doložení znění |
+|---|---|---|
+| family | "strong-copyleft" | public/data/licenses/GFDL-1.3-no-invariants-or-later.json#text; §§1,4 stejnáGFDL na celé Modified Version obsahující dokument/část/překlad, nezávislé kolekce/agregáty§§6–7 vyňaty. Silný whole-work dokumentový copyleft přetrvává i bez neměnných oddílů; nejde o file/library software hranici. |
+| copyleftScope | "whole-work" | public/data/licenses/GFDL-1.3-no-invariants-or-later.json#text; §§1,4 stejnáGFDL na celé Modified Version obsahující dokument/část/překlad, nezávislé kolekce/agregáty§§6–7 vyňaty. Silný whole-work dokumentový copyleft přetrvává i bez neměnných oddílů; nejde o file/library software hranici. |
+| permissions | ["commercial-use","conditional-relicensing","distribution","modifications","private-use"] | public/data/licenses/GFDL-1.3-no-invariants-or-later.json#text; §§1–2 světově bezroyalty časově neomezené kopie/šíření obchodně i zdarma, půjčování a veřejné vystavení,§4 úpravy a§8 překlady. §10 or-later opravňuje zvolit1.3 či jakoukoli následnou nedraft FSF verzi; zvláštní proxy rozhodování jen pokud ho dokument určí. Obecná sublicence ani výslovná patentová licence/odveta chybí. Expirující MMC§11 není současná cesta obecně měnit naCCBYSA. |
+| obligations | ["disclose-source","include-copyright","include-license-text","include-notice","mark-modifications","same-license","unknown"] | public/data/licenses/GFDL-1.3-no-invariants-or-later.json#text; §2 každá kopie s copyright, licenční notices a GFDL; žádné dodatečné podmínky ani technické maření čtení/dalšího kopírování. I bez invariants/covers §3 při více než100 Opaque kopiích buď Transparent s každou, nebo úplná veřejná síťová kopie standardními protokoly, rozumně zajištěná do nejméně roku po poslední distribuci vydání včetně agentů/prodejců. §4 odlišný titul leda souhlas, vlastní autoři+alespoň5hlavních původních leda zproštění, vydavatel, notices/copyright a nový licenční notice, vytvořit/doplnit History včetně titulu/roku/autorů/vydavatele. Zachovat původní URL leda4letá/souhlasová výjimka, jména a tón Ack/Dedications, Warranty Disclaimers. Původní Endorsements odstranit, vlastní smí být. Dobrovolné nové vlastní Secondary invariants nebo5/25slov obálek§4 mění popis výsledné licence; absence ve vstupu není doživotní zákaz dodat je do vlastní nové verze. Terminologické upřesnění 2026-09-10: § 1 definuje Transparent jako strojově čitelnou a běžnými nástroji přímo upravitelnou kopii dokumentu. disclose-source zde označuje právě tuto dokumentovou podobu, nikoli softwarový Corresponding Source. § 3 při publikaci či distribuci více než 100 Opaque kopií dovoluje Transparent kopii ke každé NEBO u každé uvedenou veřejnou síťovou adresu úplného Transparent dokumentu bez přidaného materiálu, dostupného standardními protokoly. U síťové cesty je nutné při zahájení množstevní distribuce učinit rozumně obezřetné kroky k dostupnosti nejméně rok po poslední veřejné distribuci Opaque kopie dané edice, včetně distribuce agenty či prodejci. Ostatní individuálně popsané dokumentové podmínky zůstávají zachovány. |
+| triggers | ["combination","distribution","modification"] | public/data/licenses/GFDL-1.3-no-invariants-or-later.json#text; §2 každá kopie s copyright, licenční notices a GFDL; žádné dodatečné podmínky ani technické maření čtení/dalšího kopírování. I bez invariants/covers §3 při více než100 Opaque kopiích buď Transparent s každou, nebo úplná veřejná síťová kopie standardními protokoly, rozumně zajištěná do nejméně roku po poslední distribuci vydání včetně agentů/prodejců. §4 odlišný titul leda souhlas, vlastní autoři+alespoň5hlavních původních leda zproštění, vydavatel, notices/copyright a nový licenční notice, vytvořit/doplnit History včetně titulu/roku/autorů/vydavatele. Zachovat původní URL leda4letá/souhlasová výjimka, jména a tón Ack/Dedications, Warranty Disclaimers. Původní Endorsements odstranit, vlastní smí být. Dobrovolné nové vlastní Secondary invariants nebo5/25slov obálek§4 mění popis výsledné licence; absence ve vstupu není doživotní zákaz dodat je do vlastní nové verze. |
+| restrictions | ["additional-terms","trademark","unknown"] | public/data/licenses/GFDL-1.3-no-invariants-or-later.json#text; §1 případné připojené Warranty Disclaimers začleněny pouze co do záruk, žádný jiný účinek; samotný text neobsahuje obecnou výluku záruk/odpovědnosti. §4 jména autorů/vydavatelů nelze bez dalšího použít pro propagaci/endorsement. §9 automatický konec za nepovolené úkony; ukončením všech porušení provizorní obnova do konečného rozhodnutí držitele, trvalá pokud60dní od nápravy bez oznámení nebo první oznámení tohoto držitele pro jakékoli dílo napravené před30dny. Downstream licence nekončí, nově získaná kopie sama neobnoví trvale neobnovená práva. Kontakt autorů před velkou distribucí jen žádost. |
+| patentPosition | "none-stated" | public/data/licenses/GFDL-1.3-no-invariants-or-later.json#text; §§1–2 světově bezroyalty časově neomezené kopie/šíření obchodně i zdarma, půjčování a veřejné vystavení,§4 úpravy a§8 překlady. §10 or-later opravňuje zvolit1.3 či jakoukoli následnou nedraft FSF verzi; zvláštní proxy rozhodování jen pokud ho dokument určí. Obecná sublicence ani výslovná patentová licence/odveta chybí. Expirující MMC§11 není současná cesta obecně měnit naCCBYSA. |
+| noticeBurden | "material" | public/data/licenses/GFDL-1.3-no-invariants-or-later.json#text; §2 každá kopie s copyright, licenční notices a GFDL; žádné dodatečné podmínky ani technické maření čtení/dalšího kopírování. I bez invariants/covers §3 při více než100 Opaque kopiích buď Transparent s každou, nebo úplná veřejná síťová kopie standardními protokoly, rozumně zajištěná do nejméně roku po poslední distribuci vydání včetně agentů/prodejců. §4 odlišný titul leda souhlas, vlastní autoři+alespoň5hlavních původních leda zproštění, vydavatel, notices/copyright a nový licenční notice, vytvořit/doplnit History včetně titulu/roku/autorů/vydavatele. Zachovat původní URL leda4letá/souhlasová výjimka, jména a tón Ack/Dedications, Warranty Disclaimers. Původní Endorsements odstranit, vlastní smí být. Dobrovolné nové vlastní Secondary invariants nebo5/25slov obálek§4 mění popis výsledné licence; absence ve vstupu není doživotní zákaz dodat je do vlastní nové verze. |
+
+## Zdroje
+
+- [Primární zdroj](https://spdx.org/licenses/GFDL-1.3-no-invariants-or-later.html) — Individuální revize celého připnutého textu; §1 licenčně označený manuál/jiné dílo v libovolném médiu. Pinned komentáře tohoto ID výslovně žádné Invariant Sections, Front-Cover ani Back-Cover Texts; nelze ukládat absentující obálkové povinnosti§3prvního odstavce. Transparent předpokládá obecně specifikovaný editovatelný formát bez obstrukce úprav; podstatný text v obrazovém formátu není Transparent. Publisher ve1.3 jakýkoli veřejný distributor, Title Page i odpovídající místo netiskového díla.
+- [Kurátorovaný profil](../../../data/profiles/licenses/id-R0ZETC0xLjMtbm8taW52YXJpYW50cy1vci1sYXRlcg.json)
+- [Uložené úplné znění](../../../public/data/licenses/GFDL-1.3-no-invariants-or-later.json)
+
+## Otisk zdroje
+
+```json
+{
+  "sourceId": "spdx-license-list",
+  "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+  "contentHash": "sha256:2c75dda598e4a8501f811f1ca7430697533ff61749b068dca6d8f6643182eab3"
+}
+```

@@ -8,91 +8,93 @@
     "contentHash": "sha256:359d1a34157ac19932771bea91192b7cc88bcfb8f8bd4e3052a338cd38dc2b19"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "private-use"
     ],
     "obligations": [
-      "provide-corresponding-source"
+      "include-copyright"
     ],
     "triggers": [
-      "unknown"
+      "distribution"
     ],
     "restrictions": [
-      "unknown"
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "none-stated",
+    "noticeBurden": "minimal"
   },
   "evidence": [
     {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Game-Programming-Gems.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Game-Programming-Gems.json#text; Licence Scotta Bilase se vztahuje na původní zdrojovou verzi z roku 2000 a její začlenění do aplikací. Grant dovoluje zdroj volně kopírovat a kompilovat do distribuovaných aplikací; obecné právo upravovat či sublicencovat není výslovné. Copyright ve výsledném zdroji není povinnost šířit zdroj ani copyleft celého distribuovaného programu.; https://spdx.org/licenses/Game-Programming-Gems.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Game-Programming-Gems.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Game-Programming-Gems.json#text; Copyright ve výsledném zdroji není povinnost šířit zdroj ani copyleft celého distribuovaného programu.; https://spdx.org/licenses/Game-Programming-Gems.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Game-Programming-Gems.json#text; Grant dovoluje zdroj volně kopírovat a kompilovat do distribuovaných aplikací; obecné právo upravovat či sublicencovat není výslovné.; https://spdx.org/licenses/Game-Programming-Gems.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Game-Programming-Gems.json#text; Výsledný zdrojový kód musí obsahovat copyright, například „Portions Copyright (C) Scott Bilas, 2000“; text nevyžaduje jeho samostatné zveřejnění.; https://spdx.org/licenses/Game-Programming-Gems.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Game-Programming-Gems.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Game-Programming-Gems.json#text; Výsledný zdrojový kód musí obsahovat copyright, například „Portions Copyright (C) Scott Bilas, 2000“; text nevyžaduje jeho samostatné zveřejnění.; https://spdx.org/licenses/Game-Programming-Gems.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Game-Programming-Gems.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Game-Programming-Gems.json#text; Software je AS IS bez výslovných nebo předpokládaných záruk; samostatná výluka odpovědnosti není uvedena.; https://spdx.org/licenses/Game-Programming-Gems.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Game-Programming-Gems.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Game-Programming-Gems.json#text; Celý grant ke kopírování a kompilaci neobsahuje patentový grant ani patentové ukončení.; https://spdx.org/licenses/Game-Programming-Gems.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Game-Programming-Gems.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Game-Programming-Gems.json#text; Výsledný zdrojový kód musí obsahovat copyright, například „Portions Copyright (C) Scott Bilas, 2000“; text nevyžaduje jeho samostatné zveřejnění. Rozsah notifikační zátěže: minimal.; https://spdx.org/licenses/Game-Programming-Gems.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Game-Programming-Gems.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Game-Programming-Gems.json#text; Individuální kontrola celého připnutého textu Game-Programming-Gems dne 2026-09-09. Licence Scotta Bilase se vztahuje na původní zdrojovou verzi z roku 2000 a její začlenění do aplikací. Text dovoluje kopírování a kompilaci konkrétního zdroje do aplikací, ale nevyjasňuje obecné právo měnit zdroj; před použitím jako obecné licence nového softwaru je třeba doložit tento rozsah. Nejsou nabídnuty jiné licence nebo verze.; https://spdx.org/licenses/Game-Programming-Gems.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

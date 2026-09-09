@@ -1,0 +1,29 @@
+{
+  "id": "OLDAP-1.1",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:878ef2a21eb0c951ac50575860a59d84aaf4d56c82cf557c6078ba79407cac4f"
+  },
+  "disposition": "blocked",
+  "summaryCs": "OpenLDAP 1.1 má Artistic podobné samostatné alternativy pro modifikace a binárky: veřejné změny, interní užití, přejmenování se standardními binárkami nebo dohoda. Samotný balík se neprodává; vlastní emulační C subrutiny jsou vyňaty jen při zachování jazyka dle regresních testů.",
+  "blockersCs": [
+    "§§ 3–4 mají dvě sady alternativ a § 7 specifickou regresně testovanou výjimku C emulace; § 5 omezuje samostatný prodej. Doplnit tento model voleb a rozsahu, místo vymyšlené všeobecné zdrojové povinnosti."
+  ],
+  "analysis": {
+    "subjectCs": "Verze 1.1 z 25.8.1998 definuje Package jako soubory a textové deriváty, Standard Version podle držitele a Freely Available s omezeným kopírovným.",
+    "grantCs": "§§1–4 dovolují doslovné zdroje Standard Version, public-domain/holder opravy, jiné změny a binární distribuce za voleb. §5 kopírovné/podpora/komerční agregát dovoleny, ne prodej Package samotného; patentový grant chybí.",
+    "conditionsCs": "§1 zachovává copyright/disclaimery. §3 výrazně označí jak/kdy v každém změněném souboru a vybere volnou publikaci či přijetí držitelem, interní organizaci, přejmenované nestandardní plus standardní executables/manuály, nebo dohodu. §4 nezávisle volí standardní binárky s instrukcí získání, upravené zdroje, standardní+nestandardní binárky s manuály/odkazem, nebo dohodu.",
+    "limitationsCs": "§6 vstupní/výstupní skripty a knihovny nepatří automaticky pod copyright balíku a mohou být prodány. §7 jen emulační C subrutiny pro jazyk balíku jsou výjimka při zachování regresních testů jazyka. §8 zákaz endorsementu; §9 bez výslovných/implicitních záruk, bez samostatné výluky škod.",
+    "compatibilityCs": "Verze 1.1 neobsahuje širší §8 OLDAP1.3 pro vlastní software pouze používající subrutiny/variables. Odvození od Artistic je historie, ne licence-choice ani automatická kompatibilita."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/OLDAP-1.1.html",
+      "note": "Individuální revize celého připnutého textu; Verze 1.1 z 25.8.1998 definuje Package jako soubory a textové deriváty, Standard Version podle držitele a Freely Available s omezeným kopírovným."
+    }
+  ]
+}

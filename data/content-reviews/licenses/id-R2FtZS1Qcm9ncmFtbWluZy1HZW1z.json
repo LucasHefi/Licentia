@@ -1,0 +1,29 @@
+{
+  "id": "Game-Programming-Gems",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:359d1a34157ac19932771bea91192b7cc88bcfb8f8bd4e3052a338cd38dc2b19"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Licence Scotta Bilase dovoluje konkrétní zdrojový kód kopírovat a kompilovat do distribuovaných aplikací. Výsledný zdroj musí zachovat copyright a software je poskytován bez záruk; samostatné zveřejnění zdroje se nepožaduje. Obecné právo zdroj měnit však není výslovné, proto průvodce licenci nezařazuje bez vyjasnění tohoto oprávnění.",
+  "blockersCs": [
+    "Text dovoluje kopírování a kompilaci konkrétního zdroje do aplikací, ale nevyjasňuje obecné právo měnit zdroj; před použitím jako obecné licence nového softwaru je třeba doložit tento rozsah."
+  ],
+  "analysis": {
+    "subjectCs": "Licence Scotta Bilase se vztahuje na původní zdrojovou verzi z roku 2000 a její začlenění do aplikací.",
+    "grantCs": "Grant dovoluje zdroj volně kopírovat a kompilovat do distribuovaných aplikací; obecné právo upravovat či sublicencovat není výslovné.",
+    "conditionsCs": "Výsledný zdrojový kód musí obsahovat copyright, například „Portions Copyright (C) Scott Bilas, 2000“; text nevyžaduje jeho samostatné zveřejnění.",
+    "limitationsCs": "Software je AS IS bez výslovných nebo předpokládaných záruk; samostatná výluka odpovědnosti není uvedena.",
+    "compatibilityCs": "Nejsou nabídnuty jiné licence nebo verze."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Game-Programming-Gems.html",
+      "note": "Individuálně přečten celý připnutý text; Výsledný zdrojový kód musí obsahovat copyright, například „Portions Copyright (C) Scott Bilas, 2000“; text nevyžaduje jeho samostatné zveřejnění. Celý grant ke kopírování a kompilaci neobsahuje patentový grant ani patentové ukončení."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "W3C-20150513",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.2",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:8803fcdc469202444df0dec9005fbd55676ae87fc6d652fd661cdd69930b361b"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Přiložte celé oznámení na místě dostupném uživatelům a zachovejte předchozí oznámení o právech; pokud chybějí, použijte krátké oznámení W3C. Úpravy označte copyrightovým prohlášením v novém kódu nebo dokumentu. Jména a známky nelze bez souhlasu použít v reklamě. Zde se hodnotí použití pro software.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/W3C-20150513.html",
+      "note": "Dřívější individuální revize 2026-09-09.2; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

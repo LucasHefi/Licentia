@@ -14,7 +14,7 @@
   },
   "semantic": {
     "family": "nonstandard",
-    "copyleftScope": "whole-work",
+    "copyleftScope": "unknown",
     "permissions": [
       "commercial-use",
       "distribution",
@@ -22,15 +22,15 @@
       "private-use"
     ],
     "obligations": [
+      "include-advertising-acknowledgment",
       "include-copyright",
       "include-license-text",
-      "include-notice",
       "same-license"
     ],
     "triggers": [
+      "advertising",
       "distribution",
-      "modification",
-      "unknown"
+      "use"
     ],
     "restrictions": [
       "additional-terms",
@@ -44,47 +44,65 @@
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant (\"FREE FOR COMMERCIAL AND NON-COMMERCIAL USE\" and \"Redistribution and use in source and binary forms, with or without modification, are permitted\") together with the final no-relicensing term (\"licence and distribution terms ... cannot be changed\") identifies a nonstandard BSD-style family"
+      "locator": "public/data/licenses/BSD-Systemics.json#text; BSD-style grant doplněn zákazem změny veřejných licenčních/distribučních podmínek kódu/derivátů.; https://spdx.org/licenses/BSD-Systemics.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text: final paragraph (\"licence and distribution terms for any publically available version or derivative of this code cannot be changed\" and the prohibition on putting it under another distribution licence) applies a no-relicensing constraint to the publicly available derivative as a whole; no separate library, linking, or network scope is stated"
+      "locator": "public/data/licenses/BSD-Systemics.json#text; Poslední odstavec veřejné version/derivative code bez vymezení kombinovaného produktu; whole-work či file nelze bezpečně určit.; https://spdx.org/licenses/BSD-Systemics.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text: commercial/non-commercial sentence and opening grant (\"Redistribution and use in source and binary forms, with or without modification, are permitted\"); no purpose or field-of-use limitation is stated"
+      "locator": "public/data/licenses/BSD-Systemics.json#text; Free commercial/non-commercial a grant use/redistribution source/binary with or without modifications.; https://spdx.org/licenses/BSD-Systemics.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text: attribution paragraph (copyright notices in code are not to be removed and Systemics should be attributed in product startup text or documentation); conditions 1-2 (source redistributions retain, and binary redistributions reproduce, the copyright notice, list of conditions, and disclaimer); condition 3 (advertising materials must display the fixed Systemics acknowledgement); final paragraph prohibits changing the licence/distribution terms"
+      "locator": "public/data/licenses/BSD-Systemics.json#text; Copyright v kódu, body 1–2 notices, bod 3 reklamní acknowledgment; poslední odstavec same license; should product credit je doporučení.; https://spdx.org/licenses/BSD-Systemics.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "text: conditions 1-2 (source or binary redistribution activates notice-retention/reproduction duties), condition 3 (advertising materials mentioning features or use activate a fixed acknowledgement duty, represented by unknown because advertising is not a vocabulary trigger), and final paragraph (a public derivative activates the no-relicensing condition); modification alone has no separate notice duty"
+      "locator": "public/data/licenses/BSD-Systemics.json#text; Use zachovává copyright; redistributions notices; advertising materials mentioning features/use přesné acknowledgment.; https://spdx.org/licenses/BSD-Systemics.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text: final paragraph (licence and distribution terms for a public version or derivative cannot be changed and the code cannot be put under another distribution licence) is an additional-term restriction; warranty paragraph disclaims express/implied warranties and limits liability for listed damages; no endorsement/name restriction is stated"
+      "locator": "public/data/licenses/BSD-Systemics.json#text; Poslední odstavec zakazuje změnit distribution licence včetně GPL; warranty/liability disclaimer.; https://spdx.org/licenses/BSD-Systemics.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "text: complete license text (opening grant, conditions 1-3, disclaimer, and final no-relicensing paragraph); no express patent grant, patent condition, patent-claim restriction, or patent-termination clause is stated"
+      "locator": "public/data/licenses/BSD-Systemics.json#text; Celý text bez výslovné patentové licence nebo patentového ukončení.; https://spdx.org/licenses/BSD-Systemics.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text: attribution paragraph requires keeping Systemics copyright notices and giving product attribution in startup text or documentation; conditions 1-2 require source/binary notice and disclaimer retention/reproduction; condition 3 requires a fixed acknowledgement in advertising materials, creating a material multi-surface notice burden"
+      "locator": "public/data/licenses/BSD-Systemics.json#text; Povinná reklamní věta představuje materiální zátěž; dobrovolné startup/documentation credit se nepřidává jako povinné.; https://spdx.org/licenses/BSD-Systemics.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "metadata: id=BSD-Systemics, name=Systemics BSD variant license, deprecated=false, osi=false, fsf=false; text: broad commercial/non-commercial BSD-style grant is paired with a Systemics-specific attribution/startup-or-documentation duty, advertising acknowledgement, and a prohibition on changing terms or placing public derivatives under another distribution licence, so it is not suitable for general automatic recommendation"
+      "locator": "public/data/licenses/BSD-Systemics.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. Knihovna i aplikace jsou povoleny komerčně i nekomerčně s notices a reklamním poděkováním Systemics. Licence a distribuční podmínky veřejně dostupných verzí či odvozenin kódu se nesmějí měnit; výslovně se zakazuje prosté převedení i pod GPL. Blokace: Poslední odstavec zakazuje změnit podmínky jakékoli veřejné verze nebo derivative of this code, ale neurčuje hranici vůči produktu obsahujícímu části knihovny. Je třeba modelovat rozsah zachování licence kódu/odvozenin bez automatického rozšíření na celé kombinované dílo.; https://spdx.org/licenses/BSD-Systemics.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

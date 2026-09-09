@@ -1,0 +1,29 @@
+{
+  "id": "AFL-3.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:c9b3c90d4569fa9506b9ef63514795736e6f54a3b6d30be6d18903799a337d4f"
+  },
+  "disposition": "blocked",
+  "summaryCs": "AFL 3.0 dovoluje změny a šíření pod libovolnou neodporující licencí a poskytuje výslovný patentový grant. Poskytovatel zpřístupní zdroj původního díla, upravené zdroje zachovají oznámení a označí změny; ani externí provoz nezavádí povinnost stejné licence. Poskytovatel zaručuje původ udělených autorských a patentových práv a vymezená patentová žaloba může ukončit celý grant. Povinnost usilovat o výslovný souhlas příjemců brání zařazení do průvodce.",
+  "blockersCs": [
+    "§9 ukládá rozumné úsilí o výslovný souhlas příjemce i při komunikaci a §3 má zvláštní roli poskytovatele zdrojů; před doporučením je třeba model aktivního souhlasu a rolí zdrojového závazku."
+  ],
+  "analysis": {
+    "subjectCs": "AFL 3.0 se vztahuje na Original Work včetně kolektivních děl a má External Deployment, který nezavádí same-license copyleft.",
+    "grantCs": "§1 dovoluje reprodukci, překlad/adaptaci/změny, veřejnou distribuci/komunikaci/provedení/zobrazení pod libovolnou neodporující licencí se sublicencemi. §2 grant embodied patentů na jejich dobu přidává have made a import.",
+    "conditionsCs": "§3 poskytovatel dodá strojový preferovaný zdroj nebo jej ponechá v dostupném repozitáři během své distribuce; §6 změněné zdroje zachovávají IP/licenční/attribution notices a nápadně označí změnu. §5 externí zpřístupnění originálu i odvozenin činí distribucí §1c. §9 vyžaduje rozumné úsilí získat express assent příjemců.",
+    "limitationsCs": "§4 omezuje jména/známky a ostatní IP; §7 zaručuje provenance copyrightu i patentů, ostatní záruky AS IS. §8 vylučuje nepřímé/zvláštní/následné škody s výhradou zákona, neuvádí obecné vyloučení direct damages. §9 porušení §1c končí práva; §10 patentová žaloba na poskytovatele/uživatele kvůli Original Work ruší vše, kombinace jsou vyňaty.",
+    "compatibilityCs": "§11–12 právo/soudy poskytovatele, bez CISG, náklady vítěze; §14 skupina You. §16 dovoluje změnit samotný licenční text pro jiné dílo jen s jiným názvem/notice a bez open-source tvrzení před OSI schválením, ne změnit původní AFL tohoto díla."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/AFL-3.0.html",
+      "note": "Individuálně přečten celý připnutý text; §3 poskytovatel dodá strojový preferovaný zdroj nebo jej ponechá v dostupném repozitáři během své distribuce; §6 změněné zdroje zachovávají IP/licenční/attribution notices a nápadně označí změnu. §5 externí zpřístupnění originálu i odvozenin činí distribucí §1c. §9 vyžaduje rozumné úsilí získat express assent příjemců. §2 výslovně sublicencuje embodied patenty na dobu platnosti; §10 ukončuje celou licenci při žalobě na Original Work proti poskytovateli/licensee a výslovně vyjímá kombinace."
+    }
+  ]
+}

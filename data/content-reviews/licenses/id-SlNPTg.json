@@ -1,0 +1,22 @@
+{
+  "id": "JSON",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.2",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:385cdc99deeee93684d3ad521d05a11cdca84fb32e0b9b6aa43d98074e4d1354"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Licence omezuje účel užití formulací „Good, not Evil“, kterou blíže nedefinuje. Všechna oprávnění podléhají i tomuto omezení. Průvodce licenci zatím nezařazuje; účelové omezení vyžaduje samostatné posouzení.",
+  "blockersCs": [
+    "Nezařazena: text omezuje účel užití formulací „Good, not Evil“. Rodina opravena na nonstandard; oprávnění jsou podmíněná tímto omezením. Doplnit model účelových omezení a spouštěče samotného užití, poté rozhodnout o oddělené větvi průvodce; nepřebírat profil MIT."
+  ],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/JSON.html",
+      "note": "Dřívější individuální revize 2026-09-09.2; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

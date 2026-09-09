@@ -8,12 +8,12 @@
     "contentHash": "sha256:589c8f82903c51c05c928facaaa2b8bd3d2e99c9f94cd0569171cd529e33b6c8"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
     "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "nonstandard",
+    "family": "permissive",
     "copyleftScope": "none",
     "permissions": [
       "commercial-use",
@@ -23,13 +23,14 @@
     ],
     "obligations": [
       "include-copyright",
-      "include-license-text",
       "include-notice",
+      "mark-modifications",
       "unknown"
     ],
     "triggers": [
       "distribution",
-      "unknown"
+      "modification",
+      "use"
     ],
     "restrictions": [
       "additional-terms",
@@ -45,47 +46,65 @@
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "SPDX official text, Sections 1-4 and metadata: Creative Commons Attribution 1.0 Generic (CC-BY-1.0), deprecated=false, osi=false, fsf=false; the broad copyright/content-work grant is paired with attribution, public-display/performance, no-sublicensing, and technological-measure conditions, so it is nonstandard for this software-oriented guide"
+      "locator": "public/data/licenses/CC-BY-1.0.json#text; CC Attribution 1.0 pokrývá autorské dílo, odvozeniny a sborníky s celým nezměněným dílem jako samostatnou složkou. §3 dovoluje celosvětově bezplatně reprodukovat, tvořit odvozeniny, distribuovat a veřejně zobrazovat/provádět včetně digitálního audia v libovolných médiích; komerční omezení nemá. §4 nevyžaduje stejnou licenci celého sborníku/odvozeniny a neukládá zdroje; původní vložené dílo si zachovává práva.; https://spdx.org/licenses/CC-BY-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "SPDX official text, Section 3 and Section 4(a)-(b): the grant permits creation of Derivative Works and does not require source disclosure or licensing a larger work under the same license; the Collective Work apart from the Work is expressly not subject to this license"
+      "locator": "public/data/licenses/CC-BY-1.0.json#text; §4 nevyžaduje stejnou licenci celého sborníku/odvozeniny a neukládá zdroje; původní vložené dílo si zachovává práva.; https://spdx.org/licenses/CC-BY-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "SPDX official text, Section 3(a)-(d): worldwide, royalty-free, non-exclusive, perpetual rights to reproduce, create and reproduce Derivative Works, distribute, publicly display, publicly perform, and digitally perform the Work and Derivative Works, in all media and formats; no commercial or private-use limitation is stated, while sublicensing is expressly excluded by Section 4(a)"
+      "locator": "public/data/licenses/CC-BY-1.0.json#text; §3 dovoluje celosvětově bezplatně reprodukovat, tvořit odvozeniny, distribuovat a veřejně zobrazovat/provádět včetně digitálního audia v libovolných médiích; komerční omezení nemá.; https://spdx.org/licenses/CC-BY-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "SPDX official text, Section 4(a)-(b): every distributed, publicly displayed, publicly performed, or digitally performed Work/Derivative Work must carry the license copy or URI, retain copyright/license/disclaimer notices, and provide Original Author/title/use credit; attribution and the public-display/performance surfaces are not represented losslessly by the obligation vocabulary, retained as unknown"
+      "locator": "public/data/licenses/CC-BY-1.0.json#text; §4 předává licenci/URI, zachovává copyright/licenční/disclaimer notices a přiznává dodané autorovo jméno/pseudonym a titul. U odvozeniny se identifikuje užité původní dílo a credit v odvozenině/sborníku má stejnou výraznost jako ostatní. Na žádost se zmínky o autorovi/poskytovateli v proveditelném rozsahu odstraní.; https://spdx.org/licenses/CC-BY-1.0.html Terminologické upřesnění 2026-09-10: § 4(a) dovoluje u každé šířené či veřejně zobrazované nebo prováděné kopie či zvukového záznamu přiložit kopii této licence NEBO její URI. include-notice zachycuje požadované licenční oznámení s touto alternativou; include-license-text se neuvádí jako bezpodmínečná povinnost.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "SPDX official text, Section 4(a)-(b): notice and attribution duties attach to distribution, public display, public performance, and public digital performance of the Work, Derivative Works, or Collective Works; distribution is represented directly, while the distinct display/performance triggers have no vocabulary value and are retained as unknown"
+      "locator": "public/data/licenses/CC-BY-1.0.json#text; §4 předává licenci/URI, zachovává copyright/licenční/disclaimer notices a přiznává dodané autorovo jméno/pseudonym a titul. U odvozeniny se identifikuje užité původní dílo a credit v odvozenině/sborníku má stejnou výraznost jako ostatní. Na žádost se zmínky o autorovi/poskytovateli v proveditelném rozsahu odstraní.; https://spdx.org/licenses/CC-BY-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "SPDX official text, Section 4(a): distribution/display/performance must remain under this license, no altered or restrictive terms may be imposed, sublicensing is prohibited, notices must remain intact, and inconsistent technological access measures are prohibited; Sections 5(b)-6 disclaim warranties and limit liability, and the closing paragraph restricts Creative Commons trademark use; the non-sublicensing/technology and attribution details are not losslessly represented and are retained as unknown"
+      "locator": "public/data/licenses/CC-BY-1.0.json#text; Zakázány jsou sublicence, dodatečná omezení a technické ochrany odporující právům. §5 na základě rozumného šetření výslovně zaručuje potřebná práva bez dalších plateb a neporušování/nepomluvu/privacy; pouze zbytek AS IS. §6 liability výluka vyjímá třetí nároky z porušení těchto záruk.; https://spdx.org/licenses/CC-BY-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "SPDX official text, complete Sections 1-8: the grant covers copyright rights and contains no express patent grant, patent covenant, patent-claim restriction, or patent-termination clause"
+      "locator": "public/data/licenses/CC-BY-1.0.json#text; Celý §1–8 nemá výslovný patentový grant ani patentové ukončení; ujištění o právech není takový grant.; https://spdx.org/licenses/CC-BY-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "SPDX official text, Section 4(a)-(b): license copy/URI, intact license/disclaimer/copyright notices, and author/title/derivative-use credit are required across distribution, public display, public performance, and public digital performance, creating a material multi-surface attribution and notice burden"
+      "locator": "public/data/licenses/CC-BY-1.0.json#text; §4 předává licenci/URI, zachovává copyright/licenční/disclaimer notices a přiznává dodané autorovo jméno/pseudonym a titul. U odvozeniny se identifikuje užité původní dílo a credit v odvozenině/sborníku má stejnou výraznost jako ostatní. Na žádost se zmínky o autorovi/poskytovateli v proveditelném rozsahu odstraní. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/CC-BY-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "SPDX official metadata and text: CC-BY-1.0 is non-deprecated but is a Creative Commons content-work license (osi=false, fsf=false) with attribution, public display/performance triggers, no sublicensing, technological-measure, and trademark conditions; those legal/content dimensions are not all represented exactly by vocabulary 1.0.0, so the profile is reviewed but not recommendable"
+      "locator": "public/data/licenses/CC-BY-1.0.json#text; Individuální kontrola celého připnutého textu CC-BY-1.0 dne 2026-09-09. CC Attribution 1.0 pokrývá autorské dílo, odvozeniny a sborníky s celým nezměněným dílem jako samostatnou složkou. Obsahová licence vyžaduje odstranit atribuci na žádost, upravuje veřejná provedení/technické ochrany a specifické záruky v1.0; před doporučením novému softwaru je nutný model těchto podmínek a obsahových hranic. §7 zánik při porušení nezasáhne řádný downstream; zastavení distribuce neodvolá grant. §8 příjemce dostává přímou nabídku k originálu i u odvozeniny; celé nové dílo nemusí mít CC-BY. CC známky jsou omezeny na licenční indikaci nebo svolení.; https://spdx.org/licenses/CC-BY-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

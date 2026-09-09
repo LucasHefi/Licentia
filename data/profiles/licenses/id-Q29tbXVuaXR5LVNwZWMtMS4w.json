@@ -8,95 +8,107 @@
     "contentHash": "sha256:b2dd92301ded420c03934a0a348a4e473750cec837e84476758280b62fe025d2"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "none",
     "permissions": [
       "commercial-use",
       "distribution",
       "modifications",
-      "patent-grant"
+      "patent-grant",
+      "private-use"
     ],
     "obligations": [
-      "provide-corresponding-source"
+      "include-license-text",
+      "include-notice",
+      "include-use-acknowledgment",
+      "pass-disclaimer-requirement",
+      "unknown"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification",
+      "patent-claim",
+      "unknown",
+      "use"
     ],
     "restrictions": [
       "liability",
-      "trademark"
+      "patent-claim",
+      "trademark",
+      "unknown",
+      "warranty"
     ],
-    "patentPosition": "express-grant",
-    "noticeBurden": "unknown"
+    "patentPosition": "defensive-termination",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Community-Spec-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Community-Spec-1.0.json#text; §1 copyright permissivní bez SA/source povinnosti; nonstandard označuje specification a procesní patentový režim, nikoli source software licence.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Community-Spec-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Community-Spec-1.0.json#text; §1 copyright permissivní bez SA/source povinnosti; nonstandard označuje specification a procesní patentový režim, nikoli source software licence.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Community-Spec-1.0.json#text; §1.1 všem trvalá světová bezplatná neodvolatelná nesublicencovatelná copyright práva kopie/derivátů/distribuce/public display/performance příspěvku, Working Group může specifikaci předat jiné standards organizaci. §2.1 Contributor patentuje Necessary Claims pro draft v Scope k datu příspěvku a approved v Scope, minus§3 exclusions. Licensee poskytuje každému jinému Licensee svoje Necessary Claims implementace; §2.2 navíc RF RAND příslib každému v popsaném užším draft/approved rozsahu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Community-Spec-1.0.json#text; §1.2 deriváty materiálů uvádějí Working Group, název/verzi/zdroj získání, implementace attribution výslovně nepotřebují. §2.1.3 patentová acceptance: source licence v root NEBO nonsource dokumentace/legal/software/jiné písemné notices NEBO autorizovaný PR/commit Notices.md s implementátorem/osobou/system ID/verzí. §3 exclusions do45 dní příspěvku mimo již45 dní draft materiál a před approved jen nově přípustné claims; §9.7 specifická identifikace patentů či neveřejných přihlášek. §8.2 technické informace třetím s materiálně obdobným disclaimerem. §6 žádné vyjmenované soutěžně nevhodné diskuse, §7 zákaz úmyslného obcházení.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Community-Spec-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Community-Spec-1.0.json#text; §1.2 deriváty materiálů uvádějí Working Group, název/verzi/zdroj získání, implementace attribution výslovně nepotřebují. §2.1.3 patentová acceptance: source licence v root NEBO nonsource dokumentace/legal/software/jiné písemné notices NEBO autorizovaný PR/commit Notices.md s implementátorem/osobou/system ID/verzí. §3 exclusions do45 dní příspěvku mimo již45 dní draft materiál a před approved jen nově přípustné claims; §9.7 specifická identifikace patentů či neveřejných přihlášek. §8.2 technické informace třetím s materiálně obdobným disclaimerem. §6 žádné vyjmenované soutěžně nevhodné diskuse, §7 zákaz úmyslného obcházení.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Community-Spec-1.0.json#text; §2.1.4 podání i udržování Necessary Claim žaloby proti implementaci okamžitě ruší všechny licence, kromě přímé obrany proti implementačnímu nároku či vymáhání licence/intervence. §2.3 vystoupení oznámit Notices.md, dosavadní závazky trvají; §2.4 váže budoucí patentové vlastníky, §8.1 splnění transfer povinností známým notice nabyvateli, patent search není nutný. §8.1 záruka oprávnění a nevkládání konfliktních cizích materiálů, jinak as-is a škodové výluky; oprávnění zastupovat zaměstnavatele/klienta. §5 bez ostatních práv/známek.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Community-Spec-1.0.json#text; §1.1 všem trvalá světová bezplatná neodvolatelná nesublicencovatelná copyright práva kopie/derivátů/distribuce/public display/performance příspěvku, Working Group může specifikaci předat jiné standards organizaci. §2.1 Contributor patentuje Necessary Claims pro draft v Scope k datu příspěvku a approved v Scope, minus§3 exclusions. Licensee poskytuje každému jinému Licensee svoje Necessary Claims implementace; §2.2 navíc RF RAND příslib každému v popsaném užším draft/approved rozsahu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Community-Spec-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Community-Spec-1.0.json#text; §1.2 deriváty materiálů uvádějí Working Group, název/verzi/zdroj získání, implementace attribution výslovně nepotřebují. §2.1.3 patentová acceptance: source licence v root NEBO nonsource dokumentace/legal/software/jiné písemné notices NEBO autorizovaný PR/commit Notices.md s implementátorem/osobou/system ID/verzí. §3 exclusions do45 dní příspěvku mimo již45 dní draft materiál a před approved jen nově přípustné claims; §9.7 specifická identifikace patentů či neveřejných přihlášek. §8.2 technické informace třetím s materiálně obdobným disclaimerem. §6 žádné vyjmenované soutěžně nevhodné diskuse, §7 zákaz úmyslného obcházení.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Community-Spec-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Community-Spec-1.0.json#text; Individuálně přečten celý připnutý text. Účel a§4 oddělují specifikace/standardy/guidelines od source code: kód má licenci svého repository, chybí-li, MIT. §9 rozlišuje Draft/Approved dle Governance.md, verzi Specification a Implementation všech povinných částí. Samostatný kód není neznámou podmínkou copyright grantu specifikace. Community Specification 1.0 upravuje vývoj specifikací a jejich implementační patenty, výslovně není určena zdrojovému kódu. Copyright je permissivní s atribucí derivátů specifikace; patentová práva se liší dle draft/approved stavu, Scope a včasných Exclusion Notices a vyžadují souhlas implementátora. Účel/ § 4 výslovně oddělují zdrojový kód a tuto licenci pro něj neurčují. §§ 2–3, 9 dále vyžadují projektový Scope/Governance/Exclusion stav a reciprocal patent acceptance včetně procesních lhůt. Doplnit specification/patent-commitment model a pro konkrétní implementaci inventuru těchto souborů; pro nový software vybrat samostatnou source licenci.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

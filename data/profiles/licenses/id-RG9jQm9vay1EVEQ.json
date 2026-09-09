@@ -8,92 +8,100 @@
     "contentHash": "sha256:cc2ffe006ffde0a17c8bc4d46941f18c49053bc04dc2039d6b38517e8497e22f"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
+      "include-copyright",
+      "include-license-text",
+      "mark-modifications",
       "unknown"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification"
     ],
     "restrictions": [
-      "unknown"
+      "additional-terms",
+      "unknown",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/DocBook-DTD.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DocBook-DTD.json#text; Povinná identifikace varianty nenutí stejnou licenci odvozenin nebo zpřístupnění zdrojů; permisivní bez copyleftu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/DocBook-DTD.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DocBook-DTD.json#text; Povinná identifikace varianty nenutí stejnou licenci odvozenin nebo zpřístupnění zdrojů; permisivní bez copyleftu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/DocBook-DTD.json#text; Permission odstavec dovoluje use/copy/modify/distribute pro libovolný účel trvale bez poplatku. Výslovný patentový grant ani sublicence nejsou uvedeny.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/DocBook-DTD.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DocBook-DTD.json#text; Všechny kopie nesou copyright a odstavec. Modifikované DTD se označí jako varianta, kromě deklarování/referencování dalších sad general entities a přidání notations. Oficiální průvodce https://tdg.docbook.org/tdg/3.1/ch05.html §5.2 vysvětluje změnu veřejných identifikátorů a úzkou entitovou výjimku.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/DocBook-DTD.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DocBook-DTD.json#text; Všechny kopie nesou copyright a odstavec. Modifikované DTD se označí jako varianta, kromě deklarování/referencování dalších sad general entities a přidání notations. Oficiální průvodce https://tdg.docbook.org/tdg/3.1/ch05.html §5.2 vysvětluje změnu veřejných identifikátorů a úzkou entitovou výjimku.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/DocBook-DTD.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DocBook-DTD.json#text; Nositelé nezaručují vhodnost DTD a odmítají výslovné/implicitní záruky. Mailing-list výzva je žádost, nikoli povinná distribuce změn autorům.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/DocBook-DTD.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DocBook-DTD.json#text; Permission odstavec dovoluje use/copy/modify/distribute pro libovolný účel trvale bez poplatku. Výslovný patentový grant ani sublicence nejsou uvedeny.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/DocBook-DTD.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DocBook-DTD.json#text; Všechny kopie nesou copyright a odstavec. Modifikované DTD se označí jako varianta, kromě deklarování/referencování dalších sad general entities a přidání notations. Oficiální průvodce https://tdg.docbook.org/tdg/3.1/ch05.html §5.2 vysvětluje změnu veřejných identifikátorů a úzkou entitovou výjimku.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/DocBook-DTD.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DocBook-DTD.json#text; Individuálně přečten celý připnutý text. Předmětem je DocBook XML DTD a dokumentace; modifikační věta konkrétně jmenuje Simplified DocBook DTD. DTD a dokumentaci lze trvale kopírovat, měnit a šířit s oznámením. Změněné Simplified DocBook DTD se označuje jako varianta; výjimkou je přidání a reference obecných entit a další notace. Text vyžaduje podmíněnou identifikaci varianty s výjimkou entit/notací a odkazuje na údržbovou dokumentaci. Doplnit model těchto identifikátorů a DTD předmětu; neflattenovat výjimku na označení každé změny.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

@@ -1,14 +1,104 @@
 {
-  "vocabularyVersion": "1.0.0",
-  "reviewStatuses": ["blocked", "not-recommendable", "pending", "reviewed", "stale"],
-  "evidenceLevels": ["strong", "sufficient", "unknown", "weak"],
-  "licenseFamilies": ["network-copyleft", "nonstandard", "permissive", "public-domain-equivalent", "strong-copyleft", "unknown", "weak-copyleft"],
-  "copyleftScopes": ["file", "library", "network", "none", "unknown", "whole-work"],
-  "permissions": ["commercial-use", "distribution", "modifications", "patent-grant", "private-use", "sublicensing", "unknown"],
-  "obligations": ["disclose-source", "include-copyright", "include-license-text", "include-notice", "mark-modifications", "network-use-disclose", "provide-corresponding-source", "provide-installation-information", "same-license", "unknown"],
-  "triggers": ["combination", "distribution", "linking", "modification", "network-use", "patent-claim", "unknown"],
-  "restrictions": ["additional-terms", "liability", "patent-claim", "trademark", "unknown", "warranty"],
-  "patentPositions": ["defensive-termination", "express-grant", "none-stated", "retaliatory-termination", "unknown"],
-  "noticeBurden": ["material", "minimal", "none", "standard", "unknown"],
-  "exceptionApplicability": ["conditional", "none", "optional", "required", "unknown"]
+  "vocabularyVersion": "1.4.0",
+  "reviewStatuses": [
+    "blocked",
+    "not-recommendable",
+    "pending",
+    "reviewed",
+    "stale"
+  ],
+  "evidenceLevels": [
+    "strong",
+    "sufficient",
+    "unknown",
+    "weak"
+  ],
+  "licenseFamilies": [
+    "network-copyleft",
+    "nonstandard",
+    "permissive",
+    "public-domain-equivalent",
+    "strong-copyleft",
+    "unknown",
+    "weak-copyleft"
+  ],
+  "copyleftScopes": [
+    "file",
+    "library",
+    "network",
+    "none",
+    "unknown",
+    "whole-work"
+  ],
+  "permissions": [
+    "commercial-use",
+    "conditional-relicensing",
+    "distribution",
+    "modifications",
+    "patent-grant",
+    "private-use",
+    "sublicensing",
+    "unknown"
+  ],
+  "obligations": [
+    "allow-relinking",
+    "allow-reverse-engineering",
+    "defend-added-warranty",
+    "defend-commercial-distribution",
+    "disclose-source",
+    "include-advertising-acknowledgment",
+    "include-copyright",
+    "include-license-text",
+    "include-notice",
+    "include-use-acknowledgment",
+    "mark-modifications",
+    "network-use-disclose",
+    "pass-disclaimer-requirement",
+    "preserve-combined-license-terms",
+    "provide-corresponding-source",
+    "provide-installation-information",
+    "same-license",
+    "unknown"
+  ],
+  "triggers": [
+    "advertising",
+    "combination",
+    "distribution",
+    "linking",
+    "modification",
+    "network-use",
+    "patent-claim",
+    "unknown",
+    "use"
+  ],
+  "restrictions": [
+    "additional-terms",
+    "liability",
+    "patent-claim",
+    "trademark",
+    "unknown",
+    "warranty"
+  ],
+  "patentPositions": [
+    "defensive-termination",
+    "express-exclusion",
+    "express-grant",
+    "none-stated",
+    "retaliatory-termination",
+    "unknown"
+  ],
+  "noticeBurden": [
+    "material",
+    "minimal",
+    "none",
+    "standard",
+    "unknown"
+  ],
+  "exceptionApplicability": [
+    "conditional",
+    "none",
+    "optional",
+    "required",
+    "unknown"
+  ]
 }

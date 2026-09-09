@@ -1,0 +1,29 @@
+{
+  "id": "TTYP0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:3b29e2bc2ef6909966ef23d67aac6485224a3d43821459843469c0a55cdce586"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Fontový software lze libovolně užívat, vkládat, upravovat, sublicencovat a prodávat s oznámením. Změna designu nebo přidání glyfů vyžaduje nové názvy bez UW; ttyp0 se smí objevit pouze za jiným názvem foundry.",
+  "blockersCs": [
+    "Bod 2 vyžaduje přejmenování pouze při změně/přidání glyfů s konkrétními case-insensitive pravidly UW a ttyp0. Doplnit fontový předmět a podmíněná názvová pravidla; obecné trademark nedokáže tento scénář průvodci vysvětlit."
+  ],
+  "analysis": {
+    "subjectCs": "Předmětem je fontový software a související soubory, včetně fontů generovaných instalací.",
+    "grantCs": "Úvod výslovně zahrnuje use/copy/modify/merge/publish/distribute/embed/sublicense/sell a práva příjemců. Patentový grant chybí.",
+    "conditionsCs": "Bod 1 vyžaduje copyright, svolení a disclaimer ve všech kopiích/podstatných částech. Bod 2 při změně designu glyfů nebo přidání glyfů v obsažených či instalačně vytvořených fontech vyžaduje přejmenování s přesnými podmínkami UW/ttyp0 bez ohledu na velikost písmen.",
+    "limitationsCs": "Nový název nesmí obsahovat UW; ttyp0 smí obsahovat jen předchází-li foundry jiná než UW. Disclaimer odmítá záruky včetně neporušení práv a odpovědnost za nároky/škody.",
+    "compatibilityCs": "Embed oprávnění samo nevyžaduje stejnou licenci výsledných dokumentů. Není nabídnuta alternativní licence ani obecné přejmenování při jakékoli technické změně."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/TTYP0.html",
+      "note": "Individuální revize celého připnutého textu; Předmětem je fontový software a související soubory, včetně fontů generovaných instalací."
+    }
+  ]
+}

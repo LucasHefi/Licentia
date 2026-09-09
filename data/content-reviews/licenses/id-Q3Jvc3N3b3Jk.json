@@ -1,0 +1,22 @@
+{
+  "id": "Crossword",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.7",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:19a8bfdfd30fb7c65cbf6884b1477b2d7ec70a892ca646a05491f6f7d8990fb4"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Copyrightové oznámení zachovejte a označte všechny úpravy. Text výslovně dovoluje kopírování, úpravy a redistribuci souboru cwpuzzle.dtx. Před použitím jako obecné licence je potřeba upřesnit rozsah grantu pro další soubory a formy užití. Záruky a odpovědnost jsou vyloučeny, pokud je autor či distributor nepřevezme písemně.",
+  "blockersCs": [
+    "Ověřit předmět grantu pro cwpuzzle.dtx, generované soubory a obecné užití; text sám výslovně vyjmenovává jen kopírování, úpravy a redistribuci tohoto souboru. Zachovat označení všech úprav a písemnou výjimku z disclaimeru. Nepřidávat povinnost poskytovat zdroje."
+  ],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Crossword.html",
+      "note": "Dřívější individuální revize 2026-09-09.7; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

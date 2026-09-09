@@ -8,9 +8,9 @@
     "contentHash": "sha256:3b29e2bc2ef6909966ef23d67aac6485224a3d43821459843469c0a55cdce586"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
     "family": "permissive",
@@ -19,85 +19,90 @@
       "commercial-use",
       "distribution",
       "modifications",
+      "private-use",
       "sublicensing"
     ],
     "obligations": [
       "include-copyright",
-      "include-license-text"
+      "include-license-text",
+      "unknown"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification"
     ],
     "restrictions": [
       "liability",
+      "trademark",
+      "unknown",
       "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.no-copyleft",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.permissive-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/TTYP0.json#text; Fontový grant nevyžaduje share-alike nebo zdroje; permisivní bez copyleftu i přes podmíněné názvy.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/TTYP0.json#text; Fontový grant nevyžaduje share-alike nebo zdroje; permisivní bez copyleftu i přes podmíněné názvy.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/TTYP0.json#text; Úvod výslovně zahrnuje use/copy/modify/merge/publish/distribute/embed/sublicense/sell a práva příjemců. Patentový grant chybí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "restrictions",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/TTYP0.json#text; Bod 1 vyžaduje copyright, svolení a disclaimer ve všech kopiích/podstatných částech. Bod 2 při změně designu glyfů nebo přidání glyfů v obsažených či instalačně vytvořených fontech vyžaduje přejmenování s přesnými podmínkami UW/ttyp0 bez ohledu na velikost písmen.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/TTYP0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/TTYP0.json#text; Bod 1 vyžaduje copyright, svolení a disclaimer ve všech kopiích/podstatných částech. Bod 2 při změně designu glyfů nebo přidání glyfů v obsažených či instalačně vytvořených fontech vyžaduje přejmenování s přesnými podmínkami UW/ttyp0 bez ohledu na velikost písmen.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/TTYP0.json#text; Nový název nesmí obsahovat UW; ttyp0 smí obsahovat jen předchází-li foundry jiná než UW. Disclaimer odmítá záruky včetně neporušení práv a odpovědnost za nároky/škody.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/TTYP0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/TTYP0.json#text; Úvod výslovně zahrnuje use/copy/modify/merge/publish/distribute/embed/sublicense/sell a práva příjemců. Patentový grant chybí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/TTYP0.json#text; Bod 1 vyžaduje copyright, svolení a disclaimer ve všech kopiích/podstatných částech. Bod 2 při změně designu glyfů nebo přidání glyfů v obsažených či instalačně vytvořených fontech vyžaduje přejmenování s přesnými podmínkami UW/ttyp0 bez ohledu na velikost písmen.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/TTYP0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/TTYP0.json#text; Individuálně přečten celý připnutý text. Předmětem je fontový software a související soubory, včetně fontů generovaných instalací. Fontový software lze libovolně užívat, vkládat, upravovat, sublicencovat a prodávat s oznámením. Změna designu nebo přidání glyfů vyžaduje nové názvy bez UW; ttyp0 se smí objevit pouze za jiným názvem foundry. Bod 2 vyžaduje přejmenování pouze při změně/přidání glyfů s konkrétními case-insensitive pravidly UW a ttyp0. Doplnit fontový předmět a podmíněná názvová pravidla; obecné trademark nedokáže tento scénář průvodci vysvětlit.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

@@ -8,8 +8,8 @@
     "contentHash": "sha256:3843c7c41d886abe3cdba344ae873c8840703302b5bb8f0dd876a43a26731d35"
   },
   "review": {
-    "status": "reviewed",
-    "recommendable": true,
+    "status": "not-recommendable",
+    "recommendable": false,
     "evidenceLevel": "strong"
   },
   "semantic": {
@@ -33,56 +33,75 @@
     "restrictions": [
       "liability",
       "trademark",
+      "unknown",
       "warranty"
     ],
     "patentPosition": "none-stated",
-    "noticeBurden": "material"
+    "noticeBurden": "standard"
   },
   "evidence": [
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant paragraph (\"Redistribution and use in source and binary forms, with or without modification, are permitted\" subject to conditions 1-4; broad non-reciprocal permission identifies a permissive family)"
+      "locator": "public/data/licenses/BSD-Mark-Modifications.json#text; Grant source/binary s notice/marking podmínkami, konkrétní nejasnost pouze v endorsementu.; https://spdx.org/licenses/BSD-Mark-Modifications.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant and conditions 1-4 (permission is non-reciprocal; no same-license, source-disclosure, corresponding-source, linking, or network-use condition is stated)"
+      "locator": "public/data/licenses/BSD-Mark-Modifications.json#text; Celý text bez shodné licence či povinného poskytnutí zdroje.; https://spdx.org/licenses/BSD-Mark-Modifications.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant paragraph (redistribution and use in source and binary forms, with or without modification, are permitted; no purpose, field-of-use, fee, sublicense, or patent grant limitation is stated)"
+      "locator": "public/data/licenses/BSD-Mark-Modifications.json#text; Úvod redistribution/use source and binary with or without modification.; https://spdx.org/licenses/BSD-Mark-Modifications.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text: conditions 1-2 (source redistributions retain, and binary redistributions reproduce, the copyright notice, list of conditions, and disclaimer) and condition 3 (all source modifications must be clearly marked and binaries based on modified source must be marked as modified versions)"
+      "locator": "public/data/licenses/BSD-Mark-Modifications.json#text; Body 1–2 notices dle distribuční formy; bod 3 all source modifications marked a změněné binárky označit v materiálech.; https://spdx.org/licenses/BSD-Mark-Modifications.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "text: conditions 1-2 and 3 (notice-retention/reproduction duties attach to source or binary redistribution; modification marking attaches to source modification and distribution of binaries based on modified source)"
+      "locator": "public/data/licenses/BSD-Mark-Modifications.json#text; Source modification spouští označení i bez formulace distribuce; binární redistribuce vlastní dokumentační označení.; https://spdx.org/licenses/BSD-Mark-Modifications.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text: condition 4 (the name of Geoff Kuenning may not endorse or promote derived products without specific prior written permission); final disclaimer paragraph (express/implied warranty disclaimer and limitation of liability)"
+      "locator": "public/data/licenses/BSD-Mark-Modifications.json#text; Poznámka clause 4 removed a skutečně uvedený bod 4 nelze bez historie sladit; zbývající warranty/liability jsou jasné.; https://spdx.org/licenses/BSD-Mark-Modifications.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "text: complete license text (grant, conditions 1-4, and disclaimer contain no express patent grant, patent condition, patent-claim restriction, or defensive/retaliatory patent-termination clause)"
+      "locator": "public/data/licenses/BSD-Mark-Modifications.json#text; Celý text bez výslovných patentových práv či patentového ukončení.; https://spdx.org/licenses/BSD-Mark-Modifications.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text: conditions 1-2 require retaining/reproducing the copyright notice, list of conditions, and disclaimer for source and binary redistributions; condition 3 additionally requires clearly marking source modifications and modified binaries, creating a material multi-surface notice burden"
+      "locator": "public/data/licenses/BSD-Mark-Modifications.json#text; Zachování notice a označení modifikací ve zdroji nebo binární dokumentaci; žádné reklamy/source offer.; https://spdx.org/licenses/BSD-Mark-Modifications.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "metadata: id=BSD-Mark-Modifications, name=BSD Mark Modifications License, deprecated=false, osi=false, fsf=false; text: broad permissive grant, source/binary notice conditions, explicit modification-marking condition, Geoff Kuenning name/endorsement restriction, and warranty/liability disclaimer are explicit; all eight guide fields are represented without unknown and the modification/marking scope fits the vocabulary"
+      "locator": "public/data/licenses/BSD-Mark-Modifications.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. Licence dovoluje zdrojové i binární užití a distribuci, zachování oznámení a jasné označení změn ve zdrojích i binární dokumentaci. Text současně uvádí odstranění clause 4 a následující bod 4 se zákazem endorsementu; historický význam poznámky není doložen. Blokace: Za bodem 3 stojí clause 4 removed with permission, ale následuje číslovaný bod 4 zakazující propagaci jménem Geoffa Kuenninga. Aktuální SPDX stránka reprodukuje stejnou nejasnost a odkaz na původní archiv označuje nefunkční. Je třeba dohledat odstraněnou klauzuli/souhlas a určit, zda jde o starší číslování; zákaz nelze bez důkazu vymazat ani prohlásit poznámku za bezvýznamnou.; https://spdx.org/licenses/BSD-Mark-Modifications.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

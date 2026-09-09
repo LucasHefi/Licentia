@@ -8,94 +8,102 @@
     "contentHash": "sha256:cfd4c433060380eb88cd7184609ff55135bf3b4d213f3280849608c4e4ea57ce"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "weak-copyleft",
+    "copyleftScope": "library",
     "permissions": [
       "commercial-use",
-      "distribution"
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
+      "include-advertising-acknowledgment",
       "include-copyright",
-      "provide-corresponding-source"
+      "include-license-text",
+      "include-notice",
+      "provide-corresponding-source",
+      "unknown"
     ],
     "triggers": [
-      "unknown"
+      "advertising",
+      "distribution",
+      "modification"
     ],
     "restrictions": [
       "liability",
       "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/TORQUE-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/TORQUE-1.1.json#text; TORQUE v2.5+ License 1.1 z let 2010–2011 se vztahuje i na pozdější verze a výslovně požaduje soulad s OpenPBS 2.3. Úvod dovoluje užití i zdrojovou/binární redistribuci se změnami i bez. Podpora komunity či podpora pro zákazníky Moab jsou kontaktní možnosti, nikoli grant Moab. Zdrojová povinnost zahrnuje TORQUE a jeho změny/doplňky, nikoli veškerý okolní program; změny však mají být redistribuovatelné bez omezení.; https://spdx.org/licenses/TORQUE-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/TORQUE-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/TORQUE-1.1.json#text; Zdrojová povinnost zahrnuje TORQUE a jeho změny/doplňky, nikoli veškerý okolní program; změny však mají být redistribuovatelné bez omezení.; https://spdx.org/licenses/TORQUE-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/TORQUE-1.1.json#text; Úvod dovoluje užití i zdrojovou/binární redistribuci se změnami i bez. Podpora komunity či podpora pro zákazníky Moab jsou kontaktní možnosti, nikoli grant Moab.; https://spdx.org/licenses/TORQUE-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/TORQUE-1.1.json#text; Body 1–2 přenášejí copyright/podmínky/disclaimer a acknowledgment, s chybným odkazem zdrojové věty na §5 místo §4. Bod 3 požaduje údaj o úplném zdroji včetně změn/doplňků, přiložený nebo nejvýše za distribuční náklady+nominální poplatek; změny musí být bez omezení volně redistribuovatelné i poskytovatelem. Bod 4 ukládá dlouhý předepsaný reklamní text.; https://spdx.org/licenses/TORQUE-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/TORQUE-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/TORQUE-1.1.json#text; Body 1–2 přenášejí copyright/podmínky/disclaimer a acknowledgment, s chybným odkazem zdrojové věty na §5 místo §4. Bod 3 požaduje údaj o úplném zdroji včetně změn/doplňků, přiložený nebo nejvýše za distribuční náklady+nominální poplatek; změny musí být bez omezení volně redistribuovatelné i poskytovatelem. Bod 4 ukládá dlouhý předepsaný reklamní text.; https://spdx.org/licenses/TORQUE-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/TORQUE-1.1.json#text; §5 vylučuje záruky/odpovědnost Adaptive, afilací a vlády USA; platí Utah právo. Poznámka 1 začleňuje OpenPBS podmínky, které mají vlastní copyright, reklamní uznání a Virginii právo.; https://spdx.org/licenses/TORQUE-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/TORQUE-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/TORQUE-1.1.json#text; TORQUE i přečtené OpenPBS znění nemají výslovný patentový grant nebo patentové ukončení.; https://spdx.org/licenses/TORQUE-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/TORQUE-1.1.json#text; Body 1–2 přenášejí copyright/podmínky/disclaimer a acknowledgment, s chybným odkazem zdrojové věty na §5 místo §4. Bod 3 požaduje údaj o úplném zdroji včetně změn/doplňků, přiložený nebo nejvýše za distribuční náklady+nominální poplatek; změny musí být bez omezení volně redistribuovatelné i poskytovatelem. Bod 4 ukládá dlouhý předepsaný reklamní text. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/TORQUE-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/TORQUE-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/TORQUE-1.1.json#text; Individuální kontrola celého připnutého textu TORQUE-1.1 dne 2026-09-09. TORQUE v2.5+ License 1.1 z let 2010–2011 se vztahuje i na pozdější verze a výslovně požaduje soulad s OpenPBS 2.3. Bod 3 vyžaduje neomezenou redistribuovatelnost všech změn a poznámka 1 kumuluje OpenPBS s vlastními notices a odlišným právem; před doporučením je třeba modelovat licenční podmínku změn a vyřešit vztah obou povinných znění. Samostatně přečten public/data/licenses/OpenPBS-2.3.json#text: po 31.12.2001 se uplatní jen podmínky 3–6, takže staré registrace/nezisková distribuce se nepřenášejí jako dnešní povinnost; source/reklamní notices zůstávají. Dva právní řády je třeba posoudit v kombinaci.; https://spdx.org/licenses/TORQUE-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

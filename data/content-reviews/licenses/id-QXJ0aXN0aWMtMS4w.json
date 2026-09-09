@@ -1,0 +1,29 @@
+{
+  "id": "Artistic-1.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:7bb45263769b90c101bfbb94b0e8d3acf7a81fb3e5257d6b2ec4a7f3aa919998"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Artistic 1.0 dovoluje kopírování a změny balíčku při zachování copyrightů a označení úprav. Pro změny i binární distribuci nabízí několik alternativ, například zpřístupnění zdrojů, přejmenování s přiložením původních programů nebo zvláštní dohodu. Samotný balíček se nesmí prodávat, ale poplatky za kopírování či podporu a kombinace s komerčním softwarem jsou dovolené. Průvodce ji nezařazuje, protože tyto rozdílné cesty a prodejní omezení zatím neumí přesně rozlišit.",
+  "blockersCs": [
+    "§3 a §4 poskytují odlišné alternativní cesty včetně přejmenování, zdrojů a zvláštní dohody a §5 zakazuje samostatný prodej balíčku; před doporučením je nutný model těchto větví a prodejní podmínky."
+  ],
+  "analysis": {
+    "subjectCs": "Artistic 1.0 definuje Package, Standard Version a Freely Available, které zahrnuje bezplatnost samotného díla a právo další redistribuce.",
+    "grantCs": "§1 dovoluje doslovné zdroje s copyrighty/disclaimery; §2 přijímá public-domain/holder opravy jako standard. §3 dovoluje jiné změny s označením jak/kdy v souboru a jednou ze čtyř dalších cest.",
+    "conditionsCs": "§3 nabízí veřejně dostupné změny/začlenění holderem, interní užití organizace, přejmenované executables s původními a samostatnými manuály, nebo dohodu. §4 binárky nabízí standard+informaci o zdroji, úplný vlastní zdroj, přejmenované i standard executables s rozdíly/zdrojovým odkazem, nebo dohodu. §5 dovoluje rozumný kopírovací poplatek/podporu, nikoli cenu balíčku samotného.",
+    "limitationsCs": "Agregace s komerčním softwarem je dovolena bez vydávání Package za vlastní produkt. §6 výslovně ponechává práva vstupních/výstupních skriptů a knihoven tvůrcům; §7 vlastní přilinkované C/perl subrutiny vyjímá. §8 omezuje endorsement; §9 vylučuje záruky.",
+    "compatibilityCs": "Čtyři větve pro změny a čtyři pro binární šíření se nesmějí sečíst; komerční vstupy/výstupy a vlastní přilinkované subrutiny mají výjimky."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Artistic-1.0.html",
+      "note": "Individuálně přečten celý připnutý text; §3 nabízí veřejně dostupné změny/začlenění holderem, interní užití organizace, přejmenované executables s původními a samostatnými manuály, nebo dohodu. §4 binárky nabízí standard+informaci o zdroji, úplný vlastní zdroj, přejmenované i standard executables s rozdíly/zdrojovým odkazem, nebo dohodu. §5 dovoluje rozumný kopírovací poplatek/podporu, nikoli cenu balíčku samotného. Celá licence §1–9 nemá výslovný patentový grant nebo patentové ukončení."
+    }
+  ]
+}

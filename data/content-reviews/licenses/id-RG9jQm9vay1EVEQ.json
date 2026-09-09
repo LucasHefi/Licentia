@@ -1,0 +1,33 @@
+{
+  "id": "DocBook-DTD",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:cc2ffe006ffde0a17c8bc4d46941f18c49053bc04dc2039d6b38517e8497e22f"
+  },
+  "disposition": "blocked",
+  "summaryCs": "DTD a dokumentaci lze trvale kopírovat, měnit a šířit s oznámením. Změněné Simplified DocBook DTD se označuje jako varianta; výjimkou je přidání a reference obecných entit a další notace.",
+  "blockersCs": [
+    "Text vyžaduje podmíněnou identifikaci varianty s výjimkou entit/notací a odkazuje na údržbovou dokumentaci. Doplnit model těchto identifikátorů a DTD předmětu; neflattenovat výjimku na označení každé změny."
+  ],
+  "analysis": {
+    "subjectCs": "Předmětem je DocBook XML DTD a dokumentace; modifikační věta konkrétně jmenuje Simplified DocBook DTD.",
+    "grantCs": "Permission odstavec dovoluje use/copy/modify/distribute pro libovolný účel trvale bez poplatku. Výslovný patentový grant ani sublicence nejsou uvedeny.",
+    "conditionsCs": "Všechny kopie nesou copyright a odstavec. Modifikované DTD se označí jako varianta, kromě deklarování/referencování dalších sad general entities a přidání notations. Oficiální průvodce https://tdg.docbook.org/tdg/3.1/ch05.html §5.2 vysvětluje změnu veřejných identifikátorů a úzkou entitovou výjimku.",
+    "limitationsCs": "Nositelé nezaručují vhodnost DTD a odmítají výslovné/implicitní záruky. Mailing-list výzva je žádost, nikoli povinná distribuce změn autorům.",
+    "compatibilityCs": "Výjimka entity/notations patří této DTD verzi a nepřenáší se na DocBook-Schema. Není stanovena jiná licence či závěr o kompatibilitě."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/DocBook-DTD.html",
+      "note": "Individuální revize celého připnutého textu; Předmětem je DocBook XML DTD a dokumentace; modifikační věta konkrétně jmenuje Simplified DocBook DTD."
+    },
+    {
+      "url": "https://tdg.docbook.org/tdg/3.1/ch05.html",
+      "note": "§5.2 vysvětluje odlišný veřejný identifikátor úprav DTD a výjimku pro entity/notace; tento primární kontext nemění připnuté znění Simplified DocBook."
+    }
+  ]
+}

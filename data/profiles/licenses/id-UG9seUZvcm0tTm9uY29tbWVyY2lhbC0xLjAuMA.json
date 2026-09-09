@@ -8,94 +8,100 @@
     "contentHash": "sha256:7f6218353be93bc6ce02ba90686e1815768efe2d48ded54b563033c885eb234d"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "none",
     "permissions": [
       "distribution",
       "modifications",
       "patent-grant",
-      "sublicensing"
+      "private-use"
     ],
     "obligations": [
-      "unknown"
+      "include-license-text",
+      "include-notice"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "patent-claim",
+      "use"
     ],
     "restrictions": [
-      "liability"
+      "liability",
+      "patent-claim",
+      "unknown",
+      "warranty"
     ],
-    "patentPosition": "express-grant",
-    "noticeBurden": "unknown"
+    "patentPosition": "retaliatory-termination",
+    "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/PolyForm-Noncommercial-1.0.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/PolyForm-Noncommercial-1.0.0.json#text; PolyForm Noncommercial 1.0.0 stanoví nekomerční, osobní a institucionální povolené účely. Copyright/Distribution/Changes licence dovolují příslušná práva pro permitted purpose; Patent License přidává současné/budoucí licencovatelné patentové nároky porušené užitím. Povinné notices nejsou copyleft nebo source duty; omezení stojí na účelu a kategorii uživatele.; https://spdx.org/licenses/PolyForm-Noncommercial-1.0.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/PolyForm-Noncommercial-1.0.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/PolyForm-Noncommercial-1.0.0.json#text; Povinné notices nejsou copyleft nebo source duty; omezení stojí na účelu a kategorii uživatele.; https://spdx.org/licenses/PolyForm-Noncommercial-1.0.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/PolyForm-Noncommercial-1.0.0.json#text; Copyright/Distribution/Changes licence dovolují příslušná práva pro permitted purpose; Patent License přidává současné/budoucí licencovatelné patentové nároky porušené užitím.; https://spdx.org/licenses/PolyForm-Noncommercial-1.0.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/PolyForm-Noncommercial-1.0.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/PolyForm-Noncommercial-1.0.0.json#text; Notices přenáší text či URL a všechny dodané Required Notice řádky. Dovolen je každý nekomerční účel, vyjmenované osobní činnosti bez očekávaného komerčního uplatnění a užití vyjmenovanými charitami, školami, veřejným výzkumem, zdravotními/bezpečnostními/environmentálními či vládními organizacemi bez ohledu na financování.; https://spdx.org/licenses/PolyForm-Noncommercial-1.0.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/PolyForm-Noncommercial-1.0.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/PolyForm-Noncommercial-1.0.0.json#text; Notices přenáší text či URL a všechny dodané Required Notice řádky. Dovolen je každý nekomerční účel, vyjmenované osobní činnosti bez očekávaného komerčního uplatnění a užití vyjmenovanými charitami, školami, veřejným výzkumem, zdravotními/bezpečnostními/environmentálními či vládními organizacemi bez ohledu na financování.; https://spdx.org/licenses/PolyForm-Noncommercial-1.0.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/PolyForm-Noncommercial-1.0.0.json#text; Sublicence/převod nejsou dovoleny. Vlastní písemný patentový nárok okamžitě ruší grant, firemní nárok pro práci firmy; první písemné upozornění na porušení dává 32 dní k souladu a praktické nápravě, jinak končí licence. AS IS vylučuje záruky/odpovědnost.; https://spdx.org/licenses/PolyForm-Noncommercial-1.0.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/PolyForm-Noncommercial-1.0.0.json#text; Patentový grant je výslovný i pro budoucí licencovatelné nároky a obsahuje okamžité ukončení za písemný patentový nárok.; https://spdx.org/licenses/PolyForm-Noncommercial-1.0.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/PolyForm-Noncommercial-1.0.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/PolyForm-Noncommercial-1.0.0.json#text; Notices přenáší text či URL a všechny dodané Required Notice řádky. Dovolen je každý nekomerční účel, vyjmenované osobní činnosti bez očekávaného komerčního uplatnění a užití vyjmenovanými charitami, školami, veřejným výzkumem, zdravotními/bezpečnostními/environmentálními či vládními organizacemi bez ohledu na financování. Rozsah notifikační zátěže: standard.; https://spdx.org/licenses/PolyForm-Noncommercial-1.0.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/PolyForm-Noncommercial-1.0.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/PolyForm-Noncommercial-1.0.0.json#text; Individuální kontrola celého připnutého textu PolyForm-Noncommercial-1.0.0 dne 2026-09-09. PolyForm Noncommercial 1.0.0 stanoví nekomerční, osobní a institucionální povolené účely. Povolené účely kombinují nekomerční omezení, osobní užití bez očekávané komerční aplikace a institucionální výjimky nezávislé na financování; před doporučením je třeba model těchto kategorií, ne pouhé commercial-use false. Fair Use je zachováno; definice company zahrnuje kontrolované a společně řízené organizace. Institucionální dovolení není obecnou komerční licencí pro všechny.; https://spdx.org/licenses/PolyForm-Noncommercial-1.0.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

@@ -1,0 +1,27 @@
+{
+  "id": "Info-ZIP",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:3acb2fdd9270ff175698a9d1d607e51656830113b8828840d48d42996c8a1700"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Info-ZIP dovoluje komerční užití a úpravy; distribuce zachovává copyright, definici autorů, disclaimer a podmínky. Binární notice lze zpřístupnit licenční volbou příkazu se startup odkazem; standardní UnZipSFX v samorozbalovacím archivu má výjimku při zachování banneru.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Info-ZIP je pro tuto licenci výslovně definován seznamem osob; grant pokrývá software, executables a knihovny i vymezený SFX scénář.",
+    "grantCs": "Permission dovoluje libovolný účel včetně komerčních aplikací, úpravy a volnou redistribuci. Výslovný patentový grant ani samostatná sublicence nejsou uvedeny.",
+    "conditionsCs": "Zdroje i části zachovají copyright, definici Info-ZIP, disclaimer a podmínky. Binárky je mají v materiálech; další dokumentace není nutná při CLI license option a odkazu ve startup banneru. Standardní UnZipSFX/SFXWiz v SFX archivu je výjimka bez licence, zachová-li se normální neodstraněný/nevypnutý SFX banner. Upraveniny včetně portů/GUI/knihoven musí být jasně označeny.",
+    "limitationsCs": "Upraveniny nesmějí předstírat původní zdroje/binárky/Info-ZIP vydání, používat varianty vyjmenovaných názvů bez svolení ani zavádějící podpůrné emaily/URL. Info-ZIP si vyhrazuje vlastní názvy vydání. Disclaimer odmítá záruky i škody z užití/nemožnosti užití.",
+    "compatibilityCs": "Materiály versus CLI jsou alternativy zpřístupnění notice; SFX výjimka se vztahuje pouze na standardní binárku v uvedeném archivu s bannerem, nikoli libovolné modifikace. Žádné same-license či konkrétní alternativní licence nejsou určeny."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Info-ZIP.html",
+      "note": "Individuální revize celého připnutého textu; Info-ZIP je pro tuto licenci výslovně definován seznamem osob; grant pokrývá software, executables a knihovny i vymezený SFX scénář."
+    }
+  ]
+}

@@ -8,95 +8,105 @@
     "contentHash": "sha256:c8a7142afef139251fca333c3ad39078cce3d6140535074f5546311a21802a21"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
+      "conditional-relicensing",
       "distribution",
-      "modifications"
+      "modifications",
+      "patent-grant",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
       "include-license-text",
-      "mark-modifications"
-    ],
-    "triggers": [
+      "include-notice",
+      "mark-modifications",
       "unknown"
     ],
-    "restrictions": [
-      "liability",
-      "trademark"
+    "triggers": [
+      "distribution",
+      "modification",
+      "use"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "restrictions": [
+      "additional-terms",
+      "liability",
+      "unknown",
+      "warranty"
+    ],
+    "patentPosition": "express-grant",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Hippocratic-2.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Hippocratic-2.1.json#text; Purpose, Permission a Compliance §§1–3: široký grant omezený lidskoprávními podmínkami a arbitráží je nestandardní, nikoli neomezený permisivní grant; https://spdx.org/licenses/Hippocratic-2.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Hippocratic-2.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Hippocratic-2.1.json#text; Notice dovoluje vlastní změněnou část šířit za jiných podmínek; stejné podmínky vyžaduje u nezměněné části, nikoli obecně u odvozeného celku; povinnost zdrojů chybí; https://spdx.org/licenses/Hippocratic-2.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Hippocratic-2.1.json#text; Permission poskytuje všechna jednání spadající do poskytovatelových autorských a současných/budoucích licencovatelných patentových práv; Notice výslovně omezuje odlišné podmínky na vlastní změněnou část; https://spdx.org/licenses/Hippocratic-2.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Hippocratic-2.1.json#text; Notice: licence a existující notices každému příjemci části, výrazné změnové notices; Compliance §1(b) arbitráž a veřejné podklady, §3 lidskoprávní odškodnění nemají odpovídající enum; https://spdx.org/licenses/Hippocratic-2.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Hippocratic-2.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Hippocratic-2.1.json#text; Notice se spouští předáním části a modifikací; Compliance §§1(a),2,3 podmiňují samotné užití; nejde o síťové zveřejňování zdrojů; https://spdx.org/licenses/Hippocratic-2.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Hippocratic-2.1.json#text; Compliance: závazné lidskoprávní omezení účelu a procesní podmínky nelze popsat dostupnými restrictions; nezměněná část musí zachovat licenci, Disclaimer výslovně vylučuje záruky a odpovědnost; https://spdx.org/licenses/Hippocratic-2.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Hippocratic-2.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Hippocratic-2.1.json#text; Permission výslovně zahrnuje licencovatelné patentové nároky poskytovatele nyní i v budoucnu; žádná zvláštní patentová odveta uvedena není; https://spdx.org/licenses/Hippocratic-2.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Hippocratic-2.1.json#text; Notice vyžaduje licenci a více typů existujících notices u každé části a výrazné označení změn; nadto veřejnost arbitrážních podkladů není běžná atribuce; https://spdx.org/licenses/Hippocratic-2.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Hippocratic-2.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Hippocratic-2.1.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. Hippocratic 2.1 poskytuje široká autorská i patentová oprávnění, ale podmiňuje každé použití lidskoprávními zásadami OSN a definovanými zákony. Příjemcům každé části se předává licence a notices; změny musí být výrazně označeny. Vlastní změněnou část lze vydat za jiných podmínek, nezměněná část zůstává pod touto licencí. Povinnosti zahrnují zvláštní arbitráž s veřejnými podklady a odškodnění za použití porušující lidská práva; software je bez záruk s výlukou odpovědnosti v mezích zákona. Blokace: Oddíl Compliance §§1–2 omezuje účel použití podle Human Rights Principles, odkazovaných dokumentů OSN a nejvíce ochranného použitelného práva. Model nemá takové účelové omezení ani rozhodování o konfliktu těchto norem; před zpřístupněním v průvodci je nutné samostatně modelovat tuto podmínku a přesně identifikovat začleněné normy. §1(b) ukládá arbitráž podle Hague Rules, zveřejnění podkladů s konkrétními výjimkami a zánik licence při odmítnutí účasti; §3 ukládá odškodnění za lidskoprávní porušení. To nejsou reklamní notices ani odškodnění za přidanou záruku či komerční distribuci. Je nutný odpovídající model těchto povinností a procesních alternativ.; https://spdx.org/licenses/Hippocratic-2.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

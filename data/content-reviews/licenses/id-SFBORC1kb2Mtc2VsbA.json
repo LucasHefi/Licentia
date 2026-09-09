@@ -1,0 +1,22 @@
+{
+  "id": "HPND-doc-sell",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.3",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:c69be188b08cf8dd38ff552c3c300a065ed64018c1c7e314b92dbafb722d6ace"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Toto svolení se vztahuje na dokumentaci. Zachovejte copyright a licenční oznámení ve všech kopiích; text vylučuje záruky. Průvodce jej nenabízí jako licenci samotného softwaru.",
+  "blockersCs": [
+    "Nezařazena do softwarového průvodce: grant výslovně pokrývá dokumentaci. Metadata doplněna; doplnit typ licencovaného díla a samostatnou větev pro dokumenty. Obchodní oprávnění se týkají dokumentace, nikoli programu."
+  ],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/HPND-doc-sell.html",
+      "note": "Dřívější individuální revize 2026-09-09.3; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

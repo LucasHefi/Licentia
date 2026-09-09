@@ -2,7 +2,7 @@
 
 import { useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import packageJson from "../package.json";
-import { familyOf, ruleLabels } from "../lib/recommend";
+import { familyOf, guideNoteFor, hasDisplayProfile, obligationLabel, profileForDisplay, ruleLabels } from "../lib/recommend";
 import { candidateStatusLabels, evidenceLabels, guideMessage, outcomeLabels } from "../lib/guide-copy";
 import { buildGuideModel, GUIDE_MODEL_VERSION, recommendFromCatalog, runtimeSourceLockResolved, type GuideAnswers } from "../lib/recommendation-contract";
 import { safeStoredWorkspaceState } from "../lib/workspace-state";
@@ -124,6 +124,8 @@ const familyLabels: Record<string, string> = {
   "Silný copyleft": "Silný copyleft",
   "Knihovní copyleft": "Knihovní copyleft",
   "Souborový copyleft": "Souborový copyleft",
+  "Slabý copyleft": "Slabý copyleft",
+  "Nestandardní": "Nestandardní",
   "Neklasifikováno": "Neklasifikováno",
 };
 
@@ -176,7 +178,7 @@ function RuleList({ title, values, tone }: { title: string; values: string[]; to
       <h4>{title}</h4>
       {values.length ? (
         <ul>{values.map((value) => <li key={value}>{ruleLabels[value] ?? value}</li>)}</ul>
-      ) : <p>Bez strukturovaných metadat.</p>}
+      ) : <p>Profil v této kategorii neuvádí žádné položky.</p>}
     </div>
   );
 }
@@ -385,7 +387,7 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
     if (statusFilter === "deprecated" && !license.deprecated) return false;
     if (approvalFilter === "osi" && !license.osi) return false;
     if (approvalFilter === "fsf" && !license.fsf) return false;
-    if (approvalFilter === "profiled" && !license.profiled) return false;
+    if (approvalFilter === "profiled" && !hasDisplayProfile(license)) return false;
     if (!deferredQuery) return true;
     const metadataMatch = includesLoose(`${license.id} ${license.name}`, deferredQuery);
     const textMatch = fullTextMatches?.has(`${license.type}:${license.id}`) ?? false;
@@ -417,7 +419,7 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
       current: licenses.filter((item) => !item.deprecated).length,
       osi: licenses.filter((item) => item.osi).length,
       fsf: licenses.filter((item) => item.fsf).length,
-      profiled: licenses.filter((item) => item.profiled).length,
+      profiled: licenses.filter(hasDisplayProfile).length,
       recommendable: reviewedRecommendationCount,
       families: [...families.entries()].sort(([, left], [, right]) => right - left),
     };
@@ -650,7 +652,20 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
                 <div className="recommend-list">
                  {recommendations.candidates.map((item, index) => (
                      <article key={item.id}>
-                       <span className="rank">0{index + 1}</span><div className="recommend-copy"><code>{item.id}</code><h3>{catalog.find((license) => license.id === item.id)?.name ?? item.id}</h3><p>{candidateStatusLabels[item.status]} ({item.status}) · {evidenceLabels[item.evidenceConfidence]} ({item.evidenceConfidence}){item.reasons.length > 0 && <> · {item.reasons.map(guideMessage).join(" · ")}</>}</p>{(item.conflicts.length > 0 || item.fit === 0) && <div className="recommend-deficits"><strong>Nedostatky podle zadání</strong><span>{item.conflicts.length > 0 ? item.conflicts.map(guideMessage).join(" · ") : "Žádný konkrétní požadavek nebyl vyhodnocen; skóre je 0 %."}</span></div>}<small>{[...item.unknowns, ...item.obligations, ...item.evidence.map((evidence) => `${evidence.sourceId}#${evidence.locator}`)].join(" · ")}</small></div>
+                       <span className="rank">0{index + 1}</span>
+                       <div className="recommend-copy">
+                         <code>{item.id}</code><h3>{catalog.find((license) => license.id === item.id)?.name ?? item.id}</h3>
+                         <p>{candidateStatusLabels[item.status]} · {evidenceLabels[item.evidenceConfidence]} evidence</p>
+                         {guideNoteFor(item.id) && <p className="recommend-note">{guideNoteFor(item.id)}</p>}
+                         {(item.conflicts.length > 0 || item.fit === 0) && <div className="recommend-deficits"><strong>Nedostatky podle zadání</strong><span>{item.conflicts.length > 0 ? item.conflicts.map(guideMessage).join(" · ") : "Žádný konkrétní požadavek nebyl vyhodnocen; skóre je 0 %."}</span></div>}
+                         <small>{item.obligations.length ? item.obligations.map((value) => obligationLabel(value, item.profile.semantic.copyleftScope)).join(" · ") : "Profil neuvádí povinnost zachovat oznámení ani sdílet zdroje."}</small>
+                         {item.unknowns.length > 0 && <p>Neznámé údaje: {item.unknowns.join(" · ")}</p>}
+                         <details className="recommend-evidence">
+                           <summary>Zdůvodnění a podklady</summary>
+                           {item.reasons.length > 0 && <ul>{item.reasons.map((reason) => <li key={reason}>{guideMessage(reason)}</li>)}</ul>}
+                           <ul>{item.evidence.map((evidence, evidenceIndex) => <li key={evidenceIndex}><code>{evidence.field} · {evidence.sourceId}</code>: {evidence.locator}</li>)}</ul>
+                         </details>
+                       </div>
                        <div className="recommend-score"><strong>{item.fit}%</strong><span>Skóre shody</span></div>
                        <div className="recommend-actions"><button onClick={() => { const license = catalog.find((entry) => entry.id === item.id); if (license) openDetail(license); }}>Otevřít detail</button><button onClick={() => toggleCompare(item.id)}>{compareIds.includes(item.id) ? "✓ V porovnání" : "+ Porovnat"}</button></div>
                      </article>
@@ -669,7 +684,7 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
 
       {view === "compare" && (
         <section className="compare-view">
-          <div className="page-heading"><span className="section-kicker">Rozhodovací matice</span><h1>Porovnání licencí</h1><p>Vedle sebe můžete mít nejvýše čtyři licence. Matice používá strukturovaná metadata Choose a License.</p></div>
+          <div className="page-heading"><span className="section-kicker">Rozhodovací matice</span><h1>Porovnání licencí</h1><p>Vedle sebe můžete mít nejvýše čtyři licence. Matice používá ověřené profily licencí; u ostatních položek dostupné souhrny Choose a License.</p></div>
           {compareIds.length === 0 ? <div className="empty-state large"><strong>Zatím tu nic není.</strong><span>V katalogu nebo průvodci přidejte licence tlačítkem „Porovnat“.</span><button onClick={() => navigate("catalog")}>Otevřít katalog</button></div> : (
             <div className="comparison-wrap">
               <div className="comparison-header comparison-row"><span>Licence</span>{compareIds.map((id) => { const item = catalog.find((license) => license.id === id); return <div key={id}><code>{id}</code><strong>{item?.name}</strong><button onClick={() => toggleCompare(id)}>Odebrat ×</button></div>; })}</div>
@@ -678,7 +693,7 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
                 ["OSI schválení", (license: LicenseSummary) => license.osi ? "Ano" : "Ne / neuvedeno"],
                 ["FSF Free/Libre", (license: LicenseSummary) => license.fsf ? "Ano" : "Ne / neuvedeno"],
               ].map(([label, getter]) => <div className="comparison-row" key={label as string}><span>{label as string}</span>{compareIds.map((id) => { const item = catalog.find((license) => license.id === id)!; return <div key={id}>{(getter as (license: LicenseSummary) => string)(item)}</div>; })}</div>)}
-              {(["permissions", "conditions", "limitations"] as const).map((key) => <div className="comparison-row tall" key={key}><span>{{ permissions: "Oprávnění", conditions: "Podmínky", limitations: "Omezení" }[key]}</span>{compareDetails.map((item) => <div key={item.id}>{item.profile?.[key]?.length ? <ul>{item.profile[key].map((rule) => <li key={rule}>{ruleLabels[rule] ?? rule}</li>)}</ul> : <em>Bez strukturovaného profilu</em>}</div>)}</div>)}
+              {(["permissions", "conditions", "limitations"] as const).map((key) => <div className="comparison-row tall" key={key}><span>{{ permissions: "Oprávnění", conditions: "Podmínky", limitations: "Omezení" }[key]}</span>{compareDetails.map((item) => <div key={item.id}>{profileForDisplay(item)?.[key]?.length ? <ul>{profileForDisplay(item)![key].map((rule) => <li key={rule}>{ruleLabels[rule] ?? rule}</li>)}</ul> : <em>{profileForDisplay(item) ? "Profil neuvádí žádné položky" : "Bez strukturovaného profilu"}</em>}</div>)}</div>)}
             </div>
           )}
         </section>
@@ -788,7 +803,7 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
             <header><div><code>{detail.id}</code><h2 id="detail-title">{detail.name}</h2></div><button className="close-button" onClick={() => setDetail(null)} aria-label="Zavřít">×</button></header>
             <nav className="detail-tabs"><button className={detailTab === "overview" ? "active" : ""} onClick={() => setDetailTab("overview")}>Přehled</button><button className={detailTab === "text" ? "active" : ""} onClick={() => setDetailTab("text")}>Úplné znění</button><button className={detailTab === "template" ? "active" : ""} onClick={() => setDetailTab("template")}>Šablona variant</button></nav>
             <div className="detail-content">
-              {detailTab === "overview" && <div className="overview-content"><div className="detail-summary"><span className={detail.deprecated ? "status deprecated" : "status"}>{detail.deprecated ? "Historický identifikátor" : "Aktuální SPDX záznam"}</span><p>{detail.profile?.description ?? detail.comments ?? "SPDX poskytuje kanonické znění, ale pro tuto položku není k dispozici zjednodušený profil podmínek."}</p><div className="detail-meta"><span><small>Typ</small>{detail.type === "license" ? "Licence" : "Výjimka"}</span><span><small>OSI</small>{detail.osi ? "Schválená" : "Ne / neuvedeno"}</span><span><small>FSF</small>{detail.fsf ? "Free/Libre" : "Ne / neuvedeno"}</span></div></div>{detail.profile ? <div className="rules-grid"><RuleList title="Oprávnění" values={detail.profile.permissions} tone="allow" /><RuleList title="Podmínky" values={detail.profile.conditions} tone="condition" /><RuleList title="Omezení" values={detail.profile.limitations} tone="limit" /></div> : <div className="unprofiled-note">Podrobnou právní klasifikaci nelze bezpečně automaticky odvodit pouze z textu. Prostudujte úplné znění.</div>}{detail.seeAlso.some((url) => safeExternalUrl(url)) && <div className="source-links"><h3>Další zdroje</h3>{detail.seeAlso.slice(0, 5).flatMap((url) => { const safeUrl = safeExternalUrl(url); return safeUrl ? [<a href={safeUrl} target="_blank" rel="noreferrer" key={safeUrl}>{safeUrl} ↗</a>] : []; })}</div>}</div>}
+              {detailTab === "overview" && <div className="overview-content"><div className="detail-summary"><span className={detail.deprecated ? "status deprecated" : "status"}>{detail.deprecated ? "Historický identifikátor" : "Aktuální SPDX záznam"}</span><p>{profileForDisplay(detail)?.description ?? detail.comments ?? "SPDX poskytuje kanonické znění, ale pro tuto položku není k dispozici zjednodušený profil podmínek."}</p><div className="detail-meta"><span><small>Typ</small>{detail.type === "license" ? "Licence" : "Výjimka"}</span><span><small>OSI</small>{detail.osi ? "Schválená" : "Ne / neuvedeno"}</span><span><small>FSF</small>{detail.fsf ? "Free/Libre" : "Ne / neuvedeno"}</span></div></div>{profileForDisplay(detail) ? <div className="rules-grid"><RuleList title="Oprávnění" values={profileForDisplay(detail)!.permissions} tone="allow" /><RuleList title="Podmínky" values={profileForDisplay(detail)!.conditions} tone="condition" /><RuleList title="Omezení" values={profileForDisplay(detail)!.limitations} tone="limit" /></div> : <div className="unprofiled-note">Podrobnou právní klasifikaci nelze bezpečně automaticky odvodit pouze z textu. Prostudujte úplné znění.</div>}{detail.seeAlso.some((url) => safeExternalUrl(url)) && <div className="source-links"><h3>Další zdroje</h3>{detail.seeAlso.slice(0, 5).flatMap((url) => { const safeUrl = safeExternalUrl(url); return safeUrl ? [<a href={safeUrl} target="_blank" rel="noreferrer" key={safeUrl}>{safeUrl} ↗</a>] : []; })}</div>}</div>}
               {detailTab === "text" && <div className="text-view"><div className="text-actions"><span>Doslovné znění ze SPDX 3.28.0</span><div><button onClick={copyText}>{copied ? "Zkopírováno ✓" : "Kopírovat"}</button><button onClick={downloadText}>Stáhnout .txt</button></div></div><pre>{detail.text}</pre></div>}
               {detailTab === "template" && <div className="text-view"><p className="template-note">SPDX šablona popisuje volitelné a proměnné části pro automatické rozpoznávání textových variant.</p><pre>{detail.template ?? "Pro tuto položku není samostatná šablona k dispozici."}</pre></div>}
             </div>

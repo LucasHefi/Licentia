@@ -1,0 +1,22 @@
+{
+  "id": "OGC-1.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.7",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:aa89320424efa670240c438dfbc0adf8ae31cac8da5e86e94a72d48773dce2da"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Text výslovně dovoluje užití, kopírování a úpravy softwaru i dokumentace. Požaduje celé oznámení na místě dostupném uživatelům, existující výhrady práv a označení změn včetně data. Odkazy na původ kódu doporučuje. O redistribuci mluví v podmínkách, nikoli výslovně v grantu; rozsah tohoto oprávnění zůstává k posouzení. Propagace jmény a známkami vyžaduje písemný souhlas.",
+  "blockersCs": [
+    "Posoudit oprávnění k redistribuci, které je předpokládáno oznamovacími podmínkami, ale chybí ve výslovném grantu use/copy/modify. Doložit kontext OGC a náhradní oznámení při absenci stávajících IP notices; povinná data změn odlišit od doporučených URI. Nepřevzít automaticky širší grant ECL 1.0."
+  ],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/OGC-1.0.html",
+      "note": "Dřívější individuální revize 2026-09-09.7; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

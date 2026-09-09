@@ -1,0 +1,27 @@
+{
+  "id": "LiLiQ-P-1.1",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:36deee51e08747ebb3c4ece512a69fde04300a65e4ed9fe9ac3b08210c14a569"
+  },
+  "disposition": "eligible",
+  "summaryCs": "LiLiQ-P 1.1 ukládá licencorovi dodat upravitelný zdroj nebo přiměřeně platnou nabídku za náklady dodání. Příjemci zachovají licenci a relevantní oznámení, uvedou změny; podlicence je možná jen pod jinou svobodnou licencí schválenou FSF či OSI. Deriváty nemusí být všeobecně zveřejněny.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Software včetně dokumentace; modified software zahrnuje změněné zdrojové soubory i nové s podstatnými částmi. Zařazený přispěvatel je licencorem svého příspěvku.",
+    "grantCs": "§3 neexkluzivní royalty-free bez časových/územních mezí: reprodukce, veřejné provedení, publikace a sublicence pod jinou free FSF/OSI-approved/certified licencí;§4 distribuce i modifikací/derivátů. Patentový grant chybí.",
+    "conditionsCs": "§3 source dodává concédant v upravitelné formě nebo nabídka platná rozumnou dobu bez další ceny mimo rozumné náklady doručení. §4 kopie licence, oznámení změn (preferovaně ve vhodných souborech), neměnit/nesmazat copyright/trademark/warranty/attribution leda neaplikovatelné. §5 příspěvky pod touto licencí absent separate agreement.",
+    "limitationsCs": "§6 známky pouze k určení původu;§7 bez záruk není-li uvedeno jinak, příjemce může vlastní podporu/záruky bez zavázání licencora;§8 rizika/škody nese příjemce. §9 autozánik, při prvním porušení do30 dnů od zjištění oprava obnoví grant, další porušení vyžaduje souhlas.",
+    "compatibilityCs": "§10 konkrétní verze váže, volba pozdější jen pokud ji licencor výslovně nabízí. §11 právo/soudy Quebec jen pro určené quebecké veřejné licencory; změněný dokument licence musí jiný název a odstranit instituční odkazy kromě původu. Schválení cizí licence není důkaz kompatibility konkrétní kombinace."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/LiLiQ-P-1.1.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; §3–4 široký grant s licencor source promise a dovolenými svobodnými podlicencemi,bez univerzální same-license reciprocity."
+    }
+  ]
+}

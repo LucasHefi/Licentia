@@ -1,0 +1,62 @@
+# NPL-1.0 — obsahová revize
+
+Netscape Public License v1.0
+
+Revize: **2026-09-10** · pravidlo **2026-09-09.10**.
+
+Výsledek: **zpracována, nezařazena do průvodce**.
+
+NPL 1.0 má souborové zdrojové povinnosti, LEGAL oznámení a společné rozdělení škod. Dodatek výslovně privileguje Netscape pro cizí začleněný kód a přelicencování vlastních branded produktů i převzatých změn; původní omezení arbitráže rozšiřuje na všechny spory.
+
+## Předmět a rozsah
+
+§§1,5 Covered Code označený originál/změny/části, změna souboru nebo nový soubor s původním kódem, Contributor Version s předchozími změnami. ExhibitA konkrétně Mozilla Communicator client vydaný31.3.1998/Netscape1998. DodatekI platí pro tento klient i všechen Covered Code; II Branded Code určují nelicencované Netscape značky. Zdroj preferovaná forma včetně modulů/interfaces/build/install nebo diff k dostupné známé bázi, komprese s široce dostupným bezplatným dekodérem.
+
+## Udělená práva
+
+§2 světové bezroyalty nevýhradní copyright granty use/reproduce/modify/display/perform/sublicense/distribute originálu i Contributor změn samostatně/vkombinaci/Larger Work. Výslovné patenty Initial Developer nutné k originálu a Contributor k jeho Contributor Version pro make/have-made/use/sell, nepokrývají rozsáhlejší další změny/kombinace. Patentová odveta zde není. §3.6 objekt lze vlastní licencí bez omezení zdrojových práv, §6 následná Netscape verze volitelná. DodatekV vyhrazuje zvláštní relicensing Netscape, nikoli všem příjemcům.
+
+## Podmínky a spouštěče
+
+§3.1 vlastní změny i grant2.2 pod NPL, distribuované zdroje jen NPL/následná a text licence bez omezení. §3.2 zdroje změn příjemcům Executable na stejném médiu nebo uznaným elektronickým mechanismem po nejméně12měsíců od prvního zpřístupnění NEBO6měsíců po následné verzi změny příjemcům, i za cizího hostitele odpovídá distributor. §3.3 soubor změn+dat a prominentní původ+Initial Developer ve zdroji a relevantních původových object/docs notices. §3.4 LEGAL popis známých IP nároků/kontaktů a vlastních nutných API patentů; nová znalost vyžaduje aktualizovat další kopie A přiměřeně aktivně vyrozumět dřívější příjemce. §3.5 ExhibitA každý zdroj nebo rozumné sousední místo, licence v práva vysvětlujících docs; vlastní extra závazky jasně oddělit a odškodnit poskytovatele. §3.6 executable notice zdroj/how/where v práva popisujících notices/docs/collateral, totéž indemnity při vlastních object podmínkách. §4 právní nemožnost maximální plnění a přesný LEGAL popis s distribucemi.
+
+## Omezení, výjimky a ukončení
+
+§7 as-is bez záruk, uživatel opravy platí;§9 škodové výluky se zákonnou výjimkou smrti/úrazu z nedbalosti. §8 automatický konec30dní od znalosti bez nápravy, řádné sublicence trvají. §12 odpovědnost za škody podle kopií/příjmů/jiných faktorů a aktivní spravedlivé rozdělení s dotčenými, s výjimkou cizího porušení3.4. DodatekIII žádné Netscape/logo značky;IV Netscape může smluvně vázaný cizí kód znovu začlenit bez jeho zdrojů i kdyby šlo o změnu. V.2 jiné produkty vydané do2let od vydání originálu lze jinými podmínkami;V.3 Branded Code včetně začleněných změn může Netscape přelicencovat, bez stejného dvouletého omezení.
+
+## Verze a kombinování
+
+§3.7 ostatní kód Larger Work pod vlastní licencí při plnění Covered Code. §6.3 upravený formulář jen pro nový neCovered Code, bez Mozilla/MOZILLAPL/MOZPL/Netscape/NPL a záměnných frází; nejde o zákaz pojmenování programu touto klauzulí. §11 California, arbitráž JAMS/EndDispute SantaClara, NorthernDistrict soudy, loser costs/fees, bez CISG. DodatekVI výslovně rozšiřuje§11a–c na všechny spory přes původní omezení US účasti a IP výjimky. ExhibitA poznámka ukládá pro změny použít tento text i kdyby původní zdrojové headers mírně lišily, známé pravidlo priority není samo neznámý konflikt.
+
+## Překážky a navazující práce
+
+- § 3.4 vyžaduje aktivní pozdější upozornění starých příjemců na IP nárok a § 12 spolupráci na rozdělení škod. Dodatek IV–V navíc dovoluje výhradně Netscape neveřejný reintegrovaný smluvní kód a odlišné přelicencování branded změn/jiných produktů. Doplnit role, časové alternativy a tyto aktivní povinnosti; obecný file/same-license profil by asymetrii a kroky skryl.
+
+## Metadata a jejich doložení
+
+| Pole | Hodnota | Doložení znění |
+|---|---|---|
+| family | "weak-copyleft" | public/data/licenses/NPL-1.0.json#text; §1.9 změněný soubor nebo nový s jakoukoli částí Covered Code,§3.7 oddělené jiné části Larger Work mimo; weak file copyleft. DodatekIV–V asymetricky vyjímá konkrétní Netscape činnosti, tuto hranici nelze vydávat za shodnou pro každého poskytovatele. |
+| copyleftScope | "file" | public/data/licenses/NPL-1.0.json#text; §1.9 změněný soubor nebo nový s jakoukoli částí Covered Code,§3.7 oddělené jiné části Larger Work mimo; weak file copyleft. DodatekIV–V asymetricky vyjímá konkrétní Netscape činnosti, tuto hranici nelze vydávat za shodnou pro každého poskytovatele. |
+| permissions | ["commercial-use","conditional-relicensing","distribution","modifications","patent-grant","private-use","sublicensing"] | public/data/licenses/NPL-1.0.json#text; §2 světové bezroyalty nevýhradní copyright granty use/reproduce/modify/display/perform/sublicense/distribute originálu i Contributor změn samostatně/vkombinaci/Larger Work. Výslovné patenty Initial Developer nutné k originálu a Contributor k jeho Contributor Version pro make/have-made/use/sell, nepokrývají rozsáhlejší další změny/kombinace. Patentová odveta zde není. §3.6 objekt lze vlastní licencí bez omezení zdrojových práv, §6 následná Netscape verze volitelná. DodatekV vyhrazuje zvláštní relicensing Netscape, nikoli všem příjemcům. |
+| obligations | ["defend-added-warranty","disclose-source","include-copyright","include-license-text","include-notice","mark-modifications","same-license","unknown"] | public/data/licenses/NPL-1.0.json#text; §3.1 vlastní změny i grant2.2 pod NPL, distribuované zdroje jen NPL/následná a text licence bez omezení. §3.2 zdroje změn příjemcům Executable na stejném médiu nebo uznaným elektronickým mechanismem po nejméně12měsíců od prvního zpřístupnění NEBO6měsíců po následné verzi změny příjemcům, i za cizího hostitele odpovídá distributor. §3.3 soubor změn+dat a prominentní původ+Initial Developer ve zdroji a relevantních původových object/docs notices. §3.4 LEGAL popis známých IP nároků/kontaktů a vlastních nutných API patentů; nová znalost vyžaduje aktualizovat další kopie A přiměřeně aktivně vyrozumět dřívější příjemce. §3.5 ExhibitA každý zdroj nebo rozumné sousední místo, licence v práva vysvětlujících docs; vlastní extra závazky jasně oddělit a odškodnit poskytovatele. §3.6 executable notice zdroj/how/where v práva popisujících notices/docs/collateral, totéž indemnity při vlastních object podmínkách. §4 právní nemožnost maximální plnění a přesný LEGAL popis s distribucemi. |
+| triggers | ["combination","distribution","modification","use"] | public/data/licenses/NPL-1.0.json#text; §3.1 vlastní změny i grant2.2 pod NPL, distribuované zdroje jen NPL/následná a text licence bez omezení. §3.2 zdroje změn příjemcům Executable na stejném médiu nebo uznaným elektronickým mechanismem po nejméně12měsíců od prvního zpřístupnění NEBO6měsíců po následné verzi změny příjemcům, i za cizího hostitele odpovídá distributor. §3.3 soubor změn+dat a prominentní původ+Initial Developer ve zdroji a relevantních původových object/docs notices. §3.4 LEGAL popis známých IP nároků/kontaktů a vlastních nutných API patentů; nová znalost vyžaduje aktualizovat další kopie A přiměřeně aktivně vyrozumět dřívější příjemce. §3.5 ExhibitA každý zdroj nebo rozumné sousední místo, licence v práva vysvětlujících docs; vlastní extra závazky jasně oddělit a odškodnit poskytovatele. §3.6 executable notice zdroj/how/where v práva popisujících notices/docs/collateral, totéž indemnity při vlastních object podmínkách. §4 právní nemožnost maximální plnění a přesný LEGAL popis s distribucemi. |
+| restrictions | ["additional-terms","liability","trademark","unknown","warranty"] | public/data/licenses/NPL-1.0.json#text; §7 as-is bez záruk, uživatel opravy platí;§9 škodové výluky se zákonnou výjimkou smrti/úrazu z nedbalosti. §8 automatický konec30dní od znalosti bez nápravy, řádné sublicence trvají. §12 odpovědnost za škody podle kopií/příjmů/jiných faktorů a aktivní spravedlivé rozdělení s dotčenými, s výjimkou cizího porušení3.4. DodatekIII žádné Netscape/logo značky;IV Netscape může smluvně vázaný cizí kód znovu začlenit bez jeho zdrojů i kdyby šlo o změnu. V.2 jiné produkty vydané do2let od vydání originálu lze jinými podmínkami;V.3 Branded Code včetně začleněných změn může Netscape přelicencovat, bez stejného dvouletého omezení. |
+| patentPosition | "express-grant" | public/data/licenses/NPL-1.0.json#text; §2 světové bezroyalty nevýhradní copyright granty use/reproduce/modify/display/perform/sublicense/distribute originálu i Contributor změn samostatně/vkombinaci/Larger Work. Výslovné patenty Initial Developer nutné k originálu a Contributor k jeho Contributor Version pro make/have-made/use/sell, nepokrývají rozsáhlejší další změny/kombinace. Patentová odveta zde není. §3.6 objekt lze vlastní licencí bez omezení zdrojových práv, §6 následná Netscape verze volitelná. DodatekV vyhrazuje zvláštní relicensing Netscape, nikoli všem příjemcům. |
+| noticeBurden | "material" | public/data/licenses/NPL-1.0.json#text; §3.1 vlastní změny i grant2.2 pod NPL, distribuované zdroje jen NPL/následná a text licence bez omezení. §3.2 zdroje změn příjemcům Executable na stejném médiu nebo uznaným elektronickým mechanismem po nejméně12měsíců od prvního zpřístupnění NEBO6měsíců po následné verzi změny příjemcům, i za cizího hostitele odpovídá distributor. §3.3 soubor změn+dat a prominentní původ+Initial Developer ve zdroji a relevantních původových object/docs notices. §3.4 LEGAL popis známých IP nároků/kontaktů a vlastních nutných API patentů; nová znalost vyžaduje aktualizovat další kopie A přiměřeně aktivně vyrozumět dřívější příjemce. §3.5 ExhibitA každý zdroj nebo rozumné sousední místo, licence v práva vysvětlujících docs; vlastní extra závazky jasně oddělit a odškodnit poskytovatele. §3.6 executable notice zdroj/how/where v práva popisujících notices/docs/collateral, totéž indemnity při vlastních object podmínkách. §4 právní nemožnost maximální plnění a přesný LEGAL popis s distribucemi. |
+
+## Zdroje
+
+- [Primární zdroj](https://spdx.org/licenses/NPL-1.0.html) — Individuální revize celého připnutého textu; §§1,5 Covered Code označený originál/změny/části, změna souboru nebo nový soubor s původním kódem, Contributor Version s předchozími změnami. ExhibitA konkrétně Mozilla Communicator client vydaný31.3.1998/Netscape1998. DodatekI platí pro tento klient i všechen Covered Code; II Branded Code určují nelicencované Netscape značky. Zdroj preferovaná forma včetně modulů/interfaces/build/install nebo diff k dostupné známé bázi, komprese s široce dostupným bezplatným dekodérem.
+- [Kurátorovaný profil](../../../data/profiles/licenses/id-TlBMLTEuMA.json)
+- [Uložené úplné znění](../../../public/data/licenses/NPL-1.0.json)
+
+## Otisk zdroje
+
+```json
+{
+  "sourceId": "spdx-license-list",
+  "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+  "contentHash": "sha256:17a680d9b775d919f74c0473c3ecc09d56076aec315dc6dbddd4a3b1d0dfe42e"
+}
+```

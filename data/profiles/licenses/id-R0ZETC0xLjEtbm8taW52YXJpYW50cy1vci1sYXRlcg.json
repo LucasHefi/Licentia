@@ -8,95 +8,104 @@
     "contentHash": "sha256:be5dcba051238d6226db0bd9296ebc1f44e71681c2391ce71e7c7c23789ad16e"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
     "family": "strong-copyleft",
     "copyleftScope": "whole-work",
     "permissions": [
+      "commercial-use",
+      "conditional-relicensing",
       "distribution",
       "modifications",
-      "sublicensing"
+      "private-use"
     ],
     "obligations": [
+      "disclose-source",
       "include-copyright",
       "include-license-text",
-      "mark-modifications"
+      "include-notice",
+      "mark-modifications",
+      "same-license",
+      "unknown"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification"
     ],
     "restrictions": [
+      "additional-terms",
+      "trademark",
       "unknown"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.whole-work-copyleft",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.copyleft-family",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GFDL-1.1-no-invariants-or-later.json#text; GFDL1.1-no-invariants-or-later pokrývá textovou dokumentaci; primární poznámka SPDX určuje současnou absenci všech Invariant Sections i Front/Back-Cover Texts a možnost pozdější nedraftové verze FSF. Úplně přečtené§2,4 a8 dovolují placené i bezplatné rozmnožování, půjčování, vystavení a změny včetně překladu. Zvolená varianta nemá původní neměnné části, ale jiné redakční podmínky přetrvávají; obecný patentový ani podlicenční grant text neuděluje. §4 stejná licence Modified Version dokumentu a§5 kombinací zůstává i bez invariantů; nezávislé agregace§7 mají výjimku. Absence invariantů nevypíná dokumentové povinnosti při změnách.; https://spdx.org/licenses/GFDL-1.1-no-invariants-or-later.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GFDL-1.1-no-invariants-or-later.json#text; §4 stejná licence Modified Version dokumentu a§5 kombinací zůstává i bez invariantů; nezávislé agregace§7 mají výjimku. Absence invariantů nevypíná dokumentové povinnosti při změnách.; https://spdx.org/licenses/GFDL-1.1-no-invariants-or-later.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GFDL-1.1-no-invariants-or-later.json#text; Úplně přečtené§2,4 a8 dovolují placené i bezplatné rozmnožování, půjčování, vystavení a změny včetně překladu. Zvolená varianta nemá původní neměnné části, ale jiné redakční podmínky přetrvávají; obecný patentový ani podlicenční grant text neuděluje.; https://spdx.org/licenses/GFDL-1.1-no-invariants-or-later.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/GFDL-1.1-no-invariants-or-later.json#text; §2 kopie obsahují copyright, licenci a notice. §3 práh více než100 Opaque kopií vyžaduje Transparent kopii každému nebo kompletní veřejný anonymní bezplatný standardní download, zajištěný s rozumnou péčí alespoň rok od poslední distribuce vydání včetně prostředníků. Obalový odstavec se bez Cover Texts nespustí. §4 přesto vyžaduje změněný titul bez svolení, původních5 autorů či všechny, původního i nového vydavatele v historii, vlastní copyright, licenci, relevantní síťová místa a zachování poděkování/věnování; stará Endorsements odstranit a nová pouze pro vlastní verzi.; https://spdx.org/licenses/GFDL-1.1-no-invariants-or-later.html Terminologické sjednocení 2026-09-10: disclose-source zde označuje Transparent kopii dokumentu za přesných výše uvedených podmínek Opaque kopií; nejde o softwarový Corresponding Source.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/GFDL-1.1-no-invariants-or-later.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GFDL-1.1-no-invariants-or-later.json#text; §2 kopie obsahují copyright, licenci a notice. §3 práh více než100 Opaque kopií vyžaduje Transparent kopii každému nebo kompletní veřejný anonymní bezplatný standardní download, zajištěný s rozumnou péčí alespoň rok od poslední distribuce vydání včetně prostředníků. Obalový odstavec se bez Cover Texts nespustí. §4 přesto vyžaduje změněný titul bez svolení, původních5 autorů či všechny, původního i nového vydavatele v historii, vlastní copyright, licenci, relevantní síťová místa a zachování poděkování/věnování; stará Endorsements odstranit a nová pouze pro vlastní verzi.; https://spdx.org/licenses/GFDL-1.1-no-invariants-or-later.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/GFDL-1.1-no-invariants-or-later.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GFDL-1.1-no-invariants-or-later.json#text; §4 obecně dovoluje novým vlastním Secondary Sections invariantní určení a přidání obalových pasáží5/25 slov; takto změněné dílo už nesmí být popisováno jako bez invariantů/obalových textů. Licence zakazuje technické překážky čtení a dalšího kopírování a neuděluje propagaci jmény autorů. Porušení§9 okamžitě ukončuje práva bez automatické obnovy, dodržující příjemci zůstávají. Verze1.1 nemá obecnou zárukovou ani odpovědnostní výluku.; https://spdx.org/licenses/GFDL-1.1-no-invariants-or-later.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/GFDL-1.1-no-invariants-or-later.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GFDL-1.1-no-invariants-or-later.json#text; V§0–10 ani dodatku není výslovný patentový grant nebo žalobní odveta; patentPosition none-stated je po individuální četbě, nikoli odvozeno z GPL.; https://spdx.org/licenses/GFDL-1.1-no-invariants-or-later.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/GFDL-1.1-no-invariants-or-later.json#text; §2 kopie obsahují copyright, licenci a notice. §3 práh více než100 Opaque kopií vyžaduje Transparent kopii každému nebo kompletní veřejný anonymní bezplatný standardní download, zajištěný s rozumnou péčí alespoň rok od poslední distribuce vydání včetně prostředníků. Obalový odstavec se bez Cover Texts nespustí. §4 přesto vyžaduje změněný titul bez svolení, původních5 autorů či všechny, původního i nového vydavatele v historii, vlastní copyright, licenci, relevantní síťová místa a zachování poděkování/věnování; stará Endorsements odstranit a nová pouze pro vlastní verzi. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/GFDL-1.1-no-invariants-or-later.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/GFDL-1.1-no-invariants-or-later.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GFDL-1.1-no-invariants-or-later.json#text; Individuální kontrola celého připnutého textu GFDL-1.1-no-invariants-or-later dne 2026-09-09. GFDL1.1-no-invariants-or-later pokrývá textovou dokumentaci; primární poznámka SPDX určuje současnou absenci všech Invariant Sections i Front/Back-Cover Texts a možnost pozdější nedraftové verze FSF. I bez invariantů§3–4 vyžadují Transparent/Opaque kopie s prahem100, povinně jiný titul, konkrétní autorské/historické údaje a zachování tónu poděkování; je potřeba dokumentový model, nikoli obecná softwarová licence. §5–6 umožňují kombinace a kolekce s licenčními/historickými pravidly;§7 nezávislá agregace nešíří licenci na ostatní díla, pokud se nenárokuje compilation copyright. §8 překlad licence doprovází originální rozhodné anglické znění. §10 v tomto or-later určení dovoluje1.1 či pozdější zveřejněnou nedraftovou verzi FSF; nejde o přelicencování libovolnou softwarovou licencí a kódové příklady dodatek pouze doporučuje licencovat paralelně.; https://spdx.org/licenses/GFDL-1.1-no-invariants-or-later.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

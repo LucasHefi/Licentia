@@ -1,0 +1,20 @@
+{
+  "id": "Beerware",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.6",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:04558c3a4b602f23fa61fdb50e08e7a133176507da810197270aec00d52779fd"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Zachovejte toto oznámení s autorstvím. Jinak text povoluje libovolné nakládání s dílem. Nabídka koupit autorovi pivo při případném setkání je dobrovolná, není poplatkem ani podmínkou licence. Text neobsahuje vyloučení záruk, omezení odpovědnosti ani výslovný patentový grant.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Beerware.html",
+      "note": "Dřívější individuální revize 2026-09-09.6; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

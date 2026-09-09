@@ -1,0 +1,29 @@
+{
+  "id": "cve-tou",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:0aa300fe756c55ff5080e5064dc3d51ca857f7ddce6e5a938837cc32a5b13306"
+  },
+  "disposition": "blocked",
+  "summaryCs": "CVE lze trvale, celosvětově a bez poplatků kopírovat, upravovat, veřejně prezentovat, sublicencovat a šířit. Každá kopie musí zachovat copyright MITRE a licenci; informace jsou bez záruk.",
+  "blockersCs": [
+    "Copyrightový grant je určen datové publikaci CVE. Doplnit model datového předmětu před doporučením pro nový software; zachování copyrightu a licence v každé kopii nyní zahrnuje spouštěč use."
+  ],
+  "analysis": {
+    "subjectCs": "Předmětem copyrightové licence je Common Vulnerabilities and Exposures, tedy informace/datová publikace.",
+    "grantCs": "CVE Usage výslovně uděluje neodvolatelnou, nevýhradní, celosvětovou a trvalou bezpoplatkovou copyrightovou licenci na reprodukce, odvozeniny, veřejné vystavení/provozování, sublicence a distribuci. Patentový grant není uveden.",
+    "conditionsCs": "Any copy musí obsahovat copyright MITRE a tuto licenci, i když jde o kopii bez další distribuce. Zdrojová forma, stejná licence a označování změn nejsou požadovány. Povinnost při samotném užití nyní zachycuje trigger use ve slovníku 1.4.0.",
+    "limitationsCs": "DISCLAIMERS poskytuje dokumenty a informace as is a odmítá záruky, zejména neporušení cizích práv, obchodovatelnosti a vhodnosti. Samostatná náhrada škod a známkový zákaz uvedeny nejsou.",
+    "compatibilityCs": "Sublicence je výslovně povolena při zachování oznámení; není určena konkrétní alternativní licence či kompatibilita."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/cve-tou.html",
+      "note": "Individuální revize celého připnutého textu; Předmětem copyrightové licence je Common Vulnerabilities and Exposures, tedy informace/datová publikace."
+    }
+  ]
+}

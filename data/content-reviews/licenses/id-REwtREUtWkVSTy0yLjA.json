@@ -1,0 +1,29 @@
+{
+  "id": "DL-DE-ZERO-2.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:4dda43abf6fda364b76aeea98ce4af07df5920754a40b0005ec22a51b4bd8c65"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Německá a anglická verze dovolují jakékoli užití dat a metadat bez podmínek, včetně komerce, úprav, slučování a začlenění do aplikací i veřejných nebo neveřejných sítí.",
+  "blockersCs": [
+    "Licence výslovně pokrývá data a metadata. Před doporučením pro nový software doplnit model datového předmětu; neomezený datový grant nelze bez tohoto rozlišení nabídnout jako obecnou softwarovou licenci."
+  ],
+  "analysis": {
+    "subjectCs": "Výslovným předmětem jsou poskytovaná data a metadata, nikoli libovolný softwarový kód.",
+    "grantCs": "Jede Nutzung/Any use je bez omezení; výčet zahrnuje kopie, tisk, prezentaci, změny, předání třetím, slučování a podnikové/aplikační/síťové začlenění. Patentový grant a výslovná sublicence nejsou uvedeny.",
+    "conditionsCs": "Obě jazykové verze výslovně vylučují podmínky; nevyžadují atribuci, text licence, stejnou licenci či síťovou nabídku zdrojů, proto povinnosti i spouštěče jsou prázdné.",
+    "limitationsCs": "Úplný text neobsahuje výluku záruk či odpovědnosti, známky, patentové ukončení nebo volbu práva.",
+    "compatibilityCs": "Version 2.0 není or-later; povolené slučování dat není potvrzením práv k cizím datům nebo konkrétní kompatibility."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/DL-DE-ZERO-2.0.html",
+      "note": "Individuální revize celého připnutého textu; Výslovným předmětem jsou poskytovaná data a metadata, nikoli libovolný softwarový kód."
+    }
+  ]
+}

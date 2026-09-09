@@ -1,0 +1,27 @@
+{
+  "id": "SGMLUG-PM",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:b560308673fff503120982a9b7bacf7233bbbffe62c7b5ed7fa712d7fc66a5a3"
+  },
+  "disposition": "eligible",
+  "summaryCs": "SGMLUG uděluje neodvolatelnou celosvětovou bezplatnou licenci k použití, provádění, reprodukci, distribuci a odvozeným dílům parserových materiálů včetně oprávnění dalších osob. Povinná oznámení nejsou uvedena; záruky, odpovědnost i podpora jsou vyloučeny.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "SGML Parser Materials, tedy parserové materiály SGML Users' Group; text nevyžaduje konformitu konkrétního užití s normou.",
+    "grantCs": "Oddíl 1 irrevocable royalty-free worldwide non-exclusive use/execute/reproduce/display/perform/distribute/derivatives a authorize others. Patentový grant není samostatně vymezen.",
+    "conditionsCs": "Oddíl 1 bez notice/zdrojových/recipročních povinností. Uživatel posuzuje vhodnost a výsledky, SGMLUG neposkytuje support/maintenance.",
+    "limitationsCs": "Oddíl 2(a)–(d) AS IS, bez záruk chyb, vhodnosti, prodejnosti a bez odpovědnosti za škody i infringement třetích osob.",
+    "compatibilityCs": "Bez alternativní licence/verze; právo authorise others není tvrzení, že třetí patentová práva jsou vyřešena."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/SGMLUG-PM.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Oddíl 1 neodvolatelný široký grant bez informačních podmínek; oddíl 2 pouze disclaimery/riziko."
+    }
+  ]
+}

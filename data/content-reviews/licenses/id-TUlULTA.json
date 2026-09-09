@@ -1,0 +1,20 @@
+{
+  "id": "MIT-0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:cc96f85dc885f1085a0567c42ef68ff1ef2925cb58f374e4a37f4c9183388450"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Varianta MIT bez povinnosti zachovat licenční oznámení. Neobsahuje výslovný patentový grant.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/MIT-0.html",
+      "note": "Dřívější individuální revize 2026-09-09; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

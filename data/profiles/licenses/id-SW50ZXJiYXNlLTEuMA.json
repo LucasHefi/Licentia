@@ -8,98 +8,116 @@
     "contentHash": "sha256:205cc9d93d9cfd1fe5c93be8ca2f299b22a7198e4c2eef46557d3d51bdc6c724"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "weak-copyleft",
+    "copyleftScope": "file",
     "permissions": [
       "commercial-use",
+      "conditional-relicensing",
       "distribution",
       "modifications",
       "patent-grant",
-      "sublicensing"
-    ],
-    "obligations": [
-      "mark-modifications",
-      "provide-corresponding-source"
-    ],
-    "triggers": [
+      "private-use",
+      "sublicensing",
       "unknown"
     ],
+    "obligations": [
+      "defend-added-warranty",
+      "disclose-source",
+      "include-advertising-acknowledgment",
+      "include-copyright",
+      "include-license-text",
+      "include-notice",
+      "mark-modifications",
+      "same-license",
+      "unknown"
+    ],
+    "triggers": [
+      "advertising",
+      "combination",
+      "distribution",
+      "modification",
+      "patent-claim",
+      "use"
+    ],
     "restrictions": [
+      "additional-terms",
       "liability",
+      "patent-claim",
       "trademark",
+      "unknown",
       "warranty"
     ],
-    "patentPosition": "express-grant",
-    "noticeBurden": "unknown"
+    "patentPosition": "retaliatory-termination",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Interbase-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Interbase-1.0.json#text; §1.9 změněné soubory a nové s CoveredCode částí;§3.7 jinýkódLargerWork mimo. Slabýfilecopyleft, ale trademarkrežim výslovně zasahuje pojmenování celéhoLargerWork, tento rozdíl není whole-worksourcepovinnost.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Interbase-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Interbase-1.0.json#text; §1.9 změněné soubory a nové s CoveredCode částí;§3.7 jinýkódLargerWork mimo. Slabýfilecopyleft, ale trademarkrežim výslovně zasahuje pojmenování celéhoLargerWork, tento rozdíl není whole-worksourcepovinnost.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Interbase-1.0.json#text; §2 nevýhradně světově bezroyalty use/copy/modify/display/perform/sublicense/distribute licensableIP mimo trademark, oddělený výslovný patentový make/use/have-made/sell/offer/dispose grant originálu i Contributor změn samých/sjeho verzí. Vyloučen odstraněný/oddělený kód, cizí změny/kombinace a patenty porušované bez vlastního příspěvku. Účinné první distribucíInitial/Commercial UseContributor. §3.6 own object licence bez omezení source,§6 pozdějšíInterbase volitelné. §13 multiple-licensed věta používá doslovaNPL, nikoliInterbase; její blanket alternativní grant proto neurčen a označen unknown pouze v tomto aspektu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Interbase-1.0.json#text; §3 distribuovaný zdroj pouzeInterbase/následná+licence, bez omezení; změny/data v souboru a prominentní odvození+jménoInitial ve zdroji a relevantních origin/ownership object/docs notices. §3.2 zdroje změn příjemcůmExecutables stejným médiem nebo elektronicky12měsíců od prvního NEBO6po nové verzi, odpovídá i za cizího hostitele. §3.4 LEGAL známá nutná cizíIP/API licence a kontakt, budoucí kopie aktualizovat A aktivně přiměřeně upozornit dřívější příjemce; prohlášení víry v originalitu/práva sdisclosurevýjimkou. §3.5 ExhibitA každýsource nebo očekávané sousedství+licence v práva/ownershipdocs; §3.6 binární práva notice zdroj/how/where, extra záruky i vlastní object podmínky jasně vlastní+indemnity ostatním. §4 právní nemožnost maximální plnění aLEGAL popis. AMENDMENTII.1 všechny reklamní materiály zmiňující vlastnosti/užití Covered Code povinné konkrétní poděkování Borland SoftwareCorp; nejde jen o dochovaný copyright.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Interbase-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Interbase-1.0.json#text; §3 distribuovaný zdroj pouzeInterbase/následná+licence, bez omezení; změny/data v souboru a prominentní odvození+jménoInitial ve zdroji a relevantních origin/ownership object/docs notices. §3.2 zdroje změn příjemcůmExecutables stejným médiem nebo elektronicky12měsíců od prvního NEBO6po nové verzi, odpovídá i za cizího hostitele. §3.4 LEGAL známá nutná cizíIP/API licence a kontakt, budoucí kopie aktualizovat A aktivně přiměřeně upozornit dřívější příjemce; prohlášení víry v originalitu/práva sdisclosurevýjimkou. §3.5 ExhibitA každýsource nebo očekávané sousedství+licence v práva/ownershipdocs; §3.6 binární práva notice zdroj/how/where, extra záruky i vlastní object podmínky jasně vlastní+indemnity ostatním. §4 právní nemožnost maximální plnění aLEGAL popis. AMENDMENTII.1 všechny reklamní materiály zmiňující vlastnosti/užití Covered Code povinné konkrétní poděkování Borland SoftwareCorp; nejde jen o dochovaný copyright.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Interbase-1.0.json#text; §7 as-is bez záruk,§9 škodové výluky iYou se zákonnou výjimkou nedbalostní smrti/úrazu. §8.1 konec po30dnech znalosti bez nápravy. §8.2a patentová žaloba naContributorVersion mimo deklaratorní spor ukončí všechnyParticipantgranty prospektivně po60denním notice leda písemná royalty dohoda/stažení;8.2b žaloba na JINÝ software/hardware/device zpětně ruší jen jeho patenty k prvnímu užitíContributorzměn. §8.3 zohlednit hodnotu licence v předžalobním smíru,8.4 enduserEULA mimo distributory/resellers trvají. §12 spolupracovat na spravedlivém rozděleníclaims/damages. AMENDMENTI žádnéInterbase/Java/JavaScriptznačky;II.2 InterBase/ISC/IB žádnéendorsementbezpísemnéhosouhlasu;II.3 ContributorVersion iLargerWork nesmí jménoInterBase/Interbase ani slovoInterBase v názvu bezsouhlasu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Interbase-1.0.json#text; §2 nevýhradně světově bezroyalty use/copy/modify/display/perform/sublicense/distribute licensableIP mimo trademark, oddělený výslovný patentový make/use/have-made/sell/offer/dispose grant originálu i Contributor změn samých/sjeho verzí. Vyloučen odstraněný/oddělený kód, cizí změny/kombinace a patenty porušované bez vlastního příspěvku. Účinné první distribucíInitial/Commercial UseContributor. §3.6 own object licence bez omezení source,§6 pozdějšíInterbase volitelné. §13 multiple-licensed věta používá doslovaNPL, nikoliInterbase; její blanket alternativní grant proto neurčen a označen unknown pouze v tomto aspektu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Interbase-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Interbase-1.0.json#text; §3 distribuovaný zdroj pouzeInterbase/následná+licence, bez omezení; změny/data v souboru a prominentní odvození+jménoInitial ve zdroji a relevantních origin/ownership object/docs notices. §3.2 zdroje změn příjemcůmExecutables stejným médiem nebo elektronicky12měsíců od prvního NEBO6po nové verzi, odpovídá i za cizího hostitele. §3.4 LEGAL známá nutná cizíIP/API licence a kontakt, budoucí kopie aktualizovat A aktivně přiměřeně upozornit dřívější příjemce; prohlášení víry v originalitu/práva sdisclosurevýjimkou. §3.5 ExhibitA každýsource nebo očekávané sousedství+licence v práva/ownershipdocs; §3.6 binární práva notice zdroj/how/where, extra záruky i vlastní object podmínky jasně vlastní+indemnity ostatním. §4 právní nemožnost maximální plnění aLEGAL popis. AMENDMENTII.1 všechny reklamní materiály zmiňující vlastnosti/užití Covered Code povinné konkrétní poděkování Borland SoftwareCorp; nejde jen o dochovaný copyright.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Interbase-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Interbase-1.0.json#text; Individuálně přečten celý připnutý text. §1 zdrojově označený originál, změny a části, file hranice; source zahrnuje preferovanou podobu/moduly/interfaces/build/install či diff k dostupné bázi s bezplatným rozbalením. §1.0.1Commercial Use je zpřístupnění třetímu, You řízení nebo>50%vlastnictví. ExhibitA originálInterBase SoftwareCorp a successors, copyrightBorland/Inprise;§6 správceBorland označenýInterbase. Vlastní text má i AMENDMENTS I aII, přes historický popis§6.4 že některé starší dodatky odstraněny. Interbase 1.0 kombinuje souborový copyleft, patentové granty a aktivní IP i odpovědnostní kroky s povinným poděkováním Borland ve všech reklamách zmiňujících kód. Zakazuje vybrané názvy i pro Larger Work; zbylý § 13 doslova odkazuje na NPL, zatímco vlastní Exhibit A je Interbase bez alternativního vzoru. § 3.4a ukládá aktivní dodatečné upozornění příjemců na IP problémy, § 12 spolupráci na odpovědnosti a § 8.3 zohlednění hodnoty licence při smíru; tyto kroky potřebují procesní model. § 13 navíc volí NPL přes vlastní záhlaví Interbase a odstraněný alternativní vzor. Ověřit autoritativní význam této větve a nevytvářet domnělé přelicencování. Reklamní poděkování II.1 a názvová pravidla II.2–3 jsou samostatně známé a zachycené.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

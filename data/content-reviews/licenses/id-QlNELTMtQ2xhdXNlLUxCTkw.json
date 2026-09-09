@@ -1,0 +1,29 @@
+{
+  "id": "BSD-3-Clause-LBNL",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:6ab56eb9e4b544d5981bf0ab699178a5d66d194e61aa702119bd33716e8f2426"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Licence dovoluje užití a redistribuci zdrojů i binárek s úpravami při zachování oznámení a zákazu propagace jmény autorů bez svolení. Změny není nutné poskytovat, ale jejich dobrovolné zpřístupnění bez samostatné písemné licence automaticky uděluje rozsáhlá další práva. Průvodce ji zatím nezařazuje, protože tento podmíněný grant vlastních vylepšení vyžaduje samostatné zachycení.",
+  "blockersCs": [
+    "Dobrovolné veřejné či přímé předání Enhancements bez samostatné písemné licence automaticky zakládá široký další grant; před doporučením je třeba model podmíněného grantu k vlastním změnám, nikoli jej zaměnit za zdrojovou povinnost."
+  ],
+  "analysis": {
+    "subjectCs": "Regents/LBNL znění 2003 uvádí případně potřebná schválení DOE a zvláštní zacházení s dobrovolně zpřístupněnými Enhancements.",
+    "grantCs": "Grant dovoluje zdrojovou/binární redistribuci a užití se změnami i bez; závěr při veřejném či přímém předání Enhancements bez samostatné písemné licence automaticky uděluje široká trvalá bezplatná nevýlučná práva k nim.",
+    "conditionsCs": "Body 1–2 zachovávají copyright/podmínky/disclaimer ve zdroji či doprovodu binárek. Není povinnost poskytovat opravy, patche nebo vylepšení; při dobrovolném zpřístupnění bez oddělené písemné licence vzniká grant instalace, užití, změn, odvozenin, začlenění, distribuce a sublicencí v obou formách.",
+    "limitationsCs": "Jména UC, LBNL, DOE a přispěvatelů nesmějí bez písemného souhlasu podporovat produkty; AS IS vylučuje záruky a odpovědnost.",
+    "compatibilityCs": "Samostatná písemná licence Enhancements zabrání popsanému výchozímu grantu; to není povinnost odeslat změny ani obecná volba jiné verze."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/BSD-3-Clause-LBNL.html",
+      "note": "Individuálně přečten celý připnutý text; Body 1–2 zachovávají copyright/podmínky/disclaimer ve zdroji či doprovodu binárek. Není povinnost poskytovat opravy, patche nebo vylepšení; při dobrovolném zpřístupnění bez oddělené písemné licence vzniká grant instalace, užití, změn, odvozenin, začlenění, distribuce a sublicencí v obou formách. Celý text včetně grantu Enhancements nemá výslovná patentová práva ani patentové ukončení."
+    }
+  ]
+}

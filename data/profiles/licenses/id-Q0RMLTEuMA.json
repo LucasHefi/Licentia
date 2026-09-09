@@ -8,96 +8,104 @@
     "contentHash": "sha256:aaa6aa4bcd91696b8e32ad7e49e222da9c3bfd9ae906400b3e054124db8024af"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "strong-copyleft",
+    "copyleftScope": "whole-work",
     "permissions": [
+      "commercial-use",
+      "conditional-relicensing",
       "distribution",
       "modifications",
-      "sublicensing"
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "include-license-text"
+      "include-notice",
+      "mark-modifications",
+      "same-license"
     ],
     "triggers": [
-      "unknown"
+      "combination",
+      "distribution",
+      "modification",
+      "use"
     ],
     "restrictions": [
+      "additional-terms",
       "liability",
       "trademark",
       "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CDL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CDL-1.0.json#text; Preambule a §3 vyžadují přesné podmínky CDL pro všechny odvozené dokumenty, proto silný copyleft v dokumentačním významu; https://spdx.org/licenses/CDL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CDL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CDL-1.0.json#text; §§1.3,3 vztahují licenci na celý odvozený dokument; §4 odděluje samostatná nezávislá díla kompilace a pouhou agregaci, nejde o souborovou či knihovní hranici; https://spdx.org/licenses/CDL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CDL-1.0.json#text; §2 jmenuje komerční i nekomerční užití, kopírování, úpravy, veřejné zobrazení a distribuci; §8 dovoluje zvolit pozdější CDL Apple; patentová práva neuděluje; https://spdx.org/licenses/CDL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CDL-1.0.json#text; §§2–4: copyright, vlastní notice, shrnutí změn a stejná licence; text licence NEBO formální reference Exhibit A jsou alternativy vyjádřené include-notice, nikoli kumulativní povinnosti; zdroje se nevyžadují; https://spdx.org/licenses/CDL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CDL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CDL-1.0.json#text; §2 podmiňuje i užití a kopírování zachováním notices, §3 upravené dokumenty, §4 spojování do kompilace; bez síťového či patentového triggeru; https://spdx.org/licenses/CDL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CDL-1.0.json#text; §2(c) zákaz dodatečných podmínek; §5 výluka záruk, §6 stanovených škod, §7 ochrana jmen a známek; §9 automatické ukončení s přežitím řádných sublicencí; https://spdx.org/licenses/CDL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CDL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CDL-1.0.json#text; Úplný text §§1–10 ani Exhibit A neobsahuje patentový grant, patentovou výluku nebo patentově odvetné ukončení; výluka záruky neporušování v §5 není grant; https://spdx.org/licenses/CDL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CDL-1.0.json#text; §3 požaduje vlastní copyright a sousední shrnutí změn, §4 specifický notice kompilace a §2 nápadné umístění celého textu nebo přesné reference Exhibit A; https://spdx.org/licenses/CDL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CDL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CDL-1.0.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. CDL 1.0 dovoluje komerční i nekomerční užití a úpravy dokumentů, ale každý odvozený dokument musí zůstat pod přesným zněním CDL. Zachovávají se notices, přidává vlastní copyright a stručný přehled změn. Licence smí být přiložena celá nebo řádně začleněna odkazem dle Exhibit A. Samostatná díla v kompilaci zůstávají oddělená; CDL neukládá poskytování softwarových zdrojů. Dokument je bez záruk a s vymezenou výlukou odpovědnosti. Blokace: §§0–4 konstruují copyleft dokumentu včetně překladů, zkrácení a kompilací; nevymezují zdrojový a binární software ani odpovídající zdroje. Přestože definice zahrnuje i jiné označené dílo, jde o dokumentační licenci a pro nový softwarový projekt ji tento průvodce nedoporučuje. Dalším krokem je samostatná dokumentační větev, která vysvětlí tento rozsah a alternativní začlenění licence odkazem.; https://spdx.org/licenses/CDL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

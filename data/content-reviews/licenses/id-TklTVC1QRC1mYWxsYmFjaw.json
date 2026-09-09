@@ -1,0 +1,27 @@
+{
+  "id": "NIST-PD-fallback",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:09a264488403ab89fdd7c396648a365fe8301c107516f8f7647bb2054ac3693a"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Pro software zaměstnanců NIST text vysvětluje americký public-domain status a výslovně uděluje náhradní copyrightový grant v USA i zahraničí, pokud NIST práva má. Kopie nesou oznámení a výluku záruk; NIST odmítá záruky i škody.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Předmětem je software vytvořený zaměstnanci NIST a dokumentace; původ podle §105 je oddělen od výslovného zahraničního grantu.",
+    "grantCs": "První odstavec nevýhradně dovoluje use/copy/modify/create derivative works/distribute bez poplatku v USA i cizině v rozsahu copyrightu NIST. Patentová práva a sublicence výslovně nejsou uděleny.",
+    "conditionsCs": "Náhradní grant vyžaduje toto oznámení a záruční disclaimer ve všech kopiích. Nevyžaduje zdroje, stejnou licenci, reklamu ani síťovou nabídku.",
+    "limitationsCs": "Disclaimer odmítá výslovné, implicitní i zákonné záruky včetně shody se specifikací, neporušení práv, souladu dokumentace a bezchybnosti. NIST nenese odpovědnost za škody na osobách/majetku ani další uvedené škody.",
+    "compatibilityCs": "Zahraniční copyright je výslovně řešen fallback grantem, nikoli předpokladem celosvětového public domain. Konkrétní alternativní licence nebo verze nejsou určeny."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/NIST-PD-fallback.html",
+      "note": "Individuální revize celého připnutého textu; Předmětem je software vytvořený zaměstnanci NIST a dokumentace; původ podle §105 je oddělen od výslovného zahraničního grantu."
+    }
+  ]
+}

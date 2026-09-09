@@ -8,91 +8,98 @@
     "contentHash": "sha256:226b9d483dc4294f86b445a3d147ce2c299359b3771fdc849258b653ebcc68b3"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
-      "unknown"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "unknown"
+      "include-use-acknowledgment"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification",
+      "use"
     ],
     "restrictions": [
-      "unknown"
+      "additional-terms",
+      "liability",
+      "warranty"
     ],
     "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "noticeBurden": "material"
   },
   "evidence": [
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/etalab-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/etalab-2.0.json#text; Atribuční informační grant nevyžaduje reciproční licenci či zdroje; permisivní bez copyleftu, s nevyřešeným širokým odkazem patentového rozsahu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/etalab-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/etalab-2.0.json#text; Atribuční informační grant nevyžaduje reciproční licenci či zdroje; permisivní bez copyleftu, s nevyřešeným širokým odkazem patentového rozsahu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/etalab-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/etalab-2.0.json#text; Réutilisation grant je nevýhradní bezplatný celosvětový a časově neomezený pro kopie, adaptace/extrakci/transformace, komunikaci/distribuci a komerci. IP oddíl garantuje nebránění práv a nevýhradně převádí převoditelná práva na Information; definice odkazuje na všechna práva Code de la propriété intellectuelle. Patenty nejmenuje a rozsah vůči patentovému využití samotné informace není určen.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/etalab-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/etalab-2.0.json#text; Povinná paternité: alespoň jméno poskytovatele a poslední update použité informace; hyperlink na zdroj je dovolené splnění při účinné atribuci. Nelze naznačit oficiálnost/endorsement ani klamat obsahem, původem/datací. Poskytovatel oznamuje osobní data; užití respektuje jejich právní rámec. Žádné same-license ani source-offer nejsou uvedeny.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/etalab-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/etalab-2.0.json#text; Povinná paternité: alespoň jméno poskytovatele a poslední update použité informace; hyperlink na zdroj je dovolené splnění při účinné atribuci. Nelze naznačit oficiálnost/endorsement ani klamat obsahem, původem/datací. Poskytovatel oznamuje osobní data; užití respektuje jejich právní rámec. Žádné same-license ani source-offer nejsou uvedeny.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/etalab-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/etalab-2.0.json#text; IP guarantee je skutečná výjimka z obecné absence dalších záruk; negarantuje bezchybnost ani pokračující dodávku, poskytovatel neodpovídá za újmu třetím a uživatel za užití odpovídá sám. Právo výslovně francouzské.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/etalab-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/etalab-2.0.json#text; Réutilisation grant je nevýhradní bezplatný celosvětový a časově neomezený pro kopie, adaptace/extrakci/transformace, komunikaci/distribuci a komerci. IP oddíl garantuje nebránění práv a nevýhradně převádí převoditelná práva na Information; definice odkazuje na všechna práva Code de la propriété intellectuelle. Patenty nejmenuje a rozsah vůči patentovému využití samotné informace není určen.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/etalab-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/etalab-2.0.json#text; Povinná paternité: alespoň jméno poskytovatele a poslední update použité informace; hyperlink na zdroj je dovolené splnění při účinné atribuci. Nelze naznačit oficiálnost/endorsement ani klamat obsahem, původem/datací. Poskytovatel oznamuje osobní data; užití respektuje jejich právní rámec. Žádné same-license ani source-offer nejsou uvedeny.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/etalab-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/etalab-2.0.json#text; Individuálně přečten celý připnutý text. Information zahrnuje veřejné správní informace i informace poskytnuté kteroukoli osobou; Réutilisation znamená užití pro jiné účely než původní vytvoření/přijetí. Licence Ouverte 2 dovoluje celosvětové komerční/nekomerční znovuužití informací s uvedením zdroje a data poslední aktualizace. Garantuje, že IP práva užití nebrání, ale jiné záruky většinou odmítá. Osobní data podléhají právnímu rámci a informace nesmí být prezentovány zavádějícím způsobem. IP grant se odkazuje na všechna převoditelná práva podle francouzského Code na Information; Code zahrnuje i vynálezy, ale text neurčuje, zda a jak dovoluje patentové využití obsahu informace. Vyjasnit tento primární rozsah a vhodnost informačního grantu pro software před zařazením, místo domyšleného patent-grant nebo jeho absence.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

@@ -8,7 +8,7 @@
     "contentHash": "sha256:19372a4925d1667165fa16df84fcebb8855dc3f2146fd9ff8756e094386f1b76"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
     "evidenceLevel": "strong"
   },
@@ -17,24 +17,29 @@
     "copyleftScope": "network",
     "permissions": [
       "commercial-use",
+      "conditional-relicensing",
       "distribution",
       "modifications",
-      "patent-grant",
-      "private-use"
+      "private-use",
+      "unknown"
     ],
     "obligations": [
       "include-copyright",
+      "include-license-text",
       "include-notice",
+      "include-use-acknowledgment",
       "network-use-disclose",
       "provide-corresponding-source",
       "provide-installation-information",
+      "same-license",
       "unknown"
     ],
     "triggers": [
-      "combination",
       "distribution",
+      "modification",
       "network-use",
-      "patent-claim"
+      "patent-claim",
+      "use"
     ],
     "restrictions": [
       "additional-terms",
@@ -44,72 +49,72 @@
       "unknown",
       "warranty"
     ],
-    "patentPosition": "retaliatory-termination",
+    "patentPosition": "unknown",
     "noticeBurden": "material"
   },
   "evidence": [
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text.1-4",
-      "ruleId": "lic-007.copyleft-family",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CAL-1.0.json#text; CAL1.0 upravuje software včetně licencovatelných částí v Modified Work; Recipient je neafiliovaná třetí osoba, jíž se zpřístupní jakákoli část, aspekt či prvek i pouhým vnímáním přes síť. §1 a3.1(a) dovolují soukromé použití i úpravy a široké jednání pod nepatentovými IP právy včetně komerční distribuce;§7.3 podlicence zakazuje. Připnutý§3.1(b) začíná neúplně slovem claims a neobsahuje operativní patentové svolení, zatímco primární https://opensource.org/license/CAL-1.0 §3.1(b) plné svolení obsahuje; tato revize cizí text do připnutého grantu nedoplňuje. §4 spouští povinnosti i zpřístupnění aspektu Work přes síť a§4.1.2 vyžaduje zdroje zachovaných částí i vlastních změn; rodina síťová, s konkrétní značenou výjimkou§4.5, nikoli automaticky library.; https://spdx.org/licenses/CAL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text.4",
-      "ruleId": "lic-007.network-trigger",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CAL-1.0.json#text; §4 spouští povinnosti i zpřístupnění aspektu Work přes síť a§4.1.2 vyžaduje zdroje zachovaných částí i vlastních změn; rodina síťová, s konkrétní značenou výjimkou§4.5, nikoli automaticky library.; https://spdx.org/licenses/CAL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text.3.1-3.2",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CAL-1.0.json#text; §1 a3.1(a) dovolují soukromé použití i úpravy a široké jednání pod nepatentovými IP právy včetně komerční distribuce;§7.3 podlicence zakazuje. Připnutý§3.1(b) začíná neúplně slovem claims a neobsahuje operativní patentové svolení, zatímco primární https://opensource.org/license/CAL-1.0 §3.1(b) plné svolení obsahuje; tato revize cizí text do připnutého grantu nedoplňuje.; https://spdx.org/licenses/CAL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text.4.1-4.3",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CAL-1.0.json#text; §4.1 dává každému Recipient zdroj nebo neomezený bezplatný síťový přístup po dobu výkonu práv a alespoň rok poté; zahrnuje konfiguraci, návody, instalační informace a kryptografické klíče či seeds potřebné pro plnou funkčnost. Změny jsou pod CAL nebo kompatibilní OSI licencí umožňující společný objekt. Až90 dnů lze zdržet zdroj opravy nové závažné zranitelnosti při koordinaci s dalším licensee a následném dodání všem. §4.2 povinně vydává uživatelská data bezplatně v obvyklém elektronickém formátu a zakazuje technické i právní bránění nezávislému použití;§4.3 zachovává notices a přidává uznání použití přímo nebo snadným hyperlinkem.; https://spdx.org/licenses/CAL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "text.4; text.5.3",
-      "ruleId": "lic-007.trigger-conditions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CAL-1.0.json#text; §4.1 dává každému Recipient zdroj nebo neomezený bezplatný síťový přístup po dobu výkonu práv a alespoň rok poté; zahrnuje konfiguraci, návody, instalační informace a kryptografické klíče či seeds potřebné pro plnou funkčnost. Změny jsou pod CAL nebo kompatibilní OSI licencí umožňující společný objekt. Až90 dnů lze zdržet zdroj opravy nové závažné zranitelnosti při koordinaci s dalším licensee a následném dodání všem. §4.2 povinně vydává uživatelská data bezplatně v obvyklém elektronickém formátu a zakazuje technické i právní bránění nezávislému použití;§4.3 zachovává notices a přidává uznání použití přímo nebo snadným hyperlinkem.; https://spdx.org/licenses/CAL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text.3.2; text.4.2; text.5.3; text.6; text.7.3",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CAL-1.0.json#text; §2.3 dovoluje příjemci vymáhat specific performance. §5.2 dává pouze jediné obnovení v60denní lhůtě, text přitom odkazuje na splnění§2;§5.3 patentová žaloba na licencora či příjemce ruší všechna práva s výjimkou správních/deklaratorních postupů, obranných protinároků a vymáhání proti dříve ukončeným. §6 AS IS a bez škod,§3.2 známky pouze pro atribuci,§7.4 náklady vítězné strany včetně smíru.; https://spdx.org/licenses/CAL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "text.3.1-3.2; text.5.3",
-      "ruleId": "lic-007.patent-termination",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CAL-1.0.json#text; Připnutý§3.1(b) postrádá operativní začátek patentového grantu; primární OSI jej má. §3.2(a) jasně vylučuje nároky vzniklé pouze změnou/kombinací a§5.3 má jasnou patentovou odvetu s obrannými výjimkami, ale přesný celek patentové pozice v připnutém textu zůstává unknown.; https://spdx.org/licenses/CAL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text.4.1.1-4.3",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CAL-1.0.json#text; §4.1 dává každému Recipient zdroj nebo neomezený bezplatný síťový přístup po dobu výkonu práv a alespoň rok poté; zahrnuje konfiguraci, návody, instalační informace a kryptografické klíče či seeds potřebné pro plnou funkčnost. Změny jsou pod CAL nebo kompatibilní OSI licencí umožňující společný objekt. Až90 dnů lze zdržet zdroj opravy nové závažné zranitelnosti při koordinaci s dalším licensee a následném dodání všem. §4.2 povinně vydává uživatelská data bezplatně v obvyklém elektronickém formátu a zakazuje technické i právní bránění nezávislému použití;§4.3 zachovává notices a přidává uznání použití přímo nebo snadným hyperlinkem. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/CAL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "text.2-7",
-      "ruleId": "lic-007.review-evidence",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CAL-1.0.json#text; Individuální kontrola celého připnutého textu CAL-1.0 dne 2026-09-09. CAL1.0 upravuje software včetně licencovatelných částí v Modified Work; Recipient je neafiliovaná třetí osoba, jíž se zpřístupní jakákoli část, aspekt či prvek i pouhým vnímáním přes síť. Připnutý§3.1(b) má neúplnou patentovou větu oproti úplnému primárnímu OSI znění; je třeba samostatně schválit opravu kanonického zdroje a fingerprintu, nikoli ji předpokládat v metadatech. §4.2 vyžaduje vydávání User Data a úplnou autonomii včetně klíčů, zákazů technických překážek a právního vzdání se;§2.3 příjemci přiznává specific performance. Model potřebuje tyto povinnosti vedle zdrojového kódu a podmíněné90denní bezpečnostní embargo. §4.5 výjimka Combined Work platí pouze výslovně označeným souborům; samotný CAL-1.0 identifikátor ji nezapíná. I při výjimce zůstávají původní zdroje, notices a autonomie dat. §7.2 dovoluje výslovným notice určit soud/právo;§7.7 licence textu CC BY-SA4 s omezením názvu se nevztahuje jako software licence.; https://spdx.org/licenses/CAL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

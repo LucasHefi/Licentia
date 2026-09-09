@@ -1,0 +1,20 @@
+{
+  "id": "Xfig",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.4",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:280488ac723f59aaaa17fa0e0121c51b326df888895f16f012f874a6b8d70326"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Zachovejte copyrightové oznámení. Text uděluje široké, neodvolatelné celosvětové oprávnění nakládat se softwarem a dokumentací bez licenčního poplatku. Nevyžaduje přiložení celého znění ani poskytování zdrojů a neobsahuje vyloučení záruk nebo odpovědnosti. Obecný široký grant není výslovný patentový grant.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Xfig.html",
+      "note": "Dřívější individuální revize 2026-09-09.4; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

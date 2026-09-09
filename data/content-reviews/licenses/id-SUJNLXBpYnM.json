@@ -1,0 +1,27 @@
+{
+  "id": "IBM-pibs",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:8fe2c1f43ece3835bd222ebe7f8b1237529c2ee51371f08c1be542b63de47972"
+  },
+  "disposition": "eligible",
+  "summaryCs": "IBM uděluje autorskou licenci k libovolnému užití, kopírování, úpravám, kompilaci a redistribuci s úpravami i bez nich. Z této licence se výslovně nesmí dovozovat práva k patentům ani patentovým přihláškám IBM. Při předání zdrojů nebo odvozeného díla musí software obsahovat copyright IBM a všechny tři uvedené odstavce. Zdroje se poskytovat nemusí. Software je as-is, IBM neposkytuje technickou podporu a odmítá odpovědnost za následky použití.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "IBM poskytuje zdrojový kód; grant výslovně zahrnuje i jeho kompilaci a redistribuci. Podmínka předání platí pro tyto zdroje nebo jakékoli odvozené dílo, ne pouze pro nezměněné zdroje.",
+    "grantCs": "První odstavec uděluje pod copyrighty IBM libovolné užití včetně kopírování, úprav, kompilace a redistribuce s úpravami i bez nich. Výslovně zakazuje dovozovat z tohoto autorského grantu licenci k patentům či patentovým přihláškám IBM. Nové express-exclusion přesně odlišuje tento postoj od mlčení o patentech.",
+    "conditionsCs": "Třetí odstavec vyžaduje při předání zdrojového kódu či odvozeného díla zachovat IBM copyright, tento odstavec i dva předchozí přímo v předávaném softwaru. Není to povinnost poskytnout zdroje, stejná licence celému navazujícímu dílu ani poděkování při běžném užití.",
+    "limitationsCs": "Software je poskytován as-is. IBM uvádí, že nemůže poskytnout technickou podporu, a odmítá odpovědnost za následky použití. Výslovná patentová výluka se vztahuje na dovozování práv k IBM patentům a přihláškám; nejedná se o odvetné ukončení při sporu.",
+    "compatibilityCs": "Znění neobsahuje volbu jiné nebo pozdější licence ani podmíněné přelicencování. Zachování tří odstavců při předání není samo o sobě copyleft; patentová výluka nemůže splnit požadavek na výslovný patentový grant. Žádný závěr o konkrétní kombinaci licencí se automaticky nevyvozuje."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/IBM-pibs.html",
+      "note": "Jednotlivě přečteno celé uložené znění a porovnáno s primární stránkou SPDX, zejména výslovné omezení na autorská práva IBM a podmínka předání všech tří odstavců."
+    }
+  ]
+}

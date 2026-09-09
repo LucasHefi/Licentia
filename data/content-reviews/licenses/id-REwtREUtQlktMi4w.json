@@ -1,0 +1,29 @@
+{
+  "id": "DL-DE-BY-2.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:7bcd1befa17e90cfd3f745d72377569bd940ab7fbdee1db3e7f2acda1bd69c93"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Licence dovoluje data a metadata komerčně i nekomerčně kopírovat, měnit, předávat a začleňovat do sítí či aplikací. Při užití vyžaduje zdrojovou poznámku s dodanými údaji poskytovatele, licence a datové sady a také označení změn. Průvodce ji nezařazuje pro nový software, protože grant i atribuce včetně neveřejného užití míří na data; výluku záruk text neobsahuje.",
+  "blockersCs": [
+    "Předmětem jsou data/metadata a atribuce i při neveřejném datovém užití; před doporučením novému softwaru je třeba samostatný model dat."
+  ],
+  "analysis": {
+    "subjectCs": "Německé a anglické znění Datenlizenz Deutschland BY 2.0 pokrývají data a metadata.",
+    "grantCs": "§1 obou znění dovoluje komerční/nekomerční kopie, tisk, prezentaci, změny, předání, spojení s vlastními i cizími daty a začlenění do veřejných i neveřejných sítí/aplikací.",
+    "conditionsCs": "§2 vyžaduje při užití zdrojovou poznámku s poskytovatelem, názvem či zkratkou licence a odkazem na text a URI datasetu, jen pokud tyto údaje poskytovatel dodal. §3 vyžaduje v poznámce uvést, že data byla změněna.",
+    "limitationsCs": "Obě plná znění neobsahují výluky záruk/odpovědnosti, patentové sankce nebo zákaz komerčního užití.",
+    "compatibilityCs": "Licence uvádí německou i anglickou formulaci, nenabízí jinou licenci/verzi; odkaz govdata je licenční text pro zdrojovou poznámku."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/DL-DE-BY-2.0.html",
+      "note": "Individuálně přečten celý připnutý text; §2 vyžaduje při užití zdrojovou poznámku s poskytovatelem, názvem či zkratkou licence a odkazem na text a URI datasetu, jen pokud tyto údaje poskytovatel dodal. §3 vyžaduje v poznámce uvést, že data byla změněna. Celé oba jazykové texty nemají výslovný patentový grant nebo odvetné ukončení."
+    }
+  ]
+}

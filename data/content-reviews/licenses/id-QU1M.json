@@ -1,0 +1,27 @@
+{
+  "id": "AML",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:1701b8f6b4922cd4f8859394d4a1fee033e4817d6d327c67f1f2cf81b374b713"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Apple dovoluje užití, změny a zdrojové/binární šíření pod svými copyrighty. Zachování celého oznámení je povinné při redistribuci kompletního nezměněného softwaru; jiné výslovné ani implicitní licence včetně patentových nejsou poskytovány.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Původní Apple Software, osobní nevýhradní licence pod copyrighty Apple, zdrojová/binární forma.",
+    "grantCs": "Use/reproduce/modify/redistribute with or without modifications; žádné jiné licence mimo výslovný copyrightový grant, výslovně včetně patentů derivátů/začlenění.",
+    "conditionsCs": "Pokud se redistribuuje software v úplnosti a beze změn, zachovat notice, následující text i disclaimery. Nelze rozšířit tuto podmínku automaticky na každý změněný fragment. Užití/instalace/úprava/redistribuce znamená přijetí podmínek.",
+    "limitationsCs": "Jména, známky, service marks a loga Apple ne pro endorsement bez předchozího písemného souhlasu. AS IS, warranty/noninfringement a vyjmenované škody vyloučeny.",
+    "compatibilityCs": "Žádná jiná licence/verze či reciprocity. Osobní nevýhradnost neuděluje licence k cizím právům; explicitní odmítnutí dalších práv se zachovává."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/AML.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Druhý dlouhý odstavec copyrightový permisivní grant s úzce podmíněným zachováním notice."
+    }
+  ]
+}

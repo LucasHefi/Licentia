@@ -1,0 +1,22 @@
+{
+  "id": "libselinux-1.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.5",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:c79b8cdf97dfc4974ce62b387d39d4ea2c729cb52dc63ce1140bffa4cf5b987b"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Jde o prohlášení, že konkrétní knihovna libselinux nepodléhá copyrightu, doplněné vyloučením záruk a odpovědnosti NSA. Výraz non-commercially developed popisuje vývoj, nezakazuje komerční použití. Text neobsahuje náhradní licenci pro případ, že prohlášení o public domain neobstojí. Jeho přenos na nový projekt vyžaduje ověření nositelů práv a rozsahu.",
+  "blockersCs": [
+    "Ověřit konkrétní pokrytý kód, nositele práv a územní účinky tvrzení o public domain; tento text není obecný náhradní grant pro nový projekt. Na rozdíl od bcrypt-Solar-Designer chybí fallback licence pro případ neúčinného prohlášení. Neinterpretovat non-commercially developed jako zákaz komerčního užití."
+  ],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/libselinux-1.0.html",
+      "note": "Dřívější individuální revize 2026-09-09.5; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

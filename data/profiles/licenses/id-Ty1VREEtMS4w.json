@@ -8,92 +8,98 @@
     "contentHash": "sha256:f5d6a9520aec6acdbf964881049318152cfa2b1aa68dde4da6a4dc777017ccc9"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
+      "conditional-relicensing",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
+      "include-notice",
+      "pass-disclaimer-requirement",
       "unknown"
     ],
     "triggers": [
-      "unknown"
+      "distribution"
     ],
     "restrictions": [
-      "liability"
+      "liability",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/O-UDA-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/O-UDA-1.0.json#text; Open Use of Data Agreement 1.0 odděluje Data od Results obsahujících nejvýše de minimis část dat, včetně takových AI modelů. §1 dovoluje užití, změny a distribuci dat a poskytovatel se zavazuje nežalovat příjemce ani downstream za nároky z řádného užití/změn/distribuce. Public domain a zákonné výjimky zůstávají nedotčeny. Přenos atribuce/disclaimeru není copyleft výsledků a licence výslovně neukládá povinnosti Results.; https://spdx.org/licenses/O-UDA-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/O-UDA-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/O-UDA-1.0.json#text; Přenos atribuce/disclaimeru není copyleft výsledků a licence výslovně neukládá povinnosti Results.; https://spdx.org/licenses/O-UDA-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/O-UDA-1.0.json#text; §1 dovoluje užití, změny a distribuci dat a poskytovatel se zavazuje nežalovat příjemce ani downstream za nároky z řádného užití/změn/distribuce. Public domain a zákonné výjimky zůstávají nedotčeny.; https://spdx.org/licenses/O-UDA-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/O-UDA-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/O-UDA-1.0.json#text; §3 dovoluje vlastní distribuční podmínky, pokud přenesou všechnu přijatou atribuci a uloží její přenos downstream; zároveň obsahují výluky záruk/odpovědnosti pro upstream nejméně stejně široké jako §4.2–4.3. §2 nezatěžuje užití/změny dat ani Results.; https://spdx.org/licenses/O-UDA-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/O-UDA-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/O-UDA-1.0.json#text; §3 dovoluje vlastní distribuční podmínky, pokud přenesou všechnu přijatou atribuci a uloží její přenos downstream; zároveň obsahují výluky záruk/odpovědnosti pro upstream nejméně stejně široké jako §4.2–4.3. §2 nezatěžuje užití/změny dat ani Results.; https://spdx.org/licenses/O-UDA-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/O-UDA-1.0.json#text; §4.1 neposkytuje ani ujištění, že poskytovatel má jakákoli práva k datům. AS IS a liability výluky chrání poskytovatele i upstream. Definice Results vylučuje více než de minimis data.; https://spdx.org/licenses/O-UDA-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/O-UDA-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/O-UDA-1.0.json#text; §1.2 je obecný příslib nežalovat za řádné datové jednání, ne výslovný patentový grant; patentové ukončení chybí.; https://spdx.org/licenses/O-UDA-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/O-UDA-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/O-UDA-1.0.json#text; §3 dovoluje vlastní distribuční podmínky, pokud přenesou všechnu přijatou atribuci a uloží její přenos downstream; zároveň obsahují výluky záruk/odpovědnosti pro upstream nejméně stejně široké jako §4.2–4.3. §2 nezatěžuje užití/změny dat ani Results. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/O-UDA-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/O-UDA-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/O-UDA-1.0.json#text; Individuální kontrola celého připnutého textu O-UDA-1.0 dne 2026-09-09. Open Use of Data Agreement 1.0 odděluje Data od Results obsahujících nejvýše de minimis část dat, včetně takových AI modelů. Licence míří na data s de minimis hranicí Results a vyžaduje uložit downstream další přenos atribuce; před doporučením je nutný datový model a věrné předání této atribuční povinnosti. Vlastní podmínky při redistribuci musejí zachovat dvě downstream povinnosti; nejde o neomezené přelicencování všech dat či přiřazení licence Results.; https://spdx.org/licenses/O-UDA-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

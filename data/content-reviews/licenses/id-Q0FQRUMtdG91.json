@@ -1,0 +1,29 @@
+{
+  "id": "CAPEC-tou",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:466ff0b30dae5d614c21e900a64c12e2d5dd56a03ed1ce7913b1a2b9fa240daf"
+  },
+  "disposition": "blocked",
+  "summaryCs": "MITRE dovoluje užití CAPEC pro výzkum, vývoj a komerční účely a kopie pro tyto účely s copyrightem a licencí. Samostatný rozsah úprav a redistribuce není v krátkém grantu určen.",
+  "blockersCs": [
+    "LICENSE výslovně dovoluje pouze užití CAPEC a účelové kopie; nedokládá obecnou redistribuci či úpravy a jde o databázovou publikaci. Ověřit původní MITRE rozsah těchto práv a doplnit datový předmět i spouštěč kopírování před software doporučením."
+  ],
+  "analysis": {
+    "subjectCs": "Předmětem je databáze Common Attack Pattern Enumeration and Classification a její informace, nikoli obecný softwarový projekt.",
+    "grantCs": "LICENSE dává nevýhradní bezlicenčně-poplatkové užití pro research/development/commercial a zhotovení kopií pro tyto účely. Výslovné oprávnění redistribuce, úprav, sublicence a patentový grant chybějí.",
+    "conditionsCs": "Any copy ... for such purposes musí obsahovat copyright MITRE a tuto licenci; kopírování může nastat i bez distribuce, pro což chybí obecný use/copy spouštěč.",
+    "limitationsCs": "DISCLAIMERS poskytuje dokumenty a informace as is; contributor, zastupovaná/sponzorující organizace a MITRE orgány/personál odmítají záruky včetně neporušení práv, obchodovatelnosti a vhodnosti. Samostatná výluka škod chybí.",
+    "compatibilityCs": "Text neobsahuje alternativní licenci ani povolení relicencovat upravenou datovou sadu; nelze dovodit kompatibilitu."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/CAPEC-tou.html",
+      "note": "Individuální revize celého připnutého textu; Předmětem je databáze Common Attack Pattern Enumeration and Classification a její informace, nikoli obecný softwarový projekt."
+    }
+  ]
+}

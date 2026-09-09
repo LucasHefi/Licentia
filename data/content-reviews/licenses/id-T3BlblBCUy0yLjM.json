@@ -1,0 +1,29 @@
+{
+  "id": "OpenPBS-2.3",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:1001778e0450210b3f559073f387435acda9624834f855671be344f2c72aac81"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Po 31. 12. 2001 zůstávají povinnosti 3–6: notice, informace o úplném zdroji včetně změn/doplňků a reklamní poděkování. Dřívější registrace a zákaz komerční distribuce již nejsou podmínkami; změny a doplňky musí zůstat volně redistribuovatelné bez omezení.",
+  "blockersCs": [
+    "Bod5 vyžaduje complete source včetně modifications/additions a jejich redistribuci jakoukoli stranou without restriction, ale nevymezuje hranici dodatků vůči kombinovanému programu. Je třeba modelovat tuto hranici a downstream svobody, nikoli odvodit library či whole-work copyleft z názvu plánovače."
+  ],
+  "analysis": {
+    "subjectCs": "OpenPBS v2.3 v daném site/location a redistribuce mezi nimi; source/binary s úpravami i bez.",
+    "grantCs": "Úvod dovoluje use/redistribution source/binary s časovou podmínkou: po31.12.2001 pouze3–6, tedy již bez registračního a nekomerčního limitu1–2. Výslovný patentový grant chybí.",
+    "conditionsCs": "3–4 copyright, ack6, podmínky a disclaimer7 dle formy.5 každá distribuce informace k complete source i změnám/doplňkům; zdroj přiložen nebo dostupný nejvýše za distribuční náklady plus nominální poplatek; změny/doplňky volně redistribuovatelné všemi.6 přesná reklama NASA Ames/LLNL/Veridian.",
+    "limitationsCs": "Bod7 AS IS/warranty/noninfringement a liability Veridian/affiliates/US government/agencies; Virginia právo. Historické1–2 a credit URL se nepřenášejí do současných povinností.",
+    "compatibilityCs": "Zmínka jiné komerční licence/podpory v úvodu není oprávnění bez samostatné dohody. Přiložený/dostupný zdroj jsou alternativy plnění; časové prominutí1–2 je výslovné."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/OpenPBS-2.3.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Časově omezený source/binary grant s povinnou zdrojovou dostupností a neomezenou redistribucí změn, bez jasného copyleft rozsahu."
+    }
+  ]
+}

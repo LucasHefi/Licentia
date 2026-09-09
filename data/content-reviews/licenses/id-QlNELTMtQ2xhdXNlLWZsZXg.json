@@ -1,0 +1,27 @@
+{
+  "id": "BSD-3-Clause-flex",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:dc3b6d2aaae8dee20b138b0f6f273ce91930b0a50b00d30c615f5eaa77033350"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Flex má zdrojové/binární notice podmínky a zákaz endorsementu jmény univerzity či přispěvatelů. Generované scannery jsou výslovně z těchto copyrightových podmínek vyňaty; text také oznamuje vládní práva podle smlouvy DOE.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Text pokrývá flex software s uvedenými copyrighty a zvlášť vyjímá scannery generované pomocí flex.skl.",
+    "grantCs": "Redistribution/use obou forem s úpravami i bez nich je účelově neomezené. Závěr dovoluje libovolné nakládání s generovanými scannery bez uvedeného copyrightu. Patentový grant chybí.",
+    "conditionsCs": "Body 1–2 ukládají copyright, podmínky a disclaimer ve zdrojích nebo materiálech binárek; na generované scannery se nevztahují. Nevyžaduje se vydávání zdrojů a vysvětlující basically věta nenahrazuje operativní body.",
+    "limitationsCs": "Univerzita/přispěvatelé nesmějí být bez písemného svolení použiti k endorsementu. Disclaimer odmítá záruky, ale neobsahuje samostatnou výluku škod. Úvod uvádí vládní práva podle DOE smlouvy DE-AC03-76SF00098 bez další podmínky pro běžného příjemce.",
+    "compatibilityCs": "Výstupní výjimka je výslovná: flex.skl nemá copyrightové oznámení a scannery nejsou vázány výše uvedeným copyrightem. Neurčuje konkrétní licenci jejich jiných částí."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/BSD-3-Clause-flex.html",
+      "note": "Individuální revize celého připnutého textu; Text pokrývá flex software s uvedenými copyrighty a zvlášť vyjímá scannery generované pomocí flex.skl."
+    }
+  ]
+}

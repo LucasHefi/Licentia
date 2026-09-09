@@ -8,95 +8,103 @@
     "contentHash": "sha256:dbd8c2ac50bcc7064e015339580914cadff5d1084db25bfbe81fdf169123fbdf"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
       "modifications",
-      "sublicensing"
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "include-license-text"
-    ],
-    "triggers": [
+      "include-notice",
+      "include-use-acknowledgment",
       "unknown"
     ],
-    "restrictions": [
-      "liability",
-      "trademark"
+    "triggers": [
+      "distribution",
+      "modification",
+      "use"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "restrictions": [
+      "additional-terms",
+      "liability",
+      "trademark",
+      "unknown",
+      "warranty"
+    ],
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-2.5-AU.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-2.5-AU.json#text; §3(a)–(d) široké komerční adaptace; §4 nestanoví ShareAlike, pouze atribuční a osobnostní podmínky; https://spdx.org/licenses/CC-BY-2.5-AU.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-2.5-AU.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-2.5-AU.json#text; §4(a),8(b) licence příjemce k originálu, ne povinná licence celé odvozeniny; kolekce výslovně samostatná; https://spdx.org/licenses/CC-BY-2.5-AU.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-BY-2.5-AU.json#text; §3 kopie/deriváty/veřejné šíření, žádné NC; §4(a) sublicence zakázána, patenty neuděleny; https://spdx.org/licenses/CC-BY-2.5-AU.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-BY-2.5-AU.json#text; §4(a),(b) copyright a notices, text licence NEBO URI, povinné přiznání využití v derivátu/veřejně; odstranění creditu na žádost vyžaduje unknown; https://spdx.org/licenses/CC-BY-2.5-AU.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-2.5-AU.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-2.5-AU.json#text; §4(a)–(d) distribuce i publikace/veřejné provedení, odvozenina a kolekce; soukromé použití nepodléhá veřejnému creditu; https://spdx.org/licenses/CC-BY-2.5-AU.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-BY-2.5-AU.json#text; §4(a) dodatečné restrikce/technické kontroly, §4(c),(d) falešné autorství a pověst bez enumu; §§5,6 záruky/odpovědnost a závěr známky; https://spdx.org/licenses/CC-BY-2.5-AU.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-2.5-AU.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-2.5-AU.json#text; §3 copyright a související hudební odměny, všechny jiné neudělené pravomoci vyhrazeny; výslovné patentové ustanovení chybí; https://spdx.org/licenses/CC-BY-2.5-AU.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-BY-2.5-AU.json#text; §4(b) výrazná víceosobní atribuce s určeným způsobem a §4(a) následné odstraňování jsou materiální notice režim; https://spdx.org/licenses/CC-BY-2.5-AU.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-2.5-AU.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-2.5-AU.json#text; Individuální přečtení celého připnutého textu dne 2026-09-10. Australská CC BY 2.5 dovoluje komerční kopie, adaptace a veřejné užití díla bez ShareAlike. Vyžaduje copyright, licenci nebo URI a výraznou atribuci včetně určených dalších osob a vysvětlení využití originálu v derivátu. Zakazuje falešné autorství i jednání s dílem poškozující čest či pověst autora a na žádost požaduje praktické odstranění creditu. Platí právo Nového Jižního Walesu a zvláštní australská náhradní omezení odpovědnosti; patentový grant chybí. Blokace: §4(c),(d) výslovně zakazuje falešné autorství a poškození autorovy cti či pověsti i nad rámec prostého označení; §4(a) ukládá na žádost odstranit credit z kolekce/derivátu a zakazuje rozporné technické kontroly. Model potřebuje samostatné zachycení těchto osobnostních, dynamických atribučních a technologických omezení. Licence pokrývá obsah a související práva včetně hudebních odměn, neposkytuje softwarový zdrojový ani patentový režim. Před nabízením v průvodci novému software je nutná oddělená obsahová větev s těmito konkrétními podmínkami.; https://spdx.org/licenses/CC-BY-2.5-AU.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

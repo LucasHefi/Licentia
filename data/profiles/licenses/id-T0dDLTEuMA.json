@@ -8,93 +8,101 @@
     "contentHash": "sha256:aa89320424efa670240c438dfbc0adf8ae31cac8da5e86e94a72d48773dce2da"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution",
-      "modifications"
-    ],
-    "obligations": [
-      "include-license-text"
-    ],
-    "triggers": [
+      "commercial-use",
+      "modifications",
+      "private-use",
       "unknown"
     ],
-    "restrictions": [
-      "liability",
-      "trademark"
+    "obligations": [
+      "include-copyright",
+      "include-license-text",
+      "include-notice",
+      "mark-modifications"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "triggers": [
+      "distribution",
+      "modification"
+    ],
+    "restrictions": [
+      "additional-terms",
+      "liability",
+      "trademark",
+      "warranty"
+    ],
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OGC-1.0.json#text; permission paragraph expressly USE/COPY/MODIFY for any purpose without fee; redistribution appears in notice clauses but is absent from enumerated grant, so scope of distribution is unresolved; no reciprocal source-supply or same-license condition; https://spdx.org/licenses/OGC-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OGC-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OGC-1.0.json#text; permission paragraph expressly USE/COPY/MODIFY for any purpose without fee; redistribution appears in notice clauses but is absent from enumerated grant, so scope of distribution is unresolved; https://spdx.org/licenses/OGC-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     },
     {
-      "field": "copyleftScope",
+      "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OGC-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OGC-1.0.json#text; clauses 1-3 full NOTICE user-viewable, pre-existing IP disclaimers/notices/terms, fallback short OGC notice SHOULD be used if none exist, mark changes WITH DATE; derived-code URIs recommended only; https://spdx.org/licenses/OGC-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     },
     {
-      "field": "triggers",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OGC-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OGC-1.0.json#text; clauses 1-3 full NOTICE user-viewable, pre-existing IP disclaimers/notices/terms, fallback short OGC notice SHOULD be used if none exist, mark changes WITH DATE; derived-code URIs recommended only; https://spdx.org/licenses/OGC-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OGC-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OGC-1.0.json#text; whole text: no express patent grant or patent-litigation termination; no inference of patent rights from copyright, trademarks or non-infringement disclaimers; https://spdx.org/licenses/OGC-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OGC-1.0.json#text; permission paragraph expressly USE/COPY/MODIFY for any purpose without fee; redistribution appears in notice clauses but is absent from enumerated grant, so scope of distribution is unresolved; https://spdx.org/licenses/OGC-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OGC-1.0.json#text; assent by obtaining/using/copying; warranty/liability disclaimer, prior written permission for name/trademark advertising and retained copyright title; https://spdx.org/licenses/OGC-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OGC-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OGC-1.0.json#text; whole-text editorial review on 2026-09-09, batch 7; Posoudit oprávnění k redistribuci, které je předpokládáno oznamovacími podmínkami, ale chybí ve výslovném grantu use/copy/modify. Doložit kontext OGC a náhradní oznámení při absenci stávajících IP notices; povinná data změn odlišit od doporučených URI. Nepřevzít automaticky širší grant ECL 1.0.; https://spdx.org/licenses/OGC-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OGC-1.0.json#text; clauses 1-3 full NOTICE user-viewable, pre-existing IP disclaimers/notices/terms, fallback short OGC notice SHOULD be used if none exist, mark changes WITH DATE; derived-code URIs recommended only; https://spdx.org/licenses/OGC-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     }
   ]
 }

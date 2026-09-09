@@ -8,93 +8,101 @@
     "contentHash": "sha256:62dfe39236cce729947d78f1e387a9dfbf5daf4ae9bf9f1559a234c26919126a"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
+    "family": "weak-copyleft",
     "copyleftScope": "unknown",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "provide-corresponding-source"
+      "disclose-source",
+      "include-copyright",
+      "include-license-text",
+      "mark-modifications"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification"
     ],
     "restrictions": [
+      "additional-terms",
       "liability",
+      "trademark",
       "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Eurosym.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Eurosym.json#text; Bod 4 ukládá zveřejnění zdrojů změněného tohoto softwaru bez stejné licence celku; slabý zdrojový copyleft má komponentový rozsah, který nelze přesně ztotožnit s file/library/whole-work.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Eurosym.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Eurosym.json#text; Bod 4 ukládá zveřejnění zdrojů změněného tohoto softwaru bez stejné licence celku; slabý zdrojový copyleft má komponentový rozsah, který nelze přesně ztotožnit s file/library/whole-work.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Eurosym.json#text; Permission odstavec výslovně dovoluje libovolný účel, komerční aplikace, úpravy a redistribuci; výslovný patentový grant či sublicence chybějí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Eurosym.json#text; Body 1–2 zakazují zkreslit původ a vyžadují označit změněné zdroje; product acknowledgment je jen přání. Bod 4 při změně a redistribuci části/celku v jakékoli formě požaduje dostupné zdroje změněné verze tohoto softwaru. Bod 5 zachovává neměnné notice ve zdrojových distribucích.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Eurosym.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Eurosym.json#text; Body 1–2 zakazují zkreslit původ a vyžadují označit změněné zdroje; product acknowledgment je jen přání. Bod 4 při změně a redistribuci části/celku v jakékoli formě požaduje dostupné zdroje změněné verze tohoto softwaru. Bod 5 zachovává neměnné notice ve zdrojových distribucích.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Eurosym.json#text; Bod 3 zakazuje použití jmen autorů/držitelů v reklamě či publicitě distribuce bez předchozího písemného svolení. Úvod odmítá záruky a škody; závěr volí německé právo a Saarbruecken City Court.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Eurosym.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Eurosym.json#text; Permission odstavec výslovně dovoluje libovolný účel, komerční aplikace, úpravy a redistribuci; výslovný patentový grant či sublicence chybějí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Eurosym.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Eurosym.json#text; Body 1–2 zakazují zkreslit původ a vyžadují označit změněné zdroje; product acknowledgment je jen přání. Bod 4 při změně a redistribuci části/celku v jakékoli formě požaduje dostupné zdroje změněné verze tohoto softwaru. Bod 5 zachovává neměnné notice ve zdrojových distribucích.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Eurosym.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Eurosym.json#text; Individuálně přečten celý připnutý text. Licence Version 2 se vztahuje na Eurosym software a zdrojový kód jeho změněné verze. Užití a komerce jsou dovoleny. Upravené zdroje se označí a při redistribuci změněného softwaru v jakékoli formě se zpřístupní jeho zdrojový kód. Zákaz zkreslení původu a použití jmen v publicitě doplňuje německé právo a soud v Saarbrückenu. Bod 4 se vztahuje na zdroje změněného Eurosym při redistribuci jeho částí či celku, nikoli výslovně na soubor, knihovnu nebo celý kombinovaný program. Doplnit komponentový rozsah povinnosti a oddělit dostupnost zdrojů od povinného same-license.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

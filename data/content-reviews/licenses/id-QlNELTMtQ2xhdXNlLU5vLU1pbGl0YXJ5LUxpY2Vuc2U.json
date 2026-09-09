@@ -1,0 +1,29 @@
+{
+  "id": "BSD-3-Clause-No-Military-License",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:068b514d51e69aeb1a6876a8ca215a63b01a4dbb503efca52405fff71d4bc74d"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Licence dovoluje užití a redistribuci zdrojů i binárek s úpravami při zachování copyrightu, podmínek a výluky záruk. Jména autorů nelze bez svolení použít k podpoře produktů a závěr výslovně vylučuje licencování činností spojených s vojenským zařízením. Průvodce ji nezařazuje kvůli tomuto omezení účelu; nejde pouze o upozornění na technickou nevhodnost.",
+  "blockersCs": [
+    "Závěrečná věta výslovně říká not licensed pro činnosti vojenských zařízení; před doporučením je nutné modelovat zakázaný obor užití, který slovník restrictions nemá."
+  ],
+  "analysis": {
+    "subjectCs": "Znění používá BSD tři podmínky a přidává závazné vyloučení vojenských zařízení.",
+    "grantCs": "Grant dovoluje užití a redistribuci zdrojů/binárek se změnami i bez, ale závěr říká, že software není licencován pro návrh, stavbu, provoz či údržbu military facility.",
+    "conditionsCs": "Zdroj zachová copyright/podmínky/disclaimer; binárky je reprodukují v doprovodných materiálech.",
+    "limitationsCs": "Jména autora/přispěvatelů nesmějí bez konkrétního písemného svolení podporovat produkty; AS IS vylučuje záruky/odpovědnost. „Not designed, licensed or intended“ je i omezení licencovaného účelu, nikoli jen technické upozornění.",
+    "compatibilityCs": "Jiná licence nebo verze není nabízena."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/BSD-3-Clause-No-Military-License.html",
+      "note": "Individuálně přečten celý připnutý text; Zdroj zachová copyright/podmínky/disclaimer; binárky je reprodukují v doprovodných materiálech. Celý text neobsahuje patentový grant či patentové ukončení."
+    }
+  ]
+}

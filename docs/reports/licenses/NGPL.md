@@ -1,0 +1,58 @@
+# NGPL — obsahová revize
+
+Nethack General Public License
+
+Revize: **2026-09-09** · pravidlo **2026-09-09.10**.
+
+Výsledek: **způsobilá pro průvodce podle kurátorovaného profilu**.
+
+NetHack licence zachovává notices a datované změny a licencuje celé publikované dílo obsahující části nebo odvozeniny zdarma pod stejnými podmínkami. Binárky nesou úplné zdroje; jen nekomerční šíření smí místo nich odkázat na vhodný archiv. Fyzické předání a záruka mohou být zpoplatněny.
+
+## Předmět a rozsah
+
+NGPL pokrývá NetHack a práce obsahující či odvozené z celku nebo části; licence umožňuje použít vlastní formulaci pro jiné programy.
+
+## Udělená práva
+
+§§1–3 dovolují původní/změněné zdroje a executable/object distribuce. §2(c) výslovně dovoluje distribuční poplatek za fyzický přenos a placenou záruku; žádný patentový grant nebo obecná sublicence nejsou uvedeny.
+
+## Podmínky a spouštěče
+
+§1 zachovává copyright/licenční/no-warranty notices na souborech a dává příjemcům licenci. §2(a) výrazné změny s datem; §2(b) celé distribuované/publikované dílo obsahující nebo odvozené z NetHack pod totožnými bezplatnými licenčními právy. §3 binárky doprovázejí úplné strojové zdroje NEBO pouze nekomerčně úplné údaje k vhodnému archivu; úplné zdroje jsou původní distribuce nebo aktualizované soubory použité k sestavení.
+
+## Omezení, výjimky a ukončení
+
+§4 jiné kopie/sublicence/distribuce/přenos jsou neplatné a ukončují práva automaticky; řádní downstream příjemci je zachovávají. Preambule/no-warranty notices vyjadřují absenci záruky; §2(b/c) dovoluje dobrovolnou rozšířenou/platenou záruku. Samostatná výluka odpovědnosti za škody chybí.
+
+## Verze a kombinování
+
+Neplacená licence práv neznamená zákaz fyzického distribučního poplatku. Archivní alternativa je výhradně nekomerční, žádná obecná písemná nabídka tří let v textu není. Není určena GPL alternativa.
+
+## Metadata a jejich doložení
+
+| Pole | Hodnota | Doložení znění |
+|---|---|---|
+| family | "strong-copyleft" | public/data/licenses/NGPL.json#text; §2(b) výslovně whole of any work obsahující či odvozené z části NetHack vyžaduje totožné podmínky; whole-work silný copyleft s daným vymezením. |
+| copyleftScope | "whole-work" | public/data/licenses/NGPL.json#text; §2(b) výslovně whole of any work obsahující či odvozené z části NetHack vyžaduje totožné podmínky; whole-work silný copyleft s daným vymezením. |
+| permissions | ["commercial-use","distribution","modifications","private-use"] | public/data/licenses/NGPL.json#text; §§1–3 dovolují původní/změněné zdroje a executable/object distribuce. §2(c) výslovně dovoluje distribuční poplatek za fyzický přenos a placenou záruku; žádný patentový grant nebo obecná sublicence nejsou uvedeny. |
+| obligations | ["include-copyright","include-license-text","mark-modifications","provide-corresponding-source","same-license"] | public/data/licenses/NGPL.json#text; §1 zachovává copyright/licenční/no-warranty notices na souborech a dává příjemcům licenci. §2(a) výrazné změny s datem; §2(b) celé distribuované/publikované dílo obsahující nebo odvozené z NetHack pod totožnými bezplatnými licenčními právy. §3 binárky doprovázejí úplné strojové zdroje NEBO pouze nekomerčně úplné údaje k vhodnému archivu; úplné zdroje jsou původní distribuce nebo aktualizované soubory použité k sestavení. |
+| triggers | ["combination","distribution","modification"] | public/data/licenses/NGPL.json#text; §1 zachovává copyright/licenční/no-warranty notices na souborech a dává příjemcům licenci. §2(a) výrazné změny s datem; §2(b) celé distribuované/publikované dílo obsahující nebo odvozené z NetHack pod totožnými bezplatnými licenčními právy. §3 binárky doprovázejí úplné strojové zdroje NEBO pouze nekomerčně úplné údaje k vhodnému archivu; úplné zdroje jsou původní distribuce nebo aktualizované soubory použité k sestavení. |
+| restrictions | ["additional-terms","warranty"] | public/data/licenses/NGPL.json#text; §4 jiné kopie/sublicence/distribuce/přenos jsou neplatné a ukončují práva automaticky; řádní downstream příjemci je zachovávají. Preambule/no-warranty notices vyjadřují absenci záruky; §2(b/c) dovoluje dobrovolnou rozšířenou/platenou záruku. Samostatná výluka odpovědnosti za škody chybí. |
+| patentPosition | "none-stated" | public/data/licenses/NGPL.json#text; §§1–3 dovolují původní/změněné zdroje a executable/object distribuce. §2(c) výslovně dovoluje distribuční poplatek za fyzický přenos a placenou záruku; žádný patentový grant nebo obecná sublicence nejsou uvedeny. |
+| noticeBurden | "material" | public/data/licenses/NGPL.json#text; §1 zachovává copyright/licenční/no-warranty notices na souborech a dává příjemcům licenci. §2(a) výrazné změny s datem; §2(b) celé distribuované/publikované dílo obsahující nebo odvozené z NetHack pod totožnými bezplatnými licenčními právy. §3 binárky doprovázejí úplné strojové zdroje NEBO pouze nekomerčně úplné údaje k vhodnému archivu; úplné zdroje jsou původní distribuce nebo aktualizované soubory použité k sestavení. |
+
+## Zdroje
+
+- [Primární zdroj](https://spdx.org/licenses/NGPL.html) — Individuální revize celého připnutého textu; NGPL pokrývá NetHack a práce obsahující či odvozené z celku nebo části; licence umožňuje použít vlastní formulaci pro jiné programy.
+- [Kurátorovaný profil](../../../data/profiles/licenses/id-TkdQTA.json)
+- [Uložené úplné znění](../../../public/data/licenses/NGPL.json)
+
+## Otisk zdroje
+
+```json
+{
+  "sourceId": "spdx-license-list",
+  "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+  "contentHash": "sha256:d14af64456765af81d5e9d032594f4ab7f0001851f3ceeef13394f11de6f356e"
+}
+```

@@ -1,0 +1,29 @@
+{
+  "id": "TekHVC",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:90a4259c658ee0a1c6b95f4db5e9f703b81d0ded4b1e74dff58f1dbe8f196af0"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Kód a dokumentaci lze používat, měnit, prodávat a šířit. Zobrazené souřadnice musí být v rozhraní i dokumentaci označeny TekHVC a tento termín je povinný a výlučný pro matematické odvození daného prostoru. Zmínka patentu není výslovný patentový grant.",
+  "blockersCs": [
+    "Body 2–3 ukládají konkrétní označování souřadnic v každém rozhraní a dokumentaci a matematicky podmíněné výlučné užití názvu TekHVC. Je třeba modelovat tyto funkční/názvové podmínky; obecná ochranná známka ani poděkování za užití nejsou ekvivalentem."
+  ],
+  "analysis": {
+    "subjectCs": "Součást Xcms pro X Window/TekColor; barevný prostor TekHVC a jeho souřadnice.",
+    "grantCs": "Use/copy/modify/sell/distribute software/documentation any purpose without fee. Text uvádí U.S. Patent 4,985,853 a zahraniční přihlášky, ale nevymezuje výslovnou patentovou licenci.",
+    "conditionsCs": "Bod 1 celý copyright/permission/disclaimer v kopiích, změnách a dokumentaci. Bod 2 označit TekHVC souřadnice v každém zobrazujícím rozhraní a dokumentaci. Bod 3 termín vždy a pouze u matematických odvození tohoto prostoru bez ohledu na reprezentaci.",
+    "limitationsCs": "TekColor je známka; AS IS/all faults, výluky záruk a vyjmenovaných škod. Historický patentový údaj není ověřením jeho současného trvání.",
+    "compatibilityCs": "Žádná jiná licence/verze; ekvivalentní matematické cesty jsou součást naming podmínky, ne patentová kompatibilitní výjimka."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/TekHVC.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Široký grant má zvláštní povinné matematické/UI pojmenování v bodech 2–3."
+    }
+  ]
+}

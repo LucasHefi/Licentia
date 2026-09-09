@@ -9,90 +9,96 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "include-copyright"
+      "include-copyright",
+      "include-notice"
     ],
     "triggers": [
-      "unknown"
+      "distribution"
     ],
     "restrictions": [
-      "liability"
+      "additional-terms",
+      "liability",
+      "warranty"
     ],
-    "patentPosition": "unknown",
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NAIST-2003.json#text; opening use/reproduction/distribution grant covers original and modified copies; incorporated ICOT conditions expressly permit modified distribution and define use to include modification/secondary products; no commercial-purpose restriction; whole text: no reciprocal source-disclosure or same-license condition; https://spdx.org/licenses/NAIST-2003.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.3"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NAIST-2003.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NAIST-2003.json#text; opening use/reproduction/distribution grant covers original and modified copies; incorporated ICOT conditions expressly permit modified distribution and define use to include modification/secondary products; no commercial-purpose restriction; https://spdx.org/licenses/NAIST-2003.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.3"
     },
     {
-      "field": "copyleftScope",
+      "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NAIST-2003.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NAIST-2003.json#text; opening condition: copyright and FOLLOWING paragraphs in all original/modified copies; incorporated ICOT distribution clause: section 3 NO WARRANTY attached in substantially same form; https://spdx.org/licenses/NAIST-2003.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.3"
     },
     {
-      "field": "triggers",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NAIST-2003.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NAIST-2003.json#text; opening condition: copyright and FOLLOWING paragraphs in all original/modified copies; incorporated ICOT distribution clause: section 3 NO WARRANTY attached in substantially same form; https://spdx.org/licenses/NAIST-2003.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.3"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NAIST-2003.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NAIST-2003.json#text; whole text: no express patent grant or patent-litigation termination is stated; no inference about implied rights; https://spdx.org/licenses/NAIST-2003.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.3"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/NAIST-2003.json#text; opening use/reproduction/distribution grant covers original and modified copies; incorporated ICOT conditions expressly permit modified distribution and define use to include modification/secondary products; no commercial-purpose restriction; https://spdx.org/licenses/NAIST-2003.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.3"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/NAIST-2003.json#text; NAIST and ICOT disclaimers: warranty/liability incl subsequent distributors without independent written warranty; ICOT distribution must not violate laws with jurisdiction; uses imply understanding of disclaimers; https://spdx.org/licenses/NAIST-2003.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.3"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NAIST-2003.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NAIST-2003.json#text; whole-text editorial review on 2026-09-09, batch 3; V kopiích zachovejte copyright a navazující odstavce včetně podmínek ICOT a části NO WARRANTY. Povolení zahrnuje upravené verze, ale distribuce musí respektovat příslušné právní předpisy. U slovníkových dat text přebírá i podmínky ICOT; nejde o povinnost poskytovat zdroje.; https://spdx.org/licenses/NAIST-2003.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.3"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/NAIST-2003.json#text; opening condition: copyright and FOLLOWING paragraphs in all original/modified copies; incorporated ICOT distribution clause: section 3 NO WARRANTY attached in substantially same form; https://spdx.org/licenses/NAIST-2003.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.3"
     }
   ]
 }

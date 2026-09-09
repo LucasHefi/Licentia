@@ -1,0 +1,27 @@
+{
+  "id": "snprintf",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:f9cb5348605de41bffc14d87fba1086b022f1df78dc5c68cc5214b5b6b602278"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Kód odvozený z práce Patricka Powella lze používat k jakémukoli účelu; v každé distribuci zdrojového kódu musí zůstat celé původní oznámení. Text neukládá zveřejňování zdrojů k binárním kopiím.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Předmětem je kód vycházející z práce Patricka Powella, s copyrightem 1995.",
+    "grantCs": "Použití pro jakýkoli účel neomezuje komerční využití, úpravy ani distribuci; výslovné patentové oprávnění chybí.",
+    "conditionsCs": "Celé oznámení včetně původu musí zůstat neporušené při všech zdrojových distribucích. Binární distribuce samostatnou informační povinnost nemají.",
+    "limitationsCs": "Text neobsahuje zárukové výluky, odpovědnost, povinné uvolnění zdrojů či ukončení.",
+    "compatibilityCs": "Nezavádí reciproční licenci ani volbu jiných verzí; žádný závěr o kompatibilitě konkrétního spojení se nedovozuje."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/snprintf.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Druhý odstavec dovoluje použití pro jakýkoli účel za zachování oznámení ve zdrojových distribucích."
+    }
+  ]
+}

@@ -8,97 +8,109 @@
     "contentHash": "sha256:ca8fa1fc1443e76390670e9a2a4c9db7efa58ee364ff778a6ca80aa489ec7328"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
     "family": "strong-copyleft",
     "copyleftScope": "whole-work",
     "permissions": [
       "commercial-use",
+      "conditional-relicensing",
       "distribution",
-      "patent-grant"
+      "modifications",
+      "patent-grant",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "include-license-text",
-      "provide-corresponding-source"
+      "include-notice",
+      "preserve-combined-license-terms",
+      "provide-corresponding-source",
+      "same-license",
+      "unknown"
     ],
     "triggers": [
+      "combination",
+      "distribution",
+      "modification",
+      "patent-claim",
       "unknown"
     ],
     "restrictions": [
+      "additional-terms",
       "liability",
+      "patent-claim",
       "trademark",
       "warranty"
     ],
-    "patentPosition": "express-grant",
-    "noticeBurden": "standard"
+    "patentPosition": "retaliatory-termination",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.whole-work-copyleft",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.copyleft-family",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/copyleft-next-0.3.0.json#text; §3 standardně vyžaduje celý Derived Work pod licencí; §§7–8 tento režim později ruší, proto family zachycuje výchozí silný copyleft s konkrétním blockerem dynamiky; https://spdx.org/licenses/copyleft-next-0.3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/copyleft-next-0.3.0.json#text; §3 entire Derived Work as a whole i při oddělené distribuci částí; §15 výjimky agregace, prosté reprodukce a pouhého odkazu bez opačného očekávání; https://spdx.org/licenses/copyleft-next-0.3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/copyleft-next-0.3.0.json#text; §1 široká autorská a patentová práva; §§3,15 GPL zahrnuje GNU GPL i Affero; §11 pozdější copyleft-next, pokud poskytovatel výslovně neodebere tuto možnost; https://spdx.org/licenses/copyleft-next-0.3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "restrictions",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/copyleft-next-0.3.0.json#text; §§2–6 notices, celý derivativ a Corresponding Source s URL NEBO přiložením u fyzických produktů; §4 zachování začleněných podmínek; §§7–8 dynamický zánik §§2–5 nemá model; https://spdx.org/licenses/copyleft-next-0.3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/copyleft-next-0.3.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/copyleft-next-0.3.0.json#text; §§2–6 distribuční/příspěvkové a kombinační podmínky, §10 zahájení patentové žaloby s výjimkami; §7 nabídka placené varianty a §8 čas nejsou žádným stávajícím triggerem; https://spdx.org/licenses/copyleft-next-0.3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/copyleft-next-0.3.0.json#text; §4 zákaz dalších restrikcí včetně soudních/smluvních s historickou výjimkou, §1 známky, §§12–13 výluky a §10 patentové ukončení se zachováním minimálního běhu; https://spdx.org/licenses/copyleft-next-0.3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/copyleft-next-0.3.0.json#text; §§1(b),15 nutně porušené nyní/budoucnu licencovatelné patenty, ne pouze další modifikace; §10 ruší grant za patentovou žalobu, vyjímá declaratory/counter/cross-claims; https://spdx.org/licenses/copyleft-next-0.3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/copyleft-next-0.3.0.json#text; §2 relevantní Legal Notices bez grafiky/známek, §3 prominentní licenční notice a §5 specifická zdrojová URL; §§7–8 mohou celý tento režim odstranit; https://spdx.org/licenses/copyleft-next-0.3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/copyleft-next-0.3.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/copyleft-next-0.3.0.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. copyleft-next0.3.0 standardně požaduje licenci celého odvozeného díla, zachování relevantních právních notices a u objektového kódu bezplatné zdroje přes URL; fyzický produkt má dvouletou dostupnost nebo může zdroje přímo obsahovat. Lze dodatečně nabídnout GPL včetně AGPL. Tyto distribuční povinnosti však zanikají při určité placené proprietární nabídce poskytovatele nebo po15 letech od jeho první distribuce. Patentová žaloba ukončuje grant s výjimkami, ale potřebné kopírování pro samotný běh zůstává neukončitelné. Blokace: §§7–8 odstraňují celé podmínky §§2–5 podle nabídky placené proprietární varianty a po15 letech od první distribuce My Work pod touto licencí. Statický profil neumí přepnout notices/copyleft/zdroje podle těchto událostí; je nutné modelovat čas a obchodní nabídku konkrétního poskytovatele, nikoli použít datum vydání licence2013-05-16 jako datum začátku lhůty. §4 dovoluje začleněné licence jen pokud byly zároveň OSI-Approved a FSF-Free k vydání této verze; §7 používá odlišnou disjunkci OSI nebo FSF či číslovaný copyleft-next. Před automatickou kombinací či vyhodnocením zániku podmínek je potřebný verzovaný historický registr a odlišení obou testů, nikoli dnešní příznaky SPDX.; https://spdx.org/licenses/copyleft-next-0.3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

@@ -1,0 +1,29 @@
+{
+  "id": "Fair",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:e22ec327ce724e3b46c9642e435a2275624658704164a2ce8dee23488723f0c3"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Fair dovoluje užití děl, pokud s nimi zůstane celý licenční instrument tak, aby o něm byl vyrozuměn každý užívající subjekt. Podmínka platí již při užití a slovník ji nyní zachycuje hodnotou use. Text vylučuje záruky, ale neobsahuje samostatné vyloučení odpovědnosti ani patentový grant. Zůstává odložen kvůli rozsahu velmi obecného usage of the works: metadata bez doloženého interpretačního pravidla nepřidávají výslovné oprávnění k distribuci, úpravám či podlicencování.",
+  "blockersCs": [
+    "Doložit interpretační pravidlo a primární podklady pro rozsah usage of the works, zejména distribuci a úpravy. Spouštěč samotného užití je již vyřešen hodnotou use; obecný grant bez dalšího nepřevádět na výslovná jednotlivá oprávnění."
+  ],
+  "analysis": {
+    "subjectCs": "Grant hovoří obecně o works, nikoli výslovně pouze o softwaru. Licenční instrument zahrnuje označení Fair License, místo pro copyrightové informace, podmínku použití a disclaimer.",
+    "grantCs": "Výslovně je dovoleno usage of the works. Samostatné distribuční, modifikační či podlicenční oprávnění není vyjmenováno; bez doložené interpretace rozsahu nelze z názvu rodiny vyrábět konkrétní seznam práv. Patentový grant není uveden.",
+    "conditionsCs": "Celý instrument musí zůstat s díly tak, aby byl oznámen každému subjektu, který je používá. Use proto nahrazuje dřívější technicky nevyjádřený spouštěč; povinnost není omezena na předání kopie třetí osobě.",
+    "limitationsCs": "Jediný disclaimer stanoví, že díla jsou bez záruky. Neobsahuje samostatné omezení odpovědnosti, zákaz použití jmen ani patentovou odvetu.",
+    "compatibilityCs": "Text nestanoví alternativní verzi nebo licenci ani zdrojovou či copyleftovou povinnost. Způsobilost pro nové softwarové projekty zůstává blokována konkrétní otázkou rozsahu grantu, nikoli chybějícím use triggerem."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Fair.html",
+      "note": "Úplné uložené znění jednotlivě přečteno a porovnáno s primární stránkou SPDX; nové vyjádření podmínek use zachovává původní rozsah a otisk zdroje."
+    }
+  ]
+}

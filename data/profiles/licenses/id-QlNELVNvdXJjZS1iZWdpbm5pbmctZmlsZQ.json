@@ -8,8 +8,8 @@
     "contentHash": "sha256:bdc6b3d51199a8b3a6e2d1bfb85f5bbe0cf61d42c75d8d419c6336d81a040fc3"
   },
   "review": {
-    "status": "not-recommendable",
-    "recommendable": false,
+    "status": "reviewed",
+    "recommendable": true,
     "evidenceLevel": "strong"
   },
   "semantic": {
@@ -34,53 +34,71 @@
       "warranty"
     ],
     "patentPosition": "none-stated",
-    "noticeBurden": "material"
+    "noticeBurden": "standard"
   },
   "evidence": [
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant paragraph (\"Redistribution and use in source and binary forms, with or without modification, are permitted\") and condition 1; broad non-reciprocal BSD-style permission identifies a permissive family, while the source-only placement formula is a variant-specific term"
+      "locator": "public/data/licenses/BSD-Source-beginning-file.json#text; Zdrojová oznamovací klauzule a zákaz endorsementu jsou permisivní, bez source-offer a copyleftu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant and conditions 1-2 (permission is non-reciprocal; no same-license, source-disclosure, corresponding-source, linking, or network-use condition is stated)"
+      "locator": "public/data/licenses/BSD-Source-beginning-file.json#text; Zdrojová oznamovací klauzule a zákaz endorsementu jsou permisivní, bez source-offer a copyleftu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant paragraph (\"Redistribution and use in source and binary forms, with or without modification, are permitted\"); no purpose or field-of-use limitation is stated, supporting commercial use, private use, distribution, and modifications"
+      "locator": "public/data/licenses/BSD-Source-beginning-file.json#text; Úvodní redistribution and use výslovně zahrnuje obě formy a modifikace bez účelového omezení. Patentový grant ani sublicence uvedeny nejsou.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text: condition 1 (source redistributions must retain the above copyright notice, list of conditions, and following disclaimer, without modification, immediately at the beginning of the file); this supports include-copyright and include-license-text, while no mark-modifications or corresponding-source duty is stated"
+      "locator": "public/data/licenses/BSD-Source-beginning-file.json#text; Bod 1 požaduje nezměněný copyright, podmínky a disclaimer bezprostředně na začátku souboru při distribuci zdrojů. Binární notice klauzule chybí; povinnost dodat zdroje z toho nevzniká.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "text: condition 1 opening (\"Redistributions of source code\"); the retention and beginning-of-file notice duties attach to source distribution, while modification alone has no separate trigger"
+      "locator": "public/data/licenses/BSD-Source-beginning-file.json#text; Bod 1 požaduje nezměněný copyright, podmínky a disclaimer bezprostředně na začátku souboru při distribuci zdrojů. Binární notice klauzule chybí; povinnost dodat zdroje z toho nevzniká.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text: condition 2 (the author name may not be used to endorse or promote derived products without specific prior written permission); final disclaimer (\"AS IS\", express/implied warranty disclaimer, and limitation of liability)"
+      "locator": "public/data/licenses/BSD-Source-beginning-file.json#text; Bod 2 zakazuje endorsement/promotion autorovým jménem bez konkrétního předchozího písemného svolení. Disclaimer odmítá záruky i přímé/nepřímé škody autora a přispěvatelů.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "text: complete license text (opening grant, source notice condition, endorsement/name condition, and disclaimer); no express patent grant, patent condition, patent-claim restriction, or patent-termination clause is stated"
+      "locator": "public/data/licenses/BSD-Source-beginning-file.json#text; Úvodní redistribution and use výslovně zahrnuje obě formy a modifikace bez účelového omezení. Patentový grant ani sublicence uvedeny nejsou.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text: condition 1 requires retaining the copyright notice, list of conditions, and disclaimer without modification immediately at the beginning of every source file; the mandatory placement and unmodified-preservation formula create a material source-notice burden"
+      "locator": "public/data/licenses/BSD-Source-beginning-file.json#text; Bod 1 požaduje nezměněný copyright, podmínky a disclaimer bezprostředně na začátku souboru při distribuci zdrojů. Binární notice klauzule chybí; povinnost dodat zdroje z toho nevzniká.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "metadata: id=BSD-Source-beginning-file, name='BSD Source Code Attribution - beginning of file variant', deprecated=false, osi=false, fsf=false, seeAlso=https://github.com/lattera/freebsd/blob/master/sys/cam/cam.c#L4; notes and text identify the specific immediate-beginning-of-file source notice formula, author-name endorsement restriction, and warranty/liability disclaimer; the source-specific formula makes this variant unsuitable for automatic recommendation"
+      "locator": "public/data/licenses/BSD-Source-beginning-file.json#text; Individuálně přečten celý připnutý text. Software s copyrightem Justina T. Gibbse 1997 je licencován ve zdrojové i binární formě. Zdrojové i binární podoby lze používat a šířit i upravené. Pouze zdrojové redistribuce musí zachovat nezměněný copyright, podmínky a disclaimer hned na začátku souboru. Autorovo jméno nesmí bez písemného svolení podporovat odvozené produkty. ",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

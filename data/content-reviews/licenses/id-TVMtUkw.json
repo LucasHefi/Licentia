@@ -1,0 +1,20 @@
+{
+  "id": "MS-RL",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.2",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:436c6580a6a474820f39272c5b83ee817b8404f7b5ee3e70149dbaafd541c661"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Souborový copyleft: příjemcům poskytněte zdroje každého distribuovaného souboru obsahujícího pokrytý kód a kopii MS-RL. Vlastní oddělené soubory mohou mít jiné podmínky. Zachovejte oznámení; patentový nárok proti přispěvateli ukončuje patentový grant od tohoto přispěvatele.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/MS-RL.html",
+      "note": "Dřívější individuální revize 2026-09-09.2; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

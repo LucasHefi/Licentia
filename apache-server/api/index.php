@@ -4,7 +4,7 @@ declare(strict_types=1);
 const DATA_VERSION = '3.28.0';
 const API_VERSION = '1.1.0';
 const RULE_VERSION = '1.0.0';
-const GUIDE_MODEL_VERSION = 'lic-008-guide-v1';
+const GUIDE_MODEL_VERSION = 'lic-008-guide-v6';
 
 $configFile = __DIR__ . '/config.php';
 if (!is_file($configFile)) {
@@ -109,7 +109,7 @@ function workspace_state(array $value): array {
         }
         return array_keys($result);
     };
-    $allowedAnswers = ['openness', 'reciprocity', 'delivery', 'patents', 'notices', 'jurisdiction', 'projectForm', 'commercialUse', 'proprietary', 'copyleftTrigger', 'trademarks', 'obligations', 'dependencies', 'versionStrategy', 'dualLicensing', 'futureDistribution'];
+    $allowedAnswers = ['openness', 'reciprocity', 'delivery', 'patents', 'advertising', 'notices', 'jurisdiction', 'projectForm', 'commercialUse', 'proprietary', 'copyleftTrigger', 'trademarks', 'obligations', 'dependencies', 'versionStrategy', 'dualLicensing', 'futureDistribution'];
     $answers = $value['guideAnswers'] ?? null;
     if (!is_array($answers) || array_diff(array_keys($answers), $allowedAnswers)) respond(['error' => 'Pracovní prostor obsahuje neplatné odpovědi průvodce.'], 422);
     foreach ($answers as $answer) if (!is_string($answer) || strlen($answer) > 128) respond(['error' => 'Pracovní prostor obsahuje neplatnou odpověď průvodce.'], 422);
@@ -218,6 +218,29 @@ function oauth_signin(string $provider, string $providerId, string $email, strin
 }
 
 function family(array $license): string {
+    $metadata = $license['metadata'] ?? null;
+    if (($license['type'] ?? null) === 'license' && metadata_envelope($metadata, (string)($license['id'] ?? ''))) {
+        $review = $metadata['review'];
+        $covered = array_column($metadata['evidence'], 'field');
+        $individual = array_filter($metadata['evidence'], static fn(array $entry): bool => ($entry['field'] ?? null) === 'review' && ($entry['ruleId'] ?? null) === 'guide-expansion.editorial-review');
+        $positive = empty($license['deprecated']) && $review['status'] === 'reviewed' && $review['recommendable'];
+        $negative = $review['status'] === 'not-recommendable' && $review['evidenceLevel'] === 'strong' && $individual
+            && !array_diff(array_merge(array_keys($metadata['semantic']), ['review']), $covered);
+        if ($positive || $negative) {
+            $semantic = $metadata['semantic'];
+            if ($semantic['family'] === 'unknown') return 'Neklasifikováno';
+            if ($semantic['family'] === 'network-copyleft') return 'Síťový copyleft';
+            if ($semantic['family'] === 'strong-copyleft') return 'Silný copyleft';
+            if ($semantic['family'] === 'weak-copyleft') {
+                if ($semantic['copyleftScope'] === 'file') return 'Souborový copyleft';
+                if ($semantic['copyleftScope'] === 'library') return 'Knihovní copyleft';
+                return 'Slabý copyleft';
+            }
+            if ($semantic['family'] === 'public-domain-equivalent' || ($semantic['family'] === 'permissive' && $semantic['noticeBurden'] === 'none' && $semantic['copyleftScope'] === 'none')) return 'Maximálně volná';
+            if ($semantic['family'] === 'permissive') return 'Permisivní';
+            return 'Nestandardní';
+        }
+    }
     $conditions = $license['conditions'] ?? [];
     if (in_array('network-use-disclose', $conditions, true)) return 'Síťový copyleft';
     if (in_array('same-license', $conditions, true)) return 'Silný copyleft';
@@ -234,6 +257,7 @@ function guide_answer_schema(): array {
             'reciprocity' => $enum(['none', 'file', 'library', 'strong', 'network']),
             'delivery' => $enum(['library', 'application', 'saas', 'internal']),
             'patents' => $enum(['important', 'neutral']),
+            'advertising' => $enum(['allowed', 'avoid']),
             'notices' => $enum(['minimal', 'standard']),
             'jurisdiction' => $enum(['eu', 'global']),
             'projectForm' => $enum(['library', 'application', 'service', 'plugin']),
@@ -260,22 +284,24 @@ function guide_questions(): array {
     return [
         $question('q-openness', 'openness', 'quick', 'Má zůstat software otevřený?', 'Rozlišuje open-source větev od proprietární strategie.', $options([['open', 'Ano'], ['closed', 'Povolím uzavřené použití']])),
         $question('q-project-form', 'projectForm', 'quick', 'Co distribuujete?', 'Forma projektu určuje relevantní povinnosti.', $options([['application', 'Aplikaci'], ['library', 'Knihovnu'], ['service', 'Službu']])),
-        $question('q-reciprocity', 'reciprocity', 'quick', 'Jaký rozsah sdílení změn chcete?', 'Průvodce nabízí rozsahy, pro které má katalog bezpečné kandidáty.', $options([['none', 'Žádný'], ['strong', 'Celé dílo']])),
+        $question('q-reciprocity', 'reciprocity', 'quick', 'Jaký rozsah sdílení změn chcete?', 'Rozlišuje sdílení souborů, knihovny, celého díla a zdrojů při síťovém provozu. Podmínky konkrétní licence upřesňují, kdy povinnost vzniká.', $options([['none', 'Žádný'], ['file', 'Pokryté soubory'], ['library', 'Knihovnu'], ['strong', 'Celé dílo'], ['network', 'Dílo i při síťovém provozu']])),
         $question('q-commercial-use', 'commercialUse', 'quick', 'Bude software komerčně použit?', 'Neznámá odpověď nesmí splnit tvrdou podmínku.', $options([['allowed', 'Ano'], ['restricted', 'Omezeně']])),
         $question('q-delivery-quick', 'delivery', 'quick', 'Jak software dodáte?', 'Distribuce a SaaS aktivují odlišné povinnosti.', $options([['application', 'Aplikace'], ['library', 'Knihovna'], ['saas', 'SaaS'], ['internal', 'Interně']])),
         $question('q-dependencies-quick', 'dependencies', 'quick', 'Jaké máte závislosti?', 'U distribuované aplikace je potřeba ověřit licence závislostí.', $uncertain, ['key' => 'delivery', 'equals' => 'application']),
-        $question('q-patents-quick', 'patents', 'quick', 'Jsou důležité patenty?', 'Výslovné oprávnění je kritérium podložené evidencí.', $options([['important', 'Ano'], ['neutral', 'Neřeším']])),
+        $question('q-patents-quick', 'patents', 'quick', 'Jsou důležité patenty?', 'Posuzuje se výslovný patentový grant. Samotné ukončení práv při patentovém sporu nestačí.', $options([['important', 'Ano'], ['neutral', 'Neřeším']])),
+        $question('q-advertising-quick', 'advertising', 'quick', 'Přijmete povinné poděkování v reklamě?', 'Některé licence požadují poděkování v reklamě zmiňující vlastnosti nebo použití softwaru, i bez jeho distribuce. Volba platí pro tuto povinnost, nikoli pro běžná oznámení.', $options([['allowed', 'Ano, přijmu ji'], ['avoid', 'Ne, bez této povinnosti']])),
         $question('q-delivery-advanced', 'delivery', 'advanced', 'Jak software dodáte?', 'Distribuce a SaaS aktivují odlišné povinnosti.', $options([['application', 'Aplikace'], ['library', 'Knihovna'], ['saas', 'SaaS'], ['internal', 'Interně']])),
         $question('q-dependencies-advanced', 'dependencies', 'advanced', 'Jaké máte závislosti?', 'SPDX výraz lze ověřit bez tichého přijetí chyby.', $uncertain, ['key' => 'delivery', 'equals' => 'application']),
         $question('q-copyleft-trigger', 'copyleftTrigger', 'advanced', 'Kdy se má povinnost aktivovat?', 'Rozlišuje distribuci od síťového poskytnutí.', $options([['distribution', 'Při distribuci'], ['network', 'I v síti'], ['none', 'Bez copyleftu']])),
         $question('q-openness-advanced', 'openness', 'advanced', 'Má zůstat software otevřený?', 'Rozlišuje open-source větev od proprietární strategie.', $options([['open', 'Ano'], ['closed', 'Povolím uzavřené použití']])),
         $question('q-project-form-advanced', 'projectForm', 'advanced', 'Co distribuujete?', 'Forma projektu určuje relevantní povinnosti.', $options([['application', 'Aplikaci'], ['library', 'Knihovnu'], ['service', 'Službu']])),
-        $question('q-reciprocity-advanced', 'reciprocity', 'advanced', 'Jaký rozsah sdílení změn chcete?', 'Průvodce nabízí rozsahy, pro které má katalog bezpečné kandidáty.', $options([['none', 'Žádný'], ['strong', 'Celé dílo']])),
+        $question('q-reciprocity-advanced', 'reciprocity', 'advanced', 'Jaký rozsah sdílení změn chcete?', 'Rozlišuje sdílení souborů, knihovny, celého díla a zdrojů při síťovém provozu. Podmínky konkrétní licence upřesňují, kdy povinnost vzniká.', $options([['none', 'Žádný'], ['file', 'Pokryté soubory'], ['library', 'Knihovnu'], ['strong', 'Celé dílo'], ['network', 'Dílo i při síťovém provozu']])),
         $question('q-commercial-use-advanced', 'commercialUse', 'advanced', 'Bude software komerčně použit?', 'Neznámá odpověď nesmí splnit tvrdou podmínku.', $options([['allowed', 'Ano'], ['restricted', 'Omezeně']])),
-        $question('q-patents-advanced', 'patents', 'advanced', 'Jsou důležité patenty?', 'Posuzuje se patentové oprávnění i obranné ukončení.', $options([['important', 'Ano'], ['neutral', 'Neřeším']])),
+        $question('q-patents-advanced', 'patents', 'advanced', 'Jsou důležité patenty?', 'Posuzuje se výslovný patentový grant. Samotné ukončení práv při patentovém sporu nestačí.', $options([['important', 'Ano'], ['neutral', 'Neřeším']])),
         $question('q-notices-advanced', 'notices', 'advanced', 'Jakou zátěž oznámení zvládnete?', 'Rozlišuje minimální, standardní a materiální oznámení.', $options([['minimal', 'Minimum'], ['standard', 'Standard']])),
         $question('q-trademarks', 'trademarks', 'advanced', 'Potřebujete řešit ochranné známky?', 'Licence obvykle neposkytuje práva k ochranným známkám.', $options([['important', 'Ano'], ['neutral', 'Ne']])),
         $question('q-obligations', 'obligations', 'advanced', 'Jaké povinnosti zvládnete?', 'Notices, zdroj a instalační informace se posuzují explicitně.', $options([['minimal', 'Minimum'], ['notices', 'Notices'], ['source', 'Zdroj'], ['installation', 'Zdroj a instalace']])),
+        $question('q-advertising-advanced', 'advertising', 'advanced', 'Přijmete povinné poděkování v reklamě?', 'Některé licence požadují poděkování v reklamě zmiňující vlastnosti nebo použití softwaru, i bez jeho distribuce. Volba platí pro tuto povinnost, nikoli pro běžná oznámení.', $options([['allowed', 'Ano, přijmu ji'], ['avoid', 'Ne, bez této povinnosti']])),
     ];
 }
 
@@ -356,6 +382,7 @@ function validate_guide_answers(array $answers, bool $allowUncertainty = false):
     $allowed = [
         'openness' => ['open', 'closed'], 'reciprocity' => ['none', 'file', 'library', 'strong', 'network'],
         'delivery' => ['library', 'application', 'saas', 'internal'], 'patents' => ['important', 'neutral'],
+        'advertising' => ['allowed', 'avoid'],
         'notices' => ['minimal', 'standard'], 'jurisdiction' => ['eu', 'global'],
         'projectForm' => ['library', 'application', 'service', 'plugin'], 'commercialUse' => ['allowed', 'restricted'],
         'proprietary' => ['allowed', 'preferred', 'required'], 'copyleftTrigger' => ['distribution', 'network', 'none'],
@@ -447,7 +474,9 @@ function canonical_recommendation(array $answers, string $mode = 'quick'): array
     if (array_key_exists('openness', $scoringAnswers)) $scoreMax += 10;
     if (array_key_exists('commercialUse', $scoringAnswers) && in_array($scoringAnswers['commercialUse'], ['allowed', 'restricted'], true)) $scoreMax += 10;
     if (array_key_exists('reciprocity', $scoringAnswers)) $scoreMax += 20;
-    if (array_key_exists('patents', $scoringAnswers)) $scoreMax += 12;
+    if (($scoringAnswers['patents'] ?? null) === 'important') $scoreMax += 12;
+    if (($scoringAnswers['patents'] ?? null) === 'neutral') $scoreMax += 4;
+    if (($scoringAnswers['advertising'] ?? null) === 'avoid') $scoreMax += 8;
     if (($scoringAnswers['notices'] ?? null) === 'minimal') $scoreMax += 8;
     if (($scoringAnswers['notices'] ?? null) === 'standard') $scoreMax += 5;
     if (array_key_exists('copyleftTrigger', $scoringAnswers)) $scoreMax += 15;
@@ -546,16 +575,16 @@ function metadata_semantic(mixed $value): bool {
     if (!is_array($value) || !metadata_exact_keys($value, ['family', 'copyleftScope', 'permissions', 'obligations', 'triggers', 'restrictions', 'patentPosition', 'noticeBurden'], ['projectForm'])) return false;
     if (!in_array($value['family'], ['network-copyleft', 'nonstandard', 'permissive', 'public-domain-equivalent', 'strong-copyleft', 'weak-copyleft', 'unknown'], true)) return false;
     if (!in_array($value['copyleftScope'], ['file', 'library', 'network', 'none', 'whole-work', 'unknown'], true)) return false;
-    if (!metadata_string_array($value['permissions'], ['commercial-use', 'distribution', 'modifications', 'patent-grant', 'private-use', 'sublicensing', 'unknown'])) return false;
-    if (!metadata_string_array($value['obligations'], ['disclose-source', 'include-copyright', 'include-license-text', 'include-notice', 'mark-modifications', 'network-use-disclose', 'provide-corresponding-source', 'provide-installation-information', 'same-license', 'unknown'])) return false;
-    if (!metadata_string_array($value['triggers'], ['combination', 'distribution', 'linking', 'modification', 'network-use', 'patent-claim', 'unknown'])) return false;
+    if (!metadata_string_array($value['permissions'], ['commercial-use', 'conditional-relicensing', 'distribution', 'modifications', 'patent-grant', 'private-use', 'sublicensing', 'unknown'])) return false;
+    if (!metadata_string_array($value['obligations'], ['include-use-acknowledgment', 'include-advertising-acknowledgment', 'pass-disclaimer-requirement', 'allow-relinking', 'allow-reverse-engineering', 'defend-commercial-distribution', 'defend-added-warranty', 'preserve-combined-license-terms', 'disclose-source', 'include-copyright', 'include-license-text', 'include-notice', 'mark-modifications', 'network-use-disclose', 'provide-corresponding-source', 'provide-installation-information', 'same-license', 'unknown'])) return false;
+    if (!metadata_string_array($value['triggers'], ['advertising', 'combination', 'distribution', 'linking', 'modification', 'network-use', 'patent-claim', 'unknown', 'use'])) return false;
     if (!metadata_string_array($value['restrictions'], ['additional-terms', 'liability', 'patent-claim', 'trademark', 'unknown', 'warranty'])) return false;
-    if (!in_array($value['patentPosition'], ['defensive-termination', 'express-grant', 'none-stated', 'retaliatory-termination', 'unknown'], true)) return false;
+    if (!in_array($value['patentPosition'], ['defensive-termination', 'express-exclusion', 'express-grant', 'none-stated', 'retaliatory-termination', 'unknown'], true)) return false;
     if (!in_array($value['noticeBurden'], ['material', 'minimal', 'none', 'standard', 'unknown'], true)) return false;
     return !array_key_exists('projectForm', $value) || in_array($value['projectForm'], ['library', 'application', 'service', 'plugin', 'unknown'], true);
 }
 
-function metadata_contract(mixed $value, string $id): bool {
+function metadata_envelope(mixed $value, string $id): bool {
     if (!is_array($value) || !metadata_exact_keys($value, ['contractVersion', 'kind', 'id', 'review', 'semantic', 'sourceFingerprint', 'evidence'])) return false;
     return $value['contractVersion'] === '1.0.0'
         && $value['kind'] === 'license'
@@ -567,6 +596,26 @@ function metadata_contract(mixed $value, string $id): bool {
         && !in_array(strtolower($value['sourceFingerprint']['contentHash']), ['unknown', 'unresolved', 'pending'], true)
         && metadata_semantic($value['semantic'])
         && metadata_evidence($value['evidence'], true)
+        && !array_filter($value['evidence'], static fn(array $entry): bool => !metadata_source_known($entry['sourceId']))
+        && ($value['review']['recommendable'] !== true || (
+            $value['review']['status'] === 'reviewed'
+            && in_array($value['review']['evidenceLevel'], ['sufficient', 'strong'], true)
+            && metadata_recommendation_evidence($value)
+        ));
+}
+
+function metadata_recommendation_evidence(array $value): bool {
+    $fields = ['family', 'copyleftScope', 'permissions', 'obligations', 'triggers', 'restrictions', 'patentPosition', 'noticeBurden'];
+    if (array_diff(array_merge($fields, ['review']), array_column($value['evidence'], 'field'))) return false;
+    foreach ($fields as $field) {
+        $semanticValue = $value['semantic'][$field];
+        if ($semanticValue === 'unknown' || (is_array($semanticValue) && in_array('unknown', $semanticValue, true))) return false;
+    }
+    return true;
+}
+
+function metadata_contract(mixed $value, string $id): bool {
+    return metadata_envelope($value, $id)
         && $value['review']['status'] === 'reviewed'
         && $value['review']['recommendable'] === true
         && in_array($value['review']['evidenceLevel'], ['sufficient', 'strong'], true);
@@ -592,7 +641,7 @@ function metadata_candidate(array $profile, array $answers): array {
     }
     $knownFamilies = ['network-copyleft', 'nonstandard', 'permissive', 'public-domain-equivalent', 'strong-copyleft', 'weak-copyleft'];
     $knownScopes = ['file', 'library', 'network', 'none', 'whole-work'];
-    $knownPatents = ['defensive-termination', 'express-grant', 'none-stated', 'retaliatory-termination'];
+    $knownPatents = ['defensive-termination', 'express-exclusion', 'express-grant', 'none-stated', 'retaliatory-termination'];
     $knownNotices = ['material', 'minimal', 'none', 'standard'];
     $required = [];
     if (array_key_exists('openness', $answers)) $required['family'] = [$semantic['family'], $knownFamilies];
@@ -608,7 +657,8 @@ function metadata_candidate(array $profile, array $answers): array {
     }
     $reciprocityScopes = ['none' => 'none', 'file' => 'file', 'library' => 'library', 'strong' => 'whole-work', 'network' => 'network'];
     if (array_key_exists('reciprocity', $answers) && $semantic['copyleftScope'] !== ($reciprocityScopes[$answers['reciprocity']] ?? null)) $conflicts[] = "semantic.copyleftScope: required {$reciprocityScopes[$answers['reciprocity']]} is not evidenced";
-    if (($answers['patents'] ?? null) === 'important' && !in_array($semantic['patentPosition'], ['express-grant', 'defensive-termination', 'retaliatory-termination'], true)) $conflicts[] = 'semantic.patentPosition: patent grant or defensive termination is not evidenced';
+    if (($answers['patents'] ?? null) === 'important' && !(in_array('patent-grant', $semantic['permissions'], true) && in_array($semantic['patentPosition'], ['express-grant', 'defensive-termination', 'retaliatory-termination'], true))) $conflicts[] = 'semantic.patentPosition: an express patent grant is not evidenced';
+    if (($answers['advertising'] ?? null) === 'avoid' && (in_array('advertising', $semantic['triggers'], true) || in_array('include-advertising-acknowledgment', $semantic['obligations'], true))) $conflicts[] = 'semantic.advertising: requires an advertising acknowledgment';
     if (($answers['notices'] ?? null) === 'minimal' && !in_array($semantic['noticeBurden'], ['minimal', 'none'], true)) $conflicts[] = 'semantic.noticeBurden: minimal burden is not evidenced';
     if (($answers['notices'] ?? null) === 'standard' && !in_array($semantic['noticeBurden'], ['standard', 'material'], true)) $conflicts[] = 'semantic.noticeBurden: standard burden is not evidenced';
     if (($answers['commercialUse'] ?? null) === 'allowed' && !in_array('commercial-use', $semantic['permissions'], true)) $conflicts[] = 'semantic.permissions: commercial-use permission is not evidenced';
@@ -623,7 +673,7 @@ function metadata_candidate(array $profile, array $answers): array {
     foreach ([['notices', ['include-notice', 'include-copyright', 'include-license-text']], ['source', ['disclose-source', 'provide-corresponding-source']], ['installation', ['provide-installation-information']]] as [$answer, $values]) {
         if (($answers['obligations'] ?? null) === $answer && !array_intersect($values, $semantic['obligations'])) $conflicts[] = "semantic.obligations: $answer obligation is not evidenced";
     }
-    if (($answers['obligations'] ?? null) === 'minimal' && array_intersect(['disclose-source', 'network-use-disclose', 'provide-corresponding-source', 'provide-installation-information', 'same-license', 'mark-modifications'], $semantic['obligations'])) $conflicts[] = 'semantic.obligations: minimum-burden requirement is not met';
+    if (($answers['obligations'] ?? null) === 'minimal' && array_intersect(['include-use-acknowledgment', 'include-advertising-acknowledgment', 'pass-disclaimer-requirement', 'allow-relinking', 'allow-reverse-engineering', 'defend-commercial-distribution', 'defend-added-warranty', 'preserve-combined-license-terms', 'disclose-source', 'network-use-disclose', 'provide-corresponding-source', 'provide-installation-information', 'same-license', 'mark-modifications'], $semantic['obligations'])) $conflicts[] = 'semantic.obligations: minimum-burden requirement is not met';
     foreach (['versionStrategy', 'dualLicensing', 'futureDistribution'] as $key) if (array_key_exists($key, $answers)) $conflicts[] = "semantic.$key: no validated metadata field exists";
     $match = static function (string $field, int $points, string $reason) use (&$score, &$matched, &$reasons): void { $score += $points; $matched[] = $field; $reasons[] = "$field: $reason"; };
     if (($answers['openness'] ?? null) === 'open' && in_array($semantic['family'], $knownFamilies, true)) $match('family', 10, 'matches openness=open');
@@ -631,8 +681,9 @@ function metadata_candidate(array $profile, array $answers): array {
     if (($answers['commercialUse'] ?? null) === 'allowed' && in_array('commercial-use', $semantic['permissions'], true)) $match('permissions', 10, 'matches commercialUse=allowed');
     $reciprocity = ['none' => 'none', 'file' => 'file', 'library' => 'library', 'strong' => 'whole-work', 'network' => 'network'];
     if (array_key_exists('reciprocity', $answers) && ($semantic['copyleftScope'] ?? null) === ($reciprocity[$answers['reciprocity']] ?? null)) $match('copyleftScope', 20, "matches reciprocity={$answers['reciprocity']}");
-    if (($answers['patents'] ?? null) === 'important' && in_array($semantic['patentPosition'], ['express-grant', 'defensive-termination', 'retaliatory-termination'], true)) $match('patentPosition', 12, 'matches patents=important');
+    if (($answers['patents'] ?? null) === 'important' && (in_array('patent-grant', $semantic['permissions'], true) && in_array($semantic['patentPosition'], ['express-grant', 'defensive-termination', 'retaliatory-termination'], true))) $match('patentPosition', 12, 'matches patents=important');
     if (($answers['patents'] ?? null) === 'neutral' && in_array($semantic['patentPosition'], $knownPatents, true)) $match('patentPosition', 4, 'matches patents=neutral');
+    if (($answers['advertising'] ?? null) === 'avoid' && !in_array('advertising', $semantic['triggers'], true) && !in_array('include-advertising-acknowledgment', $semantic['obligations'], true)) $match('advertising', 8, 'matches advertising=avoid');
     if (($answers['notices'] ?? null) === 'minimal' && in_array($semantic['noticeBurden'], ['minimal', 'none'], true)) $match('noticeBurden', 8, 'matches notices=minimal');
     if (($answers['notices'] ?? null) === 'standard' && in_array($semantic['noticeBurden'], ['standard', 'material'], true)) $match('noticeBurden', 5, 'matches notices=standard');
     if (($answers['copyleftTrigger'] ?? null) === 'none' && $semantic['copyleftScope'] === 'none') $match('triggers', 15, 'matches copyleftTrigger=none');
@@ -642,7 +693,7 @@ function metadata_candidate(array $profile, array $answers): array {
     if (($answers['obligations'] ?? null) === 'notices' && array_intersect(['include-notice', 'include-copyright', 'include-license-text'], $semantic['obligations'])) $match('obligations', 8, 'matches obligations=notices');
     if (($answers['obligations'] ?? null) === 'source' && array_intersect(['disclose-source', 'provide-corresponding-source'], $semantic['obligations'])) $match('obligations', 12, 'matches obligations=source');
     if (($answers['obligations'] ?? null) === 'installation' && in_array('provide-installation-information', $semantic['obligations'], true)) $match('obligations', 14, 'matches obligations=installation');
-    if (($answers['obligations'] ?? null) === 'minimal' && !array_intersect(['disclose-source', 'network-use-disclose', 'provide-corresponding-source', 'provide-installation-information', 'same-license', 'mark-modifications'], $semantic['obligations'])) $match('obligations', 12, 'matches obligations=minimal');
+    if (($answers['obligations'] ?? null) === 'minimal' && !array_intersect(['include-use-acknowledgment', 'include-advertising-acknowledgment', 'pass-disclaimer-requirement', 'allow-relinking', 'allow-reverse-engineering', 'defend-commercial-distribution', 'defend-added-warranty', 'preserve-combined-license-terms', 'disclose-source', 'network-use-disclose', 'provide-corresponding-source', 'provide-installation-information', 'same-license', 'mark-modifications'], $semantic['obligations'])) $match('obligations', 12, 'matches obligations=minimal');
     $status = $unknowns ? 'insufficient evidence' : ($conflicts ? 'review required' : 'good fit');
     return ['profile' => ['id' => $record['id'], 'kind' => 'license', 'review' => $metadata['review'], 'sourceFingerprint' => $metadata['sourceFingerprint'], 'semantic' => $semantic, 'evidence' => $metadata['evidence']], 'id' => $record['id'], 'score' => $score, 'reasons' => $reasons ?: ['validated metadata has no distinguishing preference'], 'matchedFields' => $matched, 'status' => $status, 'fit' => $score, 'evidenceConfidence' => $metadata['review']['evidenceLevel'], 'conflicts' => array_values(array_unique($conflicts)), 'unknowns' => $unknowns, 'obligations' => $semantic['obligations'], 'evidence' => $metadata['evidence']];
 }

@@ -8,91 +8,90 @@
     "contentHash": "sha256:f3ea5790620e71fa02dfbcbcf1c1459db9808af7a26c2050670e0194ca8af3e4"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
-      "unknown"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
-    "obligations": [
-      "unknown"
-    ],
-    "triggers": [
-      "unknown"
-    ],
+    "obligations": [],
+    "triggers": [],
     "restrictions": [
       "unknown"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "none-stated",
+    "noticeBurden": "none"
   },
   "evidence": [
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Gutmann.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Gutmann.json#text; Celá jediná věta: široké oprávnění použít kód jakýmkoli způsobem s podmínkou pravdivého autorství.; https://spdx.org/licenses/Gutmann.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Gutmann.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Gutmann.json#text; Celá věta nepožaduje zveřejnění zdroje ani stejné licencování odvozeného díla.; https://spdx.org/licenses/Gutmann.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Gutmann.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Gutmann.json#text; Úvodní část věty dovoluje užití kódu whatever way you want, bez účelového či komerčního omezení.; https://spdx.org/licenses/Gutmann.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Gutmann.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Gutmann.json#text; Celý text: neukládá pozitivní povinnost předávat text licence, oznámení nebo zdrojový kód; zákaz předstírat autorství je omezení.; https://spdx.org/licenses/Gutmann.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Gutmann.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Gutmann.json#text; Celá věta: nevymezuje distribuční, síťový, reklamní či patentový spouštěč; zákaz tvrdit autorství platí obecně.; https://spdx.org/licenses/Gutmann.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Gutmann.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Gutmann.json#text; Závěr věty zakazuje claim you wrote it; tento zákaz pravdivého označení autorství není v uzavřeném slovníku zastoupen.; https://spdx.org/licenses/Gutmann.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Gutmann.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Gutmann.json#text; Celá věta neuděluje výslovná patentová práva ani neupravuje patentové spory.; https://spdx.org/licenses/Gutmann.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Gutmann.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Gutmann.json#text; Celá věta neukládá připojení oznámení; omezuje jen nepravdivé tvrzení o autorství.; https://spdx.org/licenses/Gutmann.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Gutmann.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Gutmann.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. Velmi krátké povolení používat kód libovolným způsobem zakazuje vydávat se za jeho autora. Nevyžaduje připojit licenční text ani zveřejnit zdrojový kód. Blokace: Jediná podmínka zakazuje tvrdit, že příjemce kód napsal. Slovník nemá zákaz nepravdivého autorství; je nutné jej modelovat samostatně, nikoli zaměnit za povinné přiložení copyrightu.; https://spdx.org/licenses/Gutmann.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

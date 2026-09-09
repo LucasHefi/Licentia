@@ -1,0 +1,29 @@
+{
+  "id": "CC-BY-SA-3.0-DE",
+  "reviewedAt": "2026-09-10",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:6a172ccb869cca476719e54aafda609d736470c8c4ddfdaf83e14bb036164dac"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Německá BY-SA 3.0 připouští komerční upravená díla pod stanovenými SA variantami; vzdává se sui-generis databázových práv. Na oznámení poskytovatele je nutno odstranit atribuci z kolekce či úpravy bez rakouské výhrady proveditelnosti, a zůstávají nedotčená osobnostní práva.",
+  "blockersCs": [
+    "§ 3 závěr/4d vzdává databázovou vrstvu práv, ale ponechává copyright; § 4a přikazuje odstranit atribuci po oznámení a zakazuje technická opatření, § 4e zachovává osobnostní práva. Doplnit tyto obsahové vrstvy a povinnosti včetně DE absence výhrady proveditelnosti; současný software guide je nemodeluje věrně."
+  ],
+  "analysis": {
+    "subjectCs": "§1 literární/umělecký/vědecký obsah, malé i posmrtné dílo, fotografie a related rights, také databáze. Abwandlung vyžaduje nevybledlé osobní rysy originálu A vznik vlastních ochranných práv; ne každá technická změna, nezahrnuje samostatné kolekce ani freie Benutzung. §3 závěr vzdání všech sui-generis práv a§4d nepoužití4a–c na části chráněné pouze databázově, nikoli zrušení souběžného copyright. Öffentlich Zeigen zde zahrnuje i hmotnou výstavu vedle digitálního/broadcast sdělení.",
+    "grantCs": "§3 bezplatné nevýhradní celosvětové časově do konce ochrany právo rozmnožovat, zahrnout do kolekcí, upravovat/překládat a veřejně ukazovat/distribuovat/publikovat originál i úpravy, soukromě i komerčně. Známé I neznámé způsoby a nutné technické změny povoleny. §3e zachovány neodvolatelné zákonné nároky, jiná compulsory i obvyklá odměna za řádné užití vzdána. §4a žádné sublicence,§8a–b přímý grant původního obsahu downstream. Patenty se výslovně neřeší, nevkládám výluku patentů4.0 ani domnělý grant.",
+    "conditionsCs": "§3b označit Abwandlung už při vytvoření. §4a při šíření/veřejném ukazování originál pod touto licencí s kopií NEBO plným URI, zachovat licence/disclaimer notices, žádné další podmínky ani technické maření práv. Na oznámení licensora odstranit4cúdaje z vytvořeného Sammelwerk i Abwandlung; DE text NEOBSAHUJE soweit praktikabel pro tento krok. §4b úprava pod povolenouSA/kompatibilní licencí; pro CC cesty opět text/URI/notices a zákazDRM. §4c zachovat rights notices a přiměřeně uvést známý název, vlastníka/pseudonym nebo designated příjemce, praktické relevantní URI a označení úpravy; u společných credits stejná výraznost. Bez samostatného předchozího písemného souhlasu licensora/designated příjemce neimplikovat spojení/podporu/endorsement.",
+    "limitationsCs": "§4e zachována existující osobnostní práva. §5 záruky vyloučeny mimo písemnou dohodu/podvodně zatajené vady a škody§6 při daném zavinění. §6 život/tělo/zdraví odpovědnost při alespoň nedbalosti, jiné škody hrubá nedbalost/úmysl, žádná další dobrovolná odpovědnost. §7 automatický prospektivní konec při porušení bez znalosti/úkonu poskytovatele a bez cure4.0; řádné příjemcovské licence trvají. Ukončení vlastního šíření či jiná licensor licence neruší grant. Obecný CC úvodní disclaimer nevydávám za licensor§5.",
+    "compatibilityCs": "§4b úprava tato licence, pozdější se stejnýmiElements, jiná jurisdikce/Unported BYSA≥3.0 nebo výslovně CC uznaná kompatibilní licence; konkrétní cizí kompatibilitu nedovozuji bez příslušného označení. Nezávislé kolekce jako celek mimoSA, původní podklad má přímou původní nabídku§8b. §8f pokud volba možná a jinak nesjednáno právoNěmecka; písemné změny působí jen interpartes, ne vůči nabídkám třetím. CC trademark notice je výslovně mimo licenční podmínky díla."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/CC-BY-SA-3.0-DE.html",
+      "note": "Individuální revize celého připnutého textu; §1 literární/umělecký/vědecký obsah, malé i posmrtné dílo, fotografie a related rights, také databáze. Abwandlung vyžaduje nevybledlé osobní rysy originálu A vznik vlastních ochranných práv; ne každá technická změna, nezahrnuje samostatné kolekce ani freie Benutzung. §3 závěr vzdání všech sui-generis práv a§4d nepoužití4a–c na části chráněné pouze databázově, nikoli zrušení souběžného copyright. Öffentlich Zeigen zde zahrnuje i hmotnou výstavu vedle digitálního/broadcast sdělení."
+    }
+  ]
+}

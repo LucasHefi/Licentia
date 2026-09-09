@@ -8,8 +8,8 @@
     "contentHash": "sha256:c16d364ac7aa112dfd565d591b4dcf165812174c29c47d721e4e9991f062d5de"
   },
   "review": {
-    "status": "not-recommendable",
-    "recommendable": false,
+    "status": "reviewed",
+    "recommendable": true,
     "evidenceLevel": "strong"
   },
   "semantic": {
@@ -22,13 +22,13 @@
       "private-use"
     ],
     "obligations": [
+      "include-advertising-acknowledgment",
       "include-copyright",
-      "include-license-text",
-      "include-notice"
+      "include-license-text"
     ],
     "triggers": [
-      "distribution",
-      "unknown"
+      "advertising",
+      "distribution"
     ],
     "restrictions": [
       "liability",
@@ -40,49 +40,67 @@
   },
   "evidence": [
     {
-      "field": "family",
-      "sourceId": "spdx-license-list",
-      "locator": "metadata: id=BSD-4-Clause, osi=false, fsf=true; text: opening grant and conditions 1-4 (broad non-reciprocal BSD-style permission with additional advertising and name-use conditions)"
-    },
-    {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant and conditions 1-4 (permissions are non-reciprocal; no same-license, source-disclosure, or corresponding-source condition is stated)"
+      "locator": "public/data/licenses/BSD-4-Clause.json#text; opening source/binary use and redistribution grant, WITH OR WITHOUT modification, with no restriction to noncommercial use; whole text has no reciprocal source-disclosure, same-license, relinking or network-use requirement; https://spdx.org/licenses/BSD-4-Clause.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.9"
     },
     {
-      "field": "permissions",
+      "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant: redistribution and use in source and binary forms, with or without modification, are permitted; no commercial, private-use, or field-of-use limitation is stated"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text: condition 1 (source redistributions retain the copyright notice, list of conditions, and disclaimer); condition 2 (binary redistributions reproduce the same in documentation and/or other materials); condition 3 (advertising materials mentioning features or use must display the specified acknowledgement)"
-    },
-    {
-      "field": "triggers",
-      "sourceId": "spdx-license-list",
-      "locator": "text: conditions 1-2 (notice duties attach to source or binary redistribution) and condition 3 (the separate acknowledgement duty attaches to advertising materials mentioning features or use; advertising is not a dedicated vocabulary trigger and is therefore retained as unknown; modification alone has no separate condition)"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text: condition 4 (copyright-holder and contributor names may not be used to endorse or promote derived products without specific prior written permission); final disclaimer paragraph (express/implied warranty disclaimer and limitation of liability)"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text: complete license text, including opening grant, conditions 1-4, and final disclaimer (no express patent grant, patent condition, patent-claim restriction, or patent-termination clause is stated)"
+      "locator": "public/data/licenses/BSD-4-Clause.json#text; opening source/binary use and redistribution grant, WITH OR WITHOUT modification, with no restriction to noncommercial use; https://spdx.org/licenses/BSD-4-Clause.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.9"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text: conditions 1-2 require retaining/reproducing the copyright notice, list of conditions, and disclaimer in source and binary redistributions, while condition 3 requires a prescribed acknowledgement in advertising materials; this creates a material multi-surface notice burden"
+      "locator": "public/data/licenses/BSD-4-Clause.json#text; §§1-2 copyright/conditions/disclaimer in source and binary accompanying materials; §3 advertising mentioning features OR use must carry prescribed organization acknowledgment, not merely general distribution notice; https://spdx.org/licenses/BSD-4-Clause.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.9"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/BSD-4-Clause.json#text; §§1-2 copyright/conditions/disclaimer in source and binary accompanying materials; §3 advertising mentioning features OR use must carry prescribed organization acknowledgment, not merely general distribution notice; https://spdx.org/licenses/BSD-4-Clause.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.9"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/BSD-4-Clause.json#text; whole-text review: no EXPRESS patent grant and no patent-litigation termination; no conclusion about implied patent rights; https://spdx.org/licenses/BSD-4-Clause.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.9"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/BSD-4-Clause.json#text; opening source/binary use and redistribution grant, WITH OR WITHOUT modification, with no restriction to noncommercial use; https://spdx.org/licenses/BSD-4-Clause.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.9"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/BSD-4-Clause.json#text; §4 holder/contributor names require specific prior written permission for endorsement/promotion; AS IS warranty/liability disclaimer; https://spdx.org/licenses/BSD-4-Clause.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.9"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "metadata: id=BSD-4-Clause, name=BSD 4-Clause \"Original\" or \"Old\" License, deprecated=false, osi=false, fsf=true; comments: the license was rescinded by the author on 22 July 1999; text: conditions 1-4 and final warranty/liability disclaimer are explicit, but the advertising acknowledgement and endorsement/name restriction are not suitable for a general automatic recommendation"
+      "locator": "public/data/licenses/BSD-4-Clause.json#text; Whole-text editorial review 2026-09-09, batch 9. Pinned generic text retains §3. The UC Berkeley deletion reproduced at https://www.freebsd.org/copyright/license/ is scoped to its BSD Unix files; it is not an automatic waiver by other holders. Distinct BSD-4-Clause-UC requires contextual handling.; https://spdx.org/licenses/BSD-4-Clause.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.9"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/BSD-4-Clause.json#text; §§1-2 copyright/conditions/disclaimer in source and binary accompanying materials; §3 advertising mentioning features OR use must carry prescribed organization acknowledgment, not merely general distribution notice; https://spdx.org/licenses/BSD-4-Clause.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.9"
     }
   ]
 }

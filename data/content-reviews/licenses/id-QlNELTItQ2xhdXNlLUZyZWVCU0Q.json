@@ -1,0 +1,29 @@
+{
+  "id": "BSD-2-Clause-FreeBSD",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:f68df6612935fc051074437e5ce2cd731a4199ecbaa8a4d53848002979543d23"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Licence dovoluje užití a redistribuci zdrojů i binárek s úpravami nebo bez nich při zachování copyrightu, podmínek a výluky záruk. Dodatečně vysvětluje, že názory autorů nejsou oficiální politikou FreeBSD. Průvodce ji nezařazuje pod tímto zastaralým identifikátorem; je třeba určit odpovídající současné označení a zachovat zvláštní odstavec.",
+  "blockersCs": [
+    "ID je deprecated; před doporučením novému projektu je třeba určit nezastaralý odpovídající identifikátor a zachovat zvláštní odstavec o názorech autorů."
+  ],
+  "analysis": {
+    "subjectCs": "Deprecated FreeBSD text obsahuje copyright projektu 1992–2012 a závěrečné oddělení názorů autorů od politik projektu.",
+    "grantCs": "Grant dovoluje redistribuci a užití zdrojů i binárních forem se změnami nebo bez nich.",
+    "conditionsCs": "Bod 1 zachovává copyright, podmínky a disclaimer ve zdrojích; bod 2 je reprodukuje v doprovodných materiálech binární distribuce. Závěrečný disclaimer říká, že názory autorů nejsou oficiální politikou FreeBSD.",
+    "limitationsCs": "AS IS vylučuje záruky a odpovědnost projektu/přispěvatelů; dodatečný odstavec zakazuje interpretovat vyjádřené závěry jako politiku projektu, nikoli užívat jeho jméno obecně.",
+    "compatibilityCs": "ID je deprecated; jiné licence nebo verze text nenabízí."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/BSD-2-Clause-FreeBSD.html",
+      "note": "Individuálně přečten celý připnutý text; Bod 1 zachovává copyright, podmínky a disclaimer ve zdrojích; bod 2 je reprodukuje v doprovodných materiálech binární distribuce. Závěrečný disclaimer říká, že názory autorů nejsou oficiální politikou FreeBSD. Celý text včetně závěrečného odstavece nemá patentový grant ani patentové ukončení."
+    }
+  ]
+}

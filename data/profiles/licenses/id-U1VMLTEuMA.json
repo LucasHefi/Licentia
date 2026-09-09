@@ -8,95 +8,106 @@
     "contentHash": "sha256:3bb39adccf801d502f938e3f0de41a65f200499e3e444ec92c4aef0d1041e219"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "none",
     "permissions": [
       "commercial-use",
       "distribution",
       "modifications",
-      "patent-grant"
+      "patent-grant",
+      "private-use"
     ],
     "obligations": [
-      "include-license-text"
+      "include-copyright",
+      "include-license-text",
+      "include-notice",
+      "mark-modifications"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification",
+      "patent-claim",
+      "use"
     ],
     "restrictions": [
+      "additional-terms",
       "liability",
-      "trademark"
+      "patent-claim",
+      "trademark",
+      "unknown",
+      "warranty"
     ],
-    "patentPosition": "express-grant",
+    "patentPosition": "retaliatory-termination",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SUL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SUL-1.0.json#text; Účelově/prodejně omezený source-available grant bez reciproční licence odvozenin je nonstandard, none.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SUL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SUL-1.0.json#text; Účelově/prodejně omezený source-available grant bez reciproční licence odvozenin je nonstandard, none.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SUL-1.0.json#text; Copyright License dává nevýhradná, celosvětová, bezplatná, nepřevoditelná a nesublicencovatelná práva use/copy/distribute/make available/derivatives s účelovými limity. Patents výslovně zahrnuje současné/budoucí licencovatelné nároky, nikoli nároky porušené vlastními změnami/doplňky.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SUL-1.0.json#text; Limitations omezují use/modify na interní business nebo nekomerční/osobní účely, distribuci pouze zdarma nekomerčně; licenční/copyright/jiná oznámení nesmějí být měněna, mazána nebo zneviditelněna. Notices předávají podmínky každému příjemci části a prominentně označují modifikace.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SUL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SUL-1.0.json#text; Limitations omezují use/modify na interní business nebo nekomerční/osobní účely, distribuci pouze zdarma nekomerčně; licenční/copyright/jiná oznámení nesmějí být měněna, mazána nebo zneviditelněna. Notices předávají podmínky každému příjemci části a prominentně označují modifikace.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SUL-1.0.json#text; Písemné patentové tvrzení příjemce nebo společnosti okamžitě ruší patentovou licenci, u firemní žaloby pro práci jejím jménem. Porušení ukončí licenci; po výzvě náprava všech porušení do 30 dnů obnoví zpětně, další porušení po obnově je trvalé. Záruky/škody vyloučeny v zákonném rozsahu; známky dle práva.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SUL-1.0.json#text; Copyright License dává nevýhradná, celosvětová, bezplatná, nepřevoditelná a nesublicencovatelná práva use/copy/distribute/make available/derivatives s účelovými limity. Patents výslovně zahrnuje současné/budoucí licencovatelné nároky, nikoli nároky porušené vlastními změnami/doplňky.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SUL-1.0.json#text; Limitations omezují use/modify na interní business nebo nekomerční/osobní účely, distribuci pouze zdarma nekomerčně; licenční/copyright/jiná oznámení nesmějí být měněna, mazána nebo zneviditelněna. Notices předávají podmínky každému příjemci části a prominentně označují modifikace.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SUL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SUL-1.0.json#text; Individuálně přečten celý připnutý text. Grant pokrývá software a jeho části; your company zahrnuje práci pro organizaci i přímé/nepřímé kontrolující, kontrolované a společně kontrolované subjekty. Sustainable Use 1.0 dovoluje vlastní interní podnikové nebo nekomerční/osobní užití; předání jiným jen zdarma a nekomerčně. Uděluje omezenou patentovou licenci, vyžaduje notices a označení změn a umožňuje jednorázovou nápravu porušení do 30 dnů od výzvy. Limitations rozlišují vlastní interní business, nekomerční/osobní užití a výhradně bezplatné nekomerční předání jiným. Doplnit tento účelový/distribuční model, aby commercial-use/distribution nepředstíraly obecný komerční grant.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

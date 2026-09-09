@@ -1,0 +1,29 @@
+{
+  "id": "URT-RLE",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:f16847dd4a779b0f9525184eb11243c1c5247e7d21aa778d7cf8140f1cef6d82"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Kód lze kopírovat, upravovat a šířit se zachováním copyrightu. Při zahrnutí do programu či produktu musíte dodat zdroj nebo informovat koncového uživatele, že je bez příplatku dostupný; záznam autora, data a důvodu změn je doporučen.",
+  "blockersCs": [
+    "Začlenění do programu/produktu vyžaduje zdroj nebo oznámení koncovému uživateli o zdroji bez příplatku. Je třeba modelovat tuto alternativu, zákaz příplatku a přesný rozsah poskytovaného zdroje; obecné disclose-source nezachycuje celou podmínku."
+  ],
+  "analysis": {
+    "subjectCs": "Tento software včetně začlenění do programu či jiného softwarového produktu.",
+    "grantCs": "Výslovně dovoluje volné kopírování, modifikace a redistribuci; patentový grant není uveden.",
+    "conditionsCs": "Zachovat copyright ve všech kopiích. Při začlenění dodat zdroj nebo informovat koncového uživatele o jeho dostupnosti bez příplatku. Autor/datum/důvod úprav jsou should, nikoli must.",
+    "limitationsCs": "AS IS bez záruky či jiné garance vhodnosti. Zasílání chyb/oprav je dobrovolné a autor nemusí reagovat.",
+    "compatibilityCs": "Zdroj versus informace o dostupnosti je alternativa plnění; jiná licence/verze ani stejná licence celého produktu nejsou přikázány."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/URT-RLE.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Grant má navíc zvláštní podmínku začlenění do produktu se zdrojem bez příplatku."
+    }
+  ]
+}

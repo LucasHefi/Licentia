@@ -1,0 +1,31 @@
+{
+  "id": "CNRI-Python",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:4d418801372c53e755e365ab79bfa2bafdb94f51abeac51d555513bc6ff529f1"
+  },
+  "disposition": "eligible",
+  "summaryCs": "CNRI poskytuje celosvětový bezpoplatkový grant Pythonu 1.6 beta 1; původní i odvozená verze zachová smlouvu nebo přesné oznámení s handle 1895.22/1011. Veřejná odvozenina uvede povahu změn. Platí automatické ukončení při podstatném porušení a právo Virginie.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Bod 1 vymezuje konkrétní Python 1.6b1 zveřejněný 4.8.2000 na python.org a dokumentaci, odlišný od pozdější CNRI GPL-Compatible varianty.",
+    "grantCs": "Bod 2 nevýhradně, bez royalty a celosvětově dovoluje reproduce/analyze/test/public perform-display/derivatives/distribute/otherwise use samostatně či v odvozenině. Výslovný patentový grant ani sublicence chybějí.",
+    "conditionsCs": "Bod 2 zachovává celou CNRI smlouvu v původní/odvozené verzi NEBO přesný substituční text s handle 1895.22/1011 a hdl URL. Bod 3 při veřejném zpřístupnění odvozeniny obsahující libovolnou část požaduje uvést povahu změn. Body 7–8 a úvod spojují užití/kopie/instalaci či kliknutí se souhlasem.",
+    "limitationsCs": "Body 4–5 odmítají záruky včetně cizích práv a incidental/special/consequential škody. Bod 6 automaticky ukončuje práva při material breach. Bod 7 volí Virginii bez kolizních norem, nevytváří zastoupení/partnerství/joint venture a nedovoluje CNRI trademark endorsement.",
+    "compatibilityCs": "Smlouva nebo přesný handle text jsou alternativní notices; otevření hdl URL při kontrole nebylo dostupné, úplný smluvní text je však v pinned záznamu. Tato varianta nemá pozdější GPL-Compatible výjimku z virginijského práva."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/CNRI-Python.html",
+      "note": "Individuální revize celého připnutého textu; Bod 1 vymezuje konkrétní Python 1.6b1 zveřejněný 4.8.2000 na python.org a dokumentaci, odlišný od pozdější CNRI GPL-Compatible varianty."
+    },
+    {
+      "url": "https://hdl.handle.net/1895.22/1011",
+      "note": "Historický handle je výslovná alternativa v §2. Při kontrole nebylo otevření dostupné; původní úplné smluvní znění je zachováno v pinned SPDX textu a není nahrazeno jinou verzí."
+    }
+  ]
+}

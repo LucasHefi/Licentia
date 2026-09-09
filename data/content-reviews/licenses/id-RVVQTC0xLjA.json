@@ -1,0 +1,29 @@
+{
+  "id": "EUPL-1.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:6459f1ea98f8733ddde5905de83ea700e6914d306bfa0d0b2dac30591532b156"
+  },
+  "disposition": "blocked",
+  "summaryCs": "EUPL 1.0 uděluje široká autorská i potřebná patentová práva a vyžaduje při šíření originálu či odvozenin EUPL, zdroje nebo volně dostupný repozitář, notices a datum změn. Odvozenina kombinující dílo s jednou z přesně vyjmenovaných kompatibilních licencí může přejít na ni a její rozporné povinnosti mají přednost. Tato verze navíc činí nové vydání Komise závazným již při zjištění jeho zveřejnění a stanoví veřejné informace o elektronickém distribučním kanálu. Záruka autorského řetězce zůstává vedle výluk ostatních záruk.",
+  "blockersCs": [
+    "Čl. 13 stanoví, že nová verze vydaná Evropskou komisí se stává pro příjemce závaznou, jakmile se dozví o jejím zveřejnění. To není volitelná or-later licence a statický model neumí událost zjištění ani povinnou změnu podmínek; před doporučením je nutné doplnit tuto dynamiku konkrétní verze 1.0."
+  ],
+  "analysis": {
+    "subjectCs": "Software distribuovaný či sdělovaný pod EUPL, zdrojové a případné spustitelné formy, a odvozeniny. Čl. 1 výslovně ponechává hranici odvozenosti autorskému právu určenému čl. 15. Distribution/Communication této verze znamená poskytování KOPIÍ jiné osobě online či offline; samotnou vzdálenou funkčnost bez kopie zde nelze automaticky přidat.",
+    "grantCs": "Čl. 2 uděluje celosvětová bezplatná nevýhradní sublicencovatelná práva po dobu copyrightu: libovolné použití, kopie, změny, veřejné sdělování, distribuci, půjčení a pronájem. Poskytovatel se v dovoleném rozsahu zdrží moral rights pro účinnost majetkového grantu. Patentová licence zahrnuje jím držené patenty v rozsahu potřebném k licencovanému užití Work. Čl. 5 dovoluje přesně podmíněné přelicencování kombinované odvozeniny podle přílohy.",
+    "conditionsCs": "Čl. 3 u executables zdroje s každou kopií NEBO zdarma snadno přístupný repozitář s adresou za copyrightem po dobu distribuce/sdělování. Čl. 5 tutéž zdrojovou povinnost ukládá dalším distributorům, zachovává copyright/patent/známkové/licenční a disclaimer notices, celý text každému příjemci a výrazné označení změn s datem. Copyleft se vztahuje na originál a odvozeniny a brání dalším restrikcím. Čl. 9 vlastní placené podpory/záruky/indemnity lze nabídnout jen vlastním jménem s obranou a odškodněním ostatních. Čl. 11 má navíc veřejné informace elektronického distribučního média.",
+    "limitationsCs": "Čl. 6 poskytovatel i každý přispěvatel zaručuje vlastnictví/licenci a oprávnění udělit copyright; čl. 7 vylučuje ostatní záruky včetně jiných IP. Čl. 8 zachovává úmyslné jednání, újmy přímo způsobené fyzickým osobám a použitelnou zákonnou produktovou odpovědnost. Čl. 5 dovoluje značky jen pro běžný popis původu/copyrightu. Čl. 12 automaticky ukončí práva při jakémkoli porušení, compliant downstream je chráněn. Čl. 13 zavazuje novou verzí při zjištění; čl. 14 upravuje soud EU pro spory s Komisí a jinak fórum poskytovatele. Čl. 15 právo země EU poskytovatele, jinak a ve sporech s Komisí belgické.",
+    "compatibilityCs": "Příloha dovoluje pouze GPL v2, OSL 2.1 nebo 3.0, CPL 1.0, EPL 1.0 a CeCILL 2.0, a jen u odvozeniny založené na EUPL originálu I jiném díle pod touto kompatibilní licencí. Její rozporné povinnosti pak mají přednost; nejde o libovolné přelicencování nezměněné kopie ani neomezený seznam dalších verzí. Čl. 10 stanoví souhlas kliknutím nebo výkonem práv, nikoli povinnost získávat express assent od všech příjemců jako OSL."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/EUPL-1.0.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Čl. 5 copyleft originálu a odvozenin při distribuci/sdělování kopií; explicitní kompatibilní alternativa nemění výchozí silný copyleft"
+    }
+  ]
+}

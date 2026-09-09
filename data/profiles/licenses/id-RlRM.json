@@ -9,95 +9,102 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
       "modifications",
+      "private-use",
       "sublicensing"
     ],
     "obligations": [
       "include-copyright",
-      "mark-modifications",
-      "provide-corresponding-source"
+      "include-license-text",
+      "include-use-acknowledgment",
+      "mark-modifications"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "linking",
+      "modification",
+      "use"
     ],
     "restrictions": [
       "liability",
+      "trademark",
       "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/FTL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/FTL.json#text; §2 široký neodvolatelný grant s source/binary notices a uživatelským credit,bez reciprocity.; https://spdx.org/licenses/FTL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/FTL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/FTL.json#text; Celý FTL bez stejné licence a povinného zveřejnění derivátních zdrojů; linkování vyvolává credit, ne copyleft.; https://spdx.org/licenses/FTL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/FTL.json#text; §2 výslovně use/execute/perform/compile/display/copy/derivatives/distribute/sublicense a authorize others pro any purpose.; https://spdx.org/licenses/FTL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/FTL.json#text; §2 source FTL.TXT+original copyright+document changes; binary documented FreeType basis; úvod/use must acknowledge. Preferred text/URL pouze encouraged.; https://spdx.org/licenses/FTL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/FTL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/FTL.json#text; Source/binary redistribution notices; using definované§0 jako compile/link a obecné if use must acknowledge; nevzniká povinná reklama.; https://spdx.org/licenses/FTL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/FTL.json#text; §1 warranty/liability;§3 vzájemný zákaz jmen pro commercial/advertising bez souhlasu; dotaz při skutečné file-scope nejistotě§0 není hlášení každého užití.; https://spdx.org/licenses/FTL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/FTL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/FTL.json#text; Celý FTL bez výslovného patentového grantu/ukončení; inspirační seznam BSD/Artistic/IJG nedoplňuje cizí patenty.; https://spdx.org/licenses/FTL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/FTL.json#text; Povinné programové/dokumentační credits a označení změn jsou materiální; dobrovolné URL/přesná doporučená věta se nepovyšují na povinnost.; https://spdx.org/licenses/FTL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/FTL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/FTL.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. FreeType dovoluje trvalé neodvolatelné užití, změny, distribuci i podlicence v komerčních produktech. Zdrojové distribuce zachovají FTL.TXT a dokumentují změny; binární dokumentace uvádí podíl FreeType Team. Použití i linkování programu vyžaduje dokumentační kredit, doporučený text a URL jsou dobrovolné.; https://spdx.org/licenses/FTL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

@@ -1,0 +1,29 @@
+{
+  "id": "APAFML",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:51f4d26dd1d475369f98ea88af7bb636aa65545e986988bd382b6e9460675942"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Čtrnáct AFM souborů a připojený soubor lze užívat a šířit i změněné; copyrighty zůstávají, změny se výrazně označí a AFM soubory musí doprovázet tento nezměněný licenční odstavec. Adobe nemusí poskytovat podporu.",
+  "blockersCs": [
+    "Text se týká 14 fontových metrik a vyžaduje distribuci AFM společně s konkrétním licenčním souborem i neměnnost odstavce. Doplnit fontový předmět a povinnost doprovodného souboru; z primárního kontextu vyjasnit také and without charge před přiznáním komerčního šíření."
+  ],
+  "analysis": {
+    "subjectCs": "Grant zahrnuje tento licenční soubor a čtrnáct doprovázených PostScript AFM souborů s metrikami fontů.",
+    "grantCs": "První věta dovoluje užití, kopie a distribuci pro libovolný účel and without charge, s úpravami i bez nich; není jednoznačný rozsah bezplatnosti další distribuce. Patentová práva chybějí.",
+    "conditionsCs": "Podmínky: všechny copyrighty zachovat; AFM nikdy nešířit bez tohoto souboru; všechny úpravy nápadně označit přímo ve změněných souborech; tento odstavec neměnit. Povinné přiložení konkrétního souboru není pouhý abstraktní notice.",
+    "limitationsCs": "Adobe nemá povinnost podporovat užití AFM souborů; nejde o plnou výluku náhrady škody. Formulace without charge a povinný doprovod potřebují věrný model.",
+    "compatibilityCs": "Licence nevyžaduje stejnou licenci celého odvozeného díla a nenabízí konkrétní alternativu."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/APAFML.html",
+      "note": "Individuální revize celého připnutého textu; Grant zahrnuje tento licenční soubor a čtrnáct doprovázených PostScript AFM souborů s metrikami fontů."
+    }
+  ]
+}

@@ -9,8 +9,8 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
     "family": "permissive",
@@ -18,85 +18,88 @@
     "permissions": [
       "commercial-use",
       "distribution",
+      "modifications",
+      "patent-grant",
+      "private-use",
       "sublicensing"
     ],
     "obligations": [
       "include-copyright",
-      "include-license-text"
+      "include-notice"
     ],
     "triggers": [
-      "unknown"
+      "distribution"
     ],
     "restrictions": [
       "liability",
       "warranty"
     ],
-    "patentPosition": "unknown",
+    "patentPosition": "express-grant",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.no-copyleft",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/UPL-1.0.json#text; grant paragraphs (a)-(b): copyright and licensable patents for contributed Software and Larger Works listed in lrgrwrks.txt; derivative works, distribution, commercial use and sublicensing; whole text: no reciprocal source-disclosure or same-license requirement; https://spdx.org/licenses/UPL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.permissive-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/UPL-1.0.json#text; grant paragraphs (a)-(b): copyright and licensable patents for contributed Software and Larger Works listed in lrgrwrks.txt; derivative works, distribution, commercial use and sublicensing; https://spdx.org/licenses/UPL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/UPL-1.0.json#text; condition paragraph: copyright plus either complete permission notice OR at least a reference to the UPL in copies/substantial portions; include-notice represents these alternatives, not a mandatory full license copy; https://spdx.org/licenses/UPL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "triggers",
-      "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/UPL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/UPL-1.0.json#text; condition paragraph: copyright plus either complete permission notice OR at least a reference to the UPL in copies/substantial portions; include-notice represents these alternatives, not a mandatory full license copy; https://spdx.org/licenses/UPL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/UPL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/UPL-1.0.json#text; opening grant and (a)-(b): licensor-owned/freely licensable patent rights for unmodified contributed Software and explicitly listed Larger Works; whole text: no litigation termination clause; https://spdx.org/licenses/UPL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/UPL-1.0.json#text; grant paragraphs (a)-(b): copyright and licensable patents for contributed Software and Larger Works listed in lrgrwrks.txt; derivative works, distribution, commercial use and sublicensing; https://spdx.org/licenses/UPL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/UPL-1.0.json#text; final warranty and liability disclaimer; https://spdx.org/licenses/UPL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/UPL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/UPL-1.0.json#text; whole-text editorial review on 2026-09-09; Zachovejte copyright a úplné licenční oznámení nebo alespoň odkaz na UPL. Patentový grant má vymezený rozsah; pro širší dílo zkontrolujte případný soubor lrgrwrks.txt.; https://spdx.org/licenses/UPL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/UPL-1.0.json#text; condition paragraph: copyright plus either complete permission notice OR at least a reference to the UPL in copies/substantial portions; include-notice represents these alternatives, not a mandatory full license copy; https://spdx.org/licenses/UPL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
     }
   ]
 }

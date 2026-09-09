@@ -1,0 +1,27 @@
+{
+  "id": "OLDAP-2.8",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:3ed7e14f22a1c52de8120e74978e36c04dd3772e19f3b6df9150a34ea2f6a987"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Licence dovoluje software a dokumentaci používat a šířit s úpravami nebo bez nich při zachování copyrightů, notices a licenčních podmínek. Každá redistribuce přikládá doslovnou kopii licence a propagační použití jmen autorů či držitelů práv vyžaduje písemný souhlas. Lze zvolit tuto nebo pozdější číslovanou revizi Foundation; software je poskytován bez záruk.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "OpenLDAP 2.8 ze 17. srpna 2003 pokrývá software i dokumentaci.",
+    "grantCs": "Úvod dovoluje redistribuci a užití se změnami i bez nich.",
+    "conditionsCs": "Body 1–3 zachovávají copyright/notices ve zdrojích, reprodukují je s podmínkami/disclaimerem u binárek a u všech redistribucí vyžadují doslovnou kopii licenčního dokumentu.",
+    "limitationsCs": "Za disclaimerem je zákaz reklamního/propagačního užití jmen autorů a držitelů copyrightu bez konkrétního písemného souhlasu; vlastnictví copyrightu zůstává držitelům. AS IS vylučuje záruky/odpovědnost Foundation, přispěvatelů, autorů a vlastníků.",
+    "compatibilityCs": "Samostatný odstavec dovoluje tuto nebo libovolnou pozdější číslovanou revizi Foundation; OpenLDAP je registrovaná známka a licenční dokument lze kopírovat doslovně."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/OLDAP-2.8.html",
+      "note": "Individuálně přečten celý připnutý text; Body 1–3 zachovávají copyright/notices ve zdrojích, reprodukují je s podmínkami/disclaimerem u binárek a u všech redistribucí vyžadují doslovnou kopii licenčního dokumentu. Celý text nemá výslovný patentový grant nebo patentové ukončení."
+    }
+  ]
+}

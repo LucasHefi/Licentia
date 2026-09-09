@@ -8,91 +8,90 @@
     "contentHash": "sha256:0538eeaf26e4f62aa17e323a060f671fc33b9ee352ffbe9ce07eb2340c4e04a7"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
-    "obligations": [
-      "unknown"
-    ],
-    "triggers": [
-      "unknown"
-    ],
+    "obligations": [],
+    "triggers": [],
     "restrictions": [
       "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "none-stated",
+    "noticeBurden": "none"
   },
   "evidence": [
     {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/mplus.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/mplus.json#text; Prohlášení výslovně licencuje fonty. Neomezené oprávnění zahrnuje užívání, kopírování a distribuci s úpravami i bez nich komerčně i nekomerčně. Grant k fontům není podmíněn reciprocitou ani zachováním stejné licence.; https://spdx.org/licenses/mplus.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/mplus.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/mplus.json#text; Grant k fontům není podmíněn reciprocitou ani zachováním stejné licence.; https://spdx.org/licenses/mplus.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/mplus.json#text; Neomezené oprávnění zahrnuje užívání, kopírování a distribuci s úpravami i bez nich komerčně i nekomerčně.; https://spdx.org/licenses/mplus.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/mplus.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/mplus.json#text; Celý text neukládá zachování oznámení, označení změn, šíření zdrojů ani reklamní uznání.; https://spdx.org/licenses/mplus.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/mplus.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/mplus.json#text; Celý text neukládá zachování oznámení, označení změn, šíření zdrojů ani reklamní uznání.; https://spdx.org/licenses/mplus.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/mplus.json#text; Poslední věta poskytuje fonty AS IS bez záruky; samostatnou výluku odpovědnosti neuvádí.; https://spdx.org/licenses/mplus.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/mplus.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/mplus.json#text; Celý text neobsahuje patentová oprávnění ani odvetu za patentové nároky.; https://spdx.org/licenses/mplus.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/mplus.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/mplus.json#text; Celý text neukládá zachování oznámení, označení změn, šíření zdrojů ani reklamní uznání. Rozsah notifikační zátěže: none.; https://spdx.org/licenses/mplus.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/mplus.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/mplus.json#text; Individuální kontrola celého připnutého textu mplus dne 2026-09-09. Prohlášení výslovně licencuje fonty. Text je výslovně grantem k fontům; pro doporučení novému softwarovému projektu je potřeba oddělený model fontů či doložený obecný softwarový grant. Jiná licence či verze není nabízena.; https://spdx.org/licenses/mplus.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

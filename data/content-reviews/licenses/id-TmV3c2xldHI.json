@@ -1,0 +1,27 @@
+{
+  "id": "Newsletr",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:00764dd0ef5c2c11bfe806d9de80f04fe1f8b4bd122393ec55881b74d9d73b5c"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Licence dovoluje software používat pro libovolný účel na libovolném počítači a volně jej dále šířit. Upravené verze musejí být jasně označeny a nesmějí být vydávány za původní program; zveřejnění zdrojů ani další notices text nevyžaduje. Vylučuje záruky včetně prodejnosti a vhodnosti, samostatnou výluku odpovědnosti však neuvádí.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Licence Huntera Goatleyho pokrývá software s copyrightem 1989–2004.",
+    "grantCs": "Úvod dovoluje každému užití pro jakýkoli účel na libovolném počítači a volnou redistribuci; bod 2 výslovně počítá s upravenými verzemi.",
+    "conditionsCs": "Bod 2 vyžaduje upravené verze jasně označit a nevydávat je za původní software; další oznamovací nebo zdrojové povinnosti nejsou.",
+    "limitationsCs": "Bod 1 vylučuje všechny záruky včetně prodejnosti a vhodnosti; samostatná výluka odpovědnosti a obchodních známek uvedena není.",
+    "compatibilityCs": "Alternativní licence ani volba verze nejsou nabízeny."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Newsletr.html",
+      "note": "Individuálně přečten celý připnutý text; Bod 2 vyžaduje upravené verze jasně označit a nevydávat je za původní software; další oznamovací nebo zdrojové povinnosti nejsou. Celý text neobsahuje výslovný patentový grant ani patentové ukončení."
+    }
+  ]
+}

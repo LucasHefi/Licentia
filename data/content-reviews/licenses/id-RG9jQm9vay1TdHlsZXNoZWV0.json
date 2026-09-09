@@ -1,0 +1,27 @@
+{
+  "id": "DocBook-Stylesheet",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:c811e9181870400c893765930e728db639ebb6f6f56d629c02117feff6f9d126"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Stylesheet i dokumentaci lze trvale a bez poplatku používat, kopírovat, upravovat a šířit pro libovolný účel při zachování copyrightu a licenčního odstavce. Bez záruky vhodnosti.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Předmětem je tento stylesheet a jeho doprovodná dokumentace, nikoli všechen obsah vytvořený DocBookem.",
+    "grantCs": "Permission ... in perpetuity uděluje trvalé bezpoplatkové užití, kopie, změny a distribuci pro libovolný účel; patentový grant ani výslovná sublicence chybějí.",
+    "conditionsCs": "Odstavec Permission vyžaduje copyright a tento odstavec ve všech kopiích; nevyžaduje stejnou licenci upraveného celku, zdroje, reklamu či nabídku po síti.",
+    "limitationsCs": "Nositelé copyrightu nepotvrzují vhodnost schema pro žádný účel a poskytují as is bez výslovné/implicitní záruky; samostatná odpovědnostní či známková doložka chybí.",
+    "compatibilityCs": "Licence nemá výběr verze či jinou licenční cestu; uvedený Release $Id je identifikace souboru, nikoli licenční volba."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/DocBook-Stylesheet.html",
+      "note": "Individuální revize celého připnutého textu; Předmětem je tento stylesheet a jeho doprovodná dokumentace, nikoli všechen obsah vytvořený DocBookem."
+    }
+  ]
+}

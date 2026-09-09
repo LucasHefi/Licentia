@@ -9,92 +9,95 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "provide-corresponding-source"
+      "mark-modifications"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification"
     ],
     "restrictions": [
-      "unknown"
+      "additional-terms"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Kazlib.json#text; grant paragraph: reproduce/distribute possibly for fee, adapt into derivatives; last sentence explicitly allows translation into executable and incorporation into proprietary software; no reciprocal source-supply or same-license condition; https://spdx.org/licenses/Kazlib.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Kazlib.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Kazlib.json#text; grant paragraph: reproduce/distribute possibly for fee, adapt into derivatives; last sentence explicitly allows translation into executable and incorporation into proprietary software; https://spdx.org/licenses/Kazlib.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     },
     {
-      "field": "copyleftScope",
+      "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Kazlib.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Kazlib.json#text; retain intact copyright in reproduction/distribution and add modification notices on derivatives; final sentence specifically EXEMPTS executable code incorporated in proprietary software from related copyright notice, not all distribution forms; https://spdx.org/licenses/Kazlib.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     },
     {
-      "field": "triggers",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Kazlib.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Kazlib.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Kazlib.json#text; retain intact copyright in reproduction/distribution and add modification notices on derivatives; final sentence specifically EXEMPTS executable code incorporated in proprietary software from related copyright notice, not all distribution forms; https://spdx.org/licenses/Kazlib.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Kazlib.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Kazlib.json#text; whole text: no express patent grant or patent-litigation termination; no inference of patent rights from copyright, trademarks or non-infringement disclaimers; https://spdx.org/licenses/Kazlib.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Kazlib.json#text; grant paragraph: reproduce/distribute possibly for fee, adapt into derivatives; last sentence explicitly allows translation into executable and incorporation into proprietary software; https://spdx.org/licenses/Kazlib.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Kazlib.json#text; all other author rights reserved; no warranty/liability or endorsement disclaimer; explicit proprietary-executable notice exception; https://spdx.org/licenses/Kazlib.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Kazlib.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Kazlib.json#text; whole-text editorial review on 2026-09-09, batch 6; Zachovejte copyright a u odvozených verzí přidejte oznámení o úpravě. Šíření za poplatek je dovoleno. Při překladu do spustitelné podoby a začlenění do proprietárního softwaru text výslovně nevyžaduje, aby tento proprietární software obsahoval copyrightové oznámení k původním zdrojům. Nevyžaduje poskytování zdrojů a neobsahuje disclaimer záruk ani odpovědnosti.; https://spdx.org/licenses/Kazlib.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Kazlib.json#text; retain intact copyright in reproduction/distribution and add modification notices on derivatives; final sentence specifically EXEMPTS executable code incorporated in proprietary software from related copyright notice, not all distribution forms; https://spdx.org/licenses/Kazlib.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     }
   ]
 }

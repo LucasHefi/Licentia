@@ -1,0 +1,27 @@
+{
+  "id": "OLDAP-2.2.1",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:abd25e3c714296c346e8a8061a979902529ef69c4d663f3853007a109b08c616"
+  },
+  "disposition": "eligible",
+  "summaryCs": "OpenLDAP 2.2.1 zachovává zdrojové notice a kopii dokumentu, binární redistribuce nesou copyright, podmínky a disclaimer. Název OpenLDAP nesmí bez svolení propagovat nebo tvořit název odvozeniny. Due credit je doporučení; lze použít pozdější revizi Foundation.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Verze 2.2.1 z 1.3.2000 pokrývá software a přidruženou dokumentaci; copyright a svolení kopírovat dokument jsou tentokrát na konci.",
+    "grantCs": "Úvod dovoluje redistribution/use se změnami i bez nich bez účelového omezení a bod 6 tuto či následnou revizi licence. Patentová práva a výslovná sublicence chybějí.",
+    "conditionsCs": "Bod 1 uchovává copyright statements/notices ve zdrojích a požaduje kopii dokumentu v redistribucích; bod 2 copyright, podmínky a disclaimer v doprovodných materiálech binárek. Due credit should podle bodu 5 je doporučení, nikoli povinné uznání při užití.",
+    "limitationsCs": "Body 3–4 chrání OpenLDAP před endorsementem a použitím v názvu odvozenin bez písemného svolení. Disclaimer odmítá záruky a škody. Závěr samostatně uvádí ochrannou známku a povoluje pouze doslovné kopie licenčního dokumentu.",
+    "compatibilityCs": "Bod 6 dovoluje následnou revision of the license vydanou Foundation; licence dokumentu neumožňuje automaticky upravovat její vlastní text."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/OLDAP-2.2.1.html",
+      "note": "Individuální revize celého připnutého textu; Verze 2.2.1 z 1.3.2000 pokrývá software a přidruženou dokumentaci; copyright a svolení kopírovat dokument jsou tentokrát na konci."
+    }
+  ]
+}

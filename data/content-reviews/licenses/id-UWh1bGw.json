@@ -1,0 +1,20 @@
+{
+  "id": "Qhull",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.4",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:0a22b269ba7103b4d719df290cec05603b3a89e55effbe196637864f9297de4f"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Zachovejte copyright ve všech souborech a ke každé redistribuci Qhull nebo produktu, který jej obsahuje, přiložte tento licenční soubor. U úprav uveďte autora změny, datum a důvod. Při distribuci upravených verzí nebo produktů s Qhull připojte oznámení, kde získat původní zdrojový kód. Jde o odkaz na původní zdroje, nikoli povinnost poskytovat vlastní zdroje. Text vylučuje záruky, neobsahuje výslovné omezení odpovědnosti.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Qhull.html",
+      "note": "Dřívější individuální revize 2026-09-09.4; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

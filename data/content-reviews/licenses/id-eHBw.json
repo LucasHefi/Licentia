@@ -1,0 +1,27 @@
+{
+  "id": "xpp",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:3de6ba2a8b3294d08dad59a9e1671ac9c447181199613594de0227a9f2e85704"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Distribuce PullParser zachová copyright a podmínky; zdroje navíc původní seznam autorů. Dokumentace nese uznání Extreme! Lab, alternativně software a obvyklé místo poděkování. Univerzitní jména jsou chráněna před endorsementem a použitím v názvech.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Licence Extreme! Lab PullParser pokrývá software s copyrightem Trustees of Indiana University 2002.",
+    "grantCs": "Úvod dovoluje use/redistribution obou forem s úpravami i bez nich bez zákazu komerce. Bod 5 a disclaimer neposkytují ujištění o cizích patentech, ale nevylučují výslovně vlastní patentový grant; patentová licence není uvedena.",
+    "conditionsCs": "Body 1–2 zachovávají copyright/podmínky/disclaimer ve zdrojích či materiálech binárek; bod 1 také původní seznam autorů. Bod 3 uznání s URL Extreme Lab v doprovodné dokumentaci, alternativně v samotném softwaru a obvyklém místě third-party acknowledgments. Žádná povinnost zdrojů není uvedena.",
+    "limitationsCs": "Body 4–5 chrání jména Indiana Univeristy/Extreme Lab podle přesného textu proti endorsementu i názvům odvozenin bez písemného svolení. Univerzita odmítá cizí IP nároky, záruky přesnosti, bezchybnosti/škodlivého kódu a příjemce přebírá riziko výkonu i generovaných informací.",
+    "compatibilityCs": "Alternativní umístění téhož uznání není kumulativní dokumentační i softwarová povinnost; jiné licence/verze text neuvádí."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/xpp.html",
+      "note": "Individuální revize celého připnutého textu; Licence Extreme! Lab PullParser pokrývá software s copyrightem Trustees of Indiana University 2002."
+    }
+  ]
+}

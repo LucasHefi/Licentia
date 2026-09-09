@@ -1,0 +1,27 @@
+{
+  "id": "BSD-2-Clause-Darwin",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:31192251813bcaebc7f4fac0476af3bd70384f9280ff16ba123a86b6834e1090"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Zdrojové a binární formy lze používat i šířit s úpravami. Zdrojová distribuce zachová copyright nezměněně hned na začátku souboru; podmínky a disclaimer zůstanou také. Binární distribuce je reprodukuje v dokumentaci či doprovodných materiálech.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Software Iana F. Darwina a dalších, udržovaný Christosem Zoulasem; zdrojové/binární formy.",
+    "grantCs": "Redistribution/use with or without modification; text sám nepřidává exportní zákaz a uvádí vlastní tvrzení o vývozu. Patentový grant chybí.",
+    "conditionsCs": "Bod 1 copyright okamžitě na začátku souboru beze změn, seznam podmínek a disclaimer; bod 2 vše v dokumentaci/materiálech binární distribuce.",
+    "limitationsCs": "AS IS bez záruk a široké vyloučení škod autora/přispěvatelů. Výrok o exportu je součást historického textu, nepředstavuje dnešní ověření exportního práva.",
+    "compatibilityCs": "Bez jiné licence/verze, zdrojové reciprocity nebo naming zákazu."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/BSD-2-Clause-Darwin.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Dvouklauzulový grant s přesnou pozicí copyrightu a samostatným exportním tvrzením, ne exportní licenční podmínkou."
+    }
+  ]
+}

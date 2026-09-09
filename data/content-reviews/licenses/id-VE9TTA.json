@@ -1,0 +1,29 @@
+{
+  "id": "TOSL",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:64bb078df79d7cbaf6e280b6f362858aa55f01a716950693b94ff656b4cad59c"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Licence dovoluje software používat a distribuovat s úpravami, ale při distribuci vyžaduje cestu k úplnému zdroji i doprovodného softwaru, který jej používá. Zdroj může být přiložen nebo včas dostupný za omezený poplatek a musí být dále šiřitelný za rozumných, nanejvýš stejně omezujících podmínek. Průvodce ji nezařazuje, protože tuto širší zdrojovou a licenční větev nelze zaměnit za prostou povinnost stejné licence.",
+  "blockersCs": [
+    "Třetí odrážka požaduje redistribuovatelný zdroj pod reasonable and no more restrictive conditions i pro doprovodný software; před zařazením je třeba modelovat tuto méně či stejně omezující licenční podmínku bez její záměny za striktní same-license."
+  ],
+  "analysis": {
+    "subjectCs": "Trusster Open Source License 1.0a pokrývá software Mintze/Ekendahla a při distribuci zdrojově zasahuje doprovodný software, který jej používá.",
+    "grantCs": "Úvod dovoluje užití a redistribuci zdrojů/binárek se změnami i bez nich.",
+    "conditionsCs": "První dvě odrážky zachovávají copyright/podmínky/disclaimer ve zdroji či doprovodu binárek. Třetí vyžaduje u každé distribuce informaci, jak získat úplný zdroj softwaru i doprovodného software, který jej používá; zdroj je přiložen nebo dostupný včas nejvýše za distribuci plus nominální poplatek a volně redistribuovatelný za rozumných ne restriktivnějších podmínek.",
+    "limitationsCs": "Úplný zdroj executable zahrnuje všechny moduly kromě souborů typicky doprovázejících hlavní OS komponenty. AS IS vylučuje záruky včetně noninfringement i odpovědnost.",
+    "compatibilityCs": "Přiložený zdroj a včasná placená dostupnost do stanoveného stropu jsou alternativy; podmínky zdroje smějí být i méně omezující, nikoli nutně totožná licence."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/TOSL.html",
+      "note": "Individuálně přečten celý připnutý text; První dvě odrážky zachovávají copyright/podmínky/disclaimer ve zdroji či doprovodu binárek. Třetí vyžaduje u každé distribuce informaci, jak získat úplný zdroj softwaru i doprovodného software, který jej používá; zdroj je přiložen nebo dostupný včas nejvýše za distribuci plus nominální poplatek a volně redistribuovatelný za rozumných ne restriktivnějších podmínek. Celý text nemá výslovný patentový grant ani patentové ukončení."
+    }
+  ]
+}

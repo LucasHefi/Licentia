@@ -1,0 +1,30 @@
+{
+  "id": "CERN-OHL-S-2.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:4adca1c35716051bf44f780761f96f3d7366a95ede64ceaa7ce3d27d64839135"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Silně reciproční CERN OHL 2.0 dovoluje šíření návrhových podkladů a výrobu či prodej produktů, ale rozšířené podklady ponechává pod stejnou licencí s výjimkou určených dostupných součástí. Příjemce produktu získá úplné podklady nebo jejich dostupné umístění, včetně potřebných instalačních a propojovacích údajů. Vyžaduje označení změn a oznámení a obecnou ochranu poskytovatelů před nároky. Výrobní rozsah a tyto závazky patří k samostatnému hardwarovému posouzení, proto ji softwarový průvodce nenabízí.",
+  "blockersCs": [
+    "§1, §3–4 rozšiřují reciprocitu na výrobu hardware, Complete Source, Available Components a označení fyzického Product; softwarový průvodce potřebuje samostatný hardwarový model těchto vztahů.",
+    "§6.2 ukládá obecné hold harmless za použití a výrobu, nikoli pouze přidané záruky; tento závazek potřebuje vlastní reprezentaci."
+  ],
+  "analysis": {
+    "subjectCs": "CERN-OHL-S v2 zahrnuje hardwarové návrhy, digitální kód a fyzické či jiné Products vyrobené, sestavené nebo nakonfigurované ze Source.",
+    "grantCs": "§2–4 dovolují kopírovat, měnit a zveřejňovat Covered Source a vyrábět i prodávat Products; §7 přidává nezbytné patentové nároky poskytovatelů. Samostatné sublicencování není uděleno, licence plyne přímo.",
+    "conditionsCs": "§3 uchovává relevantní notices, změny označuje datem a popisem, připojuje místo zdrojů a vyžaduje stejnou licenci na celý rozšířený zdroj kromě Available Components. §4 každému příjemci poskytuje Complete Source nebo jeho Source Location, případně viditelně a pevně vyznačené na výrobku, balení či dokumentaci. Complete Source zahrnuje instalační a propojovací údaje a dostupný otevřeně čitelný formát, pokud jej proprietární nástroj umí vytvořit; místo má být dostupné alespoň tři roky. §5 dovoluje smluvně uzavřený vývoj/testování pouze pro zadavatele.",
+    "limitationsCs": "§6 vedle AS IS a vyloučení škod požaduje obecné zproštění poskytovatelů odpovědnosti, nákladů a nároků třetích stran. §8 omezuje jména/loga a stanoví okamžité ukončení s podmíněným obnovením po nápravě, 30denní lhůtou při výzvě a definitivním koncem při opakování.",
+    "compatibilityCs": "§1.2 vymezuje kompatibilní zdroje; §8.3 dovoluje pozdější verzi stejné varianty jen podle původního určení a při chybějící variantě použije S. Available Components mají vlastní licence a výjimku ze zdrojového dodání, s informacemi umožňujícími opatření a použití."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/CERN-OHL-S-2.0.html",
+      "note": "Individuálně přečten celý připnutý text; §3 uchovává relevantní notices, změny označuje datem a popisem, připojuje místo zdrojů a vyžaduje stejnou licenci na celý rozšířený zdroj kromě Available Components. §4 každému příjemci poskytuje Complete Source nebo jeho Source Location, případně viditelně a pevně vyznačené na výrobku, balení či dokumentaci. Complete Source zahrnuje instalační a propojovací údaje a dostupný otevřeně čitelný formát, pokud jej proprietární nástroj umí vytvořit; místo má být dostupné alespoň tři roky. §5 dovoluje smluvně uzavřený vývoj/testování pouze pro zadavatele. §7.1 nutně porušené nároky; §7.2 ruší všechna práva při žalobě na Covered Source/Product i při žádosti prohlásit patent za neplatný nebo nevymahatelný."
+    }
+  ]
+}

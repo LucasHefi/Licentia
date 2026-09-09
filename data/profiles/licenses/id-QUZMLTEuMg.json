@@ -8,8 +8,8 @@
     "contentHash": "sha256:83d29983e63fc1505720316c526661e6a67f3878d99978ae35bf029376a4a86f"
   },
   "review": {
-    "status": "not-recommendable",
-    "recommendable": false,
+    "status": "reviewed",
+    "recommendable": true,
     "evidenceLevel": "strong"
   },
   "semantic": {
@@ -23,10 +23,10 @@
       "private-use"
     ],
     "obligations": [
+      "disclose-source",
       "include-copyright",
       "include-notice",
-      "mark-modifications",
-      "provide-corresponding-source"
+      "mark-modifications"
     ],
     "triggers": [
       "distribution",
@@ -40,53 +40,71 @@
       "warranty"
     ],
     "patentPosition": "retaliatory-termination",
-    "noticeBurden": "standard"
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text: Grant of License; Attribution Rights; License to Source Code; and complete license review (the conditions require attribution for derivative source, source availability from the Licensor on distribution, and patent-action termination, but do not impose same-license or reciprocal licensing on derivative works)"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text: Grant of License and Right to Use (broad rights to use, copy, modify, merge, publish, perform, distribute, sell, and make derivative works, subject to non-reciprocal conditions)"
+      "locator": "public/data/licenses/AFL-1.2.json#text; Grant široký a source promise role Licensor;1.2 Attribution Rights změnové notices nevyžadují stejnou licenci derivátů.; https://spdx.org/licenses/AFL-1.2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text: application notice immediately before Grant of License; Attribution Rights; and License to Source Code, second sentence (licensing and attribution notices must be retained or added in derivative Source Code, and a repository address must be published when that source-delivery option is used)"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text: Attribution Rights (retain copyright, patent, trademark, licensing, and Attribution Notices in derivative Source Code and add a prominent modification notice); License to Source Code (Licensor must provide machine-readable Source Code with distributed copies or through the stated repository alternative)"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text: Grant of License, clause (2) (express patent grant); Mutual Termination for Patent Action (the entire License terminates automatically upon the stated lawsuit against any OSI Certified software licensed under a license containing that clause)"
+      "locator": "public/data/licenses/AFL-1.2.json#text; Celý text bez same-license; Licensor source promise k Original Work neukládá You publikovat derivative source.; https://spdx.org/licenses/AFL-1.2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text: Grant of License, clauses (1)-(2), and Right to Use (world-wide, royalty-free rights to use, copy, modify, merge, publish, perform, distribute, sell, and make, use, sell, or offer for sale under embodied patent claims; the grant is expressly non-sublicenseable)"
+      "locator": "public/data/licenses/AFL-1.2.json#text; Grant(1) copyright výčet,(2) embodied patent claims; non-sublicenseable, Right to Use zbytkové užití.; https://spdx.org/licenses/AFL-1.2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "restrictions",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text: Exclusions from License Grant; Warranty and Disclaimer of Warranty; Limitation of Liability; and Mutual Termination for Patent Action (no governing-law clause or software additional-terms condition appears in the complete license text)"
-    },
-    {
-      "field": "review",
-      "sourceId": "spdx-license-list",
-      "locator": "metadata: deprecated=false and osi=true; comments, opening sentence ('This license has been superseded by later versions'); text: Grant of License expressly makes the grant non-sublicenseable and Warranty and Disclaimer of Warranty imposes an affirmative Licensor title warranty, distinctions the guide vocabulary cannot communicate losslessly, so this superseded version is not a safe general recommendation"
+      "locator": "public/data/licenses/AFL-1.2.json#text; Attribution Rights source derivatives retain copyright/patent/trademark/licensing/attribution a mark changes; source promise pouze Licensor original s repo alternativou.; https://spdx.org/licenses/AFL-1.2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "text: Attribution Rights (creation of Derivative Works); License to Source Code (each copy the Licensor distributes); Mutual Termination for Patent Action (filing the stated patent-infringement lawsuit)"
+      "locator": "public/data/licenses/AFL-1.2.json#text; Create Derivative Works spouští source marking/notices; Licensor distribution source promise; patent lawsuit targeting qualified OSI software automatické ukončení.; https://spdx.org/licenses/AFL-1.2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/AFL-1.2.json#text; Copyright ownership warranty je pozitivní výjimka; jiné warranty/liability s death/injury výjimkou, names/marks endorsement a patent-claim omezení.; https://spdx.org/licenses/AFL-1.2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/AFL-1.2.json#text; Patent grant embodied in Original Work a Mutual Termination all rights za žalobu na jakýkoli OSI software pod stejnou doložkou: retaliatory-termination.; https://spdx.org/licenses/AFL-1.2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/AFL-1.2.json#text; Source zpřístupnění původním licencorem a detailní notices/marking v derivátních zdrojích jsou materiální, bez povinnosti zveřejnit každý derivát.; https://spdx.org/licenses/AFL-1.2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/AFL-1.2.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. AFL 1.2 ukládá původnímu Licensor dodat zdroj Original Work nebo repozitář dostupný po dobu jeho distribuce; příjemce nemusí zveřejnit vlastní deriváty. Vytvořené derivátní zdroje zachovávají copyrightová, patentová, známková a atribuční oznámení a výrazně označují změny. Patentový grant má vzájemnou odvetnou doložku.; https://spdx.org/licenses/AFL-1.2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

@@ -1,0 +1,29 @@
+{
+  "id": "LPD-document",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:af73930f37b6b09f99caf00d9c418335855854b578e1730de1fff5d382b63166"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Dokument lze kopírovat a šířit pro libovolný účel a bez poplatku, překládat i zařazovat do kompilací. Copyright a svolení musí zůstat a podstatné změny i vypuštění musí být označeny.",
+  "blockersCs": [
+    "Grant je určen dokumentu a používá and without charge, jehož dopad na placenou distribuci nelze z krátkého textu bezpečně zobecnit. Doplnit model dokumentačního předmětu a ověřit původní autorův výklad poplatkového omezení před software doporučením."
+  ],
+  "analysis": {
+    "subjectCs": "Výslovný předmět je dokument L. Petera Deutsche, včetně překladů a kompilací.",
+    "grantCs": "Permission dovoluje kopírování a distribuci pro jakýkoli účel and without charge, překlady a kompilace; není jednoznačné, zda bez poplatku omezuje další distribuci. Patentový grant chybí.",
+    "conditionsCs": "Copyright i toto oznámení musí být zachovány, podstatné změny nebo vypuštění z originálu jasně označeny. Není požadována stejná licence ani zdrojová forma.",
+    "limitationsCs": "Formulace and without charge potřebuje vyjasnit poplatkový rozsah; text neobsahuje záruky, odpovědnost či ochranné známky.",
+    "compatibilityCs": "Povoleny jsou překlady a kompilace, ale není určena jiná licence ani konkrétní právní kompatibilita."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/LPD-document.html",
+      "note": "Individuální revize celého připnutého textu; Výslovný předmět je dokument L. Petera Deutsche, včetně překladů a kompilací."
+    }
+  ]
+}

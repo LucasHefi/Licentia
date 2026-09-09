@@ -1,0 +1,20 @@
+{
+  "id": "w3m",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.5",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:1d14ffbdaa1f19c8bba07341d79dc1f258eae290fe30e613c63115a946387ed8"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Zachovejte celé copyrightové oznámení v kopiích softwaru i aplikací a odvozených děl, které jej obsahují. Užití, úpravy a redistribuce jsou povoleny. Text vylučuje záruky, ale neobsahuje výslovné omezení odpovědnosti, zákaz použití jmen nebo povinnost poskytovat zdroje.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/w3m.html",
+      "note": "Dřívější individuální revize 2026-09-09.5; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

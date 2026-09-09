@@ -1,0 +1,27 @@
+{
+  "id": "TU-Berlin-2.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:2bcdd59f9da81d8c0b9399bd637b847cd8f7b4178b4c0017f71b6e0b0727c31c"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Licence s upřesňujícím dodatkem z roku 2009 dovoluje software používat, kopírovat, měnit a distribuovat pro libovolný účel s poplatkem i bez něj. Oznámení se nesmí odstranit ani při samotném užití; informování autorů o chybách či zlepšeních je dobrovolné. Autoři a TU Berlin neposkytují záruky a odmítají odpovědnost za vady.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Text obsahuje původní prohlášení Degenerové/Bormanna z roku 1994 a doplňující výslovné svolení z roku 2009.",
+    "grantCs": "Dodatek objasňuje práva: užít, kopírovat, měnit a distribuovat pro libovolný účel s poplatkem nebo bez něj; původní část dovolovala any use.",
+    "conditionsCs": "Notice se nesmí odstranit. Zákaz jeho odstranění podmiňuje i samotné užití; informování autorů o užití, chybách a zlepšeních je pouze zdvořilá žádost.",
+    "limitationsCs": "Autoři a TU Berlin nejsou považováni za poskytovatele ujištění o vhodnosti ani odpovědné za vady; obě formulace zdůrazňují absolutní absenci záruky.",
+    "compatibilityCs": "Dodatek 2009 vysvětluje původní záměr a výslovně doplňuje grant; nejde o alternativní licenci."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/TU-Berlin-2.0.html",
+      "note": "Individuálně přečten celý připnutý text; Notice se nesmí odstranit. Zákaz jeho odstranění podmiňuje i samotné užití; informování autorů o užití, chybách a zlepšeních je pouze zdvořilá žádost. Původní část i dodatek nemají výslovný patentový grant ani patentové ukončení."
+    }
+  ]
+}

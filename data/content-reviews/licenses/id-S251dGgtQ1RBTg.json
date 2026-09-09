@@ -1,0 +1,29 @@
+{
+  "id": "Knuth-CTAN",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:148ffa9ccef43702d624ac23bad63f82391222c1cf7ede40f8fa78a6220c335e"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Licence dovoluje balíček i jednotlivé soubory neomezeně kopírovat a šířit beze změn. Upravené podoby lze distribuovat pouze po přejmenování výsledného balíčku i souborů; další oznamovací nebo zdrojové povinnosti text neukládá. Průvodce ji zatím nezařazuje, protože podmínku povinného přejmenování změněných souborů samostatně nezachycuje.",
+  "blockersCs": [
+    "Přejmenování upraveného balíčku i jednotlivých souborů je podmínkou grantu; před zařazením je nutný model povinného přejmenování po změně, který slovník 1.3.0 nemá."
+  ],
+  "analysis": {
+    "subjectCs": "Text licencuje tento softwarový balíček i jednotlivé soubory.",
+    "grantCs": "První věta dovoluje neomezené kopírování a redistribuci beze změn; druhá dovoluje změny i jejich šíření pouze po přejmenování.",
+    "conditionsCs": "Každý výsledný upravený balíček nebo soubor se musí přejmenovat; text nestanoví oznámení ani zdrojovou povinnost.",
+    "limitationsCs": "Povinné přejmenování se vztahuje na výsledné balíčky i jednotlivé soubory; záruky a odpovědnost text neřeší.",
+    "compatibilityCs": "Alternativní licencování není nabízeno."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Knuth-CTAN.html",
+      "note": "Individuálně přečten celý připnutý text; Každý výsledný upravený balíček nebo soubor se musí přejmenovat; text nestanoví oznámení ani zdrojovou povinnost. Celý odstavec neobsahuje patentový grant ani patentové ukončení."
+    }
+  ]
+}

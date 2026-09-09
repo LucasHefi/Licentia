@@ -9,94 +9,100 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
       "commercial-use",
       "distribution",
       "modifications",
-      "patent-grant"
+      "patent-grant",
+      "private-use"
     ],
     "obligations": [
-      "include-license-text"
+      "include-copyright",
+      "include-license-text",
+      "include-notice"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "patent-claim"
     ],
     "restrictions": [
       "liability",
-      "trademark"
+      "patent-claim",
+      "trademark",
+      "warranty"
     ],
-    "patentPosition": "express-grant",
+    "patentPosition": "defensive-termination",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MulanPSL-1.0.json#text; Chinese and English sections 1-2: copyright reproduction/use/modification/distribution; scoped express patent rights including commercial exploitation; whole text: no reciprocal source-disclosure or same-license condition; https://spdx.org/licenses/MulanPSL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.2"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MulanPSL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MulanPSL-1.0.json#text; Chinese and English sections 1-2: copyright reproduction/use/modification/distribution; scoped express patent rights including commercial exploitation; https://spdx.org/licenses/MulanPSL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.2"
     },
     {
-      "field": "copyleftScope",
+      "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MulanPSL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MulanPSL-1.0.json#text; section 4: license copy and retained copyright/patent/trademark/disclaimer statements on source or executable distribution; section 2 patent-litigation/enforcement trigger; https://spdx.org/licenses/MulanPSL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.2"
     },
     {
-      "field": "triggers",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MulanPSL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MulanPSL-1.0.json#text; section 4: license copy and retained copyright/patent/trademark/disclaimer statements on source or executable distribution; section 2 patent-litigation/enforcement trigger; https://spdx.org/licenses/MulanPSL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.2"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/MulanPSL-1.0.json#text; section 2: contribution/original combination patent grant, excluding recipient modifications/other combinations; granted patent rights terminate on recipient or affiliate patent litigation/enforcement; https://spdx.org/licenses/MulanPSL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.2"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/MulanPSL-1.0.json#text; Chinese and English sections 1-2: copyright reproduction/use/modification/distribution; scoped express patent rights including commercial exploitation; https://spdx.org/licenses/MulanPSL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.2"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/MulanPSL-1.0.json#text; sections 2-3: patent termination for recipient/affiliate action and no trademark grant; section 5: warranty/liability; whole text: version 1 has no language-precedence section 6; https://spdx.org/licenses/MulanPSL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.2"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MulanPSL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MulanPSL-1.0.json#text; whole-text editorial review on 2026-09-09, batch 2; Přiložte licenci a zachovejte copyrightová, patentová, známková i další oznámení. Patentový grant je omezen na příspěvek a původní kombinaci a zaniká při vymezeném patentovém sporu. Verze 1 neobsahuje ustanovení o přednosti čínského znění z verze 2.; https://spdx.org/licenses/MulanPSL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.2"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/MulanPSL-1.0.json#text; section 4: license copy and retained copyright/patent/trademark/disclaimer statements on source or executable distribution; section 2 patent-litigation/enforcement trigger; https://spdx.org/licenses/MulanPSL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.2"
     }
   ]
 }

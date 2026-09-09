@@ -1,0 +1,20 @@
+{
+  "id": "FSFAP-no-warranty-disclaimer",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.2",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:70f2eb938380b7508c25bce194ea39a38e627539c1ca1da3fe42053743dc3d85"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Kopírování, úpravy a distribuce jsou povoleny při zachování copyrightu a oznámení. Na rozdíl od FSFAP tato varianta neobsahuje vyloučení záruk.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/FSFAP-no-warranty-disclaimer.html",
+      "note": "Dřívější individuální revize 2026-09-09.2; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

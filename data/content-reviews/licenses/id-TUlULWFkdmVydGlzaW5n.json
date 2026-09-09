@@ -1,0 +1,27 @@
+{
+  "id": "MIT-advertising",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:5c2585ea0b23e3b962ca470c6e90cfd5df0c7dbff8b1e2cc7ebf1d2f29603e5e"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Licence dovoluje software a dokumentaci neomezeně používat, měnit, slučovat, distribuovat, sublicencovat a prodávat. Copyright a svolení musejí být také v dokumentaci, marketingových a propagačních materiálech; balíčky a doprovodné materiály navíc přiznávají použití tohoto softwaru. Software je bez záruk a autoři omezují odpovědnost za nároky a škody.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Grant pokrývá software a připojenou dokumentaci Carstena Haitzlera, Geoffa Harrisona, Kim Woelderse a přispěvatelů.",
+    "grantCs": "MIT grant výslovně dovoluje užití, kopie, změny, slučování, publikaci, distribuci, sublicence a prodej i stejné jednání příjemců.",
+    "conditionsCs": "Copyright a svolení musí být ve všech kopiích softwaru, dokumentaci i marketingových a publicitních materiálech; dokumentace, materiály a softwarové balíčky navíc uznají použití tohoto softwaru.",
+    "limitationsCs": "AS IS vylučuje záruky včetně neporušování práv a odpovědnost autorů za nároky i škody; zvláštní omezení známek není.",
+    "compatibilityCs": "Jiná licence nebo verze není nabízena; oproti běžnému MIT je povinná i reklamní dokumentace a acknowledgment."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/MIT-advertising.html",
+      "note": "Individuálně přečten celý připnutý text; Copyright a svolení musí být ve všech kopiích softwaru, dokumentaci i marketingových a publicitních materiálech; dokumentace, materiály a softwarové balíčky navíc uznají použití tohoto softwaru. Celý text neobsahuje patentový grant ani patentové ukončení; zmínka noninfringement je záruční výluka."
+    }
+  ]
+}

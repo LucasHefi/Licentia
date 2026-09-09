@@ -10,82 +10,101 @@
   "review": {
     "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
     "family": "strong-copyleft",
     "copyleftScope": "whole-work",
     "permissions": [
+      "commercial-use",
       "distribution",
       "modifications",
-      "patent-grant",
-      "sublicensing"
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
       "include-license-text",
+      "include-notice",
       "mark-modifications",
-      "provide-corresponding-source"
+      "provide-corresponding-source",
+      "same-license"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification",
+      "use"
     ],
     "restrictions": [
+      "additional-terms",
       "liability",
       "warranty"
     ],
-    "patentPosition": "express-grant",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.whole-work-copyleft",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.copyleft-family",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GPL-2.0.json#text; Připnutý GPL-2.0 obsahuje celé GPL2 z června1991 i návod připojení k programu; identifikátor je deprecated a neřeší jednoznačně only versus or-later. §0–3 dovolují spouštění bez omezení, úpravy, zdrojovou i objektovou distribuci, placený přenos a volitelnou placenou záruku. Výstup je chráněný jen pokud sám obsahuje odvozený kód; příjemce získá přímo od původního poskytovatele práva podle§6, nikoli obecnou podlicenci. §2(b) a navazující odstavce vyžadují licenci celého odvozeného díla včetně připojených částí distribuovaných jako jeden celek; výslovně zachovávají nezávislé oddělené distribuce a agregace. Síťové užití samo není zdrojový trigger.; https://spdx.org/licenses/GPL-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GPL-2.0.json#text; §2(b) a navazující odstavce vyžadují licenci celého odvozeného díla včetně připojených částí distribuovaných jako jeden celek; výslovně zachovávají nezávislé oddělené distribuce a agregace. Síťové užití samo není zdrojový trigger.; https://spdx.org/licenses/GPL-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GPL-2.0.json#text; §0–3 dovolují spouštění bez omezení, úpravy, zdrojovou i objektovou distribuci, placený přenos a volitelnou placenou záruku. Výstup je chráněný jen pokud sám obsahuje odvozený kód; příjemce získá přímo od původního poskytovatele práva podle§6, nikoli obecnou podlicenci.; https://spdx.org/licenses/GPL-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/GPL-2.0.json#text; §1 zachovává copyright, disclaimer a licenci s kopií textu;§2 datuje změny a licencuje zveřejněný odvozený celek bez licenčního poplatku všem. Interaktivní změněný program při běžném spuštění ukazuje copyright, záruku a způsob získání licence, ledaže původní interaktivní program taková oznámení neměl. §3 binárnímu kódu dává úplné zdroje nebo3letou písemnou nabídku všem třetím stranám za fyzické náklady, případně jen pro nekomerční převzatou binární distribuci kopii dříve obdržené nabídky. Rovnocenný přístup ke zdroji na stejném místě vyhovuje.; https://spdx.org/licenses/GPL-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/GPL-2.0.json#text; §1 zachovává copyright, disclaimer a licenci s kopií textu;§2 datuje změny a licencuje zveřejněný odvozený celek bez licenčního poplatku všem. Interaktivní změněný program při běžném spuštění ukazuje copyright, záruku a způsob získání licence, ledaže původní interaktivní program taková oznámení neměl. §3 binárnímu kódu dává úplné zdroje nebo3letou písemnou nabídku všem třetím stranám za fyzické náklady, případně jen pro nekomerční převzatou binární distribuci kopii dříve obdržené nabídky. Rovnocenný přístup ke zdroji na stejném místě vyhovuje.; https://spdx.org/licenses/GPL-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GPL-2.0.json#text; Zdroje obsahují všechny moduly, interface definice a skripty kompilace/instalace, s výjimkou obvyklých systémových komponent, pokud samy executable nedoprovází. §4 neoprávněné jednání automaticky ukončuje a ponechává dodržující příjemce. §6 zakazuje další omezení;§7 při neslučitelných povinnostech včetně patentového poplatku zakazuje šíření. AS IS a výluka škod podléhají zákonu a písemným dohodám.; https://spdx.org/licenses/GPL-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/GPL-2.0.json#text; Preambule a§7 řeší patentové překážky distribuce, neposkytují výslovnou patentovou licenci ani ukončení samotným podáním patentové žaloby.; https://spdx.org/licenses/GPL-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/GPL-2.0.json#text; §1 zachovává copyright, disclaimer a licenci s kopií textu;§2 datuje změny a licencuje zveřejněný odvozený celek bez licenčního poplatku všem. Interaktivní změněný program při běžném spuštění ukazuje copyright, záruku a způsob získání licence, ledaže původní interaktivní program taková oznámení neměl. §3 binárnímu kódu dává úplné zdroje nebo3letou písemnou nabídku všem třetím stranám za fyzické náklady, případně jen pro nekomerční převzatou binární distribuci kopii dříve obdržené nabídky. Rovnocenný přístup ke zdroji na stejném místě vyhovuje. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/GPL-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/GPL-2.0.json#text; Individuální kontrola celého připnutého textu GPL-2.0 dne 2026-09-09. Připnutý GPL-2.0 obsahuje celé GPL2 z června1991 i návod připojení k programu; identifikátor je deprecated a neřeší jednoznačně only versus or-later. Deprecated ID GPL-2.0 nelze doporučit jako jednoznačnou volbu nové licence; je nutné určit only nebo or-later podle skutečně udělené verze, nikoli podle příkladu v příloze. §2 vyjímá samostatné nezávislé části a pouhé agregace. §8 umožňuje původnímu držiteli výslovnou zeměpisnou výjimku, zde žádná konkrétní není. §9 volí pozdější verzi jen při skutečné or-later doložce nebo libovolnou při neurčené verzi; vzor v aplikační příloze sám nedokazuje určení konkrétního programu. Pro nový projekt je nutné zvolit GPL-2.0-only či GPL-2.0-or-later.; https://spdx.org/licenses/GPL-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

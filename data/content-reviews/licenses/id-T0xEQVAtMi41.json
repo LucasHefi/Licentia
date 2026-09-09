@@ -1,0 +1,27 @@
+{
+  "id": "OLDAP-2.5",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:8b4e6f3efc8b2458c4023c30a484101b6173c0ca71422af5ba526689b29e5f5c"
+  },
+  "disposition": "eligible",
+  "summaryCs": "OpenLDAP 2.5 vyžaduje copyrightová oznámení a nezměněnou kopii licence při redistribuci, u binárek i v materiálech. Jména a známky autorů/držitelů se nesmějí použít k propagaci bez písemného svolení; lze zvolit tuto nebo pozdější revizi licence.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Software a dokumentace, OpenLDAP Public License 2.5 z 11. 5. 2001.",
+    "grantCs": "Redistribution/use with or without modification; bod 6 volí tuto nebo jakoukoli subsequent revision. Bez patentového grantu.",
+    "conditionsCs": "Bod 1 zdrojové copyright statements/notices; bod 2 binární applicable notices/conditions/disclaimer; bod 3 verbatim document při každé redistribuci. Bod 5 should credit je doporučení.",
+    "limitationsCs": "Bod 4 jména a známky autorů/držitelů ne pro advertising/promotion sale/use/dealing bez specific written prior permission. Disclaimer chrání Foundation, přispěvatele i autory/vlastníky.",
+    "compatibilityCs": "Bod 6 dovoluje novější revize vydané Foundation, nikoli libovolnou cizí licenci. Licence samotného dokumentu dovoluje verbatim kopie."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/OLDAP-2.5.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Šest podmínek má permisivní notice/naming režim a možnost subsequent revision, bez copyleftu."
+    }
+  ]
+}

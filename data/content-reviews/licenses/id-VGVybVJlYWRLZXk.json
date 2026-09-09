@@ -1,0 +1,27 @@
+{
+  "id": "TermReadKey",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:1da7a3f253fc29fff343574e17ed0576873d7fbec3c8e6426aae6c298a5f1fea"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Neomezené šíření a úpravy za podmínky zachování neporušeného copyrightového oznámení; bez povinnosti zveřejnit zdrojový kód.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Jediná věta se vztahuje na licencované dílo TermReadKey a jeho úpravy.",
+    "grantCs": "Jediná věta dovoluje neomezené šíření a úpravy, včetně komerčního využití; patentová licence ani výslovná sublicence uvedena není.",
+    "conditionsCs": "Jediná věta podmiňuje šíření a úpravy zachováním neporušeného copyrightového oznámení; nepožaduje samostatné zdroje, reklamu ani síťovou nabídku.",
+    "limitationsCs": "Celý jednovětý text neobsahuje záruky, omezení odpovědnosti, ochranných známek ani zvláštní ukončení.",
+    "compatibilityCs": "Text nestanoví alternativní licenci, výběr verzí ani tvrzení kompatibility."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/TermReadKey.html",
+      "note": "Individuální revize celého připnutého textu; Jediná věta se vztahuje na licencované dílo TermReadKey a jeho úpravy."
+    }
+  ]
+}

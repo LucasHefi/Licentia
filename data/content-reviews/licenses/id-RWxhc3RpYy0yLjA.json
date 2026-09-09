@@ -1,0 +1,29 @@
+{
+  "id": "Elastic-2.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:00de09b59ea8a14023a63749711a956fcecf3cd63796648e4652b289986e28f7"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Elastic 2.0 dovoluje užití a změny, ale zakazuje hosted/managed službu zpřístupňující podstatnou část funkcí i zásahy do licenčních klíčů a chráněných funkcí. Patenty mají výluku vlastních změn a okamžité odvetné ukončení; notices zůstávají a změny se označí.",
+  "blockersCs": [
+    "Limitations zakazují hosted/managed službu s podstatnými funkcemi a jakékoli obcházení či skrývání licenčně chráněných funkcí. Doplnit model těchto zákazů a jejich podmínky; network-use nesmí v průvodci znamenat, že stačí zveřejnit zdroje."
+  ],
+  "analysis": {
+    "subjectCs": "Grant pokrývá software i jeho části; definice company zahrnuje kontrolující/ovládané/přidružené organizace přímou i nepřímou kontrolou.",
+    "grantCs": "Copyright License je nevýhradní, bez royalty, celosvětová, nepřevoditelná a bez sublicence pro use/copy/distribute/make available/derivatives. Patents uděluje současná/budoucí licencovatelná práva manufacture/use/sale/import s výjimkou nároků, které poruší vlastní změny/doplňky.",
+    "conditionsCs": "Limitations zakazují službu třetím zpřístupňující substantial features, pohyb/změnu/vypnutí/obejití klíče i skrytí chráněných funkcí. Všechna licenční/copyright/jiná oznámení zůstávají; každý příjemce části dostane podmínky a modifikované kopie prominentní notice změn.",
+    "limitationsCs": "Patentové písemné tvrzení příjemce/společnosti okamžitě ruší patentová práva (u společnosti pro práci jejím jménem). Porušení ukončí licence; úplná náprava do 30 dnů od výzvy jednou zpětně obnoví, opakování po obnově trvale ruší. As is a výluka všech škod platí v zákonném rozsahu.",
+    "compatibilityCs": "Network-use je zákaz určité služby, nikoli AGPL zdrojová nabídka; není možné jej splnit prostým zveřejněním zdrojů. No Other Rights a trademark dle zákona neudělují širší práva; jiné licence nejsou nabídnuty."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Elastic-2.0.html",
+      "note": "Individuální revize celého připnutého textu; Grant pokrývá software i jeho části; definice company zahrnuje kontrolující/ovládané/přidružené organizace přímou i nepřímou kontrolou."
+    }
+  ]
+}

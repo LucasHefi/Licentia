@@ -5,7 +5,7 @@ import { parseWorkspaceState, safeStoredWorkspaceState } from "../lib/workspace-
 const valid = {
   favorites: ["MIT", "MIT", "Apache-2.0"],
   compareIds: ["MIT"],
-  guideAnswers: { openness: "open", dependencies: "MIT AND Apache-2.0" },
+  guideAnswers: { openness: "open", advertising: "avoid", dependencies: "MIT AND Apache-2.0" },
   history: [{ id: "event-1", kind: "detail", label: "MIT", createdAt: "2026-08-26T10:00:00.000Z" }],
 };
 

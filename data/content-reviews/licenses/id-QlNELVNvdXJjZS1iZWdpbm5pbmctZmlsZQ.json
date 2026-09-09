@@ -1,0 +1,27 @@
+{
+  "id": "BSD-Source-beginning-file",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:bdc6b3d51199a8b3a6e2d1bfb85f5bbe0cf61d42c75d8d419c6336d81a040fc3"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Zdrojové i binární podoby lze používat a šířit i upravené. Pouze zdrojové redistribuce musí zachovat nezměněný copyright, podmínky a disclaimer hned na začátku souboru. Autorovo jméno nesmí bez písemného svolení podporovat odvozené produkty.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Software s copyrightem Justina T. Gibbse 1997 je licencován ve zdrojové i binární formě.",
+    "grantCs": "Úvodní redistribution and use výslovně zahrnuje obě formy a modifikace bez účelového omezení. Patentový grant ani sublicence uvedeny nejsou.",
+    "conditionsCs": "Bod 1 požaduje nezměněný copyright, podmínky a disclaimer bezprostředně na začátku souboru při distribuci zdrojů. Binární notice klauzule chybí; povinnost dodat zdroje z toho nevzniká.",
+    "limitationsCs": "Bod 2 zakazuje endorsement/promotion autorovým jménem bez konkrétního předchozího písemného svolení. Disclaimer odmítá záruky i přímé/nepřímé škody autora a přispěvatelů.",
+    "compatibilityCs": "Přesné umístění notice není povinnost stejné licence odvozenin; text neobsahuje jiné licence či verze."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/BSD-Source-beginning-file.html",
+      "note": "Individuální revize celého připnutého textu; Software s copyrightem Justina T. Gibbse 1997 je licencován ve zdrojové i binární formě."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "OLDAP-2.4",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:41cfda8d5af93a2b935d87e1ed32856e43e4e4c61e234e7da9452fa0b22660b8"
+  },
+  "disposition": "eligible",
+  "summaryCs": "OpenLDAP 2.4 vyžaduje zachování zdrojových notice, binární reprodukci oznámení a doslovnou licenci v každé redistribuci. Jména a známky autorů/držitelů se bez písemného svolení nepoužijí k propagaci; zásluhy jsou doporučení. Lze zvolit pozdější revizi Foundation.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Verze 2.4 z 8.12.2000 pokrývá software a přidruženou dokumentaci definované společně.",
+    "grantCs": "Úvod povoluje redistribution/use s úpravami i bez nich bez zákazu komerce. Bod 6 dovoluje tuto nebo pozdější revizi OpenLDAP Foundation, tedy podmíněnou licenční volbu, ne libovolné sublicencování. Patentový grant chybí.",
+    "conditionsCs": "Bod 1 zachovává copyright statements/notices ve zdrojích; bod 2 aplikovatelná oznámení, podmínky a disclaimer v materiálech binárek. Samostatný bod 3 požaduje doslovný celý dokument v každé redistribuci. Due credit should v bodu 5 je doporučení; zdroje se nevydávají povinně.",
+    "limitationsCs": "Bod 4 zakazuje použití jmen/známek autorů a držitelů v reklamě nebo k propagaci prodeje, užití či jiného nakládání bez předchozího písemného svolení. Disclaimer odmítá záruky/škody; závěr uvádí známku a dovoluje kopírovat licenční dokument pouze doslovně.",
+    "compatibilityCs": "Bod 6 dovoluje tuto či jakoukoli následnou revizi vydanou Foundation; jde o konkrétní version-choice, nikoli závěr o kompatibilitě jiných licencí."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/OLDAP-2.4.html",
+      "note": "Individuální revize celého připnutého textu; Verze 2.4 z 8.12.2000 pokrývá software a přidruženou dokumentaci definované společně."
+    }
+  ]
+}

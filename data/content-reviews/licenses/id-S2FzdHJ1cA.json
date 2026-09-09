@@ -1,0 +1,29 @@
+{
+  "id": "Kastrup",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:b7f0f46b5a95c9a48fb2fd5b5ebf927cc4b77f3daa3a90f55b050e18f72da5bb"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Jakékoli užití kódu je dovoleno, pokud v něm zůstane copyright Davida Kastrupa. Podmínka se vztahuje i na užití bez distribuce.",
+  "blockersCs": [
+    "Jediná věta dovoluje any use kódu, ale výslovně neřeší redistribuci, změny ani prodej; nelze automaticky přiznat celý základní softwarový grant. Ověřit původní kontext nebo autorův výklad těchto práv před doporučením."
+  ],
+  "analysis": {
+    "subjectCs": "Text se vztahuje na kód s copyrightem Davida Kastrupa z roku 2001.",
+    "grantCs": "Jediná věta Any use výslovně dovoluje libovolné užívání kódu při zachování copyrightu; zda tím autor uděluje samostatná práva změn, redistribuce a prodeje není vymezeno. Výslovný patentový grant a sublicence chybějí.",
+    "conditionsCs": "Any use podmiňuje každé užití zachováním copyrightu přímo v kódu. Povinnost při samotném užití nyní zachycuje trigger use ve slovníku 1.4.0.",
+    "limitationsCs": "Celý text obsahuje pouze copyright a podmínku jeho zachování, nikoli odmítnutí záruk či odpovědnosti, ochranné známky nebo terminaci.",
+    "compatibilityCs": "Text nemá alternativní licenční cestu ani ustanovení o kompatibilitě nebo pozdější verzi."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Kastrup.html",
+      "note": "Individuální revize celého připnutého textu; Text se vztahuje na kód s copyrightem Davida Kastrupa z roku 2001."
+    }
+  ]
+}

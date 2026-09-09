@@ -8,91 +8,91 @@
     "contentHash": "sha256:878ca9881b4f50ff40073eeee4a08481ef3b5875aeb658f948459dbfc12e6dce"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "private-use",
+      "unknown"
     ],
     "obligations": [
       "include-copyright"
     ],
     "triggers": [
-      "unknown"
+      "use"
     ],
-    "restrictions": [
-      "unknown"
-    ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "restrictions": [],
+    "patentPosition": "none-stated",
+    "noticeBurden": "minimal"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/HIDAPI.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/HIDAPI.json#text; Celá věta: obecné užívací oprávnění je podmíněno zachováním copyrightu; bez reciprocity.; https://spdx.org/licenses/HIDAPI.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/HIDAPI.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/HIDAPI.json#text; Celá věta neukládá stejné licencování ani zveřejnění zdrojů.; https://spdx.org/licenses/HIDAPI.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/HIDAPI.json#text; Úvod dovoluje used by anyone for any reason; chybí výslovné modify/distribute, proto nejistota zasahuje rozsah oprávnění.; https://spdx.org/licenses/HIDAPI.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/HIDAPI.json#text; Závěr stanoví copyright notice in the source files remains intact; žádná další pozitivní povinnost není uvedena.; https://spdx.org/licenses/HIDAPI.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/HIDAPI.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/HIDAPI.json#text; Jediná věta podmiňuje samotné used by anyone zachováním copyrightu ve zdrojových souborech; jde o use, nikoli teprve distribuci.; https://spdx.org/licenses/HIDAPI.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/HIDAPI.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/HIDAPI.json#text; Celý text neobsahuje výluku záruk, odpovědnosti, zákaz názvu ani patentovou doložku.; https://spdx.org/licenses/HIDAPI.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/HIDAPI.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/HIDAPI.json#text; Jediná věta neposkytuje výslovnou patentovou licenci a neukončuje práva při patentové žalobě.; https://spdx.org/licenses/HIDAPI.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/HIDAPI.json#text; Zachovat existující copyright ve zdrojových souborech; nepožaduje přidávat licenci do binární dokumentace.; https://spdx.org/licenses/HIDAPI.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/HIDAPI.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/HIDAPI.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. Kdokoli smí software používat z libovolného důvodu, pokud copyright ve zdrojových souborech zůstane beze změn. Samostatné právo upravovat či redistribuovat není v tomto krátkém textu výslovně popsáno. Blokace: Text uvádí pouze used by anyone for any reason a zachování copyrightu ve zdrojových souborech; před doporučením pro nový projekt je třeba doložit, zda grant zahrnuje úpravy a redistribuci, bez převzetí práv z jiných alternativ HIDAPI.; https://spdx.org/licenses/HIDAPI.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

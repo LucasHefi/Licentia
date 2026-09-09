@@ -1,0 +1,20 @@
+{
+  "id": "DEC-3-Clause",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.6",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:0098e1cd83ba8dcd2d6e4dbc6bcde36dfdaee526da97a8fcb6fe946f084f88fc"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Copyright a seznam podmínek zachovejte ve zdrojovém kódu, který užíváte, upravujete nebo šíříte, v podobě uvedené v souboru. Binární distribuce je dovolena; text pro ni samostatnou povinnost oznámení nestanoví. Neuděluje práva ke jménům, známkám ani logům DEC a jejich propagační použití vyžaduje písemný souhlas. Vylučuje záruky a odpovědnost.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/DEC-3-Clause.html",
+      "note": "Dřívější individuální revize 2026-09-09.6; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

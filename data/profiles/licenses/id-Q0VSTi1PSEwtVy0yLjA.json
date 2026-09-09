@@ -8,95 +8,111 @@
     "contentHash": "sha256:6a32aed009db8f53267a350551cae0f28bf57ad4c6d119da36ce1afe96432406"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
+    "family": "weak-copyleft",
     "copyleftScope": "unknown",
     "permissions": [
       "commercial-use",
+      "conditional-relicensing",
       "distribution",
       "modifications",
-      "patent-grant"
+      "patent-grant",
+      "private-use"
     ],
     "obligations": [
-      "include-license-text"
-    ],
-    "triggers": [
+      "include-copyright",
+      "include-license-text",
+      "include-notice",
+      "mark-modifications",
+      "provide-corresponding-source",
+      "same-license",
       "unknown"
     ],
-    "restrictions": [
-      "liability",
-      "trademark"
+    "triggers": [
+      "distribution",
+      "modification",
+      "patent-claim",
+      "unknown",
+      "use"
     ],
-    "patentPosition": "express-grant",
-    "noticeBurden": "standard"
+    "restrictions": [
+      "additional-terms",
+      "liability",
+      "patent-claim",
+      "trademark",
+      "unknown",
+      "warranty"
+    ],
+    "patentPosition": "retaliatory-termination",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CERN-OHL-W-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CERN-OHL-W-2.0.json#text; CERN-OHL-W v2 pokrývá návrhy, digitální kód a výsledné Products; výslovně rozlišuje Available Component a External Material připojený dokumentovaným rozhraním. §2–4 dovolují kopírování, změny, výrobu i obchodní zveřejnění/šíření. §4.3 umožňuje vlastní licenci Product, pokud neomezuje práva ke Covered Source, a §7 uděluje nutné patentové nároky poskytovatele. §1.8 a3.3(d) vyjímají External Material přes dokumentované rozhraní i nezbytný propojovací derivát; tato konstrukční hranice není totožná s file ani obecnou software library. Scope vyžaduje model komponent hardwaru.; https://spdx.org/licenses/CERN-OHL-W-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CERN-OHL-W-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CERN-OHL-W-2.0.json#text; §1.8 a3.3(d) vyjímají External Material přes dokumentované rozhraní i nezbytný propojovací derivát; tato konstrukční hranice není totožná s file ani obecnou software library. Scope vyžaduje model komponent hardwaru.; https://spdx.org/licenses/CERN-OHL-W-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CERN-OHL-W-2.0.json#text; §2–4 dovolují kopírování, změny, výrobu i obchodní zveřejnění/šíření. §4.3 umožňuje vlastní licenci Product, pokud neomezuje práva ke Covered Source, a §7 uděluje nutné patentové nároky poskytovatele.; https://spdx.org/licenses/CERN-OHL-W-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CERN-OHL-W-2.0.json#text; §3 požaduje relevantní notices, datovaný popis změn, Source Location podle způsobu dodání a stejnou licenci celého modified Covered Source s výjimkou Available Components a External Material. §4.1 každému příjemci dává Complete Source nebo oznámení místa; případné předepsané umístění na výrobku/balení/dokumentaci je viditelné a pevné. Complete Source obsahuje instalační a propojovací údaje a pokud jej proprietární nástroj umí vytvořit, i formát čitelný dostupným FSF/OSI nástrojem. §4.2 vylučuje zdroj External Material; Source Location je očekáváno dostupné alespoň3 roky.; https://spdx.org/licenses/CERN-OHL-W-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CERN-OHL-W-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CERN-OHL-W-2.0.json#text; §3 požaduje relevantní notices, datovaný popis změn, Source Location podle způsobu dodání a stejnou licenci celého modified Covered Source s výjimkou Available Components a External Material. §4.1 každému příjemci dává Complete Source nebo oznámení místa; případné předepsané umístění na výrobku/balení/dokumentaci je viditelné a pevné. Complete Source obsahuje instalační a propojovací údaje a pokud jej proprietární nástroj umí vytvořit, i formát čitelný dostupným FSF/OSI nástrojem. §4.2 vylučuje zdroj External Material; Source Location je očekáváno dostupné alespoň3 roky.; https://spdx.org/licenses/CERN-OHL-W-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CERN-OHL-W-2.0.json#text; §5 smluvně uzavírá externí vývoj/testování pro zadavatele. §6 AS IS a výluka škod obsahují také obecné hold harmless za použití včetně cizích nároků. Jména/loga jsou omezena na zákonné či nezbytné faktické použití bez dojmu podpory. §8 má okamžité ukončení, podmíněné obnovení a30 dnů od výzvy, při opakování definitivní konec.; https://spdx.org/licenses/CERN-OHL-W-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CERN-OHL-W-2.0.json#text; §7.1 výslovně nutně porušené licencovatelné nároky; §7.2 končí všechna práva při žalobě na Source/Product včetně protinároku i žádosti o neplatnost či nevymahatelnost licencovaného patentu.; https://spdx.org/licenses/CERN-OHL-W-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CERN-OHL-W-2.0.json#text; §3 požaduje relevantní notices, datovaný popis změn, Source Location podle způsobu dodání a stejnou licenci celého modified Covered Source s výjimkou Available Components a External Material. §4.1 každému příjemci dává Complete Source nebo oznámení místa; případné předepsané umístění na výrobku/balení/dokumentaci je viditelné a pevné. Complete Source obsahuje instalační a propojovací údaje a pokud jej proprietární nástroj umí vytvořit, i formát čitelný dostupným FSF/OSI nástrojem. §4.2 vylučuje zdroj External Material; Source Location je očekáváno dostupné alespoň3 roky. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/CERN-OHL-W-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CERN-OHL-W-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CERN-OHL-W-2.0.json#text; Individuální kontrola celého připnutého textu CERN-OHL-W-2.0 dne 2026-09-09. CERN-OHL-W v2 pokrývá návrhy, digitální kód a výsledné Products; výslovně rozlišuje Available Component a External Material připojený dokumentovaným rozhraním. §1.7–1.9 a§3–4 potřebují model výroby, Complete Source, Available Components a dokumentovaného External Material; softwarový enum library by tuto přesnou hranici nahradil jiným významem. §6.2 ukládá obecné hold harmless za použití a výrobu včetně cizích nároků, což není pouhé odškodnění za dobrovolně přidanou záruku. §8.3 přechod W na S dovoluje jen při splnění přísnější definice Available Component v S; pozdější stejná varianta závisí na původním určení a chybějící varianta znamená S. §1.7(b)(i) W na rozdíl od S neomezuje dostupnou součást pouze na fyzický díl.; https://spdx.org/licenses/CERN-OHL-W-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

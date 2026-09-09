@@ -1,0 +1,27 @@
+{
+  "id": "BSD-2-Clause",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:f0f765154e0c892195144c3bec3daf2a47905eeecfff2ad05b0bc519b9d725a2"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Zdrojové i binární verze lze užívat a šířit se změnami i bez nich. Zdroje zachovají copyright, podmínky a disclaimer; binárky je uvedou v dokumentaci nebo jiných dodávaných materiálech. Bez záruky a odpovědnosti za škody.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Licence pokrývá software ve zdrojové a binární formě bez zvláštního oborového omezení.",
+    "grantCs": "Úvodní redistribution and use povoluje obě formy, upravené i původní, bez zákazu komerce. Výslovný patentový grant a sublicence chybějí.",
+    "conditionsCs": "Bod 1 ukládá zachování copyrightu, podmínek a disclaimeru ve zdrojích; bod 2 jejich reprodukci v dokumentaci a/nebo jiných materiálech binární distribuce. Zdrojový kód není nutné dodávat.",
+    "limitationsCs": "Disclaimer odmítá výslovné/implicitní záruky včetně obchodovatelnosti/vhodnosti a odpovědnost držitele/přispěvatelů za všechny vyjmenované škody. Žádný zákaz endorsementu či patentová odveta nejsou uvedeny.",
+    "compatibilityCs": "Žádná jiná licence nebo možnost volby verze není stanovena a odvozeniny nemusí mít stejnou licenci."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/BSD-2-Clause.html",
+      "note": "Individuální revize celého připnutého textu; Licence pokrývá software ve zdrojové a binární formě bez zvláštního oborového omezení."
+    }
+  ]
+}

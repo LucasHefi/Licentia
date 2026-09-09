@@ -1,0 +1,29 @@
+{
+  "id": "Baekmuk",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:5e619539da447399f65d6758665dfdf9f1348cef871d1747f40ce8f8016afd21"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Font lze užívat, kopírovat, upravovat a šířit; všechny kopie i odvozené verze mají zachovat copyright a svolení. Doprovodná dokumentace musí uvést předepsané oznámení o ochranných známkách.",
+  "blockersCs": [
+    "Připnutý grant pokrývá font a jeho deriváty, zatímco průvodce vybírá licenci nového softwaru bez modelu fontového předmětu. Doplnit fontový scénář a zachovat specifické dokumentační oznámení o známkách."
+  ],
+  "analysis": {
+    "subjectCs": "Předmětem je font Baekmuk, včetně jeho odvozených a upravených verzí.",
+    "grantCs": "Permission to use, copy, modify and distribute uděluje účelově neomezená oprávnění k fontu; patentový grant ani sublicence nejsou uvedeny.",
+    "conditionsCs": "Všechny kopie fontu, odvozeniny a modifikace musí obsahovat copyright i svolení; supporting documentation obsahuje přesné uznání čtyř Baekmuk názvů jako známek Kim Jeong-Hwana.",
+    "limitationsCs": "Prohlášení o registrovaných známkách je povinným oznámením, nikoli samostatně formulovaným zákazem názvů. Text nemá záruky, odpovědnost ani výpověď.",
+    "compatibilityCs": "Text nevyžaduje přejmenování modifikací, stejnou licenci odvozenin ani konkrétní alternativní licenci."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Baekmuk.html",
+      "note": "Individuální revize celého připnutého textu; Předmětem je font Baekmuk, včetně jeho odvozených a upravených verzí."
+    }
+  ]
+}

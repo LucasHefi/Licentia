@@ -1,0 +1,27 @@
+{
+  "id": "UMich-Merit",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:4dbda268c8363904dd9fca3328073fcef206102498d2af1c7e5636f8e0b80cba"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Software i dokumentaci lze používat, kopírovat, měnit a šířit pro jakýkoli účel bez poplatku. Kopie i odvozeniny zachovají copyright a povolení; podpůrná dokumentace navíc obsahuje disclaimer. Záruky a vyjmenované škody jsou vyloučeny.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Software a dokumentace Regents of University of Michigan a Merit Network, copyright 1992–1995.",
+    "grantCs": "Výslovně use/copy/modify/distribute for any purpose without fee, bez patentového grantu.",
+    "conditionsCs": "Copyright a permission ve všech kopiích i změněných/odvozených verzích; v supporting documentation copyright, permission i disclaimer.",
+    "limitationsCs": "AS IS bez záruk, bez ujištění o splnění požadavků a bezchybném/přerušovaném provozu; výluka zvláštních, nepřímých, nahodilých a následných škod.",
+    "compatibilityCs": "Žádná alternativní licence/verze, zdrojová reciprocita nebo povinná shodná licence."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/UMich-Merit.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Grant any purpose s notice a dokumentačními podmínkami, bez reciprocity."
+    }
+  ]
+}

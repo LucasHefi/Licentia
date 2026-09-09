@@ -1,0 +1,29 @@
+{
+  "id": "Arphic-1999",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:b051f0cb8886b06abac0a7f024427bae3d3fb8cd6dd9e93ebd8bb3b844e07811"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Arphic pokrývá čtyři vyjmenované TrueType fonty a jejich změny. Změny se označí datem/povahou a nabídnou jako celek všem za stejných podmínek; Freely Available znamená svobodu, nikoli nulovou cenu. Interaktivní změněný font má startovací licenční oznámení.",
+  "blockersCs": [
+    "Předmětem jsou čtyři konkrétní fonty včetně změn glyphů, formátů a názvů. Povinná dostupnost modifikací se týká Font, nikoli definovaného softwarového corresponding source; je třeba fontový model zveřejnění a interaktivního startovacího oznámení, aby průvodce nevymyslel software-source povinnost."
+  ],
+  "analysis": {
+    "subjectCs": "AR PL Mingti2L Big5, KaitiM Big5, SungtiL GB, KaitiM GB a jejich definované modifikace; cena není součást definice Freely Available.",
+    "grantCs": "§1 source? text dovoluje verbatim Font copies jakékoli médium;§2 libovolné úpravy/šíření pod podmínkami. Přímá licence příjemcům§5, samostatný patentový grant chybí.",
+    "conditionsCs": "§1 ARPHICPL.TXT beze změny v kopiích. §2a how/when v každém změněném souboru;2b modifikace jako celek Freely Available všem pod licencí, např. přístup ke kopiím.2c normálně interaktivní změněný font při běžném spuštění copyright/warranty nebo vlastní warranty/re-distribution/licence-view oznámení.",
+    "limitationsCs": "§2 samostatně distribuované nezávislé části a mere aggregation vyňaty. §3 nepovolené nakládání retroaktivně ruší práva, compliant downstream zachován;§5 žádná další omezení;§6 nemožný souběh závazků včetně patentových znamená nešířit. §7–8 warranty/liability s law/writing výjimkami.",
+    "compatibilityCs": "Stejná licence pro celé změněné fontové dílo, oddělené nezávislé části mimo. Patentový rozpor není patentový grant ani automatické patent-claim ukončení. Neobsahuje volbu novější licence; vlastní fontový prodej není jako v OFL zakázán."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Arphic-1999.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; §2b modifikace celé pod touto licencí všem third parties a§5 downstream bez dalších omezení,tedy fontový copyleft."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "GPL-1.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:eb096b3880a873f0547109f811e298c1c3f050da0cfc0bba6557d985d7c6c86d"
+  },
+  "disposition": "blocked",
+  "summaryCs": "GNU GPLv1 vyžaduje licence pro celý distribuovaný celek obsahující Program, s výjimkou pouhé agregace nezávislých děl. Změněné soubory uvádějí změnu a datum a modifikovaný interaktivní program má počáteční notice. Objektový kód musí mít odpovídající zdroje, tříletou nabídku všem třetím stranám, nebo při omezené nekomerční redistribuci převzatou informaci o zdrojích. Jde o deprecated SPDX identifikátor GPL-1.0; pro nový projekt je nutné výslovně rozhodnout only versus or-later.",
+  "blockersCs": [
+    "Připnutá položka GPL-1.0 je deprecated a nerozlišuje samostatným identifikátorem licenci pouzev1 od volby dalších verzí. §7 tuto volbu váže na notice konkrétního programu, zatímco příloha nabízí jen vzor or-later. Pro nové doporučení je třeba podle záměru poskytovatele zvolit GPL-1.0-only nebo GPL-1.0-or-later; obsah této historické verze je individuálně zrevidován."
+  ],
+  "analysis": {
+    "subjectCs": "§0 libovolný program/jiné dílo s GPL notice a work based on Program jako dílo obsahující jeho celek či část beze změny nebo s úpravami. §2 odděluje pouhé společné médium s nezávislým dílem. Příloha je návod aplikace, nikoli automatický notice každého konkrétního programu.",
+    "grantCs": "§§1–3 dovolují zdrojové kopie, změny a objektovou/executable distribuci, včetně placeného fyzického předání a placené volitelné záruky §2(d); preambule výslovně počítá s prodejem kopií. Neexistuje patentový grant ani patentová žalobní odveta. §7 later version platí při výslovném notice, u neurčeného čísla dovoluje libovolnou vydanou verzi FSF.",
+    "conditionsCs": "§1 každá zdrojová kopie nápadný copyright a warranty disclaimer, zachované GPL/warranty notices a celý text příjemci. §2(a) změněné soubory prominentní změna+datum; §2(b) celý publikovaný/distribuovaný Work bez licenčního poplatku pod GPL. §2(c) modifikovaný interaktivní program při obvyklém startu zobrazí copyright, záruku/její absenci, redistribuci a cestu k licenci; není zde obecná výjimka pro původně beznoticový interaktivní program z GPLv2. §3 objektový kód: zdroje přiložit, NEBO písemná nabídka nejméně3 roky komukoli za nejvýše nominální distribuční náklady, NEBO pouze nekomerčně a po přijetí samotné binárky předat převzatou informaci o získání zdrojů. Zdroj zahrnuje všechny moduly, s výjimkou standardních knihoven/headerů/definic přiložených k OS; textv1 neuvádí instalační klíče ani povinné sestavovací skripty jako pozdější verze.",
+    "limitationsCs": "§4 nepovolené kopírování/změny/sublicence/distribuce/převod automaticky ruší práva, ale compliant downstream zůstává. §6 zakazuje další restrikce a poskytuje příjemci přímou licenci od originálního poskytovatele. §§9–10 vylučují záruky a škody v mezích zákona a mimo písemné dohody. Není zvláštní známková nebo patentová podmínka. Příloha doporučuje kontakty, notice v souborech a případné zaměstnavatelovo zřeknutí práv; tyto vzory nenahrazují vlastní normativní §§1–3.",
+    "compatibilityCs": "§7 nečiní každý Program automaticky or-later; vyžaduje takový konkrétní licenční notice nebo žádné číslo verze. §8 jiné podmínky začleněného programu odkazuje na individuální svolení autora/FSF. Neexistuje explicitní GPLv3/AGPL kombinační výjimka, a pouhé použití deprecated ID ji nemůže dodat."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/GPL-1.0.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; §2(b) celý distribuovaný/publikovaný Work obsahující Program pod GPL bez licenčního poplatku; standardní silný copyleft"
+    }
+  ]
+}

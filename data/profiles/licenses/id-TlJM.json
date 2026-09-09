@@ -8,92 +8,103 @@
     "contentHash": "sha256:1b3e0c26f675d31ce42b6502518237276839d90f97f2ab22721ba3abc3f07071"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
-    ],
-    "obligations": [
-      "include-copyright",
-      "provide-corresponding-source"
-    ],
-    "triggers": [
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use",
       "unknown"
     ],
-    "restrictions": [
-      "liability"
+    "obligations": [
+      "include-advertising-acknowledgment",
+      "include-copyright",
+      "include-license-text",
+      "unknown"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "triggers": [
+      "advertising",
+      "distribution",
+      "modification"
+    ],
+    "restrictions": [
+      "liability",
+      "trademark",
+      "unknown",
+      "warranty"
+    ],
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NRL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NRL.json#text; NRL LICENSE dovoluje obecné nakládání se svými částmi; Copyright Notice odděluje závazné Berkeley souborové licence.; https://spdx.org/licenses/NRL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NRL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NRL.json#text; Připnutý NRL text bez stejné licence a zdrojové reciprocity; externí Berkeley grant se tím nenahrazuje.; https://spdx.org/licenses/NRL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/NRL.json#text; NRL grant source/binary use/redistribution pro created at NRL; Net/2 a 4.4-Lite práva závisejí na nepřiložené Berkeley licenci.; https://spdx.org/licenses/NRL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/NRL.json#text; Body1–4 Berkeley terms, notices a dvě reklamní věty; úplné externally incorporated povinnosti nelze potvrdit bez původních souborů.; https://spdx.org/licenses/NRL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NRL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NRL.json#text; Source/binary distributions notices; derivative work zachovává konkrétní copyrighty; advertising features/use dvě acknowledgment věty.; https://spdx.org/licenses/NRL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/NRL.json#text; Bod5 NRL naming, disclaimer warranty/liability a no official-policy inference; Berkeley vnější omezení zůstávají nevyřešena.; https://spdx.org/licenses/NRL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NRL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NRL.json#text; Celý připnutý NRL text bez výslovného patentového grantu/ukončení; cizí práva musí být posouzena z odpovídajících zdrojů.; https://spdx.org/licenses/NRL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/NRL.json#text; Dvě povinné reklamní acknowledgment a souběžné souborové notices jsou materiální zátěž.; https://spdx.org/licenses/NRL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NRL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NRL.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. NRL grant dovoluje užití a zdrojovou/binární distribuci částí vytvořených v NRL s notices a dvěma reklamními poděkováními. Výslovně zachovává závaznost UC Berkeley licence pro části Net/2 a 4.4-Lite, jejíž konkrétní znění není připojeno. Blokace: Copyright Notice a podmínka 1 vyžadují dodržet veškeré podmínky UC Berkeley u částí Net/2 a 4.4-Lite a odkazují na jejich původní souborová oznámení. Je třeba doložit konkrétní soubory a historické Berkeley licence/dodatky; samotný NRL text ani název BSD nepotvrzují kompletní oprávnění a povinnosti těchto částí.; https://spdx.org/licenses/NRL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

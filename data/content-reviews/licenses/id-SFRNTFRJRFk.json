@@ -1,0 +1,20 @@
+{
+  "id": "HTMLTIDY",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.5",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:3f4cbd4b8ea85547c2735f6ca5b90104357653a25eb5330b952e60e7a654422c"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Nezkreslujte původ zdrojů, označte upravené verze a zachovejte copyrightové oznámení při distribuci původních i upravených zdrojů. Komerční využití je výslovně dovoleno. Poděkování za použití v produktu je dobrovolné; licence nevyžaduje poskytovat zdroje. Zmínky o patentech a známkách jsou součástí vyloučení záruk, nikoli udělení těchto práv nebo zákazu propagace.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/HTMLTIDY.html",
+      "note": "Dřívější individuální revize 2026-09-09.5; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

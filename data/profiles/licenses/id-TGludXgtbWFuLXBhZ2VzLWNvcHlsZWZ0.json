@@ -8,92 +8,98 @@
     "contentHash": "sha256:08f2728951e43683719915b0affaf6d1120485151974d3fb1f8c7e9831a5e2d0"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "strong-copyleft",
+    "copyleftScope": "whole-work",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "include-license-text"
+      "include-license-text",
+      "include-notice",
+      "same-license"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification"
     ],
     "restrictions": [
-      "unknown"
+      "liability"
     ],
-    "patentPosition": "unknown",
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Linux-man-pages-copyleft.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Linux-man-pages-copyleft.json#text; Druhý grantový odstavec entire resulting derived work pod identical permission notice.; https://spdx.org/licenses/Linux-man-pages-copyleft.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Linux-man-pages-copyleft.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Linux-man-pages-copyleft.json#text; Druhý grantový odstavec výslovně celé resulting derived work, tedy whole-work dokumentového copyleftu.; https://spdx.org/licenses/Linux-man-pages-copyleft.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Linux-man-pages-copyleft.json#text; Dva granty dovolují verbatim copies a modified versions k distribuci bez účelového limitu.; https://spdx.org/licenses/Linux-man-pages-copyleft.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Linux-man-pages-copyleft.json#text; První dva granty copyright/permission a same notice; poslední odstavec při absentujícím zdroji copyright/authors.; https://spdx.org/licenses/Linux-man-pages-copyleft.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Linux-man-pages-copyleft.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Linux-man-pages-copyleft.json#text; Distribuce původního textu zachovává notice; změněná odvozenina stejný notice; formát bez zdroje přiznání autorů.; https://spdx.org/licenses/Linux-man-pages-copyleft.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Linux-man-pages-copyleft.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Linux-man-pages-copyleft.json#text; Odstavec o proměnlivosti Linuxu odmítá odpovědnost za errors, omissions, damages; samostatný warranty disclaimer nemá.; https://spdx.org/licenses/Linux-man-pages-copyleft.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Linux-man-pages-copyleft.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Linux-man-pages-copyleft.json#text; Celý text nemá výslovný patentový grant ani patentové ukončení.; https://spdx.org/licenses/Linux-man-pages-copyleft.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Linux-man-pages-copyleft.json#text; Oznámení a autorství, nikoli povinná zdrojová nabídka; absence zdroje výslovně předpokládána.; https://spdx.org/licenses/Linux-man-pages-copyleft.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Linux-man-pages-copyleft.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Linux-man-pages-copyleft.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. Původní manuál zachová copyright a povolení; celé změněné odvozené dílo se šíří s totožným povolením. Formátované verze bez zdroje musí přiznat copyright a autory; zdrojový kód není povinným plněním. Blokace: Text výslovně licencuje manuál a jeho zpracované podoby, nikoli softwarový kód. Před doporučením novému softwarovému projektu je třeba oddělený dokumentační model nebo softwarová licence.; https://spdx.org/licenses/Linux-man-pages-copyleft.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

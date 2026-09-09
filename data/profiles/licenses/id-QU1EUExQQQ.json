@@ -28,10 +28,10 @@
     ],
     "triggers": [
       "distribution",
-      "unknown"
+      "unknown",
+      "use"
     ],
     "restrictions": [
-      "additional-terms",
       "liability",
       "trademark",
       "unknown",
@@ -42,49 +42,67 @@
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text: complete license, especially the opening grant and the source- and binary-redistribution conditions (redistribution with modification is allowed subject to retaining the copyright notice and license terms; no same-license, source-disclosure, or corresponding-source condition is stated)"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant ('this material and any product thereof including software') read with the U.S.-Government restricted-rights, immediate-revocation, allocation-of-risk, export-control, entire-agreement, and Texas-law/forum paragraphs; the grant is non-reciprocal but material-specific and carries atypical nonstandard terms"
+      "locator": "public/data/licenses/AMDPLPA.json#text; AMD licence 2006–2007 pokrývá materiál i produkty z něj včetně softwaru/dokumentace a vládní/exportní režim. Úvod dovoluje jakoukoli formu redistribuce a užití se změnami i bez pod všemi podmínkami textu. Text nepřikazuje zdroje ani stejnou licenci změn; zásadní omezení jsou regulatorní a v ukončení grantu.; https://spdx.org/licenses/AMDPLPA.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text: source-redistribution condition (retain the copyright notice and all license terms as part of the code) and binary-redistribution condition (reproduce them in related documentation and/or other materials)"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text: source- and binary-redistribution conditions (retain or reproduce the copyright notice and all license terms); U.S.-Government restricted-rights paragraph ('constitutes acknowledgment'); allocation-of-risk paragraph ('agrees to release' the licensors from liabilities, obligations, claims, or demands above US $10); the acknowledgment/release duties have no dedicated vocabulary value, represented by unknown"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text: complete license (the affirmative grant concerns redistribution and use of the material and products, including software; no express patent grant, patent condition, or patent-termination clause is stated)"
+      "locator": "public/data/licenses/AMDPLPA.json#text; Text nepřikazuje zdroje ani stejnou licenci změn; zásadní omezení jsou regulatorní a v ukončení grantu.; https://spdx.org/licenses/AMDPLPA.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant ('Redistribution and use in any form of this material and any product thereof including software in source or binary forms ... with or without modification ... is permitted'); no private-use or commercial-purpose limitation is stated"
+      "locator": "public/data/licenses/AMDPLPA.json#text; Úvod dovoluje jakoukoli formu redistribuce a užití se změnami i bez pod všemi podmínkami textu.; https://spdx.org/licenses/AMDPLPA.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "restrictions",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text: non-endorsement paragraph; U.S.-Government restricted-rights paragraph; immediate-revocation paragraph; 'AS IS', warranty-disclaimer, liability-cap, release, and termination paragraph; export-control paragraph; and final no-modification-or-waiver, Texas-law, and Austin-forum provisions; government-rights, export, release, termination, and forum predicates are not represented losslessly, represented by unknown"
-    },
-    {
-      "field": "review",
-      "sourceId": "spdx-license-list",
-      "locator": "metadata: id=AMDPLPA, name=\"AMD's plpa_map.c License\", deprecated=false, osi=false, fsf=false; text: the grant is tied to 'this material' and is combined with U.S.-Government restricted rights, breach-based immediate revocation, access/use acknowledgment and release, export controls, non-waiver, and mandatory Texas law/forum provisions that vocabulary 1.0.0 cannot communicate losslessly, so it is not a safe general recommendation"
+      "locator": "public/data/licenses/AMDPLPA.json#text; Zdroj zachová copyright a všechny podmínky v kódu; binární doprovod je reprodukuje. Vládní užití podléhá celému rozsahu FAR52.227/DFARS252.227 a následných pravidel. Materiál se nesmí užít, uvolnit, převést, importovat/exportovat/reexportovat v rozporu s uvedenými právními předpisy.; https://spdx.org/licenses/AMDPLPA.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "text: source- and binary-redistribution conditions activate notice/license retention; U.S.-Government, allocation-of-risk, export-control, and termination paragraphs also attach consequences to access or use, for which the vocabulary has no trigger value, represented by unknown"
+      "locator": "public/data/licenses/AMDPLPA.json#text; Zdroj zachová copyright a všechny podmínky v kódu; binární doprovod je reprodukuje. Vládní užití podléhá celému rozsahu FAR52.227/DFARS252.227 a následných pravidel. Materiál se nesmí užít, uvolnit, převést, importovat/exportovat/reexportovat v rozporu s uvedenými právními předpisy.; https://spdx.org/licenses/AMDPLPA.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/AMDPLPA.json#text; Jména/známky AMD a přispěvatelů nesmějí bez svolení podporovat produkty. Porušení ihned ruší všechna práva; AS IS vylučuje podporu, indemnity, záruky i odpovědnost, stanoví agregovaný strop 10 USD a vzdání nároků nad něj. Neúčinnost/neprospěšnost klíčových výluk rovněž ukončuje práva; výluky/export přežívají.; https://spdx.org/licenses/AMDPLPA.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/AMDPLPA.json#text; Patentové neporušování je pouze v záruční výluce; výslovný grant patentů ani patentové žalobní ukončení text nemá.; https://spdx.org/licenses/AMDPLPA.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/AMDPLPA.json#text; Zdroj zachová copyright a všechny podmínky v kódu; binární doprovod je reprodukuje. Vládní užití podléhá celému rozsahu FAR52.227/DFARS252.227 a následných pravidel. Materiál se nesmí užít, uvolnit, převést, importovat/exportovat/reexportovat v rozporu s uvedenými právními předpisy. Rozsah notifikační zátěže: standard.; https://spdx.org/licenses/AMDPLPA.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/AMDPLPA.json#text; Individuální kontrola celého připnutého textu AMDPLPA dne 2026-09-09. AMD licence 2006–2007 pokrývá materiál i produkty z něj včetně softwaru/dokumentace a vládní/exportní režim. Text podmiňuje všechna práva externími vládními/exportními pravidly a okamžitým zánikem i při neúčinnosti či neprospěšnosti výluk; před doporučením je nutný model těchto rozsahů a ukončovacích podmínek. Změny či prominutí vyžadují podpis dotčených stran; minimální reforma neplatných ustanovení zachovává smlouvu. Texas právo, Austin soudy a vzdání obran jurisdikce/místa; CISG je vyloučena.; https://spdx.org/licenses/AMDPLPA.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

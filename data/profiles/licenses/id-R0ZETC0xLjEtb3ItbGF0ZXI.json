@@ -8,95 +8,107 @@
     "contentHash": "sha256:26532d25a94186aa565679e99abc5f086a7c33168ea0d13d4e28fe66d21dc8a7"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
     "family": "strong-copyleft",
     "copyleftScope": "whole-work",
     "permissions": [
+      "commercial-use",
+      "conditional-relicensing",
       "distribution",
       "modifications",
-      "sublicensing"
+      "private-use"
     ],
     "obligations": [
+      "disclose-source",
       "include-copyright",
       "include-license-text",
-      "mark-modifications"
+      "include-notice",
+      "mark-modifications",
+      "same-license",
+      "unknown"
     ],
     "triggers": [
-      "unknown"
+      "combination",
+      "distribution",
+      "modification",
+      "unknown",
+      "use"
     ],
     "restrictions": [
+      "additional-terms",
+      "trademark",
       "unknown"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.whole-work-copyleft",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.copyleft-family",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GFDL-1.1-or-later.json#text; Strong whole-document reciprocita se speciálními combining/aggregate pravidly; stav invariant/covers vyplní konkrétní dílo a nelze jej odvodit z obecného or-later ID.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GFDL-1.1-or-later.json#text; Strong whole-document reciprocita se speciálními combining/aggregate pravidly; stav invariant/covers vyplní konkrétní dílo a nelze jej odvodit z obecného or-later ID.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GFDL-1.1-or-later.json#text; §2 copyrightové komerční/nekomerční copy/distribute/lend/display, §4 změny a§§5–8 kombinování/kolekce/agregace/překlady. Žádné patentové právo nebo obecná sublicence. §10 u tohoto or-later oznámení volba1.1 nebo pozdější nedraft FSF; ne neznámá dnešní licence automaticky bez volby.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/GFDL-1.1-or-later.json#text; §2 copyright/licence notices a text každá kopie, bez dalších podmínek či technického řízení čtení/kopírování. §3 nad100 printed a požadované covers všechny texty, publisher obě obálky a úplný stejnovýrazný titul, přebytek na vedlejších stranách. Nad100 Opaque Transparent ke každé NEBO anonymní zdarma standard-protocol URL s rozumným zajištěním rok po poslední distribuci edice včetně agentů/retail. §4 celý derivát pod GFDL; nový titul leda publisher souhlas, původních5 hlavních autorů (méně-li všichni) a noví autoři/publisher; copyright vlastní i původní, licence notice se seznamy invariant/covers a textem, History rok/titul/authors/publisher, původní URL s4let/souhlas výjimkou, zachovaná ack/dedication substance/tone a všechny invariant texty/tituly. Terminologické upřesnění 2026-09-10: § 1 definuje Transparent jako strojově čitelnou a běžnými nástroji přímo upravitelnou kopii dokumentu. disclose-source zde označuje právě tuto dokumentovou podobu, nikoli softwarový Corresponding Source. § 3 při publikaci či distribuci více než 100 Opaque kopií dovoluje Transparent kopii ke každé NEBO u každé uvedenou veřejnou síťovou adresu úplného Transparent dokumentu bez přidaného materiálu, dostupného standardními protokoly anonymně a bezplatně. U síťové cesty je nutné při zahájení množstevní distribuce učinit rozumně obezřetné kroky k dostupnosti nejméně rok po poslední veřejné distribuci Opaque kopie dané edice, včetně distribuce agenty či prodejci. Ostatní individuálně popsané dokumentové podmínky zůstávají zachovány.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/GFDL-1.1-or-later.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GFDL-1.1-or-later.json#text; §2 copyright/licence notices a text každá kopie, bez dalších podmínek či technického řízení čtení/kopírování. §3 nad100 printed a požadované covers všechny texty, publisher obě obálky a úplný stejnovýrazný titul, přebytek na vedlejších stranách. Nad100 Opaque Transparent ke každé NEBO anonymní zdarma standard-protocol URL s rozumným zajištěním rok po poslední distribuci edice včetně agentů/retail. §4 celý derivát pod GFDL; nový titul leda publisher souhlas, původních5 hlavních autorů (méně-li všichni) a noví autoři/publisher; copyright vlastní i původní, licence notice se seznamy invariant/covers a textem, History rok/titul/authors/publisher, původní URL s4let/souhlas výjimkou, zachovaná ack/dedication substance/tone a všechny invariant texty/tituly.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/GFDL-1.1-or-later.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GFDL-1.1-or-later.json#text; §4 odstranit stará Endorsements, nové jen pro modifikovanou verzi; chránit názvy invariantů. Nové vlastní Secondary Sections lze invariant označit; přidat max5front/25back slov jednou na entitu, další nahrazení vyžaduje souhlas. Jména autorů/vydavatelů neposkytují endorsement/publicity právo. §5 kombinovat invarianty se sloučením identických a unikátním rozlišením kolidujících názvů, History/ack/dedications spojit a endorsements odstranit. §6 kolekce jedna licence, extrakce vlastní kopie. §7 nezávislý aggregate jen bez compilation copyright claim, cover jen kolem Document pokud méně nežčtvrtina, jinak kolem celku. §9 automatický konec, plnící downstream přetrvá; není obecná warranty/liability výluka.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/GFDL-1.1-or-later.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GFDL-1.1-or-later.json#text; §2 copyrightové komerční/nekomerční copy/distribute/lend/display, §4 změny a§§5–8 kombinování/kolekce/agregace/překlady. Žádné patentové právo nebo obecná sublicence. §10 u tohoto or-later oznámení volba1.1 nebo pozdější nedraft FSF; ne neznámá dnešní licence automaticky bez volby.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/GFDL-1.1-or-later.json#text; §2 copyright/licence notices a text každá kopie, bez dalších podmínek či technického řízení čtení/kopírování. §3 nad100 printed a požadované covers všechny texty, publisher obě obálky a úplný stejnovýrazný titul, přebytek na vedlejších stranách. Nad100 Opaque Transparent ke každé NEBO anonymní zdarma standard-protocol URL s rozumným zajištěním rok po poslední distribuci edice včetně agentů/retail. §4 celý derivát pod GFDL; nový titul leda publisher souhlas, původních5 hlavních autorů (méně-li všichni) a noví autoři/publisher; copyright vlastní i původní, licence notice se seznamy invariant/covers a textem, History rok/titul/authors/publisher, původní URL s4let/souhlas výjimkou, zachovaná ack/dedication substance/tone a všechny invariant texty/tituly.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/GFDL-1.1-or-later.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GFDL-1.1-or-later.json#text; Individuálně přečten celý připnutý text. §§0–1 manuál či jiné textové dílo, Modified Version obsahuje originál/část/překlad; Secondary Sections mimo vlastní téma mohou být jmenovány invariant. Covers konkrétní krátké texty v notice. Transparent veřejně definovaný přímou editací změnitelný formát bez záměrně komplikované markup; PDF/PostScript zde Opaque. GFDL 1.1-or-later dovoluje při odpovídajícím notice i pozdější vydané FSF verze; samotné ID podle SPDX neříká, zda jsou invarianty nebo cover texts. Základní 1.1 znění zůstává dokumentovým copyleftem s editovatelnou kopií nad 100 Opaque exemplářů a podrobnými změnovými pravidly. §§ 0–1 a §§ 3–8 jsou dokumentový model (Transparent/Opaque, 100 kopií, obaly/invarianty/History), současný software-guide jej neobsahuje. Doplnit dokumentovou větev a inventuru skutečného notice; or-later ID samo neurčuje invarianty ani cover texts a nedělá licenci vhodnou pro software.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

@@ -217,11 +217,7 @@ PHP_ROUTER
                 'projectForm' => 'library',
             ],
             'sourceFingerprint' => ['sourceId' => 'spdx-license-list', 'revision' => '2026-08-24', 'contentHash' => 'sha256:lic-008'],
-            'evidence' => [
-                ['field' => 'family', 'sourceId' => 'spdx-license-list', 'locator' => 'fixture'],
-                ['field' => 'patentPosition', 'sourceId' => 'spdx-license-list', 'locator' => 'fixture'],
-                ['field' => 'noticeBurden', 'sourceId' => 'spdx-license-list', 'locator' => 'fixture'],
-            ],
+            'evidence' => array_map(static fn(string $field): array => ['field' => $field, 'sourceId' => 'spdx-license-list', 'locator' => 'fixture'], ['family', 'copyleftScope', 'permissions', 'obligations', 'triggers', 'restrictions', 'patentPosition', 'noticeBurden', 'review']),
         ],
     ];
     file_put_contents($catalogPath, json_encode($catalogData, JSON_THROW_ON_ERROR | JSON_UNESCAPED_SLASHES));
@@ -289,7 +285,7 @@ PHP_ROUTER
     assert_true(isset($schema['oneOf']) && count($schema['oneOf']) === 2, 'MCP recommendation schema must expose direct and envelope forms');
     $schemaProperties = array_keys($schema['oneOf'][0]['properties'] ?? []);
     sort($schemaProperties);
-    $expectedProperties = ['openness', 'reciprocity', 'delivery', 'patents', 'notices', 'jurisdiction', 'projectForm', 'commercialUse', 'proprietary', 'copyleftTrigger', 'trademarks', 'obligations', 'dependencies', 'versionStrategy', 'dualLicensing', 'futureDistribution'];
+    $expectedProperties = ['openness', 'reciprocity', 'delivery', 'patents', 'advertising', 'notices', 'jurisdiction', 'projectForm', 'commercialUse', 'proprietary', 'copyleftTrigger', 'trademarks', 'obligations', 'dependencies', 'versionStrategy', 'dualLicensing', 'futureDistribution'];
     sort($expectedProperties);
     assert_same($expectedProperties, $schemaProperties, 'MCP recommendation schema must expose the complete guide answer model');
     assert_same(false, $schema['oneOf'][0]['additionalProperties'] ?? null, 'MCP direct recommendation schema must reject unknown keys');
@@ -303,7 +299,13 @@ PHP_ROUTER
 
     $guideModel = request_json($baseUrl, '/v1/guide?mode=quick');
     assert_same(200, $guideModel['status'], 'guide model status');
-    assert_same('lic-008-guide-v1', $guideModel['body']['guideModelVersion'] ?? null, 'guide model version');
+    assert_same('lic-008-guide-v6', $guideModel['body']['guideModelVersion'] ?? null, 'guide model version');
+    foreach ($guideModel['body']['questions'] as $question) {
+        if ($question['key'] === 'reciprocity') {
+            assert_same(true, in_array('file', array_column($question['options'], 'value'), true), 'file copyleft must be selectable in both modes');
+            assert_same(true, in_array('library', array_column($question['options'], 'value'), true), 'library copyleft must be selectable in both modes');
+        }
+    }
     assert_true(count($guideModel['body']['questions'] ?? []) >= 6, 'quick guide questions must be discoverable');
     $openApi = request_json($baseUrl, '/v1/openapi.json');
     assert_same('3.1.0', $openApi['body']['openapi'] ?? null, 'Apache OpenAPI document version');
@@ -311,7 +313,7 @@ PHP_ROUTER
     $guideStart = request_json($baseUrl, '/v1/guide', ['mode' => 'quick', 'answers' => []]);
     assert_same('awaiting-input', $guideStart['body']['state'] ?? null, 'REST guide starts without server state');
     assert_same('openness', $guideStart['body']['nextQuestion']['key'] ?? null, 'REST guide first question');
-    $guideComplete = request_json($baseUrl, '/v1/guide', ['mode' => 'quick', 'answers' => ['openness' => 'open', 'projectForm' => 'application', 'reciprocity' => 'none', 'commercialUse' => 'allowed', 'delivery' => 'internal', 'patents' => 'neutral']]);
+    $guideComplete = request_json($baseUrl, '/v1/guide', ['mode' => 'quick', 'answers' => ['openness' => 'open', 'projectForm' => 'application', 'reciprocity' => 'none', 'commercialUse' => 'allowed', 'delivery' => 'internal', 'patents' => 'neutral', 'advertising' => 'allowed']]);
     assert_same('complete', $guideComplete['body']['state'] ?? null, 'REST guide completion');
     canonical_fields($guideComplete['body']['recommendation']);
 
@@ -361,11 +363,7 @@ PHP_ROUTER
                 'projectForm' => 'application',
             ],
             'sourceFingerprint' => ['sourceId' => 'spdx-license-list', 'revision' => '2026-08-24', 'contentHash' => 'sha256:lic-008-generated'],
-            'evidence' => [
-                ['field' => 'family', 'sourceId' => 'spdx-license-list', 'locator' => 'fixture'],
-                ['field' => 'permissions', 'sourceId' => 'spdx-license-list', 'locator' => 'fixture'],
-                ['field' => 'projectForm', 'sourceId' => 'spdx-license-list', 'locator' => 'fixture'],
-            ],
+            'evidence' => array_map(static fn(string $field): array => ['field' => $field, 'sourceId' => 'spdx-license-list', 'locator' => 'fixture'], ['family', 'copyleftScope', 'permissions', 'obligations', 'triggers', 'restrictions', 'patentPosition', 'noticeBurden', 'review', 'projectForm']),
         ],
     ];
     $catalogData[] = $generatedFixture;
@@ -405,7 +403,8 @@ PHP_ROUTER
         [['openness' => 'open', 'projectForm' => 'application', 'reciprocity' => 'none'], 'commercialUse'],
         [['openness' => 'open', 'projectForm' => 'application', 'reciprocity' => 'none', 'commercialUse' => 'allowed'], 'delivery'],
         [['openness' => 'open', 'projectForm' => 'application', 'reciprocity' => 'none', 'commercialUse' => 'allowed', 'delivery' => 'library'], 'patents'],
-        [['openness' => 'open', 'projectForm' => 'application', 'reciprocity' => 'none', 'commercialUse' => 'allowed', 'delivery' => 'library', 'patents' => 'important'], null],
+        [['openness' => 'open', 'projectForm' => 'application', 'reciprocity' => 'none', 'commercialUse' => 'allowed', 'delivery' => 'library', 'patents' => 'important'], 'advertising'],
+        [['openness' => 'open', 'projectForm' => 'application', 'reciprocity' => 'none', 'commercialUse' => 'allowed', 'delivery' => 'library', 'patents' => 'important', 'advertising' => 'allowed'], null],
         [['delivery' => 'application'], 'dependencies'],
     ];
     foreach ($quickQuestionCases as [$answers, $expectedQuestion]) {
@@ -421,7 +420,7 @@ PHP_ROUTER
     $advancedEnvelope = request_json($baseUrl, '/v1/recommendations', ['mode' => 'advanced', 'requirements' => ['delivery' => 'application']]);
     assert_same(200, $advancedEnvelope['status'], 'advanced envelope status');
     canonical_fields($advancedEnvelope['body']);
-    assert_same('lic-008-guide-v1', $advancedEnvelope['body']['guideModelVersion'] ?? null, 'advanced guide model version');
+    assert_same('lic-008-guide-v6', $advancedEnvelope['body']['guideModelVersion'] ?? null, 'advanced guide model version');
     assert_same('advanced', $advancedEnvelope['body']['guideMode'] ?? null, 'advanced guide mode');
     assert_same('dependencies', $advancedEnvelope['body']['nextQuestion'] ?? null, 'advanced dependency next question');
 
@@ -454,6 +453,15 @@ PHP_ROUTER
     $unknownGenerated = $generatedFixture;
     $unknownGenerated['unexpected'] = true;
     $malformedGeneratedCases[] = ['unknown-generated-extension', $unknownGenerated];
+    foreach (['family', 'copyleftScope', 'permissions', 'obligations', 'triggers', 'restrictions', 'patentPosition', 'noticeBurden', 'review'] as $field) {
+        $missingEvidence = $generatedFixture;
+        $missingEvidence['metadata']['evidence'] = array_values(array_filter($missingEvidence['metadata']['evidence'], static fn(array $entry): bool => $entry['field'] !== $field));
+        $malformedGeneratedCases[] = ["missing-$field-evidence", $missingEvidence];
+        if ($field === 'review') continue;
+        $unknownSemantic = $generatedFixture;
+        $unknownSemantic['metadata']['semantic'][$field] = is_array($unknownSemantic['metadata']['semantic'][$field]) ? ['unknown'] : 'unknown';
+        $malformedGeneratedCases[] = ["recommendable-with-unknown-$field", $unknownSemantic];
+    }
     foreach ($malformedGeneratedCases as [$label, $record]) {
         stop_server($process, $pipes);
         file_put_contents($catalogPath, json_encode([$record], JSON_THROW_ON_ERROR | JSON_UNESCAPED_SLASHES));
@@ -469,6 +477,122 @@ PHP_ROUTER
         assert_same('no-safe-match', $invalidGenerated['body']['outcome'], "$label outcome");
         assert_same([], $invalidGenerated['body']['candidates'], "$label candidates");
         assert_same([], $invalidGenerated['body']['alternatives'], "$label alternatives");
+    }
+
+    // Exercise the shipped LGPL metadata through the same HTTP boundary as the UI.
+    stop_server($process, $pipes);
+    $realCatalog = json_decode(file_get_contents($root . '/public/data/catalog.json'), true, 512, JSON_THROW_ON_ERROR);
+    file_put_contents($catalogPath, json_encode($realCatalog, JSON_THROW_ON_ERROR | JSON_UNESCAPED_SLASHES));
+    start_server($tempRoot, $process, $pipes, $baseUrl);
+    $expectedFamilies = ['IPL-1.0' => 'Slabý copyleft', 'CPL-1.0' => 'Slabý copyleft', 'MPEG-SSG' => 'Nestandardní', 'Knuth-CTAN' => 'Nestandardní', 'MIT-0' => 'Maximálně volná', 'MPL-2.0' => 'Souborový copyleft', 'LGPL-2.1-only' => 'Knihovní copyleft', 'AGPL-3.0-only' => 'Síťový copyleft', 'GPL-2.0' => 'Silný copyleft'];
+    $familyResult = request_json($baseUrl, '/v1/compatibility/check', ['ids' => array_keys($expectedFamilies)]);
+    assert_same(200, $familyResult['status'], 'curated catalog families HTTP status');
+    assert_same('review', $familyResult['body']['compatible'], 'family labels do not prove compatibility');
+    foreach ($familyResult['body']['licenses'] as $item) assert_same($expectedFamilies[$item['id']], $item['family'], $item['id'] . ' curated family survives PHP catalog display');
+    assert_same(count($expectedFamilies), count($familyResult['body']['licenses']), 'all family scenarios are returned');
+    $lgplIds = ['LGPL-2.0-only', 'LGPL-2.0-or-later', 'LGPL-2.1-only', 'LGPL-2.1-or-later', 'LGPL-3.0-only', 'LGPL-3.0-or-later'];
+    foreach (['quick', 'advanced'] as $mode) {
+        $requirements = ['openness' => 'open', 'projectForm' => 'library', 'reciprocity' => 'library', 'commercialUse' => 'allowed', 'delivery' => 'library', 'patents' => 'neutral'];
+        $libraryResult = request_json($baseUrl, '/v1/recommendations', ['mode' => $mode, 'requirements' => $requirements]);
+        assert_same(200, $libraryResult['status'], "$mode LGPL status");
+        $goodFits = array_values(array_filter(array_merge($libraryResult['body']['candidates'], $libraryResult['body']['alternatives']), fn($candidate) => $candidate['status'] === 'good fit'));
+        assert_same($lgplIds, array_values(array_intersect(array_column($goodFits, 'id'), $lgplIds)), "$mode LGPL good fits remain available as the catalog grows");
+        foreach ($goodFits as $candidate) {
+            if (!in_array($candidate['id'], $lgplIds, true)) continue;
+            assert_same('good fit', $candidate['status'], "$mode LGPL candidate status");
+            assert_true(in_array('allow-relinking', $candidate['obligations'], true), 'LGPL relinking survives the PHP metadata gate');
+            assert_true(in_array('allow-reverse-engineering', $candidate['obligations'], true), 'LGPL reverse engineering survives the PHP metadata gate');
+        }
+        $requirements['patents'] = 'important';
+        $patentResult = request_json($baseUrl, '/v1/recommendations', ['mode' => $mode, 'requirements' => $requirements]);
+        $patentFits = array_values(array_filter(array_merge($patentResult['body']['candidates'], $patentResult['body']['alternatives']), fn($candidate) => $candidate['status'] === 'good fit'));
+        assert_same(array_slice($lgplIds, 4), array_values(array_intersect(array_column($patentFits, 'id'), $lgplIds)), "$mode LGPL patent version distinction");
+        foreach (array_merge($patentResult['body']['candidates'], $patentResult['body']['alternatives']) as $candidate) {
+            if (!str_starts_with($candidate['id'], 'LGPL-2.')) continue;
+            assert_same('review required', $candidate['status'], 'LGPL 2.x has a patent deficit');
+            assert_true(str_contains(implode(' ', $candidate['conflicts']), 'patent'), 'LGPL 2.x exposes its patent deficit');
+        }
+    }
+    // Verify network profiles, conditional duties and patent requirements through HTTP.
+    foreach (['quick', 'advanced'] as $mode) {
+        $requirements = ['openness' => 'open', 'projectForm' => 'service', 'delivery' => 'saas', 'reciprocity' => 'network', 'patents' => 'important', 'commercialUse' => 'allowed'];
+        if ($mode === 'advanced') $requirements['copyleftTrigger'] = 'network';
+        $network = request_json($baseUrl, '/v1/recommendations', ['mode' => $mode, 'requirements' => $requirements]);
+        $fits = array_values(array_filter(array_merge($network['body']['candidates'], $network['body']['alternatives']), fn($candidate) => $candidate['status'] === 'good fit'));
+        foreach (['AGPL-3.0-only', 'AGPL-3.0-or-later', 'EUPL-1.2'] as $id) assert_true(in_array($id, array_column($fits, 'id'), true), "$mode $id network choice remains available");
+        foreach ($fits as $candidate) {
+            assert_true(in_array('network-use-disclose', $candidate['obligations'], true), 'network source duty survives PHP gate');
+            if (str_starts_with($candidate['id'], 'AGPL-')) assert_true(in_array('preserve-combined-license-terms', $candidate['obligations'], true), 'AGPL split terms survive PHP gate');
+        }
+        $patent = request_json($baseUrl, '/v1/recommendations', ['mode' => $mode, 'requirements' => ['openness' => 'open', 'patents' => 'important']]);
+        $all = array_merge($patent['body']['candidates'], $patent['body']['alternatives']);
+        $ucar = array_values(array_filter($all, fn($candidate) => $candidate['id'] === 'UCAR'))[0];
+        assert_same('review required', $ucar['status'], 'UCAR lacks an express patent grant');
+        assert_true(!in_array('patentPosition', $ucar['matchedFields'], true), 'termination alone earns no patent points');
+        assert_true(str_contains(implode(' ', $ucar['conflicts']), 'express patent grant'), 'UCAR explains its patent deficit');
+        $epl = array_values(array_filter($all, fn($candidate) => $candidate['id'] === 'EPL-2.0'))[0];
+        assert_true(in_array('conditional-relicensing', $epl['profile']['semantic']['permissions'], true), 'conditional relicensing accepted by PHP');
+        assert_true(in_array('defend-commercial-distribution', $epl['obligations'], true), 'commercial defense duty accepted by PHP');
+    }
+    // Advertising is independent of binary/source distribution and is a preference in both modes.
+    $advertisingIds = ['Apache-1.0', 'BSD-4-Clause', 'BSD-4-Clause-Shortened', 'BSD-Advertising-Acknowledgement', 'Caldera-no-preamble'];
+    foreach (['quick', 'advanced'] as $mode) {
+        $model = request_json($baseUrl, '/v1/guide?mode=' . $mode)['body'];
+        $answers = [];
+        foreach ($model['questions'] as $question) if (!isset($question['showWhen'])) $answers[$question['key']] = 'unknown';
+        assert_true(array_key_exists('advertising', $answers), "$mode advertising question is discoverable");
+        $answers = array_merge($answers, ['openness' => 'open', 'reciprocity' => 'none', 'commercialUse' => 'allowed', 'projectForm' => 'application', 'delivery' => 'internal', 'patents' => 'neutral', 'advertising' => 'allowed']);
+        foreach (['allowed', 'avoid'] as $preference) {
+            $answers['advertising'] = $preference;
+            $guide = request_json($baseUrl, '/v1/guide', ['mode' => $mode, 'answers' => $answers]);
+            assert_same('complete', $guide['body']['state'], "$mode advertising guide completion");
+            $all = array_merge($guide['body']['recommendation']['candidates'], $guide['body']['recommendation']['alternatives']);
+            foreach ($advertisingIds as $id) {
+                $candidate = array_values(array_filter($all, fn($item) => $item['id'] === $id))[0];
+                assert_same($preference === 'avoid' ? 'review required' : 'good fit', $candidate['status'], "$mode $id advertising status");
+                assert_same($preference === 'avoid' ? 85 : 100, $candidate['score'], "$mode $id score agrees with TypeScript, including neutral patents");
+                assert_true(in_array('include-advertising-acknowledgment', $candidate['obligations'], true), 'advertising duty survives PHP gate');
+                if ($preference === 'avoid') assert_same(['semantic.advertising: requires an advertising acknowledgment'], $candidate['conflicts'], 'only the advertising preference conflicts');
+            }
+            foreach (['BSD-3-Clause-Attribution', 'BSD-Source-Code', 'BSD-3-Clause-acpica'] as $id) {
+                $candidate = array_values(array_filter($all, fn($item) => $item['id'] === $id))[0];
+                assert_same('good fit', $candidate['status'], "$id ordinary notices do not imply advertising");
+                assert_same(100, $candidate['score'], "$id no bonus for accepting advertising");
+            }
+            foreach (['Caldera', 'BSD-4-Clause-UC'] as $id) assert_true(!in_array($id, array_column($all, 'id'), true), "$id historical blocker survives advertising support");
+        }
+        $requirements = ['mode' => $mode, 'requirements' => ['openness' => 'open', 'advertising' => 'avoid']];
+        $rest = request_json($baseUrl, '/v1/recommendations', $requirements);
+        $mcp = request_json($baseUrl, '/mcp', ['jsonrpc' => '2.0', 'id' => 90, 'method' => 'tools/call', 'params' => ['name' => 'recommend_license', 'arguments' => $requirements]]);
+        assert_same($rest['body'], $mcp['body']['result']['structuredContent'], 'advertising preferences match across REST and MCP');
+    }
+    foreach (['include-use-acknowledgment', 'include-advertising-acknowledgment', 'pass-disclaimer-requirement', 'allow-relinking', 'allow-reverse-engineering', 'defend-commercial-distribution', 'defend-added-warranty', 'preserve-combined-license-terms'] as $obligation) {
+        $isolated = array_values(array_filter($realCatalog, fn($item) => $item['id'] === 'MIT-0'))[0];
+        $isolated['metadata']['semantic']['obligations'] = [$obligation];
+        stop_server($process, $pipes);
+        file_put_contents($catalogPath, json_encode([$isolated], JSON_THROW_ON_ERROR | JSON_UNESCAPED_SLASHES));
+        start_server($tempRoot, $process, $pipes, $baseUrl);
+        $accepted = request_json($baseUrl, '/v1/recommendations', ['openness' => 'open']);
+        assert_same(['MIT-0'], array_column($accepted['body']['candidates'], 'id'), "$obligation is a recognized obligation");
+        foreach (['minimal', 'source'] as $answer) {
+            $excluded = request_json($baseUrl, '/v1/recommendations', ['openness' => 'open', 'obligations' => $answer]);
+            assert_same('review required', $excluded['body']['candidates'][0]['status'], "$obligation alone must not satisfy $answer");
+            assert_true(str_contains(implode(' ', $excluded['body']['candidates'][0]['conflicts']), 'obligation'), "$obligation must expose its $answer deficit");
+        }
+    }
+
+    $useNotice = array_values(array_filter($realCatalog, fn($item) => $item['id'] === 'MIT-0'))[0];
+    $useNotice['metadata']['semantic']['obligations'] = ['include-notice'];
+    $useNotice['metadata']['semantic']['triggers'] = ['use'];
+    $useNotice['metadata']['semantic']['patentPosition'] = 'express-exclusion';
+    stop_server($process, $pipes);
+    file_put_contents($catalogPath, json_encode([$useNotice], JSON_THROW_ON_ERROR | JSON_UNESCAPED_SLASHES));
+    start_server($tempRoot, $process, $pipes, $baseUrl);
+    $acceptedUse = request_json($baseUrl, '/v1/recommendations', ['openness' => 'open', 'obligations' => 'minimal', 'copyleftTrigger' => 'none']);
+    assert_same('good fit', $acceptedUse['body']['candidates'][0]['status'] ?? null, 'use notice is recognized and does not itself imply copyleft');
+    foreach ([['obligations' => 'source'], ['copyleftTrigger' => 'distribution'], ['copyleftTrigger' => 'network'], ['patents' => 'important']] as $preference) {
+        $useMismatch = request_json($baseUrl, '/v1/recommendations', array_merge(['openness' => 'open'], $preference));
+        assert_same('review required', $useMismatch['body']['candidates'][0]['status'] ?? null, 'use and patent exclusion do not imply source disclosure, distribution, network use or a patent grant');
     }
 
     fwrite(STDOUT, "PASS: Apache REST/MCP recommendation contract regressions\n");

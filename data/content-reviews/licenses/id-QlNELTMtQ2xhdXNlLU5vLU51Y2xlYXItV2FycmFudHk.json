@@ -1,0 +1,20 @@
+{
+  "id": "BSD-3-Clause-No-Nuclear-Warranty",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.4",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:03f0710b9c6367652de91eddcda252db72ed3c3477bd57d7c53df5488f68e4c3"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Zachovejte copyright, podmínky a disclaimer ve zdrojích nebo materiálech k binární distribuci. Jména Sun a přispěvatelů nepoužívejte bez písemného souhlasu k propagaci. Závěrečná věta upozorňuje, že software není navržen ani určen pro jaderná zařízení. Jde o upozornění na určení softwaru, nikoli formulaci zákazu licencovaného použití z odlišné varianty No-Nuclear-License. Text vylučuje záruky a omezuje odpovědnost.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-Warranty.html",
+      "note": "Dřívější individuální revize 2026-09-09.4; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

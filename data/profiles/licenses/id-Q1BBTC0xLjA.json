@@ -8,99 +8,115 @@
     "contentHash": "sha256:cf88920bfcac3fa7489d8fc6137bce3552af0088c8084f253f7d24650261c015"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "network",
+    "family": "network-copyleft",
+    "copyleftScope": "file",
     "permissions": [
       "commercial-use",
+      "conditional-relicensing",
       "distribution",
       "modifications",
       "patent-grant",
+      "private-use",
       "sublicensing"
     ],
     "obligations": [
+      "defend-added-warranty",
+      "disclose-source",
       "include-copyright",
+      "include-license-text",
+      "include-notice",
+      "include-use-acknowledgment",
       "mark-modifications",
-      "provide-corresponding-source"
-    ],
-    "triggers": [
+      "network-use-disclose",
+      "same-license",
       "unknown"
     ],
+    "triggers": [
+      "combination",
+      "distribution",
+      "modification",
+      "network-use",
+      "patent-claim",
+      "use"
+    ],
     "restrictions": [
+      "additional-terms",
       "liability",
+      "patent-claim",
       "trademark",
       "warranty"
     ],
-    "patentPosition": "express-grant",
-    "noticeBurden": "standard"
+    "patentPosition": "retaliatory-termination",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
+      "field": "family",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CPAL-1.0.json#text; Common Public Attribution License 1.0 zahrnuje MPL podobný souborový model i vlastní §14 Attribution a §15 External Deployment; úplné Exhibit A/B rozlišují Initial Developer a Original Developer, prázdný údaj znamená jejich totožnost. §2 dává komerční užití, kopie, změny, zobrazení/provozování, sublicence a distribuci původního kódu i příspěvků v Larger Work. Výslovné patentové granty pokrývají Original Code a příspěvek či jeho Contributor Version, vyjímají odstraněný kód a další změny/kombinace. §15 činí jakékoli nasazení použitelné někým jiným než You, včetně síťové aplikace, distribucí pro §3.1 a zpřístupnění zdrojů §3.2. §1.9 a §3.7 dávají souborovou hranici: upravený soubor nebo nový soubor s částí původního kódu, ostatní Larger Work se nepřelicencuje. §15 přidává síťový a jiný externí spouštěč zdrojů, nerozšiřuje souborovou hranici na celý nezávislý produkt.; https://spdx.org/licenses/CPAL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.network-trigger",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CPAL-1.0.json#text; §1.9 a §3.7 dávají souborovou hranici: upravený soubor nebo nový soubor s částí původního kódu, ostatní Larger Work se nepřelicencuje. §15 přidává síťový a jiný externí spouštěč zdrojů, nerozšiřuje souborovou hranici na celý nezávislý produkt.; https://spdx.org/licenses/CPAL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CPAL-1.0.json#text; §2 dává komerční užití, kopie, změny, zobrazení/provozování, sublicence a distribuci původního kódu i příspěvků v Larger Work. Výslovné patentové granty pokrývají Original Code a příspěvek či jeho Contributor Version, vyjímají odstraněný kód a další změny/kombinace. §15 činí jakékoli nasazení použitelné někým jiným než You, včetně síťové aplikace, distribucí pro §3.1 a zpřístupnění zdrojů §3.2.; https://spdx.org/licenses/CPAL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "restrictions",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "family",
-      "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CPAL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CPAL-1.0.json#text; §3.1–3.3 požadují stejnou licenci zdrojů pokrytých souborů a změn, zdroje příjemcům executable na médiu nebo elektronicky nejméně 12 měsíců od dostupnosti či 6 měsíců po další verzi, změnový soubor s daty a původního vývojáře. §3.4 LEGAL pro známé nutné cizí IP/API patenty vyžaduje při nové znalosti i aktivní přiměřené informování předchozích příjemců. §3.5–3.6 zachovávají souborová notices, licenci, zdrojovou cestu a odškodnění ostatních za vlastní přidané záruky či binární podmínky. §14 pouze při vyplněném Attribution Information v Exhibit B vyžaduje při spuštění nebo zahájení relace výrazné GUI poděkování; nejvýše copyright, fráze 10 slov, jeden obraz a URL, stejně výrazné jako cizí credits. Bez GUI či bez údajů B povinnost není; B může vyjmout Larger Work. §15 rozšiřuje zdrojové povinnosti na External Deployment, nikoli na čistě interní užití.; https://spdx.org/licenses/CPAL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CPAL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CPAL-1.0.json#text; §3.1–3.3 požadují stejnou licenci zdrojů pokrytých souborů a změn, zdroje příjemcům executable na médiu nebo elektronicky nejméně 12 měsíců od dostupnosti či 6 měsíců po další verzi, změnový soubor s daty a původního vývojáře. §3.4 LEGAL pro známé nutné cizí IP/API patenty vyžaduje při nové znalosti i aktivní přiměřené informování předchozích příjemců. §3.5–3.6 zachovávají souborová notices, licenci, zdrojovou cestu a odškodnění ostatních za vlastní přidané záruky či binární podmínky. §14 pouze při vyplněném Attribution Information v Exhibit B vyžaduje při spuštění nebo zahájení relace výrazné GUI poděkování; nejvýše copyright, fráze 10 slov, jeden obraz a URL, stejně výrazné jako cizí credits. Bez GUI či bez údajů B povinnost není; B může vyjmout Larger Work. §15 rozšiřuje zdrojové povinnosti na External Deployment, nikoli na čistě interní užití.; https://spdx.org/licenses/CPAL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CPAL-1.0.json#text; §4 při právní nemožnosti ukládá maximum plnění a popis LEGAL. §7/9 AS IS a omezení odpovědnosti, §8 30 dnů k nápravě od zjištění. Patentová žaloba na Contributor Version po 60 dnech bez stažení/dohody ukončuje granty účastníka; proti jinému produktu zpětně patenty, s výjimkou deklaratorních žalob a zachováním koncových licencí. §11 kalifornské právo, při americké straně Northern District/Santa Clara a náklady poraženého. §12 spolupráce při rozdělení škod za výkon práv zahrnuje i Original Developer. §14(d) chrání známky v poděkování, neuděluje obecné právo značky využívat.; https://spdx.org/licenses/CPAL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CPAL-1.0.json#text; §2 obsahuje výslovné nutné patenty původního kódu/příspěvků s Contributor Version výlukami. §8.2 má 60denní odvetu za žalobu na verzi a zpětné patentové odvolání za jiné produkty, chrání i Original Developer.; https://spdx.org/licenses/CPAL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CPAL-1.0.json#text; §3.1–3.3 požadují stejnou licenci zdrojů pokrytých souborů a změn, zdroje příjemcům executable na médiu nebo elektronicky nejméně 12 měsíců od dostupnosti či 6 měsíců po další verzi, změnový soubor s daty a původního vývojáře. §3.4 LEGAL pro známé nutné cizí IP/API patenty vyžaduje při nové znalosti i aktivní přiměřené informování předchozích příjemců. §3.5–3.6 zachovávají souborová notices, licenci, zdrojovou cestu a odškodnění ostatních za vlastní přidané záruky či binární podmínky. §14 pouze při vyplněném Attribution Information v Exhibit B vyžaduje při spuštění nebo zahájení relace výrazné GUI poděkování; nejvýše copyright, fráze 10 slov, jeden obraz a URL, stejně výrazné jako cizí credits. Bez GUI či bez údajů B povinnost není; B může vyjmout Larger Work. §15 rozšiřuje zdrojové povinnosti na External Deployment, nikoli na čistě interní užití. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/CPAL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CPAL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CPAL-1.0.json#text; Individuální kontrola celého připnutého textu CPAL-1.0 dne 2026-09-09. Common Public Attribution License 1.0 zahrnuje MPL podobný souborový model i vlastní §14 Attribution a §15 External Deployment; úplné Exhibit A/B rozlišují Initial Developer a Original Developer, prázdný údaj znamená jejich totožnost. §3.4 vyžaduje aktivní IP oznámení dřívějším příjemcům a §12 spolupráci na odpovědnosti za výkon práv i vůči Original Developer; současný model notice a vlastních přidaných záruk to nevyjadřuje. Tyto povinnosti potřebují samostatné vyjádření; podmíněné GUI poděkování §14 a externí zdroje §15 jsou popsány zvlášť a nesmějí se zamlčet. §3.7 dovoluje ostatní kód Larger Work pod jinou licencí; §3.6 jiné binární podmínky nesmějí omezit zdrojová práva. §6 dovoluje budoucí verzi Socialtext, odvozený text pro jiný kód musí mít jiné jméno. §13 alternativní grant musí skutečně označit počáteční vývojář; prázdný vzor nedává automatickou GPL či MPL alternativu. Attribution §14 může dopadat na Larger Work i tam, kde zdrojový copyleft zůstává jen na souborech.; https://spdx.org/licenses/CPAL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

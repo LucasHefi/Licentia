@@ -8,91 +8,94 @@
     "contentHash": "sha256:55a076beb3329ee06c112f5158ef99e5763bc8d4aa8e0ee3c80aee7b7528741d"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
-    ],
-    "obligations": [
-      "include-copyright"
-    ],
-    "triggers": [
+      "distribution",
       "unknown"
     ],
+    "obligations": [
+      "include-copyright",
+      "include-license-text"
+    ],
+    "triggers": [
+      "distribution"
+    ],
     "restrictions": [
+      "unknown",
       "warranty"
     ],
-    "patentPosition": "unknown",
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Ruby-pty.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Ruby-pty.json#text; Grant v druhém odstavci omezuje redistribuci na neurčený účel; nelze jej považovat za úplný obecný permisivní grant.; https://spdx.org/licenses/Ruby-pty.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Ruby-pty.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Ruby-pty.json#text; Celý text bez stejné licence či povinného zpřístupnění zdrojů; oznámení se šíří i do applications and derivations.; https://spdx.org/licenses/Ruby-pty.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Ruby-pty.json#text; May be redistributed freely for this purpose, in full or in part; význam this purpose a grant úprav zůstávají neurčeny.; https://spdx.org/licenses/Ruby-pty.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Ruby-pty.json#text; Druhý odstavec vyžaduje entire copyright notice on any copies and applications and derivations thereof.; https://spdx.org/licenses/Ruby-pty.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Ruby-pty.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Ruby-pty.json#text; Povinnost oznámení provází redistribuované kopie a odvozeniny; síť ani reklama nemá zvláštní pravidlo.; https://spdx.org/licenses/Ruby-pty.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Ruby-pty.json#text; Druhý odstavec neurčuje this purpose; poslední odstavec vylučuje warranty včetně fitness, merchantability a results.; https://spdx.org/licenses/Ruby-pty.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Ruby-pty.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Ruby-pty.json#text; Celý text neobsahuje výslovnou patentovou licenci a patentové ukončení.; https://spdx.org/licenses/Ruby-pty.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Ruby-pty.json#text; Celé copyrightové a licenční oznámení zůstává u všech kopií i aplikací a odvozenin.; https://spdx.org/licenses/Ruby-pty.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Ruby-pty.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Ruby-pty.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. Software Akinoriho Ita lze volně redistribuovat celý i po částech pro neurčený účel „this purpose“. Celé oznámení musí být v kopiích softwaru, aplikacích i odvozeninách; záruky jsou vyloučeny. Blokace: Redistribuční grant je omezen slovy for this purpose, ale připnutý text účel nedefinuje a neobsahuje obecné povolení úprav. Je třeba dohledat původní kontext účelu a doložit rozsah užití/úprav před doporučením novému projektu.; https://spdx.org/licenses/Ruby-pty.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

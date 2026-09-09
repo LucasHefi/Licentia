@@ -1,0 +1,27 @@
+{
+  "id": "hyphen-bulgarian",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:b927ccd23114e16540bb50b21cfbf88bce466f91b31b7d64a637c4b4e1d4f042"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Zdrojové i binární verze lze používat, upravovat, šířit a prodávat s copyrightem a podmínkami. Jméno autora nesmí bez svolení podporovat odvozené produkty; platí výluka záruk a odpovědnosti.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Grant se vztahuje na software včetně zdrojových a binárních podob.",
+    "grantCs": "První věta výslovně povoluje užití, změny, kopírování, distribuci a prodej obou forem; patentová licence ani výslovná sublicence uvedeny nejsou.",
+    "conditionsCs": "Provided that podmiňuje všechny uvedené činnosti zachováním copyrightu a těchto podmínek, tedy také samotné užití. Není požadováno vydání zdrojů, reklama ani stejná licence. Povinnost při samotném užití nyní zachycuje trigger use ve slovníku 1.4.0.",
+    "limitationsCs": "Jméno autora nelze bez předchozího svolení použít k podpoře či propagaci odvozených produktů. As is odmítá výslovné i implicitní záruky a veškerou odpovědnost za škody.",
+    "compatibilityCs": "Text nestanoví další licenci nebo verzi; zákaz endorsementu není zákazem běžného uvedení autora."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/hyphen-bulgarian.html",
+      "note": "Individuální revize celého připnutého textu; Grant se vztahuje na software včetně zdrojových a binárních podob."
+    }
+  ]
+}

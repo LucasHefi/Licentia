@@ -1,0 +1,30 @@
+{
+  "id": "LAL-1.3",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:d86ab032194b462371223b6c6b01a3743cb42942e7b46f870ea5aa5ab85302a5"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Art Libre 1.3 dovoluje kopie a tvůrčí změny děl i komerčně při zachování autorů, odkazu na licenci a místa přístupu k originálům. Změny a neoddělitelné začlenění zůstávají pod LAL nebo kompatibilní licencí; podlicence jsou zakázány a práva plynou přímo od autorů.",
+  "blockersCs": [
+    "Definice originálů zahrnuje datované referenční exempláře/zdroje/resources děl, nikoli software corresponding source. Je třeba umělecký model povinných autorů a ukazatelů k počátečním/následným originálům i zvláštního souhlasu k originálu samotnému.",
+    "§4 závisí na samostatné přístupnosti vloženého díla: pokud zanikne, celé seskupení musí LAL/compatible;§5 kompatibilitu podmiňuje vzájemným uznáním a přístupem k předchozím verzím. Je třeba tuto podmíněnou hranici modelovat, nikoli tvrdit blanket whole-work kompatibilitu s konkrétní licencí."
+  ],
+  "analysis": {
+    "subjectCs": "Œuvre initiale, následné příspěvky a společné dílo; originály jsou datované autory určené reference, kopie jejich reprodukce.",
+    "grantCs": "§2.1 kopie pro kohokoli libovolnou technikou;2.2 šíření/performance/display za cenu nebo zdarma;2.3 modifikace kopií. §9 lze zvolit následnou LAL;§10 žádné podlicence, přímá práva od autorů. Patentový grant chybí.",
+    "conditionsCs": "2.2 licence nebo přesné umístění, jména všech autorů originálů včetně změnového, místo přístupu k počátečním/následným originálům.2.3 označit změnu a pokud možné povahu, share LAL/compatible. Autoři originálů mohou zvlášť dovolit jejich šíření/změnu, nejde o automatické právo ke všem fyzickým originálům.",
+    "limitationsCs": "§3 příbuzná práva/kompilace nesmějí blokovat svobody;§4 neoddělitelný celek LAL/compatible;§6 práva přispěvatele zůstávají. §7 každý odpovídá za své jednání, nikoli warranty/liability disclaimer. §8 platnost po dobu copyrightu, autozánik při porušení a nemožnost užití při právním rozporu.",
+    "compatibilityCs": "§5 čtyři kumulativní compatibility kritéria včetně vzájemného uznání;žádná konkrétní jiná licence není potvrzena. §9 následné číslované verze volitelné;§11 francouzské právo/Bernský kontext, bez výslovné soudní volby."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/LAL-1.3.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; §2–5 copyleft tvůrčích děl s originály, connexes právy a podmíněnou integrací, ne úplný software model."
+    }
+  ]
+}

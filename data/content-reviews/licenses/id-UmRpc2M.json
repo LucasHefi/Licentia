@@ -1,0 +1,27 @@
+{
+  "id": "Rdisc",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:8e171bfe71647fcc4b9c7fc0d2ef945aed343d98e06750d416ae31bda6969520"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Licence dovoluje Rdisc neomezeně používat, kopírovat, měnit a distribuovat při zachování celé legendy v softwaru i na páskových médiích. Zveřejnění zdrojů nevyžaduje. Program je poskytován bez záruk, podpory a povinnosti pomoci; Sun omezuje odpovědnost za porušení cizích práv i vyjmenované škody a neuděluje výslovnou patentovou licenci.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Licence se vztahuje na Rdisc vyvinutý Sun Microsystems, včetně celku i částí programu.",
+    "grantCs": "První odstavec dovoluje neomezené užití, bezplatné kopírování a změny i volnou distribuci.",
+    "conditionsCs": "Celá legenda se zahrne na všechna pásková média a jako součást softwaru v celku nebo části; text nepožaduje zveřejnit zdroj.",
+    "limitationsCs": "Rdisc je AS IS bez záruk včetně designu a praxe obchodování, bez podpory a povinnosti asistence. Sun nenese odpovědnost za porušení copyrightu, tajemství či patentů ani ztracené výnosy a nepřímé škody.",
+    "compatibilityCs": "Text nenabízí jinou licenci ani verzi; uvedená adresa Sun není oznamovací povinnost."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Rdisc.html",
+      "note": "Individuálně přečten celý připnutý text; Celá legenda se zahrne na všechna pásková média a jako součást softwaru v celku nebo části; text nepožaduje zveřejnit zdroj. Patentový odstavec pouze vylučuje odpovědnost za porušení patentů; neposkytuje patentový grant a neukončuje práva při žalobě."
+    }
+  ]
+}

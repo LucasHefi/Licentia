@@ -9,92 +9,99 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use",
+      "sublicensing"
     ],
     "obligations": [
       "include-copyright",
-      "mark-modifications"
+      "include-license-text",
+      "include-notice"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification"
     ],
     "restrictions": [
-      "liability"
+      "additional-terms",
+      "liability",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OML.json#text; opening definition covers source AND object code and documentation, except individual-file disclaimers; permission paragraph permits use/copy/modify/distribute/LICENSE for any purpose without written agreement/license/royalty fee; no reciprocal source-supply or same-license condition; https://spdx.org/licenses/OML.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OML.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OML.json#text; opening definition covers source AND object code and documentation, except individual-file disclaimers; permission paragraph permits use/copy/modify/distribute/LICENSE for any purpose without written agreement/license/royalty fee; https://spdx.org/licenses/OML.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     },
     {
-      "field": "copyleftScope",
+      "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OML.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OML.json#text; permission paragraph: existing copyright in all copies, whole notice VERBATIM in any distribution; modification authors may choose new terms, which must appear clearly on FIRST PAGE OF EACH affected file; does not require marking all changes or same license; https://spdx.org/licenses/OML.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     },
     {
-      "field": "triggers",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OML.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OML.json#text; permission paragraph: existing copyright in all copies, whole notice VERBATIM in any distribution; modification authors may choose new terms, which must appear clearly on FIRST PAGE OF EACH affected file; does not require marking all changes or same license; https://spdx.org/licenses/OML.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OML.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OML.json#text; whole text: no express patent grant or patent-litigation termination; no inference of patent rights from copyright, trademarks or non-infringement disclaimers; https://spdx.org/licenses/OML.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OML.json#text; opening definition covers source AND object code and documentation, except individual-file disclaimers; permission paragraph permits use/copy/modify/distribute/LICENSE for any purpose without written agreement/license/royalty fee; https://spdx.org/licenses/OML.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OML.json#text; individual-file scope and changed-terms placement conditions; final all-caps warranty/liability disclaimer, no endorsement term; https://spdx.org/licenses/OML.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OML.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OML.json#text; whole-text editorial review on 2026-09-09, batch 6; Zachovejte existující copyrighty ve všech kopiích a celé oznámení doslova v každé distribuci. Vlastní úpravy mohou mít jiný copyright i jiné podmínky; nové podmínky musí být jasně uvedeny na první straně každého dotčeného souboru. Nejde o obecnou povinnost značit všechny změny ani o copyleft. Ověřte případné výjimky uvedené přímo v souborech. Záruky a odpovědnost jsou vyloučeny.; https://spdx.org/licenses/OML.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OML.json#text; permission paragraph: existing copyright in all copies, whole notice VERBATIM in any distribution; modification authors may choose new terms, which must appear clearly on FIRST PAGE OF EACH affected file; does not require marking all changes or same license; https://spdx.org/licenses/OML.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     }
   ]
 }

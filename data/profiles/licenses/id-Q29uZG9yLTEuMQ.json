@@ -8,96 +8,107 @@
     "contentHash": "sha256:edc4a5743b748bc7a687b8342e3170dc47cc0a2be22e882063a53b9f41bfd65a"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
       "commercial-use",
       "distribution",
       "modifications",
       "patent-grant",
+      "private-use",
       "sublicensing"
     ],
     "obligations": [
-      "provide-corresponding-source"
+      "include-copyright",
+      "include-license-text",
+      "include-notice",
+      "include-use-acknowledgment",
+      "unknown"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "patent-claim",
+      "unknown",
+      "use"
     ],
     "restrictions": [
       "liability",
-      "trademark"
+      "patent-claim",
+      "trademark",
+      "unknown",
+      "warranty"
     ],
-    "patentPosition": "defensive-termination",
-    "noticeBurden": "unknown"
+    "patentPosition": "retaliatory-termination",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-termination",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Condor-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Condor-1.1.json#text; Condor Public License 1.1 z 30. října 2003 pokrývá Condor 6.x a dobrovolné příspěvky pod University of Wisconsin-Madison. Úvod dovoluje instalaci, užití, reprodukci, zobrazení, změny a redistribuci v obou formách i sublicence. §5 výslovně uděluje patenty nutně porušené užitím/prodejem, včetně kombinace, která začne porušovat nárok právě přidáním Condor. Notices a akademické citace nevyžadují zdroje ani stejnou licenci.; https://spdx.org/licenses/Condor-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Condor-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Condor-1.1.json#text; Notices a akademické citace nevyžadují zdroje ani stejnou licenci.; https://spdx.org/licenses/Condor-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Condor-1.1.json#text; Úvod dovoluje instalaci, užití, reprodukci, zobrazení, změny a redistribuci v obou formách i sublicence. §5 výslovně uděluje patenty nutně porušené užitím/prodejem, včetně kombinace, která začne porušovat nárok právě přidáním Condor.; https://spdx.org/licenses/Condor-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Condor-1.1.json#text; §1 přenáší licenci v softwaru a v dodané dokumentaci; §2 předepsané uznání v dokumentaci nebo obvyklém místě v softwaru. §3 akademické výsledky citují užití. §8 uživatel výslovně ujišťuje a zaručuje soulad veškerého užití/převodů s exportním právem USA.; https://spdx.org/licenses/Condor-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Condor-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Condor-1.1.json#text; §1 přenáší licenci v softwaru a v dodané dokumentaci; §2 předepsané uznání v dokumentaci nebo obvyklém místě v softwaru. §3 akademické výsledky citují užití. §8 uživatel výslovně ujišťuje a zaručuje soulad veškerého užití/převodů s exportním právem USA.; https://spdx.org/licenses/Condor-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Condor-1.1.json#text; §4 omezuje Condor endorsement a označení upravených distribucí kromě povinných uznání. §5 nezahrnuje jiné kombinace ani hardware a vlastní patentová žaloba/protinárok proti komukoli ruší patentová práva k datu podání; dřívější řádné sublicence přežijí. §6–7 vylučují záruky/odpovědnost.; https://spdx.org/licenses/Condor-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Condor-1.1.json#text; §5 výslovně uděluje vymezené univerzitní patenty a ukončuje patentová práva žalujícího Recipient při patentové žalobě na software, s ochranou dřívějších řádných sublicencí.; https://spdx.org/licenses/Condor-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Condor-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Condor-1.1.json#text; §1 přenáší licenci v softwaru a v dodané dokumentaci; §2 předepsané uznání v dokumentaci nebo obvyklém místě v softwaru. §3 akademické výsledky citují užití. §8 uživatel výslovně ujišťuje a zaručuje soulad veškerého užití/převodů s exportním právem USA. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/Condor-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Condor-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Condor-1.1.json#text; Individuální kontrola celého připnutého textu Condor-1.1 dne 2026-09-09. Condor Public License 1.1 z 30. října 2003 pokrývá Condor 6.x a dobrovolné příspěvky pod University of Wisconsin-Madison. §8 ukládá výslovné ujištění a záruku exportního souladu všech užití/převodů včetně začleněných položek; před doporučením je třeba model této exportní podmínky, nikoli ji považovat za pouhé upozornění. §9 dovoluje použitou nebo pozdější číslovanou verzi publikovanou Condor Team; pouze tým smí licenci měnit. Patentová kombinace je úzce vymezena, není obecný grant ke všem sestavám.; https://spdx.org/licenses/Condor-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

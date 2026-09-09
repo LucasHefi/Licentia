@@ -1,0 +1,29 @@
+{
+  "id": "ThirdEye",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:32091c802d0ff3f6cbec79b51d638246b84f760d376661e508f3875e8bad0c0d"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Text dovoluje reprodukovat a používat konkrétní tabulku symbolů Third Eye Software, pokud v kopii zůstane celý licenční komentář. Autor odmítá tvrzení o vhodnosti pro určité použití, ale obecná práva změn a distribuce výslovně neuděluje. Průvodce jej proto nezařazuje, dokud nebude rozsah těchto oprávnění doložen u původního nositele práv.",
+  "blockersCs": [
+    "Grant výslovně pokrývá reprodukci a užití konkrétní tabulky symbolů, nikoli změny a distribuci; před doporučením pro nový software je třeba vyjasnit rozsah těchto práv u původního nositele."
+  ],
+  "analysis": {
+    "subjectCs": "Text se vztahuje na tabulku symbolů Third Eye Software z roku 1984.",
+    "grantCs": "Odstavec 2 uděluje všem práva reprodukce a užití; výslovné právo měnit, sublicencovat nebo distribuovat neposkytuje.",
+    "conditionsCs": "Odstavec 2 podmiňuje kopírování zachováním tohoto komentáře v kopii; je nutné ponechat copyright i grant.",
+    "limitationsCs": "Odstavec 3 odmítá tvrzení o vhodnosti tabulky symbolů pro konkrétní použití; obecnou výluku odpovědnosti neobsahuje.",
+    "compatibilityCs": "Není nabízena alternativní licence ani verze."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/ThirdEye.html",
+      "note": "Individuálně přečten celý připnutý text; Odstavec 2 podmiňuje kopírování zachováním tohoto komentáře v kopii; je nutné ponechat copyright i grant. Celý text o reprodukci, užití a vhodnosti nemá výslovný patentový grant ani patentové ukončení."
+    }
+  ]
+}

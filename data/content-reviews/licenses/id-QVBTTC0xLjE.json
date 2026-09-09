@@ -1,0 +1,29 @@
+{
+  "id": "APSL-1.1",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:a76cd61ce86ad80a9f90c5cce0357ab4dffb0e51f2af93cb9623b64c74207713"
+  },
+  "disposition": "blocked",
+  "summaryCs": "APSL 1.1 považuje za Deploy každé užití mimo interní R&D, bez osobní výjimky1.2. Vyžaduje elektronicky veřejné zdroje deployed změn, dostupné hlášení Apple formulářem, zvláštní grant Apple a webově oznámenou možnost pozastavení práv při cizím IP tvrzení.",
+  "blockersCs": [
+    "§§ 1.4, 2.2 obsahují interně-provozní Deploy, elektronickou veřejnou publikaci a dostupné Apple hlášení; §§ 3b, 11 široký Apple privilegovaný grant a § 9.1 webově účinnou suspend/lift práv při IP claim. Doplnit tyto provozní/stavové mechanismy, recipient assent § 6 a destruction § 13.5b; neaplikovat osobní výjimku1.2 na tuto 1.1."
+  ],
+  "analysis": {
+    "subjectCs": "§1 Apple veřejně ohlášený a headerem označený originál source/upgrades/object; Covered Code originál+změny/části a file hranice. Deploy vše mimo interní R&D, včetně neveřejného firemního provozu a přímých/nepřímých třetích sublicencí/distribucí. Není definice Personal Use ani Contributor1.2; control≥50%. Affected Original Code přesně části napadené IP tvrzením.",
+    "grantCs": "§2 od přijetí/downloadu světová bezroyalty nevýhradní Apple copyright a Applicable Patents licence, §2.1 interní R&D use/copy/modify/distribute a§2.2 podmíněný Deploy. Apple patenty nutné jen pro originál, §5 další patenty pro změny/Larger Work nejsou automatické. §3a všem stejný rozsah práv na své změny, §3b Apple+dcerám neodvolatelně a navždy navíc execute/compile/display/perform/have-modified/sublicense/multitier-distribute pod všemi vlastními relevantními IP.",
+    "conditionsCs": "§2.1 i R&D kopie zachovat Apple copyright/proprietary/disclaimer/licence notices, source/docs distribuce s textem bez omezení a všechny změny úplně/datum/výchozí verze v prominentním souboru, ExhibitA v každém zdroji změn. §2.2 Deploy všechny změny veřejně ELEKTRONICKY pod APSL po dobuDeploy nebo12 měsíců od prvního, podle delší doby; obsahuje-li vlastní změny, vyplnit a podat Apple modifications.html informace, pokud dostupné. Object-only notice v kódu i docs s how/where source. §6 vlastní dodatkové záruky s výslovným souhlasem příjemce a obranou/odškodněním Apple; neodvozovat automaticky odškodnění všech Contributors z1.2.",
+    "limitationsCs": "§8 as-is Original Code bez upgrades/support, kritické použití pouze označeno nezamýšlené. §9.1 při IP claim Apple volí obstarání práv/opravu/pozastavení Affected Original Code; suspend ihned webnotice, do konečného rozhodnutí a Apple lift pokud může bezroyalty užívat; uživatel může nahradit část nebo získat cizí práva sám. §9.2 škodové výluky a total50USD. §12 konec po30denní nápravě od znalosti, ihned§13.5b nemožnost plnit/vymáhat§§2–3, nebo automaticky při jakékoli patent action protiApple; zastavit vše/zničit kontrolované kopie, řádné sublicence a§3 granty přetrvají.",
+    "compatibilityCs": "§4 Larger Work oddělený jiný kód dovolen. §7 pozdější Apple verze volitelné, původní trvá. §11 Apple Modifications nejsou automaticky APSL a navíc výslovně vlastní development/use/reproduction/modification/sublicensing/distribution Apple nepodléhá této licenci. §10 bez Apple značek, endorsement jen dle guidelines. §13 vláda standardní práva, žádná agentura, nezávislý konkurenční vývoj, US/California law a Northern District venue, bez CISG/contra-proferentem, Quebec angličtina."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/APSL-1.1.html",
+      "note": "Individuální revize celého připnutého textu; §1 Apple veřejně ohlášený a headerem označený originál source/upgrades/object; Covered Code originál+změny/části a file hranice. Deploy vše mimo interní R&D, včetně neveřejného firemního provozu a přímých/nepřímých třetích sublicencí/distribucí. Není definice Personal Use ani Contributor1.2; control≥50%. Affected Original Code přesně části napadené IP tvrzením."
+    }
+  ]
+}

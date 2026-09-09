@@ -8,92 +8,102 @@
     "contentHash": "sha256:079944b880e5610763a2ba2211cb9e0fa426a2f2f283fff21fbdcbd729f58782"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
     "family": "permissive",
     "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "provide-corresponding-source"
-    ],
-    "triggers": [
+      "include-copyright",
+      "include-license-text",
+      "include-notice",
+      "mark-modifications",
       "unknown"
     ],
-    "restrictions": [
-      "liability"
+    "triggers": [
+      "distribution",
+      "modification",
+      "use"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "restrictions": [
+      "liability",
+      "trademark",
+      "warranty"
+    ],
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.no-copyleft",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.permissive-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/IJG-short.json#text; Krátké znění IJG licencuje software Thomase G. Lanea z let 1991 a 1992 i jeho části. Grant dovoluje užití, kopírování, změny a distribuci pro libovolný účel bez poplatku; závěr výslovně podporuje komerční produkty. README a označení změn nepožadují dodání zdrojů ani stejnou licenci.; https://spdx.org/licenses/IJG-short.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "obligations",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/IJG-short.json#text; README a označení změn nepožadují dodání zdrojů ani stejnou licenci.; https://spdx.org/licenses/IJG-short.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/IJG-short.json#text; Grant dovoluje užití, kopírování, změny a distribuci pro libovolný účel bez poplatku; závěr výslovně podporuje komerční produkty.; https://spdx.org/licenses/IJG-short.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "restrictions",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/IJG-short.json#text; Bod 1: při distribuci libovolných zdrojů přiložit README s nezměněným copyrightem a no-warranty notice a popsat přidané/odstraněné/změněné části v dokumentaci. Bod 2: pouze executable vyžaduje předepsané IJG uznání v dokumentaci. Bod 3: uživatel přijímá plnou odpovědnost; komerční prodejce musí převzít všechny warranty/liability claims.; https://spdx.org/licenses/IJG-short.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/IJG-short.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/IJG-short.json#text; Bod 1: při distribuci libovolných zdrojů přiložit README s nezměněným copyrightem a no-warranty notice a popsat přidané/odstraněné/změněné části v dokumentaci. Bod 2: pouze executable vyžaduje předepsané IJG uznání v dokumentaci. Bod 3: uživatel přijímá plnou odpovědnost; komerční prodejce musí převzít všechny warranty/liability claims.; https://spdx.org/licenses/IJG-short.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/IJG-short.json#text; Autoři odmítají záruky a odpovědnost; jména autorů/firem nesmějí do reklamy a software lze označovat pouze jako Independent JPEG Group’s software.; https://spdx.org/licenses/IJG-short.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/IJG-short.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/IJG-short.json#text; Celý text nemá patentový grant ani patentové ukončení.; https://spdx.org/licenses/IJG-short.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/IJG-short.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/IJG-short.json#text; Bod 1: při distribuci libovolných zdrojů přiložit README s nezměněným copyrightem a no-warranty notice a popsat přidané/odstraněné/změněné části v dokumentaci. Bod 2: pouze executable vyžaduje předepsané IJG uznání v dokumentaci. Bod 3: uživatel přijímá plnou odpovědnost; komerční prodejce musí převzít všechny warranty/liability claims. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/IJG-short.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/IJG-short.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/IJG-short.json#text; Individuální kontrola celého připnutého textu IJG-short dne 2026-09-09. Krátké znění IJG licencuje software Thomase G. Lanea z let 1991 a 1992 i jeho části. Závěr podmiňuje komerční produkty převzetím všech záručních a odpovědnostních nároků prodejcem; před zařazením je třeba model převzetí těchto nároků, který není totožný s pouhou výlukou odpovědnosti nebo obranou poskytovatele. Zdrojová a pouze binární distribuce mají odlišné notice cesty; jiné licence nebo verze se nenabízejí.; https://spdx.org/licenses/IJG-short.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

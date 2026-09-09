@@ -1,0 +1,29 @@
+{
+  "id": "Bitstream-Charter",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:a57e24f693c175dab836289c2d902eb0d4597363a4a36ce8cfcb922cc645e7a2"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Osm vymezených Type 1 fontů lze jakkoli používat, upravovat, sublicencovat a prodávat. Všechny kopie zachovají oznámení; nezměněné fonty Charter navíc předepsané uznání ochranné známky.",
+  "blockersCs": [
+    "Licence uděluje práva výslovně k osmi určeným fontům, nikoli k novému softwaru obecně. Doplnit do průvodce fontový předmět a podmíněné známkové oznámení pro nezměněné Charter kopie."
+  ],
+  "analysis": {
+    "subjectCs": "Grant je omezen na čtyři Bitstream Charter a čtyři Courier Type 1 obrysové fonty.",
+    "grantCs": "Permission under all Bitstream propriety rights výslovně dovoluje use/copy/modify/sublicense/sell/redistribute bez účelových omezení. Patenty nejsou jmenovány, proto není dovozována výslovná patentová licence.",
+    "conditionsCs": "Notice musí zůstat neporušené na všech kopiích fontů; přesné uznání BITSTREAM CHARTER jako registrované známky se vyžaduje pouze na nemodifikovaných čtyřech Charter fontech.",
+    "limitationsCs": "Oznámení známky není zákaz názvu pro upraveniny. Celý text neobsahuje záruky, odpovědnost, source-offer ani patentovou odvetu.",
+    "compatibilityCs": "Sublicence je výslovná; nevyžaduje se stejná licence odvozenin a není označena žádná konkrétní kompatibilní licence."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Bitstream-Charter.html",
+      "note": "Individuální revize celého připnutého textu; Grant je omezen na čtyři Bitstream Charter a čtyři Courier Type 1 obrysové fonty."
+    }
+  ]
+}

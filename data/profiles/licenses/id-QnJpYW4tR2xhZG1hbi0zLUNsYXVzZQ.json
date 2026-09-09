@@ -13,7 +13,7 @@
     "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "nonstandard",
+    "family": "unknown",
     "copyleftScope": "unknown",
     "permissions": [
       "commercial-use",
@@ -24,7 +24,6 @@
     "obligations": [
       "include-copyright",
       "include-license-text",
-      "include-notice",
       "unknown"
     ],
     "triggers": [
@@ -41,49 +40,67 @@
   },
   "evidence": [
     {
-      "field": "family",
-      "sourceId": "spdx-license-list",
-      "locator": "Brian-Gladman-3-Clause metadata: id='Brian-Gladman-3-Clause', name='Brian Gladman 3-Clause License', deprecated=false, osi=false, and fsf=false; license text, LICENSE TERMS opening grant, clauses 1-3, and ALTERNATIVELY paragraph (a permissive three-condition route coexists with an election to distribute under an unversioned GNU GPL whose provisions apply instead, so nonstandard is the closest single family value)"
-    },
-    {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "Brian-Gladman-3-Clause license text, clauses 1-3 and ALTERNATIVELY paragraph (the three-clause route has no source-disclosure, same-license, linking, or network-use condition, but the alternative route incorporates an unversioned GNU GPL instead; one copyleft-scope value cannot state both the no-copyleft route and the version-dependent GPL scope, so scope remains unknown)"
+      "locator": "public/data/licenses/Brian-Gladman-3-Clause.json#text; LICENSE TERMS opening permits use/distribution with changes under clauses 1-3; ALTERNATIVELY paragraph offers unversioned GPL applying INSTEAD, not cumulative terms; unresolved scope described in review; https://spdx.org/licenses/Brian-Gladman-3-Clause.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
     },
     {
-      "field": "permissions",
+      "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "Brian-Gladman-3-Clause license text, LICENSE TERMS opening grant ('free distribution and use ... in both source and binary form ... with or without changes') (supports commercial and private use, distribution, and modification; no express sublicensing or patent grant is stated)"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "Brian-Gladman-3-Clause license text, clauses 1-2 (source and binary distributions preserve the copyright notice, list of conditions, and disclaimer) and ALTERNATIVELY paragraph (GPL distribution requires retaining 'this notice ... in full' while unspecified GPL provisions apply instead); include-copyright, include-license-text, and include-notice capture the express retention duties, but the flat vocabulary cannot encode the alternative, version-dependent GPL obligations, represented by unknown; no corresponding-source duty applies on the three-clause route"
-    },
-    {
-      "field": "triggers",
-      "sourceId": "spdx-license-list",
-      "locator": "Brian-Gladman-3-Clause license text, clauses 1-2 (distribution in source or binary form activates preservation duties), clause 3 (use of the copyright holder's name for endorsement requires written permission), and ALTERNATIVELY paragraph (electing GPL distribution replaces the preceding provisions); distribution is captured directly, while endorsement-name use and the alternative-license election have no vocabulary 1.0.0 trigger values and are represented by unknown; modification alone creates no separate condition"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "Brian-Gladman-3-Clause license text, clause 3 (the copyright holder's name may not endorse products built using the software without specific written permission) and DISCLAIMER ('as is' and no explicit or implied warranties, including correctness or fitness); trademark and warranty are the closest vocabulary categories, but the broader personal-name endorsement condition and restrictions incorporated only after the unversioned GPL election are not losslessly represented, so unknown is retained; the three-clause text states no limitation of liability"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "Brian-Gladman-3-Clause license text, complete three-clause grant and ALTERNATIVELY paragraph (the three-clause route states no express patent grant, patent covenant, patent-claim restriction, or patent termination, while the alternative invokes an unversioned GNU GPL whose patent treatment is version-dependent; the combined text therefore cannot be classified losslessly as none-stated or a specific grant/termination position and remains unknown)"
+      "locator": "public/data/licenses/Brian-Gladman-3-Clause.json#text; LICENSE TERMS opening permits use/distribution with changes under clauses 1-3; ALTERNATIVELY paragraph offers unversioned GPL applying INSTEAD, not cumulative terms; https://spdx.org/licenses/Brian-Gladman-3-Clause.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "Brian-Gladman-3-Clause license text, clauses 1-2 and ALTERNATIVELY paragraph (source and binary distributions preserve the copyright notice, conditions, and disclaimer, whereas the alternative requires this notice in full plus the provisions of an unspecified GNU GPL instead); the flat burden scale cannot express these mutually exclusive, version-dependent compliance paths, so notice burden remains unknown"
+      "locator": "public/data/licenses/Brian-Gladman-3-Clause.json#text; clauses 1-2: source/binary notices; alternative route retains full notice and substitutes GPL obligations; no single unconditional source/same-license duty can represent both choices; https://spdx.org/licenses/Brian-Gladman-3-Clause.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Brian-Gladman-3-Clause.json#text; clauses 1-2: source/binary notices; alternative route retains full notice and substitutes GPL obligations; no single unconditional source/same-license duty can represent both choices; https://spdx.org/licenses/Brian-Gladman-3-Clause.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Brian-Gladman-3-Clause.json#text; primary three-clause branch has no express patent grant; GPL alternative names no version, so a single version-specific patent position is not established; https://spdx.org/licenses/Brian-Gladman-3-Clause.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Brian-Gladman-3-Clause.json#text; LICENSE TERMS opening permits use/distribution with changes under clauses 1-3; ALTERNATIVELY paragraph offers unversioned GPL applying INSTEAD, not cumulative terms; https://spdx.org/licenses/Brian-Gladman-3-Clause.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Brian-Gladman-3-Clause.json#text; clause 3: prior written permission for copyright-holder endorsement; DISCLAIMER excludes warranty; GPL alternative has version-dependent extra terms that remain unknown; https://spdx.org/licenses/Brian-Gladman-3-Clause.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "Brian-Gladman-3-Clause metadata: id='Brian-Gladman-3-Clause', name='Brian Gladman 3-Clause License', deprecated=false, osi=false, and fsf=false; complete license review, especially clause 3 and the ALTERNATIVELY paragraph (the code-specific non-OSI text combines a personal-name endorsement condition with a choice between its three-clause terms and an unversioned GNU GPL applying instead; vocabulary 1.0.0 cannot communicate the alternative obligations, scope, patent position, notice burden, or non-distribution triggers losslessly, so the profile is not safe for automatic general recommendation)"
+      "locator": "public/data/licenses/Brian-Gladman-3-Clause.json#text; whole-text editorial review on 2026-09-09, batch 5; Zavést explicitní volbu tříklauzulové cesty nebo GPL a doložit konkrétní použitelnou verzi GPL. Odstavec ALTERNATIVELY stanoví náhradní, nikoli kumulativní podmínky. Do vyřešení se nesmí profil zploštit na BSD, označit za automatický copyleft ani převzít patentový grant z GPL 3.0. Zachovat celé oznámení při volbě GPL.; https://spdx.org/licenses/Brian-Gladman-3-Clause.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Brian-Gladman-3-Clause.json#text; clauses 1-2: source/binary notices; alternative route retains full notice and substitutes GPL obligations; no single unconditional source/same-license duty can represent both choices; https://spdx.org/licenses/Brian-Gladman-3-Clause.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
     }
   ]
 }

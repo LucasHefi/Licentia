@@ -1,0 +1,27 @@
+{
+  "id": "EUPL-1.1",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:36b3acda77de72e4f35a325418eee298e3057d960365721c318bde2b1a967534"
+  },
+  "disposition": "eligible",
+  "summaryCs": "EUPL 1.1 zahrnuje do distribuce i zpřístupnění podstatných funkcí jiné osobě, proto copyleft a zdrojové povinnosti dopadají i na takovou síťovou službu. Work se šíří pod EUPL nebo pozdější verzí, pokud originál není výslovně only; u kombinované odvozeniny může nastoupit přesně vyjmenovaná kompatibilní licence. Zachovávají se notices, celý text a datum změn; zdroje lze přiložit nebo držet snadno a zdarma dostupné po dobu zpřístupňování. Veřejné údaje elektronického distribučního kanálu mají zvláštní zákonný režim. Poskytovatel a přispěvatelé zaručují svůj autorský titul, ostatní záruky jsou vyloučeny.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Software a odvozeniny podle autorského práva země určené čl. 15. Definice Distribution/Communication v čl. 1 této verze výslovně zahrnuje jak kopie, tak přístup k essential functionalities k dispozici jiné fyzické/právnické osobě online či offline. Není omezena jen na změněný síťový server.",
+    "grantCs": "Čl. 2 celosvětově bez royalty nevýhradně sublicencovatelně po dobu copyrightu umožňuje libovolné užití, kopie, změny, veřejné sdělování, distribuci, půjčení a pronájem. V dovoleném rozsahu poskytovatel neuplatní moral rights proti těmto právům. Poskytuje nutné bezplatné nevýhradní užívací právo k drženým patentům. Čl. 5 umožňuje pozdější EUPL, pokud originál není expressly only, a samostatně přesně vymezené kompatibilní kombinace.",
+    "conditionsCs": "Čl. 3 executables doprovází strojově čitelné zdroje NEBO notice repozitáře za copyrightem, zdarma snadno dostupného po dobu distribuce/sdělování. Čl. 5 zdroje nebo repozitář ukládá i dalším distributorům, zachovává copyright/patent/známkové/licenční/disclaimer notices a celý text v každé kopii, výrazné změnové notice s datem. Povinnosti Work dopadají přes čl. 1 i na poskytování jeho podstatných funkcí. Čl. 9 vlastní placená záruka/podpora/indemnita pouze vlastním jménem s povinností chránit ostatní přispěvatele. Čl. 11 veřejné zákonné informace o elektronickém kanálu jsou další povinností.",
+    "limitationsCs": "Čl. 6 poskytovatel i každý přispěvatel zaručuje vlastnictví/licenci copyrightu a oprávnění udělit grant; čl. 7 vylučuje ostatní záruky včetně jiných IP. Čl. 8 zachovává úmysl, újmy přímo způsobené fyzickým osobám a použitelnou produktovou odpovědnost. Čl. 5 neuděluje známky mimo běžné popisy původu a copyrightu. Čl. 12 automaticky ruší práva při jakémkoli porušení s ochranou compliant downstream. Čl. 14 upravuje fórum EU při sporu s Komisí, jinak poskytovatele; čl. 15 právo jeho země EU nebo belgické právo u Komise/poskytovatele mimo EU. Není patentové žalobní ukončení.",
+    "compatibilityCs": "Čl. 5 umožňuje jinou licenci jen pro derivát založený na EUPL originálu a jiném díle pod GPL v2, OSL 2.1/3.0, CPL 1.0, EPL 1.0 nebo CeCILL 2.0; konfliktní povinnosti této kompatibilní licence mají přednost. Není obecné přelicencování nezměněného originálu. Čl. 13 dovoluje Komisi jiné jazyky/nové verze bez snížení rozsahu práv a činí schválené jazyky rovnocennými; neobsahuje povinné přepnutí při zjištění nové verze z EUPL 1.0. Čl. 10 souhlas výkonem práv/kliknutím neukládá distributorovi shánět výslovný souhlas všech příjemců."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/EUPL-1.1.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Čl. 1 zahrnuje poskytování essential functionalities a čl. 5 copyleft/zdroje u distribuce a sdělování Work; síťový copyleft této verze"
+    }
+  ]
+}

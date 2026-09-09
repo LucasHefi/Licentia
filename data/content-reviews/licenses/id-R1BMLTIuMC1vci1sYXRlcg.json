@@ -1,0 +1,20 @@
+{
+  "id": "GPL-2.0-or-later",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:6faf24ac7cf002ab6c0bc7bcca8888dc302c50ebe63b9b309c45ab1c2f49e949"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Silný copyleft při distribuci odvozeného díla; zachovejte oznámení, označte změny a splňte podmínky poskytování odpovídajících zdrojů podle § 3. GPL 2.0 neobsahuje výslovný patentový grant. Varianta or-later umožňuje zvolit novější GPL; zde se hodnotí podmínky verze 2.0, po volbě jiné verze je nutné nové posouzení.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+      "note": "Dřívější individuální revize 2026-09-09; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

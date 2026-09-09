@@ -8,91 +8,105 @@
     "contentHash": "sha256:c802bb9d354164d26dce0fc9c4516637794e5ef572e5375bedd7ece79e915c24"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "whole-work",
     "permissions": [
-      "modifications"
+      "conditional-relicensing",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
+      "include-copyright",
+      "include-notice",
+      "mark-modifications",
+      "same-license",
       "unknown"
     ],
     "triggers": [
-      "unknown"
+      "combination",
+      "distribution",
+      "modification",
+      "use"
     ],
     "restrictions": [
-      "unknown"
+      "additional-terms",
+      "liability",
+      "trademark",
+      "unknown",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-NC-SA-2.0-FR.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-NC-SA-2.0-FR.json#text; Francouzská Creative Commons Paternité – Pas d’Utilisation Commerciale – Partage Des Conditions Initiales A l’Identique 2.0 upravuje autorská díla, související práva i práva pořizovatelů databází. §1 rozlišuje úplné nezměněné dílo ve sborníku nezávislých příspěvků od zpracování; synchronizace hudby či nahrávky s pohyblivým obrazem je výslovně zpracování. Celé francouzské znění §1–8 i závěrečné informace Creative Commons bylo přečteno samostatně. §8.f stanoví francouzské právo. §3 poskytuje bezplatné nevýhradní celosvětové oprávnění po dobu ochrany reprodukovat dílo, začlenit je do sborníku, vytvořit a reprodukovat zpracování a všechny tyto formy šířit, předvádět a sdělovat veřejnosti včetně digitálního prostředí. Zahrnuje libovolná média a technicky nutné změny; §3.e výslovně dovoluje vytěžování a opětovné využití podstatných částí databáze. §4.c však zakazuje vykonávat tato práva s úmyslem nebo cílem komerčního zisku či osobního finančního protiplnění. Bezplatná výměna chráněných děl přes sdílení souborů či jinak je výjimkou, pokud s ní není spojena platba ani finanční kompenzace. private-use, modifications a distribution zachycují tuto omezenou větev; commercial-use se nepřiznává. §4.a nedovoluje převést práva k dílu a §8.a–b poskytují příjemci přímou nabídku původního poskytovatele, nikoli sublicenci. §4.b umožňuje pro zpracování podmíněnou volbu pozdější nebo jiné jurisdikční CC licence se stejnými atributy BY-NC-SA. §1.c zahrnuje zpracování vytvořené z původního i dalších děl a §4.b na něj uplatňuje ShareAlike jako celek; §1.b a 4.a–b výslovně vyjímají nezávislý sborník. Proto copyleftScope whole-work pro obsahové zpracování, nikoli libovolný agregovaný balík. Kvůli skutečnému zákazu komerčního účelu z §4.c má family nonstandard; známá obsahová hranice se kvůli tomu nemaže. Neexistuje požadavek dodat zdrojovou podobu softwaru.; https://spdx.org/licenses/CC-BY-NC-SA-2.0-FR.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-NC-SA-2.0-FR.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-NC-SA-2.0-FR.json#text; §1.c zahrnuje zpracování vytvořené z původního i dalších děl a §4.b na něj uplatňuje ShareAlike jako celek; §1.b a 4.a–b výslovně vyjímají nezávislý sborník. Proto copyleftScope whole-work pro obsahové zpracování, nikoli libovolný agregovaný balík. Kvůli skutečnému zákazu komerčního účelu z §4.c má family nonstandard; známá obsahová hranice se kvůli tomu nemaže. Neexistuje požadavek dodat zdrojovou podobu softwaru.; https://spdx.org/licenses/CC-BY-NC-SA-2.0-FR.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-BY-NC-SA-2.0-FR.json#text; §3 poskytuje bezplatné nevýhradní celosvětové oprávnění po dobu ochrany reprodukovat dílo, začlenit je do sborníku, vytvořit a reprodukovat zpracování a všechny tyto formy šířit, předvádět a sdělovat veřejnosti včetně digitálního prostředí. Zahrnuje libovolná média a technicky nutné změny; §3.e výslovně dovoluje vytěžování a opětovné využití podstatných částí databáze. §4.c však zakazuje vykonávat tato práva s úmyslem nebo cílem komerčního zisku či osobního finančního protiplnění. Bezplatná výměna chráněných děl přes sdílení souborů či jinak je výjimkou, pokud s ní není spojena platba ani finanční kompenzace. private-use, modifications a distribution zachycují tuto omezenou větev; commercial-use se nepřiznává. §4.a nedovoluje převést práva k dílu a §8.a–b poskytují příjemci přímou nabídku původního poskytovatele, nikoli sublicenci. §4.b umožňuje pro zpracování podmíněnou volbu pozdější nebo jiné jurisdikční CC licence se stejnými atributy BY-NC-SA.; https://spdx.org/licenses/CC-BY-NC-SA-2.0-FR.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-NC-SA-2.0-FR.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-NC-SA-2.0-FR.json#text; §4.a při reprodukci, šíření a veřejném sdělování původního díla zachovává tuto licenci; k šířeným či sdělovaným kopiím požaduje licenci NEBO její URI, zachování licenčních a odpovědnostních notices a žádné odporující dodatečné podmínky nebo technická opatření kontroly přístupu či užití. §4.b podmiňuje i reprodukci zpracování stejnými atributy licence: touto verzí, její pozdější verzí nebo CC iCommons s týmiž atributy; požaduje odpovídající kopii licence či URI, notices a stejné zákazy omezení. Samostatný sborník se jako celek pod ShareAlike nepřevádí. §4.a dále vyžaduje, je-li to možné, odstranit ze sborníku či zpracování zmínky o kterémkoli poskytovateli nebo autorovi na jeho žádost. §4.d při reprodukci, šíření nebo veřejném sdělování zachovává informace o právech a přiměřeně uvádí původního autora nebo pseudonym, uvedený titul, pokud možno určené URI k právním informacím a u zpracování identifikaci převzatého díla; ve sborníku či zpracování musejí být údaje na místě a stejně viditelné jako obdobné údaje. Povinnosti tedy nejsou omezeny jen na prodej nebo předání souborů; use zachycuje také reprodukci a veřejné provozování, combination obsahovou tvorbu zpracování s jinými díly. §4.e ponechává zákonné povinné kolektivní odměny, například za některá vysílání, retransmise, soukromé kopie a reprografii. §5.a požaduje po poskytovateli zveřejňujícím dílo prohlášení v dobré víře, dle vědomosti a mezí přiměřeného šetření, o potřebných právech a neporušování cizích práv. Odstranění kreditů a tento vlastní poskytovatelský závazek vyžadují unknown v obligations.; https://spdx.org/licenses/CC-BY-NC-SA-2.0-FR.html Terminologické upřesnění 2026-09-10: § 4(a) požaduje ke kopii či záznamu šířenému nebo sdělovanému veřejnosti kopii tohoto Contrat NEBO jeho internetovou adresu (URI). § 4(b) stejnou alternativu výslovně dovoluje pro příslušnou dovolenou licenci odvozeniny; nevzniká kumulativní povinnost dodat oba způsoby. include-notice zachycuje požadované licenční oznámení s touto alternativou; include-license-text se neuvádí jako bezpodmínečná povinnost.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-NC-SA-2.0-FR.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-NC-SA-2.0-FR.json#text; §4.a při reprodukci, šíření a veřejném sdělování původního díla zachovává tuto licenci; k šířeným či sdělovaným kopiím požaduje licenci NEBO její URI, zachování licenčních a odpovědnostních notices a žádné odporující dodatečné podmínky nebo technická opatření kontroly přístupu či užití. §4.b podmiňuje i reprodukci zpracování stejnými atributy licence: touto verzí, její pozdější verzí nebo CC iCommons s týmiž atributy; požaduje odpovídající kopii licence či URI, notices a stejné zákazy omezení. Samostatný sborník se jako celek pod ShareAlike nepřevádí. §4.a dále vyžaduje, je-li to možné, odstranit ze sborníku či zpracování zmínky o kterémkoli poskytovateli nebo autorovi na jeho žádost. §4.d při reprodukci, šíření nebo veřejném sdělování zachovává informace o právech a přiměřeně uvádí původního autora nebo pseudonym, uvedený titul, pokud možno určené URI k právním informacím a u zpracování identifikaci převzatého díla; ve sborníku či zpracování musejí být údaje na místě a stejně viditelné jako obdobné údaje. Povinnosti tedy nejsou omezeny jen na prodej nebo předání souborů; use zachycuje také reprodukci a veřejné provozování, combination obsahovou tvorbu zpracování s jinými díly. §4.e ponechává zákonné povinné kolektivní odměny, například za některá vysílání, retransmise, soukromé kopie a reprografii. §5.a požaduje po poskytovateli zveřejňujícím dílo prohlášení v dobré víře, dle vědomosti a mezí přiměřeného šetření, o potřebných právech a neporušování cizích práv. Odstranění kreditů a tento vlastní poskytovatelský závazek vyžadují unknown v obligations.; https://spdx.org/licenses/CC-BY-NC-SA-2.0-FR.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-NC-SA-2.0-FR.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-NC-SA-2.0-FR.json#text; §2 zachovává výjimky, vyčerpání práv a zákonná omezení výhradních práv. §5.a obsahuje kladná prohlášení poskytovatele o potřebných oprávněních a oprávněném užití bez dalších plateb kromě povinné kolektivní správy, i o absenci zásahu do cizích práv, pomluvy či soukromí; nelze jej popsat jako úplnou absenci záruk. Teprve §5.b poskytuje dílo AS IS mimo výslovné smluvní a zákonné výjimky. §6 omezuje odpovědnost, avšak vyjímá kogentní záruky i náhrady vůči třetím osobám z porušení prohlášení §5. §7.a ukončuje grant automaticky při porušení, ponechává řádná práva navazujících příjemců a přetrvání §1, 2, 5–7; žádná třicetidenní automatická náprava není uvedena. §1.f připouští výslovné nové svolení po dřívějším porušení. restrictions unknown označuje přesné omezení komerčního účelu z §4.c. Závěrečný text omezuje použití značek Creative Commons mimo informování o CC licenci na písemný souhlas a aktuální pravidla značek; takové svolení není součástí obecného autorského grantu.; https://spdx.org/licenses/CC-BY-NC-SA-2.0-FR.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-NC-SA-2.0-FR.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-NC-SA-2.0-FR.json#text; §3 výslovně upravuje autorská, související a databázová oprávnění; žádný článek neposkytuje samostatný patentový grant ani patentovou odvetu. Prohlášení o právech v §5.a není patentová licence; patentPosition none-stated, bez patent-grant.; https://spdx.org/licenses/CC-BY-NC-SA-2.0-FR.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-NC-SA-2.0-FR.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-NC-SA-2.0-FR.json#text; §4.a při reprodukci, šíření a veřejném sdělování původního díla zachovává tuto licenci; k šířeným či sdělovaným kopiím požaduje licenci NEBO její URI, zachování licenčních a odpovědnostních notices a žádné odporující dodatečné podmínky nebo technická opatření kontroly přístupu či užití. §4.b podmiňuje i reprodukci zpracování stejnými atributy licence: touto verzí, její pozdější verzí nebo CC iCommons s týmiž atributy; požaduje odpovídající kopii licence či URI, notices a stejné zákazy omezení. Samostatný sborník se jako celek pod ShareAlike nepřevádí. §4.a dále vyžaduje, je-li to možné, odstranit ze sborníku či zpracování zmínky o kterémkoli poskytovateli nebo autorovi na jeho žádost. §4.d při reprodukci, šíření nebo veřejném sdělování zachovává informace o právech a přiměřeně uvádí původního autora nebo pseudonym, uvedený titul, pokud možno určené URI k právním informacím a u zpracování identifikaci převzatého díla; ve sborníku či zpracování musejí být údaje na místě a stejně viditelné jako obdobné údaje. Povinnosti tedy nejsou omezeny jen na prodej nebo předání souborů; use zachycuje také reprodukci a veřejné provozování, combination obsahovou tvorbu zpracování s jinými díly. §4.e ponechává zákonné povinné kolektivní odměny, například za některá vysílání, retransmise, soukromé kopie a reprografii. §5.a požaduje po poskytovateli zveřejňujícím dílo prohlášení v dobré víře, dle vědomosti a mezí přiměřeného šetření, o potřebných právech a neporušování cizích práv. Odstranění kreditů a tento vlastní poskytovatelský závazek vyžadují unknown v obligations. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/CC-BY-NC-SA-2.0-FR.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-NC-SA-2.0-FR.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-NC-SA-2.0-FR.json#text; Individuální kontrola celého připnutého textu CC-BY-NC-SA-2.0-FR dne 2026-09-10. Francouzská Creative Commons Paternité – Pas d’Utilisation Commerciale – Partage Des Conditions Initiales A l’Identique 2.0 upravuje autorská díla, související práva i práva pořizovatelů databází. §1 rozlišuje úplné nezměněné dílo ve sborníku nezávislých příspěvků od zpracování; synchronizace hudby či nahrávky s pohyblivým obrazem je výslovně zpracování. Celé francouzské znění §1–8 i závěrečné informace Creative Commons bylo přečteno samostatně. §8.f stanoví francouzské právo. §4.c omezuje všechna oprávnění na užití bez úmyslu či cíle komerčního zisku nebo osobního finančního protiplnění a má zvláštní výjimku pro bezplatnou výměnu děl. Slovník 1.4.0 tento omezený účel nevyjadřuje; je nutný odpovídající model a commercial-use se nepřiznává. §1 a 4 podmiňují reprodukci i veřejné provozování obsahu, ShareAlike zpracování, atribuci a prakticky možné odstranění zmínek na žádost autora nebo poskytovatele. §5.a navíc ukládá poskytovatelské prohlášení v mezích přiměřeného šetření o právech a nepůsobení újmy třetím osobám. Před doporučením je nutný obsahový model těchto povinností a kladných prohlášení; obecné softwarové notices a výluka záruk by byly neúplné. §4.b dovoluje zpracování jen pod touto licencí, pozdější verzí s týmiž atributy nebo jurisdikční CC iCommons s týmiž atributy, například japonskou BY-NC-SA 2.0. Neobsahuje volbu obecně kompatibilní cizí licence a neuděluje převod na GPL. §4.a–b vyjímají sborník nezávislých děl jako celek ze ShareAlike, ale zachovávají podmínky původního díla i odvozeného příspěvku uvnitř. §3.e poskytuje databázová práva pod těmito podmínkami; na rozdíl od některých národních variant 3.0 se jich plošně nevzdává a nevyjímá je z NC. §7.b dovoluje poskytovateli jiné budoucí nabídky či ukončení vlastního šíření bez odvolání trvajícího grantu. §8.d–e vyžadují písemný souhlas pro změny a jednostranné podmínky příjemce poskytovatele nezavazují.; https://spdx.org/licenses/CC-BY-NC-SA-2.0-FR.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

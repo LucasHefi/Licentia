@@ -1,0 +1,20 @@
+{
+  "id": "dtoa",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.5",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:88eaffafd67eae701ec30aa465d06bd23ec58342c2c32f3b2d4eedc9d6c6a71c"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Celé oznámení přiložte do všech kopií softwaru, který obsahuje tento kód či jeho úpravu, i do všech kopií podpůrné dokumentace. Licence povoluje jakýkoli účel bez poplatku a nevyžaduje poskytovat zdroje. Vylučuje záruky; výslovné omezení odpovědnosti ani omezení použití jmen text neobsahuje.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/dtoa.html",
+      "note": "Dřívější individuální revize 2026-09-09.5; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

@@ -8,95 +8,102 @@
     "contentHash": "sha256:9f6864aa353b65d80090d678ba6529f490df30be590d1550288c00b560845d5f"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
+    "family": "nonstandard",
     "copyleftScope": "unknown",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
       "include-license-text",
-      "provide-corresponding-source"
-    ],
-    "triggers": [
+      "provide-corresponding-source",
+      "same-license",
       "unknown"
     ],
+    "triggers": [
+      "distribution"
+    ],
     "restrictions": [
+      "additional-terms",
       "liability",
       "trademark",
+      "unknown",
       "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Sendmail-Open-Source-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Sendmail-Open-Source-1.1.json#text; Copyleft závisí na volbě zdrojové cesty a týká se redistribuovaných modulů v definici; jediný software scope alternativy nevyjádří.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Sendmail-Open-Source-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Sendmail-Open-Source-1.1.json#text; Copyleft závisí na volbě zdrojové cesty a týká se redistribuovaných modulů v definici; jediný software scope alternativy nevyjádří.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Sendmail-Open-Source-1.1.json#text; Úvod dovoluje use/modification/redistribution zdrojů/binárek pod šesti podmínkami nebo jinou přímo získanou licencí Sendmail. Komerční cena mimo náklady je podmíněna §1(b); výslovný patentový grant a sublicence chybějí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Sendmail-Open-Source-1.1.json#text; §1(a) redistribuce nejvýše za materials/delivery NEBO §1(b) modifikované zdroje na přijatelném strojově čitelném médiu či neodvolatelná nabídka až 3 roky za náklady a substantially same terms downstream. §2 zachovává zdrojové notices a vyžaduje další licence přispěvatelů obsažené ve zdrojové distribuci; §3 binární notice Sendmail 1998–2009 a podmínky/disclaimer v materiálech.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Sendmail-Open-Source-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Sendmail-Open-Source-1.1.json#text; §1(a) redistribuce nejvýše za materials/delivery NEBO §1(b) modifikované zdroje na přijatelném strojově čitelném médiu či neodvolatelná nabídka až 3 roky za náklady a substantially same terms downstream. §2 zachovává zdrojové notices a vyžaduje další licence přispěvatelů obsažené ve zdrojové distribuci; §3 binární notice Sendmail 1998–2009 a podmínky/disclaimer v materiálech.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Sendmail-Open-Source-1.1.json#text; §4 chrání jména, známky a loga Sendmail včetně dcer/přidružených a přispěvatelů před endorsementem produktů/softwaru/služeb. §5 vyhrazuje zrušení při neplnění, volí Kalifornii a fóra San Francisco/Alameda, celistvost dohody a oddělitelnost. §6 odmítá záruky včetně noninfringement a škody.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Sendmail-Open-Source-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Sendmail-Open-Source-1.1.json#text; Úvod dovoluje use/modification/redistribution zdrojů/binárek pod šesti podmínkami nebo jinou přímo získanou licencí Sendmail. Komerční cena mimo náklady je podmíněna §1(b); výslovný patentový grant a sublicence chybějí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Sendmail-Open-Source-1.1.json#text; §1(a) redistribuce nejvýše za materials/delivery NEBO §1(b) modifikované zdroje na přijatelném strojově čitelném médiu či neodvolatelná nabídka až 3 roky za náklady a substantially same terms downstream. §2 zachovává zdrojové notices a vyžaduje další licence přispěvatelů obsažené ve zdrojové distribuci; §3 binární notice Sendmail 1998–2009 a podmínky/disclaimer v materiálech.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Sendmail-Open-Source-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Sendmail-Open-Source-1.1.json#text; Individuálně přečten celý připnutý text. Software a redistribuované moduly v1.1 mají Source Code definovaný jako kompletní human-readable, compilable, linkable a operational kód včetně změn. Sendmail Open Source 1.1 umožňuje redistribuci buď za rozumné náklady, nebo s modifikovanými zdroji/nezrušitelnou nabídkou až tří let a obdobnými právy. Zdroje zahrnují redistribuované moduly; použitelné licence přispěvatelů jsou odkazovány do distribuce. Platí Kalifornie a fóra San Francisco/Alameda. § 1 rozlišuje cenově omezenou a source/offer cestu s odlišnými povinnostmi; § 2 navíc odkazuje na neurčené contributor licences v distribuci. Doplnit model alternativ a modulového rozsahu a připnout konkrétní licenční závislosti balíku.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

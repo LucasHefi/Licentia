@@ -1,0 +1,20 @@
+{
+  "id": "UPL-1.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:28f090b03b0d9bc3adb5b3d01b291faeb7dbfda0fa6f6493fb6ebeb4341360ec"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Zachovejte copyright a úplné licenční oznámení nebo alespoň odkaz na UPL. Patentový grant má vymezený rozsah; pro širší dílo zkontrolujte případný soubor lrgrwrks.txt.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/UPL-1.0.html",
+      "note": "Dřívější individuální revize 2026-09-09; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "Zimbra-1.3",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:44074ea4363a2c7db3e4b316e7eac649e09c2fd0e63a522318a233b6e2089689"
+  },
+  "disposition": "blocked",
+  "summaryCs": "ZPL 1.3 je zde licence VMware: zdroje Software a změn musí zůstat pod ZPL, binárky mohou mít jinou vlastní licenci jen s přístupem příjemců ke zdrojům a zachováním jejich práv. Nové soubory bez originálního kódu jsou oddělené. Ve všech kopiích a změnách se zachovávají notices ve stejné podobě včetně UI log. Grant pokrývá pouze autorská práva; převody práv či dohody včetně fúze vyžadují předchozí písemný souhlas VMware.",
+  "blockersCs": [
+    "§7 činí převod dohody, postoupení práv a delegaci povinností bez písemného souhlasu VMware od počátku neplatnými, včetně prodeje aktiv, fúze a konsolidace. Dostupná restrictions tento dopad na podnikové přeměny neumějí vyjádřit; je nutné doplnit odpovídající model před doporučením licence."
+  ],
+  "analysis": {
+    "subjectCs": "Software poskytovaný VMware, Inc., Delaware, s adresou Palo Alto, a změny/rozšíření/zkrácení. §1.1 vylučuje nově přidané soubory bez jakékoli části Software; §1.2 nepovažuje kopie předané uvnitř zastupované společnosti za distribuci.",
+    "grantCs": "§1.1 uděluje royalty-free nevýhradní nepřevoditelný grant z autorských práv pro kopírování, úpravy, kompilaci, spuštění a distribuci. §1.4 dovoluje vlastní binární licenci za stanovených podmínek; §1.5 libovolné podmínky zcela vlastních nezávislých souborů. §3.1 výslovně vylučuje vznik jiných práv a licencí než autorských, včetně implicitních titulů.",
+    "conditionsCs": "§1.3 zdrojové distribuce pouze pod ZPL s celou dohodou; poskytovatel změn získává roli VMware pro své změny kromě severokalifornské jurisdikční doložky. §1.4 binární příjemci dostávají přístup ke zdrojům s celou ZPL, vlastní odlišné podmínky musí být jasně připsány distributorovi a neomezit zdrojová práva. §3.2 zachovává každé původní copyrightové, patentové, známkové a atribuční notice v téže formě, výslovně také značky/loga v UI, v každé kopii i změně.",
+    "limitationsCs": "§3.3 povoluje jména/loga/známky pouze pro povinné zachování notices. §§4–5 výslovně vylučují záruky a všechny vyjmenované škody včetně přímých; §2 vylučuje povinnost podpory či aktualizací. §6.2 dovoluje VMware ukončit dohodu při porušení; žádná lhůta nápravy není stanovena. §7 stanoví právo Kalifornie/USA, bez CISG, severní Kalifornii a Santa Clara pro spory s VMware či dceřinými společnostmi, vedle zákazu převodů bez souhlasu.",
+    "compatibilityCs": "Souborová hranice §1.1 a volnost §1.5 se nevztahují na soubory obsahující originální kód. Jiné binární podmínky nesmějí omezit zdrojový grant; licence neobsahuje možnost later version nebo výslovné přelicencování zdrojů jinam. Nelze přenášet texaské fórum z pozdější ZPL 1.4."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Zimbra-1.3.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; §§1.3–1.5 zachovávají ZPL na zdrojích a připouštějí jiné binární podmínky i nezávislé soubory; jde o slabý copyleft"
+    }
+  ]
+}

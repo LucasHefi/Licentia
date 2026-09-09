@@ -1,0 +1,29 @@
+{
+  "id": "CATOSL-1.1",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:719dc49c55e4f152f8aa48c75c685fad5598c59ab84c19c1567cbe7d7561f741"
+  },
+  "disposition": "blocked",
+  "summaryCs": "CATOSL 1.1 váže zdrojovou reciprocitu na Program/Contributions, vylučuje samostatné nederivativní moduly a CA si ponechává odlišný režim svých budoucích příspěvků. Povolen je jednorázový distribuční poplatek, nikoli opakované poplatky za samotná práva; známé cizí IP problémy se musí hlásit CA i dřívějším příjemcům.",
+  "blockersCs": [
+    "§§ 1, 3 vyžadují komponentový rozsah a § 9.1 CA asymetrii; § 3.3 upravuje jednorázové oproti opakovaným poplatkům a § 3.5 aktivní hlášení IP znalostí CA/minulým příjemcům. Doplnit tyto modely místo zploštění na file copyleft, commercial-use či běžné notices."
+  ],
+  "analysis": {
+    "subjectCs": "§1 Contributions změny/dodatky distribuované nepropojeným třetím stranám, mimo současně samostatné moduly s vlastní licencí a bez derivace. Program originál+Contributions, Contributor Version bez pozdějších cizích změn, Recipient i pouhý uživatel. §9.1 budoucí CA Contributions automaticky této licenci nepodléhají, CA volí jejich zveřejnění/licenci; neurčuje neznámý grant již licencovaného originálu.",
+    "grantCs": "§2.1 neodvolatelný světový bezroyalty nevýhradní grant kopie/deriváty/display/performance/distribute/sublicense source/object odděluje patenty. §2.2 výslovně nutné Licensed Patents pro make/use/sell/offer/import Contribution a tehdejší Contributor Version kombinace; vyloučen kód bez Contributor Version, další změny/kombinace a nároky porušené Program bez dotčeného příspěvku. §2.4 výslovná záruka vlastnictví copyright/right-to-grant, ne jen znalostní prohlášení; cizí IP práva jinak obstará Recipient.",
+    "conditionsCs": "§3.1 object má source access notice současně v kódu a docs; vlastní licence chrání ostatní warranty/liability výlukami, odchylky jen vlastní, source za distribuční náklad. §3.2 source jen licence+text. §3.3 pouze jednorázový upfront distribuční poplatek, žádný opakovaný licenční/royalty poplatek za práva; source max fyzické kopírovací/distribuční náklady, služby povoleny bez obcházení. §3.4 komerční distributor brání/odškodní skutečně zahrnuté ostatní Contributors za vlastní jednání/závazky, IP infringement výluka. §3.5 znalost nutné cizí IP licence do ../IP_ISSUES a písemně CA, později aktualizovat budoucí kopie a rozumně informovat minulých recipients. §3.6 copyright/patent notices source/object/docs zachovat; §4 datované změny, původce a původ v předchozím Contributor source/relevantní object notices.",
+    "limitationsCs": "§§5–6 as-is a škodové výluky kromě výslovných záruk/práva; §5.3 jen uznání nezamýšleného kritického použití (nuclear/aircraft/communication/traffic), nikoli formulace zákazu grantu. §7 bez Contributor/CA známek, CA Marks ne v odvozených názvech/endorsement, vlastní značky s notices dovoleny. §8 patentová žaloba včetně counter/cross proti komukoli pro Program samotný bez kombinací ruší§2.2 dnem podání. §10 materiální porušení s přiměřenou nápravou od znalosti, pak přestat use/distribution; závazky/downstream licence trvají.",
+    "compatibilityCs": "§3.4 Larger Work s jiným kódem dovoleno při plnění Program, §11.2 pozdější CA číslované verze volitelné. §11.3 právní překážky maximální plnění a IP_ISSUES popis. New York law/venue proti CA, roční žalobní lhůta a waiver jury, bez CISG; Quebec potvrzuje angličtinu, export/import soulad příjemce. Žádná obecná GPL alternativa."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/CATOSL-1.1.html",
+      "note": "Individuální revize celého připnutého textu; §1 Contributions změny/dodatky distribuované nepropojeným třetím stranám, mimo současně samostatné moduly s vlastní licencí a bez derivace. Program originál+Contributions, Contributor Version bez pozdějších cizích změn, Recipient i pouhý uživatel. §9.1 budoucí CA Contributions automaticky této licenci nepodléhají, CA volí jejich zveřejnění/licenci; neurčuje neznámý grant již licencovaného originálu."
+    }
+  ]
+}

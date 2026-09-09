@@ -8,98 +8,110 @@
     "contentHash": "sha256:9b4fec33969086a4a7a8a1af4022e8add1a012d501eed2c98538bd40d00e5c6f"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "weak-copyleft",
+    "copyleftScope": "file",
     "permissions": [
       "commercial-use",
+      "conditional-relicensing",
       "distribution",
       "modifications",
       "patent-grant",
+      "private-use",
       "sublicensing"
     ],
     "obligations": [
+      "defend-added-warranty",
+      "disclose-source",
       "include-copyright",
-      "provide-corresponding-source"
-    ],
-    "triggers": [
+      "include-license-text",
+      "include-notice",
+      "mark-modifications",
+      "same-license",
       "unknown"
     ],
+    "triggers": [
+      "distribution",
+      "modification",
+      "patent-claim"
+    ],
     "restrictions": [
+      "additional-terms",
       "liability",
+      "patent-claim",
       "trademark",
       "warranty"
     ],
     "patentPosition": "defensive-termination",
-    "noticeBurden": "standard"
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-termination",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Motosoto.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Motosoto.json#text; Motosoto Open Source License má v hlavním nadpisu verzi 0.9.1 a pokrývá Community Portal Server, související produkty a aktualizace Motosoto.Com B.V. Úplná preambule sama vylučuje normativní účinek, rozhodné jsou License Terms a začleněné Exhibit A. §1 výslovně uděluje užití, kopie, změny, sublicence, distribuci původního Licensed Product, odvozená díla podle nizozemského autorského práva a nutné patenty poskytovatele; §2 stejně poskytuje příspěvky a jejich patenty. Komerční užití a prodej jsou dovoleny bez odměny poskytovateli. §3 vyjímá známky, odstraněný kód, oddělené patenty a kombinace s jiným softwarem či hardwarem. §2 souborová definice Modifications plus §4(g) zachování povinností jen pro původní části a jejich změny stanoví slabý souborový copyleft; zbytek derivative produktu může mít jinou licenci.; https://spdx.org/licenses/Motosoto.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Motosoto.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Motosoto.json#text; §2 souborová definice Modifications plus §4(g) zachování povinností jen pro původní části a jejich změny stanoví slabý souborový copyleft; zbytek derivative produktu může mít jinou licenci.; https://spdx.org/licenses/Motosoto.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Motosoto.json#text; §1 výslovně uděluje užití, kopie, změny, sublicence, distribuci původního Licensed Product, odvozená díla podle nizozemského autorského práva a nutné patenty poskytovatele; §2 stejně poskytuje příspěvky a jejich patenty. Komerční užití a prodej jsou dovoleny bez odměny poskytovateli. §3 vyjímá známky, odstraněný kód, oddělené patenty a kombinace s jiným softwarem či hardwarem.; https://spdx.org/licenses/Motosoto.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Motosoto.json#text; §4(a,b) distribuované změny a jejich soubory zůstávají pod licencí a zdroje Licensed Product i změn jsou na médiu nebo elektronicky nejméně 12 měsíců od dostupnosti či 6 měsíců po následné verzi. §4(c) výslovně ukládá změnový soubor s přidáním/úpravou/odstraněním a daty, původ a jména poskytovatele i přispěvatelů ve zdroji a relevantních oznámeních, bez změny existujících copyrightů. §4(d) LEGAL pro známé cizí IP/API patenty, aktivní přiměřené informování starších příjemců o nové znalosti a prohlášení o původnosti/právech. §4(e,f) licence, Exhibit A v každém zdrojovém souboru nebo vhodném náhradním místě a výrazné zdrojové oznámení v binární verzi, dokumentaci i materiálech. Vlastní záruky a jiné binární podmínky nabízet jen vlastním jménem a odškodnit za ně ostatní.; https://spdx.org/licenses/Motosoto.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Motosoto.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Motosoto.json#text; §4(a,b) distribuované změny a jejich soubory zůstávají pod licencí a zdroje Licensed Product i změn jsou na médiu nebo elektronicky nejméně 12 měsíců od dostupnosti či 6 měsíců po následné verzi. §4(c) výslovně ukládá změnový soubor s přidáním/úpravou/odstraněním a daty, původ a jména poskytovatele i přispěvatelů ve zdroji a relevantních oznámeních, bez změny existujících copyrightů. §4(d) LEGAL pro známé cizí IP/API patenty, aktivní přiměřené informování starších příjemců o nové znalosti a prohlášení o původnosti/právech. §4(e,f) licence, Exhibit A v každém zdrojovém souboru nebo vhodném náhradním místě a výrazné zdrojové oznámení v binární verzi, dokumentaci i materiálech. Vlastní záruky a jiné binární podmínky nabízet jen vlastním jménem a odškodnit za ně ostatní.; https://spdx.org/licenses/Motosoto.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Motosoto.json#text; §5 zákonnou nemožnost řeší maximem plnění a uvedením zákona i omezení v LEGAL. §8/10 AS IS a omezení odpovědnosti. §9 má 30 dnů nápravy od zjištění porušení, patentové žaloby na Licensed Product vůči poskytovateli/přispěvateli po 60 dnech ukončují granty leda stažení/dohoda; deklaratorní žaloby vyňaty a řádné koncové licence přežijí. §11 ukládá spolupracovat na spravedlivém rozdělení škod z výkonu práv. §13 volí nizozemské právo a vzdání se poroty; přes tvrzení §7(a) o změně umístění soudu neobsahuje konkrétní soudní místo.; https://spdx.org/licenses/Motosoto.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Motosoto.json#text; §1(c) dává nutné patenty poskytovatele a §2(b) přispěvatelů, §3 výluky kombinací/odstraněného kódu. §9(b) je obranné 60denní ukončení za žalobu na Licensed Product s možností stažení či odměny; širší odveta za jiné produkty uvedena není.; https://spdx.org/licenses/Motosoto.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Motosoto.json#text; §4(a,b) distribuované změny a jejich soubory zůstávají pod licencí a zdroje Licensed Product i změn jsou na médiu nebo elektronicky nejméně 12 měsíců od dostupnosti či 6 měsíců po následné verzi. §4(c) výslovně ukládá změnový soubor s přidáním/úpravou/odstraněním a daty, původ a jména poskytovatele i přispěvatelů ve zdroji a relevantních oznámeních, bez změny existujících copyrightů. §4(d) LEGAL pro známé cizí IP/API patenty, aktivní přiměřené informování starších příjemců o nové znalosti a prohlášení o původnosti/právech. §4(e,f) licence, Exhibit A v každém zdrojovém souboru nebo vhodném náhradním místě a výrazné zdrojové oznámení v binární verzi, dokumentaci i materiálech. Vlastní záruky a jiné binární podmínky nabízet jen vlastním jménem a odškodnit za ně ostatní. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/Motosoto.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Motosoto.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Motosoto.json#text; Individuální kontrola celého připnutého textu Motosoto dne 2026-09-09. Motosoto Open Source License má v hlavním nadpisu verzi 0.9.1 a pokrývá Community Portal Server, související produkty a aktualizace Motosoto.Com B.V. Úplná preambule sama vylučuje normativní účinek, rozhodné jsou License Terms a začleněné Exhibit A. §4(d) aktivní IP vyrozumění předchozích příjemců a §11 spolupráce na rozdělení škod z využití práv přesahují model běžného notice a přidaných záruk; potřebují samostatné zachycení. Povinné Exhibit A označuje 0.9 a hlavní text 0.9.1; před doporučením je nutné ověřit správné aplikované oznámení u autoritativního vydání, bez tiché opravy připnutého textu. §4(f,g) dovolují jinou binární licenci i jinak licencované odvozené zbytky při splnění povinností pokrytého kódu; §7(c) dovoluje pozdější vydání poskytovatele. Výslovně nezávazná preambule říká, že zdroje nelze zpoplatnit, ale normativní §4(b) nemá samostatný cenový zákaz. Exhibit A vyžadované §4(e) má verzi 0.9 proti hlavnímu 0.9.1; zaznamenává se tato skutečná nesrovnalost, ne automatická volba jiné licence.; https://spdx.org/licenses/Motosoto.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

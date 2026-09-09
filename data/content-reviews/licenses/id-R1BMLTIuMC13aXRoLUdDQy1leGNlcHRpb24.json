@@ -1,0 +1,29 @@
+{
+  "id": "GPL-2.0-with-GCC-exception",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:00819a3c7e7a8224abd732fe69def55ca604d03d72a56fbdeb366b7421f9bade"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Tento zastaralý záznam obsahuje GCC výjimku pro spojení zkompilovaného souboru s jinými programy, ale úplné znění GPL nahrazuje pokynem k jeho vložení. Výjimka uvolňuje distribuci takových kombinací; pro změny samotného souboru a další situace zůstává rozhodující GPL. Průvodce jej nezařazuje: je potřeba úplná základní licence a současný identifikátor příslušné výjimky.",
+  "blockersCs": [
+    "Připnutý text nahrazuje GPL v2 pokynem k vložení a ID je deprecated; je třeba přejít na konkrétní SPDX výraz s doloženým úplným základním textem a příslušnou GCC výjimkou, nikoli doporučovat tento složený identifikátor."
+  ],
+  "analysis": {
+    "subjectCs": "Připnutý zastaralý složený identifikátor obsahuje GCC Linking Exception a místo GPL v2 jen zástupný pokyn.",
+    "grantCs": "Výjimka dovoluje neomezeně linkovat zkompilovanou verzi souboru s jinými programy a šířit kombinace bez omezení plynoucích z tohoto souboru; ostatní práva odkazuje na chybějící GPL v2.",
+    "conditionsCs": "GPL podmínky zůstávají podle závorky pro změnu souboru a distribuci, pokud soubor není slinkován do kombinovaného spustitelného souboru; základní GPL text je nahrazen „insert GPL v2 license text here“.",
+    "limitationsCs": "Závorka vymezuje hranici výjimky, ale úplné záruky, ukončení a ostatní GPL podmínky v tomto textu chybějí.",
+    "compatibilityCs": "Jde o doplňující výjimku GCC, nikoli obecné přelicencování samotného souboru; ID je deprecated."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/GPL-2.0-with-GCC-exception.html",
+      "note": "Individuálně přečten celý připnutý text; GPL podmínky zůstávají podle závorky pro změnu souboru a distribuci, pokud soubor není slinkován do kombinovaného spustitelného souboru; základní GPL text je nahrazen „insert GPL v2 license text here“. Připnutá výjimka neuděluje patentová práva; chybějící GPL nelze nahradit patentovým závěrem odhadnutým z názvu."
+    }
+  ]
+}

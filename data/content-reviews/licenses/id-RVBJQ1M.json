@@ -1,0 +1,27 @@
+{
+  "id": "EPICS",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:b390d9093ece6e498d03cfbd6f4897f58b29aa792fb8b3a23ab89cb7272f2e2c"
+  },
+  "disposition": "eligible",
+  "summaryCs": "EPICS dovoluje vnitroorganizační kopie a změny i externí distribuci odvozených kopií. Copyright a smlouva musí provázet zdroje i binární materiály; externě šířené změny se výrazně označí. Vyhrazená práva vlády USA jsou popsána přímo v textu.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Produkt ve zdrojové/binární formě s dokumentací; EPICS Base a dotčené rozšíření dle příslušného product označení.",
+    "grantCs": "Bod2 royalty-free nonexclusive grant držitelů a third-party licensors;3 vnitřní kopie/úpravy;4 externí změněné kopie/deriváty. Patentová licence není výslovně uvedena.",
+    "conditionsCs": "Body3a–b interní source/binary notice a smlouva;4a–b totéž externě;4c prominentní notice specifických změněných částí v distribuovaných změnách.",
+    "limitationsCs": "Bod5 vládě a osobám jejím jménem placená celosvětová neodvolatelná licence k reprodukci/derivátům/public performance/display. Body6–7 vylučují záruky, správnost, bezchybnost i nepřímé/trestní škody pro držitele, licencory, USA/DOE/zaměstnance.",
+    "compatibilityCs": "Žádná jiná licence/verze či reciprocity. Vládní práva jsou vedle běžného grantu, nikoli povinnost soukromých příjemců odevzdat zdroje."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/EPICS.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Body2–4 neexkluzivní bezplatné oprávnění s notices/externími označenými změnami."
+    }
+  ]
+}

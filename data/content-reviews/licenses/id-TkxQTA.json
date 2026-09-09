@@ -1,0 +1,27 @@
+{
+  "id": "NLPL",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:e0397012dde7c1a1e182e054173ed210a021a1b12203147f8c40ab1f6a49365d"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Verze 0 dovoluje bez omezení libovolně nakládat s dílem i samotnou licencí; nestanoví povinnosti zachování oznámení.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "NO LIMIT PUBLIC LICENSE verze 0 z června 2012 se vztahuje na dílo i licenční text.",
+    "grantCs": "Jediný bod 0 dovoluje bez omezení cokoli s dílem a licencí, včetně komerce, změn a sublicencí. Neobsahuje výslovný patentový grant.",
+    "conditionsCs": "Bod 0 a celý text neukládají oznámení, zdroje, stejnou licenci ani jiné podmínky, proto povinnosti a jejich spouštěče jsou prázdné.",
+    "limitationsCs": "Celý text neobsahuje záruční či odpovědnostní doložky, omezení názvu nebo ukončení práv.",
+    "compatibilityCs": "Verze 0 není doložka or-later; neomezený grant není samostatné potvrzení konkrétní kombinace."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/NLPL.html",
+      "note": "Individuální revize celého připnutého textu; NO LIMIT PUBLIC LICENSE verze 0 z června 2012 se vztahuje na dílo i licenční text."
+    }
+  ]
+}

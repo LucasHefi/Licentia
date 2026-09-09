@@ -1,0 +1,29 @@
+{
+  "id": "Sleepycat",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:5f3b9448820b8c333f05dd44d56d80145f0f80f6817006702d62cdad4ae46c1e"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Sleepycat dovoluje i upravené zdrojové a binární distribuce se zachováním všech tří sad licenčních oznámení. Požaduje dostupnost úplného zdroje databáze i doprovodného programu, který ji používá: přiložením nebo za omezený distribuční poplatek. Zdroj musí být volně dále šiřitelný za přiměřených podmínek, což není příkaz použít tutéž licenci. Právě tuto zvláštní podmínku a její rozsah musí průvodce nejprve umět vyjádřit.",
+  "blockersCs": [
+    "Zdroj DB i doprovodného programu musí být volně redistribuovatelný za reasonable conditions, což není totožné se same-license; před zařazením je třeba model této podmínky bez zploštění licenčního rozsahu."
+  ],
+  "analysis": {
+    "subjectCs": "Složený Sleepycat text obsahuje vlastní DB podmínky a samostatné notice/disclaimer bloky Regents of California a Harvard.",
+    "grantCs": "Všechny tři granty dovolují zdrojovou/binární redistribuci a užití se změnami i bez.",
+    "conditionsCs": "Každý blok zachovává svůj copyright, podmínky a disclaimer ve zdroji či doprovodu binárek. Sleepycat třetí odrážka vyžaduje informaci o úplném zdroji DB i doprovodného software, který DB používá: přiložený nebo nejvýše za distribuční náklady+nominální poplatek a volně redistribuovatelný za reasonable conditions.",
+    "limitationsCs": "Úplný zdroj executable zahrnuje všechny moduly s výjimkou souborů běžně doprovázejících hlavní OS komponenty. California/Harvard zakazují endorsement jmény univerzit/přispěvatelů bez svolení; všechny bloky vylučují záruky/odpovědnost.",
+    "compatibilityCs": "Tři bloky se zachovávají podle jejich částí, nejsou tři alternativní licence. Zdroj má dvě dodací cesty a reasonable conditions není výslovná identical-license povinnost."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Sleepycat.html",
+      "note": "Individuálně přečten celý připnutý text; Každý blok zachovává svůj copyright, podmínky a disclaimer ve zdroji či doprovodu binárek. Sleepycat třetí odrážka vyžaduje informaci o úplném zdroji DB i doprovodného software, který DB používá: přiložený nebo nejvýše za distribuční náklady+nominální poplatek a volně redistribuovatelný za reasonable conditions. Všechny tři plné bloky nemají výslovný patentový grant nebo patentové ukončení."
+    }
+  ]
+}

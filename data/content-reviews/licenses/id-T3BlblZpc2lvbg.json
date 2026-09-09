@@ -1,0 +1,22 @@
+{
+  "id": "OpenVision",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.6",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:ce521d2b00ace76b3eeb8b771edc8c6a619f63d3e6e03049ef14f26b606d0950"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Text dovoluje užití a distribuci zdrojů i přeloženého objektového kódu s úpravami nebo bez nich. Současně tvrdí, že OpenVision drží copyright i k odvozeným dílům vytvořeným třetí stranou. Tento nárok nelze zjednodušit na běžné zachování copyrightového oznámení a vyžaduje posouzení. Stažením zdrojů přijímáte podmínky; text vylučuje záruky a vyjmenované škody.",
+  "blockersCs": [
+    "Posoudit právní význam nároku OpenVision na copyright odvozených děl vytvořených třetími stranami a vztah k vlastnímu autorství příspěvků. Případnou podmínku práv k úpravám nelze nahradit include-copyright ani same-license. Nezaměňovat tento samostatný text za MIT nebo HPND sell varianty; doložit relevantní zdroj a kontext."
+  ],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/OpenVision.html",
+      "note": "Dřívější individuální revize 2026-09-09.6; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "CDLA-Permissive-1.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:75d6336358cd48259f3cd4810345231f2789e629e88d7ff777e7cec23ff03d10"
+  },
+  "disposition": "blocked",
+  "summaryCs": "CDLA-Permissive1.0 licencuje data a databázová práva pro užití a zpřístupňování, včetně vzdáleného přístupu. Publikované údaje mohou mít vlastní licenci, ale zachovávají atribuci a informaci o CDLA; soubory obohacených dat výrazně označují změny. Výsledky výpočtů obsahující nejvýše de minimis vstupních dat nemají tyto povinnosti. Poskytovatel prohlašuje přiměřenou péči o práva a soukromí; vznikají zvláštní povinnosti právní součinnosti a široké ukončení při žalobě související s daty, nejen patentové.",
+  "blockersCs": [
+    "§§1–3 rozlišují Data, Enhanced Data a Computational Results s prahovou hodnotou de minimis a poskytují sui generis databázová práva. Model průvodce softwarovou licencí neumí tato práva ani hranici výsledků zachovat; je nutná datová větev, nikoli doporučení pro nový software.",
+    "§5.2 ukončuje práva při žalobě založené na Data proti poskytovateli nebo jinému příjemci, s jedinou výjimkou žaloby za porušení dohody. Nelze ji zúžit na patentovou odvetu. §§4.1,7.1–7.4 navíc vyžadují přiměřenou péči a součinnost, neprosazování osobnostních práv a nevyhrazení soukromí publikovaných dat; tyto datové závazky je třeba samostatně modelovat."
+  ],
+  "analysis": {
+    "subjectCs": "Data jsou jednotlivé či souhrnné informace včetně chráněného textu a obrazů; §2.2 zahrnuje copyright, výběr/uspořádání a sui generis databázová práva. Enhanced Data jsou publikované doplňky/změny, nikoli Results z analýzy. Výsledek smí obsahovat nejvýše de minimis vstupních dat (§1.10).",
+    "grantCs": "§2 uděluje celosvětové nevýhradní právo Use a Publish, neodvolatelné kromě §5, každému příjemci. §1.12 Use zahrnuje kopie, studium, adaptaci a výpočetní analýzu. §§3.1–3.2 dovolují vlastní podmínky publikovaných dat, Enhanced Data i kombinace při zachování uvedených povinností. §2.3 výslovně vylučuje další IP nad rámec udělených datových práv, tedy ani neuděluje patentovou licenci.",
+    "conditionsCs": "Publish zahrnuje jakýkoli způsob umožňující užití včetně vzdáleného přístupu, avšak zaměstnanci/smluvníci/agenti pracující pro Entity jsou interní (§1.8). §3.1(a) dovoluje předat text CDLA, její název a/nebo hyperlink či jiný přiměřený způsob získání textu; nejde o kumulativní povinnost všeho. Změněné soubory nesou prominentní notice a při publikaci přijatých dat se zachovává existující atribuce, právní metadata, identita poskytovatelů a prakticky uchovatelné odkazy. §3.4 osvobozuje Results. §7.1 požaduje přiměřenou pomoc poskytovateli plnit právní povinnosti.",
+    "limitationsCs": "§4.1 představuje prohlášení reasonable care o původu práv a neporušení převzatých závazků soukromí/důvěrnosti; §6.1 jej nevylučuje výlukou ostatních záruk. §6.2 chrání uživatele i poskytovatele před vyjmenovanými škodami. §5.1 při podstatném porušení bez nápravy v přiměřené době od zjištění vyžaduje zastavit i příjem/užití, ale předchozí udělená práva a povinnosti přežívají. §5.2 zahrnuje široké žaloby založené na datech i cross-claim, vyjímá jen vymáhání dohody. §7.2 strany v právně dovoleném rozsahu neprosazují moral rights; §7.4 publikují bez vyhrazení soukromí/důvěrnosti.",
+    "compatibilityCs": "Vlastní podmínky Enhanced Data jsou výslovně dovoleny; §3.3 nevytváří společné autorství, účetní povinnost ani potřebu souhlasu původních poskytovatelů. §7.5 umožňuje původně přijatou či libovolnou pozdější verzi vydanou pracovním kolektivem Linux Foundation. Žádný softwarový source/binary copyleft ani obecná GPL kompatibilita nejsou stanoveny."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/CDLA-Permissive-1.0.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; §§3.1–3.4 vlastní licence dat i obohacení a nezatížené Results; permisivní rodina v datovém významu, ne softwarový copyleft"
+    }
+  ]
+}

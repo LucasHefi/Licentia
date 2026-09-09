@@ -1,0 +1,29 @@
+{
+  "id": "NRL",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:1b3e0c26f675d31ce42b6502518237276839d90f97f2ab22721ba3abc3f07071"
+  },
+  "disposition": "blocked",
+  "summaryCs": "NRL grant dovoluje užití a zdrojovou/binární distribuci částí vytvořených v NRL s notices a dvěma reklamními poděkováními. Výslovně zachovává závaznost UC Berkeley licence pro části Net/2 a 4.4-Lite, jejíž konkrétní znění není připojeno.",
+  "blockersCs": [
+    "Copyright Notice a podmínka 1 vyžadují dodržet veškeré podmínky UC Berkeley u částí Net/2 a 4.4-Lite a odkazují na jejich původní souborová oznámení. Je třeba doložit konkrétní soubory a historické Berkeley licence/dodatky; samotný NRL text ani název BSD nepotvrzují kompletní oprávnění a povinnosti těchto částí."
+  ],
+  "analysis": {
+    "subjectCs": "Dokumentace/software různých developerů; NRL část má přidělená práva a některý copyright mimo USA, Berkeley části vlastní UC Regents.",
+    "grantCs": "NRL uděluje source/binary use/redistribution with/without modification pouze materiálu vytvořenému v NRL. Berkeley části mají vlastní závazný grant neobsažený v textu; patentová licence není výslovná.",
+    "conditionsCs": "Zachovat konkrétní copyrighty v odvozeninách; bod1 dodržet Berkeley terms,2–3 source/binary notices,4 reklama features/use dvě přesné věty pro Berkeley a IT Division NRL.",
+    "limitationsCs": "Bod5 NRL/contributors endorsement jen s písemným souhlasem. AS IS/warranty/liability; závěr názory nejsou oficiální NRL politikou.",
+    "compatibilityCs": "Jde o souběžná práva ke konkrétním částem, nikoli volbu NRL versus BSD. Historický Berkeley dodatek či moderní BSD variantu nelze automaticky dosadit."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/NRL.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; NRL LICENSE dovoluje obecné nakládání se svými částmi; Copyright Notice odděluje závazné Berkeley souborové licence."
+    }
+  ]
+}

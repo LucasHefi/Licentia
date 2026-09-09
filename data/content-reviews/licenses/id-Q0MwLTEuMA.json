@@ -1,0 +1,27 @@
+{
+  "id": "CC0-1.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:a606cc2298bbe01df47bd1cde83c3d422c5833222e28a71bb2929ee716c659a6"
+  },
+  "disposition": "eligible",
+  "summaryCs": "CC0 se v nejširším dovoleném rozsahu vzdává autorských a souvisejících práv, aby dílo mohlo být užíváno pro jakýkoli účel včetně komerčního. Pokud vzdání neúčinkuje, nastupuje bezplatná neodvolatelná licence a doplňující závazek práva neprosazovat proti záměru CC0. Nevyžaduje atribuci, licenční oznámení, zveřejnění zdrojů ani stejnou licenci odvozenin. Patentová a známková práva zůstávají nedotčena a poskytovatel nezaručuje bezvadnost ani zajištění cizích práv.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "CC0 1.0 Universal se vztahuje na autorské dílo či databázi a související práva, pouze pokud náležejí Affirmerovi.",
+    "grantCs": "§1–2 celosvětově, neodvolatelně, bezpodmínečně a na maximální dobu vzdávají nynější/budoucí copyright a související práva pro jakýkoli účel včetně komerčního/reklamního. §3 při neúčinném vzdání uděluje stejný rozsah neodvolatelnou bezplatnou nevýlučnou licencí a při částečné neúčinnosti i příslibem neuplatňovat práva proti záměru CC0.",
+    "conditionsCs": "Vzdání ani záložní grant neukládají copyrightové notices, credit, licence, zdroje nebo stejné podmínky. Fallback je nepřevoditelný a nesublicencovatelný, ale udělovaný přímo každému dotčenému příjemci.",
+    "limitationsCs": "§4a zachovává patentová a známková práva Affirmera nedotčená. §4b poskytuje AS IS bez záruk včetně titulu/bezvadnosti; §4c odmítá odpovědnost za zajištění cizích práv/souhlasů. CC není stranou a nemá povinnosti.",
+    "compatibilityCs": "Waiver, fallback a konečný nonassertion se doplňují podle platnosti místního práva, nejsou volbou různých compliance povinností. Rozsah široce zahrnuje copyright softwaru bez zvláštního zdrojového nebo obsahového omezení."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/CC0-1.0.html",
+      "note": "Individuálně přečten celý připnutý text; Vzdání ani záložní grant neukládají copyrightové notices, credit, licence, zdroje nebo stejné podmínky. Fallback je nepřevoditelný a nesublicencovatelný, ale udělovaný přímo každému dotčenému příjemci. §4a výslovně nepromíjí, nevzdává se ani nelicencuje patentová práva; jde o express-exclusion, nikoli patentový grant či žalobní ukončení."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "Unlicense-libwhirlpool",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:a0feca4fa1cc51206697e323e871896ec74c803d3f9cf8f6303a0e53fd407ef7"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Software je uvolněn do public domain s výslovným povolením kopírovat, upravovat, publikovat, kompilovat, prodávat a šířit zdrojové i binární formy pro jakýkoli účel. Poskytuje se bez záruk.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Tento software ve zdrojové i přeložené binární podobě.",
+    "grantCs": "Vedle public-domain prohlášení výslovně dovoluje copy, modify, publish, use, compile, sell a distribute libovolnými prostředky, komerčně i nekomerčně. Patentový grant neuvádí.",
+    "conditionsCs": "Neukládá povinná oznámení, dodání zdroje či stejné licencování.",
+    "limitationsCs": "AS IS bez výslovných i odvozených záruk, včetně prodejnosti, vhodnosti a neporušování práv. Odpovědnostní věta plné Unlicense zde není.",
+    "compatibilityCs": "Neobsahuje jinou verzi ani zvláštní kompatibilitní cestu; ostatní ustanovení plné Unlicense se nepřebírají."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Unlicense-libwhirlpool.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; První odstavec kombinuje public domain prohlášení a explicitní neomezený grant."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "HPND-MIT-disclaimer",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.4",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:da0a775a5b7fda807102dc4c9cde2af0778e71e1bd1261630d9070ae2959247c"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Zachovejte původní copyright ve všech kopiích a copyright i svolovací oznámení v podpůrné dokumentaci. Jméno autora nepoužívejte bez předchozího písemného souhlasu v reklamě či publicitě k distribuci. Varianta obsahuje vyloučení záruk a odpovědnosti ve stylu MIT.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/HPND-MIT-disclaimer.html",
+      "note": "Dřívější individuální revize 2026-09-09.4; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

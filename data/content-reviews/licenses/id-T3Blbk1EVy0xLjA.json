@@ -1,0 +1,29 @@
+{
+  "id": "OpenMDW-1.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:ab0beb6c86f2ea2c515b18f29c4e977ee0d133c59ae7b4dde3aecf0834854a70"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Neomezený grant k modelům a souvisejícím artefaktům zahrnuje copyrighty, patenty, databázová práva a obchodní tajemství. Distribuce zachová licenci a použitelná oznámení; patentová žaloba ruší všechna práva s výjimkou reakce na odpovídající žalobu. Výstupy nemají licenční povinnosti.",
+  "blockersCs": [
+    "Předmět tvoří ML modely a přidružené artefakty se zvláštním vynětím výstupů a výslovným přenesením clearance cizích práv. Doplnit model modelových materiálů/výstupů před doporučením jako licence nového obecného softwaru."
+  ],
+  "analysis": {
+    "subjectCs": "Model Materials zahrnují architekturu a parametry modelů i poskytnutá data, dokumentaci a software; výstupy vytvořené užitím jsou výslovně odděleny.",
+    "grantCs": "Permission odstavec dovoluje bez poplatku neomezené nakládání pod všemi copyright/patent/database/trade-secret právy obsaženými v materiálech. Patenty jsou výslovné; poskytování výstupů nevytváří zdejší omezení či povinnosti.",
+    "conditionsCs": "Distribuce jakékoli části zachovává kopii dohody a všechna k ní použitelná copyright/origin oznámení. Užití práv znamená souhlas; clearance cizích práv, souhlasy a potřebná due diligence zůstávají výhradně příjemci. Výstupy nemají žádné zdejší use/modify/share povinnosti.",
+    "limitationsCs": "Podání, vedení nebo dobrovolná účast v patentové žalobě kvůli přímému/nepřímému porušení Model Materials ruší všechna práva, leda jde o odpověď na odpovídající dřívější žalobu proti příjemci. Disclaimer odmítá záruky i latentní chyby a veškerou odpovědnost poskytovatelů.",
+    "compatibilityCs": "Výstupní výjimka neřeší cizí práva v modelu/výstupu. Žádná jiná licence či verze není určena; nelze považovat patentový grant za potvrzení clearance třetích stran."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/OpenMDW-1.0.html",
+      "note": "Individuální revize celého připnutého textu; Model Materials zahrnují architekturu a parametry modelů i poskytnutá data, dokumentaci a software; výstupy vytvořené užitím jsou výslovně odděleny."
+    }
+  ]
+}

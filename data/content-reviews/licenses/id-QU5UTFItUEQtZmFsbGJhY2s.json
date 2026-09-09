@@ -1,0 +1,29 @@
+{
+  "id": "ANTLR-PD-fallback",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:6dccfd2efa0fbeffcdd343a38b162ba541b312dca12b12147fb8d99ecdcbf914"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Text ANTLR 2 prohlašuje zdroj i generovaný kód za public domain a žádá o zachování hlaviček a uznání autorů pouze dobrovolně. Pro země, kde public domain neplatí, však záložní licence omezuje sublicencování odvozenin na licence schválené OSI. Průvodce jej nezařazuje, dokud nebude zachycena tato územně podmíněná alternativa a její omezení.",
+  "blockersCs": [
+    "Fallback pro země bez public domain omezuje sublicencování odvozenin na OSI schválené licence; před doporučením je třeba modelovat teritoriální alternativu a omezenou množinu sublicencí bez zploštění na neomezené sublicencování."
+  ],
+  "analysis": {
+    "subjectCs": "ANTLR 2 text pokrývá distribuovaný zdroj i kód generovaný ANTLR a obsahuje teritoriálně podmíněnou záložní licenci.",
+    "grantCs": "Úvod rezervuje nulová práva a dovoluje cokoli včetně komerčního začlenění. Tam, kde public domain není platné, závěr dovoluje neomezené nakládání a sublicencování odvozenin pod libovolnou OSI schválenou open-source licencí.",
+    "conditionsCs": "Uznání autorů při užití či začlenění, zmínka o použitém ANTLR a neporušené hlavičky jsou zdvořilé žádosti; závěr však záložní sublicenci odvozenin výslovně váže na OSI schválené licence.",
+    "limitationsCs": "Text neobsahuje výluky záruk či odpovědnosti; očekávání dalšího vývoje není povinnost vydavatele. Rozdíl mezi public domain a fallbackem závisí na zemi.",
+    "compatibilityCs": "Nejde o bezpodmínečné sublicencování pod libovolnými podmínkami: fallback říká OSI approved Open Source licence; konkrétní volba není stanovena."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/ANTLR-PD-fallback.html",
+      "note": "Individuálně přečten celý připnutý text; Uznání autorů při užití či začlenění, zmínka o použitém ANTLR a neporušené hlavičky jsou zdvořilé žádosti; závěr však záložní sublicenci odvozenin výslovně váže na OSI schválené licence. Celý text včetně fallbacku neobsahuje výslovný patentový grant ani odvetné ukončení."
+    }
+  ]
+}

@@ -8,95 +8,104 @@
     "contentHash": "sha256:e4c445ed93e2f9e1fac5441218aba9ab0c42a6a2901cf2b2b8916534828b8e21"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
       "modifications",
-      "sublicensing"
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "include-license-text"
-    ],
-    "triggers": [
+      "include-notice",
+      "include-use-acknowledgment",
+      "mark-modifications",
       "unknown"
     ],
-    "restrictions": [
-      "liability",
-      "trademark"
+    "triggers": [
+      "distribution",
+      "unknown",
+      "use"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "restrictions": [
+      "additional-terms",
+      "liability",
+      "trademark",
+      "unknown",
+      "warranty"
+    ],
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-2.5.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-2.5.json#text; §3b/§4 permissivní adaptace bez reciprocity a bez zdrojových povinností; zachování práv původního Work není whole-work copyleft.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-2.5.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-2.5.json#text; §3b/§4 permissivní adaptace bez reciprocity a bez zdrojových povinností; zachování práv původního Work není whole-work copyleft.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-BY-2.5.json#text; §3 světový bezroyalty nevýhradní copyright grant po dobu práv: reprodukce, kolekce, deriváty, distribuce a veřejná provedení/displej/digital-audio všech těchto forem, včetně nutných formátových změn. §3e–f vzdání performance royalties, mechanických odměn pro covers a webcast odměn podle popsaných zákonných režimů. Bez patentového grantu; §4a zákaz sublicence.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-BY-2.5.json#text; §4a kopie NEBO URI licence, zachovat licence a warranty notices při distribuci/veřejném užití původního Work, žádné další omezení ani neslučitelné access/use DRM. Na notifikaci poskytovatele prakticky možné odstranit požadovaný §4b kredit z kolekce/derivátu. §4b zachovat copyright, dodané jméno/pseudonym autora a/nebo určené strany (např. sponsor), titul a rozumně dosažitelné relevantní URI; adaptace identifikuje použití původního díla, kredit alespoň stejně výrazný jako srovnatelní autoři.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-2.5.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-2.5.json#text; §4a kopie NEBO URI licence, zachovat licence a warranty notices při distribuci/veřejném užití původního Work, žádné další omezení ani neslučitelné access/use DRM. Na notifikaci poskytovatele prakticky možné odstranit požadovaný §4b kredit z kolekce/derivátu. §4b zachovat copyright, dodané jméno/pseudonym autora a/nebo určené strany (např. sponsor), titul a rozumně dosažitelné relevantní URI; adaptace identifikuje použití původního díla, kredit alespoň stejně výrazný jako srovnatelní autoři.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-BY-2.5.json#text; §5 as-is bez záruk včetně právního původu, leda písemná dohoda či zákon; nejde o záruky CC1.0. §6 škodové výluky v zákonných mezích. §7 automatický konec porušením, řádní příjemci adaptací/kolekcí zachováni, jiné pozdější licence či zastavení vydávání neodebírá tento grant. CC známky jen identifikace licence nebo písemný souhlas dle then-current guidelines.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-2.5.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-2.5.json#text; §3 světový bezroyalty nevýhradní copyright grant po dobu práv: reprodukce, kolekce, deriváty, distribuce a veřejná provedení/displej/digital-audio všech těchto forem, včetně nutných formátových změn. §3e–f vzdání performance royalties, mechanických odměn pro covers a webcast odměn podle popsaných zákonných režimů. Bez patentového grantu; §4a zákaz sublicence.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-BY-2.5.json#text; §4a kopie NEBO URI licence, zachovat licence a warranty notices při distribuci/veřejném užití původního Work, žádné další omezení ani neslučitelné access/use DRM. Na notifikaci poskytovatele prakticky možné odstranit požadovaný §4b kredit z kolekce/derivátu. §4b zachovat copyright, dodané jméno/pseudonym autora a/nebo určené strany (např. sponsor), titul a rozumně dosažitelné relevantní URI; adaptace identifikuje použití původního díla, kredit alespoň stejně výrazný jako srovnatelní autoři.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-2.5.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-2.5.json#text; Individuálně přečten celý připnutý text. §1 obecné copyrightové dílo, nezměněný originál v nezávislé kolekci není derivát; synchronizace hudební skladby nebo nahrávky s obrazem je derivát. You nezahrnuje dřívějšího porušovatele bez nového výslovného povolení. CC BY 2.5 dovoluje komerční adaptace s atribucí autora i případných určených dalších stran. Nevyžaduje SA pro deriváty, ale zachovává podmínky původního díla, zakazuje neslučitelné DRM a umožňuje požadovat odstranění kreditu. Výslovně se vzdává určených hudebních odměn. § 4a vyžaduje odstranění kreditu na notifikaci a zakazuje neslučitelné technologické řízení přístupu/užití. Doplnit model request-removal/DRM a obsahové licence; tuto obecnou CC variantu neprezentovat jako úplnou softwarovou volbu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

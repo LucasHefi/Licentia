@@ -8,94 +8,103 @@
     "contentHash": "sha256:a517556467e5afe788a2ac6302fba5e8ef3d5ca50ce64f11e40d5a6ac035ebc1"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "weak-copyleft",
+    "copyleftScope": "library",
     "permissions": [
       "commercial-use",
       "distribution",
       "modifications",
-      "patent-grant"
+      "private-use"
     ],
     "obligations": [
-      "provide-corresponding-source"
-    ],
-    "triggers": [
+      "include-copyright",
+      "include-license-text",
+      "mark-modifications",
+      "provide-corresponding-source",
       "unknown"
     ],
-    "restrictions": [
-      "liability"
+    "triggers": [
+      "distribution",
+      "modification",
+      "use"
     ],
-    "patentPosition": "express-grant",
-    "noticeBurden": "unknown"
+    "restrictions": [
+      "liability",
+      "trademark",
+      "unknown",
+      "warranty"
+    ],
+    "patentPosition": "express-exclusion",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/FDK-AAC.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/FDK-AAC.json#text; Fraunhofer FDK AAC Codec licence 1995–2012 pokrývá AAC knihovnu; Android je zamýšlená platforma, ne výslovný zákaz ostatních systémů. §2 dovoluje zdrojovou/binární redistribuci a užití se změnami i bez copyrightových licenčních poplatků. §3 výslovně vylučuje jakýkoli výslovný i implicitní patentový grant včetně Fraunhofer. Zdrojová povinnost míří na knihovnu a její změny, nikoli libovolnou celou aplikaci; text nepřikazuje licenci cizího programu.; https://spdx.org/licenses/FDK-AAC.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/FDK-AAC.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/FDK-AAC.json#text; Zdrojová povinnost míří na knihovnu a její změny, nikoli libovolnou celou aplikaci; text nepřikazuje licenci cizího programu.; https://spdx.org/licenses/FDK-AAC.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/FDK-AAC.json#text; §2 dovoluje zdrojovou/binární redistribuci a užití se změnami i bez copyrightových licenčních poplatků. §3 výslovně vylučuje jakýkoli výslovný i implicitní patentový grant včetně Fraunhofer.; https://spdx.org/licenses/FDK-AAC.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/FDK-AAC.json#text; Zdroj i binární doprovod zachovají celý text; příjemci binárek dostanou bezplatný kompletní zdroj včetně změn. Nesmějí se účtovat copyrightové licenční poplatky za užití/kopírování/distribuci. Změny se nápadně označí s datem a název se nahradí předepsaným Third-Party Modified Version názvem.; https://spdx.org/licenses/FDK-AAC.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/FDK-AAC.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/FDK-AAC.json#text; Zdroj i binární doprovod zachovají celý text; příjemci binárek dostanou bezplatný kompletní zdroj včetně změn. Nesmějí se účtovat copyrightové licenční poplatky za užití/kopírování/distribuci. Změny se nápadně označí s datem a název se nahradí předepsaným Third-Party Modified Version názvem.; https://spdx.org/licenses/FDK-AAC.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/FDK-AAC.json#text; Fraunhofer jméno nesmí bez souhlasu podporovat produkty; §3 dovoluje užití jen pro účely schválené příslušnými patentovými licencemi. AS IS vylučuje záruky/odpovědnost.; https://spdx.org/licenses/FDK-AAC.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/FDK-AAC.json#text; §3 NO PATENT LICENSE výslovně vylučuje express/implied patenty a vyžaduje odpovídající samostatné patentové oprávnění; patentové žalobní ukončení nestanoví.; https://spdx.org/licenses/FDK-AAC.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/FDK-AAC.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/FDK-AAC.json#text; Zdroj i binární doprovod zachovají celý text; příjemci binárek dostanou bezplatný kompletní zdroj včetně změn. Nesmějí se účtovat copyrightové licenční poplatky za užití/kopírování/distribuci. Změny se nápadně označí s datem a název se nahradí předepsaným Third-Party Modified Version názvem. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/FDK-AAC.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/FDK-AAC.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/FDK-AAC.json#text; Individuální kontrola celého připnutého textu FDK-AAC dne 2026-09-09. Fraunhofer FDK AAC Codec licence 1995–2012 pokrývá AAC knihovnu; Android je zamýšlená platforma, ne výslovný zákaz ostatních systémů. Licence vyžaduje samostatně patentově dovolený účel, zakazuje copyrightové licenční poplatky a předepisuje nové jméno změněné knihovny; před doporučením je třeba model těchto podmínek. Úvodní Via Licensing a individuální patentoví vlastníci jsou možné oddělené zdroje patentových oprávnění, nikoli grant této licence; historická tvrzení o účinnosti kodeků se neberou jako aktuální závěr.; https://spdx.org/licenses/FDK-AAC.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

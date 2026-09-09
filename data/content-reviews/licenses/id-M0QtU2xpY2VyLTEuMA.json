@@ -1,0 +1,29 @@
+{
+  "id": "3D-Slicer-1.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:c838d1479774a6fb2225f0bd014f32f058c213c7cd91498ccf27a236c158ce12"
+  },
+  "disposition": "blocked",
+  "summaryCs": "3D Slicer 1.0 dovoluje změny, distribuci, podlicence i začlenění do proprietárního softwaru při zachování oznámení a označení úprav. Zveřejnění vlastních změn je dobrovolné, ale uživatel musí zajistit potřebná cizí práva a poučit o nich další příjemce. Přispěvatelé navíc poskytují zvláštní ujištění o právech a pacientských datech; uživatelé přebírají exportní a odpovědnostní závazky. Odlišné role a povinnosti vyžadují samostatné posouzení, proto licenci průvodce nenabízí.",
+  "blockersCs": [
+    "A vyžaduje příspěvková/regulovaná datová ujištění, B ukládá získat a downstream vysvětlit cizí práva i obecnou indemnitu/exportní soulad; před doporučením je nutný model oddělených rolí a těchto povinností."
+  ],
+  "analysis": {
+    "subjectCs": "3D Slicer 1.0 z 20. prosince 2005 kombinuje A příspěvky Brighamu, B stahování softwaru/dat a C společná pravidla.",
+    "grantCs": "B1–2 dovoluje užití, reprodukci, odvozeniny, zobrazení, distribuci i sublicence a proprietární začlenění či vlastní podmínky změn. A4 uděluje od přispěvatele Brighamu trvalý grant včetně patentů a kombinací, což se nesmí automaticky vydávat za výslovný patentový grant uživateli v B.",
+    "conditionsCs": "B1 předává všechny B podmínky s předepsanou úvodní větou ve zdroji, executable i dokumentaci, zachovává notices a označí změny; zveřejnění změn je pouze consider a výslovně nepovinné. B3 požaduje zajistit potřebná cizí práva a poučit sublicencory/end-users o tomtéž. A2/6 při příspěvku vyžaduje oprávnění, deidentifikovaná/legálně zpřístupněná pacientská data a ujištění o absenci recipročně licencovaného kódu.",
+    "limitationsCs": "B4 označuje klinické užití za nedoporučené a vyžaduje právní/exportní/importní soulad; komercializaci nezakazuje. B5 AS IS bez podpory/záruk, plná liability/indemnity za vlastní užití a distribuci. B6 omezuje jména/loga i financující instituce; B7 porušení automaticky ruší B1–2. C určuje Massachusetts a nahrazuje dřívější Slicer podmínky.",
+    "compatibilityCs": "Příspěvková A a uživatelská B mají odlišné aktéry; A se vztahuje i na historické příspěvky. Vlastní sublicence změn jsou dovoleny při zachování B a nemění cizí licence."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/3D-Slicer-1.0.html",
+      "note": "Individuálně přečten celý připnutý text; B1 předává všechny B podmínky s předepsanou úvodní větou ve zdroji, executable i dokumentaci, zachovává notices a označí změny; zveřejnění změn je pouze consider a výslovně nepovinné. B3 požaduje zajistit potřebná cizí práva a poučit sublicencory/end-users o tomtéž. A2/6 při příspěvku vyžaduje oprávnění, deidentifikovaná/legálně zpřístupněná pacientská data a ujištění o absenci recipročně licencovaného kódu. A4 patentově licencuje příspěvek směrem k Brighamu s právem sublicence; B neobsahuje samostatný výslovný patentový grant stahujícímu a B8 rezervuje jiná výslovně neudělená IP práva. Patentové žalobní ukončení není."
+    }
+  ]
+}

@@ -9,8 +9,8 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
     "family": "permissive",
@@ -19,84 +19,88 @@
       "commercial-use",
       "distribution",
       "modifications",
+      "private-use",
       "sublicensing"
     ],
     "obligations": [
       "include-copyright",
-      "provide-corresponding-source"
+      "include-license-text",
+      "include-notice"
     ],
     "triggers": [
-      "unknown"
+      "distribution"
     ],
     "restrictions": [
-      "liability"
+      "liability",
+      "trademark",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.no-copyleft",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.permissive-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/XFree86-1.1.json#text; Široký grant s distribučními oznámeními a uznáním nevyžaduje stejnou licenci nebo zdroje; permisivní, scope none.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/XFree86-1.1.json#text; Široký grant s distribučními oznámeními a uznáním nevyžaduje stejnou licenci nebo zdroje; permisivní, scope none.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/XFree86-1.1.json#text; Permission odstavec výslovně dovoluje use/copy/modify/merge/publish/distribute/sublicense/sell i stejné svolení příjemcům. Patentový grant není výslovný.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "restrictions",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/XFree86-1.1.json#text; Bod 1 uchová copyright, podmínky a disclaimer ve zdrojích. Bod 2 v materiálech binárek na stejném místě a ve stejné formě jako ostatní copyright/licence/disclaimery. Bod 3 předepsané uznání v existující end-user dokumentaci ve stejné podobě/místě jako jiná third-party uznání, ALTERNATIVNĚ v softwaru; není povinné vytvářet neexistující dokumentaci.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/XFree86-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/XFree86-1.1.json#text; Bod 1 uchová copyright, podmínky a disclaimer ve zdrojích. Bod 2 v materiálech binárek na stejném místě a ve stejné formě jako ostatní copyright/licence/disclaimery. Bod 3 předepsané uznání v existující end-user dokumentaci ve stejné podobě/místě jako jiná third-party uznání, ALTERNATIVNĚ v softwaru; není povinné vytvářet neexistující dokumentaci.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/XFree86-1.1.json#text; Bod 4 kromě vlastního notice zakazuje propagaci prodeje/užití/jiného nakládání jménem XFree86 bez předchozí písemné autorizace. Disclaimer odmítá záruky a škody projektu/přispěvatelů.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/XFree86-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/XFree86-1.1.json#text; Permission odstavec výslovně dovoluje use/copy/modify/merge/publish/distribute/sublicense/sell i stejné svolení příjemcům. Patentový grant není výslovný.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/XFree86-1.1.json#text; Bod 1 uchová copyright, podmínky a disclaimer ve zdrojích. Bod 2 v materiálech binárek na stejném místě a ve stejné formě jako ostatní copyright/licence/disclaimery. Bod 3 předepsané uznání v existující end-user dokumentaci ve stejné podobě/místě jako jiná third-party uznání, ALTERNATIVNĚ v softwaru; není povinné vytvářet neexistující dokumentaci.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/XFree86-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/XFree86-1.1.json#text; Individuálně přečten celý připnutý text. XFree86 v1.1 se vztahuje na software a dokumentační soubory definované jako Software. Široký grant zahrnuje sublicence a prodej. Zdrojové/binární distribuce zachovají oznámení; uživatelská dokumentace, pokud existuje, má předepsané uznání XFree86 ve stejném místě a formě jako ostatní, alternativně přímo software. ",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

@@ -18,17 +18,18 @@
     "permissions": [
       "commercial-use",
       "distribution",
-      "modifications",
-      "private-use"
+      "private-use",
+      "unknown"
     ],
     "obligations": [
+      "include-advertising-acknowledgment",
       "include-copyright",
       "include-license-text",
       "include-notice"
     ],
     "triggers": [
-      "distribution",
-      "unknown"
+      "advertising",
+      "distribution"
     ],
     "restrictions": [
       "trademark",
@@ -41,47 +42,65 @@
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant (\"Redistribution and use in source and binary forms are permitted\"; broad non-reciprocal BSD-style permission identifies a permissive family)"
+      "locator": "public/data/licenses/BSD-4.3TAHOE.json#text; Text Regents of the University of California z roku 1987 licencuje software v binární i zdrojové formě. Úvod výslovně dovoluje redistribuci a užití zdrojových i binárních forem. Zákaz endorsementu zmiňuje odvozené produkty, avšak vlastní grant nevymezuje rozsah modifikací; toto oprávnění zůstává nevyjasněno. Zachování odstavce a reklamní uznání nejsou zdrojová povinnost ani copyleft.; https://spdx.org/licenses/BSD-4.3TAHOE.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant and notice/acknowledgement condition (permission is non-reciprocal; no same-license, source-disclosure, corresponding-source, linking, or network-use condition is stated)"
+      "locator": "public/data/licenses/BSD-4.3TAHOE.json#text; Zachování odstavce a reklamní uznání nejsou zdrojová povinnost ani copyleft.; https://spdx.org/licenses/BSD-4.3TAHOE.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant (\"Redistribution and use in source and binary forms are permitted\"; no purpose or field-of-use limitation is stated; modification is not separately restricted)"
+      "locator": "public/data/licenses/BSD-4.3TAHOE.json#text; Úvod výslovně dovoluje redistribuci a užití zdrojových i binárních forem. Zákaz endorsementu zmiňuje odvozené produkty, avšak vlastní grant nevymezuje rozsah modifikací; toto oprávnění zůstává nevyjasněno.; https://spdx.org/licenses/BSD-4.3TAHOE.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text: sole grant condition (the copyright notice and this paragraph must be duplicated in all source and binary forms; documentation, advertising materials, and other materials related to distribution/use must acknowledge development by the University of California, Berkeley)"
+      "locator": "public/data/licenses/BSD-4.3TAHOE.json#text; Copyright a celý licenční odstavec se kopírují do všech forem; veškerá dokumentace, reklama a ostatní materiály související s distribucí a užitím musí uznat vývoj na University of California, Berkeley.; https://spdx.org/licenses/BSD-4.3TAHOE.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "text: sole grant condition (notice and acknowledgement duties attach to source or binary redistribution and related documentation/advertising materials; advertising is not a dedicated vocabulary trigger and is therefore retained as unknown; modification alone has no separate condition)"
+      "locator": "public/data/licenses/BSD-4.3TAHOE.json#text; Copyright a celý licenční odstavec se kopírují do všech forem; veškerá dokumentace, reklama a ostatní materiály související s distribucí a užitím musí uznat vývoj na University of California, Berkeley.; https://spdx.org/licenses/BSD-4.3TAHOE.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text: endorsement/name sentence (\"The name of the University may not be used to endorse or promote products derived from this software without specific prior written permission\") is a trademark/name restriction; final sentence (\"provided ``AS IS'' without any express or implied warranties\") is a warranty disclaimer and states no separate liability limitation"
+      "locator": "public/data/licenses/BSD-4.3TAHOE.json#text; Jméno univerzity se bez konkrétního předchozího písemného svolení nesmí použít k podpoře či propagaci odvozených produktů; AS IS vylučuje všechny záruky včetně prodejnosti a vhodnosti.; https://spdx.org/licenses/BSD-4.3TAHOE.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "text: complete license text (opening grant, notice/acknowledgement condition, endorsement/name restriction, and warranty sentence contain no express patent grant, patent condition, patent-claim restriction, or patent-termination clause)"
+      "locator": "public/data/licenses/BSD-4.3TAHOE.json#text; Celý odstavec včetně reklamy a endorsementu neobsahuje patentový grant ani patentové ukončení.; https://spdx.org/licenses/BSD-4.3TAHOE.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text: sole grant condition requires duplicating the copyright notice and paragraph in source/binary forms and a prescribed University of California, Berkeley acknowledgement in documentation, advertising, and other distribution-related materials; this creates a material multi-surface notice burden"
+      "locator": "public/data/licenses/BSD-4.3TAHOE.json#text; Copyright a celý licenční odstavec se kopírují do všech forem; veškerá dokumentace, reklama a ostatní materiály související s distribucí a užitím musí uznat vývoj na University of California, Berkeley. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/BSD-4.3TAHOE.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "metadata: id=BSD-4.3TAHOE, name=BSD 4.3 TAHOE License, deprecated=false, osi=false, fsf=false; text: broad permissive grant, mandatory notice and advertising acknowledgement, University endorsement/name restriction, and warranty disclaimer are explicit; the advertising clause is outside the guide vocabulary and the name-use restriction makes this variant not recommendable"
+      "locator": "public/data/licenses/BSD-4.3TAHOE.json#text; Individuální kontrola celého připnutého textu BSD-4.3TAHOE dne 2026-09-09. Text Regents of the University of California z roku 1987 licencuje software v binární i zdrojové formě. Znění výslovně uděluje redistribuci a užití a odvozené produkty zmiňuje jen u jména univerzity; před přiznáním obecného práva změn je nutné doložit tento rozsah z původního kontextu. Žádná alternativní licence či verze není nabízena; podmínky RENO se do tohoto znění nepřenášejí.; https://spdx.org/licenses/BSD-4.3TAHOE.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

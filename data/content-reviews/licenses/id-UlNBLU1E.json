@@ -1,0 +1,29 @@
+{
+  "id": "RSA-MD",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:11cfb8d5c4204dbe72eb0f1625e69c6b6b8396695b17fa7b293043e3280297ec"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Kopie a užití MD5 i tvorba odvozenin jsou dovoleny s předepsaným označením algoritmu ve všech materiálech, které jej zmiňují. Odvozeniny mají odlišné předepsané označení; oznámení zůstávají i v částečných kopiích.",
+  "blockersCs": [
+    "Předepsané uznání se spouští každým materiálem zmiňujícím software/funkci nebo odvozeninu, nikoli pouze reklamou či distribucí. Doplnit tento spouštěč a dvě podmíněné formy označení; ověřit také nevýslovný rozsah redistribuce v primárním kontextu."
+  ],
+  "analysis": {
+    "subjectCs": "Text se vztahuje na RSA MD5 software, jeho funkci, dokumentaci a odvozené práce.",
+    "grantCs": "Odstavce License to copy and use a License ... make and use derivative works dovolují kopie, užití a odvozeniny; samostatná redistribuce/prodej a patentový grant nejsou výslovné.",
+    "conditionsCs": "Všechny materiály zmiňující software/funkci musí uvádět předepsaný název RSA algoritmu; materiály k odvozeninám uvádějí předepsané derived from. Závěr zachovává všechna oznámení v každé kopii části dokumentace nebo softwaru. Povinnost se netýká jen reklamy.",
+    "limitationsCs": "RSA odmítá záruky obchodovatelnosti a vhodnosti a poskytuje software as is bez jakékoli výslovné/implicitní záruky; samostatná výluka odpovědnosti není uvedena.",
+    "compatibilityCs": "Předepsané označování odvozenin není share-alike; licence nevymezuje alternativu nebo verzi."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/RSA-MD.html",
+      "note": "Individuální revize celého připnutého textu; Text se vztahuje na RSA MD5 software, jeho funkci, dokumentaci a odvozené práce."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "HPND-merchantability-variant",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.4",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:4f6797985b5c0b5b6383e7312a3e33f2661abe8a6bf4714d6c6f618e10f79c9d"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Zachovejte copyright a toto oznámení ve všech kopiích. Text povoluje užití, kopírování, úpravy a distribuci souboru pro jakýkoli účel bez poplatku. Vylučuje záruky včetně obchodovatelnosti a vhodnosti pro konkrétní účel; výslovné omezení odpovědnosti neobsahuje.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/HPND-merchantability-variant.html",
+      "note": "Dřívější individuální revize 2026-09-09.4; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

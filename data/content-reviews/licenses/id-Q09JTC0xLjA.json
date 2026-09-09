@@ -1,0 +1,20 @@
+{
+  "id": "COIL-1.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.7",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:dc2eece6a3f9354a9b9c613096c032a2fd2c400e386871c995db92fecf2be0b4"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Při úplné i částečné redistribuci zachovejte oznámení o copyrightu a dalších právech, podmínky, licenční text a disclaimer. Licence výslovně dovoluje podlicencování. Obsahuje neodvolatelný, celosvětový a bezplatný patentový grant každého poskytovatele pro jeho patenty nutně dotčené podobou díla při distribuci jeho příspěvku. Neobsahuje ukončení pro patentový spor. Záruky a odpovědnost jsou vyloučeny.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/COIL-1.0.html",
+      "note": "Dřívější individuální revize 2026-09-09.7; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

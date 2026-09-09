@@ -8,97 +8,99 @@
     "contentHash": "sha256:af5188b0edf447dd90c02677f91713c4c03f28099728f5d69075ebc778a865cf"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "permissive",
+    "family": "nonstandard",
     "copyleftScope": "none",
     "permissions": [
       "commercial-use",
       "distribution",
       "modifications",
+      "private-use",
       "sublicensing"
     ],
     "obligations": [
       "include-copyright",
       "include-license-text",
-      "provide-corresponding-source"
+      "unknown"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "use"
     ],
     "restrictions": [
       "liability",
       "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.no-copyleft",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.permissive-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Imlib2.json#text; Široký grant doplněn alternativou public source versus publicly documented acknowledgment.; https://spdx.org/licenses/Imlib2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Imlib2.json#text; Výslovně not apply to software that links statically or dynamically; žádné shodné licencování derivátu či linkující aplikace.; https://spdx.org/licenses/Imlib2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Imlib2.json#text; První odstavec use/copy/modify/merge/publish/distribute/sublicense/sell a downstream rights.; https://spdx.org/licenses/Imlib2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "restrictions",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Imlib2.json#text; Druhý odstavec notices vždy; acknowledgment pouze if no source made public, se zvláštní definicí dostupnosti/offer; slovník neumí tuto alternativu.; https://spdx.org/licenses/Imlib2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Imlib2.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Imlib2.json#text; Use spouští conditional acknowledgment při neveřejném zdroji; distribuce notices; linkování je výslovně vyňato, nikoli trigger copyleftu.; https://spdx.org/licenses/Imlib2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Imlib2.json#text; Závěrečný AS IS/warranty/noninfringement/liability disclaimer; žádný patentový či naming zákaz.; https://spdx.org/licenses/Imlib2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Imlib2.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Imlib2.json#text; Celý text bez výslovného patentového grantu či patentového ukončení.; https://spdx.org/licenses/Imlib2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Imlib2.json#text; Povinná alternativa veřejného poděkování nebo definované dostupnosti zdroje přesahuje prosté notices.; https://spdx.org/licenses/Imlib2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Imlib2.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Imlib2.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. Imlib2 dovoluje široké nakládání při zachování oznámení. Veřejné poděkování za použití se vyžaduje tehdy, není-li zdroj knihovny veřejně dostupný podle uvedeného mechanismu; licence se výslovně nevztahuje na staticky ani dynamicky linkující software. Blokace: Text nabízí veřejné poděkování nebo konkrétně definované veřejné zpřístupnění zdroje s metodou získání/nabídkou na žádost. Je třeba modelovat alternativu a podmínku nepřítomného veřejného zdroje; uvést souběžně zdrojovou povinnost a acknowledgment by bylo nesprávné. Odkazované COPYING-PLAIN je vysvětlení záměru, nikoli v připnutém textu obsažená náhrada grantu.; https://spdx.org/licenses/Imlib2.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

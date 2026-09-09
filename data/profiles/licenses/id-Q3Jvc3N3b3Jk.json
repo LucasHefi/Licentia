@@ -8,92 +8,96 @@
     "contentHash": "sha256:19a8bfdfd30fb7c65cbf6884b1477b2d7ec70a892ca646a05491f6f7d8990fb4"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
       "distribution",
-      "modifications"
+      "modifications",
+      "unknown"
     ],
     "obligations": [
-      "include-copyright"
+      "include-copyright",
+      "mark-modifications"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification"
     ],
     "restrictions": [
-      "unknown"
+      "liability",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Crossword.json#text; last sentence grants copy/modify/redistribute specifically cwpuzzle.dtx; does not expressly establish a general software-use grant or coverage of generated/separate files; no reciprocal source-supply or same-license condition; https://spdx.org/licenses/Crossword.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Crossword.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Crossword.json#text; last sentence grants copy/modify/redistribute specifically cwpuzzle.dtx; does not expressly establish a general software-use grant or coverage of generated/separate files; https://spdx.org/licenses/Crossword.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     },
     {
-      "field": "copyleftScope",
+      "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Crossword.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Crossword.json#text; last sentence: preserve THIS copyright notice and indicate ANY modifications; no affirmative source-supply condition; https://spdx.org/licenses/Crossword.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     },
     {
-      "field": "triggers",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Crossword.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Crossword.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Crossword.json#text; last sentence: preserve THIS copyright notice and indicate ANY modifications; no affirmative source-supply condition; https://spdx.org/licenses/Crossword.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Crossword.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Crossword.json#text; whole text: no express patent grant or patent-litigation termination; no inference of patent rights from copyright, trademarks or non-infringement disclaimers; https://spdx.org/licenses/Crossword.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Crossword.json#text; last sentence grants copy/modify/redistribute specifically cwpuzzle.dtx; does not expressly establish a general software-use grant or coverage of generated/separate files; https://spdx.org/licenses/Crossword.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Crossword.json#text; second paragraph no warranty/responsibility for consequences, purpose or functioning UNLESS author/distributor says so in writing; https://spdx.org/licenses/Crossword.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Crossword.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Crossword.json#text; whole-text editorial review on 2026-09-09, batch 7; Ověřit předmět grantu pro cwpuzzle.dtx, generované soubory a obecné užití; text sám výslovně vyjmenovává jen kopírování, úpravy a redistribuci tohoto souboru. Zachovat označení všech úprav a písemnou výjimku z disclaimeru. Nepřidávat povinnost poskytovat zdroje.; https://spdx.org/licenses/Crossword.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Crossword.json#text; last sentence: preserve THIS copyright notice and indicate ANY modifications; no affirmative source-supply condition; https://spdx.org/licenses/Crossword.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     }
   ]
 }

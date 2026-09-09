@@ -1,0 +1,29 @@
+{
+  "id": "Condor-1.1",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:edc4a5743b748bc7a687b8342e3170dc47cc0a2be22e882063a53b9f41bfd65a"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Condor 1.1 dovoluje užití, změny, distribuci a podlicence a poskytuje úzce vymezený patentový grant. Vyžaduje licenci a poděkování v programu či dokumentaci a citaci při akademických výsledcích; patentová žaloba nebo protinárok může ukončit patentová práva. Uživatel navíc výslovně zaručuje soulad veškerého užití a převodů s americkým exportním právem. Tento zvláštní závazek průvodce zatím neumí vyjádřit, a proto licenci nezařazuje.",
+  "blockersCs": [
+    "§8 ukládá výslovné ujištění a záruku exportního souladu všech užití/převodů včetně začleněných položek; před doporučením je třeba model této exportní podmínky, nikoli ji považovat za pouhé upozornění."
+  ],
+  "analysis": {
+    "subjectCs": "Condor Public License 1.1 z 30. října 2003 pokrývá Condor 6.x a dobrovolné příspěvky pod University of Wisconsin-Madison.",
+    "grantCs": "Úvod dovoluje instalaci, užití, reprodukci, zobrazení, změny a redistribuci v obou formách i sublicence. §5 výslovně uděluje patenty nutně porušené užitím/prodejem, včetně kombinace, která začne porušovat nárok právě přidáním Condor.",
+    "conditionsCs": "§1 přenáší licenci v softwaru a v dodané dokumentaci; §2 předepsané uznání v dokumentaci nebo obvyklém místě v softwaru. §3 akademické výsledky citují užití. §8 uživatel výslovně ujišťuje a zaručuje soulad veškerého užití/převodů s exportním právem USA.",
+    "limitationsCs": "§4 omezuje Condor endorsement a označení upravených distribucí kromě povinných uznání. §5 nezahrnuje jiné kombinace ani hardware a vlastní patentová žaloba/protinárok proti komukoli ruší patentová práva k datu podání; dřívější řádné sublicence přežijí. §6–7 vylučují záruky/odpovědnost.",
+    "compatibilityCs": "§9 dovoluje použitou nebo pozdější číslovanou verzi publikovanou Condor Team; pouze tým smí licenci měnit. Patentová kombinace je úzce vymezena, není obecný grant ke všem sestavám."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Condor-1.1.html",
+      "note": "Individuálně přečten celý připnutý text; §1 přenáší licenci v softwaru a v dodané dokumentaci; §2 předepsané uznání v dokumentaci nebo obvyklém místě v softwaru. §3 akademické výsledky citují užití. §8 uživatel výslovně ujišťuje a zaručuje soulad veškerého užití/převodů s exportním právem USA. §5 výslovně uděluje vymezené univerzitní patenty a ukončuje patentová práva žalujícího Recipient při patentové žalobě na software, s ochranou dřívějších řádných sublicencí."
+    }
+  ]
+}

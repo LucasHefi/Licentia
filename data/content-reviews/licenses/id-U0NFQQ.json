@@ -1,0 +1,30 @@
+{
+  "id": "SCEA",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:f3cec0a58a89c8da4d87b4bd2212c39ad06cab54d95d4b61704a49c8cc0b3a6e"
+  },
+  "disposition": "blocked",
+  "summaryCs": "SCEA dovoluje užití, změny a source/object distribuci. Zdrojová distribuce přikládá licenci, copyrighty, označení změn i veškerou dokumentaci; čistý objektový kód v hotové koncové aplikaci má výslovnou výjimku z notices i zdrojů. Příjemce nesmí přihlašovat práva narušující vlastnictví původních autorů.",
+  "blockersCs": [
+    "Bod3 zakazuje patentové přihlášky, hledání copyrightové ochrany a další kroky narušující vlastnictví SCEA/jiných autorů. Je třeba modelovat tento zákaz registrace/přivlastnění; není to patentový grant ani patentová žalobní odveta.",
+    "Bod5c vyžaduje všechnu doprovodnou dokumentaci a její úpravy, zatímco6 vyjímá pouze object-only v hotových end-user aplikacích. Je třeba modelovat plnou dokumentační povinnost a tuto konkrétní binární hranici, nikoli výjimku pro každou binární knihovnu."
+  ],
+  "analysis": {
+    "subjectCs": "Software/dokumentace označené souborovým notice pod SCEA Shared Source; Licensor Sony Computer Entertainment America.",
+    "grantCs": "§2 irrevocable/nonexclusive/worldwide/perpetual/royalty-free use/modify/reproduce/distribute/public perform/display source/object. §3 patent přihlášky/ownership omezení nejsou uděleným patentovým právem.",
+    "conditionsCs": "§5 source copyright/licence, identify modifications, celá dokumentace včetně změn. §6 object-only incorporated into finished end-user goods bez code/licence/copyright/attribution/docs. §4 dobrovolné dary mohou Sony/SCEA volně využít, nepřevádějí výhradně samotný příspěvek; integrace má Sony jako vlastníka Software/SCEA licencora.",
+    "limitationsCs": "§3 neohrozit vlastnictví přihláškou či jinou ochranou. §7 AS IS/title/noninfringement/warranty,§8 vzájemné liability limity;§9 California/US právo, San Mateo/Northern California soudy, waiver jury trial. §10 vzor source notice.",
+    "compatibilityCs": "Dobrovolný contribution grant není povinné zveřejnění změn ani automatická náhrada softwarové licence. Žádná volba jiné/verze; copyright integračního celku nezaměnit za výlučné odebrání dárcových práv."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/SCEA.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; §2 široký grant s mimořádným zákazem IP přihlášek§3 a source/doc versus finished-object cestami5–6."
+    }
+  ]
+}

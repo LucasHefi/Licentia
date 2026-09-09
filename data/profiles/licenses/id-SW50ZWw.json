@@ -8,92 +8,97 @@
     "contentHash": "sha256:00010e65bb601351dc60e549acc8d5d884293249e043ff0f3ac20dba8d68698a"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "provide-corresponding-source"
+      "include-license-text"
     ],
     "triggers": [
-      "unknown"
+      "distribution"
     ],
     "restrictions": [
-      "liability"
+      "liability",
+      "trademark",
+      "warranty"
     ],
-    "patentPosition": "unknown",
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Intel.json#text; opening source/binary use/redistribution with/without modification; export paragraph explicitly ADDS NO RESTRICTIONS beyond jurisdiction export laws, not an independent fixed-country use ban; no reciprocal source-supply or same-license condition; https://spdx.org/licenses/Intel.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Intel.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Intel.json#text; opening source/binary use/redistribution with/without modification; export paragraph explicitly ADDS NO RESTRICTIONS beyond jurisdiction export laws, not an independent fixed-country use ban; https://spdx.org/licenses/Intel.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     },
     {
-      "field": "copyleftScope",
+      "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Intel.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Intel.json#text; first two bullets retain source copyright/conditions/disclaimer and reproduce with binaries; no source-supply duty; https://spdx.org/licenses/Intel.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     },
     {
-      "field": "triggers",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Intel.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Intel.json#text; first two bullets retain source copyright/conditions/disclaimer and reproduce with binaries; no source-supply duty; https://spdx.org/licenses/Intel.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Intel.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Intel.json#text; whole text: no express patent grant or patent-litigation termination; no inference of patent rights from copyright, trademarks or non-infringement disclaimers; https://spdx.org/licenses/Intel.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Intel.json#text; opening source/binary use/redistribution with/without modification; export paragraph explicitly ADDS NO RESTRICTIONS beyond jurisdiction export laws, not an independent fixed-country use ban; https://spdx.org/licenses/Intel.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Intel.json#text; third bullet name endorsement prior written consent; warranty/liability; export notice dated CURRENT May 2000 is historical; https://opensource.org/license/intel states voluntarily retired and Intel ceased to use or recommend it; https://spdx.org/licenses/Intel.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Intel.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Intel.json#text; whole-text editorial review on 2026-09-09, batch 7; Ponechat historickou licenci pro rozpoznání existujícího kódu; OSI ji označuje za dobrovolně vyřazenou z doporučování (https://opensource.org/license/intel). Před případným doporučením pro nový projekt vyřešit politiku historických licencí. Neměnit původní SPDX příznaky a nepovažovat exportní výčet z května 2000 za současné právo ani nový licenční zákaz.; https://spdx.org/licenses/Intel.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Intel.json#text; first two bullets retain source copyright/conditions/disclaimer and reproduce with binaries; no source-supply duty; https://spdx.org/licenses/Intel.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     }
   ]
 }

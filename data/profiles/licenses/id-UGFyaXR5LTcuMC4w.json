@@ -8,92 +8,102 @@
     "contentHash": "sha256:dec70c3122b292370c982c2856977cda2f8039230cdee28a3555433b1076f3e2"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
+    "family": "strong-copyleft",
     "copyleftScope": "unknown",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "patent-grant",
+      "private-use"
     ],
     "obligations": [
-      "provide-corresponding-source"
-    ],
-    "triggers": [
+      "include-license-text",
+      "include-notice",
+      "provide-corresponding-source",
       "unknown"
     ],
-    "restrictions": [
-      "liability"
+    "triggers": [
+      "distribution",
+      "modification",
+      "use"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "restrictions": [
+      "liability",
+      "patent-claim",
+      "warranty"
+    ],
+    "patentPosition": "express-grant",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Parity-7.0.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Parity-7.0.0.json#text; Parity 7.0.0 vymezuje přispěvatele Artless Devices a zdrojový odkaz; povinnost se týká i softwaru vyvíjeného, provozovaného nebo analyzovaného nástrojem. Copyright a Patent dovolují vše, co by jinak porušovalo autorská práva a patenty, které přispěvatel může nyní nebo v budoucnu licencovat; Reliability znemožňuje odvolání licence. Rozsah zasahuje také nezávislý software pouze vyvíjený/provozovaný/analyzovaný nástrojem; nelze jej věrně ztotožnit s whole-work odvozeninou ani network scope.; https://spdx.org/licenses/Parity-7.0.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Parity-7.0.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Parity-7.0.0.json#text; Rozsah zasahuje také nezávislý software pouze vyvíjený/provozovaný/analyzovaný nástrojem; nelze jej věrně ztotožnit s whole-work odvozeninou ani network scope.; https://spdx.org/licenses/Parity-7.0.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Parity-7.0.0.json#text; Copyright a Patent dovolují vše, co by jinak porušovalo autorská práva a patenty, které přispěvatel může nyní nebo v budoucnu licencovat; Reliability znemožňuje odvolání licence.; https://spdx.org/licenses/Parity-7.0.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Parity-7.0.0.json#text; Notices přenáší licenci a contributor/source lines všem příjemcům. Copyleft/Contribute požaduje do 30 dnů veřejně přístupný preferovaný zdroj vyvíjeného/provozovaného/analyzovaného software pod touto nebo stejně vše dovolující licencí. Výjimka prototypů kumulativně vyžaduje max 30 dní, nesdílení mimo tým kromě nonproduction testu a práci pouze pro tým.; https://spdx.org/licenses/Parity-7.0.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Parity-7.0.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Parity-7.0.0.json#text; Notices přenáší licenci a contributor/source lines všem příjemcům. Copyleft/Contribute požaduje do 30 dnů veřejně přístupný preferovaný zdroj vyvíjeného/provozovaného/analyzovaného software pod touto nebo stejně vše dovolující licencí. Výjimka prototypů kumulativně vyžaduje max 30 dní, nesdílení mimo tým kromě nonproduction testu a práci pouze pro tým.; https://spdx.org/licenses/Parity-7.0.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Parity-7.0.0.json#text; Reverse Engineering dovoluje analyzovat nepřispívatelný software pro vývoj přispívané alternativy. Excuse dává 30 dní od zjištění nevědomého porušení k příspěvku/zastavení či praktické opravě notices. Defense zakazuje patentové nároky proti komukoli na tento software i kombinace; AS IS vylučuje záruky/odpovědnost.; https://spdx.org/licenses/Parity-7.0.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Parity-7.0.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Parity-7.0.0.json#text; Patent odstavec výslovně uděluje nynější i budoucí licencovatelné patenty. Defense je zákaz patentových nároků jako licenční podmínka, bez samostatně popsaného patentového ukončovacího mechanismu.; https://spdx.org/licenses/Parity-7.0.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Parity-7.0.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Parity-7.0.0.json#text; Notices přenáší licenci a contributor/source lines všem příjemcům. Copyleft/Contribute požaduje do 30 dnů veřejně přístupný preferovaný zdroj vyvíjeného/provozovaného/analyzovaného software pod touto nebo stejně vše dovolující licencí. Výjimka prototypů kumulativně vyžaduje max 30 dní, nesdílení mimo tým kromě nonproduction testu a práci pouze pro tým. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/Parity-7.0.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Parity-7.0.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Parity-7.0.0.json#text; Individuální kontrola celého připnutého textu Parity-7.0.0 dne 2026-09-09. Parity 7.0.0 vymezuje přispěvatele Artless Devices a zdrojový odkaz; povinnost se týká i softwaru vyvíjeného, provozovaného nebo analyzovaného nástrojem. Povinnost zveřejnit do 30 dnů i software pouze vyvíjený, provozovaný nebo analyzovaný nástrojem má kumulativní prototypovou a reverse-engineering výjimku; před doporučením je třeba model tohoto rozsahu a lhůt, nikoli běžný copyleft. Contribute uvádí Blue Oak/Apache/MIT/BSD jako příklady dostatečně široké licence pro nový software, ale výslovně nedovoluje změnit licenci tohoto software.; https://spdx.org/licenses/Parity-7.0.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

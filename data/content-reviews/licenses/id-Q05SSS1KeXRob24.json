@@ -1,0 +1,27 @@
+{
+  "id": "CNRI-Jython",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:172c5279a64fa4d5c3f77f6a7c7b60974d97d0ff04f853a22f9f601fc56b9287"
+  },
+  "disposition": "eligible",
+  "summaryCs": "CNRI dovoluje užívat, analyzovat, měnit a šířit JPython 1.1.x při zachování copyrightu a smlouvy; smlouvu lze nahradit předepsaným výrazným textem s persistentním handle. Veřejné odvozeniny označí povahu změn, JPython známku používají jen jako JPython-based nebo ekvivalent.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "JPython 1.1.x ve zdrojové/binární formě a dokumentace, podle smlouvy CNRI s konkrétním příjemcem.",
+    "grantCs": "Bod2 nonexclusive/nontransferable/royalty-free/worldwide reproduce/analyze/test/public perform/display/derivatives/distribute/otherwise use. Nepřevoditelnost licence nepopírá výslovnou distribuci; sublicence a patentový grant nejsou uvedeny.",
+    "conditionsCs": "Bod2 copyright 1996–1999 a agreement v software/derivátech; místo agreement lze předepsaný prominentní text s handle1895.22/1006, copyright zůstává. Bod3 veřejná odvozenina výrazně uvede nature of modifications.",
+    "limitationsCs": "Bod4 žádný trademark endorsement; JPython pro deriváty jen JPython-based nebo ekvivalent. Body5–6 AS IS/warranty/liability se státními výjimkami;7 nereparovatelné materiální porušení okamžitě písemnou výpovědí, napravitelné po60 dnech bez nápravy. Virginia právo, přijetí use/install/copy/Accept.",
+    "compatibilityCs": "Alternativa text versus předepsaný handle notice nahrazuje dokument licence, nikoli její podmínky či copyright. Žádná volba pozdější verze nebo tvrzení GPL kompatibility."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/CNRI-Jython.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Bod2 široký copyrightový grant s notices;3 veřejné změny,4 trademark,bez reciprocity."
+    }
+  ]
+}

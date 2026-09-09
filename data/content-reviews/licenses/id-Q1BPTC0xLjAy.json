@@ -1,0 +1,29 @@
+{
+  "id": "CPOL-1.02",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:dd9cdfaec3765d6547d078d83703e8c99fe7e0ce3753c8122a1608b164acc4b0"
+  },
+  "disposition": "blocked",
+  "summaryCs": "CPOL 1.02 dovoluje použití a změny kódu ve vlastních aplikacích a jeho šíření s větším komerčním produktem, ale samotný balíček se nesmí prodávat ani pronajímat. Články vyžadují pro další publikování autorův souhlas; změněné soubory se označují a zachovává se licence i oznámení. Licence také vyžaduje souhlas příjemce, omezuje účely užití a ukládá široké odškodnění autora a vydavatele. Kvůli těmto zvláštním zákazům a závazkům ji průvodce nenabízí.",
+  "blockersCs": [
+    "Licence zakazuje samostatný prodej a neurčité immoral/improper účely, vyžaduje aktivní souhlas příjemce a obecnou indemnitu a vyjímá Articles; před doporučením je nutný model těchto větví a omezení."
+  ],
+  "analysis": {
+    "subjectCs": "Code Project Open License 1.02 rozlišuje zdroje, executables/data a články, které nelze bez autorova souhlasu znovu publikovat.",
+    "grantCs": "§3 dovoluje standardní kód ve vlastních aplikacích, autorovy/public-domain opravy, jiné změny bez Articles a agregovanou distribuci s komerčním softwarem. Vlastní přilinkované moduly/subrutiny nejsou Work. §4 výslovně patentově dovoluje make/have made/use/import/transfer.",
+    "conditionsCs": "§3c označuje v každém změněném souboru jak/kdy/kde změnu. §5 zachovává IP/attribution/disclaimer notices, vyžaduje CPOL/text či URI a zajistí souhlas příjemce. Samotný Work nelze prodávat/pronajímat, ale větší distribuci s ním ano. §6 vždy předává disclaimer.",
+    "limitationsCs": "§5 zakazuje vydávat Work za vlastní produkt, endorsement jménem autora bez svolení, sublicence, další omezení, rozporné technické ochrany a nezákonné/nemorální/nevhodné účely či weby; vyžaduje exportní soulad. §7 obecně odškodní/brání autora i publishera za vlastní užití; §6/8 AS IS/liability.",
+    "compatibilityCs": "§9 porušení ruší práva s ochranou řádného downstream; vlastní IP infringement nárok na přispěvatele ruší jeho licenci. Zastavení nabídky neodvolá udělená práva; §10 publisher smí dodávku ukončit, §11 právo sídla/bydliště autora."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/CPOL-1.02.html",
+      "note": "Individuálně přečten celý připnutý text; §3c označuje v každém změněném souboru jak/kdy/kde změnu. §5 zachovává IP/attribution/disclaimer notices, vyžaduje CPOL/text či URI a zajistí souhlas příjemce. Samotný Work nelze prodávat/pronajímat, ale větší distribuci s ním ano. §6 vždy předává disclaimer. §4 má výslovný patentový grant; §9b ukončuje licenci daného přispěvatele při patentovém i jiném IP nároku na Work."
+    }
+  ]
+}

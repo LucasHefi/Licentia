@@ -1,0 +1,29 @@
+{
+  "id": "GFDL-1.1",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:d81265f4f58df864eab9f02b2e128f52b4678bb3640f5f1350147850d5e9cd52"
+  },
+  "disposition": "blocked",
+  "summaryCs": "GFDL 1.1 je dokumentový copyleft s invariantními vedlejšími sekcemi a cover texts podle konkrétního notice. Nad 100 neprůhledných kopií je nutná Transparent kopie či roční anonymní síťový přístup. Deprecated označení i specifická dokumentová pravidla jej vylučují z nabídky nového softwaru.",
+  "blockersCs": [
+    "Deprecated GFDL-1.1 a dokumentový předmět § 0–1 nepatří do nové softwarové volby. Doplnit Transparent/Opaque, práh 100, cover/invariant seznamy, History a agregaci; pro audit dokumentu zjistit konkrétní notice a zvolit přesný moderní SPDX ID, bez převzetí volitelného GPL doporučení pro příklady."
+  ],
+  "analysis": {
+    "subjectCs": "§§0–1 manuály a jiná písemná díla, ne licence programu. Modified Version obsahuje dokument či část i překlad; Invariant pouze pojmenované Secondary Sections mimo vlastní předmět díla. Transparent je veřejně popsaný přímo upravitelný formát, nikoli záměrně ztížená markup;1.1 příklady PDF/PostScript jako Opaque.",
+    "grantCs": "§2 komerční/nekomerční kopie, distribuce, půjčování a veřejné zobrazení; §§4–8 modifikace/kombinace/kolekce/překlad s podmínkami. Patentový grant a obecná sublicence uděleny nejsou. §10 later-version volba jen dle konkrétního notice, bez čísla kterákoli vydaná nikoli draft FSF verze.",
+    "conditionsCs": "§2 všechny kopie s copyright/licence notices a textem, bez dalších podmínek či technologie kontrolující čtení/další kopie. §3 nad100 printed kopií a vyžadované Cover Texts: texty na předním/zadním obalu, publisher a úplný stejně výrazný titul; přebytek sousední strany. Nad100 Opaque každé s Transparent NEBO anonymním bezplatným veřejným standard-protocol URL, rozumně zajistit rok od poslední distribuce edice i přes agenty. §4 nový titul leda souhlas, autoři změn+alespoň5 původních (všichni je-li méně), vydavatel, copyrighty, licence s nezměněnými seznamy invariantů/covers, History rok/titul/autory/vydavatele, source URL i předchozí (výjimka4let či souhlas), zachovat tón a obsah Acknowledgements/Dedications a invarianty. Původní Endorsements smazat, nové jen pro novou verzi; neměnit jiné názvy na Endorsements/invariant kolizi.",
+    "limitationsCs": "§4 nové vlastní Secondary Sections volitelně invariant, jeden nový front text max5 slov a back25 na entitu, nahrazení starého jen souhlas vydavatele. Autoři/vydavatelé neposkytují publicity/endorsement jména. §5 kombinace zachová všechny invarianty, sloučí duplicitní a stejnojmenné různé odliší, History/ack/dedication sloučit, endorsements smazat. §6 jedna licence v kolekci dovolena, extrakce ji obnoví. §7 aggregate výjimka jen bez nárokovaného compilation copyright; obaly samotného dokumentu při méně nežčtvrtině agregátu, jinak kolem celku. §9 nepovolené jednání konec automaticky, plnící downstream zůstává. Text neobsahuje obecnou výluku záruk ani odpovědnosti.",
+    "compatibilityCs": "§8 překlad modifikace, nahrazení invariantů vyžaduje souhlas; paralelní překlady s originálem dovoleny, licence vždy také originální anglická a ta rozhoduje. §10 or-later volitelné dle notice; addendum doporučuje code examples zvlášť svobodně licencovat, nikoli automaticky GPL. Deprecated GFDL-1.1 nahradit přesným moderním only/or-later a invariants označením podle konkrétního notice."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/GFDL-1.1.html",
+      "note": "Individuální revize celého připnutého textu; §§0–1 manuály a jiná písemná díla, ne licence programu. Modified Version obsahuje dokument či část i překlad; Invariant pouze pojmenované Secondary Sections mimo vlastní předmět díla. Transparent je veřejně popsaný přímo upravitelný formát, nikoli záměrně ztížená markup;1.1 příklady PDF/PostScript jako Opaque."
+    }
+  ]
+}

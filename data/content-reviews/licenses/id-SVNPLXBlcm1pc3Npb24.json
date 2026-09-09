@@ -1,0 +1,29 @@
+{
+  "id": "ISO-permission",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:169b41d1a4c04f160b9a1df1467d68d5c9814983e8b8e67977561aa28ea345da"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Povolení kopírovat v libovolné formě platí pouze pro použití se systémy a aplikacemi SGML odpovídajícími ISO 8879. Ve všech kopiích musí být celé oznámení.",
+  "blockersCs": [
+    "Grant je omezen na použití s conforming SGML systems and applications podle ISO 8879, nikoli obecný software; před doporučením je nutné modelovat omezení účelu a ověřit konkrétní konformitu i rozsah práva úprav."
+  ],
+  "analysis": {
+    "subjectCs": "Materiál ISO z roku 1986 určený pro konformní SGML systémy a aplikace dle ISO 8879.",
+    "grantCs": "Povoluje kopírování v libovolné formě pro vymezené použití; modifikace a patentový grant uvedeny nejsou.",
+    "conditionsCs": "Každá kopie musí obsahovat celé oznámení s copyrightem a podmínkou povolení.",
+    "limitationsCs": "Účelový limit je materiální. Text neobsahuje zárukovou výluku, odpovědnost ani povinnost dodat zdroje.",
+    "compatibilityCs": "ISO 8879 je vnější měřítko konformity, nikoli alternativní licence; text neuděluje volbu jiné licence/verze."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/ISO-permission.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Grant omezuje kopírování na konformní SGML systémy a aplikace; nejde o všeobecné softwarové oprávnění."
+    }
+  ]
+}

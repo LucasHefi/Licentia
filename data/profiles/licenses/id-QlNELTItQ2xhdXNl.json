@@ -37,49 +37,67 @@
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text: grant paragraph and conditions 1-2 (non-reciprocal permission; no same-license, source-disclosure, or corresponding-source condition)"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant paragraph (redistribution and use in source and binary forms, with or without modification, are permitted subject only to conditions 1-2)"
+      "locator": "public/data/licenses/BSD-2-Clause.json#text; Obě notice klauzule zavádějí permisivní podmínky, nikoli copyleft nebo vydávání zdrojů; scope none.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text: conditions 1-2 (source copies retain, and binary copies reproduce, the copyright notice, list of conditions, and disclaimer)"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text: conditions 1-2 (retain/reproduce the copyright notice, list of conditions, and disclaimer; no corresponding-source requirement)"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text: complete license text (no express patent grant, patent condition, or patent-claim termination clause)"
+      "locator": "public/data/licenses/BSD-2-Clause.json#text; Obě notice klauzule zavádějí permisivní podmínky, nikoli copyleft nebo vydávání zdrojů; scope none.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant paragraph (redistribution and use in source and binary forms, with or without modification, are permitted; no purpose limitation)"
+      "locator": "public/data/licenses/BSD-2-Clause.json#text; Úvodní redistribution and use povoluje obě formy, upravené i původní, bez zákazu komerce. Výslovný patentový grant a sublicence chybějí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "restrictions",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text: final disclaimer paragraph (warranty disclaimer: provided 'AS IS'; liability limitation: no liability for listed damages)"
-    },
-    {
-      "field": "review",
-      "sourceId": "spdx-license-list",
-      "locator": "metadata: deprecated=false and osi=true"
+      "locator": "public/data/licenses/BSD-2-Clause.json#text; Bod 1 ukládá zachování copyrightu, podmínek a disclaimeru ve zdrojích; bod 2 jejich reprodukci v dokumentaci a/nebo jiných materiálech binární distribuce. Zdrojový kód není nutné dodávat.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "text: conditions 1-2 (notice-retention/reproduction duties are activated by source or binary redistribution; modification alone has no separate condition)"
+      "locator": "public/data/licenses/BSD-2-Clause.json#text; Bod 1 ukládá zachování copyrightu, podmínek a disclaimeru ve zdrojích; bod 2 jejich reprodukci v dokumentaci a/nebo jiných materiálech binární distribuce. Zdrojový kód není nutné dodávat.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/BSD-2-Clause.json#text; Disclaimer odmítá výslovné/implicitní záruky včetně obchodovatelnosti/vhodnosti a odpovědnost držitele/přispěvatelů za všechny vyjmenované škody. Žádný zákaz endorsementu či patentová odveta nejsou uvedeny.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/BSD-2-Clause.json#text; Úvodní redistribution and use povoluje obě formy, upravené i původní, bez zákazu komerce. Výslovný patentový grant a sublicence chybějí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/BSD-2-Clause.json#text; Bod 1 ukládá zachování copyrightu, podmínek a disclaimeru ve zdrojích; bod 2 jejich reprodukci v dokumentaci a/nebo jiných materiálech binární distribuce. Zdrojový kód není nutné dodávat.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/BSD-2-Clause.json#text; Individuálně přečten celý připnutý text. Licence pokrývá software ve zdrojové a binární formě bez zvláštního oborového omezení. Zdrojové i binární verze lze užívat a šířit se změnami i bez nich. Zdroje zachovají copyright, podmínky a disclaimer; binárky je uvedou v dokumentaci nebo jiných dodávaných materiálech. Bez záruky a odpovědnosti za škody. ",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

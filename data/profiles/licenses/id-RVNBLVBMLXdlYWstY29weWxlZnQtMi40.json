@@ -8,98 +8,111 @@
     "contentHash": "sha256:7634973025d273b806e504b6365e1d4df5a60a838913d7f68077289a9ed03980"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "strong-copyleft",
-    "copyleftScope": "whole-work",
+    "family": "weak-copyleft",
+    "copyleftScope": "library",
     "permissions": [
       "commercial-use",
+      "conditional-relicensing",
       "distribution",
       "modifications",
       "patent-grant",
+      "private-use",
       "sublicensing"
     ],
     "obligations": [
+      "defend-added-warranty",
+      "include-copyright",
       "include-license-text",
+      "include-notice",
       "mark-modifications",
-      "provide-corresponding-source"
-    ],
-    "triggers": [
+      "provide-corresponding-source",
+      "same-license",
       "unknown"
     ],
-    "restrictions": [
-      "liability",
-      "trademark"
+    "triggers": [
+      "distribution",
+      "modification",
+      "patent-claim"
     ],
-    "patentPosition": "express-grant",
-    "noticeBurden": "standard"
+    "restrictions": [
+      "additional-terms",
+      "liability",
+      "patent-claim",
+      "trademark",
+      "unknown",
+      "warranty"
+    ],
+    "patentPosition": "retaliatory-termination",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.whole-work-copyleft",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.copyleft-family",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ESA-PL-weak-copyleft-2.4.json#text; ESA Type2 v2.4 výslovně zahrnuje přilinkované knihovny do Modifications, ale§3.2.4 podrobně uvolňuje kombinace s odděleným External Code. §2 dovoluje použití, kopírování, změny, veřejné sdělování/výkon, distribuci, podlicence, půjčování i nájem. Podlicencovatelný patentový grant pokrývá vlastní změny přispěvatele a Contributor Version, s výlukou dalších změn a nezamýšlených kombinací. §3.2.4 konkrétně umožňuje linkovanou Combination s volnou licencí External Code i objektového celku a zachováním odděleného Covered Code; odpovídá knihovní hranici, nikoli závěru odvozenému pouze z názvu weak.; https://spdx.org/licenses/ESA-PL-weak-copyleft-2.4.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ESA-PL-weak-copyleft-2.4.json#text; §3.2.4 konkrétně umožňuje linkovanou Combination s volnou licencí External Code i objektového celku a zachováním odděleného Covered Code; odpovídá knihovní hranici, nikoli závěru odvozenému pouze z názvu weak.; https://spdx.org/licenses/ESA-PL-weak-copyleft-2.4.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ESA-PL-weak-copyleft-2.4.json#text; §2 dovoluje použití, kopírování, změny, veřejné sdělování/výkon, distribuci, podlicence, půjčování i nájem. Podlicencovatelný patentový grant pokrývá vlastní změny přispěvatele a Contributor Version, s výlukou dalších změn a nezamýšlených kombinací.; https://spdx.org/licenses/ESA-PL-weak-copyleft-2.4.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "restrictions",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ESA-PL-weak-copyleft-2.4.json#text; §3.1 požaduje licenci celku pod touto ESA, ESA Strong2.4, povolenou pozdější nebo Appendix A licencí. §3.2.4 dovoluje objekt kombinace pod vlastními podmínkami a zdroj External Code také, pokud zachová Covered Code pod příslušnou licencí, práva účinně neomezí, rozliší External Code a licenci, uvede použití Covered Code a oddělí zdroje obvykle do jiných souborů. §3.3 ke každému objektu přiloží zdroj nebo zajistí volný přístup držitelům/příjemcům s návodem v NOTICE po dobu distribuce a3 roky od poslední. §4 obsahuje licenci/notices, CHANGELOG s datem a kontaktem původce, LEGAL s čísly všech vlastních Patent Claims a kontakty;§6 odškodňuje pouze za přidané dobrovolné závazky.; https://spdx.org/licenses/ESA-PL-weak-copyleft-2.4.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/ESA-PL-weak-copyleft-2.4.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ESA-PL-weak-copyleft-2.4.json#text; §3.1 požaduje licenci celku pod touto ESA, ESA Strong2.4, povolenou pozdější nebo Appendix A licencí. §3.2.4 dovoluje objekt kombinace pod vlastními podmínkami a zdroj External Code také, pokud zachová Covered Code pod příslušnou licencí, práva účinně neomezí, rozliší External Code a licenci, uvede použití Covered Code a oddělí zdroje obvykle do jiných souborů. §3.3 ke každému objektu přiloží zdroj nebo zajistí volný přístup držitelům/příjemcům s návodem v NOTICE po dobu distribuce a3 roky od poslední. §4 obsahuje licenci/notices, CHANGELOG s datem a kontaktem původce, LEGAL s čísly všech vlastních Patent Claims a kontakty;§6 odškodňuje pouze za přidané dobrovolné závazky.; https://spdx.org/licenses/ESA-PL-weak-copyleft-2.4.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/ESA-PL-weak-copyleft-2.4.json#text; §5.1 poskytuje kladné ujištění o vlastních právech, jinak AS IS a výluku škod se zákonnými výjimkami. Ochrana jmen/známek brání dojmu schválení. §8 ukončení při nenápravě30 dnů od vědomosti, patentová žaloba ruší obě licence dnem podání, podlicence přežívají. §9 vyžaduje ICC arbitráž v Kolíně, odpovědnost za export a v LEGAL popis zákonem vynucených odchylek.; https://spdx.org/licenses/ESA-PL-weak-copyleft-2.4.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/ESA-PL-weak-copyleft-2.4.json#text; §2.2 výslovný patentový grant s výjimkou nezamýšlených kombinací;§8.2 odvetně ukončuje patenty i autorská práva při patentové žalobě na Software.; https://spdx.org/licenses/ESA-PL-weak-copyleft-2.4.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/ESA-PL-weak-copyleft-2.4.json#text; §3.1 požaduje licenci celku pod touto ESA, ESA Strong2.4, povolenou pozdější nebo Appendix A licencí. §3.2.4 dovoluje objekt kombinace pod vlastními podmínkami a zdroj External Code také, pokud zachová Covered Code pod příslušnou licencí, práva účinně neomezí, rozliší External Code a licenci, uvede použití Covered Code a oddělí zdroje obvykle do jiných souborů. §3.3 ke každému objektu přiloží zdroj nebo zajistí volný přístup držitelům/příjemcům s návodem v NOTICE po dobu distribuce a3 roky od poslední. §4 obsahuje licenci/notices, CHANGELOG s datem a kontaktem původce, LEGAL s čísly všech vlastních Patent Claims a kontakty;§6 odškodňuje pouze za přidané dobrovolné závazky. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/ESA-PL-weak-copyleft-2.4.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/ESA-PL-weak-copyleft-2.4.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ESA-PL-weak-copyleft-2.4.json#text; Individuální kontrola celého připnutého textu ESA-PL-weak-copyleft-2.4 dne 2026-09-09. ESA Type2 v2.4 výslovně zahrnuje přilinkované knihovny do Modifications, ale§3.2.4 podrobně uvolňuje kombinace s odděleným External Code. §4.5 požaduje zveřejnění všech vlastních Patent Claims s čísly a kontakty a§5.1 aktivní ujištění o právním titulu; tyto povinnosti je třeba modelovat samostatně. §9.2–4 ukládají závaznou ICC arbitráž, exportní odpovědnost a zveřejnění právně vynucených odchylek; dosavadní model tyto závazky plně nereprezentuje. Appendix A výslovně uvádí GPL2 a následné i CeCILL2 a následné; tato licence poskytuje cestu, ne tvrzení o opačné kompatibilitě. §3.2 vyjímá agregace, systémové knihovny a externí moduly v oddělených adresních prostorech. Na rozdíl od Type1 zde žádný Service Provision článek není;§3.4 jen zachovává samostatně získané dual-licensing svolení.; https://spdx.org/licenses/ESA-PL-weak-copyleft-2.4.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

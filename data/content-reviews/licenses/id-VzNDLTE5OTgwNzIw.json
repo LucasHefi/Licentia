@@ -1,0 +1,27 @@
+{
+  "id": "W3C-19980720",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:7e7bd7ef9c04963b274095a13d03e884ce8a5772920ab67c68e2bac285e1bc47"
+  },
+  "disposition": "eligible",
+  "summaryCs": "W3C dovoluje libovolné užití, kopie, změny a šíření s uživatelsky viditelným plným notice, zachovanými existujícími IP podmínkami a datovanými změnami. Název a známky vyžadují písemné svolení pro reklamu; text obsahuje historické vysvětlení distribuce v GPL balících.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Práce W3C zahrnuje software, dokumenty a související položky; grant výslovně pokrývá software/dokumentaci i jejich části a modifikace.",
+    "grantCs": "Permission uděluje use/copy/modify/distribute pro libovolný účel bez poplatku/royalty. Výslovný patentový grant chybí; disclaimer neporušení cizích patentů jej nenahrazuje.",
+    "conditionsCs": "Na všech vytvořených kopiích/částech/modifikacích: bod 1 plný NOTICE v místě viditelném uživatelům; bod 2 zachování existujících IP disclaimers/notices/terms, při jejich absenci doporučený vzor copyrightu v kódu; bod 3 oznámení změn včetně data. URI původu a hypertext jsou doporučené, ne povinné.",
+    "limitationsCs": "Užití/získání/kopírování znamená souhlas. As is odmítá záruky včetně neporušení cizích práv a přímé/nepřímé/zvláštní/následné škody. Jména/známky nesmějí do reklamy/publicity bez písemného svolení; title k existujícímu copyrightu zůstává držitelům.",
+    "compatibilityCs": "Historický závěr uvádí aktivaci 14.8.1998 pro lepší GPL slučitelnost a distribuci v GPL balících; není to nové ověření jakékoli současné kombinace. Odkaz FAQ pro konkrétní balíky neuděluje jejich zvláštní práva bez kontroly."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/W3C-19980720.html",
+      "note": "Individuální revize celého připnutého textu; Práce W3C zahrnuje software, dokumenty a související položky; grant výslovně pokrývá software/dokumentaci i jejich části a modifikace."
+    }
+  ]
+}

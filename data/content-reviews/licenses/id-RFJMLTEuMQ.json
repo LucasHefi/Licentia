@@ -1,0 +1,29 @@
+{
+  "id": "DRL-1.1",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:56b6d4fc1f280744a7f566e2f7156b8ea3e622d2f1ec79317226c4c8af8cdb66"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Licence dovoluje detekční pravidla používat, měnit, distribuovat, sublicencovat a prodávat. Při sdílení zachovává dodanou atribuci a informace o licenci, ale také vyžaduje přiznání autorů ve zprávách vytvářených při shodách pravidel nad daty. Průvodce ji nezařazuje jako obecnou softwarovou licenci, protože povinnosti míří i na specifické výstupy detekčních pravidel.",
+  "blockersCs": [
+    "Předmětem jsou detekční Rules a atribuce ve zprávách z jejich shod, nikoli obecný software; před doporučením je třeba oddělit model pravidel/výstupů a jeho notifikační rozsah."
+  ],
+  "analysis": {
+    "subjectCs": "DRL 1.1 licencuje detekční pravidla a jejich dokumentaci, včetně zpráv vytvářených při shodě nad daty.",
+    "grantCs": "Široký grant dovoluje užití, kopie, změny, sloučení, publikaci, distribuci, sublicence i prodej Rules.",
+    "conditionsCs": "Při sdílení i změněných Rules se zachová dodaná identifikace autorů/určených osob přiměřeným požadovaným způsobem, rozumně proveditelný odkaz na pravidlo/sadu a informace o DRL s textem nebo odkazem. Při užití nad daty musí zprávy založené na shodách zachovat dodanou atribuci autorů.",
+    "limitationsCs": "AS IS vylučuje záruky včetně noninfringement a odpovědnost; výslovná patentová ochrana není.",
+    "compatibilityCs": "Text či odkaz na licenci jsou alternativy omezené reasonable practicability; jiná licence či verze není nabídnuta."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/DRL-1.1.html",
+      "note": "Individuálně přečten celý připnutý text; Při sdílení i změněných Rules se zachová dodaná identifikace autorů/určených osob přiměřeným požadovaným způsobem, rozumně proveditelný odkaz na pravidlo/sadu a informace o DRL s textem nebo odkazem. Při užití nad daty musí zprávy založené na shodách zachovat dodanou atribuci autorů. Celý DRL grant neobsahuje výslovné patentové oprávnění nebo odvetné ukončení."
+    }
+  ]
+}

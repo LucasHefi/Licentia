@@ -9,94 +9,98 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "mark-modifications",
-      "provide-corresponding-source"
+      "include-license-text",
+      "mark-modifications"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification"
     ],
     "restrictions": [
       "liability",
-      "trademark"
+      "trademark",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Naumen.json#text; opening source/binary use/redistribution with/without modification and clause 4 acknowledges any-purpose use, no reciprocal condition; no reciprocal source-supply or same-license condition; https://spdx.org/licenses/Naumen.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Naumen.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Naumen.json#text; opening source/binary use/redistribution with/without modification and clause 4 acknowledges any-purpose use, no reciprocal condition; https://spdx.org/licenses/Naumen.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     },
     {
-      "field": "copyleftScope",
+      "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Naumen.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Naumen.json#text; clauses 1-2 source/binary copyright/conditions/disclaimer; clause 5 prominent notices INSIDE changed files saying YOU changed them and DATE of any change; final credits-file statement identifies attributions, not a new prescribed product acknowledgment; https://spdx.org/licenses/Naumen.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     },
     {
-      "field": "triggers",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Naumen.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Naumen.json#text; clauses 1-2 source/binary copyright/conditions/disclaimer; clause 5 prominent notices INSIDE changed files saying YOU changed them and DATE of any change; final credits-file statement identifies attributions, not a new prescribed product acknowledgment; https://spdx.org/licenses/Naumen.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Naumen.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Naumen.json#text; whole text: no express patent grant or patent-litigation termination; no inference of patent rights from copyright, trademarks or non-infringement disclaimers; https://spdx.org/licenses/Naumen.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Naumen.json#text; opening source/binary use/redistribution with/without modification and clause 4 acknowledges any-purpose use, no reciprocal condition; https://spdx.org/licenses/Naumen.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Naumen.json#text; clause 3 NAUMEN endorsement written permission; clause 4 no service-mark/trademark grant; final warranty/liability disclaimer; https://spdx.org/licenses/Naumen.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Naumen.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Naumen.json#text; whole-text editorial review on 2026-09-09, batch 7; Zachovejte copyright, podmínky a disclaimer ve zdrojích nebo materiálech k binární distribuci. Upravené soubory musí výrazně uvádět, že jste je změnili, i datum změny. Propagace jménem NAUMEN vyžaduje písemný souhlas a licence neuděluje práva ke známkám ani servisním značkám. Záruky a odpovědnost jsou vyloučeny; poskytování zdrojů se nevyžaduje.; https://spdx.org/licenses/Naumen.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Naumen.json#text; clauses 1-2 source/binary copyright/conditions/disclaimer; clause 5 prominent notices INSIDE changed files saying YOU changed them and DATE of any change; final credits-file statement identifies attributions, not a new prescribed product acknowledgment; https://spdx.org/licenses/Naumen.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     }
   ]
 }

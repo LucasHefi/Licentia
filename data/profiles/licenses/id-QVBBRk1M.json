@@ -16,20 +16,20 @@
     "family": "nonstandard",
     "copyleftScope": "none",
     "permissions": [
-      "commercial-use",
       "distribution",
       "modifications",
-      "private-use"
+      "private-use",
+      "unknown"
     ],
     "obligations": [
       "include-copyright",
       "include-license-text",
-      "mark-modifications"
+      "mark-modifications",
+      "unknown"
     ],
     "triggers": [
       "distribution",
-      "modification",
-      "unknown"
+      "modification"
     ],
     "restrictions": [
       "additional-terms",
@@ -42,47 +42,65 @@
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "license text, sole permission paragraph, opening subject and grant ('This file and the 14 PostScript(R) AFM files it accompanies'); the grant is confined to one companion file and fourteen specific font-metrics files and uses special file-bundling and paragraph-integrity conditions, making it a nonstandard asset-specific license rather than a general software license"
+      "locator": "public/data/licenses/APAFML.json#text; Grant k fontovým metrikám se specifickým neměnným doprovodem není zdrojový copyleft; nonstandard, scope none.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "license text, sole permission paragraph, proviso; copyright retention, companion-file inclusion, modification marking, and paragraph integrity are required, but no source disclosure, same-license condition, or other reciprocal licensing requirement is stated"
+      "locator": "public/data/licenses/APAFML.json#text; Grant k fontovým metrikám se specifickým neměnným doprovodem není zdrojový copyleft; nonstandard, scope none.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "license text, sole permission paragraph, opening grant ('may be used, copied, and distributed for any purpose and without charge, with or without modification'); use for any purpose covers private and commercial purposes, while copying, distribution, and modification are express, subject to the following conditions and the no-charge qualification"
+      "locator": "public/data/licenses/APAFML.json#text; První věta dovoluje užití, kopie a distribuci pro libovolný účel and without charge, s úpravami i bez nich; není jednoznačný rozsah bezplatnosti další distribuce. Patentová práva chybějí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "license text, sole permission paragraph, proviso clauses 1-4: all copyright notices must be retained; the AFM files may not be distributed without the companion file containing the license; modifications to that file or any AFM file must be prominently noted in each modified file; and the permission paragraph itself must remain unmodified"
+      "locator": "public/data/licenses/APAFML.json#text; Podmínky: všechny copyrighty zachovat; AFM nikdy nešířit bez tohoto souboru; všechny úpravy nápadně označit přímo ve změněných souborech; tento odstavec neměnit. Povinné přiložení konkrétního souboru není pouhý abstraktní notice.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "license text, sole permission paragraph, grant and proviso; distribution activates the companion-file condition, modification activates prominent marking, and copying also activates copyright-retention and paragraph-integrity conditions, but copying has no dedicated trigger value and is represented by unknown"
+      "locator": "public/data/licenses/APAFML.json#text; Podmínky: všechny copyrighty zachovat; AFM nikdy nešířit bez tohoto souboru; všechny úpravy nápadně označit přímo ve změněných souborech; tento odstavec neměnit. Povinné přiložení konkrétního souboru není pouhý abstraktní notice.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "license text, sole permission paragraph, opening grant and proviso ('without charge'; AFM files may not be distributed without the companion file; 'this paragraph is not modified'); these special no-charge, bundle-integrity, and immutable-text conditions are additional terms not represented losslessly by the restrictions vocabulary, so unknown is retained; 'PostScript(R)' and the Adobe copyright identify marks/ownership but impose no trademark or Adobe-name use restriction, and the final support sentence is not a general warranty disclaimer or limitation of liability"
+      "locator": "public/data/licenses/APAFML.json#text; Adobe nemá povinnost podporovat užití AFM souborů; nejde o plnou výluku náhrady škody. Formulace without charge a povinný doprovod potřebují věrný model.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "license text, complete text; the only affirmative grant concerns use, copying, distribution, and modification of the companion file and fourteen AFM files, with no express patent grant, patent condition, or patent-termination clause"
+      "locator": "public/data/licenses/APAFML.json#text; První věta dovoluje užití, kopie a distribuci pro libovolný účel and without charge, s úpravami i bez nich; není jednoznačný rozsah bezplatnosti další distribuce. Patentová práva chybějí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "license text, sole permission paragraph, proviso clauses 1-4; distribution must retain all copyright notices and keep the fourteen AFM files together with the companion license file, every modified file must carry a prominent modification note, and the permission paragraph must remain verbatim, creating a material file-level notice burden"
+      "locator": "public/data/licenses/APAFML.json#text; Podmínky: všechny copyrighty zachovat; AFM nikdy nešířit bez tohoto souboru; všechny úpravy nápadně označit přímo ve změněných souborech; tento odstavec neměnit. Povinné přiložení konkrétního souboru není pouhý abstraktní notice.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "license metadata, osi=false, fsf=false, deprecated=false; license text, sole permission paragraph, opening subject and proviso: the grant applies only to a companion file and fourteen specific PostScript AFM font-metrics files and contains no-charge, file-bundling, copying-trigger, and immutable-paragraph conditions that the software-license guide vocabulary cannot represent losslessly, so it is unsuitable for automatic recommendation as a generally reusable software license"
+      "locator": "public/data/licenses/APAFML.json#text; Individuálně přečten celý připnutý text. Grant zahrnuje tento licenční soubor a čtrnáct doprovázených PostScript AFM souborů s metrikami fontů. Čtrnáct AFM souborů a připojený soubor lze užívat a šířit i změněné; copyrighty zůstávají, změny se výrazně označí a AFM soubory musí doprovázet tento nezměněný licenční odstavec. Adobe nemusí poskytovat podporu. Text se týká 14 fontových metrik a vyžaduje distribuci AFM společně s konkrétním licenčním souborem i neměnnost odstavce. Doplnit fontový předmět a povinnost doprovodného souboru; z primárního kontextu vyjasnit také and without charge před přiznáním komerčního šíření.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

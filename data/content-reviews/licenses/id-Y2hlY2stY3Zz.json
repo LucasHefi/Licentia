@@ -1,0 +1,27 @@
+{
+  "id": "check-cvs",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:17739c97f6b66c780d4a19e13f8117dcb784120018ccf40507f31baa6a6b1176"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Soubor lze kopírovat a šířit s úpravami i bez nich při zachování licenčního oznámení.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Grant výslovně pokrývá tento soubor, nikoli automaticky celý připojený projekt.",
+    "grantCs": "Jediný odstavec povoluje kopírování a distribuci souboru s úpravami i bez nich bez účelového omezení; patentový grant ani sublicence nejsou uvedeny.",
+    "conditionsCs": "Jediný odstavec vyžaduje při kopírování či šíření zachovat toto oznámení; nevyžaduje poskytnutí zdrojů, označení změn nebo reklamu.",
+    "limitationsCs": "V celém krátkém textu není odmítnutí záruk, odpovědnosti, zákaz názvů ani zvláštní výpověď.",
+    "compatibilityCs": "Žádná alternativní licence nebo verze není určena; možnost změn sama o sobě neurčuje kompatibilitu."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/check-cvs.html",
+      "note": "Individuální revize celého připnutého textu; Grant výslovně pokrývá tento soubor, nikoli automaticky celý připojený projekt."
+    }
+  ]
+}

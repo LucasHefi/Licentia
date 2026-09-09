@@ -1,0 +1,20 @@
+{
+  "id": "AGPL-3.0-or-later",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.8",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:1b7ae5bf7bc4b533262fa0ed92ed569e2ca4ef70d8287bcecc88b74239a50f19"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Při distribuci zachovejte licenci a oznámení, označte změny včetně data a zajistěte odpovídající zdroje; u příslušných uživatelských produktů také instalační informace. Upravená verze podporující vzdálenou interakci musí všem takto připojeným uživatelům výrazně nabídnout bezplatné získání svých zdrojů. Při kombinaci podle § 13 zůstává část GPLv3 pod GPLv3 a část AGPL pod AGPL; síťová nabídka zahrnuje zdroje obou částí. Patentový grant přispěvatelů doprovází omezení patentových nároků a diskriminačních dohod. Porušení ukončuje práva s možnostmi nápravy podle § 8. Identifikátor or-later dovoluje také pozdější verze vydané FSF podle § 14; profil vyhodnocuje podmínky verze 3.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/AGPL-3.0-or-later.html",
+      "note": "Dřívější individuální revize 2026-09-09.8; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

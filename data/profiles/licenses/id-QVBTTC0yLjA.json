@@ -17,6 +17,7 @@
     "copyleftScope": "file",
     "permissions": [
       "commercial-use",
+      "conditional-relicensing",
       "distribution",
       "modifications",
       "patent-grant",
@@ -24,23 +25,22 @@
       "sublicensing"
     ],
     "obligations": [
+      "defend-added-warranty",
       "disclose-source",
       "include-copyright",
       "include-license-text",
       "include-notice",
       "mark-modifications",
       "network-use-disclose",
-      "provide-corresponding-source",
       "same-license",
       "unknown"
     ],
     "triggers": [
-      "combination",
       "distribution",
       "modification",
       "network-use",
       "patent-claim",
-      "unknown"
+      "use"
     ],
     "restrictions": [
       "additional-terms",
@@ -57,47 +57,65 @@
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "APSL-2.0 text Sections 1.4, 1.6, and 2.2(c) (External Deployment includes providing an electronically communicated service to another client, and source disclosure plus APSL licensing applies to file-defined Modifications externally deployed in that manner)"
+      "locator": "public/data/licenses/APSL-2.0.json#text; §1.6 váže rozsah copyleftu na změněný soubor a novou reprezentaci obsahující Covered Code; §4 jiný kód Larger Work vyjímá. Network-copyleft z§1.4b+2.2c nevytváří whole-work rozsah, file hranice trvá.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "APSL-2.0 text Sections 1.3, 1.5-1.6, 2.2(c), and 4 (Modifications are defined by additions to or deletions from Covered Code files and new files containing Covered Code; a Larger Work may combine other code, but APSL requirements remain confined to Covered Code and its portions)"
+      "locator": "public/data/licenses/APSL-2.0.json#text; §1.6 váže rozsah copyleftu na změněný soubor a novou reprezentaci obsahující Covered Code; §4 jiný kód Larger Work vyjímá. Network-copyleft z§1.4b+2.2c nevytváří whole-work rozsah, file hranice trvá.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "APSL-2.0 text Sections 1.4, 2, 2.1-2.2, 3, and 4 (worldwide royalty-free copyright and Applicable Patent Rights grants cover commercial or non-commercial use, reproduction, modification, internal distribution, sublicensing/External Deployment, distribution, and creation and distribution of Larger Works)"
+      "locator": "public/data/licenses/APSL-2.0.json#text; §2 Apple světová nevýhradní bezroyalty copyright i výslovná nutná Applicable Patent Rights k originálu od přijetí a downloadu: použití/kopie/display/perform/interní distribuce/externí nasazení původního i upraveného kódu obchodně i neobchodně. §3 všem příjemcům/distributorům neodvolatelný trvalý ekvivalentní grant vlastních změn včetně sublicence a relevantních patentů změn samých nebo s originálem. §5 další Apple patenty nejsou uděleny; nejde o výluku celé patentové licence. §7 pozdější Apple verze volitelné.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "APSL-2.0 text Sections 2.1(a)-(b), 2.2(a)-(c), 2.3, 3, and Exhibit A (retain copyright/proprietary/license notices, include the License, duplicate the per-file Exhibit A notice, mark changes and dates, disclose externally deployed Modifications under APSL including on network service deployment, and state source availability for executable deployment; Section 3's perpetual contributor copyright/patent grant and Section 2.2(c)'s disclosure duration have no exact vocabulary values and are represented by unknown; complete-text review confirms APSL-2.0 contains no separate Apple-notification duty)"
+      "locator": "public/data/licenses/APSL-2.0.json#text; §2.1 ve všech kopiích Apple copyright/proprietary/disclaimer notices a původní odkazy na licenci; ke každému distribuovanému/Externally Deployed zdroji i dokumentaci licence bez omezení zdrojových práv. §2.2 všechny vlastní změnové soubory ExhibitA a datum/prominentní změnová značka i před externím nasazením. Jen Externally Deployed změny vyžadují jejich všechny zdroje pod APSL buď příjemcům nasazení, nebo veřejně, po dobu externího nasazení Covered Code nebo12měsíců od prvního, podle delší; elektronická forma pouze preferována. §2.3 object-only nasazení v kódu I docs prominentní informace o APSL zdroji/how/where. §6 vlastní placené dodatečné závazky jen se získaným souhlasem příjemce, že jsou pouze vlastní, a obranou/odškodněním Apple i všech Contributors.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "APSL-2.0 text Sections 1.4-1.6, 2.1-2.3, 4, 12.1(c), and 13.5(b) (conditions are activated by distribution/External Deployment, modification, network service use, combination in a Larger Work, and a patent action against Apple; use, reproduction, display, performance, internal distribution, sublicensing, and legal prohibition or unenforceability are additional triggers without exact vocabulary values and are represented by unknown)"
+      "locator": "public/data/licenses/APSL-2.0.json#text; §2.1 ve všech kopiích Apple copyright/proprietary/disclaimer notices a původní odkazy na licenci; ke každému distribuovanému/Externally Deployed zdroji i dokumentaci licence bez omezení zdrojových práv. §2.2 všechny vlastní změnové soubory ExhibitA a datum/prominentní změnová značka i před externím nasazením. Jen Externally Deployed změny vyžadují jejich všechny zdroje pod APSL buď příjemcům nasazení, nebo veřejně, po dobu externího nasazení Covered Code nebo12měsíců od prvního, podle delší; elektronická forma pouze preferována. §2.3 object-only nasazení v kódu I docs prominentní informace o APSL zdroji/how/where. §6 vlastní placené dodatečné závazky jen se získaným souhlasem příjemce, že jsou pouze vlastní, a obranou/odškodněním Apple i všech Contributors.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "APSL-2.0 text Sections 2.1(b), 2.4, 5-6, 8-10, 12, and 13.5-13.7 (limits on additional terms and patent rights, third-party-right responsibility and indemnity, warranty/liability disclaimers, Apple and Contributor trademark limits, breach/patent/legal-enforceability termination, destruction and cessation duties, Northern District of California forum, and United States/California governing law; the latter termination, remedy, forum, and governing-law terms have no exact vocabulary values and are represented by unknown)"
+      "locator": "public/data/licenses/APSL-2.0.json#text; §2.4 nutné cizí IP si zajišťuje uživatel, bez ujištění neporušení. §§8–9 as-is bez podpory/upgradů, zákonné výjimky, Apple celkem50USD; kritické použití není zamýšleno, nikoli zákaz grantu. §10 bez značek Apple/Contributors, produktová/endorsement Apple Marks jen podle povolených guidelines. §12 konec po nenapraveném porušení30dní od znalosti,§13.5b ihned, nebo patentové žalobě protiApple s výjimkou případů, kdy Apple žaloval první. §12.2 zastavit další úkony, řádné sublicence a§3granty trvají. Zničení všech kontrolovaných kopií výslovně jen§13.5b při zákonné překážce plnění/vymáhání§§2–3, ne obecně při každém§12konci.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "APSL-2.0 text Sections 1.1, 2, 3, 5, and 12.1(c) (Apple grants Applicable Patent Rights for Original Code, You grant Applicable Patent Rights in Your Modifications to recipients, and all licensed rights terminate if You commence patent litigation against Apple unless Apple initiated patent litigation against You first)"
+      "locator": "public/data/licenses/APSL-2.0.json#text; §2 Apple světová nevýhradní bezroyalty copyright i výslovná nutná Applicable Patent Rights k originálu od přijetí a downloadu: použití/kopie/display/perform/interní distribuce/externí nasazení původního i upraveného kódu obchodně i neobchodně. §3 všem příjemcům/distributorům neodvolatelný trvalý ekvivalentní grant vlastních změn včetně sublicence a relevantních patentů změn samých nebo s originálem. §5 další Apple patenty nejsou uděleny; nejde o výluku celé patentové licence. §7 pozdější Apple verze volitelné.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "APSL-2.0 text Sections 2.1(a)-(b), 2.2(a)-(b), 2.3, and Exhibit A (copyright, proprietary, disclaimer, license-reference, full-license, prescribed per-file, changed-file/date, and executable source-availability notices create a material multi-part notice burden)"
+      "locator": "public/data/licenses/APSL-2.0.json#text; §2.1 ve všech kopiích Apple copyright/proprietary/disclaimer notices a původní odkazy na licenci; ke každému distribuovanému/Externally Deployed zdroji i dokumentaci licence bez omezení zdrojových práv. §2.2 všechny vlastní změnové soubory ExhibitA a datum/prominentní změnová značka i před externím nasazením. Jen Externally Deployed změny vyžadují jejich všechny zdroje pod APSL buď příjemcům nasazení, nebo veřejně, po dobu externího nasazení Covered Code nebo12měsíců od prvního, podle delší; elektronická forma pouze preferována. §2.3 object-only nasazení v kódu I docs prominentní informace o APSL zdroji/how/where. §6 vlastní placené dodatečné závazky jen se získaným souhlasem příjemce, že jsou pouze vlastní, a obranou/odškodněním Apple i všech Contributors.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "APSL-2.0 metadata: id=APSL-2.0, name='Apple Public Source License 2.0', deprecated=false, osi=true, fsf=true, released 6 August 2003; text Sections 1-13 and Exhibit A: despite current and approved metadata, the guide vocabulary cannot losslessly represent Section 2.2(c)'s disclosure duration, Section 3's mandatory contributor grants, the non-enumerated triggers in Sections 2.1-2.2 and 13.5(b), or Sections 12 and 13.5-13.7 termination, destruction, governing-law, and forum terms; complete-text review also confirms there is no Apple-notification clause, so the profile is not recommendable"
+      "locator": "public/data/licenses/APSL-2.0.json#text; Individuálně přečten celý připnutý text. §1 veřejně vydaný Apple program/jiné dílo s Original Code headerem, včetně označených aktualizací a původních objektů. Covered Code originál, změny, kombinace i části; změna souboru obsahujícího Covered Code nebo nový soubor s jeho částí. Externally Deploy znamená zpřístupnění komukoli mimo You NEBO elektronickou službu cizímu klientovi i v Larger Work. You zahrnuje ovládané/ovládající/sesterské entity podle vedení nebo≥50%; prostý interní provoz bez této externí vazby není1.x Deploy. APSL 2.0 vztahuje souborový copyleft také na službu elektronickému klientovi mimo vlastní entitu. Oproti verzím 1.x již nevyžaduje zveřejnění běžného interního provozu ani privilegovaný grant Apple: zdroje externě nasazených změn lze dát příjemcům nebo veřejnosti. Zůstává zvláštní souhlas s dodatečnými závazky a zničení kopií při zákonné nemožnosti plnění. § 6 vyžaduje aktivně získat souhlas příjemce s vlastními dodatečnými závazky a § 13.5b při zákonné nemožnosti §§ 2–3 okamžitě zničit kontrolované kopie. Doplnit model těchto podmíněných jednání/ukončení; běžné defend-added-warranty a restriction additional-terms je plně nevyjadřují. Nezaměňovat s odstraněným interním Deploy/grant-back Apple z verzí 1.x.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

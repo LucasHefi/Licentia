@@ -16,6 +16,7 @@
     "family": "nonstandard",
     "copyleftScope": "unknown",
     "permissions": [
+      "conditional-relicensing",
       "distribution",
       "unknown"
     ],
@@ -23,8 +24,7 @@
       "unknown"
     ],
     "triggers": [
-      "distribution",
-      "unknown"
+      "distribution"
     ],
     "restrictions": [
       "unknown"
@@ -36,47 +36,65 @@
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text: first paragraph, sentences 1-2 ('under the terms of the GPL, LGPL, modified BSD, or Artistic license, or any of the other OSI approved licenses' and 'all of these licenses, or any smaller subset ... or just one'); the record delegates operative terms to a distributor-selected license or set of licenses instead of defining one fixed license family"
+      "locator": "public/data/licenses/any-OSI-perl-modules.json#text; Prohlášení řeší výběr distribuční licence softwaru a informaci o této volbě v balíčku. První odstavec dovoluje distribuci pod GPL, LGPL, modified BSD, Artistic nebo dalšími OSI licencemi, a to pod všemi, podmnožinou nebo jedinou z nich. Zvolená množina může zahrnovat odlišný copyleft a není určena; jedno pole jej nemůže věrně zastoupit.; https://spdx.org/licenses/any-OSI-perl-modules.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text: first paragraph, sentences 1-2; the selectable GPL, LGPL, modified BSD, Artistic, and other OSI-approved terms do not establish one invariant reciprocal scope, while the note that the text is used in Perl modules does not itself impose library-level copyleft"
+      "locator": "public/data/licenses/any-OSI-perl-modules.json#text; Zvolená množina může zahrnovat odlišný copyleft a není určena; jedno pole jej nemůže věrně zastoupit.; https://spdx.org/licenses/any-OSI-perl-modules.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text: first paragraph ('This software may be redistributed' and 'Distribution is allowed'); distribution is expressly permitted, but all other vocabulary permissions depend on the selected license or licenses and are therefore represented by unknown"
+      "locator": "public/data/licenses/any-OSI-perl-modules.json#text; První odstavec dovoluje distribuci pod GPL, LGPL, modified BSD, Artistic nebo dalšími OSI licencemi, a to pod všemi, podmnožinou nebo jedinou z nich.; https://spdx.org/licenses/any-OSI-perl-modules.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text: first paragraph ('under the terms of' a selectable license or subset) and second paragraph ('please refer to the package metadata' and a distributor 'may choose' to replace the LICENSE section and/or include a LICENSE file); the wrapper states no invariant mandatory obligation from the vocabulary"
+      "locator": "public/data/licenses/any-OSI-perl-modules.json#text; Podmínky plynou ze zvolených licencí; u balíčku se odkazuje na metadata a distributor může nahradit LICENSE oddíl dokumentace či přiložit soubor LICENSE zachycující volbu.; https://spdx.org/licenses/any-OSI-perl-modules.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "text: first paragraph expressly addresses redistribution and distribution, establishing distribution as a trigger context; modification, linking, combination, network-use, and patent-claim triggers vary with the selected license or licenses and are represented by unknown"
+      "locator": "public/data/licenses/any-OSI-perl-modules.json#text; Podmínky plynou ze zvolených licencí; u balíčku se odkazuje na metadata a distributor může nahradit LICENSE oddíl dokumentace či přiložit soubor LICENSE zachycující volbu.; https://spdx.org/licenses/any-OSI-perl-modules.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text: complete text, especially first paragraph ('under the terms of' the selectable license or licenses); the wrapper states no invariant liability, warranty, trademark, additional-terms, or patent-claim restriction, and those restrictions may vary with the selected terms"
+      "locator": "public/data/licenses/any-OSI-perl-modules.json#text; Samotné prohlášení nemá záruky, odpovědnost ani ukončení; ty závisejí na zvolených podmínkách.; https://spdx.org/licenses/any-OSI-perl-modules.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "text: complete text; the wrapper contains no express patent grant or termination clause, but delegates operative terms to a selectable and open-ended set of OSI-approved licenses whose patent positions are not invariant"
+      "locator": "public/data/licenses/any-OSI-perl-modules.json#text; Prohlášení žádné patentové ujednání nemá; patentová pozice závisí na zvolené licenci.; https://spdx.org/licenses/any-OSI-perl-modules.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text: second paragraph ('please refer to the package metadata' and a distributor 'may choose' to replace the LICENSE section and/or include a LICENSE file); this is not one fixed notice obligation, and the selected license or licenses may impose differing notice burdens"
+      "locator": "public/data/licenses/any-OSI-perl-modules.json#text; Podmínky plynou ze zvolených licencí; u balíčku se odkazuje na metadata a distributor může nahradit LICENSE oddíl dokumentace či přiložit soubor LICENSE zachycující volbu. Rozsah notifikační zátěže: unknown.; https://spdx.org/licenses/any-OSI-perl-modules.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "record metadata: id=any-OSI-perl-modules, isOsiApproved=false, isDeprecatedLicenseId=false; text: both paragraphs delegate current operative terms to one or more distributor-selected licenses and allow packaged metadata to identify a narrower choice, so a single static semantic profile cannot represent the grant, scope, obligations, restrictions, patent position, notices, and triggers losslessly"
+      "locator": "public/data/licenses/any-OSI-perl-modules.json#text; Individuální kontrola celého připnutého textu any-OSI-perl-modules dne 2026-09-09. Prohlášení řeší výběr distribuční licence softwaru a informaci o této volbě v balíčku. Text dovoluje volbu jednotlivé či více neurčených verzí licencí včetně externího OSI seznamu; před doporučením je třeba určit konkrétní distribuční volbu a reprezentovat její alternativy. Text výslovně poskytuje mnoho alternativ a dovoluje jejich podmnožiny, ale neudává verze GPL/LGPL/Artistic ani konkrétní modified BSD.; https://spdx.org/licenses/any-OSI-perl-modules.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

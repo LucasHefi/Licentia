@@ -1,0 +1,22 @@
+{
+  "id": "Cube",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.6",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:c79a39ec461ba578e957624e4f2be183b201a097c6cfe4f0515032431e134943"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Zachovejte oznámení při distribuci zdrojů, označte úpravy a nezkreslujte původ. Poděkování v produktu je dobrovolné. Dodatečný článek ale zakazuje přelicencovat zdrojové verze bez výslovného písemného souhlasu autora. Průvodce zatím nerozlišuje tuto podmínku zdrojové distribuce od povinnosti zdroje poskytovat.",
+  "blockersCs": [
+    "Vyjádřit zákaz přelicencování zdrojových verzí podle § 4 a výjimku s písemným souhlasem autora. Oddělit distribuovanou formu a licenční strategii; nepřidávat povinnost zdroje poskytovat ani automatický copyleft celého programu. Tři podobné klauzule Zlib nepokrývají dodatečnou podmínku Cube."
+  ],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Cube.html",
+      "note": "Dřívější individuální revize 2026-09-09.6; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

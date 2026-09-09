@@ -8,94 +8,101 @@
     "contentHash": "sha256:ca9e1cf7e58a8e21805f1bedfee9994f1d4f13615dbefb1c50ca4e26d3cb6de2"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
+    "family": "nonstandard",
     "copyleftScope": "unknown",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
       "include-license-text",
-      "provide-corresponding-source"
-    ],
-    "triggers": [
+      "provide-corresponding-source",
+      "same-license",
       "unknown"
     ],
-    "restrictions": [
-      "liability",
-      "trademark"
+    "triggers": [
+      "distribution"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "restrictions": [
+      "additional-terms",
+      "liability",
+      "trademark",
+      "warranty"
+    ],
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Sendmail.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Sendmail.json#text; Při volbě beznákladové cesty nevzniká §1(b) reciproční zdrojová podmínka; jeden copyleftScope nedokáže obě distribuční cesty věrně popsat.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Sendmail.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Sendmail.json#text; Při volbě beznákladové cesty nevzniká §1(b) reciproční zdrojová podmínka; jeden copyleftScope nedokáže obě distribuční cesty věrně popsat.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Sendmail.json#text; Úvod dovoluje use/modification/redistribution v obou formách pouze při splnění podmínek; komerční cenová volnost závisí na volbě §1(b). Patentový grant ani výslovná sublicence chybějí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Sendmail.json#text; §1(a) distribuce nejvýše za rozumné materials/delivery NEBO §1(b) přiložené úplné zdroje či neodvolatelná nabídka až tři roky za materiál/doručení a další use/modify/distribute pod substantially same terms. §§2–3 copyright/podmínky/disclaimer ve zdrojových souborech či materiálech binárek; §5 plně uvedené UC Berkeley source/binary notices a no-endorsement.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Sendmail.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Sendmail.json#text; §1(a) distribuce nejvýše za rozumné materials/delivery NEBO §1(b) přiložené úplné zdroje či neodvolatelná nabídka až tři roky za materiál/doručení a další use/modify/distribute pod substantially same terms. §§2–3 copyright/podmínky/disclaimer ve zdrojových souborech či materiálech binárek; §5 plně uvedené UC Berkeley source/binary notices a no-endorsement.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Sendmail.json#text; §4 zakazuje endorsement jmény Sendmail/UC/přispěvatelů bez písemného svolení a označuje sendmail jako známku. §6 odmítá záruky a škody Sendmail, Regents a přispěvatelů. Jiná individuální dohoda se Sendmail může režim nahradit.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Sendmail.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Sendmail.json#text; Úvod dovoluje use/modification/redistribution v obou formách pouze při splnění podmínek; komerční cenová volnost závisí na volbě §1(b). Patentový grant ani výslovná sublicence chybějí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Sendmail.json#text; §1(a) distribuce nejvýše za rozumné materials/delivery NEBO §1(b) přiložené úplné zdroje či neodvolatelná nabídka až tři roky za materiál/doručení a další use/modify/distribute pod substantially same terms. §§2–3 copyright/podmínky/disclaimer ve zdrojových souborech či materiálech binárek; §5 plně uvedené UC Berkeley source/binary notices a no-endorsement.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Sendmail.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Sendmail.json#text; Individuálně přečten celý připnutý text. Licence Sendmail s revizí dokumentu 8.16/2010 pokrývá zdroje/binárky a jejich změny; §1(b) Source Code je kompletní kompilovatelný/linkovatelný sendmail se všemi změnami. Redistribuce sendmailu splní jednu ze dvou cest: nejvýše náklady materiálu/doručení, nebo úplné zdroje či neodvolatelná nabídka až tří let se zachováním obdobných práv. Zdrojová povinnost tedy není bezpodmínečná. Platí další vložené UC Berkeley podmínky. § 1 nabízí skutečné alternativy cenově omezené distribuce versus zdroje/nabídka s obdobnými downstream podmínkami. Doplnit model volby cest a rozsahu sendmail zdrojů, místo kumulativního disclose-source/same-license pro každé šíření.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

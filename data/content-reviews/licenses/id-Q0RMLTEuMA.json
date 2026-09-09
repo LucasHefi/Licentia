@@ -1,0 +1,29 @@
+{
+  "id": "CDL-1.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:aaa6aa4bcd91696b8e32ad7e49e222da9c3bfd9ae906400b3e054124db8024af"
+  },
+  "disposition": "blocked",
+  "summaryCs": "CDL 1.0 dovoluje komerční i nekomerční užití a úpravy dokumentů, ale každý odvozený dokument musí zůstat pod přesným zněním CDL. Zachovávají se notices, přidává vlastní copyright a stručný přehled změn. Licence smí být přiložena celá nebo řádně začleněna odkazem dle Exhibit A. Samostatná díla v kompilaci zůstávají oddělená; CDL neukládá poskytování softwarových zdrojů. Dokument je bez záruk a s vymezenou výlukou odpovědnosti.",
+  "blockersCs": [
+    "§§0–4 konstruují copyleft dokumentu včetně překladů, zkrácení a kompilací; nevymezují zdrojový a binární software ani odpovídající zdroje. Přestože definice zahrnuje i jiné označené dílo, jde o dokumentační licenci a pro nový softwarový projekt ji tento průvodce nedoporučuje. Dalším krokem je samostatná dokumentační větev, která vysvětlí tento rozsah a alternativní začlenění licence odkazem."
+  ],
+  "analysis": {
+    "subjectCs": "§1 pokrývá dokumentaci, manuál nebo jiné dílo výslovně označené jako CDL; preambule a definice odvozenin jsou zaměřeny na dokumenty, včetně překladů, kondenzací a rozšíření. Nejde o model přístupnosti zdrojového kódu.",
+    "grantCs": "§2 výslovně dovoluje užití, kopírování, změny, veřejné zobrazení, distribuci a publikaci v libovolném médiu komerčně i nekomerčně. §8 dovoluje pokračovat podle použité verze nebo zvolit kteroukoli pozdější verzi vydanou Apple; patentový grant chybí.",
+    "conditionsCs": "§2 vyžaduje zachovat copyright a na nápadném místě buď celé znění licence, nebo formální referenci přesně podle Exhibit A. Proto není samostatně tvrzena bezvýjimečná povinnost přiložit celý text. §3 nařizuje CDL pro odvozený dokument, původní notices, přidání vlastního copyrightu, sousední shrnutí změn a případně výslovné označení CDL. §4 u kompilace přidává oznámení začlenění CDL dokumentu a jeho licence s celým textem nebo referencí.",
+    "limitationsCs": "§5 výslovně vylučuje záruky včetně přesnosti a neporušování práv; §6 vylučuje vyjmenované nepřímé a následné škody i při selhání účelu nápravy. §7 neuděluje práva ke jménům a značkám a zakazuje jejich propagační užití bez předchozího písemného souhlasu. §9 ukončuje licenci automaticky při nesplnění podmínek a ukládá zastavit další vyjmenované činnosti, ale řádné předchozí sublicence přežívají. §10 volí právo USA a Kalifornie bez kolizních pravidel.",
+    "compatibilityCs": "Copyleft podle §3 dopadá na celý odvozený dokument; samostatná nezávislá díla kompilace ani pouhé společné médium pod CDL nepřevádí. §2 zakazuje další podmínky, §8 nabízí pouze pozdější vydání Apple. Z této verze neplyne obecná kompatibilita s jiným licenčním režimem."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/CDL-1.0.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Preambule a §3 vyžadují přesné podmínky CDL pro všechny odvozené dokumenty, proto silný copyleft v dokumentačním významu"
+    }
+  ]
+}

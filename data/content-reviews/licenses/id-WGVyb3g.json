@@ -1,0 +1,22 @@
+{
+  "id": "Xerox",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.7",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:998b2983bc475bf7d10f2f56dedf73fa0909f5ff844f4d6177beb0f9ee5fa553"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Při kopírování softwaru i odvozených děl zachovejte copyright a oba následující odstavce licence. Distribuce musí splňovat všechny použitelné americké exportní předpisy. Průvodce zatím neposuzuje jurisdikci ani použitelnost této podmínky. Text dovoluje užití, kopírování a tvorbu odvozených děl a vylučuje záruky i odpovědnost.",
+  "blockersCs": [
+    "Doplnit posouzení jurisdikce a podmínky dodržení všech použitelných amerických exportních předpisů při distribuci. Současný slovník nemá odpovídající povinnost; samotné include-license-text ji nepokrývá. Neodvozovat konkrétní zakázané země a neplést tuto podmínku s historickou informativní poznámkou Intel."
+  ],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Xerox.html",
+      "note": "Dřívější individuální revize 2026-09-09.7; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

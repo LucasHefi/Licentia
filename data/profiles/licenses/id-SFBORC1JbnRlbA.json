@@ -9,15 +9,17 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
@@ -25,77 +27,80 @@
       "mark-modifications"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification"
     ],
     "restrictions": [
-      "liability"
+      "liability",
+      "trademark",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/HPND-Intel.json#text; first paragraph: permission to copy, modify and distribute software and documentation with no field-of-use, commercial, royalty or private-copy restriction; use is not separately enumerated and no sublicensing grant is stated; whole text: no reciprocal source-disclosure or same-license condition; https://spdx.org/licenses/HPND-Intel.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.4"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/HPND-Intel.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/HPND-Intel.json#text; first paragraph: permission to copy, modify and distribute software and documentation with no field-of-use, commercial, royalty or private-copy restriction; use is not separately enumerated and no sublicensing grant is stated; https://spdx.org/licenses/HPND-Intel.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.4"
     },
     {
-      "field": "copyleftScope",
+      "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/HPND-Intel.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/HPND-Intel.json#text; first paragraph: copyright in all copies and copyright/permission in supporting documentation; prominently mark ANY software/documentation modifications as not part of original; https://spdx.org/licenses/HPND-Intel.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.4"
     },
     {
-      "field": "triggers",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/HPND-Intel.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/HPND-Intel.json#text; first paragraph: copyright in all copies and copyright/permission in supporting documentation; prominently mark ANY software/documentation modifications as not part of original; https://spdx.org/licenses/HPND-Intel.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.4"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/HPND-Intel.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/HPND-Intel.json#text; whole text: no express patent grant or patent-litigation termination; no inference about implied patent rights; https://spdx.org/licenses/HPND-Intel.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.4"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/HPND-Intel.json#text; first paragraph: permission to copy, modify and distribute software and documentation with no field-of-use, commercial, royalty or private-copy restriction; use is not separately enumerated and no sublicensing grant is stated; https://spdx.org/licenses/HPND-Intel.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.4"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/HPND-Intel.json#text; first paragraph: no Intel name in distribution advertising without written permission; following paragraphs: warranty/results disclaimers, enumerated damage exclusions and total-liability cap at amount paid to Intel; https://spdx.org/licenses/HPND-Intel.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.4"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/HPND-Intel.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/HPND-Intel.json#text; whole-text editorial review on 2026-09-09, batch 4; Zachovejte copyright ve všech kopiích a copyright i svolovací oznámení v podpůrné dokumentaci. Každou úpravu softwaru či dokumentace výrazně označte jako nepatřící k originálu. Jméno Intel nepoužívejte v reklamě k distribuci bez předchozího písemného souhlasu. Text vylučuje záruky a některé škody; celkovou odpovědnost omezuje částkou zaplacenou Intelu za licencovaný produkt.; https://spdx.org/licenses/HPND-Intel.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.4"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/HPND-Intel.json#text; first paragraph: copyright in all copies and copyright/permission in supporting documentation; prominently mark ANY software/documentation modifications as not part of original; https://spdx.org/licenses/HPND-Intel.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.4"
     }
   ]
 }

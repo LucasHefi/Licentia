@@ -1,0 +1,29 @@
+{
+  "id": "NCBI-PD",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:26df2e2e8ba4f87af8d3f8ee175364d514e0d9ec4dd615657ebf33488c5cd50d"
+  },
+  "disposition": "blocked",
+  "summaryCs": "NCBI prohlašuje software za dílo zaměstnanců vlády USA bez copyrightu a omezení užití či reprodukce. NLM a vláda odmítají záruky výsledků; citování autora je žádost.",
+  "blockersCs": [
+    "Text odvozuje volnost výlučně od statusu United States Government Work a neposkytuje náhradní grant pro běžného autora. Průvodce musí rozlišit tento původ díla a územní rozsah před použitím jako licence nového projektu."
+  ],
+  "analysis": {
+    "subjectCs": "Prohlášení platí pro konkrétní software vytvořený v rámci úředních povinností zaměstnanců vlády USA, nikoli pro libovolné soukromé dílo.",
+    "grantCs": "První odstavec tvrdí nemožnost copyrightu United States Government Work a neomezené užití/reprodukci; nejde o fallback copyrightovou licenci pro jiné jurisdikce. Výslovný patentový grant chybí.",
+    "conditionsCs": "První odstavec výslovně vylučuje omezení užití a reprodukce. Please cite the author je žádost; povinné copyrightové oznámení, zdroje ani spouštěče povinností nejsou uvedeny.",
+    "limitationsCs": "Druhý odstavec odmítá záruky výkonu a výsledků softwaru/dat a všechny výslovné i implicitní záruky včetně obchodovatelnosti/vhodnosti. Samostatná výluka škod chybí.",
+    "compatibilityCs": "Public-domain tvrzení se opírá o status konkrétního vládního díla; text nemá náhradní licenci ani variantu pro soukromého autora."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/NCBI-PD.html",
+      "note": "Individuální revize celého připnutého textu; Prohlášení platí pro konkrétní software vytvořený v rámci úředních povinností zaměstnanců vlády USA, nikoli pro libovolné soukromé dílo."
+    }
+  ]
+}

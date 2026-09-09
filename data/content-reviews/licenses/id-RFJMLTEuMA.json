@@ -1,0 +1,29 @@
+{
+  "id": "DRL-1.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:1d19dec7513e6b7dea23cbcdbff903f919f592589b4fe5a555d3e3727386eda9"
+  },
+  "disposition": "blocked",
+  "summaryCs": "DRL 1.0 dovoluje libovolné nakládání se sadou detekčních pravidel. Při sdílení zachovejte dodané údaje o autorech a dalších určených osobách, rozumně proveditelný odkaz na pravidla a označení licence s textem či odkazem.",
+  "blockersCs": [
+    "Grant vymezuje rule set a dokumentaci, nikoli obecný software. Pro nový softwarový projekt je třeba oddělit model detekčních pravidel a jejich author/URI metadat nebo zvolit softwarový grant; nelze jej bez dalšího přenést na libovolnou aplikaci."
+  ],
+  "analysis": {
+    "subjectCs": "Sada detekčních pravidel a související dokumentace definované jako Rules.",
+    "grantCs": "Use/copy/modify/merge/publish/distribute/sublicense/sell a další oprávnění příjemcům; bez patentového grantu.",
+    "conditionsCs": "Při sdílení i změněných Rules zachovat dodanou identifikaci autorů/designated attribution, v rozumně žádané formě včetně pseudonymu; URI pravidel, je-li rozumně možné; označení DRL a text nebo URI licence v rozumně proveditelném rozsahu.",
+    "limitationsCs": "AS IS bez záruk včetně noninfringement, široké vyloučení odpovědnosti. Nevyžaduje pod stejnou licencí nové části ani zveřejnění zdrojů.",
+    "compatibilityCs": "Text nebo odkaz jsou alternativa splnění oznámení, ne volba jiné licence/verze; povinnost zachovat údaje je podmíněna jejich dodáním."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/DRL-1.0.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Grant Rules without restriction s podmíněnými attribution/URI notices při sdílení."
+    }
+  ]
+}

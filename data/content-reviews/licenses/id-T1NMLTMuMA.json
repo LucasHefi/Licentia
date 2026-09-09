@@ -1,0 +1,29 @@
+{
+  "id": "OSL-3.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:a1e1e377159b1f04490f4e1cd4c1b38d8b7fe455de4608356115789c6f527e1b"
+  },
+  "disposition": "blocked",
+  "summaryCs": "OSL3.0 vyžaduje tuto OSL pro distribuované či sdělované kopie originálu a odvozenin. Za distribuci považuje i jejich externí nasazení pro kohokoli mimo definované You, včetně síťové aplikace. Poskytovatel musí zajistit zdroje originálu nebo dostupný repozitář po dobu distribuce; příslušný závazek přebírá poskytovatel odvozeniny. U změn zůstávají zdrojové notices a výrazné označení. Přiměřené úsilí získat výslovný souhlas příjemců nelze zaměnit za pouhý notice. Záruka původu práv zůstává; patentová žaloba proti poskytovateli či příjemci ukončuje celý grant, s výjimkou kombinací.",
+  "blockersCs": [
+    "§9 vyžaduje při distribuci nebo sdělování kopií přiměřené úsilí získat výslovný souhlas příjemců; §5 považuje každé externí nasazení originálu i odvozeniny za distribuci. Slovník nemá odpovídající povinnost získání souhlasu, kterou je třeba modelovat včetně tohoto rozsahu triggeru před doporučením."
+  ],
+  "analysis": {
+    "subjectCs": "Originální autorské dílo s notice OSL3.0 vedle copyrightu, samostatně či jako součást kolektivního díla, a jeho překladem/úpravou/uspořádáním vzniklé odvozeniny (§1). You zahrnuje ovládané, ovládající a společně ovládané subjekty podle §14, což určuje hranici externího užití.",
+    "grantCs": "§1 uděluje celosvětově bez royalty, nevýhradně a sublicencovatelně autorská práva po dobu copyrightu: kopie, odvozeniny, distribuci/sdělování, veřejné provádění a zobrazování. §2 uděluje patentové licence po dobu patentů pro výrobu, užití, prodej/nabídku, zadání výroby a import, pouze k poskytovatelem vlastněným/ovládaným nárokům uskutečněným v jím dodaném originálu. §15 dovoluje další neomezené užití.",
+    "conditionsCs": "§1(c) originál i odvozeniny při distribuci/sdělování musí mít tuto OSL. §3 poskytovatel dodává preferovanou formu úprav s dostupnou dokumentací; alternativou je levně a pohodlně dostupný repozitář po dobu vlastní distribuce. Tato verze nevyžaduje adresu hned po copyrightu jako2.1. §5 aplikuje distribuční fikci na externí nasazení originálu I odvozeniny včetně síťových aplikací, se zdrojovým závazkem poskytovatele OSL díla. §6 zachovává původní copyright/patent/známky/licenční a Attribution Notices ve zdrojích odvozenin a výrazně oznamuje změnu. §9 přidává získávání výslovného souhlasu s kvalifikací přiměřeného úsilí.",
+    "limitationsCs": "§4 nedovoluje propagaci jmény či známkami bez předchozího výslovného souhlasu a vyhrazuje ostatní IP. §7 zaručuje původ autorských/patentových práv, vylučuje ostatní záruky. §8 vylučuje nepřímé a další vyjmenované škody v mezích zákona, neobsahuje obecnou výluku direct damages verze2.1. §9 zachovává fair use/fair dealing, výslovný souhlas označuje za neodvolatelný a ruší grant při porušení §1(c). §10 patentová žaloba včetně cross/counterclaim proti poskytovateli či kterémukoli příjemci ruší vše, kromě kombinací s jiným SW/HW. §§11–12 určují fórum/právo bydliště či hlavní činnosti poskytovatele a náklady úspěšné strany; CISG vyloučena.",
+    "compatibilityCs": "Kolektivní dílo §1(a) není automaticky odvozeninou podle §1(b); povinné podmínky dopadají na originál a skutečné odvozeniny. §16 dovoluje vytvořit upravený text licence pouze pro JINÁ původní díla, bez názvů OSL, se změněným nezaměnitelným notice a bez označení open source před schválením OSI a splněním procesu. Není to svolení změnit OSL na tomto originálu či jeho odvozeninách ani automatická volba pozdější verze."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/OSL-3.0.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; §§1(c),5: originál i odvozeniny pod touto OSL a každé externí nasazení jako distribuce včetně sítě; síťový copyleft"
+    }
+  ]
+}

@@ -13,8 +13,8 @@
     "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "permissive",
-    "copyleftScope": "none",
+    "family": "nonstandard",
+    "copyleftScope": "unknown",
     "permissions": [
       "commercial-use",
       "distribution",
@@ -22,13 +22,16 @@
       "private-use"
     ],
     "obligations": [
+      "include-advertising-acknowledgment",
       "include-copyright",
       "include-license-text",
-      "include-notice"
+      "include-notice",
+      "same-license"
     ],
     "triggers": [
+      "advertising",
       "distribution",
-      "unknown"
+      "modification"
     ],
     "restrictions": [
       "additional-terms",
@@ -42,47 +45,65 @@
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant (\"This library and applications are FREE FOR COMMERCIAL AND NON-COMMERCIAL USE\" and \"Redistribution and use in source and binary forms, with or without modification, are permitted\") identifies a broad non-reciprocal BSD-style permissive grant"
+      "locator": "public/data/licenses/BSD-Systemics-W3Works.json#text; Text spojuje původní Systemics 1995–1996 podmínky a dodatky W3Works 2000 pro upravenou implementaci. Původní grant dovoluje komerční/nekomerční užití a zdrojovou/binární redistribuci se změnami i bez nich, s oběma sadami podmínek. Závěrečná immutable licence všech veřejně dostupných verzí či derivátů se týká library AND applications, nevymezuje však hranici odvozeného kódu vůči kombinovanému celku a nevyžaduje zdrojový kód. Je doložena zvláštní reciprocita licenčních podmínek, nikoli konkrétně slabý nebo silný softwarový copyleft: family nonstandard, scope unknown.; https://spdx.org/licenses/BSD-Systemics-W3Works.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant and conditions 1-3, together with the final no-relicensing sentence (permissions are non-reciprocal; no same-license, source-disclosure, corresponding-source, linking, or network-use condition is stated)"
+      "locator": "public/data/licenses/BSD-Systemics-W3Works.json#text; Závěrečná immutable licence všech veřejně dostupných verzí či derivátů se týká library AND applications, nevymezuje však hranici odvozeného kódu vůči kombinovanému celku a nevyžaduje zdrojový kód. Je doložena zvláštní reciprocita licenčních podmínek, nikoli konkrétně slabý nebo silný softwarový copyleft: family nonstandard, scope unknown.; https://spdx.org/licenses/BSD-Systemics-W3Works.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant (commercial and non-commercial use plus redistribution and use in source and binary forms, with or without modification, are permitted; no field-of-use limitation is stated)"
+      "locator": "public/data/licenses/BSD-Systemics-W3Works.json#text; Původní grant dovoluje komerční/nekomerční užití a zdrojovou/binární redistribuci se změnami i bez nich, s oběma sadami podmínek.; https://spdx.org/licenses/BSD-Systemics-W3Works.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text: introductory Systemics/W3Works paragraphs require retaining the copyright and W3Works modification attribution; original paragraph requires source redistributions to retain the copyright notice, conditions, and disclaimer and binary redistributions to reproduce them; both advertising clauses require a fixed Systemics or W3Works acknowledgement"
+      "locator": "public/data/licenses/BSD-Systemics-W3Works.json#text; Copyright W3Works i jeho změny zůstávají s balíčkem; zdroj/binary zachovává copyright/podmínky/disclaimer. Reklama zmiňující funkce/užití obsahuje předepsané W3Works i Systemics uznání. Formulace should o produktové atribuci uvádí startup nebo dokumentaci jako možnosti.; https://spdx.org/licenses/BSD-Systemics-W3Works.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "text: conditions 1-2 activate notice retention/reproduction on source or binary redistribution; both advertising clauses separately activate named acknowledgements for advertising materials mentioning features or use, a trigger dimension without an exact vocabulary value (retained as unknown); modification alone has no separate changed-file trigger"
+      "locator": "public/data/licenses/BSD-Systemics-W3Works.json#text; Copyright W3Works i jeho změny zůstávají s balíčkem; zdroj/binary zachovává copyright/podmínky/disclaimer. Reklama zmiňující funkce/užití obsahuje předepsané W3Works i Systemics uznání. Formulace should o produktové atribuci uvádí startup nebo dokumentaci jako možnosti.; https://spdx.org/licenses/BSD-Systemics-W3Works.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text: final sentence prohibits changing the license and distribution terms or placing the code under another distribution license (an additional-term restriction); introductory and original disclaimer paragraphs disclaim express/implied warranties and limit liability; no separate endorsement/name or trademark prohibition is stated"
+      "locator": "public/data/licenses/BSD-Systemics-W3Works.json#text; Obě části vylučují záruky a Systemics též odpovědnost; závěr zakazuje změnit licenční/distribuční podmínky veřejných verzí nebo odvozenin, výslovně i převod pod GNU Public Licence.; https://spdx.org/licenses/BSD-Systemics-W3Works.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "text: complete BSD-Systemics-W3Works grant, conditions, no-relicensing sentence, and disclaimers contain no express patent grant, patent condition, patent-claim restriction, or patent-termination clause"
+      "locator": "public/data/licenses/BSD-Systemics-W3Works.json#text; Celý spojený text nemá patentový grant nebo patentové ukončení.; https://spdx.org/licenses/BSD-Systemics-W3Works.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text: source/binary redistribution conditions require copyright notice, conditions, and disclaimer; Systemics attribution is required in a product, and separate Systemics and W3Works acknowledgements are required for advertising materials, creating a material multi-surface notice burden"
+      "locator": "public/data/licenses/BSD-Systemics-W3Works.json#text; Copyright W3Works i jeho změny zůstávají s balíčkem; zdroj/binary zachovává copyright/podmínky/disclaimer. Reklama zmiňující funkce/užití obsahuje předepsané W3Works i Systemics uznání. Formulace should o produktové atribuci uvádí startup nebo dokumentaci jako možnosti. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/BSD-Systemics-W3Works.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "metadata: id=BSD-Systemics-W3Works, name=Systemics W3Works BSD variant license, deprecated=false, osi=false, fsf=false; text: broad commercial/source/binary/modification grant is explicit, as are named Systemics/W3Works attribution and advertising obligations, warranty/liability disclaimers, and the no-relicensing clause; the named advertising/special-scope requirements (and advertising trigger absent from the vocabulary) make this variant unsuitable for automatic general recommendation"
+      "locator": "public/data/licenses/BSD-Systemics-W3Works.json#text; Individuální kontrola celého připnutého textu BSD-Systemics-W3Works dne 2026-09-09. Text spojuje původní Systemics 1995–1996 podmínky a dodatky W3Works 2000 pro upravenou implementaci. Závěr má totožný zákaz změny podmínek veřejných verzí/odvozenin jako BSD-Systemics a úvod pokrývá knihovnu i aplikace; před doporučením je třeba doložit hranici odvozeného kódu vůči kombinovanému dílu, nikoli předpokládat library scope. Obě notice/reklamní sady jsou kumulativní; výslovný zákaz změny podmínek se neinterpretuje jako nabídka GPL alternativy.; https://spdx.org/licenses/BSD-Systemics-W3Works.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

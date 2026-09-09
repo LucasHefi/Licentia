@@ -1,0 +1,29 @@
+{
+  "id": "DocBook-XML",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:1fb5dfbd2cdd184d37e63df83b668d2ea572ec30a8358dd2af1775a454983d61"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Licence dovoluje styly DocBook používat, měnit, distribuovat, sublicencovat a prodávat se zachováním copyrightu a svolení. Veřejně šířený odvozený stylesheet však musí mít nové jméno a odvozený software musí změnit údaje o verzi, aby nemohlo dojít k záměně. Průvodce ji zatím nezařazuje kvůli těmto povinným změnám názvů a verzí.",
+  "blockersCs": [
+    "Text vyžaduje nové jméno veřejně šířeného odvozeného stylesheetu a změnu version strings odvozeného softwaru; před doporučením je třeba modelovat tuto povinnou změnu názvů/verzí."
+  ],
+  "analysis": {
+    "subjectCs": "Text licencuje software a dokumentaci DocBook XSL stylesheets s uvedenými copyrighty autorů a projektu.",
+    "grantCs": "MIT formulace dovoluje neomezené užití, kopie, změny, sloučení, publikaci, distribuci, sublicence a prodej.",
+    "conditionsCs": "Copyright a svolení zůstávají v kopiích/podstatných částech. Veřejně distribuovaný odvozený stylesheet musí mít jiné jméno a version strings každého odvozeného softwaru se změní tak, aby nemohlo dojít k záměně.",
+    "limitationsCs": "Jména přispěvatelů mimo notice nesmějí bez písemného souhlasu propagovat software; AS IS vylučuje záruky a odpovědnost Normana Walshe i ostatních přispěvatelů. Kontaktní e-maily nejsou povinnost hlásit změny.",
+    "compatibilityCs": "Jiná licence ani verze není nabízena."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/DocBook-XML.html",
+      "note": "Individuálně přečten celý připnutý text; Copyright a svolení zůstávají v kopiích/podstatných částech. Veřejně distribuovaný odvozený stylesheet musí mít jiné jméno a version strings každého odvozeného softwaru se změní tak, aby nemohlo dojít k záměně. Celý text nemá patentový grant nebo patentové ukončení."
+    }
+  ]
+}

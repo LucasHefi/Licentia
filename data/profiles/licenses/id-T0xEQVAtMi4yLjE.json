@@ -9,92 +9,98 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "conditional-relicensing",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "provide-corresponding-source"
+      "include-license-text"
     ],
     "triggers": [
-      "unknown"
+      "distribution"
     ],
     "restrictions": [
+      "additional-terms",
       "liability",
-      "trademark"
+      "trademark",
+      "warranty"
     ],
-    "patentPosition": "unknown",
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OLDAP-2.2.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OLDAP-2.2.1.json#text; Podmínky nepředepisují stejnou licenci odvozenin nebo zdrojovou nabídku, takže permisivní bez copyleftu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OLDAP-2.2.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OLDAP-2.2.1.json#text; Podmínky nepředepisují stejnou licenci odvozenin nebo zdrojovou nabídku, takže permisivní bez copyleftu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OLDAP-2.2.1.json#text; Úvod dovoluje redistribution/use se změnami i bez nich bez účelového omezení a bod 6 tuto či následnou revizi licence. Patentová práva a výslovná sublicence chybějí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OLDAP-2.2.1.json#text; Bod 1 uchovává copyright statements/notices ve zdrojích a požaduje kopii dokumentu v redistribucích; bod 2 copyright, podmínky a disclaimer v doprovodných materiálech binárek. Due credit should podle bodu 5 je doporučení, nikoli povinné uznání při užití.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OLDAP-2.2.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OLDAP-2.2.1.json#text; Bod 1 uchovává copyright statements/notices ve zdrojích a požaduje kopii dokumentu v redistribucích; bod 2 copyright, podmínky a disclaimer v doprovodných materiálech binárek. Due credit should podle bodu 5 je doporučení, nikoli povinné uznání při užití.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OLDAP-2.2.1.json#text; Body 3–4 chrání OpenLDAP před endorsementem a použitím v názvu odvozenin bez písemného svolení. Disclaimer odmítá záruky a škody. Závěr samostatně uvádí ochrannou známku a povoluje pouze doslovné kopie licenčního dokumentu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OLDAP-2.2.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OLDAP-2.2.1.json#text; Úvod dovoluje redistribution/use se změnami i bez nich bez účelového omezení a bod 6 tuto či následnou revizi licence. Patentová práva a výslovná sublicence chybějí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OLDAP-2.2.1.json#text; Bod 1 uchovává copyright statements/notices ve zdrojích a požaduje kopii dokumentu v redistribucích; bod 2 copyright, podmínky a disclaimer v doprovodných materiálech binárek. Due credit should podle bodu 5 je doporučení, nikoli povinné uznání při užití.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OLDAP-2.2.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OLDAP-2.2.1.json#text; Individuálně přečten celý připnutý text. Verze 2.2.1 z 1.3.2000 pokrývá software a přidruženou dokumentaci; copyright a svolení kopírovat dokument jsou tentokrát na konci. OpenLDAP 2.2.1 zachovává zdrojové notice a kopii dokumentu, binární redistribuce nesou copyright, podmínky a disclaimer. Název OpenLDAP nesmí bez svolení propagovat nebo tvořit název odvozeniny. Due credit je doporučení; lze použít pozdější revizi Foundation. ",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

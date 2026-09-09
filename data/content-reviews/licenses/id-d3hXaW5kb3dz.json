@@ -1,0 +1,29 @@
+{
+  "id": "wxWindows",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:bf37e727668416e86e5ecb6a3ab3ff19f7198e7ec9691fe47b72a87a9eacb9f0"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Výjimka dovoluje binární objektový kód prací založených na knihovně šířit pod vlastními podmínkami. Nevztahuje se na přidaný GPL/LGPL kód; vlastní změny ji mohou převzít nebo odmítnout. Pinned text obsahuje jen výjimku, nikoli základ licence.",
+  "blockersCs": [
+    "Připnutý text obsahuje pouze EXCEPTION NOTICE a odkaz na wxWindows Library Licence 3.1-or-later. Doložit základní licenci a její verzi, poté zapsat správné WITH vyjádření; deprecated wxWindows nenabízet jako novou samostatnou licenci."
+  ],
+  "analysis": {
+    "subjectCs": "EXCEPTION NOTICE platí pro knihovnu pod wxWindows Library Licence 3.1 nebo pozdější verzí vydanou držiteli copyrightu licenčního dokumentu.",
+    "grantCs": "Bod 2 dovoluje use/copy/link/modify/distribute binárních objektových verzí za vlastních podmínek. Úplný zdrojový a patentový grant základní licence v připnutém výňatku chybí.",
+    "conditionsCs": "Bod 3 vylučuje výjimku u přidaného GPL nebo GNU Library GPL kódu a vyžaduje smazat či upravit oznámení. Bod 4 dovoluje vlastní změny pod výjimkou i bez ní, s odpovídajícím odstraněním/úpravou notice. Základní zdrojové povinnosti nelze doložit z těchto čtyř bodů.",
+    "limitationsCs": "Výjimka je pouze pro binární object code, nikoli všechen zdrojový kód. Záruky, odpovědnost, patenty a úplné ukončení základní licence zde nejsou uvedeny.",
+    "compatibilityCs": "Volba 3.1-or-later náleží wxWindows Library Licence, ne automaticky LGPL verzi. Deprecated identifikátor vyžaduje správnou základní licenci WITH wxWindows-exception-3.1 podle skutečného grantu."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/wxWindows.html",
+      "note": "Individuální revize celého připnutého textu; EXCEPTION NOTICE platí pro knihovnu pod wxWindows Library Licence 3.1 nebo pozdější verzí vydanou držiteli copyrightu licenčního dokumentu."
+    }
+  ]
+}

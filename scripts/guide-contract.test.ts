@@ -24,11 +24,11 @@ test("guide cursor returns the next full question and progress", () => {
   const started = guideProgress({ mode: "quick", answers: {} });
   assert.equal(started.complete, false);
   assert.equal(started.nextQuestion?.key, "openness");
-  assert.deepEqual(started.progress, { answered: 0, total: 6, percent: 0 });
+  assert.deepEqual(started.progress, { answered: 0, total: 7, percent: 0 });
 
   const continued = guideProgress({ mode: "quick", answers: { openness: "open", projectForm: "application", reciprocity: "none", commercialUse: "allowed", delivery: "application" } });
   assert.equal(continued.nextQuestion?.key, "dependencies");
-  assert.equal(continued.progress.total, 7);
+  assert.equal(continued.progress.total, 8);
 });
 
 test("guide prunes answers from inactive conditional branches", () => {
@@ -38,7 +38,7 @@ test("guide prunes answers from inactive conditional branches", () => {
 });
 
 test("complete guide returns the canonical recommendation contract", () => {
-  const result = continueGuide([], { mode: "quick", answers: { openness: "open", projectForm: "application", reciprocity: "none", commercialUse: "allowed", delivery: "internal", patents: "neutral" } });
+  const result = continueGuide([], { mode: "quick", answers: { openness: "open", projectForm: "application", reciprocity: "none", commercialUse: "allowed", delivery: "internal", patents: "neutral", advertising: "allowed" } });
   assert.equal(result.complete, true);
   assert.equal(result.state, "complete");
   assert.equal(result.recommendation?.guideMode, "quick");

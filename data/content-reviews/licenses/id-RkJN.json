@@ -1,0 +1,29 @@
+{
+  "id": "FBM",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:af645c890b51e04cd8e9b77526440617a1e77cee23da12cc7546271180891bf7"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Soubor či jeho části lze používat pro vzdělávání, zábavu i komerci při zachování nezměněného copyrightu. Dostupnost zdarma na FTP je informace o zdroji, nikoli zákaz prodeje.",
+  "blockersCs": [
+    "Text výslovně dovoluje use this file in whole or in part i komerčně, ale nestanoví samostatné právo redistribuce nebo změn. Ověřit původní rozsah grantu, než se nabídne celý základní softwarový grant."
+  ],
+  "analysis": {
+    "subjectCs": "Povolení se vztahuje na tento soubor nebo jeho části s copyrightem Michaela Mauldina 1989.",
+    "grantCs": "Permission to use ... for any purpose výslovně zahrnuje komerční účel a užití částí souboru; oprávnění redistribuce a změn nejsou samostatně uvedena. Patentový grant a sublicence chybějí.",
+    "conditionsCs": "Provided that ukládá zachovat copyright beze změny při každém užití souboru; neukládá poskytovat zdroje nebo následně distribuovat zdarma. Povinnost při samotném užití nyní zachycuje trigger use ve slovníku 1.4.0.",
+    "limitationsCs": "Věta o free of charge anonymous FTP popisuje dostupnost, nikoli další podmínku. Text neobsahuje výluku záruk, odpovědnosti, názvů nebo patentové ukončení.",
+    "compatibilityCs": "Žádná jiná licence či verze není určena; komerční svolení není tvrzením kompatibility."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/FBM.html",
+      "note": "Individuální revize celého připnutého textu; Povolení se vztahuje na tento soubor nebo jeho části s copyrightem Michaela Mauldina 1989."
+    }
+  ]
+}

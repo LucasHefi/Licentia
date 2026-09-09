@@ -1,0 +1,29 @@
+{
+  "id": "HaskellReport",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:49d0d39e090079a313e88633b2c5445123829424bca18312d71ea57fbafc02e2"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Text pro kód odvozený z Haskell Report 2010 obsahuje dokumentační grant: původní report se reprodukuje celý včetně oznámení, změněný musí být označen a nesmí se vydávat za definici Haskell 2010.",
+  "blockersCs": [
+    "Úvod zahrnuje odvozený kód, ale grant vyžaduje úplnost reportu a zakazuje změněnému reportu tvrdit, že definuje jazyk. Je třeba vyjasnit aplikaci na kód a modelovat úplnost i status definice."
+  ],
+  "analysis": {
+    "subjectCs": "Úvod: kód odvozený z Report on the Programming Language Haskell 2010; vlastní grant: tento Report.",
+    "grantCs": "Kopírování/distribuce pro libovolný účel a distribuce změněných reportů jsou podmíněně dovoleny; patentový grant chybí.",
+    "conditionsCs": "Původní report se reprodukuje celý včetně Notice. Změněný se jasně označí a nesmí tvrdit, že definuje Haskell 2010.",
+    "limitationsCs": "Chybí výluka záruk/odpovědnosti. Aplikace dokumentačních podmínek na samotný odvozený kód je nevyjasněná.",
+    "compatibilityCs": "Haskell 2010 označuje specifikaci jazyka, nikoli volbu licenční verze či automatickou kompatibilitní výjimku."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/HaskellReport.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Úvodní derived code a grant k Reportu mají odlišně formulovaný předmět a zvláštní dokumentační požadavky."
+    }
+  ]
+}

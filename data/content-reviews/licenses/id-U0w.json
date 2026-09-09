@@ -1,0 +1,27 @@
+{
+  "id": "SL",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:30b2b25eab1b8f15e9096f6d1d78a0d2e0c7b1d0a5b0bad463fc44be828ac999"
+  },
+  "disposition": "eligible",
+  "summaryCs": "S programem lze dělat cokoli včetně kopírování a úprav. Zákaz vydávat se za autora text sám vysvětluje povinností zachovat copyright ve všech kopiích; autor odmítá odpovědnost.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Tento program a jeho kopie a úpravy.",
+    "grantCs": "Každému je dovoleno jakékoli nakládání včetně kopírování, úprav a zlepšování bez omezení účelu; patentový grant není uveden.",
+    "conditionsCs": "Všechny kopie musí obsahovat původní copyright; text tuto povinnost uvádí jako vysvětlení zákazu předstírat autorství.",
+    "limitationsCs": "Autor odmítá veškerou odpovědnost za software; samostatná výluka záruk nebo podmínka zveřejnit zdroje chybí.",
+    "compatibilityCs": "Neobsahuje volbu jiné licence či verze ani reciproční licenční podmínku."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/SL.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; První věta dovoluje everyone to do anything s povinností respektovat původ."
+    }
+  ]
+}

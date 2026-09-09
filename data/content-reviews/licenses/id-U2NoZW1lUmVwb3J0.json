@@ -1,0 +1,29 @@
+{
+  "id": "SchemeReport",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:caedc51c231c34b8068872705b884ca94e3b7a5e6f6f13f503d20f4577855378"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Grant se týká zprávy pro komunitu Scheme: dovoluje bezplatné kopírování celé zprávy či částí a úpravy pro manuály a dokumentaci. Není to obecná licence implementace Scheme.",
+  "blockersCs": [
+    "Text poskytuje práva k reportu a jeho dokumentačnímu využití, nikoli k softwarové implementaci; pro nový softwarový projekt je nutná samostatná licence kódu nebo oddělený dokumentační model."
+  ],
+  "analysis": {
+    "subjectCs": "Tato zpráva pro komunitu Scheme; doporučené využití v manuálech implementací.",
+    "grantCs": "Kopírování celku i částí bez poplatku a modifikace pro dokumentaci jsou výslovně dovoleny; software a patentová práva nejsou předmětem grantu.",
+    "conditionsCs": "Text neukládá připojení copyrightu, licence, zdrojů ani označení změn. Bezplatné povolení samo neurčuje cenu odvozeného produktu.",
+    "limitationsCs": "Chybí zárukové a odpovědnostní výluky i ukončení. Zpráva není univerzální grant ke kódu implementace.",
+    "compatibilityCs": "Nenabízí jinou licenci či verzi a neřeší kompatibilitu implementace ani dokumentace."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/SchemeReport.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; První věta uděluje permisivní právo kopírovat report; druhá dovoluje dokumentační úpravy."
+    }
+  ]
+}

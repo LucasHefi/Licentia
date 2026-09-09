@@ -8,91 +8,94 @@
     "contentHash": "sha256:32091c802d0ff3f6cbec79b51d638246b84f760d376661e508f3875e8bad0c0d"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "private-use"
     ],
     "obligations": [
-      "unknown"
+      "include-copyright",
+      "include-license-text",
+      "include-notice"
     ],
     "triggers": [
-      "unknown"
+      "use"
     ],
     "restrictions": [
-      "unknown"
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "none-stated",
+    "noticeBurden": "minimal"
   },
   "evidence": [
     {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/ThirdEye.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ThirdEye.json#text; Text se vztahuje na tabulku symbolů Third Eye Software z roku 1984. Odstavec 2 uděluje všem práva reprodukce a užití; výslovné právo měnit, sublicencovat nebo distribuovat neposkytuje. Zachování komentáře nepředepisuje zveřejnění zdrojů nebo licenci odvozeného díla.; https://spdx.org/licenses/ThirdEye.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/ThirdEye.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ThirdEye.json#text; Zachování komentáře nepředepisuje zveřejnění zdrojů nebo licenci odvozeného díla.; https://spdx.org/licenses/ThirdEye.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/ThirdEye.json#text; Odstavec 2 uděluje všem práva reprodukce a užití; výslovné právo měnit, sublicencovat nebo distribuovat neposkytuje.; https://spdx.org/licenses/ThirdEye.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/ThirdEye.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ThirdEye.json#text; Odstavec 2 podmiňuje kopírování zachováním tohoto komentáře v kopii; je nutné ponechat copyright i grant.; https://spdx.org/licenses/ThirdEye.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/ThirdEye.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ThirdEye.json#text; Odstavec 2 podmiňuje kopírování zachováním tohoto komentáře v kopii; je nutné ponechat copyright i grant.; https://spdx.org/licenses/ThirdEye.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/ThirdEye.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ThirdEye.json#text; Odstavec 3 odmítá tvrzení o vhodnosti tabulky symbolů pro konkrétní použití; obecnou výluku odpovědnosti neobsahuje.; https://spdx.org/licenses/ThirdEye.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/ThirdEye.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ThirdEye.json#text; Celý text o reprodukci, užití a vhodnosti nemá výslovný patentový grant ani patentové ukončení.; https://spdx.org/licenses/ThirdEye.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/ThirdEye.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ThirdEye.json#text; Odstavec 2 podmiňuje kopírování zachováním tohoto komentáře v kopii; je nutné ponechat copyright i grant. Rozsah notifikační zátěže: minimal.; https://spdx.org/licenses/ThirdEye.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/ThirdEye.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ThirdEye.json#text; Individuální kontrola celého připnutého textu ThirdEye dne 2026-09-09. Text se vztahuje na tabulku symbolů Third Eye Software z roku 1984. Grant výslovně pokrývá reprodukci a užití konkrétní tabulky symbolů, nikoli změny a distribuci; před doporučením pro nový software je třeba vyjasnit rozsah těchto práv u původního nositele. Není nabízena alternativní licence ani verze.; https://spdx.org/licenses/ThirdEye.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

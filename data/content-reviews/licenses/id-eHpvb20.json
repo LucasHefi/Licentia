@@ -1,0 +1,29 @@
+{
+  "id": "xzoom",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:efcd5babc420a034bb0286179b5aa2eb78850f2c516ff3ff163d4d4ebdaac09f"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Zdrojové soubory lze volně šířit. Při změnách zachovejte hlavičku, opravte manuál a zapište autora i popis změny; spustitelné soubory musí doprovázet zdroje nebo přesné místo jejich získání.",
+  "blockersCs": [
+    "Body b–c vyžadují opravit man page podle změny a uvést autora i popis v konkrétním seznamu. Je nutné modelovat tyto dokumentační povinnosti a jejich umístění; pouhé mark-modifications opravu manuálu nepokrývá."
+  ],
+  "analysis": {
+    "subjectCs": "Program a jeho zdrojové/spustitelné soubory, copyright Itai Nahshon 1995–1996.",
+    "grantCs": "Zdrojová distribuce je volná; úpravy a binární distribuce jsou výslovně podmíněny. Patentová licence chybí.",
+    "conditionsCs": "Změny: zachovat copyright/komentář nahoře, aktualizovat man page a zapsat jméno/popis. Binární distribuce: zdroje nebo přesná adresa dostupných zdrojů, nikoli obojí povinně.",
+    "limitationsCs": "Program je bez záruky; stejnou licenci celého díla text neukládá.",
+    "compatibilityCs": "Zdroj nebo adresa jsou alternativní způsoby splnění, nikoli alternativní licence; volba verze chybí."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/xzoom.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Grant má zvláštní povinnou aktualizaci manuálu a zdroj/adresu ke spustitelným souborům."
+    }
+  ]
+}

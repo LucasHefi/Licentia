@@ -8,94 +8,105 @@
     "contentHash": "sha256:fa9425c3943d300b51a7226fc7b13c8e6c47631af06e5001f3c4a6f108a142e1"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
       "commercial-use",
+      "conditional-relicensing",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "include-license-text"
-    ],
-    "triggers": [
+      "include-notice",
+      "include-use-acknowledgment",
+      "mark-modifications",
       "unknown"
     ],
-    "restrictions": [
-      "liability",
-      "trademark"
+    "triggers": [
+      "combination",
+      "distribution",
+      "modification",
+      "unknown",
+      "use"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "restrictions": [
+      "additional-terms",
+      "liability",
+      "trademark",
+      "warranty"
+    ],
+    "patentPosition": "express-exclusion",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NLOD-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NLOD-1.0.json#text; Atribuční režim nevyžaduje stejnou licenci odvozenin ani zdroje, proto permisivní bez copyleftu; datové výjimky mají samostatné smazání.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NLOD-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NLOD-1.0.json#text; Atribuční režim nevyžaduje stejnou licenci odvozenin ani zdroje, proto permisivní bez copyleftu; datové výjimky mají samostatné smazání.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/NLOD-1.0.json#text; §2 uděluje nevýhradnou bezplatnou trvalou celosvětovou licenci pro jakýkoli účel/médium, kopie, změny, kombinace a jejich distribuci. Sublicence a převod zakázány; §3 výslovně vylučuje patenty, známky a design, s výjimkou užití trvale integrovaného loga/atribuce původu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/NLOD-1.0.json#text; §5 předepsaná atribuce a reference licence, pokud prakticky možné link na licenci i zdroj; bez pokynu běžný Contains data ... NLOD ... licensor. U fixed-version případu uvést verzi a při změně jasně označit vlastní změny. §3 vyloučená osobní/utajená/nepřístupná/cizí informace se při znalosti nebo předpokládané znalosti přestane používat a smaže; §4 porušení ihned ukončí práva a vyžaduje nápravu/ukončení užití.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NLOD-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NLOD-1.0.json#text; §5 předepsaná atribuce a reference licence, pokud prakticky možné link na licenci i zdroj; bez pokynu běžný Contains data ... NLOD ... licensor. U fixed-version případu uvést verzi a při změně jasně označit vlastní změny. §3 vyloučená osobní/utajená/nepřístupná/cizí informace se při znalosti nebo předpokládané znalosti přestane používat a smaže; §4 porušení ihned ukončí práva a vyžaduje nápravu/ukončení užití.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/NLOD-1.0.json#text; §6 zakazuje zavádění, zkreslení a endorsement/marketing jmény či známkami. §§7–8 bez záruk relevance/kvality a přímých/nepřímých škod, dodatečné quality statements jen orientační; závazné jiné záruky pouze zvláštní dohodou. §11 Norsko a běžné fórum poskytovatele, IP nároky též jiné kompetentní fórum/právo.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NLOD-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NLOD-1.0.json#text; §2 uděluje nevýhradnou bezplatnou trvalou celosvětovou licenci pro jakýkoli účel/médium, kopie, změny, kombinace a jejich distribuci. Sublicence a převod zakázány; §3 výslovně vylučuje patenty, známky a design, s výjimkou užití trvale integrovaného loga/atribuce původu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/NLOD-1.0.json#text; §5 předepsaná atribuce a reference licence, pokud prakticky možné link na licenci i zdroj; bez pokynu běžný Contains data ... NLOD ... licensor. U fixed-version případu uvést verzi a při změně jasně označit vlastní změny. §3 vyloučená osobní/utajená/nepřístupná/cizí informace se při znalosti nebo předpokládané znalosti přestane používat a smaže; §4 porušení ihned ukončí práva a vyžaduje nápravu/ukončení užití.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NLOD-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NLOD-1.0.json#text; Individuálně přečten celý připnutý text. §1 Information zahrnuje texty/obrazy/záznamy/databáze a další díla i sousední práva podle odkazované norské autorské úpravy; Distribute zahrnuje i prodej, půjčení, pronájem, show/perform. NLOD 1 dovoluje všechny účely s atribucí, odkazem na licenci a označením změn, ale není převoditelná ani sublicencovatelná. Při zjištění vyloučených informací se musí zastavit užití a data smazat. Kompatibilní alternativy se dělí na databáze a jiná díla. § 3 vyžaduje při zjištění či zaviněné neznalosti vyloučeného předmětu zastavit užití a smazat informace. Doplnit povinnost odstranění a spouštěč zjištění, plus evidenci skutečné kategorie práv/dat pro § 9 alternativy; běžné notices tuto povinnost nevystihují.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

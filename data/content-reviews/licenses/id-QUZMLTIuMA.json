@@ -1,0 +1,29 @@
+{
+  "id": "AFL-2.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:146d3d60d2ac38d35c6f6e99d8e660e2583768e5bb2efe9c95a56888a38afb70"
+  },
+  "disposition": "blocked",
+  "summaryCs": "AFL 2.0 dovoluje změny, distribuci a podlicence a zahrnuje výslovný patentový grant. Poskytovatel dodá zdroj původního díla nebo zajistí přístupný repozitář; z této povinnosti neplyne obecné zveřejňování změn všech příjemců. Upravené zdroje zachovají relevantní oznámení a označí změny. Distributor však musí rozumně usilovat o výslovný souhlas příjemců, a právě tento aktivní závazek brání zařazení do průvodce.",
+  "blockersCs": [
+    "§9 požaduje rozumné úsilí získat výslovný souhlas příjemců a §3 rozlišuje zdrojový závazek poskytovatele od příjemce; před doporučením je třeba model aktivního souhlasu a rolí této povinnosti."
+  ],
+  "analysis": {
+    "subjectCs": "Academic Free License 2.0 licencuje Original Work s oznámením v2.0 a odvozeniny, bez §5 External Deployment.",
+    "grantCs": "§1 uděluje sublicencovatelná práva reprodukce, odvozenin, distribuce a veřejného provedení/zobrazení; §2 sublicencovatelný patentový grant k embodied claims původního díla a odvozenin.",
+    "conditionsCs": "§3 ukládá Licensorovi dodat preferovaný strojový zdroj nebo dlouhodobě přístupný repozitář s adresou za copyrightem; nelze z toho bez dalšího udělat povinnost všech příjemců publikovat vlastní změny. §6 změněné zdroje zachovávají IP/licenční/attribution notices a nápadně označí změnu. §9 distributor musí rozumně usilovat o výslovný souhlas příjemců.",
+    "limitationsCs": "§4 omezuje jména/známky a další IP; §7 poskytovatel zaručuje původ copyrightu i udělených patentů, jinak AS IS. §8 výluka odpovědnosti respektuje zákonnou smrt/zranění. §10 patentová žaloba/protinárok na poskytovatele kvůli softwarovému patentu nebo na kohokoli kvůli původnímu dílu (ne kombinaci) ruší celou licenci.",
+    "compatibilityCs": "§11–12 právo/soudy sídla poskytovatele, CISG vyloučena, vítěz vymáhání má náklady; §14 You zahrnuje ovládané subjekty. §15 dovoluje ostatní nezakázané užití. Žádná same-license alternativa není vyžadována."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/AFL-2.0.html",
+      "note": "Individuálně přečten celý připnutý text; §3 ukládá Licensorovi dodat preferovaný strojový zdroj nebo dlouhodobě přístupný repozitář s adresou za copyrightem; nelze z toho bez dalšího udělat povinnost všech příjemců publikovat vlastní změny. §6 změněné zdroje zachovávají IP/licenční/attribution notices a nápadně označí změnu. §9 distributor musí rozumně usilovat o výslovný souhlas příjemců. §2 poskytuje výslovný sublicencovatelný patentový grant; §10 ruší celou licenci za dvě vymezené kategorie patentové žaloby s výjimkou kombinací."
+    }
+  ]
+}

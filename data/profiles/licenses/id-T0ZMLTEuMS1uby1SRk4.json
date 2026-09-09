@@ -8,95 +8,101 @@
     "contentHash": "sha256:bb3d1c5727a36c03a56d8fa455bee5f284e3b2e8cdd523b2f57317ae0d3f7faf"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "permissive",
-    "copyleftScope": "none",
+    "family": "nonstandard",
+    "copyleftScope": "unknown",
     "permissions": [
       "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "include-copyright"
+      "include-copyright",
+      "include-license-text",
+      "same-license",
+      "unknown"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification"
     ],
     "restrictions": [
       "liability",
       "trademark",
+      "unknown",
       "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.no-copyleft",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.permissive-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OFL-1.1-no-RFN.json#text; OFL1.1 fontový komponentový grant s dokumentovou výjimkou a standalone-sale zákazem, ne obecná licence aplikací.; https://spdx.org/licenses/OFL-1.1-no-RFN.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OFL-1.1-no-RFN.json#text; Bod5 fontové části OFL, documents created vyňaty; bundling any software v2 nešíří copyleft do celé aplikace; jediný software scope nestačí.; https://spdx.org/licenses/OFL-1.1-no-RFN.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OFL-1.1-no-RFN.json#text; Permission use/study/copy/merge/embed/modify/redistribute/sell s fontovými podmínkami1–5.; https://spdx.org/licenses/OFL-1.1-no-RFN.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "restrictions",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OFL-1.1-no-RFN.json#text; 1 zákaz standalone komponent,2 notices/metadata,5 fontové same licence a document exception;3 má účinek pouze pro explicitní RFN.; https://spdx.org/licenses/OFL-1.1-no-RFN.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OFL-1.1-no-RFN.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OFL-1.1-no-RFN.json#text; Redistribution fontové notices/same licence; modification případné RFN; samostatný prodej je samostatná nepodchycená podmínka.; https://spdx.org/licenses/OFL-1.1-no-RFN.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OFL-1.1-no-RFN.json#text; Bod1 prodej mimo slovník,4 names endorsement se souhlasem/credit;termination null/void a warranty/liability. No-RFN neimplikuje rezervování původního názvu.; https://spdx.org/licenses/OFL-1.1-no-RFN.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OFL-1.1-no-RFN.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OFL-1.1-no-RFN.json#text; Celý text bez explicitního patentového grantu/ukončení; noninfringement patent je výluka záruky.; https://spdx.org/licenses/OFL-1.1-no-RFN.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OFL-1.1-no-RFN.json#text; Fontové komponenty se stejnou licencí a zákazem samostatného prodeje představují materiální podmínky.; https://spdx.org/licenses/OFL-1.1-no-RFN.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OFL-1.1-no-RFN.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OFL-1.1-no-RFN.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. OFL 1.1 bez deklarovaných rezervovaných názvů nevyžaduje přejmenování fontu jen kvůli původnímu názvu. Fontové soubory zůstávají pod OFL, samostatný prodej komponent je zakázán; vytvořené dokumenty jsou výslovně ze stejné licence vyňaty. Blokace: Licence pokrývá označené fontové soubory a jejich komponenty, zakazuje samostatný prodej a vyžaduje OFL jen pro fontové části, nikoli vytvořené dokumenty či všechen přibalený software. Je třeba fontový model rozsahu/komponentového prodeje; software whole-work/library scope by byl nepřesný.; https://spdx.org/licenses/OFL-1.1-no-RFN.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

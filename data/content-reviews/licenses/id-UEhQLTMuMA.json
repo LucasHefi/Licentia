@@ -1,0 +1,27 @@
+{
+  "id": "PHP-3.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:4c761912a56950b7eaa66e414a556e450fb7bb20cdebb286c54b9e09861cf758"
+  },
+  "disposition": "eligible",
+  "summaryCs": "PHP 3.0 dovoluje zdroje/binárky se zachováním oznámení a přesným poděkováním „includes PHP“ s php.net. Jméno PHP nesmí bez svolení podporovat nebo pojmenovat odvozeniny, ale „Foo for PHP“ je dovoleno. Lze zvolit následnou verzi PHP Group.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Licence 3.0 pokrývá software PHP Group s copyrighty 1999–2006; závěr uvádí dobrovolné příspěvky a Zend Engine.",
+    "grantCs": "Úvod dovoluje use/redistribution zdrojů i binárek se změnami i bez nich bez účelového omezení. Bod 5 umožňuje ponechat použitou verzi nebo přejít na následnou verzi PHP Group; patentový grant a výslovná sublicence chybějí.",
+    "conditionsCs": "Body 1–2 zachovávají copyright, podmínky a disclaimer ve zdrojích či doprovodných materiálech binárek. Bod 6 vyžaduje v každé formě redistribuce přesné uznání This product includes PHP, freely available from http://www.php.net/; oproti 3.01 nejde o wording PHP software a /software/ URL. Zdrojové vydání není povinné.",
+    "limitationsCs": "Body 3–4 vyžadují písemné svolení pro endorsement i PHP v názvu odvozeniny, s výslovným dovolením Foo for PHP. Pouze PHP Group mění podmínky covered code. Disclaimer odmítá záruky a škody PHP development team/přispěvatelů.",
+    "compatibilityCs": "Následná verze je možnost udělená bodem 5, nikoli automatická aktualizace nebo obecná sublicence. Zend Engine zmínka informuje o součásti, sama neurčuje všechny licence konkrétního balíku."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/PHP-3.0.html",
+      "note": "Individuální revize celého připnutého textu; Licence 3.0 pokrývá software PHP Group s copyrighty 1999–2006; závěr uvádí dobrovolné příspěvky a Zend Engine."
+    }
+  ]
+}

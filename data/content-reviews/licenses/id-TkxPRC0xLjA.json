@@ -1,0 +1,29 @@
+{
+  "id": "NLOD-1.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:fa9425c3943d300b51a7226fc7b13c8e6c47631af06e5001f3c4a6f108a142e1"
+  },
+  "disposition": "blocked",
+  "summaryCs": "NLOD 1 dovoluje všechny účely s atribucí, odkazem na licenci a označením změn, ale není převoditelná ani sublicencovatelná. Při zjištění vyloučených informací se musí zastavit užití a data smazat. Kompatibilní alternativy se dělí na databáze a jiná díla.",
+  "blockersCs": [
+    "§ 3 vyžaduje při zjištění či zaviněné neznalosti vyloučeného předmětu zastavit užití a smazat informace. Doplnit povinnost odstranění a spouštěč zjištění, plus evidenci skutečné kategorie práv/dat pro § 9 alternativy; běžné notices tuto povinnost nevystihují."
+  ],
+  "analysis": {
+    "subjectCs": "§1 Information zahrnuje texty/obrazy/záznamy/databáze a další díla i sousední práva podle odkazované norské autorské úpravy; Distribute zahrnuje i prodej, půjčení, pronájem, show/perform.",
+    "grantCs": "§2 uděluje nevýhradnou bezplatnou trvalou celosvětovou licenci pro jakýkoli účel/médium, kopie, změny, kombinace a jejich distribuci. Sublicence a převod zakázány; §3 výslovně vylučuje patenty, známky a design, s výjimkou užití trvale integrovaného loga/atribuce původu.",
+    "conditionsCs": "§5 předepsaná atribuce a reference licence, pokud prakticky možné link na licenci i zdroj; bez pokynu běžný Contains data ... NLOD ... licensor. U fixed-version případu uvést verzi a při změně jasně označit vlastní změny. §3 vyloučená osobní/utajená/nepřístupná/cizí informace se při znalosti nebo předpokládané znalosti přestane používat a smaže; §4 porušení ihned ukončí práva a vyžaduje nápravu/ukončení užití.",
+    "limitationsCs": "§6 zakazuje zavádění, zkreslení a endorsement/marketing jmény či známkami. §§7–8 bez záruk relevance/kvality a přímých/nepřímých škod, dodatečné quality statements jen orientační; závazné jiné záruky pouze zvláštní dohodou. §11 Norsko a běžné fórum poskytovatele, IP nároky též jiné kompetentní fórum/právo.",
+    "compatibilityCs": "§9 kombinovaná/adaptovaná práce s dílem pod smluvně kompatibilní licencí smí pod odpovídající alternativou: vše OGL1.0; nedatabázové části CC-BY1/2/2.5/3-unported/3-Norge; databáze ODC-By1.0. §10 nové finální oficiální NLOD dovoleny, leda poskytovatel výslovně omezil na1.0. Nejde o automatickou CC4 možnost z2.0."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/NLOD-1.0.html",
+      "note": "Individuální revize celého připnutého textu; §1 Information zahrnuje texty/obrazy/záznamy/databáze a další díla i sousední práva podle odkazované norské autorské úpravy; Distribute zahrnuje i prodej, půjčení, pronájem, show/perform."
+    }
+  ]
+}

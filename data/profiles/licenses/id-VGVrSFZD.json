@@ -8,94 +8,100 @@
     "contentHash": "sha256:90a4259c658ee0a1c6b95f4db5e9f703b81d0ded4b1e74dff58f1dbe8f196af0"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "permissive",
+    "family": "nonstandard",
     "copyleftScope": "none",
     "permissions": [
       "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
+      "include-copyright",
+      "include-license-text",
       "unknown"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "use"
     ],
     "restrictions": [
       "liability",
-      "trademark"
+      "trademark",
+      "unknown",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.no-copyleft",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.permissive-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/TekHVC.json#text; Široký grant má zvláštní povinné matematické/UI pojmenování v bodech 2–3.; https://spdx.org/licenses/TekHVC.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "copyleftScope",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/TekHVC.json#text; Celý text bez stejné licence či povinného zveřejnění zdroje.; https://spdx.org/licenses/TekHVC.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/TekHVC.json#text; Grant výslovně use/copy/modify/sell/otherwise distribute any purpose; patentový údaj sám není explicitní patentové oprávnění.; https://spdx.org/licenses/TekHVC.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/TekHVC.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/TekHVC.json#text; Bod 1 notices; body 2–3 každý UI/dokumentace a vždy/pouze TekHVC pro definované derivace nejsou běžné acknowledgment.; https://spdx.org/licenses/TekHVC.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/TekHVC.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/TekHVC.json#text; Use/distribution zachovávají notices; aplikace displaying TekHVC coordinates spouští specializované označení.; https://spdx.org/licenses/TekHVC.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/TekHVC.json#text; TekColor trademark; bod 3 matematicky omezené always/only TekHVC není plně vyjádřitelné trademark enumem; warranty/liability jasné.; https://spdx.org/licenses/TekHVC.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/TekHVC.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/TekHVC.json#text; Úvod zmiňuje patent 4,985,853, ale grant k software neobsahuje výslovná patentová práva nebo patentové ukončení.; https://spdx.org/licenses/TekHVC.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/TekHVC.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/TekHVC.json#text; Každé rozhraní a dokumentace musí plnit konkrétní pojmenování souřadnic; jde o materiální povinnost.; https://spdx.org/licenses/TekHVC.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/TekHVC.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/TekHVC.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. Kód a dokumentaci lze používat, měnit, prodávat a šířit. Zobrazené souřadnice musí být v rozhraní i dokumentaci označeny TekHVC a tento termín je povinný a výlučný pro matematické odvození daného prostoru. Zmínka patentu není výslovný patentový grant. Blokace: Body 2–3 ukládají konkrétní označování souřadnic v každém rozhraní a dokumentaci a matematicky podmíněné výlučné užití názvu TekHVC. Je třeba modelovat tyto funkční/názvové podmínky; obecná ochranná známka ani poděkování za užití nejsou ekvivalentem.; https://spdx.org/licenses/TekHVC.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

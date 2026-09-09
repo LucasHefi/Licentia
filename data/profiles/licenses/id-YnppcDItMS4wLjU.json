@@ -24,18 +24,16 @@
     "obligations": [
       "include-copyright",
       "include-license-text",
-      "mark-modifications",
-      "unknown"
+      "mark-modifications"
     ],
     "triggers": [
       "distribution",
-      "modification",
-      "unknown"
+      "modification"
     ],
     "restrictions": [
+      "additional-terms",
       "liability",
       "trademark",
-      "unknown",
       "warranty"
     ],
     "patentPosition": "none-stated",
@@ -45,47 +43,65 @@
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant (\"Redistribution and use in source and binary forms, with or without modification, are permitted\") and conditions 1-4; non-reciprocal conditions identify a permissive family"
+      "locator": "public/data/licenses/bzip2-1.0.5.json#text; Zdrojová notice a modifikační podmínka nezavádějí copyleft; permisivní, scope none.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant and conditions 1-4 (no same-license, source-disclosure, or corresponding-source condition; permission is non-reciprocal)"
+      "locator": "public/data/licenses/bzip2-1.0.5.json#text; Zdrojová notice a modifikační podmínka nezavádějí copyleft; permisivní, scope none.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant (\"Redistribution and use in source and binary forms, with or without modification, are permitted\"; no purpose or field-of-use limitation is stated)"
+      "locator": "public/data/licenses/bzip2-1.0.5.json#text; Redistribution/use zdrojových i binárních forem s úpravami i bez nich je povolena bez zákazu komerce. PATENTS pouze vyjadřuje autorovu neověřenou znalost absence patentovaných algoritmů, neuděluje patentová práva ani záruku.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text: condition 1 (source redistributions retain the copyright notice, list of conditions, and disclaimer) and condition 3 (altered source versions must be plainly marked); condition 2 origin/acknowledgment language has no lossless attribution value in vocabulary 1.0.0, represented by unknown"
+      "locator": "public/data/licenses/bzip2-1.0.5.json#text; První odrážka zachovává copyright, podmínky a disclaimer pouze ve zdrojových redistribucích. Druhá zakazuje zkreslení původu; product acknowledgment je výslovně nepovinný. Třetí označuje upravené zdroje a zakazuje vydávat je za originál; zdrojová nabídka pro binárky není povinná.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "text: conditions 1-4 (source redistribution activates retention; altered source versions activate marking; condition 2 applies to use in a product and origin/acknowledgment, for which vocabulary 1.0.0 has no dedicated use/attribution trigger, represented by unknown)"
+      "locator": "public/data/licenses/bzip2-1.0.5.json#text; První odrážka zachovává copyright, podmínky a disclaimer pouze ve zdrojových redistribucích. Druhá zakazuje zkreslení původu; product acknowledgment je výslovně nepovinný. Třetí označuje upravené zdroje a zakazuje vydávat je za originál; zdrojová nabídka pro binárky není povinná.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text: condition 2 (origin must not be misrepresented) and condition 4 (author name may not endorse/promote products without specific prior written permission); final disclaimer (warranty disclaimer and limitation of liability); origin/misrepresentation is not separately representable, represented by unknown"
+      "locator": "public/data/licenses/bzip2-1.0.5.json#text; Čtvrtá odrážka zakazuje endorsement autorovým jménem bez konkrétního písemného svolení. Disclaimer odmítá záruky a škody; PATENTS uvádí nedostatek prostředků k patentové rešerši a nemožnost záruky.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "text: PATENTS paragraph (author reports no known patented algorithms but gives no guarantee and performed no patent search); no express patent grant, patent condition, patent-claim restriction, or patent-termination clause is stated"
+      "locator": "public/data/licenses/bzip2-1.0.5.json#text; Redistribution/use zdrojových i binárních forem s úpravami i bez nich je povolena bez zákazu komerce. PATENTS pouze vyjadřuje autorovu neověřenou znalost absence patentovaných algoritmů, neuděluje patentová práva ani záruku.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text: condition 1 requires retaining the copyright notice, list of conditions, and disclaimer in source redistributions; condition 2 says product acknowledgment is appreciated but not required, yielding a standard rather than material notice burden"
+      "locator": "public/data/licenses/bzip2-1.0.5.json#text; První odrážka zachovává copyright, podmínky a disclaimer pouze ve zdrojových redistribucích. Druhá zakazuje zkreslení původu; product acknowledgment je výslovně nepovinný. Třetí označuje upravené zdroje a zakazuje vydávat je za originál; zdrojová nabídka pro binárky není povinná.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "metadata: id=bzip2-1.0.5, deprecated=true, osi=false, fsf=false; notes: deprecated in favor of bzip2-1.0.6; text: broad permissive grant with source-notice, altered-source marking, origin/acknowledgment, author-name endorsement, warranty/liability, and non-assuring patent clauses; attribution/origin nuance is not losslessly representable by vocabulary 1.0.0, so not-recommendable"
+      "locator": "public/data/licenses/bzip2-1.0.5.json#text; Individuálně přečten celý připnutý text. Verze 1.0.5 z 10.12.2007 zahrnuje bzip2, libbzip2 a dokumentaci Juliana Sewarda. bzip2 1.0.5 dovoluje užití a šíření zdrojů/binárek. Copyright, podmínky a disclaimer zachovávají zdroje; původ se nezkresluje, změněné zdroje se označí a jméno autora se bez svolení nepoužije k endorsementu. Identifikátor je zastaralý. bzip2-1.0.5 je podle připnutých metadat deprecated. Pro nový projekt zvolit aktuální bzip2-1.0.6 po kontrole grantu; tuto historickou verzi zachovat jen pro identifikaci existujících součástí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

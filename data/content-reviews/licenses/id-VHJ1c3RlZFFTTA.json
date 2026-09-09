@@ -1,0 +1,27 @@
+{
+  "id": "TrustedQSL",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:bd24cc8dbe50c1c2100368aac00b81a03ab318fdea1ddf8083187fa9a90a84cb"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Zdrojové i binární šíření je dovoleno s copyrightem, podmínkami a disclaimerem. Názvy LoTW, Logbook of the World a jiné známky ARRL vyžadují pro názvy odvozených či obsahujících produktů svolení; dodavatelé nesmějí tvrdit endorsement ARRL.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Software ARRL 2001–2015 a příspěvky TrustedQSL Developers 2003–2023, ve zdrojové/binární formě.",
+    "grantCs": "Redistribution/use with or without modification bez účelového omezení; patentový grant chybí.",
+    "conditionsCs": "Body 1–2 copyright, conditions a disclaimer z bodu 5 ve zdrojích či dokumentaci/materiálech binární distribuce. AUTHORS.txt je odkaz na seznam přispěvatelů, ne další licenční grant.",
+    "limitationsCs": "Body 3–4 názvy produktů včetně uvedených ARRL známek jen se svolením a zákaz tvrdit endorsement. Bod 5 bez záruk, uživatel nese opravy/riziko a ARRL neodpovídá za škody.",
+    "compatibilityCs": "Bez jiné licence/verze či reciprocity. Bod 6 kontakty pro svolení, nikoli povinnost kontaktovat ARRL při každém užití."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/TrustedQSL.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Grant source/binary s notices a ARRL trademark/nonendorsement podmínkami, bez reciprocity."
+    }
+  ]
+}

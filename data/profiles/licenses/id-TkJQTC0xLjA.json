@@ -8,93 +8,101 @@
     "contentHash": "sha256:7921d4dee53deecd87140c598d03f3c003e76cf24d29d42176e7add50f118fbd"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
+    "family": "nonstandard",
     "copyleftScope": "unknown",
     "permissions": [
       "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "include-copyright"
+      "include-copyright",
+      "include-notice",
+      "mark-modifications",
+      "unknown"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "linking",
+      "modification"
     ],
     "restrictions": [
-      "unknown"
+      "trademark",
+      "unknown",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NBPL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NBPL-1.0.json#text; NBPL1 má vlastní3/4 alternativní cesty a5 samostatný fee režim, nikoli jediné source pravidlo.; https://spdx.org/licenses/NBPL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NBPL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NBPL-1.0.json#text; ONE alternatives3/4 a C-regression exception7 neurčují jednoduché scope; příslušné hranice zůstávají v analýze.; https://spdx.org/licenses/NBPL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/NBPL-1.0.json#text; 1–4 copy/use/modify/object distribution plus5 support/commercial aggregate a6 output sale bez patentu.; https://spdx.org/licenses/NBPL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/NBPL-1.0.json#text; 1 notices,3 how/when+jedna cesta,4 jedna oddělená cesta; souběžné source+rename by text zkreslilo.; https://spdx.org/licenses/NBPL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NBPL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NBPL-1.0.json#text; Změny3 a binary distribuce4 různé volby; emulační C-linking7 má regression-tests podmínku.; https://spdx.org/licenses/NBPL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NBPL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NBPL-1.0.json#text; 5 fee/aggregation advertising constraints mimo slovník,8 name consent a9 warranty jasné; liability chybí.; https://spdx.org/licenses/NBPL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NBPL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NBPL-1.0.json#text; Celý text NBPL včetně poznámky o Artistic neuděluje výslovná patentová práva a nemá patentové ukončení.; https://spdx.org/licenses/NBPL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/NBPL-1.0.json#text; Varianty zdroje/standardních protějšků/manuálů a omezení ceny představují materiální plnění.; https://spdx.org/licenses/NBPL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NBPL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NBPL-1.0.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. Net Boolean 1.0 dovoluje modifikace a binární distribuci přes samostatně volené cesty. U změn se zachová how/when notice, pak se volí například veřejné změny, interní užití nebo přejmenované protějšky; binární větev může splnit zdroj, standardní verze či jiná dohoda. Blokace: Bod3 volí jednu ze čtyř změnových cest a bod4 samostatně jednu ze čtyř binárních cest; dostupný zdroj není jediná povolená možnost. Je třeba modelovat tento rozhodovací postup a cenové omezení5 bez nahrazení alternativ kumulativními povinnostmi. Bod7 vyjímá emulační C subroutines jen při zachování regresních testů jazyka; nelze automaticky tvrdit library či whole-work copyleft. Nutný model tohoto podmíněného rozsahu.; https://spdx.org/licenses/NBPL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

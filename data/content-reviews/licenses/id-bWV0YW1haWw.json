@@ -1,0 +1,20 @@
+{
+  "id": "metamail",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.5",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:50a68f1932bf971272c6c2bd2c64c09f25980e32de80cc8f5aa9e87d5dea8356"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Zachovejte copyright a svolovací oznámení ve všech kopiích. Jméno Bellcore nepoužívejte v reklamě nebo publicitě k tomuto materiálu bez předchozího písemného souhlasu oprávněného zástupce. Text vylučuje záruky a ujištění o vhodnosti či přesnosti, nikoli výslovně odpovědnost.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/metamail.html",
+      "note": "Dřívější individuální revize 2026-09-09.5; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

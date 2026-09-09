@@ -13,11 +13,13 @@
     "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "nonstandard",
+    "family": "permissive",
     "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
@@ -33,49 +35,67 @@
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text: complete one-sentence license, especially conditions (1)-(2) (copies and alterations require marking and notice preservation, but no same-license, source-disclosure, or reciprocal licensing condition appears)"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text: complete one-sentence license ('This document may be copied ... as is or with alterations'); the grant is document-specific rather than a software-license grant"
+      "locator": "public/data/licenses/AdaCore-doc.json#text; Dokumentační grant vyžaduje označení úprav a copyright, nikoli share-alike; permisivní bez copyleftu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text: proviso conditions (1)-(2) (alterations must be clearly marked and the copyright notice must be included unmodified in every copy)"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text: proviso condition (1) ('alterations are clearly marked as alterations') and condition (2) ('this copyright notice is included unmodified in any copy')"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text: complete one-sentence license (no patent grant, patent condition, or patent-termination clause)"
+      "locator": "public/data/licenses/AdaCore-doc.json#text; Dokumentační grant vyžaduje označení úprav a copyright, nikoli share-alike; permisivní bez copyleftu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant ('may be copied, in whole or in part, in any form or by any means, as is or with alterations')"
+      "locator": "public/data/licenses/AdaCore-doc.json#text; This document dovoluje kopírování v jakékoli podobě a jakýmikoli prostředky, beze změn i se změnami, bez nekomerčního omezení; patentový grant chybí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "restrictions",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text: complete one-sentence license (no warranty, liability, trademark, patent-claim, or additional-terms restriction appears)"
-    },
-    {
-      "field": "review",
-      "sourceId": "spdx-license-list",
-      "locator": "metadata: osi=false; fsf=false; deprecated=false; text: grant expressly covers 'This document', not software, so the software-license guide vocabulary cannot represent its subject and copying trigger without loss"
+      "locator": "public/data/licenses/AdaCore-doc.json#text; Bod (1) vyžaduje jasné označení úprav, bod (2) nezměněný copyright v každé kopii. Není požadována stejná licence, zdrojová forma ani reklama.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant and proviso ('may be copied ... as is or with alterations, provided that'); copying/distribution activates notice preservation and alterations additionally activate the marking condition"
+      "locator": "public/data/licenses/AdaCore-doc.json#text; Bod (1) vyžaduje jasné označení úprav, bod (2) nezměněný copyright v každé kopii. Není požadována stejná licence, zdrojová forma ani reklama.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/AdaCore-doc.json#text; Celý odstavec nemá odmítnutí záruk či odpovědnosti, názvové omezení nebo terminaci.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/AdaCore-doc.json#text; This document dovoluje kopírování v jakékoli podobě a jakýmikoli prostředky, beze změn i se změnami, bez nekomerčního omezení; patentový grant chybí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/AdaCore-doc.json#text; Bod (1) vyžaduje jasné označení úprav, bod (2) nezměněný copyright v každé kopii. Není požadována stejná licence, zdrojová forma ani reklama.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/AdaCore-doc.json#text; Individuálně přečten celý připnutý text. Grant výslovně pokrývá dokument, nikoli obecnou licenci pro nový softwarový projekt. Dokument lze kopírovat v celku i částečně a upravovat; změny musí být jasně označeny a každá kopie musí obsahovat nezměněný copyright. Text uděluje oprávnění k dokumentu a model nemá rozlišení licencování dokumentace od nového softwaru. Doplnit předmět licence a průvodce pro dokumentaci před případným doporučováním.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

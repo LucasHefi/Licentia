@@ -13,13 +13,13 @@
     "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "nonstandard",
+    "family": "permissive",
     "copyleftScope": "none",
     "permissions": [
       "commercial-use",
       "distribution",
-      "private-use",
-      "unknown"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
@@ -27,57 +27,76 @@
     ],
     "triggers": [
       "combination",
-      "distribution"
+      "distribution",
+      "use"
     ],
     "restrictions": [],
     "patentPosition": "none-stated",
-    "noticeBurden": "standard"
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text: second paragraph and final paragraph (software-package use and redistribution require notices, but no same-license, source-disclosure, or other reciprocal condition is stated)"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text: complete three-paragraph license, especially 'use of this publication' and 'The UK Advanced Cryptics Dictionary'; the grant and conditions are specific to a dictionary/publication rather than software"
+      "locator": "public/data/licenses/Advanced-Cryptics-Dictionary.json#text; Jediné nároky na oznámení a výslovná absence dalších omezení tvoří permisivní datový grant bez copyleftu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text: second paragraph ('copyright notice must be prominently displayed' and 'text of this document must be included verbatim')"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text: second paragraph ('copyright notice must be prominently displayed' and 'text of this document must be included verbatim')"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text: complete license text (no patent grant, patent condition, or patent-termination clause)"
+      "locator": "public/data/licenses/Advanced-Cryptics-Dictionary.json#text; Jediné nároky na oznámení a výslovná absence dalších omezení tvoří permisivní datový grant bez copyleftu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text: second paragraph (the dictionary may be used in a software package or redistributed subject to notice conditions) and final paragraph ('There are no other restrictions'); distribution and unrestricted-purpose private/commercial use are supported, while a modification grant is not clear enough to represent and remains unknown"
+      "locator": "public/data/licenses/Advanced-Cryptics-Dictionary.json#text; There are no other restrictions ve spojení se širokým šířením ponechává všechny účely včetně komerce a úprav; výslovný patentový grant a sublicence uvedeny nejsou.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "restrictions",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text: complete license text, especially final paragraph ('There are no other restrictions'); no warranty disclaimer, liability limitation, trademark restriction, patent-claim restriction, or additional-terms prohibition appears"
-    },
-    {
-      "field": "review",
-      "sourceId": "spdx-license-list",
-      "locator": "metadata: osi=false and deprecated=false; text: the terms govern a named dictionary/publication rather than software and do not clearly grant modification rights, so the software-license guide cannot recommend the license"
+      "locator": "public/data/licenses/Advanced-Cryptics-Dictionary.json#text; Odstavec if ... Není povinné sdílet zdroje. Povinnost při samotném užití nyní zachycuje trigger use ve slovníku 1.4.0.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "text: second paragraph ('used in a software package or redistributed in any form'); combination with a software package and redistribution activate the notice conditions"
+      "locator": "public/data/licenses/Advanced-Cryptics-Dictionary.json#text; Odstavec if ... Není povinné sdílet zdroje. Povinnost při samotném užití nyní zachycuje trigger use ve slovníku 1.4.0.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Advanced-Cryptics-Dictionary.json#text; Celý text neobsahuje výluku záruk, odpovědnosti, známkové zákazy či terminaci; výslovně říká, že jiná omezení nejsou.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Advanced-Cryptics-Dictionary.json#text; There are no other restrictions ve spojení se širokým šířením ponechává všechny účely včetně komerce a úprav; výslovný patentový grant a sublicence uvedeny nejsou.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Advanced-Cryptics-Dictionary.json#text; Odstavec if ... Není povinné sdílet zdroje. Povinnost při samotném užití nyní zachycuje trigger use ve slovníku 1.4.0.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Advanced-Cryptics-Dictionary.json#text; Individuální plná revize aktualizována po doplnění use ve slovníku 1.4.0. Užití slovníku v softwarovém balíku nebo redistribuce v jakékoli podobě vyžaduje nápadný copyright a doslovný text oznámení. Další omezení text výslovně vylučuje. Grant se vztahuje na slovníkovou publikaci a povinnosti spouští i užití v softwarovém balíku. Doplnit model datového předmětu; podmíněné užití je nyní zaznamenáno spouštěči use a combination.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

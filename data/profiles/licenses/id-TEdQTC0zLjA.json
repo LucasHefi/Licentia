@@ -10,83 +10,111 @@
   "review": {
     "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "strong-copyleft",
-    "copyleftScope": "whole-work",
+    "family": "weak-copyleft",
+    "copyleftScope": "library",
     "permissions": [
       "commercial-use",
+      "conditional-relicensing",
       "distribution",
       "modifications",
       "patent-grant",
-      "sublicensing"
+      "private-use"
     ],
     "obligations": [
+      "allow-relinking",
+      "allow-reverse-engineering",
+      "disclose-source",
       "include-copyright",
       "include-license-text",
-      "provide-corresponding-source"
+      "include-notice",
+      "mark-modifications",
+      "preserve-combined-license-terms",
+      "provide-corresponding-source",
+      "provide-installation-information",
+      "same-license"
     ],
     "triggers": [
-      "unknown"
+      "combination",
+      "distribution",
+      "linking",
+      "modification",
+      "patent-claim"
     ],
     "restrictions": [
+      "additional-terms",
       "liability",
-      "trademark",
+      "patent-claim",
       "warranty"
     ],
-    "patentPosition": "express-grant",
-    "noticeBurden": "standard"
+    "patentPosition": "defensive-termination",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.whole-work-copyleft",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.copyleft-family",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LGPL-3.0.json#text; Knihovní copyleft GPL základu omezený explicitními LGPL0/3–5 výjimkami: Application není odvozená pouhým rozhraním/subclass a Combined Work má vlastní terms při zachování knihovních změn/relinku. Weak library scope; LGPL2a přesná podmínka nezávislé smysluplné funkčnosti, nebo2b volba GPL bez výjimek, je v tomto známém modelu popsána a není unknown.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LGPL-3.0.json#text; Knihovní copyleft GPL základu omezený explicitními LGPL0/3–5 výjimkami: Application není odvozená pouhým rozhraním/subclass a Combined Work má vlastní terms při zachování knihovních změn/relinku. Weak library scope; LGPL2a přesná podmínka nezávislé smysluplné funkčnosti, nebo2b volba GPL bez výjimek, je v tomto známém modelu popsána a není unknown.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LGPL-3.0.json#text; Začleněné GPL2/4 uděluje práva po dobu copyright, neodvolatelná při plnění, soukromý provoz/úpravy a libovolně placené kopie/podporu; samotný neodvozený output nezasažen. GPL11 výslovný světový bezroyalty nevýhradní patentový grant essential claims Contributor Version, nikoli jen prohlášení o patentech, s downstream ochranou. LGPL3/4/5 dovolují vlastní podmínky příslušných objektů, aplikace a combined library při plnění konkrétní cesty. LGPL2 při modifikované facility odkázané na aplikační funkci/data mimo argument volba good-faith fallback pod LGPL NEBO GPL bez LGPL permissions. GPL7 obecně připouští odejmutí additional permissions; nejde o zachování LGPL výjimek po této volbě. GPL10 přímý downstream, sublicence GPL2 zakázány.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/LGPL-3.0.json#text; Samotná knihovna dle GPL4–6 copyright/licence/warranty/§7 notices, změny+datum, vlastní odvozené knihovní zdroje pod licencí; object s Corresponding Source alternativně médium, podmíněná nejméně3letá a po podporu/náhradní díly trvající nabídka každému držiteli objectu, příležitostný nekomerční přenos nabídky, rovnocenný download bez další ceny nebo P2P odkaz. LGPL3 object aplikace z hlaviček vlastní podmínky; přesahuje-li numerické parametry/layout/accessors/malé macros/inline/templates do10řádků, stačí prominentní notice knihovny a OBA texty GPL+LGPL. LGPL4 Combined Work nesmí omezovat změny knihovních částí a reverse engineering k jejich debug; notice, oba texty, copyright knihovny v existujícím runtime výpisu. 4d0 Minimal Source pod LGPL+Application Code k recombine/relink způsobem GPL6 NEBO4d1 vhodná runtime systémová shared library fungující s interface-compatible změnou. 4e Installation Information jen pokud jinak vyžaduje GPL6 a jen nutná k instalaci/spuštění takto relinkované kombinace; 4d0 s materiály,4d1 způsobem GPL6. LGPL5 side-by-side neApplication facilities: přiložit nezávislou LGPL část a notice kde je.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/LGPL-3.0.json#text; Samotná knihovna dle GPL4–6 copyright/licence/warranty/§7 notices, změny+datum, vlastní odvozené knihovní zdroje pod licencí; object s Corresponding Source alternativně médium, podmíněná nejméně3letá a po podporu/náhradní díly trvající nabídka každému držiteli objectu, příležitostný nekomerční přenos nabídky, rovnocenný download bez další ceny nebo P2P odkaz. LGPL3 object aplikace z hlaviček vlastní podmínky; přesahuje-li numerické parametry/layout/accessors/malé macros/inline/templates do10řádků, stačí prominentní notice knihovny a OBA texty GPL+LGPL. LGPL4 Combined Work nesmí omezovat změny knihovních částí a reverse engineering k jejich debug; notice, oba texty, copyright knihovny v existujícím runtime výpisu. 4d0 Minimal Source pod LGPL+Application Code k recombine/relink způsobem GPL6 NEBO4d1 vhodná runtime systémová shared library fungující s interface-compatible změnou. 4e Installation Information jen pokud jinak vyžaduje GPL6 a jen nutná k instalaci/spuštění takto relinkované kombinace; 4d0 s materiály,4d1 způsobem GPL6. LGPL5 side-by-side neApplication facilities: přiložit nezávislou LGPL část a notice kde je.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LGPL-3.0.json#text; LGPL1 výslovně vyjímá převody podle LGPL3/4 z GPL3 anti-circumvention klauzule; nelze ji vynucovat kumulativně těmto cestám. LGPL2 fallback znamená snahu v dobré víře o smysluplný zbytek funkcí, nikoli obecný bezpečnostní test; alternativou GPL bez výjimek. GPL6 User Product převod držby/užití trvale/na dobu, instalační klíče jen pokud někdo umí změněný object instalovat; bez podpory změn a s možností odmítnout skutečně škodlivou síťovou modifikaci. GPL7 povolené konkrétní dodatky pouze pokud přítomné/oprávněné, nepřípustné další restrikce odstranitelné. GPL8 konec včetně patentů a obnova po nápravě: provizorně, trvale po60dnech bez notice nebo prvním holder notice napraveném před30dny; downstream trvá. GPL10 patentové žaloby včetně cross/counter k programu zakázány. GPL11 tři cesty při vědomé patentové licenci bez veřejného source, automatické rozšíření selektivního grantu a zákaz diskriminační placené distributor dohody mimo před28.3.2007. GPL12 kolize brání convey. GPL15–17 as-is/škody s právními a písemnými výjimkami.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/LGPL-3.0.json#text; Začleněné GPL2/4 uděluje práva po dobu copyright, neodvolatelná při plnění, soukromý provoz/úpravy a libovolně placené kopie/podporu; samotný neodvozený output nezasažen. GPL11 výslovný světový bezroyalty nevýhradní patentový grant essential claims Contributor Version, nikoli jen prohlášení o patentech, s downstream ochranou. LGPL3/4/5 dovolují vlastní podmínky příslušných objektů, aplikace a combined library při plnění konkrétní cesty. LGPL2 při modifikované facility odkázané na aplikační funkci/data mimo argument volba good-faith fallback pod LGPL NEBO GPL bez LGPL permissions. GPL7 obecně připouští odejmutí additional permissions; nejde o zachování LGPL výjimek po této volbě. GPL10 přímý downstream, sublicence GPL2 zakázány.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/LGPL-3.0.json#text; Samotná knihovna dle GPL4–6 copyright/licence/warranty/§7 notices, změny+datum, vlastní odvozené knihovní zdroje pod licencí; object s Corresponding Source alternativně médium, podmíněná nejméně3letá a po podporu/náhradní díly trvající nabídka každému držiteli objectu, příležitostný nekomerční přenos nabídky, rovnocenný download bez další ceny nebo P2P odkaz. LGPL3 object aplikace z hlaviček vlastní podmínky; přesahuje-li numerické parametry/layout/accessors/malé macros/inline/templates do10řádků, stačí prominentní notice knihovny a OBA texty GPL+LGPL. LGPL4 Combined Work nesmí omezovat změny knihovních částí a reverse engineering k jejich debug; notice, oba texty, copyright knihovny v existujícím runtime výpisu. 4d0 Minimal Source pod LGPL+Application Code k recombine/relink způsobem GPL6 NEBO4d1 vhodná runtime systémová shared library fungující s interface-compatible změnou. 4e Installation Information jen pokud jinak vyžaduje GPL6 a jen nutná k instalaci/spuštění takto relinkované kombinace; 4d0 s materiály,4d1 způsobem GPL6. LGPL5 side-by-side neApplication facilities: přiložit nezávislou LGPL část a notice kde je.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/LGPL-3.0.json#text; Individuálně přečten celý připnutý text. Připnutý text obsahuje celé LGPL §§0–6 I celý začleněný GPL3 včetně preambule a návodu, vše individuálně přečteno. LGPL0 Library není Application ani Combined Work; Application používá rozhraní a jinak není odvozená, subclass se výslovně považuje za používání rozhraní. Combined Work vzniká propojením s Linked Version. Minimal Corresponding Source vyjímá izolovaně pouze aplikační části, Corresponding Application Code může být object/source včetně dat/utilit k reprodukci, mimo System Libraries. Metadata bareID výslovně preferují -only. LGPL 3 doplňuje GPL 3 výjimkami pro hlavičkové objekty, vlastní aplikace a kombinované knihovny. U aplikace stačí jedna z cest relinkovacích materiálů nebo vhodné sdílené knihovny; instalační informace zůstávají podmíněné User Product. Identifikátor LGPL-3.0 je deprecated a má být nahrazen LGPL-3.0-only. Identifikátor LGPL-3.0 je deprecated; připnutá metadata výslovně označují LGPL-3.0-only jako preferovanou náhradu. Před novým doporučením použít tento aktuální identifikátor podle skutečného oznámení. Vlastní LGPL 3 a začleněné GPL 3 jsou obsahově dokončeny bez dalšího modelového blockeru.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

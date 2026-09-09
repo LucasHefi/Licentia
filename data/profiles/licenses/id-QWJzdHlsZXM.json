@@ -10,14 +10,16 @@
   "review": {
     "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "nonstandard",
+    "family": "strong-copyleft",
     "copyleftScope": "whole-work",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
@@ -36,49 +38,67 @@
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text: second permission paragraph ('entire resulting derived work' under an 'identical' permission notice)"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text: both permission paragraphs (document-specific verbatim-copy conditions and an identical-notice condition for the entire derived work)"
+      "locator": "public/data/licenses/Abstyles.json#text; Celé resulting derived work musí mít totožné svolení, proto whole-work copyleft; na pouhou agregaci text tuto povinnost výslovně nerozšiřuje.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text: first permission paragraph (copyright and permission notices must be preserved on all copies)"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text: first permission paragraph (preserve copyright and permission notices) and second permission paragraph (entire derived work under an identical permission notice)"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text: complete license text (two permission paragraphs and warranty paragraph; no patent grant or patent clause)"
+      "locator": "public/data/licenses/Abstyles.json#text; Celé resulting derived work musí mít totožné svolení, proto whole-work copyleft; na pouhou agregaci text tuto povinnost výslovně nerozšiřuje.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text: first permission paragraph ('make and distribute verbatim copies') and second permission paragraph ('copy and distribute modified versions')"
+      "locator": "public/data/licenses/Abstyles.json#text; Dva permission odstavce dovolují doslovné i modifikované kopie a distribuci bez účelového omezení. Patentový grant a výslovná sublicence chybějí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "restrictions",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text: warranty paragraph ('WITHOUT ANY WARRANTY, express or implied') and complete license text"
-    },
-    {
-      "field": "review",
-      "sourceId": "spdx-license-list",
-      "locator": "metadata: osi=false; fsf=false; deprecated=false"
+      "locator": "public/data/licenses/Abstyles.json#text; Doslovné kopie zachovají copyright a svolení. Modifikované kopie plní totéž a entire resulting derived work musí být distribuováno pod totožným permission notice; zdrojová forma není výslovně vyžadována.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "text: first permission paragraph (conditions on copies) and second permission paragraph (conditions on modified versions and distribution of the entire derived work)"
+      "locator": "public/data/licenses/Abstyles.json#text; Doslovné kopie zachovají copyright a svolení. Modifikované kopie plní totéž a entire resulting derived work musí být distribuováno pod totožným permission notice; zdrojová forma není výslovně vyžadována.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Abstyles.json#text; Úvod odmítá veškeré výslovné/implicitní záruky; samostatná odpovědnost, známky či jurisdikce chybějí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Abstyles.json#text; Dva permission odstavce dovolují doslovné i modifikované kopie a distribuci bez účelového omezení. Patentový grant a výslovná sublicence chybějí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Abstyles.json#text; Doslovné kopie zachovají copyright a svolení. Modifikované kopie plní totéž a entire resulting derived work musí být distribuováno pod totožným permission notice; zdrojová forma není výslovně vyžadována.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Abstyles.json#text; Individuálně přečten celý připnutý text. Úvod označuje program APREAMBL.TEX 1.10e, ale oba operativní granty opakovaně říkají this document; předmět kódu vůči dokumentaci není jednoznačný. Dokument lze kopírovat s copyrightem a svolením; upravené verze musí zachovat oznámení a celé výsledné odvozené dílo šířit pod totožným svolením. Text současně označuje program APREAMBL.TEX. Připnutý text označuje v úvodu program, ale grant práv vztahuje na this document. Je třeba ověřit primární kontext APREAMBL.TEX/APREAMBL.DOC a rozlišit kód od dokumentace; bez něj není vhodné doporučit text jako obecnou licenci nového softwaru.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

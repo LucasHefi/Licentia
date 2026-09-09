@@ -8,93 +8,102 @@
     "contentHash": "sha256:078abeb416c38f8e7e90bb9a6a00eb330d23d130dfd13f0ccae4ad023cfbe6aa"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "strong-copyleft",
+    "copyleftScope": "whole-work",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "sublicensing"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "include-license-text"
-    ],
-    "triggers": [
+      "include-notice",
+      "same-license",
       "unknown"
     ],
-    "restrictions": [
-      "liability",
-      "trademark"
+    "triggers": [
+      "distribution",
+      "unknown",
+      "use"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "restrictions": [
+      "additional-terms",
+      "liability",
+      "trademark",
+      "unknown",
+      "warranty"
+    ],
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-SA-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-SA-1.0.json#text; SA pokrývá celé odvozené dílo, samostatné části kolekce výslovně vyloučeny. Obecný autorský copyleft bez povinnosti zdrojového kódu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-SA-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-SA-1.0.json#text; SA pokrývá celé odvozené dílo, samostatné části kolekce výslovně vyloučeny. Obecný autorský copyleft bez povinnosti zdrojového kódu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-SA-1.0.json#text; §3 celosvětově bezroyalty nevýhradně po dobu copyrightu reprodukce, kolekce, deriváty a jejich distribuce, veřejný display/performance/digital-audio, všechna média a nutné formátové změny. Žádný patentový grant; §4a zakazuje sublicenci, §2 zachovává fair-use/first-sale a zákonné výjimky.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-SA-1.0.json#text; §4a původní Work pod touto licencí s textem NEBO URI, zachovat licence/warranty notices a žádné další omezení či neslučitelné access/use technologické opatření. Totéž §4b pro celé deriváty; kolekce mimo vložený Work/derivát není SA. Na notifikaci poskytovatele prakticky možné odstranění referencí na poskytovatele/autora z kolekce či derivátu. Žádný samostatný BY kredit autora/titulu ani povinné zveřejnění source zde nejsou.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-SA-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-SA-1.0.json#text; §4a původní Work pod touto licencí s textem NEBO URI, zachovat licence/warranty notices a žádné další omezení či neslučitelné access/use technologické opatření. Totéž §4b pro celé deriváty; kolekce mimo vložený Work/derivát není SA. Na notifikaci poskytovatele prakticky možné odstranění referencí na poskytovatele/autora z kolekce či derivátu. Žádný samostatný BY kredit autora/titulu ani povinné zveřejnění source zde nejsou.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-SA-1.0.json#text; §5a znalostní záruka po rozumném zjištění: získána všechna potřebná práva bez dodatečných royalty/poplatků a bez porušení práv, defamace/privacy či jiné újmy. §5b as-is jen mimo výslovné záruky, právo a písemnou dohodu. §6 škodová výluka neplatí na third-party liability způsobenou porušením §5. §7 automatický konec porušením, řádní downstream zůstávají, nové poskytovatelovy podmínky neruší již udělenou licenci.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-SA-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-SA-1.0.json#text; §3 celosvětově bezroyalty nevýhradně po dobu copyrightu reprodukce, kolekce, deriváty a jejich distribuce, veřejný display/performance/digital-audio, všechna média a nutné formátové změny. Žádný patentový grant; §4a zakazuje sublicenci, §2 zachovává fair-use/first-sale a zákonné výjimky.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-SA-1.0.json#text; §4a původní Work pod touto licencí s textem NEBO URI, zachovat licence/warranty notices a žádné další omezení či neslučitelné access/use technologické opatření. Totéž §4b pro celé deriváty; kolekce mimo vložený Work/derivát není SA. Na notifikaci poskytovatele prakticky možné odstranění referencí na poskytovatele/autora z kolekce či derivátu. Žádný samostatný BY kredit autora/titulu ani povinné zveřejnění source zde nejsou.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-SA-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-SA-1.0.json#text; Individuálně přečten celý připnutý text. §1 obecné copyrightové Work, Derivative Work versus úplný nezměněný originál v nezávislé Collective Work. You nezahrnuje dřívějšího porušovatele bez výslovného nového povolení. CC SA 1.0 dovoluje komerční kopie a adaptace se stejnou licencí, bez samostatné povinnosti autorovy atribuce. Vyžaduje licence/warranty notices, zakazuje neslučitelné DRM a na žádost odstraňuje identifikaci z adaptace či kolekce. Poskytovatel této 1.0 verze skutečně zaručuje určité právní vlastnosti díla. § 4 stanoví neslučitelné DRM a odstranění identifikace na konkrétní žádost; současný model neumí tyto povinnosti ani obsahový SA režim bez zdrojových pravidel. Doplnit je a tuto obecnou obsahovou licenci nedoporučovat pro nový software.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

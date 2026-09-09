@@ -1,0 +1,29 @@
+{
+  "id": "Adobe-Utopia",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:1bc799031ef6a7515dc0a3a2d190225740501b23c423fdd30dbf8a2bec53dff0"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Grant dovoluje používat, reprodukovat, zobrazovat a distribuovat čtyři uvedené řezy Utopia a jejich fontové soubory se zachováním copyrightu. Neupravené kopie mají obsahovat také určené známkové označení a atribuci, jejichž úplná podoba však v připnutém textu chybí. Průvodce jej nezařazuje: je nutné dohledat oznámení a posuzovat licenci jako grant ke konkrétním fontům.",
+  "blockersCs": [
+    "Předmětem jsou konkrétní fonty Utopia a text neobsahuje identifikovatelný slibovaný „following trademark symbol and attribution“; je třeba dohledat úplné původní oznámení a použít model fontů před doporučením."
+  ],
+  "analysis": {
+    "subjectCs": "Grant se týká čtyř řezů Utopia a jejich Type 1 programů, bitmap a souborů Adobe Font Metric.",
+    "grantCs": "Úvod dovoluje použití, reprodukci, zobrazení a distribuci vyjmenovaných písem; obecné právo úprav není výslovně uděleno.",
+    "conditionsCs": "Adobe copyright musí být ve všech celých i částečných kopiích; v neupravených kopiích mají být také následující symbol ochranné známky a atribuce, avšak připnutý text za dvojtečkou uvádí pouze seznam písem.",
+    "limitationsCs": "Text rozlišuje neupravené kopie pro požadované známkové označení; neobsahuje záruky ani odpovědnostní výluku.",
+    "compatibilityCs": "Nejsou nabídnuty jiné licence či verze; seznam darovaných písem není všeobecný softwarový grant."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Adobe-Utopia.html",
+      "note": "Individuálně přečten celý připnutý text; Adobe copyright musí být ve všech celých i částečných kopiích; v neupravených kopiích mají být také následující symbol ochranné známky a atribuce, avšak připnutý text za dvojtečkou uvádí pouze seznam písem. Celý fontový grant neobsahuje patentový grant či patentové ukončení."
+    }
+  ]
+}

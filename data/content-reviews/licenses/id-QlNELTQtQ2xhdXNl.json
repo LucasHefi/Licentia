@@ -1,0 +1,20 @@
+{
+  "id": "BSD-4-Clause",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.9",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:c16d364ac7aa112dfd565d591b4dcf165812174c29c47d721e4e9991f062d5de"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Při distribuci zdrojů zachovejte copyright, podmínky a disclaimer; k binárním kopiím je přiložte v dokumentaci nebo jiných materiálech. Všechna reklama zmiňující vlastnosti nebo použití softwaru musí uvést předepsané poděkování organizaci uvedené v licenci. Jména držitele práv a přispěvatelů nelze bez písemného souhlasu použít k podpoře odvozeného produktu. Nevyžaduje zdroje ani stejnou licenci a neobsahuje výslovný patentový grant. Historické zrušení reklamní doložky UC Berkeley se automaticky nepřenáší na texty jiných držitelů práv.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/BSD-4-Clause.html",
+      "note": "Dřívější individuální revize 2026-09-09.9; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

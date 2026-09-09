@@ -9,92 +9,97 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "include-license-text"
+      "include-notice"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification"
     ],
     "restrictions": [
-      "trademark"
+      "additional-terms",
+      "trademark",
+      "warranty"
     ],
-    "patentPosition": "unknown",
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/WordNet.json#text; permission paragraph expressly use/copy/modify/distribute software AND database/documentation for ANY purpose without fee/royalty; not restricted to database-only use and no reciprocal condition; no reciprocal source-supply or same-license condition; https://spdx.org/licenses/WordNet.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/WordNet.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/WordNet.json#text; permission paragraph expressly use/copy/modify/distribute software AND database/documentation for ANY purpose without fee/royalty; not restricted to database-only use and no reciprocal condition; https://spdx.org/licenses/WordNet.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     },
     {
-      "field": "copyleftScope",
+      "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/WordNet.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/WordNet.json#text; permission condition copyright notice/statements INCLUDING disclaimer on ALL software/database/documentation copies and modifications for INTERNAL USE OR distribution; continuous notice retention, not a new use-generated product acknowledgment; https://spdx.org/licenses/WordNet.html; retention refers to FOLLOWING copyright and statements, not expressly the entire preceding license/grant text",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     },
     {
-      "field": "triggers",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/WordNet.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/WordNet.json#text; permission condition copyright notice/statements INCLUDING disclaimer on ALL software/database/documentation copies and modifications for INTERNAL USE OR distribution; continuous notice retention, not a new use-generated product acknowledgment; https://spdx.org/licenses/WordNet.html; retention refers to FOLLOWING copyright and statements, not expressly the entire preceding license/grant text",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/WordNet.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/WordNet.json#text; whole text: no express patent grant or patent-litigation termination; no inference of patent rights from copyright, trademarks or non-infringement disclaimers; https://spdx.org/licenses/WordNet.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/WordNet.json#text; permission paragraph expressly use/copy/modify/distribute software AND database/documentation for ANY purpose without fee/royalty; not restricted to database-only use and no reciprocal condition; https://spdx.org/licenses/WordNet.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/WordNet.json#text; obtaining/using/copying assent; final absolute prohibition Princeton/Princeton University names in advertising/publicity pertaining to distribution with NO express written-consent exception; copyright title retained; warranty/non-infringement disclaimer but NO liability exclusion; https://spdx.org/licenses/WordNet.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/WordNet.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/WordNet.json#text; whole-text editorial review on 2026-09-09, batch 7; Oznámení a podmínky včetně disclaimeru zachovejte na všech kopiích softwaru, databáze i dokumentace, také na úpravách pro interní použití. Text dovoluje užití, kopírování, úpravy a distribuci pro jakýkoli účel. Jména Princeton a Princeton University nesmějí být použita v reklamě související s distribucí. Znění vylučuje záruky, ale neobsahuje výslovné omezení odpovědnosti ani patentový grant.; https://spdx.org/licenses/WordNet.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/WordNet.json#text; permission condition copyright notice/statements INCLUDING disclaimer on ALL software/database/documentation copies and modifications for INTERNAL USE OR distribution; continuous notice retention, not a new use-generated product acknowledgment; https://spdx.org/licenses/WordNet.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     }
   ]
 }

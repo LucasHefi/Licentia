@@ -1,0 +1,29 @@
+{
+  "id": "generic-xts",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:dae5e9094626ca24ff6648642e3e8d0ba728c6584ffb82bfce94d925335858d1"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Text dovoluje software používat, kopírovat a měnit s poplatkem i bez něj, pokud celé oznámení zůstane ve všech kopiích obsahujících původní či upravený kód. Zaslání změn autorům je dobrovolné a software je bez záruk. Průvodce jej nezařazuje, protože vlastní grant nevyjasňuje distribuci a alternativa označená jako GNU public license neurčuje přesnou licenci ani verzi.",
+  "blockersCs": [
+    "Text nabízí neurčenou „GNU public license“ a vlastní grant výslovně neuvádí distribuci; před zařazením je třeba určit verzi alternativy a doložit distribuční rozsah této formulace."
+  ],
+  "analysis": {
+    "subjectCs": "Text Damiena Millera a Alexe Hornunga se vztahuje na tento software a kopie či modifikace zahrnuté do jiného softwaru.",
+    "grantCs": "Grant dovoluje užití, kopírování a změny s poplatkem nebo bez něj; výslovně nabízí i užití pod „GNU public license“ bez určení přesného názvu/verze.",
+    "conditionsCs": "Celé oznámení musí být ve všech kopiích softwaru, který obsahuje kopii či změnu tohoto kódu. Zaslání změn autorům pod volnější licencí je žádost „Please“.",
+    "limitationsCs": "AS IS výluka zahrnuje výslovné i předpokládané záruky včetně prodejnosti a vhodnosti; samostatná odpovědnostní výluka chybí.",
+    "compatibilityCs": "Alternativní GNU public license není identifikována verzí; text původního grantu navíc nevyjmenovává distribuci, přestože upravuje všechny kopie začleněného softwaru."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/generic-xts.html",
+      "note": "Individuálně přečten celý připnutý text; Celé oznámení musí být ve všech kopiích softwaru, který obsahuje kopii či změnu tohoto kódu. Zaslání změn autorům pod volnější licencí je žádost „Please“. Vlastní grant i zbytek krátkého textu nemají výslovný patentový grant ani odvetné ukončení."
+    }
+  ]
+}

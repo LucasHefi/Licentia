@@ -1,0 +1,20 @@
+{
+  "id": "MulanPSL-2.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:c28a14c627f3e55200c2f859833782606ae38c47a83dd00a945529f28a97afb4"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Přiložte licenci a zachovejte copyrightová, patentová, známková i další oznámení. Patentový grant zaniká při vymezeném patentovém sporu. Při rozporu jazykových znění má přednost čínské znění.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/MulanPSL-2.0.html",
+      "note": "Dřívější individuální revize 2026-09-09; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "SGI-OpenGL",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:1d51ff2509b17c30f9a13fd055bb390646f1e90c09c9c1d68931357d382d6a59"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Licence dovoluje software používat, kopírovat, měnit a distribuovat se zachováním copyrightu a svolení; jméno SGI vyžaduje pro propagaci souhlas. Vládní užití, kopírování a zpřístupnění však dále podřizuje historickým i nástupnickým doložkám FAR a DFARS. Průvodce ji nezařazuje, dokud není pro dotčené příjemce určeno použitelné smluvní znění.",
+  "blockersCs": [
+    "Vládní oddíl odkazuje na historická i nástupnická FAR/DFARS omezení pro konkrétní příjemce; před doporučením je třeba určit použitelné smluvní znění a modelovat tento příjemcovský rozsah."
+  ],
+  "analysis": {
+    "subjectCs": "SGI grant z roku 1993 má zvláštní oddíl US Government Users Restricted Rights.",
+    "grantCs": "Úvod dovoluje užití, kopírování, změny a distribuci pro jakýkoli účel bez poplatku; vládní užití/duplikace/zpřístupnění se dále podřizují odkazovaným FAR/DFARS či nástupnickým doložkám.",
+    "conditionsCs": "Copyright je ve všech kopiích a copyright se svolením v dokumentaci; vládní příjemci mají další omezení z FAR 52.227.19(c)(2), DFARS 252.227-7013(c)(1)(ii) a obdobných/nástupnických doložek.",
+    "limitationsCs": "SGI jméno nesmí bez písemného souhlasu do publicity distribuce; AS IS vylučuje záruky/odpovědnost. OpenGL je označena za známku SGI a práva k nezveřejněnému dílu jsou rezervována.",
+    "compatibilityCs": "Vládní oddíl je externí podmínka, nikoli jiná licence. Aktuální oficiální FAR https://www.acquisition.gov/far/52.227-19 a DFARS https://www.acquisition.gov/dfars/252.227-7013-rights-technical-data%E2%80%94other-commercial-products-and-commercial-services. upravují vládní smluvní práva; neprokazují automaticky historické znění citované v roce 1993."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/SGI-OpenGL.html",
+      "note": "Individuálně přečten celý připnutý text; Copyright je ve všech kopiích a copyright se svolením v dokumentaci; vládní příjemci mají další omezení z FAR 52.227.19(c)(2), DFARS 252.227-7013(c)(1)(ii) a obdobných/nástupnických doložek. Vlastní text nemá výslovný patentový grant nebo patentové ukončení."
+    },
+    {
+      "url": "https://www.acquisition.gov/far/52.227-19",
+      "note": "Oficiální aktuální FAR upravuje vládní užití, duplikaci a disclosure komerčního software podle smlouvy; dnešní stránka neprokazuje historické znění 1993."
+    },
+    {
+      "url": "https://www.acquisition.gov/dfars/252.227-7013-rights-technical-data%E2%80%94other-commercial-products-and-commercial-services.",
+      "note": "Oficiální aktuální DFARS definuje omezená práva k technickým datům; neidentifikuje automaticky historickou softwarovou doložku citovanou SGI."
+    }
+  ]
+}

@@ -8,92 +8,103 @@
     "contentHash": "sha256:010b4637c72c8e269d68263a65b3a16398fa96ba320365c33e3fdef084ee4ca2"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
     "family": "permissive",
     "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "provide-corresponding-source"
-    ],
-    "triggers": [
+      "include-copyright",
+      "include-license-text",
+      "include-notice",
+      "include-use-acknowledgment",
+      "mark-modifications",
       "unknown"
     ],
-    "restrictions": [
-      "liability"
+    "triggers": [
+      "distribution",
+      "modification",
+      "use"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "restrictions": [
+      "liability",
+      "trademark",
+      "warranty"
+    ],
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.no-copyleft",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.permissive-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/IJG.json#text; Plné IJG znění licencuje Laneův software 1991–1998 a zvlášť popisuje ansi2knr.c, konfiguraci a historicky odstraněné patentově citlivé funkce. Grant dovoluje užití, kopie, změny a distribuci i částí pro libovolný účel bez poplatku; úvodní bod 3 při užití v programu vyžaduje uznání IJG v dokumentaci. Původní IJG notice podmínky nevyžadují zveřejnit vlastní zdroje; zdrojová povinnost samostatného ansi2knr.c se nepřenáší na program, který jej neobsahuje.; https://spdx.org/licenses/IJG.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "obligations",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/IJG.json#text; Původní IJG notice podmínky nevyžadují zveřejnit vlastní zdroje; zdrojová povinnost samostatného ansi2knr.c se nepřenáší na program, který jej neobsahuje.; https://spdx.org/licenses/IJG.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/IJG.json#text; Grant dovoluje užití, kopie, změny a distribuci i částí pro libovolný účel bez poplatku; úvodní bod 3 při užití v programu vyžaduje uznání IJG v dokumentaci.; https://spdx.org/licenses/IJG.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "restrictions",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/IJG.json#text; Legalese 1: při libovolných zdrojích přiložit README s nezměněným copyrightem/no-warranty a popsat změny v dokumentaci; 2: pouze executable vyžaduje předepsané IJG uznání; 3: uživatel přijímá plnou odpovědnost. Prodejce komerčního produktu musí převzít všechny warranty/liability claims. Závěr vyžaduje prohlášení o CompuServe GIF copyrightu/service mark.; https://spdx.org/licenses/IJG.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/IJG.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/IJG.json#text; Legalese 1: při libovolných zdrojích přiložit README s nezměněným copyrightem/no-warranty a popsat změny v dokumentaci; 2: pouze executable vyžaduje předepsané IJG uznání; 3: uživatel přijímá plnou odpovědnost. Prodejce komerčního produktu musí převzít všechny warranty/liability claims. Závěr vyžaduje prohlášení o CompuServe GIF copyrightu/service mark.; https://spdx.org/licenses/IJG.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/IJG.json#text; AS IS vylučuje záruky/odpovědnost; jména autorů/firem nesmějí do reklamy, označení pouze Independent JPEG Group’s software. ansi2knr.c je pod vlastními FSF podmínkami a zdrojovou povinností, není potřebný do generovaného programu; pomocné Autoconf/MIT skripty mají vlastní copyright.; https://spdx.org/licenses/IJG.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/IJG.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/IJG.json#text; IJG výslovný patentový grant nemá; historické tvrzení o známých patentech/odstraněných funkcích neuděluje patentová práva ani neověřuje jejich současný stav.; https://spdx.org/licenses/IJG.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/IJG.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/IJG.json#text; Legalese 1: při libovolných zdrojích přiložit README s nezměněným copyrightem/no-warranty a popsat změny v dokumentaci; 2: pouze executable vyžaduje předepsané IJG uznání; 3: uživatel přijímá plnou odpovědnost. Prodejce komerčního produktu musí převzít všechny warranty/liability claims. Závěr vyžaduje prohlášení o CompuServe GIF copyrightu/service mark. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/IJG.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/IJG.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/IJG.json#text; Individuální kontrola celého připnutého textu IJG dne 2026-09-09. Plné IJG znění licencuje Laneův software 1991–1998 a zvlášť popisuje ansi2knr.c, konfiguraci a historicky odstraněné patentově citlivé funkce. Komerční prodejce musí převzít všechny záruční/odpovědnostní nároky; před doporučením je nutný model této povinnosti. Výslovně samostatně licencovaný ansi2knr.c a pomocné skripty nejsou překážkou vlastního IJG grantu, ale vyžadují zvláštní inventuru při auditu celého balíku. Podmínky se výslovně vztahují i na odvozené IJG programy. Historické odstavce o odstranění arithmetic coding/LZW nejsou závěrem o dnešní platnosti patentů; přesné podmínky ansi2knr.c odkazují do jeho souboru.; https://spdx.org/licenses/IJG.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

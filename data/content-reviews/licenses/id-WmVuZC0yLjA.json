@@ -1,0 +1,29 @@
+{
+  "id": "Zend-2.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:90d4dff16751be2f3887f4efe755fcfa7e395eed38bb4ef5c5dbde61cd3ade42"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Zend 2.0 dovoluje zdrojové i binární užití a distribuci. Kromě notice vyžaduje odlišné přesné poděkování při každé redistribuci a v reklamě zmiňující použití či funkce; pozdější Zend licence jsou volitelné, jiné změny podmínek covered code si vyhrazuje Zend.",
+  "blockersCs": [
+    "Bod 4 přiznává pouze Zend právo měnit podmínky covered code created under this License, ale nedefinuje hranici tohoto kódu vůči derivátům/kombinacím. Je třeba vyjasnit rozsah neměnnosti licencování; nelze jej bez důkazu převést na whole-work nebo pouhé notices."
+  ],
+  "analysis": {
+    "subjectCs": "Zend Engine kód, source/binary, původní i modifikovaný; covered code není přesně definován.",
+    "grantCs": "Redistribution/use with or without modification; bod 4 umožňuje ponechat původní verzi nebo vybrat následnou verzi Zend. Patentový grant chybí.",
+    "conditionsCs": "Body 1–2 notice dle formy. Bod 5 každá redistribuce přesné This product includes the Zend Engine, freely available...; bod 6 reklama features/use odlišné The Zend Engine is freely available...; podmínky covered code smí měnit jen Zend.",
+    "limitationsCs": "Bod 3 Zend/Zend Engine endorsement jen s předchozím svolením. AS IS a široké výluky záruk a odpovědnosti.",
+    "compatibilityCs": "Pozdější číslovaná Zend verze je výslovná alternativa; neznamená obecné přelicencování a starší verzi lze zachovat."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Zend-2.0.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; BSD-style grant s dvojím acknowledgment a zvláštní neměnností licenčních podmínek covered code v bodu 4."
+    }
+  ]
+}

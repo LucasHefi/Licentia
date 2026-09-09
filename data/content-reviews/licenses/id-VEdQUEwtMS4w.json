@@ -1,0 +1,30 @@
+{
+  "id": "TGPPL-1.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:f77a6c21d45a29b53973d219a7166ca43ca65008fafde2df79757fed32b59ee4"
+  },
+  "disposition": "blocked",
+  "summaryCs": "TGPPL1.0 uděluje autorská a omezená patentová práva a požaduje tuto licenci pro distribuované či sdělované kopie nejpozději do12 měsíců od jejich předání. Za distribuci počítá i externí užití originálu nebo odvozeniny včetně sítě. Poskytovatel má samostatný závazek dodávat zdroje nebo udržovat dostupný repozitář; text neodkládá všechny povinnosti obecně o rok. Odvozené zdroje zachovávají notices a označují změnu; distributor vynakládá přiměřené úsilí získat výslovný souhlas. Záruka původu práv platí vedle ostatních výluk.",
+  "blockersCs": [
+    "§1(c) nařizuje tuto licenci až nejpozději12 měsíců po distribuci/sdělení každé kopie, včetně externího nasazení podle §5; §3 současně obsahuje zvláštní zdrojový závazek poskytovatele bez téže lhůty. Model neumí oddělit časové splatnosti a role ani sledovat čas konkrétních kopií. Před doporučením je nutný model transitive grace period, nikoli tvrzení okamžitého copyleftu nebo plošného ročního odkladu všech povinností.",
+    "§9 vyžaduje přiměřené úsilí získat výslovný souhlas příjemců při distribuci/sdělování. To není notice ani změnové oznámení; je třeba samostatně podpořit tuto povinnost souhlasu."
+  ],
+  "analysis": {
+    "subjectCs": "Původní autorské dílo s notice TGPPL1.0 vedle copyrightu a jeho odvozeniny. Kolektivní dílo je uvedeno zvlášť (§1(a)); §14 You zahrnuje ovládající, ovládané a společně ovládané subjekty, což vymezuje externí nasazení.",
+    "grantCs": "§1 uděluje nevýhradná bezplatná celosvětová sublicencovatelná autorská práva po dobu copyrightu ke kopiím, změnám, distribuci/sdělování, veřejnému předvádění a zobrazení. §2 obdobně po dobu patentů uděluje licenci k poskytovatelovým vlastněným/ovládaným nárokům uskutečněným v jím dodaném originálu, včetně have made a import. §15 zachovává další užití neomezená právem nebo licencí.",
+    "conditionsCs": "§1(c) vyžaduje TGPPL pro předané kopie nejpozději12 měsíců po jejich distribuci/sdělení. §3 zavazuje Licensor dodat preferovanou formu originálu pro změny s dostupnou dokumentací; může použít levně a pohodlně dostupný repozitář po dobu vlastní distribuce. §5 považuje externí nasazení originálu i odvozeniny za distribuci, včetně síťové aplikace. §6 vyžaduje uchovat copyright/patent/známky/licenční a Attribution Notices ve zdrojích vytvořených odvozenin a prominentně uvést změnu. §9 samostatně žádá přiměřené úsilí o výslovný souhlas; roční lhůta §1(c) není obecnou výjimkou z §§3,6,9.",
+    "limitationsCs": "§4 nedovoluje propagaci jmény či známkami bez předchozího výslovného souhlasu. §7 zaručuje původ copyrightu a patentových práv a vylučuje pouze ostatní záruky. §8 vylučuje vyjmenované nepřímé škody, pokud to zákon dovoluje. §9 ruší grant při nesplnění §1(c), zachovává fair use/fair dealing a výslovný souhlas označuje neodvolatelným. §10 ukončuje všechny granty patentovou žalobou včetně cross/counterclaim proti poskytovateli či příjemci za originál, s výjimkou kombinací s jiným SW/HW. §§11–12 volí právo/fórum místa poskytovatele, bez CISG, a náklady úspěšné strany.",
+    "compatibilityCs": "Licence neposkytuje automatickou volbu pozdější verze. §16 dovoluje upravit samotný licenční text pouze pro jiná původní díla, se změnou názvu mimo TGPPL a nezaměnitelným notice; nelze tím přelicencovat tento originál ani jeho odvozeniny. Tato verze §16 neobsahuje další požadavek schválení upravené licence OSI z OSL3.0."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/TGPPL-1.0.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; §§1(c),5 spojují odloženou stejnou licenci s externím nasazením včetně sítě; síťový copyleft, jehož lhůtu statický model plně nevystihuje"
+    }
+  ]
+}

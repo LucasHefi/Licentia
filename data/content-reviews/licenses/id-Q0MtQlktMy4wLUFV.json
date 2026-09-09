@@ -1,0 +1,29 @@
+{
+  "id": "CC-BY-3.0-AU",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:570f6157e216dba96d358e697ea91a3f0e13c47c90ea2a7a30df4bf8d3351d6e"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Australská CC BY 3.0 dovoluje komerční adaptace s atribucí a označením změn bez SA. Má právo žádat odstranění kreditu, DRM zákaz, výslovně ponechaná neodvolatelná morální práva a podrobné australské zákonné výjimky z warranty/liability omezení.",
+  "blockersCs": [
+    "§ 4A/B zahrnují DRM zákaz a odstranění atribuce i na žádost Original Author, nikoli pouze poskytovatele. Doplnit tyto mechanismy, obsahový subjekt a morální práva; současný software-guide profil by materiální podmínky zploštil."
+  ],
+  "analysis": {
+    "subjectCs": "§1 Work zahrnuje copyrightové materiály a other subject matter včetně nahrávek, filmů, vydání a vysílání; Collection je nezměněný originál se samostatnými díly, hudební synching je adaptace. Distribute je široké veřejné zpřístupnění včetně elektronické komunikace/vysílání.",
+    "grantCs": "§3A–B světový bezroyalty nevýhradní copyright grant po dobu práv: copy, collections, adaptace a jejich veřejná distribuce/provedení, všechna média a technické formátové změny. §3C vzdání royalty za veškerý výkon udělených práv, ostatní práva rezervována. Patenty nejsou výslovně licencovány a §4A zakazuje sublicenci.",
+    "conditionsCs": "§4A originál s textem NEBO URI licence, zachované licence/warranty notices, bez dodatečných omezení a technologií omezujících příjemce; Collection mimo Work ne. §4B copyright, autor/pseudonym a požadované Attribution Parties, dodaný titul a relevantní dosažitelné URI, rozumné kroky zřetelně označit změny. Kredit součástí srovnatelných kreditů stejně výrazný. Na žádost poskytovatele NEBO autora prakticky možné odstranit atribuci z Collection/adaptace. Kredit pouze attribution, bez asociace/endorsement bez samostatného předchozího písemného souhlasu.",
+    "limitationsCs": "§4C neodvolatelná zákonná moral rights zůstávají. §5 as-is v zákonných mezích s výslovným zachováním spotřebitelských Trade Practices1974/state warranties. §6 případné neodstranitelné závazky limituje na volbu náhrady/opravy či nákladů u zboží a opětovných služeb/nákladů, pouze kde zákon dovolí; domácí/spotřebitelské výjimky výslovné. §7 automatický konec porušením, plnící downstream zůstává. §8 nové poskytovatelovy nabídky stávající licenci neodebírají.",
+    "compatibilityCs": "§9 původní poskytovatel přímo licencuje Work každému příjemci při distribuci/provedení i adaptace. Žádná SA ani verzová GPL alternativa. §§10–12 severability/waiver/entire agreement; §13 Australian Capital Territory law. CC není stranou mimo své poskytování a známky jen identifikace/souhlas dle guidelines. Historické zákonné názvy se nepřepisují na dnešní úpravu."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/CC-BY-3.0-AU.html",
+      "note": "Individuální revize celého připnutého textu; §1 Work zahrnuje copyrightové materiály a other subject matter včetně nahrávek, filmů, vydání a vysílání; Collection je nezměněný originál se samostatnými díly, hudební synching je adaptace. Distribute je široké veřejné zpřístupnění včetně elektronické komunikace/vysílání."
+    }
+  ]
+}

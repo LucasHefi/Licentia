@@ -1,0 +1,20 @@
+{
+  "id": "MIT-testregex",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.3",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:384922267a2cad8f2da454cbfeeac13d5d6fe944473f657cf4973a88d1bac0a9"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Široké oprávnění k použití, úpravám a šíření daného softwarového souboru. Text neukládá zachování copyrightu či licence ani poskytování zdrojů; obsahuje vyloučení záruk a odpovědnosti.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/MIT-testregex.html",
+      "note": "Dřívější individuální revize 2026-09-09.3; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

@@ -8,91 +8,97 @@
     "contentHash": "sha256:6f51c672b7e95498d720a4bc1accbc4411ebe7ddc205f8f8b3289fdb0cf81c20"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "provide-corresponding-source"
+      "include-use-acknowledgment",
+      "unknown"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "use"
     ],
     "restrictions": [
-      "unknown"
+      "liability",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/psutils.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/psutils.json#text; Tři podmínky pro vyjmenované soubory: autorství, original source a vlastní riziko, nikoli standardní copyleft.; https://spdx.org/licenses/psutils.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/psutils.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/psutils.json#text; Celý text bez stejné licence; povinný zdroj je původní, ne všechny změny odvozeného produktu.; https://spdx.org/licenses/psutils.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/psutils.json#text; Copy/use any purpose including for-profit distribution; bod 1 výslovně modified/renamed programs.; https://spdx.org/licenses/psutils.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/psutils.json#text; Bod 1 include-use-acknowledgment v produktu/dokumentaci; bod 2 original source zdarma mimo náklady, žádost v závěru nedostatečně modelována.; https://spdx.org/licenses/psutils.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/psutils.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/psutils.json#text; Copy/use/product distribution podmíněny autorstvím; poskytování originals if wanted vyžaduje další přesný trigger.; https://spdx.org/licenses/psutils.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/psutils.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/psutils.json#text; Bod 3 as-is, no warranty/guarantee of fitness a completely at your own risk.; https://spdx.org/licenses/psutils.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/psutils.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/psutils.json#text; Celý text bez výslovného patentového grantu/ukončení.; https://spdx.org/licenses/psutils.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/psutils.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/psutils.json#text; Produktová atribuce a původní zdroje s cenovou hranicí jsou materiální povinnosti.; https://spdx.org/licenses/psutils.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/psutils.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/psutils.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. Vyjmenované soubory PS Utilities lze užívat a šířit i ve výdělečném produktu. Původní autorství musí být zřetelné v produktu či dokumentaci i po úpravě/přejmenování; původní zdroje se poskytují zdarma kromě rozumných distribučních nákladů. Blokace: Bod 2 vyžaduje original source code zdarma s výjimkou rozumných distribučních nákladů a závěrečná věta mluví o poskytnutí originálů na přání. Je třeba modelovat původní (nikoli nutně odpovídající změněný) zdroj, žádost a cenovou mez; obecné provide-corresponding-source by tyto rozdíly zakrylo.; https://spdx.org/licenses/psutils.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

@@ -8,94 +8,109 @@
     "contentHash": "sha256:9858d653bf09abe142482bc4cc335aeb622252b06c27a7c22477de6e928ff3cf"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "strong-copyleft",
+    "copyleftScope": "whole-work",
     "permissions": [
+      "commercial-use",
+      "conditional-relicensing",
       "distribution",
-      "modifications"
-    ],
-    "obligations": [
-      "include-license-text",
-      "provide-corresponding-source"
-    ],
-    "triggers": [
+      "modifications",
+      "private-use",
       "unknown"
     ],
+    "obligations": [
+      "include-copyright",
+      "include-license-text",
+      "include-notice",
+      "mark-modifications",
+      "provide-corresponding-source",
+      "same-license",
+      "unknown"
+    ],
+    "triggers": [
+      "combination",
+      "distribution",
+      "linking",
+      "modification",
+      "use"
+    ],
     "restrictions": [
+      "additional-terms",
       "liability",
-      "trademark"
+      "unknown",
+      "warranty"
     ],
     "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CECILL-2.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "CeCILL2.1 čl.1 Contributions zahrnují Internal Modules ve stejném adresním prostoru; §5.3.2 celý Modified Software pod dohodou, §5.3.3 pouze nezávislé External Modules odděluje. Silný copyleft je doložen operativními články.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CECILL-2.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "CeCILL2.1 čl.1 a §5.3.2 zahrnují do celku integrované změny a interní moduly ve stejném adresním prostoru; §5.3.3 nezávislé neodvozené externí moduly dovoluje jinak. Whole-work má tuto konkrétní výjimku, není to obecný file/library rozsah.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "CeCILL2.1 čl.2/5 a §§5.1–5.3 dovolují kopie, běh/studium, změny, distribuci a prodej. §5.3.4 s definicemičl.1 dovoluje konkrétní GPL2+/AGPL3+/EUPL1.1+ kombinace. Unknown je pouze nemodelované patentové nevymáhání s povinností převzetí, ne chybějící analýza copyrightu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "CeCILL2.1 §5.2 autor/datum, §5.3.1/5.3.2 licence/warranty-liability notice a účinný zdrojový přístup minimálně3 roky od distribuce (upravený objekt s přístupovou poznámkou), §6.4 IP notices. Unknown pro čl.5 závazek nabyvatelů patentů, staff opatření§6.4, bezpečnostní prověření§9.1 a právní/technickou expertizu§9.4.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CECILL-2.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "CeCILL2.1 §5.2 změny, §5.3 distribuce a kombinace s jinými licencemi, čl.1 propojení v témže adresním prostoru, §6.4 notices kopií a §9.1 ověřování užití. AGPL pouze jako alternativní kompatibilní větev nezavádí do základní CeCILL síťový source trigger.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "CeCILL2.1 §6.1 zachování podmínek původního softwaru a §5.3.2 dohodu změněného celku; čl.8 liability a čl.9 warranty s výjimkami. Unknown označuje aktivní závazky včetně neškodnosti, které nelze zploštit na prosté AS IS; žádný samostatný patent-claim termination nebyl nalezen.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CECILL-2.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "CeCILL2.1 čl.5 zavazuje nevymáhat nynější i budoucí patenty na funkce vůči následným Licensees a nechat závazek převzít nabyvateli. Unknown je konkrétně chybějící non-enforcement hodnota; nejde o patentovou výluku, mlčení, odvetu ani formulaci explicitního grantu1.1.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "CeCILL2.1 §5.2 autor a datum, §5.3 licence/disclaimery/podmínky tříletého zdrojového přístupu a §6.4 identické IP notices v nezměněných i změněných kopiích; materiální zátěž.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CECILL-2.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "Úplná připnutá CeCILL2.1 z21.6.2013 individuálně přečtena a primární znění ověřeno. Výslovně odlišena tříletá doba, Internal Modules a jmenované GPL/AGPL/EUPL verze od dřívějších znění. Zařazení brání doložené nemodelované patentové a aktivní smluvní závazky; zdroj a otisk zachovány.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

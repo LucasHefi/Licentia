@@ -8,92 +8,92 @@
     "contentHash": "sha256:7eeaabce92353e72e97bc6bb8d86f08067c5145e4c3ff9b2f254069405c08f24"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution",
-      "modifications"
+      "unknown"
     ],
     "obligations": [
+      "mark-modifications",
       "unknown"
     ],
     "triggers": [
-      "unknown"
+      "modification"
     ],
     "restrictions": [
-      "unknown"
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/psfrag.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/psfrag.json#text; Copyright a All rights are reserved předcházejí pouze disclaimeru a změnové podmínce; úplný grant chybí.; https://spdx.org/licenses/psfrag.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/psfrag.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/psfrag.json#text; Celý text neobsahuje zdrojovou reciprocitu ani stejnou licenci; omezení úprav jsou samostatná.; https://spdx.org/licenses/psfrag.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/psfrag.json#text; All rights are reserved; věta system is distributed je konstatování, nikoli obecné povolení kopírovat a distribuovat.; https://spdx.org/licenses/psfrag.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/psfrag.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/psfrag.json#text; Závěr vyžaduje changes and their authors explicitly stated HERE při úpravě někým jiným než autory; slovník nevystihuje výjimku a autorovou evidenci.; https://spdx.org/licenses/psfrag.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/psfrag.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/psfrag.json#text; If this file is modified by anyone but the authors je konkrétní modifikační trigger.; https://spdx.org/licenses/psfrag.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/psfrag.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/psfrag.json#text; Disclaimer WITHOUT ANY WARRANTY výslovně jmenuje MERCHANTABILITY a FITNESS; samostatná právní odpovědnostní doložka chybí.; https://spdx.org/licenses/psfrag.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/psfrag.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/psfrag.json#text; Celý copyright/disclaimer text nemá patentové oprávnění či ukončení.; https://spdx.org/licenses/psfrag.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/psfrag.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/psfrag.json#text; Změny i jejich autoři na předepsaném místě překračují prosté zachování copyrightu.; https://spdx.org/licenses/psfrag.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/psfrag.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/psfrag.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. Text psfrag.dtx vyhrazuje všechna práva, odmítá záruky a vyžaduje uvést změny i jejich autory přímo na označeném místě souboru. Samostatný grant kopírování a distribuce zde chybí. Blokace: All rights are reserved doprovází pouze záruková výluka a podmínka změn; je třeba najít primární oprávnění ke kopírování, užití a distribuci, než lze tvrdit softwarový grant. Změny provedené kýmkoli mimo původní autory i jména jejich autorů musejí být uvedeny HERE. Je třeba modelovat tuto osobní výjimku a konkrétní umístění/autorovou evidenci, nikoli jen obecné mark-modifications.; https://spdx.org/licenses/psfrag.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

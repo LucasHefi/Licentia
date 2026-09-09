@@ -1,0 +1,29 @@
+{
+  "id": "HPND-export-US-modify",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:2d16600fd6328902cc52e16aa8362ef917c5cb7f96f7f2a5e302fcc08cdaa672"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Libovolné užití a šíření jsou dovoleny v mezích případného amerického exportního povolení. Zachovejte copyright a dokumentační povolení, změněný software označte a nešiřte jej zaměnitelně s originálem MIT; jméno MIT v propagaci vyžaduje předchozí písemný souhlas.",
+  "blockersCs": [
+    "Text vyžaduje získat případně nutnou vládní licenci před exportem a grant podřizuje WITHIN THAT CONSTRAINT. Je třeba modelovat exportní událost/povolení a ověřit konkrétní exportní situaci; distribuce není přesný náhradní trigger."
+  ],
+  "analysis": {
+    "subjectCs": "Software a dokumentace CyberSAFE a MIT; výluka zahrnuje také Open Computing Security Group.",
+    "grantCs": "Výslovně use/copy/modify/distribute for any purpose without fee s exportní podmínkou; patentová licence chybí.",
+    "conditionsCs": "Copyright ve všech kopiích; copyright/povolení v podpůrné dokumentaci. Změny označit a zabránit záměně s MIT originálem. Před exportem získat případné vládní povolení.",
+    "limitationsCs": "Jméno MIT v reklamě/publicitě distribuce jen s předchozím písemným svolením. AS IS bez ujištění vhodnosti a výslovné/odvozené záruky; samostatná odpovědnostní výluka chybí.",
+    "compatibilityCs": "Bez jiné licence/verze; současná exportní pravidla se nepřenášejí do připnutého textu a neodstraňují jeho podmínku."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/HPND-export-US-modify.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Grant je podřízen předexportnímu povolení, navíc standardní copyright/změny/název."
+    }
+  ]
+}

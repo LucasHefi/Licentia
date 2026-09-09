@@ -13,7 +13,7 @@
     "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "nonstandard",
+    "family": "permissive",
     "copyleftScope": "none",
     "permissions": [
       "commercial-use",
@@ -26,7 +26,7 @@
     ],
     "triggers": [
       "distribution",
-      "unknown"
+      "use"
     ],
     "restrictions": [
       "liability",
@@ -38,54 +38,67 @@
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text: complete license, especially the copyright-grant paragraph (derivative works and source/object distribution are allowed without any reciprocal licensing or source-disclosure condition)"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text: copyright-grant paragraph and indemnity paragraph (broad non-reciprocal copyright grant combined with an atypical duty to indemnify, hold harmless, and defend Adobe for use or distribution)"
+      "locator": "public/data/licenses/Adobe-2006.json#text; Adobe Source Code License Agreement 2006 pokrývá zdrojový kód a jeho odvozeniny ve zdroji i objektové podobě. Grant je trvalý, celosvětový, nevýlučný, bezplatný, neodvolatelný autorskoprávní grant reprodukce, odvozenin, veřejného zobrazení/provedení a distribuce bez požadavků atribuce. Bezatributový grant nemá copyleft ani zdrojovou povinnost; indemnita není reciprocita.; https://spdx.org/licenses/Adobe-2006.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text: copyright-grant paragraph ('without any attribution requirements') and complete license (no license-copy, copyright-retention, or notice-retention condition)"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text: indemnity paragraph ('indemnify, hold harmless and defend Adobe Systems Incorporated' for loss, damage, claims, lawsuits, and attorney's fees arising from use or distribution); the vocabulary has no indemnity/defense obligation value"
+      "locator": "public/data/licenses/Adobe-2006.json#text; Bezatributový grant nemá copyleft ani zdrojovou povinnost; indemnita není reciprocita.; https://spdx.org/licenses/Adobe-2006.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text: copyright-grant paragraph (perpetual, worldwide, no-charge, royalty-free right to reproduce, prepare derivative works, display, perform, and distribute source code and derivatives in source or object form, with no purpose restriction)"
+      "locator": "public/data/licenses/Adobe-2006.json#text; Grant je trvalý, celosvětový, nevýlučný, bezplatný, neodvolatelný autorskoprávní grant reprodukce, odvozenin, veřejného zobrazení/provedení a distribuce bez požadavků atribuce.; https://spdx.org/licenses/Adobe-2006.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "patentPosition",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text: complete license (the only affirmative grant is expressly a copyright license; no patent grant, patent retaliation, or patent-termination clause is stated)"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text: endorsement paragraph (Adobe name may not endorse or promote derived products), indemnity paragraph, and final two paragraphs ('AS IS', warranty disclaimers, and exclusion of liability for damages)"
-    },
-    {
-      "field": "review",
-      "sourceId": "spdx-license-list",
-      "locator": "metadata: deprecated=false"
-    },
-    {
-      "field": "review",
-      "sourceId": "spdx-license-list",
-      "locator": "metadata: osi=false"
+      "locator": "public/data/licenses/Adobe-2006.json#text; Příjemce musí Adobe odškodnit, chránit a právně bránit proti všem ztrátám, škodám, nárokům a žalobám včetně právních nákladů vzniklým jeho užitím nebo distribucí. Notice povinnost není.; https://spdx.org/licenses/Adobe-2006.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "text: indemnity paragraph ('arise or result from your use or distribution of the source code'); distribution is represented directly, while use has no matching trigger value in the vocabulary"
+      "locator": "public/data/licenses/Adobe-2006.json#text; Příjemce musí Adobe odškodnit, chránit a právně bránit proti všem ztrátám, škodám, nárokům a žalobám včetně právních nákladů vzniklým jeho užitím nebo distribucí. Notice povinnost není.; https://spdx.org/licenses/Adobe-2006.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Adobe-2006.json#text; Adobe jméno nesmí bez písemného svolení podporovat produkty. AS IS/with all faults vylučuje podporu a záruky; závěrečná odpovědnostní výluka jmenuje Macromedia a dodavatele, což je zachováno.; https://spdx.org/licenses/Adobe-2006.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Adobe-2006.json#text; Grant se výslovně označuje copyright license; výslovná patentová práva ani patentové ukončení nejsou.; https://spdx.org/licenses/Adobe-2006.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Adobe-2006.json#text; Příjemce musí Adobe odškodnit, chránit a právně bránit proti všem ztrátám, škodám, nárokům a žalobám včetně právních nákladů vzniklým jeho užitím nebo distribucí. Notice povinnost není. Rozsah notifikační zátěže: none.; https://spdx.org/licenses/Adobe-2006.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Adobe-2006.json#text; Individuální kontrola celého připnutého textu Adobe-2006 dne 2026-09-09. Adobe Source Code License Agreement 2006 pokrývá zdrojový kód a jeho odvozeniny ve zdroji i objektové podobě. Odškodnění a právní obrana Adobe se spouští každým užitím nebo distribucí, nejen komerční distribucí či přidanou zárukou; před doporučením je nutný odpovídající obecný indemnity model. Jiná licence nebo volba verze není nabízena.; https://spdx.org/licenses/Adobe-2006.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

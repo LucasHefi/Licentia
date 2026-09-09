@@ -9,90 +9,103 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
-      "unknown"
+      "commercial-use",
+      "conditional-relicensing",
+      "distribution",
+      "modifications",
+      "private-use",
+      "sublicensing"
     ],
     "obligations": [
-      "unknown"
+      "disclose-source",
+      "include-copyright",
+      "include-license-text",
+      "include-notice",
+      "mark-modifications"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification"
     ],
     "restrictions": [
-      "unknown"
+      "additional-terms",
+      "liability",
+      "trademark",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LiLiQ-P-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LiLiQ-P-1.1.json#text; §3–4 široký grant s licencor source promise a dovolenými svobodnými podlicencemi,bez univerzální same-license reciprocity.; https://spdx.org/licenses/LiLiQ-P-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LiLiQ-P-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LiLiQ-P-1.1.json#text; §3 source povinnost concédant k vlastnímu software;§4 modifikované/odvozené distribuce nemají same-license ani obecnou povinnost otevřít deriváty.; https://spdx.org/licenses/LiLiQ-P-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LiLiQ-P-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LiLiQ-P-1.1.json#text; §3(1–4) reproduce/public performance/publish/free FSF/OSI sublicense;§4 modified/derived distribution,bez explicitních patentů.; https://spdx.org/licenses/LiLiQ-P-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LiLiQ-P-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LiLiQ-P-1.1.json#text; §3 concédant source/rozumná nabídka za delivery costs;§4 licence+mark changes+relevant notices s inapplicable výjimkou;§5 výchozí contribution licence.; https://spdx.org/licenses/LiLiQ-P-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LiLiQ-P-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LiLiQ-P-1.1.json#text; Concédant distribution source/offer;licencié distribution copies/modifications§4 notice/marking;prefer file placement není absolutní každosouborový příkaz.; https://spdx.org/licenses/LiLiQ-P-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LiLiQ-P-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LiLiQ-P-1.1.json#text; §3 podlicence omezena na free FSF/OSI,§6 známky provenance,§7–8 warranty/liability,§9 odlišený first-breach30day cure a následný souhlas.; https://spdx.org/licenses/LiLiQ-P-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LiLiQ-P-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LiLiQ-P-1.1.json#text; Celých11 oddílů copyrightové licence neobsahuje výslovný patentový grant nebo patentové ukončení; patent notices nejsou oprávněním.; https://spdx.org/licenses/LiLiQ-P-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LiLiQ-P-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LiLiQ-P-1.1.json#text; Source/offer původního licencora a modifikační/notice podmínky jsou materiální; všeobecná publicace derivátů se nepřidává.; https://spdx.org/licenses/LiLiQ-P-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LiLiQ-P-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LiLiQ-P-1.1.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. LiLiQ-P 1.1 ukládá licencorovi dodat upravitelný zdroj nebo přiměřeně platnou nabídku za náklady dodání. Příjemci zachovají licenci a relevantní oznámení, uvedou změny; podlicence je možná jen pod jinou svobodnou licencí schválenou FSF či OSI. Deriváty nemusí být všeobecně zveřejněny.; https://spdx.org/licenses/LiLiQ-P-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

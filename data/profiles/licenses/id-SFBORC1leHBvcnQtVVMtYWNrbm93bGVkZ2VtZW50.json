@@ -8,92 +8,99 @@
     "contentHash": "sha256:8780175c42db58b1e8d7cb5d6982c4f9dd190ac594b715ac93bf97009780eabe"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
+      "include-notice",
+      "include-use-acknowledgment",
       "unknown"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "use"
     ],
     "restrictions": [
-      "liability"
+      "liability",
+      "unknown",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/HPND-export-US-acknowledgement.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/HPND-export-US-acknowledgement.json#text; Export odstavec a WITHIN THAT CONSTRAINT podmiňují široký grant předchozím povolením, pokud je třeba.; https://spdx.org/licenses/HPND-export-US-acknowledgement.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/HPND-export-US-acknowledgement.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/HPND-export-US-acknowledgement.json#text; Celý text bez stejné licence či povinnosti zpřístupnit zdroje.; https://spdx.org/licenses/HPND-export-US-acknowledgement.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/HPND-export-US-acknowledgement.json#text; Grant copy/modify/distribute source and binary s exportní výhradou, bez účelového komerčního zákazu.; https://spdx.org/licenses/HPND-export-US-acknowledgement.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/HPND-export-US-acknowledgement.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/HPND-export-US-acknowledgement.json#text; Export licence before exporting pokud vyžadována; any documentation or other materials related to distribution/use acknowledge USC. Poděkování související s užitím je include-use-acknowledgment; konkrétní dokumentační umístění zůstává zachováno.; https://spdx.org/licenses/HPND-export-US-acknowledgement.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/HPND-export-US-acknowledgement.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/HPND-export-US-acknowledgement.json#text; Use/distribution spouští přiznání USC v souvisejících materiálech; export má samostatný nerozlišený trigger a zůstává blokací.; https://spdx.org/licenses/HPND-export-US-acknowledgement.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/HPND-export-US-acknowledgement.json#text; Exportní podmínka není ve slovníku; poslední odstavec výslovně warranty/liability disclaimer.; https://spdx.org/licenses/HPND-export-US-acknowledgement.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/HPND-export-US-acknowledgement.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/HPND-export-US-acknowledgement.json#text; Celý text bez výslovného patentového grantu či patentového ukončení.; https://spdx.org/licenses/HPND-export-US-acknowledgement.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/HPND-export-US-acknowledgement.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/HPND-export-US-acknowledgement.json#text; Povinné dokumentační přiznání při stanoveném užití představuje materiální include-use-acknowledgment; zachování existujícího notice je samostatné.; https://spdx.org/licenses/HPND-export-US-acknowledgement.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/HPND-export-US-acknowledgement.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/HPND-export-US-acknowledgement.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. Kopie, úpravy a distribuce zdrojů i binárních forem jsou dovoleny v mezích amerického exportu; případné vládní povolení se obstará před exportem. Dokumentace a jiné materiály související s použitím či distribucí musí uvést vývoj USC. Blokace: Grant výslovně platí WITHIN THAT CONSTRAINT a ukládá před exportem získat případně vyžadovanou licenci vlády USA. Je třeba modelovat exportní spouštěč/povolení a ověřit konkrétní exportní situaci; nelze zaměnit za obecnou distribuci nebo odstranit jako pouhé historické upozornění.; https://spdx.org/licenses/HPND-export-US-acknowledgement.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

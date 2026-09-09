@@ -8,94 +8,107 @@
     "contentHash": "sha256:132673a8730258e0d5c16900df139840d3d891ea2ccd6a626794dd4e79f5aa6b"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
+      "conditional-relicensing",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use",
+      "unknown"
     ],
     "obligations": [
+      "include-copyright",
       "include-license-text",
-      "provide-corresponding-source"
+      "include-notice",
+      "include-use-acknowledgment",
+      "mark-modifications",
+      "provide-corresponding-source",
+      "unknown"
     ],
     "triggers": [
-      "unknown"
+      "combination",
+      "distribution",
+      "modification",
+      "use"
     ],
     "restrictions": [
       "liability",
-      "trademark"
+      "unknown",
+      "warranty"
     ],
     "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CECILL-B.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "CeCILL-B §5.3.2 výslovně dovoluje Modified Software pod jinou licencí za §5.3.4 kredity; §5.3.1 source supply platí pro nezměněnou binární kopii, nikoli obecně všechny deriváty. Permisivní rodina s materiálními zvláštními povinnostmi.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CECILL-B.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "CeCILL-B §5.3.2 nevyžaduje tutéž licenci modifikace, §5.3.3 odděluje External Module. Povinné kredity a source pro nezměněné kopie nejsou obecný copyleft; none nepopírá tyto zvláštní závazky.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "CeCILL-B §§5.1–5.3 dovolují kopie, běh, studium, změny a prodej, §5.3.2/5.3.5 podmíněné alternativní licence. Unknown označuje nemodelované patentové nevymáhání a přenos závazku čl.5; explicitní patent-grant se netvrdí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "CeCILL-B §5.2 autor/datum, §5.3.1 dohoda/notices a source nezměněných binárek po dobu distribuce, §5.3.4 povinné kredity v dokumentaci/UI/webu, §6.4 IP notices. Unknown pro trvalou dostupnost webu, nejlepší úsilí získat souhlas dalšího distributora, patentové nabyvatele čl.5 a aktivní závazky§6.4/9.1/9.4. Kredity mají výjimky§5.3.5.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CECILL-B.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "CeCILL-B §5.2 tvorba Contributions, §5.3 distribuce/komerční šíření, §5.3.4 kombinované předání External Module a přístupná atribuce, §9.1 prověření při užití. Žádný univerzální source trigger při samotném síťovém provozu ani reklama neplynou z požadovaného webového kreditu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "CeCILL-B čl.8 omezuje škody s výjimkami a čl.9 AS IS zachovává prohlášení oprávnění a právní/technickou pomoc. Unknown odlišuje aktivní staff/safety závazky od disclaimeru; čl.9.4 zmínka známky je absence záruky, nikoli přidaný zákaz propagace.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CECILL-B.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "CeCILL-B čl.5: poskytovatel nebude vymáhat současné/budoucí patenty k funkcím vůči následným Licensees a zajistí převzetí závazku nabyvatelem patentů. Jde o doložené non-enforcement s aktivním předáním; slovník nemá hodnotu, proto unknown, ne none-stated/express-grant.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "CeCILL-B §5.3.4 vyžaduje dokumentační, rozhraní i časově udržovaný veřejný webový kredit a úsilí o downstream souhlas. §5.2 autor/datum a §6.4 identické IP notices: materiální, nikoli minimální břemeno.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CECILL-B.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "Celý připnutý CeCILL-B1.0 ze5.9.2006 individuálně přečten včetně zdrojové povinnosti jen nezměněných binárek, vlastních licencí změn a CeCILL/C výjimek kreditů. Všechny známé granty doloženy; konkrétní chybějící model covenantu, kreditních cest a aktivních závazků brání průvodci.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

@@ -8,93 +8,101 @@
     "contentHash": "sha256:2d16600fd6328902cc52e16aa8362ef917c5cb7f96f7f2a5e302fcc08cdaa672"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "include-license-text"
+      "include-license-text",
+      "mark-modifications",
+      "unknown"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification",
+      "use"
     ],
     "restrictions": [
-      "unknown"
+      "trademark",
+      "unknown",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/HPND-export-US-modify.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/HPND-export-US-modify.json#text; Grant je podřízen předexportnímu povolení, navíc standardní copyright/změny/název.; https://spdx.org/licenses/HPND-export-US-modify.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/HPND-export-US-modify.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/HPND-export-US-modify.json#text; Celý text nevyžaduje zdroje ani shodné licencování.; https://spdx.org/licenses/HPND-export-US-modify.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/HPND-export-US-modify.json#text; Grant use/copy/modify/distribute for any purpose s WITHIN THAT CONSTRAINT.; https://spdx.org/licenses/HPND-export-US-modify.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/HPND-export-US-modify.json#text; Copyright kopie, copyright/permission dokumentace, label modified software; export licence before exporting není ve slovníku.; https://spdx.org/licenses/HPND-export-US-modify.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/HPND-export-US-modify.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/HPND-export-US-modify.json#text; Use/distribution vyžadují notice; modification vyžaduje označení; zvláštní exportní trigger zůstává nezastoupen.; https://spdx.org/licenses/HPND-export-US-modify.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/HPND-export-US-modify.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/HPND-export-US-modify.json#text; MIT name v advertising/publicity jen s prior written permission; AS IS without warranty; exportní limit je zvláštní nevyjádřené omezení.; https://spdx.org/licenses/HPND-export-US-modify.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/HPND-export-US-modify.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/HPND-export-US-modify.json#text; Celý text bez výslovných patentových práv či patentového ukončení.; https://spdx.org/licenses/HPND-export-US-modify.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/HPND-export-US-modify.json#text; Vedle standardních notices je případné předexportní povolení materiálním plněním.; https://spdx.org/licenses/HPND-export-US-modify.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/HPND-export-US-modify.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/HPND-export-US-modify.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. Libovolné užití a šíření jsou dovoleny v mezích případného amerického exportního povolení. Zachovejte copyright a dokumentační povolení, změněný software označte a nešiřte jej zaměnitelně s originálem MIT; jméno MIT v propagaci vyžaduje předchozí písemný souhlas. Blokace: Text vyžaduje získat případně nutnou vládní licenci před exportem a grant podřizuje WITHIN THAT CONSTRAINT. Je třeba modelovat exportní událost/povolení a ověřit konkrétní exportní situaci; distribuce není přesný náhradní trigger.; https://spdx.org/licenses/HPND-export-US-modify.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

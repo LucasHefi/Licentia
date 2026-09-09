@@ -8,8 +8,8 @@
     "contentHash": "sha256:a4e6ec9e72ad034f59fcccbdf47e03c71e2185aa4540a64b25d36dbfc5648a40"
   },
   "review": {
-    "status": "not-recommendable",
-    "recommendable": false,
+    "status": "reviewed",
+    "recommendable": true,
     "evidenceLevel": "strong"
   },
   "semantic": {
@@ -39,49 +39,67 @@
   },
   "evidence": [
     {
-      "field": "family",
-      "sourceId": "spdx-license-list",
-      "locator": "text: opening grant paragraph (\"Redistribution and use in source and binary forms, with or without modification, are permitted\")"
-    },
-    {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant and conditions 1-4 (non-reciprocal permission; no same-license, source-disclosure, or corresponding-source condition is stated)"
+      "locator": "public/data/licenses/BSD-3-Clause-Attribution.json#text; opening source/binary use and redistribution WITH OR WITHOUT modification; commercial use unrestricted; whole text has no reciprocal source-disclosure, same-license, relinking or network-use requirement; https://spdx.org/licenses/BSD-3-Clause-Attribution.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.9"
     },
     {
-      "field": "permissions",
+      "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant paragraph (redistribution and use in source and binary forms, with or without modification, are permitted; no purpose limitation, fee condition, sublicense, or patent grant is stated)"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text: conditions 1-2 (source redistributions must retain, and binary redistributions must reproduce, the copyright notice, list of conditions, and disclaimer) and condition 4 (redistributions of any form whatsoever must retain the fixed acknowledgment)"
-    },
-    {
-      "field": "triggers",
-      "sourceId": "spdx-license-list",
-      "locator": "text: conditions 1-2 and 4 (notice and acknowledgment duties attach to source, binary, or \"Redistributions of any form whatsoever\"; modification alone creates no separate duty)"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text: condition 3 (copyright-holder and contributor names may not endorse or promote derived products without specific prior written permission); final disclaimer paragraph (warranty disclaimer and limitation of liability)"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text: complete license text; no express patent grant, patent condition, patent-claim restriction, or patent-termination clause is stated"
+      "locator": "public/data/licenses/BSD-3-Clause-Attribution.json#text; opening source/binary use and redistribution WITH OR WITHOUT modification; commercial use unrestricted; https://spdx.org/licenses/BSD-3-Clause-Attribution.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.9"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text: conditions 1-2 require retaining/reproducing the copyright notice, list of conditions, and disclaimer, while condition 4 requires a fixed Universidad de Palermo acknowledgment (\"Redistributions of any form whatsoever must retain the following acknowledgment\"); this is a material attribution notice burden"
+      "locator": "public/data/licenses/BSD-3-Clause-Attribution.json#text; §§1-2 source/binary copyright/conditions/disclaimer; §4 acknowledgment in EVERY redistribution: Universidad de Palermo, Argentina and http://www.palermo.edu/; whole text has NO advertising-materials condition despite an additional attribution clause; https://spdx.org/licenses/BSD-3-Clause-Attribution.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.9"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/BSD-3-Clause-Attribution.json#text; §§1-2 source/binary copyright/conditions/disclaimer; §4 acknowledgment in EVERY redistribution: Universidad de Palermo, Argentina and http://www.palermo.edu/; whole text has NO advertising-materials condition despite an additional attribution clause; https://spdx.org/licenses/BSD-3-Clause-Attribution.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.9"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/BSD-3-Clause-Attribution.json#text; whole-text review: no EXPRESS patent grant and no patent-litigation termination; no conclusion about implied patent rights; https://spdx.org/licenses/BSD-3-Clause-Attribution.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.9"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/BSD-3-Clause-Attribution.json#text; opening source/binary use and redistribution WITH OR WITHOUT modification; commercial use unrestricted; https://spdx.org/licenses/BSD-3-Clause-Attribution.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.9"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/BSD-3-Clause-Attribution.json#text; §3 no endorsement by holder/contributor names absent specific prior written permission; warranty/liability disclaimer; https://spdx.org/licenses/BSD-3-Clause-Attribution.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.9"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "metadata: id=BSD-3-Clause-Attribution, name=BSD with attribution, deprecated=false, osi=false, fsf=false; text: broad permissive grant, four explicit conditions, fixed attribution acknowledgment, name/endorsement restriction, and explicit warranty/liability disclaimer; the project-specific attribution burden is not a generally suitable default"
+      "locator": "public/data/licenses/BSD-3-Clause-Attribution.json#text; Whole-text editorial review 2026-09-09, batch 9. All semantic fields checked against the pinned text; complete guide input with specific conditions in the display note.; https://spdx.org/licenses/BSD-3-Clause-Attribution.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.9"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/BSD-3-Clause-Attribution.json#text; §§1-2 source/binary copyright/conditions/disclaimer; §4 acknowledgment in EVERY redistribution: Universidad de Palermo, Argentina and http://www.palermo.edu/; whole text has NO advertising-materials condition despite an additional attribution clause; https://spdx.org/licenses/BSD-3-Clause-Attribution.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.9"
     }
   ]
 }

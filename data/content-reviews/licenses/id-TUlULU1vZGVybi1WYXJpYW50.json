@@ -1,0 +1,20 @@
+{
+  "id": "MIT-Modern-Variant",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.2",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:5d24b7e3310f0b1dc3066d57aa70d591417ead521cfc64ef227cce4e73080e56"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Ve všech kopiích softwaru zachovejte copyright a oba odstavce o odpovědnosti a zárukách. Text výslovně nevyžaduje kopii samotného svolovacího odstavce; ukládání zdrojů ani jejich poskytování nepožaduje.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/MIT-Modern-Variant.html",
+      "note": "Dřívější individuální revize 2026-09-09.2; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

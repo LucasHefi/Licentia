@@ -9,94 +9,98 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
       "commercial-use",
       "distribution",
       "modifications",
       "patent-grant",
+      "private-use",
       "sublicensing"
     ],
     "obligations": [
-      "include-license-text"
+      "include-copyright",
+      "include-license-text",
+      "include-notice"
     ],
     "triggers": [
-      "unknown"
+      "distribution"
     ],
     "restrictions": [
-      "liability"
+      "liability",
+      "warranty"
     ],
     "patentPosition": "express-grant",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/COIL-1.0.json#text; Terms and Conditions clause 1: reproduce/modify/distribute/publish/sell/SUBLICENSE/use/otherwise deal without restriction; clause 2 separate patent license, not inferred from copyright; no reciprocal source-supply or same-license condition; https://spdx.org/licenses/COIL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/COIL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/COIL-1.0.json#text; Terms and Conditions clause 1: reproduce/modify/distribute/publish/sell/SUBLICENSE/use/otherwise deal without restriction; clause 2 separate patent license, not inferred from copyright; https://spdx.org/licenses/COIL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     },
     {
-      "field": "copyleftScope",
+      "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/COIL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/COIL-1.0.json#text; opening condition applies to modified/unmodified WHOLE OR PART redistributions: applicable copyright OR OTHER LEGAL PRIVILEGE notices, conditions, license terms and disclaimer; https://spdx.org/licenses/COIL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     },
     {
-      "field": "triggers",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/COIL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/COIL-1.0.json#text; opening condition applies to modified/unmodified WHOLE OR PART redistributions: applicable copyright OR OTHER LEGAL PRIVILEGE notices, conditions, license terms and disclaimer; https://spdx.org/licenses/COIL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/COIL-1.0.json#text; clause 2: perpetual/worldwide/non-exclusive/royalty-free/gratis/IRREVOCABLE grant of licensor-held patents NECESSARILY infringed by form of work WHEN licensor contribution is distributed; not all third-party patents or an unrestricted future-patent grant; no termination clause; https://spdx.org/licenses/COIL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/COIL-1.0.json#text; Terms and Conditions clause 1: reproduce/modify/distribute/publish/sell/SUBLICENSE/use/otherwise deal without restriction; clause 2 separate patent license, not inferred from copyright; https://spdx.org/licenses/COIL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/COIL-1.0.json#text; final two sentences: no implied warranty and no claim/damages/liability; clause 2 irrevocable patent grant, no patent-litigation termination in whole text; https://spdx.org/licenses/COIL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/COIL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/COIL-1.0.json#text; whole-text editorial review on 2026-09-09, batch 7; Při úplné i částečné redistribuci zachovejte oznámení o copyrightu a dalších právech, podmínky, licenční text a disclaimer. Licence výslovně dovoluje podlicencování. Obsahuje neodvolatelný, celosvětový a bezplatný patentový grant každého poskytovatele pro jeho patenty nutně dotčené podobou díla při distribuci jeho příspěvku. Neobsahuje ukončení pro patentový spor. Záruky a odpovědnost jsou vyloučeny.; https://spdx.org/licenses/COIL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/COIL-1.0.json#text; opening condition applies to modified/unmodified WHOLE OR PART redistributions: applicable copyright OR OTHER LEGAL PRIVILEGE notices, conditions, license terms and disclaimer; https://spdx.org/licenses/COIL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     }
   ]
 }

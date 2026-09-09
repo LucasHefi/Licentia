@@ -1,0 +1,20 @@
+{
+  "id": "EPL-2.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.8",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:56869f0a704dd67cba61a4b0406d13bd2f3701bf510d480426870b02185a9ba8"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Zpřístupněte zdroje pokrytého programu a uveďte, jak je získat; zachovejte licenci a existující oznámení. Pokryty jsou i nové soubory obsahující kód programu, nikoli pouhé deklarace či rozhraní sloužící k propojení. Jiná distribuční licence musí chránit zdrojová práva příjemců a odmítnout záruky i odpovědnost ostatních přispěvatelů. Sekundární GPL je možná jen při kombinaci s příslušnými samostatnými soubory a po oznámení původního přispěvatele; samotná příloha A nestačí. Při komerční distribuci hájíte a odškodňujete ostatní za nároky způsobené vaším jednáním; spory o duševní vlastnictví jsou vyňaty. Patentový grant má vymezený rozsah a při patentové žalobě podle § 7 zaniká.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/EPL-2.0.html",
+      "note": "Dřívější individuální revize 2026-09-09.8; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

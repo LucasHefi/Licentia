@@ -13,7 +13,7 @@
     "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "permissive",
+    "family": "nonstandard",
     "copyleftScope": "none",
     "permissions": [
       "commercial-use",
@@ -22,12 +22,13 @@
       "private-use"
     ],
     "obligations": [
-      "include-copyright",
       "include-license-text",
-      "include-notice"
+      "include-use-acknowledgment",
+      "unknown"
     ],
     "triggers": [
-      "distribution"
+      "distribution",
+      "use"
     ],
     "restrictions": [
       "liability",
@@ -39,54 +40,67 @@
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text: opening grant paragraph and Conditions 1-4 (no reciprocal licensing or source-disclosure condition)"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant paragraph and Conditions 1-4"
+      "locator": "public/data/licenses/AAL.json#text; Grant má zvláštní kryptograficky ověřitelný notice a opakovanou UI atribuci závislých programů.; https://spdx.org/licenses/AAL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text: Conditions 1 and 2, including Condition 2(a)-(c)"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text: Conditions 1 and 2, including Condition 2(a)-(c)"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text: complete license text (no patent grant, patent condition, or patent-termination clause)"
+      "locator": "public/data/licenses/AAL.json#text; Celý text bez stejné licence a zdrojového zveřejnění; dependent program pravidlo je acknowledgment, ne copyleft.; https://spdx.org/licenses/AAL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant paragraph ('Redistribution and use in source and binary forms, with or without modification, are permitted')"
+      "locator": "public/data/licenses/AAL.json#text; Grant source/binary use/redistribution with or without modification bez účelového zákazu.; https://spdx.org/licenses/AAL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "restrictions",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text: Condition 3 and final warranty/liability paragraph"
-    },
-    {
-      "field": "review",
-      "sourceId": "spdx-license-list",
-      "locator": "metadata: deprecated=false and osi=true"
-    },
-    {
-      "field": "review",
-      "sourceId": "spdx-license-list",
-      "locator": "text: Condition 2, first sentence (prominent author-attribution display each time an executable or dependent program is launched)"
+      "locator": "public/data/licenses/AAL.json#text; Body 1–2 GPG signed/verifiable text a každé spuštění name/profession/URL; podpis není běžný textový notice.; https://spdx.org/licenses/AAL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant paragraph and Conditions 1-2 (redistributions in source and binary form)"
+      "locator": "public/data/licenses/AAL.json#text; Source/binary distribution spouští signed text; each time executable or dependent program launched spouští use acknowledgment.; https://spdx.org/licenses/AAL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/AAL.json#text; Bod 3 autor naming/endorsement, bod 4 odpovědnost za jiné režimy; závěr warranty/liability včetně malicious network access škod.; https://spdx.org/licenses/AAL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/AAL.json#text; Celý text bez výslovného patentového grantu či patentového ukončení.; https://spdx.org/licenses/AAL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/AAL.json#text; Ověřitelný podpis a prominentní banner při každém spuštění jsou materiální povinnosti.; https://spdx.org/licenses/AAL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/AAL.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. AAL vyžaduje při distribuci ověřitelný text podepsaný GPG; binární verze a každý závislý program při každém spuštění výrazně zobrazí jméno, profesní identifikaci a URL autora. Záruky a odpovědnost jsou vyloučeny. Blokace: Body 1–2 požadují GPG-signed text in verifiable form, ale připnutý vzor podpis ani identitu autora neobsahuje. Je třeba získat konkrétní ověřitelný podepsaný text a modelovat zachování/verifikaci podpisu; obyčejné include-license-text nestačí. Startovací atribuce se vztahuje i na program dependent thereon při každém spuštění. Je třeba určit konkrétní závislé programy a zachovat tento rozsah/UI spouštěč; nelze jej omezit na samotnou knihovnu.; https://spdx.org/licenses/AAL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

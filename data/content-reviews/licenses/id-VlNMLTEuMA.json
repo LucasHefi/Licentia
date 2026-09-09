@@ -1,0 +1,20 @@
+{
+  "id": "VSL-1.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.3",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:355d70160c95558e8a53e2f06108e4afada1e61b11b0ea256ed7da8c447c7f62"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Zachovejte copyright, podmínky a disclaimer ve zdrojích nebo materiálech k binární distribuci. Názvy VOCAL nelze bez písemného souhlasu použít k propagaci ani v názvu odvozeného produktu. Omezení odpovědnosti zahrnuje limit 1 000 USD; zvlášť licencované části třetích stran mají vlastní podmínky.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/VSL-1.0.html",
+      "note": "Dřívější individuální revize 2026-09-09.3; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

@@ -8,95 +8,104 @@
     "contentHash": "sha256:c800b1ef492ba09e3a97256f5dae88721ad4c6e7961d55c4205da3680b0bec6b"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
       "modifications",
-      "sublicensing"
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "include-license-text"
-    ],
-    "triggers": [
+      "include-notice",
+      "include-use-acknowledgment",
+      "mark-modifications",
       "unknown"
     ],
-    "restrictions": [
-      "liability",
-      "trademark"
+    "triggers": [
+      "distribution",
+      "modification",
+      "use"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "restrictions": [
+      "additional-terms",
+      "liability",
+      "trademark",
+      "unknown",
+      "warranty"
+    ],
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-3.0-IGO.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-3.0-IGO.json#text; §§3,4 bez NC nebo SA, široké adaptace s atribucí; permisivní obsahová licence; https://spdx.org/licenses/CC-BY-3.0-IGO.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-3.0-IGO.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-3.0-IGO.json#text; §4(a) výjimka nezávislé kolekce a §8(b) přímá licence jen k originálu, bez whole-work SA; https://spdx.org/licenses/CC-BY-3.0-IGO.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-BY-3.0-IGO.json#text; §3(a),(b) kopie, veřejné šíření a adaptace i komerčně, §4(a) žádná sublicence; patentový grant chybí; https://spdx.org/licenses/CC-BY-3.0-IGO.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-BY-3.0-IGO.json#text; §3(b) jasné označení změn; §4(a),(b) copyright, notices, licence NEBO URI a užití originálu; odstranění creditu a §8(h) arbitráž vyžadují unknown; https://spdx.org/licenses/CC-BY-3.0-IGO.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-3.0-IGO.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-3.0-IGO.json#text; §4 distribuce a veřejné provedení originálu/adaptace/kolekce; §3(b) vytvoření změn; use pro veřejné autorské užití; https://spdx.org/licenses/CC-BY-3.0-IGO.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-BY-3.0-IGO.json#text; §4 zákaz downstream omezení, technických opatření a poškozujícího morálního zásahu; §§5,6 výluky; §8(h) procesní omezení nevyjádřené enumy; https://spdx.org/licenses/CC-BY-3.0-IGO.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-3.0-IGO.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-3.0-IGO.json#text; §3 autorský grant a režimy odměn; žádné výslovné patenty, výluka patentů ani patentové ukončení; https://spdx.org/licenses/CC-BY-3.0-IGO.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-BY-3.0-IGO.json#text; §4(b) přiměřená víceprvková atribuce a žádost podle§4(a) i k emblémům/logům vytvářejí materiální notice režim; https://spdx.org/licenses/CC-BY-3.0-IGO.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-3.0-IGO.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-3.0-IGO.json#text; Individuální přečtení celého připnutého textu dne 2026-09-10. CC BY 3.0 IGO dovoluje komerční kopie, adaptace a veřejné užití díla s označením změn a atribucí; poskytovatelem nemusí být mezivládní organizace. Původní licence nebo URI a notices zůstávají, žádost o odstranění creditu zahrnuje i loga a emblémy. Pokud poskytovatel je IGO, nevyřešené spory mají zvláštní mediaci a možnou závaznou arbitráž. Licence chrání výsady a imunity, nemá patentový grant ani povinnost zdrojů a po včasné nápravě připouští automatické obnovení. Blokace: §4(a),(c) ukládá prakticky odstranit credit včetně log/známek/emblémů na žádost, zakazuje omezující účinná technická opatření a při použitelných morálních právech jednání poškozující čest/pověst poskytovatele. Je třeba doplnit samostatné dynamické atribuční, technologické a osobnostní podmínky. §8(h) při poskytovateli IGO stanoví mediaci a po45dnech možnost závazné arbitráže se zvláštními pravidly, jazykem a místem. Model nemá tuto procesní povinnost; konkrétní pravidla navíc může určit copyright notice nebo oznámení mediace. Pro konkrétní použití je nutné doložit tyto údaje a doplnit procesní model, nikoli je skrýt jako běžnou jurisdikci. §1 vymezuje literární/umělecké dílo a autorsky tvůrčí databázi, nikoli softwarový zdrojový režim. Doporučení novému softwarovému projektu vyžaduje oddělenou obsahovou větev zachovávající rozsah grantů i IGO podmínky.; https://spdx.org/licenses/CC-BY-3.0-IGO.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

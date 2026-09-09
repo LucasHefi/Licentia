@@ -8,91 +8,111 @@
     "contentHash": "sha256:f7570558c38479406d3d54214ebd5e4eaafc439c4a6d086d88f03a7ce0115e65"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "strong-copyleft",
+    "copyleftScope": "whole-work",
     "permissions": [
-      "unknown"
+      "commercial-use",
+      "conditional-relicensing",
+      "distribution",
+      "modifications",
+      "patent-grant",
+      "private-use",
+      "sublicensing"
     ],
     "obligations": [
+      "disclose-source",
+      "include-copyright",
+      "include-license-text",
+      "include-notice",
+      "mark-modifications",
+      "pass-disclaimer-requirement",
+      "same-license",
       "unknown"
     ],
     "triggers": [
-      "unknown"
+      "combination",
+      "distribution",
+      "linking",
+      "modification",
+      "use"
     ],
     "restrictions": [
-      "unknown"
+      "additional-terms",
+      "liability",
+      "unknown",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "express-grant",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CECILL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CECILL-1.0.json#text; Čl.1 Contributions zahrnují statický modul a integrované změny,5.3.2 stejná licence na celý Modified Software; pouze nezávislý proces/adresní prostor Module Dynamique je mimo. Silný whole-work copyleft s přesně vymezenou výjimkou, ne obecný library/file rozsah.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CECILL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CECILL-1.0.json#text; Čl.1 Contributions zahrnují statický modul a integrované změny,5.3.2 stejná licence na celý Modified Software; pouze nezávislý proces/adresní prostor Module Dynamique je mimo. Silný whole-work copyleft s přesně vymezenou výjimkou, ne obecný library/file rozsah.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CECILL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CECILL-1.0.json#text; Čl.2,4,5 nevýhradní přenositelná světová licence po dobu majetkových práv, bez omezení použití, permanentní/dočasné kopie, načtení/display/spuštění/uložení a studium/testování; změny a bezplatná/placená distribuce. Čl.5 výslovně zdarma užití patentů poskytovatele k vynálezům implementovaným v softwaru, žádná patentová odveta. Čl.10.2 počítá s řádně poskytnutými následnými licencemi. Čl.5.3.4 podmíněně GPL celek a12.3 původní či pozdější CeCILL.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CECILL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CECILL-1.0.json#text; Čl.5.2 každá Contribution výslovné autorovo jméno a datum vzniku. Čl.5.3.1–2 originál i modifikace s celým Contrat a varováním o omezení odpovědnosti/záruk8–9; jen objekt vyžaduje snadný přístup k úplnému příslušnému zdroji s návodem za nejvýš přenos dat. Změněný program celý pod smlouvou. Čl.6.4.1 nesmazat/nezměnit IP notices a reprodukovat přesně v kopiích;6.4.2 nepoškodit práva přímo/nepřímo a případně přijmout veškerá nutná opatření vůči personálu. Čl.7 volitelný servis/záruka jen vlastní odpovědnost a samostatný akt, bez obecného indemnify jiným. Čl.9.4 při infringement žalobě musí poskytovatel nabídnout technickou/právní pomoc podle zvláštního dohodnutého protokolu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CECILL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CECILL-1.0.json#text; Čl.5.2 každá Contribution výslovné autorovo jméno a datum vzniku. Čl.5.3.1–2 originál i modifikace s celým Contrat a varováním o omezení odpovědnosti/záruk8–9; jen objekt vyžaduje snadný přístup k úplnému příslušnému zdroji s návodem za nejvýš přenos dat. Změněný program celý pod smlouvou. Čl.6.4.1 nesmazat/nezměnit IP notices a reprodukovat přesně v kopiích;6.4.2 nepoškodit práva přímo/nepřímo a případně přijmout veškerá nutná opatření vůči personálu. Čl.7 volitelný servis/záruka jen vlastní odpovědnost a samostatný akt, bez obecného indemnify jiným. Čl.9.4 při infringement žalobě musí poskytovatel nabídnout technickou/právní pomoc podle zvláštního dohodnutého protokolu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CECILL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CECILL-1.0.json#text; Čl.8 přímá prokázaná zaviněná porušení smlouvy lze vymáhat, ale profesionální provozní přímé i nepřímé škody a obecné nepřímé škody jsou vyňaty; finanční/obchodní újma a třetí žaloba definovány nepřímé. Čl.9.2 prohlášení v dobré víře o oprávnění všech práv výjimkou z en-l'état9.3; ostatní záruky/neporušení IP i názvu vyloučeny. Čl.9.1 ukládá uživateli kontrolu vhodnosti, fungování a bezpečnosti. Čl.10 poskytovatel může ukončit po30dnech od neúčinné výzvy, řádné downstream licence trvají. Varování odborným uživatelům neměním na zákaz konkrétního oboru, neboť5.1 výslovně bez oborových omezení.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CECILL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CECILL-1.0.json#text; Čl.2,4,5 nevýhradní přenositelná světová licence po dobu majetkových práv, bez omezení použití, permanentní/dočasné kopie, načtení/display/spuštění/uložení a studium/testování; změny a bezplatná/placená distribuce. Čl.5 výslovně zdarma užití patentů poskytovatele k vynálezům implementovaným v softwaru, žádná patentová odveta. Čl.10.2 počítá s řádně poskytnutými následnými licencemi. Čl.5.3.4 podmíněně GPL celek a12.3 původní či pozdější CeCILL.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CECILL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CECILL-1.0.json#text; Čl.5.2 každá Contribution výslovné autorovo jméno a datum vzniku. Čl.5.3.1–2 originál i modifikace s celým Contrat a varováním o omezení odpovědnosti/záruk8–9; jen objekt vyžaduje snadný přístup k úplnému příslušnému zdroji s návodem za nejvýš přenos dat. Změněný program celý pod smlouvou. Čl.6.4.1 nesmazat/nezměnit IP notices a reprodukovat přesně v kopiích;6.4.2 nepoškodit práva přímo/nepřímo a případně přijmout veškerá nutná opatření vůči personálu. Čl.7 volitelný servis/záruka jen vlastní odpovědnost a samostatný akt, bez obecného indemnify jiným. Čl.9.4 při infringement žalobě musí poskytovatel nabídnout technickou/právní pomoc podle zvláštního dohodnutého protokolu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CECILL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CECILL-1.0.json#text; Individuálně přečten celý připnutý text. Čl.1 software ve zdroji/objektu a případná dokumentace, Initial první zveřejnění, Contributions zahrnují změny/překlady/funkce i Modules Statiques. Module Dynamique zde znamená dvě nezávislé spustitelné jednotky v nezávislých adresních prostorech s voláním za běhu, nikoli každou dynamicky linkovanou knihovnu. Statický modul s programem tvoří jeden executable. Francouzský text je podle11.5 při rozporu rozhodný; kompletní připnutý text je francouzský. Francouzská CeCILL 1.0 dovoluje neomezené obory použití včetně výslovné patentové licence a copyleftu staticky spojeného programu. Oddělené spustitelné moduly lze licencovat jinak, celek s GPL pod GPL; obsahuje však i konkrétní povinnosti ochrany práv zaměstnanci a pomoci při cizím IP sporu. Čl. 6.4.2 vyžaduje veškerá nutná personální opatření k ochraně IP práv. Čl. 9.4 ukládá poskytovateli technickou a právní pomoc při žalobě pro porušení práv podle zvláštní dohody, čl. 9.1 uživateli kontrolu vhodnosti a bezpečnosti. Doplnit tyto role a podmíněná jednání do modelu; nelze je vydávat pouze za oznámení nebo výluku odpovědnosti.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

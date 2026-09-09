@@ -1,0 +1,33 @@
+{
+  "id": "BSD-Mark-Modifications",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:3843c7c41d886abe3cdba344ae873c8840703302b5bb8f0dd876a43a26731d35"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Licence dovoluje zdrojové i binární užití a distribuci, zachování oznámení a jasné označení změn ve zdrojích i binární dokumentaci. Text současně uvádí odstranění clause 4 a následující bod 4 se zákazem endorsementu; historický význam poznámky není doložen.",
+  "blockersCs": [
+    "Za bodem 3 stojí clause 4 removed with permission, ale následuje číslovaný bod 4 zakazující propagaci jménem Geoffa Kuenninga. Aktuální SPDX stránka reprodukuje stejnou nejasnost a odkaz na původní archiv označuje nefunkční. Je třeba dohledat odstraněnou klauzuli/souhlas a určit, zda jde o starší číslování; zákaz nelze bez důkazu vymazat ani prohlásit poznámku za bezvýznamnou."
+  ],
+  "analysis": {
+    "subjectCs": "Software Geoffa Kuenninga 1993 a jeho zdrojové/binární úpravy.",
+    "grantCs": "Redistribution/use source and binary with or without modification, bez účelového omezení; patentový grant chybí.",
+    "conditionsCs": "Body 1–2 zachovat copyright, podmínky a disclaimer ve zdroji či binárních materiálech. Bod 3 označit všechny zdrojové změny a modifikované binární verze v dokumentaci.",
+    "limitationsCs": "Následující bod 4 vyžaduje písemný souhlas pro endorsement jménem, ale poznámka o odstranění clause 4 vyžaduje historické ověření. AS IS, výluky záruk a odpovědnosti.",
+    "compatibilityCs": "Bez jiné licence/verze či reciprocity; nejasná redakční poznámka není důkaz kompatibility nebo bezpodmínečného zrušení zákazu jména."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/BSD-Mark-Modifications.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Grant source/binary s notice/marking podmínkami, konkrétní nejasnost pouze v endorsementu."
+    },
+    {
+      "url": "https://spdx.org/licenses/BSD-Mark-Modifications.html",
+      "note": "Ověřená aktuální primární SPDX stránka opakuje poznámku o odstranění clause 4 i následný bod 4; seeAlso archiv aspell6-en-2020.12.07-0 uvádí jako no longer live. Nejasnost tím není vyřešena."
+    }
+  ]
+}

@@ -10,83 +10,109 @@
   "review": {
     "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
     "family": "strong-copyleft",
     "copyleftScope": "whole-work",
     "permissions": [
       "commercial-use",
+      "conditional-relicensing",
       "distribution",
       "modifications",
       "patent-grant",
-      "sublicensing"
+      "private-use"
     ],
     "obligations": [
+      "disclose-source",
       "include-copyright",
       "include-license-text",
-      "provide-corresponding-source"
+      "include-notice",
+      "mark-modifications",
+      "preserve-combined-license-terms",
+      "provide-corresponding-source",
+      "provide-installation-information",
+      "same-license"
     ],
     "triggers": [
-      "unknown"
+      "combination",
+      "distribution",
+      "linking",
+      "modification",
+      "patent-claim"
     ],
     "restrictions": [
+      "additional-terms",
       "liability",
-      "trademark",
+      "patent-claim",
       "warranty"
     ],
-    "patentPosition": "express-grant",
-    "noticeBurden": "standard"
+    "patentPosition": "defensive-termination",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.whole-work-copyleft",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.copyleft-family",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GPL-3.0+.json#text; §5c celé odvozené dílo a všechny části bez ohledu na balení pod GPL, oddělený agregát vyjmut; strong whole-work. §13 zachová licence kombinované AGPL3 části a její konkrétní síťové podmínky, nevytváří univerzální síťový copyleft GPL.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GPL-3.0+.json#text; §5c celé odvozené dílo a všechny části bez ohledu na balení pod GPL, oddělený agregát vyjmut; strong whole-work. §13 zachová licence kombinované AGPL3 části a její konkrétní síťové podmínky, nevytváří univerzální síťový copyleft GPL.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GPL-3.0+.json#text; §2 všechna práva po dobu copyright neodvolatelná při plnění, neomezený provoz originálu a soukromé neconveyované úpravy/provoz/propagace, output jen sám odvozený. Lze výlučné vlastní kontraktorské úpravy/provoz pod řízením a zákazem kopírovat vlastní autorský materiál mimo vztah; cizí části splní licenci. §4 libovolná cena kopií a podpory, §5 změny, §10 automatická přímá licence příjemce, žádné sublicence. §11 výslovně bezroyalty světově essential Contributor patent claims pro make/use/sell/offer/import/modify/propagate, ne nároky až z dalších změn. §14 skutečné or-later volba3 nebo pozdější FSF, neurčená verze jakákoli vydaná, označený proxy může veřejně trvale schválit novější.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/GPL-3.0+.json#text; §3 convey znamená vzdání pravomoci bránit obejití technických opatření při oprávněném výkonu GPL práv. §§4–5 všechny copyright, licence, absence záruk a přítomné§7 notices/text; změny datum a prominentní oznámení, celý odvozený celek GPL, UI Appropriate Legal Notices s výjimkou původního UI bez nich. §6 object+Corresponding Source jednou cestou: fyzický source s produktem; produkt s písemnou nabídkou nejméně3roky A po dobu podpory/náhradních dílů každému držiteli objectu (nákladové médium nebo zdarma server); příležitostně nekomerčně převzatá nabídka; rovnocenný download bez další ceny ze stejného místa či jasno označeného rovnocenného serveru; P2P odkaz na bezplatný veřejný object/source. Distributor dostupnost zdroje zajišťuje i při cizím hostování. User Product při převodu držby/užití trvale nebo na dobu doprovází Installation Information včetně klíčů pro instalaci/spuštění změn, leda nikdo neumí změněný object instalovat např.ROM. Source/instalační informace veřejně dokumentované, implementace formátu source, bez zvláštního rozbalovacího/čtecího klíče.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/GPL-3.0+.json#text; §3 convey znamená vzdání pravomoci bránit obejití technických opatření při oprávněném výkonu GPL práv. §§4–5 všechny copyright, licence, absence záruk a přítomné§7 notices/text; změny datum a prominentní oznámení, celý odvozený celek GPL, UI Appropriate Legal Notices s výjimkou původního UI bez nich. §6 object+Corresponding Source jednou cestou: fyzický source s produktem; produkt s písemnou nabídkou nejméně3roky A po dobu podpory/náhradních dílů každému držiteli objectu (nákladové médium nebo zdarma server); příležitostně nekomerčně převzatá nabídka; rovnocenný download bez další ceny ze stejného místa či jasno označeného rovnocenného serveru; P2P odkaz na bezplatný veřejný object/source. Distributor dostupnost zdroje zajišťuje i při cizím hostování. User Product při převodu držby/užití trvale nebo na dobu doprovází Installation Information včetně klíčů pro instalaci/spuštění změn, leda nikdo neumí změněný object instalovat např.ROM. Source/instalační informace veřejně dokumentované, implementace formátu source, bez zvláštního rozbalovacího/čtecího klíče.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GPL-3.0+.json#text; §6 neukládá podporu/záruky/upgrady upraveného produktu; síť lze odmítnout při škodlivém narušení nebo protokolové kolizi samotné změny. §7 pouze vymezené dodatky pro oprávněně přidaný materiál: záruky, notices, původ/změny, publicity, značky, indemnity; nejsou všechny automaticky součástí grantu. Further restrictions lze odstranit, další permissions odejmout/přidat dle oprávnění s notice. §8 automatický konec včetně patentů, po nápravě provizorní obnova a trvalá při neoznámení do60dní nebo prvním holder notice napraveném před30dny, downstream trvá. §10 bez further restrictions, licence fees a patentové žaloby včetně cross/counter k Programu/části. §11 vědomé spoléhání na patent bez veřejného source vyžaduje buď zveřejnit, odstranit vlastní výhodu, nebo rozšířit downstream; selektivní transakční grant všem příjemcům. Diskriminační placená software-distributor dohoda zakáže convey kromě před28.3.2007; ostatní zákonné implied obrany zachovány. §12 kolize znamená neconveyovat. §§15–17 as-is a škody s právní/písemnou výjimkou a místním nejbližším účinkem.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/GPL-3.0+.json#text; §2 všechna práva po dobu copyright neodvolatelná při plnění, neomezený provoz originálu a soukromé neconveyované úpravy/provoz/propagace, output jen sám odvozený. Lze výlučné vlastní kontraktorské úpravy/provoz pod řízením a zákazem kopírovat vlastní autorský materiál mimo vztah; cizí části splní licenci. §4 libovolná cena kopií a podpory, §5 změny, §10 automatická přímá licence příjemce, žádné sublicence. §11 výslovně bezroyalty světově essential Contributor patent claims pro make/use/sell/offer/import/modify/propagate, ne nároky až z dalších změn. §14 skutečné or-later volba3 nebo pozdější FSF, neurčená verze jakákoli vydaná, označený proxy může veřejně trvale schválit novější.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/GPL-3.0+.json#text; §3 convey znamená vzdání pravomoci bránit obejití technických opatření při oprávněném výkonu GPL práv. §§4–5 všechny copyright, licence, absence záruk a přítomné§7 notices/text; změny datum a prominentní oznámení, celý odvozený celek GPL, UI Appropriate Legal Notices s výjimkou původního UI bez nich. §6 object+Corresponding Source jednou cestou: fyzický source s produktem; produkt s písemnou nabídkou nejméně3roky A po dobu podpory/náhradních dílů každému držiteli objectu (nákladové médium nebo zdarma server); příležitostně nekomerčně převzatá nabídka; rovnocenný download bez další ceny ze stejného místa či jasno označeného rovnocenného serveru; P2P odkaz na bezplatný veřejný object/source. Distributor dostupnost zdroje zajišťuje i při cizím hostování. User Product při převodu držby/užití trvale nebo na dobu doprovází Installation Information včetně klíčů pro instalaci/spuštění změn, leda nikdo neumí změněný object instalovat např.ROM. Source/instalační informace veřejně dokumentované, implementace formátu source, bez zvláštního rozbalovacího/čtecího klíče.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/GPL-3.0+.json#text; Individuálně přečten celý připnutý text. §0 jakékoli označené copyrightové dílo včetně obdobných práv k maskám, covered originál či copyrightově odvozená změna. Propagate nezahrnuje spuštění ani změnu soukromé kopie, convey zpřístupní jinému kopii, samotná síťová interakce nikoli. §1 source preferovaná forma, Corresponding Source vše pro build/install/run/modify včetně skriptů, interfaces a specificky požadovaných dynamických subprogramů; mimo System Libraries, nezměněné obecné/free nástroje mimo dílo a regenerovatelné části. PlusID představuje or-later, není pouhým názvem pevné verze. GPL-3.0+ vyjadřuje GPL 3 nebo pozdější, ale tento starý identifikátor je deprecated. GPL 3 má copyleft celého odvozeného díla, patentové granty a zdrojové i instalační povinnosti při předání kopií; samostatný síťový provoz je nespouští, zvláštní pravidlo platí při kombinaci s AGPL 3. Identifikátor GPL-3.0+ je deprecated. Pro nové doporučení podle skutečného licenčního oznámení použít GPL-3.0-or-later; vlastní obsah GPL 3 je plně popsaný známým modelem včetně alternativ předání zdroje, User Product a podmíněné kombinace s AGPL 3.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

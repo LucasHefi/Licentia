@@ -8,94 +8,105 @@
     "contentHash": "sha256:4d66b0f0dad1d52d54303bbcc551c898db7480917cd3fc3b8b84554a2df9cd1e"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "strong-copyleft",
+    "copyleftScope": "whole-work",
     "permissions": [
+      "commercial-use",
+      "conditional-relicensing",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "provide-corresponding-source"
-    ],
-    "triggers": [
+      "include-license-text",
+      "include-notice",
+      "mark-modifications",
+      "provide-corresponding-source",
+      "same-license",
       "unknown"
     ],
-    "restrictions": [
-      "liability",
-      "trademark"
+    "triggers": [
+      "distribution",
+      "modification"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "restrictions": [
+      "additional-terms",
+      "liability",
+      "trademark",
+      "warranty"
+    ],
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SimPL-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SimPL-2.0.json#text; Give-back se týká distribuovaného softwaru nebo celého Derived Work, tedy whole-work copyleft; interní užití samo zveřejnění nespouští.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SimPL-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SimPL-2.0.json#text; Give-back se týká distribuovaného softwaru nebo celého Derived Work, tedy whole-work copyleft; interní užití samo zveřejnění nespouští.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SimPL-2.0.json#text; Úvodní any rights I have other than trademarks a body Use/Derived Works/Copy-distribute dávají bezpoplatkové užití pro jakýkoli účel a změny/distribuci. Patenty nejsou výslovně jmenovány, proto není vykázán express patent grant.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SimPL-2.0.json#text; Při distribuci software/Derived Work se výrazně uvádějí data změn, zachovávají cizí copyrighty/disclaimery/podmínky, poskytují snadno získatelné preferované zdroje, build/install skripty a interface definitions. Celé dílo dostanou všichni pod SimPL NEBO substantially similar terms (např. GPL2), bez dalších omezení a s nápadným oznámením dostupné licence.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SimPL-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SimPL-2.0.json#text; Při distribuci software/Derived Work se výrazně uvádějí data změn, zachovávají cizí copyrighty/disclaimery/podmínky, poskytují snadno získatelné preferované zdroje, build/install skripty a interface definitions. Celé dílo dostanou všichni pod SimPL NEBO substantially similar terms (např. GPL2), bez dalších omezení a s nápadným oznámením dostupné licence.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SimPL-2.0.json#text; Žádné záruky; pouze přímá škoda do zaplacené částky, ostatní vyloučena s lokální zákonnou výhradou. Práva automaticky zanikají při porušení give-back nebo pokud kdokoli brání distribuci podle SimPL; řádní podlicenční příjemci práva zachovávají.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SimPL-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SimPL-2.0.json#text; Úvodní any rights I have other than trademarks a body Use/Derived Works/Copy-distribute dávají bezpoplatkové užití pro jakýkoli účel a změny/distribuci. Patenty nejsou výslovně jmenovány, proto není vykázán express patent grant.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SimPL-2.0.json#text; Při distribuci software/Derived Work se výrazně uvádějí data změn, zachovávají cizí copyrighty/disclaimery/podmínky, poskytují snadno získatelné preferované zdroje, build/install skripty a interface definitions. Celé dílo dostanou všichni pod SimPL NEBO substantially similar terms (např. GPL2), bez dalších omezení a s nápadným oznámením dostupné licence.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SimPL-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SimPL-2.0.json#text; Individuálně přečten celý připnutý text. Operativní grant pokrývá zdrojový i objektový kód a Derived Work; licenční formulář samotný má oddělené svolení ke změnám s novým názvem. SimPL 2.0 dovoluje libovolné užití a odvozeniny, ale při distribuci vyžaduje datované změny, oznámení, úplné upravitelné zdroje se skripty a licencování pod SimPL či podstatně podobnými podmínkami, například GPL 2. Přímá škoda je omezena na zaplacenou částku. Distribuce dovoluje SimPL nebo neurčené substantially similar terms (např. GPL 2) a preambule odkazuje na konzistentní GPL 2 výklad. Doplnit model této otevřené alternativy a pravidla jejího ověření, místo bezpodmínečného same-license nebo automatické kompatibility.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

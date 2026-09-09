@@ -8,97 +8,109 @@
     "contentHash": "sha256:f002da996f3717a4a08fa0f508827c3078eb5586c0eabb180c1db029cc91bd78"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
     "family": "strong-copyleft",
     "copyleftScope": "whole-work",
     "permissions": [
       "commercial-use",
+      "conditional-relicensing",
       "distribution",
-      "patent-grant"
+      "modifications",
+      "patent-grant",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
       "include-license-text",
-      "provide-corresponding-source"
+      "include-notice",
+      "provide-corresponding-source",
+      "same-license",
+      "unknown"
     ],
     "triggers": [
+      "combination",
+      "distribution",
+      "modification",
+      "patent-claim",
       "unknown"
     ],
     "restrictions": [
+      "additional-terms",
       "liability",
+      "patent-claim",
       "trademark",
       "warranty"
     ],
-    "patentPosition": "express-grant",
-    "noticeBurden": "standard"
+    "patentPosition": "defensive-termination",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.whole-work-copyleft",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.copyleft-family",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/copyleft-next-0.3.1.json#text; §3 vyžaduje celé Derived Work, ale §§7–8 umějí reciprocitu a zdrojové podmínky úplně vypnout; výchozí strong whole-work nelze doporučovat bez těchto časových/obchodních stavů.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/copyleft-next-0.3.1.json#text; §3 vyžaduje celé Derived Work, ale §§7–8 umějí reciprocitu a zdrojové podmínky úplně vypnout; výchozí strong whole-work nelze doporučovat bez těchto časových/obchodních stavů.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/copyleft-next-0.3.1.json#text; §1 trvalá celosvětová bezroyalty neodvolatelná copyright práva reprodukce/distribuce/derivátů/public display-perform; patent make/have made/use/sell/offer/import pod současnými/budoucími royalty-free licencovatelnými nutnými nároky, bez nároků porušených jen další změnou. Žádné známky/jména/loga.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "restrictions",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/copyleft-next-0.3.1.json#text; §2 sdělit získání licence a zachovat relevantní Legal Notices bez log/známkových legend. §3 celý derivát pod licencí, nelze obejít rozdělenou distribucí; s GPL materiálem alternativa GPL včetně AGPL definice. §4 bez dalších omezení i z externího soudního/smluvního zdroje, inbound výjimka pro BOTH OSI+FSF k release date bez kolize jiných oddílů. §5 object vždy source URL zdarma; Product dvouletá URL od poslední distribuce NEBO přiložené dostupné zdroje; Corresponding Source zahrnuje build/install informace a seznam zvlášť použitých Separate Works/verzí. §6 neoznačený upstream Patch pod touto licencí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/copyleft-next-0.3.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/copyleft-next-0.3.1.json#text; §2 sdělit získání licence a zachovat relevantní Legal Notices bez log/známkových legend. §3 celý derivát pod licencí, nelze obejít rozdělenou distribucí; s GPL materiálem alternativa GPL včetně AGPL definice. §4 bez dalších omezení i z externího soudního/smluvního zdroje, inbound výjimka pro BOTH OSI+FSF k release date bez kolize jiných oddílů. §5 object vždy source URL zdarma; Product dvouletá URL od poslední distribuce NEBO přiložené dostupné zdroje; Corresponding Source zahrnuje build/install informace a seznam zvlášť použitých Separate Works/verzí. §6 neoznačený upstream Patch pod touto licencí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/copyleft-next-0.3.1.json#text; §7 ruší §§3–5 při poskytovatelově placené nabídce jiných podmínek mimo OSI-Approved NEBO FSF-Free k release date či číslované copyleft-next. §8 stejné podmínky končí15 let od první distribuce My Work pod touto licencí. §10 automatické ukončení při nenapraveném porušení do30 dnů od znalosti nebo zahájené patentové žalobě mimo declaratory/counter/cross; platí i pro další kopie, ale nikoli nutné runtime kopírování, downstream zůstává. §§12–14 no-warranty/no-damages/severability.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/copyleft-next-0.3.1.json#text; §1 trvalá celosvětová bezroyalty neodvolatelná copyright práva reprodukce/distribuce/derivátů/public display-perform; patent make/have made/use/sell/offer/import pod současnými/budoucími royalty-free licencovatelnými nutnými nároky, bez nároků porušených jen další změnou. Žádné známky/jména/loga.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/copyleft-next-0.3.1.json#text; §2 sdělit získání licence a zachovat relevantní Legal Notices bez log/známkových legend. §3 celý derivát pod licencí, nelze obejít rozdělenou distribucí; s GPL materiálem alternativa GPL včetně AGPL definice. §4 bez dalších omezení i z externího soudního/smluvního zdroje, inbound výjimka pro BOTH OSI+FSF k release date bez kolize jiných oddílů. §5 object vždy source URL zdarma; Product dvouletá URL od poslední distribuce NEBO přiložené dostupné zdroje; Corresponding Source zahrnuje build/install informace a seznam zvlášť použitých Separate Works/verzí. §6 neoznačený upstream Patch pod touto licencí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/copyleft-next-0.3.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/copyleft-next-0.3.1.json#text; Individuálně přečten celý připnutý text. §15 Covered Work je My Work/Derived Work; derivát vylučuje agregaci, prostou kopii a pouhý odkaz, není-li výslovně oznámeno jiné očekávání. Separate Work zahrnuje nezávislá díla a runtime/standardní build komponenty. copyleft-next-0.3.1 má whole-work reciprocitu s podmíněným GPL/AGPL přechodem a zdrojovou URL k binárkám; u fyzických produktů platí dva roky nebo přiložené zdroje. Podmínky3–5 však zanikají při určeném placeném proprietárním dual-licencování nebo 15 let po prvním vydání konkrétního díla pod touto licencí. §§ 7–8 vypínají podmínky3–5 podle konkrétního placeného dual-licencování nebo 15 let od prvního vydání díla, nikoli od release date licence. Doplnit časový/událostní model a historická OSI/FSF kritéria; nemapovat bezpodmínečný věčný copyleft.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

@@ -8,99 +8,108 @@
     "contentHash": "sha256:b1ed43af0991aaa9b75a48818225fe326f4dce286e22d6effdcf472520738534"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "permissive",
-    "copyleftScope": "none",
+    "family": "network-copyleft",
+    "copyleftScope": "network",
     "permissions": [
       "commercial-use",
       "distribution",
       "modifications",
       "patent-grant",
-      "sublicensing"
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
       "include-license-text",
-      "provide-corresponding-source"
+      "include-notice",
+      "mark-modifications",
+      "network-use-disclose",
+      "provide-corresponding-source",
+      "same-license",
+      "unknown"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification",
+      "network-use",
+      "patent-claim"
     ],
     "restrictions": [
       "liability",
+      "patent-claim",
       "trademark",
       "warranty"
     ],
-    "patentPosition": "defensive-termination",
-    "noticeBurden": "standard"
+    "patentPosition": "retaliatory-termination",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.no-copyleft",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.permissive-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OSL-1.1.json#text; OSL 1.1 pokrývá Original Work a Derivative Works a samostatně vymezuje externí provoz odvozenin. §1 dovoluje reprodukci, změny, distribuci a veřejné provedení/zobrazení bez sublicencí; §2 uděluje embodied Licensed Claims pro původní dílo i odvozeniny. §5 reciproční externí nasazení vyžaduje odvozeninu a přístup jiných než skupiny You; původní dílo při pouhém síťovém použití nelze zaměnit s pravidlem v1.0.; https://spdx.org/licenses/OSL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-termination",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OSL-1.1.json#text; §5 reciproční externí nasazení vyžaduje odvozeninu a přístup jiných než skupiny You; původní dílo při pouhém síťovém použití nelze zaměnit s pravidlem v1.0.; https://spdx.org/licenses/OSL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OSL-1.1.json#text; §1 dovoluje reprodukci, změny, distribuci a veřejné provedení/zobrazení bez sublicencí; §2 uděluje embodied Licensed Claims pro původní dílo i odvozeniny.; https://spdx.org/licenses/OSL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "restrictions",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OSL-1.1.json#text; §1c distribuované dílo zůstává OSL; §3 preferovaný strojový zdroj s dokumentací je přiložen nebo v levně/pohodlně přístupném repozitáři po dobu distribuce s adresou za copyrightem. §5 činí distribucí External Deployment odvozeniny pro užití mimo You včetně síťové aplikace. §6 zachovává zdrojové notices a nápadně označuje změny; §9 ukládá rozumné úsilí o express and volitional assent příjemce.; https://spdx.org/licenses/OSL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OSL-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OSL-1.1.json#text; §1c distribuované dílo zůstává OSL; §3 preferovaný strojový zdroj s dokumentací je přiložen nebo v levně/pohodlně přístupném repozitáři po dobu distribuce s adresou za copyrightem. §5 činí distribucí External Deployment odvozeniny pro užití mimo You včetně síťové aplikace. §6 zachovává zdrojové notices a nápadně označuje změny; §9 ukládá rozumné úsilí o express and volitional assent příjemce.; https://spdx.org/licenses/OSL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OSL-1.1.json#text; §4 vyjímá další IP/známky; §7 zaručuje vlastnictví/platnou licenci copyrightu, ostatní AS IS. §8 zachovává zákonnou odpovědnost smrti/zranění. §9 porušení same-license ihned ukončuje grant; §10 žaloba na essential patent jakéhokoli OSI software se stejnou mutual doložkou ruší vše.; https://spdx.org/licenses/OSL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OSL-1.1.json#text; §2 výslovně licencuje embodied claims; §10 ruší celou licenci při žalobě na essential patent u OSI software s mutual doložkou.; https://spdx.org/licenses/OSL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OSL-1.1.json#text; §1c distribuované dílo zůstává OSL; §3 preferovaný strojový zdroj s dokumentací je přiložen nebo v levně/pohodlně přístupném repozitáři po dobu distribuce s adresou za copyrightem. §5 činí distribucí External Deployment odvozeniny pro užití mimo You včetně síťové aplikace. §6 zachovává zdrojové notices a nápadně označuje změny; §9 ukládá rozumné úsilí o express and volitional assent příjemce. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/OSL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OSL-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OSL-1.1.json#text; Individuální kontrola celého připnutého textu OSL-1.1 dne 2026-09-09. OSL 1.1 pokrývá Original Work a Derivative Works a samostatně vymezuje externí provoz odvozenin. §9 požaduje rozumné úsilí o výslovný dobrovolný souhlas příjemců; před doporučením je třeba model aktivního získávání souhlasu, který prosté předání licence nepokrývá. Oproti v1.0 §5 nepřidává obecné poskytování obsahu/služeb a jeho operative věta míří na Derivative Work, ne každé původní dílo. §11–12 právo/soudy poskytovatele, bez CISG, vítěz vymáhání má náklady. §14 You zahrnuje řízené subjekty.; https://spdx.org/licenses/OSL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

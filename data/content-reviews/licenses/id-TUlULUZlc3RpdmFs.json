@@ -1,0 +1,20 @@
+{
+  "id": "MIT-Festival",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.2",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:d8bd83f30f5bdb272af94bdb2d7b5432ef50d5e594e671aae899c4ccc893a2cb"
+  },
+  "disposition": "eligible",
+  "summaryCs": "V kódu zachovejte copyright, podmínky, disclaimer i jména původních autorů. Úpravy zřetelně označte. Jména autorů nelze bez písemného souhlasu použít k propagaci odvozeného produktu.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/MIT-Festival.html",
+      "note": "Dřívější individuální revize 2026-09-09.2; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

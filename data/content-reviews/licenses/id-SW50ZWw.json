@@ -1,0 +1,22 @@
+{
+  "id": "Intel",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.7",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:00010e65bb601351dc60e549acc8d5d884293249e043ff0f3ac20dba8d68698a"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Zachovejte copyright, podmínky a disclaimer ve zdrojích nebo materiálech k binární distribuci. Propagační použití jmen vyžaduje písemný souhlas. Exportní odstavec výslovně nepřidává omezení nad právo příslušné jurisdikce; jeho výčet zemí popisuje květen 2000 a není aktuálním přehledem. OSI uvádí, že Intel tuto licenci již nepoužívá ani nedoporučuje. Záruky a odpovědnost jsou vyloučeny.",
+  "blockersCs": [
+    "Ponechat historickou licenci pro rozpoznání existujícího kódu; OSI ji označuje za dobrovolně vyřazenou z doporučování (https://opensource.org/license/intel). Před případným doporučením pro nový projekt vyřešit politiku historických licencí. Neměnit původní SPDX příznaky a nepovažovat exportní výčet z května 2000 za současné právo ani nový licenční zákaz."
+  ],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Intel.html",
+      "note": "Dřívější individuální revize 2026-09-09.7; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

@@ -29,7 +29,7 @@
       "distribution"
     ],
     "restrictions": [
-      "liability",
+      "additional-terms",
       "trademark",
       "warranty"
     ],
@@ -40,47 +40,65 @@
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text: lines 35-37 (opening grant permits redistribution and use in source and binary forms, with or without modification)"
+      "locator": "public/data/licenses/BSD-3-Clause-flex.json#text; Notice podmínky flexu jsou permisivní bez copyleftu a nevztahují se na běžné generované scannery.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text: lines 35-38 and complete text (non-reciprocal BSD grant; no same-license, source-disclosure, or corresponding-source condition)"
+      "locator": "public/data/licenses/BSD-3-Clause-flex.json#text; Notice podmínky flexu jsou permisivní bez copyleftu a nevztahují se na běžné generované scannery.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text: lines 35-37 (redistribution and use in source and binary forms, with or without modification, are permitted; no field-of-use limitation is stated)"
+      "locator": "public/data/licenses/BSD-3-Clause-flex.json#text; Redistribution/use obou forem s úpravami i bez nich je účelově neomezené. Závěr dovoluje libovolné nakládání s generovanými scannery bez uvedeného copyrightu. Patentový grant chybí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text: lines 36-37 (conditions 1-2 require retaining/reproducing the copyright notice, list of conditions, and disclaimer in source/binary redistributions)"
+      "locator": "public/data/licenses/BSD-3-Clause-flex.json#text; Body 1–2 ukládají copyright, podmínky a disclaimer ve zdrojích nebo materiálech binárek; na generované scannery se nevztahují. Nevyžaduje se vydávání zdrojů a vysvětlující basically věta nenahrazuje operativní body.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "text: lines 36-37 (notice-retention/reproduction duties are triggered by source or binary redistribution; modification alone has no separate condition)"
+      "locator": "public/data/licenses/BSD-3-Clause-flex.json#text; Body 1–2 ukládají copyright, podmínky a disclaimer ve zdrojích nebo materiálech binárek; na generované scannery se nevztahují. Nevyžaduje se vydávání zdrojů a vysvětlující basically věta nenahrazuje operativní body.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text: line 38 (third endorsement restriction: University/contributor names may not endorse or promote derived products without specific prior written permission); line 40 (AS IS warranty disclaimer and liability limitation)"
+      "locator": "public/data/licenses/BSD-3-Clause-flex.json#text; Univerzita/přispěvatelé nesmějí být bez písemného svolení použiti k endorsementu. Disclaimer odmítá záruky, ale neobsahuje samostatnou výluku škod. Úvod uvádí vládní práva podle DOE smlouvy DE-AC03-76SF00098 bez další podmínky pro běžného příjemce.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "text: complete license text, lines 28-43 (no express patent grant, patent condition, patent-claim restriction, or patent-termination clause is stated)"
+      "locator": "public/data/licenses/BSD-3-Clause-flex.json#text; Redistribution/use obou forem s úpravami i bez nich je účelově neomezené. Závěr dovoluje libovolné nakládání s generovanými scannery bez uvedeného copyrightu. Patentový grant chybí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text: lines 36-37 (source copies retain and binary copies reproduce the copyright notice, conditions, and disclaimer; standard BSD notice burden)"
+      "locator": "public/data/licenses/BSD-3-Clause-flex.json#text; Body 1–2 ukládají copyright, podmínky a disclaimer ve zdrojích nebo materiálech binárek; na generované scannery se nevztahují. Nevyžaduje se vydávání zdrojů a vysvětlující basically věta nenahrazuje operativní body.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "metadata: id=BSD-3-Clause-flex, deprecated=false, osi=false; text: lines 35-43 (complete grant, two notice conditions, third endorsement restriction, disclaimer, and Flex-specific flex.skl carve-out are explicit)"
+      "locator": "public/data/licenses/BSD-3-Clause-flex.json#text; Individuálně přečten celý připnutý text. Text pokrývá flex software s uvedenými copyrighty a zvlášť vyjímá scannery generované pomocí flex.skl. Flex má zdrojové/binární notice podmínky a zákaz endorsementu jmény univerzity či přispěvatelů. Generované scannery jsou výslovně z těchto copyrightových podmínek vyňaty; text také oznamuje vládní práva podle smlouvy DOE. ",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

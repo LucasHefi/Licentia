@@ -1,0 +1,22 @@
+{
+  "id": "Noweb",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.6",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:6932607ae6999bd702421addcaf82c1191b1cdeedf7fb3b9f9a1ce047a3aa4d6"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Při redistribuci uveďte původ a přiložte COPYRIGHT. Odvozené dílo nesmí bez písemného souhlasu používat název noweb. Při prodeji odvozeného díla musí kupující bez dalšího poplatku získat všechny jeho zdroje a oprávnění je užívat a upravovat podle této licence. Předepsána jsou také oznámení o Nowebu a směrování hlášení chyb k vám. Tyto podmínky průvodce zatím nevyjadřuje.",
+  "blockersCs": [
+    "Modelovat zvlášť prodej původního Nowebu a odvozeného díla. U odvozeného prodeje vyjádřit všechny zdroje bez další platby pro každého kupujícího, práva podle této licence, oznámení a směrování bug reportů. Doplnit souhlas s názvem noweb. Nepřevádět podmínky na nepodmíněný copyleft nebo libovolné bezúplatné šíření."
+  ],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Noweb.html",
+      "note": "Dřívější individuální revize 2026-09-09.6; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

@@ -8,98 +8,112 @@
     "contentHash": "sha256:2bb90ffe04bd782958663f2829b1e54410b42c1a4fe965a41bb39a84ddabb9f1"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "network-copyleft",
+    "copyleftScope": "network",
     "permissions": [
       "commercial-use",
+      "conditional-relicensing",
       "distribution",
       "modifications",
-      "patent-grant"
+      "patent-grant",
+      "private-use",
+      "sublicensing"
     ],
     "obligations": [
+      "disclose-source",
       "include-copyright",
-      "include-license-text",
-      "provide-corresponding-source"
-    ],
-    "triggers": [
+      "include-notice",
+      "mark-modifications",
+      "network-use-disclose",
+      "same-license",
       "unknown"
     ],
+    "triggers": [
+      "distribution",
+      "modification",
+      "network-use",
+      "patent-claim",
+      "use"
+    ],
     "restrictions": [
+      "additional-terms",
       "liability",
+      "patent-claim",
       "trademark",
+      "unknown",
       "warranty"
     ],
-    "patentPosition": "defensive-termination",
-    "noticeBurden": "standard"
+    "patentPosition": "retaliatory-termination",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-termination",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NPOSL-3.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NPOSL-3.0.json#text; §§1(c),5 síťový copyleft s povinnou variantou OSL3.0 podle §17(d); nejedná se o obecnou nekomerční licenci; https://spdx.org/licenses/NPOSL-3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NPOSL-3.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NPOSL-3.0.json#text; §5 externí nasazení Original/Derivative Works kýmkoli mimo §14 You jako distribuce, včetně síťové aplikace; žádná file/library hranice; https://spdx.org/licenses/NPOSL-3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/NPOSL-3.0.json#text; §§1–2 autorský a patentový sublicencovatelný grant a §15 použití; §17(d) podmíněná/povinná OSL3.0 alternativa s výslovným zákazem opačného převodu z OSL na NPOSL; https://spdx.org/licenses/NPOSL-3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/NPOSL-3.0.json#text; §3 zdroje/repozitář poskytovatele, §6 zdrojové notices/změny, §§1(c),5 copyleft; §9 express assent a §17(a),(d) deklarace role/příjmů a povinný přechod nejsou plně modelovány; https://spdx.org/licenses/NPOSL-3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NPOSL-3.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NPOSL-3.0.json#text; Distribuce/sdělování §1(c), externí užití/síť §5, změny §6 a patentová žaloba §10; §17 omezení deklarace se váže na distribuční roli, ne jakékoli komerční spuštění; https://spdx.org/licenses/NPOSL-3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/NPOSL-3.0.json#text; §4 známky, §§7–8 výluky včetně direct damages bez provenanční záruky; §17(a),(d) role neziskové organizace a nulové příjmy s přepnutím licence vyžadují unknown restriction; https://spdx.org/licenses/NPOSL-3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/NPOSL-3.0.json#text; §2 omezený výslovný grant, §10 ruší celou licenci za patentovou žalobu proti Licensor/any licensee; kombinace s jiným softwarem/hardwarem vyjmuty; https://spdx.org/licenses/NPOSL-3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/NPOSL-3.0.json#text; §6 více zdrojových notices a prominentní změny, §17(d),(e) jasné rozlišení NPOSL a povinné OSL3.0 alternativy; §9 aktivní souhlas nad běžný notice; https://spdx.org/licenses/NPOSL-3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NPOSL-3.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NPOSL-3.0.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. Non-Profit OSL3.0 má síťový copyleft, ale pod touto variantou smí dále distribuovat jen nezisková organizace deklarující nulový příjem z díla, odvozenin, podpory i souvisejících služeb. Ostatní distributoři musí použít původní OSL3.0 a jasně to oznámit. Není to obecný zákaz komerčního užití. NPOSL neobsahuje záruku původu práv a vylučuje i přímé škody; přechod na OSL3.0 proto nesmí tyto rozdíly zamlčet. Zdrojové a atribuční povinnosti, externí nasazení a získávání souhlasu příjemců zůstávají podrobně stanoveny. Blokace: §17(a),(d) vyžaduje deklaraci neziskového statusu a nulového příjmu z distribuce, podpory i služeb pro další NPOSL distribuci; jinak nařizuje přechod na OSL3.0 s novými notices. Model nemá tuto rolovou a příjmovou podmínku ani podmíněnou změnu záruk/odpovědnosti mezi oběma licencemi. Je třeba modelovat tuto větev, nikoli zakázat všechnu komerci nebo sloučit obě varianty. §9 nařizuje přiměřené úsilí získat výslovný souhlas příjemců; §5 zahrnuje externí nasazení originálu i odvozenin jako distribuci. Povinnost souhlasu není pokryta notice enumem a potřebuje samostatný model.; https://spdx.org/licenses/NPOSL-3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

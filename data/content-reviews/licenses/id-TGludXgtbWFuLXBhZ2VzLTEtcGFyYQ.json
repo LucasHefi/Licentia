@@ -1,0 +1,29 @@
+{
+  "id": "Linux-man-pages-1-para",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:ffea74600ace7e6814e81cef017a48de7b776ff674ab60c6677eb8ac53172cfe"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Licence dovoluje distribuovat původní i upravené kopie konkrétní manuálové stránky. Hlavička se zachovává doslovně a při netriviální změně se doplní autor a datum úpravy. Protože se oprávnění vztahuje k dokumentaci, průvodce ji nezařazuje mezi licence pro nový software; záruky, odpovědnost ani jinou licenční verzi text neřeší.",
+  "blockersCs": [
+    "Text uděluje práva ke konkrétní manuálové stránce; před doporučováním pro nový software je nutný samostatný dokumentační model nebo výslovné softwarové oprávnění."
+  ],
+  "analysis": {
+    "subjectCs": "Grant se týká kopií této manuálové stránky, tedy dokumentace.",
+    "grantCs": "Jediný odstavec výslovně dovoluje distribuci i upravených kopií stránky; nejde o obecný softwarový grant.",
+    "conditionsCs": "Hlavička se přikládá doslovně; u netriviální změny se do ní doplní autor a datum změny.",
+    "limitationsCs": "Text neobsahuje výluky záruk či odpovědnosti ani pravidla pro obchodní označení.",
+    "compatibilityCs": "Není zde nabídka jiné licence ani verze."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Linux-man-pages-1-para.html",
+      "note": "Individuálně přečten celý připnutý text; Hlavička se přikládá doslovně; u netriviální změny se do ní doplní autor a datum změny. Celý odstavec o kopírování stránky nemá patentový grant nebo patentovou doložku."
+    }
+  ]
+}

@@ -8,91 +8,95 @@
     "contentHash": "sha256:16b7706a07676b1cfd251cd6a695c92fbe0bedc19884309ae8f63a5cc5bc4fce"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "none",
     "permissions": [
-      "unknown"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "unknown"
+      "include-notice"
     ],
     "triggers": [
-      "unknown"
+      "distribution"
     ],
     "restrictions": [
+      "additional-terms",
       "unknown"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "none-stated",
+    "noticeBurden": "minimal"
   },
   "evidence": [
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/wwl.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/wwl.json#text; Text má široký grant s anti-GPL výjimkou, ale nevyžaduje zachování vlastní licence odvozenin; nonstandard, copyleft none.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/wwl.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/wwl.json#text; Text má široký grant s anti-GPL výjimkou, ale nevyžaduje zachování vlastní licence odvozenin; nonstandard, copyleft none.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/wwl.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/wwl.json#text; Do whatever you want dovoluje rozsáhlé užití, distribuci a změny s výjimkou jakékoli GPL; patentové právo výslovně uděleno není.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/wwl.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/wwl.json#text; As long as vyžaduje zachovat oznámení při dalším předání kódu. A postcard or QSL card ... would be nice je nepovinná žádost, ne distribuční povinnost.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/wwl.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/wwl.json#text; As long as vyžaduje zachovat oznámení při dalším předání kódu. A postcard or QSL card ... would be nice je nepovinná žádost, ne distribuční povinnost.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/wwl.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/wwl.json#text; Except zakazuje licencování pod jakoukoli GPL; tento zákaz konkrétní licenční rodiny nemá samostatnou hodnotu slovníku. Záruční a odpovědnostní doložka chybějí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/wwl.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/wwl.json#text; Do whatever you want dovoluje rozsáhlé užití, distribuci a změny s výjimkou jakékoli GPL; patentové právo výslovně uděleno není.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/wwl.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/wwl.json#text; As long as vyžaduje zachovat oznámení při dalším předání kódu. A postcard or QSL card ... would be nice je nepovinná žádost, ne distribuční povinnost.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/wwl.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/wwl.json#text; Individuálně přečten celý připnutý text. Text identifikuje autorku Diane Bruce a vztahuje grant na tento kód. S kódem lze při zachování oznámení nakládat libovolně, avšak nesmí být licencován pod žádnou formou GPL. Pohlednice či QSL je jen přání. Výslovný zákaz any form of the GPL nelze vyjádřit pouhým additional-terms tak, aby jej průvodce zohlednil při kombinaci. Doplnit model zákazů konkrétních licencí a návaznou kontrolu kombinací.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

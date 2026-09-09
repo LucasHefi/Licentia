@@ -1,0 +1,30 @@
+{
+  "id": "pnmstitch",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:31d9cfd2e04cf930095bb2cb0ba42615ed851d95f7fc0e360f3a5b367fab7674"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Grant výslovně pokrývá užití a redistribuci ve zdrojové formě, s úpravami i bez nich, při zachování oznámení a výluk. Zakazuje přidat jakákoli omezení ke zdroji či odvozeninám; binární grant není uveden.",
+  "blockersCs": [
+    "Oprávnění je omezeno na source form; je třeba doložit práva binárního užití/distribuce před doporučením běžnému softwarovému projektu.",
+    "Závěr zakazuje any restrictions or encumberances na zdroj a derivitives, bez hranice kombinovaného díla a mechanismu předání práv. Je třeba vyjasnit tuto reciprocitu; nelze ji zaměnit za stejnou licenci celého díla nebo povinné zveřejnění zdroje."
+  ],
+  "analysis": {
+    "subjectCs": "Zdrojový kód Marka Salyzyna 2002 a odvozeniny; grant výslovně source form.",
+    "grantCs": "Zdrojové užití/redistribuce s úpravami i bez nich; binární a patentová práva nejsou výslovně uvedena.",
+    "conditionsCs": "Zdrojové redistribuce zachovají copyright, podmínky i disclaimer. Jakákoli přidaná omezení/zatížení zdroje a derivátů jsou zakázána.",
+    "limitationsCs": "AS IS bez záruk prodejnosti/vhodnosti, široká výluka škod a odpovědnosti; žádný konkrétní příkaz dodat binárním příjemcům zdroj.",
+    "compatibilityCs": "Text nevolí jinou licenci/verzi; nelze tvrdit, že libovolná podlicence splňuje zákaz dalších omezení."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/pnmstitch.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Source-form grant a závěrečný zákaz jakýchkoli restrictions/encumberances vytvářejí nevyjasněný zvláštní režim."
+    }
+  ]
+}

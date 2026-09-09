@@ -1,0 +1,27 @@
+{
+  "id": "AMPAS",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:2b28c99f10835ffe5944eae20eb5cc3c8043c6f7e682e0e8333d83383763eb90"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Licence dovoluje software kopírovat, měnit, používat a distribuovat ve zdrojové i binární podobě při zachování copyrightu, podmínek a výluky záruk. Jména A.M.P.A.S. a přispěvatelů nelze bez svolení použít k podpoře produktů a patentová práva grant neposkytuje. Text stanoví kalifornské právo a soudní příslušnost a omezuje záruky i odpovědnost.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "A.M.P.A.S. grant z roku 2006 pokrývá zdrojovou i binární podobu softwaru a označené příspěvky dalších autorů.",
+    "grantCs": "Celosvětový bezplatný nevýlučný grant dovoluje distribuci, kopie, změny, odvozeniny a užití; uskutečnění těchto úkonů znamená přijetí licence.",
+    "conditionsCs": "Zdrojová distribuce zachová copyright, podmínky a Disclaimer of Warranty; binární je reprodukuje v dokumentaci nebo jiných materiálech.",
+    "limitationsCs": "Žádná práva duševního vlastnictví nevznikají nad rámec výslovně udělených; jména A.M.P.A.S./přispěvatelů nesmějí bez písemného svolení podporovat produkty. Platí kalifornské právo a soudní příslušnost. AS IS vylučuje záruky a odpovědnost včetně distributorů.",
+    "compatibilityCs": "Jiná licence či verze není nabízena; kalifornská doložka neurčuje kompatibilitu s jinou licencí."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/AMPAS.html",
+      "note": "Individuálně přečten celý připnutý text; Zdrojová distribuce zachová copyright, podmínky a Disclaimer of Warranty; binární je reprodukuje v dokumentaci nebo jiných materiálech. Třetí odrážka výslovně stanoví, že žádná patentová ani jiná IP práva nejsou udělena kromě výslovně uvedených; grant vyjmenovává pouze autorskoprávní jednání a žádný patentový grant neobsahuje. Patentové ukončení není stanoveno."
+    }
+  ]
+}

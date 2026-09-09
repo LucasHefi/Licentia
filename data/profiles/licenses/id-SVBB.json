@@ -8,93 +8,103 @@
     "contentHash": "sha256:a1d861751f75d1b1af8a8fe37b6e674bc425ce0c03e59708e764acb3f9f458bb"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
+    "family": "weak-copyleft",
     "copyleftScope": "unknown",
     "permissions": [
+      "commercial-use",
+      "conditional-relicensing",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "include-license-text"
-    ],
-    "triggers": [
+      "include-license-text",
+      "same-license",
       "unknown"
     ],
-    "restrictions": [
-      "liability",
-      "trademark"
+    "triggers": [
+      "distribution",
+      "modification",
+      "use"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "restrictions": [
+      "additional-terms",
+      "liability",
+      "trademark",
+      "unknown",
+      "warranty"
+    ],
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/IPA.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/IPA.json#text; Stejná IPA se vztahuje na Derived Font Program, nikoli na vymezené dokumentové výstupy nebo celý software; fontový rozsah není současný software scope.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/IPA.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/IPA.json#text; Stejná IPA se vztahuje na Derived Font Program, nikoli na vymezené dokumentové výstupy nebo celý software; fontový rozsah není současný software scope.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/IPA.json#text; Čl.2 dovoluje instalaci na libovolných počítačích/serverech, tištěné i digitální výstupy a komerční/nekomerční užití/redistribuci originálu/derivátů. Čl.5.1 umožňuje tuto i pozdější IPA verzi. Výslovný patentový grant chybí a známková práva nejsou převedena.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/IPA.json#text; Čl.3.1 derivát přiloží nebo online/poštou za nejvýše media/postage/handling zpřístupní kopii a dodatečné vývojovým nástrojem vytvořené soubory použitelné k úpravám. Musí dodat means k nahrazení originálem (např. diff/instrukce), IPA licenci a nepoužít původní program/font/file name; materiály může doslovně poskytovat kdokoli. Čl.3.2 originál beze změny včetně jména a s dohodou. Čl.2.5 jen vnitřní vykreslení embedded dokumentu bez dalších povinností; extrakce tuto výjimku nemá.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/IPA.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/IPA.json#text; Čl.3.1 derivát přiloží nebo online/poštou za nejvýše media/postage/handling zpřístupní kopii a dodatečné vývojovým nástrojem vytvořené soubory použitelné k úpravám. Musí dodat means k nahrazení originálem (např. diff/instrukce), IPA licenci a nepoužít původní program/font/file name; materiály může doslovně poskytovat kdokoli. Čl.3.2 originál beze změny včetně jména a s dohodou. Čl.2.5 jen vnitřní vykreslení embedded dokumentu bez dalších povinností; extrakce tuto výjimku nemá.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/IPA.json#text; Čl.3.3 odmítá záruky titulu/IP/vhodnosti a všechny škody;3.4 žádná povinnost podpory. Čl.4 trvání po dobu držení, automatická terminace bez výzvy při porušení a zákaz dalšího užití/exploatace; řádní jiní příjemci nejsou dotčeni. Čl.5 japonské právo.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/IPA.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/IPA.json#text; Čl.2 dovoluje instalaci na libovolných počítačích/serverech, tištěné i digitální výstupy a komerční/nekomerční užití/redistribuci originálu/derivátů. Čl.5.1 umožňuje tuto i pozdější IPA verzi. Výslovný patentový grant chybí a známková práva nejsou převedena.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/IPA.json#text; Čl.3.1 derivát přiloží nebo online/poštou za nejvýše media/postage/handling zpřístupní kopii a dodatečné vývojovým nástrojem vytvořené soubory použitelné k úpravám. Musí dodat means k nahrazení originálem (např. diff/instrukce), IPA licenci a nepoužít původní program/font/file name; materiály může doslovně poskytovat kdokoli. Čl.3.2 originál beze změny včetně jména a s dohodou. Čl.2.5 jen vnitřní vykreslení embedded dokumentu bez dalších povinností; extrakce tuto výjimku nemá.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/IPA.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/IPA.json#text; Individuálně přečten celý připnutý text. Čl.1 definuje Digital Font Program a Derived Program včetně extrakce Embedded Fonts z Digital Document File; samotné dokumentové vykreslení se liší od opětovně použitelného fontového programu. IPA fontovou licenci lze použít komerčně i nekomerčně a běžné dokumenty s fontem mají výjimku. Extrakce fontu z dokumentu však vytváří Derived Program pod IPA. Redistribuované deriváty musí dodat podklady k dalším úpravám i prostředek návratu k původnímu fontu a nesmějí nést původní jméno. Čl.3.1 požaduje specifické editovatelné vývojové soubory a distribuovaný prostředek nahrazení originálem, vedle opačných jmenných pravidel originál/derivát a dokumentové výjimky. Doplnit fontový model a tyto povinnosti; obecné source/same-license je nenahrazují.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

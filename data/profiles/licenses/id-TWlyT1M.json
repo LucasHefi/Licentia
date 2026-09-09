@@ -9,93 +9,96 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
       "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use",
+      "sublicensing"
     ],
     "obligations": [
-      "include-copyright"
+      "include-copyright",
+      "include-license-text"
     ],
     "triggers": [
-      "unknown"
+      "distribution"
     ],
     "restrictions": [
       "liability",
       "warranty"
     ],
-    "patentPosition": "unknown",
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MirOS.json#text; first operative paragraph: unrestricted dealing, use, distribution, sale, modification and sublicensing; whole text: no reciprocal source-disclosure or same-license requirement; https://spdx.org/licenses/MirOS.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MirOS.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MirOS.json#text; first operative paragraph: unrestricted dealing, use, distribution, sale, modification and sublicensing; https://spdx.org/licenses/MirOS.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
     },
     {
-      "field": "copyleftScope",
+      "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MirOS.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MirOS.json#text; first operative paragraph: retain terms, disclaimer and all copyright notices or reproduce them in an accompanying document; https://spdx.org/licenses/MirOS.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
     },
     {
-      "field": "triggers",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MirOS.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MirOS.json#text; first operative paragraph: retain terms, disclaimer and all copyright notices or reproduce them in an accompanying document; https://spdx.org/licenses/MirOS.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MirOS.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MirOS.json#text; whole text: no express patent grant or patent-litigation termination clause is stated; this is not a conclusion about implied rights; https://spdx.org/licenses/MirOS.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/MirOS.json#text; first operative paragraph: unrestricted dealing, use, distribution, sale, modification and sublicensing; https://spdx.org/licenses/MirOS.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/MirOS.json#text; second operative paragraph: warranty and liability limitations with explicit qualifications for malicious intent, gross negligence and immediate fault; https://spdx.org/licenses/MirOS.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MirOS.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MirOS.json#text; whole-text editorial review on 2026-09-09; Zachovejte podmínky, disclaimer a copyright nebo je přiložte v doprovodném dokumentu. Omezení odpovědnosti má výjimky uvedené ve znění licence.; https://spdx.org/licenses/MirOS.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/MirOS.json#text; first operative paragraph: retain terms, disclaimer and all copyright notices or reproduce them in an accompanying document; https://spdx.org/licenses/MirOS.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
     }
   ]
 }

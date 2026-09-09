@@ -13,14 +13,13 @@
     "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "permissive",
+    "family": "nonstandard",
     "copyleftScope": "none",
     "permissions": [
       "commercial-use",
       "distribution",
       "modifications",
-      "private-use",
-      "sublicensing"
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
@@ -30,8 +29,7 @@
     ],
     "triggers": [
       "distribution",
-      "modification",
-      "unknown"
+      "modification"
     ],
     "restrictions": [
       "liability",
@@ -40,53 +38,71 @@
       "warranty"
     ],
     "patentPosition": "none-stated",
-    "noticeBurden": "standard"
+    "noticeBurden": "material"
   },
   "evidence": [
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "license text, permission paragraph beginning 'Permission is hereby granted' (a broad free-of-charge grant to reproduce, use, copy, merge, publish, distribute, sell, and permit recipients to do the same) together with the following notice, modified-font naming, and sale conditions; the grant is permissive rather than reciprocal"
+      "locator": "public/data/licenses/Bitstream-Vera.json#text; Fontový grant je omezen přejmenováním, standalone prodejem a zvláštním zánikem; ne obecná permisivní softwarová licence.; https://spdx.org/licenses/Bitstream-Vera.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "license text, paragraphs beginning 'The above copyright and trademark notices', 'The Font Software may be modified', and 'This License becomes null and void' (copy-level notices, modified-font renaming, and loss of rights for distribution under reserved names are required, but no source-disclosure, corresponding-source, or same-license condition is stated)"
+      "locator": "public/data/licenses/Bitstream-Vera.json#text; Celý text neukládá stejné licencování ani zdrojové zpřístupnění balíčku.; https://spdx.org/licenses/Bitstream-Vera.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "license text, permission paragraph beginning 'Permission is hereby granted' (reproduce, distribute, use, copy, merge, publish, sell, and permit persons receiving the Font Software to do so) and paragraph beginning 'The Font Software may be modified' (modification, alteration, and addition are expressly allowed subject to renaming); these grants support commercial use, distribution, modifications, private use, and sublicensing"
+      "locator": "public/data/licenses/Bitstream-Vera.json#text; Grant Font Software včetně prodeje, ale odstavec prodeje jen larger software package; úpravy only if renamed.; https://spdx.org/licenses/Bitstream-Vera.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "license text, paragraph beginning 'The above copyright and trademark notices' (all font copies must include the copyright notice, trademark notice, and permission notice), supporting include-copyright, include-notice, and include-license-text; paragraph beginning 'The Font Software may be modified' (modified fonts must be renamed without 'Bitstream' or 'Vera'), a font-renaming obligation with no exact vocabulary value, represented by unknown"
+      "locator": "public/data/licenses/Bitstream-Vera.json#text; Notice odstavce copyright/trademark/permission; povinné přejmenování a samostatný prodej nejsou běžné mark/notice.; https://spdx.org/licenses/Bitstream-Vera.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "license text, paragraphs beginning 'The above copyright and trademark notices' (copies, including distributed copies, activate notice retention), 'The Font Software may be modified' and 'This License becomes null and void' (modification activates renaming, and modification plus distribution under reserved names voids the license); copying, sale, larger-package inclusion, advertising, and name use are additional trigger dimensions without dedicated vocabulary values, represented by unknown"
+      "locator": "public/data/licenses/Bitstream-Vera.json#text; Modifikace spouští přejmenování; distribuce pod původním jménem null/void; prodej má vlastní omezení.; https://spdx.org/licenses/Bitstream-Vera.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "license text, paragraphs beginning 'The Font Software may be modified' and 'This License becomes null and void' (reserved-font-name conditions), 'The Font Software may be sold' (sale only as part of a larger software package, not by itself), the all-capitals disclaimer (warranty exclusion and liability limitation), and final paragraph beginning 'Except as contained in this notice' (advertising and promotion limits on GNOME and Bitstream names); trademark, warranty, and liability are captured, while the exact reserved-name, standalone-sale, packaging, and conditional-void rules are not losslessly represented and require unknown"
+      "locator": "public/data/licenses/Bitstream-Vera.json#text; Names Bitstream/Vera po úpravě zakázány a samostatný prodej zakázán mimo slovník; endorsement a warranty/liability jasné.; https://spdx.org/licenses/Bitstream-Vera.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "license text, complete-text review, including the permission grant and all-capitals disclaimer (patent appears only in the noninfringement warranty disclaimer; no express patent grant, patent condition, patent-claim restriction, or patent-litigation termination is stated)"
+      "locator": "public/data/licenses/Bitstream-Vera.json#text; Disclaimer noninfringement copyright/patent/trademark není patentový grant; explicitní grant/ukončení není.; https://spdx.org/licenses/Bitstream-Vera.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "license text, paragraph beginning 'The above copyright and trademark notices' (every copy of one or more Font Software typefaces must include the copyright notice, trademark notice, and permission notice, constituting a standard copy-level notice burden)"
+      "locator": "public/data/licenses/Bitstream-Vera.json#text; Přejmenování, povolená forma prodeje a všechny copyright/trademark notices jsou materiální podmínky fontů.; https://spdx.org/licenses/Bitstream-Vera.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "license metadata, id=Bitstream-Vera, name='Bitstream Vera Font License', deprecated=false, osi=false, and fsf=false; license text, opening grant and paragraphs on notices, modified-font naming, modified distribution under reserved names, standalone sale, warranty/liability, and promotional name use (the terms are confined to accompanying fonts and documentation, and vocabulary 1.0.0 cannot losslessly encode font embedding, copying, sale/package context, reserved-font-name rules, or all relevant triggers), so it is unsuitable for automatic recommendation as a generally reusable software license"
+      "locator": "public/data/licenses/Bitstream-Vera.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. Fonty Bitstream Vera lze užívat, měnit a šířit, ale upravené fonty musí mít názvy bez Bitstream i Vera. Samostatný prodej písem je zakázán, prodej v širším balíku povolen; distribuce změněných fontů pod původním názvem ruší licenci v dotčeném rozsahu. Blokace: Grant je pro fonty a vyžaduje přejmenování po úpravě, zakazuje samostatný prodej a má zvláštní neplatnost při distribuci pod Bitstream Vera. Je třeba fontový model s přejmenováním, balíčkovým prodejem a spouštěčem zániku; obecná softwarová doporučení tyto podmínky nepokrývají.; https://spdx.org/licenses/Bitstream-Vera.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

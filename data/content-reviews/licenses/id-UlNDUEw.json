@@ -1,0 +1,30 @@
+{
+  "id": "RSCPL",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:031356339e8e6b2e53c882cdbe60016dcc3a41767d3f209c5c377e863d34f256"
+  },
+  "disposition": "blocked",
+  "summaryCs": "RSCPL 1.0 pokrývá PIA od Ricoh a jeho změny; při souborové distribuci zahrnuje změněné i nové soubory s převzatým kódem, zatímco jiný kód Larger Work zůstává oddělen. Vyžaduje stejnou licenci zdrojů, jejich dostupnost příjemcům binárek, datované změny, předepsaná oznámení a poděkování v reklamě. Obsahuje výslovné patenty s odvetným ukončením. Zvlášť je nutné modelovat hlášení IP nároků, odškodnění a rozdělení odpovědnosti za užití; zatím není zařazena.",
+  "analysis": {
+    "subjectCs": "§1.5 Governed Code zahrnuje Original Code, Modifications a jejich části; §1.10 původní PIA vydanou RSV. §1.9 při vydání jako soubory zahrne změny souboru i nový soubor s částí kódu. §1.6/3.7 dovolí Larger Work s nezahrnutým cizím kódem; RSCPL povinnosti platí pro Governed Code. You zahrnuje ovládající, ovládané i společně ovládané entity podle §1.14.",
+    "grantCs": "§2.1(a)/2.2(a) dovolují užití, reprodukci, změny, odvozeniny, display/performance, podlicence a distribuci včetně Larger Work. §2.1(b) patentový grant zahrnuje nároky dotčené výrobou, užitím a prodejem Original Code; §2.2(b) vlastní Modifications samostatně a v Contributor Version. §1.7/1.11 zahrnují i později licencovatelná práva; neudělují práva třetích stran. Komerční činnost není zakázána a §3.5 výslovně dovoluje placenou podporu/záruky za vlastní odpovědnost.",
+    "conditionsCs": "§3.1 zdroje jen RSCPL nebo budoucí RSV verze s kopií licence a bez omezení zdrojových práv. §3.2 zdroje změn příjemcům binárky na stejném médiu nebo elektronicky alespoň 12 měsíců od zpřístupnění nebo 6 měsíců po následné verzi; distributor ručí za dostupnost i u třetí strany. §1.13 zahrnuje modifikovatelnou podobu, moduly, rozhraní, build/install skripty nebo rozdíly proti známému dostupnému kódu; rozbalovač musí být běžně zdarma. §3.3 soubor změn s datem, původ od RSV ve zdrojích a příslušných binárních notices/dokumentaci. §3.5 Exhibit A v každém zdrojovém souboru, strukturální náhradní umístění dovoleno; licence v dokumentaci práv. §3.6 binární oznámení cesty ke zdrojům. §5.1 předepsané poděkování ve všech reklamách zmiňujících vlastnosti/užití. §3.4/4 navíc vytvářejí LEGAL pro známé IP nároky, API patenty a právní překážky, včetně dodatečného informování starších příjemců.",
+    "limitationsCs": "§5.2/5.3 jména a Ricoh v názvu bez souhlasu nepovoluje; nejde o zákaz komerční distribuce. §7 AS IS; §9 liability s výjimkou smrti/zranění z nedbalosti dle práva a subsidiárním limitem RSV 5000 USD. Nebezpečné aplikace nejsou zamýšlené a odpovědnost za ně je vyloučena, text zde neformuluje samostatný zákaz užití. §3.5/3.6 odškodnění za vlastní přidané závazky a odlišné binární podmínky. §12 odpovědnost za škody z využití práv podle kopií, výnosů a dalších faktorů, spolupráce na spravedlivém rozdělení, kromě porušení §3.4 jiným přispěvatelem. §8.1 zánik po nenapravení do 30 dnů od vědomosti, řádné sublicence přežijí. §8.2(a) patentový spor o původní/příspěvkový kód ruší i copyright po 60denní výzvě, pokud se nedohodne royalty či žaloba nevezme zpět; §8.2(b) spor o jiný produkt Participant ruší jen jeho patenty zpětně od prvního vymezeného nakládání. §8.3 ocenění licence při předžalobním vypořádání; §8.4 chrání dřívější end-user dohody mimo distributory/prodejce.",
+    "compatibilityCs": "§3.6 dovoluje vlastní binární podmínky pouze při zachování zdrojových práv, jasném přičtení rozdílů distributorovi a odškodnění RSV/přispěvatelů; nejde o obecné přelicencování zdrojů. §6 dovoluje jak zachovat přijatou, tak zvolit pozdější RSV verzi. Žádná jmenovaná GPL alternativa není udělena. §10 určuje práva americké vlády; §11 kalifornské právo a soudy Northern District/Santa Clara, náklady neúspěšné strany, výjimka injunctive relief RSV v jiném příslušném soudu a vyloučení CISG."
+  },
+  "blockersCs": [
+    "Doplnit model §3.4/4: vytvoření a aktualizace LEGAL se známými IP nároky, patenty API a zákonnými překážkami, reprezentace přispěvatele a přiměřené dodatečné informování již dříve zásobených příjemců; zachování existujícího oznámení nestačí.",
+    "Vyjádřit odškodnění §3.5/3.6 za vlastní přidané závazky a rozdílné binární podmínky i obecnou odpovědnost a spolupráci na rozdělení škod §12 s výjimkou porušení §3.4 jiným přispěvatelem. Nezaměnit s pouhou výlukou liability ani automaticky přidat povinnost vést obranu, kterou tyto odstavce neuvádějí."
+  ],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/RSCPL.html",
+      "note": "Primární stránka identifikuje RSCPL 1.0 a potvrzuje souborovou definici §1.9, zvláštní LEGAL povinnosti, reklamu a dvojí rozsah patentového ukončení; revize vychází z úplného připnutého textu včetně §§9–12 a Exhibit A."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "iMatix",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:6fb2000b4dcd309623427fb74332686c40ea599417633c1eadc267d36d05461f"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Licence dovoluje knihovnu komerčně i jinak používat, měnit a distribuovat, ale požaduje jednu ze tří cest: zdroje použitých modulů, otevřeně licencovaný produkt nebo předepsané uznání v dokumentaci. Změny se označují a distribuce přikládá licenci; výrazně přepsaný kód má vlastní pravidlo atribuce. Průvodce ji nezařazuje, protože tyto alternativy nelze vydávat za souběžné povinnosti.",
+  "blockersCs": [
+    "Licence nabízí alternativu zdrojů použitých modulů, GPL/Artistic podobné produktové licence nebo dokumentačního uznání a zvláštní větev přepsaného kódu; před doporučením je třeba model vzájemně alternativních cest."
+  ],
+  "analysis": {
+    "subjectCs": "SFL License pokrývá knihovnu iMatix, zdroje, dokumentaci a executables; ostatní software výslovně nepadá pod smlouvu.",
+    "grantCs": "Rights of Usage dovoluje libovolné komerční, akademické, vojenské i soukromé užití a změny kromě licence; Distribution dovoluje libovolná média/podmnožiny a poplatky za distribuci, změny, záruku či služby.",
+    "conditionsCs": "Conditions of Use požaduje jednu ze tří cest: zdroj použitých modulů, produkt volně dostupný pod GPL/Artistic podobnou licencí, nebo předepsané iMatix uznání v dokumentaci. Změny se označí na začátku zdrojů; přepsaný nerozpoznatelný kód má na začátku souboru původ a Parts copyright. Distribuce nese LICENSE.TXT.",
+    "limitationsCs": "Software je AS IS bez záruk; náklady vad/servisu nese uživatel. Při nesouhlasu se odstraní Product; iMatix se nepřidružuje k jiným distribucím než vlastnímu webu.",
+    "compatibilityCs": "Tři compliance cesty jsou alternativní, nelze současně uložit zdroj, otevřený produkt a uznání. Přepracovaný nerozpoznatelný kód má zvláštní atribuční cestu."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/iMatix.html",
+      "note": "Individuálně přečten celý připnutý text; Conditions of Use požaduje jednu ze tří cest: zdroj použitých modulů, produkt volně dostupný pod GPL/Artistic podobnou licencí, nebo předepsané iMatix uznání v dokumentaci. Změny se označí na začátku zdrojů; přepsaný nerozpoznatelný kód má na začátku souboru původ a Parts copyright. Distribuce nese LICENSE.TXT. Celý text nemá výslovný patentový grant nebo patentové ukončení."
+    }
+  ]
+}

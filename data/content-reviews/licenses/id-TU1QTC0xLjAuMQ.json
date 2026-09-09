@@ -1,0 +1,29 @@
+{
+  "id": "MMPL-1.0.1",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:f7e8bc557d7266a71ce92d4998650234e17c1f79eceac3489be238407f244fab"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Licence dovoluje mod instalovat, používat, dekompilovat, měnit a distribuovat, ale předpokládá legálně získaný Minecraft. Binární distribuce musí umožnit bezplatné získání příslušných zdrojů a závislosti musejí mít srovnatelné podmínky s výjimkou hry a jejího loaderu. Průvodce ji nezařazuje kvůli těmto předpokladům; samostatný kód používající rozhraní modu může mít jinou licenci.",
+  "blockersCs": [
+    "§1 vyžaduje legální Minecraft a §6 srovnatelné licence všech závislostí s výjimkou hry a loaderu; před doporučením je třeba model těchto předpokladů a závislostní licence."
+  ],
+  "analysis": {
+    "subjectCs": "Minecraft Mod Public License 1.0.1 licencuje mod a jako předpoklad vyžaduje legálně získaný Minecraft.",
+    "grantCs": "§3–5 dovolují instalaci/hraní na klientu či serveru, dekompilaci, změny a kód volající/rozšiřující třídy rozhraní; tento odvozený používající kód může mít jinou licenci.",
+    "conditionsCs": "§6 dovoluje úplnou/částečnou distribuci včetně patchů; binární distribuce musí umožnit bezplatné získání všech příslušných zdrojů a mod zůstává pod MMPL. Všechny závislosti musejí mít srovnatelné podmínky, kromě Minecraft a mod loader frameworku.",
+    "limitationsCs": "§2 vylučuje záruky/odpovědnost a přenáší škody na uživatele; §1 vyžaduje vlastnictví legální kopie hry i pro uživatele definované dekompilací/úpravami/distribucí.",
+    "compatibilityCs": "Jiná licence je dovolena pro kód podle §5, který volá/rozšiřuje mod, nikoli pro kopie modu; změněné soubory/části mají navíc formulaci should o MMPL."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/MMPL-1.0.1.html",
+      "note": "Individuálně přečten celý připnutý text; §6 dovoluje úplnou/částečnou distribuci včetně patchů; binární distribuce musí umožnit bezplatné získání všech příslušných zdrojů a mod zůstává pod MMPL. Všechny závislosti musejí mít srovnatelné podmínky, kromě Minecraft a mod loader frameworku. Celý text nemá patentový grant nebo patentové ukončení."
+    }
+  ]
+}

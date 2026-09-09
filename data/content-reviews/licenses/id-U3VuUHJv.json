@@ -1,0 +1,20 @@
+{
+  "id": "SunPro",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.5",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:cfd91e9e002e41b5c99609713a51e434e41f0492205bad74c8e847ef9be62f97"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Zachovejte uvedené oznámení včetně copyrightu, údaje o SunSoft a svolení. Užití, kopírování, úpravy a distribuce jsou volně povoleny. Text neobsahuje vyloučení záruk, omezení odpovědnosti, zákaz použití jména ani povinnost poskytovat zdroje.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/SunPro.html",
+      "note": "Dřívější individuální revize 2026-09-09.5; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

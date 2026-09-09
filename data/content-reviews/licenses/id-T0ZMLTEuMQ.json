@@ -1,0 +1,29 @@
+{
+  "id": "OFL-1.1",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:31049d5a5e0d25e26df5bd5a6553ea91ee10dbf724460e0c30931d3527258428"
+  },
+  "disposition": "blocked",
+  "summaryCs": "OFL 1.1 zachovává fonty a jejich změny pod OFL, dovoluje embedding a bundling, ale zakazuje samostatný prodej fontů/komponent. Pouze výslovně rezervovaná jména jsou chráněna a zákaz platí jen pro primární název změněného fontu. Vytvořené dokumenty jsou ze same-license výslovně vyňaty.",
+  "blockersCs": [
+    "Fontový share-alike s výstupní dokumentovou výjimkou, zákaz samostatného prodeje komponent a podmíněné výslovné RFN nejsou přesně modelovány. Doplnit fontový rozsah a podmínky verze 1.1, bez převzetí širšího RFN režimu 1.0."
+  ],
+  "analysis": {
+    "subjectCs": "Font Software 1.1 jsou soubory držitelem výslovně vydané a označené pod OFL; mohou zahrnovat zdroje, build skripty i dokumentaci. Změna formátu a port je Modified Version.",
+    "grantCs": "Permission dovoluje use/study/copy/merge/embed/modify/redistribute/sell originálů a změn za podmínek. Komerce při bundlingu je povolena, samostatný prodej fontového softwaru/komponent nikoli. Patentový grant chybí.",
+    "conditionsCs": "§1 zákaz standalone sale; §2 copyright/licence v kopiích prostřednictvím čitelného souboru/headeru/metadata. §3 pouze výslovně uvedené RFN nelze bez odpovídajícího písemného svolení použít jako primary font name změněné verze. §5 distribuce Font Software zcela pod OFL, ale vytvořené dokumenty výslovně vyňaty.",
+    "limitationsCs": "§4 zakazuje jmenné endorsement/promotion/advertising změn mimo uznání příspěvku či písemné svolení. Porušení podmínek ruší licenci; disclaimer odmítá záruky včetně copyright/patent/trademark noninfringement a škody.",
+    "compatibilityCs": "RFN 1.1 vzniká jen výslovným vyhrazením, nikoli automaticky původním jménem, a týká se primary name, nikoli všech polí. Dokumenty nemusí být OFL; samotný Font Software nemůže mít jinou licenci."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/OFL-1.1.html",
+      "note": "Individuální revize celého připnutého textu; Font Software 1.1 jsou soubory držitelem výslovně vydané a označené pod OFL; mohou zahrnovat zdroje, build skripty i dokumentaci. Změna formátu a port je Modified Version."
+    }
+  ]
+}

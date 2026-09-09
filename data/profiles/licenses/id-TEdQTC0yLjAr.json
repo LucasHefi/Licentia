@@ -10,67 +10,107 @@
   "review": {
     "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "weak-copyleft",
+    "copyleftScope": "library",
     "permissions": [
+      "commercial-use",
+      "conditional-relicensing",
       "distribution",
       "modifications",
-      "patent-grant",
-      "sublicensing"
+      "private-use"
     ],
     "obligations": [
+      "allow-relinking",
+      "allow-reverse-engineering",
+      "disclose-source",
       "include-copyright",
       "include-license-text",
-      "provide-corresponding-source"
+      "include-notice",
+      "mark-modifications",
+      "preserve-combined-license-terms",
+      "provide-corresponding-source",
+      "same-license"
     ],
     "triggers": [
-      "unknown"
+      "combination",
+      "distribution",
+      "linking",
+      "modification"
     ],
     "restrictions": [
+      "additional-terms",
       "liability",
       "warranty"
     ],
-    "patentPosition": "express-grant",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LGPL-2.0+.json#text; §2 reciproční celéodvozenéknihovnídílo,§§5–6 výjimkapro workthatusesLibrary při zachování úprav/relinku,§7 dovolujesamostatnénezávisléfacilities. Weak library copyleft, nevynucujeLGPL nacelévlastníappani pouze soubory. §2a a §2d jsou konkrétní podmínky tohoto knihovního copyleftu: upravené dílo zůstává knihovnou a vyžaduje snahu v dobré víře zachovat smysluplnou funkčnost bez nepředané aplikační funkce či tabulky, vyjma argumentu při volání. Nepředstavují obecný bezpečnostní test užití.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "obligations",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LGPL-2.0+.json#text; §2 reciproční celéodvozenéknihovnídílo,§§5–6 výjimkapro workthatusesLibrary při zachování úprav/relinku,§7 dovolujesamostatnénezávisléfacilities. Weak library copyleft, nevynucujeLGPL nacelévlastníappani pouze soubory. §2a a §2d jsou konkrétní podmínky tohoto knihovního copyleftu: upravené dílo zůstává knihovnou a vyžaduje snahu v dobré víře zachovat smysluplnou funkčnost bez nepředané aplikační funkce či tabulky, vyjma argumentu při volání. Nepředstavují obecný bezpečnostní test užití.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LGPL-2.0+.json#text; §§1–2 kopírovat/šířit/měnit, komerční distribuce s fyzickým přenosovým poplatkem a dobrovolnou placenou zárukou;§6 vlastní podmínky linked aplikace při zachování práv úpravy/reverse engineering. §3 lze konkrétní kopii nevratně přepnout změnou všechlicenčníchnotices naGPL2 nebo již vydanou novější, všechny další kopie/odvozeniny tím svázány. §13 plus volba2/pozdějšíLibraryGPL při skutečnémor-later notice. Žádný výslovný patentový grant;§11 pouze zákaz distribuce při kolizi s povinnostmi včetně patentovýchroyalties, nepatentováodveta. §10 downstream přímálicence, neobecnýsublicensing.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/LGPL-2.0+.json#text; §1 každá zdrojová kopie copyright/disclaimer/licence notices+licence. §2 změněné dílo samo softwarelibrary, změnovéfiles prominentní datum, celé odvozené dílo bez licenčního poplatku podLGPL; funkce odkazující na aplikačnífunkci/tabulku jinaknežargumentem musí good-faith zůstat smysluplně funkční i pokud ji aplikace nedodá. §4 object samotnéknihovny s úplným odpovídajícím source§1–2, stejnýmísto ekvivalentnídownloadstačí. §6 linkedwork jinými podmínkami musí dovolit vlastní úpravy zákazníka a reverzníinženýrství prodebug těchtoúprav, prominentnínotice oLibrary+licence a runtimecopyright pokud ostatnícopyrightzobrazuje. Jedna cesta:6a knihovnysource+úplnýappobject/source prorelinking;6b nejméně3letá nabídka STEJNÉMUuživateli za cenu distribuce;6c stejnédownloadmísto pro všechny materiály;6d ověřit jiždoručené/poslané. V2 zde není sdílenálibrary alternativa2.1. Appmateriály data/utility pro obnovuexecutable, běžnéOSkomponentyvyňatyledaaccompany. §7 kombinovanáknihovna navíc nezávisláLGPLčást+noticekdeji najít.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/LGPL-2.0+.json#text; §1 každá zdrojová kopie copyright/disclaimer/licence notices+licence. §2 změněné dílo samo softwarelibrary, změnovéfiles prominentní datum, celé odvozené dílo bez licenčního poplatku podLGPL; funkce odkazující na aplikačnífunkci/tabulku jinaknežargumentem musí good-faith zůstat smysluplně funkční i pokud ji aplikace nedodá. §4 object samotnéknihovny s úplným odpovídajícím source§1–2, stejnýmísto ekvivalentnídownloadstačí. §6 linkedwork jinými podmínkami musí dovolit vlastní úpravy zákazníka a reverzníinženýrství prodebug těchtoúprav, prominentnínotice oLibrary+licence a runtimecopyright pokud ostatnícopyrightzobrazuje. Jedna cesta:6a knihovnysource+úplnýappobject/source prorelinking;6b nejméně3letá nabídka STEJNÉMUuživateli za cenu distribuce;6c stejnédownloadmísto pro všechny materiály;6d ověřit jiždoručené/poslané. V2 zde není sdílenálibrary alternativa2.1. Appmateriály data/utility pro obnovuexecutable, běžnéOSkomponentyvyňatyledaaccompany. §7 kombinovanáknihovna navíc nezávisláLGPLčást+noticekdeji najít.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LGPL-2.0+.json#text; §5 header hranice derivative ponechána právu, ale pouze numericképarametry/datovélayout/accessors/makra+inline≤10řádků unrestrictedobject; skutečněderivative ostatníobject§6 i při nepřímémspojení. §8 nepovolenýúkon automatickyukončí práva bezcure, řádnípříjemci trvají;§9 přijetí změnou/distribucí. §10 žádnédalšíomezení anipovinnostvymáhat třetí. §11 při neslučitelnýchexterníchpodmínkáchnedistribuovat. §12 původnídržitel MŮŽEpřidat explicitnígeoomezení dlepatentů/copyrightinterfaces, žádnýkonkrétní seznamstátůnenívtextu. §§15–16 as-is/škodovévýlukys výjimkoupráva/písemnédohody.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/LGPL-2.0+.json#text; §§1–2 kopírovat/šířit/měnit, komerční distribuce s fyzickým přenosovým poplatkem a dobrovolnou placenou zárukou;§6 vlastní podmínky linked aplikace při zachování práv úpravy/reverse engineering. §3 lze konkrétní kopii nevratně přepnout změnou všechlicenčníchnotices naGPL2 nebo již vydanou novější, všechny další kopie/odvozeniny tím svázány. §13 plus volba2/pozdějšíLibraryGPL při skutečnémor-later notice. Žádný výslovný patentový grant;§11 pouze zákaz distribuce při kolizi s povinnostmi včetně patentovýchroyalties, nepatentováodveta. §10 downstream přímálicence, neobecnýsublicensing.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/LGPL-2.0+.json#text; §1 každá zdrojová kopie copyright/disclaimer/licence notices+licence. §2 změněné dílo samo softwarelibrary, změnovéfiles prominentní datum, celé odvozené dílo bez licenčního poplatku podLGPL; funkce odkazující na aplikačnífunkci/tabulku jinaknežargumentem musí good-faith zůstat smysluplně funkční i pokud ji aplikace nedodá. §4 object samotnéknihovny s úplným odpovídajícím source§1–2, stejnýmísto ekvivalentnídownloadstačí. §6 linkedwork jinými podmínkami musí dovolit vlastní úpravy zákazníka a reverzníinženýrství prodebug těchtoúprav, prominentnínotice oLibrary+licence a runtimecopyright pokud ostatnícopyrightzobrazuje. Jedna cesta:6a knihovnysource+úplnýappobject/source prorelinking;6b nejméně3letá nabídka STEJNÉMUuživateli za cenu distribuce;6c stejnédownloadmísto pro všechny materiály;6d ověřit jiždoručené/poslané. V2 zde není sdílenálibrary alternativa2.1. Appmateriály data/utility pro obnovuexecutable, běžnéOSkomponentyvyňatyledaaccompany. §7 kombinovanáknihovna navíc nezávisláLGPLčást+noticekdeji najít.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/LGPL-2.0+.json#text; Individuálně přečten celý text. Deprecated LGPL-2.0+ znamená Library GPL 2 nebo pozdější, nikoli Lesser GPL 2.1. Původní § 6 nemá samostatnou cestu sdílené knihovny; vlastní aplikace využije jednu ze čtyř cest poskytnutí relinkovacích materiálů. Změny zachovávají knihovní povahu a smysluplný provoz bez nepředaných aplikačních funkcí či tabulek. Identifikátor LGPL-2.0+ je deprecated. Pro nové doporučení podle skutečného oznámení použít explicitní LGPL-2.0-or-later; zachovat popsané knihovní podmínky a samostatné alternativy pro propojenou aplikaci.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

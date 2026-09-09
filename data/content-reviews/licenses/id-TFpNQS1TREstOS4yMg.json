@@ -1,0 +1,27 @@
+{
+  "id": "LZMA-SDK-9.22",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:3b3912f7c0ec01d24784f926b899ce07a59216dda749048732a2e383d83a743b"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Vedle prohlášení o public domain text výslovně dovoluje původní kód LZMA SDK kopírovat, měnit, používat, prodávat a distribuovat ve zdrojové i binární podobě pro libovolný účel. Nevyžaduje notices ani zveřejnění zdrojů a připouští začlenění pod GPL nebo LGPL. Oprávnění se vztahuje k uvedenému SDK a jeho popsaným fragmentům, nikoli automaticky k celé knihovně Crypto++.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Text se týká původního kódu LZMA SDK a uvádí public-domain původ fragmentů PPMd a SHA-256.",
+    "grantCs": "Po věnování do public domain výslovně dovoluje komukoli kopírovat, měnit, publikovat, používat, kompilovat, prodávat i distribuovat původní SDK ve zdroji nebo binárně, pro libovolný účel a libovolnými prostředky.",
+    "conditionsCs": "Výslovný grant neukládá notifikaci, zaslání změn ani zpřístupnění zdrojů; seznam Shkarin/Wei Dai pouze popisuje původ.",
+    "limitationsCs": "Text nemá záruky ani odpovědnostní výluku; oprávnění označuje jako vztahující se na original LZMA SDK code, nikoli na všechny části externí knihovny Crypto++.",
+    "compatibilityCs": "Závěr výslovně uvádí možnost zahrnutí pod GPL nebo LGPL; netvrdí konkrétní verzi či právní kompatibilitu libovolné jiné kombinace."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/LZMA-SDK-9.22.html",
+      "note": "Individuálně přečten celý připnutý text; Výslovný grant neukládá notifikaci, zaslání změn ani zpřístupnění zdrojů; seznam Shkarin/Wei Dai pouze popisuje původ. Celý text se soustředí na kód a public domain; výslovné patentové oprávnění ani patentové ukončení neobsahuje."
+    }
+  ]
+}

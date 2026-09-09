@@ -8,93 +8,103 @@
     "contentHash": "sha256:eba41fa5ec238aca7b2c1e46f98dfa0e5017e1f3a1c89690260ead9355889ee3"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
+    "family": "nonstandard",
     "copyleftScope": "unknown",
     "permissions": [
       "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "include-copyright"
+      "include-copyright",
+      "include-notice",
+      "mark-modifications",
+      "unknown"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "linking",
+      "modification",
+      "use"
     ],
     "restrictions": [
-      "unknown"
+      "additional-terms",
+      "trademark",
+      "unknown",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OLDAP-1.3.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OLDAP-1.3.json#text; Výjimka vlastního linkujícího softwaru a různé modifikační/binární cesty mají specifický Package rozsah mimo jednotnou file/library/whole-work hodnotu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OLDAP-1.3.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OLDAP-1.3.json#text; Výjimka vlastního linkujícího softwaru a různé modifikační/binární cesty mají specifický Package rozsah mimo jednotnou file/library/whole-work hodnotu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OLDAP-1.3.json#text; §§1–4 dovolují zdroje, opravy, modifikace a binárky za samostatných alternativ; §5 dovoluje podporu/kopírovné/komerční agregaci, ne prodej balíku samotného. §8 výslovně dovoluje komerční redistribuci executables vlastního linkujícího softwaru. Patentový grant chybí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OLDAP-1.3.json#text; §1 zachovává copyright/disclaimery. §3 každý změněný soubor označí jak/kdy a volí veřejně volné změny/přijetí držitelem, interní organizaci, přejmenované se standardními binárkami/manuály, či dohodu. §4 binárky volí standardní+instrukce, zdroje změn, standardní+nestandardní s dokumentací/odkazem, či dohodu. Obě sady nejsou kumulativní seznam všech možností.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OLDAP-1.3.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OLDAP-1.3.json#text; §1 zachovává copyright/disclaimery. §3 každý změněný soubor označí jak/kdy a volí veřejně volné změny/přijetí držitelem, interní organizaci, přejmenované se standardními binárkami/manuály, či dohodu. §4 binárky volí standardní+instrukce, zdroje změn, standardní+nestandardní s dokumentací/odkazem, či dohodu. Obě sady nejsou kumulativní seznam všech možností.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OLDAP-1.3.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OLDAP-1.3.json#text; §6 vstupy/výstupy nepatří automaticky balíku. §7 emulační C subrutiny nesmějí změnit chování Package tak, aby padaly regresní testy; §8 širší vlastní používající software není součást Package. §9 zákaz endorsementu, §10 bez záruk, nikoli samostatná výluka škod.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OLDAP-1.3.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OLDAP-1.3.json#text; §§1–4 dovolují zdroje, opravy, modifikace a binárky za samostatných alternativ; §5 dovoluje podporu/kopírovné/komerční agregaci, ne prodej balíku samotného. §8 výslovně dovoluje komerční redistribuci executables vlastního linkujícího softwaru. Patentový grant chybí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OLDAP-1.3.json#text; §1 zachovává copyright/disclaimery. §3 každý změněný soubor označí jak/kdy a volí veřejně volné změny/přijetí držitelem, interní organizaci, přejmenované se standardními binárkami/manuály, či dohodu. §4 binárky volí standardní+instrukce, zdroje změn, standardní+nestandardní s dokumentací/odkazem, či dohodu. Obě sady nejsou kumulativní seznam všech možností.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OLDAP-1.3.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OLDAP-1.3.json#text; Individuálně přečten celý připnutý text. Verze 1.3 z 17.1.1999 definuje Package, Standard Version, rozumné kopírovné a Freely Available; musí být čtena samostatně od Artistic i OLDAP1.1. OpenLDAP 1.3 zachovává Artistic alternativy modifikací a binárek a omezený prodej samotného balíku. Zvlášť vyjímá vlastní linkovaný software používající subrutiny/proměnné balíku: výsledné executables lze libovolně užít, šířit a prodávat. §§ 3–4 mají odlišné distribuční alternativy, § 5 limit prodeje a §§ 7–8 dvě různé linkovací výjimky. Doplnit model těchto cest a hranic; nepřenášet širší § 8 na OLDAP1.1 ani předpokládat povinné zdroje všech binárek.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

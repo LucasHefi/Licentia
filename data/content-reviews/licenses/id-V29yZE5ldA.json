@@ -1,0 +1,20 @@
+{
+  "id": "WordNet",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.7",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:e96dad3ddb90321a877f285442b7cc7fc58c83f2cfd212b20061298e7674a225"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Oznámení a podmínky včetně disclaimeru zachovejte na všech kopiích softwaru, databáze i dokumentace, také na úpravách pro interní použití. Text dovoluje užití, kopírování, úpravy a distribuci pro jakýkoli účel. Jména Princeton a Princeton University nesmějí být použita v reklamě související s distribucí. Znění vylučuje záruky, ale neobsahuje výslovné omezení odpovědnosti ani patentový grant.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/WordNet.html",
+      "note": "Dřívější individuální revize 2026-09-09.7; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

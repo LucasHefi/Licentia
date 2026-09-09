@@ -1,0 +1,27 @@
+{
+  "id": "Borceux",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:b894c7af5b3871cb7489b0882bd08ddbfefe3ba833e475fa43bdd1a730da7cd0"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Vyjmenované soubory balíku lze bez omezení používat, upravovat a šířit. Autor podporu negarantuje, pouze se pokusí pomoci.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Licence výslovně vyjmenovává README, pět compatibility souborů, pět diagram souborů a dva uživatelské průvodce balíku.",
+    "grantCs": "Úvodní grant freely use, modify, and/or distribute each ... without limitation dovoluje libovolné účely včetně komerce. Výslovná patentová licence či sublicence uvedena není.",
+    "conditionsCs": "Bez omezení se vztahuje na každý vyjmenovaný soubor; v celém textu není povinnost uchování oznámení, zpřístupnění zdrojů nebo stejné licence a nejsou podmínkové spouštěče.",
+    "limitationsCs": "Závěrečný odstavec negarantuje podporu, ale slibuje pokus pomoci. Neobsahuje obecnou výluku záruk nebo škod; kontakt není povinný komunikační kanál.",
+    "compatibilityCs": "Přesný seznam vymezuje původní balík; žádné konkrétní alternativní licence nebo verze nejsou stanoveny."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Borceux.html",
+      "note": "Individuální revize celého připnutého textu; Licence výslovně vyjmenovává README, pět compatibility souborů, pět diagram souborů a dva uživatelské průvodce balíku."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "zlib-acknowledgement",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:9659feb21899532d9280baf29462a5b1a4444ef6587cb695157fbb14ffb1cf85"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Licence dovoluje libovolné, včetně komerčního užití, úpravy a redistribuci. Použití v produktu povinně vyžaduje uvedenou variantu poděkování v dokumentaci produktu; nejde o dobrovolnou žádost původní Zlib. Původ nesmí být zkreslen, změněné zdroje musí být označeny a oznámení zachováno v každé zdrojové distribuci. Poslední podmínka se nerozšiřuje na samotné binárky. Text nevyžaduje poskytování zdrojů, obsahuje výluky záruk a odpovědnosti a neuděluje výslovný patentový grant.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Předmětem je software. Produktové užití aktivuje zvláštní povinnost dokumentačního poděkování; zachování celého oznámení v §3 je samostatně omezeno na zdrojové distribuce.",
+    "grantCs": "Grant výslovně dovoluje užití pro jakýkoli účel včetně komerčního, změny a redistribuci. Samostatný patentový grant či výslovné podlicencování text neuvádí.",
+    "conditionsCs": "§1 zakazuje zkreslit původ a při použití v produktu vyžaduje poděkování podle uvedených alternativ Portions Copyright s příslušnými autory a roky. §2 vyžaduje zřetelné označení změněných zdrojů. §3 zachovává oznámení bez odstranění či změny v každé zdrojové distribuci, nikoli obecně ve všech binárních kopiích.",
+    "limitationsCs": "Úvod vylučuje výslovné i odvozené záruky a odpovědnost autorů za škody z užití. Změněné zdroje se nesmějí vydávat za původní; neobsahuje patentovou odvetu ani obecný zákaz komerčního užití.",
+    "compatibilityCs": "Povinné poděkování odlišuje tuto variantu od Zlib s dobrovolnou žádostí. Zmínky o zdrojích stanoví označení a zachování notice, nikoli povinnost zdroje poskytnout; same-license ani alternativní verze nejsou uloženy."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/zlib-acknowledgement.html",
+      "note": "Úplné uložené znění jednotlivě přečteno a porovnáno s primární stránkou SPDX; nové vyjádření podmínek use zachovává původní rozsah a otisk zdroje."
+    }
+  ]
+}

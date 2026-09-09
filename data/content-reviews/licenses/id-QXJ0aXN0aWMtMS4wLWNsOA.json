@@ -1,0 +1,29 @@
+{
+  "id": "Artistic-1.0-cl8",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:17c067da2d1653a97d10abcfd0815484f37f038d9d441df2d4678f352f8b84f2"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Artistic cl8 má oddělené alternativy pro změny a binárky, zákaz prodeje samotného balíku a široké výjimky pro vstupy/výstupy a dodané C/perl subrutiny. Komerční agregace s embedded použitím bez viditelného rozhraní podle zvláštního § 8 není distribucí balíku.",
+  "blockersCs": [
+    "§§ 3–4 obsahují dva samostatné systémy alternativ a § 8 vyjímá komerční embedded agregaci z distribuce při skrytém rozhraní. Doplnit model těchto cest, samostatného prodeje a výjimky, místo kumulativního zveřejnění zdrojů."
+  ],
+  "analysis": {
+    "subjectCs": "Package je původní kolekce souborů a textové deriváty; Standard Version zahrnuje úpravy podle přání držitele, public-domain a jeho opravy.",
+    "grantCs": "§§1–4 dovolují standardní zdroje, opravy, jiné změny a binárky za alternativních podmínek. §5 dovoluje rozumné kopírovné, libovolnou podporu a komerční agregát, ne prodej balíku samotného. Patentový grant chybí.",
+    "conditionsCs": "§1 zachovává copyrighty/disclaimery standardních zdrojů. §3 každou změnu označí jak/kdy a zvolí public-domain/freely-available či přijetí držitelem, interní organizaci, přejmenované binárky se standardními a manuály, nebo dohodu. §4 nezávisle volí standardní executables s odkazy, modifikované zdroje, přejmenované nestandardní plus standardní a dokumentaci, nebo dohodu. §8 embedded komerční agregace nesmí zjevně vystavit rozhraní uživateli.",
+    "limitationsCs": "Freely Available dovoluje handling, ne cenu položky a zachovává další redistribuci. §6 vstupy/výstupy nejsou automaticky copyright balíku; §7 vlastní C/perl subrutiny nejsou součást balíku bez regresní podmínky. §9 zákaz endorsementu bez svolení, §10 bez záruk; samostatná výluka škod chybí.",
+    "compatibilityCs": "Speciální §8 považuje popsanou embedded agregaci za nedistribuci Package; nelze ho zaměnit za standardní Artistic 1.0 nebo regresně testovaný §7 OLDAP. Žádná automatická GPL cesta uvedena není."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Artistic-1.0-cl8.html",
+      "note": "Individuální revize celého připnutého textu; Package je původní kolekce souborů a textové deriváty; Standard Version zahrnuje úpravy podle přání držitele, public-domain a jeho opravy."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "Unicode-DFS-2015",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:b26743b65f4574663c05560055b73e4de880b39a60d3d7bcab970d33af3074cd"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Unicode DFS 2015 dovoluje neomezené nakládání s vymezenými daty a softwarem, ale současně vyžaduje copyright a svolení v kopiích i dokumentaci a označení změn v souboru/softwaru i dokumentaci. PDF code charts jsou vyňaty; historický odkaz Terms of Use je proměnlivý.",
+  "blockersCs": [
+    "Text výslovně říká Distributed under the Terms of Use na proměnlivém copyright.html. Dnešní primární stránka již odkazuje na Unicode License v3 a další politiky, nikoli znění 2015; opatřit dobovou primární verzi a vyhodnotit její začlenění před doporučením."
+  ],
+  "analysis": {
+    "subjectCs": "Úvod definuje data a kód z Public/reports/cldr/data či Unicode Standardu a výslovně vylučuje PDF online code charts.",
+    "grantCs": "Permission dovoluje use/copy/modify/merge/publish/distribute/sell a umožnit totéž příjemcům; sublicensing není výslovně vyjmenováno. Patentový grant není uveden.",
+    "conditionsCs": "Body (a) a (b) kumulativně vyžadují copyright/svolení u všech kopií A v dokumentaci; (c) jasné oznámení změn v každém změněném Data File nebo Software A v dokumentaci. Stažení/instalace/kopie/užití znamenají souhlas. Nejde o copy-or-documentation alternativu z jiných verzí.",
+    "limitationsCs": "As is odmítá záruky včetně cizích práv a škody; jméno držitele mimo notice nesmí sloužit reklamě/propagaci bez svolení. Copyright věta odkazuje na Terms of Use copyright.html; dnešní primární stránka obsahuje jiný rozsah a Unicode v3, takže nedokládá stav 2015.",
+    "compatibilityCs": "Nelze nahradit historické podmínky dnešní Unicode License v3; starší webové Terms of Use a jejich začlenění vyžadují připnutí odpovídajícího dobového znění."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Unicode-DFS-2015.html",
+      "note": "Individuální revize celého připnutého textu; Úvod definuje data a kód z Public/reports/cldr/data či Unicode Standardu a výslovně vylučuje PDF online code charts."
+    },
+    {
+      "url": "https://www.unicode.org/copyright.html",
+      "note": "Ověřeno 2026-09-09: dnešní Terms of Use §3 odkazují na Unicode License v3 a §7 další politiky. Tím se nedokládá ani nemění historický grant 2015."
+    }
+  ]
+}

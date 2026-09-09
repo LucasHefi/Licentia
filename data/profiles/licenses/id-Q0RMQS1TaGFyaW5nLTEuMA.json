@@ -8,93 +8,104 @@
     "contentHash": "sha256:d56c54dcb5bc25916e3d050fbdfaa1485e88d8e9397697514a9d6e28d930f506"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "strong-copyleft",
+    "copyleftScope": "whole-work",
     "permissions": [
       "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "include-license-text"
-    ],
-    "triggers": [
+      "include-license-text",
+      "include-notice",
+      "mark-modifications",
+      "same-license",
       "unknown"
     ],
-    "restrictions": [
-      "liability"
+    "triggers": [
+      "distribution",
+      "modification",
+      "network-use",
+      "use"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "restrictions": [
+      "additional-terms",
+      "liability",
+      "unknown",
+      "warranty"
+    ],
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CDLA-Sharing-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CDLA-Sharing-1.0.json#text; CDLA Sharing 1.0 licencuje Data a Enhanced Data včetně přidání/změn, vyjímá Results s nejvýše de minimis daty a definuje společně ovládanou Entity. §2 uděluje celosvětově neodvolatelné užití/publikaci copyrightových i sui-generis databázových práv; Publish zahrnuje kopii i vzdálený přístup mimo zaměstnance/kontraktory/zástupce Entity. Reciprocita míří na publikovaná Data/Enhanced Data včetně vzdáleného přístupu mimo Entity; nevztahuje se na definované Results ani obecně program jejich analýzy.; https://spdx.org/licenses/CDLA-Sharing-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CDLA-Sharing-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CDLA-Sharing-1.0.json#text; Reciprocita míří na publikovaná Data/Enhanced Data včetně vzdáleného přístupu mimo Entity; nevztahuje se na definované Results ani obecně program jejich analýzy.; https://spdx.org/licenses/CDLA-Sharing-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CDLA-Sharing-1.0.json#text; §2 uděluje celosvětově neodvolatelné užití/publikaci copyrightových i sui-generis databázových práv; Publish zahrnuje kopii i vzdálený přístup mimo zaměstnance/kontraktory/zástupce Entity.; https://spdx.org/licenses/CDLA-Sharing-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CDLA-Sharing-1.0.json#text; §3 publikuje Data/Enhanced Data pod touto smlouvou, označuje změněné soubory a zachovává přijatý credit/metadata/odkazy; nesmí bránit veřejnému publikování ani zápisu do určeného Ledgeru. Licence/text/název či dostupný odkaz doprovází publikaci, bez dalších komerčních/platformních/oborových omezení. Results jsou bez povinností.; https://spdx.org/licenses/CDLA-Sharing-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CDLA-Sharing-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CDLA-Sharing-1.0.json#text; §3 publikuje Data/Enhanced Data pod touto smlouvou, označuje změněné soubory a zachovává přijatý credit/metadata/odkazy; nesmí bránit veřejnému publikování ani zápisu do určeného Ledgeru. Licence/text/název či dostupný odkaz doprovází publikaci, bez dalších komerčních/platformních/oborových omezení. Results jsou bez povinností.; https://spdx.org/licenses/CDLA-Sharing-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CDLA-Sharing-1.0.json#text; §4 poskytovatel ujišťuje rozumnou péči o původ/práva a privacy/confidentiality. §5 materiální porušení bez nápravy v rozumné době ruší grant a ukládá zastavení Receive/Use/Publish; jakákoli data-based žaloba mimo porušení smlouvy proti poskytovateli/příjemci ruší vše k podání. §6 AS IS/liability s výhradou výslovných ujištění.; https://spdx.org/licenses/CDLA-Sharing-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CDLA-Sharing-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CDLA-Sharing-1.0.json#text; §2.3 nevytváří implicitní další IP grant; výslovná patentová licence není. §5.2 je širší žalobní ukončení na základě dat, nikoli pouze patentová odveta.; https://spdx.org/licenses/CDLA-Sharing-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CDLA-Sharing-1.0.json#text; §3 publikuje Data/Enhanced Data pod touto smlouvou, označuje změněné soubory a zachovává přijatý credit/metadata/odkazy; nesmí bránit veřejnému publikování ani zápisu do určeného Ledgeru. Licence/text/název či dostupný odkaz doprovází publikaci, bez dalších komerčních/platformních/oborových omezení. Results jsou bez povinností. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/CDLA-Sharing-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CDLA-Sharing-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CDLA-Sharing-1.0.json#text; Individuální kontrola celého připnutého textu CDLA-Sharing-1.0 dne 2026-09-09. CDLA Sharing 1.0 licencuje Data a Enhanced Data včetně přidání/změn, vyjímá Results s nejvýše de minimis daty a definuje společně ovládanou Entity. Data/Ledger/Results model má publikační hranici Entity, asistenci s právním souladem a široké žalobní ukončení; před doporučením novému softwaru je třeba samostatný datový model těchto povinností. §7 ukládá právní soulad i rozumnou asistenci poskytovateli, vzdání morálních práv a privacy/confidentiality očekávání publikovaných dat. Steward Linux Foundation dovoluje pozdější verze; Enhanced Data nejsou jen vztahem k původním datům společným autorstvím.; https://spdx.org/licenses/CDLA-Sharing-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

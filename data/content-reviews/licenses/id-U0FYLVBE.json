@@ -1,0 +1,22 @@
+{
+  "id": "SAX-PD",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.3",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:85c669902d76e892696f2dc5b5eab0779fbd9b636234ac870a28d54c30d2b1bc"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Text zaznamenává vzdání se práv k SAX 1.0 a 2.0. Nevyžaduje zveřejnění vašich zdrojů ani zachování oznámení. Není obecnou šablonou pro vzdání se práv všech autorů jiného projektu; průvodce jej proto samostatně nenabízí.",
+  "blockersCs": [
+    "Nezařazena: jde o konkrétní prohlášení Davida Megginsona o SAX 1.0/2.0, nikoli obecnou licenci pro libovolný nový projekt. Opraven falešný požadavek poskytování zdrojů. Doplnit model předmětu a rozsahu dedication, ověření oprávněných autorů a odlišení šablony od historického prohlášení."
+  ],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/SAX-PD.html",
+      "note": "Dřívější individuální revize 2026-09-09.3; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

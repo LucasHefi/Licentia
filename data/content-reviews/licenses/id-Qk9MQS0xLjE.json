@@ -1,0 +1,22 @@
+{
+  "id": "BOLA-1.1",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.6",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:dde607b40827e16c567898bf7a4b5f7f13106a180027bc22a93d49ee583d3214"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Znění prohlašuje dílo za public domain a vylučuje záruky a odpovědnost. Následující doporučení k uznání autorů, sdílení úprav nebo dobrým skutkům jsou dobrovolná, nikoli licenční povinnosti. Text však neobsahuje náhradní grant pro případ neúčinného vzdání se práv; jeho použitelnost pro nový projekt vyžaduje ověření.",
+  "blockersCs": [
+    "Ověřit účinek veřejného prohlášení o public domain a případný náhradní grant pro konkrétní dílo a jurisdikci. Znění nenabízí fallback jako bcrypt-Solar-Designer. Společenská doporučení jsou dobrovolná; nepřevádět je na povinnost zveřejnit úpravy, platit nebo zachovat autorství."
+  ],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/BOLA-1.1.html",
+      "note": "Dřívější individuální revize 2026-09-09.6; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

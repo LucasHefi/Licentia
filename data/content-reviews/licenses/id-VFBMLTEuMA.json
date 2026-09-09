@@ -1,0 +1,29 @@
+{
+  "id": "TPL-1.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:0cdeee1a541eed6e5d8a02ae4a4208fdb39a73350c1e813bf1269d61c2bf008a"
+  },
+  "disposition": "blocked",
+  "summaryCs": "THOR Public Licence 1.0 dovoluje komerční užití a kombinace s jiným kódem, ale změněné pokryté soubory ponechává pod TPL a zpřístupňuje jejich zdroje příjemcům binárek. Vyžaduje přehled změn s daty, původního vývojáře, licenci a oznámení zdrojové cesty; jiná binární licence nesmí omezit zdrojová práva. Navíc ukládá aktivně vyrozumět dřívější příjemce o nových zjištěních cizích práv a spolupracovat na rozdělení odpovědnosti. Tyto aktivní závazky průvodce zatím neumí samostatně vyjádřit.",
+  "blockersCs": [
+    "§3.4 vyžaduje aktivní vyrozumění dřívějších příjemců o nově známých cizích IP nárocích a §12 spolupráci na rozdělení odpovědnosti za samotné užití práv. Model umí zachovat LEGAL notice a odškodnění za vlastní přidané záruky, ale tyto širší povinnosti nikoli; potřebuje jejich samostatné vyjádření."
+  ],
+  "analysis": {
+    "subjectCs": "THOR Public Licence 1.0 pokrývá Original Code označený Exhibit A a změněné soubory včetně nových souborů s převzatým kódem (§1.9); §0 hlásí odvození od MPL s vlastní autoritou verzí a německým právem.",
+    "grantCs": "§2 dovoluje komerční užití, kopie, úpravy, zobrazování, sublicence a distribuci včetně Larger Work. Výslovné patentové granty se týkají Original Code a příspěvku samotného či Contributor Version, s výlukami odstraněného kódu, samostatných práv a jiných změn či kombinací; Contributor grant nastává při prvním zpřístupnění třetímu, což §1.0.1 nazývá Commercial Use i bez prodeje.",
+    "conditionsCs": "§3.1–3.2 vyžadují zdroje Covered Code pod TPL a zdroje úprav příjemcům executable na stejném médiu nebo elektronicky; elektronická cesta trvá nejméně 12 měsíců od zveřejnění nebo 6 měsíců po zpřístupnění následné verze. §3.3–3.6 vyžadují soubor změn s daty, uvedení původního vývojáře, Exhibit A v každém zdrojovém souboru či dostupném náhradním místě, licenci a oznámení zdrojové cesty v relevantních binárních oznámeních. LEGAL obsahuje známé nutné cizí IP nároky a API patentové licence; nová zjištění znamenají rychlou aktualizaci i přiměřené aktivní vyrozumění starších příjemců (§3.4), včetně prohlášení o původnosti/dostatečných právech. Vlastní placené záruky a odlišné binární podmínky nesmí zatížit ostatní a vyžadují jejich odškodnění.",
+    "limitationsCs": "§4 při zákonné nemožnosti plnit požaduje maximum plnění a popis do LEGAL všech zdrojových distribucí. §7–9 stanoví AS IS, omezení odpovědnosti a 30 dnů nápravy od zjištění porušení. §8.2 patentová žaloba na Contributor Version může po 60 dnech ukončit všechny granty účastníka, pokud se žaloba nestáhne nebo nedohodne odměna; žaloba na jiný jeho produkt zpětně odvolává pouze patenty. Deklaratorní žaloby jsou vyňaty, řádné koncové licence přežijí. §11 německé právo a při německé straně federální soudy s náklady poraženého. §12 vyžaduje spolupráci na spravedlivém rozdělení odpovědnosti za výkon práv, nad rámec vlastní přidané záruky.",
+    "compatibilityCs": "§3.6 dovoluje jiné binární podmínky jen při zachování zdrojových práv; §3.7 dovoluje Larger Work s jinak licencovaným kódem. §6 umožňuje pozdější TPL od Thomase Richtera, vlastní změna textu je jen pro dosud nepokrytý kód pod odlišným názvem. §13 alternativní licence závisí na skutečném označení počátečního vývojáře v Exhibit A, prázdný vzor neurčuje žádnou konkrétní GPL/MPL kompatibilitu."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/TPL-1.0.html",
+      "note": "Individuálně přečten celý připnutý text; §3.1–3.2 vyžadují zdroje Covered Code pod TPL a zdroje úprav příjemcům executable na stejném médiu nebo elektronicky; elektronická cesta trvá nejméně 12 měsíců od zveřejnění nebo 6 měsíců po zpřístupnění následné verze. §3.3–3.6 vyžadují soubor změn s daty, uvedení původního vývojáře, Exhibit A v každém zdrojovém souboru či dostupném náhradním místě, licenci a oznámení zdrojové cesty v relevantních binárních oznámeních. LEGAL obsahuje známé nutné cizí IP nároky a API patentové licence; nová zjištění znamenají rychlou aktualizaci i přiměřené aktivní vyrozumění starších příjemců (§3.4), včetně prohlášení o původnosti/dostatečných právech. Vlastní placené záruky a odlišné binární podmínky nesmí zatížit ostatní a vyžadují jejich odškodnění. §2 obsahuje výslovné patentové granty s přesnými Contributor Version výlukami. §8.2(a) odvetné ukončení všech práv po 60 dnech pro žalobu na verzi, §8.2(b) retroaktivní patentové odvolání pro jiný produkt; nejde pouze o obranu proti napadení zde licencovaného kódu."
+    }
+  ]
+}

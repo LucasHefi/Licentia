@@ -1,0 +1,30 @@
+{
+  "id": "TAPR-OHL-1.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:0100bbadaf16ec6082c36a07de79914b462ffbbb6d782c61021afaeae1e0b370"
+  },
+  "disposition": "blocked",
+  "summaryCs": "TAPR OHL 1.0 dovoluje užití a šíření konstrukční dokumentace i výrobu a prodej zařízení, ale software a firmware výslovně vylučuje. Vyžaduje podklady a změnové záznamy, pokus zaslat změny uvedeným poskytovatelům a dokumentaci k výrobku nebo stanovenou tříletou nabídku či síťový přístup. Přidává vzájemnou ochranu před IP žalobami a obecné odškodnění za nároky související s výrobkem. Jde o hardwarový režim, který průvodce novým softwarem nezařazuje.",
+  "blockersCs": [
+    "§1.6 software výslovně vylučuje; je potřeba hardwarový model dokumentace, produktů a výrobních dat.",
+    "§2 stanoví vzájemnou IP imunitu již při výrobě, §3 povinný pokus o e-mail všem uvedeným poskytovatelům a §7.4 obecné produktové odškodnění; tyto povinnosti vyžadují samostatné pojmy."
+  ],
+  "analysis": {
+    "subjectCs": "TAPR OHL1.0 upravuje schémata, konstrukční a výrobní dokumentaci a fyzické Products; §1.6 výslovně vylučuje software, firmware i programovatelný kód.",
+    "grantCs": "§1,3–5 dovolují užití, změny a distribuci dokumentace a výrobu, zadání výroby, užití i prodej výrobků. §2 poskytuje neodvolávanou patentovou a jinou IP imunitu proti žalobám pro Products, kterou musí recipročně udělit také výrobce či distributor upravené dokumentace; nejde o doslovný patentový licence grant.",
+    "conditionsCs": "§3 vyžaduje pokus zaslat upravenou dokumentaci e-mailem každému poskytovateli s uvedenou adresou; nefunkční doručení nevyžaduje další kroky. §4 uchovává celý obdržený balík a licenci, otevřený soubor popisu změn se stejnou licencí, nové soubory i původní a změněné verze, výrobní podklady a pokud rozumně možné také otevřené formáty. §5 zachovává notices i na výrobcích a přikládá dokumentaci nebo tříletou nabídku každému za média/poštovné nebo URL dostupnou tři roky od poslední distribuce.",
+    "limitationsCs": "§1.5 porušení automaticky ukončuje vlastní práva včetně imunity, nikoli dodržující příjemce. §2.4 nemožnost udělit vzájemnou imunitu rovněž ukončuje práva. §7 vylučuje záruky i škody a vyžaduje obecnou obranu a odškodnění poskytovatelů za nároky třetích stran na vady návrhu, výroby či provozu vlastních výrobků.",
+    "compatibilityCs": "§6 dovoluje pozdější verzi pouze při původním určení any later version, bez čísla libovolnou zveřejněnou verzi TAPR. §2.3 čisté zakázkové zhotovení pro zadavatele není distribuce a výrobce tím neposkytuje vlastní imunitu."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/TAPR-OHL-1.0.html",
+      "note": "Individuálně přečten celý připnutý text; §3 vyžaduje pokus zaslat upravenou dokumentaci e-mailem každému poskytovateli s uvedenou adresou; nefunkční doručení nevyžaduje další kroky. §4 uchovává celý obdržený balík a licenci, otevřený soubor popisu změn se stejnou licencí, nové soubory i původní a změněné verze, výrobní podklady a pokud rozumně možné také otevřené formáty. §5 zachovává notices i na výrobcích a přikládá dokumentaci nebo tříletou nabídku každému za média/poštovné nebo URL dostupnou tři roky od poslední distribuce. §2.1–2.4 výslovně používají vzájemnou immunity from suit pod patenty, přihláškami a jinými IP právy, s výlukou pozdějších změn druhých; slovník ji neumí odlišit od patentového grantu a vlastního povinného covenantu."
+    }
+  ]
+}

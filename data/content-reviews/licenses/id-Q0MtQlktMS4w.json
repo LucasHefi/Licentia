@@ -1,0 +1,29 @@
+{
+  "id": "CC-BY-1.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:589c8f82903c51c05c928facaaa2b8bd3d2e99c9f94cd0569171cd529e33b6c8"
+  },
+  "disposition": "blocked",
+  "summaryCs": "CC BY 1.0 dovoluje i komerční kopie, adaptace a veřejné užití díla bez povinnosti stejné licence celé odvozeniny. Zachovává copyright, licenční oznámení a atribuci, u adaptace přiznává původ; na žádost se prakticky odstraní určené zmínky o autorovi či poskytovateli. Poskytovatel výslovně zaručuje potřebná práva a neporušování vyjmenovaných práv, ostatní záruky vylučuje. Obsahové podmínky, technické ochrany a odstraňování atribuce vyžadují samostatné posouzení mimo průvodce novým softwarem.",
+  "blockersCs": [
+    "Obsahová licence vyžaduje odstranit atribuci na žádost, upravuje veřejná provedení/technické ochrany a specifické záruky v1.0; před doporučením novému softwaru je nutný model těchto podmínek a obsahových hranic."
+  ],
+  "analysis": {
+    "subjectCs": "CC Attribution 1.0 pokrývá autorské dílo, odvozeniny a sborníky s celým nezměněným dílem jako samostatnou složkou.",
+    "grantCs": "§3 dovoluje celosvětově bezplatně reprodukovat, tvořit odvozeniny, distribuovat a veřejně zobrazovat/provádět včetně digitálního audia v libovolných médiích; komerční omezení nemá.",
+    "conditionsCs": "§4 předává licenci/URI, zachovává copyright/licenční/disclaimer notices a přiznává dodané autorovo jméno/pseudonym a titul. U odvozeniny se identifikuje užité původní dílo a credit v odvozenině/sborníku má stejnou výraznost jako ostatní. Na žádost se zmínky o autorovi/poskytovateli v proveditelném rozsahu odstraní.",
+    "limitationsCs": "Zakázány jsou sublicence, dodatečná omezení a technické ochrany odporující právům. §5 na základě rozumného šetření výslovně zaručuje potřebná práva bez dalších plateb a neporušování/nepomluvu/privacy; pouze zbytek AS IS. §6 liability výluka vyjímá třetí nároky z porušení těchto záruk.",
+    "compatibilityCs": "§7 zánik při porušení nezasáhne řádný downstream; zastavení distribuce neodvolá grant. §8 příjemce dostává přímou nabídku k originálu i u odvozeniny; celé nové dílo nemusí mít CC-BY. CC známky jsou omezeny na licenční indikaci nebo svolení."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/CC-BY-1.0.html",
+      "note": "Individuálně přečten celý připnutý text; §4 předává licenci/URI, zachovává copyright/licenční/disclaimer notices a přiznává dodané autorovo jméno/pseudonym a titul. U odvozeniny se identifikuje užité původní dílo a credit v odvozenině/sborníku má stejnou výraznost jako ostatní. Na žádost se zmínky o autorovi/poskytovateli v proveditelném rozsahu odstraní. Celý §1–8 nemá výslovný patentový grant ani patentové ukončení; ujištění o právech není takový grant."
+    }
+  ]
+}

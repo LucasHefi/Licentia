@@ -1,0 +1,30 @@
+{
+  "id": "NOSL",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:7b0e8b621bfebf448ea351c6ab3a8b0d1f8d9b022b6d6766ec83ca20010562e2"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Netizen Open Source License dovoluje komerční užití s vymezenými patenty a vyžaduje zpřístupnit změněné zdrojové soubory pod stejnou licencí. Vedle změnového souboru, licence a oznámení ukládá aktivně informovat dřívější příjemce o nových zjištěních cizích práv a spolupracovat na rozdělení odpovědnosti. Text navíc nejasně omezuje formulaci kombinovaného produktu na „single LEDs product“ a v alternativním článku zaměňuje NOSL za NPL. Průvodce potřebuje model aktivních povinností a autoritativní objasnění těchto konkrétních nesrovnalostí.",
+  "blockersCs": [
+    "§3.4 aktivní IP vyrozumění a §12 spolupráce na odpovědnosti za výkon práv nejsou zachyceny běžným notice ani odškodněním za přidané záruky; je třeba samostatný model povinností.",
+    "§3.7 omezuje formulaci Larger Work na single LEDs product a §13 zaměňuje NOSL za NPL; je nutné autoritativně ověřit zamýšlené kombinatorické a alternativní podmínky. Základní práva §2 jsou doložena, tyto nesrovnalosti se však nesmějí potichu přepsat."
+  ],
+  "analysis": {
+    "subjectCs": "Netizen Open Source License 1.0 upravuje software s oznámením Exhibit A, změněné soubory a nové soubory s částí Covered Code (§1.9). Připnuté znění obsahuje specifické australské dodatky i redakční nesrovnalosti, nikoli pouze nezměněnou MPL.",
+    "grantCs": "§2 výslovně dovoluje komerční užití, kopírování, změny, zobrazení, sublicence a distribuci původního kódu i příspěvků a Larger Work. Patenty pokrývají nutné nároky původního kódu a příspěvku v Contributor Version, s výlukami odstraněného kódu a jiných modifikací/kombinací. Commercial Use zahrnuje libovolné zpřístupnění třetímu; nejde jen o prodej.",
+    "conditionsCs": "§3.1–3.2 vyžadují zdroje pod NOSL a zdroje úprav příjemcům executable na stejném médiu nebo elektronicky nejméně 12 měsíců od první dostupnosti či 6 měsíců od následné verze. §3.3–3.6 ukládají soubor změn s daty, původního vývojáře, Exhibit A v souborech nebo dosažitelném náhradním místě, kopii licence a zdrojové oznámení v relevantních binárních materiálech. §3.4 vyžaduje LEGAL pro známé nutné cizí IP/API patenty a při nové znalosti aktivní přiměřené vyrozumění dřívějších příjemců, vedle prohlášení o původnosti/dostatečných právech. Vlastní přidané záruky a jiné binární podmínky nesmí zatížit ostatní a vyžadují jejich odškodnění.",
+    "limitationsCs": "§4 při právní nemožnosti vyžaduje maximum plnění a konkrétní LEGAL popis. §7/9 mají AS IS a omezení odpovědnosti; §7.1 zachovává nevyloučitelné zákonné záruky a omezuje nápravu dle volby Supplier na náhradu, opravu, opakování služby či úhradu nákladů. §8 má 30 dnů nápravy od zjištění; patentová žaloba na verzi po 60 dnech bez stažení/dohody ukončí granty, na jiné produkty zpětně jen patenty; řádné koncové licence přežijí. §11 výlučné soudy Victoria/Austrálie a právo Victoria; §12 spolupráce na spravedlivém rozdělení odpovědnosti. §3.7 překvapivě uvádí single LEDs product, což nelze bez ověření tiše zobecnit.",
+    "compatibilityCs": "§3.6 dovoluje jiné binární podmínky bez zásahu do zdrojových práv; §2 a definice Larger Work podporují kombinace. §3.7 přitom uvádí distribuci jako single LEDs product, takže univerzální kombinatorickou cestu je třeba objasnit. §6 dovoluje budoucí NOSL Netizen; odvozený text pro jiný kód musí mít jiné jméno, se zmínkou i Xen licence. §13 nazývá alternativu NPL, zatímco Exhibit A říká NOSL a jeho URL NOPL; prázdné alternativní políčko není udělením konkrétní NPL/GPL licence."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/NOSL.html",
+      "note": "Individuálně přečten celý připnutý text; §3.1–3.2 vyžadují zdroje pod NOSL a zdroje úprav příjemcům executable na stejném médiu nebo elektronicky nejméně 12 měsíců od první dostupnosti či 6 měsíců od následné verze. §3.3–3.6 ukládají soubor změn s daty, původního vývojáře, Exhibit A v souborech nebo dosažitelném náhradním místě, kopii licence a zdrojové oznámení v relevantních binárních materiálech. §3.4 vyžaduje LEGAL pro známé nutné cizí IP/API patenty a při nové znalosti aktivní přiměřené vyrozumění dřívějších příjemců, vedle prohlášení o původnosti/dostatečných právech. Vlastní přidané záruky a jiné binární podmínky nesmí zatížit ostatní a vyžadují jejich odškodnění. §2 obsahuje skutečné patentové granty původního poskytovatele i přispěvatelů s omezením na příslušný kód/Contributor Version. §8.2(a) má 60denní odvetu pro žalobu na verzi, §8.2(b) zpětné patentové odvolání pro jiné produkty účastníka; deklaratorní žaloby vyňaty."
+    }
+  ]
+}

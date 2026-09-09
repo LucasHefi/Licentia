@@ -8,99 +8,111 @@
     "contentHash": "sha256:d209e3715ab82ea75af09edf3210a363de357b4f7d9dcc8d44b9642ef8f813a3"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "permissive",
-    "copyleftScope": "none",
+    "family": "network-copyleft",
+    "copyleftScope": "network",
     "permissions": [
       "commercial-use",
       "distribution",
       "modifications",
       "patent-grant",
+      "private-use",
       "sublicensing"
     ],
     "obligations": [
       "include-copyright",
       "include-license-text",
-      "provide-corresponding-source"
-    ],
-    "triggers": [
+      "include-notice",
+      "mark-modifications",
+      "network-use-disclose",
+      "provide-corresponding-source",
+      "same-license",
       "unknown"
     ],
+    "triggers": [
+      "distribution",
+      "modification",
+      "network-use",
+      "patent-claim",
+      "use"
+    ],
     "restrictions": [
+      "additional-terms",
       "liability",
+      "patent-claim",
       "trademark",
       "warranty"
     ],
-    "patentPosition": "defensive-termination",
-    "noticeBurden": "standard"
+    "patentPosition": "retaliatory-termination",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.no-copyleft",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.permissive-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OSL-2.0.json#text; §§1(c)/3/5 tvoří síťový copyleft odvozeného díla při externím zpřístupnění; §6 se vztahuje i na vytvořené zdrojové změny. Nejde o souborově omezený režim.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-termination",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OSL-2.0.json#text; §§1(c)/3/5 tvoří síťový copyleft odvozeného díla při externím zpřístupnění; §6 se vztahuje i na vytvořené zdrojové změny. Nejde o souborově omezený režim.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OSL-2.0.json#text; §1 celosvětově bezroyalty nevýhradně trvale se sublicencí reprodukce/deriváty/distribuce/public perform-display; §2 explicitní patenty vlastněné/kontrolované poskytovatelem embodied v dodaném originálu pro make/use/sell/offer, bez výslovného import práva. §15 další neomezené užití dle licence/práva.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "restrictions",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OSL-2.0.json#text; §1(c) distribuované kopie originálu/derivátů pod OSL. §3 poskytovatel nabízí preferované zdroje a dostupnou modifikační dokumentaci s kopií NEBO levně/pohodlně přístupným repozitářem po dobu distribuce a adresou hned za copyrightem. §5 External Deployment ODVOZENINY se považuje za distribuci; §6 každá vytvořená zdrojová odvozenina uchová IP/licensing/Attribution notices a výrazně oznámí změnu. §9 při distribuci přiměřeně usilovat o express assent příjemců.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OSL-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OSL-2.0.json#text; §1(c) distribuované kopie originálu/derivátů pod OSL. §3 poskytovatel nabízí preferované zdroje a dostupnou modifikační dokumentaci s kopií NEBO levně/pohodlně přístupným repozitářem po dobu distribuce a adresou hned za copyrightem. §5 External Deployment ODVOZENINY se považuje za distribuci; §6 každá vytvořená zdrojová odvozenina uchová IP/licensing/Attribution notices a výrazně oznámí změnu. §9 při distribuci přiměřeně usilovat o express assent příjemců.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OSL-2.0.json#text; §4 jména/známky bez písemného endorsement svolení a žádná jiná IP práva mimo grant. §7 skutečně garantuje původ/licencovatelnost copyrightů/patentů, ostatní záruky odmítá; §8 výjimka zákonné osobní újmy/smrti. §9 selhání §1(c) ihned ukončí; §10 veškerá práva zanikají při patentové žalobě včetně cross/counter proti poskytovateli kvůli patentu na software NEBO komukoli kvůli patentu na originál kromě kombinací.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OSL-2.0.json#text; §1 celosvětově bezroyalty nevýhradně trvale se sublicencí reprodukce/deriváty/distribuce/public perform-display; §2 explicitní patenty vlastněné/kontrolované poskytovatelem embodied v dodaném originálu pro make/use/sell/offer, bez výslovného import práva. §15 další neomezené užití dle licence/práva.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OSL-2.0.json#text; §1(c) distribuované kopie originálu/derivátů pod OSL. §3 poskytovatel nabízí preferované zdroje a dostupnou modifikační dokumentaci s kopií NEBO levně/pohodlně přístupným repozitářem po dobu distribuce a adresou hned za copyrightem. §5 External Deployment ODVOZENINY se považuje za distribuci; §6 každá vytvořená zdrojová odvozenina uchová IP/licensing/Attribution notices a výrazně oznámí změnu. §9 při distribuci přiměřeně usilovat o express assent příjemců.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OSL-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OSL-2.0.json#text; Individuálně přečten celý připnutý text. Original Work je dílo s OSL2 notice; Derivative Works a External Deployment zahrnují užití někým mimo You, které u právnické osoby zahrnuje i vymezené kontrolované/přidružené subjekty. OSL 2 vyžaduje OSL pro distribuované originály/odvozeniny a zachází s externím zpřístupněním odvozeniny i po síti jako s distribucí. Patenty jsou výslovné, ale ukončení v2.0 sahá i na software patentovou žalobu proti poskytovateli mimo konkrétní dílo. Příjemcům je nutno rozumně usilovat o výslovný souhlas. § 9 ukládá při distribuci aktivní přiměřené úsilí získat výslovný souhlas každého příjemce; slovník tuto povinnost nemá. Doplnit recipient-assent model a zachovat široký patent-action rozsah § 10 v2.0, místo nahrazení pouze předáním licence.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

@@ -8,98 +8,108 @@
     "contentHash": "sha256:67b33683a605d04650dc50550e0702207710d9907ba4f61d12f7cd5199200a2b"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "weak-copyleft",
+    "copyleftScope": "file",
     "permissions": [
       "commercial-use",
+      "conditional-relicensing",
       "distribution",
       "modifications",
       "patent-grant",
+      "private-use",
       "sublicensing"
     ],
     "obligations": [
-      "mark-modifications",
-      "provide-corresponding-source"
+      "defend-added-warranty",
+      "include-copyright",
+      "include-license-text",
+      "include-notice",
+      "same-license",
+      "unknown"
     ],
     "triggers": [
+      "combination",
+      "distribution",
+      "modification",
       "unknown"
     ],
     "restrictions": [
-      "liability",
+      "additional-terms",
       "trademark",
+      "unknown",
       "warranty"
     ],
     "patentPosition": "express-grant",
-    "noticeBurden": "unknown"
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SISSL-1.2.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SISSL-1.2.json#text; §1.9 stanoví file hranici, §3.1 ovšem reciprocal zveřejnění změn podmiňuje standardovou neshodou a připouští jiný obsah zveřejnění, nikoli bezpodmínečný source-copyleft všech změn.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SISSL-1.2.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SISSL-1.2.json#text; §1.9 stanoví file hranici, §3.1 ovšem reciprocal zveřejnění změn podmiňuje standardovou neshodou a připouští jiný obsah zveřejnění, nikoli bezpodmínečný source-copyleft všech změn.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SISSL-1.2.json#text; §2.1 Initial Developer poskytuje světová bezroyalty nepatentová/neznámková IP práva use/reproduce/modify/display/perform/sublicense/distribute i v Larger Work. Samostatný patentový grant make/have-made/use/practice/sell/offer/dispose pro Original Code platí od první distribuce; ne odstraněný kód, samostatné oddělené části, porušení vzniklé změnami či kombinacemi. Není patent litigation termination.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SISSL-1.2.json#text; §3.1 původní Source jen tato/pozdější Sun licence s textem a bez dalších omezení. Modifikace musí vyhovět standardům platným120 dní před shipment; jinak do30 dní od první zákaznické dodávky všem zdarma pod SISSL zveřejnit odchylky+referenční implementaci NEBO Modifications source a splnit ExhibitB. §3.2 ExhibitA v každém source souboru nebo hledatelné lokalitě, licence i v dokumentaci práv; přidání Contributor jména dobrovolné. §3.3 notice dostupnosti Original Source pod SISSL na rights notices, vlastní podmínky jiných verzí jen s připsáním a odškodněním vývojáře. §3.2 dodatečné záruky vlastní odpovědnost+odškodnění. §4 popsat právně vynucené omezení v LEGAL a zdrojových distribucích.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SISSL-1.2.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SISSL-1.2.json#text; §3.1 původní Source jen tato/pozdější Sun licence s textem a bez dalších omezení. Modifikace musí vyhovět standardům platným120 dní před shipment; jinak do30 dní od první zákaznické dodávky všem zdarma pod SISSL zveřejnit odchylky+referenční implementaci NEBO Modifications source a splnit ExhibitB. §3.2 ExhibitA v každém source souboru nebo hledatelné lokalitě, licence i v dokumentaci práv; přidání Contributor jména dobrovolné. §3.3 notice dostupnosti Original Source pod SISSL na rights notices, vlastní podmínky jiných verzí jen s připsáním a odškodněním vývojáře. §3.2 dodatečné záruky vlastní odpovědnost+odškodnění. §4 popsat právně vynucené omezení v LEGAL a zdrojových distribucích.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SISSL-1.2.json#text; ExhibitB při neshodě změnit Grid Engine/gridengine/sunsource a obdobné názvy, nečinit compliance tvrzení. §7 as-is bez záruk a riziko příjemce; samostatná obecná liability výluka zde není. §8 konec po30 dnech od znalosti nenapraveného porušení, řádné sublicence a end-user dohody přetrvají, druhá klauzule výslovně vylučuje distributors/resellers.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SISSL-1.2.json#text; §2.1 Initial Developer poskytuje světová bezroyalty nepatentová/neznámková IP práva use/reproduce/modify/display/perform/sublicense/distribute i v Larger Work. Samostatný patentový grant make/have-made/use/practice/sell/offer/dispose pro Original Code platí od první distribuce; ne odstraněný kód, samostatné oddělené části, porušení vzniklé změnami či kombinacemi. Není patent litigation termination.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SISSL-1.2.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SISSL-1.2.json#text; §3.1 původní Source jen tato/pozdější Sun licence s textem a bez dalších omezení. Modifikace musí vyhovět standardům platným120 dní před shipment; jinak do30 dní od první zákaznické dodávky všem zdarma pod SISSL zveřejnit odchylky+referenční implementaci NEBO Modifications source a splnit ExhibitB. §3.2 ExhibitA v každém source souboru nebo hledatelné lokalitě, licence i v dokumentaci práv; přidání Contributor jména dobrovolné. §3.3 notice dostupnosti Original Source pod SISSL na rights notices, vlastní podmínky jiných verzí jen s připsáním a odškodněním vývojáře. §3.2 dodatečné záruky vlastní odpovědnost+odškodnění. §4 popsat právně vynucené omezení v LEGAL a zdrojových distribucích.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SISSL-1.2.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SISSL-1.2.json#text; Individuálně přečten celý připnutý text. §1 Original Code určuje ExhibitA (Grid Engine); Modification je změna souboru s pokrytým kódem či nový soubor obsahující jeho část. Larger Work může spojovat jiné licencované kódy. Commercial Use zde znamená zpřístupnění třetí straně, nikoli jen ziskové užití. SISSL 1.2 pro Grid Engine požaduje zachování licence původních zdrojů a podmíněnou reciprocitu odchylek od standardů. Při neshodě do 30 dnů od první dodávky zveřejnit odchylku s referenční implementací nebo změněné zdroje; standardy se určují 120 dní před dodávkou a mají verzně závislé testy interoperability. § 3.1 váže grant shipment na standardy 120 dní před dodávkou a při neshodě alternativu odchylky+reference implementace NEBO source do 30 dní. Exhibit B normativně začleňuje verzně závislé testy a reference builds. Doplnit standard/version/date a skutečné alternativní povinnosti, opatřit konkrétní relevantní standard a build; plošný source checklist nestačí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

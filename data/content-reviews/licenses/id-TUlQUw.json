@@ -1,0 +1,29 @@
+{
+  "id": "MIPS",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:96ade5ebc11e89a5f6e0a6e37b9fc440d5ee182478ca835a3c0753fcf3a061f4"
+  },
+  "disposition": "blocked",
+  "summaryCs": "MIPS poskytuje všem právo reprodukce a užívání pod podmínkou zachování celého komentáře v kopii. Text výslovně neuděluje právo na úpravy a samostatně nepopisuje redistribuci.",
+  "blockersCs": [
+    "Grant výslovně obsahuje pouze reproduction and use rights; před doporučením licence pro upravovaný a distribuovaný software je třeba doložit rozsah úprav a dalšího šíření, který krátký komentář neřeší."
+  ],
+  "analysis": {
+    "subjectCs": "Předmětem je materiál opatřený copyrightem MIPS Computer Systems z let 1990–1992.",
+    "grantCs": "Všem jsou udělena reprodukční a užívací práva bez omezení účelu. Modifikace a další distribuce nejsou samostatně uvedeny; patentový grant chybí.",
+    "conditionsCs": "V kopii musí zůstat celý komentář, včetně copyrightu a podmínky povolení.",
+    "limitationsCs": "Není zde vyloučení záruk či odpovědnosti ani pravidlo pro ukončení; není ustanovena povinnost předávat zdrojový kód.",
+    "compatibilityCs": "Text nenabízí jinou licenci ani volbu pozdější verze; kompatibilitu konkrétního spojení neřeší."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/MIPS.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Grant v komentáři poskytuje reproduction and use rights to all parties za podmínky zachování komentáře."
+    }
+  ]
+}

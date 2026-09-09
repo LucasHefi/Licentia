@@ -8,99 +8,109 @@
     "contentHash": "sha256:f72891853959cad301711d26be10d1daefd62e90feb1d23833398667f8169c6d"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "network-copyleft",
+    "copyleftScope": "network",
     "permissions": [
       "commercial-use",
       "distribution",
       "modifications",
       "patent-grant",
+      "private-use",
       "sublicensing"
     ],
     "obligations": [
       "include-copyright",
       "include-license-text",
-      "provide-corresponding-source"
+      "include-notice",
+      "mark-modifications",
+      "network-use-disclose",
+      "provide-corresponding-source",
+      "same-license",
+      "unknown"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification",
+      "network-use",
+      "patent-claim"
     ],
     "restrictions": [
       "liability",
+      "patent-claim",
       "trademark",
       "warranty"
     ],
-    "patentPosition": "defensive-termination",
-    "noticeBurden": "standard"
+    "patentPosition": "retaliatory-termination",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-termination",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/UCL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/UCL-1.0.json#text; Upstream Compatibility License 1.0 rozlišuje původní dílo pod UCL a odvozené dílo povinně pod UCL i Apache 2.0 nebo pozdější současně. §1 uděluje copyrightová práva včetně adaptací a sublicencí; §2 embodied patentový grant na dobu patentů včetně have made a import. §5 dává síťovým aplikacím/distribuovaným odvozeninám povinnost UCL i Apache; okolní kolektivní dílo není samo tímto textem přelicencováno.; https://spdx.org/licenses/UCL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/UCL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/UCL-1.0.json#text; §5 dává síťovým aplikacím/distribuovaným odvozeninám povinnost UCL i Apache; okolní kolektivní dílo není samo tímto textem přelicencováno.; https://spdx.org/licenses/UCL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/UCL-1.0.json#text; §1 uděluje copyrightová práva včetně adaptací a sublicencí; §2 embodied patentový grant na dobu patentů včetně have made a import.; https://spdx.org/licenses/UCL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/UCL-1.0.json#text; §1c vyžaduje UCL pro originál a BOTH UCL AND Apache 2.0-or-later pro distribuované/komunikované odvozeniny. §3 preferovaný strojový zdroj poskytovatele je přiložen nebo dostupný v repozitáři. §5 externí zpřístupnění obou typů je distribucí. §6 zachovává source notices a označení změn; §9 vyžaduje úsilí o výslovný souhlas příjemce.; https://spdx.org/licenses/UCL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/UCL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/UCL-1.0.json#text; §1c vyžaduje UCL pro originál a BOTH UCL AND Apache 2.0-or-later pro distribuované/komunikované odvozeniny. §3 preferovaný strojový zdroj poskytovatele je přiložen nebo dostupný v repozitáři. §5 externí zpřístupnění obou typů je distribucí. §6 zachovává source notices a označení změn; §9 vyžaduje úsilí o výslovný souhlas příjemce.; https://spdx.org/licenses/UCL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/UCL-1.0.json#text; §4 omezuje jména/známky a jiné IP; §7 zaručuje původ copyrightu/patentů, zbytek AS IS. §8 liability výluka jen nepřímých/zvláštních/následných škod v mezích zákona. §9 porušení §1c ukončuje grant; §10 patentová žaloba na Original Work proti poskytovateli/licensee ruší vše kromě kombinací.; https://spdx.org/licenses/UCL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/UCL-1.0.json#text; §2 uděluje embodied patenty; §10 ruší celou licenci při žalobě na Original Work a vyjímá kombinace. Další patentové podmínky povinné zvolené Apache licence se nesmějí ignorovat.; https://spdx.org/licenses/UCL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/UCL-1.0.json#text; §1c vyžaduje UCL pro originál a BOTH UCL AND Apache 2.0-or-later pro distribuované/komunikované odvozeniny. §3 preferovaný strojový zdroj poskytovatele je přiložen nebo dostupný v repozitáři. §5 externí zpřístupnění obou typů je distribucí. §6 zachovává source notices a označení změn; §9 vyžaduje úsilí o výslovný souhlas příjemce. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/UCL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/UCL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/UCL-1.0.json#text; Individuální kontrola celého připnutého textu UCL-1.0 dne 2026-09-09. Upstream Compatibility License 1.0 rozlišuje původní dílo pod UCL a odvozené dílo povinně pod UCL i Apache 2.0 nebo pozdější současně. §1c vyžaduje současně UCL a Apache 2.0-or-later pro odvozeniny a §9 aktivní úsilí získat souhlas příjemců; před doporučením je třeba model kumulativního licencování s určenou Apache verzí a souhlasu. UCL a Apache jsou kumulativní licence odvozeniny, nikoli OR volba. §11–12 soudy/právo poskytovatele bez CISG a náklady vítěze; §14 You zahrnuje ovládané entity. §16 vlastní změněná licence jen pro jiná díla s novým názvem a OSI podmínkou označení open source.; https://spdx.org/licenses/UCL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

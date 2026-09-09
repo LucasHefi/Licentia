@@ -8,97 +8,111 @@
     "contentHash": "sha256:638327b364f9ca54dd702f91125c5f0bf10d6df32d4013329f51778aba017b72"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "weak-copyleft",
+    "copyleftScope": "file",
     "permissions": [
       "commercial-use",
+      "conditional-relicensing",
       "distribution",
       "modifications",
       "patent-grant",
+      "private-use",
       "sublicensing"
     ],
     "obligations": [
-      "provide-corresponding-source"
-    ],
-    "triggers": [
+      "defend-added-warranty",
+      "include-copyright",
+      "include-license-text",
+      "include-notice",
+      "mark-modifications",
+      "provide-corresponding-source",
+      "same-license",
       "unknown"
     ],
+    "triggers": [
+      "distribution",
+      "modification",
+      "patent-claim"
+    ],
     "restrictions": [
+      "additional-terms",
       "liability",
+      "patent-claim",
       "trademark",
+      "unknown",
       "warranty"
     ],
-    "patentPosition": "express-grant",
-    "noticeBurden": "unknown"
+    "patentPosition": "retaliatory-termination",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Nokia.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Nokia.json#text; Nokia Open Source1.0a zahrnuje Original Software a souborově definované změny; Commercial Use je v definici jakékoli zpřístupnění třetí straně, nikoli jen výdělečné jednání, a Nokia i You zahrnují Affiliates. §2 dovoluje komerční/soukromé užití, kopie, změny, zobrazení, výkon, podlicence a distribuci. Patenty Nokia pokrývají nutné nároky Original Software od prvního vydání, přispěvatelovy patenty jeho změny/Contributor Version od první Commercial Use. Výluky zahrnují odstraněný kód, oddělené nároky, další změny a nepokryté kombinace. Definice Modifications pokrývá změněný soubor a nový soubor s původním kódem;§3.7 zachovává ostatní části Larger Work mimo source reciprocitu. Commercial Use definice účinnosti grantu sama není síťová zdrojová povinnost.; https://spdx.org/licenses/Nokia.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Nokia.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Nokia.json#text; Definice Modifications pokrývá změněný soubor a nový soubor s původním kódem;§3.7 zachovává ostatní části Larger Work mimo source reciprocitu. Commercial Use definice účinnosti grantu sama není síťová zdrojová povinnost.; https://spdx.org/licenses/Nokia.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Nokia.json#text; §2 dovoluje komerční/soukromé užití, kopie, změny, zobrazení, výkon, podlicence a distribuci. Patenty Nokia pokrývají nutné nároky Original Software od prvního vydání, přispěvatelovy patenty jeho změny/Contributor Version od první Commercial Use. Výluky zahrnují odstraněný kód, oddělené nároky, další změny a nepokryté kombinace.; https://spdx.org/licenses/Nokia.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Nokia.json#text; §3.1 zdroje zůstávají pod NOKOS s licencí a bez omezení práv. §3.2 změny dává příjemcům executable na médiu nebo elektronicky nejméně12 měsíců od prvního vydání nebo6 od následné verze, i při cizím hostingu odpovídá distributor. §3.3 datuje změny a uvádí původ Nokia,§3.4 LEGAL popisuje známé potřebné cizí IP licence včetně nutných patentů API a nová zjištění aktivně oznamuje příjemcům. §3.5–6 uchovává Exhibit A, text licence v právní dokumentaci, zdrojový návod a odškodňuje Nokia/přispěvatele za vlastní přidané podmínky.; https://spdx.org/licenses/Nokia.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Nokia.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Nokia.json#text; §3.1 zdroje zůstávají pod NOKOS s licencí a bez omezení práv. §3.2 změny dává příjemcům executable na médiu nebo elektronicky nejméně12 měsíců od prvního vydání nebo6 od následné verze, i při cizím hostingu odpovídá distributor. §3.3 datuje změny a uvádí původ Nokia,§3.4 LEGAL popisuje známé potřebné cizí IP licence včetně nutných patentů API a nová zjištění aktivně oznamuje příjemcům. §3.5–6 uchovává Exhibit A, text licence v právní dokumentaci, zdrojový návod a odškodňuje Nokia/přispěvatele za vlastní přidané podmínky.; https://spdx.org/licenses/Nokia.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Nokia.json#text; §4 popisuje zákonnou nemožnost plnění v LEGAL,§3.4(c) přispěvatel deklaruje víru ve vlastní původ/dostatečná práva. §7 AS IS;§9 nepřímé škody vylučuje se zákonnou výjimkou zdraví, při nemožnosti výluky omezuje na50USD pokud dovoleno a chrání spotřebitele. §8 má30 dnů od vědomosti k nápravě; patentový spor o Contributor Version60 dnů ke stažení či dohodě royalty, spor o jiné produkty zpětně ruší pouze patenty účastníka. §10 zakazuje známky a stanoví finské právo s jediným rozhodcem v Helsinkách anglicky;§11 vyžaduje spolupráci na spravedlivém rozdělení škod.; https://spdx.org/licenses/Nokia.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Nokia.json#text; §2 explicitní nutně porušené patenty;§8.2 odvetně rozlišuje oba granty proti verzi účastníka a jen jeho patentový grant proti jiným produktům s retroaktivitou. Vyjímá deklaratorní žaloby, nikoli všechny obranné nároky.; https://spdx.org/licenses/Nokia.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Nokia.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Nokia.json#text; §3.1 zdroje zůstávají pod NOKOS s licencí a bez omezení práv. §3.2 změny dává příjemcům executable na médiu nebo elektronicky nejméně12 měsíců od prvního vydání nebo6 od následné verze, i při cizím hostingu odpovídá distributor. §3.3 datuje změny a uvádí původ Nokia,§3.4 LEGAL popisuje známé potřebné cizí IP licence včetně nutných patentů API a nová zjištění aktivně oznamuje příjemcům. §3.5–6 uchovává Exhibit A, text licence v právní dokumentaci, zdrojový návod a odškodňuje Nokia/přispěvatele za vlastní přidané podmínky. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/Nokia.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Nokia.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Nokia.json#text; Individuální kontrola celého připnutého textu Nokia dne 2026-09-09. Nokia Open Source1.0a zahrnuje Original Software a souborově definované změny; Commercial Use je v definici jakékoli zpřístupnění třetí straně, nikoli jen výdělečné jednání, a Nokia i You zahrnují Affiliates. §3.4 vyžaduje aktivní zjištěné IP/API licenční informace a následné oznamování příjemcům,§4 popis zákonných odchylek; zachování existujícího notice samo nestačí. §10 povinná finská arbitráž a§11 spravedlivé rozdělení odpovědnosti s povinnou spoluprací potřebují vlastní model dalších závazků. §3.6 umožňuje vlastní binární licenci bez omezení zdrojových práv a§3.7 jiný Larger Work;§6.2 volbu následné Nokia verze. Exhibit A se jmenuje1.0, hlavička1.0a, proto se nepřisuzují jiné nečtené podmínky. §8.4 zachovává platné end-user smlouvy mimo distributory/prodejce,§8.1 obecně řádné podlicence.; https://spdx.org/licenses/Nokia.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

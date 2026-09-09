@@ -1,0 +1,27 @@
+{
+  "id": "HPND-UC-export-US",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:d780e8de939dec7a984965ba8c33fc79038c13d8143dc3dbe5939623b836748c"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Licence dovoluje software a dokumentaci používat, kopírovat, měnit a distribuovat pro libovolný účel bez poplatku, pokud ve všech kopiích zůstane copyright. Dílo je poskytováno bez záruk. Závěrečné upozornění, že vývoz mimo USA může vyžadovat exportní licenci, samo nezavádí další smluvní zákaz ani povinnost zveřejnit zdroj.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Grant pokrývá software i dokumentaci Regents of the University of California.",
+    "grantCs": "Hlavní věta dovoluje užití, kopírování, změny a distribuci pro jakýkoli účel bez poplatku.",
+    "conditionsCs": "Copyrightové oznámení musí být ve všech kopiích. Závěrečná věta pouze upozorňuje, že export mimo USA může vyžadovat exportní licenci.",
+    "limitationsCs": "Univerzita netvrdí vhodnost pro jakýkoli účel a poskytuje dílo AS IS bez výslovných i předpokládaných záruk; exportní věta „may require“ není samostatný smluvní zákaz.",
+    "compatibilityCs": "Alternativní licence nebo verze nejsou nabídnuty."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/HPND-UC-export-US.html",
+      "note": "Individuálně přečten celý připnutý text; Copyrightové oznámení musí být ve všech kopiích. Závěrečná věta pouze upozorňuje, že export mimo USA může vyžadovat exportní licenci. Celý text včetně exportního upozornění neuděluje patentový grant a nestanoví patentové ukončení."
+    }
+  ]
+}

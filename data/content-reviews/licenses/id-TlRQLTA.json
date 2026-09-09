@@ -1,0 +1,20 @@
+{
+  "id": "NTP-0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:05d201ee749e6e0847b07b159497df28fe867c09e0826a10736a93c6fb1645d7"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Varianta NTP bez povinnosti zachovat oznámení. Stále omezuje použití jména v reklamě a propagaci distribuce; obsahuje vyloučení záruk.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/NTP-0.html",
+      "note": "Dřívější individuální revize 2026-09-09; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

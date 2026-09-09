@@ -1,0 +1,30 @@
+{
+  "id": "BUSL-1.1",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:ee56ca193e4bd97d6862b83291087fc7eafd42af6144ab8ba25800816753b545"
+  },
+  "disposition": "blocked",
+  "summaryCs": "BUSL 1.1 dovoluje kopie, úpravy, deriváty, šíření a neprodukční použití; produkce jen v mezích dodatečného grantu nebo komerční licence. Ke stanovenému datu, nejpozději čtyři roky od prvního vydání dané verze, přechází na určenou Change License.",
+  "blockersCs": [
+    "Připnutý vzor nevyplňuje Licensed Work, Licensor, Additional Use Grant, Change Date ani Change License. Je třeba doplnit skutečné parametry každé verze a modelovat produkční limit, časový přechod a komerční alternativu; univerzální commercial-use/stejná licence by byly nepravdivé.",
+    "Porušení automaticky ukončuje práva ke všem verzím, zatímco přechod a doplňkové užití jsou verzově specifické. Je nutný model takto vázaných verzí a dat, nikoli jediný statický copyleft scope."
+  ],
+  "analysis": {
+    "subjectCs": "Konkrétní Licensed Work s parametry vyplněnými licencorem; podmínky se aplikují samostatně na každou verzi.",
+    "grantCs": "Copy/modify/create derivatives/redistribute/non-production use; produkční práva pouze podle Additional Use Grant. Change Date nebo čtvrté výročí první veřejné verze, podle dřívějšího, přepíná grant na Change License a starý končí. Patentový grant není uveden.",
+    "conditionsCs": "Všechny originální/změněné kopie a deriváty podléhají licenci s výrazně zobrazeným textem. Nesoulad užití řešit nákupem komerční licence nebo přestat používat. Licensor musí vyplnit přípustnou GPL-kompatibilní Change License, grant/None a datum, jinak text neměnit.",
+    "limitationsCs": "Porušující use automaticky ukončuje práva k aktuální i všem dalším verzím. Žádná známková licence mimo výslovně požadované užití; AS IS bez záruk/title/noninfringement. MariaDB dovoluje text a jméno jen dle covenants.",
+    "compatibilityCs": "Change License musí být GPL2 nebo pozdější či vymezeně kompatibilní; lze přidat další. To není důkaz kompatibility nevyplněného případu a nepředstavuje okamžitý GPL grant."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/BUSL-1.1.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Terms odlišují non-production od parametrických production a budoucí Change License, tedy ne standardní open-source model."
+    }
+  ]
+}

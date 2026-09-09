@@ -1,0 +1,29 @@
+{
+  "id": "OFL-1.1-RFN",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:ec767e0a2a01729f3c2aa5030529b06282aaaa2737824c668e86f2e2f244df29"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Licence dovoluje fonty používat, měnit, vkládat do dokumentů a distribuovat, ale zakazuje jejich samostatný prodej a vyžaduje zachování OFL. Upravený font nesmí bez svolení použít rezervované jméno jako hlavní název zobrazovaný uživateli; dokumenty vytvořené fontem pod OFL nespadají. Průvodce ji nezařazuje jako licenci pro nový software kvůli těmto zvláštním pravidlům písem.",
+  "blockersCs": [
+    "Fontová licence zakazuje samostatný prodej a omezuje Reserved Font Names upravených fontů; před doporučením je třeba fontový model zachovávající výjimku dokumentů a užší rozsah RFN verze 1.1."
+  ],
+  "analysis": {
+    "subjectCs": "OFL 1.1 z 26. února 2007 licencuje jasně označenou sadu Font Software souborů a Reserved Font Names výslovně určené za copyrighty.",
+    "grantCs": "Grant dovoluje užití, studium, kopie, spojení, embedding, změny, redistribuci a prodej fontů podle pěti podmínek.",
+    "conditionsCs": "Bod 1 zakazuje samostatný prodej fontů/komponent. Bod 2 dovoluje balení/prodej s libovolným softwarem a vyžaduje copyright/licenci v textu, čitelných hlavičkách nebo snadno viditelných metadatech. Bod 3 zakazuje upravenému fontu RFN bez písemného svolení jen v primárním jménu zobrazovaném uživateli. Bod 5 vyžaduje OFL pro fonty, výslovně ne pro dokumenty vytvořené fonty.",
+    "limitationsCs": "Bod 4 omezuje propagaci změněných fontů jmény holderů/autorů s výjimkou credit nebo svolení; porušení podmínek ruší licenci. AS IS vylučuje záruky/odpovědnost.",
+    "compatibilityCs": "Oproti samostatně přečtenému OFL 1.0 je RFN podmínka jen na primary font name, nikoli na každé pojmenovací pole; žádná jiná licence pro font není dovolena."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/OFL-1.1-RFN.html",
+      "note": "Individuálně přečten celý připnutý text; Bod 1 zakazuje samostatný prodej fontů/komponent. Bod 2 dovoluje balení/prodej s libovolným softwarem a vyžaduje copyright/licenci v textu, čitelných hlavičkách nebo snadno viditelných metadatech. Bod 3 zakazuje upravenému fontu RFN bez písemného svolení jen v primárním jménu zobrazovaném uživateli. Bod 5 vyžaduje OFL pro fonty, výslovně ne pro dokumenty vytvořené fonty. Patent se uvádí jen ve výluce neporušování; výslovný patentový grant ani patentové ukončení není."
+    }
+  ]
+}

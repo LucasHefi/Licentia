@@ -8,96 +8,103 @@
     "contentHash": "sha256:04bed6012cb65a33db61d25ca3f4d25d47cb0562c4fabfbc92fe2f1c966c4aa3"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "whole-work",
     "permissions": [
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "include-license-text",
+      "include-notice",
       "mark-modifications",
-      "same-license"
-    ],
-    "triggers": [
+      "same-license",
       "unknown"
     ],
-    "restrictions": [
-      "liability",
-      "trademark"
+    "triggers": [
+      "distribution",
+      "modification",
+      "use"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "restrictions": [
+      "additional-terms",
+      "liability",
+      "trademark",
+      "unknown",
+      "warranty"
+    ],
+    "patentPosition": "express-exclusion",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-NC-SA-4.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-NC-SA-4.0.json#text; §2(a)(1) výhradně NC grant a §3(b) ShareAlike, proto nonstandard obsahový režim; https://spdx.org/licenses/CC-BY-NC-SA-4.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-NC-SA-4.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-NC-SA-4.0.json#text; §§1(a),(b),2(a)(5)(B),3(b) adaptace pod odpovídající licencí; §4(b) vlastní databáze ano, její jednotlivé položky ne; https://spdx.org/licenses/CC-BY-NC-SA-4.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-BY-NC-SA-4.0.json#text; §2(a)(1) nekomerční kopie/distribuce/tvorba adaptací; grant nesublicencovatelný, §2(b)(2) patenty vyloučeny; https://spdx.org/licenses/CC-BY-NC-SA-4.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-BY-NC-SA-4.0.json#text; §3(a) copyright/notices/změny a text NEBO odkazy, §3(b) same-license prvky; žádost odstranit údaje a technické/NC povinnosti mají unknown; https://spdx.org/licenses/CC-BY-NC-SA-4.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-NC-SA-4.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-NC-SA-4.0.json#text; §1(l),3 Share včetně distribuce/veřejného provedení a upraveného materiálu; use pro veřejné užití, nikoli síťové zveřejnění softwarových zdrojů; https://spdx.org/licenses/CC-BY-NC-SA-4.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-BY-NC-SA-4.0.json#text; §§1(k),2(a),3(b) NC a zákaz dalších restrikcí/technických opatření, §2(b) známky, §5 výluky; NC/technologie bez enumu; https://spdx.org/licenses/CC-BY-NC-SA-4.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-NC-SA-4.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-NC-SA-4.0.json#text; §2(b)(2) Patent and trademark rights are not licensed: výslovné vyloučení, ne mlčení ani grant; https://spdx.org/licenses/CC-BY-NC-SA-4.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-BY-NC-SA-4.0.json#text; §3 kompletní víceprvková atribuce, historie označení změn a informace obou licencí s odstraňovací žádostí tvoří materiální břemeno; https://spdx.org/licenses/CC-BY-NC-SA-4.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-NC-SA-4.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-NC-SA-4.0.json#text; Individuální přečtení celého připnutého textu dne 2026-09-10. CC BY-NC-SA 4.0 dovoluje kopie, změny a veřejné sdílení pouze pro nekomerční účely. Sdílená adaptace má licenci se stejnými prvky ve verzi4.0 nebo pozdější, případně schválenou kompatibilní licenci; aktuální seznam CC žádnou ne-CC alternativu pro BY-NC-SA neuvádí. Zachovávají se dodané autorství/notices, aktuální i předchozí označení změn a texty licencí nebo odkazy. Patenty i známky jsou výslovně vyloučeny. Databázový ShareAlike může zasáhnout vlastní databázi, nikoli automaticky její jednotlivé položky. Blokace: §§1(k),2(a)(1),4(a) omezují grant včetně tvorby adaptací a vytěžování databáze na účely bez primárního komerčního prospěchu či peněžní odměny. Model potřebuje explicitní NC podmínku; licence není vhodná jako obecná licence nového softwarového projektu. §3(a)(3) ukládá prakticky odstranit dodané atribuční údaje/notices na žádost; §§2(a)(5)(C),3(b)(3) zakazují omezující účinná technická opatření. Je třeba samostatně modelovat tento dynamický atribuční a technologický režim. §§1,4 zakládají obsahový a sui generis databázový grant, nikoli softwarový source copyleft. Je nutné oddělit obsahovou/databázovou větev, včetně pravidla pro vlastní databázi versus její jednotlivé položky, před zařazením do průvodce novému softwaru.; https://spdx.org/licenses/CC-BY-NC-SA-4.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

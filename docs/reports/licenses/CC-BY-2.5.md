@@ -1,0 +1,62 @@
+# CC-BY-2.5 — obsahová revize
+
+Creative Commons Attribution 2.5 Generic
+
+Revize: **2026-09-09** · pravidlo **2026-09-09.10**.
+
+Výsledek: **zpracována, nezařazena do průvodce**.
+
+CC BY 2.5 dovoluje komerční adaptace s atribucí autora i případných určených dalších stran. Nevyžaduje SA pro deriváty, ale zachovává podmínky původního díla, zakazuje neslučitelné DRM a umožňuje požadovat odstranění kreditu. Výslovně se vzdává určených hudebních odměn.
+
+## Předmět a rozsah
+
+§1 obecné copyrightové dílo, nezměněný originál v nezávislé kolekci není derivát; synchronizace hudební skladby nebo nahrávky s obrazem je derivát. You nezahrnuje dřívějšího porušovatele bez nového výslovného povolení.
+
+## Udělená práva
+
+§3 světový bezroyalty nevýhradní copyright grant po dobu práv: reprodukce, kolekce, deriváty, distribuce a veřejná provedení/displej/digital-audio všech těchto forem, včetně nutných formátových změn. §3e–f vzdání performance royalties, mechanických odměn pro covers a webcast odměn podle popsaných zákonných režimů. Bez patentového grantu; §4a zákaz sublicence.
+
+## Podmínky a spouštěče
+
+§4a kopie NEBO URI licence, zachovat licence a warranty notices při distribuci/veřejném užití původního Work, žádné další omezení ani neslučitelné access/use DRM. Na notifikaci poskytovatele prakticky možné odstranit požadovaný §4b kredit z kolekce/derivátu. §4b zachovat copyright, dodané jméno/pseudonym autora a/nebo určené strany (např. sponsor), titul a rozumně dosažitelné relevantní URI; adaptace identifikuje použití původního díla, kredit alespoň stejně výrazný jako srovnatelní autoři.
+
+## Omezení, výjimky a ukončení
+
+§5 as-is bez záruk včetně právního původu, leda písemná dohoda či zákon; nejde o záruky CC1.0. §6 škodové výluky v zákonných mezích. §7 automatický konec porušením, řádní příjemci adaptací/kolekcí zachováni, jiné pozdější licence či zastavení vydávání neodebírá tento grant. CC známky jen identifikace licence nebo písemný souhlas dle then-current guidelines.
+
+## Verze a kombinování
+
+§8 přímý originální grant každému příjemci i přes distribuci derivátu. Žádná SA či pozdější-portovaná licence povinná pro vlastní adaptace; severability, písemná waiver a entire agreement. CC není stranou, leda je poskytovatelem.
+
+## Překážky a navazující práce
+
+- § 4a vyžaduje odstranění kreditu na notifikaci a zakazuje neslučitelné technologické řízení přístupu/užití. Doplnit model request-removal/DRM a obsahové licence; tuto obecnou CC variantu neprezentovat jako úplnou softwarovou volbu.
+
+## Metadata a jejich doložení
+
+| Pole | Hodnota | Doložení znění |
+|---|---|---|
+| family | "permissive" | public/data/licenses/CC-BY-2.5.json#text; §3b/§4 permissivní adaptace bez reciprocity a bez zdrojových povinností; zachování práv původního Work není whole-work copyleft. |
+| copyleftScope | "none" | public/data/licenses/CC-BY-2.5.json#text; §3b/§4 permissivní adaptace bez reciprocity a bez zdrojových povinností; zachování práv původního Work není whole-work copyleft. |
+| permissions | ["commercial-use","distribution","modifications","private-use"] | public/data/licenses/CC-BY-2.5.json#text; §3 světový bezroyalty nevýhradní copyright grant po dobu práv: reprodukce, kolekce, deriváty, distribuce a veřejná provedení/displej/digital-audio všech těchto forem, včetně nutných formátových změn. §3e–f vzdání performance royalties, mechanických odměn pro covers a webcast odměn podle popsaných zákonných režimů. Bez patentového grantu; §4a zákaz sublicence. |
+| obligations | ["include-copyright","include-notice","include-use-acknowledgment","mark-modifications","unknown"] | public/data/licenses/CC-BY-2.5.json#text; §4a kopie NEBO URI licence, zachovat licence a warranty notices při distribuci/veřejném užití původního Work, žádné další omezení ani neslučitelné access/use DRM. Na notifikaci poskytovatele prakticky možné odstranit požadovaný §4b kredit z kolekce/derivátu. §4b zachovat copyright, dodané jméno/pseudonym autora a/nebo určené strany (např. sponsor), titul a rozumně dosažitelné relevantní URI; adaptace identifikuje použití původního díla, kredit alespoň stejně výrazný jako srovnatelní autoři. |
+| triggers | ["distribution","unknown","use"] | public/data/licenses/CC-BY-2.5.json#text; §4a kopie NEBO URI licence, zachovat licence a warranty notices při distribuci/veřejném užití původního Work, žádné další omezení ani neslučitelné access/use DRM. Na notifikaci poskytovatele prakticky možné odstranit požadovaný §4b kredit z kolekce/derivátu. §4b zachovat copyright, dodané jméno/pseudonym autora a/nebo určené strany (např. sponsor), titul a rozumně dosažitelné relevantní URI; adaptace identifikuje použití původního díla, kredit alespoň stejně výrazný jako srovnatelní autoři. |
+| restrictions | ["additional-terms","liability","trademark","unknown","warranty"] | public/data/licenses/CC-BY-2.5.json#text; §5 as-is bez záruk včetně právního původu, leda písemná dohoda či zákon; nejde o záruky CC1.0. §6 škodové výluky v zákonných mezích. §7 automatický konec porušením, řádní příjemci adaptací/kolekcí zachováni, jiné pozdější licence či zastavení vydávání neodebírá tento grant. CC známky jen identifikace licence nebo písemný souhlas dle then-current guidelines. |
+| patentPosition | "none-stated" | public/data/licenses/CC-BY-2.5.json#text; §3 světový bezroyalty nevýhradní copyright grant po dobu práv: reprodukce, kolekce, deriváty, distribuce a veřejná provedení/displej/digital-audio všech těchto forem, včetně nutných formátových změn. §3e–f vzdání performance royalties, mechanických odměn pro covers a webcast odměn podle popsaných zákonných režimů. Bez patentového grantu; §4a zákaz sublicence. |
+| noticeBurden | "material" | public/data/licenses/CC-BY-2.5.json#text; §4a kopie NEBO URI licence, zachovat licence a warranty notices při distribuci/veřejném užití původního Work, žádné další omezení ani neslučitelné access/use DRM. Na notifikaci poskytovatele prakticky možné odstranit požadovaný §4b kredit z kolekce/derivátu. §4b zachovat copyright, dodané jméno/pseudonym autora a/nebo určené strany (např. sponsor), titul a rozumně dosažitelné relevantní URI; adaptace identifikuje použití původního díla, kredit alespoň stejně výrazný jako srovnatelní autoři. |
+
+## Zdroje
+
+- [Primární zdroj](https://spdx.org/licenses/CC-BY-2.5.html) — Individuální revize celého připnutého textu; §1 obecné copyrightové dílo, nezměněný originál v nezávislé kolekci není derivát; synchronizace hudební skladby nebo nahrávky s obrazem je derivát. You nezahrnuje dřívějšího porušovatele bez nového výslovného povolení.
+- [Kurátorovaný profil](../../../data/profiles/licenses/id-Q0MtQlktMi41.json)
+- [Uložené úplné znění](../../../public/data/licenses/CC-BY-2.5.json)
+
+## Otisk zdroje
+
+```json
+{
+  "sourceId": "spdx-license-list",
+  "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+  "contentHash": "sha256:e4c445ed93e2f9e1fac5441218aba9ab0c42a6a2901cf2b2b8916534828b8e21"
+}
+```

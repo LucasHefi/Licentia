@@ -26,12 +26,13 @@
       "include-license-text"
     ],
     "triggers": [
-      "distribution"
+      "distribution",
+      "use"
     ],
     "restrictions": [
-      "additional-terms",
       "liability",
       "trademark",
+      "unknown",
       "warranty"
     ],
     "patentPosition": "none-stated",
@@ -41,47 +42,65 @@
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant paragraph (\"Redistribution and use in source and binary forms, with or without modification, are permitted\") and final nuclear-facility field-of-use sentence; broad BSD grant plus explicit nuclear-use restriction makes this 2014 variant nonstandard"
+      "locator": "public/data/licenses/BSD-3-Clause-No-Nuclear-License-2014.json#text; Text má permisivní základ, ale účelově vyhrazené jaderné užití činí rodinu nonstandard; copyleft chybí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant and conditions 1-3; permission is non-reciprocal and no same-license, source-disclosure, corresponding-source, linking, or network-use condition is stated"
+      "locator": "public/data/licenses/BSD-3-Clause-No-Nuclear-License-2014.json#text; Text má permisivní základ, ale účelově vyhrazené jaderné užití činí rodinu nonstandard; copyleft chybí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant paragraph (\"Redistribution and use in source and binary forms, with or without modification, are permitted\"); broad ordinary commercial and private use is granted subject to the final nuclear-facility field-of-use restriction"
+      "locator": "public/data/licenses/BSD-3-Clause-No-Nuclear-License-2014.json#text; Redistribution/use obou forem s úpravami i bez nich dovoluje i komerci, ale v rámci následného non-nuclear licenčního omezení. Patentový grant a sublicence nejsou výslovné.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text: condition 1 (source redistribution must retain the copyright notice, list of conditions, and following disclaimer) and condition 2 (binary redistribution must reproduce the same materials in documentation and/or other materials)"
+      "locator": "public/data/licenses/BSD-3-Clause-No-Nuclear-License-2014.json#text; První dva body zachovávají copyright, podmínky a disclaimer ve zdrojích či materiálech binární distribuce. Závěrečné You acknowledge se vztahuje na užití v jaderných zařízeních; source-offer ani reklama nejsou předepsány.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "text: conditions 1-2 opening terms (\"Redistributions of source code\" and \"Redistributions in binary form\"); notice duties trigger on distribution, while modification alone, linking, combination, network use, and patent claims have no stated trigger"
+      "locator": "public/data/licenses/BSD-3-Clause-No-Nuclear-License-2014.json#text; První dva body zachovávají copyright, podmínky a disclaimer ve zdrojích či materiálech binární distribuce. Závěrečné You acknowledge se vztahuje na užití v jaderných zařízeních; source-offer ani reklama nejsou předepsány.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text: condition 3 (Oracle/contributor names may not endorse or promote derived products without specific prior written permission); warranty/liability paragraph (\"AS IS\" disclaimer and \"IN NO EVENT ... BE LIABLE\"); final nuclear-facility sentence is an additional field-of-use term"
+      "locator": "public/data/licenses/BSD-3-Clause-No-Nuclear-License-2014.json#text; Třetí bod zakazuje endorsement jménem Oracle/přispěvatelů bez písemného svolení; disclaimer odmítá záruky a škody. Poslední věta používá not designed, licensed or intended pro jaderný návrh/stavbu/provoz/údržbu: licensed je účelové omezení nad disclaimerem.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "text: complete license text (grant, conditions 1-3, disclaimer, and nuclear-facility sentence); no express patent grant, patent condition, patent-claim restriction, or patent-termination clause is stated"
+      "locator": "public/data/licenses/BSD-3-Clause-No-Nuclear-License-2014.json#text; Redistribution/use obou forem s úpravami i bez nich dovoluje i komerci, ale v rámci následného non-nuclear licenčního omezení. Patentový grant a sublicence nejsou výslovné.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text: conditions 1-2 require retaining/reproducing the copyright notice, list of conditions, and following disclaimer in source and binary redistributions (standard two-surface notice burden)"
+      "locator": "public/data/licenses/BSD-3-Clause-No-Nuclear-License-2014.json#text; První dva body zachovávají copyright, podmínky a disclaimer ve zdrojích či materiálech binární distribuce. Závěrečné You acknowledge se vztahuje na užití v jaderných zařízeních; source-offer ani reklama nejsou předepsány.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "metadata: id=BSD-3-Clause-No-Nuclear-License-2014, name=BSD 3-Clause No Nuclear License 2014, deprecated=false, osi=false, fsf=false; notes identify the Oracle 2014 variant; text: Oracle copyright, three BSD conditions, endorsement restriction, warranty/liability disclaimer, and explicit nuclear-facility field-of-use restriction make this intentional-use-restriction variant non-recommendable"
+      "locator": "public/data/licenses/BSD-3-Clause-No-Nuclear-License-2014.json#text; Individuálně přečten celý připnutý text. Grant je pro software Oracle/affiliate s copyrighty 2008 a 2014 a zvláštním vyloučením jaderných zařízení. Tři BSD podmínky dovolují zdroje/binárky a vyžadují oznámení i zákaz endorsementu. Závěr navíc výslovně říká, že software není licencován k návrhu, stavbě, provozu či údržbě jaderného zařízení; nejde jen o výluku záruky. Závěr vylučuje licencování užití při návrhu, stavbě, provozu nebo údržbě jakéhokoli jaderného zařízení. Doplnit model field-of-use omezení; obecné warranty nebo additional-terms by tento zákaz v doporučování skryly.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

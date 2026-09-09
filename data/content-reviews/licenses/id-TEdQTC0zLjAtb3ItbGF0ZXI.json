@@ -1,0 +1,20 @@
+{
+  "id": "LGPL-3.0-or-later",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.2",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:bc273d72abc126787a703078152faacd1b5ad540b44448e81b684b25657bbcea"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Knihovní copyleft: při distribuci zachovejte licenci, oznámení a odpovídající zdroje knihovny. Přiložte LGPL i GPL. U kombinovaného díla umožněte úpravy knihovní části a reverzní inženýrství pro jejich ladění. Zajistěte nahrazení sdílené knihovny nebo splňte příslušnou cestu pro opětovné slinkování; aplikační objektové soubory mohou stačit, zdroje aplikace nejsou automaticky povinné. Instalační informace poskytujte za podmínek LGPL § 4(e) a GPL § 6; verze 3 obsahuje patentový grant. Or-later dovoluje pozdější LGPL; metadata hodnotí verzi 3.0, po přechodu je nutné nové posouzení.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/LGPL-3.0-or-later.html",
+      "note": "Dřívější individuální revize 2026-09-09.2; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

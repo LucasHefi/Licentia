@@ -1,0 +1,30 @@
+{
+  "id": "GPL-2.0-with-font-exception",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:c60b9ba84dd76d907d2e9080af132e7bed761af64ea6943938890ce4fc61762e"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Připnutý záznam obsahuje pouze fontovou výjimku a zástupný pokyn vložit GPL v2. Vložení fontu či jeho nezměněných částí samo nepodřizuje dokument GPL; upravující autor může výjimku zachovat nebo ji odstranit.",
+  "blockersCs": [
+    "Místo základních podmínek je v připnutém textu insert GPL v2 license text here. Je nutné doložit úplný základní grant a jeho vazbu na fontovou výjimku; výjimka sama neurčuje zdrojové, patentové ani zárukové podmínky.",
+    "Jde o deprecated složený identifikátor a fontovou výjimku. Pro nový software je třeba zvolit aktuální identifikátor základní GPL s příslušnou výjimkou a ověřit její fontový předmět."
+  ],
+  "analysis": {
+    "subjectCs": "Font a dokument, do kterého je font či jeho nezměněná část vložena; základní text GPL v2 je nahrazen placeholderem.",
+    "grantCs": "Výjimka omezuje dopad GPL na dokument, neposkytuje sama kompletní softwarový či patentový grant.",
+    "conditionsCs": "Dokument nepodléhá GPL pouze kvůli vložení fontu. Upravující může výjimku rozšířit na svou verzi; pokud nechce, odstraní její prohlášení.",
+    "limitationsCs": "Jiné důvody podřízení dokumentu GPL zůstávají. Záruky, odpovědnost, zdroje a ukončení základní licence v připnutém textu chybí.",
+    "compatibilityCs": "Zachování výjimky pro změněný font je volitelné; nejedná se o volbu jiné GPL verze ani univerzální výjimku z GPL."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/GPL-2.0-with-font-exception.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Nadpis odkazuje na GPL v2 a Font Exception; základní copyleftová licence není v textu reprodukována."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "OGTSL",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:cec524da05c351b75708a7c63a15e0af0f75846bf8c784b1ee4cce81056adf3b"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Licence testovací sady vyžaduje zachovat původní testové režimy. Nestandardní spustitelné soubory a testy se přejmenují, doprovodí standardními protějšky a samostatnými manuály rozdílů; balík samotný se neprodává, povolen je kopírovací poplatek, placená podpora a komerční agregace.",
+  "blockersCs": [
+    "Body3–4 povinně zachovávají/přibalují standardní executables a testcases, přejmenovávají nestandardní a vyžadují zvláštní manuály/instrukce ke standardu. Je třeba test-suite model těchto povinností; nejsou alternativními možnostmi Artistic a obecné mark-modifications nestačí.",
+    "Bod5 zakazuje cenu za balík samotný, ale povoluje rozumné kopírovací poplatky, libovolnou podporu a komerční agregaci. Je třeba modelovat rozlišení typu platby/prodeje, nikoli tvrdit neomezený prodej nebo nekomerční licenci."
+  ],
+  "analysis": {
+    "subjectCs": "Testovací Package a textové deriváty, Standard Version zahrnuje také změny dle držitele; preambule chrání původní conformity test modes.",
+    "grantCs": "1 kopie původního zdroje,2 opravy z public domain/držitele jako standard,3 jiné úpravy,4 object/executable distribuce.6 input/output scripts/library files patří generujícím a7 vlastní linkované subroutines nejsou součást balíku. Patentový grant chybí.",
+    "conditionsCs": "1 copyright/disclaimers;3 každá jiná změna how/when a povinné přejmenování nestandardních executables/testcases, standardní protějšky a samostatné manuály.4 binární distribuce stejné protějšky/názvy/manuály a informace ke standardu.",
+    "limitationsCs": "5 pouze reasonable copying fee a libovolná support fee, ne cena balíku; komerční agregace nesmí balík propagovat jako vlastní.8 naming endorsement písemný souhlas;9 AS IS bez záruk, samostatná liability doložka chybí.",
+    "compatibilityCs": "6–7 výslovně oddělují input/output a vlastní subroutines, nikoli blanket copyleft.3–4 obsahují do at least the following, bez volby jedné ze čtyř Artistic cest; jiná licence/verze chybí."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/OGTSL.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Preambule standard-test integrity a3–5 povinné protějšky/manuály/poplatky vytvářejí specifický testový režim."
+    }
+  ]
+}

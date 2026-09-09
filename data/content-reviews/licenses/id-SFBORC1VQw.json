@@ -1,0 +1,20 @@
+{
+  "id": "HPND-UC",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.4",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:a125660bc1c324c04a50f3cc3370d667829bf0ed97917853d0c69be4e7881007"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Ve všech kopiích zachovejte copyright. Tato varianta nepožaduje přiložení celého licenčního textu. Univerzita vylučuje záruky a ujištění o vhodnosti softwaru; výslovné omezení odpovědnosti ani zákaz použití jména text neobsahuje.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/HPND-UC.html",
+      "note": "Dřívější individuální revize 2026-09-09.4; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

@@ -8,92 +8,95 @@
     "contentHash": "sha256:a6d6a67f23c44d0b46d6939457915d8a82be5e722788cc8deff96515dd6c3fb3"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution",
-      "modifications"
+      "commercial-use",
+      "modifications",
+      "private-use",
+      "unknown"
     ],
     "obligations": [
-      "unknown"
+      "include-copyright",
+      "include-notice",
+      "include-use-acknowledgment"
     ],
     "triggers": [
-      "unknown"
+      "modification",
+      "use"
     ],
-    "restrictions": [
-      "unknown"
-    ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "restrictions": [],
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Soundex.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Soundex.json#text; Libovolné užití a změny podmíněné zásluhami/copyrightem nezavádějí stejnou licenci; permisivní bez copyleftu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Soundex.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Soundex.json#text; Libovolné užití a změny podmíněné zásluhami/copyrightem nezavádějí stejnou licenci; permisivní bez copyleftu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Soundex.json#text; Text výslovně dovoluje užít zdroje pro jakýkoli účel a dělat změny; samostatné právo redistribuce není uvedeno. Patentový grant a sublicence chybějí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Soundex.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Soundex.json#text; As long as credit is given podmiňuje užití uznáním zásluh; při úpravách má copyright zůstat někde viditelný. Try to initial any changes žádá iniciály pro přebírání změn, nevyžaduje jejich odeslání autorovi. Povinnost při samotném užití nyní zachycuje trigger use ve slovníku 1.4.0. Povinné přiznání zásluh při užití je samostatné include-use-acknowledgment (1.4.0), nikoli dobrovolná žádost.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Soundex.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Soundex.json#text; As long as credit is given podmiňuje užití uznáním zásluh; při úpravách má copyright zůstat někde viditelný. Try to initial any changes žádá iniciály pro přebírání změn, nevyžaduje jejich odeslání autorovi. Povinnost při samotném užití nyní zachycuje trigger use ve slovníku 1.4.0. Povinné přiznání zásluh při užití je samostatné include-use-acknowledgment (1.4.0), nikoli dobrovolná žádost.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Soundex.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Soundex.json#text; Úplný text nemá výluku záruky či odpovědnosti, zákaz názvů, povinné zveřejnění změn nebo patentovou terminaci.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Soundex.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Soundex.json#text; Text výslovně dovoluje užít zdroje pro jakýkoli účel a dělat změny; samostatné právo redistribuce není uvedeno. Patentový grant a sublicence chybějí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Soundex.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Soundex.json#text; As long as credit is given podmiňuje užití uznáním zásluh; při úpravách má copyright zůstat někde viditelný. Try to initial any changes žádá iniciály pro přebírání změn, nevyžaduje jejich odeslání autorovi. Povinnost při samotném užití nyní zachycuje trigger use ve slovníku 1.4.0. Povinné přiznání zásluh při užití je samostatné include-use-acknowledgment (1.4.0), nikoli dobrovolná žádost.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Soundex.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Soundex.json#text; Individuální plná revize; povinné uznání při užití přesně modelováno slovníkem 1.4.0. Zdrojové soubory lze jakkoli užívat a měnit při přiznání zásluh a viditelném copyrightu. Iniciály u změn jsou žádost formulovaná jako „try“, nikoli jednoznačná povinnost. Freedom to use these sources for whatever you want a make modifications výslovně dovolují užití a změny, nikoli jednoznačně redistribuci. Ověřit původní rozsah distribučních práv před doplněním základního softwarového grantu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

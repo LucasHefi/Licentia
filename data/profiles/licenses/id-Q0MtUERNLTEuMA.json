@@ -8,93 +8,92 @@
     "contentHash": "sha256:c84e605ebd3cef7a9683a88b9f117919be1efe686d8d950ff9d02ca2746fbe7a"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "public-domain-equivalent",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
-    "obligations": [
-      "unknown"
-    ],
-    "triggers": [
-      "unknown"
-    ],
+    "obligations": [],
+    "triggers": [],
     "restrictions": [
       "liability",
-      "trademark"
+      "trademark",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "none-stated",
+    "noticeBurden": "none"
   },
   "evidence": [
     {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-PDM-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-PDM-1.0.json#text; No Copyright: work has been identified as being free of known restrictions označuje status, nikoli nový grant.; https://spdx.org/licenses/CC-PDM-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-PDM-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-PDM-1.0.json#text; Celý text nevyžaduje stejné licencování či zdrojové zpřístupnění.; https://spdx.org/licenses/CC-PDM-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-PDM-1.0.json#text; Druhý odstavec popisuje copy/modify/distribute/perform even commercially bez žádosti o povolení, s výhradami Other Information.; https://spdx.org/licenses/CC-PDM-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-PDM-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-PDM-1.0.json#text; Celý text neukládá pozitivní notice/source povinnosti; závěr pouze varuje před implikací endorsementu.; https://spdx.org/licenses/CC-PDM-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-PDM-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-PDM-1.0.json#text; Užití/citace v poslední větě není podmínkou grantu, neboť dokument žádný nový grant nevytváří; reciproční trigger není.; https://spdx.org/licenses/CC-PDM-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-PDM-1.0.json#text; Other Information: zachovaná jiná práva, no warranties/disclaims liability; závěr neimplikovat endorsement autora/označující osoby.; https://spdx.org/licenses/CC-PDM-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-PDM-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-PDM-1.0.json#text; Other Information výslovně upozorňuje na možná patent rights; žádnou patentovou licenci nedává.; https://spdx.org/licenses/CC-PDM-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-PDM-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-PDM-1.0.json#text; Celý marker nevyžaduje připojování textu, autorství či jiného oznámení ke kopiím.; https://spdx.org/licenses/CC-PDM-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-PDM-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-PDM-1.0.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. Public Domain Mark označuje dílo jako prosté známých copyrightových omezení; sám není novou licencí ani vzdáním se práv. Upozorňuje na rozdíly jurisdikcí, morální, patentová, známková a osobnostní práva a vylučuje záruky označující osoby. Blokace: Formulace work has been identified označuje zjištěný status, neuděluje licenci a neodstraňuje existující práva. Pro nový software je třeba vlastní grant nebo dedikace; Public Domain Mark lze použít až po doložení veřejné domény konkrétního díla.; https://spdx.org/licenses/CC-PDM-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

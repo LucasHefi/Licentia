@@ -1,0 +1,20 @@
+{
+  "id": "BSD-3-Clause-Attribution",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.9",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:a4e6ec9e72ad034f59fcccbdf47e03c71e2185aa4540a64b25d36dbfc5648a40"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Ve zdrojích zachovejte copyright, podmínky a disclaimer; u binární distribuce je přiložte v dokumentaci nebo dalších materiálech. Každá redistribuce navíc zachovává předepsané poděkování Universidad de Palermo, Argentina včetně URL. Samostatné poděkování v reklamě se nevyžaduje. Propagační použití jmen držitele práv a přispěvatelů vyžaduje písemný souhlas. Text odmítá záruky a odpovědnost; neukládá poskytování zdrojů ani neuděluje výslovná patentová práva.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/BSD-3-Clause-Attribution.html",
+      "note": "Dřívější individuální revize 2026-09-09.9; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

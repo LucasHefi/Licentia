@@ -1,0 +1,29 @@
+{
+  "id": "AdaCore-doc",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:7408839f4e17cfcee23eb22e7db8a5f23c27189a338b23a211f1b46cd905a539"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Dokument lze kopírovat v celku i částečně a upravovat; změny musí být jasně označeny a každá kopie musí obsahovat nezměněný copyright.",
+  "blockersCs": [
+    "Text uděluje oprávnění k dokumentu a model nemá rozlišení licencování dokumentace od nového softwaru. Doplnit předmět licence a průvodce pro dokumentaci před případným doporučováním."
+  ],
+  "analysis": {
+    "subjectCs": "Grant výslovně pokrývá dokument, nikoli obecnou licenci pro nový softwarový projekt.",
+    "grantCs": "This document dovoluje kopírování v jakékoli podobě a jakýmikoli prostředky, beze změn i se změnami, bez nekomerčního omezení; patentový grant chybí.",
+    "conditionsCs": "Bod (1) vyžaduje jasné označení úprav, bod (2) nezměněný copyright v každé kopii. Není požadována stejná licence, zdrojová forma ani reklama.",
+    "limitationsCs": "Celý odstavec nemá odmítnutí záruk či odpovědnosti, názvové omezení nebo terminaci.",
+    "compatibilityCs": "Text nestanoví alternativní licenci nebo verze ani nerozšiřuje grant na kód doprovázející dokument."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/AdaCore-doc.html",
+      "note": "Individuální revize celého připnutého textu; Grant výslovně pokrývá dokument, nikoli obecnou licenci pro nový softwarový projekt."
+    }
+  ]
+}

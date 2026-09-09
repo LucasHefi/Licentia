@@ -9,92 +9,101 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "permissive",
-    "copyleftScope": "none",
+    "family": "strong-copyleft",
+    "copyleftScope": "whole-work",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
       "include-license-text",
-      "provide-corresponding-source"
+      "include-notice",
+      "provide-corresponding-source",
+      "same-license"
     ],
     "triggers": [
-      "unknown"
+      "combination",
+      "distribution",
+      "modification"
     ],
     "restrictions": [
-      "unknown"
+      "additional-terms",
+      "liability",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.no-copyleft",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.permissive-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MakeIndex.json#text; Entire modified work včetně přesně definovaných závislých rozšíření má stejnou licenci; jde o whole-work copyleft v tomto vymezení, nikoli jen jednotlivé změněné soubory.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MakeIndex.json#text; Entire modified work včetně přesně definovaných závislých rozšíření má stejnou licenci; jde o whole-work copyleft v tomto vymezení, nikoli jen jednotlivé změněné soubory.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MakeIndex.json#text; První odstavec dovoluje doslovné kopie a šíření; druhý modifikované části/celky. Bez zákazu komerčního účelu, s limitem nákladů na přístup ke zdrojům. Patentový grant ani samostatná sublicence chybějí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/MakeIndex.json#text; Kopie zachovají copyright a svolení a příjemce nesmí být žádán o vzdání/omezení redistribuce. Každý executable příjemce má přístup ke strojově čitelným zdrojům za nejvýše reproduction/shipping/handling; bez přiložených zdrojů dostane výrazné svolení a postup získání. Celé modifikované dílo má totožné svolení. Should be reported je doporučení hlásit změny.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MakeIndex.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MakeIndex.json#text; Kopie zachovají copyright a svolení a příjemce nesmí být žádán o vzdání/omezení redistribuce. Každý executable příjemce má přístup ke strojově čitelným zdrojům za nejvýše reproduction/shipping/handling; bez přiložených zdrojů dostane výrazné svolení a postup získání. Celé modifikované dílo má totožné svolení. Should be reported je doporučení hlásit změny.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MakeIndex.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MakeIndex.json#text; Odvozeninami jsou také porty a společně šířené doplňky použitelné jen s odvozeným programem a určené k jeho rozšíření/přizpůsobení. Závěr odmítá jakoukoli záruku a odpovědnost přispěvatelů za následky nebo účelovou vhodnost.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MakeIndex.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MakeIndex.json#text; První odstavec dovoluje doslovné kopie a šíření; druhý modifikované části/celky. Bez zákazu komerčního účelu, s limitem nákladů na přístup ke zdrojům. Patentový grant ani samostatná sublicence chybějí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/MakeIndex.json#text; Kopie zachovají copyright a svolení a příjemce nesmí být žádán o vzdání/omezení redistribuce. Každý executable příjemce má přístup ke strojově čitelným zdrojům za nejvýše reproduction/shipping/handling; bez přiložených zdrojů dostane výrazné svolení a postup získání. Celé modifikované dílo má totožné svolení. Should be reported je doporučení hlásit změny.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MakeIndex.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MakeIndex.json#text; Individuálně přečten celý připnutý text. Program MakeIndex a modifikace zahrnují i porty a doplňky distribuované společně s odvozeninou, které lze používat jen s ní a rozšiřují její schopnosti. Kopie MakeIndex zachovají copyright a svolení a příjemcům neomezí redistribuci. Každý příjemce executable získá přístup ke strojově čitelným zdrojům za nejvýše rozumné reprodukční/doručovací náklady. Celé změněné dílo včetně určitých závislých rozšíření nese totožné svolení. ",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

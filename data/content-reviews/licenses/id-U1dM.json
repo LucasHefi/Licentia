@@ -1,0 +1,29 @@
+{
+  "id": "SWL",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:21f058046d5b689f52e2904e29273f4d9f4ab01c5a8fa8eb6176b76c2859df04"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Licence dovoluje software používat, měnit, distribuovat a licencovat pro libovolný účel při zachování oznámení; jiné podmínky změn se jasně uvádějí v dotčených souborech. Vládní oddíl však kombinuje historická omezená práva s výjimkou pro užití a distribuci. Průvodce ji nezařazuje, dokud nejsou určeny použitelné vnější doložky a zbývající práva vládních příjemců.",
+  "blockersCs": [
+    "Government-use oddíl kombinuje historická Restricted Rights s výslovnou výjimkou pro use/distribute, ale nevyjasňuje zbytek práv vlády; před doporučením je nutné určit použitelné externí doložky a rozsah jejich překrytí."
+  ],
+  "analysis": {
+    "subjectCs": "SWL pokrývá software a dokumentaci a obsahuje zvláštní oddíl vládního pořízení.",
+    "grantCs": "První odstavec dovoluje bez poplatků užití, kopie, změny, distribuci a licencování pro libovolný účel; změny mohou mít vlastní copyright a odlišné podmínky.",
+    "conditionsCs": "Copyrighty zůstávají ve všech kopiích a toto oznámení doslovně ve všech distribucích; nové podmínky změn jsou jasně na první straně každého dotčeného souboru. Government use odkazuje FAR 52.227.19(c)(2) a DFARS 252.227-7013(c)(1), ale notwithstanding uděluje vládě a jejím zástupcům užití a distribuci podle SWL.",
+    "limitationsCs": "AS IS vylučuje záruky, odpovědnost a povinnost podpory/údržby; instalace potvrzuje porozumění a souhlas. Vládní omezení jsou formulována vedle výslovné výjimky pro užití/distribuci.",
+    "compatibilityCs": "Odlišné podmínky změn vyžadují označení prvních stran souborů. Vládní notwithstanding grant nezmiňuje všechna práva původního grantu a jeho vztah k historickým doložkám není úplně vymezen."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/SWL.html",
+      "note": "Individuálně přečten celý připnutý text; Copyrighty zůstávají ve všech kopiích a toto oznámení doslovně ve všech distribucích; nové podmínky změn jsou jasně na první straně každého dotčeného souboru. Government use odkazuje FAR 52.227.19(c)(2) a DFARS 252.227-7013(c)(1), ale notwithstanding uděluje vládě a jejím zástupcům užití a distribuci podle SWL. Celý SWL text nemá výslovný patentový grant nebo patentové ukončení."
+    }
+  ]
+}

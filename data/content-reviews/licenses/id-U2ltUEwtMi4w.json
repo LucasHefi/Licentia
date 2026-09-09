@@ -1,0 +1,29 @@
+{
+  "id": "SimPL-2.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:4d66b0f0dad1d52d54303bbcc551c898db7480917cd3fc3b8b84554a2df9cd1e"
+  },
+  "disposition": "blocked",
+  "summaryCs": "SimPL 2.0 dovoluje libovolné užití a odvozeniny, ale při distribuci vyžaduje datované změny, oznámení, úplné upravitelné zdroje se skripty a licencování pod SimPL či podstatně podobnými podmínkami, například GPL 2. Přímá škoda je omezena na zaplacenou částku.",
+  "blockersCs": [
+    "Distribuce dovoluje SimPL nebo neurčené substantially similar terms (např. GPL 2) a preambule odkazuje na konzistentní GPL 2 výklad. Doplnit model této otevřené alternativy a pravidla jejího ověření, místo bezpodmínečného same-license nebo automatické kompatibility."
+  ],
+  "analysis": {
+    "subjectCs": "Operativní grant pokrývá zdrojový i objektový kód a Derived Work; licenční formulář samotný má oddělené svolení ke změnám s novým názvem.",
+    "grantCs": "Úvodní any rights I have other than trademarks a body Use/Derived Works/Copy-distribute dávají bezpoplatkové užití pro jakýkoli účel a změny/distribuci. Patenty nejsou výslovně jmenovány, proto není vykázán express patent grant.",
+    "conditionsCs": "Při distribuci software/Derived Work se výrazně uvádějí data změn, zachovávají cizí copyrighty/disclaimery/podmínky, poskytují snadno získatelné preferované zdroje, build/install skripty a interface definitions. Celé dílo dostanou všichni pod SimPL NEBO substantially similar terms (např. GPL2), bez dalších omezení a s nápadným oznámením dostupné licence.",
+    "limitationsCs": "Žádné záruky; pouze přímá škoda do zaplacené částky, ostatní vyloučena s lokální zákonnou výhradou. Práva automaticky zanikají při porušení give-back nebo pokud kdokoli brání distribuci podle SimPL; řádní podlicenční příjemci práva zachovávají.",
+    "compatibilityCs": "Preambule žádá výklad souladný s GPL2 a operativní text nabízí substantially similar terms včetně GPL2. Kategorie není uzavřený seznam a neznamená automatickou shodu každé varianty; změněná forma licence nesmí nést SimPL/Simple Public License."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/SimPL-2.0.html",
+      "note": "Individuální revize celého připnutého textu; Operativní grant pokrývá zdrojový i objektový kód a Derived Work; licenční formulář samotný má oddělené svolení ke změnám s novým názvem."
+    }
+  ]
+}

@@ -9,95 +9,106 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
       "commercial-use",
+      "conditional-relicensing",
       "distribution",
       "modifications",
       "patent-grant",
+      "private-use",
       "sublicensing"
     ],
     "obligations": [
+      "defend-commercial-distribution",
+      "include-copyright",
       "include-license-text",
-      "provide-corresponding-source"
+      "include-notice",
+      "mark-modifications",
+      "pass-disclaimer-requirement"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification",
+      "patent-claim"
     ],
     "restrictions": [
-      "liability"
+      "liability",
+      "patent-claim",
+      "trademark",
+      "warranty"
     ],
-    "patentPosition": "express-grant",
-    "noticeBurden": "standard"
+    "patentPosition": "retaliatory-termination",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LPL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LPL-1.0.json#text; §3A dovoluje zdroj i objekt s vlastními podmínkami, proto permissive/none. Contribution consent a modulová výjimka určují grant od dobrovolných přispěvatelů; nejsou zdrojovou povinností ani plošným copyleftem.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LPL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LPL-1.0.json#text; §3A dovoluje zdroj i objekt s vlastními podmínkami, proto permissive/none. Contribution consent a modulová výjimka určují grant od dobrovolných přispěvatelů; nejsou zdrojovou povinností ani plošným copyleftem.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/LPL-1.0.json#text; §2a celosvětově bezroyalty copyright reprodukce, změny, public display/performance, distribuce a sublicence source/object. §2b patent make/use/sell/offer/import/transfer jen vlastní Contribution a kombinace s Program v době přidání, ne další kombinace/cizí Contributions/hardware per se. §2d znalostní prohlášení dostatečných copyright práv.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/LPL-1.0.json#text; §3A zvolit LPL NEBO vlastní licenci pro libovolnou formu, přiložit zvolenou dohodu ke zdroji či jiné hmotné kopii. Vlastní licence účinně vylučuje záruky a škody jménem Contributors a přičítá rozdíly nabízejícímu samotnému. §3B výrazný YEAR/ORGANIZATION-and-others copyright; §3C identifikovat původce a souhlas s Contribution, neodvolatelný po udělení. §4 obrana/odškodnění komerčního distributora za vlastní jednání/opomenutí mimo IP nároky, při rychlé písemné notifikaci a předání kontroly/spolupráci obrany.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LPL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LPL-1.0.json#text; §3A zvolit LPL NEBO vlastní licenci pro libovolnou formu, přiložit zvolenou dohodu ke zdroji či jiné hmotné kopii. Vlastní licence účinně vylučuje záruky a škody jménem Contributors a přičítá rozdíly nabízejícímu samotnému. §3B výrazný YEAR/ORGANIZATION-and-others copyright; §3C identifikovat původce a souhlas s Contribution, neodvolatelný po udělení. §4 obrana/odškodnění komerčního distributora za vlastní jednání/opomenutí mimo IP nároky, při rychlé písemné notifikaci a předání kontroly/spolupráci obrany.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/LPL-1.0.json#text; §§5–6 as-is a liability výjimka pro výslovná ustanovení. §2c příjemce obstará případná cizí IP práva, žádná garance jejich neporušení. §7 patentové žaloby včetně cross/counter: proti Contributor o software ruší jeho grant; proti komukoli o Program samotný bez kombinací ruší §2b. Materiální porušení s přiměřenou nápravou od znalosti; po zániku co nejdříve přestat use/distribution, závazky a downstream licence trvají. Verze1.0 nemá exportní oddíl1.02.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/LPL-1.0.json#text; §2a celosvětově bezroyalty copyright reprodukce, změny, public display/performance, distribuce a sublicence source/object. §2b patent make/use/sell/offer/import/transfer jen vlastní Contribution a kombinace s Program v době přidání, ne další kombinace/cizí Contributions/hardware per se. §2d znalostní prohlášení dostatečných copyright práv.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/LPL-1.0.json#text; §3A zvolit LPL NEBO vlastní licenci pro libovolnou formu, přiložit zvolenou dohodu ke zdroji či jiné hmotné kopii. Vlastní licence účinně vylučuje záruky a škody jménem Contributors a přičítá rozdíly nabízejícímu samotnému. §3B výrazný YEAR/ORGANIZATION-and-others copyright; §3C identifikovat původce a souhlas s Contribution, neodvolatelný po udělení. §4 obrana/odškodnění komerčního distributora za vlastní jednání/opomenutí mimo IP nároky, při rychlé písemné notifikaci a předání kontroly/spolupráci obrany.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LPL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LPL-1.0.json#text; Individuálně přečten celý připnutý text. §1 šablona ORGANIZATION/OWNER pro původní software s kódem/dokumentací. Program je originál a odsouhlasené Contributions nebo části. Contribution musí pocházet od přispěvatele a být výslovně odsouhlasen; výjimka odděleného vlastně licencovaného nedervativního modulu je kumulativní. Distributor zahrnuje i modifikace a části bez Contributor statusu. Lucent 1.0 dovoluje všechny distribuční formy pod LPL nebo vlastní licencí, bez zdrojové reciprocity. Příspěvek vzniká jen po výslovném neodvolatelném souhlasu a neobsahuje oddělené samostatně licencované nederivativní moduly; vlastní licence musí chránit ostatní přispěvatele. ",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

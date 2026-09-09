@@ -8,95 +8,107 @@
     "contentHash": "sha256:00de09b59ea8a14023a63749711a956fcecf3cd63796648e4652b289986e28f7"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "none",
     "permissions": [
       "commercial-use",
       "distribution",
       "modifications",
-      "patent-grant"
+      "patent-grant",
+      "private-use"
     ],
     "obligations": [
-      "include-license-text"
+      "include-copyright",
+      "include-license-text",
+      "include-notice",
+      "mark-modifications"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification",
+      "network-use",
+      "patent-claim",
+      "use"
     ],
     "restrictions": [
+      "additional-terms",
       "liability",
-      "trademark"
+      "patent-claim",
+      "trademark",
+      "unknown",
+      "warranty"
     ],
-    "patentPosition": "express-grant",
+    "patentPosition": "retaliatory-termination",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Elastic-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Elastic-2.0.json#text; Licenční/servisní omezení nejsou copyleft ani povinnost stejné licence; nonstandard, none.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Elastic-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Elastic-2.0.json#text; Licenční/servisní omezení nejsou copyleft ani povinnost stejné licence; nonstandard, none.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Elastic-2.0.json#text; Copyright License je nevýhradní, bez royalty, celosvětová, nepřevoditelná a bez sublicence pro use/copy/distribute/make available/derivatives. Patents uděluje současná/budoucí licencovatelná práva manufacture/use/sale/import s výjimkou nároků, které poruší vlastní změny/doplňky.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Elastic-2.0.json#text; Limitations zakazují službu třetím zpřístupňující substantial features, pohyb/změnu/vypnutí/obejití klíče i skrytí chráněných funkcí. Všechna licenční/copyright/jiná oznámení zůstávají; každý příjemce části dostane podmínky a modifikované kopie prominentní notice změn.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Elastic-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Elastic-2.0.json#text; Limitations zakazují službu třetím zpřístupňující substantial features, pohyb/změnu/vypnutí/obejití klíče i skrytí chráněných funkcí. Všechna licenční/copyright/jiná oznámení zůstávají; každý příjemce části dostane podmínky a modifikované kopie prominentní notice změn.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Elastic-2.0.json#text; Patentové písemné tvrzení příjemce/společnosti okamžitě ruší patentová práva (u společnosti pro práci jejím jménem). Porušení ukončí licence; úplná náprava do 30 dnů od výzvy jednou zpětně obnoví, opakování po obnově trvale ruší. As is a výluka všech škod platí v zákonném rozsahu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Elastic-2.0.json#text; Copyright License je nevýhradní, bez royalty, celosvětová, nepřevoditelná a bez sublicence pro use/copy/distribute/make available/derivatives. Patents uděluje současná/budoucí licencovatelná práva manufacture/use/sale/import s výjimkou nároků, které poruší vlastní změny/doplňky.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Elastic-2.0.json#text; Limitations zakazují službu třetím zpřístupňující substantial features, pohyb/změnu/vypnutí/obejití klíče i skrytí chráněných funkcí. Všechna licenční/copyright/jiná oznámení zůstávají; každý příjemce části dostane podmínky a modifikované kopie prominentní notice změn.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Elastic-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Elastic-2.0.json#text; Individuálně přečten celý připnutý text. Grant pokrývá software i jeho části; definice company zahrnuje kontrolující/ovládané/přidružené organizace přímou i nepřímou kontrolou. Elastic 2.0 dovoluje užití a změny, ale zakazuje hosted/managed službu zpřístupňující podstatnou část funkcí i zásahy do licenčních klíčů a chráněných funkcí. Patenty mají výluku vlastních změn a okamžité odvetné ukončení; notices zůstávají a změny se označí. Limitations zakazují hosted/managed službu s podstatnými funkcemi a jakékoli obcházení či skrývání licenčně chráněných funkcí. Doplnit model těchto zákazů a jejich podmínky; network-use nesmí v průvodci znamenat, že stačí zveřejnit zdroje.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

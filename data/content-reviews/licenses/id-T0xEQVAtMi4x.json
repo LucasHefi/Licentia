@@ -1,0 +1,27 @@
+{
+  "id": "OLDAP-2.1",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:abda6328f8958b367e420c9e17433c80a84d559ff765734e535dd64a60c5eca8"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Verze 2.1 zachovává zdrojové copyrighty a kopii licence, binárkám přikládá oznámení. OpenLDAP se nesmí bez písemného svolení použít k endorsementu ani v názvu odvozených produktů. Poděkování je doporučené; lze přejít na následnou revizi Foundation.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "OpenLDAP Public License 2.1 z 29.2.2000 zahrnuje software a přidruženou dokumentaci.",
+    "grantCs": "Úvod uděluje redistribution/use s úpravami i bez nich, bez komerčního omezení; bod 6 tuto či následnou revizi Foundation. Výslovný patentový grant a sublicence chybějí.",
+    "conditionsCs": "Bod 1 zachovává zdrojové copyright statements/notices a uvádí, že redistribuce také obsahují tento dokument; bod 2 copyright nahoře, podmínky a disclaimer v materiálech binárek. Bod 5 due credit should je doporučení. Zdrojová nabídka nebo same-license nejsou vyžadovány.",
+    "limitationsCs": "Bod 3 zakazuje endorsement názvem OpenLDAP bez písemného svolení; bod 4 bez něj zakazuje nazvat odvozený produkt OpenLDAP nebo obsahovat OpenLDAP v názvu. Disclaimer odmítá záruky i všechny uvedené škody Foundation/přispěvatelů.",
+    "compatibilityCs": "Bod 6 explicitně dovoluje budoucí license revision vydanou Foundation; email k získání svolení není automatická licenční alternativa."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/OLDAP-2.1.html",
+      "note": "Individuální revize celého připnutého textu; OpenLDAP Public License 2.1 z 29.2.2000 zahrnuje software a přidruženou dokumentaci."
+    }
+  ]
+}

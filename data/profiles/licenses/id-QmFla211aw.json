@@ -19,8 +19,7 @@
       "commercial-use",
       "distribution",
       "modifications",
-      "private-use",
-      "unknown"
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
@@ -28,62 +27,75 @@
       "include-notice"
     ],
     "triggers": [
-      "distribution",
-      "modification",
-      "unknown"
+      "distribution"
     ],
-    "restrictions": [
-      "trademark",
-      "unknown"
-    ],
+    "restrictions": [],
     "patentPosition": "none-stated",
-    "noticeBurden": "material"
+    "noticeBurden": "standard"
   },
   "evidence": [
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "license text, sole permission paragraph, opening grant ('Permission to use, copy, modify and distribute this font is hereby granted') and proviso; the broad grant is conditioned on notices only and states no reciprocal licensing requirement"
+      "locator": "public/data/licenses/Baekmuk.json#text; Fontový grant s oznámeními neobsahuje share-alike či zdrojovou povinnost; permisivní, scope none.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "license text, sole permission paragraph, proviso (copyright, permission, and acknowledgement retention requirements apply to copies and modified versions, but no source-disclosure, same-license, or other copyleft condition is stated)"
+      "locator": "public/data/licenses/Baekmuk.json#text; Fontový grant s oznámeními neobsahuje share-alike či zdrojovou povinnost; permisivní, scope none.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "license text, sole permission paragraph, opening grant (permission to use, copy, modify, and distribute the font, without a private- or commercial-purpose limitation); font embedding and sublicensing are not expressly addressed and the embedding dimension has no dedicated vocabulary value, represented by unknown"
+      "locator": "public/data/licenses/Baekmuk.json#text; Permission to use, copy, modify and distribute uděluje účelově neomezená oprávnění k fontu; patentový grant ani sublicence nejsou uvedeny.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "license text, sole permission paragraph, proviso (both the copyright notice and permission notice must appear in all copies of the font, derivative works, or modified versions, and the named-font registered-trademark acknowledgement must appear in supporting documentation)"
+      "locator": "public/data/licenses/Baekmuk.json#text; Všechny kopie fontu, odvozeniny a modifikace musí obsahovat copyright i svolení; supporting documentation obsahuje přesné uznání čtyř Baekmuk názvů jako známek Kim Jeong-Hwana.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "license text, sole permission paragraph, opening grant and proviso (distribution of copies and creation of derivative or modified versions activate represented notice duties; copying or use and the existence or provision of supporting documentation are additional trigger dimensions without dedicated vocabulary values, represented by unknown)"
+      "locator": "public/data/licenses/Baekmuk.json#text; Všechny kopie fontu, odvozeniny a modifikace musí obsahovat copyright i svolení; supporting documentation obsahuje přesné uznání čtyř Baekmuk názvů jako známek Kim Jeong-Hwana.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "license text, sole permission paragraph, final clause (supporting documentation must acknowledge that four named Baekmuk fonts are registered trademarks of Kim Jeong-Hwan); whole-text review (no warranty disclaimer or liability limitation, derived-font naming rule, fee condition, or other express restriction is stated, while the font-specific supporting-document condition is not represented losslessly and is represented by unknown)"
+      "locator": "public/data/licenses/Baekmuk.json#text; Prohlášení o registrovaných známkách je povinným oznámením, nikoli samostatně formulovaným zákazem názvů. Text nemá záruky, odpovědnost ani výpověď.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "license text, complete text (the grant concerns use, copying, modification, and distribution of the font; no express patent grant, patent condition, or patent-claim termination clause is stated)"
+      "locator": "public/data/licenses/Baekmuk.json#text; Permission to use, copy, modify and distribute uděluje účelově neomezená oprávnění k fontu; patentový grant ani sublicence nejsou uvedeny.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "license text, sole permission paragraph, proviso (every font copy, derivative work, or modified version must carry both copyright and permission notices, and supporting documentation must carry the specific four-font trademark acknowledgement, creating a material asset- and documentation-level notice burden)"
+      "locator": "public/data/licenses/Baekmuk.json#text; Všechny kopie fontu, odvozeniny a modifikace musí obsahovat copyright i svolení; supporting documentation obsahuje přesné uznání čtyř Baekmuk názvů jako známek Kim Jeong-Hwana.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "license metadata, deprecated=false, osi=false, and fsf=false; license text, sole permission paragraph (the grant is confined to a font and does not expressly resolve embedding, sublicensing, derived-font naming, or fees, while its copying and supporting-document triggers are not represented losslessly by the software-guide vocabulary), so this domain-specific license is unsuitable for automatic recommendation as a general software license"
+      "locator": "public/data/licenses/Baekmuk.json#text; Individuálně přečten celý připnutý text. Předmětem je font Baekmuk, včetně jeho odvozených a upravených verzí. Font lze užívat, kopírovat, upravovat a šířit; všechny kopie i odvozené verze mají zachovat copyright a svolení. Doprovodná dokumentace musí uvést předepsané oznámení o ochranných známkách. Připnutý grant pokrývá font a jeho deriváty, zatímco průvodce vybírá licenci nového softwaru bez modelu fontového předmětu. Doplnit fontový scénář a zachovat specifické dokumentační oznámení o známkách.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

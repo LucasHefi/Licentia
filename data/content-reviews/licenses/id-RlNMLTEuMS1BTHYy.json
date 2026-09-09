@@ -1,0 +1,29 @@
+{
+  "id": "FSL-1.1-ALv2",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:e900e90013eae44903e40bb129c2c028d84795b4811d771a61c52654e1beb018"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Licence dovoluje software používat, měnit a distribuovat pro stanovené účely, ale omezuje konkurenční komerční nabídky; výslovně připouští například interní užití a nekomerční výzkum. Každá konkrétní verze získává další licenci Apache 2.0 až dva roky po svém zpřístupnění. Průvodce ji nezařazuje, dokud nejsou zachyceny účel užití, datum verze a tento časový přechod.",
+  "blockersCs": [
+    "FSL kombinuje zákaz Competing Use s časově oddělenou Apache 2.0 licencí od druhého výročí konkrétní verze; před doporučením je třeba model konkurenčního účelu, data vydání a časové alternativy."
+  ],
+  "analysis": {
+    "subjectCs": "FSL 1.1 ALv2 licencuje každou poskytnutou verzi a po dvou letech jí uděluje další Apache 2.0 licenci.",
+    "grantCs": "Současný grant dovoluje užití, kopie, změny, odvozeniny, veřejné provedení/zobrazení a redistribuci pouze pro Permitted Purpose; zahrnuje patenty nutně porušené tímto dovoleným užitím.",
+    "conditionsCs": "Competing Use zahrnuje komerční zpřístupnění nahrazující software, existující nabídku poskytovatele s tímto softwarem nebo stejnou/podstatně obdobnou funkcí. Výslovně jsou dovoleny interní přístup, nekomerční výuka/výzkum a služby řádnému držiteli licence. Redistribuce připojí text či odkaz a neodstraní copyrighty; podmínky platí i pro změny/odvozeniny.",
+    "limitationsCs": "Patentový nárok proti komukoli na porušování či spoluporušování softwarem ihned ruší patentovou licenci. Známky jsou dovoleny jen pro licenční údaje a určení původu. AS IS vylučuje záruky/odpovědnost.",
+    "compatibilityCs": "Neodvolatelná další Apache 2.0 licence začíná druhým výročím dostupnosti konkrétní verze; před tím se konkurence nelegalizuje. Připnutý text odkazuje na úplnou Apache 2.0."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/FSL-1.1-ALv2.html",
+      "note": "Individuálně přečten celý připnutý text; Competing Use zahrnuje komerční zpřístupnění nahrazující software, existující nabídku poskytovatele s tímto softwarem nebo stejnou/podstatně obdobnou funkcí. Výslovně jsou dovoleny interní přístup, nekomerční výuka/výzkum a služby řádnému držiteli licence. Redistribuce připojí text či odkaz a neodstraní copyrighty; podmínky platí i pro změny/odvozeniny. Patentový grant je omezen na nutné zásahy při Permitted Purpose; vlastní patentový nárok na software proti komukoli jej okamžitě ukončí."
+    }
+  ]
+}

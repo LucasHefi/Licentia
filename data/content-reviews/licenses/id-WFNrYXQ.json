@@ -1,0 +1,22 @@
+{
+  "id": "XSkat",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.4",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:01038c09d8c563c47fdd8f2324f4c8b1d3891e935f2907241d38cec87a128400"
+  },
+  "disposition": "blocked",
+  "summaryCs": "U upravených verzí zachovejte copyrightová a svolovací oznámení. Buď omezte změny na balení či portování, nebo uveďte posledního autora změn a změňte název programu či použijte předepsaný tvar čísla verze. Průvodce tuto podmíněnou volbu zatím nedokáže vyhodnotit. Text nevyžaduje poskytování zdrojů a vylučuje záruky.",
+  "blockersCs": [
+    "Doplnit alternativní pravidlo pro distribuci úprav: pouze balení/portování, nebo identifikace posledního autora změn a přejmenování či zvláštní číslo verze x.y.z. Obecné mark-modifications nevyjadřuje výjimku ani povinný název/verzi. Povinnost zdroje poskytovat z textu neplyne; automatické zařazení zůstává vypnuté."
+  ],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/XSkat.html",
+      "note": "Dřívější individuální revize 2026-09-09.4; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

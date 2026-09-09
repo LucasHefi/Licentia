@@ -1,0 +1,20 @@
+{
+  "id": "GPL-3.0-or-later",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:2c21d982f6b19032c43e8db83afcac836dc878f4c7ecd19f50d690728f52f6b6"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Silný copyleft podle GPL 3.0 včetně odpovídajících zdrojů a podmíněných instalačních informací pro User Products. Or-later umožňuje pozdější GPL podle § 14; metadata popisují verzi 3.0, nikoli dosud neznámé podmínky budoucích verzí.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/GPL-3.0-or-later.html",
+      "note": "Dřívější individuální revize 2026-09-09; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

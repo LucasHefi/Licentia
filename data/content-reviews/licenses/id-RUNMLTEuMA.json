@@ -1,0 +1,20 @@
+{
+  "id": "ECL-1.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.7",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:ba02d0d556e457a48ed692088999085a8a4a4df9568ceed1338da8163ec63dcc"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Přiložte úplnou licenci na místě dostupném uživatelům a zachovejte existující oznámení, výhrady práv i podmínky ve všech kopiích a odvozených verzích. Změny označte včetně data a upravené dílo distribuujte tak, aby se nepletlo s originálem. Podlicencování je dovoleno. Jména a známky v reklamě vyžadují předchozí písemný souhlas. Verze 1.0 neobsahuje patentový grant z ECL 2.0.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/ECL-1.0.html",
+      "note": "Dřívější individuální revize 2026-09-09.7; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

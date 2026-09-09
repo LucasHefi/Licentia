@@ -16,18 +16,19 @@
     "family": "nonstandard",
     "copyleftScope": "unknown",
     "permissions": [
-      "commercial-use",
       "distribution",
       "modifications",
+      "private-use",
       "unknown"
     ],
     "obligations": [
       "include-notice",
-      "same-license"
+      "same-license",
+      "unknown"
     ],
     "triggers": [
       "distribution",
-      "unknown"
+      "use"
     ],
     "restrictions": [
       "additional-terms",
@@ -42,47 +43,65 @@
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "metadata: id=C-UDA-1.0, name=Computational Use of Data Agreement v1.0, deprecated=false, osi=false, fsf=false; text: §§1.1-2.1 grant use, modification, and distribution only for Computational Use, identifying a data-specific nonstandard license rather than a conventional permissive software license"
+      "locator": "public/data/licenses/C-UDA-1.0.json#text; Reciprocita smlouvy se vztahuje na Data včetně změn, zatímco Results jsou vyňaty. Software file/library/whole-work scope tento datový a de minimis režim nevystihuje.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text: §3.1.2 requires binding each recipient of redistributed Data to the C-UDA, while §§2.2 and 5.5 exclude unrestricted Results from that condition; this Data-only reciprocity does not map losslessly to the file/library/network/whole-work scope vocabulary and is retained as unknown"
+      "locator": "public/data/licenses/C-UDA-1.0.json#text; Reciprocita smlouvy se vztahuje na Data včetně změn, zatímco Results jsou vyňaty. Software file/library/whole-work scope tento datový a de minimis režim nevystihuje.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text: §1.1 expressly permits use, modification, and distribution of Data for Computational Use; §§2.1 and 5.1 define that use as computer analysis and prohibit other uses, so commercial computational use is not excluded but the purpose-limited grant cannot be represented losslessly and unknown is retained; no private-use, sublicensing, or patent grant is stated"
+      "locator": "public/data/licenses/C-UDA-1.0.json#text; §1.1 dovoluje use/modify/distribute pouze pro Computational Use a §1.2 slibuje nežalovat příjemce či downstream při dodržení dohody. Nejde o výslovně pojmenovaný patentový grant; §1.3 ponechává public domain a zákonné výjimky nedotčené.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text: §3.1.1 requires including all credit or attribution information received with redistributed Data and requiring Downstream Recipients to do the same (include-notice); §3.1.2 requires binding every recipient to the C-UDA (same-license); no source-disclosure, copyright-retention, license-text, or modification-marking duty is stated"
+      "locator": "public/data/licenses/C-UDA-1.0.json#text; §2.1 pouze počítačová analýza; §3.1.1 při redistribuci všechna přijatá credit/attribution data a vlastní podmínka jejich dalšího zachování; §3.1.2 každého příjemce vázat C-UDA. §2.2 a §5.5 z výsledků vyjímají užití/změny/distribuci včetně minimálních ilustračních částí a modelů bez více než de minimis dat.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "text: §§3.1-3.1.2 make attribution and C-UDA-binding duties conditional on redistribution of Data, supporting distribution; §§1.1-2.1 impose the separate Computational Use field-of-use condition on use, which has no dedicated vocabulary trigger and is retained as unknown; modification alone has no separate trigger"
+      "locator": "public/data/licenses/C-UDA-1.0.json#text; §2.1 pouze počítačová analýza; §3.1.1 při redistribuci všechna přijatá credit/attribution data a vlastní podmínka jejich dalšího zachování; §3.1.2 každého příjemce vázat C-UDA. §2.2 a §5.5 z výsledků vyjímají užití/změny/distribuci včetně minimálních ilustračních částí a modelů bez více než de minimis dat.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text: §2.1 requires that Data be used solely for Computational Use (an additional field-of-use term not losslessly expressible by the vocabulary, retained as additional-terms and unknown); §§4.2-4.3 disclaim warranties and limit liability"
+      "locator": "public/data/licenses/C-UDA-1.0.json#text; §4.1 nezaručuje jakákoli práva poskytovatele; §4.2 odmítá záruky/podmínky titulu, neporušení práv, obchodovatelnosti/vhodnosti. §4.3 vylučuje škody poskytovatele i upstream za Data/Results.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "text: complete canonical license §§1-5 (including the §1.2 covenant and §§4.1-4.3 disclaimer); no express patent grant, patent condition, patent-claim restriction, or patent-termination clause is stated"
+      "locator": "public/data/licenses/C-UDA-1.0.json#text; §1.1 dovoluje use/modify/distribute pouze pro Computational Use a §1.2 slibuje nežalovat příjemce či downstream při dodržení dohody. Nejde o výslovně pojmenovaný patentový grant; §1.3 ponechává public domain a zákonné výjimky nedotčené.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text: §3.1.1 requires every Data redistribution to carry all received credit or attribution information and contractually propagate that duty to each Downstream Recipient; the potentially multi-level, attribution-specific redistribution burden is material"
+      "locator": "public/data/licenses/C-UDA-1.0.json#text; §2.1 pouze počítačová analýza; §3.1.1 při redistribuci všechna přijatá credit/attribution data a vlastní podmínka jejich dalšího zachování; §3.1.2 každého příjemce vázat C-UDA. §2.2 a §5.5 z výsledků vyjímají užití/změny/distribuci včetně minimálních ilustračních částí a modelů bez více než de minimis dat.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "metadata: id=C-UDA-1.0, deprecated=false, osi=false, fsf=false; text: §§1.1-3.1.2 combine a Computational Use-only field-of-use restriction, Data-only downstream binding, and received-attribution propagation, while §§4.1-4.3 disclaim rights/warranties and limit liability; the data-domain scope and vocabulary-unmapped purpose/trigger conditions make this unsuitable for automatic recommendation"
+      "locator": "public/data/licenses/C-UDA-1.0.json#text; Individuálně přečten celý připnutý text. §5 rozlišuje Data, Data Provider, downstream/upstream příjemce a Results; data zahrnují modifikace, Results s nejvýše de minimis obsahem nikoli. Data lze upravovat a šířit pouze pro Computational Use, tedy činnosti umožňující počítačovou analýzu. Příjemci musí být vázáni C-UDA a předávat atribuci. Výsledky obsahující nanejvýš de minimis dat, včetně určitých AI modelů, jsou bez těchto omezení. C-UDA omezuje účel na počítačovou analýzu, vyžaduje smluvně vázat každého downstream příjemce a odděluje Results podle de minimis obsahu dat. Doplnit datový předmět, účel, souhlas příjemce a výsledkovou výjimku před softwarovým doporučením.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

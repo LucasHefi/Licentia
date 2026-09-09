@@ -1,0 +1,29 @@
+{
+  "id": "BSD-4.3TAHOE",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:aea0ff0f9674679146e6ed84b8270a272658b58c19920ff9e49039d337bdb300"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Licence dovoluje užití a redistribuci zdrojů i binárek se zachováním copyrightu a licenčního odstavce. Dokumentace, reklama a další materiály k distribuci či užití musejí přiznat vývoj v Berkeley; jméno univerzity nelze bez svolení použít k propagaci. Průvodce ji nezařazuje, protože text sice zmiňuje odvozené produkty, ale nevyjasňuje obecný rozsah práva software měnit.",
+  "blockersCs": [
+    "Znění výslovně uděluje redistribuci a užití a odvozené produkty zmiňuje jen u jména univerzity; před přiznáním obecného práva změn je nutné doložit tento rozsah z původního kontextu."
+  ],
+  "analysis": {
+    "subjectCs": "Text Regents of the University of California z roku 1987 licencuje software v binární i zdrojové formě.",
+    "grantCs": "Úvod výslovně dovoluje redistribuci a užití zdrojových i binárních forem. Zákaz endorsementu zmiňuje odvozené produkty, avšak vlastní grant nevymezuje rozsah modifikací; toto oprávnění zůstává nevyjasněno.",
+    "conditionsCs": "Copyright a celý licenční odstavec se kopírují do všech forem; veškerá dokumentace, reklama a ostatní materiály související s distribucí a užitím musí uznat vývoj na University of California, Berkeley.",
+    "limitationsCs": "Jméno univerzity se bez konkrétního předchozího písemného svolení nesmí použít k podpoře či propagaci odvozených produktů; AS IS vylučuje všechny záruky včetně prodejnosti a vhodnosti.",
+    "compatibilityCs": "Žádná alternativní licence či verze není nabízena; podmínky RENO se do tohoto znění nepřenášejí."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/BSD-4.3TAHOE.html",
+      "note": "Individuálně přečten celý připnutý text; Copyright a celý licenční odstavec se kopírují do všech forem; veškerá dokumentace, reklama a ostatní materiály související s distribucí a užitím musí uznat vývoj na University of California, Berkeley. Celý odstavec včetně reklamy a endorsementu neobsahuje patentový grant ani patentové ukončení."
+    }
+  ]
+}

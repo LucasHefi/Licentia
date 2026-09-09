@@ -1,0 +1,27 @@
+{
+  "id": "Symlinks",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:719e23704de9a581020cad433c436dddbc9e3bf6214b9f3d1605227b4417d763"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Autor dovoluje libovolné užití, distribuci a úpravy a výslovně vylučuje jakékoli formální podmínky pro zdroje i binárky, původní i upravené.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Text je osobní licenční prohlášení autora utility symlinks; popsaný účel kontroly odkazů není omezením grantu.",
+    "grantCs": "Druhý odstavec Use and distribute and modify as ... sees fit dovoluje všechny účely včetně komerce; patentová licence a samostatná sublicence nejsou výslovné.",
+    "conditionsCs": "Druhý odstavec výslovně říká, že pro distribuci zdrojů nebo binárek, upravených i původních, nejsou žádné formální požadavky. Žádná oznámení, zdroje ani jiné spouštěče nejsou předepsány.",
+    "limitationsCs": "Úvodní freeware a zamýšlený účel jsou popisná historie; text nestanoví zákaz prodeje, záruky, odpovědnost, známky či terminaci.",
+    "compatibilityCs": "Nejsou stanoveny jiné licence ani verze; naprostá volnost neznamená samostatný závěr o cizích právech."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Symlinks.html",
+      "note": "Individuální revize celého připnutého textu; Text je osobní licenční prohlášení autora utility symlinks; popsaný účel kontroly odkazů není omezením grantu."
+    }
+  ]
+}

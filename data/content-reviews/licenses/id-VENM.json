@@ -1,0 +1,20 @@
+{
+  "id": "TCL",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.3",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:3d13f60180e67df7259ab555bd1ff5b2c7cb5a4003c056ccf28559eed1e53357"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Zachovejte copyright v kopiích a toto oznámení beze změny v distribucích. Vlastní úpravy mohou mít jiné podmínky, pokud je zřetelně uvedete na první straně každého dotčeného souboru. Zkontrolujte samostatné podmínky jednotlivých souborů; text obsahuje i ustanovení o vládním užití.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/TCL.html",
+      "note": "Dřívější individuální revize 2026-09-09.3; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

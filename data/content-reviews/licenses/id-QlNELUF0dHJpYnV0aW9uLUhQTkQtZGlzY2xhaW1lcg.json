@@ -1,0 +1,27 @@
+{
+  "id": "BSD-Attribution-HPND-disclaimer",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:21a42d9f40e0aedc7b4dedc4da78092cb1bf82e444be2ba1e1b4c960dde0a19d"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Zdrojové a binární distribuce zachovávají copyright, podmínky a disclaimer. Každá forma redistribuce navíc nese předepsané uznání Computing Services at Carnegie Mellon; název univerzity nesmí bez písemného svolení podporovat odvozené produkty.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Software s copyrightem Carnegie Mellon 1998–2003 je pokryt ve zdrojové i binární podobě.",
+    "grantCs": "Úvod dovoluje redistribution/use obou forem, s úpravami i bez nich, bez účelového omezení; výslovný patentový grant a sublicence chybějí.",
+    "conditionsCs": "Body 1–2 zachovávají copyright, podmínky a disclaimer ve zdrojích nebo materiálech binárek. Bod 4 vyžaduje v jakékoli redistribuci přesné uznání softwaru Computing Services CMU s uvedeným URL; jde o distribuční notice, nikoli reklamní spouštěč. Zdrojový kód se neposkytuje povinně.",
+    "limitationsCs": "Bod 3 zakazuje endorsement/promotion názvem CMU bez předchozího písemného svolení; kontakty slouží žádosti o svolení. HPND disclaimer odmítá záruky a zvláštní/nepřímé/následné škody i ztrátu užití/dat/zisku.",
+    "compatibilityCs": "Žádné share-alike ani alternativní licence/verze nejsou určeny; distribuční acknowledgement nenahrazuje zákaz endorsementu."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/BSD-Attribution-HPND-disclaimer.html",
+      "note": "Individuální revize celého připnutého textu; Software s copyrightem Carnegie Mellon 1998–2003 je pokryt ve zdrojové i binární podobě."
+    }
+  ]
+}

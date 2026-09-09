@@ -39,47 +39,65 @@
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant paragraph (redistribution and use in source and binary forms, with or without modification, are permitted subject only to conditions 1-2; no reciprocal or same-license term)"
+      "locator": "public/data/licenses/BSD-2-Clause-pkgconf-disclaimer.json#text; Dva distribuční notice body nemají reciproční licencování nebo zdroje; permisivní bez copyleftu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant paragraph and conditions 1-2 (non-reciprocal permission; conditions require notice retention/reproduction but no same-license, source-disclosure, or corresponding-source condition)"
+      "locator": "public/data/licenses/BSD-2-Clause-pkgconf-disclaimer.json#text; Dva distribuční notice body nemají reciproční licencování nebo zdroje; permisivní bez copyleftu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant paragraph (redistribution and use in source and binary forms, with or without modification, are permitted; no purpose limitation, fee condition, or patent grant is stated)"
+      "locator": "public/data/licenses/BSD-2-Clause-pkgconf-disclaimer.json#text; Úvod dovoluje redistribution and use obou forem s úpravami i bez nich a bez účelových omezení; výslovný patentový grant ani sublicence chybějí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text: conditions 1-2 (source redistributions must retain, and binary redistributions must reproduce, the copyright notice, list of conditions, and disclaimer; no corresponding-source requirement)"
+      "locator": "public/data/licenses/BSD-2-Clause-pkgconf-disclaimer.json#text; Bod 1 zachovává copyright, podmínky a disclaimer v redistribuci zdrojů. Bod 2 je vyžaduje v dokumentaci dodané s binární distribucí; nenabízí alternativu other materials. Povinnost dodat zdroje neexistuje.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "text: conditions 1-2 (notice retention/reproduction duties attach to source or binary redistribution; modification alone creates no separate duty)"
+      "locator": "public/data/licenses/BSD-2-Clause-pkgconf-disclaimer.json#text; Bod 1 zachovává copyright, podmínky a disclaimer v redistribuci zdrojů. Bod 2 je vyžaduje v dokumentaci dodané s binární distribucí; nenabízí alternativu other materials. Povinnost dodat zdroje neexistuje.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text: final disclaimer paragraph (software is provided \"as is\" without any express or implied warranty, and authors are not liable for damages arising from use)"
+      "locator": "public/data/licenses/BSD-2-Clause-pkgconf-disclaimer.json#text; Zkrácený pkgconf disclaimer poskytuje software as is, bez výslovné/implicitní záruky a bez odpovědnosti autorů za škody z užití. Žádný zákaz endorsementu nebo patentová odveta uvedeny nejsou.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "text: complete license text (opening grant, conditions 1-2, and final disclaimer contain no express patent grant, patent condition, or patent-claim termination clause)"
+      "locator": "public/data/licenses/BSD-2-Clause-pkgconf-disclaimer.json#text; Úvod dovoluje redistribution and use obou forem s úpravami i bez nich a bez účelových omezení; výslovný patentový grant ani sublicence chybějí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text: conditions 1-2 (source copies retain the copyright notice, list of conditions, and disclaimer; binary copies reproduce the same material in distribution documentation)"
+      "locator": "public/data/licenses/BSD-2-Clause-pkgconf-disclaimer.json#text; Bod 1 zachovává copyright, podmínky a disclaimer v redistribuci zdrojů. Bod 2 je vyžaduje v dokumentaci dodané s binární distribucí; nenabízí alternativu other materials. Povinnost dodat zdroje neexistuje.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "metadata: id=BSD-2-Clause-pkgconf-disclaimer, name='BSD 2-Clause pkgconf disclaimer variant', deprecated=false, osi=false, fsf=false; text: complete two-clause grant and final warranty/liability disclaimer have explicit, bounded semantics with no additional disclaimer or endorsement clause beyond that final disclaimer"
+      "locator": "public/data/licenses/BSD-2-Clause-pkgconf-disclaimer.json#text; Individuálně přečten celý připnutý text. Grant pokrývá software Audacious vývojářů a dalších ve zdrojové i binární podobě. Zdrojové i binární verze lze užívat a šířit s úpravami i bez nich. Zdroje zachovají copyright, podmínky a disclaimer; binárky je uvedou v dodávané dokumentaci. Software je bez záruky i odpovědnosti za škody. ",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

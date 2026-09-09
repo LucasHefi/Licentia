@@ -1,0 +1,20 @@
+{
+  "id": "MPL-2.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:a73715962e99654d9e803467836f1ef0cacaf72d8dc66995ec22fe64e8c752b8"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Souborový copyleft: při distribuci zpřístupněte zdroje pokryté MPL a zachovejte oznámení; samostatné soubory širšího díla mohou mít jiné podmínky. Kombinace se sekundárními licencemi je podmíněná § 3.3 a vyžaduje samostatnou kontrolu. Patentový spor může ukončit autorská i patentová oprávnění.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/MPL-2.0.html",
+      "note": "Dřívější individuální revize 2026-09-09; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

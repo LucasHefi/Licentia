@@ -8,96 +8,101 @@
     "contentHash": "sha256:43d90652082b8aeb1ac127894ceb8a20f7dec790c3920db9bf7ebb675cfe4964"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "permissive",
-    "copyleftScope": "none",
+    "family": "weak-copyleft",
+    "copyleftScope": "library",
     "permissions": [
       "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "provide-corresponding-source"
+      "include-license-text",
+      "same-license",
+      "unknown"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification"
     ],
     "restrictions": [
       "liability",
       "trademark",
+      "unknown",
       "warranty"
     ],
-    "patentPosition": "unknown",
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.no-copyleft",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.permissive-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OFL-1.0-RFN.json#text; OFL 1.0 z 22. listopadu 2005 pokrývá Font Software včetně fontů, dat, zdrojů, build skriptů a dokumentace a Reserved Font Names. Grant dovoluje užití, studium, kopie, sloučení, embedding, změny, redistribuci a prodej fontů pod pěti podmínkami. Stejná licence zůstává na Font Software a odvozených fontech, nikoli na celém libovolném softwaru, se kterým jsou zabaleny.; https://spdx.org/licenses/OFL-1.0-RFN.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OFL-1.0-RFN.json#text; Stejná licence zůstává na Font Software a odvozených fontech, nikoli na celém libovolném softwaru, se kterým jsou zabaleny.; https://spdx.org/licenses/OFL-1.0-RFN.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OFL-1.0-RFN.json#text; Grant dovoluje užití, studium, kopie, sloučení, embedding, změny, redistribuci a prodej fontů pod pěti podmínkami.; https://spdx.org/licenses/OFL-1.0-RFN.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "restrictions",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OFL-1.0-RFN.json#text; Bod 1 zakazuje prodej samotných fontů i komponent; bod 2 dovoluje prodej s libovolným softwarem a vyžaduje copyright/licenci jako text, čitelnou hlavičku či snadno viditelná metadata. Bod 3 zakazuje upraveným fontům RFN i jeho části bez písemného svolení ve všech pojmenovacích polích. Bod 5 vyžaduje vždy OFL.; https://spdx.org/licenses/OFL-1.0-RFN.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OFL-1.0-RFN.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OFL-1.0-RFN.json#text; Bod 1 zakazuje prodej samotných fontů i komponent; bod 2 dovoluje prodej s libovolným softwarem a vyžaduje copyright/licenci jako text, čitelnou hlavičku či snadno viditelná metadata. Bod 3 zakazuje upraveným fontům RFN i jeho části bez písemného svolení ve všech pojmenovacích polích. Bod 5 vyžaduje vždy OFL.; https://spdx.org/licenses/OFL-1.0-RFN.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OFL-1.0-RFN.json#text; Bod 4 zakazuje použít jména autorů/holderů k propagaci změněných fontů kromě přiznání příspěvku či svolení. Porušení podmínek ruší licenci; AS IS vylučuje záruky včetně patentů a odpovědnost.; https://spdx.org/licenses/OFL-1.0-RFN.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OFL-1.0-RFN.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OFL-1.0-RFN.json#text; Patent je uveden pouze mezi vyloučenými zárukami neporušování; výslovný patentový grant ani patentové ukončení není.; https://spdx.org/licenses/OFL-1.0-RFN.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OFL-1.0-RFN.json#text; Bod 1 zakazuje prodej samotných fontů i komponent; bod 2 dovoluje prodej s libovolným softwarem a vyžaduje copyright/licenci jako text, čitelnou hlavičku či snadno viditelná metadata. Bod 3 zakazuje upraveným fontům RFN i jeho části bez písemného svolení ve všech pojmenovacích polích. Bod 5 vyžaduje vždy OFL. Rozsah notifikační zátěže: standard.; https://spdx.org/licenses/OFL-1.0-RFN.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OFL-1.0-RFN.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OFL-1.0-RFN.json#text; Individuální kontrola celého připnutého textu OFL-1.0-RFN dne 2026-09-09. OFL 1.0 z 22. listopadu 2005 pokrývá Font Software včetně fontů, dat, zdrojů, build skriptů a dokumentace a Reserved Font Names. Fontová licence zakazuje samostatný prodej komponent a vyžaduje RFN přejmenování všech dotčených polí upravených fontů; před doporučením je třeba fontový model s těmito podmínkami. Volitelné písemné svolení může uvolnit RFN; jiná licence pro Font Software není dovolena a podmínky OFL 1.1 nejsou přeneseny.; https://spdx.org/licenses/OFL-1.0-RFN.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

@@ -1,0 +1,29 @@
+{
+  "id": "any-OSI-perl-modules",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:059471428039a71fc6534e49d50c2a631f1cbcddd4b4cda696f22a24e24c930c"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Prohlášení dovoluje distribuovat software pod jednou či více vybranými licencemi, například GPL, LGPL, Artistic nebo licencí ze seznamu OSI. Konkrétní volba se uvádí v licenčním oddílu dokumentace či souboru LICENSE. Protože nejsou jednoznačně určeny licence a jejich verze, průvodce prohlášení nezařazuje bez doložení skutečně zvolených podmínek.",
+  "blockersCs": [
+    "Text dovoluje volbu jednotlivé či více neurčených verzí licencí včetně externího OSI seznamu; před doporučením je třeba určit konkrétní distribuční volbu a reprezentovat její alternativy."
+  ],
+  "analysis": {
+    "subjectCs": "Prohlášení řeší výběr distribuční licence softwaru a informaci o této volbě v balíčku.",
+    "grantCs": "První odstavec dovoluje distribuci pod GPL, LGPL, modified BSD, Artistic nebo dalšími OSI licencemi, a to pod všemi, podmnožinou nebo jedinou z nich.",
+    "conditionsCs": "Podmínky plynou ze zvolených licencí; u balíčku se odkazuje na metadata a distributor může nahradit LICENSE oddíl dokumentace či přiložit soubor LICENSE zachycující volbu.",
+    "limitationsCs": "Samotné prohlášení nemá záruky, odpovědnost ani ukončení; ty závisejí na zvolených podmínkách.",
+    "compatibilityCs": "Text výslovně poskytuje mnoho alternativ a dovoluje jejich podmnožiny, ale neudává verze GPL/LGPL/Artistic ani konkrétní modified BSD."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/any-OSI-perl-modules.html",
+      "note": "Individuálně přečten celý připnutý text; Podmínky plynou ze zvolených licencí; u balíčku se odkazuje na metadata a distributor může nahradit LICENSE oddíl dokumentace či přiložit soubor LICENSE zachycující volbu. Prohlášení žádné patentové ujednání nemá; patentová pozice závisí na zvolené licenci."
+    }
+  ]
+}

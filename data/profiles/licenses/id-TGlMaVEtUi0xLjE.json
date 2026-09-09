@@ -9,90 +9,104 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
     "family": "weak-copyleft",
-    "copyleftScope": "library",
+    "copyleftScope": "file",
     "permissions": [
-      "unknown"
+      "commercial-use",
+      "conditional-relicensing",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "unknown"
+      "include-copyright",
+      "include-license-text",
+      "include-notice",
+      "mark-modifications",
+      "provide-corresponding-source",
+      "same-license"
     ],
     "triggers": [
-      "unknown"
+      "combination",
+      "distribution",
+      "modification"
     ],
     "restrictions": [
-      "unknown"
+      "additional-terms",
+      "liability",
+      "trademark",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.library-copyleft",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.copyleft-family",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LiLiQ-R-1.1.json#text; §4.1 same-license/source povinnost je pro software a logiciel modifié definovaný souborově, nikoli automaticky každý logiciel dérivé z §4. File weak-copyleft zachovává tento výslovný rozdíl.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "copyleftScope",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/LiLiQ-R-1.1.json#text; §4.1 same-license/source povinnost je pro software a logiciel modifié definovaný souborově, nikoli automaticky každý logiciel dérivé z §4. File weak-copyleft zachovává tento výslovný rozdíl.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LiLiQ-R-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LiLiQ-R-1.1.json#text; §3 nevýhradně bezroyalty bez časových/územních hranic dovoluje produkci/reprodukci, veřejný výkon a publikaci podstatné části; §4 distribuci původního/modifikovaného/odvozeného software. Patentový grant není uveden. §4.2 dává podmíněnou další licenci pro kompatibilní kombinaci.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LiLiQ-R-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LiLiQ-R-1.1.json#text; §3 úplné vykonání práv předpokládá upravitelné zdroje nebo bezpříplatkovou nabídku s rozumnými dodacími náklady a přiměřenou dobou. §4 kopie licence, oznámení změny (umístění do každého vhodného souboru jen preferované), uchování platných copyright/trademark/warranty/authorship notices. §4.1 původní a modified software při distribuci zdroje/nabídka; modified pod stejnou licencí. §5 zaslané příspěvky pod LiLiQ, není-li jiná dohoda.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LiLiQ-R-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LiLiQ-R-1.1.json#text; §3 úplné vykonání práv předpokládá upravitelné zdroje nebo bezpříplatkovou nabídku s rozumnými dodacími náklady a přiměřenou dobou. §4 kopie licence, oznámení změny (umístění do každého vhodného souboru jen preferované), uchování platných copyright/trademark/warranty/authorship notices. §4.1 původní a modified software při distribuci zdroje/nabídka; modified pod stejnou licencí. §5 zaslané příspěvky pod LiLiQ, není-li jiná dohoda.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LiLiQ-R-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LiLiQ-R-1.1.json#text; §6 známky pouze k identifikaci původu, §§7–8 bez záruk/odpovědnosti poskytovatele a odpovědnost příjemce; vlastní záruky/podpora dovoleny bez vazby poskytovatele. §9 automatická terminace, první porušení napravitelné do30 dnů od zjištění, další jen výslovným souhlasem. §11 Quebec právo/výlučné soudy jen je-li poskytovatel uvedená quebecká veřejná entita.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LiLiQ-R-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LiLiQ-R-1.1.json#text; §3 nevýhradně bezroyalty bez časových/územních hranic dovoluje produkci/reprodukci, veřejný výkon a publikaci podstatné části; §4 distribuci původního/modifikovaného/odvozeného software. Patentový grant není uveden. §4.2 dává podmíněnou další licenci pro kompatibilní kombinaci.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LiLiQ-R-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LiLiQ-R-1.1.json#text; §3 úplné vykonání práv předpokládá upravitelné zdroje nebo bezpříplatkovou nabídku s rozumnými dodacími náklady a přiměřenou dobou. §4 kopie licence, oznámení změny (umístění do každého vhodného souboru jen preferované), uchování platných copyright/trademark/warranty/authorship notices. §4.1 původní a modified software při distribuci zdroje/nabídka; modified pod stejnou licencí. §5 zaslané příspěvky pod LiLiQ, není-li jiná dohoda.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LiLiQ-R-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LiLiQ-R-1.1.json#text; Individuálně přečten celý připnutý text. §2 rozlišuje logiciel, logiciel modifié (změněný source file nebo nový soubor obsahující podstatnou část) a logiciel dérivé mimo tyto kategorie; dokumentace je součástí softwaru. LiLiQ-R 1.1 vyžaduje při distribuci původního a upraveného softwaru upravitelné zdroje nebo přiměřenou nabídku a stejnou licenci upravených zdrojových souborů. Odvozený software je definován zvlášť. Kompatibilní relicence má podmínky kombinace, nemožnosti plnit a výjimku vlastníka druhé licence. ",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

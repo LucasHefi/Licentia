@@ -1,0 +1,29 @@
+{
+  "id": "OSL-1.1",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:b1ed43af0991aaa9b75a48818225fe326f4dce286e22d6effdcf472520738534"
+  },
+  "disposition": "blocked",
+  "summaryCs": "OSL 1.1 ponechává šířené dílo a odvozeniny pod stejnou licencí a vyžaduje modifikovatelný zdroj, přiložený nebo dostupný v repozitáři. Za distribuci považuje také externí provoz odvozeniny, včetně síťové aplikace; nejde o totožný rozsah jako ve verzi 1.0. Zachovávají se oznámení a označují změny, licence zahrnuje patentový grant a záruku oprávnění k autorským právům. Povinnost rozumně usilovat o výslovný dobrovolný souhlas příjemců zatím brání zařazení do průvodce.",
+  "blockersCs": [
+    "§9 požaduje rozumné úsilí o výslovný dobrovolný souhlas příjemců; před doporučením je třeba model aktivního získávání souhlasu, který prosté předání licence nepokrývá."
+  ],
+  "analysis": {
+    "subjectCs": "OSL 1.1 pokrývá Original Work a Derivative Works a samostatně vymezuje externí provoz odvozenin.",
+    "grantCs": "§1 dovoluje reprodukci, změny, distribuci a veřejné provedení/zobrazení bez sublicencí; §2 uděluje embodied Licensed Claims pro původní dílo i odvozeniny.",
+    "conditionsCs": "§1c distribuované dílo zůstává OSL; §3 preferovaný strojový zdroj s dokumentací je přiložen nebo v levně/pohodlně přístupném repozitáři po dobu distribuce s adresou za copyrightem. §5 činí distribucí External Deployment odvozeniny pro užití mimo You včetně síťové aplikace. §6 zachovává zdrojové notices a nápadně označuje změny; §9 ukládá rozumné úsilí o express and volitional assent příjemce.",
+    "limitationsCs": "§4 vyjímá další IP/známky; §7 zaručuje vlastnictví/platnou licenci copyrightu, ostatní AS IS. §8 zachovává zákonnou odpovědnost smrti/zranění. §9 porušení same-license ihned ukončuje grant; §10 žaloba na essential patent jakéhokoli OSI software se stejnou mutual doložkou ruší vše.",
+    "compatibilityCs": "Oproti v1.0 §5 nepřidává obecné poskytování obsahu/služeb a jeho operative věta míří na Derivative Work, ne každé původní dílo. §11–12 právo/soudy poskytovatele, bez CISG, vítěz vymáhání má náklady. §14 You zahrnuje řízené subjekty."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/OSL-1.1.html",
+      "note": "Individuálně přečten celý připnutý text; §1c distribuované dílo zůstává OSL; §3 preferovaný strojový zdroj s dokumentací je přiložen nebo v levně/pohodlně přístupném repozitáři po dobu distribuce s adresou za copyrightem. §5 činí distribucí External Deployment odvozeniny pro užití mimo You včetně síťové aplikace. §6 zachovává zdrojové notices a nápadně označuje změny; §9 ukládá rozumné úsilí o express and volitional assent příjemce. §2 výslovně licencuje embodied claims; §10 ruší celou licenci při žalobě na essential patent u OSI software s mutual doložkou."
+    }
+  ]
+}

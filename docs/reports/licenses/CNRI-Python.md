@@ -1,0 +1,59 @@
+# CNRI-Python — obsahová revize
+
+CNRI Python License
+
+Revize: **2026-09-09** · pravidlo **2026-09-09.10**.
+
+Výsledek: **způsobilá pro průvodce podle kurátorovaného profilu**.
+
+CNRI poskytuje celosvětový bezpoplatkový grant Pythonu 1.6 beta 1; původní i odvozená verze zachová smlouvu nebo přesné oznámení s handle 1895.22/1011. Veřejná odvozenina uvede povahu změn. Platí automatické ukončení při podstatném porušení a právo Virginie.
+
+## Předmět a rozsah
+
+Bod 1 vymezuje konkrétní Python 1.6b1 zveřejněný 4.8.2000 na python.org a dokumentaci, odlišný od pozdější CNRI GPL-Compatible varianty.
+
+## Udělená práva
+
+Bod 2 nevýhradně, bez royalty a celosvětově dovoluje reproduce/analyze/test/public perform-display/derivatives/distribute/otherwise use samostatně či v odvozenině. Výslovný patentový grant ani sublicence chybějí.
+
+## Podmínky a spouštěče
+
+Bod 2 zachovává celou CNRI smlouvu v původní/odvozené verzi NEBO přesný substituční text s handle 1895.22/1011 a hdl URL. Bod 3 při veřejném zpřístupnění odvozeniny obsahující libovolnou část požaduje uvést povahu změn. Body 7–8 a úvod spojují užití/kopie/instalaci či kliknutí se souhlasem.
+
+## Omezení, výjimky a ukončení
+
+Body 4–5 odmítají záruky včetně cizích práv a incidental/special/consequential škody. Bod 6 automaticky ukončuje práva při material breach. Bod 7 volí Virginii bez kolizních norem, nevytváří zastoupení/partnerství/joint venture a nedovoluje CNRI trademark endorsement.
+
+## Verze a kombinování
+
+Smlouva nebo přesný handle text jsou alternativní notices; otevření hdl URL při kontrole nebylo dostupné, úplný smluvní text je však v pinned záznamu. Tato varianta nemá pozdější GPL-Compatible výjimku z virginijského práva.
+
+## Metadata a jejich doložení
+
+| Pole | Hodnota | Doložení znění |
+|---|---|---|
+| family | "permissive" | public/data/licenses/CNRI-Python.json#text; Široký grant s notice a popisem veřejných změn nevyžaduje stejnou licenci ani zdroje; permisivní bez copyleftu. |
+| copyleftScope | "none" | public/data/licenses/CNRI-Python.json#text; Široký grant s notice a popisem veřejných změn nevyžaduje stejnou licenci ani zdroje; permisivní bez copyleftu. |
+| permissions | ["commercial-use","distribution","modifications","private-use"] | public/data/licenses/CNRI-Python.json#text; Bod 2 nevýhradně, bez royalty a celosvětově dovoluje reproduce/analyze/test/public perform-display/derivatives/distribute/otherwise use samostatně či v odvozenině. Výslovný patentový grant ani sublicence chybějí. |
+| obligations | ["include-notice","mark-modifications"] | public/data/licenses/CNRI-Python.json#text; Bod 2 zachovává celou CNRI smlouvu v původní/odvozené verzi NEBO přesný substituční text s handle 1895.22/1011 a hdl URL. Bod 3 při veřejném zpřístupnění odvozeniny obsahující libovolnou část požaduje uvést povahu změn. Body 7–8 a úvod spojují užití/kopie/instalaci či kliknutí se souhlasem. |
+| triggers | ["distribution","modification","use"] | public/data/licenses/CNRI-Python.json#text; Bod 2 zachovává celou CNRI smlouvu v původní/odvozené verzi NEBO přesný substituční text s handle 1895.22/1011 a hdl URL. Bod 3 při veřejném zpřístupnění odvozeniny obsahující libovolnou část požaduje uvést povahu změn. Body 7–8 a úvod spojují užití/kopie/instalaci či kliknutí se souhlasem. |
+| restrictions | ["additional-terms","liability","trademark","warranty"] | public/data/licenses/CNRI-Python.json#text; Body 4–5 odmítají záruky včetně cizích práv a incidental/special/consequential škody. Bod 6 automaticky ukončuje práva při material breach. Bod 7 volí Virginii bez kolizních norem, nevytváří zastoupení/partnerství/joint venture a nedovoluje CNRI trademark endorsement. |
+| patentPosition | "none-stated" | public/data/licenses/CNRI-Python.json#text; Bod 2 nevýhradně, bez royalty a celosvětově dovoluje reproduce/analyze/test/public perform-display/derivatives/distribute/otherwise use samostatně či v odvozenině. Výslovný patentový grant ani sublicence chybějí. |
+| noticeBurden | "standard" | public/data/licenses/CNRI-Python.json#text; Bod 2 zachovává celou CNRI smlouvu v původní/odvozené verzi NEBO přesný substituční text s handle 1895.22/1011 a hdl URL. Bod 3 při veřejném zpřístupnění odvozeniny obsahující libovolnou část požaduje uvést povahu změn. Body 7–8 a úvod spojují užití/kopie/instalaci či kliknutí se souhlasem. |
+
+## Zdroje
+
+- [Primární zdroj](https://spdx.org/licenses/CNRI-Python.html) — Individuální revize celého připnutého textu; Bod 1 vymezuje konkrétní Python 1.6b1 zveřejněný 4.8.2000 na python.org a dokumentaci, odlišný od pozdější CNRI GPL-Compatible varianty.
+- [Primární zdroj](https://hdl.handle.net/1895.22/1011) — Historický handle je výslovná alternativa v §2. Při kontrole nebylo otevření dostupné; původní úplné smluvní znění je zachováno v pinned SPDX textu a není nahrazeno jinou verzí.
+- [Kurátorovaný profil](../../../data/profiles/licenses/id-Q05SSS1QeXRob24.json)
+- [Uložené úplné znění](../../../public/data/licenses/CNRI-Python.json)
+
+## Otisk zdroje
+
+```json
+{
+  "sourceId": "spdx-license-list",
+  "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+  "contentHash": "sha256:4d418801372c53e755e365ab79bfa2bafdb94f51abeac51d555513bc6ff529f1"
+}
+```

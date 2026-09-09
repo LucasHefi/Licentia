@@ -25,9 +25,9 @@
     ],
     "obligations": [
       "include-copyright",
+      "include-license-text",
       "include-notice",
       "mark-modifications",
-      "provide-corresponding-source",
       "unknown"
     ],
     "triggers": [
@@ -39,7 +39,6 @@
       "liability",
       "patent-claim",
       "trademark",
-      "unknown",
       "warranty"
     ],
     "patentPosition": "retaliatory-termination",
@@ -47,49 +46,67 @@
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text: Sections 1 and 15, read with Sections 3, 6, and 9 and the complete license text (the license grants rights in the Original Work and Derivative Works without a same-license condition; source availability is an actor-specific Licensor promise and derivative-source conditions concern retained and added notices)"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text: Sections 1 and 15 (broad perpetual copyright permissions and a general right to use), together with Sections 3, 6, and 9 (non-reciprocal conditions with no requirement to license Derivative Works under AFL-2.0)"
+      "locator": "public/data/licenses/AFL-2.0.json#text; Academic Free License 2.0 licencuje Original Work s oznámením v2.0 a odvozeniny, bez §5 External Deployment. §1 uděluje sublicencovatelná práva reprodukce, odvozenin, distribuce a veřejného provedení/zobrazení; §2 sublicencovatelný patentový grant k embodied claims původního díla a odvozenin. §1 neukládá odvozeninám stejnou licenci a §5 je záměrně vynechán; provider source závazek §3 není copyleft změn.; https://spdx.org/licenses/AFL-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text: application notice preceding Section 1; Section 3, second paragraph; and Section 6 (retain copyright, patent, trademark, licensing, and Attribution Notices in Derivative Work Source Code, add a prominent modification Attribution Notice, and publish a repository-address notice when using that source-delivery alternative)"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text: Section 3 (Licensor provides machine-readable Source Code with each Licensor-distributed copy or maintains the specified repository and publishes its address); Section 6 (retain notices and add a prominent modification notice in Derivative Work Source Code); and Section 9, first paragraph (a distributor must make a reasonable effort to obtain recipients' express assent); the vocabulary cannot encode the distinct Licensor actor, the source-delivery alternative, or the express-assent duty, represented by unknown"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text: Section 2 (express patent grant) and Section 10 (automatic termination upon the specified patent action, including certain claims against Licensor concerning software patents and claims against any entity concerning a patent applicable to the Original Work)"
+      "locator": "public/data/licenses/AFL-2.0.json#text; §1 neukládá odvozeninám stejnou licenci a §5 je záměrně vynechán; provider source závazek §3 není copyleft změn.; https://spdx.org/licenses/AFL-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text: Section 1(a)-(e), Section 2, and Section 15 (world-wide, royalty-free, non-exclusive, perpetual, sublicenseable rights to reproduce, prepare and distribute Derivative Works, perform, display, make, use, sell, offer for sale, and otherwise use the Original Work as not restricted)"
+      "locator": "public/data/licenses/AFL-2.0.json#text; §1 uděluje sublicencovatelná práva reprodukce, odvozenin, distribuce a veřejného provedení/zobrazení; §2 sublicencovatelný patentový grant k embodied claims původního díla a odvozenin.; https://spdx.org/licenses/AFL-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "restrictions",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text: Section 4 (endorsement and trademark limits); Section 7 (provenance warranty and warranty disclaimer); Section 8 (liability limitation); Section 10 (patent-action termination); Sections 11-12 (mandatory venue and governing law, CISG exclusion, and prevailing-party costs and attorneys' fees); the vocabulary cannot encode the Sections 11-12 litigation terms, represented by unknown"
-    },
-    {
-      "field": "review",
-      "sourceId": "spdx-license-list",
-      "locator": "metadata: id=AFL-2.0, deprecated=false, osi=true; text: Sections 3, 7, 9, 10, 11, and 12 and complete-license review (the actor-specific alternative source obligation, affirmative provenance warranty, recipient-assent duty, broad patent retaliation, governing-law and venue clause, and fee shifting are significant terms the guide vocabulary cannot communicate losslessly, so this older version is not a safe general recommendation)"
+      "locator": "public/data/licenses/AFL-2.0.json#text; §3 ukládá Licensorovi dodat preferovaný strojový zdroj nebo dlouhodobě přístupný repozitář s adresou za copyrightem; nelze z toho bez dalšího udělat povinnost všech příjemců publikovat vlastní změny. §6 změněné zdroje zachovávají IP/licenční/attribution notices a nápadně označí změnu. §9 distributor musí rozumně usilovat o výslovný souhlas příjemců.; https://spdx.org/licenses/AFL-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "text: Section 3 (each copy the Licensor distributes); Section 6 (creation of Derivative Works); Section 9, first paragraph (distribution activates the reasonable-effort express-assent duty); and Section 10 (commencement of the specified patent action, including a cross-claim or counterclaim)"
+      "locator": "public/data/licenses/AFL-2.0.json#text; §3 ukládá Licensorovi dodat preferovaný strojový zdroj nebo dlouhodobě přístupný repozitář s adresou za copyrightem; nelze z toho bez dalšího udělat povinnost všech příjemců publikovat vlastní změny. §6 změněné zdroje zachovávají IP/licenční/attribution notices a nápadně označí změnu. §9 distributor musí rozumně usilovat o výslovný souhlas příjemců.; https://spdx.org/licenses/AFL-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/AFL-2.0.json#text; §4 omezuje jména/známky a další IP; §7 poskytovatel zaručuje původ copyrightu i udělených patentů, jinak AS IS. §8 výluka odpovědnosti respektuje zákonnou smrt/zranění. §10 patentová žaloba/protinárok na poskytovatele kvůli softwarovému patentu nebo na kohokoli kvůli původnímu dílu (ne kombinaci) ruší celou licenci.; https://spdx.org/licenses/AFL-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/AFL-2.0.json#text; §2 poskytuje výslovný sublicencovatelný patentový grant; §10 ruší celou licenci za dvě vymezené kategorie patentové žaloby s výjimkou kombinací.; https://spdx.org/licenses/AFL-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/AFL-2.0.json#text; §3 ukládá Licensorovi dodat preferovaný strojový zdroj nebo dlouhodobě přístupný repozitář s adresou za copyrightem; nelze z toho bez dalšího udělat povinnost všech příjemců publikovat vlastní změny. §6 změněné zdroje zachovávají IP/licenční/attribution notices a nápadně označí změnu. §9 distributor musí rozumně usilovat o výslovný souhlas příjemců. Rozsah notifikační zátěže: standard.; https://spdx.org/licenses/AFL-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/AFL-2.0.json#text; Individuální kontrola celého připnutého textu AFL-2.0 dne 2026-09-09. Academic Free License 2.0 licencuje Original Work s oznámením v2.0 a odvozeniny, bez §5 External Deployment. §9 požaduje rozumné úsilí získat výslovný souhlas příjemců a §3 rozlišuje zdrojový závazek poskytovatele od příjemce; před doporučením je třeba model aktivního souhlasu a rolí této povinnosti. §11–12 právo/soudy sídla poskytovatele, CISG vyloučena, vítěz vymáhání má náklady; §14 You zahrnuje ovládané subjekty. §15 dovoluje ostatní nezakázané užití. Žádná same-license alternativa není vyžadována.; https://spdx.org/licenses/AFL-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

@@ -1,0 +1,30 @@
+{
+  "id": "NPOSL-3.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:2bb90ffe04bd782958663f2829b1e54410b42c1a4fe965a41bb39a84ddabb9f1"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Non-Profit OSL3.0 má síťový copyleft, ale pod touto variantou smí dále distribuovat jen nezisková organizace deklarující nulový příjem z díla, odvozenin, podpory i souvisejících služeb. Ostatní distributoři musí použít původní OSL3.0 a jasně to oznámit. Není to obecný zákaz komerčního užití. NPOSL neobsahuje záruku původu práv a vylučuje i přímé škody; přechod na OSL3.0 proto nesmí tyto rozdíly zamlčet. Zdrojové a atribuční povinnosti, externí nasazení a získávání souhlasu příjemců zůstávají podrobně stanoveny.",
+  "blockersCs": [
+    "§17(a),(d) vyžaduje deklaraci neziskového statusu a nulového příjmu z distribuce, podpory i služeb pro další NPOSL distribuci; jinak nařizuje přechod na OSL3.0 s novými notices. Model nemá tuto rolovou a příjmovou podmínku ani podmíněnou změnu záruk/odpovědnosti mezi oběma licencemi. Je třeba modelovat tuto větev, nikoli zakázat všechnu komerci nebo sloučit obě varianty.",
+    "§9 nařizuje přiměřené úsilí získat výslovný souhlas příjemců; §5 zahrnuje externí nasazení originálu i odvozenin jako distribuci. Povinnost souhlasu není pokryta notice enumem a potřebuje samostatný model."
+  ],
+  "analysis": {
+    "subjectCs": "Original Work výslovně označené Non-Profit OSL3.0 vedle copyrightu; §17(e) přikazuje toto rozlišení oproti původní OSL. Odvozeniny jsou vymezeny §1(b); kolektivní dílo samostatně §1(a). You podle §14 zahrnuje i ovládající/ovládané/společně ovládané subjekty.",
+    "grantCs": "§1 celosvětový bezplatný nevýhradní sublicencovatelný copyright po dobu práv pro kopie, změny, distribuci/sdělování a veřejné provádění/zobrazení. §2 uděluje po dobu patentů poskytovatelem vlastněné/ovládané nároky uskutečněné v dodaném originálu pro výrobu včetně have made, užití, prodej a import. §15 neomezuje další dovolené užití. §17(d) dovoluje a pro nesplňující distributory vyžaduje OSL3.0 alternativu; nelze naopak běžnou OSL3.0 přepnout na NPOSL.",
+    "conditionsCs": "§1(c) distribuované/sdělované kopie pod NPOSL nebo povinnou alternativou §17(d). §3 poskytovatel dodává preferované zdroje a dostupné návody úprav, nebo je drží levně/pohodlně dostupné v repozitáři po dobu distribuce. §5 externí nasazení originálu i odvozenin pro osoby mimo You včetně sítě je distribuce. §6 ve zdrojích odvozenin zachovává copyright/patent/známkové/licenční a Attribution Notices a výrazně označuje změnu. §9 přiměřené úsilí o výslovný souhlas. §17(a),(d) pod NPOSL vyžaduje neziskovou deklaraci a nulový příjem z díla, změn, podpory i služeb; jinak celé sdělení/distribuce pod OSL3.0 s jasnými licenčními notices.",
+    "limitationsCs": "§§7,17(b) výslovně odstraňují provenanční záruku OSL3.0 a vylučují všechny záruky; §§8,17(c) přidávají k výluce i přímé škody s výjimkou nepominutelného práva. §4 neuděluje propagační jména/známky. §9 ukončuje grant nesplněním §1(c), ponechává fair use/fair dealing. §10 patentová žaloba proti poskytovateli či jakémukoli příjemci včetně proti/křížové žaloby ruší celou licenci, ale kombinace originálu s jiným SW/HW jsou vyňaty. §§11–12 volí právo a fórum místa poskytovatele bez CISG a náklady úspěšné strany.",
+    "compatibilityCs": "Připnutou OSL3.0 jsem rovněž přečetl: nařízená alternativa §17(d) má vlastní provenanční záruku a odlišný seznam výluk škod, které NPOSL odstranila/rozšířila. Nelze tvrdit, že přechod zachovává všechny výluky NPOSL. §16 dovoluje jinak pojmenovaný upravený licenční text pouze pro jiná původní díla a pod uvedenými podmínkami včetně OSI schválení před open-source tvrzením; není to přelicencování této odvozeniny. Automatická later version uvedena není."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/NPOSL-3.0.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; §§1(c),5 síťový copyleft s povinnou variantou OSL3.0 podle §17(d); nejedná se o obecnou nekomerční licenci"
+    }
+  ]
+}

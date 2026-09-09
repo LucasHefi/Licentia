@@ -1,0 +1,27 @@
+{
+  "id": "Apache-2.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:535659213358d59ec9cfcec92c1761fa6dae4a607e733ddc8b26d211cf7dd7a5"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Apache 2 dovoluje široké copyrightové i vymezené patentové užití. Příjemci dostanou licenci, změny se označí a relevantní původní source/NOTICE oznámení zůstanou. Odvozeniny mohou mít jiné podmínky při dodržení původního grantu; dobrovolně převzatá záruka či odpovědnost zahrnuje obranu přispěvatelů.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "§1 Work zahrnuje Source/Object; Derivative Works výslovně vylučují oddělitelné práce a pouhé linkování/binding rozhraní. Contributor je autor zařazeného Contribution; You zahrnuje kontrolované entity s 50%/beneficial ownership či řídicí kontrolou.",
+    "grantCs": "§2 každý Contributor uděluje trvalý celosvětový bezplatný neodvolatelný copyright na reprodukci, deriváty, public display/perform, sublicence a source/object distribuci. §3 patentový grant make/have made/use/offer/sell/import/transfer kryje pouze jeho licencovatelné nároky nutně porušené příspěvkem samotným nebo kombinací s Work, do kterého byl příspěvek zaslán.",
+    "conditionsCs": "§4(a) licenci všem příjemcům; (b) výrazné označení změněných souborů; (c) v distribuovaných zdrojích derivátů relevantní copyright/patent/trademark/attribution notices; (d) existuje-li NOTICE, relevantní čitelná atribuce v NOTICE NEBO přiložených zdrojích/dokumentaci NEBO obvyklém display. NOTICE nemění licenci a vlastní dodatky ji nesmějí měnit. §9 při dobrovolném převzetí podpory/záruky/indemnity/odpovědnosti pouze vlastním jménem, s odškodněním/obranou ostatních přispěvatelů za takové nároky.",
+    "limitationsCs": "§3 patentová žaloba proti komukoli včetně cross/counter za Work či zahrnutý příspěvek ukončí patentové licence pro Work dnem podání, nikoli celý copyright grant. §6 známky jen obvyklý popis původu a NOTICE. §§7–8 as is/no warranties/no damages s výhradami kogentního práva či písemné dohody; vhodnost/riziko na příjemci.",
+    "compatibilityCs": "§4 dovoluje vlastní copyright a jiné podmínky změn/odvozeniny při plnění původních podmínek, bez same-license či source-offer. §5 úmyslně zaslané příspěvky standardně Apache bez dalších podmínek, leda výslovně jinak nebo samostatná dohoda; Not a Contribution je vyloučeno. Appendix je způsob nasazení s doporučenou identifikací souboru, ne povinná reklama ani volba novější verze."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Apache-2.0.html",
+      "note": "Individuální revize celého připnutého textu; §1 Work zahrnuje Source/Object; Derivative Works výslovně vylučují oddělitelné práce a pouhé linkování/binding rozhraní. Contributor je autor zařazeného Contribution; You zahrnuje kontrolované entity s 50%/beneficial ownership či řídicí kontrolou."
+    }
+  ]
+}

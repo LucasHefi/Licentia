@@ -1,0 +1,20 @@
+{
+  "id": "EUPL-1.2",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.8",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:b7a20282c612cb973aa587e4bdb84138f674de5733bccee46099b812b439c524"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Zachovejte licenci a oznámení, úpravy označte včetně data a zpřístupněte zdroje přímo nebo bezplatným dostupným repozitářem po celou dobu distribuce či sdělování. Sdělování zahrnuje i poskytnutí přístupu k podstatným funkcím jiné osobě; není omezeno na upravený program. Odvozené dílo podléhá EUPL, případně přípustné pozdější verzi; přechod na kompatibilní licenci vyžaduje kombinované odvozené dílo a licenci z přílohy. Výslovně se udělují potřebná patentová práva. Za dobrovolně převzaté další záruky či odpovědnost hájíte a odškodňujete přispěvatele. Platí také zákonné informační povinnosti pro elektronické sdělování, pravidla soudní příslušnosti a rozhodného práva; oprávnění automaticky zanikají porušením podmínek.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/EUPL-1.2.html",
+      "note": "Dřívější individuální revize 2026-09-09.8; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

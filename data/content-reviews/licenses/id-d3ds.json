@@ -1,0 +1,29 @@
+{
+  "id": "wwl",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:16b7706a07676b1cfd251cd6a695c92fbe0bedc19884309ae8f63a5cc5bc4fce"
+  },
+  "disposition": "blocked",
+  "summaryCs": "S kódem lze při zachování oznámení nakládat libovolně, avšak nesmí být licencován pod žádnou formou GPL. Pohlednice či QSL je jen přání.",
+  "blockersCs": [
+    "Výslovný zákaz any form of the GPL nelze vyjádřit pouhým additional-terms tak, aby jej průvodce zohlednil při kombinaci. Doplnit model zákazů konkrétních licencí a návaznou kontrolu kombinací."
+  ],
+  "analysis": {
+    "subjectCs": "Text identifikuje autorku Diane Bruce a vztahuje grant na tento kód.",
+    "grantCs": "Do whatever you want dovoluje rozsáhlé užití, distribuci a změny s výjimkou jakékoli GPL; patentové právo výslovně uděleno není.",
+    "conditionsCs": "As long as vyžaduje zachovat oznámení při dalším předání kódu. A postcard or QSL card ... would be nice je nepovinná žádost, ne distribuční povinnost.",
+    "limitationsCs": "Except zakazuje licencování pod jakoukoli GPL; tento zákaz konkrétní licenční rodiny nemá samostatnou hodnotu slovníku. Záruční a odpovědnostní doložka chybějí.",
+    "compatibilityCs": "Výslovně je vyloučena jakákoli GPL; z toho nelze automaticky vyvodit kompatibilitu s jinou licencí nebo copyleft na celou práci."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/wwl.html",
+      "note": "Individuální revize celého připnutého textu; Text identifikuje autorku Diane Bruce a vztahuje grant na tento kód."
+    }
+  ]
+}

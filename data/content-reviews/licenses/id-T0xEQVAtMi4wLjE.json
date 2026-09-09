@@ -1,0 +1,27 @@
+{
+  "id": "OLDAP-2.0.1",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:e50e49844bd7dc10e34113cc38ee68b110b8a4ae7ea5abcdf6162c07cb9b2603"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Licence dovoluje software a dokumentaci používat a distribuovat s úpravami nebo bez nich při zachování copyrightů a licenčních podmínek ve zdrojích i u binárek. Použití OpenLDAP pro propagaci, název odvozeného produktu nebo jako součást jeho názvu vyžaduje písemný souhlas. Doporučené přiznání zásluh není další povinností; software je poskytován bez záruk.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "OpenLDAP Public License 2.0.1 z 21. prosince 1999 pokrývá software i dokumentaci.",
+    "grantCs": "Úvod dovoluje redistribuci a užití se změnami i bez; nerozlišuje komerční/nekomerční účel.",
+    "conditionsCs": "Body 1–2 zachovávají copyrighty/notices a celý dokument ve zdrojové redistribuci a copyright/podmínky/disclaimer v doprovodu binárek. Bod 5 due credit should be given OpenLDAP Project je doporučení, nikoli samostatný příkaz must; include-notice zachycuje povinné zachování původních notices.",
+    "limitationsCs": "Body 3–4 vyžadují předchozí písemný souhlas pro OpenLDAP endorsement i název odvozených produktů nebo výskyt OpenLDAP v názvu. Foundation/přispěvatelé vylučují záruky/odpovědnost AS IS.",
+    "compatibilityCs": "Neobsahuje volbu pozdějších verzí ani jinou licenci; zde jsou zvlášť pravidla jména produktu."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/OLDAP-2.0.1.html",
+      "note": "Individuálně přečten celý připnutý text; Body 1–2 zachovávají copyrighty/notices a celý dokument ve zdrojové redistribuci a copyright/podmínky/disclaimer v doprovodu binárek. Bod 5 due credit should be given OpenLDAP Project je doporučení, nikoli samostatný příkaz must; include-notice zachycuje povinné zachování původních notices. Celý text pěti bodů nemá výslovný patentový grant nebo patentové ukončení."
+    }
+  ]
+}

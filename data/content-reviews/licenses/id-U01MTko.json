@@ -1,0 +1,20 @@
+{
+  "id": "SMLNJ",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.3",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:8530c834e0d880c7b6b43cdcb1cbd4ec9b9ef14c7f34b3e68fb76b92cc589c00"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Zachovejte copyright v kopiích a copyright, svolovací oznámení i disclaimer v doprovodné dokumentaci. Reklamní použití jmen Lucent, Bell Labs a souvisejících subjektů vyžaduje písemný souhlas.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/SMLNJ.html",
+      "note": "Dřívější individuální revize 2026-09-09.3; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

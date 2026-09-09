@@ -1,0 +1,62 @@
+# MPL-1.1 — obsahová revize
+
+Mozilla Public License 1.1
+
+Revize: **2026-09-10** · pravidlo **2026-09-09.10**.
+
+Výsledek: **zpracována, nezařazena do průvodce**.
+
+MPL 1.1 má souborový copyleft a možnost vlastních object podmínek; vedle LEGAL oznámení musí po nové znalosti IP problémů informovat dřívější příjemce a spolupracovat na rozdělení odpovědnosti. Patentový režim odlišuje Contributor Version od jiných produktů a zahrnuje ocenění předžalobního vyrovnání.
+
+## Předmět a rozsah
+
+§1 Covered Code označený originál/změny/části, Contributor Version s předchozími příspěvky, Executable vše mimoSource. Source preferovaná forma včetně modulů/interfaces/build/install nebo diff vůči dostupné známé bázi a bezplatně rozbalitelný archiv. Commercial Use je jakékoli zpřístupnění třetímu, ne jen zisk. You skupina řízení nebo VÍCE než50%vlastnictví, nikoli≥50%1.0. §5/ExhibitA skutečná oznámení určují originál a poskytovatele.
+
+## Udělená práva
+
+§§2.1–2.2 světové bezroyalty nevýhradní IP granty mimo patent/trademark, zvlášť výslovné patentové make/have-made/use/sell/offer/dispose pro originál a Contributor změny samy/sjeho verzí. Výluky patentů odstraněného/odděleného kódu, cizích změn/kombinací a nároků porušovaných i bez Contributor příspěvku nejsou celková patentová výluka. Originální grant prvním zveřejněním, Contributor prvním Commercial Use. §3.6 own object licence,§6 následná Netscape verze,§13 pouze explicitně označené alternativní licence. Sublicence výslovně2a.
+
+## Podmínky a spouštěče
+
+§3.1 zdroj pouzeMPL/následná, licence s každou distribucí a žádné omezení zdrojových práv. §3.2 své změny příjemcům Executable na stejném médiu NEBO elektronicky nejméně12měsíců od prvního NEBO6měsíců po nové verzi té změny příjemcům, včetně odpovědnosti za cizí server. §3.3 soubor změn+dat a prominentní původ/jménoInitial Developer ve zdroji a původ/ownership popisujících object/docs notices. §3.4 známá nutná cizí IP licence a API patenty doLEGAL s nárokem/kontaktem; dodatečná znalost aktualizuje další kopie A vyžaduje přiměřené kroky informovat staré příjemce. Prohlášení víry v originalitu/dostatečná práva sLEGAL výjimkou. §3.5 ExhibitA každý zdroj nebo očekávané sousední místo a licence v práva/ownership popisujících docs. Extra záruky/object odchylky jasně vlastní+indemnity všem poskytovatelům; zde bezSNIA IP carve-out. §3.6 object notice zdroj/how/where ve všech relevantních práva popisujících notices/docs/collateral. §4 při zákonné/soudní překážce maximální plnění a konkrétníLEGAL popis.
+
+## Omezení, výjimky a ukončení
+
+§7 as-is bez záruk/uživatel opravy platí,§9 iYou škodové výluky se zákonnou výjimkou nedbalostní smrti/úrazu. §8.1 automatické ukončení po30dnech od znalosti bez nápravy, řádné sublicence trvají. §8.2 mimo declaratory judgment: žaloba proti Participant Contributor Version ukončí VŠECHNY jeho§2granty prospektivně po60dnech notice leda písemná rozumná royalty dohoda nebo stažení; žaloba proti JINÉMU software/hardware/device ruší jen patentové2.1b/2.2b zpětně k prvnímu vlastnímu využití jeho změn. §8.3 předžalobní vyrovnání musí zohlednit hodnotu licence. §8.4 přežijí platné enduserEULA mimo distributory/resellers. §12 aktivně spravedlivě rozdělit claims/damages meziInitial Developer/Contributors, bez přiznání odpovědnosti.
+
+## Verze a kombinování
+
+§3.7 oddělený kód Larger Work může jinými podmínkami. §6.3 vlastní změněný formulář jen pro nový neCovered Code s přejmenováním a vysvětlením, ne zákaz software názvu touto klauzulí. §13/ExhibitA konkrétní vyplněné alternativy, při ponechání MPL volba obou; žádná prázdná ____ není automatickáGPL. §11 California, při aspoňjedné USstraně NorthernDistrict/SantaClara a loser costs/fees, bez CISG a contra-proferentem; NENÍ arbitráž1.0. ExhibitA note vyžaduje použít tento vzor pro změny, známou odchylku původních notice nepovažuji samočinně za neověřitelný konflikt.
+
+## Překážky a navazující práce
+
+- § 3.4a vyžaduje dodatečné aktivní upozornění starých příjemců na IP znalost, § 12 spolupráci na rozdělení claims/damages a § 8.3 ocenění licencí v předžalobním smíru. Doplnit tyto podmíněné procesní povinnosti do modelu; obyčejné include-notice/retaliatory-termination a file copyleft je plně nevyjadřují.
+
+## Metadata a jejich doložení
+
+| Pole | Hodnota | Doložení znění |
+|---|---|---|
+| family | "weak-copyleft" | public/data/licenses/MPL-1.1.json#text; §1.9 změněné soubory s Covered Code a nové s libovolnou částí,§3.7 jiné části Larger Work mimo. Slabý file copyleft, žádný samostatný network trigger pro pouhé provozování. |
+| copyleftScope | "file" | public/data/licenses/MPL-1.1.json#text; §1.9 změněné soubory s Covered Code a nové s libovolnou částí,§3.7 jiné části Larger Work mimo. Slabý file copyleft, žádný samostatný network trigger pro pouhé provozování. |
+| permissions | ["commercial-use","conditional-relicensing","distribution","modifications","patent-grant","private-use","sublicensing"] | public/data/licenses/MPL-1.1.json#text; §§2.1–2.2 světové bezroyalty nevýhradní IP granty mimo patent/trademark, zvlášť výslovné patentové make/have-made/use/sell/offer/dispose pro originál a Contributor změny samy/sjeho verzí. Výluky patentů odstraněného/odděleného kódu, cizích změn/kombinací a nároků porušovaných i bez Contributor příspěvku nejsou celková patentová výluka. Originální grant prvním zveřejněním, Contributor prvním Commercial Use. §3.6 own object licence,§6 následná Netscape verze,§13 pouze explicitně označené alternativní licence. Sublicence výslovně2a. |
+| obligations | ["defend-added-warranty","disclose-source","include-copyright","include-license-text","include-notice","mark-modifications","same-license","unknown"] | public/data/licenses/MPL-1.1.json#text; §3.1 zdroj pouzeMPL/následná, licence s každou distribucí a žádné omezení zdrojových práv. §3.2 své změny příjemcům Executable na stejném médiu NEBO elektronicky nejméně12měsíců od prvního NEBO6měsíců po nové verzi té změny příjemcům, včetně odpovědnosti za cizí server. §3.3 soubor změn+dat a prominentní původ/jménoInitial Developer ve zdroji a původ/ownership popisujících object/docs notices. §3.4 známá nutná cizí IP licence a API patenty doLEGAL s nárokem/kontaktem; dodatečná znalost aktualizuje další kopie A vyžaduje přiměřené kroky informovat staré příjemce. Prohlášení víry v originalitu/dostatečná práva sLEGAL výjimkou. §3.5 ExhibitA každý zdroj nebo očekávané sousední místo a licence v práva/ownership popisujících docs. Extra záruky/object odchylky jasně vlastní+indemnity všem poskytovatelům; zde bezSNIA IP carve-out. §3.6 object notice zdroj/how/where ve všech relevantních práva popisujících notices/docs/collateral. §4 při zákonné/soudní překážce maximální plnění a konkrétníLEGAL popis. |
+| triggers | ["combination","distribution","modification","patent-claim","use"] | public/data/licenses/MPL-1.1.json#text; §3.1 zdroj pouzeMPL/následná, licence s každou distribucí a žádné omezení zdrojových práv. §3.2 své změny příjemcům Executable na stejném médiu NEBO elektronicky nejméně12měsíců od prvního NEBO6měsíců po nové verzi té změny příjemcům, včetně odpovědnosti za cizí server. §3.3 soubor změn+dat a prominentní původ/jménoInitial Developer ve zdroji a původ/ownership popisujících object/docs notices. §3.4 známá nutná cizí IP licence a API patenty doLEGAL s nárokem/kontaktem; dodatečná znalost aktualizuje další kopie A vyžaduje přiměřené kroky informovat staré příjemce. Prohlášení víry v originalitu/dostatečná práva sLEGAL výjimkou. §3.5 ExhibitA každý zdroj nebo očekávané sousední místo a licence v práva/ownership popisujících docs. Extra záruky/object odchylky jasně vlastní+indemnity všem poskytovatelům; zde bezSNIA IP carve-out. §3.6 object notice zdroj/how/where ve všech relevantních práva popisujících notices/docs/collateral. §4 při zákonné/soudní překážce maximální plnění a konkrétníLEGAL popis. |
+| restrictions | ["additional-terms","liability","patent-claim","trademark","unknown","warranty"] | public/data/licenses/MPL-1.1.json#text; §7 as-is bez záruk/uživatel opravy platí,§9 iYou škodové výluky se zákonnou výjimkou nedbalostní smrti/úrazu. §8.1 automatické ukončení po30dnech od znalosti bez nápravy, řádné sublicence trvají. §8.2 mimo declaratory judgment: žaloba proti Participant Contributor Version ukončí VŠECHNY jeho§2granty prospektivně po60dnech notice leda písemná rozumná royalty dohoda nebo stažení; žaloba proti JINÉMU software/hardware/device ruší jen patentové2.1b/2.2b zpětně k prvnímu vlastnímu využití jeho změn. §8.3 předžalobní vyrovnání musí zohlednit hodnotu licence. §8.4 přežijí platné enduserEULA mimo distributory/resellers. §12 aktivně spravedlivě rozdělit claims/damages meziInitial Developer/Contributors, bez přiznání odpovědnosti. |
+| patentPosition | "retaliatory-termination" | public/data/licenses/MPL-1.1.json#text; §§2.1–2.2 světové bezroyalty nevýhradní IP granty mimo patent/trademark, zvlášť výslovné patentové make/have-made/use/sell/offer/dispose pro originál a Contributor změny samy/sjeho verzí. Výluky patentů odstraněného/odděleného kódu, cizích změn/kombinací a nároků porušovaných i bez Contributor příspěvku nejsou celková patentová výluka. Originální grant prvním zveřejněním, Contributor prvním Commercial Use. §3.6 own object licence,§6 následná Netscape verze,§13 pouze explicitně označené alternativní licence. Sublicence výslovně2a. |
+| noticeBurden | "material" | public/data/licenses/MPL-1.1.json#text; §3.1 zdroj pouzeMPL/následná, licence s každou distribucí a žádné omezení zdrojových práv. §3.2 své změny příjemcům Executable na stejném médiu NEBO elektronicky nejméně12měsíců od prvního NEBO6měsíců po nové verzi té změny příjemcům, včetně odpovědnosti za cizí server. §3.3 soubor změn+dat a prominentní původ/jménoInitial Developer ve zdroji a původ/ownership popisujících object/docs notices. §3.4 známá nutná cizí IP licence a API patenty doLEGAL s nárokem/kontaktem; dodatečná znalost aktualizuje další kopie A vyžaduje přiměřené kroky informovat staré příjemce. Prohlášení víry v originalitu/dostatečná práva sLEGAL výjimkou. §3.5 ExhibitA každý zdroj nebo očekávané sousední místo a licence v práva/ownership popisujících docs. Extra záruky/object odchylky jasně vlastní+indemnity všem poskytovatelům; zde bezSNIA IP carve-out. §3.6 object notice zdroj/how/where ve všech relevantních práva popisujících notices/docs/collateral. §4 při zákonné/soudní překážce maximální plnění a konkrétníLEGAL popis. |
+
+## Zdroje
+
+- [Primární zdroj](https://spdx.org/licenses/MPL-1.1.html) — Individuální revize celého připnutého textu; §1 Covered Code označený originál/změny/části, Contributor Version s předchozími příspěvky, Executable vše mimoSource. Source preferovaná forma včetně modulů/interfaces/build/install nebo diff vůči dostupné známé bázi a bezplatně rozbalitelný archiv. Commercial Use je jakékoli zpřístupnění třetímu, ne jen zisk. You skupina řízení nebo VÍCE než50%vlastnictví, nikoli≥50%1.0. §5/ExhibitA skutečná oznámení určují originál a poskytovatele.
+- [Kurátorovaný profil](../../../data/profiles/licenses/id-TVBMLTEuMQ.json)
+- [Uložené úplné znění](../../../public/data/licenses/MPL-1.1.json)
+
+## Otisk zdroje
+
+```json
+{
+  "sourceId": "spdx-license-list",
+  "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+  "contentHash": "sha256:321f5362507353cb75aa71828a424d96ef6c85910f8c5398e95f54812b7b0370"
+}
+```

@@ -1,0 +1,29 @@
+{
+  "id": "Linux-man-pages-copyleft",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:08f2728951e43683719915b0affaf6d1120485151974d3fb1f8c7e9831a5e2d0"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Původní manuál zachová copyright a povolení; celé změněné odvozené dílo se šíří s totožným povolením. Formátované verze bez zdroje musí přiznat copyright a autory; zdrojový kód není povinným plněním.",
+  "blockersCs": [
+    "Text výslovně licencuje manuál a jeho zpracované podoby, nikoli softwarový kód. Před doporučením novému softwarovému projektu je třeba oddělený dokumentační model nebo softwarová licence."
+  ],
+  "analysis": {
+    "subjectCs": "Manuál/manual page a celé odvozené dílo včetně formátovaných/zpracovaných verzí.",
+    "grantCs": "Výslovné kopírování/distribuce původních i změněných verzí bez účelového omezení; patentový grant chybí.",
+    "conditionsCs": "Copyright a permission notice v každé kopii; entire resulting derived work má identický notice. Formátovaná verze bez zdroje uvede copyright a autory.",
+    "limitationsCs": "Autoři neodpovídají za chyby, opomenutí a škody; upozorňují na zastarávání a nižší možnou péči než při placené práci. Zdroj není povinný.",
+    "compatibilityCs": "Totožný permission notice pro celé odvozené dílo; jiná licence/verze nebo výslovná kompatibilitní cesta chybí."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Linux-man-pages-copyleft.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Druhý grantový odstavec entire resulting derived work pod identical permission notice."
+    }
+  ]
+}

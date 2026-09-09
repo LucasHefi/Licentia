@@ -24,12 +24,13 @@
     ],
     "obligations": [
       "include-copyright",
-      "include-license-text"
+      "include-license-text",
+      "mark-modifications",
+      "unknown"
     ],
     "triggers": [
       "distribution",
-      "modification",
-      "unknown"
+      "modification"
     ],
     "restrictions": [
       "liability",
@@ -43,47 +44,65 @@
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "license text, first permission paragraph and conditions 1-2 (the documentation file may be copied and distributed only without alteration and with notices) and second permission paragraph (derivative works may instead be created from the document's content subject to a representation condition); these document-specific dual grants are nonstandard for a software license"
+      "locator": "public/data/licenses/Adobe-Glyph.json#text; Adobe text licencuje konkrétní dokumentační soubor a zvlášť samostatná odvozená díla z jeho obsahu. První grant dovoluje užití, kopie, publikaci, distribuci, sublicence a prodej dokumentu bez úprav. Druhý dovoluje tvořit a stejně využívat odvozená díla z obsahu. Text nevyžaduje stejnou licenci ani zdroje; místo reciprocity rozlišuje neměnný dokument a samostatnou odvozeninu.; https://spdx.org/licenses/Adobe-Glyph.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "license text, first and second permission paragraphs (conditions prohibit alteration of the documentation file, require notices in its copies, and prevent misrepresenting a derivative work, but impose no source-disclosure, same-license, or other reciprocal condition)"
+      "locator": "public/data/licenses/Adobe-Glyph.json#text; Text nevyžaduje stejnou licenci ani zdroje; místo reciprocity rozlišuje neměnný dokument a samostatnou odvozeninu.; https://spdx.org/licenses/Adobe-Glyph.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "license text, first permission paragraph (use, copy, publish, distribute, sublicense, and sell copies of the documentation) and second permission paragraph (create derivative works from the content, then use, copy, publish, distribute, sublicense, and sell them)"
+      "locator": "public/data/licenses/Adobe-Glyph.json#text; První grant dovoluje užití, kopie, publikaci, distribuci, sublicence a prodej dokumentu bez úprav. Druhý dovoluje tvořit a stejně využívat odvozená díla z obsahu.; https://spdx.org/licenses/Adobe-Glyph.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "license text, first permission paragraph, condition 2 (the copyright notice and permission notice must be included in all copies of the documentation)"
+      "locator": "public/data/licenses/Adobe-Glyph.json#text; Kopie dokumentu musí zachovat copyright i svolení a nesmějí být upravovány. Odvozené dílo nesmí být vydáváno za kopii nebo verzi tohoto dokumentu; druhý grant notice podmínku neopakuje.; https://spdx.org/licenses/Adobe-Glyph.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "license text, first permission paragraph and conditions 1-2 (copying the documentation, including copies not necessarily distributed, activates the no-alteration and notice conditions) and second permission paragraph, final proviso (creation and use of a derivative work activates the no-misrepresentation condition); distribution and modification are represented directly, while the separate copying trigger has no matching vocabulary value"
+      "locator": "public/data/licenses/Adobe-Glyph.json#text; Kopie dokumentu musí zachovat copyright i svolení a nesmějí být upravovány. Odvozené dílo nesmí být vydáváno za kopii nebo verzi tohoto dokumentu; druhý grant notice podmínku neopakuje.; https://spdx.org/licenses/Adobe-Glyph.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "license text, first permission paragraph, condition 1 (no modification, editing, or alteration of the documentation file); second permission paragraph, final proviso (a derived work must not be represented as a copy or version of the document); final paragraph (liability exclusion, AS IS provision, and express, statutory, and implied warranty disclaimers); the two document-specific restrictions have no matching vocabulary value"
+      "locator": "public/data/licenses/Adobe-Glyph.json#text; Adobe vylučuje výnosové/následné škody i záruky včetně neporušování práv; zákaz úprav původního dokumentu se musí odlišit od povolených odvozenin.; https://spdx.org/licenses/Adobe-Glyph.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "license text, all four paragraphs (no express patent grant, patent condition, or patent-termination clause is stated)"
+      "locator": "public/data/licenses/Adobe-Glyph.json#text; Celý dokumentační grant neobsahuje patentový grant ani patentové ukončení.; https://spdx.org/licenses/Adobe-Glyph.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "license text, first permission paragraph, condition 2 (both copyright and permission notices must accompany every copy of the documentation); second permission paragraph (no notice-retention condition is stated for derivative works created from the content)"
+      "locator": "public/data/licenses/Adobe-Glyph.json#text; Kopie dokumentu musí zachovat copyright i svolení a nesmějí být upravovány. Odvozené dílo nesmí být vydáváno za kopii nebo verzi tohoto dokumentu; druhý grant notice podmínku neopakuje. Rozsah notifikační zátěže: standard.; https://spdx.org/licenses/Adobe-Glyph.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "license metadata, osi=false, fsf=false, and deprecated=false; license text, first and second permission paragraphs (the grant is for a documentation file and its content, separates immutable copies from derivative works, and contains no-alteration and no-misrepresentation conditions that the software-license guide vocabulary cannot represent losslessly), so it is unsuitable as a generally reusable software-license recommendation"
+      "locator": "public/data/licenses/Adobe-Glyph.json#text; Individuální kontrola celého připnutého textu Adobe-Glyph dne 2026-09-09. Adobe text licencuje konkrétní dokumentační soubor a zvlášť samostatná odvozená díla z jeho obsahu. Licence míří na dokumentaci a rozlišuje zákaz úprav dokumentu od dovoleného samostatného odvozeného díla; před doporučením je nutný dokumentační model těchto alternativ, nikoli obecné softwarové modification oprávnění. Jsou zde dvě odlišné cesty pro doslovný dokument a vlastní odvozené dílo; nejsou to kumulativní povinnosti pro každý výstup.; https://spdx.org/licenses/Adobe-Glyph.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

@@ -8,95 +8,108 @@
     "contentHash": "sha256:e0f98f84706e92cb2fa959d19f912b996c320e487ab1a29617d7ad68904d05aa"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
       "commercial-use",
+      "conditional-relicensing",
       "distribution",
       "modifications",
-      "patent-grant"
+      "patent-grant",
+      "private-use"
     ],
     "obligations": [
-      "include-license-text"
-    ],
-    "triggers": [
+      "include-copyright",
+      "include-license-text",
+      "include-notice",
+      "mark-modifications",
       "unknown"
     ],
-    "restrictions": [
-      "liability",
-      "trademark"
+    "triggers": [
+      "distribution",
+      "modification",
+      "patent-claim",
+      "unknown",
+      "use"
     ],
-    "patentPosition": "express-grant",
+    "restrictions": [
+      "additional-terms",
+      "liability",
+      "patent-claim",
+      "trademark",
+      "warranty"
+    ],
+    "patentPosition": "retaliatory-termination",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CERN-OHL-P-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CERN-OHL-P-2.0.json#text; CERN OHL v2 Permissive definuje Covered Source včetně návrhů/digitálního kódu a Products vzniklé výrobou, sestavením, kompilací či konfigurací. §2–4 dovolují užití, kopie, změny, veřejné sdělení/distribuci Source a výrobu/předání Products; §3.4 výslovně dovoluje rozdílné licenční podmínky. §3.4 dovoluje jiné podmínky Source a §4 požaduje jen notices pro Product; není copyleft nebo povinnost dodat Source výrobku.; https://spdx.org/licenses/CERN-OHL-P-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CERN-OHL-P-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CERN-OHL-P-2.0.json#text; §3.4 dovoluje jiné podmínky Source a §4 požaduje jen notices pro Product; není copyleft nebo povinnost dodat Source výrobku.; https://spdx.org/licenses/CERN-OHL-P-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CERN-OHL-P-2.0.json#text; §2–4 dovolují užití, kopie, změny, veřejné sdělení/distribuci Source a výrobu/předání Products; §3.4 výslovně dovoluje rozdílné licenční podmínky.; https://spdx.org/licenses/CERN-OHL-P-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CERN-OHL-P-2.0.json#text; §3 zachovává notices, odstraňuje jen neaplikovatelné a u změn přidává datum a stručný popis; při jiné licenci se poskytne i CERN text. §4 zajistí příjemci Product přístup k použitelným notices. §2.3 zakazuje omezit práva jiných držitelů.; https://spdx.org/licenses/CERN-OHL-P-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CERN-OHL-P-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CERN-OHL-P-2.0.json#text; §3 zachovává notices, odstraňuje jen neaplikovatelné a u změn přidává datum a stručný popis; při jiné licenci se poskytne i CERN text. §4 zajistí příjemci Product přístup k použitelným notices. §2.3 zakazuje omezit práva jiných držitelů.; https://spdx.org/licenses/CERN-OHL-P-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CERN-OHL-P-2.0.json#text; §5 vylučuje záruky/odpovědnost a uživatel drží poskytovatele harmless včetně třetích nároků. §6 patentová žaloba či zpochybnění platnosti/vymahatelnosti licencovaného patentu ruší všechna práva. §7.2 omezuje jména/loga s výjimkou zákona a notices, bez endorsementu.; https://spdx.org/licenses/CERN-OHL-P-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CERN-OHL-P-2.0.json#text; §6.1 uděluje nutně porušené licencovatelné patenty ke Source jak je poskytovatel předal; §6.2 ruší všechna licenční práva i za napadení platnosti tohoto patentu.; https://spdx.org/licenses/CERN-OHL-P-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CERN-OHL-P-2.0.json#text; §3 zachovává notices, odstraňuje jen neaplikovatelné a u změn přidává datum a stručný popis; při jiné licenci se poskytne i CERN text. §4 zajistí příjemci Product přístup k použitelným notices. §2.3 zakazuje omezit práva jiných držitelů. Rozsah notifikační zátěže: standard.; https://spdx.org/licenses/CERN-OHL-P-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CERN-OHL-P-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CERN-OHL-P-2.0.json#text; Individuální kontrola celého připnutého textu CERN-OHL-P-2.0 dne 2026-09-09. CERN OHL v2 Permissive definuje Covered Source včetně návrhů/digitálního kódu a Products vzniklé výrobou, sestavením, kompilací či konfigurací. Licence operuje s výrobou/konfigurací Products a poskytovatele chrání obecnou hold-harmless povinností; před doporučením je třeba odpovídající model hardwarových produktů a náhrady nároků. §7.3 verze závisí na určení poskytovatele: uvedená varianta bez verze dovoluje libovolnou verzi téže varianty; neurčená varianta znamená S; later volba jen se svolením. §7.4 vylučuje práva třetích beneficientů.; https://spdx.org/licenses/CERN-OHL-P-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

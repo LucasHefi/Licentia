@@ -8,95 +8,109 @@
     "contentHash": "sha256:63c814cae78a6769027e9003ef7861fd4ab3a33d566eece332cab5932c3ce150"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "weak-copyleft",
+    "copyleftScope": "file",
     "permissions": [
       "commercial-use",
+      "conditional-relicensing",
       "distribution",
       "modifications",
+      "patent-grant",
+      "private-use",
       "sublicensing"
     ],
     "obligations": [
-      "provide-corresponding-source"
+      "defend-added-warranty",
+      "include-copyright",
+      "include-license-text",
+      "include-notice",
+      "mark-modifications",
+      "provide-corresponding-source",
+      "same-license",
+      "unknown"
     ],
     "triggers": [
+      "combination",
+      "distribution",
+      "modification",
       "unknown"
     ],
     "restrictions": [
+      "additional-terms",
       "liability",
       "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "express-grant",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/ErlPL-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ErlPL-1.1.json#text; §§3.1,3.7 copyleft zdrojového Covered Code s jinak licencovaným Larger Work a §3.6 jinými binárními podmínkami tvoří slabý copyleft; https://spdx.org/licenses/ErlPL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/ErlPL-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ErlPL-1.1.json#text; §1.9 A/B výslovně změněné soubory s původním kódem a nové soubory s jeho částí; §3.7 oddělený zbytek Larger Work nepřebírá licenci; https://spdx.org/licenses/ErlPL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/ErlPL-1.1.json#text; §§2.1–2.2 copyright+sublicence a omezené nynější/budoucí patenty; §3.6 podmíněně jiné binární licence; libovolné komerční použití není zakázáno; https://spdx.org/licenses/ErlPL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/ErlPL-1.1.json#text; §§3.1–3.6 zdroje, celý text/Exhibit A, změnový soubor, původ a LEGAL; §3.5 vlastní záruka/indemnita; §3.4 aktivní upozornění starších příjemců a §3.6 široká indemnita nemají enum; https://spdx.org/licenses/ErlPL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/ErlPL-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ErlPL-1.1.json#text; Distribuce zdrojů/binárek a příspěvky §§3.1–3.6, kombinace §3.7; nové zjištění cizího nároku §3.4 vyžaduje unknown trigger; žádný síťový či patentově žalobní trigger; https://spdx.org/licenses/ErlPL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/ErlPL-1.1.json#text; §3.1 zákaz omezit zdroje, §3.6 odlišná binární licence je nesmí změnit; §§7,9 výluky záruk/škod; zvláštní zákaz známek či patentová odveta uvedeny nejsou; https://spdx.org/licenses/ErlPL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/ErlPL-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ErlPL-1.1.json#text; §2.1(b) rozumně nutné patenty vývojáře pro originál a §2.2(b) přispěvatele pro Contributor Version, bez většího rozsahu dalších změn/kombinací; §8 nemá patentovou odvetu; https://spdx.org/licenses/ErlPL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/ErlPL-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ErlPL-1.1.json#text; §3.3 datovaný soubor změn/původ, §3.4 a §4 LEGAL, §3.5 každý soubor Exhibit A se strukturální výjimkou a §3.6 nápadná zdrojová informace; materiální zátěž; https://spdx.org/licenses/ErlPL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/ErlPL-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ErlPL-1.1.json#text; Individuální přečtení celého připnutého textu dne 2026-09-10. Erlang Public License 1.1 zachovává Covered Code a změny zdrojů pod ErlPL, s jinými podmínkami nezávislého kódu Larger Work a podmíněně i binárek. Zdroj změn musí být dostupný příjemcům binárek na médiu nebo elektronicky s určenou dobou uchování. Vyžaduje soubor změn s daty, odvozený původ, Exhibit A a LEGAL pro známé cizí IP nároky a API patenty. Nově zjištěné nároky vyvolávají aktivní informování dřívějších příjemců. Patentové granty jsou výslovné a neobsahují žalobní odvetu; právo a soudy jsou švédské. Blokace: §3.4(a) po pozdějším zjištění cizího IP nároku vyžaduje nejen opravit LEGAL v budoucích kopiích, ale podniknout kroky rozumně směřující k informování již dřívějších příjemců. To není statický notice; model potřebuje aktivní notifikační povinnost a trigger zjištění nároku. §3.6 vyžaduje odškodnit původního vývojáře a přispěvatele za odpovědnost z jakýchkoli vlastních odlišných binárních podmínek, nejen za přidané záruky §3.5. Dostupné defend-added-warranty tuto širší indemnitu nepokrývá; před doporučením je nutné ji samostatně modelovat.; https://spdx.org/licenses/ErlPL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

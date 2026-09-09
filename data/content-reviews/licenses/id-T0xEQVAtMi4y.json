@@ -1,0 +1,27 @@
+{
+  "id": "OLDAP-2.2",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:8e24591f681373adfc265107c8f3ab160eea80a662aaf5f9a11d7b69907e7209"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Licence dovoluje užití a redistribuci softwaru i dokumentace bez ohledu na úpravy, se zachováním copyrightů, notices a licenčních podmínek. Propagace jménem OpenLDAP a názvy odvozených produktů obsahující OpenLDAP vyžadují souhlas; doporučené přiznání zásluh není další povinností. Lze použít tuto nebo pozdější revizi Foundation a software je bez záruk.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "OpenLDAP 2.2 z 1. března 2000 licencuje software a související dokumentaci.",
+    "grantCs": "Úvod dovoluje redistribuci a užití bez ohledu na provedené změny.",
+    "conditionsCs": "Bod 1 zachovává copyrighty/notices a kopii dokumentu v redistribuci; bod 2 reprodukuje copyright, podmínky a disclaimer u binárek. Bod 5 vyjadřuje should pro due credit projektu, nikoli samostatný příkaz must.",
+    "limitationsCs": "Body 3–4 vyžadují souhlas pro endorsement jménem OpenLDAP i použití OpenLDAP v názvech odvozených produktů; AS IS vylučuje záruky i odpovědnost Foundation/přispěvatelů.",
+    "compatibilityCs": "Bod 6 dovoluje toto nebo pozdější znění Foundation, přestože věta má v připnutém textu vypuštěné slovo; číslované revize jsou výslovně vysvětleny."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/OLDAP-2.2.html",
+      "note": "Individuálně přečten celý připnutý text; Bod 1 zachovává copyrighty/notices a kopii dokumentu v redistribuci; bod 2 reprodukuje copyright, podmínky a disclaimer u binárek. Bod 5 vyjadřuje should pro due credit projektu, nikoli samostatný příkaz must. Celý text šesti bodů nemá výslovný patentový grant ani patentové ukončení."
+    }
+  ]
+}

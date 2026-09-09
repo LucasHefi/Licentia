@@ -1,0 +1,27 @@
+{
+  "id": "DOC",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:cf06982937e27b301a8e1b6925d7fe7d210b246c37640a45dc9eae52e8902cdb"
+  },
+  "disposition": "eligible",
+  "summaryCs": "DOC dovoluje trvale a neodvolatelně užívat, měnit a šířit zdroje i objektový kód včetně komerčních produktů bez zveřejnění vlastních zdrojů. Copyrightové prohlášení doprovází vydaný kód, ale čisté binární spustitelné produkty jsou vyňaty; původní DOC kód nesmíte přivlastnit tak, aby to bránilo jeho volnému šíření.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "ACE, TAO, CIAO, DAnCE, CoSMIC a jejich zdroj/objektový kód; copyright Schmidtovy skupiny WU/UC Irvine/Vanderbilt 1993–2009.",
+    "grantCs": "Use/modify/copy/distribute perpetually/irrevocably source/object i změněné verze; commercial/binary releases výslovně povoleny a vlastní source není třeba šířit. Patentový grant chybí.",
+    "conditionsCs": "This copyright statement s vydaným code built using DOC; výjimka pouze just ship binary executables software products. Informovat autory o použití není povinnost; nepřivlastnit DOC copyright/autorství způsobem bránícím volné open-source distribuci.",
+    "limitationsCs": "Submissions i software AS IS, warranty/noninfringement/liability bez podpory; univerzitní/průmyslová jména ne pro endorsement nebo názvy odvozených služeb/produktů bez písemného svolení. Y2K/DST pasáže jsou technické vysvětlení závislosti na OS, ne nová licence.",
+    "compatibilityCs": "Bez jiné licence/verze či požadavku stejné licence vlastních částí. Zachování svobod původního kódu se nesmí zaměnit za povinné otevření aplikace; explicitní binární výjimka není pro každou binární knihovnu."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/DOC.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; První dva odstavce neodvolatelný source/object grant a výslovně no obligation redistribute your source, tedy permisivní."
+    }
+  ]
+}

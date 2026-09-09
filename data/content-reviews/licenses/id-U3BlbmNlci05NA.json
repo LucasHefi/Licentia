@@ -1,0 +1,27 @@
+{
+  "id": "Spencer-94",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:08c12fe0640e107c2a30e23ce34847ce77f2a7fd46db0ba32bd7db83700b6097"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Libovolné použití, změny a redistribuce jsou dovoleny. Zachovejte celé oznámení, původ a změny pravdivě označte a zásluhy uveďte v dokumentaci; autor odmítá odpovědnost za následky použití.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Software Henryho Spencera 1992–1994; text vylučuje licenční původ AT&T a UC Regents.",
+    "grantCs": "Výslovně použití pro libovolný účel na libovolném systému, úpravy a redistribuce; patentový grant není uveden.",
+    "conditionsCs": "Bod 2 zakazuje zkreslit původ i opomenutím a požaduje dokumentační credits; bod 3 označení změněných verzí a dokumentační credits; bod 4 nezměnit celé oznámení.",
+    "limitationsCs": "Bod 1 odmítá odpovědnost i za vady; samostatná záruková výluka není. Povinnost dodat zdroj neexistuje.",
+    "compatibilityCs": "Žádná alternativní licence/verze; vyloučení AT&T/UC licencí není potvrzení kompatibility s jinou licencí."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Spencer-94.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Grant any purpose/alter/redistribute s notice podmínkami 2–4."
+    }
+  ]
+}

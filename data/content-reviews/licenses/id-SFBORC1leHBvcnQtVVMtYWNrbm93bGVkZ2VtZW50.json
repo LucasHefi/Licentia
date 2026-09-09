@@ -1,0 +1,29 @@
+{
+  "id": "HPND-export-US-acknowledgement",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:8780175c42db58b1e8d7cb5d6982c4f9dd190ac594b715ac93bf97009780eabe"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Kopie, úpravy a distribuce zdrojů i binárních forem jsou dovoleny v mezích amerického exportu; případné vládní povolení se obstará před exportem. Dokumentace a jiné materiály související s použitím či distribucí musí uvést vývoj USC.",
+  "blockersCs": [
+    "Grant výslovně platí WITHIN THAT CONSTRAINT a ukládá před exportem získat případně vyžadovanou licenci vlády USA. Je třeba modelovat exportní spouštěč/povolení a ověřit konkrétní exportní situaci; nelze zaměnit za obecnou distribuci nebo odstranit jako pouhé historické upozornění."
+  ],
+  "analysis": {
+    "subjectCs": "Software a dokumentace USC, zdrojové i binární formy; disclaimer zmiňuje ksu software.",
+    "grantCs": "Výslovně copy/modify/distribute source and binary v mezích exportní podmínky, bez patentového grantu.",
+    "conditionsCs": "Exportér odpovídá za získání případné vládní licence před vývozem. Dokumentace a jiné materiály související s použitím/distribucí uznají vývoj University of Southern California.",
+    "limitationsCs": "AS IS bez representations/warranties včetně prodejnosti/vhodnosti; široké vyloučení odpovědnosti a přímých, nepřímých i následných škod.",
+    "compatibilityCs": "Žádná alternativní licence/verze; současné exportní právo nenahrazuje obsah připnuté licenční podmínky."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/HPND-export-US-acknowledgement.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Export odstavec a WITHIN THAT CONSTRAINT podmiňují široký grant předchozím povolením, pokud je třeba."
+    }
+  ]
+}

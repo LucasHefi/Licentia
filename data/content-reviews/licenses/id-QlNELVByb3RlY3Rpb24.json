@@ -1,0 +1,29 @@
+{
+  "id": "BSD-Protection",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:d350c7cf89ef3241387d897b1a68c53dce620cff5610b924e4b38aefda5fb468"
+  },
+  "disposition": "blocked",
+  "summaryCs": "BSD Protection License dovoluje kopie a změny a nabízí dvě odlišné cesty šíření odvozenin. Uzavřená cesta vyžaduje zachovat oznámení, přiznat původ a zakázat další distribuci odvozenin; otevřená cesta požaduje označení změn a stejnou licenci celého odvozeného díla bez licenčního poplatku. Běh programu je neomezený a licence vylučuje záruky a odpovědnost. Průvodce zatím neumí tyto alternativy přesně rozlišit, proto licenci nenabízí.",
+  "blockersCs": [
+    "§3 vyžaduje zakázat další distribuci odvozenin, zatímco alternativní §4 ukládá licenci celého díla; před doporučením je nutný model těchto protichůdných distribučních cest."
+  ],
+  "analysis": {
+    "subjectCs": "BSD Protection License z února 2002 vytváří výslovně odlišnou uzavřenou a otevřenou větev změn programu.",
+    "grantCs": "§1 neomezuje spouštění a výstup pokrývá jen jako odvozené dílo. §2 dovoluje doslovné kopie s notices/licencí; §3–4 dovolují změny a redistribuci podle zvolené větve.",
+    "conditionsCs": "§3 uzavřená větev zachová copyright/disclaimer, označí odvozeninu a její licence musí výslovně zakázat distribuci dalších odvozenin. §4 otevřená větev zachová notices, popíše povahu/datum změn nebo odkaz z označených souborů a licencuje bez poplatku celé dílo obsahující či odvozené z programu pod touto licencí.",
+    "limitationsCs": "§5 vyžaduje dodržet grant pro kopírování/distribuci jako implicitní souhlas; §6 vylučuje záruky a odpovědnost AS IS. Preambule proti GPL je vysvětlení záměru, vlastní závazky jsou §3–4.",
+    "compatibilityCs": "Uzavřená a otevřená větev jsou alternativy, nikoli kumulace zákazu další distribuce a otevřeného same-license. Žádná volba pozdější verze není."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/BSD-Protection.html",
+      "note": "Individuálně přečten celý připnutý text; §3 uzavřená větev zachová copyright/disclaimer, označí odvozeninu a její licence musí výslovně zakázat distribuci dalších odvozenin. §4 otevřená větev zachová notices, popíše povahu/datum změn nebo odkaz z označených souborů a licencuje bez poplatku celé dílo obsahující či odvozené z programu pod touto licencí. Celá preambule i §0–6 nemají výslovný patentový grant nebo patentové ukončení."
+    }
+  ]
+}

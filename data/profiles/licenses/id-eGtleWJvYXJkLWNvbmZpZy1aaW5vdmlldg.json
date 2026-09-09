@@ -9,91 +9,98 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "include-copyright"
+      "include-copyright",
+      "include-license-text",
+      "mark-modifications"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification",
+      "use"
     ],
     "restrictions": [
-      "unknown"
+      "liability",
+      "warranty"
     ],
-    "patentPosition": "unknown",
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/xkeyboard-config-Zinoviev.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/xkeyboard-config-Zinoviev.json#text; Oba grantové odstavce dovolují obecné nakládání s informačními podmínkami.; https://spdx.org/licenses/xkeyboard-config-Zinoviev.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/xkeyboard-config-Zinoviev.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/xkeyboard-config-Zinoviev.json#text; Celý text bez stejné licence a povinného dodání zdroje k binárním formám.; https://spdx.org/licenses/xkeyboard-config-Zinoviev.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/xkeyboard-config-Zinoviev.json#text; První grant výslovně use/modify/copy/distribute/sell source and binary; druhý grant in any way.; https://spdx.org/licenses/xkeyboard-config-Zinoviev.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/xkeyboard-config-Zinoviev.json#text; Copyright and these terms retained; autor modifikace summarizes the changes in this header, bez povinného zaslání změn.; https://spdx.org/licenses/xkeyboard-config-Zinoviev.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/xkeyboard-config-Zinoviev.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/xkeyboard-config-Zinoviev.json#text; Use je výslovně podmíněno notice; obě distribuční formy zachovávají podmínky; úpravy mají shrnutí v hlavičce.; https://spdx.org/licenses/xkeyboard-config-Zinoviev.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/xkeyboard-config-Zinoviev.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/xkeyboard-config-Zinoviev.json#text; Autor neodpovídá za proper functioning ani damages; poslední věta without expressed or implied warranty.; https://spdx.org/licenses/xkeyboard-config-Zinoviev.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/xkeyboard-config-Zinoviev.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/xkeyboard-config-Zinoviev.json#text; Oba granty a disclaimery bez výslovného patentového grantu či patentového ukončení.; https://spdx.org/licenses/xkeyboard-config-Zinoviev.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/xkeyboard-config-Zinoviev.json#text; Copyright, podmínky a shrnutí změn v hlavičce, bez reklamy či povinné zdrojové nabídky.; https://spdx.org/licenses/xkeyboard-config-Zinoviev.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/xkeyboard-config-Zinoviev.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/xkeyboard-config-Zinoviev.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. Software lze používat, měnit, kopírovat, šířit a prodávat ve zdrojové i binární formě při zachování copyrightu a podmínek. Autor každé úpravy musí shrnout změny v hlavičce; záruky a odpovědnost jsou vyloučeny.; https://spdx.org/licenses/xkeyboard-config-Zinoviev.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

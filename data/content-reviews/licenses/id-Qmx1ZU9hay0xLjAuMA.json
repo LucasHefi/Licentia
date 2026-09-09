@@ -1,0 +1,20 @@
+{
+  "id": "BlueOak-1.0.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.5",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:562364b1aa13797ce24adb01d8e34096ce7fd326045d6be26e41b67ef39d1d6c"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Každému příjemci kopie nebo části softwaru předejte text licence nebo odkaz na https://blueoakcouncil.org/license/1.0.0. Každý přispěvatel uděluje autorská a výslovná patentová oprávnění, včetně patentových nároků, které bude moci licencovat později. Pravidla musíte přijmout jako smluvní povinnosti i podmínky licence. Po písemném upozornění na porušení Notices zachováte licenci, pokud do 30 dnů podniknete všechny praktické kroky k nápravě; jinak zaniká. Přispěvatel licenci nemůže odvolat. Poskytování zdrojů ani zachování copyrightového oznámení text nevyžaduje.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/BlueOak-1.0.0.html",
+      "note": "Dřívější individuální revize 2026-09-09.5; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

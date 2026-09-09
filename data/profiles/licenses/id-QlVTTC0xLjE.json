@@ -14,23 +14,26 @@
   },
   "semantic": {
     "family": "nonstandard",
-    "copyleftScope": "whole-work",
+    "copyleftScope": "unknown",
     "permissions": [
+      "conditional-relicensing",
       "distribution",
       "modifications",
-      "private-use"
+      "unknown"
     ],
     "obligations": [
       "include-license-text",
-      "same-license"
+      "same-license",
+      "unknown"
     ],
     "triggers": [
       "distribution",
-      "modification"
+      "use"
     ],
     "restrictions": [
       "additional-terms",
       "trademark",
+      "unknown",
       "warranty"
     ],
     "patentPosition": "none-stated",
@@ -40,65 +43,65 @@
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "metadata: id=BUSL-1.1, deprecated=false, osi=false, fsf=false; text: lines 8-17, 19-27, and 58-71 (parameterized Business Source terms combine non-production use, a Change Date/Change License conversion, and whole-work application rather than an OSI license)",
-      "ruleId": "lic-007.nonstandard-family",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/BUSL-1.1.json#text; Terms odlišují non-production od parametrických production a budoucí Change License, tedy ne standardní open-source model.; https://spdx.org/licenses/BUSL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text: lines 24-27 (all copies of original and modified Licensed Work and derivative works are subject to this License, separately per version) and lines 58-67 (the covenanted Change License and Additional Use Grant are license parameters for that work)",
-      "ruleId": "lic-007.whole-work-scope",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/BUSL-1.1.json#text; All copies/derivative works subject to License, ale časový/licenční režim pro každou verzi mění rozsah; jediný scope jej nevystihuje.; https://spdx.org/licenses/BUSL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text: lines 8-11 (express grant to copy, modify, create derivative works, redistribute, and make non-production use, supporting private use; the same paragraph limits production use to a possible Additional Use Grant, so no general commercial-use permission is asserted)",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/BUSL-1.1.json#text; První dva Terms odstavce explicit non-production a future Change License; skutečné parametry nejsou přítomny.; https://spdx.org/licenses/BUSL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text: lines 24-32 (original, modified, and derivative copies remain under this License and each original or modified copy must conspicuously display it)",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/BUSL-1.1.json#text; Conspicuous licence copies, same terms, purchase or refrain; Covenants vyplnit Change Licence/date/grant a neměnit další text.; https://spdx.org/licenses/BUSL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "text: lines 24-32 (distribution/copies and modified or derivative forms activate the License and its conspicuous-display duty); lines 34-36 (noncompliant use terminates rights)",
-      "ruleId": "lic-007.distribution-modification-trigger",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/BUSL-1.1.json#text; Use v rozporu ukončuje všechny verze; distribuce copies display; časové datum/první release jsou další nepodchycené spouštěče.; https://spdx.org/licenses/BUSL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text: lines 10-11 (production use is limited to a possible Additional Use Grant); lines 13-22 (Change Date/Change License conversion and purchase-or-refrain consequence); lines 38-40 (no trademark/logo right); lines 42-46 (AS IS and express/implied warranty disclaimer)",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/BUSL-1.1.json#text; Produkční omezení a automatické všechny-verze ukončení mimo slovník; trademark exclusion a warranty disclaimer výslovné.; https://spdx.org/licenses/BUSL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "text: complete license, lines 1-71 (no express patent grant, patent-claim condition, or patent-termination clause; line 45's non-infringement reference is only within the warranty disclaimer)",
-      "ruleId": "lic-007.no-patent-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/BUSL-1.1.json#text; Celý vzor BUSL neobsahuje výslovný patentový grant ani patentově žalobní ukončení; budoucí Change Licence není dosazena.; https://spdx.org/licenses/BUSL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text: lines 29-32 (License must be conspicuously displayed on each original or modified copy and applies to third-party copies), a placement-specific, copy-level notice duty",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/BUSL-1.1.json#text; Výrazné kopie licence, produkční omezení a verzově specifické parametry jsou materiální plnění.; https://spdx.org/licenses/BUSL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "metadata: id=BUSL-1.1, deprecated=false, osi=false, fsf=false; text: lines 8-22 and 58-71 (source-available/non-production restriction, commercial-license fallback, Change License/GPL conversion, Additional Use Grant, and Change Date are explicit; the guide is for open-source selection, so this parameterized non-OSI license is not recommendable)",
-      "ruleId": "lic-007.review-open-source",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/BUSL-1.1.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. BUSL 1.1 dovoluje kopie, úpravy, deriváty, šíření a neprodukční použití; produkce jen v mezích dodatečného grantu nebo komerční licence. Ke stanovenému datu, nejpozději čtyři roky od prvního vydání dané verze, přechází na určenou Change License. Blokace: Připnutý vzor nevyplňuje Licensed Work, Licensor, Additional Use Grant, Change Date ani Change License. Je třeba doplnit skutečné parametry každé verze a modelovat produkční limit, časový přechod a komerční alternativu; univerzální commercial-use/stejná licence by byly nepravdivé. Porušení automaticky ukončuje práva ke všem verzím, zatímco přechod a doplňkové užití jsou verzově specifické. Je nutný model takto vázaných verzí a dat, nikoli jediný statický copyleft scope.; https://spdx.org/licenses/BUSL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

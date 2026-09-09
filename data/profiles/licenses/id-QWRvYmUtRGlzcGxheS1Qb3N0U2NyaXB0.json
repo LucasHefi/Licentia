@@ -13,7 +13,7 @@
     "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "permissive",
+    "family": "nonstandard",
     "copyleftScope": "none",
     "permissions": [
       "commercial-use",
@@ -28,7 +28,9 @@
       "include-notice"
     ],
     "triggers": [
-      "distribution"
+      "distribution",
+      "unknown",
+      "use"
     ],
     "restrictions": [
       "liability",
@@ -42,47 +44,65 @@
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "license text, permission/trademark paragraph, sentence 1 (permission to use, copy, modify, distribute, and sublicense for any purpose); whole-text review (no reciprocal terms)"
+      "locator": "public/data/licenses/Adobe-Display-PostScript.json#text; Široký grant doplněn specifickým obsahem a atribucí každé zmínky Display PostScript.; https://spdx.org/licenses/Adobe-Display-PostScript.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "license text, all four paragraphs; permission/trademark paragraph, sentence 1 (grant is conditioned only on notices, name use, and trademark terms, with no source-disclosure or same-license condition)"
+      "locator": "public/data/licenses/Adobe-Display-PostScript.json#text; Celý text bez stejné licence či zdrojové reciprocity.; https://spdx.org/licenses/Adobe-Display-PostScript.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "license text, permission/trademark paragraph, sentence 1 (use, copy, modify, distribute, and sublicense for any purpose and without fee)"
+      "locator": "public/data/licenses/Adobe-Display-PostScript.json#text; Use/copy/modify/distribute/sublicense; výslovně no trademark license, patentový grant neuveden.; https://spdx.org/licenses/Adobe-Display-PostScript.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "license text, permission/trademark paragraph, sentence 1 (copyright notices in all copies and copyright plus permission notices in supporting documentation) and sentence 4 (proper trademark attribution whenever Display PostScript is referenced)"
+      "locator": "public/data/licenses/Adobe-Display-PostScript.json#text; Copyright kopie, permission dokumentace; proper trademark attribution whenever reference to Display PostScript system.; https://spdx.org/licenses/Adobe-Display-PostScript.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "license text, permission/trademark paragraph, sentence 1 (conditions on copies/supporting documentation and advertising or publicity pertaining to distribution) and sentence 4 (attribution whenever a Display PostScript reference is made)"
+      "locator": "public/data/licenses/Adobe-Display-PostScript.json#text; Use/distribution notices; podmínka if trademark used for any purpose/whenever reference je zvláštní trigger mimo software-use enum.; https://spdx.org/licenses/Adobe-Display-PostScript.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "license text, permission/trademark paragraph, sentences 1-4 (Adobe name and trademark limits); warranty/liability paragraph, sentences 2-4 (as-is, warranty disclaimer, and limitation of liability)"
+      "locator": "public/data/licenses/Adobe-Display-PostScript.json#text; Zákaz reklamy jménem bez souhlasu a Display PostScript only conjunction statement; warranty/liability a no support.; https://spdx.org/licenses/Adobe-Display-PostScript.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "license text, all four paragraphs (no express patent grant and no patent-claim termination term)"
+      "locator": "public/data/licenses/Adobe-Display-PostScript.json#text; Celý text bez výslovného patentového oprávnění/ukončení; non-infringement je záruková výluka.; https://spdx.org/licenses/Adobe-Display-PostScript.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "license text, permission/trademark paragraph, sentence 1 (notices in copies and supporting documentation) and sentence 4 (conditional trademark attribution whenever Display PostScript is referenced)"
+      "locator": "public/data/licenses/Adobe-Display-PostScript.json#text; Každá zmínka známky vyžaduje přesnou formulaci a atribuci, materiálně nad běžné zachování notice.; https://spdx.org/licenses/Adobe-Display-PostScript.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "license metadata, isOsiApproved=false and isFsfLibre=false; license text, permission/trademark paragraph, sentences 1-4 (Adobe- and Display PostScript-specific conditions make the text unsuitable as a generally reusable recommendation)"
+      "locator": "public/data/licenses/Adobe-Display-PostScript.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. Software lze používat, měnit, šířit a podlicencovat se zachováním copyrightu a dokumentačního povolení. Jméno Adobe v propagaci vyžaduje souhlas; odkaz na Display PostScript smí říkat jen spolupráci se systémem a vždy musí přiznat Adobe vlastnictví známky. Blokace: Podmínka vzniká při jakékoli zmínce známky Display PostScript, omezuje obsah tvrzení na spolupráci se systémem a vyžaduje známkovou atribuci. Je třeba modelovat trigger odkazu na známku, nikoli jej zaměnit za každé užití softwaru či reklamní poděkování.; https://spdx.org/licenses/Adobe-Display-PostScript.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

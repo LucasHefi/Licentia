@@ -1,0 +1,29 @@
+{
+  "id": "PolyForm-Noncommercial-1.0.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:7f6218353be93bc6ce02ba90686e1815768efe2d48ded54b563033c885eb234d"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Licence dovoluje software používat, měnit a distribuovat pro nekomerční účely a vymezené osobní či institucionální činnosti při předání licenčních oznámení. Výjimky pro některé školy, charity, veřejný výzkum a další organizace závisejí na jejich povaze, nikoli jen na financování. Průvodce ji nezařazuje, protože tuto kombinaci omezení účelu a výjimek nelze zaměnit za obecné komerční oprávnění.",
+  "blockersCs": [
+    "Povolené účely kombinují nekomerční omezení, osobní užití bez očekávané komerční aplikace a institucionální výjimky nezávislé na financování; před doporučením je třeba model těchto kategorií, ne pouhé commercial-use false."
+  ],
+  "analysis": {
+    "subjectCs": "PolyForm Noncommercial 1.0.0 stanoví nekomerční, osobní a institucionální povolené účely.",
+    "grantCs": "Copyright/Distribution/Changes licence dovolují příslušná práva pro permitted purpose; Patent License přidává současné/budoucí licencovatelné patentové nároky porušené užitím.",
+    "conditionsCs": "Notices přenáší text či URL a všechny dodané Required Notice řádky. Dovolen je každý nekomerční účel, vyjmenované osobní činnosti bez očekávaného komerčního uplatnění a užití vyjmenovanými charitami, školami, veřejným výzkumem, zdravotními/bezpečnostními/environmentálními či vládními organizacemi bez ohledu na financování.",
+    "limitationsCs": "Sublicence/převod nejsou dovoleny. Vlastní písemný patentový nárok okamžitě ruší grant, firemní nárok pro práci firmy; první písemné upozornění na porušení dává 32 dní k souladu a praktické nápravě, jinak končí licence. AS IS vylučuje záruky/odpovědnost.",
+    "compatibilityCs": "Fair Use je zachováno; definice company zahrnuje kontrolované a společně řízené organizace. Institucionální dovolení není obecnou komerční licencí pro všechny."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/PolyForm-Noncommercial-1.0.0.html",
+      "note": "Individuálně přečten celý připnutý text; Notices přenáší text či URL a všechny dodané Required Notice řádky. Dovolen je každý nekomerční účel, vyjmenované osobní činnosti bez očekávaného komerčního uplatnění a užití vyjmenovanými charitami, školami, veřejným výzkumem, zdravotními/bezpečnostními/environmentálními či vládními organizacemi bez ohledu na financování. Patentový grant je výslovný i pro budoucí licencovatelné nároky a obsahuje okamžité ukončení za písemný patentový nárok."
+    }
+  ]
+}

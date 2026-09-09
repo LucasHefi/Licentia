@@ -1,0 +1,27 @@
+{
+  "id": "ngrep",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:25c3530f49283af4d6694aae0f8f18fa7590350afd616d1e538702e1662e0d95"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Software lze libovolně užívat a měnit; nesmí se zkreslit původ ani opomenutím. Změněné verze a dokumentace uvedou původ a reklama konkrétně na odvozeniny musí uznat Jordana Rittera. Původní notice a odkazy zůstávají beze změny.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Grant se vztahuje na ngrep software pro libovolný počítačový systém, jeho odvozeniny a dokumentaci.",
+    "grantCs": "Permission odstavec dovoluje jakýkoli účel na jakémkoli systému, úpravy a redistribuci. Výslovná sublicence a patentový grant chybějí.",
+    "conditionsCs": "Body 1–2 zakazují zkreslení původu i opomenutím; upraveniny se jasně označí a dokumentace správně uvede původ. Bod 3 vyžaduje předepsané uznání Jordana Rittera v reklamě vztahující se konkrétně k odvozeninám. Bod 5 zakazuje měnit/odstranit notice i odkazy na něj ve zdrojové distribuci či dokumentaci originálu/odvozenin.",
+    "limitationsCs": "Bod 4 zakazuje endorsement/promotion jménem autora bez konkrétního předchozího písemného svolení. Disclaimer odmítá záruky a vyjmenované škody autora/přispěvatelů; autorství nelze zkreslit ani mlčením.",
+    "compatibilityCs": "Reklamní povinnost se výslovně týká odvozenin a není automaticky pro každou reklamu původního programu. Žádná stejná licence, alternativa nebo verze není předepsána."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/ngrep.html",
+      "note": "Individuální revize celého připnutého textu; Grant se vztahuje na ngrep software pro libovolný počítačový systém, jeho odvozeniny a dokumentaci."
+    }
+  ]
+}

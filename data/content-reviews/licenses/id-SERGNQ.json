@@ -1,0 +1,29 @@
+{
+  "id": "HDF5",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:aa760f80fcf08ef8c66f658f5beb14c83bbb61bd2b44d7af0639bf577afd8a9e"
+  },
+  "disposition": "blocked",
+  "summaryCs": "HDF5 dovoluje i komerční zdroje/binárky s oznámeními a zákazem endorsementu. Změny není nutné poskytovat, ale jejich veřejné nebo přímé zpřístupnění HDF bez zvláštní písemné licence aktivuje široký trvalý grant. U UC LLNL částí zůstává samostatné vládní oznámení.",
+  "blockersCs": [
+    "Enhancements zpřístupněné veřejně nebo HDF bez samostatné písemné licence aktivují široký trvalý grant, který současný model nevyjadřuje. Doplnit podmíněný grant-back a identifikaci UC LLNL částí s povinným celým Contract48 statementem."
+  ],
+  "analysis": {
+    "subjectCs": "Licence pokrývá HDF5 knihovnu/utility HDF Group a NCSA, dále vyjmenované přispěvatele a specificky UC LLNL/DOE financované části.",
+    "grantCs": "Úvod výslovně dovoluje source/binary redistribution/use i modifikací pro jakýkoli včetně komerčního účelu. Patentový grant není udělen; vládní disclaimer cizích práv jej nenahrazuje.",
+    "conditionsCs": "§§1–2 copyright, podmínky a disclaimer ve zdrojích/materiálech binárek. Enhancements nejsou povinně dodávány, ale veřejné nebo přímé HDF zpřístupnění bez separate written licence uděluje nevýhradný bezroyalty trvalý grant install/use/modify/derivatives/incorporate/distribute/sublicense ve zdrojích/binárkách. U označených UC LLNL částí se při každé redistribuci zdrojů/binárek/dokumentace/materiálů zachová celý Contract48 statement.",
+    "limitationsCs": "§3 zakazuje endorsement jmény HDF Group, University a přispěvatelů bez jejich konkrétního svolení. HDF disclaimer odmítá záruky/škody. UC LLNL statement odmítá vládní/univerzitní záruky a endorsement; názory autorů nesmějí sloužit reklamě nebo product endorsementu.",
+    "compatibilityCs": "Automatický grant Enhancements závisí na zpřístupnění bez zvláštní písemné licence a nesmí se zaměnit za povinný share-alike všech úprav. Finanční podpora LBNL/LLNL je oznámena; skutečné části s Contract48 se určují podle konkrétní distribuce."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/HDF5.html",
+      "note": "Individuální revize celého připnutého textu; Licence pokrývá HDF5 knihovnu/utility HDF Group a NCSA, dále vyjmenované přispěvatele a specificky UC LLNL/DOE financované části."
+    }
+  ]
+}

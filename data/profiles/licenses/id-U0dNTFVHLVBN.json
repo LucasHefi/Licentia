@@ -9,90 +9,91 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use",
+      "sublicensing"
     ],
-    "obligations": [
-      "unknown"
-    ],
-    "triggers": [
-      "unknown"
-    ],
+    "obligations": [],
+    "triggers": [],
     "restrictions": [
-      "liability"
+      "liability",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "none-stated",
+    "noticeBurden": "none"
   },
   "evidence": [
     {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SGMLUG-PM.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SGMLUG-PM.json#text; Oddíl 1 neodvolatelný široký grant bez informačních podmínek; oddíl 2 pouze disclaimery/riziko.; https://spdx.org/licenses/SGMLUG-PM.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SGMLUG-PM.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SGMLUG-PM.json#text; Oba oddíly bez stejné licence a povinného dodání zdroje.; https://spdx.org/licenses/SGMLUG-PM.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SGMLUG-PM.json#text; Oddíl 1 výslovně use/execute/reproduce/display/perform/distribute/derivatives a authorize others.; https://spdx.org/licenses/SGMLUG-PM.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SGMLUG-PM.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SGMLUG-PM.json#text; Celý oddíl 1 a 2 bez zachování notice nebo zdrojových povinností; určování vhodnosti v 2(a) je alokace rizika.; https://spdx.org/licenses/SGMLUG-PM.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SGMLUG-PM.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SGMLUG-PM.json#text; Celý text nemá závazný distribuční, modifikační, use, network ani advertising trigger pozitivního plnění.; https://spdx.org/licenses/SGMLUG-PM.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SGMLUG-PM.json#text; 2(a)–(d) bez podpory, záruk či odpovědnosti včetně infringement třetích stran.; https://spdx.org/licenses/SGMLUG-PM.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SGMLUG-PM.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SGMLUG-PM.json#text; 2(d) neuzavírá patentový grant: pouze odmítá záruky a odpovědnost za cizí patent/copyright claims.; https://spdx.org/licenses/SGMLUG-PM.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SGMLUG-PM.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SGMLUG-PM.json#text; Celý text nevyžaduje copyright, kopii licence či jiné notice v kopiích.; https://spdx.org/licenses/SGMLUG-PM.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SGMLUG-PM.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SGMLUG-PM.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. SGMLUG uděluje neodvolatelnou celosvětovou bezplatnou licenci k použití, provádění, reprodukci, distribuci a odvozeným dílům parserových materiálů včetně oprávnění dalších osob. Povinná oznámení nejsou uvedena; záruky, odpovědnost i podpora jsou vyloučeny.; https://spdx.org/licenses/SGMLUG-PM.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

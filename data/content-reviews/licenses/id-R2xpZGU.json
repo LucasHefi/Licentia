@@ -1,0 +1,29 @@
+{
+  "id": "Glide",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:716d020f97bf9d2d08102ff05275d94cebce2e80edf1b9d883c77cf3796bf58e"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Glide dovoluje kopie, změny a distribuci s licenčními oznámeními, daty změn a zdrojem nebo stanovenou alternativou jeho nabídky. Stejnou licenci vyžaduje jen pro vymezené převzaté části vykonávající operace 3D grafického rozhraní, nikoli automaticky pro celý kombinovaný program. Přidává interaktivní oznámení, vládní podmínky a možnost poskytovatelem určeného geografického vyloučení. Tento zvláštní rozsah a doplňkové podmínky vyžadují posouzení, které průvodce zatím nenabízí.",
+  "blockersCs": [
+    "Licence má funkčně vymezené identifikovatelné 3D API části, vládní DFARS podmínky a možné přidané geografické vyloučení; před doporučením je nutný model tohoto rozsahu a externích/doplňkových podmínek."
+  ],
+  "analysis": {
+    "subjectCs": "3dfx Glide licence vymezuje odvozeninu jako identifikovatelnou převzatou část vykonávající 3D graphics API operations, nikoli celý modifikovaný program.",
+    "grantCs": "§3.1–3.2 dovolují kopie, změny a redistribuci při §3.3. §2.4 rozlišuje širší Modifications od užšího Derivative Work.",
+    "conditionsCs": "Copyright/disclaimer/licenční notices se zachovají, licence nebo snadný přístup k ní se předá a změny nesou datum. §3.2 vyžaduje stejnou bezplatnou licenci jen užší Derivative Work a interaktivní oznamovací text. §3.3 předepisuje dlouhou hlavičku včetně vlády/DFARS; binárky nesou zdroj, tříletou nabídku za skutečné distribuční náklady nebo nekomerční přenos obdržené nabídky. Rovnocenné místo zdroje/binárek je alternativa.",
+    "limitationsCs": "§3.3 vyjímá standardní OS části, pokud se samy nepřibalují; zakazuje další restrikce a automaticky ruší práva při porušení s ochranou řádných příjemců. GLIDE známka vyžaduje písemné svolení; §4.2 dovoluje poskytovateli přidat geografické vyloučení kvůli patentům/interface copyrightu. §4.3 California právo/jurisdikce; §5 AS IS/liability.",
+    "compatibilityCs": "§3.2h výslovně vylučuje ostatní části širšího díla; §4.2 může vložit konkrétní země jako další podmínku. Vládní hlavička odkazuje historické/nástupnické DFARS/FAR/NASA restrikce."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Glide.html",
+      "note": "Individuálně přečten celý připnutý text; Copyright/disclaimer/licenční notices se zachovají, licence nebo snadný přístup k ní se předá a změny nesou datum. §3.2 vyžaduje stejnou bezplatnou licenci jen užší Derivative Work a interaktivní oznamovací text. §3.3 předepisuje dlouhou hlavičku včetně vlády/DFARS; binárky nesou zdroj, tříletou nabídku za skutečné distribuční náklady nebo nekomerční přenos obdržené nabídky. Rovnocenné místo zdroje/binárek je alternativa. Text neuděluje výslovné patentové právo; §4.2 pouze připouští geografické omezení pro patentově či copyrightově omezené země, ne patentovou odvetu."
+    }
+  ]
+}

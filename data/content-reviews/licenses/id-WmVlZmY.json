@@ -1,0 +1,27 @@
+{
+  "id": "Zeeff",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:395ffb7cff040c6ff1e41c940b6dbdb20d516468d456a07ab69552abfb7432cf"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Licence dovoluje s kódem Jona Zeeffa nakládat libovolným způsobem, včetně komerčního užití, změn a šíření. Podmínkou je ponechat na kódu autorovo jméno; zveřejnění zdrojů ani reklamní poděkování nevyžaduje. Autor odmítá odpovědnost za problémy s kódem, ale další záruky nebo patentová oprávnění text výslovně neupravuje.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Licence pokrývá kód Jona Zeeffa s oznámením z roku 1988.",
+    "grantCs": "Věta „use this code in any manner“ dovoluje libovolné nakládání včetně změn a šíření bez omezení komerčního účelu.",
+    "conditionsCs": "Podmínkou je ponechat na kódu Zeeffovo jméno; text nevyžaduje dodání zdrojů nebo samostatné reklamní uznání.",
+    "limitationsCs": "Závěr stanoví, že autor nenese odpovědnost za problémy s kódem; jiné výluky text neuvádí.",
+    "compatibilityCs": "Žádná jiná licence či verze není nabízena."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Zeeff.html",
+      "note": "Individuálně přečten celý připnutý text; Podmínkou je ponechat na kódu Zeeffovo jméno; text nevyžaduje dodání zdrojů nebo samostatné reklamní uznání. Celý krátký text o libovolném užití a odpovědnosti neobsahuje patentový grant nebo patentovou žalobní doložku."
+    }
+  ]
+}

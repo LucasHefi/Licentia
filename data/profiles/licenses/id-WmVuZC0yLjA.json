@@ -8,93 +8,103 @@
     "contentHash": "sha256:90d4dff16751be2f3887f4efe755fcfa7e395eed38bb4ef5c5dbde61cd3ade42"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
+    "family": "nonstandard",
     "copyleftScope": "unknown",
     "permissions": [
+      "commercial-use",
+      "conditional-relicensing",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
+      "include-advertising-acknowledgment",
       "include-copyright",
-      "provide-corresponding-source"
+      "include-license-text",
+      "include-notice",
+      "same-license"
     ],
     "triggers": [
-      "unknown"
+      "advertising",
+      "distribution"
     ],
     "restrictions": [
-      "liability"
+      "additional-terms",
+      "liability",
+      "trademark",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Zend-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Zend-2.0.json#text; BSD-style grant s dvojím acknowledgment a zvláštní neměnností licenčních podmínek covered code v bodu 4.; https://spdx.org/licenses/Zend-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Zend-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Zend-2.0.json#text; Bod 4 neurčuje rozsah covered code created under License ve složeném díle; copyleft scope nelze přesně zvolit.; https://spdx.org/licenses/Zend-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Zend-2.0.json#text; Úvod source/binary use/redistribute s úpravami; bod 4 this version or subsequent Zend version.; https://spdx.org/licenses/Zend-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Zend-2.0.json#text; Body 1–2 notices, 5 redistribuční věta, 6 reklamní odlišná věta; 4 zachovat aplikovatelné podmínky mimo povolené verze.; https://spdx.org/licenses/Zend-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Zend-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Zend-2.0.json#text; Redistributions any form spouštějí bod 5; advertising mentioning features/use bod 6; samostatný use notice není.; https://spdx.org/licenses/Zend-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Zend-2.0.json#text; Bod 3 Zend naming, bod 4 zákaz změnit podmínky jinou osobou; závěr warranty/liability.; https://spdx.org/licenses/Zend-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Zend-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Zend-2.0.json#text; Celý text bez výslovného patentového grantu nebo patentového ukončení.; https://spdx.org/licenses/Zend-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Zend-2.0.json#text; Dvě rozdílné povinné acknowledgment věty, z toho jedna reklamní, představují materiální zátěž.; https://spdx.org/licenses/Zend-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Zend-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Zend-2.0.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. Zend 2.0 dovoluje zdrojové i binární užití a distribuci. Kromě notice vyžaduje odlišné přesné poděkování při každé redistribuci a v reklamě zmiňující použití či funkce; pozdější Zend licence jsou volitelné, jiné změny podmínek covered code si vyhrazuje Zend. Blokace: Bod 4 přiznává pouze Zend právo měnit podmínky covered code created under this License, ale nedefinuje hranici tohoto kódu vůči derivátům/kombinacím. Je třeba vyjasnit rozsah neměnnosti licencování; nelze jej bez důkazu převést na whole-work nebo pouhé notices.; https://spdx.org/licenses/Zend-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

@@ -1,0 +1,20 @@
+{
+  "id": "HPND-sell-MIT-disclaimer-xserver",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.4",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:a5094944362551601aa68a997ce2b54037c237e6115378fccecdc82fb05b218f"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Svolovací oznámení přiložte do podpůrné dokumentace a do všech kopií nebo podstatných částí softwaru. Tato varianta samostatně neukládá zachování copyrightového oznámení; nevkládá se do ní automaticky podmínka z jiných HPND variant. Obsahuje vyloučení záruk a odpovědnosti.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/HPND-sell-MIT-disclaimer-xserver.html",
+      "note": "Dřívější individuální revize 2026-09-09.4; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

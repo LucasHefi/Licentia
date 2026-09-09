@@ -1,0 +1,27 @@
+{
+  "id": "TU-Berlin-1.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:949d3608c6231cf9c20bc15d0c7b3335d34669efa9f34670b4a22685f65840b9"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Jakékoli užití softwaru je dovoleno při zachování oznámení; autoři a TU Berlin nedávají ujištění o vhodnosti ani neodpovídají za vady. Zprávy o použití, chybách a zlepšeních jsou pouze zdvořilostní žádost.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Software Jutty Degener a Carstena Bormanna/TU Berlin podle oznámení z 15. 9. 1992.",
+    "grantCs": "Any use dovoluje obecné nakládání bez omezení účelu; patentový grant není uveden.",
+    "conditionsCs": "Při užití musí zůstat oznámení neodstraněné. Informace autorům o použití, chybách a zlepšeních jsou dobrovolná courtesy žádost.",
+    "limitationsCs": "Autoři/univerzita nejsou považováni za poskytovatele ujištění o vhodnosti ani odpovědné za vady; výslovně ABSOLUTELY NO WARRANTY.",
+    "compatibilityCs": "Žádná alternativní licence či pozdější verze, žádná zdrojová reciprocita."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/TU-Berlin-1.0.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; První licenční odstavec Any use s podmínkou zachování notice a disclaimery; další odstavec je courtesy žádost."
+    }
+  ]
+}

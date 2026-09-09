@@ -1,0 +1,22 @@
+{
+  "id": "MITNFA",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.3",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:ee4bd72c8f9d6d04949521b97cdfcfec263cc2e1100e3caaa9a7b8dccbdc10d9"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Kromě copyrightu a licence řeší text kontakty pro hlášení chyb: u vymezených distribuovaných verzí, které zásadně mění funkčnost, je musíte nahradit nebo odstranit. Průvodce tuto podmínku zatím nevyhodnocuje.",
+  "blockersCs": [
+    "Nezařazena: doplnit povinnost změnit nebo odstranit původní bug-report kontakty a její podmínění podstatnou změnou funkčnosti mimo běžnou konfiguraci. Pouhé mark-modifications tento požadavek nepopisuje. Jinak je doplněn permisivní grant a standardní oznámení."
+  ],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/MITNFA.html",
+      "note": "Dřívější individuální revize 2026-09-09.3; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

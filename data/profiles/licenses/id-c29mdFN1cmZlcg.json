@@ -8,91 +8,98 @@
     "contentHash": "sha256:6092c4a4daff1b35f856f6a429dfdc01ff616c904095f8328318802449ef2585"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
-    ],
-    "obligations": [
-      "include-copyright"
-    ],
-    "triggers": [
+      "commercial-use",
+      "modifications",
+      "private-use",
       "unknown"
     ],
-    "restrictions": [
-      "liability"
+    "obligations": [
+      "include-copyright",
+      "unknown"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "triggers": [
+      "modification",
+      "use"
+    ],
+    "restrictions": [
+      "additional-terms",
+      "liability",
+      "warranty"
+    ],
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/softSurfer.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/softSurfer.json#text; Volné užití a změny nevyžadují stejnou licenci nebo zdroje; permisivní charakter s další podmínkou ověření.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/softSurfer.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/softSurfer.json#text; Volné užití a změny nevyžadují stejnou licenci nebo zdroje; permisivní charakter s další podmínkou ověření.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/softSurfer.json#text; Freely used and modified for any purpose dovoluje libovolné účely a úpravy, bez komerčního zákazu; patentový grant ani samostatná sublicence chybějí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/softSurfer.json#text; Providing that vyžaduje přiložit copyright při užití i úpravách. Závěrečná věta Users ... must verify correctness závazně ukládá ověřit správnost pro aplikaci; nejde o zdroje nebo prosté oznámení. Povinnost při samotném užití nyní zachycuje trigger use ve slovníku 1.4.0.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/softSurfer.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/softSurfer.json#text; Providing that vyžaduje přiložit copyright při užití i úpravách. Závěrečná věta Users ... must verify correctness závazně ukládá ověřit správnost pro aplikaci; nejde o zdroje nebo prosté oznámení. Povinnost při samotném užití nyní zachycuje trigger use ve slovníku 1.4.0.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/softSurfer.json#text; SoftSurfer nedává záruku a nenese odpovědnost za skutečné ani domnělé škody z užití; požadavek ověření je navíc konkrétní uživatelská povinnost.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/softSurfer.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/softSurfer.json#text; Freely used and modified for any purpose dovoluje libovolné účely a úpravy, bez komerčního zákazu; patentový grant ani samostatná sublicence chybějí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/softSurfer.json#text; Providing that vyžaduje přiložit copyright při užití i úpravách. Závěrečná věta Users ... must verify correctness závazně ukládá ověřit správnost pro aplikaci; nejde o zdroje nebo prosté oznámení. Povinnost při samotném užití nyní zachycuje trigger use ve slovníku 1.4.0.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/softSurfer.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/softSurfer.json#text; Individuální plná revize aktualizována po doplnění use ve slovníku 1.4.0. Kód lze pro jakýkoli účel užívat a měnit s copyrightem, bez záruky a odpovědnosti. Uživatelé musí ověřit jeho správnost pro vlastní aplikaci. Users ... must verify correctness ukládá ověřit správnost pro aplikaci; model tuto ověřovací povinnost nemá. Navíc grant used and modified nevymezuje redistribuci; doplnit povinnost a ověřit distribuční rozsah.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

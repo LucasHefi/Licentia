@@ -8,94 +8,100 @@
     "contentHash": "sha256:310c3262b7a62ece19b913e23dc9575344c573c573306fc0aba8539f3c337c7c"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "mark-modifications"
+      "include-notice",
+      "mark-modifications",
+      "unknown"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification"
     ],
     "restrictions": [
       "liability",
+      "unknown",
       "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LPPL-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LPPL-1.1.json#text; Conditions 3–8 vytvářejí zvláštní režim názvů, identity a dostupnosti celého originálu, ne standardní copyleft nebo pouhou permisivní atribuci; https://spdx.org/licenses/LPPL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LPPL-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LPPL-1.1.json#text; Text po osmi podmínkách výslovně nevyžaduje obecné LPPL distribuční podmínky na již upravených souborech, trvá jen bod 7 jmenného omezení; to není same-license copyleft; https://spdx.org/licenses/LPPL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/LPPL-1.1.json#text; Preambule neomezuje běh; Conditions dovolují úplný originál a kvalifikované modifikace, avšak zakazují změny právně neměnných souborů a .ins; patentový grant chybí; https://spdx.org/licenses/LPPL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/LPPL-1.1.json#text; Body 4–5 autorství/identifikace a změny jsou notices, ale body 3,6,7,8 přejmenování, bug-report adresy, následný zákaz názvu a celý originál NEBO způsob získání nemají enum; https://spdx.org/licenses/LPPL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LPPL-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LPPL-1.1.json#text; Conditions distribuce znamená každé zpřístupnění jiným včetně sdílené instalace; modifikace zahrnuje i přejmenování, běh explicitně není licenční trigger; https://spdx.org/licenses/LPPL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/LPPL-1.1.json#text; No Warranty výslovně záruky/škody, Conditions úplnost nezměněné distribuce a souborové zákazy/jmenné podmínky i .ins/.fd/.cfg vyžadují unknown restriction; https://spdx.org/licenses/LPPL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LPPL-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LPPL-1.1.json#text; Úplný text včetně LaTeX dodatků, No Warranty a aplikačního návodu neuděluje patentová práva ani nestanoví patentovou žalobní odvetu; https://spdx.org/licenses/LPPL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/LPPL-1.1.json#text; Původní autorství/soubor/program, nové identifikace a hlášení chyb, zvláštní LaTeX soubory a informace k získání kompletního originálu činí požadavky materiální; https://spdx.org/licenses/LPPL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LPPL-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LPPL-1.1.json#text; Individuální přečtení celého připnutého textu dne 2026-09-10. LPPL 1.1 dovoluje neomezený běh, ale nezměněný Program se smí distribuovat jen úplný. Změněný soubor zpravidla vyžaduje jiné jméno, přiznání původního autorství, změněnou identifikaci a adresy hlášení chyb; zákaz původního jména musí nést i jeho další odvozeniny. Příjemci musí získat celý originální Program nebo dostatečné informace k jeho získání. LaTeX soubory .ins, .fd a .cfg mají vlastní výjimky/zákazy a jednotlivé soubory smějí mít další modifikační podmínky. Vlastní změněná díla nemusejí být obecně pod LPPL; pokračuje specifická jmenná podmínka. Blokace: Část Conditions zakazuje neúplnou distribuci nezměněného Programu a ukládá změněným souborům přejmenování, úpravu identifikačních/bug-report adres a přenesení zákazu původního jména na další deriváty. Podmínka 8 navíc volí přiložení celého originálu nebo informaci k jeho získání. Model tyto povinnosti neumí vyjádřit a nesmí je zaměnit za běžný source disclosure nebo same-license; je nutný vlastní model programu/souborů a těchto alternativ. Preambule a Additional Conditions dovolují jednotlivým souborům vlastní nadřazené modifikační podmínky včetně úplného zákazu změn; LaTeX .ins jsou neměnné, .fd a .cfg mají specifické výjimky jmen a povolených změn. Před doporučením konkrétního díla je třeba jeho úplný manifest a inventura těchto normativních notices, nikoli automatický grant libovolných změn každého souboru.; https://spdx.org/licenses/LPPL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

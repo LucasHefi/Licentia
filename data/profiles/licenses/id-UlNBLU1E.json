@@ -8,91 +8,98 @@
     "contentHash": "sha256:11cfb8d5c4204dbe72eb0f1625e69c6b6b8396695b17fa7b293043e3280297ec"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "modifications",
+      "private-use",
+      "unknown"
     ],
     "obligations": [
+      "include-copyright",
+      "include-license-text",
+      "include-notice",
       "unknown"
     ],
     "triggers": [
+      "distribution",
+      "modification",
       "unknown"
     ],
     "restrictions": [
-      "unknown"
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/RSA-MD.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/RSA-MD.json#text; Grant s obecnou povinností předepsaného pojmenování zmínek je nonstandard, bez stejné licence odvozenin či source copyleftu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/RSA-MD.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/RSA-MD.json#text; Grant s obecnou povinností předepsaného pojmenování zmínek je nonstandard, bez stejné licence odvozenin či source copyleftu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/RSA-MD.json#text; Odstavce License to copy and use a License ... make and use derivative works dovolují kopie, užití a odvozeniny; samostatná redistribuce/prodej a patentový grant nejsou výslovné.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/RSA-MD.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/RSA-MD.json#text; Všechny materiály zmiňující software/funkci musí uvádět předepsaný název RSA algoritmu; materiály k odvozeninám uvádějí předepsané derived from. Závěr zachovává všechna oznámení v každé kopii části dokumentace nebo softwaru. Povinnost se netýká jen reklamy.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/RSA-MD.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/RSA-MD.json#text; Všechny materiály zmiňující software/funkci musí uvádět předepsaný název RSA algoritmu; materiály k odvozeninám uvádějí předepsané derived from. Závěr zachovává všechna oznámení v každé kopii části dokumentace nebo softwaru. Povinnost se netýká jen reklamy.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/RSA-MD.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/RSA-MD.json#text; RSA odmítá záruky obchodovatelnosti a vhodnosti a poskytuje software as is bez jakékoli výslovné/implicitní záruky; samostatná výluka odpovědnosti není uvedena.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/RSA-MD.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/RSA-MD.json#text; Odstavce License to copy and use a License ... make and use derivative works dovolují kopie, užití a odvozeniny; samostatná redistribuce/prodej a patentový grant nejsou výslovné.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/RSA-MD.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/RSA-MD.json#text; Všechny materiály zmiňující software/funkci musí uvádět předepsaný název RSA algoritmu; materiály k odvozeninám uvádějí předepsané derived from. Závěr zachovává všechna oznámení v každé kopii části dokumentace nebo softwaru. Povinnost se netýká jen reklamy.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/RSA-MD.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/RSA-MD.json#text; Individuálně přečten celý připnutý text. Text se vztahuje na RSA MD5 software, jeho funkci, dokumentaci a odvozené práce. Kopie a užití MD5 i tvorba odvozenin jsou dovoleny s předepsaným označením algoritmu ve všech materiálech, které jej zmiňují. Odvozeniny mají odlišné předepsané označení; oznámení zůstávají i v částečných kopiích. Předepsané uznání se spouští každým materiálem zmiňujícím software/funkci nebo odvozeninu, nikoli pouze reklamou či distribucí. Doplnit tento spouštěč a dvě podmíněné formy označení; ověřit také nevýslovný rozsah redistribuce v primárním kontextu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

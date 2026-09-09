@@ -1,0 +1,22 @@
+{
+  "id": "Caldera",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.9",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:5bb421d9cad7a0bc5ff02c9c978b9e53e3813baa0de163dd810ada49d124eb13"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Grant preambule se vztahuje jen na uvedené historické systémy UNIX pro PDP-11 a 32V; výslovně vylučuje UNIX System III, System V a jejich následníky. Nepřislibuje dostupnost zdrojů. Pro pokrytý software zachovejte copyright, podmínky a disclaimer ve zdrojích a dokumentaci i v materiálech k binární distribuci. Reklama zmiňující vlastnosti či použití musí uvést předepsané poděkování Caldera. Propagační použití jmen vyžaduje písemný souhlas. Původní grant nelze bez dalšího doporučit jako licenci nového obecného projektu.",
+  "blockersCs": [
+    "Reklamní povinnost je již modelována. Zbývá rozlišit historický grant pro 32V UNIX a 16bitové UNIX 1–7 od licence pro nový projekt; ověřit konkrétní pokrytý kód a výluky System III/V a následníků. Samotné odstranění unknown nesmí povolit obecné doporučení."
+  ],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Caldera.html",
+      "note": "Dřívější individuální revize 2026-09-09.9; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

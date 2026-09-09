@@ -1,0 +1,29 @@
+{
+  "id": "NIST-PD-TNT",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:0328a2fdb207b1b2c62398055a140e2c8a6c58ab768bfd38dec5519b15ee1f1d"
+  },
+  "disposition": "blocked",
+  "summaryCs": "NIST označuje software vytvořený federálními zaměstnanci při služebních povinnostech za public domain podle 17 USC 105. Odmítá odpovědnost a záruky; poděkování při začlenění do knihoven či aplikací pouze žádá.",
+  "blockersCs": [
+    "Public-domain status je výslovně založen na služebním díle federálních zaměstnanců dle 17 USC 105. Nový soukromý projekt potřebuje vlastní licenci nebo dedikaci; tento skutkový status nelze přenést výběrem textu."
+  ],
+  "analysis": {
+    "subjectCs": "Konkrétní software federálních zaměstnanců NIST vytvořený při služebních povinnostech.",
+    "grantCs": "Deklaruje absenci copyrightu a public domain dle 17 USC 105; výslovnou patentovou licenci nedává.",
+    "conditionsCs": "We would appreciate acknowledgement je dobrovolná žádost při začlenění, ne podmínka; další povinnosti nejsou.",
+    "limitationsCs": "NIST odmítá odpovědnost a výslovné/odvozené záruky kvality, spolehlivosti a dalších vlastností.",
+    "compatibilityCs": "Není náhradní grant pro dílo mimo federální pravidlo ani alternativní licence/verze."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/NIST-PD-TNT.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; První odstavec prohlašuje public domain dle 17 USC 105 pro dílo federálních zaměstnanců."
+    }
+  ]
+}

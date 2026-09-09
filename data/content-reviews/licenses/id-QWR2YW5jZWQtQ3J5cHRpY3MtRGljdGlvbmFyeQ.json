@@ -1,0 +1,29 @@
+{
+  "id": "Advanced-Cryptics-Dictionary",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:fb900198996ff3039747870eb3c5cc0a3ca777d7dab85fcc76a194a63421ab14"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Užití slovníku v softwarovém balíku nebo redistribuce v jakékoli podobě vyžaduje nápadný copyright a doslovný text oznámení. Další omezení text výslovně vylučuje.",
+  "blockersCs": [
+    "Grant se vztahuje na slovníkovou publikaci a povinnosti spouští i užití v softwarovém balíku. Doplnit model datového předmětu; podmíněné užití je nyní zaznamenáno spouštěči use a combination."
+  ],
+  "analysis": {
+    "subjectCs": "Předmětem je publikace The UK Advanced Cryptics Dictionary, tedy slovníková data, ne obecný softwarový kód.",
+    "grantCs": "There are no other restrictions ve spojení se širokým šířením ponechává všechny účely včetně komerce a úprav; výslovný patentový grant a sublicence uvedeny nejsou.",
+    "conditionsCs": "Odstavec if ... Není povinné sdílet zdroje. Povinnost při samotném užití nyní zachycuje trigger use ve slovníku 1.4.0.",
+    "limitationsCs": "Celý text neobsahuje výluku záruk, odpovědnosti, známkové zákazy či terminaci; výslovně říká, že jiná omezení nejsou.",
+    "compatibilityCs": "Zařazení do balíku není doložkou konkrétní kompatibility ani stejnou licencí všech částí."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Advanced-Cryptics-Dictionary.html",
+      "note": "Individuální revize celého připnutého textu; Předmětem je publikace The UK Advanced Cryptics Dictionary, tedy slovníková data, ne obecný softwarový kód."
+    }
+  ]
+}

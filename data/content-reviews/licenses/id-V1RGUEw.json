@@ -1,0 +1,27 @@
+{
+  "id": "WTFPL",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:991c63dc0280f45f2080924449205d770b680bafdcb6639d2ed0e16522977061"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Jediná podmínka verze 2 dovoluje s licencovaným dílem dělat cokoli. Přejmenování se vyžaduje při změně samotného licenčního dokumentu, nikoli při úpravě programu.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Licencované dílo; samostatný úvodní grant upravuje kopie a změny licenčního dokumentu.",
+    "grantCs": "Bod 0 dává neomezené oprávnění ke kopírování, distribuci, úpravám i dalšímu nakládání; výslovná patentová licence chybí.",
+    "conditionsCs": "Pro dílo nejsou pozitivní podmínky. Modifikovaný text této licence musí mít jiný název; nejde o podmínku názvu upraveného programu.",
+    "limitationsCs": "Text verze 2 z prosince 2004 neobsahuje výluku záruk a odpovědnosti ani ukončení.",
+    "compatibilityCs": "Neomezený grant dovoluje další licencování, ale úvod chrání název změněného licenčního textu. Automatická volba budoucí verze není uvedena."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/WTFPL.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; TERMS AND CONDITIONS, bod 0 poskytuje zcela neomezené oprávnění, funkčně public-domain-equivalent bez formální dedikace."
+    }
+  ]
+}

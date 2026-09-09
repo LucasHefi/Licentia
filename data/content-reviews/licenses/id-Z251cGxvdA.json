@@ -1,0 +1,29 @@
+{
+  "id": "gnuplot",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:500b783651c803278524e17aea48957ec2b5eec720246937eca81ff0359edc30"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Úpravy jsou dovoleny, úplné změněné zdroje se však šířit nesmějí: změny se distribuují jako patche k vydané verzi. Upravené binární verze doprovází patch, zvláštní identifikace verze a váš kontakt pro podporu; kontakt původních autorů zůstává.",
+  "blockersCs": [
+    "Text zakazuje distribuci kompletních změněných zdrojů a povoluje pouze patche k vydané verzi, s povinným jménem/adresou hlavního kontaktu podpory a zachováním původního kontaktu. Je třeba modelovat patchový distribuční formát, verzi a odpovědnost za podporový kontakt; obecné zdrojové plnění to nevystihuje."
+  ],
+  "analysis": {
+    "subjectCs": "Software a dokumentace Thomase Williamse a Colina Kelleyho; vydaná verze a patche změn.",
+    "grantCs": "Use/copy/distribute pro jakýkoli účel s poplatkem i bez; modification dovolena, complete modified source distribution zakázána. Patentový grant chybí.",
+    "conditionsCs": "Copyright ve všech kopiích a s permission v dokumentaci. Modifikované binárky: patch přiložit, zvláštní identifikace vedle základní verze, vaše jméno/adresa jako primary support contact, zachovat původní kontakt. Původní zdroje + patch mají stejné body 2–4.",
+    "limitationsCs": "AS IS bez záruk v rozsahu zákona; výslovná odpovědnostní výluka chybí. Kontakt podpory je povinnost, text neurčuje garantovanou úroveň servisního plnění.",
+    "compatibilityCs": "Patch a původní zdroje jsou povolené distribuční formy, nikoli alternativní licence; nezakládá to standardní whole-work copyleft."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/gnuplot.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Grant úprav s výslovným zákazem kompletních změněných zdrojů a pravidly patchů je zvláštní režim."
+    }
+  ]
+}

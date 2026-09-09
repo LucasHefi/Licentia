@@ -1,0 +1,29 @@
+{
+  "id": "BSD-Systemics",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:8d5e365bfb348293ac80b097a6ff4a9662cc5f89c945c5953b2399a36d2ae603"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Knihovna i aplikace jsou povoleny komerčně i nekomerčně s notices a reklamním poděkováním Systemics. Licence a distribuční podmínky veřejně dostupných verzí či odvozenin kódu se nesmějí měnit; výslovně se zakazuje prosté převedení i pod GPL.",
+  "blockersCs": [
+    "Poslední odstavec zakazuje změnit podmínky jakékoli veřejné verze nebo derivative of this code, ale neurčuje hranici vůči produktu obsahujícímu části knihovny. Je třeba modelovat rozsah zachování licence kódu/odvozenin bez automatického rozšíření na celé kombinované dílo."
+  ],
+  "analysis": {
+    "subjectCs": "Knihovna a aplikace Systemics 1995–1996, původní kód a veřejné verze/odvozeniny.",
+    "grantCs": "Use a redistribution source/binary with or without modification pro komerční/nekomerční účely; výslovný patentový grant chybí.",
+    "conditionsCs": "Copyright v kódu neodstraňovat, source/binary notices dle bodů 1–2, reklama features/use přesná věta dle bodu 3. Produktová atribuce by Systemics should je doporučení; veřejná licence/distribution terms se nesmějí měnit.",
+    "limitationsCs": "AS IS a široké warranty/liability. Zákaz změnit licenci výslovně zahrnuje GNU Public Licence; zdrojové zveřejnění se nevyžaduje.",
+    "compatibilityCs": "GPL se uvádí jako zakázaný příklad prostého přelicencování, nikoli alternativa. Není vymezena hranice pravidla pro kombinované produkty."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/BSD-Systemics.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; BSD-style grant doplněn zákazem změny veřejných licenčních/distribučních podmínek kódu/derivátů."
+    }
+  ]
+}

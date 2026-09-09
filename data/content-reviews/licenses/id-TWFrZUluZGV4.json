@@ -1,0 +1,27 @@
+{
+  "id": "MakeIndex",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:2aa718cd499276981561ba922f49c13ddfa2467c25588409f1d138a23ce17f90"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Kopie MakeIndex zachovají copyright a svolení a příjemcům neomezí redistribuci. Každý příjemce executable získá přístup ke strojově čitelným zdrojům za nejvýše rozumné reprodukční/doručovací náklady. Celé změněné dílo včetně určitých závislých rozšíření nese totožné svolení.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Program MakeIndex a modifikace zahrnují i porty a doplňky distribuované společně s odvozeninou, které lze používat jen s ní a rozšiřují její schopnosti.",
+    "grantCs": "První odstavec dovoluje doslovné kopie a šíření; druhý modifikované části/celky. Bez zákazu komerčního účelu, s limitem nákladů na přístup ke zdrojům. Patentový grant ani samostatná sublicence chybějí.",
+    "conditionsCs": "Kopie zachovají copyright a svolení a příjemce nesmí být žádán o vzdání/omezení redistribuce. Každý executable příjemce má přístup ke strojově čitelným zdrojům za nejvýše reproduction/shipping/handling; bez přiložených zdrojů dostane výrazné svolení a postup získání. Celé modifikované dílo má totožné svolení. Should be reported je doporučení hlásit změny.",
+    "limitationsCs": "Odvozeninami jsou také porty a společně šířené doplňky použitelné jen s odvozeným programem a určené k jeho rozšíření/přizpůsobení. Závěr odmítá jakoukoli záruku a odpovědnost přispěvatelů za následky nebo účelovou vhodnost.",
+    "compatibilityCs": "Povinná identická permission notice se vztahuje na definované modifikované dílo, ne automaticky na vše ve stejné distribuci. Text neobsahuje jinou licenční cestu či volbu verze."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/MakeIndex.html",
+      "note": "Individuální revize celého připnutého textu; Program MakeIndex a modifikace zahrnují i porty a doplňky distribuované společně s odvozeninou, které lze používat jen s ní a rozšiřují její schopnosti."
+    }
+  ]
+}

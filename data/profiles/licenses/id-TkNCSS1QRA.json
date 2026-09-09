@@ -8,91 +8,90 @@
     "contentHash": "sha256:26df2e2e8ba4f87af8d3f8ee175364d514e0d9ec4dd615657ebf33488c5cd50d"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "public-domain-equivalent",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
-    "obligations": [
-      "unknown"
-    ],
-    "triggers": [
-      "unknown"
-    ],
+    "obligations": [],
+    "triggers": [],
     "restrictions": [
-      "liability"
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "none-stated",
+    "noticeBurden": "none"
   },
   "evidence": [
     {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NCBI-PD.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NCBI-PD.json#text; Neomezené užití vládního díla má public-domain-equivalent účinek a žádný copyleft, ale závisí na jeho původu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NCBI-PD.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NCBI-PD.json#text; Neomezené užití vládního díla má public-domain-equivalent účinek a žádný copyleft, ale závisí na jeho původu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/NCBI-PD.json#text; První odstavec tvrdí nemožnost copyrightu United States Government Work a neomezené užití/reprodukci; nejde o fallback copyrightovou licenci pro jiné jurisdikce. Výslovný patentový grant chybí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NCBI-PD.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NCBI-PD.json#text; První odstavec výslovně vylučuje omezení užití a reprodukce. Please cite the author je žádost; povinné copyrightové oznámení, zdroje ani spouštěče povinností nejsou uvedeny.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NCBI-PD.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NCBI-PD.json#text; První odstavec výslovně vylučuje omezení užití a reprodukce. Please cite the author je žádost; povinné copyrightové oznámení, zdroje ani spouštěče povinností nejsou uvedeny.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/NCBI-PD.json#text; Druhý odstavec odmítá záruky výkonu a výsledků softwaru/dat a všechny výslovné i implicitní záruky včetně obchodovatelnosti/vhodnosti. Samostatná výluka škod chybí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NCBI-PD.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NCBI-PD.json#text; První odstavec tvrdí nemožnost copyrightu United States Government Work a neomezené užití/reprodukci; nejde o fallback copyrightovou licenci pro jiné jurisdikce. Výslovný patentový grant chybí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NCBI-PD.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NCBI-PD.json#text; První odstavec výslovně vylučuje omezení užití a reprodukce. Please cite the author je žádost; povinné copyrightové oznámení, zdroje ani spouštěče povinností nejsou uvedeny.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NCBI-PD.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NCBI-PD.json#text; Individuálně přečten celý připnutý text. Prohlášení platí pro konkrétní software vytvořený v rámci úředních povinností zaměstnanců vlády USA, nikoli pro libovolné soukromé dílo. NCBI prohlašuje software za dílo zaměstnanců vlády USA bez copyrightu a omezení užití či reprodukce. NLM a vláda odmítají záruky výsledků; citování autora je žádost. Text odvozuje volnost výlučně od statusu United States Government Work a neposkytuje náhradní grant pro běžného autora. Průvodce musí rozlišit tento původ díla a územní rozsah před použitím jako licence nového projektu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

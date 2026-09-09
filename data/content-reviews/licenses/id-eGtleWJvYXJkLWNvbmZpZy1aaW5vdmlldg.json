@@ -1,0 +1,27 @@
+{
+  "id": "xkeyboard-config-Zinoviev",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:0f833877aa31f36e9ededbc2c6115846d12d6ac7ebc55da7b280dfffb94a6caf"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Software lze používat, měnit, kopírovat, šířit a prodávat ve zdrojové i binární formě při zachování copyrightu a podmínek. Autor každé úpravy musí shrnout změny v hlavičce; záruky a odpovědnost jsou vyloučeny.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Software/soubor Antona Zinovieva, copyright 1999–2000; zdrojová i binární forma.",
+    "grantCs": "Výslovně use, modify, copy, distribute, sell; opakovaný grant dovoluje use/distribute/modify in any way. Patentový grant není uveden.",
+    "conditionsCs": "Zachovat copyright i podmínky v obou formách; autor úpravy shrne změny přímo v hlavičce. Povinnost se nevztahuje jen na distribuci.",
+    "limitationsCs": "Autor neodpovídá za fungování a škody z užití; poslední věta vylučuje výslovné i odvozené záruky.",
+    "compatibilityCs": "Oba granty patří témuž textu a doplňují se; nejde o alternativní licence. Zdrojová reciprocita či volba verze chybí."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/xkeyboard-config-Zinoviev.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Oba grantové odstavce dovolují obecné nakládání s informačními podmínkami."
+    }
+  ]
+}

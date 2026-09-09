@@ -9,92 +9,99 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "include-license-text"
+      "include-copyright",
+      "include-license-text",
+      "mark-modifications"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification",
+      "use"
     ],
     "restrictions": [
       "liability",
-      "trademark"
+      "trademark",
+      "warranty"
     ],
-    "patentPosition": "unknown",
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CNRI-Jython.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CNRI-Jython.json#text; Bod2 široký copyrightový grant s notices;3 veřejné změny,4 trademark,bez reciprocity.; https://spdx.org/licenses/CNRI-Jython.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CNRI-Jython.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CNRI-Jython.json#text; Body1–9 nevyžadují stejnou licenci či zpřístupnění zdroje; derivative notices nejsou copyleft.; https://spdx.org/licenses/CNRI-Jython.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CNRI-Jython.json#text; Bod2 reproduce/analyze/test/perform/display/derivatives/distribute/otherwise use world-wide royalty-free; nikoli výslovné patentové/sublicence právo.; https://spdx.org/licenses/CNRI-Jython.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CNRI-Jython.json#text; Bod2 copyright a agreement nebo předepsaný prominentní handle text;3 nature of modifications ve veřejném díle.; https://spdx.org/licenses/CNRI-Jython.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CNRI-Jython.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CNRI-Jython.json#text; Use zachovává notices; preparing and making derivative public spouští prominentní popis změn, ne soukromá modifikace samotná.; https://spdx.org/licenses/CNRI-Jython.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CNRI-Jython.json#text; Bod4 CNRI/JPython trademark a JPython-based forma;5–6 warranty/liability;7 přesná písemná termination/60-day cure.; https://spdx.org/licenses/CNRI-Jython.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CNRI-Jython.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CNRI-Jython.json#text; Celých9 bodů neobsahuje výslovný patentový grant ani patentové ukončení; noninfringement je záruková výluka.; https://spdx.org/licenses/CNRI-Jython.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CNRI-Jython.json#text; Notices a výrazné označení veřejných změn; agreement může nahradit konkrétní handle oznámení.; https://spdx.org/licenses/CNRI-Jython.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CNRI-Jython.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CNRI-Jython.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. CNRI dovoluje užívat, analyzovat, měnit a šířit JPython 1.1.x při zachování copyrightu a smlouvy; smlouvu lze nahradit předepsaným výrazným textem s persistentním handle. Veřejné odvozeniny označí povahu změn, JPython známku používají jen jako JPython-based nebo ekvivalent.; https://spdx.org/licenses/CNRI-Jython.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

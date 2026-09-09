@@ -8,92 +8,102 @@
     "contentHash": "sha256:808238c85f11b11304f082eb53c60b634ac643441f4322a6b6067153b85e4e00"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "provide-corresponding-source"
-    ],
-    "triggers": [
+      "include-license-text",
+      "include-notice",
+      "mark-modifications",
       "unknown"
     ],
-    "restrictions": [
-      "liability"
+    "triggers": [
+      "distribution",
+      "modification",
+      "use"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "restrictions": [
+      "liability",
+      "trademark",
+      "unknown",
+      "warranty"
+    ],
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SOFA.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SOFA.json#text; SOFA licence 2023 pokrývá software IAU SOFA Board a odvozenou část distribuce vymezenou jako vše mimo neporušené nezměněné zdrojové soubory. Body 2–3 dovolují bezplatné komerční i jiné užití, kopie/distribuci zdrojů a přizpůsobení kódu i algoritmů ve vlastním softwaru. Předání požadavků pro odvozené zdroje není blanket same-license celého programu ani povinnost zdroj zveřejnit; speciální omezení názvů/pověsti zůstává.; https://spdx.org/licenses/SOFA.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SOFA.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SOFA.json#text; Předání požadavků pro odvozené zdroje není blanket same-license celého programu ani povinnost zdroj zveřejnit; speciální omezení názvů/pověsti zůstává.; https://spdx.org/licenses/SOFA.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SOFA.json#text; Body 2–3 dovolují bezplatné komerční i jiné užití, kopie/distribuci zdrojů a přizpůsobení kódu i algoritmů ve vlastním softwaru.; https://spdx.org/licenses/SOFA.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SOFA.json#text; §3a–e vyžadují na odvozenině předepsané oznámení původu/neendorsementu, ve zdroji popis vazby a rozdílů, odstranění prefixů iau/sofa i triviálních variant ze všech rutin a neporušené předání požadavků ve zdrojové distribuci dalším modifikátorům. Veškeré i drobné změny se označí.; https://spdx.org/licenses/SOFA.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SOFA.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SOFA.json#text; §3a–e vyžadují na odvozenině předepsané oznámení původu/neendorsementu, ve zdroji popis vazby a rozdílů, odstranění prefixů iau/sofa i triviálních variant ze všech rutin a neporušené předání požadavků ve zdrojové distribuci dalším modifikátorům. Veškeré i drobné změny se označí.; https://spdx.org/licenses/SOFA.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SOFA.json#text; §3d zakazuje klamání o původu a patentové přihlášky na SOFA kód/algoritmy; §4 zakazuje poškodit pověst nevhodným užitím/změnou. §5 vylučuje záruky/odpovědnost; žádost o acknowledgment v publikacích/produktech je appreciated, tedy dobrovolná.; https://spdx.org/licenses/SOFA.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SOFA.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SOFA.json#text; Text neuděluje patentový grant; §3d zakazuje podat patentovou přihlášku na SOFA software/algoritmy, nikoli standardní žalobní ukončení.; https://spdx.org/licenses/SOFA.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SOFA.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SOFA.json#text; §3a–e vyžadují na odvozenině předepsané oznámení původu/neendorsementu, ve zdroji popis vazby a rozdílů, odstranění prefixů iau/sofa i triviálních variant ze všech rutin a neporušené předání požadavků ve zdrojové distribuci dalším modifikátorům. Veškeré i drobné změny se označí. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/SOFA.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SOFA.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SOFA.json#text; Individuální kontrola celého připnutého textu SOFA dne 2026-09-09. SOFA licence 2023 pokrývá software IAU SOFA Board a odvozenou část distribuce vymezenou jako vše mimo neporušené nezměněné zdrojové soubory. §3c–e a §4 vyžadují přejmenování všech rutin, zákaz patentových přihlášek, downstream předání požadavků a ochranu pověsti před nevhodným užitím; před doporučením je nutný model těchto podmínek. §6 negarantuje stejné podmínky budoucích verzí; zdvořilé kontaktní informace nejsou povinnost hlásit změny.; https://spdx.org/licenses/SOFA.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

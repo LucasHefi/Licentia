@@ -8,92 +8,97 @@
     "contentHash": "sha256:05016f27f4f0dfcb497764771908f120cd2b95de6a456a96f9b9dd252e23c377"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
+      "include-copyright",
+      "include-license-text",
       "unknown"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification"
     ],
     "restrictions": [
       "unknown"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "none-stated",
+    "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Dotseqn.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Dotseqn.json#text; Druhý odstavec dovoluje kopírování, ale podmiňuje změny názvem; tento zvláštní mechanismus není běžná pouhá notice licence.; https://spdx.org/licenses/Dotseqn.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Dotseqn.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Dotseqn.json#text; Celý text bez požadavku stejné licence a zpřístupnění zdrojů.; https://spdx.org/licenses/Dotseqn.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Dotseqn.json#text; Freely transmitted and reproduced; may not be changed unless the name is changed also s výslovnou výjimkou paper-size.; https://spdx.org/licenses/Dotseqn.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Dotseqn.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Dotseqn.json#text; Poslední věta zachovává celé oznámení; druhý odstavec navíc ukládá přejmenování, které není mark-modifications.; https://spdx.org/licenses/Dotseqn.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Dotseqn.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Dotseqn.json#text; Předávání/kopie zachovávají oznámení; změna souboru spouští přejmenování, s výjimkou volby papíru.; https://spdx.org/licenses/Dotseqn.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Dotseqn.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Dotseqn.json#text; May not be changed unless the name is changed also omezuje zachování názvu při úpravě; nejde o obecný zákaz endorsementu.; https://spdx.org/licenses/Dotseqn.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Dotseqn.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Dotseqn.json#text; Celý text neobsahuje patentový grant ani patentovou odvetu.; https://spdx.org/licenses/Dotseqn.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Dotseqn.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Dotseqn.json#text; Tříodstavcové oznámení musí zůstat celé zachováno; zvláštní přejmenování je zachyceno odděleně.; https://spdx.org/licenses/Dotseqn.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Dotseqn.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Dotseqn.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. Soubor lze volně předávat a kopírovat se zachováním oznámení. Změna souboru vyžaduje také změnu názvu; výjimkou je změna volby velikosti papíru u příkazu documentclass. Blokace: Text vyžaduje přejmenování při úpravě s přesnou výjimkou pro paper-size option u documentclass. Slovník obsahuje jen obecné označení změn; je třeba modelovat povinné přejmenování a jeho výjimku, aby průvodce nezamlčel podmínku.; https://spdx.org/licenses/Dotseqn.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

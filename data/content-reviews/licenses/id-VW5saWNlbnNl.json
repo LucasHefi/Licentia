@@ -1,0 +1,20 @@
+{
+  "id": "Unlicense",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:b8a9bdf4e2bc84357330d3047f4b2827388dad88d7d249ee69b0c130c6116716"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Vzdání se autorských práv s širokým svolením k užití; bez povinnosti přiložit oznámení nebo zveřejnit zdroje. Účinek public-domain dedication závisí na právním řádu; průvodce jej neověřuje.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Unlicense.html",
+      "note": "Dřívější individuální revize 2026-09-09; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

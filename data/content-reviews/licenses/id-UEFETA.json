@@ -1,0 +1,27 @@
+{
+  "id": "PADL",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:74f280dd24874b65e88ebe41297fe7ee3c0f6cd4951a110d31ab94d6246efa97"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Zdrojové i binární podoby lze používat a šířit se změnami i bez nich, musí však zůstat oznámení a být přiznána náležitá zásluha PADL Software. Software je bez záruky.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Text se vztahuje na části softwaru s copyrightem PADL Software Pty Ltd. 1999.",
+    "grantCs": "Redistribution and use povoluje zdrojové i binární formy, modifikované i nemodifikované, bez zákazu komerce. Patentová licence ani sublicence nejsou výslovné.",
+    "conditionsCs": "Provided that vyžaduje zachované oznámení a samostatně due credit PADL při redistribuci i užití. Místo a forma tohoto náležitého uznání nejsou určeny a podmínka není omezena na šíření. Povinnost při samotném užití nyní zachycuje trigger use ve slovníku 1.4.0. Povinné přiznání zásluh při užití je samostatné include-use-acknowledgment (1.4.0), nikoli dobrovolná žádost.",
+    "limitationsCs": "As is a without express or implied warranty odmítají záruky; žádná samostatná odpovědnostní či patentová terminace není uvedena.",
+    "compatibilityCs": "Text nemá alternativní licenci ani povinné převzetí stejné licence odvozenin."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/PADL.html",
+      "note": "Individuální revize celého připnutého textu; Text se vztahuje na části softwaru s copyrightem PADL Software Pty Ltd. 1999."
+    }
+  ]
+}

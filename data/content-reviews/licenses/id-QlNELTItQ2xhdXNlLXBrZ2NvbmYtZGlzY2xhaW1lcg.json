@@ -1,0 +1,27 @@
+{
+  "id": "BSD-2-Clause-pkgconf-disclaimer",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:113e8bf4f3f6fdae480c30f841d3382e3fac9631859476b32a2c51ebaed95c7a"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Zdrojové i binární verze lze užívat a šířit s úpravami i bez nich. Zdroje zachovají copyright, podmínky a disclaimer; binárky je uvedou v dodávané dokumentaci. Software je bez záruky i odpovědnosti za škody.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Grant pokrývá software Audacious vývojářů a dalších ve zdrojové i binární podobě.",
+    "grantCs": "Úvod dovoluje redistribution and use obou forem s úpravami i bez nich a bez účelových omezení; výslovný patentový grant ani sublicence chybějí.",
+    "conditionsCs": "Bod 1 zachovává copyright, podmínky a disclaimer v redistribuci zdrojů. Bod 2 je vyžaduje v dokumentaci dodané s binární distribucí; nenabízí alternativu other materials. Povinnost dodat zdroje neexistuje.",
+    "limitationsCs": "Zkrácený pkgconf disclaimer poskytuje software as is, bez výslovné/implicitní záruky a bez odpovědnosti autorů za škody z užití. Žádný zákaz endorsementu nebo patentová odveta uvedeny nejsou.",
+    "compatibilityCs": "Text nevyžaduje stejnou licenci většího díla ani neurčuje alternativní licenční cestu."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/BSD-2-Clause-pkgconf-disclaimer.html",
+      "note": "Individuální revize celého připnutého textu; Grant pokrývá software Audacious vývojářů a dalších ve zdrojové i binární podobě."
+    }
+  ]
+}

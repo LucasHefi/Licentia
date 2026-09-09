@@ -8,8 +8,8 @@
     "contentHash": "sha256:e5e836f8d8fdd0c8813491bc290a77dae1af1659cd8572794586fd6b2baa54cf"
   },
   "review": {
-    "status": "not-recommendable",
-    "recommendable": false,
+    "status": "reviewed",
+    "recommendable": true,
     "evidenceLevel": "strong"
   },
   "semantic": {
@@ -19,8 +19,7 @@
       "commercial-use",
       "distribution",
       "modifications",
-      "private-use",
-      "unknown"
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
@@ -29,62 +28,77 @@
     ],
     "triggers": [
       "distribution",
-      "modification",
-      "unknown"
+      "modification"
     ],
     "restrictions": [
-      "liability",
-      "unknown",
       "warranty"
     ],
     "patentPosition": "none-stated",
-    "noticeBurden": "standard"
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "family",
-      "sourceId": "spdx-license-list",
-      "locator": "license text, two permission sentences (permission to use or copy the program for any purpose, and permission to modify the code and distribute modified code, subject only to notice-retention and change-notice conditions); the grant is non-reciprocal and permissive, although bespoke to this program/code"
-    },
-    {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "license text, two permission sentences (retaining the above notices on copies and adding a modification notice do not require source disclosure, same-license distribution, or any other reciprocal licensing condition)"
+      "locator": "public/data/licenses/Boehm-GC.json#text; permission paragraph first sentence: use/copy program for any purpose; second sentence: modify code and distribute modified code; no field-of-use restriction; final sentence identifies other copyright holders in a few files; no reciprocal source-disclosure or same-license condition; https://spdx.org/licenses/Boehm-GC.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
     },
     {
-      "field": "permissions",
+      "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "license text, permission sentences ('use or copy this program for any purpose' supports private and commercial use; modification and distribution of modified code are express); copying has no dedicated permission value, unmodified distribution is not separately stated, and unlike Boehm-GC-without-fee this text does not expressly address fees, so the unresolved grant dimensions are represented by unknown; no sublicensing or patent grant is express"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "license text, both permission sentences (the above copyright and risk/warranty notices must be retained on all copies, and modified code must include a notice of modification with the copyright notice); these duties are represented by include-copyright, include-notice, and mark-modifications, while retention of the permission sentences themselves is not stated"
-    },
-    {
-      "field": "triggers",
-      "sourceId": "spdx-license-list",
-      "locator": "license text, both permission sentences (copies must retain notices, and modification activates the change-notice duty while distribution is expressly granted for modified code); distribution and modification are represented directly, but copying and use are distinct grant/condition dimensions without vocabulary 1.0.0 trigger values and are represented by unknown"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "license text, warranty/risk paragraph ('AS IS', absolutely no express or implied warranty, and any use at the user's own risk) supports warranty and liability-risk restrictions; the program/code-specific grant, the express distribution wording limited to modified code, and the absence of an express fee position cannot be represented losslessly by the restriction vocabulary and are represented by unknown; no trademark, additional-terms, or patent-claim restriction is stated"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "license text, complete text (the grant addresses use, copying, modification, and distribution of modified code, but states no express patent grant, patent covenant, patent condition, or patent-claim termination)"
+      "locator": "public/data/licenses/Boehm-GC.json#text; permission paragraph first sentence: use/copy program for any purpose; second sentence: modify code and distribute modified code; no field-of-use restriction; final sentence identifies other copyright holders in a few files; https://spdx.org/licenses/Boehm-GC.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "license text, both permission sentences (all copies retain the short copyright and risk/warranty notices, and modified code adds a modification notice with the copyright notice); these ordinary retention and modification-marking duties create a standard rather than material notice burden"
+      "locator": "public/data/licenses/Boehm-GC.json#text; both permission sentences retain ABOVE notices (copyright and warranty disclaimer), not the subsequent grant itself; modified-code sentence also requires modification notice WITH copyright notice; https://spdx.org/licenses/Boehm-GC.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Boehm-GC.json#text; both permission sentences retain ABOVE notices (copyright and warranty disclaimer), not the subsequent grant itself; modified-code sentence also requires modification notice WITH copyright notice; https://spdx.org/licenses/Boehm-GC.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Boehm-GC.json#text; whole text: no express patent grant or patent-litigation termination; no inference about implied patent rights; https://spdx.org/licenses/Boehm-GC.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Boehm-GC.json#text; permission paragraph first sentence: use/copy program for any purpose; second sentence: modify code and distribute modified code; no field-of-use restriction; final sentence identifies other copyright holders in a few files; https://spdx.org/licenses/Boehm-GC.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Boehm-GC.json#text; uppercase opening disclaimer: AS IS, no express/implied warranty and own-risk language; no express liability exclusion or endorsement term; final sentence requires checking actual file copyright scope; https://spdx.org/licenses/Boehm-GC.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "license metadata, id=Boehm-GC, name='Boehm-Demers-Weiser GC License', deprecated=false, osi=false, and fsf=false; license text, permission sentences and final file-specific sentence (the bespoke grant distinguishes use/copy from distribution of modified code, omits an express fee position, and refers specifically to this program/code and files with other copyright holders, leaving scope and trigger nuances that vocabulary 1.0.0 cannot represent losslessly), so the profile is not suitable for automatic general recommendation"
+      "locator": "public/data/licenses/Boehm-GC.json#text; whole-text editorial review on 2026-09-09, batch 5; Corrects prior review: no OSI flag or express fee wording is needed to establish the unrestricted-purpose grant. Copying notice retention, changed-code notice location and file coverage are stated explicitly; no blanket permission to third-party files is inferred.; https://spdx.org/licenses/Boehm-GC.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Boehm-GC.json#text; both permission sentences retain ABOVE notices (copyright and warranty disclaimer), not the subsequent grant itself; modified-code sentence also requires modification notice WITH copyright notice; https://spdx.org/licenses/Boehm-GC.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
     }
   ]
 }

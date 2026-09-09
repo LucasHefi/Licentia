@@ -1,0 +1,29 @@
+{
+  "id": "OGDL-Taiwan-1.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:cb09d79abcd51ebc3b336db3606f47b18d3d01254f3ec13322f7a6b5cd743db4"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Taiwanská licence otevřených vládních dat dovoluje komerční i jiné užití, změny a distribuci dat do produktů a služeb. Vyžaduje předepsanou atribuci s institucí, rokem, označením dat a licencí; bez ní se grant považuje za neexistující od počátku. Uživatel musí opravovat známé chyby a nahradit poskytovateli škody způsobené vlastním zaviněním, včetně uhrazených cizích nároků. Tento datový a odpovědnostní režim vyžaduje samostatné posouzení mimo běžný výběr softwarové licence.",
+  "blockersCs": [
+    "Licence míří na vládní data včetně nechráněných informací a vyžaduje náhradu škod poskytovateli za vlastní zavinění; před doporučením je nutný datový model a zvláštní podmínka náhrady nároků."
+  ],
+  "analysis": {
+    "subjectCs": "Taiwanská Open Government Data License 1.0 v čínštině i angličtině pokrývá veřejná otevřená data včetně kompilací; čisté nechráněné Information mají kromě grantu ostatní podmínky také.",
+    "grantCs": "§2 dovoluje bez účelového/časového/územního omezení neodvolatelně užití, kopie, distribuci, veřejné přenosy/provedení a adaptace dat do produktů/služeb, včetně sublicencí.",
+    "conditionsCs": "§3 při užití dat i odvozenin vyžaduje přesný exhibit credit s institucí, rokem, názvem/verzí dat a textem/odkazem licence; při chybě credit se grant považuje za neexistující od počátku. Uživatel respektuje osobnostní práva třetích stran.",
+    "limitationsCs": "§5 dovoluje zastavit dodávku pro veřejný zájem nebo riziko cizích práv bez kompenzace. §6 odmítá endorsement/odpovědnost poskytovatele, ukládá opravit známé chyby a uživatel hradí škody poskytovateli i jím uhrazené cizí nároky způsobené úmyslným/nedbalým pochybením.",
+    "compatibilityCs": "§4 dovoluje pozdější verzi, neurčil-li poskytovatel konkrétní; dodržení CC BY 4.0 při dalším užití splní tuto licenci. §7 používá právo Taiwanu."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/OGDL-Taiwan-1.0.html",
+      "note": "Individuálně přečten celý připnutý text; §3 při užití dat i odvozenin vyžaduje přesný exhibit credit s institucí, rokem, názvem/verzí dat a textem/odkazem licence; při chybě credit se grant považuje za neexistující od počátku. Uživatel respektuje osobnostní práva třetích stran. §2.4 obou jazyků výslovně vylučuje patenty a známky; patentové ukončení není uvedeno."
+    }
+  ]
+}

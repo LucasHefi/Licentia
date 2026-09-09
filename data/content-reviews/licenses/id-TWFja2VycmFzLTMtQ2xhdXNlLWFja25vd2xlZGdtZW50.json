@@ -1,0 +1,20 @@
+{
+  "id": "Mackerras-3-Clause-acknowledgment",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.6",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:24a7cb03f69b951470e659fcd0218210103744fca1ead87136b511902d5761c4"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Ve zdrojích zachovejte copyright, podmínky a disclaimer. Při každé redistribuci uveďte předepsané poděkování Paulu Mackerrasovi včetně uvedeného kontaktu. Varianta neobsahuje běžnou klauzuli o celém licenčním textu v binární dokumentaci. Propagační použití jmen autorů vyžaduje písemný souhlas; záruky a odpovědnost jsou vyloučeny.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Mackerras-3-Clause-acknowledgment.html",
+      "note": "Dřívější individuální revize 2026-09-09.6; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

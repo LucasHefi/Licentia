@@ -1,0 +1,29 @@
+{
+  "id": "MPEG-SSG",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:8ef79e67b216c1f0a5192fe634dc319cd7658939820b730bafe8d2575643879a"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Text popisuje bezplatnou dostupnost programů MPEG Software Simulation Group a vylučuje záruky a odpovědnost za škody. Neuděluje však výslovná práva kopírování, změn a redistribuce a upozornění na možné patentové poplatky tato práva nenahrazuje. Průvodce jej nezařazuje, dokud nebude dohledán vlastní licenční grant; historické patentové upozornění neověřuje dnešní stav patentů.",
+  "blockersCs": [
+    "Připnutý text poskytuje disclaimer a dostupnost bez poplatku, nikoli výslovný grant změn a redistribuce; před doporučením je třeba dohledat vlastní oprávnění k programům, patentové upozornění je nenahrazuje."
+  ],
+  "analysis": {
+    "subjectCs": "Text MPEG Software Simulation Group z roku 1994 je nadepsán Disclaimer of Warranty pro poskytované programy.",
+    "grantCs": "Uvádí dostupnost programů bez licenčního poplatku či royalty AS IS; výslovná práva kopírovat, měnit a redistribuovat neuděluje.",
+    "conditionsCs": "Celý text neobsahuje notifikační ani zdrojovou povinnost; zmínka o patentových royalties není licencí k těmto patentům.",
+    "limitationsCs": "Vylučuje záruky a odpovědnost za náhodné, sankční i následné škody; výluku rozšiřuje na zákazníky, zaměstnance, zástupce a nástupce. Nezaručuje neporušování cizích patentů a upozorňuje na royalties komerčních MPEG-1/2 implementací včetně shareware.",
+    "compatibilityCs": "Neobsahuje jinou licenci nebo verzi; historické tvrzení o patentových poplatcích neověřuje současnou platnost konkrétních patentů."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/MPEG-SSG.html",
+      "note": "Individuálně přečten celý připnutý text; Celý text neobsahuje notifikační ani zdrojovou povinnost; zmínka o patentových royalties není licencí k těmto patentům. Odstavce o patentech výslovně odmítají neporušování a upozorňují na cizí poplatky; patentový grant neobsahují."
+    }
+  ]
+}

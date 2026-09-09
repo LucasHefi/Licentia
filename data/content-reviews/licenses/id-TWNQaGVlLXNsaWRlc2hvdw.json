@@ -1,0 +1,27 @@
+{
+  "id": "McPhee-slideshow",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:64ca32ccbce1862507715c37d568b8d24a9b514fe4b6d3fd62525d8b3c1e6044"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Kód lze používat k libovolnému účelu, upravovat a kopírovat do jiných sad maker. U významných částí zachovejte copyright a úpravy souboru jasně označte.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Kód Patricka TJ McPheeho z roku 2001, včetně významných částí v jiných sadách maker.",
+    "grantCs": "Výslovně dovoluje jakýkoli účel, úpravy a kopírování celku či částí pro jiné macro sets; patentový grant chybí.",
+    "conditionsCs": "Copyright musí doprovázet každou významnou část kódu; změny tohoto souboru musí být jasně označeny.",
+    "limitationsCs": "Nevyžaduje poskytnutí zdrojů k binárním kopiím ani stejné licencování. Výluky záruk a odpovědnosti nejsou uvedeny.",
+    "compatibilityCs": "Neobsahuje volbu jiné licence či verze; začlenění do jiných maker je výslovně předpokládáno."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/McPhee-slideshow.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Celé oznámení dovoluje libovolné použití kódu s copyrightem a označením změn."
+    }
+  ]
+}

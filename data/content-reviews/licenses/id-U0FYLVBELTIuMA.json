@@ -1,0 +1,27 @@
+{
+  "id": "SAX-PD-2.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:36a31d7d871a195a4c0f5a7204bc16fd68d78cebdabfe8cd473683c8277be28a"
+  },
+  "disposition": "eligible",
+  "summaryCs": "David Megginson uvolňuje zdrojový i přeložený SAX 2.0 a dokumentaci v dané distribuci do public domain. Software nemá záruku ani záruku vhodnosti pro určitý účel.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "SAX 2.0: zdrojový kód, přeložený kód a dokumentace obsažené v této distribuci.",
+    "grantCs": "Autor se vzdává majetkových práv a uvolňuje materiál do public domain bez omezení účelu. Výslovná patentová licence není vymezena.",
+    "conditionsCs": "Text nestanoví povinnost oznámení, zdrojového zpřístupnění ani reciprocity.",
+    "limitationsCs": "SAX comes with NO WARRANTY or guarantee of fitness for any purpose. Neobsahuje náhradní copyrightovou licenci pro případ neúčinného vzdání se práv.",
+    "compatibilityCs": "Rozsah určuje konkrétní distribuce SAX 2.0, nikoli všechny jiné verze; žádnou alternativní licenci text nenabízí."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/SAX-PD-2.0.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Hlavní odstavec abandon any property rights a release into the Public Domain pro SAX 2.0."
+    }
+  ]
+}

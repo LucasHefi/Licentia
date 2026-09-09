@@ -1,0 +1,30 @@
+{
+  "id": "JPL-image",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:2eeb745797c48e4abcf5dd984b92ee6275159edd8ea572e0adb0103dfa4d0237"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Politika se týká obrázků a videí na veřejných webech JPL, s výjimkami podle popisků a vlastníků. Vyžaduje kredit, zakazuje endorsement a má zvláštní souhlasy pro loga, osoby a cizí komerčně užívané snímky; nejde o softwarovou licenci.",
+  "blockersCs": [
+    "Grant je obrazová politika pro konkrétní webový materiál s individuálními caption/owner výjimkami a komerčními omezeními cizích snímků. Je třeba určit konkrétní snímek, jeho vlastníka/popisek a případná osobnostní či známková svolení; nelze doporučit jako licenci nového softwaru.",
+    "Stažení znamená souhlas s release/hold harmless Caltech za veškeré použití a dalšími obrazovými podmínkami. Model softwarových povinností nevyjadřuje toto odškodnění, zvláštní loga a souhlasy; nutný oddělený mediální model."
+  ],
+  "analysis": {
+    "subjectCs": "Obrázky/video veřejných jpl.nasa.gov webů, pokud není uvedeno jinak; odlišný režim NASA/JPL log, podobizen a třetích vlastníků.",
+    "grantCs": "Obecně any purpose without prior permission, ale special cases/obrazové popisky jej omezují. Caltech nepředstavuje cizí vlastníky a neposkytuje patentový grant.",
+    "conditionsCs": "Při stažení přijmout podmínky; používat credit line podle popisku, jinak Courtesy NASA/JPL-Caltech. NASA/JPL loga předchozí písemný souhlas a omezené oprávněné subjekty; cizí komerční snímky vyžadují souhlas vlastníka.",
+    "limitationsCs": "Release/hold harmless Caltech, žádné záruky vlastnictví/kvality; nesmí se implikovat endorsement. Identifikované osoby vyžadují posouzení publicity/privacy, zaměstnanecké podobizny mají zvláštní politiku.",
+    "compatibilityCs": "Jde o podmínky podle jednotlivého materiálu a role uživatele (včetně dodavatelů), ne volbu alternativní softwarové licence/verze."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/JPL-image.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Úvod JPL public website images/videos a Special Cases vymezují mediální politiku s výjimkami."
+    }
+  ]
+}

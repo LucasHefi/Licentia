@@ -1,0 +1,29 @@
+{
+  "id": "GPL-3.0",
+  "reviewedAt": "2026-09-10",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:306b22b091f27ee16dd8b6a1283892f7cd9e4d6f6efe3d0cea8348357a83c6c9"
+  },
+  "disposition": "blocked",
+  "summaryCs": "GPL 3 dovoluje komerční i soukromý provoz a úpravy, ale při předávání odvozeného celku vyžaduje GPL, označení změn a zachování licence i oznámení. K binárkám se dodávají odpovídající zdroje jednou z dovolených cest a u vymezených uživatelských výrobků také potřebné instalační informace; samotný síťový provoz tuto povinnost nevyvolává. Obsahuje výslovný patentový grant a pravidla obnovy práv po nápravě. Tento zastaralý identifikátor se však nenabízí: skutečné oznámení musí určit GPL-3.0-only nebo GPL-3.0-or-later.",
+  "blockersCs": [
+    "GPL-3.0 je v připnutých datech deprecated nejednoznačný identifikátor; pro nový průvodce je nutné podle skutečného licenčního oznámení použít GPL-3.0-only nebo GPL-3.0-or-later. Vlastní obsah verze 3 je známý a popsaný, nikoli čekající na obecnou revizi."
+  ],
+  "analysis": {
+    "subjectCs": "GNU GPL verze 3 z 29.6.2007 je zde deprecated obecný identifikátor; celý text §0–17 i aplikační dodatek jsou přečteny. Působí na označený program a autorsky odvozená díla, včetně jiných autorskoprávně chráněných druhů práce.",
+    "grantCs": "§2 povoluje neomezený běh původního programu, soukromé změny i propagaci bez convey a úzce vymezené řízené zpracování pro uživatele. §4 dovoluje za kopie libovolnou cenu i placenou podporu. §5 dovoluje upravený celek pod GPL. Sublicence jsou zakázány, přímá automatická licence příjemce je v §10. §11 výslovně uděluje nutné patenty Contributor Version včetně make/use/sell/import, ne patenty způsobené pouze další změnou. Výstup programu není automaticky GPL, jen je-li sám covered work (§2).",
+    "conditionsCs": "§4–5 vyžadují copyright, licenci, relevantní notices/výluky, označení změn a data, GPL celého upraveného díla a vhodná právní oznámení v interaktivních rozhraních s výjimkou původních rozhraní bez nich. §6 u objektů vyžaduje Corresponding Source v jedné z alternativ: fyzické médium; písemná nabídka nejméně 3 roky a po dobu podpory/náhradních dílů s fyzickou kopií za náklady nebo bezplatným serverem; příležitostné nekomerční předání obdržené nabídky; rovnocenné stažení bez dalšího poplatku; P2P informace o bezplatné objektové i zdrojové cestě. §1 zahrnuje build/install/run skripty a konkrétně potřebné propojené moduly, vyjímá System Libraries a obecné nezměněné nástroje. U předávaného User Product §6 přidává potřebné instalační metody a klíče, leda nikdo nemůže instalovat změněný objekt; bez povinnosti další podpory a s dovoleným odmítnutím změny škodící síti. Zdroj a instalační informace mají veřejně dokumentovaný formát bez zvláštního klíče pro čtení.",
+    "limitationsCs": "§3 brání využít právní zákaz obcházení technických opatření proti oprávněným změnám. §7 dovoluje odstranitelné dodatečné výjimky a uzavřený okruh podmínek k vlastním příspěvkům: notices, původ, známky, záruky a odškodnění za vlastní smluvní odpovědnost; jiné další omezení lze odstranit. §10 zakazuje další licenční poplatky za výkon práv i patentové žaloby na Program včetně counterclaim. §11 při vědomém spoléhání na patent vyžaduje alternativně veřejný zdroj, vzdání se patentové výhody nebo rozšíření licence downstream; diskriminační dohody mají přesně vymezenou výjimku před 28.3.2007. §8 zánik při porušení s prozatímní obnovou po ukončení a trvalou po 60 dnech bez oznámení nebo při první nápravě do 30 dnů; downstream práva přežijí. §15–17 AS IS a omezení odpovědnosti s právními výjimkami.",
+    "compatibilityCs": "§5 vyjímá nezávislé agregáty; §12 při neřešitelném konfliktu zakazuje convey. §13 dovoluje kombinaci s AGPLv3: GPL část zůstává GPL, síťová podmínka AGPL dopadá na kombinaci; samotná GPL za pouhé síťové užívání zdroje nežádá (§0). §14 pozdější verze či proxy vyžadují skutečné programové oznámení; obecný deprecated GPL-3.0 ani vzor or-later v dodatku tuto volbu za držitele neurčí. Pro další volbu je třeba GPL-3.0-only nebo GPL-3.0-or-later dle skutečného grantu, bez domnělé kompatibility z parseru."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/GPL-3.0.html",
+      "note": "Individuálně přečten celý připnutý text; §4–5 vyžadují copyright, licenci, relevantní notices/výluky, označení změn a data, GPL celého upraveného díla a vhodná právní oznámení v interaktivních rozhraních s výjimkou původních rozhraní bez nich. §6 u objektů vyžaduje Corresponding Source v jedné z alternativ: fyzické médium; písemná nabídka nejméně 3 roky a po dobu podpory/náhradních dílů s fyzickou kopií za náklady nebo bezplatným serverem; příležitostné nekomerční předání obdržené nabídky; rovnocenné stažení bez dalšího poplatku; P2P informace o bezplatné objektové i zdrojové cestě. §1 zahrnuje build/install/run skripty a konkrétně potřebné propojené moduly, vyjímá System Libraries a obecné nezměněné nástroje. U předávaného User Product §6 přidává potřebné instalační metody a klíče, leda nikdo nemůže instalovat změněný objekt; bez povinnosti další podpory a s dovoleným odmítnutím změny škodící síti. Zdroj a instalační informace mají veřejně dokumentovaný formát bez zvláštního klíče pro čtení. §11 třetí odstavec je výslovný bezplatný celosvětový patentový grant contributorových essential claims; další odstavce výslovně rozlišují i covenant pro pravidla patentových dohod. §10 zákaz žaloby na Program ve spojení s §8 zánikem dává obranné ukončení, nikoli širší odvetu za jiné produkty."
+    }
+  ]
+}

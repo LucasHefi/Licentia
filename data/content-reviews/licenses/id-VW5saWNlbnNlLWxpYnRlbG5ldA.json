@@ -1,0 +1,27 @@
+{
+  "id": "Unlicense-libtelnet",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:6983574741a5bc8abee6dc2ae86666cd85a9d2fab8a773d3acb9f5fd75ed809d"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Autoři trvale věnují veškerý svůj současný i budoucí copyright ke kódu veřejnosti, včetně účinků vůči dědicům a nástupcům. Text neobsahuje náhradní permisivní grant ani výluku záruk.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Veškerý copyright autorů k tomuto kódu, současný i budoucí.",
+    "grantCs": "Výslovná trvalá public-domain dedikace zamýšlí volné použití, úpravy a distribuci; netýká se výslovně patentových práv.",
+    "conditionsCs": "Neukládá povinnost zachovat text, připsat autorství nebo dodat zdroje.",
+    "limitationsCs": "Autoři zamýšlejí vzdání se i k újmě dědiců a nástupců; účinnost určuje použitelné právo. Záruková výluka a náhradní licence zde nejsou.",
+    "compatibilityCs": "Žádná volba licence či verze; ostatní pasáže plné Unlicense nelze do této varianty doplnit."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Unlicense-libtelnet.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; První a poslední věta dedicates copyright to public domain a relinquishment in perpetuity výslovně stanoví public-domain záměr."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "HPND-Markus-Kuhn",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.4",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:d49d75ca670825a4437a9090d583421080347c5253cc7c6ff9aa12fa964c16f5"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Užití, kopírování, úpravy a distribuce jsou povoleny pro jakýkoli účel bez poplatku. Text neukládá zachování oznámení ani poskytování zdrojů. Autor vylučuje záruky; výslovné omezení odpovědnosti zde není.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/HPND-Markus-Kuhn.html",
+      "note": "Dřívější individuální revize 2026-09-09.4; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

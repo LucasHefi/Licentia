@@ -1,0 +1,22 @@
+{
+  "id": "Artistic-2.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.8",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:0e470f69727e27174dd5321f0d1277545dc509e9c0f9dbbea49a8149f812e64f"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Soukromé užití a úpravy jsou dovoleny. Šíření upraveného balíku vyžaduje popis rozdílů a jednu z alternativ: předání autorovi pod původní licencí, odlišný název a neblokování původní verze, nebo další šíření zdrojů za stanovených licenčních podmínek. Standardní binární verze může místo zdrojů přiložit platné pokyny k jejich získání. Pro kombinované programy je důležitá výjimka bez přímého rozhraní k balíku. Distribuční poplatek je dovolen; licenční poplatek za balík při agregaci nikoli. Patentová žaloba ukončuje celou licenci. Průvodce zatím nerozlišuje všechny tyto cesty.",
+  "blockersCs": [
+    "Doplnit výběr standardní/upravené a zdrojové/přeložené formy, alternativy §4(a)-(c), obnovu pokynů podle §5 do 30 dnů a výjimku pro kombinaci bez přímého rozhraní podle §8. Oddělit distribuční a licenční poplatky. Nelze uložit všechny alternativy současně jako povinné poskytování zdrojů, stejnou licenci a obecný knihovní copyleft. Patentová žaloba ukončuje celou licenci."
+  ],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Artistic-2.0.html",
+      "note": "Dřívější individuální revize 2026-09-09.8; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

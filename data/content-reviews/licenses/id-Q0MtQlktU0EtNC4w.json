@@ -1,0 +1,33 @@
+{
+  "id": "CC-BY-SA-4.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:e172cb60ffe7b8c027d72414b61254ffcc1e36df080000ca382106fb7f35046d"
+  },
+  "disposition": "blocked",
+  "summaryCs": "CC BY-SA 4.0 dovoluje komerční i nekomerční šíření a úpravy autorského obsahu a databází. Při sdílení vyžaduje přiznání původu, označení změn a licenci textem nebo odkazem; adaptace musí použít dovolenou BY-SA nebo uznanou kompatibilní licenci. Na žádost se proveditelně odstraňují určené údaje, další právní ani technická omezení nejsou dovolena a patentová práva jsou výslovně vyloučena. Průvodce ji nezařazuje, protože potřebuje model těchto obsahových a databázových vztahů včetně podmínek adaptací.",
+  "blockersCs": [
+    "§1,3–4 vyžadují obsahový a databázový model ShareAlike, odstranění atribuce na žádost, technických opatření a omezeného vzdání se osobnostních práv; současný software průvodce tuto licenci neumí věrně doporučit."
+  ],
+  "analysis": {
+    "subjectCs": "CC BY-SA4.0 International pokrývá autorský obsah, výkony, nahrávky a sui generis databáze; Adapted Material je oprávnění vyžadující změna včetně synchronizace hudby s obrazem.",
+    "grantCs": "§2 dovoluje reprodukovat i veřejně Share původní a adaptovaný materiál komerčně i nekomerčně; licence je neodvolatelná a nepodlicencovatelná. Technické mediální změny včetně nezbytného obcházení opatření jsou dovoleny a samy netvoří adaptaci; každému příjemci je nabídnuta licence původního i adaptovaného materiálu podle příslušného Adapter’s License.",
+    "conditionsCs": "§3(a) při Share zachovává dodané tvůrce a určené osoby, copyright, licenční/disclaimer notices a prakticky dostupné URI, označuje vlastní a předchozí změny a uvádí licenci textem nebo hyperlinkem. Rozumný odkaz může splnit atribuci; na žádost se přiměřeně odstraní údaje§3(a)(1)(A). §3(b) vyžaduje pro vlastní sdílené adaptace BY-SA této/pozdější verze nebo BY-SA Compatible License a její text/odkaz, bez dalších podmínek či technických opatření bránících právům. §4 vztahuje ShareAlike i na databázi s podstatným převzatým obsahem a vlastním sui generis právem, nikoli automaticky na jednotlivý obsah.",
+    "limitationsCs": "§2 brání dojmu schválení, nelicencuje osobnostní práva, ale omezeně se jich vzdává/neprosazuje je; výslovně vylučuje patenty a známky a v možném rozsahu odměny promíjí. §5 AS IS/as-available a zákonně možné vyloučení škod. §6 porušení ukončuje, s obnovením při nápravě do30 dnů od zjištění nebo výslovně; zastavení distribuce poskytovatelem licenci neodvolá.",
+    "compatibilityCs": "§1(c) a3(b) odkazují na závazný seznam CC. Ověřený primární https://creativecommons.org/compatible-licenses/ uvádí pro4.0 Free Art License1.3 a GPLv3, u GPL výslovně pouze jednosměrně pro příspěvky k adaptacím; nejde o obecné oboustranné přelicencování libovolného programu. Úvodní doporučení a závěrečná známková politika CC jsou mimo Public License."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/CC-BY-SA-4.0.html",
+      "note": "Individuálně přečten celý připnutý text; §3(a) při Share zachovává dodané tvůrce a určené osoby, copyright, licenční/disclaimer notices a prakticky dostupné URI, označuje vlastní a předchozí změny a uvádí licenci textem nebo hyperlinkem. Rozumný odkaz může splnit atribuci; na žádost se přiměřeně odstraní údaje§3(a)(1)(A). §3(b) vyžaduje pro vlastní sdílené adaptace BY-SA této/pozdější verze nebo BY-SA Compatible License a její text/odkaz, bez dalších podmínek či technických opatření bránících právům. §4 vztahuje ShareAlike i na databázi s podstatným převzatým obsahem a vlastním sui generis právem, nikoli automaticky na jednotlivý obsah. §2(b)(2) výslovně nelicencuje patentová práva; žádný patentový grant nebo ukončení žalobou z tohoto nelze dovodit."
+    },
+    {
+      "url": "https://creativecommons.org/compatible-licenses/",
+      "note": "Primární seznam pro BY-SA4.0: FAL1.3 a GPLv3; GPL cesta jednosměrná pro příspěvky k adaptacím, ne obecná oboustranná kompatibilita."
+    }
+  ]
+}

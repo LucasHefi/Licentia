@@ -1,0 +1,20 @@
+{
+  "id": "Entessa",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.7",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:1f59928d95896fee1d37381b815fd19c96088129ef4022ddf6a7ebf7b4185597"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Zachovejte copyright, podmínky a disclaimer ve zdrojích nebo materiálech k binární distribuci. Přiložená uživatelská dokumentace musí obsahovat předepsané poděkování openSEAL; alternativně je lze uvést v softwaru tam, kde se taková poděkování obvykle zobrazují. Propagace jmény openSEAL či Entessa a použití openSEAL v názvu odvozeného produktu vyžadují písemný souhlas. Záruky a odpovědnost jsou vyloučeny.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Entessa.html",
+      "note": "Dřívější individuální revize 2026-09-09.7; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

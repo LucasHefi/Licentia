@@ -1,0 +1,29 @@
+{
+  "id": "Soundex",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:a6d6a67f23c44d0b46d6939457915d8a82be5e722788cc8deff96515dd6c3fb3"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Zdrojové soubory lze jakkoli užívat a měnit při přiznání zásluh a viditelném copyrightu. Iniciály u změn jsou žádost formulovaná jako „try“, nikoli jednoznačná povinnost.",
+  "blockersCs": [
+    "Freedom to use these sources for whatever you want a make modifications výslovně dovolují užití a změny, nikoli jednoznačně redistribuci. Ověřit původní rozsah distribučních práv před doplněním základního softwarového grantu."
+  ],
+  "analysis": {
+    "subjectCs": "Grant pokrývá tyto zdroje s copyrightem Marka Mielkeho 1998–2007.",
+    "grantCs": "Text výslovně dovoluje užít zdroje pro jakýkoli účel a dělat změny; samostatné právo redistribuce není uvedeno. Patentový grant a sublicence chybějí.",
+    "conditionsCs": "As long as credit is given podmiňuje užití uznáním zásluh; při úpravách má copyright zůstat někde viditelný. Try to initial any changes žádá iniciály pro přebírání změn, nevyžaduje jejich odeslání autorovi. Povinnost při samotném užití nyní zachycuje trigger use ve slovníku 1.4.0. Povinné přiznání zásluh při užití je samostatné include-use-acknowledgment (1.4.0), nikoli dobrovolná žádost.",
+    "limitationsCs": "Úplný text nemá výluku záruky či odpovědnosti, zákaz názvů, povinné zveřejnění změn nebo patentovou terminaci.",
+    "compatibilityCs": "Možnost autora začlenit změny není povinná zpětná licence; jiné licenční varianty nejsou určeny."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Soundex.html",
+      "note": "Individuální revize celého připnutého textu; Grant pokrývá tyto zdroje s copyrightem Marka Mielkeho 1998–2007."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "Linux-OpenIB",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.5",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:10bd5c90659da16ac7786441e6704e1cff91b46a6178b7a8e5965be3bfa4208f"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Zachovejte copyright, podmínky a disclaimer ve zdrojích; u binární distribuce je přiložte v dokumentaci nebo dalších materiálech. Licence neomezuje propagační použití jmen a nevyžaduje poskytovat zdroje. Disclaimer o neporušení práv třetích osob není výslovný patentový grant.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Linux-OpenIB.html",
+      "note": "Dřívější individuální revize 2026-09-09.5; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

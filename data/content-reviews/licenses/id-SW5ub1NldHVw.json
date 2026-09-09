@@ -1,0 +1,20 @@
+{
+  "id": "InnoSetup",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.6",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:8fcd4fcdbb98797f75ded5b9f40443cd95bdcd6b8d9fe25ebe821748b27e4f01"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Ve zdrojích zachovejte všechny copyrighty a nezměněný seznam podmínek. V binární podobě zachovejte všechny existující výskyty copyrightu a webových adres, například v dialogu O programu. Označte úpravy zdrojových i binárních verzí a nezkreslujte původ. Poděkování za použití při distribuci vlastního produktu je dobrovolné. Licence nevyžaduje poskytovat zdroje.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/InnoSetup.html",
+      "note": "Dřívější individuální revize 2026-09-09.6; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

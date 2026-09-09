@@ -10,48 +10,90 @@
   "review": {
     "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "weak"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
+    "family": "strong-copyleft",
     "copyleftScope": "unknown",
     "permissions": [
-      "distribution",
-      "modifications"
+      "unknown"
     ],
     "obligations": [
-      "include-license-text"
+      "unknown"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification"
     ],
     "restrictions": [
       "unknown"
     ],
     "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "noticeBurden": "unknown"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GPL-2.0-with-autoconf-exception.json#text; Nadpis Autoconf Exception a text GPL governs all other use odkazují na základní copyleft chybějící v placeholderu.; https://spdx.org/licenses/GPL-2.0-with-autoconf-exception.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "obligations",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GPL-2.0-with-autoconf-exception.json#text; Výstupní configure skripty jsou vyňaty; copyleft rozsah zbytku programu z placeholderu nelze úplně zrekonstruovat.; https://spdx.org/licenses/GPL-2.0-with-autoconf-exception.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GPL-2.0-with-autoconf-exception.json#text; Výjimka unlimited copy/distribute/modify configure outputs; základní softwarový a patentový grant v textu chybí.; https://spdx.org/licenses/GPL-2.0-with-autoconf-exception.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/GPL-2.0-with-autoconf-exception.json#text; Podmínka delete exception při možném kopírování non-data do výstupu; ostatní GPL povinnosti nejsou přítomny.; https://spdx.org/licenses/GPL-2.0-with-autoconf-exception.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/GPL-2.0-with-autoconf-exception.json#text; Make and distribute modified version spouští posouzení data/non-data; ostatní základní GPL triggery nelze doložit.; https://spdx.org/licenses/GPL-2.0-with-autoconf-exception.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/GPL-2.0-with-autoconf-exception.json#text; Výjimka nezahrnuje jiné užití programu; kompletní základní omezení chybějí.; https://spdx.org/licenses/GPL-2.0-with-autoconf-exception.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/GPL-2.0-with-autoconf-exception.json#text; Placeholder neobsahuje GPL patentové podmínky; výjimka je sama neurčuje.; https://spdx.org/licenses/GPL-2.0-with-autoconf-exception.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/GPL-2.0-with-autoconf-exception.json#text; Je uvedeno podmíněné odstranění výjimky, ale kompletní notice povinnosti základní GPL chybí.; https://spdx.org/licenses/GPL-2.0-with-autoconf-exception.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/GPL-2.0-with-autoconf-exception.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. Připnutý záznam nahrazuje GPL v2 placeholderem a obsahuje Autoconf výjimku pro výstupní configure skripty. Upravený Autoconf může výjimku převzít jen tehdy, nemůže-li do výstupu kopírovat původní non-data části; jinak se oznámení výjimky musí odstranit. Blokace: Základní GPL je nahrazena insert GPL v2 license text here. Pro úplný profil je třeba doložit základní text i jeho vazbu na výjimku; nelze převzít zdrojové, patentové a zárukové podmínky z nepřítomného grantu. Jde o deprecated složený identifikátor; pro nový projekt je třeba aktuální základní GPL identifikátor s odpovídající Autoconf výjimkou a ověření zacházení s data/non-data částmi.; https://spdx.org/licenses/GPL-2.0-with-autoconf-exception.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

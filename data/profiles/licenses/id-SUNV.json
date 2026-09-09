@@ -9,8 +9,8 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
     "family": "permissive",
@@ -18,85 +18,87 @@
     "permissions": [
       "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
       "include-license-text"
     ],
     "triggers": [
-      "unknown"
+      "distribution"
     ],
     "restrictions": [
       "liability",
+      "trademark",
       "warranty"
     ],
-    "patentPosition": "unknown",
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.no-copyleft",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ICU.json#text; permission paragraph: unrestricted use, copy, modify, merge, publish, distribute and/or sell; whole text: no reciprocal source-disclosure or same-license requirement; https://spdx.org/licenses/ICU.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.permissive-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ICU.json#text; permission paragraph: unrestricted use, copy, modify, merge, publish, distribute and/or sell; https://spdx.org/licenses/ICU.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ICU.json#text; permission paragraph: copyright and permission notice in all copies AND supporting documentation; https://spdx.org/licenses/ICU.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "triggers",
-      "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/ICU.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ICU.json#text; permission paragraph: copyright and permission notice in all copies AND supporting documentation; https://spdx.org/licenses/ICU.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/ICU.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ICU.json#text; whole text: no express patent grant or patent-litigation termination clause is stated; this is not a conclusion about implied rights; https://spdx.org/licenses/ICU.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/ICU.json#text; permission paragraph: unrestricted use, copy, modify, merge, publish, distribute and/or sell; https://spdx.org/licenses/ICU.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/ICU.json#text; AS IS paragraph and final paragraph restricting promotional use of copyright-holder names; https://spdx.org/licenses/ICU.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/ICU.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ICU.json#text; whole-text editorial review on 2026-09-09; Permisivní licence ICU: zachovejte copyright a licenční oznámení také v doprovodné dokumentaci. Použití jmen nositelů práv v reklamě nebo propagaci vyžaduje souhlas. Výslovný patentový grant není uveden.; https://spdx.org/licenses/ICU.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/ICU.json#text; permission paragraph: copyright and permission notice in all copies AND supporting documentation; https://spdx.org/licenses/ICU.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
     }
   ]
 }

@@ -1,0 +1,27 @@
+{
+  "id": "threeparttable",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:4b41d3abd39357c191166061f1beac51c91ca608c5b632b7bf932f750eae7dfb"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Soubor lze šířit, upravovat a používat v jiných dílech. Upravené verze musejí změnu jasně přiznat; změna názvu či zobrazená zpráva jsou příklady, nikoli souběžné povinnosti.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Oprávnění se vztahuje na tento soubor, včetně začlenění do jiných děl.",
+    "grantCs": "Výslovně povoluje distribuci, modifikaci a použití v jiných dílech, bez omezení komerčního účelu. Patentový grant se neuvádí.",
+    "conditionsCs": "Jediná podmínka: upravené verze musí jasně uvést, že byly změněny. Název nebo zobrazená zpráva jsou alternativní příklady způsobu splnění.",
+    "limitationsCs": "Žádná povinnost zachovat licenci, dodat zdrojové kódy či vyloučení záruk a odpovědnosti nejsou uvedeny.",
+    "compatibilityCs": "Text nepřikazuje shodnou licenci ani neobsahuje volbu jiných verzí; podmínka označení změn přetrvává při zahrnutí do jiného díla."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/threeparttable.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Celá věta dovoluje distributed, modified, and used in other works s jedinou podmínkou označení úprav."
+    }
+  ]
+}

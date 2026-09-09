@@ -1,0 +1,29 @@
+{
+  "id": "QPL-1.0-INRIA-2004",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:99e5eab391cfc8cc5bea32abdb3b9ab09a5e745ab3e40718e3a3ccd43971ba29"
+  },
+  "disposition": "blocked",
+  "summaryCs": "INRIA QPL zachovává úplné původní balení, oddělené modifikační patche, zdrojový přístup k binárkám a široká práva ke distribuovaným linkovaným položkám. Neveřejné položky se na žádost dodají vývojáři. Na rozdíl od standardní QPL volí pouze francouzské právo.",
+  "blockersCs": [
+    "Povinné celé balení, oddělené patche, vývojářský grant-back a poskytnutí neveřejných linkovaných položek na žádost nejsou v modelu. Doplnit je a zachovat francouzské právo této konkrétní varianty místo norské/Oslo doložky standardní QPL."
+  ],
+  "analysis": {
+    "subjectCs": "Software označený QPL1.0 a samostatné linkované programy/komponenty z §6; pinned varianta obsahuje copyright Troll Tech 1999 a francouzskou závěrečnou doložku.",
+    "grantCs": "§§1–5 nevýhradně dovolují originální balík, modifikační patche, binární varianty a compile/link/run legálně vyvinutých programů; žádný patentový grant ani samostatná sublicence nejsou uvedeny.",
+    "conditionsCs": "§2 celé originální package; §3 oddělené změny bez odstranění copyrightu a bezroyalty grant vývojáři pro verze dostupné také pod QPL. §4 binární licence, výrazné oznámení úplných zdrojů za nejvýše přenos a QPL pro zahrnuté změny. §6 binárky linkovaných položek dávají úplné zdroje a bezplatná downstream use/redistribution práva; neveřejné položky na žádost původnímu vývojáři.",
+    "limitationsCs": "§1 distribuce kterékoli části nebo linkované položky znamená souhlas. Liability vylučuje všechny škody s kogentní výhradou; No Warranty vylučuje i design/vhodnost. Choice of Law výslovně pouze Laws of France, bez jmenovaného soudu Oslo.",
+    "compatibilityCs": "Podmínka budoucích verzí podle §3(b) zachovává QPL vedle dalších licencí vývojáře. §6 nezavádí doslovnou QPL licenci nezávislé položky, ale minimální bezplatná downstream práva; změna jurisdikce není obecný závěr kompatibility."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/QPL-1.0-INRIA-2004.html",
+      "note": "Individuální revize celého připnutého textu; Software označený QPL1.0 a samostatné linkované programy/komponenty z §6; pinned varianta obsahuje copyright Troll Tech 1999 a francouzskou závěrečnou doložku."
+    }
+  ]
+}

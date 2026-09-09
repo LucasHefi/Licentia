@@ -1,0 +1,20 @@
+{
+  "id": "Boehm-GC",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.5",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:e5e836f8d8fdd0c8813491bc290a77dae1af1659cd8572794586fd6b2baa54cf"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Ve všech kopiích zachovejte výše uvedené copyrightové oznámení a disclaimer. U upraveného kódu připojte vedle copyrightu oznámení, že byl změněn. Text nevyžaduje odevzdání úprav ani poskytování zdrojů. Vylučuje záruky, ale neobsahuje výslovné omezení odpovědnosti. U souborů s jinými nositeli copyrightu ověřte jejich vlastní oznámení.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Boehm-GC.html",
+      "note": "Dřívější individuální revize 2026-09-09.5; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

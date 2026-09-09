@@ -1,0 +1,20 @@
+{
+  "id": "bcrypt-Solar-Designer",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.5",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:a985eee90b9fbc574884d69d5f1e6216a7848c68d053fc52336032c9885ff967"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Prohlášení převádí pokrytý software do public domain. Pokud takové vzdání se copyrightu neobstojí, nastupuje výslovné povolení užití a šíření zdrojů i binárních forem s úpravami i bez nich. Ani tato náhradní licence nevyžaduje oznámení nebo poskytování zdrojů. Text vylučuje záruky, neobsahuje výslovné omezení odpovědnosti ani patentový grant. Posouzení se týká pokrytého kódu, nikoli automaticky všech souborů balíku.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/bcrypt-Solar-Designer.html",
+      "note": "Dřívější individuální revize 2026-09-09.5; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

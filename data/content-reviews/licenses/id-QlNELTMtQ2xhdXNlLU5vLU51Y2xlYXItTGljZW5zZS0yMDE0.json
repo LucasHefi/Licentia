@@ -1,0 +1,29 @@
+{
+  "id": "BSD-3-Clause-No-Nuclear-License-2014",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:0d65332f4d8daca1763cc89a27e0f67973786dec2d5611f4c097a0a092f93b1d"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Tři BSD podmínky dovolují zdroje/binárky a vyžadují oznámení i zákaz endorsementu. Závěr navíc výslovně říká, že software není licencován k návrhu, stavbě, provozu či údržbě jaderného zařízení; nejde jen o výluku záruky.",
+  "blockersCs": [
+    "Závěr vylučuje licencování užití při návrhu, stavbě, provozu nebo údržbě jakéhokoli jaderného zařízení. Doplnit model field-of-use omezení; obecné warranty nebo additional-terms by tento zákaz v doporučování skryly."
+  ],
+  "analysis": {
+    "subjectCs": "Grant je pro software Oracle/affiliate s copyrighty 2008 a 2014 a zvláštním vyloučením jaderných zařízení.",
+    "grantCs": "Redistribution/use obou forem s úpravami i bez nich dovoluje i komerci, ale v rámci následného non-nuclear licenčního omezení. Patentový grant a sublicence nejsou výslovné.",
+    "conditionsCs": "První dva body zachovávají copyright, podmínky a disclaimer ve zdrojích či materiálech binární distribuce. Závěrečné You acknowledge se vztahuje na užití v jaderných zařízeních; source-offer ani reklama nejsou předepsány.",
+    "limitationsCs": "Třetí bod zakazuje endorsement jménem Oracle/přispěvatelů bez písemného svolení; disclaimer odmítá záruky a škody. Poslední věta používá not designed, licensed or intended pro jaderný návrh/stavbu/provoz/údržbu: licensed je účelové omezení nad disclaimerem.",
+    "compatibilityCs": "Licence nemá share-alike nebo alternativní cestu; non-nuclear omezení nelze přenést na BSD-3-Clause-No-Nuclear-Warranty, která má jiné znění."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-License-2014.html",
+      "note": "Individuální revize celého připnutého textu; Grant je pro software Oracle/affiliate s copyrighty 2008 a 2014 a zvláštním vyloučením jaderných zařízení."
+    }
+  ]
+}

@@ -8,15 +8,15 @@
     "contentHash": "sha256:d4492acc8b0824c4ad4f8fe92c9f20ff64f657173bfc1a0208b7023f2f6b15cd"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
     "family": "unknown",
     "copyleftScope": "unknown",
     "permissions": [
-      "distribution"
+      "unknown"
     ],
     "obligations": [
       "unknown"
@@ -25,74 +25,77 @@
       "unknown"
     ],
     "restrictions": [
-      "liability"
+      "additional-terms",
+      "liability",
+      "unknown",
+      "warranty"
     ],
     "patentPosition": "unknown",
     "noticeBurden": "unknown"
   },
   "evidence": [
     {
-      "field": "permissions",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/python-ldap.json#text; opening Python-style license reference does not name a precise license/version or enumerate copying/modification/distribution grant; disclaimer makes software available free but cannot supply the missing grant; unresolved scope described in review; https://spdx.org/licenses/python-ldap.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/python-ldap.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/python-ldap.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/python-ldap.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "triggers",
-      "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/python-ldap.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/python-ldap.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/python-ldap.json#text; opening Python-style license reference does not name a precise license/version or enumerate copying/modification/distribution grant; disclaimer makes software available free but cannot supply the missing grant; https://spdx.org/licenses/python-ldap.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/python-ldap.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/python-ldap.json#text; whole short text lacks definite notice/source obligations; Python-style reference is unresolved rather than equivalent to zero obligations or PSF-2.0; https://spdx.org/licenses/python-ldap.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/python-ldap.json#text; whole short text lacks definite notice/source obligations; Python-style reference is unresolved rather than equivalent to zero obligations or PSF-2.0; https://spdx.org/licenses/python-ldap.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/python-ldap.json#text; no patent grant in the disclaimer; unresolved Python-style reference prevents assigning a complete patent position from a guessed Python license; https://spdx.org/licenses/python-ldap.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/python-ldap.json#text; opening Python-style license reference does not name a precise license/version or enumerate copying/modification/distribution grant; disclaimer makes software available free but cannot supply the missing grant; https://spdx.org/licenses/python-ldap.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/python-ldap.json#text; standard disclaimer: user acceptance of responsibility, no liability for damages and no fitness warranty; unknown referenced license may impose further terms; https://spdx.org/licenses/python-ldap.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/python-ldap.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/python-ldap.json#text; whole-text editorial review on 2026-09-09, batch 5; Dohledat přesné licenční soubory a verzi pro pokrytý balík nebo soubor. Python-style neurčuje PSF-2.0 ani složenou Python-2.0; disclaimer nenahrazuje grant. Do doložení ponechat rozsah, oprávnění, povinnosti a patentovou pozici jako unknown, bez automatického kopírování jiného profilu.; https://spdx.org/licenses/python-ldap.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/python-ldap.json#text; whole short text lacks definite notice/source obligations; Python-style reference is unresolved rather than equivalent to zero obligations or PSF-2.0; https://spdx.org/licenses/python-ldap.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
     }
   ]
 }

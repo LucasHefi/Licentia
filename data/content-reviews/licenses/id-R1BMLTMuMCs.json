@@ -1,0 +1,29 @@
+{
+  "id": "GPL-3.0+",
+  "reviewedAt": "2026-09-10",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:3c1b6edc7c34df54a0cf9e8dd9d50fef2eb95a4a7a606dec0ef2da4f8b02c9d2"
+  },
+  "disposition": "blocked",
+  "summaryCs": "GPL-3.0+ vyjadřuje GPL 3 nebo pozdější, ale tento starý identifikátor je deprecated. GPL 3 má copyleft celého odvozeného díla, patentové granty a zdrojové i instalační povinnosti při předání kopií; samostatný síťový provoz je nespouští, zvláštní pravidlo platí při kombinaci s AGPL 3.",
+  "blockersCs": [
+    "Identifikátor GPL-3.0+ je deprecated. Pro nové doporučení podle skutečného licenčního oznámení použít GPL-3.0-or-later; vlastní obsah GPL 3 je plně popsaný známým modelem včetně alternativ předání zdroje, User Product a podmíněné kombinace s AGPL 3."
+  ],
+  "analysis": {
+    "subjectCs": "§0 jakékoli označené copyrightové dílo včetně obdobných práv k maskám, covered originál či copyrightově odvozená změna. Propagate nezahrnuje spuštění ani změnu soukromé kopie, convey zpřístupní jinému kopii, samotná síťová interakce nikoli. §1 source preferovaná forma, Corresponding Source vše pro build/install/run/modify včetně skriptů, interfaces a specificky požadovaných dynamických subprogramů; mimo System Libraries, nezměněné obecné/free nástroje mimo dílo a regenerovatelné části. PlusID představuje or-later, není pouhým názvem pevné verze.",
+    "grantCs": "§2 všechna práva po dobu copyright neodvolatelná při plnění, neomezený provoz originálu a soukromé neconveyované úpravy/provoz/propagace, output jen sám odvozený. Lze výlučné vlastní kontraktorské úpravy/provoz pod řízením a zákazem kopírovat vlastní autorský materiál mimo vztah; cizí části splní licenci. §4 libovolná cena kopií a podpory, §5 změny, §10 automatická přímá licence příjemce, žádné sublicence. §11 výslovně bezroyalty světově essential Contributor patent claims pro make/use/sell/offer/import/modify/propagate, ne nároky až z dalších změn. §14 skutečné or-later volba3 nebo pozdější FSF, neurčená verze jakákoli vydaná, označený proxy může veřejně trvale schválit novější.",
+    "conditionsCs": "§3 convey znamená vzdání pravomoci bránit obejití technických opatření při oprávněném výkonu GPL práv. §§4–5 všechny copyright, licence, absence záruk a přítomné§7 notices/text; změny datum a prominentní oznámení, celý odvozený celek GPL, UI Appropriate Legal Notices s výjimkou původního UI bez nich. §6 object+Corresponding Source jednou cestou: fyzický source s produktem; produkt s písemnou nabídkou nejméně3roky A po dobu podpory/náhradních dílů každému držiteli objectu (nákladové médium nebo zdarma server); příležitostně nekomerčně převzatá nabídka; rovnocenný download bez další ceny ze stejného místa či jasno označeného rovnocenného serveru; P2P odkaz na bezplatný veřejný object/source. Distributor dostupnost zdroje zajišťuje i při cizím hostování. User Product při převodu držby/užití trvale nebo na dobu doprovází Installation Information včetně klíčů pro instalaci/spuštění změn, leda nikdo neumí změněný object instalovat např.ROM. Source/instalační informace veřejně dokumentované, implementace formátu source, bez zvláštního rozbalovacího/čtecího klíče.",
+    "limitationsCs": "§6 neukládá podporu/záruky/upgrady upraveného produktu; síť lze odmítnout při škodlivém narušení nebo protokolové kolizi samotné změny. §7 pouze vymezené dodatky pro oprávněně přidaný materiál: záruky, notices, původ/změny, publicity, značky, indemnity; nejsou všechny automaticky součástí grantu. Further restrictions lze odstranit, další permissions odejmout/přidat dle oprávnění s notice. §8 automatický konec včetně patentů, po nápravě provizorní obnova a trvalá při neoznámení do60dní nebo prvním holder notice napraveném před30dny, downstream trvá. §10 bez further restrictions, licence fees a patentové žaloby včetně cross/counter k Programu/části. §11 vědomé spoléhání na patent bez veřejného source vyžaduje buď zveřejnit, odstranit vlastní výhodu, nebo rozšířit downstream; selektivní transakční grant všem příjemcům. Diskriminační placená software-distributor dohoda zakáže convey kromě před28.3.2007; ostatní zákonné implied obrany zachovány. §12 kolize znamená neconveyovat. §§15–17 as-is a škody s právní/písemnou výjimkou a místním nejbližším účinkem.",
+    "compatibilityCs": "§5 pouze nezávislý agregát, který není rozšířením/větším programem a neomezuje podkladová práva, je mimo copyleft. §13 explicitní link/combination s AGPL3, GPL část zůstává GPL a zvláštní AGPL3§13 síťová povinnost platí na kombinaci; nevkládám běžné GPL programu samotný network disclosure trigger. §10 entity transaction přenáší licence i právo na source od předchůdce, pokud jej má nebo rozumně získá, bez povinného vymáhání třetích. §14 plus skutečně dovoluje pozdější verze, neukládá tím nové povinnosti původním autorům. Závěrečný návod s příklady CLI/GUI notices a doporučením LGPL není dodatečný automatický grant k proprietary kombinaci."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/GPL-3.0+.html",
+      "note": "Individuální revize celého připnutého textu; §0 jakékoli označené copyrightové dílo včetně obdobných práv k maskám, covered originál či copyrightově odvozená změna. Propagate nezahrnuje spuštění ani změnu soukromé kopie, convey zpřístupní jinému kopii, samotná síťová interakce nikoli. §1 source preferovaná forma, Corresponding Source vše pro build/install/run/modify včetně skriptů, interfaces a specificky požadovaných dynamických subprogramů; mimo System Libraries, nezměněné obecné/free nástroje mimo dílo a regenerovatelné části. PlusID představuje or-later, není pouhým názvem pevné verze."
+    }
+  ]
+}

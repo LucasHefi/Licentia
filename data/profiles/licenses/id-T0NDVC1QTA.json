@@ -8,97 +8,110 @@
     "contentHash": "sha256:981bfd9515e28ca302e52f008707e54f2335ebc8601a9ffc8c1e2252c358acbe"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "weak-copyleft",
+    "copyleftScope": "file",
     "permissions": [
+      "commercial-use",
+      "conditional-relicensing",
       "distribution",
       "modifications",
+      "patent-grant",
+      "private-use",
       "sublicensing"
     ],
     "obligations": [
+      "defend-added-warranty",
+      "include-copyright",
       "include-license-text",
+      "include-notice",
       "mark-modifications",
-      "provide-corresponding-source"
-    ],
-    "triggers": [
+      "provide-corresponding-source",
+      "same-license",
       "unknown"
     ],
+    "triggers": [
+      "combination",
+      "distribution",
+      "modification",
+      "use"
+    ],
     "restrictions": [
+      "additional-terms",
       "liability",
       "trademark",
       "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "express-grant",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OCCT-PL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OCCT-PL.json#text; Výslovná file hranice §1 a §4 výjimka jiného kódu v Derivative Program; slabá reciprocita Software, ale samostatný §5 grant všech změn není jen distribuční source copyleft.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OCCT-PL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OCCT-PL.json#text; Výslovná file hranice §1 a §4 výjimka jiného kódu v Derivative Program; slabá reciprocita Software, ale samostatný §5 grant všech změn není jen distribuční source copyleft.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OCCT-PL.json#text; §§1,4 Applicable IP zahrnuje současné i budoucí patenty/přihlášky a jiná IP k nutnému užití Original Code či vlastních změn samotných/v kombinaci. Světový bezroyalty neodvolatelný nevýhradní grant use/reproduce/modify/distribute/sublicense. §5 příjemce poskytuje všem Contributors a budoucím účastníkům stejný grant na všechny své změny; žádná patentová žalobní termination klauzule.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OCCT-PL.json#text; §4 ve všech kopiích notices a disclaimers Initial Developer/ScheduleA i přidané, zachovat licence/no-warranty notices; při distribuci text licence a celý pokrytý Software zdarma pod ní, source všem třetím stranám. Každou změnu zdokumentovat s datem a výchozí verzí v prominentním souboru se ScheduleB/dalšími notices. §6 vlastní změny pod touto licencí, žádné jiné podmínky kromě§7. §7 placené dodatkové záruky jen vlastním jménem, získat příjemcův souhlas s touto odpovědností a indemnify/defend/hold-harmless ostatní. §11 nesmazat copyright při downloadu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OCCT-PL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OCCT-PL.json#text; §4 ve všech kopiích notices a disclaimers Initial Developer/ScheduleA i přidané, zachovat licence/no-warranty notices; při distribuci text licence a celý pokrytý Software zdarma pod ní, source všem třetím stranám. Každou změnu zdokumentovat s datem a výchozí verzí v prominentním souboru se ScheduleB/dalšími notices. §6 vlastní změny pod touto licencí, žádné jiné podmínky kromě§7. §7 placené dodatkové záruky jen vlastním jménem, získat příjemcův souhlas s touto odpovědností a indemnify/defend/hold-harmless ostatní. §11 nesmazat copyright při downloadu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OCCT-PL.json#text; §§8–9 as-is a široká výluka škod příjemce/vývojáře/přispěvatelů. §10 žádná práva ke jmenovaným MATRA/EADS/CAS.CADE/OpenCASCADE značkám/doménám ani ostatním vlastněným značkám. §§3,13 nepovolené jednání automaticky ruší grant, okamžitě zastavit všechny činnosti a zničit všechny kontrolované kopie, řádné sublicence přetrvají. Vyjmenované části§§5,8–11,13.2,15.2 přežívají15 let; odkaz13.2 je v připnutém textu bez samostatně označeného odstavce.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OCCT-PL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OCCT-PL.json#text; §§1,4 Applicable IP zahrnuje současné i budoucí patenty/přihlášky a jiná IP k nutnému užití Original Code či vlastních změn samotných/v kombinaci. Světový bezroyalty neodvolatelný nevýhradní grant use/reproduce/modify/distribute/sublicense. §5 příjemce poskytuje všem Contributors a budoucím účastníkům stejný grant na všechny své změny; žádná patentová žalobní termination klauzule.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OCCT-PL.json#text; §4 ve všech kopiích notices a disclaimers Initial Developer/ScheduleA i přidané, zachovat licence/no-warranty notices; při distribuci text licence a celý pokrytý Software zdarma pod ní, source všem třetím stranám. Každou změnu zdokumentovat s datem a výchozí verzí v prominentním souboru se ScheduleB/dalšími notices. §6 vlastní změny pod touto licencí, žádné jiné podmínky kromě§7. §7 placené dodatkové záruky jen vlastním jménem, získat příjemcův souhlas s touto odpovědností a indemnify/defend/hold-harmless ostatní. §11 nesmazat copyright při downloadu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OCCT-PL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OCCT-PL.json#text; Individuálně přečten celý připnutý text. §1 Original Code je OCCT zdroj i původní objekt včetně jeho aktualizací. Modifications jsou zásahy do souborů s Software nebo nové soubory/jiná reprezentace obsahující část; Derivative Program kombinuje Software s jiným neřízeným kódem. Contributor je i tvůrce změny. Open CASCADE 6.6 poskytuje copyright i patentová práva s reciprocitou pokrytých souborů a zdroji všem třetím stranám při distribuci. Samostatné Derivative Programs lze ponechat nezveřejněné. § 5 však uděluje licenci všem budoucím účastníkům na všechny vlastní změny bez distribuční podmínky; dodatečné záruky navíc vyžadují dohodu příjemce. § 5 poskytuje všem současným/budoucím účastníkům práva ke všem vlastním Modifications bez podmínky distribuce; § 7 vyžaduje získat příjemcův souhlas u dodatečných závazků. Doplnit samostatný grant-back a assent mechanismus, přesně zachytit § 13 destrukci kopií a nejasně označený survival odkaz 13.2.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

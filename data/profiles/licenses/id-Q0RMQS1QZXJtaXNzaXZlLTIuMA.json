@@ -8,91 +8,95 @@
     "contentHash": "sha256:50bf940ea435e52f0cb9d2ee0105a70a3498e62a94be4ccfcada195720bf0770"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
-      "modifications"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "unknown"
+      "include-license-text"
     ],
     "triggers": [
-      "unknown"
+      "distribution"
     ],
     "restrictions": [
-      "liability"
+      "liability",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "none-stated",
+    "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CDLA-Permissive-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CDLA-Permissive-2.0.json#text; CDLA Permissive 2.0 licencuje Data a výslovně odděluje Results získané výpočetní analýzou, včetně ML modelů a jejich poznatků. §1.1 dovoluje užití, změny a sdílení dat; §1.2 neomezuje public-domain části ani jiné zákonné výjimky. Předání smlouvy s daty není copyleft a výstupy analýzy jsou výslovně bez povinností.; https://spdx.org/licenses/CDLA-Permissive-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CDLA-Permissive-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CDLA-Permissive-2.0.json#text; Předání smlouvy s daty není copyleft a výstupy analýzy jsou výslovně bez povinností.; https://spdx.org/licenses/CDLA-Permissive-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CDLA-Permissive-2.0.json#text; §1.1 dovoluje užití, změny a sdílení dat; §1.2 neomezuje public-domain části ani jiné zákonné výjimky.; https://spdx.org/licenses/CDLA-Permissive-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CDLA-Permissive-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CDLA-Permissive-2.0.json#text; §2.1 vyžaduje přístup k textu smlouvy při sdílení dat se změnami i bez nich. §3.1 neklade žádné povinnosti nebo omezení na užití, změny a sdílení Results.; https://spdx.org/licenses/CDLA-Permissive-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CDLA-Permissive-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CDLA-Permissive-2.0.json#text; §2.1 vyžaduje přístup k textu smlouvy při sdílení dat se změnami i bez nich. §3.1 neklade žádné povinnosti nebo omezení na užití, změny a sdílení Results.; https://spdx.org/licenses/CDLA-Permissive-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CDLA-Permissive-2.0.json#text; §4 vylučuje AS IS záruky včetně titulu/neporušování a odpovědnost poskytovatele za Data i Results; §5 definuje přímé i nepřímé příjemce.; https://spdx.org/licenses/CDLA-Permissive-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CDLA-Permissive-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CDLA-Permissive-2.0.json#text; Celá dohoda nemá výslovný patentový grant či patentové ukončení.; https://spdx.org/licenses/CDLA-Permissive-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CDLA-Permissive-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CDLA-Permissive-2.0.json#text; §2.1 vyžaduje přístup k textu smlouvy při sdílení dat se změnami i bez nich. §3.1 neklade žádné povinnosti nebo omezení na užití, změny a sdílení Results. Rozsah notifikační zátěže: standard.; https://spdx.org/licenses/CDLA-Permissive-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CDLA-Permissive-2.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CDLA-Permissive-2.0.json#text; Individuální kontrola celého připnutého textu CDLA-Permissive-2.0 dne 2026-09-09. CDLA Permissive 2.0 licencuje Data a výslovně odděluje Results získané výpočetní analýzou, včetně ML modelů a jejich poznatků. Předmětem jsou data s výslovně vyňatými výsledky výpočetní analýzy včetně ML modelů; před doporučením novému softwaru je třeba samostatný datový model zachovávající tuto hranici. Nabídka jiných licencí nebo verzí není; odlišení Data/Results není tvrzením kompatibility s libovolnou licencí datových zdrojů.; https://spdx.org/licenses/CDLA-Permissive-2.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

@@ -1,0 +1,64 @@
+# SISSL-1.2 — obsahová revize
+
+Sun Industry Standards Source License v1.2
+
+Revize: **2026-09-09** · pravidlo **2026-09-09.10**.
+
+Výsledek: **zpracována, nezařazena do průvodce**.
+
+SISSL 1.2 pro Grid Engine požaduje zachování licence původních zdrojů a podmíněnou reciprocitu odchylek od standardů. Při neshodě do 30 dnů od první dodávky zveřejnit odchylku s referenční implementací nebo změněné zdroje; standardy se určují 120 dní před dodávkou a mají verzně závislé testy interoperability.
+
+## Předmět a rozsah
+
+§1 Original Code určuje ExhibitA (Grid Engine); Modification je změna souboru s pokrytým kódem či nový soubor obsahující jeho část. Larger Work může spojovat jiné licencované kódy. Commercial Use zde znamená zpřístupnění třetí straně, nikoli jen ziskové užití.
+
+## Udělená práva
+
+§2.1 Initial Developer poskytuje světová bezroyalty nepatentová/neznámková IP práva use/reproduce/modify/display/perform/sublicense/distribute i v Larger Work. Samostatný patentový grant make/have-made/use/practice/sell/offer/dispose pro Original Code platí od první distribuce; ne odstraněný kód, samostatné oddělené části, porušení vzniklé změnami či kombinacemi. Není patent litigation termination.
+
+## Podmínky a spouštěče
+
+§3.1 původní Source jen tato/pozdější Sun licence s textem a bez dalších omezení. Modifikace musí vyhovět standardům platným120 dní před shipment; jinak do30 dní od první zákaznické dodávky všem zdarma pod SISSL zveřejnit odchylky+referenční implementaci NEBO Modifications source a splnit ExhibitB. §3.2 ExhibitA v každém source souboru nebo hledatelné lokalitě, licence i v dokumentaci práv; přidání Contributor jména dobrovolné. §3.3 notice dostupnosti Original Source pod SISSL na rights notices, vlastní podmínky jiných verzí jen s připsáním a odškodněním vývojáře. §3.2 dodatečné záruky vlastní odpovědnost+odškodnění. §4 popsat právně vynucené omezení v LEGAL a zdrojových distribucích.
+
+## Omezení, výjimky a ukončení
+
+ExhibitB při neshodě změnit Grid Engine/gridengine/sunsource a obdobné názvy, nečinit compliance tvrzení. §7 as-is bez záruk a riziko příjemce; samostatná obecná liability výluka zde není. §8 konec po30 dnech od znalosti nenapraveného porušení, řádné sublicence a end-user dohody přetrvají, druhá klauzule výslovně vylučuje distributors/resellers.
+
+## Verze a kombinování
+
+§§6.1–6.2 pouze Sun vydává pozdější číslované verze, přijatá zůstává a pozdější volitelné. §3.4 jinak licencované Larger Work dovoleno s plněním Original Code. Dohledaný Project Standards vyžaduje externě poskytované binárky testovat proti verzně odpovídajícím Reference Builds, interní build test nevyžaduje; znění nezaručuje určení konkrétního historického standardu bez data/verze.
+
+## Překážky a navazující práce
+
+- § 3.1 váže grant shipment na standardy 120 dní před dodávkou a při neshodě alternativu odchylky+reference implementace NEBO source do 30 dní. Exhibit B normativně začleňuje verzně závislé testy a reference builds. Doplnit standard/version/date a skutečné alternativní povinnosti, opatřit konkrétní relevantní standard a build; plošný source checklist nestačí.
+
+## Metadata a jejich doložení
+
+| Pole | Hodnota | Doložení znění |
+|---|---|---|
+| family | "weak-copyleft" | public/data/licenses/SISSL-1.2.json#text; §1.9 stanoví file hranici, §3.1 ovšem reciprocal zveřejnění změn podmiňuje standardovou neshodou a připouští jiný obsah zveřejnění, nikoli bezpodmínečný source-copyleft všech změn. |
+| copyleftScope | "file" | public/data/licenses/SISSL-1.2.json#text; §1.9 stanoví file hranici, §3.1 ovšem reciprocal zveřejnění změn podmiňuje standardovou neshodou a připouští jiný obsah zveřejnění, nikoli bezpodmínečný source-copyleft všech změn. |
+| permissions | ["commercial-use","conditional-relicensing","distribution","modifications","patent-grant","private-use","sublicensing"] | public/data/licenses/SISSL-1.2.json#text; §2.1 Initial Developer poskytuje světová bezroyalty nepatentová/neznámková IP práva use/reproduce/modify/display/perform/sublicense/distribute i v Larger Work. Samostatný patentový grant make/have-made/use/practice/sell/offer/dispose pro Original Code platí od první distribuce; ne odstraněný kód, samostatné oddělené části, porušení vzniklé změnami či kombinacemi. Není patent litigation termination. |
+| obligations | ["defend-added-warranty","include-copyright","include-license-text","include-notice","same-license","unknown"] | public/data/licenses/SISSL-1.2.json#text; §3.1 původní Source jen tato/pozdější Sun licence s textem a bez dalších omezení. Modifikace musí vyhovět standardům platným120 dní před shipment; jinak do30 dní od první zákaznické dodávky všem zdarma pod SISSL zveřejnit odchylky+referenční implementaci NEBO Modifications source a splnit ExhibitB. §3.2 ExhibitA v každém source souboru nebo hledatelné lokalitě, licence i v dokumentaci práv; přidání Contributor jména dobrovolné. §3.3 notice dostupnosti Original Source pod SISSL na rights notices, vlastní podmínky jiných verzí jen s připsáním a odškodněním vývojáře. §3.2 dodatečné záruky vlastní odpovědnost+odškodnění. §4 popsat právně vynucené omezení v LEGAL a zdrojových distribucích. |
+| triggers | ["combination","distribution","modification","unknown"] | public/data/licenses/SISSL-1.2.json#text; §3.1 původní Source jen tato/pozdější Sun licence s textem a bez dalších omezení. Modifikace musí vyhovět standardům platným120 dní před shipment; jinak do30 dní od první zákaznické dodávky všem zdarma pod SISSL zveřejnit odchylky+referenční implementaci NEBO Modifications source a splnit ExhibitB. §3.2 ExhibitA v každém source souboru nebo hledatelné lokalitě, licence i v dokumentaci práv; přidání Contributor jména dobrovolné. §3.3 notice dostupnosti Original Source pod SISSL na rights notices, vlastní podmínky jiných verzí jen s připsáním a odškodněním vývojáře. §3.2 dodatečné záruky vlastní odpovědnost+odškodnění. §4 popsat právně vynucené omezení v LEGAL a zdrojových distribucích. |
+| restrictions | ["additional-terms","trademark","unknown","warranty"] | public/data/licenses/SISSL-1.2.json#text; ExhibitB při neshodě změnit Grid Engine/gridengine/sunsource a obdobné názvy, nečinit compliance tvrzení. §7 as-is bez záruk a riziko příjemce; samostatná obecná liability výluka zde není. §8 konec po30 dnech od znalosti nenapraveného porušení, řádné sublicence a end-user dohody přetrvají, druhá klauzule výslovně vylučuje distributors/resellers. |
+| patentPosition | "express-grant" | public/data/licenses/SISSL-1.2.json#text; §2.1 Initial Developer poskytuje světová bezroyalty nepatentová/neznámková IP práva use/reproduce/modify/display/perform/sublicense/distribute i v Larger Work. Samostatný patentový grant make/have-made/use/practice/sell/offer/dispose pro Original Code platí od první distribuce; ne odstraněný kód, samostatné oddělené části, porušení vzniklé změnami či kombinacemi. Není patent litigation termination. |
+| noticeBurden | "material" | public/data/licenses/SISSL-1.2.json#text; §3.1 původní Source jen tato/pozdější Sun licence s textem a bez dalších omezení. Modifikace musí vyhovět standardům platným120 dní před shipment; jinak do30 dní od první zákaznické dodávky všem zdarma pod SISSL zveřejnit odchylky+referenční implementaci NEBO Modifications source a splnit ExhibitB. §3.2 ExhibitA v každém source souboru nebo hledatelné lokalitě, licence i v dokumentaci práv; přidání Contributor jména dobrovolné. §3.3 notice dostupnosti Original Source pod SISSL na rights notices, vlastní podmínky jiných verzí jen s připsáním a odškodněním vývojáře. §3.2 dodatečné záruky vlastní odpovědnost+odškodnění. §4 popsat právně vynucené omezení v LEGAL a zdrojových distribucích. |
+
+## Zdroje
+
+- [Primární zdroj](https://spdx.org/licenses/SISSL-1.2.html) — Individuální revize celého připnutého textu; §1 Original Code určuje ExhibitA (Grid Engine); Modification je změna souboru s pokrytým kódem či nový soubor obsahující jeho část. Larger Work může spojovat jiné licencované kódy. Commercial Use zde znamená zpřístupnění třetí straně, nikoli jen ziskové užití.
+- [Primární zdroj](https://gridscheduler.sourceforge.net/Gridengine_SISSL_license.html) — Projektová kopie1.2 obsahuje odkaz z ExhibitB na standards.html.
+- [Primární zdroj](https://gridscheduler.sourceforge.net/standards.html) — Project Standards stanoví interoperability Compatibility Test proti verzně shodnému Reference Build pro binárky poskytované druhým; interní užití bez testovací povinnosti.
+- [Kurátorovaný profil](../../../data/profiles/licenses/id-U0lTU0wtMS4y.json)
+- [Uložené úplné znění](../../../public/data/licenses/SISSL-1.2.json)
+
+## Otisk zdroje
+
+```json
+{
+  "sourceId": "spdx-license-list",
+  "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+  "contentHash": "sha256:67b33683a605d04650dc50550e0702207710d9907ba4f61d12f7cd5199200a2b"
+}
+```

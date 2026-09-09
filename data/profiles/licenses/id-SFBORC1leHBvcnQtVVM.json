@@ -8,93 +8,99 @@
     "contentHash": "sha256:9a3f7efad6ff8dd48e0bf98681b8c8821fa1e242b1d24e0f1a7f5f27103cb514"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "include-license-text"
+      "include-license-text",
+      "unknown"
     ],
     "triggers": [
+      "distribution",
       "unknown"
     ],
     "restrictions": [
-      "unknown"
+      "trademark",
+      "unknown",
+      "warranty"
     ],
-    "patentPosition": "unknown",
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/HPND-export-US.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/HPND-export-US.json#text; MIT grant pokrývá software a dokumentaci s copyrightem 1990. Odstavec WITHIN THAT CONSTRAINT dovoluje užití, kopírování, změny a distribuci pro jakýkoli účel bez poplatku pod předchozím exportním omezením. Notice a exportní podmínky nevyžadují zveřejnění zdrojů nebo stejnou licenci.; https://spdx.org/licenses/HPND-export-US.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/HPND-export-US.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/HPND-export-US.json#text; Notice a exportní podmínky nevyžadují zveřejnění zdrojů nebo stejnou licenci.; https://spdx.org/licenses/HPND-export-US.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/HPND-export-US.json#text; Odstavec WITHIN THAT CONSTRAINT dovoluje užití, kopírování, změny a distribuci pro jakýkoli účel bez poplatku pod předchozím exportním omezením.; https://spdx.org/licenses/HPND-export-US.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/HPND-export-US.json#text; Copyright musí být ve všech kopiích a copyright se svolením v dokumentaci; exportér odpovídá za získání vyžadované americké licence před exportem.; https://spdx.org/licenses/HPND-export-US.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/HPND-export-US.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/HPND-export-US.json#text; Copyright musí být ve všech kopiích a copyright se svolením v dokumentaci; exportér odpovídá za získání vyžadované americké licence před exportem.; https://spdx.org/licenses/HPND-export-US.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/HPND-export-US.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/HPND-export-US.json#text; Jméno M.I.T. se bez předchozího písemného souhlasu nesmí použít v reklamě či publicitě distribuce; AS IS odmítá vhodnost a záruky. Grant je výslovně podřízen exportnímu odstavci.; https://spdx.org/licenses/HPND-export-US.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/HPND-export-US.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/HPND-export-US.json#text; Celý text neobsahuje patentový grant nebo patentové ukončení.; https://spdx.org/licenses/HPND-export-US.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/HPND-export-US.json#text; Copyright musí být ve všech kopiích a copyright se svolením v dokumentaci; exportér odpovídá za získání vyžadované americké licence před exportem. Rozsah notifikační zátěže: standard.; https://spdx.org/licenses/HPND-export-US.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/HPND-export-US.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/HPND-export-US.json#text; Individuální kontrola celého připnutého textu HPND-export-US dne 2026-09-09. MIT grant pokrývá software a dokumentaci s copyrightem 1990. Výraz WITHIN THAT CONSTRAINT podmiňuje grant získáním potřebné exportní licence před vývozem z USA; slovník nemá exportní spouštěč a povinnost, které je nutné doplnit před doporučením. Žádná jiná licence ani verze není nabízena.; https://spdx.org/licenses/HPND-export-US.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

@@ -1,0 +1,29 @@
+{
+  "id": "Dotseqn",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:05016f27f4f0dfcb497764771908f120cd2b95de6a456a96f9b9dd252e23c377"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Soubor lze volně předávat a kopírovat se zachováním oznámení. Změna souboru vyžaduje také změnu názvu; výjimkou je změna volby velikosti papíru u příkazu documentclass.",
+  "blockersCs": [
+    "Text vyžaduje přejmenování při úpravě s přesnou výjimkou pro paper-size option u documentclass. Slovník obsahuje jen obecné označení změn; je třeba modelovat povinné přejmenování a jeho výjimku, aby průvodce nezamlčel podmínku."
+  ],
+  "analysis": {
+    "subjectCs": "Konkrétní soubor s copyrightem Donalda Arseneaua z roku 1995.",
+    "grantCs": "Volné předávání a reprodukce jsou dovoleny; modifikace je podmíněna přejmenováním. Patentový grant chybí.",
+    "conditionsCs": "Zachovat celé oznámení. Při změně změnit také název, kromě změny velikosti papíru v documentclass.",
+    "limitationsCs": "Neobsahuje výluku záruk či odpovědnosti ani zdrojovou reciprocitu. Přejmenování není jen doporučené označení úprav.",
+    "compatibilityCs": "Neobsahuje volbu jiné licence či verze; výjimka se vztahuje pouze k popsané změně nastavení."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Dotseqn.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Druhý odstavec dovoluje kopírování, ale podmiňuje změny názvem; tento zvláštní mechanismus není běžná pouhá notice licence."
+    }
+  ]
+}

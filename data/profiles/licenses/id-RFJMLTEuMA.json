@@ -8,9 +8,9 @@
     "contentHash": "sha256:1d19dec7513e6b7dea23cbcdbff903f919f592589b4fe5a555d3e3727386eda9"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
     "family": "permissive",
@@ -19,84 +19,86 @@
       "commercial-use",
       "distribution",
       "modifications",
+      "private-use",
       "sublicensing"
     ],
     "obligations": [
-      "unknown"
+      "include-license-text",
+      "include-notice"
     ],
     "triggers": [
-      "unknown"
+      "distribution"
     ],
     "restrictions": [
       "liability",
       "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "none-stated",
+    "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.no-copyleft",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.permissive-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DRL-1.0.json#text; Grant Rules without restriction s podmíněnými attribution/URI notices při sdílení.; https://spdx.org/licenses/DRL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "copyleftScope",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/DRL-1.0.json#text; Celý text nevyžaduje stejnou licenci odvozenin či dodání zdrojů.; https://spdx.org/licenses/DRL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DRL-1.0.json#text; První odstavec výslovně use/copy/modify/merge/publish/distribute/sublicense/sell Rules.; https://spdx.org/licenses/DRL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/DRL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DRL-1.0.json#text; If supplied: author/designated persons v rozumně požadované formě, URI pravidla, licence text or URI reasonably practicable.; https://spdx.org/licenses/DRL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/DRL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DRL-1.0.json#text; If you share the Rules including modified form je výslovný trigger; samostatné soukromé použití povinnosti nemá.; https://spdx.org/licenses/DRL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/DRL-1.0.json#text; Závěrečný odstavec warranty včetně noninfringement a liability disclaimer.; https://spdx.org/licenses/DRL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/DRL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DRL-1.0.json#text; Celý text bez výslovného patentového grantu/ukončení.; https://spdx.org/licenses/DRL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/DRL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DRL-1.0.json#text; Zachovat dodaná metadata a přiměřeně dostupné odkazy; text licence lze nahradit odkazem.; https://spdx.org/licenses/DRL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/DRL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DRL-1.0.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. DRL 1.0 dovoluje libovolné nakládání se sadou detekčních pravidel. Při sdílení zachovejte dodané údaje o autorech a dalších určených osobách, rozumně proveditelný odkaz na pravidla a označení licence s textem či odkazem. Blokace: Grant vymezuje rule set a dokumentaci, nikoli obecný software. Pro nový softwarový projekt je třeba oddělit model detekčních pravidel a jejich author/URI metadat nebo zvolit softwarový grant; nelze jej bez dalšího přenést na libovolnou aplikaci.; https://spdx.org/licenses/DRL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

@@ -9,97 +9,105 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
       "commercial-use",
+      "conditional-relicensing",
       "distribution",
       "modifications",
-      "patent-grant"
+      "patent-grant",
+      "private-use",
+      "sublicensing"
     ],
     "obligations": [
+      "defend-added-warranty",
       "include-copyright",
       "include-license-text",
-      "mark-modifications",
-      "provide-corresponding-source"
+      "include-notice",
+      "mark-modifications"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification",
+      "patent-claim"
     ],
     "restrictions": [
       "liability",
-      "trademark"
+      "patent-claim",
+      "trademark",
+      "warranty"
     ],
-    "patentPosition": "express-grant",
-    "noticeBurden": "standard"
+    "patentPosition": "retaliatory-termination",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OLFL-1.3.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OLFL-1.3.json#text; §4 výslovně dovoluje jiné podmínky vlastních změn i odvozenin při zachování původních podmínek; bez povinného copyleftu; https://spdx.org/licenses/OLFL-1.3.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OLFL-1.3.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OLFL-1.3.json#text; §4 jiné podmínky odvozeného celku, §1(7) navíc vyjímá separable/merely-linking díla; žádná povinnost stejné licence nebo publikace zdrojů; https://spdx.org/licenses/OLFL-1.3.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OLFL-1.3.json#text; §2 široký sublicencovatelný komerční/nekomerční grant včetně design práv, §3 výslovné omezené patenty a §4 podmíněné jiné odvozené licence; https://spdx.org/licenses/OLFL-1.3.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OLFL-1.3.json#text; §4 celý text+informace původní licence, prominentní změny souborů, relevantní notices zdrojových odvozenin; §9 defend/indemnify pouze za dobrovolně přidanou záruku či odpovědnost; https://spdx.org/licenses/OLFL-1.3.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OLFL-1.3.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OLFL-1.3.json#text; §4 reprodukce/distribuce včetně změněných souborů, §5 úmyslné příspěvky a §9 distribuované záruky; §3 patentová žaloba; §2 síťové služby jsou oprávnění, nikoli zdrojový trigger; https://spdx.org/licenses/OLFL-1.3.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OLFL-1.3.json#text; §6 jména/známky, §7 záruky vyloučeny a §8 škody s výjimkami úmyslu/hrubé nedbalosti a produktové odpovědnosti; §3 výslovné žalobní ukončení celé licence; https://spdx.org/licenses/OLFL-1.3.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OLFL-1.3.json#text; §3 jen patenty vlastněné/licencovatelné při příspěvku a nezbytné v původním celku, bez budoucích cizích změn; žaloba včetně counterclaim/countersuit ruší patentové granty I licenci samotnou; https://spdx.org/licenses/OLFL-1.3.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OLFL-1.3.json#text; §4 celý text, zvláštní informace o původním licencování, prominentní změny souborů a několik druhů relevantních zdrojových notices; žádná samostatná reklamní atribuce; https://spdx.org/licenses/OLFL-1.3.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OLFL-1.3.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OLFL-1.3.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. OLFL1.3 poskytuje široké autorské, případně průmyslově-vzorové a omezené patentové oprávnění pro software i další pokryté komponenty. Distribuce vyžaduje celý text licence, informaci o původním licencování, výrazné označení změněných souborů a zachování relevantních notices ve zdrojích odvozenin. Vlastní změny či odvozeniny mohou mít jiné podmínky bez povinného zveřejňování zdrojů. Při přidané záruce distributor chrání ostatní přispěvatele. Patentová žaloba ruší i samotnou licenci; výluka odpovědnosti zachovává stanovené případy úmyslu, hrubé nedbalosti a zákonné produktové odpovědnosti.; https://spdx.org/licenses/OLFL-1.3.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

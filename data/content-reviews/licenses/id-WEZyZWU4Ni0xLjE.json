@@ -1,0 +1,27 @@
+{
+  "id": "XFree86-1.1",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:e90a0f60604738a5b7f4e612be9e40f24ffa1e10f1b70b35b3f1822192b2f616"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Široký grant zahrnuje sublicence a prodej. Zdrojové/binární distribuce zachovají oznámení; uživatelská dokumentace, pokud existuje, má předepsané uznání XFree86 ve stejném místě a formě jako ostatní, alternativně přímo software.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "XFree86 v1.1 se vztahuje na software a dokumentační soubory definované jako Software.",
+    "grantCs": "Permission odstavec výslovně dovoluje use/copy/modify/merge/publish/distribute/sublicense/sell i stejné svolení příjemcům. Patentový grant není výslovný.",
+    "conditionsCs": "Bod 1 uchová copyright, podmínky a disclaimer ve zdrojích. Bod 2 v materiálech binárek na stejném místě a ve stejné formě jako ostatní copyright/licence/disclaimery. Bod 3 předepsané uznání v existující end-user dokumentaci ve stejné podobě/místě jako jiná third-party uznání, ALTERNATIVNĚ v softwaru; není povinné vytvářet neexistující dokumentaci.",
+    "limitationsCs": "Bod 4 kromě vlastního notice zakazuje propagaci prodeje/užití/jiného nakládání jménem XFree86 bez předchozí písemné autorizace. Disclaimer odmítá záruky a škody projektu/přispěvatelů.",
+    "compatibilityCs": "Dokumentace versus software v bodu 3 jsou dvě alternativní umístění téhož uznání, nikoli kumulativní povinnosti; jiná licence/verze není uvedena."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/XFree86-1.1.html",
+      "note": "Individuální revize celého připnutého textu; XFree86 v1.1 se vztahuje na software a dokumentační soubory definované jako Software."
+    }
+  ]
+}

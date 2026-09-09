@@ -1,0 +1,27 @@
+{
+  "id": "BSD-3-Clause",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:9c6e4311dd00e0869ab384c29074dc3fe7889ebbc63f259e204963e7bc348f59"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Šíření zdrojů i binárek s úpravami i bez nich vyžaduje copyright, podmínky a disclaimer; binárky je nesou v doprovodných materiálech. Jména držitele a přispěvatelů se bez písemného svolení nepoužijí k podpoře odvozených produktů.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Software je licencován ve zdrojové a binární formě pro libovolné účely.",
+    "grantCs": "Úvodní redistribution and use dovoluje zdroje/binárky a jejich modifikace bez komerčního zákazu; výslovná patentová licence a sublicence nejsou uvedeny.",
+    "conditionsCs": "Bod 1 zachovává copyright, podmínky a disclaimer ve zdrojích; bod 2 je reprodukuje v dokumentaci a/nebo jiných materiálech binární distribuce. Nevyžaduje poskytovat zdroje či označovat změny.",
+    "limitationsCs": "Bod 3 zakazuje endorsement/promotion jmény držitele nebo přispěvatelů bez konkrétního předchozího písemného svolení. Disclaimer odmítá záruky a vyjmenované škody ze všech uvedených právních titulů.",
+    "compatibilityCs": "Žádné share-alike, jiné verze nebo alternativní licence nejsou stanoveny; zákaz endorsementu není reklamní uznávací povinnost."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/BSD-3-Clause.html",
+      "note": "Individuální revize celého připnutého textu; Software je licencován ve zdrojové a binární formě pro libovolné účely."
+    }
+  ]
+}

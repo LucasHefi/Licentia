@@ -9,91 +9,93 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
-    "obligations": [
-      "unknown"
-    ],
+    "obligations": [],
     "triggers": [
-      "unknown"
+      "use"
     ],
     "restrictions": [
-      "liability"
+      "additional-terms",
+      "liability",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "none-stated",
+    "noticeBurden": "none"
   },
   "evidence": [
     {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NTIA-PD.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NTIA-PD.json#text; Fallback výslovně bezpodmínečný; celkové rizikové podmínky nejsou copyleft. Rodina permissive zachovává rozdíl od pouhého amerického public-domain tvrzení.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NTIA-PD.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NTIA-PD.json#text; Fallback výslovně bezpodmínečný; celkové rizikové podmínky nejsou copyleft. Rodina permissive zachovává rozdíl od pouhého amerického public-domain tvrzení.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/NTIA-PD.json#text; Třetí odstavec uděluje nevýhradně/neodvolatelně/bezpodmínečně tisk, publikaci, odvozeniny a distribuci v jakémkoli médiu či autorizaci jiných jménem příjemce, bez poplatků celosvětově v rozsahu zahraničních práv NTIA. Čtvrtý výslovně povoluje změny a jejich kopie/distribuci. Patentový grant chybí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NTIA-PD.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NTIA-PD.json#text; Modified works should a Please provide acknowledgments jsou doporučení, nikoli závazné notice či mark-modifications. Pátý odstavec činí uživatele odpovědným za posouzení vhodnosti užití/distribuce a rizika; nevyžaduje dodání zdrojů nebo licenci odvozenin.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NTIA-PD.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NTIA-PD.json#text; Modified works should a Please provide acknowledgments jsou doporučení, nikoli závazné notice či mark-modifications. Pátý odstavec činí uživatele odpovědným za posouzení vhodnosti užití/distribuce a rizika; nevyžaduje dodání zdrojů nebo licenci odvozenin.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/NTIA-PD.json#text; As is odmítá veškeré záruky včetně datové správnosti, neporušení práv a výsledků. Uživatel přebírá náklady/rizika chyb, právního souladu, ztráty dat a výpadků. Not intended pro situace s újmou je upozornění na určení, ne výslovný not licensed zákaz.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NTIA-PD.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NTIA-PD.json#text; Třetí odstavec uděluje nevýhradně/neodvolatelně/bezpodmínečně tisk, publikaci, odvozeniny a distribuci v jakémkoli médiu či autorizaci jiných jménem příjemce, bez poplatků celosvětově v rozsahu zahraničních práv NTIA. Čtvrtý výslovně povoluje změny a jejich kopie/distribuci. Patentový grant chybí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NTIA-PD.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NTIA-PD.json#text; Modified works should a Please provide acknowledgments jsou doporučení, nikoli závazné notice či mark-modifications. Pátý odstavec činí uživatele odpovědným za posouzení vhodnosti užití/distribuce a rizika; nevyžaduje dodání zdrojů nebo licenci odvozenin.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/NTIA-PD.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/NTIA-PD.json#text; Individuálně přečten celý připnutý text. Text pokrývá software zaměstnanců NTIA a jeho části; citaci Title 15 §105 zachovává jako údaj připnutého textu, nikoli opravený právní odkaz. NTIA prohlašuje americký public-domain status a pro zahraniční práva poskytuje neodvolatelný bezpodmínečný grant publikace, odvozenin a distribuce. Označení změn a poděkování jsou doporučení; uživatel přebírá rizika a posoudí vhodnost. ",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

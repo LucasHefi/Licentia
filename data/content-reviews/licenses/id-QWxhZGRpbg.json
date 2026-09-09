@@ -1,0 +1,29 @@
+{
+  "id": "Aladdin",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:765bbf3c62f478d089ca8512ca27390375664aa5c76f57ff3e0d4fe1269e9d3e"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Aladdin Free Public License verze8 dovoluje neomezený běh včetně komerčního, ale komerční organizaci zpravidla zakazuje distribuci spojenou s přímou či nepřímou platbou. Výjimky pro veřejné online úložiště a samostatná média mají přesné podmínky. Distribuované dílo obsahující Program zůstává celé pod touto licencí, s kompletními zdroji, změnovými údaji a případnými interaktivními notices. Výstup podléhá licenci jen je-li sám odvozeninou. Nejde o GNU licenci.",
+  "blockersCs": [
+    "§2(a) zakazuje komerční organizaci distribuovat Program/odvozeniny při jakékoli související přímé i nepřímé platbě, ale dovoluje přesně omezené veřejné úložiště s obsahově nezávislou cenou a samostatná doslovná média. Model neobsahuje tento test organizace, ceny a distribučního kanálu; commercial-use nelze vypnout, protože §2(b) běh výslovně neomezuje. Před doporučením je nutná samostatná reprezentace těchto restrikcí a alternativ."
+  ],
+  "analysis": {
+    "subjectCs": "Připnutý text se vztahuje na Aladdin Ghostscript, nikoli GNU Ghostscript nebo komerčně licencovanou variantu Artifex (§0). Úvod výslovně dovoluje použít celý neměněný text na vlastní dílo se změnou identifikace §0 a případně země práva §6. Odvozenina se řídí autorským pojetím USA1976; výstupy jsou pokryté jen pokud samy tvoří odvozené dílo (§2(b)).",
+    "grantCs": "§1 dovoluje doslovné zdrojové kopie, změny, odvozeniny a jejich distribuci ve světě/libovolném médiu za podmínek. §2(b) ponechává funkční běh zcela neomezený a mimo působnost licence, včetně komerčního. Patentový grant není uveden. §3 zakazuje sublicencování mimo výslovné podmínky a nedovoluje z širokého kopírovacího grantu dovodit jinou licenci originálu.",
+    "conditionsCs": "§1 vždy přiložit nezměněnou licenci. §2(c) distribuované/publikované Work jako celek bez licenčního poplatku pod touto licencí, prominentní údaje změn a dat, v každém změněném zdrojovém souboru jméno, případný e-mail, datum a účel. Interaktivní start má copyright, záruku či její absenci, redistribuční podmínky a návod na znění; výjimky zachovávají původní About-only či žádný notice. Zdroj zahrnuje všechny moduly, rozhraní, sestavovací/instalační skripty a také distribuované systémové komponenty, má-li distributor jejich zdroje a může je předat. Stejný dostupný bod pro objekt i zdroj je uznaná alternativa společného předání. Tištěné materiály nesou licenci NEBO nápadnou informaci a pokyny k jejímu zobrazení/tisku.",
+    "limitationsCs": "§2(a)(i) placené veřejné úložiště smí mít cenu nezávislou na obsahu a přístup nezávislý na jiných službách; (ii) samostatné médium obsahuje celé nezměněné soubory a všechna data musí být nekomerčně zdarma šiřitelná, bez svázání s knihou/jiným produktem. §3 nesoulad automaticky ruší grant, compliant příjemci zůstávají chráněni. §4 dovoluje poskytovateli explicitně přidat zeměpisné omezení; v tomto textu žádné země nejsou skutečně vyjmenovány. §5 vylučuje záruky a škody kromě zákona či písemné dohody. §6 volí Kalifornii a popisuje americká vládní práva dle DFAR227.7202/FAR12.212.",
+    "compatibilityCs": "§2(c) vyžaduje celý Work obsahující či odvozený z Programu pod touto licencí a zakazuje další restrikce; text nenabízí obecnou agregační či GPL licenční alternativu. §2(a) výjimky platby neodstraňují ostatní podmínky. Podmínky případně výslovně doplněné geografické výjimky by vyžadovaly samostatné posouzení konkrétního vydání."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Aladdin.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; §2(a) účelově vymezený zákaz placené distribuce komerční organizací a přesné kanálové výjimky činí licenci nestandardní i při copyleftu"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "EFL-2.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.7",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:af42d4584e986b16391e7894bc136910ea49c2bab764d01162983c8f90c83288"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Copyrightová oznámení zachovejte beze změny a při každé distribuci balíku přiložte text licence. Binární programy závislé na balíku lze šířit. Veřejné vydání upraveného balíku je ve verzi 2.0 pouze doporučením; nevyžaduje zveřejnit zdroje balíku ani závislé aplikace. Text vylučuje záruky a odpovědnost.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/EFL-2.0.html",
+      "note": "Dřívější individuální revize 2026-09-09.7; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

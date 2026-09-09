@@ -8,92 +8,103 @@
     "contentHash": "sha256:7126a7b5f6183b50e15aa4b3ff350c9f449959735aab618ea386fe18ea711d54"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
-    ],
-    "obligations": [
-      "include-copyright",
-      "provide-corresponding-source"
-    ],
-    "triggers": [
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use",
       "unknown"
     ],
-    "restrictions": [
-      "liability"
+    "obligations": [
+      "include-advertising-acknowledgment",
+      "include-copyright",
+      "include-license-text",
+      "unknown"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "triggers": [
+      "advertising",
+      "distribution"
+    ],
+    "restrictions": [
+      "additional-terms",
+      "liability",
+      "trademark",
+      "unknown",
+      "warranty"
+    ],
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/radvd.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/radvd.json#text; Žádné same-license nebo source-offer nejsou uvedeny; distribuční zákaz určitých verzí a externí podmínky činí grant nonstandard bez copyleftu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/radvd.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/radvd.json#text; Žádné same-license nebo source-offer nejsou uvedeny; distribuční zákaz určitých verzí a externí podmínky činí grant nonstandard bez copyleftu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/radvd.json#text; Úvod uděluje redistribution/use obou forem i modifikací, ale bod 0 odnímá distribuci jakékoli podoby verze výslovně labelled not for redistribution. Patentový grant a sublicence nejsou uvedeny.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/radvd.json#text; Bod 1 zachovává všechny další použitelné copyrighty/licence. Body 2–3 požadují copyrighty, podmínky a disclaimer ve zdrojích/materiálech binárek. Bod 4 vyžaduje předepsané uznání autorů dle zdrojových copyrightů a přispěvatelů v reklamě zmiňující vlastnosti/užití.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/radvd.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/radvd.json#text; Bod 1 zachovává všechny další použitelné copyrighty/licence. Body 2–3 požadují copyrighty, podmínky a disclaimer ve zdrojích/materiálech binárek. Bod 4 vyžaduje předepsané uznání autorů dle zdrojových copyrightů a přispěvatelů v reklamě zmiňující vlastnosti/užití.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/radvd.json#text; Bod 0 obsahuje úplný podmíněný zákaz redistribuce podle externího označení verze. Bod 5 zakazuje endorsement jmény autorů/přispěvatelů bez písemného svolení; disclaimer odmítá záruky a škody.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/radvd.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/radvd.json#text; Úvod uděluje redistribution/use obou forem i modifikací, ale bod 0 odnímá distribuci jakékoli podoby verze výslovně labelled not for redistribution. Patentový grant a sublicence nejsou uvedeny.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/radvd.json#text; Bod 1 zachovává všechny další použitelné copyrighty/licence. Body 2–3 požadují copyrighty, podmínky a disclaimer ve zdrojích/materiálech binárek. Bod 4 vyžaduje předepsané uznání autorů dle zdrojových copyrightů a přispěvatelů v reklamě zmiňující vlastnosti/užití.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/radvd.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/radvd.json#text; Individuálně přečten celý připnutý text. Předmětem je software a dokumentace radvd; oprávnění distribuce závisí na označení konkrétní verze ve version message či README. Zdroje/binárky lze používat a šířit, avšak verze označené jako nerozšiřovatelné se nesmějí redistribuovat vůbec. Platí další použitelné licence, notice, reklamní uznání autorů a zákaz endorsementu. Bod 0 podmiňuje distribuční právo konkrétním označením verze v README/version message a bod 1 vyžaduje všechny další použitelné licence. Prověřit balík a modelovat podmíněnou redistribuci i konkrétní externí licenční závislosti před doporučením.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

@@ -1,0 +1,27 @@
+{
+  "id": "AML-glslang",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:ecb88bd02ba8d49b329201431014b922551332f8a57f79dc6264936d81fcf890"
+  },
+  "disposition": "eligible",
+  "summaryCs": "NVIDIA uděluje osobní nevýhradní copyrightový grant k originálnímu softwaru pro užití, kopie, změny a redistribuci zdrojů/binárek s celým oznámením. Neposkytuje patentová práva ani hardware; užití či instalace znamenají souhlas.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Předmětem je original NVIDIA Software; žádný hardware není licencován a cizí práva nejsou tímto notice rozšířena.",
+    "grantCs": "Druhý odstavec osobně a nevýhradně pod NVIDIA copyrights dovoluje use/reproduce/modify/redistribute obou forem i upravených. Výslovně vylučuje jiné výslovné/implicitní licence, zejména patenty odvozenin či kombinací; sublicence není uvedena.",
+    "conditionsCs": "Při každé redistribuci zůstane copyright NVIDIA, toto oznámení, další text a disclaimery. Úvodní užití/instalace/změna/redistribuce znamená souhlas; nejsou vyžadovány zdroje, stejná licence ani reklamní uznání.",
+    "limitationsCs": "Jména, známky, servisní známky a loga NVIDIA nesmějí podporovat odvozeniny bez konkrétního písemného svolení. As is odmítá záruky/podmínky titulu, neporušení práv, vhodnosti a provozu samostatně i v kombinaci; NVIDIA odmítá uvedené škody.",
+    "compatibilityCs": "Výslovné no hardware a no patent rights nelze obejít předpokladem širokého grantu. Licence nenabízí jinou verzi či cestu a neurčuje kompatibilitu kombinací."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/AML-glslang.html",
+      "note": "Individuální revize celého připnutého textu; Předmětem je original NVIDIA Software; žádný hardware není licencován a cizí práva nejsou tímto notice rozšířena."
+    }
+  ]
+}

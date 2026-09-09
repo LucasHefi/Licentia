@@ -1,0 +1,20 @@
+{
+  "id": "FSFULLRSD",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.2",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:f59a52ed09d7231d710637619cc81858aaf96451df0b9ddd7b562618c2c57e44"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Neomezené kopírování a šíření s úpravami i bez nich při zachování tohoto oznámení. Text obsahuje vyloučení záruk, nikoli výslovné omezení odpovědnosti.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/FSFULLRSD.html",
+      "note": "Dřívější individuální revize 2026-09-09.2; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

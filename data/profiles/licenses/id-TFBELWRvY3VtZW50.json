@@ -8,92 +8,98 @@
     "contentHash": "sha256:af73930f37b6b09f99caf00d9c418335855854b578e1730de1fff5d382b63166"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "none",
     "permissions": [
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use",
+      "unknown"
     ],
     "obligations": [
-      "include-copyright"
+      "include-copyright",
+      "include-license-text",
+      "mark-modifications"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification"
     ],
     "restrictions": [
+      "additional-terms",
       "unknown"
     ],
-    "patentPosition": "unknown",
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LPD-document.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LPD-document.json#text; Dokumentační grant bez povinnosti stejné licence není copyleft; vzhledem k poplatkové formulaci nonstandard.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LPD-document.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LPD-document.json#text; Dokumentační grant bez povinnosti stejné licence není copyleft; vzhledem k poplatkové formulaci nonstandard.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/LPD-document.json#text; Permission dovoluje kopírování a distribuci pro jakýkoli účel and without charge, překlady a kompilace; není jednoznačné, zda bez poplatku omezuje další distribuci. Patentový grant chybí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/LPD-document.json#text; Copyright i toto oznámení musí být zachovány, podstatné změny nebo vypuštění z originálu jasně označeny. Není požadována stejná licence ani zdrojová forma.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LPD-document.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LPD-document.json#text; Copyright i toto oznámení musí být zachovány, podstatné změny nebo vypuštění z originálu jasně označeny. Není požadována stejná licence ani zdrojová forma.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LPD-document.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LPD-document.json#text; Formulace and without charge potřebuje vyjasnit poplatkový rozsah; text neobsahuje záruky, odpovědnost či ochranné známky.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LPD-document.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LPD-document.json#text; Permission dovoluje kopírování a distribuci pro jakýkoli účel and without charge, překlady a kompilace; není jednoznačné, zda bez poplatku omezuje další distribuci. Patentový grant chybí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/LPD-document.json#text; Copyright i toto oznámení musí být zachovány, podstatné změny nebo vypuštění z originálu jasně označeny. Není požadována stejná licence ani zdrojová forma.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/LPD-document.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/LPD-document.json#text; Individuálně přečten celý připnutý text. Výslovný předmět je dokument L. Petera Deutsche, včetně překladů a kompilací. Dokument lze kopírovat a šířit pro libovolný účel a bez poplatku, překládat i zařazovat do kompilací. Copyright a svolení musí zůstat a podstatné změny i vypuštění musí být označeny. Grant je určen dokumentu a používá and without charge, jehož dopad na placenou distribuci nelze z krátkého textu bezpečně zobecnit. Doplnit model dokumentačního předmětu a ověřit původní autorův výklad poplatkového omezení před software doporučením.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

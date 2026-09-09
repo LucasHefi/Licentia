@@ -1,0 +1,29 @@
+{
+  "id": "Gutmann",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:f3ea5790620e71fa02dfbcbcf1c1459db9808af7a26c2050670e0194ca8af3e4"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Velmi krátké povolení používat kód libovolným způsobem zakazuje vydávat se za jeho autora. Nevyžaduje připojit licenční text ani zveřejnit zdrojový kód.",
+  "blockersCs": [
+    "Jediná podmínka zakazuje tvrdit, že příjemce kód napsal. Slovník nemá zákaz nepravdivého autorství; je nutné jej modelovat samostatně, nikoli zaměnit za povinné přiložení copyrightu."
+  ],
+  "analysis": {
+    "subjectCs": "Předmětem je tento kód; text neomezuje obor použití.",
+    "grantCs": "Použití jakýmkoli způsobem zahrnuje úpravy a šíření i komerčně; výslovná patentová licence chybí.",
+    "conditionsCs": "Příjemce nesmí tvrdit, že kód napsal. Povinné zachování oznámení, předání zdroje ani reciproční licence uvedeny nejsou.",
+    "limitationsCs": "Text neobsahuje výluku záruk, odpovědnosti, soudní volbu ani ukončení; podmínka pravdivého autorství zůstává zásadní.",
+    "compatibilityCs": "Neobsahuje volbu jiné licence či verze; kompatibilita s konkrétní kombinací se z textu samostatně nevyvozuje."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Gutmann.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Celá jediná věta: široké oprávnění použít kód jakýmkoli způsobem s podmínkou pravdivého autorství."
+    }
+  ]
+}

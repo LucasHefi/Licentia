@@ -8,12 +8,12 @@
     "contentHash": "sha256:b894c7af5b3871cb7489b0882bd08ddbfefe3ba833e475fa43bdd1a730da7cd0"
   },
   "review": {
-    "status": "not-recommendable",
-    "recommendable": false,
+    "status": "reviewed",
+    "recommendable": true,
     "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "nonstandard",
+    "family": "public-domain-equivalent",
     "copyleftScope": "none",
     "permissions": [
       "commercial-use",
@@ -24,56 +24,74 @@
     "obligations": [],
     "triggers": [],
     "restrictions": [
-      "warranty"
+      "additional-terms"
     ],
     "patentPosition": "none-stated",
     "noticeBurden": "none"
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "license text, permission sentence and complete-text review ('freely use, modify, and/or distribute ... without limitation' is not conditioned on source disclosure, same-license terms, or any other reciprocal licensing requirement)"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "license text, permission sentence followed by the exhaustive file list ('each of the files in this package' and 'The package consists of the following files'); the otherwise unconditional grant is tied to one enumerated TeX diagram-macro package rather than expressed as a generally reusable software license"
+      "locator": "public/data/licenses/Borceux.json#text; Výslovné without limitation znamená grant bez copyleftových i oznamovacích povinností; public-domain-equivalent účinek není zánik copyrightu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "license text, complete-text review (although the text begins with 'Copyright 1993 Francis Borceux', it never requires recipients to reproduce that notice, the permission text, attribution, or any other notice with copies or distributions)"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "license text, permission sentence and complete-text review (use, modification, and distribution are allowed 'without limitation'; no copyright, license-text, notice, change-marking, source-disclosure, installation-information, or same-license duty is stated)"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "license text, complete-text review (no patent grant, patent covenant, patent condition, patent-claim restriction, or patent-litigation termination is stated)"
+      "locator": "public/data/licenses/Borceux.json#text; Výslovné without limitation znamená grant bez copyleftových i oznamovacích povinností; public-domain-equivalent účinek není zánik copyrightu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "license text, permission sentence ('You may freely use, modify, and/or distribute each of the files in this package without limitation'), supporting private and commercial use, modification, and distribution; no express sublicensing or patent grant is stated"
+      "locator": "public/data/licenses/Borceux.json#text; Úvodní grant freely use, modify, and/or distribute each ... without limitation dovoluje libovolné účely včetně komerce. Výslovná patentová licence či sublicence uvedena není.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "restrictions",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "license text, final paragraph ('no support is guaranteed'), supporting warranty; complete-text review finds no liability limitation, trademark or author-name restriction, additional-terms restriction, or patent-claim restriction"
-    },
-    {
-      "field": "review",
-      "sourceId": "spdx-license-list",
-      "locator": "license metadata: id=Borceux, name='Borceux license', deprecated=false, osi=false, fsf=false; license text, exhaustive package-file list and final paragraph (the grant is confined to named TeX diagram macros and user guides, lacks express copying and sublicensing language, and provides no liability or patent terms), so it is unsuitable for automatic recommendation as a generally reusable software license"
+      "locator": "public/data/licenses/Borceux.json#text; Bez omezení se vztahuje na každý vyjmenovaný soubor; v celém textu není povinnost uchování oznámení, zpřístupnění zdrojů nebo stejné licence a nejsou podmínkové spouštěče.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "license text, permission sentence and complete-text review (distribution and modification are permissions, not events activating any stated obligation or restriction; no condition is triggered by combination, linking, network use, or patent claims)"
+      "locator": "public/data/licenses/Borceux.json#text; Bez omezení se vztahuje na každý vyjmenovaný soubor; v celém textu není povinnost uchování oznámení, zpřístupnění zdrojů nebo stejné licence a nejsou podmínkové spouštěče.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Borceux.json#text; Závěrečný odstavec negarantuje podporu, ale slibuje pokus pomoci. Neobsahuje obecnou výluku záruk nebo škod; kontakt není povinný komunikační kanál.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Borceux.json#text; Úvodní grant freely use, modify, and/or distribute each ... without limitation dovoluje libovolné účely včetně komerce. Výslovná patentová licence či sublicence uvedena není.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Borceux.json#text; Bez omezení se vztahuje na každý vyjmenovaný soubor; v celém textu není povinnost uchování oznámení, zpřístupnění zdrojů nebo stejné licence a nejsou podmínkové spouštěče.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Borceux.json#text; Individuálně přečten celý připnutý text. Licence výslovně vyjmenovává README, pět compatibility souborů, pět diagram souborů a dva uživatelské průvodce balíku. Vyjmenované soubory balíku lze bez omezení používat, upravovat a šířit. Autor podporu negarantuje, pouze se pokusí pomoci. ",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

@@ -8,95 +8,105 @@
     "contentHash": "sha256:d759e34a805194da208fe49bdc43bd2f6beb992f334a15b463fc7184284122be"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "weak-copyleft",
+    "copyleftScope": "file",
     "permissions": [
+      "commercial-use",
+      "conditional-relicensing",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
+      "disclose-source",
+      "include-copyright",
       "include-license-text",
-      "provide-corresponding-source"
+      "include-notice",
+      "same-license"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification",
+      "use"
     ],
     "restrictions": [
+      "additional-terms",
       "liability",
       "trademark",
+      "unknown",
       "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "express-exclusion",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/YPL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/YPL-1.0.json#text; §§1.3–1.5: zdrojový copyleft s možností vlastních binárních podmínek a oddělení samostatných vlastních souborů; https://spdx.org/licenses/YPL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/YPL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/YPL-1.0.json#text; §1.1 výslovně vyjímá přidaný file bez části Software z Modification; §1.5 potvrzuje vlastní podmínky nezávislého souboru; https://spdx.org/licenses/YPL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/YPL-1.0.json#text; §1.1 copyright-only copy/modify/compile/execute/distribute; §1.4 podmíněné jiné binární licence, nikoli odstranění YPL ze zdrojů; https://spdx.org/licenses/YPL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/YPL-1.0.json#text; §§1.3–1.4 úplná YPL, stejné zdrojové podmínky, zdrojový přístup příjemcům binárek a původ odlišných podmínek; §3.2 původní notices i UI loga; https://spdx.org/licenses/YPL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/YPL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/YPL-1.0.json#text; §§1.3–1.4 distribuční režimy, interní firemní kopie §1.2 vyňaty; §3.2 každá kopie či vytvořená modifikace s původními UI notices při použití; https://spdx.org/licenses/YPL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/YPL-1.0.json#text; §3.3 známky jen nutně pro atribuci, §§4–5 výluky, §1.4 neomezit zdroje; §7 postoupení/fúze pouze se souhlasem a §6.2 Yahoo! determines breach nejsou plně modelovány; https://spdx.org/licenses/YPL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/YPL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/YPL-1.0.json#text; §3.1 explicitně vylučuje další granty nad rámec autorského §1.1, včetně implied/exhaustion/estoppel; žádný patentový grant ani patentová žalobní odveta; https://spdx.org/licenses/YPL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/YPL-1.0.json#text; §3.2 všechny notices ve stejné formě, včetně značek a log v uživatelském rozhraní; §1.4 navíc zřetelné připsání vlastních binárních podmínek; https://spdx.org/licenses/YPL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/YPL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/YPL-1.0.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. Yahoo! Public License 1.0 vyžaduje YPL u distribuovaných zdrojů a zdrojový přístup pro příjemce binárek; vlastní binární podmínky nesmějí omezit práva ke zdrojům. Zcela nové soubory bez kódu Software mají volné podmínky. Zachovávají se původní notices i loga v rozhraní. Pouze autorský grant neuděluje jiné IP licence. Yahoo! může dohodu ukončit, pokud určí, že byla porušena; převody a fúze bez jeho písemného souhlasu jsou zakázány. Blokace: §7 zakazuje postoupení práv, delegování povinností nebo převod dohody, včetně prodeje aktiv, fúze a konsolidace, bez předchozího písemného souhlasu Yahoo!; neautorizované úkony jsou void ab initio. Model neobsahuje tuto převodní restrikci, kterou je nutné výslovně podpořit před doporučením. §6.2 váže možnost ukončení na to, že Yahoo! určí porušení dohody (determines that You have breached), nikoli na formulaci skutečného porušení použitou v některých pozdějších příbuzných licencích. Dopad této poskytovatelovy determinační pravomoci musí být v budoucím modelu ukončení zachován.; https://spdx.org/licenses/YPL-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

@@ -8,95 +8,104 @@
     "contentHash": "sha256:eb150b97e2341d5b0d56587803206eedf7f0b825611cb1a090afbf3398982d71"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "none",
     "permissions": [
       "distribution",
       "modifications",
-      "sublicensing"
+      "private-use",
+      "unknown"
     ],
     "obligations": [
       "include-copyright",
       "include-license-text",
-      "mark-modifications"
-    ],
-    "triggers": [
+      "include-notice",
+      "mark-modifications",
       "unknown"
     ],
-    "restrictions": [
-      "liability"
+    "triggers": [
+      "distribution",
+      "modification",
+      "use"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "restrictions": [
+      "additional-terms",
+      "liability",
+      "trademark",
+      "unknown",
+      "warranty"
+    ],
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/PPL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/PPL.json#text; Peer Production License je úplný připnutý Copyfarleft text pro literární/umělecká díla, výkony, fonogramy, vysílání a autorské datové kompilace, odvozený od CC BY-NC-SA3.0. §3 dovoluje kopie, kolekce, změny, distribuci i veřejné provádění, ale§4(b–d) standardně nekomerčně. Komerční výkon mají pouze worker-owned business/collective, který všechny zisky a přínosy rozděluje mezi worker-owners; jakékoli užití soukromě vlastněným a řízeným podnikem ziskovým z placené práce je zakázáno. Proto nelze přidělit obecné commercial-use; podlicence se zakazují. §4 neobsahuje požadavek stejné licence adaptací;§8(b) se omezuje na originál. Samotná věta o odvození z BY-NC-SA není obsahový ani softwarový copyleft.; https://spdx.org/licenses/PPL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/PPL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/PPL.json#text; §4 neobsahuje požadavek stejné licence adaptací;§8(b) se omezuje na originál. Samotná věta o odvození z BY-NC-SA není obsahový ani softwarový copyleft.; https://spdx.org/licenses/PPL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/PPL.json#text; §3 dovoluje kopie, kolekce, změny, distribuci i veřejné provádění, ale§4(b–d) standardně nekomerčně. Komerční výkon mají pouze worker-owned business/collective, který všechny zisky a přínosy rozděluje mezi worker-owners; jakékoli užití soukromě vlastněným a řízeným podnikem ziskovým z placené práce je zakázáno. Proto nelze přidělit obecné commercial-use; podlicence se zakazují.; https://spdx.org/licenses/PPL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/PPL.json#text; §3(b) rozumně označuje změny/překlady;§4(a,e) při distribuci či veřejném výkonu uchovává copyright/licenci/disclaimer, přidává licenci či URI, autora a určené Attribution Parties, titul, relevantní URI a kredit derivace stejně výrazný jako společné autorství. Na žádost se prakticky odstraní kredit, avšak§4(a,e) odkazuje na4(d), kde je v připnutém textu zákaz podnikání, zatímco atribuce je4(e).; https://spdx.org/licenses/PPL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/PPL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/PPL.json#text; §3(b) rozumně označuje změny/překlady;§4(a,e) při distribuci či veřejném výkonu uchovává copyright/licenci/disclaimer, přidává licenci či URI, autora a určené Attribution Parties, titul, relevantní URI a kredit derivace stejně výrazný jako společné autorství. Na žádost se prakticky odstraní kredit, avšak§4(a,e) odkazuje na4(d), kde je v připnutém textu zákaz podnikání, zatímco atribuce je4(e).; https://spdx.org/licenses/PPL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/PPL.json#text; §4 zakazuje omezující další podmínky/technické prostředky a dojem podpory;§4(g) chrání čest autora s omezenou výjimkou umožňující adaptace tam, kde by byly automaticky hanlivé. §4(f) rezervuje neprominutelné a mimo NC další zákonné/volitelné odměny. §5–6 AS IS a omezení škod,§7 okamžité ukončení bez automatické nápravy a zachování dodržujících příjemců.; https://spdx.org/licenses/PPL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/PPL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/PPL.json#text; §3 a8(f) poskytují autorská práva a§4(f) řeší odměny; patentový grant či patentová odveta chybí.; https://spdx.org/licenses/PPL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/PPL.json#text; §3(b) rozumně označuje změny/překlady;§4(a,e) při distribuci či veřejném výkonu uchovává copyright/licenci/disclaimer, přidává licenci či URI, autora a určené Attribution Parties, titul, relevantní URI a kredit derivace stejně výrazný jako společné autorství. Na žádost se prakticky odstraní kredit, avšak§4(a,e) odkazuje na4(d), kde je v připnutém textu zákaz podnikání, zatímco atribuce je4(e). Rozsah notifikační zátěže: material.; https://spdx.org/licenses/PPL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/PPL.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/PPL.json#text; Individuální kontrola celého připnutého textu PPL dne 2026-09-09. Peer Production License je úplný připnutý Copyfarleft text pro literární/umělecká díla, výkony, fonogramy, vysílání a autorské datové kompilace, odvozený od CC BY-NC-SA3.0. §4(b–d) potřebují model účelu, zaměstnaneckého vlastnictví, rozdělení všech zisků a zákazu podniků ziskových z námezdní práce; obecné softwarové permissions/restrictions tato omezení nezachycují. §4(a,e) mají v připnutém textu chybné vnitřní odkazy na atribuční§4(d), který je ve skutečnosti podnikatelský zákaz; pro přesné použití je třeba vyjasnit oprávněné znění. Nezávisle je třeba obsahový model veřejných výkonů, osobnostních práv a odstranění kreditů. Navzdory genealogii BY-NC-SA v úvodu není v operativním textu ShareAlike článek pro celé adaptace. §8(b) příjemci adaptace uděluje původní Work,§4(a) vyjímá zbytek kolekce; nesmím doplnit vypuštěnou povinnost z předlohy CC. §8(f) přidává standardní autorská práva relevantní národní implementace mezinárodních úmluv.; https://spdx.org/licenses/PPL.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

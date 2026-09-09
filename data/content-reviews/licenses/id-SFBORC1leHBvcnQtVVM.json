@@ -1,0 +1,29 @@
+{
+  "id": "HPND-export-US",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:9a3f7efad6ff8dd48e0bf98681b8c8821fa1e242b1d24e0f1a7f5f27103cb514"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Licence dovoluje software a dokumentaci používat, kopírovat, měnit a distribuovat s copyrightem v kopiích a svolením v dokumentaci. Grant je však výslovně podmíněn získáním potřebné americké exportní licence před vývozem; jméno MIT vyžaduje pro reklamu písemný souhlas. Průvodce ji zatím nezařazuje, protože tuto exportní podmínku samostatně nezachycuje.",
+  "blockersCs": [
+    "Výraz WITHIN THAT CONSTRAINT podmiňuje grant získáním potřebné exportní licence před vývozem z USA; slovník nemá exportní spouštěč a povinnost, které je nutné doplnit před doporučením."
+  ],
+  "analysis": {
+    "subjectCs": "MIT grant pokrývá software a dokumentaci s copyrightem 1990.",
+    "grantCs": "Odstavec WITHIN THAT CONSTRAINT dovoluje užití, kopírování, změny a distribuci pro jakýkoli účel bez poplatku pod předchozím exportním omezením.",
+    "conditionsCs": "Copyright musí být ve všech kopiích a copyright se svolením v dokumentaci; exportér odpovídá za získání vyžadované americké licence před exportem.",
+    "limitationsCs": "Jméno M.I.T. se bez předchozího písemného souhlasu nesmí použít v reklamě či publicitě distribuce; AS IS odmítá vhodnost a záruky. Grant je výslovně podřízen exportnímu odstavci.",
+    "compatibilityCs": "Žádná jiná licence ani verze není nabízena."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/HPND-export-US.html",
+      "note": "Individuálně přečten celý připnutý text; Copyright musí být ve všech kopiích a copyright se svolením v dokumentaci; exportér odpovídá za získání vyžadované americké licence před exportem. Celý text neobsahuje patentový grant nebo patentové ukončení."
+    }
+  ]
+}

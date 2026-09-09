@@ -1,0 +1,20 @@
+{
+  "id": "Sun-PPP-2000",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.5",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:42bfc1acd81fd13671a6facc80343da1e5aa52aa3a82470e1d925c18feb00634"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Zachovejte copyright ve všech kopiích. Na rozdíl od Sun-PPP z roku 2001 tato varianta neomezuje použití jmen a výslovně omezuje odpovědnost Sun. Obsahuje vyloučení záruk, včetně neporušení práv. Nevyžaduje přiložení celého licenčního textu ani poskytování zdrojů.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Sun-PPP-2000.html",
+      "note": "Dřívější individuální revize 2026-09-09.5; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

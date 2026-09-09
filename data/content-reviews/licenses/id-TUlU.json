@@ -1,0 +1,27 @@
+{
+  "id": "MIT",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:40baf755d3d2c5fce4d2d495e70809f8c08f44d361b650cd9be82c655f08c431"
+  },
+  "disposition": "eligible",
+  "summaryCs": "MIT dovoluje užívání, úpravy, slučování, publikaci, distribuci, podlicence i prodej softwaru a dokumentace. Copyright a povolení musí zůstat ve všech kopiích nebo podstatných částech; záruky i odpovědnost jsou vyloučeny.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Software a připojené dokumentační soubory definované společně jako Software.",
+    "grantCs": "Výslovně use/copy/modify/merge/publish/distribute/sublicense/sell i umožnit totéž příjemcům; patentový grant samostatně vymezen není.",
+    "conditionsCs": "Copyright a permission notice se zachovávají ve všech kopiích nebo substantial portions. Dodání zdrojů a stejné licencování nejsou povinné.",
+    "limitationsCs": "AS IS bez výslovných/odvozených záruk včetně noninfringement; vyloučení claims/damages/liability v kontraktu, deliktu či jinak.",
+    "compatibilityCs": "Výslovné podlicencování nezbavuje původních notice podmínek. Žádná volba pozdější verze či automatický kompatibilitní závěr."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/MIT.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Grant deal in Software without restriction s jedinou informační podmínkou."
+    }
+  ]
+}

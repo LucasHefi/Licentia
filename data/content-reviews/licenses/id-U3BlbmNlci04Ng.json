@@ -1,0 +1,27 @@
+{
+  "id": "Spencer-86",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:90f4dfbef88db95fe1637dcf59548ab3207f20aeb183c152c0ab3a32116e9fef"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Software lze používat k libovolnému účelu na libovolném systému a volně šířit. Nesmí být zkreslen původ ani opomenutím; změněné verze se označí a nesmějí se vydávat za originál. Autor odmítá odpovědnost.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Software University of Toronto/Henryho Spencera 1986; deklarován jako neodvozený od licencovaného softwaru.",
+    "grantCs": "Libovolné užití a volná redistribuce; změněné verze jsou výslovně předpokládány. Patentový grant chybí.",
+    "conditionsCs": "Bod 2 zachovává pravdivý původ i proti opomenutí; bod 3 vyžaduje zřetelně označit změněné verze a nezaměňovat je za originál.",
+    "limitationsCs": "Bod 1 odmítá odpovědnost za důsledky použití včetně vad; samostatná záruková výluka chybí.",
+    "compatibilityCs": "Žádná alternativní licence/verze ani požadavek stejné licence; pravdivé označení původu a změn přetrvává."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Spencer-86.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Grant any purpose on any computer system a freely redistribute s informačními podmínkami 2–3."
+    }
+  ]
+}

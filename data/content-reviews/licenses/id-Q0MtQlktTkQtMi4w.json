@@ -1,0 +1,29 @@
+{
+  "id": "CC-BY-ND-2.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:978ac667f211e38e4a8d19b7ecf7224d002ddfe10505c8885db411dda83a4330"
+  },
+  "disposition": "blocked",
+  "summaryCs": "CC BY-ND 2.0 dovoluje i komerční kopie a veřejné šíření nezměněného díla, včetně vložení do sborníku. Adaptace nepovoluje kromě technicky nutných formátových změn; synchronizace hudby s pohyblivým obrazem je odvozeninou. Vyžaduje licenci nebo odkaz, oznámení a atribuci a na žádost praktické odstranění zmínek o autorovi či poskytovateli ze sborníku. Zákaz adaptací a další obsahové podmínky brání zařazení do průvodce novým softwarem.",
+  "blockersCs": [
+    "Obsahová licence nepovoluje odvozeniny včetně audiovizuální synchronizace kromě technických konverzí a má odstranění credit na žádost; před doporučením softwaru je potřeba obsahový model těchto hranic."
+  ],
+  "analysis": {
+    "subjectCs": "CC Attribution-NoDerivs 2.0 pokrývá nezměněné dílo a sborníky; synchronizace hudby/záznamu s pohyblivým obrazem je výslovně odvozeninou.",
+    "grantCs": "§3 dovoluje reprodukci, distribuci a veřejné zobrazení/provedení včetně digitálního audia i komerčně. Pouze technicky nezbytné formátové úpravy jsou dovoleny, ostatní odvozeniny výslovně ne. Vzdává se vyjmenovaných výkonových/mechanických/webcast royalties.",
+    "conditionsCs": "§4a přenáší text či URI, nedotčené licence/disclaimer notices, zakazuje sublicence/další podmínky/rozporné technické ochrany a na žádost proveditelně odstraní zmínky o autorovi/poskytovateli ze sborníku. §4b zachová copyright, dodané jméno/pseudonym, titul a rozumně proveditelné určené copyright/licenční URI, stejně nápadně jako ostatní credit.",
+    "limitationsCs": "§5 poskytuje AS IS bez záruk titulu, neporušování, přesnosti a vad s výhradou místního práva, na rozdíl od v1.0 nedává provenance záruku. §6 vylučuje zvláštní/následné škody v mezích zákona; §7 porušení automaticky ruší grant, řádný downstream zůstává.",
+    "compatibilityCs": "Sbírka mimo vložené dílo licenci přijímat nemusí. §8 je přímá nabídka downstream, nikoli sublicence; zánik nabídky neodvolává existující grant. CC známky jen pro licenční indikaci nebo svolení."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/CC-BY-ND-2.0.html",
+      "note": "Individuálně přečten celý připnutý text; §4a přenáší text či URI, nedotčené licence/disclaimer notices, zakazuje sublicence/další podmínky/rozporné technické ochrany a na žádost proveditelně odstraní zmínky o autorovi/poskytovateli ze sborníku. §4b zachová copyright, dodané jméno/pseudonym, titul a rozumně proveditelné určené copyright/licenční URI, stejně nápadně jako ostatní credit. Celé znění nemá výslovný patentový grant ani patentové ukončení; hudební royalties nejsou patentová práva."
+    }
+  ]
+}

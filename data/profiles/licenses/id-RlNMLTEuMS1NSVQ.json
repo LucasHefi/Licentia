@@ -8,98 +8,105 @@
     "contentHash": "sha256:b9e511728c671b077cd870c288f9c1fef88a2f494dab1027dba5d9fdd627c582"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "permissive",
-    "copyleftScope": "none",
+    "family": "nonstandard",
+    "copyleftScope": "whole-work",
     "permissions": [
       "commercial-use",
+      "conditional-relicensing",
       "distribution",
       "modifications",
       "patent-grant",
-      "sublicensing"
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "include-license-text"
+      "include-license-text",
+      "same-license"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification",
+      "patent-claim",
+      "use"
     ],
     "restrictions": [
       "liability",
+      "patent-claim",
       "trademark",
+      "unknown",
       "warranty"
     ],
-    "patentPosition": "express-grant",
+    "patentPosition": "retaliatory-termination",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.no-copyleft",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.permissive-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/FSL-1.1-MIT.json#text; FSL 1.1 MIT pokrývá každou poskytnutou verzi a obsahuje úplné znění další MIT licence účinné o dva roky později. Současný grant dovoluje užití, kopie, změny, odvozeniny, veřejné zobrazení/provedení a redistribuci pouze pro Permitted Purpose; patenty jsou uděleny v rozsahu nutném pro toto užití. FSL nyní pokrývá všechny kopie a odvozeniny bez zdrojové povinnosti; po výročí existuje samostatná permissive MIT cesta.; https://spdx.org/licenses/FSL-1.1-MIT.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/FSL-1.1-MIT.json#text; FSL nyní pokrývá všechny kopie a odvozeniny bez zdrojové povinnosti; po výročí existuje samostatná permissive MIT cesta.; https://spdx.org/licenses/FSL-1.1-MIT.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/FSL-1.1-MIT.json#text; Současný grant dovoluje užití, kopie, změny, odvozeniny, veřejné zobrazení/provedení a redistribuci pouze pro Permitted Purpose; patenty jsou uděleny v rozsahu nutném pro toto užití.; https://spdx.org/licenses/FSL-1.1-MIT.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "restrictions",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/FSL-1.1-MIT.json#text; Competing Use je komerční služba/produkt nahrazující software, existující nabídku poskytovatele nebo nabízející obdobné funkce. Dovolené jsou interní užití, nekomerční výuka/výzkum a služby řádně licencovanému uživateli. Všechny kopie/změny nesou FSL podmínky; redistribuce připojí text/odkaz a ponechá copyright.; https://spdx.org/licenses/FSL-1.1-MIT.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/FSL-1.1-MIT.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/FSL-1.1-MIT.json#text; Competing Use je komerční služba/produkt nahrazující software, existující nabídku poskytovatele nebo nabízející obdobné funkce. Dovolené jsou interní užití, nekomerční výuka/výzkum a služby řádně licencovanému uživateli. Všechny kopie/změny nesou FSL podmínky; redistribuce připojí text/odkaz a ponechá copyright.; https://spdx.org/licenses/FSL-1.1-MIT.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/FSL-1.1-MIT.json#text; Vlastní patentový nárok proti komukoli na software ruší patentovou licenci; známky jen identifikují původ/licenční údaje. Současný FSL i budoucí MIT obsahují AS IS výluky záruk/odpovědnosti.; https://spdx.org/licenses/FSL-1.1-MIT.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/FSL-1.1-MIT.json#text; FSL patentový grant je nutný rozsah Permitted Purpose a okamžitě zaniká patentovým nárokem; vložené MIT znění vlastní výslovný patentový grant nemá.; https://spdx.org/licenses/FSL-1.1-MIT.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/FSL-1.1-MIT.json#text; Competing Use je komerční služba/produkt nahrazující software, existující nabídku poskytovatele nebo nabízející obdobné funkce. Dovolené jsou interní užití, nekomerční výuka/výzkum a služby řádně licencovanému uživateli. Všechny kopie/změny nesou FSL podmínky; redistribuce připojí text/odkaz a ponechá copyright. Rozsah notifikační zátěže: standard.; https://spdx.org/licenses/FSL-1.1-MIT.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/FSL-1.1-MIT.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/FSL-1.1-MIT.json#text; Individuální kontrola celého připnutého textu FSL-1.1-MIT dne 2026-09-09. FSL 1.1 MIT pokrývá každou poskytnutou verzi a obsahuje úplné znění další MIT licence účinné o dva roky později. Licence má zákaz konkurenčního komerčního užití a MIT alternativu až po dvou letech od konkrétní verze; před doporučením je potřeba model data vydání, účelu a časového přechodu. Od druhého výročí zpřístupnění konkrétní verze platí neodvolatelná možnost MIT: její úplný grant navíc výslovně uvádí sublicence/prodej a ponechání copyrightu/svolení v kopiích či podstatných částech. Před výročím se tato alternativa nesmí aplikovat.; https://spdx.org/licenses/FSL-1.1-MIT.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

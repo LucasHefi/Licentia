@@ -1,0 +1,62 @@
+# LGPL-2.1+ — obsahová revize
+
+GNU Lesser General Public License v2.1 or later
+
+Revize: **2026-09-10** · pravidlo **2026-09-09.10**.
+
+Výsledek: **zpracována, nezařazena do průvodce**.
+
+Starý identifikátor LGPL-2.1+ je deprecated a vyjadřuje verzi 2.1 nebo pozdější. Úplně přečtený text dovoluje propojené aplikaci vlastní podmínky při zachování úprav a výměny knihovny; samostatná knihovna i odvozené knihovní části mají zdrojový copyleft a povinnost funkčního fallbacku.
+
+## Předmět a rozsah
+
+§0 knihovna nebo jiný označený program, funkce/data připravené pro aplikace; odvozené dílo zahrnuje části a překlady. Source je preferovaná forma včetně všech modulů, interfaces a build/install skriptů. Pouhé spouštění a neodvozený výstup neomezuje. §5 samotná neodvozená používající aplikace není Library derivative, vlastní linked executable i některý header object jsou posuzovány podle§6. PlusID se liší od pevné2.1 volbou následných verzí, přičemž deprecated stav zůstává.
+
+## Udělená práva
+
+§§1–2 práva kopií, úprav a distribuce včetně komerčního šíření za přenosový poplatek a dobrovolné placené záruky; §6 own app terms při zachování zákaznických úprav a jejich ladění. §13 or-later podle skutečného oznámení dovoluje2.1 i pozdější FSF LesserGPL, což plusID výslovně zachycuje. §3 samostatně nevratná volba GPL2 nebo již vydané novější GPL přepsáním všech LGPL notices konkrétní kopie. §10 přímá licence každému příjemci, nikoli obecné sublicenční právo. Výslovný patentový grant ani patentová odveta v celém textu nejsou; §11 řeší kolizi podmínek.
+
+## Podmínky a spouštěče
+
+§1 source každá kopie s copyright, absencí záruk, licence notices a textem. §2 změněné dílo knihovnou, prominentně změněné soubory a datum, celý odvozený celek pod LGPL bez licenčního poplatku; při nepředané aplikační funkci/tabulce mimo argument musí v dobré víře zajistit zbylou smysluplnou funkčnost. §4 object knihovna s úplným odpovídajícím zdrojem, u downloadu rovnocenný zdroj ze stejného místa. §6 vlastní aplikační licence dovolí zákazníkovy změny a reverse engineering k jejich ladění; prominentní informace o užité knihovně/LGPL a text, v runtime copyright výpisu také knihovna a odkaz. Alternativy6a–e: knihovní zdroje+app objekty/zdroje k relinku; NEBO sdílený mechanismus runtime systémové kopie fungující s uživatelovou interface-compatible změnou; NEBO3letá písemná nabídka materiálů stejnému uživateli za distribuční náklady; NEBO stejné download místo materiálů; NEBO ověřit, že je už dostal/byly mu zaslány. Rekonstrukční data/utility zahrnuty, běžné OS komponenty vyjmuty leda doprovázejí executable. §7 combined library s nezávislou kopií LGPL facilities a výrazným návodem kde je najít.
+
+## Omezení, výjimky a ukončení
+
+§5 safe harbor jen numerické parametry, layout/accessors a malé macros/inline do10řádků, skutečně odvozené jiné objects podle§6 i při nepřímém linku. §8 automatický konec nepovolenou kopií/změnou/sublicencí/linkem/distribucí bez cure, řádní příjemci pokračují. §9 přijetí změnou/distribucí; §10 bez dalších omezení a bez povinného vymáhání od třetích. §11 pokud nesplnitelné současné licenční a jiné povinnosti, nešířit, včetně patentové nebezroyalty kolize. §12 pouze možnost původního držitele přidat výslovné geografické omezení při patentech/interfaces, žádné konkrétní nevymýšlím. §§15–16 výluka záruk as-is a škod s výjimkou povinného práva/písemné dohody.
+
+## Verze a kombinování
+
+§2 nezávislé odděleně šířené sekce a pouhá agregace mimo, odvozený knihovní celek LGPL. §6 sdílený mechanismus je alternativa k dodávce app relink materiálů, nikoli současně povinná další cesta; cizí neslučitelná neOS proprietary knihovna brání šíření kombinovaného executable. §7 side-by-side facilities jen při dovolené samostatné distribuci. §3 jednosměrná GPL změna, §13 skutečné plus/or-later a §14 zvláštní autorova/FSF výjimka; nevydávám text za automatickou kompatibilitu libovolných licencí. Aplikační návod po END není další obecná povinnost redistributorů.
+
+## Překážky a navazující práce
+
+- Identifikátor LGPL-2.1+ je deprecated. Pro nové doporučení podle skutečného oznámení použít explicitní LGPL-2.1-or-later; zachovat popsané knihovní podmínky a samostatné alternativy pro propojenou aplikaci.
+
+## Metadata a jejich doložení
+
+| Pole | Hodnota | Doložení znění |
+|---|---|---|
+| family | "weak-copyleft" | public/data/licenses/LGPL-2.1+.json#text; §§2,5–7 reciproční odvozená Library s výjimkou pro samostatnou používající aplikaci a oddělené facilities; rozsah library slabého copyleftu. Licence aplikace může zůstat vlastní při výměně/relinku a dalších§6 podmínkách, nejde o file či whole-app same-license. §2a a §2d jsou konkrétní podmínky tohoto knihovního copyleftu: upravené dílo zůstává knihovnou a vyžaduje snahu v dobré víře zachovat smysluplnou funkčnost bez nepředané aplikační funkce či tabulky, vyjma argumentu při volání. Nepředstavují obecný bezpečnostní test užití. |
+| copyleftScope | "library" | public/data/licenses/LGPL-2.1+.json#text; §§2,5–7 reciproční odvozená Library s výjimkou pro samostatnou používající aplikaci a oddělené facilities; rozsah library slabého copyleftu. Licence aplikace může zůstat vlastní při výměně/relinku a dalších§6 podmínkách, nejde o file či whole-app same-license. §2a a §2d jsou konkrétní podmínky tohoto knihovního copyleftu: upravené dílo zůstává knihovnou a vyžaduje snahu v dobré víře zachovat smysluplnou funkčnost bez nepředané aplikační funkce či tabulky, vyjma argumentu při volání. Nepředstavují obecný bezpečnostní test užití. |
+| permissions | ["commercial-use","conditional-relicensing","distribution","modifications","private-use"] | public/data/licenses/LGPL-2.1+.json#text; §§1–2 práva kopií, úprav a distribuce včetně komerčního šíření za přenosový poplatek a dobrovolné placené záruky; §6 own app terms při zachování zákaznických úprav a jejich ladění. §13 or-later podle skutečného oznámení dovoluje2.1 i pozdější FSF LesserGPL, což plusID výslovně zachycuje. §3 samostatně nevratná volba GPL2 nebo již vydané novější GPL přepsáním všech LGPL notices konkrétní kopie. §10 přímá licence každému příjemci, nikoli obecné sublicenční právo. Výslovný patentový grant ani patentová odveta v celém textu nejsou; §11 řeší kolizi podmínek. |
+| obligations | ["allow-relinking","allow-reverse-engineering","disclose-source","include-copyright","include-license-text","include-notice","mark-modifications","preserve-combined-license-terms","provide-corresponding-source","same-license"] | public/data/licenses/LGPL-2.1+.json#text; §1 source každá kopie s copyright, absencí záruk, licence notices a textem. §2 změněné dílo knihovnou, prominentně změněné soubory a datum, celý odvozený celek pod LGPL bez licenčního poplatku; při nepředané aplikační funkci/tabulce mimo argument musí v dobré víře zajistit zbylou smysluplnou funkčnost. §4 object knihovna s úplným odpovídajícím zdrojem, u downloadu rovnocenný zdroj ze stejného místa. §6 vlastní aplikační licence dovolí zákazníkovy změny a reverse engineering k jejich ladění; prominentní informace o užité knihovně/LGPL a text, v runtime copyright výpisu také knihovna a odkaz. Alternativy6a–e: knihovní zdroje+app objekty/zdroje k relinku; NEBO sdílený mechanismus runtime systémové kopie fungující s uživatelovou interface-compatible změnou; NEBO3letá písemná nabídka materiálů stejnému uživateli za distribuční náklady; NEBO stejné download místo materiálů; NEBO ověřit, že je už dostal/byly mu zaslány. Rekonstrukční data/utility zahrnuty, běžné OS komponenty vyjmuty leda doprovázejí executable. §7 combined library s nezávislou kopií LGPL facilities a výrazným návodem kde je najít. |
+| triggers | ["combination","distribution","linking","modification"] | public/data/licenses/LGPL-2.1+.json#text; §1 source každá kopie s copyright, absencí záruk, licence notices a textem. §2 změněné dílo knihovnou, prominentně změněné soubory a datum, celý odvozený celek pod LGPL bez licenčního poplatku; při nepředané aplikační funkci/tabulce mimo argument musí v dobré víře zajistit zbylou smysluplnou funkčnost. §4 object knihovna s úplným odpovídajícím zdrojem, u downloadu rovnocenný zdroj ze stejného místa. §6 vlastní aplikační licence dovolí zákazníkovy změny a reverse engineering k jejich ladění; prominentní informace o užité knihovně/LGPL a text, v runtime copyright výpisu také knihovna a odkaz. Alternativy6a–e: knihovní zdroje+app objekty/zdroje k relinku; NEBO sdílený mechanismus runtime systémové kopie fungující s uživatelovou interface-compatible změnou; NEBO3letá písemná nabídka materiálů stejnému uživateli za distribuční náklady; NEBO stejné download místo materiálů; NEBO ověřit, že je už dostal/byly mu zaslány. Rekonstrukční data/utility zahrnuty, běžné OS komponenty vyjmuty leda doprovázejí executable. §7 combined library s nezávislou kopií LGPL facilities a výrazným návodem kde je najít. |
+| restrictions | ["additional-terms","liability","warranty"] | public/data/licenses/LGPL-2.1+.json#text; §5 safe harbor jen numerické parametry, layout/accessors a malé macros/inline do10řádků, skutečně odvozené jiné objects podle§6 i při nepřímém linku. §8 automatický konec nepovolenou kopií/změnou/sublicencí/linkem/distribucí bez cure, řádní příjemci pokračují. §9 přijetí změnou/distribucí; §10 bez dalších omezení a bez povinného vymáhání od třetích. §11 pokud nesplnitelné současné licenční a jiné povinnosti, nešířit, včetně patentové nebezroyalty kolize. §12 pouze možnost původního držitele přidat výslovné geografické omezení při patentech/interfaces, žádné konkrétní nevymýšlím. §§15–16 výluka záruk as-is a škod s výjimkou povinného práva/písemné dohody. |
+| patentPosition | "none-stated" | public/data/licenses/LGPL-2.1+.json#text; §§1–2 práva kopií, úprav a distribuce včetně komerčního šíření za přenosový poplatek a dobrovolné placené záruky; §6 own app terms při zachování zákaznických úprav a jejich ladění. §13 or-later podle skutečného oznámení dovoluje2.1 i pozdější FSF LesserGPL, což plusID výslovně zachycuje. §3 samostatně nevratná volba GPL2 nebo již vydané novější GPL přepsáním všech LGPL notices konkrétní kopie. §10 přímá licence každému příjemci, nikoli obecné sublicenční právo. Výslovný patentový grant ani patentová odveta v celém textu nejsou; §11 řeší kolizi podmínek. |
+| noticeBurden | "material" | public/data/licenses/LGPL-2.1+.json#text; §1 source každá kopie s copyright, absencí záruk, licence notices a textem. §2 změněné dílo knihovnou, prominentně změněné soubory a datum, celý odvozený celek pod LGPL bez licenčního poplatku; při nepředané aplikační funkci/tabulce mimo argument musí v dobré víře zajistit zbylou smysluplnou funkčnost. §4 object knihovna s úplným odpovídajícím zdrojem, u downloadu rovnocenný zdroj ze stejného místa. §6 vlastní aplikační licence dovolí zákazníkovy změny a reverse engineering k jejich ladění; prominentní informace o užité knihovně/LGPL a text, v runtime copyright výpisu také knihovna a odkaz. Alternativy6a–e: knihovní zdroje+app objekty/zdroje k relinku; NEBO sdílený mechanismus runtime systémové kopie fungující s uživatelovou interface-compatible změnou; NEBO3letá písemná nabídka materiálů stejnému uživateli za distribuční náklady; NEBO stejné download místo materiálů; NEBO ověřit, že je už dostal/byly mu zaslány. Rekonstrukční data/utility zahrnuty, běžné OS komponenty vyjmuty leda doprovázejí executable. §7 combined library s nezávislou kopií LGPL facilities a výrazným návodem kde je najít. |
+
+## Zdroje
+
+- [Primární zdroj](https://spdx.org/licenses/LGPL-2.1+.html) — Individuální revize celého připnutého textu; §0 knihovna nebo jiný označený program, funkce/data připravené pro aplikace; odvozené dílo zahrnuje části a překlady. Source je preferovaná forma včetně všech modulů, interfaces a build/install skriptů. Pouhé spouštění a neodvozený výstup neomezuje. §5 samotná neodvozená používající aplikace není Library derivative, vlastní linked executable i některý header object jsou posuzovány podle§6. PlusID se liší od pevné2.1 volbou následných verzí, přičemž deprecated stav zůstává.
+- [Kurátorovaný profil](../../../data/profiles/licenses/id-TEdQTC0yLjEr.json)
+- [Uložené úplné znění](../../../public/data/licenses/LGPL-2.1+.json)
+
+## Otisk zdroje
+
+```json
+{
+  "sourceId": "spdx-license-list",
+  "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+  "contentHash": "sha256:bbecbe0b46bd94fc08674822fd513c39cc86578a7bbc1cd0a9f56506e2ed670d"
+}
+```

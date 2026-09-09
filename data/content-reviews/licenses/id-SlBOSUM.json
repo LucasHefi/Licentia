@@ -1,0 +1,27 @@
+{
+  "id": "JPNIC",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:d73bbecc8b1d0b4ded38bb1123d3079ad8b12cde704e5c4d9ac9ad9c9b95703d"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Zdrojové i binární verze lze používat, upravovat a šířit. Zdroje zachovají copyrighty v jednotlivých souborech, binárky předepsaný copyright JPNIC a podmínky v materiálech. Užití znamená souhlas; jméno JPNIC nesmí bez písemného svolení podporovat odvozeniny.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Grant je k souboru/software JPNIC; jiná individuálně získaná licence může nahradit tyto podmínky.",
+    "grantCs": "Bod 1 výslovně dovoluje use/modification/redistribution včetně odvozenin ve zdrojové i binární podobě bez účelového omezení. Patentový grant ani sublicence nejsou uvedeny.",
+    "conditionsCs": "Bod 2 zachovává copyrighty tak, jak jsou v každém zdrojovém souboru, a podmínky; bod 3 požaduje přesný copyright JPNIC 2000–2002 a podmínky v dokumentaci/jiných materiálech binárek. Úvodní using file znamená souhlas, nikoli zveřejnění zdrojů.",
+    "limitationsCs": "Bod 4 zakazuje endorsement/promotion jménem JPNIC bez specifického písemného souhlasu. Bod 5 odmítá záruky a širokou škálu škod včetně všech uvedených titulů odpovědnosti.",
+    "compatibilityCs": "Úvod připouští jinou licenci získanou přímo od JPNIC, ale neuděluje automatické právo zvolit libovolnou alternativu; konkrétní kompatibilita není stanovena."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/JPNIC.html",
+      "note": "Individuální revize celého připnutého textu; Grant je k souboru/software JPNIC; jiná individuálně získaná licence může nahradit tyto podmínky."
+    }
+  ]
+}

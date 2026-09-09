@@ -1,0 +1,29 @@
+{
+  "id": "Linux-man-pages-copyleft-2-para",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:d2cf6d53f4aa65db11aa7e939416bd198a285f6661dcb7f5b0bb51e7a80d5a3e"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Licence dovoluje kopírovat a distribuovat manuál i jeho upravené verze se zachovaným copyrightem a svolením. Celé odvozené dílo musí při distribuci dostat totožné oprávnění, zvláštní technickou zdrojovou podobu text nepředepisuje. Průvodce ji nezařazuje pro nový software, protože grant i povinnost stejné licence výslovně míří na manuál.",
+  "blockersCs": [
+    "Předmětem je manuál a copyleft celého odvozeného manuálu; pro nový softwarový projekt je třeba dokumentační model nebo samostatný softwarový grant."
+  ],
+  "analysis": {
+    "subjectCs": "Dva odstavce licencují tento manuál a jeho odvozené verze.",
+    "grantCs": "Odstavec 1 dovoluje vytvářet a distribuovat doslovné kopie; odstavec 2 dovoluje kopírovat a šířit upravené verze.",
+    "conditionsCs": "Ve všech kopiích se zachová copyright a svolení; celé výsledné odvozené dílo se při distribuci opatří svolením totožným s tímto.",
+    "limitationsCs": "Text neobsahuje výluku záruk, odpovědnosti ani patentové sankce a nepředepisuje technický formát zdrojů.",
+    "compatibilityCs": "Identické svolení je podmínkou modifikované distribuce; jiné licence či verze text nenabízí."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Linux-man-pages-copyleft-2-para.html",
+      "note": "Individuálně přečten celý připnutý text; Ve všech kopiích se zachová copyright a svolení; celé výsledné odvozené dílo se při distribuci opatří svolením totožným s tímto. Oba odstavce neobsahují patentové oprávnění nebo patentové ukončení."
+    }
+  ]
+}

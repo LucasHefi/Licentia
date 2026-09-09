@@ -1,0 +1,63 @@
+# CC-BY-NC-SA-2.0 — obsahová revize
+
+Creative Commons Attribution Non Commercial Share Alike 2.0 Generic
+
+Revize: **2026-09-09** · pravidlo **2026-09-09.10**.
+
+Výsledek: **zpracována, nezařazena do průvodce**.
+
+CC BY-NC-SA 2.0 dovoluje kopie, adaptace a veřejné užití obsahu pouze pro nekomerční účely. Šířené odvozeniny musí mít licenci se stejnými prvky BY-NC-SA, v této nebo povolené pozdější či místní verzi; samostatný zbytek kolekce podmínky nepřebírá. Zachovávají se oznámení a atribuce, která se na žádost prakticky odstraní, a zakazují se rozporné technické kontroly. Nekomerční omezení a obsahový režim brání zařazení do průvodce novým softwarem.
+
+## Předmět a rozsah
+
+CC BY-NC-SA2.0 je autorská licence Work, kolekcí a derivátů; synchronizace hudby s obrazem je derivát a nezměněná samostatná díla v kolekci derivátem nejsou.
+
+## Udělená práva
+
+§3 dovoluje kopie, tvorbu derivátů, distribuci i veřejné a digitální provádění v libovolných médiích, ale §4(c) všechna tato práva omezuje na nekomerční účel. Výměna autorských děl bez peněžní platby se nepovažuje za komerční; podlicence není dovolena.
+
+## Podmínky a spouštěče
+
+§4(a,d) při distribuci a veřejném výkonu zachovává copyright/disclaimer/licenční notices, poskytuje text či URI licence a autora, titul, relevantní URI a kredit původu derivátu alespoň stejně výrazný jako srovnatelná autorství. Na žádost poskytovatele se prakticky možným způsobem odstraňují odkazy na autora či poskytovatele. Deriváty §4(b) vyžadují BY-NC-SA2.0, pozdější stejnou licenci nebo iCommons port se stejnými prvky a zachování licenčních notices.
+
+## Omezení, výjimky a ukončení
+
+§4 zakazuje další omezující podmínky a technologické kontroly odporující licenci. §4(e,f) výslovně rezervuje odměny za komerční hudební výkony, cover nahrávky a webcasty. §5 AS IS bez ujištění o právním titulu a§6 omezuje škody; porušení okamžitě ukončí práva, dodržující downstream příjemci zůstávají chráněni. Závěr omezuje známky CC kromě označení licence.
+
+## Verze a kombinování
+
+Přechod podle§4(b) se týká pouze derivátů se stejnými prvky BY/NC/SA, nikoli libovolné licence. §8 nabízí příjemcům původní Work přímo; kolekce mimo původní či odvozené dílo nemusí mít stejnou licenci.
+
+## Překážky a navazující práce
+
+- §4(c) zakazuje primárně komerční výkon všech práv; je potřeba model nekomerčního účelu, nikoli jen vynechat commercial-use.
+- §1,4 vyžadují obsahový model ShareAlike, kolekcí, odstranění autorských odkazů, technologických kontrol a hudebních odměn; současné softwarové povinnosti tyto vztahy plně nevystihují.
+
+## Metadata a jejich doložení
+
+| Pole | Hodnota | Doložení znění |
+|---|---|---|
+| family | "nonstandard" | public/data/licenses/CC-BY-NC-SA-2.0.json#text; CC BY-NC-SA2.0 je autorská licence Work, kolekcí a derivátů; synchronizace hudby s obrazem je derivát a nezměněná samostatná díla v kolekci derivátem nejsou. §3 dovoluje kopie, tvorbu derivátů, distribuci i veřejné a digitální provádění v libovolných médiích, ale §4(c) všechna tato práva omezuje na nekomerční účel. Výměna autorských děl bez peněžní platby se nepovažuje za komerční; podlicence není dovolena. §4(b) ukládá ShareAlike celému Derivative Work a výslovně vyjímá zbytek Collective Work; neukládá dodání softwarového zdrojového kódu.; https://spdx.org/licenses/CC-BY-NC-SA-2.0.html |
+| copyleftScope | "whole-work" | public/data/licenses/CC-BY-NC-SA-2.0.json#text; §4(b) ukládá ShareAlike celému Derivative Work a výslovně vyjímá zbytek Collective Work; neukládá dodání softwarového zdrojového kódu.; https://spdx.org/licenses/CC-BY-NC-SA-2.0.html |
+| permissions | ["conditional-relicensing","distribution","modifications","private-use"] | public/data/licenses/CC-BY-NC-SA-2.0.json#text; §3 dovoluje kopie, tvorbu derivátů, distribuci i veřejné a digitální provádění v libovolných médiích, ale §4(c) všechna tato práva omezuje na nekomerční účel. Výměna autorských děl bez peněžní platby se nepovažuje za komerční; podlicence není dovolena.; https://spdx.org/licenses/CC-BY-NC-SA-2.0.html |
+| obligations | ["include-copyright","include-notice","mark-modifications","same-license","unknown"] | public/data/licenses/CC-BY-NC-SA-2.0.json#text; §4(a,d) při distribuci a veřejném výkonu zachovává copyright/disclaimer/licenční notices, poskytuje text či URI licence a autora, titul, relevantní URI a kredit původu derivátu alespoň stejně výrazný jako srovnatelná autorství. Na žádost poskytovatele se prakticky možným způsobem odstraňují odkazy na autora či poskytovatele. Deriváty §4(b) vyžadují BY-NC-SA2.0, pozdější stejnou licenci nebo iCommons port se stejnými prvky a zachování licenčních notices.; https://spdx.org/licenses/CC-BY-NC-SA-2.0.html Terminologické upřesnění 2026-09-10: § 4(a) pro originál a § 4(b) pro veřejně šířenou či prováděnou odvozeninu dovolují s každou kopií či zvukovým záznamem kopii příslušné licence NEBO její URI. U odvozeniny jde o tuto licenci, její dovolenou pozdější verzi nebo iCommons variantu se stejnými prvky podle § 4(b). include-notice zachycuje požadované licenční oznámení s touto alternativou; include-license-text se neuvádí jako bezpodmínečná povinnost. |
+| triggers | ["distribution","modification","use"] | public/data/licenses/CC-BY-NC-SA-2.0.json#text; §4(a,d) při distribuci a veřejném výkonu zachovává copyright/disclaimer/licenční notices, poskytuje text či URI licence a autora, titul, relevantní URI a kredit původu derivátu alespoň stejně výrazný jako srovnatelná autorství. Na žádost poskytovatele se prakticky možným způsobem odstraňují odkazy na autora či poskytovatele. Deriváty §4(b) vyžadují BY-NC-SA2.0, pozdější stejnou licenci nebo iCommons port se stejnými prvky a zachování licenčních notices.; https://spdx.org/licenses/CC-BY-NC-SA-2.0.html |
+| restrictions | ["additional-terms","liability","trademark","unknown","warranty"] | public/data/licenses/CC-BY-NC-SA-2.0.json#text; §4 zakazuje další omezující podmínky a technologické kontroly odporující licenci. §4(e,f) výslovně rezervuje odměny za komerční hudební výkony, cover nahrávky a webcasty. §5 AS IS bez ujištění o právním titulu a§6 omezuje škody; porušení okamžitě ukončí práva, dodržující downstream příjemci zůstávají chráněni. Závěr omezuje známky CC kromě označení licence.; https://spdx.org/licenses/CC-BY-NC-SA-2.0.html |
+| patentPosition | "none-stated" | public/data/licenses/CC-BY-NC-SA-2.0.json#text; Autorská a hudební práva v§3–4 neobsahují patentový grant nebo patentovou odvetu.; https://spdx.org/licenses/CC-BY-NC-SA-2.0.html |
+| noticeBurden | "material" | public/data/licenses/CC-BY-NC-SA-2.0.json#text; §4(a,d) při distribuci a veřejném výkonu zachovává copyright/disclaimer/licenční notices, poskytuje text či URI licence a autora, titul, relevantní URI a kredit původu derivátu alespoň stejně výrazný jako srovnatelná autorství. Na žádost poskytovatele se prakticky možným způsobem odstraňují odkazy na autora či poskytovatele. Deriváty §4(b) vyžadují BY-NC-SA2.0, pozdější stejnou licenci nebo iCommons port se stejnými prvky a zachování licenčních notices. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/CC-BY-NC-SA-2.0.html |
+
+## Zdroje
+
+- [Primární zdroj](https://spdx.org/licenses/CC-BY-NC-SA-2.0.html) — Individuálně přečten celý připnutý text; §4(a,d) při distribuci a veřejném výkonu zachovává copyright/disclaimer/licenční notices, poskytuje text či URI licence a autora, titul, relevantní URI a kredit původu derivátu alespoň stejně výrazný jako srovnatelná autorství. Na žádost poskytovatele se prakticky možným způsobem odstraňují odkazy na autora či poskytovatele. Deriváty §4(b) vyžadují BY-NC-SA2.0, pozdější stejnou licenci nebo iCommons port se stejnými prvky a zachování licenčních notices. Autorská a hudební práva v§3–4 neobsahují patentový grant nebo patentovou odvetu.
+- [Kurátorovaný profil](../../../data/profiles/licenses/id-Q0MtQlktTkMtU0EtMi4w.json)
+- [Uložené úplné znění](../../../public/data/licenses/CC-BY-NC-SA-2.0.json)
+
+## Otisk zdroje
+
+```json
+{
+  "sourceId": "spdx-license-list",
+  "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+  "contentHash": "sha256:2f6d839ac76ccbaaf4e1b00f81a38845ad8f1edab6913554f594c0066ffc2649"
+}
+```

@@ -1,0 +1,27 @@
+{
+  "id": "Libpng",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:6b88fc7009896d18218b68cec23b1fc78c386c5f13decb084386205101cddba8"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Libpng dovoluje libovolné užití, úpravy a šíření krytého zdroje včetně komerčních komponent; zdrojová distribuce zachová oznámení a označí změny bez zkreslení původu. Poděkování je dobrovolné, avšak text sám dává při rozporu přednost png.h z distribuce.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "PNG Reference Library s historií0.5–1.4.5 do9.12.2010, přispěvatelé a přednostní oznámení v png.h.",
+    "grantCs": "Use/copy/modify/distribute source code/portions any purpose without fee, výslovná komerční PNG komponenta; patentový grant není uveden.",
+    "conditionsCs": "1 nezkreslit původ;2 altered versions jasně označit a nevydávat za originál;3 notice neodstranit ani neměnit v source/altered-source distribution. Doplňkové notices při změně jsou povoleny; produktové acknowledgment není povinné.",
+    "limitationsCs": "AS IS a warranty/liability autorů/Group42; novější dodatek enjoyment/infringement/all-faults a user risk. png_get_copyright a dodané PNG logo jsou nabídnuté pomůcky, nikoli povinný about box.",
+    "compatibilityCs": "Při skutečném rozporu má podle úvodu přednost png.h z konkrétní distribuce. Tato revize posuzuje uložené znění a žádný konkrétní nesoulad nedokládá; při auditu balíku je třeba zkontrolovat jeho png.h. Nejde o možnost libovolně zvolit jinou verzi či o důkaz kompatibility."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Libpng.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Hlavní grant a1–3 permisivní, ale první odstavec výslovně přednost png.h v případě rozporu."
+    }
+  ]
+}

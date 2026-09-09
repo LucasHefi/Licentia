@@ -8,96 +8,106 @@
     "contentHash": "sha256:ce7b4dd0e8c9d53ed446f74a384b350a8ed55fefc38b9e0ac2fb517f63ec743b"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "strong-copyleft",
+    "copyleftScope": "whole-work",
     "permissions": [
+      "conditional-relicensing",
       "distribution",
       "modifications",
-      "sublicensing"
+      "private-use",
+      "unknown"
     ],
     "obligations": [
       "include-copyright",
-      "include-license-text",
-      "same-license"
-    ],
-    "triggers": [
+      "include-notice",
+      "include-use-acknowledgment",
+      "same-license",
       "unknown"
     ],
-    "restrictions": [
-      "liability",
-      "trademark"
+    "triggers": [
+      "distribution",
+      "modification",
+      "unknown",
+      "use"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "restrictions": [
+      "additional-terms",
+      "liability",
+      "trademark",
+      "unknown",
+      "warranty"
+    ],
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-SA-2.0-UK.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-SA-2.0-UK.json#text; SA se vztahuje na celé odvozené dílo, nikoli ostatní samostatné práce v Collective Work; žádné zveřejnění zdrojového kódu text nestanoví.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-SA-2.0-UK.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-SA-2.0-UK.json#text; SA se vztahuje na celé odvozené dílo, nikoli ostatní samostatné práce v Collective Work; žádné zveřejnění zdrojového kódu text nestanoví.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-BY-SA-2.0-UK.json#text; §2.1 celosvětově bezroyalty nevýhradně po dobu copyrightu dovoluje kopie, odvozeniny, kolekce a jejich veřejnou distribuci, archivaci, přednes a šíření libovolnými médii. §2.5 ovšem rezervuje právo vybírat odměny pro jakékoli užití vedoucí ke komerční výhodě či soukromé peněžní kompenzaci. Patentová licence není uvedena, sublicence je zakázána.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-BY-SA-2.0-UK.json#text; §2.1 každé veřejné šíření vyžaduje přiměřenou referenci licence (URI, mluveně či jinak dle média), kredit poskytovatele a původního autora, prakticky možné zachování licence notices a uvedeného URI souvisejícího s copyrightem/licencí. Zakázány dodatečné omezující podmínky, neslučitelné DRM i derogatory treatment dle CDPA1988. §2.3 derivát včetně vložení do kolekce pod touto, pozdější nebo jinou CC licencí se stejnými BY-SA prvky; ostatní samostatná díla kolekce se nestávají derivátem.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-SA-2.0-UK.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-SA-2.0-UK.json#text; §2.1 každé veřejné šíření vyžaduje přiměřenou referenci licence (URI, mluveně či jinak dle média), kredit poskytovatele a původního autora, prakticky možné zachování licence notices a uvedeného URI souvisejícího s copyrightem/licencí. Zakázány dodatečné omezující podmínky, neslučitelné DRM i derogatory treatment dle CDPA1988. §2.3 derivát včetně vložení do kolekce pod touto, pozdější nebo jinou CC licencí se stejnými BY-SA prvky; ostatní samostatná díla kolekce se nestávají derivátem.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-BY-SA-2.0-UK.json#text; §§3–4 as-is/as-available a omezení odpovědnosti v mezích kogentního práva. §5 automaticky končí porušením, řádným příjemcům Collective Works licence zůstává. §6 právo a soudy Anglie a Walesu, severability a vyloučení vymáhání podle Contracts (Rights of Third Parties) Act1999. §7 CC není stranou, pokud samo neposkytuje; známky jen identifikace licence dle tehdejších guidelines.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-SA-2.0-UK.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-SA-2.0-UK.json#text; §2.1 celosvětově bezroyalty nevýhradně po dobu copyrightu dovoluje kopie, odvozeniny, kolekce a jejich veřejnou distribuci, archivaci, přednes a šíření libovolnými médii. §2.5 ovšem rezervuje právo vybírat odměny pro jakékoli užití vedoucí ke komerční výhodě či soukromé peněžní kompenzaci. Patentová licence není uvedena, sublicence je zakázána.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-BY-SA-2.0-UK.json#text; §2.1 každé veřejné šíření vyžaduje přiměřenou referenci licence (URI, mluveně či jinak dle média), kredit poskytovatele a původního autora, prakticky možné zachování licence notices a uvedeného URI souvisejícího s copyrightem/licencí. Zakázány dodatečné omezující podmínky, neslučitelné DRM i derogatory treatment dle CDPA1988. §2.3 derivát včetně vložení do kolekce pod touto, pozdější nebo jinou CC licencí se stejnými BY-SA prvky; ostatní samostatná díla kolekce se nestávají derivátem.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-SA-2.0-UK.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-SA-2.0-UK.json#text; Individuálně přečten celý připnutý text. §1 Work je autorské dílo; Collective Work zahrnuje úplný nezměněný originál mezi samostatnými díly. Adaptace zahrnuje synchronizaci hudby s pohyblivým obrazem, nikoli pouhou kolekci. Anglicko-waleská CC BY-SA 2.0 poskytuje adaptace se stejnými licence elements, atribuci a zákaz omezujících podmínek či DRM. Navzdory názvu bez NC si § 2.5 výslovně vyhrazuje vybírání odměn za komerční užití; tuto verzi proto nelze představit jako bezvýhradný bezplatný komerční grant. § 2.5 v této BY-SA variantě rezervuje odměny za komerční užití přes royalty-free formulaci § 2.1; vyjasnit přesný vztah těchto ustanovení a doplnit model rezervace odměn. Model navíc neumí specifický DRM zákaz a morální derogatory-treatment limit. Obecnou obsahovou licenci bez zdrojových pravidel nedoporučovat jako otevřenou softwarovou licenci.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

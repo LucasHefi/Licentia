@@ -8,92 +8,95 @@
     "contentHash": "sha256:9529398a00580e36317bf284fc0ab9dd5cccd8c3e725fabca37e070ed17b1765"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "distribution",
+      "modifications",
+      "private-use",
+      "unknown"
     ],
     "obligations": [
       "include-copyright",
-      "provide-corresponding-source"
+      "include-notice"
     ],
     "triggers": [
-      "unknown"
+      "distribution"
     ],
     "restrictions": [
-      "unknown"
+      "warranty"
     ],
-    "patentPosition": "unknown",
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OFFIS.json#text; last paragraph grants use/copy/prepare derivative works; distribution proviso expressly names source code, supporting documentation and derivatives in those forms; binary permissions/conditions not resolved; no reciprocal source-supply or same-license condition; https://spdx.org/licenses/OFFIS.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OFFIS.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OFFIS.json#text; last paragraph grants use/copy/prepare derivative works; distribution proviso expressly names source code, supporting documentation and derivatives in those forms; binary permissions/conditions not resolved; https://spdx.org/licenses/OFFIS.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     },
     {
-      "field": "copyleftScope",
+      "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OFFIS.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OFFIS.json#text; last sentence requires three paragraphs of copyright notice in source/documentation/derivative distributions; no affirmative disclosure or corresponding-source obligation; https://spdx.org/licenses/OFFIS.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     },
     {
-      "field": "triggers",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OFFIS.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OFFIS.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OFFIS.json#text; last sentence requires three paragraphs of copyright notice in source/documentation/derivative distributions; no affirmative disclosure or corresponding-source obligation; https://spdx.org/licenses/OFFIS.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OFFIS.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OFFIS.json#text; whole text: no express patent grant or patent-litigation termination; no inference of patent rights from copyright, trademarks or non-infringement disclaimers; https://spdx.org/licenses/OFFIS.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OFFIS.json#text; last paragraph grants use/copy/prepare derivative works; distribution proviso expressly names source code, supporting documentation and derivatives in those forms; binary permissions/conditions not resolved; https://spdx.org/licenses/OFFIS.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OFFIS.json#text; uppercase paragraph: AS IS no performance/merchantability/fitness/virus/specification warranty and quality/performance risk on user; no express liability or endorsement term; https://spdx.org/licenses/OFFIS.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OFFIS.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OFFIS.json#text; whole-text editorial review on 2026-09-09, batch 6; Doložit rozsah licenčního grantu a oznámení při binární distribuci; aktuální odstavec výslovně pracuje se zdroji a podpůrnou dokumentací. Zachovat tři požadované odstavce a ověřit copyrighty jednotlivých souborů. Podmínka zachování oznámení není příkaz poskytovat zdroje.; https://spdx.org/licenses/OFFIS.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OFFIS.json#text; last sentence requires three paragraphs of copyright notice in source/documentation/derivative distributions; no affirmative disclosure or corresponding-source obligation; https://spdx.org/licenses/OFFIS.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     }
   ]
 }

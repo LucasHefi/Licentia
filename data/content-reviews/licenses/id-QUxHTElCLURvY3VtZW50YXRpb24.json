@@ -1,0 +1,29 @@
+{
+  "id": "ALGLIB-Documentation",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:df644645820ea458ee710bbc10b8d1c3fa90c85a6e033aafc90f0af7d7f2f9c8"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Manuál ALGLIB lze používat a redistribuovat i upravený. Copyright, podmínka a disclaimer musí být na prvních nebo posledních řádcích souboru; dokumentace je bez záruky a odpovědnosti za škody.",
+  "blockersCs": [
+    "Grant pokrývá pouze referenční manuál a ukládá konkrétní umístění oznámení v souboru. Před software doporučením doplnit model dokumentačního předmětu a zachovat alternativu první/poslední řádky."
+  ],
+  "analysis": {
+    "subjectCs": "Operativní grant je výslovně pro ALGLIB Reference Manual, nikoli implementaci knihovny ALGLIB.",
+    "grantCs": "Redistribution and use dokumentu with or without modification dovoluje libovolné účely včetně komerce; patentový grant a výslovná sublicence nejsou uvedeny.",
+    "conditionsCs": "Such redistributions zachovávají copyright, tuto podmínku a disclaimer jako první NEBO poslední řádky souboru. Jde o alternativu umístění téhož oznámení, ne dvě souběžné povinnosti. Zdrojový kód se nevyžaduje.",
+    "limitationsCs": "ALGLIB Project odmítá výslovné/implicitní záruky, obchodovatelnost/vhodnost a veškeré vyjmenované škody ze všech právních titulů i po upozornění.",
+    "compatibilityCs": "Text neobsahuje volbu licenční verze, další licenci nebo požadavek stejné licence odvozeného celku."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/ALGLIB-Documentation.html",
+      "note": "Individuální revize celého připnutého textu; Operativní grant je výslovně pro ALGLIB Reference Manual, nikoli implementaci knihovny ALGLIB."
+    }
+  ]
+}

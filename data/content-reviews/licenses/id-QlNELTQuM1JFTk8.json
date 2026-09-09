@@ -1,0 +1,29 @@
+{
+  "id": "BSD-4.3RENO",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:547d6f3727e542f0ec4ae3db25b6ceef5a27b826809e887f376a953c233a6607"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Licence dovoluje užití a redistribuci softwaru ve zdrojové i binární podobě se zachováním oznámení a přiznáním autorství University of California at Berkeley. Jméno univerzity nelze bez písemného souhlasu použít k propagaci odvozených produktů a software je bez záruk. Průvodce ji nezařazuje, protože zmínka o odvozených produktech sama nevyjasňuje obecné oprávnění k úpravám.",
+  "blockersCs": [
+    "Grant dovoluje zdrojovou/binární redistribuci a užití, zatímco o odvozených produktech mluví pouze zákaz endorsementu; před přiznáním obecného práva změn v průvodci je třeba ověřit tento rozsah v původním licenčním kontextu."
+  ],
+  "analysis": {
+    "subjectCs": "Licence se vztahuje na software Regents of the University of California z roku 1987.",
+    "grantCs": "Hlavní odstavec výslovně dovoluje redistribuci a užití ve zdrojové i binární formě. Další věta počítá s odvozenými produkty, ale přesný rozsah oprávnění měnit software nevymezuje; právo modifications proto není bez dalšího přiznáno.",
+    "conditionsCs": "Oznámení se zachová a University of California at Berkeley se přizná náležité autorství; reklamní materiály nejsou zvláštním spouštěčem.",
+    "limitationsCs": "Jméno univerzity nelze bez konkrétního předchozího písemného svolení použít k propagaci odvozených produktů; software je AS IS bez záruk.",
+    "compatibilityCs": "Text neobsahuje jiné verze ani alternativní licencování."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/BSD-4.3RENO.html",
+      "note": "Individuálně přečten celý připnutý text; Oznámení se zachová a University of California at Berkeley se přizná náležité autorství; reklamní materiály nejsou zvláštním spouštěčem. Celý text neobsahuje výslovný patentový grant či patentové ukončení."
+    }
+  ]
+}

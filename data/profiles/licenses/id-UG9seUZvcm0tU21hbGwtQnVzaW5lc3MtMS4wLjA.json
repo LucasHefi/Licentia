@@ -8,94 +8,100 @@
     "contentHash": "sha256:53aeae518d2ec184fd904549812ba93f878126995a05f296bb561286f09b9e14"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
       "modifications",
-      "patent-grant",
-      "sublicensing"
+      "patent-grant"
     ],
     "obligations": [
-      "unknown"
+      "include-license-text",
+      "include-notice"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "patent-claim",
+      "use"
     ],
     "restrictions": [
-      "liability"
+      "liability",
+      "patent-claim",
+      "unknown",
+      "warranty"
     ],
-    "patentPosition": "express-grant",
-    "noticeBurden": "unknown"
+    "patentPosition": "retaliatory-termination",
+    "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/PolyForm-Small-Business-1.0.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/PolyForm-Small-Business-1.0.0.json#text; PolyForm Small Business 1.0.0 definuje povolený účel podle velikosti a tržeb celé skupiny vašeho podniku. Autorské, distribuční a změnové granty dovolují software pro permitted purpose; Patent License zahrnuje nynější/budoucí licencovatelné nároky porušené užitím. Notices nezavádějí same-license či zdrojový copyleft; licenční omezení je v kvalifikaci podniku.; https://spdx.org/licenses/PolyForm-Small-Business-1.0.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/PolyForm-Small-Business-1.0.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/PolyForm-Small-Business-1.0.0.json#text; Notices nezavádějí same-license či zdrojový copyleft; licenční omezení je v kvalifikaci podniku.; https://spdx.org/licenses/PolyForm-Small-Business-1.0.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/PolyForm-Small-Business-1.0.0.json#text; Autorské, distribuční a změnové granty dovolují software pro permitted purpose; Patent License zahrnuje nynější/budoucí licencovatelné nároky porušené užitím.; https://spdx.org/licenses/PolyForm-Small-Business-1.0.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/PolyForm-Small-Business-1.0.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/PolyForm-Small-Business-1.0.0.json#text; Příjemci libovolné části dostanou text nebo URL a všechny dodané řádky Required Notice. Small Business vyžaduje méně než 100 zaměstnanců+kontraktorů a pod 1 milion USD v cenách 2019 příjmů za minulý daňový rok, valorizováno přes určený BLS CPI.; https://spdx.org/licenses/PolyForm-Small-Business-1.0.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/PolyForm-Small-Business-1.0.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/PolyForm-Small-Business-1.0.0.json#text; Příjemci libovolné části dostanou text nebo URL a všechny dodané řádky Required Notice. Small Business vyžaduje méně než 100 zaměstnanců+kontraktorů a pod 1 milion USD v cenách 2019 příjmů za minulý daňový rok, valorizováno přes určený BLS CPI.; https://spdx.org/licenses/PolyForm-Small-Business-1.0.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/PolyForm-Small-Business-1.0.0.json#text; No Other Rights zakazuje sublicence/převod. Vlastní písemný patentový nárok ruší patentový grant; firemní nárok jej ruší pro práci firmy. Při prvním písemném upozornění lze do 32 dnů napravit soulad a minulé porušení, jinak končí všechna práva. AS IS vylučuje záruky/odpovědnost.; https://spdx.org/licenses/PolyForm-Small-Business-1.0.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/PolyForm-Small-Business-1.0.0.json#text; Výslovný grant pokrývá licencovatelné současné i budoucí patenty a končí při písemném vlastním/firemním nároku ve vymezeném rozsahu.; https://spdx.org/licenses/PolyForm-Small-Business-1.0.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/PolyForm-Small-Business-1.0.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/PolyForm-Small-Business-1.0.0.json#text; Příjemci libovolné části dostanou text nebo URL a všechny dodané řádky Required Notice. Small Business vyžaduje méně než 100 zaměstnanců+kontraktorů a pod 1 milion USD v cenách 2019 příjmů za minulý daňový rok, valorizováno přes určený BLS CPI. Rozsah notifikační zátěže: standard.; https://spdx.org/licenses/PolyForm-Small-Business-1.0.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/PolyForm-Small-Business-1.0.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/PolyForm-Small-Business-1.0.0.json#text; Individuální kontrola celého připnutého textu PolyForm-Small-Business-1.0.0 dne 2026-09-09. PolyForm Small Business 1.0.0 definuje povolený účel podle velikosti a tržeb celé skupiny vašeho podniku. Povolené užití závisí na počtu pracovníků celé podnikové skupiny a inflačně upravených příjmech minulého roku; před doporučením je nutný model těchto uživatelských a časových podmínek. Fair Use se neomezuje. Your company zahrnuje ovládající, ovládané a společně řízené subjekty; aktuální cenový limit zde není dopočítáván ani předstírán jako statický milion.; https://spdx.org/licenses/PolyForm-Small-Business-1.0.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

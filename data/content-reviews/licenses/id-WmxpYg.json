@@ -1,0 +1,20 @@
+{
+  "id": "Zlib",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:1ed0ee458e939269b43231a6821e73f8aa5862fb262f9286dc71722230c681b7"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Zachovejte oznámení při distribuci zdrojů a označte upravené zdrojové verze. Nepřisvojujte si původní autorství; poděkování v dokumentaci produktu je dobrovolné.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Zlib.html",
+      "note": "Dřívější individuální revize 2026-09-09; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

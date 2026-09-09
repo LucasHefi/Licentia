@@ -8,8 +8,8 @@
     "contentHash": "sha256:1b7ae5bf7bc4b533262fa0ed92ed569e2ca4ef70d8287bcecc88b74239a50f19"
   },
   "review": {
-    "status": "not-recommendable",
-    "recommendable": false,
+    "status": "reviewed",
+    "recommendable": true,
     "evidenceLevel": "strong"
   },
   "semantic": {
@@ -23,12 +23,12 @@
       "private-use"
     ],
     "obligations": [
-      "disclose-source",
       "include-copyright",
       "include-license-text",
       "include-notice",
       "mark-modifications",
       "network-use-disclose",
+      "preserve-combined-license-terms",
       "provide-corresponding-source",
       "provide-installation-information",
       "same-license"
@@ -36,7 +36,6 @@
     "triggers": [
       "combination",
       "distribution",
-      "linking",
       "modification",
       "network-use",
       "patent-claim"
@@ -48,53 +47,71 @@
       "warranty"
     ],
     "patentPosition": "retaliatory-termination",
-    "noticeBurden": "standard"
+    "noticeBurden": "material"
   },
   "evidence": [
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text: section 5(c), section 5 aggregate paragraph, and section 13 first paragraph"
+      "locator": "public/data/licenses/AGPL-3.0-or-later.json#text; §§5(c),13 whole covered derivative work and modified remote-interaction version; independent aggregates excluded; GPLv3 PART of §13 combined work retains GPLv3 while AGPL part retains AGPL, network source offer covers BOTH; §14 actual or-later notice permits later FSF versions, current profile reviews v3; https://spdx.org/licenses/AGPL-3.0-or-later.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.8"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text: Preamble opening paragraph and paragraphs beginning 'A secondary benefit...' and 'The GNU Affero...'; section 5(c); section 13 first paragraph"
+      "locator": "public/data/licenses/AGPL-3.0-or-later.json#text; §§0-2,4-6,10-11: unrestricted unmodified running/private un-conveyed work, commercial copy distribution and derivatives subject to conditions; §2 SUBLICENSING NOT ALLOWED, §10 automatic downstream grants; §11 contributor essential-patent grant; §13 express permission link/combine/convey with work under GPL VERSION 3, PARTS retain respective licenses; https://spdx.org/licenses/AGPL-3.0-or-later.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.8"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text: section 0 Appropriate Legal Notices definition; section 4; sections 5(a), 5(b), and 5(d)"
+      "locator": "public/data/licenses/AGPL-3.0-or-later.json#text; §§1,4-6: notices/copy/date-change labels, appropriate legal notices in interactive UI with existing-UI exception; whole-covered-work same-license not independent aggregates; corresponding source including needed build/install/modify scripts, excluding System Libraries etc; §6 binary source routes including >=3-year written offer where applicable and conditional User Product installation information with ROM/no-retained-install-ability exception; §7 applicable added terms and placement; §13 ONLY IF modified AND remote interaction supported, prominently offer ALL remote users no-charge source access including incorporated GPLv3 source; preserve SEPARATE AGPL/GPLv3 PART TERMS, not blanket AGPL relicensing of combined work; https://spdx.org/licenses/AGPL-3.0-or-later.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.8"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text: section 1 Corresponding Source definition; section 4; sections 5(a)-5(d); section 6 opening plus paragraphs defining Installation Information and requiring it for a conveyed User Product; section 13 first paragraph"
+      "locator": "public/data/licenses/AGPL-3.0-or-later.json#text; §§1,4-6: notices/copy/date-change labels, appropriate legal notices in interactive UI with existing-UI exception; whole-covered-work same-license not independent aggregates; corresponding source including needed build/install/modify scripts, excluding System Libraries etc; §6 binary source routes including >=3-year written offer where applicable and conditional User Product installation information with ROM/no-retained-install-ability exception; §7 applicable added terms and placement; §13 ONLY IF modified AND remote interaction supported, prominently offer ALL remote users no-charge source access including incorporated GPLv3 source; preserve SEPARATE AGPL/GPLv3 PART TERMS, not blanket AGPL relicensing of combined work; https://spdx.org/licenses/AGPL-3.0-or-later.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.8"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "text: section 8 first paragraph; section 10 patent-litigation sentence; section 11 patent-grant paragraph"
+      "locator": "public/data/licenses/AGPL-3.0-or-later.json#text; §11 contributor essential patent claims owned/controlled NOW OR LATER, excluding those arising solely from further modifications; express worldwide royalty-free grant; §10 prohibits patent litigation incl cross/counterclaims over Program/portion and §8 terminates rights on breach with cure rules; §11 distinct reliance/extension/discriminatory patent arrangements; https://spdx.org/licenses/AGPL-3.0-or-later.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.8"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text: section 2; section 4 both paragraphs; sections 5-6; section 11 patent-grant paragraph"
+      "locator": "public/data/licenses/AGPL-3.0-or-later.json#text; §§0-2,4-6,10-11: unrestricted unmodified running/private un-conveyed work, commercial copy distribution and derivatives subject to conditions; §2 SUBLICENSING NOT ALLOWED, §10 automatic downstream grants; §11 contributor essential-patent grant; §13 express permission link/combine/convey with work under GPL VERSION 3, PARTS retain respective licenses; https://spdx.org/licenses/AGPL-3.0-or-later.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.8"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text: section 7; section 10 further-restrictions and patent-litigation sentences; sections 15-16"
+      "locator": "public/data/licenses/AGPL-3.0-or-later.json#text; §3 anti-circumvention waiver on conveyance; §7 limited permissible extra terms including potential added-material indemnity, not a universal new indemnity duty; §§8-10 automatic termination, provisional reinstatement/60-day no-notice and first-notice 30-day cure, no sublicensing/further restrictions/patent suits; §11 patent reliance alternatives, automatic extension and discriminatory-arrangement rules with 28 March 2007 boundary; §12 no conveyance when simultaneous compliance impossible; §§15-17 qualified warranty/liability disclaimers; §14 version choice controlled by actual program notice; https://spdx.org/licenses/AGPL-3.0-or-later.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.8"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "metadata: deprecated=false and osi=true; comments distinguish AGPL-3.0-or-later from AGPL-3.0-only; text: section 14 grants a choice of version 3 or a later FSF-published version; review decision: not recommendable because the Guide has no validated profile-level versionStrategy mapping, so this future-version choice cannot be represented safely for a general recommendation"
+      "locator": "public/data/licenses/AGPL-3.0-or-later.json#text; whole-text editorial review on 2026-09-09, batch 8; Whole version-3 text read for both identical SPDX bodies; source identity/comments distinguish only vs or-later. New preserve-combined-license-terms obligation and network-specific same-license display preserve §13 split terms and full combined source offer. Identifikátor or-later dovoluje také pozdější verze vydané FSF podle § 14; profil vyhodnocuje podmínky verze 3.; https://spdx.org/licenses/AGPL-3.0-or-later.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.8"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "text: section 0 definitions of modify, propagate, and convey; section 5 opening and 5(c); section 6 opening and User Product paragraphs; section 8 first paragraph; section 10 patent-litigation sentence; section 13 both paragraphs"
+      "locator": "public/data/licenses/AGPL-3.0-or-later.json#text; §§1,4-6: notices/copy/date-change labels, appropriate legal notices in interactive UI with existing-UI exception; whole-covered-work same-license not independent aggregates; corresponding source including needed build/install/modify scripts, excluding System Libraries etc; §6 binary source routes including >=3-year written offer where applicable and conditional User Product installation information with ROM/no-retained-install-ability exception; §7 applicable added terms and placement; §13 ONLY IF modified AND remote interaction supported, prominently offer ALL remote users no-charge source access including incorporated GPLv3 source; preserve SEPARATE AGPL/GPLv3 PART TERMS, not blanket AGPL relicensing of combined work; https://spdx.org/licenses/AGPL-3.0-or-later.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.8"
     }
   ]
 }

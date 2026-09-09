@@ -8,8 +8,8 @@
     "contentHash": "sha256:562364b1aa13797ce24adb01d8e34096ce7fd326045d6be26e41b67ef39d1d6c"
   },
   "review": {
-    "status": "not-recommendable",
-    "recommendable": false,
+    "status": "reviewed",
+    "recommendable": true,
     "evidenceLevel": "strong"
   },
   "semantic": {
@@ -20,16 +20,16 @@
       "distribution",
       "modifications",
       "patent-grant",
-      "private-use",
-      "sublicensing"
+      "private-use"
     ],
     "obligations": [
-      "include-license-text"
+      "include-notice"
     ],
     "triggers": [
       "distribution"
     ],
     "restrictions": [
+      "additional-terms",
       "liability",
       "warranty"
     ],
@@ -40,52 +40,65 @@
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text: Copyright and Notices sections (broad contributor grant and license-text-or-link condition; no source-disclosure, same-license, or other reciprocal condition)"
+      "locator": "public/data/licenses/BlueOak-1.0.0.json#text; Copyright: each contributor licenses all acts otherwise infringing that contributor's copyright; Patent: each contributor licenses all otherwise infringing acts with software under claims they can or become able to license; no express sublicensing term; no reciprocal source-disclosure or same-license condition; https://spdx.org/licenses/BlueOak-1.0.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text: Purpose, Copyright, and Notices sections (maximum permission, broad copyright grant, and only a downstream license-notice condition)"
+      "locator": "public/data/licenses/BlueOak-1.0.0.json#text; Copyright: each contributor licenses all acts otherwise infringing that contributor's copyright; Patent: each contributor licenses all otherwise infringing acts with software under claims they can or become able to license; no express sublicensing term; https://spdx.org/licenses/BlueOak-1.0.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text: Notices and Excuse sections (each downstream recipient must get the license text or its link, with a 30-day cure after written notice)"
+      "locator": "public/data/licenses/BlueOak-1.0.0.json#text; Notices: every recipient of any part, changed or unchanged, receives license TEXT OR specified URL; no copyright notice retention, no unconditional whole-license-text requirement and no source-supply duty; https://spdx.org/licenses/BlueOak-1.0.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text: Acceptance, Notices, and Excuse sections (rules are obligations and license conditions; downstream copies require the license text or its link, subject to cure)"
+      "locator": "public/data/licenses/BlueOak-1.0.0.json#text; Notices: every recipient of any part, changed or unchanged, receives license TEXT OR specified URL; no copyright notice retention, no unconditional whole-license-text requirement and no source-supply duty; https://spdx.org/licenses/BlueOak-1.0.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "text: Patent and Reliability sections (broad express contributor patent grant with no patent-litigation termination and no revocation)"
+      "locator": "public/data/licenses/BlueOak-1.0.0.json#text; Patent section expressly covers each contributor's currently and later licensable patent claims for this software; no patent-litigation termination is stated; https://spdx.org/licenses/BlueOak-1.0.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text: Purpose, Copyright, and Patent sections ('as much permission ... as possible' and grants to do everything otherwise infringing contributor copyright or licensable patent claims)"
+      "locator": "public/data/licenses/BlueOak-1.0.0.json#text; Copyright: each contributor licenses all acts otherwise infringing that contributor's copyright; Patent: each contributor licenses all otherwise infringing acts with software under claims they can or become able to license; no express sublicensing term; https://spdx.org/licenses/BlueOak-1.0.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text: No Liability section (software is as-is without warranty or condition, and contributors disclaim damages liability)"
+      "locator": "public/data/licenses/BlueOak-1.0.0.json#text; Acceptance: assent, agreement obligations and license conditions; Excuse: written notice of Notices noncompliance, all practical steps within 30 days or immediate termination; Reliability: no contributor revocation; No Liability: warranty/condition and damages disclaimers to legal extent; https://spdx.org/licenses/BlueOak-1.0.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "metadata: id=BlueOak-1.0.0, deprecated=false, osi=true"
-    },
-    {
-      "field": "review",
-      "sourceId": "spdx-license-list",
-      "locator": "text: Acceptance, Copyright, Notices, Excuse, Patent, and Reliability sections; vocabulary 1.0.0 cannot losslessly represent affirmative agreement and contract characterization, the license-text-or-link alternative, the 30-day notice-and-cure termination mechanism, irrevocability, or the each-contributor grant model, so the profile is not recommendable"
+      "locator": "public/data/licenses/BlueOak-1.0.0.json#text; whole-text editorial review on 2026-09-09, batch 5; Replaces the older lossless-model rejection after full sections Purpose through No Liability review: license-or-link uses include-notice, assent/cure use additional-terms with an explicit displayed note, and per-contributor present/future patent rights use express-grant. No fields are filled merely to remove unknown. Website permission for editing the LICENSE FORM is separate from the software grant and is not imported as a software trademark restriction.; https://spdx.org/licenses/BlueOak-1.0.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "text: Acceptance, Notices, and Excuse sections (giving anyone a copy of any part, with or without changes, triggers the notice rule; written notice starts the 30-day cure period)"
+      "locator": "public/data/licenses/BlueOak-1.0.0.json#text; Notices: every recipient of any part, changed or unchanged, receives license TEXT OR specified URL; no copyright notice retention, no unconditional whole-license-text requirement and no source-supply duty; https://spdx.org/licenses/BlueOak-1.0.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.5"
     }
   ]
 }

@@ -1,0 +1,20 @@
+{
+  "id": "DSDP",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.7",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:63e61fb58d89d8bad8f9ca7c1cdced725c11dbf05bbf421877b9b504e21f906a"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Zachovejte copyrightové a svolovací oznámení na softwaru, dokumentaci i jejich kopiích a úpravách. Užití, tvorba odvozených děl a redistribuce jsou dovoleny. Citace dokumentu ve výzkumných publikacích je formulována jako doporučení. Prohlášení, že zmínka o produktu neznamená podporu vládou, samo nezakazuje použití jmen. Text vylučuje záruky a uvedenou odpovědnost.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/DSDP.html",
+      "note": "Dřívější individuální revize 2026-09-09.7; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "SMPPL",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:5c0cf39f6a7f9c64f8c038fab195e569e23402a87290d8996620554bfa12e920"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Licence dovoluje software SMP používat, měnit, sublicencovat a distribuovat s předáním licence. Na žádost se poskytuje zdroj původních částí nebo informace o jeho bezplatné dostupnosti od vlády USA; dokumentace má strop ceny reprodukce. Průvodce ji nezařazuje kvůli těmto odlišným povinnostem a samostatně licencovaná eSNACC vyžaduje vlastní kontrolu balíku.",
+  "blockersCs": [
+    "Text omezuje cenu dokumentace a dovoluje místo zdroje původních částí oznámit bezplatnou dostupnost od vlády; před doporučením je třeba model cenového stropu a alternativ zdrojové povinnosti. Samostatná eSNACC licence je hranicí auditu balíku, nikoli sama blockerem vlastního SMP grantu."
+  ],
+  "analysis": {
+    "subjectCs": "SMP Public License z 29. května 2002 odděluje software SMP, dokumentaci a externí eSNACC knihovnu.",
+    "grantCs": "Vláda USA dovoluje bezplatně software používat, kopírovat, měnit, sublicencovat a distribuovat; dokumentaci s úpravami lze distribuovat bezplatně nebo nejvýše za náklady reprodukce.",
+    "conditionsCs": "S redistribucí částí softwaru se přenáší licence. Na žádost se poskytne zdroj všech původních částí bez vlastních/cizích změn, nebo se žadateli oznámí jeho bezplatná dostupnost od vlády USA. Dokumentace zachovává licenci a má cenový strop.",
+    "limitationsCs": "Text vylučuje záruky/odpovědnost vlády a ruší práva při neoprávněném kopírování/sublicenci/distribuci/převodu. eSNACC má samostatnou Enhanced SNACC Public License; compiler není součást SMP.",
+    "compatibilityCs": "Zdrojový požadavek má alternativu oznámení dostupnosti od vlády a výslovně vylučuje změny; není to povinnost dodat vlastní změny nebo libovolnou GPL."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/SMPPL.html",
+      "note": "Individuálně přečten celý připnutý text; S redistribucí částí softwaru se přenáší licence. Na žádost se poskytne zdroj všech původních částí bez vlastních/cizích změn, nebo se žadateli oznámí jeho bezplatná dostupnost od vlády USA. Dokumentace zachovává licenci a má cenový strop. Celý SMP text nemá výslovný patentový grant ani patentové ukončení."
+    }
+  ]
+}

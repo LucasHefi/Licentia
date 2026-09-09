@@ -8,92 +8,98 @@
     "contentHash": "sha256:ce521d2b00ace76b3eeb8b771edc8c6a619f63d3e6e03049ef14f26b606d0950"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
     "family": "unknown",
     "copyleftScope": "unknown",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "provide-corresponding-source"
-    ],
-    "triggers": [
       "unknown"
     ],
-    "restrictions": [
-      "liability"
+    "triggers": [
+      "distribution",
+      "modification"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "restrictions": [
+      "additional-terms",
+      "liability",
+      "warranty"
+    ],
+    "patentPosition": "none-stated",
+    "noticeBurden": "unknown"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OpenVision.json#text; grant paragraph: free use/distribution of Source Code and Object Code compiled from it, with/without modifications; scope cannot be flattened before resolving the conditions identified in review; https://spdx.org/licenses/OpenVision.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OpenVision.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OpenVision.json#text; grant paragraph: free use/distribution of Source Code and Object Code compiled from it, with/without modifications; https://spdx.org/licenses/OpenVision.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     },
     {
-      "field": "copyleftScope",
+      "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OpenVision.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OpenVision.json#text; retained-copyright paragraph asserts OpenVision copyright in derivative works WHETHER CREATED BY OPENVISION OR THIRD PARTY and preserves OpenVision notice when derivatives made; ownership claim is not generic same-license or ordinary attribution; https://spdx.org/licenses/OpenVision.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     },
     {
-      "field": "triggers",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OpenVision.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OpenVision.json#text; retained-copyright paragraph asserts OpenVision copyright in derivative works WHETHER CREATED BY OPENVISION OR THIRD PARTY and preserves OpenVision notice when derivatives made; ownership claim is not generic same-license or ordinary attribution; https://spdx.org/licenses/OpenVision.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OpenVision.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OpenVision.json#text; whole text: no express patent grant or patent-litigation termination; no inference of patent rights from copyright, trademarks or non-infringement disclaimers; https://spdx.org/licenses/OpenVision.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OpenVision.json#text; grant paragraph: free use/distribution of Source Code and Object Code compiled from it, with/without modifications; https://spdx.org/licenses/OpenVision.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OpenVision.json#text; WARNING assent on source retrieval; grant paragraph warranty and enumerated damages exclusions; derivative-copyright assertion needs distinct legal/ownership review; https://spdx.org/licenses/OpenVision.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OpenVision.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OpenVision.json#text; whole-text editorial review on 2026-09-09, batch 6; Posoudit právní význam nároku OpenVision na copyright odvozených děl vytvořených třetími stranami a vztah k vlastnímu autorství příspěvků. Případnou podmínku práv k úpravám nelze nahradit include-copyright ani same-license. Nezaměňovat tento samostatný text za MIT nebo HPND sell varianty; doložit relevantní zdroj a kontext.; https://spdx.org/licenses/OpenVision.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OpenVision.json#text; retained-copyright paragraph asserts OpenVision copyright in derivative works WHETHER CREATED BY OPENVISION OR THIRD PARTY and preserves OpenVision notice when derivatives made; ownership claim is not generic same-license or ordinary attribution; https://spdx.org/licenses/OpenVision.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.6"
     }
   ]
 }

@@ -22,13 +22,13 @@
       "private-use"
     ],
     "obligations": [
+      "include-advertising-acknowledgment",
       "include-copyright",
-      "include-license-text",
-      "include-notice"
+      "include-license-text"
     ],
     "triggers": [
-      "distribution",
-      "unknown"
+      "advertising",
+      "distribution"
     ],
     "restrictions": [
       "liability",
@@ -40,49 +40,67 @@
   },
   "evidence": [
     {
-      "field": "family",
-      "sourceId": "spdx-license-list",
-      "locator": "metadata: id=BSD-4-Clause-UC, osi=false, fsf=false; text: opening grant and conditions 1-4 (broad non-reciprocal BSD-style permission with additional UC advertising and name-use conditions)"
-    },
-    {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant and conditions 1-4 (permissions are non-reciprocal; no same-license, source-disclosure, or corresponding-source condition is stated)"
+      "locator": "public/data/licenses/BSD-4-Clause-UC.json#text; opening historical text grants source/binary use and redistribution WITH OR WITHOUT modification; copyright is specifically Regents of the University of California; whole text has no reciprocal source-disclosure, same-license, relinking or network-use requirement; https://spdx.org/licenses/BSD-4-Clause-UC.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.9"
     },
     {
-      "field": "permissions",
+      "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text: opening grant: redistribution and use in source and binary forms, with or without modification, are permitted; no commercial, private-use, or field-of-use limitation is stated"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text: condition 1 (source redistributions retain the copyright notice, list of conditions, and disclaimer); condition 2 (binary redistributions reproduce the same in documentation and/or other materials); condition 3 (advertising materials mentioning features or use must display the specified University of California, Berkeley and contributors acknowledgement)"
-    },
-    {
-      "field": "triggers",
-      "sourceId": "spdx-license-list",
-      "locator": "text: conditions 1-2 (notice duties attach to source or binary redistribution) and condition 3 (the separate UC Berkeley acknowledgement duty attaches to advertising materials mentioning features or use; advertising is not a dedicated vocabulary trigger and is therefore retained as unknown; modification alone has no separate condition)"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text: condition 4 (neither the name of the University nor the names of its contributors may be used to endorse or promote derived products without specific prior written permission); final disclaimer paragraph (express/implied warranty disclaimer and limitation of liability)"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text: complete BSD-4-Clause-UC license text, including opening grant, conditions 1-4, and final disclaimer (no express patent grant, patent condition, patent-claim restriction, or patent-termination clause is stated)"
+      "locator": "public/data/licenses/BSD-4-Clause-UC.json#text; opening historical text grants source/binary use and redistribution WITH OR WITHOUT modification; copyright is specifically Regents of the University of California; https://spdx.org/licenses/BSD-4-Clause-UC.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.9"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text: conditions 1-2 require retaining/reproducing the copyright notice, list of conditions, and disclaimer in source and binary redistributions, while condition 3 requires a prescribed UC Berkeley acknowledgement in advertising materials; this creates a material multi-surface notice burden"
+      "locator": "public/data/licenses/BSD-4-Clause-UC.json#text; PINNED HISTORICAL TEXT §§1-2 source/binary copyright/conditions/disclaimer; §3 advertising acknowledgment of University of California, Berkeley and contributors. SPDX comments expressly capture retroactive deletion of §3; this field records text, not a present-day effective-duty determination; https://spdx.org/licenses/BSD-4-Clause-UC.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.9"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/BSD-4-Clause-UC.json#text; PINNED HISTORICAL TEXT §§1-2 source/binary copyright/conditions/disclaimer; §3 advertising acknowledgment of University of California, Berkeley and contributors. SPDX comments expressly capture retroactive deletion of §3; this field records text, not a present-day effective-duty determination; https://spdx.org/licenses/BSD-4-Clause-UC.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.9"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/BSD-4-Clause-UC.json#text; whole-text review: no EXPRESS patent grant and no patent-litigation termination; no conclusion about implied patent rights; https://spdx.org/licenses/BSD-4-Clause-UC.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.9"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/BSD-4-Clause-UC.json#text; opening historical text grants source/binary use and redistribution WITH OR WITHOUT modification; copyright is specifically Regents of the University of California; https://spdx.org/licenses/BSD-4-Clause-UC.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.9"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/BSD-4-Clause-UC.json#text; §4 University/contributor endorsement requires prior written permission; warranty/liability disclaimer; https://www.freebsd.org/copyright/license/ reproduces 1999-07-22 UC Berkeley addendum deleting advertising paragraph in covered BSD Unix files; https://spdx.org/licenses/BSD-4-Clause-UC.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.9"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "metadata: id=BSD-4-Clause-UC, name=BSD-4-Clause (University of California-Specific), deprecated=false, osi=false, fsf=false; notes identify the UC-specific copyright notice and the historical advertising-clause change; text: conditions 1-4 and final warranty/liability disclaimer are explicit, but the UC Berkeley advertising acknowledgement and University/contributor endorsement/name restriction are not suitable for a general automatic recommendation"
+      "locator": "public/data/licenses/BSD-4-Clause-UC.json#text; Whole-text editorial review 2026-09-09, batch 9. Propojit historický text s dodatkem UC Berkeley z 22. 7. 1999 a původem konkrétních souborů. Doplněk zpětně ruší reklamní odstavec dotčených BSD Unix souborů; průvodce zatím nerozlišuje uložené znění a účinné podmínky po dodatku. Nelze bez ověření reklamu vždy vyžadovat ani vše přepsat na obecnou BSD-3-Clause. Zdroj: https://www.freebsd.org/copyright/license/; https://spdx.org/licenses/BSD-4-Clause-UC.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.9"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/BSD-4-Clause-UC.json#text; PINNED HISTORICAL TEXT §§1-2 source/binary copyright/conditions/disclaimer; §3 advertising acknowledgment of University of California, Berkeley and contributors. SPDX comments expressly capture retroactive deletion of §3; this field records text, not a present-day effective-duty determination; https://spdx.org/licenses/BSD-4-Clause-UC.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.9"
     }
   ]
 }

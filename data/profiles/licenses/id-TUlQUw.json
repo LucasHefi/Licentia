@@ -8,91 +8,92 @@
     "contentHash": "sha256:96ade5ebc11e89a5f6e0a6e37b9fc440d5ee182478ca835a3c0753fcf3a061f4"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "private-use",
+      "unknown"
     ],
     "obligations": [
-      "unknown"
+      "include-copyright",
+      "include-license-text"
     ],
     "triggers": [
-      "unknown"
+      "distribution"
     ],
-    "restrictions": [
-      "unknown"
-    ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "restrictions": [],
+    "patentPosition": "none-stated",
+    "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MIPS.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MIPS.json#text; Grant v komentáři poskytuje reproduction and use rights to all parties za podmínky zachování komentáře.; https://spdx.org/licenses/MIPS.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MIPS.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MIPS.json#text; Celý komentář neobsahuje zdrojovou reciprocitu ani požadavek stejné licence.; https://spdx.org/licenses/MIPS.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/MIPS.json#text; Grant jmenuje reprodukci a užití; komerční účel nevylučuje, úpravy a další distribuci výslovně nepokrývá.; https://spdx.org/licenses/MIPS.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MIPS.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MIPS.json#text; Podmínka PROVIDED that this comment is maintained in the copy vyžaduje copyright i celý licenční komentář.; https://spdx.org/licenses/MIPS.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MIPS.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MIPS.json#text; Podmínka je spojena s pořízením kopií a provází jejich předávání; jiné rozlišitelné spouštěče nejsou uvedeny.; https://spdx.org/licenses/MIPS.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MIPS.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MIPS.json#text; Celý komentář neobsahuje omezení záruk, odpovědnosti, názvů ani dodatečných podmínek.; https://spdx.org/licenses/MIPS.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MIPS.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MIPS.json#text; Celý grant se omezuje na reproduction/use; patentové udělení ani ukončení není uvedeno.; https://spdx.org/licenses/MIPS.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MIPS.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MIPS.json#text; Každá kopie má zachovat celý komentář, nikoli jen jméno autora.; https://spdx.org/licenses/MIPS.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/MIPS.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/MIPS.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. MIPS poskytuje všem právo reprodukce a užívání pod podmínkou zachování celého komentáře v kopii. Text výslovně neuděluje právo na úpravy a samostatně nepopisuje redistribuci. Blokace: Grant výslovně obsahuje pouze reproduction and use rights; před doporučením licence pro upravovaný a distribuovaný software je třeba doložit rozsah úprav a dalšího šíření, který krátký komentář neřeší.; https://spdx.org/licenses/MIPS.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

@@ -17,33 +17,33 @@
     "copyleftScope": "file",
     "permissions": [
       "commercial-use",
+      "conditional-relicensing",
       "distribution",
       "modifications",
       "patent-grant",
       "private-use",
-      "sublicensing"
+      "sublicensing",
+      "unknown"
     ],
     "obligations": [
+      "defend-added-warranty",
       "disclose-source",
+      "include-copyright",
       "include-license-text",
       "include-notice",
-      "provide-corresponding-source",
       "same-license",
       "unknown"
     ],
     "triggers": [
-      "combination",
       "distribution",
       "modification",
-      "patent-claim",
-      "unknown"
+      "patent-claim"
     ],
     "restrictions": [
       "additional-terms",
       "liability",
       "patent-claim",
       "trademark",
-      "unknown",
       "warranty"
     ],
     "patentPosition": "defensive-termination",
@@ -53,47 +53,65 @@
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "BitTorrent-1.0 text Sections 2, 4(a)-(b), and 4(f), plus the definition of Modifications in Section 2 (distributed Licensed Product and file-defined Modifications remain under reciprocal source and licensing duties, while other code in a Derivative Work may be distributed under another license, establishing weak copyleft)"
+      "locator": "public/data/licenses/BitTorrent-1.0.json#text; BitTorrent Open Source License 1.0 se vztahuje na označený klient, související produkty a aktualizace BitTorrent, Inc. Úplná preambule je výslovně nezávazná; právní závěry vycházejí z License Terms 1–15 a Exhibit A. §2 jednoznačně uděluje práva k příspěvkům: užití, změny, kopie, sublicence, distribuci i nutné patenty včetně prodeje. §4(e,f) dovolují šíření executable a derivative produktů. Avšak §1 nazvaný grant poskytovatele opakuje jen Modifications created by such Contributor a jeho patenty místo původního Licensed Product; výslovně nezávazná preambule nemůže tuto mezeru beze zbytku opravit. Stejná formulace je v primárním SPDX online https://spdx.github.io/license-list-data/BitTorrent-1.0.html; known granty jsou zachovány s nejistotou rozsahu původního grantu. Definice Modifications v §2 zahrnuje změněný soubor a nový soubor s částí Licensed Product; §4(f) ponechává jinou licenci zbytku derivative produktu. To dokládá slabý souborový rozsah.; https://spdx.org/licenses/BitTorrent-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "BitTorrent-1.0 text Sections 2 and 4(a), 4(f) (Modifications are additions to or deletions from a Licensed Product file, or a new file containing part of Licensed Product; other code in a Derivative Work may use another license, so reciprocity is confined to the Licensed Product and modified files)"
+      "locator": "public/data/licenses/BitTorrent-1.0.json#text; Definice Modifications v §2 zahrnuje změněný soubor a nový soubor s částí Licensed Product; §4(f) ponechává jinou licenci zbytku derivative produktu. To dokládá slabý souborový rozsah.; https://spdx.org/licenses/BitTorrent-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "BitTorrent-1.0 text opening paragraph; Preamble items 1-3 and 6; Sections 1-2 and 4(e)-(f) (use for any purpose, sale, reproduction, modification, display, performance, distribution, sublicensing, executable and Derivative Work distribution, and express contributor patent grants support commercial use, distribution, modifications, private use, sublicensing, and patent-grant)"
+      "locator": "public/data/licenses/BitTorrent-1.0.json#text; §2 jednoznačně uděluje práva k příspěvkům: užití, změny, kopie, sublicence, distribuci i nutné patenty včetně prodeje. §4(e,f) dovolují šíření executable a derivative produktů. Avšak §1 nazvaný grant poskytovatele opakuje jen Modifications created by such Contributor a jeho patenty místo původního Licensed Product; výslovně nezávazná preambule nemůže tuto mezeru beze zbytku opravit. Stejná formulace je v primárním SPDX online https://spdx.github.io/license-list-data/BitTorrent-1.0.html; known granty jsou zachovány s nejistotou rozsahu původního grantu.; https://spdx.org/licenses/BitTorrent-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "BitTorrent-1.0 text Sections 4(a)-(e), 5, and Exhibit A (distributed Modifications must remain under this or a later BitTorrent license; the license copy, Source Code, per-file Exhibit A notice, and executable source-availability notice are required; Source Code availability periods, LEGAL-file disclosures and updates, community notifications, inability-to-comply disclosures, and indemnity duties have no exact vocabulary values and are represented by unknown; complete-text review confirms there is no mandatory copyright-retention or modification-marking duty)"
+      "locator": "public/data/licenses/BitTorrent-1.0.json#text; §4(a,b) distribuované změny a pokrytý zdroj zůstávají pod touto licencí; zdroje Licensed Product i změn jsou na stejném médiu nebo elektronicky a dostupné nejméně 12 měsíců od prvního zpřístupnění nebo 6 měsíců po další verzi. §4(c) LEGAL popisuje známé nutné cizí IP nároky a API patenty, nová zjištění vyžadují okamžitou aktualizaci i přiměřené informování dřívějších příjemců; je požadováno prohlášení o víře v původnost a dostatečná práva. §4(d,e) zachovává Exhibit A v každém zdrojovém souboru či vhodném adresáři, licenci v relevantní dokumentaci a výraznou informaci o zdrojové cestě v executable, dokumentaci i materiálech. Přidané záruky a odlišné binární podmínky jsou jen vaše a zavazují odškodnit ostatní. Samostatná povinnost změnového souboru v normativních ustanoveních není.; https://spdx.org/licenses/BitTorrent-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "BitTorrent-1.0 text Sections 2, 4(a)-(f), 5, and 9(a)-(b) (distribution of Licensed Product, Modifications, executables, or combined Derivative Works activates source, license, and notice conditions; creating and distributing Modifications activates file-level reciprocity; a specified patent infringement action activates termination; knowledge of third-party claims or API patent licenses, legal inability to comply, and uncured breach are material non-enumerated triggers represented by unknown; complete-text review confirms no network-use or linking trigger)"
+      "locator": "public/data/licenses/BitTorrent-1.0.json#text; §4(a,b) distribuované změny a pokrytý zdroj zůstávají pod touto licencí; zdroje Licensed Product i změn jsou na stejném médiu nebo elektronicky a dostupné nejméně 12 měsíců od prvního zpřístupnění nebo 6 měsíců po další verzi. §4(c) LEGAL popisuje známé nutné cizí IP nároky a API patenty, nová zjištění vyžadují okamžitou aktualizaci i přiměřené informování dřívějších příjemců; je požadováno prohlášení o víře v původnost a dostatečná práva. §4(d,e) zachovává Exhibit A v každém zdrojovém souboru či vhodném adresáři, licenci v relevantní dokumentaci a výraznou informaci o zdrojové cestě v executable, dokumentaci i materiálech. Přidané záruky a odlišné binární podmínky jsou jen vaše a zavazují odškodnit ostatní. Samostatná povinnost změnového souboru v normativních ustanoveních není.; https://spdx.org/licenses/BitTorrent-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "BitTorrent-1.0 text Sections 3, 4(a), 4(d)-(e), 7(c), 8-10, and 13 (no trademark grant; limits on altered or restrictive downstream terms; defensive patent-litigation termination; warranty and liability exclusions; no-fee Source Code rule, indemnities, breach termination, California governing law, mandatory Northern District of California or Santa Clara County forum, fee shifting, CISG exclusion, and jury waiver; the latter commercial, remedy, termination, governing-law, forum, and procedure terms have no exact vocabulary values and are represented by unknown)"
+      "locator": "public/data/licenses/BitTorrent-1.0.json#text; §3 vyjímá patenty pro odstraněný kód, samostatná práva a kombinace s dalším softwarem/hardwarem a neposkytuje známky. §5 při právní nemožnosti požaduje maximum plnění a popis zákona/omezení v LEGAL. §8/10 AS IS a omezení odpovědnosti; §9 30 dnů k nápravě od zjištění porušení. Patentová žaloba na Licensed Product vůči poskytovateli/přispěvateli po 60denním oznámení ukončuje granty, leda stažení nebo dohoda o odměně, s výjimkou deklaratorních žalob a zachováním řádných koncových sublicencí. §11 ukládá spolupráci na spravedlivém rozdělení škod z výkonu práv. §13 kalifornské soudy a právo, náklady poraženého i výslovné vzdání se poroty.; https://spdx.org/licenses/BitTorrent-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "BitTorrent-1.0 text Sections 1(b), 2(2), 3, and 9(b)-(c) (Licensor and Contributors grant limited patent rights necessary for the Licensed Product and Modifications, while rights granted by a Respondent terminate after notice when You bring a patent-infringement action alleging that Licensed Product infringes unless the claim is withdrawn or a royalty arrangement is reached)"
+      "locator": "public/data/licenses/BitTorrent-1.0.json#text; §2 má výslovný nutný patentový grant přispěvatele, §3 kombinatorické výluky. §1 nesprávně odkazuje opět na Contributor a jeho Modifications, proto nelze vydávat tento grant za jasné pokrytí všech původních patentů poskytovatele. §9(b) obranné ukončení se týká žaloby na Licensed Product, nikoli jiných produktů.; https://spdx.org/licenses/BitTorrent-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "BitTorrent-1.0 text Sections 4(a), 4(c)-(e), 5, and Exhibit A (full-license delivery, a prescribed notice in every distributed Source Code file or a likely-to-be-found substitute location, conspicuous executable and documentation source-availability notices, and conditional LEGAL-file notices create a material multi-part notice burden)"
+      "locator": "public/data/licenses/BitTorrent-1.0.json#text; §4(a,b) distribuované změny a pokrytý zdroj zůstávají pod touto licencí; zdroje Licensed Product i změn jsou na stejném médiu nebo elektronicky a dostupné nejméně 12 měsíců od prvního zpřístupnění nebo 6 měsíců po další verzi. §4(c) LEGAL popisuje známé nutné cizí IP nároky a API patenty, nová zjištění vyžadují okamžitou aktualizaci i přiměřené informování dřívějších příjemců; je požadováno prohlášení o víře v původnost a dostatečná práva. §4(d,e) zachovává Exhibit A v každém zdrojovém souboru či vhodném adresáři, licenci v relevantní dokumentaci a výraznou informaci o zdrojové cestě v executable, dokumentaci i materiálech. Přidané záruky a odlišné binární podmínky jsou jen vaše a zavazují odškodnit ostatní. Samostatná povinnost změnového souboru v normativních ustanoveních není. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/BitTorrent-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "BitTorrent-1.0 metadata: id=BitTorrent-1.0, name='BitTorrent Open Source License v1.0', deprecated=false, osi=false, fsf=false; SPDX separately lists the newer BitTorrent-1.1, and Section 7 permits migration to subsequent Licensor-published versions; complete-text review of Sections 4, 5, 9, and 13 finds material LEGAL-file, notification, source-availability-duration, no-fee, indemnity, breach-termination, governing-law, forum, fee-shifting, CISG, and jury-waiver terms that the guide vocabulary cannot represent losslessly, so this older version is not recommendable"
+      "locator": "public/data/licenses/BitTorrent-1.0.json#text; Individuální kontrola celého připnutého textu BitTorrent-1.0 dne 2026-09-09. BitTorrent Open Source License 1.0 se vztahuje na označený klient, související produkty a aktualizace BitTorrent, Inc. Úplná preambule je výslovně nezávazná; právní závěry vycházejí z License Terms 1–15 a Exhibit A. §1 opakuje přispěvatelský grant místo jasného původního grantu a preambule je výslovně nenormativní; je třeba autoritativně objasnit rozsah původních autorských a patentových práv před doporučením. §4(c) aktivní vyrozumění starších příjemců o nových IP nárocích a §11 spolupráce na rozdělení odpovědnosti za využití práv přesahují současný model notice a přidaných záruk; vyžadují samostatné modelové vyjádření. §4(e,f) dovolují jiné podmínky pro binární/odvozený produkt, ale povinnosti Licensed Product a souborů změn se zachovají; §4(a) zakazuje jejich omezení. §7 dovoluje pozdější verzi od poskytovatele, vlastní odvozenou licenci jen pro jiný dosud nepokrytý software pod odlišným názvem. Nezávazné tvrzení preambule, že se nesmí účtovat za zdroje, nemá v normativním §4(b) odpovídající samostatný cenový zákaz.; https://spdx.org/licenses/BitTorrent-1.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

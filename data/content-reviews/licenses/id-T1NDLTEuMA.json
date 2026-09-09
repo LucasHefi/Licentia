@@ -1,0 +1,27 @@
+{
+  "id": "OSC-1.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:7caf7d708f9164f0224c20b5f88e38da251a5f6cb61e4d4a8493a4d609b09792"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Německý text dovoluje neomezené užití, kopie, změny, slučování, vydání, distribuci, sublicence a prodej s copyrightem a svolením. Odpovědnost má výjimky pro úmysl, hrubou nedbalost, újmu na zdraví a kogentní právo.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Grant pokrývá software a přidružené dokumentační soubory, společně definované jako Software.",
+    "grantCs": "První odstavec výslovně vyjmenovává užití, kopírování, změny, slučování, publikaci, distribuci, sublicence a prodej i povolení příjemcům; patentový grant není uveden.",
+    "conditionsCs": "Druhý odstavec vyžaduje copyright a Genehmigungshinweis ve všech kopiích nebo podstatných částech. Zdrojová forma, stejné licencování či reklama požadovány nejsou.",
+    "limitationsCs": "Odpovědnost je neomezená pro úmysl, podvod, hrubou nedbalost, život/tělo/zdraví a zákonně nevylučitelné případy. Nedbalé porušení kardinální povinnosti se omezuje na typickou předvídatelnou škodu; jiná odpovědnost vyloučena i pro personál/zástupce/orgány. Samostatná výluka záruk není uvedena.",
+    "compatibilityCs": "Text nepředepisuje stejnou licenci ani alternativní licenci/verzi; německý jazyk sám není doložka volby německého soudu."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/OSC-1.0.html",
+      "note": "Individuální revize celého připnutého textu; Grant pokrývá software a přidružené dokumentační soubory, společně definované jako Software."
+    }
+  ]
+}

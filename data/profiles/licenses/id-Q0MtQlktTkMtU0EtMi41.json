@@ -8,96 +8,105 @@
     "contentHash": "sha256:eca56fb333a653a4ddeb688fad7097ca8de252fc5651796a0dec78a774e1e317"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "whole-work",
     "permissions": [
+      "conditional-relicensing",
       "distribution",
       "modifications",
-      "sublicensing"
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "include-license-text",
-      "same-license"
-    ],
-    "triggers": [
+      "include-notice",
+      "include-use-acknowledgment",
+      "same-license",
       "unknown"
     ],
-    "restrictions": [
-      "liability",
-      "trademark"
+    "triggers": [
+      "distribution",
+      "modification",
+      "unknown",
+      "use"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "restrictions": [
+      "additional-terms",
+      "liability",
+      "trademark",
+      "unknown",
+      "warranty"
+    ],
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-NC-SA-2.5.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-NC-SA-2.5.json#text; §4(c) NC účelová restrikce a §4(b) ShareAlike derivátů tvoří nestandardní obsahovou licenci, ne neomezený softwarový grant; https://spdx.org/licenses/CC-BY-NC-SA-2.5.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-NC-SA-2.5.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-NC-SA-2.5.json#text; §4(b) povinné stejné prvky pro celý Derivative Work s výjimkou nezávislého zbytku kolekce; §1 hudební syncing je derivát; https://spdx.org/licenses/CC-BY-NC-SA-2.5.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-BY-NC-SA-2.5.json#text; §3 kopie/kolekce/modifikace a veřejná distribuce pod NC; §4(b) pozdější nebo iCommons se všemi třemi prvky, §4(a) zákaz sublicencování originálu; https://spdx.org/licenses/CC-BY-NC-SA-2.5.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-BY-NC-SA-2.5.json#text; §4 text NEBO URI, zachování notices, atribuce autorů/určených stran a stejné prvky derivátu; §4(a) praktické odstranění vyžádaného credit potřebuje unknown; https://spdx.org/licenses/CC-BY-NC-SA-2.5.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-NC-SA-2.5.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-NC-SA-2.5.json#text; Distribuce a veřejné provádění §4, odvozeniny/kolekce; žádost o odstranění credit potřebuje unknown trigger, bez automatického source-network zveřejnění; https://spdx.org/licenses/CC-BY-NC-SA-2.5.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-BY-NC-SA-2.5.json#text; §4(c) NC, §§4(a),(b) technické kontroly a §§4(e),(f) hudební royalty nejsou plně modelovány; §§5–6 výluky, závěr známky CC a zákaz dalších podmínek; https://spdx.org/licenses/CC-BY-NC-SA-2.5.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-NC-SA-2.5.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-NC-SA-2.5.json#text; Grant §3 ani ostatní text neobsahuje patenty; §§4(e),(f) rezervují komerční hudební a webcastové odměny, nikoli patentová práva; https://spdx.org/licenses/CC-BY-NC-SA-2.5.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CC-BY-NC-SA-2.5.json#text; §4(d) copyright, autor/určené strany, název, URI, vztah derivátu a srovnatelná nápadnost; §4(a) žádost odstranění plus licenční text/URI činí zátěž materiální; https://spdx.org/licenses/CC-BY-NC-SA-2.5.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CC-BY-NC-SA-2.5.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CC-BY-NC-SA-2.5.json#text; Individuální přečtení celého připnutého textu dne 2026-09-10. CC BY-NC-SA 2.5 dovoluje nekomerční úpravy a šíření obsahu a vyžaduje pro veřejně šířené či provedené odvozeniny stejné prvky BY-NC-SA, případně pozdější či iCommons variantu. Nezávislé části kolekce podmínky nepřebírají. Atribuce zahrnuje autora nebo určené další osoby, dodaný název, vhodný URI a přiznání původu derivátu; na žádost se prakticky odstraní. Komerční hudební a webcastové odměny zůstávají vyhrazeny, zdrojový softwarový ani patentový grant není uveden. Záruky jsou výslovně vyloučeny s obvyklými zákonnými/písemnými výjimkami. Blokace: §4(c) omezuje všechny licencované činnosti převážně nekomerčním účelem a §§4(e),(f) ponechávají komerční hudební/mechanické/webcastové odměny poskytovateli. Model nemá tento NC a obsahový licenční režim; je nutná samostatná obsahová větev, ne doporučení jako licence nového software. §4(a) vyžaduje na žádost prakticky odstranit atribuční credit §4(d) z kolekcí a derivátů, §§4(a),(b) zakazují rozporné technické kontroly přístupu/užití. Tyto závazky je nutné modelovat samostatně od běžných notices a ShareAlike; nejsou splněny pouhým přiložením licence.; https://spdx.org/licenses/CC-BY-NC-SA-2.5.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

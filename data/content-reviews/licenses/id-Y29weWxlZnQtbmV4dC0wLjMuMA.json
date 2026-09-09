@@ -1,0 +1,30 @@
+{
+  "id": "copyleft-next-0.3.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:ca8fa1fc1443e76390670e9a2a4c9db7efa58ee364ff778a6ca80aa489ec7328"
+  },
+  "disposition": "blocked",
+  "summaryCs": "copyleft-next0.3.0 standardně požaduje licenci celého odvozeného díla, zachování relevantních právních notices a u objektového kódu bezplatné zdroje přes URL; fyzický produkt má dvouletou dostupnost nebo může zdroje přímo obsahovat. Lze dodatečně nabídnout GPL včetně AGPL. Tyto distribuční povinnosti však zanikají při určité placené proprietární nabídce poskytovatele nebo po15 letech od jeho první distribuce. Patentová žaloba ukončuje grant s výjimkami, ale potřebné kopírování pro samotný běh zůstává neukončitelné.",
+  "blockersCs": [
+    "§§7–8 odstraňují celé podmínky §§2–5 podle nabídky placené proprietární varianty a po15 letech od první distribuce My Work pod touto licencí. Statický profil neumí přepnout notices/copyleft/zdroje podle těchto událostí; je nutné modelovat čas a obchodní nabídku konkrétního poskytovatele, nikoli použít datum vydání licence2013-05-16 jako datum začátku lhůty.",
+    "§4 dovoluje začleněné licence jen pokud byly zároveň OSI-Approved a FSF-Free k vydání této verze; §7 používá odlišnou disjunkci OSI nebo FSF či číslovaný copyleft-next. Před automatickou kombinací či vyhodnocením zániku podmínek je potřebný verzovaný historický registr a odlišení obou testů, nikoli dnešní příznaky SPDX."
+  ],
+  "analysis": {
+    "subjectCs": "My Work a Derived Work vyžadující autorské svolení; výjimkou je mere aggregation, pouhá reprodukce a pouhý odkaz na originál, pokud originál výslovně neříká jiné očekávání. Separate Work je samostatné nezávislé dílo nikoli přirozené rozšíření, a/nebo runtime/standardní knihovna či obdobná sestavovací komponenta (§15).",
+    "grantCs": "§1 poskytuje nevýhradná celosvětová trvalá bezplatná neodvolatelná autorská a patentová práva, podmíněná dalšími oddíly a ukončením. Patenty zahrnují nynější/budoucí bez royalty licencovatelné nároky nutně porušované výrobou/užitím/prodejem My Work, nikoli nároky vznikající jen další změnou. §3 umožňuje dodatečnou GPL alternativu, definovanou včetně AGPL; §11 umožňuje pozdější copyleft-next, pokud poskytovatel výslovně možnost neodebere.",
+    "conditionsCs": "§2 informuje, jak získat licenci, a zachovává relevantní copyright/licenční notices/texty/autorství; Legal Notices vylučují loga, obrázky, známky a legendy. §3 vyžaduje celý derivativ pod touto licencí s výrazným notice, nelze obejít dělenou distribucí. §5 objektový kód doprovází URL s bezplatnými Corresponding Source; fyzické produkty vyžadují dostupnost dva roky od poslední vlastní distribuce produktu, alternativně přímo přístupně přiložené zdroje bez URL. Zdroj zahrnuje preferovanou formu, potřebné generovací skripty/instrukce a identifikovaný seznam samostatných sestavovacích/instalačních děl včetně verzí. §6 patch výslovně určený poskytovateli bez vlastních podmínek přebírá tuto licenci v rozsahu vlastního copyrightu.",
+    "limitationsCs": "§4 zakazuje další restrikce i z vnějších smluv/soudních příkazů s popsanou historickou výjimkou jiných licencí. §7 ruší §§2–5 při určité poskytovatelově placené nabídce a §8 po15 letech; ostatní oddíly zůstávají. §10 umožňuje nápravu do30 dnů od zjištění porušení, ale žaloba na patent proti jakékoli části My Work ukončuje grant bez této cesty; vyjímá deklaratorní žaloby, protižaloby a křížové žaloby. Ukončení platí i pro později získané kopie, ne však pro nutné kopie jen k běhu; downstream práva přežívají. §§12–13 vylučují záruky a škody v mezích zákona, §1 neuděluje jména ani známky.",
+    "compatibilityCs": "§3 nabízí příjemci buď copyleft-next, nebo dodatečně udělenou GPL/AGPL bez zde fixované verze. §4 pro kombinované materiály vyžaduje splnit jinou licenci a její současné OSI+FSF uznání k2013-05-16, zatímco §7 placenou výjimku testuje odlišně. §11 later version je výchozí možnost, kterou může poskytovatel výslovně odebrat. §9 poskytuje příjemci přímou licenci od původního poskytovatele; §5 mu výslovně dává vymahatelné právo třetího beneficienta pouze na zdroje."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/copyleft-next-0.3.0.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; §3 standardně vyžaduje celý Derived Work pod licencí; §§7–8 tento režim později ruší, proto family zachycuje výchozí silný copyleft s konkrétním blockerem dynamiky"
+    }
+  ]
+}

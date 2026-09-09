@@ -1,0 +1,27 @@
+{
+  "id": "jove",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:c50772206d73b697fa25ef064e96f4936943643ff66cfb3736fefabd82644c44"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Licence dovoluje program JOVE kopírovat, měnit a distribuovat bez omezení komerčního užití. Celé oznámení musí zůstat ve všech zdrojových souborech a dokumentaci, což samo nevyžaduje zveřejnění zdrojového kódu. Program je poskytován bez záruky; zvláštní výluku odpovědnosti ani výslovné patentové oprávnění licence neuvádí.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Text licencuje program JOVE Jonathana Paynea s copyrightem 1986–2002.",
+    "grantCs": "Uživatel smí JOVE kopírovat, měnit a distribuovat; text neomezuje komerční použití a uvádí bezplatné poskytování Jonathanem a Jovehacks.",
+    "conditionsCs": "Celé oznámení musí zůstat ve všech zdrojových souborech a dokumentaci; nejde o povinnost samostatně dodat zdrojový kód.",
+    "limitationsCs": "JOVE je poskytován bez záruky; text neobsahuje zvláštní výluku odpovědnosti ani zákaz endorsementu.",
+    "compatibilityCs": "Není určena alternativní licence ani volba verze."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/jove.html",
+      "note": "Individuálně přečten celý připnutý text; Celé oznámení musí zůstat ve všech zdrojových souborech a dokumentaci; nejde o povinnost samostatně dodat zdrojový kód. Celý odstavec neobsahuje patentový grant ani patentové ukončení."
+    }
+  ]
+}

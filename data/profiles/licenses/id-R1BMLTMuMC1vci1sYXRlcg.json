@@ -9,8 +9,8 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
     "family": "strong-copyleft",
@@ -20,87 +20,97 @@
       "distribution",
       "modifications",
       "patent-grant",
-      "sublicensing"
+      "private-use"
     ],
     "obligations": [
+      "disclose-source",
       "include-copyright",
       "include-license-text",
-      "provide-corresponding-source"
+      "include-notice",
+      "mark-modifications",
+      "provide-corresponding-source",
+      "provide-installation-information",
+      "same-license"
     ],
     "triggers": [
-      "unknown"
+      "combination",
+      "distribution",
+      "linking",
+      "modification",
+      "patent-claim"
     ],
     "restrictions": [
+      "additional-terms",
       "liability",
-      "trademark",
+      "patent-claim",
       "warranty"
     ],
-    "patentPosition": "express-grant",
+    "patentPosition": "retaliatory-termination",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.whole-work-copyleft",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GPL-3.0-or-later.json#text; text: section 5(c) and section 5 aggregate paragraph; whole GPLv3 text reviewed for this or-later record; https://spdx.org/licenses/GPL-3.0-or-later.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.copyleft-family",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GPL-3.0-or-later.json#text; text: Preamble and section 5(c); whole GPLv3 text reviewed for this or-later record; https://spdx.org/licenses/GPL-3.0-or-later.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GPL-3.0-or-later.json#text; text: section 4 and sections 5(a), 5(b), and 5(d); whole GPLv3 text reviewed for this or-later record; https://spdx.org/licenses/GPL-3.0-or-later.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GPL-3.0-or-later.json#text; text: section 4; sections 5(a)-5(d); section 6 opening and User Product paragraphs; whole GPLv3 text reviewed for this or-later record; https://spdx.org/licenses/GPL-3.0-or-later.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.patent-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GPL-3.0-or-later.json#text; text: section 8; section 10 patent-litigation sentence; section 11 patent grant; whole GPLv3 text reviewed for this or-later record; https://spdx.org/licenses/GPL-3.0-or-later.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GPL-3.0-or-later.json#text; text: Preamble; sections 2 and 4-6; section 11 patent grant; whole GPLv3 text reviewed for this or-later record; https://spdx.org/licenses/GPL-3.0-or-later.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "triggers",
-      "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/GPL-3.0-or-later.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GPL-3.0-or-later.json#text; text: sections 7 and 10; sections 15-16; whole GPLv3 text reviewed for this or-later record; https://spdx.org/licenses/GPL-3.0-or-later.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/GPL-3.0-or-later.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GPL-3.0-or-later.json#text; whole-text editorial review on 2026-09-09; Silný copyleft podle GPL 3.0 včetně odpovídajících zdrojů a podmíněných instalačních informací pro User Products. Or-later umožňuje pozdější GPL podle § 14; metadata popisují verzi 3.0, nikoli dosud neznámé podmínky budoucích verzí.; https://spdx.org/licenses/GPL-3.0-or-later.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/GPL-3.0-or-later.json#text; text: section 0 definitions of propagate and convey; section 1 Corresponding Source; sections 5, 8, and 10; whole GPLv3 text reviewed for this or-later record; https://spdx.org/licenses/GPL-3.0-or-later.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09"
     }
   ]
 }

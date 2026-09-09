@@ -9,8 +9,8 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
     "family": "permissive",
@@ -18,84 +18,88 @@
     "permissions": [
       "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "include-license-text"
+      "include-copyright",
+      "include-notice"
     ],
     "triggers": [
-      "unknown"
+      "distribution"
     ],
     "restrictions": [
+      "additional-terms",
       "liability",
+      "trademark",
       "warranty"
     ],
-    "patentPosition": "unknown",
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.no-copyleft",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Unicode-3.0.json#text; permission paragraph: unrestricted use, copy, modify, merge, publish, distribute and sell Data Files or Software and permit recipients to do so; definitions include associated documentation, without the older Unicode-DFS-2016 URL/PDF exclusions; sublicensing not expressly named; whole text: no reciprocal source-disclosure or same-license condition; https://spdx.org/licenses/Unicode-3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.4"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.permissive-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Unicode-3.0.json#text; permission paragraph: unrestricted use, copy, modify, merge, publish, distribute and sell Data Files or Software and permit recipients to do so; definitions include associated documentation, without the older Unicode-DFS-2016 URL/PDF exclusions; sublicensing not expressly named; https://spdx.org/licenses/Unicode-3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.4"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Unicode-3.0.json#text; permission paragraph conditions (a) OR (b): copyright and permission notice with all data/software copies OR associated documentation; does not require both alternatives or the entire license file; https://spdx.org/licenses/Unicode-3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.4"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "triggers",
-      "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Unicode-3.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Unicode-3.0.json#text; permission paragraph conditions (a) OR (b): copyright and permission notice with all data/software copies OR associated documentation; does not require both alternatives or the entire license file; https://spdx.org/licenses/Unicode-3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.4"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Unicode-3.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Unicode-3.0.json#text; whole text: no express patent grant or patent-litigation termination; no inference about implied patent rights; https://spdx.org/licenses/Unicode-3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.4"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Unicode-3.0.json#text; permission paragraph: unrestricted use, copy, modify, merge, publish, distribute and sell Data Files or Software and permit recipients to do so; definitions include associated documentation, without the older Unicode-DFS-2016 URL/PDF exclusions; sublicensing not expressly named; https://spdx.org/licenses/Unicode-3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.4"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Unicode-3.0.json#text; NOTICE TO USER: acceptance by download/install/copy/use; warranty and liability paragraphs; last paragraph: copyright-holder name cannot be used in advertising/promotion without written authorization; https://spdx.org/licenses/Unicode-3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.4"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Unicode-3.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Unicode-3.0.json#text; whole-text editorial review on 2026-09-09, batch 4; Zachovejte copyright a svolovací oznámení buď u všech kopií dat či softwaru, nebo v přidružené dokumentaci. Licence zahrnuje datové soubory i software s dokumentací; nepřebírá staré vymezení dat a výluku PDF tabulek z Unicode-DFS-2016. Jméno nositele práv nelze bez písemného souhlasu používat k propagaci. Stažením, instalací, kopírováním či užitím přijímáte podmínky. Poskytování zdrojů ani výslovný patentový grant text nestanoví.; https://spdx.org/licenses/Unicode-3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.4"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Unicode-3.0.json#text; permission paragraph conditions (a) OR (b): copyright and permission notice with all data/software copies OR associated documentation; does not require both alternatives or the entire license file; https://spdx.org/licenses/Unicode-3.0.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.4"
     }
   ]
 }

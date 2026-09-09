@@ -1,0 +1,30 @@
+{
+  "id": "CECILL-1.1",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:01cb123989abc4d37c381913a14c01751557f3d1fd899d8adc27085a9759fcf8"
+  },
+  "disposition": "blocked",
+  "summaryCs": "CeCILL 1.1 zahrnuje upravený software a staticky propojené moduly ve společném executable; samostatný Dynamic Module musí mít oddělený executable i adresní prostor. Redistribuce zachovává licenci, oznámení a přístup k úplným zdrojům, změny jméno a datum. Článek 5 výslovně uděluje patentová práva. Zůstává mimo průvodce kvůli zvláštním aktivním závazkům a nutnosti doložit vztah anglické verze 1.1 k rozhodujícímu francouzskému znění.",
+  "analysis": {
+    "subjectCs": "Článek 1 pokrývá software ve zdrojové/objektové podobě a dokumentaci. Contributions jsou integrované změny i Static Modules, jejichž objekt je staticky propojen v jednom executable. Dynamic Module je nezávislý, ve dvou samostatných executable a adresních prostorech s voláním mezi nimi; §5.3.3/6.3 dovolují jeho vlastní licenci. Nejde o obecnou výjimku každého dynamického linkování v témže procesu.",
+    "grantCs": "Čl.2 a5 udělují bezplatná nevýlučná převoditelná celosvětová práva po dobu majetkových práv. §5.1 kopie, loading/display/run/storage a pozorování/studium/testování pro myšlenky/principy bez omezení oboru; §5.2 změny/odvozeniny; §5.3 veřejné šíření i prodej. Čl.5 výslovně uděluje bezplatná exploitation rights k patentům poskytovatele na vynálezy implementované softwarem. Úplné znění nemá patentovou odvetu a nepřenáší se sem patentový non-enforcement režim CeCILL2.0. Obecné sublicencování není zvlášť uděleno.",
+    "conditionsCs": "§5.2 každá Contribution výslovně uvádí autora a datum. §5.3.1/5.3.2 nezměněné i upravené kopie nesou dohodu a notice omezení záruk/odpovědnosti; samotný objekt vyžaduje neomezený přístup budoucích příjemců k úplnému modifikovatelnému zdroji s informací o cestě, dodatečné náklady nanejvýš přenos dat. Čl.1 Source Code znamená instrukce/řádky potřebné k modifikaci, bez převzetí cizí definice GPL Corresponding Source. §6.4.1 zachovává identická IP oznámení v kopiích. §6.4.2 navíc aktivně zajišťuje dodržování IP práv zaměstnanci; §6.1 držitel slibuje zachovat distribuci za podmínek dohody po dobu ochrany. §3.2 zaznamenává kopii dohody/notices poskytnutou před loading/prvním výkonem práv.",
+    "limitationsCs": "§7 podpora/údržba nejsou automatické, dobrovolné služby a další záruky pouze vlastní odpovědností v odděleném ujednání. §8.1 připouští prokázanou přímou škodu z pochybení, §8.2 vyjímá vlastní porušení příjemce, profesní užití profesionálem a následné ztráty, včetně široce definovaných obchodních škod/nároků třetích stran. §9.1 příjemce aktivně ověřuje vhodnost, řádnou funkci a nepoškození osob/majetku; §9.2 poskytovatel v dobré víře prohlašuje oprávnění k udělení práv a §9.3 AS IS tuto výjimku zachovává. §9.4 žádná IP indemnita, ale při žalobě musí poskytovatel nabídnout technickou a právní pomoc, podmínky případ od případu memorandem. Disclaimer názvu/známky není výslovný zákaz propagace. §10.1 ukončení po neúčinné výzvě a 30 dnech, §10.2 řádné starší downstream licence zůstávají.",
+    "compatibilityCs": "§5.3.4 dovoluje celý kombinovaný kód pod GPL při začlenění CeCILL kódu do GPL nebo obráceně; verze GPL zde uvedena není, nesmí se bez podkladů přiřadit pouze GPL2 či GPL3. §12.3 redistribuce pod stejnou nebo pozdější CeCILL, s výjimkou GPL cesty; formulář lze kopírovat bez změn, další číslované verze vydávají autoři licence. §11.5 při výkladovém rozporu upřednostňuje francouzské znění, avšak připnuté comments a SPDX notes uvádějí pouze anglickou1.1 s úpravami1.0: vztah k autentickému textu je třeba doložit, ne potichu zaměnit. §11 zachovává force majeure, písemné podepsané změny a adaptaci na právo. §13 francouzské právo, pokus o smír, po2 měsících pařížský příslušný soud mimo naléhavá řízení."
+  },
+  "blockersCs": [
+    "Modelovat skutečné aktivní povinnosti: držitel zachová distribuci po dobu ochrany (§6.1), příjemce přijme potřebná opatření vůči zaměstnancům (§6.4.2) a ověří vhodnost/funkčnost/neškodnost (§9.1), poskytovatel poskytne technickou a právní pomoc při IP řízení (§9.4). Nejde pouze o AS IS ani obecnou indemnitu.",
+    "Doložit autoritativní vztah anglické CeCILL1.1 k francouzskému znění: §11.5 upřednostňuje francouzštinu, zatímco připnutá SPDX poznámka a primární stránka uvádějí pouze anglickou verzi1.1. Historickou1.0 ani novější2.x nepovažovat bez doložení za totožný rozhodující text."
+  ],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/CECILL-1.1.html",
+      "note": "Primární stránka potvrzuje explicitní patentový grant čl.5 a poznámku, že1.1 existuje jen anglicky s úpravami1.0; v uloženém textu však zůstává priorita francouzštiny§11.5. Tato nejistota se neskrývá změnou kanonického zdroje."
+    }
+  ]
+}

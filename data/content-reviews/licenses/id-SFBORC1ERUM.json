@@ -1,0 +1,27 @@
+{
+  "id": "HPND-DEC",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:ec01ecb86dab25ab760e00c4c4bc4b66e3c8c69cb6ccaaffa7155656729c10ee"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Licence dovoluje software a dokumentaci používat, kopírovat, měnit a distribuovat pro libovolný účel bez poplatku. Copyright musí zůstat ve všech kopiích a spolu se svolením v dokumentaci; vlastní copyright ke změnám lze přidat navíc. Software je bez záruk a jméno DEC nelze bez předchozího písemného souhlasu použít v reklamě na distribuci.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Licence DEC z roku 1990 pokrývá software a dokumentaci.",
+    "grantCs": "Závěrečný grant dovoluje užití, kopírování, změny a distribuci pro libovolný účel bez poplatku.",
+    "conditionsCs": "Copyright se zachová ve všech kopiích a copyright se svolením v podpůrné dokumentaci; vytvoří-li změny odvozená autorská práva, lze připojit odpovídající oznámení navíc, není to povinnost.",
+    "limitationsCs": "Informace se mohou měnit bez oznámení a nepředstavují závazek DEC; AS IS vylučuje záruky. Jméno DEC nesmí bez předchozího písemného souhlasu do reklamy či publicity distribuce.",
+    "compatibilityCs": "Možnost přidat vlastní copyright nenahrazuje povinné původní oznámení a není alternativní licencí; verze se nevolí."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/HPND-DEC.html",
+      "note": "Individuálně přečten celý připnutý text; Copyright se zachová ve všech kopiích a copyright se svolením v podpůrné dokumentaci; vytvoří-li změny odvozená autorská práva, lze připojit odpovídající oznámení navíc, není to povinnost. Celý text včetně odstavce o odvozených právech nemá výslovný patentový grant nebo patentové ukončení."
+    }
+  ]
+}

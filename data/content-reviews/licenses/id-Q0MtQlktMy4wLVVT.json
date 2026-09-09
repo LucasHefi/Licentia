@@ -1,0 +1,29 @@
+{
+  "id": "CC-BY-3.0-US",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:9228b57c3f430807bee4696b828e656db597371ee635820d4c8166d3f3a41f29"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Americká CC BY 3.0 dovoluje komerční kopie, změny a veřejné užití díla, aniž by celé odvozenině vnucovala stejnou licenci. Vyžaduje zřetelné označení změn, copyright, licenci nebo odkaz a atribuci autora i určených dalších osob včetně přiznání původu adaptace. Na žádost se prakticky odstraní předepsaná atribuce a nesmějí se přidávat omezující technická opatření. Tyto obsahové podmínky a pravidla veřejných výkonů vyžadují samostatné posouzení, proto ji průvodce novému softwaru nenabízí.",
+  "blockersCs": [
+    "§1,3–4 vyžadují obsahový model kolekcí, veřejných výkonů, hudebních odměn, technologických opatření a odstranění atribuce na žádost; současný softwarový průvodce tyto vztahy neumí věrně reprezentovat."
+  ],
+  "analysis": {
+    "subjectCs": "CC BY3.0 United States pokrývá autorské Work a samostatně rozlišuje Collective Work a Derivative Work, přičemž synchronizace hudby s obrazem je derivát.",
+    "grantCs": "§3 dovoluje celosvětově a bez poplatků kopírování, kolekce, deriváty, distribuci, veřejné zobrazení/výkon i digitální zvukové přenosy. §3(e–f) se vzdává vymezených hudebních, mechanických a webcastových odměn s odkazy na americké compulsory licences. Podlicence §4(a) výslovně zakazuje.",
+    "conditionsCs": "§3(b) vyžaduje rozumně zřetelně označit změny včetně překladu. Při šíření či veřejném výkonu §4 zachovává copyright a licenční/disclaimer notices, připojuje text nebo URI licence a uvedeného autora i určené Attribution Parties, titul, relevantní URI a kredit původu derivátu s alespoň srovnatelnou viditelností. Na žádost poskytovatele musí být přiměřeně odstraněn předepsaný kredit z kolekce či derivátu.",
+    "limitationsCs": "§4 zakazuje omezující další podmínky i technologická opatření a dojem propojení, podpory nebo sponzoringu bez písemného svolení. §5 dává pouze držená práva AS IS bez právního ujištění, §6 vylučuje vyjmenované škody v zákonném rozsahu. Jakékoli porušení automaticky ukončuje práva; dodržující příjemci zůstávají licencováni a text neobsahuje automatickou30denní nápravu.",
+    "compatibilityCs": "§8 nabízí příjemcům přímou licenci původního Work; změny ani kolekce nemusí mít stejnou licenci jako celek. Není automatická volba pozdější verze nebo jiného portu. Závěrečné omezení známek Creative Commons se výslovně nepovažuje za součást licence."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/CC-BY-3.0-US.html",
+      "note": "Individuálně přečten celý připnutý text; §3(b) vyžaduje rozumně zřetelně označit změny včetně překladu. Při šíření či veřejném výkonu §4 zachovává copyright a licenční/disclaimer notices, připojuje text nebo URI licence a uvedeného autora i určené Attribution Parties, titul, relevantní URI a kredit původu derivátu s alespoň srovnatelnou viditelností. Na žádost poskytovatele musí být přiměřeně odstraněn předepsaný kredit z kolekce či derivátu. Celý americký port uděluje autorská práva a hudební odměny; neobsahuje výslovný patentový grant ani patentovou terminační podmínku."
+    }
+  ]
+}

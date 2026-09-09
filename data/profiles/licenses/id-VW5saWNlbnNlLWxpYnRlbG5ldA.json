@@ -9,90 +9,87 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "public-domain-equivalent",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
-    "obligations": [
-      "unknown"
-    ],
-    "triggers": [
-      "unknown"
-    ],
-    "restrictions": [
-      "unknown"
-    ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "obligations": [],
+    "triggers": [],
+    "restrictions": [],
+    "patentPosition": "none-stated",
+    "noticeBurden": "none"
   },
   "evidence": [
     {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Unlicense-libtelnet.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Unlicense-libtelnet.json#text; První a poslední věta dedicates copyright to public domain a relinquishment in perpetuity výslovně stanoví public-domain záměr.; https://spdx.org/licenses/Unlicense-libtelnet.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Unlicense-libtelnet.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Unlicense-libtelnet.json#text; Celý odstavec nemá reciproční podmínku ani požadavek předat zdroje.; https://spdx.org/licenses/Unlicense-libtelnet.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Unlicense-libtelnet.json#text; Dedikace any and all copyright interest a present and future rights nemá účelové či komerční omezení.; https://spdx.org/licenses/Unlicense-libtelnet.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Unlicense-libtelnet.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Unlicense-libtelnet.json#text; Celý odstavec nestanoví žádné pozitivní distribuční ani informační povinnosti.; https://spdx.org/licenses/Unlicense-libtelnet.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Unlicense-libtelnet.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Unlicense-libtelnet.json#text; Celý odstavec nemá podmínku spouštěnou distribucí, úpravou, sítí či patentovou žalobou.; https://spdx.org/licenses/Unlicense-libtelnet.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Unlicense-libtelnet.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Unlicense-libtelnet.json#text; Celý odstavec neobsahuje výluky záruk, odpovědnosti či další zákazy.; https://spdx.org/licenses/Unlicense-libtelnet.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Unlicense-libtelnet.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Unlicense-libtelnet.json#text; Výslovně se vzdává copyright law práv; patenty ani patentové ukončení se neuvádějí.; https://spdx.org/licenses/Unlicense-libtelnet.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Unlicense-libtelnet.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Unlicense-libtelnet.json#text; Celý odstavec nevyžaduje připojit dedikaci k distribuovaným kopiím.; https://spdx.org/licenses/Unlicense-libtelnet.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Unlicense-libtelnet.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Unlicense-libtelnet.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. Autoři trvale věnují veškerý svůj současný i budoucí copyright ke kódu veřejnosti, včetně účinků vůči dědicům a nástupcům. Text neobsahuje náhradní permisivní grant ani výluku záruk.; https://spdx.org/licenses/Unlicense-libtelnet.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

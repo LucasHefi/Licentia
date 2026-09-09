@@ -8,92 +8,107 @@
     "contentHash": "sha256:6671efe0df8cb432609494dad5498b4b139f3725a6f0edb868c4e0e68aee8b34"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "strong-copyleft",
+    "copyleftScope": "whole-work",
     "permissions": [
       "commercial-use",
-      "distribution"
+      "conditional-relicensing",
+      "distribution",
+      "modifications",
+      "patent-grant",
+      "private-use"
     ],
     "obligations": [
-      "provide-corresponding-source"
+      "include-copyright",
+      "include-license-text",
+      "include-notice",
+      "mark-modifications",
+      "provide-corresponding-source",
+      "same-license",
+      "unknown"
     ],
     "triggers": [
+      "combination",
+      "distribution",
+      "modification",
       "unknown"
     ],
     "restrictions": [
+      "additional-terms",
+      "liability",
       "unknown"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "express-grant",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/D-FSL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/D-FSL-1.0.json#text; §3.1–2 whole-work s výslovnou kombinovanou výjimkou: oddělené zdrojové soubory nestačí, vyžaduje také smysluplnou nezávislou použitelnost podle dotčených odborníků. Veřejný download není sám SaaS/network-use copyleft.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/D-FSL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/D-FSL-1.0.json#text; §3.1–2 whole-work s výslovnou kombinovanou výjimkou: oddělené zdrojové soubory nestačí, vyžaduje také smysluplnou nezávislou použitelnost podle dotčených odborníků. Veřejný download není sám SaaS/network-use copyleft.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/D-FSL-1.0.json#text; §1 bezplatné copy/distribute/public access a úpravy/kombinace; §8.2 dovoluje poplatky za předání/služby, nikoli §3.5 za samotná nevýhradní práva změněné verze. §3.6 nabytý jiný IP titul zejména patent/utility model k modifikované verzi se licencuje v nutném rozsahu pro změněné i nezměněné verze. §5.4 přímá licence od držitelů, ne sublicence či transfer práv.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/D-FSL-1.0.json#text; §2 notices autorů/licence, jasný odkaz a URL d-fsl.de, úplný text; pokud installer/startup ukazuje podmínky, také tuto licenci/odkaz/původní držitele. Obdrženou dokumentaci přiložit, leda její licence zakazuje bezplatné předání. §3 celek změn pod D-FSL, souborové oddělení plus rozumná samostatná použitelnost určují nezávislý kombinovaný program. Datované změny a původní autorství ve source NEBO předávaném/veřejném VCS. §4 fyzické object kopie se source na médiu NEBO veřejnou URL; elektronický object download vždy veřejný source URL; odpovídající dokumentace i zde.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/D-FSL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/D-FSL-1.0.json#text; §2 notices autorů/licence, jasný odkaz a URL d-fsl.de, úplný text; pokud installer/startup ukazuje podmínky, také tuto licenci/odkaz/původní držitele. Obdrženou dokumentaci přiložit, leda její licence zakazuje bezplatné předání. §3 celek změn pod D-FSL, souborové oddělení plus rozumná samostatná použitelnost určují nezávislý kombinovaný program. Datované změny a původní autorství ve source NEBO předávaném/veřejném VCS. §4 fyzické object kopie se source na médiu NEBO veřejnou URL; elektronický object download vždy veřejný source URL; odpovídající dokumentace i zde.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/D-FSL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/D-FSL-1.0.json#text; §8.3 nesmí ztížit další použití DRM/kopírovací ochranou, ale heslový přístup a intranet nejsou tímto opatřením. §6 každé porušení automatický konec, práva downstream zachována. §7 odpovědnost za cizí práva pouze při vědomosti bez upozornění; vady dle samostatné dohody nebo zákona. Neobsahuje obecnou výluku záruk ani as-is. §5 zákonná běžná obsluha nevyžaduje přijetí; §10 německé právo.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/D-FSL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/D-FSL-1.0.json#text; §1 bezplatné copy/distribute/public access a úpravy/kombinace; §8.2 dovoluje poplatky za předání/služby, nikoli §3.5 za samotná nevýhradní práva změněné verze. §3.6 nabytý jiný IP titul zejména patent/utility model k modifikované verzi se licencuje v nutném rozsahu pro změněné i nezměněné verze. §5.4 přímá licence od držitelů, ne sublicence či transfer práv.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/D-FSL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/D-FSL-1.0.json#text; §2 notices autorů/licence, jasný odkaz a URL d-fsl.de, úplný text; pokud installer/startup ukazuje podmínky, také tuto licenci/odkaz/původní držitele. Obdrženou dokumentaci přiložit, leda její licence zakazuje bezplatné předání. §3 celek změn pod D-FSL, souborové oddělení plus rozumná samostatná použitelnost určují nezávislý kombinovaný program. Datované změny a původní autorství ve source NEBO předávaném/veřejném VCS. §4 fyzické object kopie se source na médiu NEBO veřejnou URL; elektronický object download vždy veřejný source URL; odpovídající dokumentace i zde.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/D-FSL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/D-FSL-1.0.json#text; Individuálně přečten celý připnutý text. §0 software; Öffentlichkeit nezahrnuje jen osobně propojenou či stejnou právnickou/veřejnou osobou svázanou skupinu. Verbreiten fyzické veřejné kopie, öffentlich zugänglich machen nehmotné veřejné předání zejména download. Source se build/install konfigy a nástroji, kromě běžných nebo každému bez licence fee dostupných internetových nástrojů. D-FSL1.0 vyžaduje reciprocitu publikovaných odvozenin a zdroje s obdrženou volně předatelnou dokumentací. Samostatnost kombinace testuje oddělenými soubory i smysluplnou nezávislou použitelností. Licenční rada smí zavést novou závaznou verzi účinnou od znalosti její publikace; nejde o běžnou volbu or-later. § 9.2 mění podmínky závazně od znalosti nové verze, § 2.4/ § 4.3 vyžadují obdrženou dokumentaci s vlastní licenční výjimkou a § 8.3 má DRM limit s heslo/intranet výjimkou. Doplnit tyto mechanismy a dvousložkový test samostatnosti; pouhé optional or-later/file check je nesprávné.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

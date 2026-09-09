@@ -8,93 +8,100 @@
     "contentHash": "sha256:f7547a4f41f4dbdcaafdfbdc8a735f4be1579799091afdd17a86d22c1dcc9d9c"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
+    "family": "nonstandard",
     "copyleftScope": "unknown",
     "permissions": [
       "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "include-copyright"
+      "include-copyright",
+      "include-notice",
+      "unknown"
     ],
     "triggers": [
+      "combination",
+      "distribution",
+      "modification",
       "unknown"
     ],
     "restrictions": [
-      "unknown"
+      "additional-terms",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Ruby.json#text; §1 verbatim source copying/giving with notices; §§2-3 modification AND binary distribution have DIFFERENT at-least-ONE routes; §4 partial commercial inclusion permitted but LEGAL lists separately licensed files; §5 independent input/output scripts/library files may be sold/aggregated; standalone text grants no blanket alternative GPL/BSD license; scope cannot be flattened before resolving the conditions identified in review; https://spdx.org/licenses/Ruby.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.8"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Ruby.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Ruby.json#text; §1 verbatim source copying/giving with notices; §§2-3 modification AND binary distribution have DIFFERENT at-least-ONE routes; §4 partial commercial inclusion permitted but LEGAL lists separately licensed files; §5 independent input/output scripts/library files may be sold/aggregated; standalone text grants no blanket alternative GPL/BSD license; https://spdx.org/licenses/Ruby.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.8"
     },
     {
-      "field": "copyleftScope",
+      "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Ruby.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Ruby.json#text; §1 duplicate original copyrights/disclaimers; §2 choose public/freely-available modifications OR internal organization use OR nonstandard binary names+original instructions OR author arrangement; §3 separately choose binaries/library files+original distribution instructions OR accompanying machine-readable source OR nonstandard names+instructions OR author arrangement; these are ALTERNATIVES, not simultaneous unconditional source/same-license duties; https://spdx.org/licenses/Ruby.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.8"
     },
     {
-      "field": "triggers",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Ruby.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Ruby.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Ruby.json#text; §1 duplicate original copyrights/disclaimers; §2 choose public/freely-available modifications OR internal organization use OR nonstandard binary names+original instructions OR author arrangement; §3 separately choose binaries/library files+original distribution instructions OR accompanying machine-readable source OR nonstandard names+instructions OR author arrangement; these are ALTERNATIVES, not simultaneous unconditional source/same-license duties; https://spdx.org/licenses/Ruby.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.8"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Ruby.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Ruby.json#text; whole text: no express patent grant or patent-litigation termination; no inference of patent rights from copyright, trademarks or non-infringement disclaimers; https://spdx.org/licenses/Ruby.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.8"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Ruby.json#text; §1 verbatim source copying/giving with notices; §§2-3 modification AND binary distribution have DIFFERENT at-least-ONE routes; §4 partial commercial inclusion permitted but LEGAL lists separately licensed files; §5 independent input/output scripts/library files may be sold/aggregated; standalone text grants no blanket alternative GPL/BSD license; https://spdx.org/licenses/Ruby.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.8"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Ruby.json#text; §4 excludes third-party files listed in LEGAL; §5 output/input copyright boundary; §6 AS IS warranty only, NO express liability/patent term; public domain in §2(a) one optional route, not whole-license dedication; https://spdx.org/licenses/Ruby.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.8"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Ruby.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Ruby.json#text; whole-text editorial review on 2026-09-09, batch 8; Modelovat oddělené volby pro úpravy (§2) a binární distribuci (§3), včetně možnosti pouze interního užití a individuální dohody. Doplnit vyhodnocení souboru LEGAL a zvláštní částečné inkorporace podle §4. Nepřidávat obecný copyleft, povinné zdroje ani alternativní GPL/BSD převzatou z dnešní distribuce Ruby; samostatný SPDX text ji neobsahuje.; https://spdx.org/licenses/Ruby.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.8"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Ruby.json#text; §1 duplicate original copyrights/disclaimers; §2 choose public/freely-available modifications OR internal organization use OR nonstandard binary names+original instructions OR author arrangement; §3 separately choose binaries/library files+original distribution instructions OR accompanying machine-readable source OR nonstandard names+instructions OR author arrangement; these are ALTERNATIVES, not simultaneous unconditional source/same-license duties; https://spdx.org/licenses/Ruby.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.8"
     }
   ]
 }

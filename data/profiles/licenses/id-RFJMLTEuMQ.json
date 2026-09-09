@@ -8,95 +8,99 @@
     "contentHash": "sha256:56b6d4fc1f280744a7f566e2f7156b8ea3e622d2f1ec79317226c4c8af8cdb66"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "permissive",
+    "family": "nonstandard",
     "copyleftScope": "none",
     "permissions": [
       "commercial-use",
       "distribution",
       "modifications",
+      "private-use",
       "sublicensing"
     ],
     "obligations": [
-      "unknown"
+      "include-license-text",
+      "include-notice",
+      "include-use-acknowledgment"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "use"
     ],
     "restrictions": [
       "liability",
       "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "unknown"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.no-copyleft",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.permissive-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DRL-1.1.json#text; DRL 1.1 licencuje detekční pravidla a jejich dokumentaci, včetně zpráv vytvářených při shodě nad daty. Široký grant dovoluje užití, kopie, změny, sloučení, publikaci, distribuci, sublicence i prodej Rules. Povinné uznání v pravidlech a výsledných zprávách není zdrojová povinnost ani stejná licence programu.; https://spdx.org/licenses/DRL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "copyleftScope",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/DRL-1.1.json#text; Povinné uznání v pravidlech a výsledných zprávách není zdrojová povinnost ani stejná licence programu.; https://spdx.org/licenses/DRL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DRL-1.1.json#text; Široký grant dovoluje užití, kopie, změny, sloučení, publikaci, distribuci, sublicence i prodej Rules.; https://spdx.org/licenses/DRL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/DRL-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DRL-1.1.json#text; Při sdílení i změněných Rules se zachová dodaná identifikace autorů/určených osob přiměřeným požadovaným způsobem, rozumně proveditelný odkaz na pravidlo/sadu a informace o DRL s textem nebo odkazem. Při užití nad daty musí zprávy založené na shodách zachovat dodanou atribuci autorů.; https://spdx.org/licenses/DRL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/DRL-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DRL-1.1.json#text; Při sdílení i změněných Rules se zachová dodaná identifikace autorů/určených osob přiměřeným požadovaným způsobem, rozumně proveditelný odkaz na pravidlo/sadu a informace o DRL s textem nebo odkazem. Při užití nad daty musí zprávy založené na shodách zachovat dodanou atribuci autorů.; https://spdx.org/licenses/DRL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/DRL-1.1.json#text; AS IS vylučuje záruky včetně noninfringement a odpovědnost; výslovná patentová ochrana není.; https://spdx.org/licenses/DRL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/DRL-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DRL-1.1.json#text; Celý DRL grant neobsahuje výslovné patentové oprávnění nebo odvetné ukončení.; https://spdx.org/licenses/DRL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/DRL-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DRL-1.1.json#text; Při sdílení i změněných Rules se zachová dodaná identifikace autorů/určených osob přiměřeným požadovaným způsobem, rozumně proveditelný odkaz na pravidlo/sadu a informace o DRL s textem nebo odkazem. Při užití nad daty musí zprávy založené na shodách zachovat dodanou atribuci autorů. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/DRL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/DRL-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DRL-1.1.json#text; Individuální kontrola celého připnutého textu DRL-1.1 dne 2026-09-09. DRL 1.1 licencuje detekční pravidla a jejich dokumentaci, včetně zpráv vytvářených při shodě nad daty. Předmětem jsou detekční Rules a atribuce ve zprávách z jejich shod, nikoli obecný software; před doporučením je třeba oddělit model pravidel/výstupů a jeho notifikační rozsah. Text či odkaz na licenci jsou alternativy omezené reasonable practicability; jiná licence či verze není nabídnuta.; https://spdx.org/licenses/DRL-1.1.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

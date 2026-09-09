@@ -1,0 +1,29 @@
+{
+  "id": "Wsuipa",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:11e8b80805707637153a6c1d8693e505a1cd2a035e8b327ce90abf16bc8b85d7"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Soubory fontů lze neomezeně kopírovat a šířit. Upravené soubory je nutné přejmenovat; text neukládá povinnost připojit oznámení a neobsahuje výluky záruk.",
+  "blockersCs": [
+    "Grant se týká souborů fontů Washington State University a vyžaduje skutečné přejmenování každého upraveného souboru. Pro obecný software je nutné oddělit fontový předmět a doplnit podmíněné přejmenování; obecné označení změn nestačí."
+  ],
+  "analysis": {
+    "subjectCs": "Soubory fontů Washington State University, původní autorka Janene Winter; úvod vysvětluje přidání oznámení v roce 2008.",
+    "grantCs": "Neomezené kopie/redistribuce původních souborů; úpravy a jejich redistribuce po přejmenování. Patentový grant není uveden.",
+    "conditionsCs": "Výsledný upravený soubor musí dostat jiný název; zachování copyrightu nebo textu není výslovnou podmínkou.",
+    "limitationsCs": "Chybí záruková i odpovědnostní výluka; bez zdrojové reciprocity.",
+    "compatibilityCs": "Žádná alternativní licence/verze; kontakty nejsou alternativní licenční cesta."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Wsuipa.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Druhý odstavec dovoluje unlimited copying, ale úpravy podmiňuje přejmenováním; závěr vymezuje fonty."
+    }
+  ]
+}

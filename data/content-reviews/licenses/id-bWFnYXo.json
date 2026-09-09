@@ -1,0 +1,27 @@
+{
+  "id": "magaz",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:3c3dc745088cce2757102fb24fb5a77e0389b339481226b878c83f050da37705"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Užití, šíření, rozmnožování a úpravy jsou dovoleny při zachování copyrightu i tohoto svolení, včetně užití bez distribuce.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Software magaz je označen copyrightem Donalda Arseneaua 1999–2011.",
+    "grantCs": "This software povoluje svobodné užití, přenos, rozmnožování a úpravy bez zákazu komerce; neobsahuje výslovný patentový grant nebo sublicenci.",
+    "conditionsCs": "Podmínka provided that vyžaduje zachovat copyright a toto svolení u všech uvedených činností, včetně samotného užití; nevyžaduje stejné licencování ani zdroje. Povinnost při samotném užití nyní zachycuje trigger use ve slovníku 1.4.0.",
+    "limitationsCs": "Úplný text nemá záruky, odpovědnost, ochranné známky, terminaci ani jurisdikci.",
+    "compatibilityCs": "Žádná licenční alternativa nebo volba verze není uvedena; grant úprav není výrok o kompatibilitě."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/magaz.html",
+      "note": "Individuální revize celého připnutého textu; Software magaz je označen copyrightem Donalda Arseneaua 1999–2011."
+    }
+  ]
+}

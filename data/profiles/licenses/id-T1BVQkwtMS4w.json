@@ -8,93 +8,105 @@
     "contentHash": "sha256:90d48198add56d6a328e69ac4f4f4ed0cb92a3ac6ebf102cda1ab72a23739637"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
+    "family": "nonstandard",
     "copyleftScope": "unknown",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use",
+      "unknown"
     ],
     "obligations": [
       "include-copyright",
-      "include-license-text"
-    ],
-    "triggers": [
+      "include-notice",
+      "include-use-acknowledgment",
+      "mark-modifications",
       "unknown"
     ],
+    "triggers": [
+      "combination",
+      "distribution",
+      "modification",
+      "use"
+    ],
     "restrictions": [
+      "additional-terms",
+      "trademark",
+      "unknown",
       "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OPUBL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OPUBL-1.0.json#text; Dokumentové podmínky a volitelné zákazy mají instanční rozsah, který nelze vyjádřit jediným softwarovým copyleftScope.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OPUBL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OPUBL-1.0.json#text; Dokumentové podmínky a volitelné zákazy mají instanční rozsah, který nelze vyjádřit jediným softwarovým copyleftScope.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OPUBL-1.0.json#text; I dovoluje reprodukci/distribuci v jakémkoli médiu a výslovně komerční šíření, s výhradou zvolených opcí VI. IV upravuje modifikace. Patentový grant není uveden; referenční vzor uvádí verzi vX.Y-or-later, ale skutečnou volbu je nutné číst v instanci.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OPUBL-1.0.json#text; I zobrazuje licenci NEBO správný reference text ihned následovaný aktivovanými opcemi. Na všech vnějších plochách papírové knihy jsou autor/nakladatel, nakladatel stejně velký jako titul a přivlastňovacím tvarem. III agregát nese notice zahrnutí/copyright bez relicence jiných částí. IV označení modifikace, osoby/datum, akademická atribuce a místo originálu. V 30denní oznámení, rozpis změn a volná kopie jsou doporučení.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OPUBL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OPUBL-1.0.json#text; I zobrazuje licenci NEBO správný reference text ihned následovaný aktivovanými opcemi. Na všech vnějších plochách papírové knihy jsou autor/nakladatel, nakladatel stejně velký jako titul a přivlastňovacím tvarem. III agregát nese notice zahrnutí/copyright bez relicence jiných částí. IV označení modifikace, osoby/datum, akademická atribuce a místo originálu. V 30denní oznámení, rozpis změn a volná kopie jsou doporučení.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OPUBL-1.0.json#text; IV.5 zákaz naznačení autorského endorsementu bez svolení; III as is a žádné záruky, severability. VI.A může zakázat sémanticky podstatné změny bez svolení, nikoli formát/typo; VI.B popisuje komerční papírové knihy, ale předepsaný text zákaz formuluje pro jakékoli paper book šíření. Tyto opce nejsou automaticky zvoleny.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OPUBL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OPUBL-1.0.json#text; I dovoluje reprodukci/distribuci v jakémkoli médiu a výslovně komerční šíření, s výhradou zvolených opcí VI. IV upravuje modifikace. Patentový grant není uveden; referenční vzor uvádí verzi vX.Y-or-later, ale skutečnou volbu je nutné číst v instanci.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OPUBL-1.0.json#text; I zobrazuje licenci NEBO správný reference text ihned následovaný aktivovanými opcemi. Na všech vnějších plochách papírové knihy jsou autor/nakladatel, nakladatel stejně velký jako titul a přivlastňovacím tvarem. III agregát nese notice zahrnutí/copyright bez relicence jiných částí. IV označení modifikace, osoby/datum, akademická atribuce a místo originálu. V 30denní oznámení, rozpis změn a volná kopie jsou doporučení.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OPUBL-1.0.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OPUBL-1.0.json#text; Individuálně přečten celý připnutý text. Předmětem jsou Open Publication dokumenty včetně překladů, antologií, kompilací a částí; závěrečný Policy Appendix výslovně není součástí licence. Open Publication 1.0 pokrývá publikace s licencí nebo přesným odkazem a zvolenými opcemi. Papírové knihy mají výrazné požadavky na jména autora/nakladatele; změny uvádějí autora změn, datum a původ. Volitelné opce mohou zakázat podstatné úpravy či papírové knižní šíření. Licence je dokumentová a závisí na zvolených opcích VI; navíc ukládá specifickou knižní typografii a obsahuje rozdíl popisu a doslovné formulace opce B. Doplnit publikační předmět, volby a přesné knižní povinnosti před doporučením.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

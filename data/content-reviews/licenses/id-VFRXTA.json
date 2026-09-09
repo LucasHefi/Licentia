@@ -1,0 +1,27 @@
+{
+  "id": "TTWL",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:8adc9b2225a56b0cf57592228ec3a9e47044dea9c465d934f229168720f850e2"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Modul lze upravovat, používat, kopírovat a redistribuovat na vlastní riziko. Žádost nepoužívat název Text::Tabs pro změněnou verzi, která neprojde původními testy, je výslovně dobrovolná.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Tento modul se třemi uvedenými copyrighty; závěrečná žádost se týká jména Text::Tabs.",
+    "grantCs": "Výslovně dovoluje úpravy, užití, kopie a redistribuci bez účelového omezení; patentový grant chybí.",
+    "conditionsCs": "Povinné zachování oznámení ani zpřístupnění zdrojů není uvedeno. Název a testy jsou žádost, protože předchozí grant takové šíření výslovně dovoluje.",
+    "limitationsCs": "Nakládání je at your own risk, tedy na riziko uživatele; text neobsahuje podrobnou formulaci škod či záruk.",
+    "compatibilityCs": "Žádná alternativní licence nebo volba verze; podmínku absolvování testů nelze změnit na závazný licenční požadavek."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/TTWL.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Grant may be modified, used, copied, and redistributed; následující naming žádost je výslovně Although allowed by the preceding license."
+    }
+  ]
+}

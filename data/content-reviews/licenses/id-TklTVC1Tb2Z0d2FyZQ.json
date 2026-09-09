@@ -1,0 +1,27 @@
+{
+  "id": "NIST-Software",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:45be914deb086db7caca593c747b2df4b8eb891c8ebb3034640efda99cc593c1"
+  },
+  "disposition": "eligible",
+  "summaryCs": "NIST výslovně dovoluje užívání, kopie, distribuci a odvozená díla při zachování celého oznámení. Označení změn a poděkování jsou formulovány jako doporučení; text vylučuje záruky, přenáší rizika na uživatele a neuvádí zákaz rizikových aplikací.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "NIST-developed software a jakékoli jeho části/modifikace/odvozená díla.",
+    "grantCs": "Výslovně use/copy/distribute any medium a improve/modify/create derivatives včetně jejich šíření; grant není založen jen na americkém public-domain tvrzení. Patentový grant chybí.",
+    "conditionsCs": "Keep intact this entire notice je podmínka. Modified works should carry change/date/nature a Please acknowledge jsou doporučení/žádost mimo formulovanou podmínku zachování notice.",
+    "limitationsCs": "AS IS bez záruk včetně noninfringement/data accuracy; uživatel posuzuje vhodnost a nese rizika/náklady. Not intended kde selhání může zranit je popis zamýšleného použití, ne must-not zákaz.",
+    "compatibilityCs": "Bez jiné licence/verze či reciprocity. Věta o absenci copyrightu zaměstnaneckých děl v USA nepřepisuje výslovný grant."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/NIST-Software.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; První odstavec poskytuje explicitní permisivní grant, nezávisle na koncovém americkém copyrightovém prohlášení."
+    }
+  ]
+}

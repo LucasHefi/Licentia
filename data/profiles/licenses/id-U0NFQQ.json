@@ -8,94 +8,101 @@
     "contentHash": "sha256:f3cec0a58a89c8da4d87b4bd2212c39ad06cab54d95d4b61704a49c8cc0b3a6e"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "nonstandard",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
       "include-license-text",
-      "provide-corresponding-source"
-    ],
-    "triggers": [
+      "mark-modifications",
       "unknown"
     ],
-    "restrictions": [
-      "liability"
+    "triggers": [
+      "distribution",
+      "modification",
+      "use"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "restrictions": [
+      "liability",
+      "unknown",
+      "warranty"
+    ],
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SCEA.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SCEA.json#text; §2 široký grant s mimořádným zákazem IP přihlášek§3 a source/doc versus finished-object cestami5–6.; https://spdx.org/licenses/SCEA.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SCEA.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SCEA.json#text; Celý text bez stejné licence derivátů a povinného zveřejnění zdrojů; voluntary contributions4 nejsou source reciprocity.; https://spdx.org/licenses/SCEA.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SCEA.json#text; §2 výslovně use/modify/reproduce/distribute/perform/display source/object; patentová práva se neudělují.; https://spdx.org/licenses/SCEA.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SCEA.json#text; §5 licence/copyright/marking a all accompanying documentation+modifications;§6 jen object-only finished end-user goods bez těchto příloh.; https://spdx.org/licenses/SCEA.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SCEA.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SCEA.json#text; Source distribution5 plnění; object-only finished products6 výjimka; obecný zákaz3 platí v rámci výkonu užívací licence.; https://spdx.org/licenses/SCEA.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SCEA.json#text; §3 patent/copyright application či other action impairing ownership mimo slovník;7–8 warranty/liability,9 jury waiver jurisdikce.; https://spdx.org/licenses/SCEA.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SCEA.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SCEA.json#text; No Right to File for Patent§3 je zákaz přihlášení ohrožujícího vlastnictví,nikoli výslovný patentový grant/claim termination.; https://spdx.org/licenses/SCEA.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/SCEA.json#text; Veškerá dokumentace zdrojových kopií a binární produktová výjimka jsou materiální hranice.; https://spdx.org/licenses/SCEA.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/SCEA.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/SCEA.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. SCEA dovoluje užití, změny a source/object distribuci. Zdrojová distribuce přikládá licenci, copyrighty, označení změn i veškerou dokumentaci; čistý objektový kód v hotové koncové aplikaci má výslovnou výjimku z notices i zdrojů. Příjemce nesmí přihlašovat práva narušující vlastnictví původních autorů. Blokace: Bod3 zakazuje patentové přihlášky, hledání copyrightové ochrany a další kroky narušující vlastnictví SCEA/jiných autorů. Je třeba modelovat tento zákaz registrace/přivlastnění; není to patentový grant ani patentová žalobní odveta. Bod5c vyžaduje všechnu doprovodnou dokumentaci a její úpravy, zatímco6 vyjímá pouze object-only v hotových end-user aplikacích. Je třeba modelovat plnou dokumentační povinnost a tuto konkrétní binární hranici, nikoli výjimku pro každou binární knihovnu.; https://spdx.org/licenses/SCEA.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

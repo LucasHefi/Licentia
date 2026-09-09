@@ -17,10 +17,10 @@
     "copyleftScope": "none",
     "permissions": [
       "commercial-use",
+      "conditional-relicensing",
       "distribution",
       "modifications",
-      "private-use",
-      "sublicensing"
+      "private-use"
     ],
     "obligations": [
       "unknown"
@@ -32,53 +32,71 @@
       "unknown"
     ],
     "patentPosition": "none-stated",
-    "noticeBurden": "unknown"
+    "noticeBurden": "none"
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text: first paragraph ('fully in the public domain' and permission to do whatever the user wishes) and final paragraph ('deal in the work without restriction' plus permission to sublicense derivatives under any OSI-approved Open Source license); neither regime imposes a same-license or reciprocal-source condition"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "metadata: name='ANTLR Software Rights Notice with license fallback'; text: first paragraph ('fully in the public domain') and final paragraph (a copyright license applies where public-domain status may not be valid); public-domain-equivalent records the dedication purpose but the single family value cannot represent the alternative permissive copyright regime losslessly"
+      "locator": "public/data/licenses/ANTLR-PD-fallback.json#text; ANTLR 2 text pokrývá distribuovaný zdroj i kód generovaný ANTLR a obsahuje teritoriálně podmíněnou záložní licenci. Úvod rezervuje nulová práva a dovoluje cokoli včetně komerčního začlenění. Tam, kde public domain není platné, závěr dovoluje neomezené nakládání a sublicencování odvozenin pod libovolnou OSI schválenou open-source licencí. Public-domain i neomezený fallback grant nevyžadují zveřejnění zdrojů; omezená volba sublicence není automaticky copyleft celého díla.; https://spdx.org/licenses/ANTLR-PD-fallback.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text: second paragraph asks for acknowledgment in documentation or a research report and asks that source headers remain intact, but calls these requests 'ask' and 'guidelines' rather than conditions of the unrestricted grant; the vocabulary cannot distinguish requested attribution/header preservation from binding notice duties, represented by unknown"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text: second paragraph requests credit and intact source headers without stating them as grant conditions; final paragraph permits sublicensing derivatives only under an OSI-approved Open Source license; the vocabulary has no value for a nonbinding request or this alternative-license selection condition, represented by unknown; no source-disclosure, corresponding-source, same-license, or license-text duty is stated"
-    },
-    {
-      "field": "patentPosition",
-      "sourceId": "spdx-license-list",
-      "locator": "text: complete license review (the public-domain statement and fallback copyright license contain no express patent grant, patent-claim restriction, or patent-assertion termination)"
+      "locator": "public/data/licenses/ANTLR-PD-fallback.json#text; Public-domain i neomezený fallback grant nevyžadují zveřejnění zdrojů; omezená volba sublicence není automaticky copyleft celého díla.; https://spdx.org/licenses/ANTLR-PD-fallback.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text: first paragraph permits individuals and companies to do whatever they wish with ANTLR source and generated code, expressly including incorporation into commercial software; final paragraph grants the public a copyright license to deal in the work without restriction and expressly permits sublicensing derivatives under an OSI-approved Open Source license; these statements support commercial use, distribution, modification, private use, and sublicensing, but not an express patent grant"
+      "locator": "public/data/licenses/ANTLR-PD-fallback.json#text; Úvod rezervuje nulová práva a dovoluje cokoli včetně komerčního začlenění. Tam, kde public domain není platné, závěr dovoluje neomezené nakládání a sublicencování odvozenin pod libovolnou OSI schválenou open-source licencí.; https://spdx.org/licenses/ANTLR-PD-fallback.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "restrictions",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text: final paragraph limits permission to sublicense derivatives to terms of an OSI-approved Open Source license, a condition not represented by the restriction vocabulary and therefore recorded as unknown; complete text contains no warranty disclaimer, liability limitation, trademark restriction, or patent-claim restriction"
-    },
-    {
-      "field": "review",
-      "sourceId": "spdx-license-list",
-      "locator": "metadata: id=ANTLR-PD-fallback, name='ANTLR Software Rights Notice with license fallback', deprecated=false, osi=false, fsf=false; comments distinguish this identifier from ANTLR-PD by the third fallback paragraph; text: first and final paragraphs create jurisdiction-dependent public-domain and copyright-license regimes, while the final paragraph also constrains derivative sublicensing to any OSI-approved Open Source license and the second paragraph makes attribution/header requests whose binding status the vocabulary cannot encode; these alternatives and predicates cannot be communicated losslessly by the single-valued guide model, so the profile is not safe for general recommendation"
+      "locator": "public/data/licenses/ANTLR-PD-fallback.json#text; Uznání autorů při užití či začlenění, zmínka o použitém ANTLR a neporušené hlavičky jsou zdvořilé žádosti; závěr však záložní sublicenci odvozenin výslovně váže na OSI schválené licence.; https://spdx.org/licenses/ANTLR-PD-fallback.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "text: final paragraph activates the fallback copyright license only in countries where public-domain status may not be valid and separately addresses sublicensing derivatives under OSI-approved Open Source terms; jurisdictional invalidity and derivative sublicensing are not trigger values in the vocabulary, represented by unknown"
+      "locator": "public/data/licenses/ANTLR-PD-fallback.json#text; Uznání autorů při užití či začlenění, zmínka o použitém ANTLR a neporušené hlavičky jsou zdvořilé žádosti; závěr však záložní sublicenci odvozenin výslovně váže na OSI schválené licence.; https://spdx.org/licenses/ANTLR-PD-fallback.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/ANTLR-PD-fallback.json#text; Text neobsahuje výluky záruk či odpovědnosti; očekávání dalšího vývoje není povinnost vydavatele. Rozdíl mezi public domain a fallbackem závisí na zemi.; https://spdx.org/licenses/ANTLR-PD-fallback.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "patentPosition",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/ANTLR-PD-fallback.json#text; Celý text včetně fallbacku neobsahuje výslovný patentový grant ani odvetné ukončení.; https://spdx.org/licenses/ANTLR-PD-fallback.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/ANTLR-PD-fallback.json#text; Uznání autorů při užití či začlenění, zmínka o použitém ANTLR a neporušené hlavičky jsou zdvořilé žádosti; závěr však záložní sublicenci odvozenin výslovně váže na OSI schválené licence. Rozsah notifikační zátěže: none.; https://spdx.org/licenses/ANTLR-PD-fallback.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "review",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/ANTLR-PD-fallback.json#text; Individuální kontrola celého připnutého textu ANTLR-PD-fallback dne 2026-09-09. ANTLR 2 text pokrývá distribuovaný zdroj i kód generovaný ANTLR a obsahuje teritoriálně podmíněnou záložní licenci. Fallback pro země bez public domain omezuje sublicencování odvozenin na OSI schválené licence; před doporučením je třeba modelovat teritoriální alternativu a omezenou množinu sublicencí bez zploštění na neomezené sublicencování. Nejde o bezpodmínečné sublicencování pod libovolnými podmínkami: fallback říká OSI approved Open Source licence; konkrétní volba není stanovena.; https://spdx.org/licenses/ANTLR-PD-fallback.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

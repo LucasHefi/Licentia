@@ -1,0 +1,27 @@
+{
+  "id": "ssh-keyscan",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:0474608fe75117f72e1d353a3c73167e207492a87ebc7a1f09d8c184d60dfd67"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Upravování a redistribuce zdrojových i binárních forem jsou dovoleny při přiznání zásluh autorovi a projektu OpenBSD zachováním copyrightového oznámení. Zdrojový kód k binárním kopiím poskytovat nemusíte.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Kód označený copyrightem Davida Mazierese z let 1995–1996.",
+    "grantCs": "Výslovně povoluje modifikaci a redistribuci v source and binary forms bez omezení komerčního účelu; výslovný patentový grant chybí.",
+    "conditionsCs": "Zachovat copyrightové oznámení a tím přiznat zásluhy autorovi a projektu OpenBSD; platí pro obě distribuční formy.",
+    "limitationsCs": "Nenutí zveřejnit zdroje či použít stejnou licenci; zárukové výluky a omezení odpovědnosti zde uvedeny nejsou.",
+    "compatibilityCs": "Text neobsahuje alternativní licenci či pozdější verzi; jiná licence výsledku nesmí odstranit požadované přiznání původu."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/ssh-keyscan.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Permission paragraph dovoluje modifikaci a redistribuci obou forem s podmínkou autorství."
+    }
+  ]
+}

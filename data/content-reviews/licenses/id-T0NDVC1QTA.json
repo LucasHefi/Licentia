@@ -1,0 +1,29 @@
+{
+  "id": "OCCT-PL",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:981bfd9515e28ca302e52f008707e54f2335ebc8601a9ffc8c1e2252c358acbe"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Open CASCADE 6.6 poskytuje copyright i patentová práva s reciprocitou pokrytých souborů a zdroji všem třetím stranám při distribuci. Samostatné Derivative Programs lze ponechat nezveřejněné. § 5 však uděluje licenci všem budoucím účastníkům na všechny vlastní změny bez distribuční podmínky; dodatečné záruky navíc vyžadují dohodu příjemce.",
+  "blockersCs": [
+    "§ 5 poskytuje všem současným/budoucím účastníkům práva ke všem vlastním Modifications bez podmínky distribuce; § 7 vyžaduje získat příjemcův souhlas u dodatečných závazků. Doplnit samostatný grant-back a assent mechanismus, přesně zachytit § 13 destrukci kopií a nejasně označený survival odkaz 13.2."
+  ],
+  "analysis": {
+    "subjectCs": "§1 Original Code je OCCT zdroj i původní objekt včetně jeho aktualizací. Modifications jsou zásahy do souborů s Software nebo nové soubory/jiná reprezentace obsahující část; Derivative Program kombinuje Software s jiným neřízeným kódem. Contributor je i tvůrce změny.",
+    "grantCs": "§§1,4 Applicable IP zahrnuje současné i budoucí patenty/přihlášky a jiná IP k nutnému užití Original Code či vlastních změn samotných/v kombinaci. Světový bezroyalty neodvolatelný nevýhradní grant use/reproduce/modify/distribute/sublicense. §5 příjemce poskytuje všem Contributors a budoucím účastníkům stejný grant na všechny své změny; žádná patentová žalobní termination klauzule.",
+    "conditionsCs": "§4 ve všech kopiích notices a disclaimers Initial Developer/ScheduleA i přidané, zachovat licence/no-warranty notices; při distribuci text licence a celý pokrytý Software zdarma pod ní, source všem třetím stranám. Každou změnu zdokumentovat s datem a výchozí verzí v prominentním souboru se ScheduleB/dalšími notices. §6 vlastní změny pod touto licencí, žádné jiné podmínky kromě§7. §7 placené dodatkové záruky jen vlastním jménem, získat příjemcův souhlas s touto odpovědností a indemnify/defend/hold-harmless ostatní. §11 nesmazat copyright při downloadu.",
+    "limitationsCs": "§§8–9 as-is a široká výluka škod příjemce/vývojáře/přispěvatelů. §10 žádná práva ke jmenovaným MATRA/EADS/CAS.CADE/OpenCASCADE značkám/doménám ani ostatním vlastněným značkám. §§3,13 nepovolené jednání automaticky ruší grant, okamžitě zastavit všechny činnosti a zničit všechny kontrolované kopie, řádné sublicence přetrvají. Vyjmenované části§§5,8–11,13.2,15.2 přežívají15 let; odkaz13.2 je v připnutém textu bez samostatně označeného odstavce.",
+    "compatibilityCs": "§4 výslovně dovoluje samostatný kombinovaný Derivative Program bez publikace při plnění Software. §14 pozdější Initial Developer verze volitelné, stávající může zůstat. §12 doba grantů odpovídá zbývající ochraně Original Code; §15 žádná agentura/partnerství, nezávislý konkurenční vývoj povolen, severability. Žádný automatický GPL přechod."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/OCCT-PL.html",
+      "note": "Individuální revize celého připnutého textu; §1 Original Code je OCCT zdroj i původní objekt včetně jeho aktualizací. Modifications jsou zásahy do souborů s Software nebo nové soubory/jiná reprezentace obsahující část; Derivative Program kombinuje Software s jiným neřízeným kódem. Contributor je i tvůrce změny."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "AFL-1.1",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:c2f8751ffd372691b29b326ddc5490e3d13e72236d354fc2b65350666f7b5538"
+  },
+  "disposition": "eligible",
+  "summaryCs": "AFL 1.1 ukládá původnímu Licensor dodat zdroj Original Work nebo repozitář dostupný po celou dobu jeho distribuce; příjemce nemusí zveřejnit vlastní deriváty. Grant zahrnuje vymezené patenty, nikoli podlicence; zachovávají se copyrighty originálu a kvalifikovaná patentová žaloba ukončuje všechna práva.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Original Work s notice Licensed under Academic Free License1.1 bezprostředně za copyrightem; příjemce You a původní Licensor jsou oddělené role.",
+    "grantCs": "Worldwide/royalty-free/nonexclusive/perpetual/nonsublicenseable use/copy/modify/merge/publish/perform/distribute/sell original/derivatives. Patent claims owned/controlled embodied in furnished Original Work: make/use/sell/offer original/derivatives.",
+    "conditionsCs": "Right of Attribution: redistribuce Original Work zachová všechny copyright notices v díle i binární dokumentaci/materiálech. Licensor dodá strojově čitelný preferred source včetně dostupné access/modify dokumentace; alternativně levně/snadno dostupný repository po dobu jeho distribuce s adresou za copyrightem.",
+    "limitationsCs": "Licensor výslovně zaručuje vlastnictví copyrightu či platnou licenci; ostatní warranty včetně noninfringement vylučuje. Liability má zákonnou výjimku death/personal injury negligence. Naming endorsement vyžaduje písemné svolení; patentová žaloba na jakýkoli OSI-certified software pod mutual clause automaticky ruší všechna práva.",
+    "compatibilityCs": "Zdrojová povinnost patří Licensor k Original Work, nikoli automaticky příjemcově derivátu pod jinou licencí. Bez volby jiné/verze; licenční dokument lze kopírovat nezměněný, úpravy textu vyžadují souhlas Rosena."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/AFL-1.1.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Grant je široký bez reciprocity derivátů; samostatná source promise zavazuje původního Licensor, nikoli každého You."
+    }
+  ]
+}

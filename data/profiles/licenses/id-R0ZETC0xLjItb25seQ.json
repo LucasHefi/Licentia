@@ -8,95 +8,104 @@
     "contentHash": "sha256:94aa492eb6de5b928938caf93db0945829614261dfc3ac6eb8504ee0dce3fe2f"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
     "family": "strong-copyleft",
     "copyleftScope": "whole-work",
     "permissions": [
+      "commercial-use",
       "distribution",
       "modifications",
-      "sublicensing"
+      "private-use"
     ],
     "obligations": [
+      "disclose-source",
       "include-copyright",
       "include-license-text",
-      "mark-modifications"
+      "include-notice",
+      "mark-modifications",
+      "same-license",
+      "unknown"
     ],
     "triggers": [
-      "unknown"
+      "combination",
+      "distribution",
+      "modification"
     ],
     "restrictions": [
+      "additional-terms",
+      "trademark",
       "unknown"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.whole-work-copyleft",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.copyleft-family",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GFDL-1.2-only.json#text; §§1,4 Modified Version zahrnuje celek obsahující dokument nebo část, kopii/změnu/překlad; tento celek stejná GFDL, §§6–7 zvlášť nezávislé kolekce/agregáty. Silný dokumentový whole-work copyleft, ne knihovní/souborová licence programu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GFDL-1.2-only.json#text; §§1,4 Modified Version zahrnuje celek obsahující dokument nebo část, kopii/změnu/překlad; tento celek stejná GFDL, §§6–7 zvlášť nezávislé kolekce/agregáty. Silný dokumentový whole-work copyleft, ne knihovní/souborová licence programu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GFDL-1.2-only.json#text; §2 kopírování, šíření za peníze i zdarma, půjčování a veřejné vystavení; §4 změny a§8 překlady pod stanovenými podmínkami. Převážně grafický text není Transparent, veřejná specifikace formátu sama nestačí při maření editace. Patenty ani patentová odveta nejsou řešeny. Samostatná obecná sublicence není udělena; §9 povoluje pouze výslovné cesty. Přes vzor or-later v nenormativním návodu actual ID zachycuje pouze1.2.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/GFDL-1.2-only.json#text; §2 ke každé kopii všechny copyright/licenční notices a text GFDL, žádné další podmínky ani technické bránění čtení či kopírování. §3 přes100 tištěných nebo obvykle obalovaných kopií podmíněně obálkové texty, vydavatel a stejně výrazný celý titul; přes100 Opaque kopií Transparent s každou nebo úplná veřejná síťová verze standardními protokoly bez přidaného materiálu do nejméně roku po poslední distribuci vydání přímo/agenty/prodejci. §4 odlišný titul s možností souhlasu vydavatele, vlastní a nejméně5 hlavních původních autorů leda zproštění, vydavatel, změnový copyright, History s titulem/rokem/autory/vydavatelem a původními URL (4letá výjimka/souhlas). Zachovat názvy a tón Ack/Dedications, celé označené invariants a Warranty Disclaimers; stará Endorsements odstranit, nové jen pro svou verzi. Nové vlastní Secondary lze označit invariantní, obálkové doplnění nejvýš5/25 slov jednou za entitu. Terminologické upřesnění 2026-09-10: § 1 definuje Transparent jako strojově čitelnou a běžnými nástroji přímo upravitelnou kopii dokumentu. disclose-source zde označuje právě tuto dokumentovou podobu, nikoli softwarový Corresponding Source. § 3 při publikaci či distribuci více než 100 Opaque kopií dovoluje Transparent kopii ke každé NEBO u každé uvedenou veřejnou síťovou adresu úplného Transparent dokumentu bez přidaného materiálu, dostupného standardními protokoly. U síťové cesty je nutné při zahájení množstevní distribuce učinit rozumně obezřetné kroky k dostupnosti nejméně rok po poslední veřejné distribuci Opaque kopie dané edice, včetně distribuce agenty či prodejci. Ostatní individuálně popsané dokumentové podmínky zůstávají zachovány.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/GFDL-1.2-only.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GFDL-1.2-only.json#text; §2 ke každé kopii všechny copyright/licenční notices a text GFDL, žádné další podmínky ani technické bránění čtení či kopírování. §3 přes100 tištěných nebo obvykle obalovaných kopií podmíněně obálkové texty, vydavatel a stejně výrazný celý titul; přes100 Opaque kopií Transparent s každou nebo úplná veřejná síťová verze standardními protokoly bez přidaného materiálu do nejméně roku po poslední distribuci vydání přímo/agenty/prodejci. §4 odlišný titul s možností souhlasu vydavatele, vlastní a nejméně5 hlavních původních autorů leda zproštění, vydavatel, změnový copyright, History s titulem/rokem/autory/vydavatelem a původními URL (4letá výjimka/souhlas). Zachovat názvy a tón Ack/Dedications, celé označené invariants a Warranty Disclaimers; stará Endorsements odstranit, nové jen pro svou verzi. Nové vlastní Secondary lze označit invariantní, obálkové doplnění nejvýš5/25 slov jednou za entitu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/GFDL-1.2-only.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GFDL-1.2-only.json#text; §1 text umožňuje připojené Warranty Disclaimers, jejich jiný právní účinek výslovně nulový; připnutá licence sama neobsahuje všeobecnou výluku záruk ani odpovědnosti. §4 neposkytuje jména autorů/vydavatelů k propagaci nebo endorsementu změn. §9 nepovolená kopie/změna/sublicence/distribuce automaticky ruší práva bez cure; řádní příjemci pokračují. §3 předchozí kontakt autorů je výslovně dobrovolný. Neobecné povinnosti integrity dokumentu a technických opatření vyžadují jiný model.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/GFDL-1.2-only.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GFDL-1.2-only.json#text; §2 kopírování, šíření za peníze i zdarma, půjčování a veřejné vystavení; §4 změny a§8 překlady pod stanovenými podmínkami. Převážně grafický text není Transparent, veřejná specifikace formátu sama nestačí při maření editace. Patenty ani patentová odveta nejsou řešeny. Samostatná obecná sublicence není udělena; §9 povoluje pouze výslovné cesty. Přes vzor or-later v nenormativním návodu actual ID zachycuje pouze1.2.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/GFDL-1.2-only.json#text; §2 ke každé kopii všechny copyright/licenční notices a text GFDL, žádné další podmínky ani technické bránění čtení či kopírování. §3 přes100 tištěných nebo obvykle obalovaných kopií podmíněně obálkové texty, vydavatel a stejně výrazný celý titul; přes100 Opaque kopií Transparent s každou nebo úplná veřejná síťová verze standardními protokoly bez přidaného materiálu do nejméně roku po poslední distribuci vydání přímo/agenty/prodejci. §4 odlišný titul s možností souhlasu vydavatele, vlastní a nejméně5 hlavních původních autorů leda zproštění, vydavatel, změnový copyright, History s titulem/rokem/autory/vydavatelem a původními URL (4letá výjimka/souhlas). Zachovat názvy a tón Ack/Dedications, celé označené invariants a Warranty Disclaimers; stará Endorsements odstranit, nové jen pro svou verzi. Nové vlastní Secondary lze označit invariantní, obálkové doplnění nejvýš5/25 slov jednou za entitu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/GFDL-1.2-only.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/GFDL-1.2-only.json#text; Individuálně přečten celý připnutý text. Preambule/§1 manuály i jiná označená díla libovolného média, světové bezroyalty časově neomezené oprávnění. Připnuté komentáře výslovně ponechávají Invariant Sections a Cover Texts neurčené: rozhoduje oznámení konkrétního dokumentu, které bez označených invariants znamená žádné. Invariant může být jen tematicky vedlejší Secondary Section, ne samotná látka učebnice. Tento only nelze zaměnit za no-invariants-only. GFDL 1.2-only je pevná dokumentační licence; ID samo netvrdí přítomnost ani absenci neměnných oddílů/obálkových textů. Při změnách zachovává historii a stanovené části, při přes 100 Opaque kopiích vyžaduje transparentní kopii nebo její veřejnou dostupnost. Preambule a §§ 1, 3–8 cílí na dokumenty; obecný only ID navíc ponechává skutečné invariants/Cover Texts otevřené. Doplnit dokumentový model skutečných oznámení, počtu/formátu kopií, titulů, historie, neměnných částí a zákazu technické kontroly; pro nový softwarový projekt nelze vydávat tento text za běžnou zdrojovou licenci.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

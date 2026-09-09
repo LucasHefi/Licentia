@@ -9,92 +9,100 @@
   },
   "review": {
     "status": "reviewed",
-    "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "recommendable": true,
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
+      "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "include-license-text"
+      "include-copyright",
+      "include-notice",
+      "mark-modifications"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification",
+      "use"
     ],
     "restrictions": [
+      "additional-terms",
       "liability",
-      "trademark"
+      "trademark",
+      "warranty"
     ],
-    "patentPosition": "unknown",
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CNRI-Python-GPL-Compatible.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CNRI-Python-GPL-Compatible.json#text; Oznamovací a modifikační povinnosti nemají stejnou licenci ani source-offer; permisivní bez copyleftu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CNRI-Python-GPL-Compatible.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CNRI-Python-GPL-Compatible.json#text; Oznamovací a modifikační povinnosti nemají stejnou licenci ani source-offer; permisivní bez copyleftu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CNRI-Python-GPL-Compatible.json#text; §2 poskytuje nevýhradná celosvětová bezroyalty práva reprodukce, analýzy, testu, veřejného výkonu/vystavení, odvozenin, distribuce a dalšího užití. Patentový grant a výslovná sublicence nejsou uvedeny.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CNRI-Python-GPL-Compatible.json#text; §2 vždy zachovává copyright CNRI 1995–2001 a smlouvu NEBO její přesný substituční handle text 1895.22/1013; alternativa se nevztahuje na copyright. §3 odvozenina zpřístupněná jiným obsahuje krátký souhrn změn. Užití/instalace/kopie či kliknutí znamenají souhlas; nejsou povinné zdroje.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CNRI-Python-GPL-Compatible.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CNRI-Python-GPL-Compatible.json#text; §2 vždy zachovává copyright CNRI 1995–2001 a smlouvu NEBO její přesný substituční handle text 1895.22/1013; alternativa se nevztahuje na copyright. §3 odvozenina zpřístupněná jiným obsahuje krátký souhrn změn. Užití/instalace/kopie či kliknutí znamenají souhlas; nejsou povinné zdroje.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CNRI-Python-GPL-Compatible.json#text; §§4–5 odmítají záruky IP/vhodnosti a incidental/special/consequential škody; §6 automatická terminace při podstatném porušení. §7 přednostně federální IP právo USA, jinak Virginie bez kolizních norem; u neoddělitelného dříve GPL materiálu Virginie jen pro §§4/5/7. Žádné zastoupení/partnerství/joint venture ani CNRI trademark endorsement.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CNRI-Python-GPL-Compatible.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CNRI-Python-GPL-Compatible.json#text; §2 poskytuje nevýhradná celosvětová bezroyalty práva reprodukce, analýzy, testu, veřejného výkonu/vystavení, odvozenin, distribuce a dalšího užití. Patentový grant a výslovná sublicence nejsou uvedeny.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/CNRI-Python-GPL-Compatible.json#text; §2 vždy zachovává copyright CNRI 1995–2001 a smlouvu NEBO její přesný substituční handle text 1895.22/1013; alternativa se nevztahuje na copyright. §3 odvozenina zpřístupněná jiným obsahuje krátký souhrn změn. Užití/instalace/kopie či kliknutí znamenají souhlas; nejsou povinné zdroje.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/CNRI-Python-GPL-Compatible.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/CNRI-Python-GPL-Compatible.json#text; Individuálně přečten celý připnutý text. §1 vymezuje Python 1.6.1 a dokumentaci; nejde o Python 1.6b1 z předchozí CNRI licence. Python 1.6.1 lze celosvětově užívat a měnit s copyrightem CNRI a celou smlouvou nebo přesným handle oznámením 1895.22/1013. Předávané odvozeniny obsahují stručný souhrn změn. Volba práva má zvláštní výjimku pro neoddělitelný dříve GPL materiál. ",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

@@ -1,0 +1,27 @@
+{
+  "id": "CNRI-Python-GPL-Compatible",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:37141a0723bff687d2e4e04a04837b609bbc28aa266e3f4fea9ae63b19bde123"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Python 1.6.1 lze celosvětově užívat a měnit s copyrightem CNRI a celou smlouvou nebo přesným handle oznámením 1895.22/1013. Předávané odvozeniny obsahují stručný souhrn změn. Volba práva má zvláštní výjimku pro neoddělitelný dříve GPL materiál.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "§1 vymezuje Python 1.6.1 a dokumentaci; nejde o Python 1.6b1 z předchozí CNRI licence.",
+    "grantCs": "§2 poskytuje nevýhradná celosvětová bezroyalty práva reprodukce, analýzy, testu, veřejného výkonu/vystavení, odvozenin, distribuce a dalšího užití. Patentový grant a výslovná sublicence nejsou uvedeny.",
+    "conditionsCs": "§2 vždy zachovává copyright CNRI 1995–2001 a smlouvu NEBO její přesný substituční handle text 1895.22/1013; alternativa se nevztahuje na copyright. §3 odvozenina zpřístupněná jiným obsahuje krátký souhrn změn. Užití/instalace/kopie či kliknutí znamenají souhlas; nejsou povinné zdroje.",
+    "limitationsCs": "§§4–5 odmítají záruky IP/vhodnosti a incidental/special/consequential škody; §6 automatická terminace při podstatném porušení. §7 přednostně federální IP právo USA, jinak Virginie bez kolizních norem; u neoddělitelného dříve GPL materiálu Virginie jen pro §§4/5/7. Žádné zastoupení/partnerství/joint venture ani CNRI trademark endorsement.",
+    "compatibilityCs": "GPL-Compatible název odráží konkrétní výjimku volby práva v §7, není blanket závěr o libovolné kombinaci. Tento text má copyright a dostupnost others souhrnu změn, které nelze přenést zpět do CNRI-Python beta1."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/CNRI-Python-GPL-Compatible.html",
+      "note": "Individuální revize celého připnutého textu; §1 vymezuje Python 1.6.1 a dokumentaci; nejde o Python 1.6b1 z předchozí CNRI licence."
+    }
+  ]
+}

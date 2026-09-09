@@ -1,0 +1,29 @@
+{
+  "id": "Imlib2",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:af5188b0edf447dd90c02677f91713c4c03f28099728f5d69075ebc778a865cf"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Imlib2 dovoluje široké nakládání při zachování oznámení. Veřejné poděkování za použití se vyžaduje tehdy, není-li zdroj knihovny veřejně dostupný podle uvedeného mechanismu; licence se výslovně nevztahuje na staticky ani dynamicky linkující software.",
+  "blockersCs": [
+    "Text nabízí veřejné poděkování nebo konkrétně definované veřejné zpřístupnění zdroje s metodou získání/nabídkou na žádost. Je třeba modelovat alternativu a podmínku nepřítomného veřejného zdroje; uvést souběžně zdrojovou povinnost a acknowledgment by bylo nesprávné. Odkazované COPYING-PLAIN je vysvětlení záměru, nikoli v připnutém textu obsažená náhrada grantu."
+  ],
+  "analysis": {
+    "subjectCs": "Samotný software a dokumentace Imlib2; výslovně vylučuje jiné programy linkující jeho knihovny staticky i dynamicky.",
+    "grantCs": "Use/copy/modify/merge/publish/distribute/sublicense/sell a oprávnění příjemcům; patentový grant chybí.",
+    "conditionsCs": "Copyright/permission ve všech kopiích a copyright notices. Není-li zdroj veřejný, musí být veřejné dokumentované poděkování. Definice dostupnosti zahrnuje přiložený zdroj nebo rozumný způsob získání a nabídku dodání na žádost; oznámení slouží i jako nabídka.",
+    "limitationsCs": "Alternativně poděkování v copyrightu, manuálu, marketingu či jiné produktové dokumentaci. AS IS bez záruk a odpovědnosti. Licence se nepřenáší na linkující aplikace.",
+    "compatibilityCs": "Zdroj a acknowledgment jsou alternativní cesty plnění, ne dvě souběžné povinnosti a ne dvě licence. COPYING-PLAIN je odkázané vysvětlení; žádná volba verze není uvedena."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Imlib2.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Široký grant doplněn alternativou public source versus publicly documented acknowledgment."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "IJG-short",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:079944b880e5610763a2ba2211cb9e0fa426a2f2f283fff21fbdcbd729f58782"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Licence dovoluje software používat, měnit a distribuovat včetně komerčních produktů. Zdrojová distribuce zachovává README s copyrightem a výlukou záruk a popisuje změny; samotné binárky vyžadují předepsané poděkování v dokumentaci. Průvodce ji nezařazuje, protože komerční prodejce navíc musí převzít všechny záruční a odpovědnostní nároky, což přesahuje běžné zachování oznámení.",
+  "blockersCs": [
+    "Závěr podmiňuje komerční produkty převzetím všech záručních a odpovědnostních nároků prodejcem; před zařazením je třeba model převzetí těchto nároků, který není totožný s pouhou výlukou odpovědnosti nebo obranou poskytovatele."
+  ],
+  "analysis": {
+    "subjectCs": "Krátké znění IJG licencuje software Thomase G. Lanea z let 1991 a 1992 i jeho části.",
+    "grantCs": "Grant dovoluje užití, kopírování, změny a distribuci pro libovolný účel bez poplatku; závěr výslovně podporuje komerční produkty.",
+    "conditionsCs": "Bod 1: při distribuci libovolných zdrojů přiložit README s nezměněným copyrightem a no-warranty notice a popsat přidané/odstraněné/změněné části v dokumentaci. Bod 2: pouze executable vyžaduje předepsané IJG uznání v dokumentaci. Bod 3: uživatel přijímá plnou odpovědnost; komerční prodejce musí převzít všechny warranty/liability claims.",
+    "limitationsCs": "Autoři odmítají záruky a odpovědnost; jména autorů/firem nesmějí do reklamy a software lze označovat pouze jako Independent JPEG Group’s software.",
+    "compatibilityCs": "Zdrojová a pouze binární distribuce mají odlišné notice cesty; jiné licence nebo verze se nenabízejí."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/IJG-short.html",
+      "note": "Individuálně přečten celý připnutý text; Bod 1: při distribuci libovolných zdrojů přiložit README s nezměněným copyrightem a no-warranty notice a popsat přidané/odstraněné/změněné části v dokumentaci. Bod 2: pouze executable vyžaduje předepsané IJG uznání v dokumentaci. Bod 3: uživatel přijímá plnou odpovědnost; komerční prodejce musí převzít všechny warranty/liability claims. Celý text nemá patentový grant ani patentové ukončení."
+    }
+  ]
+}

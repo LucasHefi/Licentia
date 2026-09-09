@@ -1,0 +1,29 @@
+{
+  "id": "copyleft-next-0.3.1",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:f002da996f3717a4a08fa0f508827c3078eb5586c0eabb180c1db029cc91bd78"
+  },
+  "disposition": "blocked",
+  "summaryCs": "copyleft-next-0.3.1 má whole-work reciprocitu s podmíněným GPL/AGPL přechodem a zdrojovou URL k binárkám; u fyzických produktů platí dva roky nebo přiložené zdroje. Podmínky3–5 však zanikají při určeném placeném proprietárním dual-licencování nebo 15 let po prvním vydání konkrétního díla pod touto licencí.",
+  "blockersCs": [
+    "§§ 7–8 vypínají podmínky3–5 podle konkrétního placeného dual-licencování nebo 15 let od prvního vydání díla, nikoli od release date licence. Doplnit časový/událostní model a historická OSI/FSF kritéria; nemapovat bezpodmínečný věčný copyleft."
+  ],
+  "analysis": {
+    "subjectCs": "§15 Covered Work je My Work/Derived Work; derivát vylučuje agregaci, prostou kopii a pouhý odkaz, není-li výslovně oznámeno jiné očekávání. Separate Work zahrnuje nezávislá díla a runtime/standardní build komponenty.",
+    "grantCs": "§1 trvalá celosvětová bezroyalty neodvolatelná copyright práva reprodukce/distribuce/derivátů/public display-perform; patent make/have made/use/sell/offer/import pod současnými/budoucími royalty-free licencovatelnými nutnými nároky, bez nároků porušených jen další změnou. Žádné známky/jména/loga.",
+    "conditionsCs": "§2 sdělit získání licence a zachovat relevantní Legal Notices bez log/známkových legend. §3 celý derivát pod licencí, nelze obejít rozdělenou distribucí; s GPL materiálem alternativa GPL včetně AGPL definice. §4 bez dalších omezení i z externího soudního/smluvního zdroje, inbound výjimka pro BOTH OSI+FSF k release date bez kolize jiných oddílů. §5 object vždy source URL zdarma; Product dvouletá URL od poslední distribuce NEBO přiložené dostupné zdroje; Corresponding Source zahrnuje build/install informace a seznam zvlášť použitých Separate Works/verzí. §6 neoznačený upstream Patch pod touto licencí.",
+    "limitationsCs": "§7 ruší §§3–5 při poskytovatelově placené nabídce jiných podmínek mimo OSI-Approved NEBO FSF-Free k release date či číslované copyleft-next. §8 stejné podmínky končí15 let od první distribuce My Work pod touto licencí. §10 automatické ukončení při nenapraveném porušení do30 dnů od znalosti nebo zahájené patentové žalobě mimo declaratory/counter/cross; platí i pro další kopie, ale nikoli nutné runtime kopírování, downstream zůstává. §§12–14 no-warranty/no-damages/severability.",
+    "compatibilityCs": "§3 outbound GPL zahrnuje GNU GPL i AGPL a vyžaduje GPL materiál; §4 historické OSI+FSF je kumulativní kritérium, kdežto §7 disjunktivní. §11 pozdější číslované verze volitelné, leda poskytovatel výslovně odstranil. Příjemci jsou §5 third-party beneficiaries s vymáhacím právem; žádná patentová copyrightová forfeiture při obranné cross-claim."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/copyleft-next-0.3.1.html",
+      "note": "Individuální revize celého připnutého textu; §15 Covered Work je My Work/Derived Work; derivát vylučuje agregaci, prostou kopii a pouhý odkaz, není-li výslovně oznámeno jiné očekávání. Separate Work zahrnuje nezávislá díla a runtime/standardní build komponenty."
+    }
+  ]
+}

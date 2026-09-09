@@ -1,0 +1,27 @@
+{
+  "id": "man2html",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:b83e4aae29da1c5ab92347a3a638865341f781931878f9ccda3c0b4c02d99abd"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Licence dovoluje program man2html používat, měnit a distribuovat bez omezení na nekomerční účely. Při použití i úpravách musí zůstat licenční komentář neodstraněný a nezměněný; zveřejnění zdrojového kódu nevyžaduje. Text neobsahuje výluku záruk či odpovědnosti ani výslovný patentový grant a nenabízí jinou licenční verzi.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Licence se vztahuje na tento program man2html.",
+    "grantCs": "Jediná věta dovoluje distribuci, změny a užití programu; komerční ani soukromé užití nevylučuje.",
+    "conditionsCs": "Závěr jediné věty vyžaduje neodstranit ani nezměnit licenční komentář; zachovat jej je třeba i při úpravách.",
+    "limitationsCs": "Celý text nemá záruky, omezení odpovědnosti, patentové odvetné ukončení ani pravidla pro jména.",
+    "compatibilityCs": "Text neobsahuje alternativní licenci nebo volbu verze."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/man2html.html",
+      "note": "Individuálně přečten celý připnutý text; Závěr jediné věty vyžaduje neodstranit ani nezměnit licenční komentář; zachovat jej je třeba i při úpravách. Celá jediná věta neobsahuje výslovné patentové oprávnění ani patentové ukončení."
+    }
+  ]
+}

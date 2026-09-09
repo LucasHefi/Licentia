@@ -1,0 +1,27 @@
+{
+  "id": "BSD-3-Clause-Modification",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:ad233b19476c66ae99dc5e1676d633c47df60381cad04ab3e11e438ba99242b6"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Vedle zdrojových/binárních oznámení a zákazu endorsementu jmény držitelů vyžaduje text čtvrtou podmínkou nápadné oznámení změn a jejich data přímo ve změněných souborech.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Software je pokryt ve zdrojové i binární formě; notice copyrightu je doprovodné, nemusí být přímo nad textem.",
+    "grantCs": "Úvod dovoluje redistribution/use obou forem s úpravami i bez nich bez účelových omezení. Výslovná sublicence a patentový grant chybějí.",
+    "conditionsCs": "Body 1–2 zachovávají doprovodný copyright, podmínky a disclaimer ve zdrojích nebo materiálech binární distribuce. Bod 4 vyžaduje při úpravě souborů prominentní oznámení, že je příjemce změnil, a datum každé změny. Zdrojová nabídka není předepsána.",
+    "limitationsCs": "Bod 3 zakazuje endorsement/promotion jmény držitelů bez jejich předchozího písemného svolení; nejmenuje zvlášť přispěvatele. Disclaimer odmítá záruky a uvedené škody držitelů.",
+    "compatibilityCs": "Navzdory názvu BSD-3-Clause text obsahuje čtyři operativní podmínky; nevytváří copyleft ani alternativní licenční cestu."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/BSD-3-Clause-Modification.html",
+      "note": "Individuální revize celého připnutého textu; Software je pokryt ve zdrojové i binární formě; notice copyrightu je doprovodné, nemusí být přímo nad textem."
+    }
+  ]
+}

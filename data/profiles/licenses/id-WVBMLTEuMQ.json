@@ -8,95 +8,105 @@
     "contentHash": "sha256:8fce3bc3048afcff6742522606a5e2936dc3a72127e4dcfdeb23468823620efc"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "weak-copyleft",
+    "copyleftScope": "file",
     "permissions": [
+      "commercial-use",
+      "conditional-relicensing",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
+      "include-copyright",
       "include-license-text",
-      "provide-corresponding-source"
+      "include-notice",
+      "provide-corresponding-source",
+      "same-license"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification",
+      "use"
     ],
     "restrictions": [
+      "additional-terms",
       "liability",
       "trademark",
+      "unknown",
       "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "express-exclusion",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/YPL-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/YPL-1.1.json#text; Nové soubory bez jakéhokoli původního kódu jsou vyňaty; povinná YPL a zdroje Software/Modifications odpovídají file weak-copyleft, nikoli celému nezávislému projektu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/YPL-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/YPL-1.1.json#text; Nové soubory bez jakéhokoli původního kódu jsou vyňaty; povinná YPL a zdroje Software/Modifications odpovídají file weak-copyleft, nikoli celému nezávislému projektu.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/YPL-1.1.json#text; §1.1 copyrightový grant je bezroyalty, nevýhradní a nepřevoditelný pro copy/modify/compile/execute/distribute. §3.1 výslovně rezervuje všechna jiná práva/licence/forbearances kromě tohoto copyrightu, tedy patentový grant vylučuje; patentové notice §3.2 nejsou licence. §1.4 podmíněná vlastní binární licence při zachování zdrojových práv (conditional-relicensing).",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/YPL-1.1.json#text; §1.3 zdroje Software/Modification jen pod YPL s celou dohodou; modifikátor uděluje práva jako Yahoo s výjimkou jurisdikce §7. §1.4 binárky vyžadují přístup k odpovídajícím zdrojům a dohodě; vlastní podmínky jasně jen od distributora a nesmí omezit zdrojová práva. §3.2 v každé kopii/modifikaci zachovává všechny copyright/patent/trademark/attribution notices ve stejné podobě včetně existujících UI známek/log.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/YPL-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/YPL-1.1.json#text; §1.3 zdroje Software/Modification jen pod YPL s celou dohodou; modifikátor uděluje práva jako Yahoo s výjimkou jurisdikce §7. §1.4 binárky vyžadují přístup k odpovídajícím zdrojům a dohodě; vlastní podmínky jasně jen od distributora a nesmí omezit zdrojová práva. §3.2 v každé kopii/modifikaci zachovává všechny copyright/patent/trademark/attribution notices ve stejné podobě včetně existujících UI známek/log.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/YPL-1.1.json#text; §§2/4/5 bez podpory, updates, záruk včetně chyb/nepřerušení/IP a všech škod. §3.3 známky jen k povinnému zachování. §6 Yahoo může při porušení ukončit, pak končí licence a přežívají §§3.1/4/5/6/7. §7 Kalifornie/USA bez CISG, spory s Yahoo/dcerami northern California, Santa Clara venue; bez písemného souhlasu zákaz postoupení/delegace/převodu i merger/assets. §7 zakazuje postoupení práv, delegaci povinností i převod dohody bez předchozího písemného souhlasu Yahoo, výslovně včetně převodu ze zákona, prodeje aktiv, merger a consolidation; jednání bez souhlasu je od počátku neplatné. Doplnit samostatné omezení převoditelnosti/souhlasu do modelu, protože trademark ani additional-terms jej nenahrazují.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/YPL-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/YPL-1.1.json#text; §1.1 copyrightový grant je bezroyalty, nevýhradní a nepřevoditelný pro copy/modify/compile/execute/distribute. §3.1 výslovně rezervuje všechna jiná práva/licence/forbearances kromě tohoto copyrightu, tedy patentový grant vylučuje; patentové notice §3.2 nejsou licence.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/YPL-1.1.json#text; §1.3 zdroje Software/Modification jen pod YPL s celou dohodou; modifikátor uděluje práva jako Yahoo s výjimkou jurisdikce §7. §1.4 binárky vyžadují přístup k odpovídajícím zdrojům a dohodě; vlastní podmínky jasně jen od distributora a nesmí omezit zdrojová práva. §3.2 v každé kopii/modifikaci zachovává všechny copyright/patent/trademark/attribution notices ve stejné podobě včetně existujících UI známek/log.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/YPL-1.1.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/YPL-1.1.json#text; Individuálně přečten celý připnutý text. §1.1 Software a Modifications zahrnují změny/doplňky/zkrácení, ale nový soubor neobsahující žádnou část Software není Modification; vnitrofiremní předání §1.2 není distribuce. Yahoo YPL1.1 zachovává zdrojový software a modifikace pod YPL, ale vlastní nové soubory bez převzatého kódu jsou vyňaty. Binárky smějí mít vlastní podmínky při přístupu ke zdrojům a zachování jejich práv. V kopiích a změnách zůstávají i původní UI loga/atribuce.  § 7 zakazuje postoupení práv, delegaci povinností i převod dohody bez předchozího písemného souhlasu Yahoo, výslovně včetně převodu ze zákona, prodeje aktiv, merger a consolidation; jednání bez souhlasu je od počátku neplatné. Doplnit samostatné omezení převoditelnosti/souhlasu do modelu, protože trademark ani additional-terms jej nenahrazují.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

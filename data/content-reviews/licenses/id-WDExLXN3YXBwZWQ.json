@@ -1,0 +1,27 @@
+{
+  "id": "X11-swapped",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:6f6c0512c099e0116789714b7704f6bae6af41b2533e5f63eaf713e0e4b0bdf4"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Široké povolení zahrnuje úpravy, prodej i podlicence. Copyright a povolení zůstanou ve všech kopiích nebo podstatných částech; jména držitelů se mimo oznámení nesmějí použít k propagaci bez předchozího písemného souhlasu.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Software a související dokumentace, copyright Derick Eddington 2008–2010.",
+    "grantCs": "Výslovně use/copy/modify/merge/publish/distribute/sublicense/sell a totéž příjemcům; bez patentového grantu.",
+    "conditionsCs": "Copyright a permission notice ve všech kopiích či substantial portions; žádné zdrojové či reciproční plnění.",
+    "limitationsCs": "Jména držitelů mimo notice nesmějí propagovat prodej, užití či jiné nakládání bez předchozího písemného svolení. AS IS, široká výluka záruk a odpovědnosti.",
+    "compatibilityCs": "Bez jiné licence/verze; podlicencování zachovává původní notice a naming podmínky."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/X11-swapped.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; Široký grant s notice a nepropagační naming podmínkou, bez reciprocity."
+    }
+  ]
+}

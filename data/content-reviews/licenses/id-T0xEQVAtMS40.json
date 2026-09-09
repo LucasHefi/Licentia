@@ -1,0 +1,30 @@
+{
+  "id": "OLDAP-1.4",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:3b72181da069d1f7390947c2ef232647850796f707b2811ebc8d9af0e7b2caac"
+  },
+  "disposition": "blocked",
+  "summaryCs": "OpenLDAP 1.4 zachovává oddělené alternativy změn a binárního šíření i cenové omezení samotného balíku. Navíc dovoluje volně šířit/prodávat linkované programy, pokud jejich primární funkce je jiná než funkce balíku; emulační subrutiny nesmějí rozbít jeho regresní testy.",
+  "blockersCs": [
+    "Body3/4 mají samostatné ONE-of cesty a5 rozlišuje cenu balíku, kopírování, podporu a agregaci. Je třeba reprezentovat alternativy bez bezpodmínečné zdrojové/renaming povinnosti.",
+    "Bod8 vyjímá vlastní linkované aplikace jen pokud primary function differs from package;7 vyjímá emulační C rutiny jen při zachování chování/regresních testů balíku. Je třeba modelovat obě funkčně odlišné hranice, ne neomezenou výjimku linkování či library scope."
+  ],
+  "analysis": {
+    "subjectCs": "OpenLDAP Package a textové deriváty, verze1.4 z18.1.1999; Standard Version a definované copying fee/Freely Available.",
+    "grantCs": "1–4 source/modify/object práva dle cest;6 generované input/output patří autorům;8 linked programs mohou být komerční při odlišné primární funkci. Patentový grant chybí.",
+    "conditionsCs": "3 how/when changed files +jedna public/free/internal/rename-standard-manual/arrangement cesta;4 jedna standard+location/source/rename-standard-manual/arrangement.1 copyrights/disclaimers;5 fee pouze copying a libovolná podpora, komerční agregace nepředstírá autorství.",
+    "limitationsCs": "7 vlastní C emulace vyňata pokud nezmění behavior tak, že selžou package tests;8 aplikace s jinou primary function vyňata a volně redistribuovatelná.9 naming consent;10 AS IS bez záruk, bez liability doložky.",
+    "compatibilityCs": "Bod8 je explicitní přídavek oproti1.2; body7/8 se nesmějí spojit do blanket linking exception. Žádná volba novější licence ani obecné převzetí Artistic."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/OLDAP-1.4.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; 1.4 přidává vedle3/4 alternativ a5 fee režimu funkčně omezený linked-app grant8."
+    }
+  ]
+}

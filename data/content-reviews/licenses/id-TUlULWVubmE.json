@@ -1,0 +1,27 @@
+{
+  "id": "MIT-enna",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:ce6f2f9a4cbacb9e0e97ae6e3e494021152e5cac19544117ec7be7c131f479e3"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Permisivní grant pokrývá užití, kopírování, úpravy, slučování, publikování, distribuci, podlicencování a prodej. Copyright a povolení se zachovávají ve všech kopiích a copyrightových oznámeních. Pokud zdroje tohoto softwaru nejsou veřejně dostupné, jeho užití vyžaduje veřejně dokumentované poděkování na některém z uvedených míst; zdroje se zveřejnit nemusí. Licence se vztahuje na poskytnutý software, nikoli na software pouze staticky či dynamicky připojený k jeho knihovnám. Obsahuje výluky záruk a odpovědnosti, ne výslovný patentový grant.",
+  "blockersCs": [],
+  "analysis": {
+    "subjectCs": "Definice Software zahrnuje software a doprovodnou dokumentaci. Podmínkový odstavec výslovně vylučuje působnost licence na software, který pouze staticky nebo dynamicky linkuje dodané knihovny.",
+    "grantCs": "Grant bezúplatně a bez omezení výslovně uvádí use, copy, modify, merge, publish, distribute, sublicense a sell i předání stejných oprávnění příjemcům. Neobsahuje samostatný výslovný patentový grant.",
+    "conditionsCs": "Copyright a permission notice patří do všech kopií a jejich copyrightových oznámení. Při užití softwaru bez veřejně dostupných zdrojů je nutné veřejně dokumentované poděkování, např. v copyrightových oznámeních, manuálech, publicitě a marketingové nebo produktové dokumentaci. Jde o uvedené varianty umístění, nikoli souběžně všechny. Veřejné zdroje tuto dodatečnou podmínku odstraňují, jejich zveřejnění ale licence sama neukládá.",
+    "limitationsCs": "Závěrečný odstavec obsahuje as-is a výluky záruk včetně obchodovatelnosti, vhodnosti a neporušení práv; dále vyloučení odpovědnosti za nároky či škody. COPYING.PLAIN je označeno jako prosté vysvětlení znění a záměru, nikoli další operativní licence.",
+    "compatibilityCs": "Pravidlo o linkování nevytváří copyleft. Veřejně dokumentované poděkování není automatický reklamní požadavek na každou reklamu: marketing je jednou z možností umístění. Žádná povinnost zdroje poskytnout nebo vše vydat stejnou licencí se neodvozuje; kompatibilita skutečné kombinace vyžaduje její vlastní podklady."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/MIT-enna.html",
+      "note": "Úplné uložené znění jednotlivě přečteno a porovnáno s primární stránkou SPDX; nové vyjádření podmínek use zachovává původní rozsah a otisk zdroje."
+    }
+  ]
+}

@@ -8,93 +8,101 @@
     "contentHash": "sha256:3b72181da069d1f7390947c2ef232647850796f707b2811ebc8d9af0e7b2caac"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
+    "family": "nonstandard",
     "copyleftScope": "unknown",
     "permissions": [
       "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "include-copyright"
+      "include-copyright",
+      "include-notice",
+      "mark-modifications",
+      "unknown"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "linking",
+      "modification"
     ],
     "restrictions": [
-      "unknown"
+      "trademark",
+      "unknown",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OLDAP-1.4.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OLDAP-1.4.json#text; 1.4 přidává vedle3/4 alternativ a5 fee režimu funkčně omezený linked-app grant8.; https://spdx.org/licenses/OLDAP-1.4.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OLDAP-1.4.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OLDAP-1.4.json#text; Bod7 regression behavior a8 primary-function hranice vedle source/rename alternativ vyžadují jemnější scope.; https://spdx.org/licenses/OLDAP-1.4.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OLDAP-1.4.json#text; 1–4 základní grants a8 commercial linked executables pouze primary function different;6 výstupy vlastní jejich tvůrci.; https://spdx.org/licenses/OLDAP-1.4.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OLDAP-1.4.json#text; 1 notices;3 changed-file how/when plus jedna cesta;4 další jedna cesta; nepřidávat obě jako kumulativní source/rename.; https://spdx.org/licenses/OLDAP-1.4.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OLDAP-1.4.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OLDAP-1.4.json#text; Modification3, object distribution4, emulation linking7 a program linking8 spouštějí odlišné podmínky.; https://spdx.org/licenses/OLDAP-1.4.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OLDAP-1.4.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OLDAP-1.4.json#text; 5 omezuje cenu/propagaci balíku,7/8 funkční podmínky mimo slovník;9 endorsement souhlas,10 warranty.; https://spdx.org/licenses/OLDAP-1.4.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OLDAP-1.4.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OLDAP-1.4.json#text; Všech10 bodů bez výslovného patentového grantu nebo patentového ukončení.; https://spdx.org/licenses/OLDAP-1.4.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/OLDAP-1.4.json#text; Alternativní standardní protějšky/manuály/source a funkční/fee hranice jsou materiální.; https://spdx.org/licenses/OLDAP-1.4.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/OLDAP-1.4.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/OLDAP-1.4.json#text; Individuální přečtení celého připnutého textu dne 2026-09-09. OpenLDAP 1.4 zachovává oddělené alternativy změn a binárního šíření i cenové omezení samotného balíku. Navíc dovoluje volně šířit/prodávat linkované programy, pokud jejich primární funkce je jiná než funkce balíku; emulační subrutiny nesmějí rozbít jeho regresní testy. Blokace: Body3/4 mají samostatné ONE-of cesty a5 rozlišuje cenu balíku, kopírování, podporu a agregaci. Je třeba reprezentovat alternativy bez bezpodmínečné zdrojové/renaming povinnosti. Bod8 vyjímá vlastní linkované aplikace jen pokud primary function differs from package;7 vyjímá emulační C rutiny jen při zachování chování/regresních testů balíku. Je třeba modelovat obě funkčně odlišné hranice, ne neomezenou výjimku linkování či library scope.; https://spdx.org/licenses/OLDAP-1.4.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

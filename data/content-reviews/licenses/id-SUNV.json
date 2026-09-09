@@ -1,0 +1,20 @@
+{
+  "id": "ICU",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:dea7bbebc0c031bcd1ac39c65f7af9c3e7b640f5fd6eb1c2b334a512e459d284"
+  },
+  "disposition": "eligible",
+  "summaryCs": "Permisivní licence ICU: zachovejte copyright a licenční oznámení také v doprovodné dokumentaci. Použití jmen nositelů práv v reklamě nebo propagaci vyžaduje souhlas. Výslovný patentový grant není uveden.",
+  "blockersCs": [],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/ICU.html",
+      "note": "Dřívější individuální revize 2026-09-09; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

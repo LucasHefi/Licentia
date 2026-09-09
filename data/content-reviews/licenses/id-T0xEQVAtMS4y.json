@@ -1,0 +1,30 @@
+{
+  "id": "OLDAP-1.2",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:a7e4d077ef3ece0a40910cac3936f93adaee743f55d33fc97b13c2129c79cbfa"
+  },
+  "disposition": "blocked",
+  "summaryCs": "OpenLDAP 1.2 má oddělené alternativy pro změny a binární distribuci: zveřejnění změn, interní užití, přejmenované/standardní protějšky s manuály či dohoda s držitelem. Zdroj není vždy povinný; samotný balík nesmí mít cenu, ale kopírování, podpora a komerční agregace jsou dovoleny.",
+  "blockersCs": [
+    "Body3a–d a4a–d jsou dvě samostatné volby ONE z různých cest, včetně interního užití, zdroje, standardních protějšků/manuálů a jiné dohody. Je třeba modelovat alternativy bez souběžného vynucení source+rename a zvlášť komerční agregaci/poplatky.",
+    "Bod7 vyjímá vlastní emulační C subroutines jen pokud nemění jazyk způsobem vedoucím k neúspěchu regression tests. Je třeba zachovat testově podmíněnou hranici balíku, nikoli univerzální library nebo whole-work scope."
+  ],
+  "analysis": {
+    "subjectCs": "OpenLDAP Package podle licence1.2 z1.9.1998, textové deriváty a Standard Version; Freely Available zahrnuje nulovou cenu věci a další redistribuci za stejných podmínek.",
+    "grantCs": "1 verbatim source,2 public-domain/holder fixes jako standard,3 jiné úpravy,4 binary/object distribuce.5 placená podpora/komerční agregace;6 input/output scripts/libraries patří generujícím. Patentový grant chybí.",
+    "conditionsCs": "3 vždy how/when notices ve změněných souborech plus jedna z public/free changes, internal-only, renamed+standard executables/manpages nebo dohoda.4 jedna z standard executables/source-location, modified machine-readable source, renamed+standard/differences nebo dohoda.1 původní copyrights/disclaimers.",
+    "limitationsCs": "5 jen copying fee za balík, support libovolná; agregace nesmí vydávat balík za vlastní.7 C emulace podmíněná regression tests jazyka;8 naming endorsement souhlas;9 AS IS bez záruk, bez samostatné liability.",
+    "compatibilityCs": "Nejde o samotnou Artistic ani novější OpenLDAP verzi; dvě sady cest nejsou kumulativní. Regresní testy omezují výjimku vlastních C subroutin, ne každé nezávislé linkující aplikace automaticky."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/OLDAP-1.2.html",
+      "note": "Individuálně přečten celý připnutý SPDX text; 1.2 body3/4 ONE alternatives a5 fee regime nejsou jednoduchá jednotná reciproční licence."
+    }
+  ]
+}

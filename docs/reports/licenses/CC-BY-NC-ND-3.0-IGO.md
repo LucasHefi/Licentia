@@ -1,0 +1,63 @@
+# CC-BY-NC-ND-3.0-IGO — obsahová revize
+
+Creative Commons Attribution Non Commercial No Derivatives 3.0 IGO
+
+Revize: **2026-09-09** · pravidlo **2026-09-09.10**.
+
+Výsledek: **zpracována, nezařazena do průvodce**.
+
+Licence dovoluje nekomerční kopírování a veřejné šíření nezměněného obsahu, včetně zařazení do sborníku; připouští jen technicky nutné změny formátu. Vyžaduje přiznání původu, zachování oznámení a kopii licence nebo odkaz, přičemž na žádost se mají proveditelně odstranit kredity včetně značek. Je-li poskytovatelem mezivládní organizace, může po mediaci následovat závazná arbitráž. Průvodce ji nezařazuje kvůli omezení účelu a úprav, obsahovým povinnostem a tomuto podmíněnému řešení sporů.
+
+## Předmět a rozsah
+
+CC BY-NC-ND3.0 IGO se vztahuje na literární/umělecké Work včetně autorsky tvůrčí databáze; poskytovatel může být IGO, ale nemusí. Collection obsahuje celé nezměněné dílo, adaptace včetně hudební synchronizace jsou odlišné.
+
+## Udělená práva
+
+§3 dovoluje reprodukci, veřejné šíření/provádění a zařazení do kolekcí pouze v nekomerčním rozsahu§4(b); žádné adaptace kromě technicky nezbytných mediálních změn nejsou uděleny. Podlicence je zakázána a příjemci získávají přímou nabídku.
+
+## Podmínky a spouštěče
+
+§4(a,c) při distribuci a veřejném provádění uchovává copyright, licenční/disclaimer notices, přidává licenci či URI, atribuce určené copyright notice, titul a relevantní URI. V kolekci při souhrnných kreditech nesmí být méně výrazná; na žádost se kredit včetně loga, ochranné či úřední známky/emblému odstraní v prakticky možném rozsahu.
+
+## Omezení, výjimky a ukončení
+
+§4 zakazuje omezující další podmínky a technologická opatření, dojem schválení a poškozující deformace vůči pověsti poskytovatele tam, kde platí osobnostní práva. §4(d) rezervuje neprominutelné odměny, jiné zákonné odměny pro komerční účely a vzdává se dobrovolných odměn v možném rozsahu. §5–6 AS IS a výluka vyjmenovaných škod;§7 dovoluje obnovení po nápravě do30 dnů od zjištění nebo výslovně, dodržující příjemci kolekcí přežívají.
+
+## Verze a kombinování
+
+§8(e) interpretuje mezinárodními autorskými principy a§8(f) zachovává imunity. Pokud poskytovatel je IGO,§8(g) stanoví nezávaznou mediaci podle určených pravidel a po45 dnech na volbu strany konečnou arbitráž, výchozí UNCITRAL, jeden rozhodce, sídlo poskytovatele, anglicky a pokud praktické vzdáleně. Kolekce jako celek stejnou licenci nepotřebuje a neexistuje volba nové verze.
+
+## Překážky a navazující práce
+
+- §3–4 povolují pouze nekomerční nezměněný obsah s technickou výjimkou; softwarový model musí vyjádřit NC/ND a obsahové kolekce, včetně odstranění kreditů a osobnostních práv.
+- §8(g) pro IGO zavádí podmíněnou mediaci a konečnou arbitráž s volitelnými pravidly z copyright notice; tento závazný postup vyžaduje vlastní reprezentaci a pro konkrétní dílo určení předepsaných pravidel.
+
+## Metadata a jejich doložení
+
+| Pole | Hodnota | Doložení znění |
+|---|---|---|
+| family | "nonstandard" | public/data/licenses/CC-BY-NC-ND-3.0-IGO.json#text; CC BY-NC-ND3.0 IGO se vztahuje na literární/umělecké Work včetně autorsky tvůrčí databáze; poskytovatel může být IGO, ale nemusí. Collection obsahuje celé nezměněné dílo, adaptace včetně hudební synchronizace jsou odlišné. §3 dovoluje reprodukci, veřejné šíření/provádění a zařazení do kolekcí pouze v nekomerčním rozsahu§4(b); žádné adaptace kromě technicky nezbytných mediálních změn nejsou uděleny. Podlicence je zakázána a příjemci získávají přímou nabídku. §4(a) stanoví původní licenci Work v Collection, avšak výslovně neuplatňuje ji na zbytek kolekce; bez grantu obecných adaptací nejde o zdrojový copyleft.; https://spdx.org/licenses/CC-BY-NC-ND-3.0-IGO.html |
+| copyleftScope | "none" | public/data/licenses/CC-BY-NC-ND-3.0-IGO.json#text; §4(a) stanoví původní licenci Work v Collection, avšak výslovně neuplatňuje ji na zbytek kolekce; bez grantu obecných adaptací nejde o zdrojový copyleft.; https://spdx.org/licenses/CC-BY-NC-ND-3.0-IGO.html |
+| permissions | ["distribution","private-use"] | public/data/licenses/CC-BY-NC-ND-3.0-IGO.json#text; §3 dovoluje reprodukci, veřejné šíření/provádění a zařazení do kolekcí pouze v nekomerčním rozsahu§4(b); žádné adaptace kromě technicky nezbytných mediálních změn nejsou uděleny. Podlicence je zakázána a příjemci získávají přímou nabídku.; https://spdx.org/licenses/CC-BY-NC-ND-3.0-IGO.html |
+| obligations | ["include-copyright","include-notice","unknown"] | public/data/licenses/CC-BY-NC-ND-3.0-IGO.json#text; §4(a,c) při distribuci a veřejném provádění uchovává copyright, licenční/disclaimer notices, přidává licenci či URI, atribuce určené copyright notice, titul a relevantní URI. V kolekci při souhrnných kreditech nesmí být méně výrazná; na žádost se kredit včetně loga, ochranné či úřední známky/emblému odstraní v prakticky možném rozsahu.; https://spdx.org/licenses/CC-BY-NC-ND-3.0-IGO.html Terminologické upřesnění 2026-09-10: § 4(a) při Distribute nebo Publicly Perform dovoluje s každou kopií díla kopii této licence NEBO její URI; zachování notices a žádosti o odstranění kreditů včetně značek mají nadále vlastní podmínky. include-notice zachycuje požadované licenční oznámení s touto alternativou; include-license-text se neuvádí jako bezpodmínečná povinnost. |
+| triggers | ["distribution","use"] | public/data/licenses/CC-BY-NC-ND-3.0-IGO.json#text; §4(a,c) při distribuci a veřejném provádění uchovává copyright, licenční/disclaimer notices, přidává licenci či URI, atribuce určené copyright notice, titul a relevantní URI. V kolekci při souhrnných kreditech nesmí být méně výrazná; na žádost se kredit včetně loga, ochranné či úřední známky/emblému odstraní v prakticky možném rozsahu.; https://spdx.org/licenses/CC-BY-NC-ND-3.0-IGO.html |
+| restrictions | ["additional-terms","liability","trademark","unknown","warranty"] | public/data/licenses/CC-BY-NC-ND-3.0-IGO.json#text; §4 zakazuje omezující další podmínky a technologická opatření, dojem schválení a poškozující deformace vůči pověsti poskytovatele tam, kde platí osobnostní práva. §4(d) rezervuje neprominutelné odměny, jiné zákonné odměny pro komerční účely a vzdává se dobrovolných odměn v možném rozsahu. §5–6 AS IS a výluka vyjmenovaných škod;§7 dovoluje obnovení po nápravě do30 dnů od zjištění nebo výslovně, dodržující příjemci kolekcí přežívají.; https://spdx.org/licenses/CC-BY-NC-ND-3.0-IGO.html |
+| patentPosition | "none-stated" | public/data/licenses/CC-BY-NC-ND-3.0-IGO.json#text; Autorský grant§3 a rezervace odměn§4(d) nezahrnují patentový grant ani patentovou odvetu; patenty nejsou výslovně licencovány ani paušálně vyloučeny.; https://spdx.org/licenses/CC-BY-NC-ND-3.0-IGO.html |
+| noticeBurden | "material" | public/data/licenses/CC-BY-NC-ND-3.0-IGO.json#text; §4(a,c) při distribuci a veřejném provádění uchovává copyright, licenční/disclaimer notices, přidává licenci či URI, atribuce určené copyright notice, titul a relevantní URI. V kolekci při souhrnných kreditech nesmí být méně výrazná; na žádost se kredit včetně loga, ochranné či úřední známky/emblému odstraní v prakticky možném rozsahu. Rozsah notifikační zátěže: material.; https://spdx.org/licenses/CC-BY-NC-ND-3.0-IGO.html |
+
+## Zdroje
+
+- [Primární zdroj](https://spdx.org/licenses/CC-BY-NC-ND-3.0-IGO.html) — Individuálně přečten celý připnutý text; §4(a,c) při distribuci a veřejném provádění uchovává copyright, licenční/disclaimer notices, přidává licenci či URI, atribuce určené copyright notice, titul a relevantní URI. V kolekci při souhrnných kreditech nesmí být méně výrazná; na žádost se kredit včetně loga, ochranné či úřední známky/emblému odstraní v prakticky možném rozsahu. Autorský grant§3 a rezervace odměn§4(d) nezahrnují patentový grant ani patentovou odvetu; patenty nejsou výslovně licencovány ani paušálně vyloučeny.
+- [Kurátorovaný profil](../../../data/profiles/licenses/id-Q0MtQlktTkMtTkQtMy4wLUlHTw.json)
+- [Uložené úplné znění](../../../public/data/licenses/CC-BY-NC-ND-3.0-IGO.json)
+
+## Otisk zdroje
+
+```json
+{
+  "sourceId": "spdx-license-list",
+  "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+  "contentHash": "sha256:f125e56a2b6cd8b808a4ac4ae9b9c6493f66a42de45d880c63db6679c5912b5f"
+}
+```

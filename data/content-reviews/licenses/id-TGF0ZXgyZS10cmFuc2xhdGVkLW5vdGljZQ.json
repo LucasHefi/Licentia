@@ -1,0 +1,29 @@
+{
+  "id": "Latex2e-translated-notice",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:0b6faa31fedc9377165056fde6a3b6dbcda3353d8e5a34e1507810aba6e2abb3"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Licence dovoluje kopírovat, upravovat a překládat manuál při zachování copyrightu a totožného svolení pro celé odvozené dílo. Samotné licenční svolení lze přeložit pouze překladem schváleným Foundation; nejde o schvalování každého překladu manuálu. Průvodce ji nezařazuje pro nový software, protože její oprávnění se vztahuje k dokumentaci.",
+  "blockersCs": [
+    "Grant pokrývá manuál a překlady s možností schváleného překladu svolení; před doporučením novému softwaru je třeba samostatný model dokumentace."
+  ],
+  "analysis": {
+    "subjectCs": "Grant se týká manuálu s uvedenými copyrighty FSF a jednotlivých autorů i jeho překladů.",
+    "grantCs": "Tři odstavce dovolují doslovné kopie, upravené verze a jazykové překlady manuálu.",
+    "conditionsCs": "Copyright a svolení zůstanou ve všech kopiích; celé odvozené dílo musí mít identické svolení. U překladu smí být i svolení přeloženo, jen pokud překlad schválila Foundation.",
+    "limitationsCs": "Záruky a odpovědnost se neřeší; schvalování se týká překladu licenčního svolení, nikoli obecně každého překladu manuálu.",
+    "compatibilityCs": "Výjimka oproti Latex2e dovoluje Foundation schválený překlad notice; jiné licence nebo verze nenabízí."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Latex2e-translated-notice.html",
+      "note": "Individuálně přečten celý připnutý text; Copyright a svolení zůstanou ve všech kopiích; celé odvozené dílo musí mít identické svolení. U překladu smí být i svolení přeloženo, jen pokud překlad schválila Foundation. Celé tři grantové odstavce nemají patentový grant ani patentové ukončení."
+    }
+  ]
+}

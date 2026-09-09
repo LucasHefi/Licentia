@@ -1,0 +1,31 @@
+{
+  "id": "CECILL-B",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:132673a8730258e0d5c16900df139840d3d891ea2ccd6a626794dd4e79f5aa6b"
+  },
+  "disposition": "blocked",
+  "summaryCs": "CeCILL-B 1.0 dovoluje jinou licenci upraveného softwaru při předepsaných kreditech v dokumentaci, rozhraní a na dostupném webu; za stanovených podmínek vyžaduje také nejlepší úsilí získat souhlas dalšího distributora. Nezměněné binárky mají přístup k úplným zdrojům po celou dobu distribuce. Patentový závazek je nevymáhání práv s přenesením na nabyvatele patentů. Pro doporučení chybí model těchto závazků a alternativ, nikoli důkaz obecného copyleftu.",
+  "analysis": {
+    "subjectCs": "Čl.1 zahrnuje software, dokumentaci a Internal Modules v témže adresním prostoru do Contributions; External Module je neodvozený a v odděleném adresním prostoru. §5.3.2 dovoluje vlastní licenci Modified Software, §5.3.3 vlastní licenci External Module, ale společná distribuce modulu určeného pro software aktivuje kredity §5.3.4 i pro modul. Nejde o všeobecnou povinnost zveřejnit zdroje každého derivátu.",
+    "grantCs": "Čl.2 a5 udělují nevýlučná převoditelná celosvětová práva po dobu ochrany, §5.1 kopie/běh/studium bez oborového omezení, §5.2 změny a §5.3 veřejné šíření/prodej. Čl.5 zavazuje poskytovatele nevymáhat současné ani budoucí patenty na funkce softwaru/komponent vůči následným příjemcům a zavázat i nabyvatele patentů. Tento covenant nemá vlastní hodnotu ve slovníku, proto unknown bez vymyšleného patent-grant nebo patentové odvety. Obecné sublicencování text zvlášť neuděluje.",
+    "conditionsCs": "§5.2 autor a datum Contributions. Nezměněná distribuce §5.3.1 nese dohodu a warranty/liability notice, samotný objekt účinný přístup k celému zdroji nejméně po celou dobu distribuce za nejvýše přenosové náklady. Pro Modified Software §5.3.2 připouští jinou licenci při §5.3.4: původ a IP notice v dokumentaci, údaj o užití/IP/licenci dostupný z rozhraní, volně přístupný web s původem/IP notice po celou dobu distribuce, nejlepší úsilí získat souhlas dalšího příjemce, který může šířit modifikaci bez zdrojů. Stejné kredity má doprovázený External Module. §6.4 zachovává IP notices v původních i změněných kopiích a vyžaduje potřebná opatření u zaměstnanců. §3.2 uznává dohodu/notices poskytnuté a přečtené před přijetím.",
+    "limitationsCs": "§7 dobrovolná údržba/podpora a další záruky na vlastní odpovědnost v odděleném instrumentu. §8.1 přímá prokázaná škoda z pochybení podléhá výjimkám §8.2 pro vlastní porušení a škody z užití/výkonu včetně široce definovaných následných obchodních ztrát. §9.1 příjemce prověří vhodnost, funkčnost a neškodnost; §9.2 v dobré víře potvrzení oprávnění poskytovatele, §9.3 AS IS s touto výjimkou. §9.4 bez IP indemnity, ale povinná technická a právní pomoc při žalobě s podmínkami individuálního memoranda. Disclaimer názvu není samostatný zákaz endorsementu. §10 po neúčinné výzvě 30 dnů možné ukončení, řádné starší licence příjemců přežijí.",
+    "compatibilityCs": "§5.3.5 činí §5.3.4 kredity volitelnými, pokud Modified Software obsahuje Contribution pod CeCILL, nebo pokud je Modified Software distribuován pod CeCILL-C. Nejde o kumulaci povinných kreditů se všemi těmito cestami ani o výslovnou přímou GPL alternativu. §6.1 Initial Software zůstává alespoň pod touto dohodou, nenutí zde držitele stále aktivně distribuovat jako1.1. §12.3 stejná/pozdější verze při dalších distribucích se čte spolu s výslovnými §5.3.2/5.3.5 alternativami. §11.5 oba jazyky autentické; žádný nedoložený jazykový spor se nevyrábí. §13 francouzské právo, pokus o smír a po2 měsících Paříž mimo naléhavé řízení."
+  },
+  "blockersCs": [
+    "Doplnit patentový non-enforcement covenant čl.5 a povinnost zajistit jeho převzetí nabyvatelem patentů. Nelze jej vydávat za mlčení, explicitní grant ani patentovou odvetu.",
+    "Modelovat §5.3.4: dokumentace, přístupné UI, veřejný web po dobu distribuce a nejlepší úsilí získat souhlas příjemce bez source duty; kredity i doprovodnému External Module. §5.3.5 činí kredity volitelnými u konkrétních CeCILL/C cest a §5.3.1 source supply platí jen nezměněným binárkám.",
+    "Vyjádřit opatření vůči zaměstnancům (§6.4), povinné prověření vhodnosti/funkčnosti/neškodnosti (§9.1) a technickou/právní pomoc poskytovatele při IP žalobě (§9.4) včetně rozdílných rolí. Pouhá výluka záruk či indemnita tyto závazky nezachytí."
+  ],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/CECILL-B.html",
+      "note": "Primární znění potvrzuje rozlišení nezměněných a modifikovaných distribucí, silné kredity s konkrétními výjimkami a patentový závazek nevymáhání. Obě jazykové verze jsou podle§11.5 autentické; text ani source fingerprint se nemění."
+    }
+  ]
+}

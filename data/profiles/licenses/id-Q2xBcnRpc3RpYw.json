@@ -8,93 +8,104 @@
     "contentHash": "sha256:3f8d7fbea9aa671a95ddef2cf0c0a07104c9453e0b4245271624bb77ec04ef0c"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
+    "family": "nonstandard",
     "copyleftScope": "unknown",
     "permissions": [
       "commercial-use",
       "distribution",
-      "modifications"
+      "modifications",
+      "private-use"
     ],
     "obligations": [
-      "include-copyright"
+      "include-copyright",
+      "include-notice",
+      "mark-modifications",
+      "unknown"
     ],
     "triggers": [
-      "unknown"
+      "combination",
+      "distribution",
+      "linking",
+      "modification",
+      "use"
     ],
     "restrictions": [
-      "unknown"
+      "additional-terms",
+      "trademark",
+      "unknown",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/ClArtistic.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ClArtistic.json#text; Různé licenční cesty a výjimky pro interpreter/binární obrazy mají rozdílný rozsah, takže jediný copyleftScope by je zkreslil.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/ClArtistic.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ClArtistic.json#text; Různé licenční cesty a výjimky pro interpreter/binární obrazy mají rozdílný rozsah, takže jediný copyleftScope by je zkreslil.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/ClArtistic.json#text; §§1–4 dovolují zdroje/změny/binárky za voleb; §5 libovolný distribution fee, podporu a licence jiných částí agregátu, nikoli licence fee k užití Package. Patentový grant chybí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "obligations",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/ClArtistic.json#text; §1 zachová copyrighty/disclaimery. §3 výrazné jak/kdy změn a volba veřejné změny/přijetí držitelem, interní užití, přejmenované+standardní binárky/manuály, dohoda, NEBO svolení/povzbuzení příjemcům změny veřejně uvolnit. §4 volí standardní binárky+instrukce, modifikované zdroje, přejmenované+manuály/odkaz (bez povinného přiložení standardních), dohodu, NEBO mail-order zdrojovou nabídku. §5 embedding pouze celého Standard interpreteru; §8 embedded Standard Version bez zjevně viditelného rozhraní není distribuce Package.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/ClArtistic.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ClArtistic.json#text; §1 zachová copyrighty/disclaimery. §3 výrazné jak/kdy změn a volba veřejné změny/přijetí držitelem, interní užití, přejmenované+standardní binárky/manuály, dohoda, NEBO svolení/povzbuzení příjemcům změny veřejně uvolnit. §4 volí standardní binárky+instrukce, modifikované zdroje, přejmenované+manuály/odkaz (bez povinného přiložení standardních), dohodu, NEBO mail-order zdrojovou nabídku. §5 embedding pouze celého Standard interpreteru; §8 embedded Standard Version bez zjevně viditelného rozhraní není distribuce Package.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "restrictions",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/ClArtistic.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ClArtistic.json#text; Freely Available znamená bez poplatku za právo užití, nikoli za samotnou položku. §6 vstupy/výstupy a undump/unexec obraz vyjímá z §§3–4, nesmí se vydávat za Standard Version. §7 emulační C/obdobné subrutiny nesmějí porušit jazykové regresní testy. §9 no-endorsement, §10 no warranty; výluka škod chybí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/ClArtistic.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ClArtistic.json#text; §§1–4 dovolují zdroje/změny/binárky za voleb; §5 libovolný distribution fee, podporu a licence jiných částí agregátu, nikoli licence fee k užití Package. Patentový grant chybí.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/ClArtistic.json#text; §1 zachová copyrighty/disclaimery. §3 výrazné jak/kdy změn a volba veřejné změny/přijetí držitelem, interní užití, přejmenované+standardní binárky/manuály, dohoda, NEBO svolení/povzbuzení příjemcům změny veřejně uvolnit. §4 volí standardní binárky+instrukce, modifikované zdroje, přejmenované+manuály/odkaz (bez povinného přiložení standardních), dohodu, NEBO mail-order zdrojovou nabídku. §5 embedding pouze celého Standard interpreteru; §8 embedded Standard Version bez zjevně viditelného rozhraní není distribuce Package.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/ClArtistic.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/ClArtistic.json#text; Individuálně přečten celý připnutý text. Package jsou původní soubory/textové deriváty; Standard Version zahrnuje i Freely Available opravy, které jiné Artistic verze výslovně nejmenují. Clarified Artistic má pět alternativ pro změny i pět pro binárky, umožňuje distribuční poplatek bez omezení rozumnosti, ale zakazuje poplatek za právo užívat balík. Zvlášť vyjímá úplný vložený standardní interpreter, určité undump/unexec obrazy a embedded standardní agregaci. Pět modifikačních a pět binárních cest, mail-order nabídka, zákaz užívacího licenčního poplatku a přesné embedding/undump/unexec výjimky vyžadují model skutečných alternativ. Doplnit jej místo plošných source a same-license povinností.",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

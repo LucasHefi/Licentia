@@ -1,0 +1,29 @@
+{
+  "id": "PolyForm-Small-Business-1.0.0",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:53aeae518d2ec184fd904549812ba93f878126995a05f296bb561286f09b9e14"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Licence dovoluje software používat, měnit a distribuovat malému podniku při zachování licenčních oznámení. Rozhoduje celá propojená podniková skupina: méně než 100 pracovníků včetně kontraktorů a příjmy pod hranicí milionu dolarů v cenách roku 2019, upravovanou o inflaci. Průvodce ji nezařazuje, protože způsobilost závisí na aktuální velikosti a příjmech konkrétního uživatele.",
+  "blockersCs": [
+    "Povolené užití závisí na počtu pracovníků celé podnikové skupiny a inflačně upravených příjmech minulého roku; před doporučením je nutný model těchto uživatelských a časových podmínek."
+  ],
+  "analysis": {
+    "subjectCs": "PolyForm Small Business 1.0.0 definuje povolený účel podle velikosti a tržeb celé skupiny vašeho podniku.",
+    "grantCs": "Autorské, distribuční a změnové granty dovolují software pro permitted purpose; Patent License zahrnuje nynější/budoucí licencovatelné nároky porušené užitím.",
+    "conditionsCs": "Příjemci libovolné části dostanou text nebo URL a všechny dodané řádky Required Notice. Small Business vyžaduje méně než 100 zaměstnanců+kontraktorů a pod 1 milion USD v cenách 2019 příjmů za minulý daňový rok, valorizováno přes určený BLS CPI.",
+    "limitationsCs": "No Other Rights zakazuje sublicence/převod. Vlastní písemný patentový nárok ruší patentový grant; firemní nárok jej ruší pro práci firmy. Při prvním písemném upozornění lze do 32 dnů napravit soulad a minulé porušení, jinak končí všechna práva. AS IS vylučuje záruky/odpovědnost.",
+    "compatibilityCs": "Fair Use se neomezuje. Your company zahrnuje ovládající, ovládané a společně řízené subjekty; aktuální cenový limit zde není dopočítáván ani předstírán jako statický milion."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/PolyForm-Small-Business-1.0.0.html",
+      "note": "Individuálně přečten celý připnutý text; Příjemci libovolné části dostanou text nebo URL a všechny dodané řádky Required Notice. Small Business vyžaduje méně než 100 zaměstnanců+kontraktorů a pod 1 milion USD v cenách 2019 příjmů za minulý daňový rok, valorizováno přes určený BLS CPI. Výslovný grant pokrývá licencovatelné současné i budoucí patenty a končí při písemném vlastním/firemním nároku ve vymezeném rozsahu."
+    }
+  ]
+}

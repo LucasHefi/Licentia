@@ -8,93 +8,99 @@
     "contentHash": "sha256:b5c86855a6c9052783c0e3fed91e890160f323daad7d2e1f20c5339e74f9476d"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
-    "family": "unknown",
-    "copyleftScope": "unknown",
+    "family": "permissive",
+    "copyleftScope": "none",
     "permissions": [
-      "distribution"
+      "commercial-use",
+      "distribution",
+      "modifications",
+      "private-use"
     ],
     "obligations": [
       "include-copyright",
-      "provide-corresponding-source"
+      "include-license-text",
+      "include-notice",
+      "unknown"
     ],
     "triggers": [
-      "unknown"
+      "distribution"
     ],
     "restrictions": [
       "liability",
-      "trademark"
+      "trademark",
+      "warranty"
     ],
-    "patentPosition": "unknown",
-    "noticeBurden": "standard"
+    "patentPosition": "none-stated",
+    "noticeBurden": "material"
   },
   "evidence": [
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "permissions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "restrictions",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Plexus.json#text; opening software/documentation use/redistribution with/without modification, conditional on following listed conditions; no source-supply duty; no reciprocal source-supply or same-license condition; https://spdx.org/licenses/Plexus.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     },
     {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Plexus.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Plexus.json#text; opening software/documentation use/redistribution with/without modification, conditional on following listed conditions; no source-supply duty; https://spdx.org/licenses/Plexus.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     },
     {
-      "field": "copyleftScope",
+      "field": "noticeBurden",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Plexus.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Plexus.json#text; clauses 1-2 source copyright/notices/full document, binary copyright/conditions/disclaimer; clause 5 due credit SHOULD be given appears WITHIN mandatory numbered conditions, unlike expressly optional Saxpath acknowledgment; precise acknowledgment duty unresolved; https://spdx.org/licenses/Plexus.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     },
     {
-      "field": "triggers",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Plexus.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Plexus.json#text; clauses 1-2 source copyright/notices/full document, binary copyright/conditions/disclaimer; clause 5 due credit SHOULD be given appears WITHIN mandatory numbered conditions, unlike expressly optional Saxpath acknowledgment; precise acknowledgment duty unresolved; https://spdx.org/licenses/Plexus.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Plexus.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Plexus.json#text; whole text: no express patent grant or patent-litigation termination; no inference of patent rights from copyright, trademarks or non-infringement disclaimers; https://spdx.org/licenses/Plexus.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
+    },
+    {
+      "field": "permissions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Plexus.json#text; opening software/documentation use/redistribution with/without modification, conditional on following listed conditions; no source-supply duty; https://spdx.org/licenses/Plexus.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Plexus.json#text; clauses 3-4 classworlds endorsement/product-name written consent; final warranty/liability disclaimer; https://spdx.org/licenses/Plexus.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/Plexus.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/Plexus.json#text; whole-text editorial review on 2026-09-09, batch 7; Ověřit závaznost a splnění due credit v bodu 5, který je součástí povinného seznamu, přesto používá should. Doložit původní kontext nebo stanovisko poskytovatele k formě a místu uznání. Nezaměňovat za výslovně dobrovolné poděkování Saxpath ani vymýšlet povinný reklamní text.; https://spdx.org/licenses/Plexus.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
+    },
+    {
+      "field": "triggers",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/Plexus.json#text; clauses 1-2 source copyright/notices/full document, binary copyright/conditions/disclaimer; clause 5 due credit SHOULD be given appears WITHIN mandatory numbered conditions, unlike expressly optional Saxpath acknowledgment; precise acknowledgment duty unresolved; https://spdx.org/licenses/Plexus.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.7"
     }
   ]
 }

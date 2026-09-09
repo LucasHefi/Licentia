@@ -1,0 +1,22 @@
+{
+  "id": "Afmparse",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.6",
+  "reviewMethod": "prior-individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:f12b49e96f43a7f30c6eaef7440a878f64a0555582c5085323f1f23d60d46821"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Zachovejte celé oznámení v souboru a každou úpravu viditelně označte. Text výslovně dovoluje kopírování a redistribuci tohoto souboru, ale nevymezuje obecný rozsah užití softwaru. Výčet registrovaných známek Adobe je informací o vlastnictví známek, nikoli výslovnou propagační podmínkou. Znění vylučuje záruky a odpovědnost za chyby a nepřesnosti.",
+  "blockersCs": [
+    "Doložit předmět a rozsah stručného grantu pro tento soubor, zejména obecné užití a další podoby distribuce. Zachovat celé oznámení uvnitř souboru a viditelně označovat úpravy. Informativní výčet známek není doložený zákaz propagace; dřívější příznak trademark byl opraven."
+  ],
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/Afmparse.html",
+      "note": "Dřívější individuální revize 2026-09-09.6; podrobné doložení jednotlivých polí je zachováno v kurátorovaném profilu."
+    }
+  ]
+}

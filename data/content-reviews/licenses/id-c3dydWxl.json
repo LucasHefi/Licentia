@@ -1,0 +1,29 @@
+{
+  "id": "swrule",
+  "reviewedAt": "2026-09-09",
+  "ruleVersion": "2026-09-09.10",
+  "reviewMethod": "individual-full-text",
+  "sourceFingerprint": {
+    "sourceId": "spdx-license-list",
+    "revision": "manifest-sha256:74897699de0d23c4da42b94bf46bc6fd01f7b68ffcece9db1a98194ac277bb02",
+    "contentHash": "sha256:562270ed50e7facf5f714c88ff45f1433ea35ad5d7a1d4246d895073640927ea"
+  },
+  "disposition": "blocked",
+  "summaryCs": "Balík stylu lze jakkoli používat a rozšiřovat při zachování odkazu na původního autora. Užití je na vlastní riziko bez odpovědnosti autora.",
+  "blockersCs": [
+    "Grant used and extended in any way výslovně dovoluje užívání a rozšiřování, ale nevymezuje redistribuci či prodej balíku. Ověřit původní rozsah těchto práv; nový spouštěč use řeší uchování odkazu na autora, nikoli chybějící distribuční grant."
+  ],
+  "analysis": {
+    "subjectCs": "Grant se týká autorsky chráněného balíku stylu swrule, nikoli jeho vyhrazení veřejnosti.",
+    "grantCs": "Used and extended in any way dovoluje užití a rozšíření balíku; samostatné právo redistribuce/prodeje není výslovně určeno a nelze je automaticky doplnit. Patentový grant a sublicence nejsou uvedeny.",
+    "conditionsCs": "As long as vyžaduje udržovat odkaz na původního autora při každém užití či rozšíření. Nejde jen o distribuci; zdrojový kód ani stejná licence požadovány nejsou. Povinnost při samotném užití nyní zachycuje trigger use ve slovníku 1.4.0. Povinné přiznání zásluh při užití je samostatné include-use-acknowledgment (1.4.0), nikoli dobrovolná žádost.",
+    "limitationsCs": "Autor není odpovědný za žádný problém související či nesouvisející s užitím; věta Use at your own risk přenechává riziko uživateli.",
+    "compatibilityCs": "Text neurčuje jinou licenci, možnost výběru verze ani kombinaci s konkrétní licencí."
+  },
+  "sources": [
+    {
+      "url": "https://spdx.org/licenses/swrule.html",
+      "note": "Individuální revize celého připnutého textu; Grant se týká autorsky chráněného balíku stylu swrule, nikoli jeho vyhrazení veřejnosti."
+    }
+  ]
+}

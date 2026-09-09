@@ -8,9 +8,9 @@
     "contentHash": "sha256:1fb5dfbd2cdd184d37e63df83b668d2ea572ec30a8358dd2af1775a454983d61"
   },
   "review": {
-    "status": "reviewed",
+    "status": "not-recommendable",
     "recommendable": false,
-    "evidenceLevel": "sufficient"
+    "evidenceLevel": "strong"
   },
   "semantic": {
     "family": "permissive",
@@ -19,85 +19,91 @@
       "commercial-use",
       "distribution",
       "modifications",
+      "private-use",
       "sublicensing"
     ],
     "obligations": [
       "include-copyright",
-      "include-license-text"
+      "include-license-text",
+      "mark-modifications",
+      "unknown"
     ],
     "triggers": [
-      "unknown"
+      "distribution",
+      "modification"
     ],
     "restrictions": [
       "liability",
+      "trademark",
+      "unknown",
       "warranty"
     ],
-    "patentPosition": "unknown",
+    "patentPosition": "none-stated",
     "noticeBurden": "standard"
   },
   "evidence": [
     {
-      "field": "copyleftScope",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.no-copyleft",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
       "field": "family",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.permissive-grant",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DocBook-XML.json#text; Text licencuje software a dokumentaci DocBook XSL stylesheets s uvedenými copyrighty autorů a projektu. MIT formulace dovoluje neomezené užití, kopie, změny, sloučení, publikaci, distribuci, sublicence a prodej. Přejmenování a změna version strings nejsou copyleft ani zdrojový požadavek.; https://spdx.org/licenses/DocBook-XML.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "noticeBurden",
+      "field": "copyleftScope",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.notice-requirement",
-      "ruleVersion": "lic-007-v1"
-    },
-    {
-      "field": "obligations",
-      "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-obligations",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DocBook-XML.json#text; Přejmenování a změna version strings nejsou copyleft ani zdrojový požadavek.; https://spdx.org/licenses/DocBook-XML.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "permissions",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-permissions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DocBook-XML.json#text; MIT formulace dovoluje neomezené užití, kopie, změny, sloučení, publikaci, distribuci, sublicence a prodej.; https://spdx.org/licenses/DocBook-XML.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
-      "field": "restrictions",
+      "field": "obligations",
       "sourceId": "spdx-license-list",
-      "locator": "text",
-      "ruleId": "lic-007.explicit-restrictions",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DocBook-XML.json#text; Copyright a svolení zůstávají v kopiích/podstatných částech. Veřejně distribuovaný odvozený stylesheet musí mít jiné jméno a version strings každého odvozeného softwaru se změní tak, aby nemohlo dojít k záměně.; https://spdx.org/licenses/DocBook-XML.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "triggers",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/DocBook-XML.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DocBook-XML.json#text; Copyright a svolení zůstávají v kopiích/podstatných částech. Veřejně distribuovaný odvozený stylesheet musí mít jiné jméno a version strings každého odvozeného softwaru se změní tak, aby nemohlo dojít k záměně.; https://spdx.org/licenses/DocBook-XML.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "restrictions",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/DocBook-XML.json#text; Jména přispěvatelů mimo notice nesmějí bez písemného souhlasu propagovat software; AS IS vylučuje záruky a odpovědnost Normana Walshe i ostatních přispěvatelů. Kontaktní e-maily nejsou povinnost hlásit změny.; https://spdx.org/licenses/DocBook-XML.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "patentPosition",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/DocBook-XML.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DocBook-XML.json#text; Celý text nemá patentový grant nebo patentové ukončení.; https://spdx.org/licenses/DocBook-XML.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
+    },
+    {
+      "field": "noticeBurden",
+      "sourceId": "spdx-license-list",
+      "locator": "public/data/licenses/DocBook-XML.json#text; Copyright a svolení zůstávají v kopiích/podstatných částech. Veřejně distribuovaný odvozený stylesheet musí mít jiné jméno a version strings každého odvozeného softwaru se změní tak, aby nemohlo dojít k záměně. Rozsah notifikační zátěže: standard.; https://spdx.org/licenses/DocBook-XML.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     },
     {
       "field": "review",
       "sourceId": "spdx-license-list",
-      "locator": "public/data/licenses/DocBook-XML.json#text",
-      "ruleId": "lic-007.profile-review",
-      "ruleVersion": "lic-007-v1"
+      "locator": "public/data/licenses/DocBook-XML.json#text; Individuální kontrola celého připnutého textu DocBook-XML dne 2026-09-09. Text licencuje software a dokumentaci DocBook XSL stylesheets s uvedenými copyrighty autorů a projektu. Text vyžaduje nové jméno veřejně šířeného odvozeného stylesheetu a změnu version strings odvozeného softwaru; před doporučením je třeba modelovat tuto povinnou změnu názvů/verzí. Jiná licence ani verze není nabízena.; https://spdx.org/licenses/DocBook-XML.html",
+      "ruleId": "guide-expansion.editorial-review",
+      "ruleVersion": "2026-09-09.10"
     }
   ]
 }

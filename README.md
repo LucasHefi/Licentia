@@ -52,6 +52,12 @@ npm run build
 npm run check
 ```
 
+Bezpečnostní kontrola CI spouští také `npm audit --audit-level=high`. Dočasný
+override `miniflare > sharp` v `package.json` vynucuje opravenou řadu `^0.35.4`,
+protože používaný Miniflare připíná starší zranitelnou verzi. Důvodem je
+[GHSA-rgj7-g3m4-5g8c](https://github.com/advisories/GHSA-rgj7-g3m4-5g8c);
+override lze odstranit, až Miniflare sám přejde na opravenou závislost.
+
 ## Desktop: Linux, Windows a macOS
 
 Desktop používá Tauri 2 a samostatnou statickou Vite sestavu se stejnými React komponentami a lokální kopií všech dat.

@@ -1,0 +1,14 @@
+{
+  "name": "Licentia — průvodce softwarovými licencemi",
+  "short_name": "Licentia",
+  "description": "Vyhledávání ve SPDX licencích, porovnání podmínek a vysvětlitelný průvodce výběrem.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f3f0e7",
+  "theme_color": "#102424",
+  "lang": "cs",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

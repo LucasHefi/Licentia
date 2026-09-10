@@ -1,0 +1,11 @@
+{
+  "spdxVersion": "3.28.0",
+  "licenses": 727,
+  "exceptions": 84,
+  "generatedAt": "2026-08-22",
+  "sources": {
+    "spdx": "https://spdx.org/licenses/",
+    "osi": "https://opensource.org/api/license",
+    "chooser": "https://choosealicense.com/"
+  }
+}

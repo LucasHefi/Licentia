@@ -1,3 +1,15 @@
+export const trackedPublicLicenses = [
+  ["MIT", "mit"],
+  ["Apache-2.0", "apache-2.0"],
+  ["GPL-3.0", "gpl-3.0"],
+  ["BSD-3-Clause", "bsd-3-clause"],
+  ["MPL-2.0", "mpl-2.0"],
+  ["LGPL-3.0", "lgpl-3.0"],
+  ["AGPL-3.0", "agpl-3.0"],
+] as const;
+
+export const GITHUB_SIGNALS_SOURCE_URL = "https://docs.github.com/en/rest/search/search#search-repositories";
+
 export type GithubSignal = {
   id: string;
   query: string;
@@ -57,5 +69,22 @@ export function decodeGithubSignalPayload(value: unknown): GithubSignalsPayload 
   if (typeof payload.fetchedAt !== "string" || payload.fetchedAt.length > 64 || Number.isNaN(Date.parse(payload.fetchedAt)) || typeof payload.source !== "string" || payload.source.length > 500 || typeof payload.caveat !== "string" || payload.caveat.length > 500 || !Array.isArray(payload.licenses)) return null;
   const signals = payload.licenses.map(decodeGithubSignal);
   if (signals.some((signal) => signal === null)) return null;
+  if (signals.length !== trackedPublicLicenses.length || trackedPublicLicenses.some(([id, query]) => signals.filter((signal) => signal?.id === id && signal.query === query).length !== 1)) return null;
+  const available = signals.filter((signal) => signal?.repositoryCount !== null && !signal?.error).length;
+  if (payload.status !== (available === signals.length ? "complete" : available > 0 ? "partial" : "unavailable")) return null;
   return { status: payload.status, fetchedAt: payload.fetchedAt, source: payload.source, caveat: payload.caveat, signals: signals.filter((signal): signal is GithubSignal => signal !== null) };
+}
+
+export type GithubSignalReading = {
+  signal: GithubSignal;
+  fetchedAt: string;
+  origin: "snapshot" | "live";
+};
+
+export function mergeGithubSignalReadings(readings: GithubSignalReading[], payload: GithubSignalsPayload): GithubSignalReading[] {
+  return readings.map((reading) => {
+    const signal = payload.signals.find((item) => item.id === reading.signal.id);
+    if (!signal || signal.repositoryCount === null || signal.error || Date.parse(payload.fetchedAt) <= Date.parse(reading.fetchedAt)) return reading;
+    return { signal, fetchedAt: payload.fetchedAt, origin: "live" };
+  });
 }

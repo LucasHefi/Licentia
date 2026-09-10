@@ -1,12 +1,17 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
+import { mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { test } from "node:test";
-import { decodeGithubSignalPayload, safeGithubRepositoryUrl } from "../lib/public-signals.ts";
+import { decodeGithubSignalPayload, mergeGithubSignalReadings, safeGithubRepositoryUrl, trackedPublicLicenses, type GithubSignalReading } from "../lib/public-signals.ts";
+import { writeGithubSignalsSnapshot } from "./refresh-github-signals.ts";
 
 const root = fileURLToPath(new URL("..", import.meta.url));
 const routeSource = readFileSync(`${root}/app/api/signals/route.ts`, "utf8");
-const uiSource = readFileSync(`${root}/components/LicenseStudio.tsx`, "utf8");
+const uiSource = readFileSync(`${root}/components/GithubSignals.tsx`, "utf8");
+const source = readFileSync(`${root}/lib/github-signals-source.ts`, "utf8");
 let moduleId = 0;
 
 function repository(name = "octo/example") {
@@ -22,7 +27,7 @@ function clientSignal(overrides: Record<string, unknown> = {}) {
 }
 
 function clientEnvelope(overrides: Record<string, unknown> = {}) {
-  return { status: "complete", fetchedAt: "2026-09-04T09:00:00Z", source: "GitHub", caveat: "Public signal only.", licenses: [clientSignal()], ...overrides };
+  return { status: "complete", fetchedAt: "2026-09-04T09:00:00Z", source: "GitHub", caveat: "Public signal only.", licenses: trackedPublicLicenses.map(([id, query]) => clientSignal({ id, query })), ...overrides };
 }
 
 async function loadRoute() {
@@ -37,24 +42,32 @@ function installFetch(handler: (url: URL, init?: RequestInit) => Response | Prom
 }
 
 test("signals contract is hardened and static targets are explicit", () => {
-  assert.match(routeSource, /AbortController/);
-  assert.match(routeSource, /signal: controller\.signal/);
-  assert.match(routeSource, /MAX_UPSTREAM_BODY_BYTES/);
-  assert.match(routeSource, /MAX_REPOSITORIES = 3/);
-  assert.match(routeSource, /Number\.isSafeInteger/);
+  assert.match(source, /AbortController/);
+  assert.match(source, /signal: controller\.signal/);
+  assert.match(source, /MAX_UPSTREAM_BODY_BYTES/);
+  assert.match(source, /MAX_REPOSITORIES = 3/);
+  assert.match(source, /Number\.isSafeInteger/);
   assert.match(routeSource, /signalsInFlight/);
   assert.match(uiSource, /decodeGithubSignalPayload/);
-  assert.match(uiSource, /status: "unavailable"/);
+  assert.match(uiSource, /fetchGithubSignals/);
+  assert.match(uiSource, /github-signals\.snapshot\.json/);
   assert.match(readFileSync(`${root}/desktop/main.tsx`, "utf8"), /dataset\.licentiaStaticTarget = "true"/);
   assert.match(readFileSync(`${root}/apache/main.tsx`, "utf8"), /dataset\.licentiaStaticTarget = "true"/);
 });
 
-test("client decoder preserves complete, partial, and unavailable envelope status", () => {
-  assert.equal(decodeGithubSignalPayload(clientEnvelope())?.status, "complete");
-  assert.equal(decodeGithubSignalPayload(clientEnvelope({ status: "partial" }))?.status, "partial");
-  assert.equal(decodeGithubSignalPayload(clientEnvelope({ status: "unavailable", caveat: "GitHub rate limit." }))?.status, "unavailable");
-  assert.equal(decodeGithubSignalPayload({ ...clientEnvelope(), status: "ready" }), null);
-  assert.equal(decodeGithubSignalPayload({ ...clientEnvelope(), licenses: [{ ...clientSignal(), topRepositories: [{ name: "bad", url: "https://github.com:8443/octo/example", stars: 1, forks: 1, pushedAt: null }] }] }), null);
+test("client decoder validates coverage, status, queries, and repository URLs", () => {
+  const complete = clientEnvelope();
+  const unavailable = complete.licenses.map((signal) => ({ ...signal, repositoryCount: null, error: "GitHub rate limit." }));
+  assert.equal(decodeGithubSignalPayload(complete)?.status, "complete");
+  assert.equal(decodeGithubSignalPayload(clientEnvelope({ status: "partial", licenses: [complete.licenses[0], ...unavailable.slice(1)] }))?.status, "partial");
+  assert.equal(decodeGithubSignalPayload(clientEnvelope({ status: "unavailable", licenses: unavailable }))?.status, "unavailable");
+  for (const invalid of [
+    { status: "ready" }, { status: "partial" }, { status: "unavailable" },
+    { licenses: [] }, { licenses: [clientSignal()] },
+    { licenses: [...complete.licenses.slice(1), complete.licenses[1]] },
+    { licenses: [clientSignal({ query: "apache-2.0" }), ...complete.licenses.slice(1)] },
+    { licenses: [clientSignal({ topRepositories: [{ name: "bad", url: "https://github.com:8443/octo/example", stars: 1, forks: 1, pushedAt: null }] }), ...complete.licenses.slice(1)] },
+  ]) assert.equal(decodeGithubSignalPayload(clientEnvelope(invalid)), null);
 });
 
 test("safe GitHub URLs reject credentials and non-default ports", () => {
@@ -63,6 +76,57 @@ test("safe GitHub URLs reject credentials and non-default ports", () => {
   assert.equal(safeGithubRepositoryUrl("https://github.com:8443/octo/example"), null);
   assert.equal(safeGithubRepositoryUrl("https://user@github.com/octo/example"), null);
   assert.equal(safeGithubRepositoryUrl("https://:secret@github.com/octo/example"), null);
+});
+
+test("bundled snapshot contains real dated counts for every tracked license", () => {
+  const payload = decodeGithubSignalPayload(JSON.parse(readFileSync(`${root}/data/github-signals.snapshot.json`, "utf8")));
+  assert.ok(payload);
+  assert.equal(payload.status, "complete");
+  assert.equal(payload.signals.length, 7);
+  assert.ok(payload.signals.every((signal) => signal.repositoryCount !== null && signal.repositoryCount > 0));
+});
+
+test("partial and failed refreshes preserve previous values and their collection dates", () => {
+  const initial = decodeGithubSignalPayload(clientEnvelope())!;
+  const readings: GithubSignalReading[] = initial.signals.map((signal) => ({ signal, fetchedAt: initial.fetchedAt, origin: "snapshot" }));
+  const refreshed = { ...initial, fetchedAt: "2026-09-10T10:00:00Z", signals: initial.signals.map((signal, index) => index === 0 ? { ...signal, repositoryCount: 0, incompleteResults: true } : { ...signal, repositoryCount: null, error: "GitHub rate limit." }) };
+  const merged = mergeGithubSignalReadings(readings, refreshed);
+  assert.equal(merged[0].signal.repositoryCount, 0, "a real zero is a valid count");
+  assert.equal(merged[0].signal.incompleteResults, true);
+  assert.equal(merged[0].fetchedAt, refreshed.fetchedAt);
+  assert.equal(merged[0].origin, "live");
+  assert.deepEqual(merged.slice(1), readings.slice(1));
+  assert.deepEqual(mergeGithubSignalReadings(merged, initial), merged, "older cached results must not overwrite a newer observation");
+  assert.deepEqual(mergeGithubSignalReadings(readings, { ...refreshed, signals: refreshed.signals.map((signal) => ({ ...signal, repositoryCount: null, error: "offline" })) }), readings);
+});
+
+test("snapshot refresh writes all seven licenses atomically and leaves prior data intact on failure", async () => {
+  const directory = await mkdtemp(join(tmpdir(), "licentia-signals-"));
+  const destination = join(directory, "snapshot.json");
+  try {
+    await writeFile(destination, "previous snapshot");
+    await assert.rejects(writeGithubSignalsSnapshot(clientEnvelope({ status: "unavailable" }), destination));
+    assert.equal(await readFile(destination, "utf8"), "previous snapshot");
+    await writeGithubSignalsSnapshot(clientEnvelope(), destination);
+    assert.equal(decodeGithubSignalPayload(JSON.parse(await readFile(destination, "utf8")))?.status, "complete");
+  } finally {
+    await rm(directory, { recursive: true, force: true });
+  }
+});
+
+test("API failures are briefly cached without letting shared HTTP caches pin an outage", async () => {
+  let calls = 0;
+  const restore = installFetch(() => { calls++; return new Response("rate limit", { status: 429 }); });
+  try {
+    const route = await loadRoute();
+    const first = await route.GET();
+    const second = await route.GET();
+    assert.equal(first.headers.get("cache-control"), "no-store");
+    assert.equal((await second.json() as { status: string }).status, "unavailable");
+    assert.equal(calls, 7);
+  } finally {
+    restore();
+  }
 });
 
 test("GET returns bounded validated signals and coalesces concurrent loads", async () => {

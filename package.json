@@ -1,6 +1,6 @@
 {
   "name": "sites-project",
-  "version": "0.1.17",
+  "version": "0.1.18",
   "private": true,
   "license": "MIT",
   "engines": {
@@ -32,6 +32,7 @@
     "test:guide-contract": "node --experimental-strip-types --test scripts/guide-contract.test.ts",
     "test:mcp-contract": "node --experimental-strip-types --test scripts/mcp-contract.test.ts",
     "test:apache-recommendation-contract": "php scripts/apache-recommendation-contract.test.php",
+    "data:signals:refresh": "node --experimental-strip-types scripts/refresh-github-signals.ts",
     "test:signals-contract": "node --experimental-strip-types --test scripts/signals-contract.test.ts",
     "test:curation": "node --test scripts/curate-legacy-profiles.test.mjs",
     "test:data-build": "node --test scripts/build-app-data.test.mjs",

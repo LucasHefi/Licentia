@@ -1,0 +1,213 @@
+{
+  "source": "GitHub repository search",
+  "sourceUrl": "https://docs.github.com/en/rest/search/search#search-repositories",
+  "fetchedAt": "2026-09-10T06:47:01.767Z",
+  "coverage": "Veřejné repozitáře s rozpoznanou licencí; výchozí vyhledávání bez forků.",
+  "caveat": "Počet repozitářů není počet uživatelů, instalací ani všech závislostí.",
+  "status": "complete",
+  "licenses": [
+    {
+      "id": "MIT",
+      "query": "mit",
+      "repositoryCount": 21172800,
+      "incompleteResults": true,
+      "topRepositories": [
+        {
+          "name": "public-apis/public-apis",
+          "url": "https://github.com/public-apis/public-apis",
+          "stars": 478265,
+          "forks": 52785,
+          "pushedAt": "2026-09-09T21:40:11Z"
+        },
+        {
+          "name": "obra/superpowers",
+          "url": "https://github.com/obra/superpowers",
+          "stars": 284187,
+          "forks": 25423,
+          "pushedAt": "2026-09-10T06:44:12Z"
+        },
+        {
+          "name": "practical-tutorials/project-based-learning",
+          "url": "https://github.com/practical-tutorials/project-based-learning",
+          "stars": 282805,
+          "forks": 36202,
+          "pushedAt": "2026-09-07T07:09:03Z"
+        }
+      ]
+    },
+    {
+      "id": "Apache-2.0",
+      "query": "apache-2.0",
+      "repositoryCount": 4240550,
+      "incompleteResults": false,
+      "topRepositories": [
+        {
+          "name": "tensorflow/tensorflow",
+          "url": "https://github.com/tensorflow/tensorflow",
+          "stars": 199311,
+          "forks": 76282,
+          "pushedAt": "2026-09-10T06:38:00Z"
+        },
+        {
+          "name": "huggingface/transformers",
+          "url": "https://github.com/huggingface/transformers",
+          "stars": 165057,
+          "forks": 34494,
+          "pushedAt": "2026-09-10T03:37:50Z"
+        },
+        {
+          "name": "Snailclimb/JavaGuide",
+          "url": "https://github.com/Snailclimb/JavaGuide",
+          "stars": 158414,
+          "forks": 46138,
+          "pushedAt": "2026-09-05T12:30:20Z"
+        }
+      ]
+    },
+    {
+      "id": "GPL-3.0",
+      "query": "gpl-3.0",
+      "repositoryCount": 3617518,
+      "incompleteResults": false,
+      "topRepositories": [
+        {
+          "name": "massgravel/Microsoft-Activation-Scripts",
+          "url": "https://github.com/massgravel/Microsoft-Activation-Scripts",
+          "stars": 189974,
+          "forks": 18094,
+          "pushedAt": "2026-07-04T16:54:38Z"
+        },
+        {
+          "name": "x1xhlol/system-prompts-and-models-of-ai-tools",
+          "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
+          "stars": 143490,
+          "forks": 34815,
+          "pushedAt": "2026-08-11T13:01:09Z"
+        },
+        {
+          "name": "clash-verge-rev/clash-verge-rev",
+          "url": "https://github.com/clash-verge-rev/clash-verge-rev",
+          "stars": 143481,
+          "forks": 10327,
+          "pushedAt": "2026-09-10T04:17:27Z"
+        }
+      ]
+    },
+    {
+      "id": "BSD-3-Clause",
+      "query": "bsd-3-clause",
+      "repositoryCount": 510063,
+      "incompleteResults": false,
+      "topRepositories": [
+        {
+          "name": "freeCodeCamp/freeCodeCamp",
+          "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+          "stars": 455225,
+          "forks": 46146,
+          "pushedAt": "2026-09-09T13:15:30Z"
+        },
+        {
+          "name": "flutter/flutter",
+          "url": "https://github.com/flutter/flutter",
+          "stars": 178882,
+          "forks": 31074,
+          "pushedAt": "2026-09-10T04:25:02Z"
+        },
+        {
+          "name": "golang/go",
+          "url": "https://github.com/golang/go",
+          "stars": 137994,
+          "forks": 19347,
+          "pushedAt": "2026-09-10T02:45:47Z"
+        }
+      ]
+    },
+    {
+      "id": "MPL-2.0",
+      "query": "mpl-2.0",
+      "repositoryCount": 172728,
+      "incompleteResults": false,
+      "topRepositories": [
+        {
+          "name": "syncthing/syncthing",
+          "url": "https://github.com/syncthing/syncthing",
+          "stars": 88442,
+          "forks": 5461,
+          "pushedAt": "2026-09-08T07:22:07Z"
+        },
+        {
+          "name": "penpot/penpot",
+          "url": "https://github.com/penpot/penpot",
+          "stars": 59817,
+          "forks": 4085,
+          "pushedAt": "2026-09-10T06:14:40Z"
+        },
+        {
+          "name": "helix-editor/helix",
+          "url": "https://github.com/helix-editor/helix",
+          "stars": 46157,
+          "forks": 3735,
+          "pushedAt": "2026-09-08T23:26:05Z"
+        }
+      ]
+    },
+    {
+      "id": "LGPL-3.0",
+      "query": "lgpl-3.0",
+      "repositoryCount": 123819,
+      "incompleteResults": false,
+      "topRepositories": [
+        {
+          "name": "ethereum/go-ethereum",
+          "url": "https://github.com/ethereum/go-ethereum",
+          "stars": 51335,
+          "forks": 22134,
+          "pushedAt": "2026-09-10T06:18:08Z"
+        },
+        {
+          "name": "Wei-Shaw/sub2api",
+          "url": "https://github.com/Wei-Shaw/sub2api",
+          "stars": 41068,
+          "forks": 8545,
+          "pushedAt": "2026-09-09T19:21:31Z"
+        },
+        {
+          "name": "nautechsystems/nautilus_trader",
+          "url": "https://github.com/nautechsystems/nautilus_trader",
+          "stars": 28724,
+          "forks": 3749,
+          "pushedAt": "2026-09-10T05:12:44Z"
+        }
+      ]
+    },
+    {
+      "id": "AGPL-3.0",
+      "query": "agpl-3.0",
+      "repositoryCount": 488870,
+      "incompleteResults": false,
+      "topRepositories": [
+        {
+          "name": "DigitalPlatDev/FreeDomain",
+          "url": "https://github.com/DigitalPlatDev/FreeDomain",
+          "stars": 198449,
+          "forks": 4319,
+          "pushedAt": "2026-08-12T10:36:46Z"
+        },
+        {
+          "name": "firecrawl/firecrawl",
+          "url": "https://github.com/firecrawl/firecrawl",
+          "stars": 178502,
+          "forks": 9721,
+          "pushedAt": "2026-09-10T06:25:49Z"
+        },
+        {
+          "name": "AUTOMATIC1111/stable-diffusion-webui",
+          "url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
+          "stars": 164881,
+          "forks": 30546,
+          "pushedAt": "2026-03-02T07:00:53Z"
+        }
+      ]
+    }
+  ]
+}

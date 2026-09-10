@@ -4,10 +4,11 @@ import { useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import packageJson from "../package.json";
 import { familyOf, guideNoteFor, hasDisplayProfile, obligationLabel, profileForDisplay, ruleLabels } from "../lib/recommend";
 import { candidateStatusLabels, evidenceLabels, guideMessage, outcomeLabels } from "../lib/guide-copy";
-import { buildGuideModel, GUIDE_MODEL_VERSION, recommendFromCatalog, runtimeSourceLockResolved, type GuideAnswers } from "../lib/recommendation-contract";
+import { buildGuideModel, recommendFromCatalog, runtimeSourceLockResolved, type GuideAnswers } from "../lib/recommendation-contract";
 import { safeStoredWorkspaceState } from "../lib/workspace-state";
-import { decodeGithubSignalPayload, type GithubSignal } from "../lib/public-signals";
+import GithubSignals from "./GithubSignals";
 import AccountMenu from "./AccountMenu";
+import GuidePreview from "./GuidePreview";
 import type {
   ActivityEntry,
   AppIdentity,
@@ -26,12 +27,6 @@ type UpdateState =
   | { status: "up-to-date"; version: string }
   | { status: "available"; version: string; url: string }
   | { status: "error"; message: string };
-type GithubSignalState =
-  | { status: "idle" }
-  | { status: "ready" | "partial"; fetchedAt: string; source: string; caveat: string; signals: GithubSignal[] }
-  | { status: "error" }
-  | { status: "unavailable"; reason: string };
-
 const DATA_ROOT = "./data";
 const PAGE_SIZE = 48;
 const APP_VERSION = packageJson.version;
@@ -42,11 +37,7 @@ const APP_LICENSE_URL = `${APP_REPOSITORY_URL}/blob/main/LICENSE`;
 const APP_AUTHOR = "Lukáš Hefner";
 
 const guideModel = buildGuideModel();
-const guideQuestions = guideModel.questions.map((question) => ({
-  ...question,
-  hint: `${question.help} Model ${GUIDE_MODEL_VERSION}.`,
-  options: question.options.map((option) => ({ ...option, description: question.help })),
-}));
+const guideQuestions = guideModel.questions;
 
 
 const ecosystemSources = [
@@ -107,16 +98,6 @@ const publicSignalSources = [
   },
 ];
 
-const trackedPublicLicenses = [
-  ["MIT", "mit"],
-  ["Apache-2.0", "apache-2.0"],
-  ["GPL-3.0", "gpl-3.0"],
-  ["BSD-3-Clause", "bsd-3-clause"],
-  ["MPL-2.0", "mpl-2.0"],
-  ["LGPL-3.0", "lgpl-3.0"],
-  ["AGPL-3.0", "agpl-3.0"],
-] as const;
-
 const familyLabels: Record<string, string> = {
   "Permisivní": "Permisivní",
   "Maximálně volná": "Maximálně volná",
@@ -147,12 +128,6 @@ function safeExternalUrl(value: string): string | null {
   }
 }
 
-function initialGithubSignalState(): GithubSignalState {
-  return typeof document !== "undefined" && document.documentElement.dataset.licentiaStaticTarget === "true"
-    ? { status: "unavailable", reason: "Živá data jsou dostupná pouze ve webové variantě." }
-    : { status: "idle" };
-}
-
 function versionParts(value: string): [number, number, number] | null {
   const match = value.trim().match(/^v?(\d+)\.(\d+)\.(\d+)(?:[-+].*)?$/i);
   return match ? [Number(match[1]), Number(match[2]), Number(match[3])] : null;
@@ -166,10 +141,6 @@ function isNewerVersion(current: string, candidate: string): boolean {
     if (candidateParts[index] !== currentParts[index]) return candidateParts[index] > currentParts[index];
   }
   return false;
-}
-
-function formatCount(value: number) {
-  return new Intl.NumberFormat("cs-CZ").format(value);
 }
 
 function RuleList({ title, values, tone }: { title: string; values: string[]; tone: string }) {
@@ -194,7 +165,7 @@ function LicenseBadges({ license }: { license: LicenseSummary }) {
   );
 }
 
-export default function LicenseStudio({ account }: { account?: AppIdentity | null }) {
+export default function LicenseStudio({ account, desktop = false }: { account?: AppIdentity | null; desktop?: boolean }) {
   const [view, setView] = useState<View>("catalog");
   const [catalog, setCatalog] = useState<LicenseSummary[]>([]);
   const [loading, setLoading] = useState(true);
@@ -222,8 +193,6 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
   const [history, setHistory] = useState<ActivityEntry[]>([]);
   const [workspaceReady, setWorkspaceReady] = useState(false);
   const [updateState, setUpdateState] = useState<UpdateState>({ status: "idle" });
-  const [githubSignalState, setGithubSignalState] = useState<GithubSignalState>(initialGithubSignalState);
-  const githubSignalRequested = useRef(false);
   const [remoteSaveEnabled, setRemoteSaveEnabled] = useState(!account);
   const workspaceVersion = useRef<string | null>(null);
   const lastPersistedWorkspace = useRef("");
@@ -346,30 +315,6 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
       }),
     ).then(setCompareDetails).catch(() => setError("Porovnání se nepodařilo načíst."));
   }, [view, compareIds, catalog]);
-
-  useEffect(() => {
-    if (view !== "signals" || githubSignalRequested.current) return;
-    githubSignalRequested.current = true;
-    if (document.documentElement.dataset.licentiaStaticTarget === "true") {
-      return;
-    }
-    fetch("./api/signals", { cache: "no-store" })
-      .then((response) => {
-        if (!response.ok) throw new Error(`HTTP ${response.status}`);
-        return response.json() as Promise<unknown>;
-      })
-      .then((payload) => {
-        const decoded = decodeGithubSignalPayload(payload);
-        if (!decoded) throw new Error("Neplatná odpověď.");
-        if (decoded.status === "unavailable") {
-          const reason = decoded.caveat.trim() || decoded.signals.find((signal) => signal.error)?.error || "Živá data nejsou momentálně dostupná.";
-          setGithubSignalState({ status: "unavailable", reason });
-        } else {
-          setGithubSignalState({ status: decoded.status === "complete" ? "ready" : "partial", fetchedAt: decoded.fetchedAt, source: decoded.source, caveat: decoded.caveat, signals: decoded.signals });
-        }
-      })
-      .catch(() => setGithubSignalState({ status: "error" }));
-  }, [view, githubSignalState.status]);
 
   const fullTextMatches = useMemo(() => {
     if (!fullText || deferredQuery.length < 3 || !searchIndex) return null;
@@ -515,6 +460,8 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
   const activeGuideQuestions = guideQuestions.filter((question) => question.mode === guideMode && (!question.showWhen || answers[question.showWhen.key] === question.showWhen.equals));
   const guideComplete = guideStep >= activeGuideQuestions.length;
   const currentQuestion = activeGuideQuestions[guideStep];
+  const answeredGuideQuestions = activeGuideQuestions.filter((question) => Boolean(answers[question.key]?.trim()));
+  const uncertainGuideAnswers = answeredGuideQuestions.filter((question) => ["unknown", "not-applicable", "undecided"].includes(answers[question.key] ?? "")).length;
 
   useEffect(() => {
     if (!guideComplete || guideRecorded.current || recommendations.candidates.length === 0) return;
@@ -559,7 +506,9 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
               <kbd>⌘ K</kbd>
             </label>
             <div className="hero-meta">
-              <span><strong>727</strong> licencí</span><span><strong>84</strong> výjimek</span><span><strong>Offline</strong> v desktopové aplikaci</span>
+              <span><strong>727</strong> licencí</span>
+              <span><strong>84</strong> výjimek</span>
+              {desktop && <span><strong>Offline</strong> v desktopové aplikaci</span>}
             </div>
           </section>
 
@@ -622,27 +571,35 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
       )}
 
       {view === "guide" && (
-        <section className="guide-view">
+        <section className={`guide-view${guideComplete ? " guide-view-complete" : ""}`}>
           <div className="guide-intro">
             <span className="section-kicker light">Pravidlový průvodce</span>
             <h1>Vyberme vhodný licenční směr.</h1>
-             <p>Otázky se přizpůsobí vašemu scénáři. Licence se seřadí podle skóre a u každé uvidíte, co vašemu zadání chybí. Aktuálně je jako doporučitelných schváleno {reviewedRecommendationCount}.</p>
-            <div className="legal-note"><strong>Důležité</strong><span>Jde o orientační pomůcku, nikoli právní stanovisko. Kompatibilitu závislostí a konkrétní jurisdikci posuďte zvlášť.</span></div>
+            <p>U každé volby uvidíte její dopad. Odpovědi můžete průběžně měnit.</p>
+            <p className="guide-legal">Orientační pomůcka; konkrétní podmínky a kompatibilitu závislostí ověřte zvlášť.</p>
           </div>
+          <dl className="guide-stats" aria-label="Statistiky průvodce" aria-live="polite" aria-atomic="true">
+            <div><dt>Vyřízené otázky</dt><dd>{answeredGuideQuestions.length}<small> / {activeGuideQuestions.length}</small></dd></div>
+            <div><dt>Zbývá otázek</dt><dd>{activeGuideQuestions.length - answeredGuideQuestions.length}</dd></div>
+            <div><dt>Odpovědi bez preference</dt><dd>{uncertainGuideAnswers}</dd></div>
+            <div><dt>Licence v průvodci</dt><dd>{loading ? "…" : reviewedRecommendationCount}</dd></div>
+          </dl>
           <div className="guide-panel">
             {!guideComplete && currentQuestion ? (
               <>
-                <div className="progress-row"><span>{guideMode === "quick" ? "Rychlý" : "Pokročilý"} režim · krok {guideStep + 1} z {activeGuideQuestions.length}</span><div><i style={{ width: `${((guideStep + 1) / activeGuideQuestions.length) * 100}%` }} /></div></div>
-                <h2>{currentQuestion.title}</h2><p className="question-hint">{currentQuestion.hint}</p>
+                <div className="progress-row"><span>{guideMode === "quick" ? "Rychlý" : "Pokročilý"} režim · krok {guideStep + 1} z {activeGuideQuestions.length}</span><progress aria-label="Vyřízené otázky" value={answeredGuideQuestions.length} max={activeGuideQuestions.length} /></div>
+                <h2>{currentQuestion.title}</h2><p className="question-hint">{currentQuestion.help}</p>
+                {currentQuestion.key === "dependencies" && <label className="guide-dependencies">Licence závislostí (SPDX)
+                  <input placeholder="např. MIT AND Apache-2.0" value={["unknown", "not-applicable", "undecided"].includes(answers.dependencies ?? "") ? "" : answers.dependencies ?? ""} onChange={(event) => setAnswers((current) => ({ ...current, dependencies: event.target.value }))} />
+                </label>}
                  <div className="answer-grid">
                   {currentQuestion.options.map((option) => (
                     <button key={option.value} type="button" aria-pressed={answers[currentQuestion.key] === option.value} className={answers[currentQuestion.key] === option.value ? "chosen" : ""} onClick={() => setAnswers((current) => ({ ...current, [currentQuestion.key]: option.value }))}>
                       <span className="radio-dot" /><strong>{option.label}</strong><small>{option.description}</small>
                     </button>
                   ))}
-                {currentQuestion.key === "dependencies" && !["unknown", "not-applicable", "undecided"].includes(answers.dependencies ?? "") && <input aria-label="SPDX výraz závislostí" placeholder="např. MIT AND Apache-2.0" value={typeof answers.dependencies === "string" ? answers.dependencies : ""} onChange={(event) => setAnswers((current) => ({ ...current, dependencies: event.target.value }))} />}
                 </div>
-                <div className="guide-actions"><button className="secondary" disabled={guideStep === 0} onClick={() => setGuideStep((step) => step - 1)}>← Zpět</button><button className="primary" disabled={typeof answers[currentQuestion.key] !== "string" || answers[currentQuestion.key] === ""} onClick={() => setGuideStep((step) => step + 1)}>{guideStep === activeGuideQuestions.length - 1 ? "Zobrazit doporučení" : "Pokračovat →"}</button></div>
+                <div className="guide-actions"><button className="secondary" disabled={guideStep === 0} onClick={() => setGuideStep((step) => step - 1)}>← Zpět</button><button className="primary" disabled={!answers[currentQuestion.key]?.trim()} onClick={() => setGuideStep((step) => step + 1)}>{guideStep === activeGuideQuestions.length - 1 ? "Zobrazit doporučení" : "Pokračovat →"}</button></div>
               </>
             ) : (
               <div className="recommendations">
@@ -679,6 +636,7 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
               </div>
             )}
           </div>
+          {!guideComplete && <GuidePreview result={recommendations} catalog={catalog} loading={loading} compareIds={compareIds} onOpen={openDetail} onCompare={toggleCompare} />}
         </section>
       )}
 
@@ -735,15 +693,9 @@ export default function LicenseStudio({ account }: { account?: AppIdentity | nul
             </section>
           </div>
 
-           <section className="github-signals">
-             <div><span className="section-kicker light">GitHub průzkum</span><h2>Licence, které můžeme transparentně sledovat.</h2><p>Počty repozitářů jsou pouze počet veřejných projektů, u kterých GitHub licenci rozpoznal — nikoli počet uživatelů, instalací ani všech závislostí.</p>{githubSignalState.status === "idle" && <p className="github-status">Načítám veřejné údaje z GitHubu…</p>}{githubSignalState.status === "error" && <p className="github-status">Živé údaje nejsou momentálně dostupné. Veřejné vyhledávání zůstává k dispozici u každé licence.</p>}{githubSignalState.status === "unavailable" && <p className="github-status">{githubSignalState.reason}</p>}{githubSignalState.status === "partial" && <p className="github-status">Načteno částečně — některé údaje nejsou dostupné. {githubSignalState.caveat}</p>}{githubSignalState.status === "ready" && <p className="github-status">Načteno {new Intl.DateTimeFormat("cs-CZ", { dateStyle: "medium", timeStyle: "short" }).format(new Date(githubSignalState.fetchedAt))} · {githubSignalState.source}</p>}</div>
-            <div className="github-license-links">{trackedPublicLicenses.map(([label, queryValue]) => {
-               const signal = githubSignalState.status === "ready" || githubSignalState.status === "partial" ? githubSignalState.signals.find((item) => item.id === label) : undefined;
-              return <a href={`https://github.com/search?q=license%3A${queryValue}&type=repositories`} target="_blank" rel="noreferrer" key={label}><code>{label}</code>{signal?.repositoryCount !== null && signal?.repositoryCount !== undefined ? <strong>{formatCount(signal.repositoryCount)}</strong> : <span>Údaj zatím není dostupný</span>}<span>{signal?.repositoryCount !== null && signal?.repositoryCount !== undefined ? `veřejných repozitářů${signal.incompleteResults ? " · výsledek může být neúplný" : ""}` : "Otevřít veřejné vyhledávání ↗"}</span>{signal?.topRepositories.slice(0, 2).map((repo) => <small key={repo.name}>{repo.name} · ★ {formatCount(repo.stars)}</small>)}</a>;
-            })}</div>
-          </section>
+          <GithubSignals />
 
-          <div className="signals-methodology"><strong>Metodika</strong><span>GitHub údaje jsou veřejný agregát načítaný přes Licentia endpoint s cache. U každého údaje zůstává zdroj, datum načtení a vysvětlení, co číslo neznamená. Download statistiky dalších ekosystémů přidáme stejným způsobem.</span><button onClick={() => navigate("ecosystem")}>Zdroje a architektura →</button></div>
+          <div className="signals-methodology"><strong>Metodika</strong><span>Počty pocházejí z GitHub Search API a zahrnují veřejné repozitáře s rozpoznanou licencí; výchozí vyhledávání nezahrnuje forky. U každého údaje uvádíme datum sběru a případnou neúplnost výsledku. Datový snímek je součástí aplikace a lze jej obnovit online. Statistiky stahování dalších ekosystémů zatím nejsou zapojené.</span><button onClick={() => navigate("ecosystem")}>Zdroje a architektura →</button></div>
         </section>
       )}
 

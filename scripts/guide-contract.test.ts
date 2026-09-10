@@ -1,5 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
+import { readFileSync } from "node:fs";
+import { execFileSync } from "node:child_process";
 import { continueGuide, guideModel } from "../lib/catalog-service.ts";
 import { guideProgress } from "../lib/recommendation-contract.ts";
 import { openApiDocument } from "../lib/openapi.ts";
@@ -10,6 +12,25 @@ test("guide model exposes both versioned modes", () => {
   assert.equal(model.stateless, true);
   assert.ok(model.questions.some((question) => question.mode === "quick"));
   assert.ok(model.questions.some((question) => question.mode === "advanced"));
+});
+
+test("every guide choice explains its own impact without repeating the question help", () => {
+  for (const question of guideModel().questions) {
+    const descriptions = question.options.map((option) => option.description);
+    assert.ok(descriptions.every((description) => typeof description === "string" && description.trim().length > 0), question.id);
+    assert.equal(new Set(descriptions).size, question.options.length, question.id);
+    assert.ok(descriptions.every((description) => description !== question.help), question.id);
+    assert.doesNotMatch(question.help, /Model lic-|Rozlišuje open-source větev/, question.id);
+  }
+});
+
+test("PHP and TypeScript expose identical questions and choice explanations", () => {
+  const source = readFileSync(new URL("../apache-server/api/index.php", import.meta.url), "utf8");
+  const start = source.indexOf("function guide_questions(): array {");
+  const end = source.indexOf("function guide_model(", start);
+  assert.ok(start >= 0 && end > start);
+  const result = execFileSync("php", ["-r", `${source.slice(start, end)} echo json_encode(guide_questions(), JSON_THROW_ON_ERROR);`], { encoding: "utf8" });
+  assert.deepEqual(JSON.parse(result), guideModel().questions);
 });
 
 test("OpenAPI 3.1 publishes the stateless guide contract", () => {

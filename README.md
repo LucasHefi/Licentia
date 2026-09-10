@@ -98,6 +98,30 @@ bez hlavičky `Origin` fungují automaticky.
 
 ## Aktualizace dat
 
+### Statistiky GitHubu
+
+Všech sedm sledovaných licencí má ověřený datový snímek v
+`data/github-signals.snapshot.json`, který se balí do webové, Apache i desktopové
+aplikace. Karty uvádějí datum sběru, odkaz na vyhledávání, populární repozitáře
+a příznak neúplného výsledku z GitHub API. Počty nejsou počty uživatelů nebo instalací.
+
+Tlačítko **Obnovit údaje** načte aktuální data: web přes `/api/signals` s 15minutovou
+cache, Apache a desktop přímo přes veřejné GitHub API. Částečná nebo neúspěšná
+aktualizace zachová předchozí dostupné hodnoty i jejich původní datum. Anonymní
+GitHub Search API má limit požadavků; pro zobrazení přiloženého snímku není síť potřeba.
+
+Před vydáním lze aktualizovat přiložený snímek příkazem:
+
+```bash
+npm run data:signals:refresh
+```
+
+Skript snímek atomicky přepíše pouze po úspěšném načtení a validaci všech sedmi
+licencí. Při výpadku nebo rate limitu původní soubor nezmění. Nový snímek se do
+distribuce dostane následujícím sestavením; katalog SPDX ho nepřepisuje.
+
+### Katalog SPDX
+
 Generátor očekává checkouty pevné verze `spdx/license-list-data` a `github/choosealicense.com`:
 
 ```bash

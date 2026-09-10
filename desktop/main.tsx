@@ -7,6 +7,6 @@ document.documentElement.dataset.licentiaStaticTarget = "true";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <LicenseStudio />
+    <LicenseStudio desktop />
   </StrictMode>,
 );

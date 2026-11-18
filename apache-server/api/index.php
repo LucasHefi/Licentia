@@ -892,12 +892,12 @@ function metadata_contract(mixed $value, string $id): bool {
 }
 
 function metadata_profile(array $record): ?array {
-    if (!metadata_exact_keys($record, ['id', 'type', 'metadata'], ['deprecated', 'name', 'osi', 'fsf', 'profiled', 'permissions', 'conditions', 'limitations'])) return null;
+    if (!metadata_exact_keys($record, ['id', 'type', 'metadata'], ['deprecated', 'name', 'osi', 'fsf', 'profiled', 'permissions', 'conditions', 'limitations', 'tags'])) return null;
     if (!metadata_non_empty_string($record['id']) || $record['type'] !== 'license') return null;
     if (array_key_exists('deprecated', $record) && $record['deprecated'] !== false) return null;
     if (array_key_exists('name', $record) && !metadata_non_empty_string($record['name'])) return null;
     foreach (['osi', 'fsf', 'profiled'] as $key) if (array_key_exists($key, $record) && !is_bool($record[$key])) return null;
-    foreach (['permissions', 'conditions', 'limitations'] as $key) if (array_key_exists($key, $record) && !metadata_string_list($record[$key])) return null;
+    foreach (['permissions', 'conditions', 'limitations', 'tags'] as $key) if (array_key_exists($key, $record) && !metadata_string_list($record[$key])) return null;
     if (!metadata_contract($record['metadata'], $record['id'])) return null;
     foreach ($record['metadata']['evidence'] as $evidence) if (!metadata_source_known($evidence['sourceId'])) return null;
     return ['record' => $record, 'metadata' => $record['metadata']];

@@ -1,11 +1,16 @@
 name: Desktop installers
 
 on:
+  pull_request:
+    branches: [main]
   push:
     tags: ["v*"]
 
 permissions:
   contents: read
+
+env:
+  SOURCE_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
 
 concurrency:
   group: desktop-${{ github.ref }}
@@ -23,22 +28,25 @@ jobs:
         with:
           fetch-depth: 0
           persist-credentials: false
+          ref: ${{ env.SOURCE_SHA }}
       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
           node-version: 22.14.0
           cache: npm
-      - name: Verify annotated tag, package version and source SHA
+      - name: Verify build source and release identity
         id: verify
         shell: bash
         run: |
           set -Eeuo pipefail
           version=$(node -p "JSON.parse(require('fs').readFileSync('package.json', 'utf8')).version")
           expected_tag="v${version}"
-          test "${GITHUB_REF_TYPE}" = "tag"
-          test "${GITHUB_REF_NAME}" = "${expected_tag}"
-          test "$(git cat-file -t "${GITHUB_REF}")" = "tag"
-          test "$(git rev-parse HEAD)" = "${GITHUB_SHA}"
-          test "$(git rev-list -n 1 "${GITHUB_REF}")" = "${GITHUB_SHA}"
+          test "$(git rev-parse HEAD)" = "${SOURCE_SHA}"
+          if [[ "${GITHUB_EVENT_NAME}" == push ]]; then
+            test "${GITHUB_REF_TYPE}" = "tag"
+            test "${GITHUB_REF_NAME}" = "${expected_tag}"
+            test "$(git cat-file -t "${GITHUB_REF}")" = "tag"
+            test "$(git rev-list -n 1 "${GITHUB_REF}")" = "${SOURCE_SHA}"
+          fi
           printf 'version=%s\n' "${version}" >> "${GITHUB_OUTPUT}"
 
   quality:
@@ -48,15 +56,18 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
+          ref: ${{ env.SOURCE_SHA }}
       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
           node-version: 22.14.0
           cache: npm
+      - name: PHP for contract tests
+        run: sudo apt-get update && sudo apt-get install -y php-cli php-sqlite3
       - run: npm ci
       - run: npm run check
 
   desktop-build:
-    needs: quality
+    needs: [release-identity, quality]
     permissions:
       contents: read
     strategy:
@@ -78,6 +89,7 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
+          ref: ${{ env.SOURCE_SHA }}
       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
           node-version: 22.14.0
@@ -100,15 +112,35 @@ jobs:
           bundle_dir="src-tauri/target/universal-apple-darwin/release/bundle/macos"
           test -d "$bundle_dir/Licentia.app"
           COPYFILE_DISABLE=1 tar -czf "$bundle_dir/Licentia_${version}_universal.app.tar.gz" -C "$bundle_dir" Licentia.app
+      - name: Verify offline inputs and record installer checksums
+        shell: bash
+        env:
+          LICENTIA_VERSION: ${{ needs.release-identity.outputs.version }}
+          BUNDLE_PATH: ${{ matrix.bundle_path }}
+        run: |
+          set -Eeuo pipefail
+          test "$(git rev-parse HEAD)" = "$SOURCE_SHA"
+          diff -qr public/data desktop-dist/data
+          cd "$BUNDLE_PATH"
+          hash=(sha256sum)
+          if [[ "${RUNNER_OS}" == macOS ]]; then hash=(shasum -a 256); fi
+          install_count=0
+          while IFS= read -r -d '' installer; do
+            "${hash[@]}" "$installer"
+            ((install_count += 1))
+          done < <(find . -type f \( -name '*.deb' -o -name '*.rpm' -o -name '*.dmg' -o -name '*.app.tar.gz' -o -name '*.msi' -o -name '*.exe' \) -print0) > "SHA256SUMS-${RUNNER_OS}"
+          test "$install_count" -eq 2
+          "${hash[@]}" --check "SHA256SUMS-${RUNNER_OS}"
+          printf 'version=%s\ncommit=%s\n' "$LICENTIA_VERSION" "$SOURCE_SHA" > "BUILD-INFO-${RUNNER_OS}"
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: licentia-desktop-${{ matrix.platform }}
           path: ${{ matrix.bundle_path }}
           if-no-files-found: error
-          retention-days: 1
+          retention-days: 7
 
   apache-build:
-    needs: [release-identity, desktop-build]
+    needs: release-identity
     runs-on: ubuntu-22.04
     permissions:
       contents: read
@@ -116,6 +148,7 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
+          ref: ${{ env.SOURCE_SHA }}
       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
           node-version: 22.14.0
@@ -172,6 +205,7 @@ jobs:
           PY
           tar --sort=name --mtime='UTC 1970-01-01' --owner=0 --group=0 --numeric-owner -C "$stage" -cf - . | gzip -n > "$asset"
           sha256sum "$asset" > "$asset.sha256"
+          printf 'version=%s\ncommit=%s\n' "$version" "$SOURCE_SHA" > APACHE-BUILD-INFO
           echo "version=$version" >> "$GITHUB_OUTPUT"
           echo "asset=$asset" >> "$GITHUB_OUTPUT"
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
@@ -180,10 +214,12 @@ jobs:
           path: |
             Licentia_*.tar.gz
             Licentia_*.tar.gz.sha256
+            APACHE-BUILD-INFO
           if-no-files-found: error
-          retention-days: 1
+          retention-days: 7
 
   release-publish:
+    if: github.event_name == 'push' && github.ref_type == 'tag'
     needs: [release-identity, desktop-build, apache-build]
     runs-on: ubuntu-22.04
     permissions:

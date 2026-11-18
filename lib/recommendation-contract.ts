@@ -61,6 +61,7 @@ export interface CatalogMetadataRecord {
     sourceFingerprint: MetadataLicenseProfile["sourceFingerprint"];
     evidence: readonly MetadataEvidence[];
   };
+  tags?: readonly string[];
 }
 
 export interface GuideAnswers {
@@ -1138,7 +1139,7 @@ export function recommendFromProfiles(profiles: readonly MetadataLicenseProfile[
 
 export function metadataProfileFromCatalog(record: CatalogMetadataRecord): MetadataLicenseProfile | null {
   if (!answerRecord(record)) return null;
-  if (!hasExactKeys(record, ["id", "type"], ["deprecated", "name", "osi", "fsf", "profiled", "permissions", "conditions", "limitations", "metadata"])) return null;
+  if (!hasExactKeys(record, ["id", "type"], ["deprecated", "name", "osi", "fsf", "profiled", "permissions", "conditions", "limitations", "tags", "metadata"])) return null;
   if (!nonEmptyString(record.id) || (record.type !== "license" && record.type !== "exception")) return null;
   if (record.deprecated !== undefined && typeof record.deprecated !== "boolean") return null;
   if (record.deprecated !== undefined && record.deprecated !== false) return null;
@@ -1146,7 +1147,7 @@ export function metadataProfileFromCatalog(record: CatalogMetadataRecord): Metad
   for (const key of ["osi", "fsf", "profiled"] as const) {
     if (record[key] !== undefined && typeof record[key] !== "boolean") return null;
   }
-  for (const key of ["permissions", "conditions", "limitations"] as const) {
+  for (const key of ["permissions", "conditions", "limitations", "tags"] as const) {
     if (record[key] !== undefined && !validGeneratedStringArray(record[key])) return null;
   }
   const metadata = record.metadata;

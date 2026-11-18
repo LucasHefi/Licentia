@@ -42,7 +42,7 @@
     "test:apache-anonymous-entry": "node --experimental-strip-types --test scripts/apache-anonymous-entry.test.ts",
     "start": "vinext start",
     "typecheck": "tsc --noEmit --incremental false",
-    "test": "npm run test:data && npm run test:hosting-config-boundary && npm run test:metadata-audit && npm run test:recommendation-contract && npm run test:guide-contract && npm run test:mcp-contract && npm run test:catalog-service && npm run test:apache-recommendation-contract && npm run test:curation && npm run test:data-build && npm run test:runtime-metadata && npm run test:public-api-policy && npm run test:signals-contract && npm run test:apache-public-api-policy && npm run test:apache-anonymous-entry && npm run test:workspace-state && npm run test:service-worker-policy && npm run test:guide-expansion && npm run test:content-review-workflow",
+    "test": "npm run test:data && npm run test:hosting-config-boundary && npm run test:metadata-audit && npm run test:recommendation-contract && npm run test:guide-contract && npm run test:mcp-contract && npm run test:catalog-service && npm run test:apache-recommendation-contract && npm run test:curation && npm run test:data-build && npm run test:runtime-metadata && npm run test:public-api-policy && npm run test:signals-contract && npm run test:apache-public-api-policy && npm run test:apache-anonymous-entry && npm run test:workspace-state && npm run test:service-worker-policy && npm run test:guide-expansion && npm run test:content-review-workflow && npm run test:catalog-editorial",
     "test:catalog-service": "node --experimental-strip-types --test scripts/catalog-service.test.ts",
     "test:workspace-state": "node --experimental-strip-types --test scripts/workspace-state.test.ts",
     "test:service-worker-policy": "node --test scripts/service-worker-policy.test.mjs",
@@ -53,7 +53,8 @@
     "test:guide-expansion": "node --experimental-strip-types --test scripts/guide-expansion.test.ts",
     "data:reviews:report": "node --experimental-strip-types scripts/content-review-workflow.mjs",
     "data:reviews:check": "node --experimental-strip-types scripts/content-review-workflow.mjs --check --require-complete",
-    "test:content-review-workflow": "node --experimental-strip-types --test scripts/content-review-workflow.test.mjs"
+    "test:content-review-workflow": "node --experimental-strip-types --test scripts/content-review-workflow.test.mjs",
+    "test:catalog-editorial": "node --experimental-strip-types --test scripts/catalog-editorial.test.ts"
   },
   "dependencies": {
     "@better-auth/passkey": "^1.7.1",

@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { validateEditorial } from './catalog-editorial.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -133,4 +134,12 @@ export function validateProfile(profile, { file = '<profile>', vocabulary, sourc
 
 export function validatePaths(paths, options = {}) { const contract = validateContract(options); return paths.map(file => validateProfile(readJson(path.resolve(file)), { ...options, file, vocabulary: contract.vocabulary, sources: contract.sources })); }
 
-if (import.meta.url === `file://${process.argv[1]}`) { try { const args = process.argv.slice(2); const requested = args.filter(arg => arg !== '--release'); const profilePaths = requested.length ? requested : ['licenses', 'exceptions'].flatMap(kind => fs.readdirSync(path.join(root, 'data/profiles', kind)).filter(name => name.endsWith('.json')).map(name => path.join(root, 'data/profiles', kind, name))); validatePaths(profilePaths, { release: args.includes('--release') }); process.stdout.write(`license data contract valid: ${profilePaths.length} profiles${args.includes('--release') ? ' (release)' : ''}\n`); } catch (error) { process.stderr.write(`license data contract invalid: ${error.message}\n`); process.exitCode = 1; } }
+if (import.meta.url === `file://${process.argv[1]}`) { try { const args = process.argv.slice(2); const requested = args.filter(arg => arg !== '--release'); const profilePaths = requested.length ? requested : ['licenses', 'exceptions'].flatMap(kind => fs.readdirSync(path.join(root, 'data/profiles', kind)).filter(name => name.endsWith('.json')).map(name => path.join(root, 'data/profiles', kind, name))); validatePaths(profilePaths, { release: args.includes('--release') });
+  if (!requested.length) {
+    const profiles = new Map(profilePaths.map(file => {
+      const profile = readJson(file);
+      return [`${profile.kind}:${profile.id}`, profile];
+    }));
+    validateEditorial(readJson(path.join(root, 'data/catalog-editorial.json')), profiles);
+  }
+   process.stdout.write(`license data contract valid: ${profilePaths.length} profiles${args.includes('--release') ? ' (release)' : ''}\n`); } catch (error) { process.stderr.write(`license data contract invalid: ${error.message}\n`); process.exitCode = 1; } }

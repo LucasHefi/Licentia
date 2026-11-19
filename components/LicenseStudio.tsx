@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
+import { useDeferredValue, useEffect, useEffectEvent, useMemo, useRef, useState } from "react";
 import packageJson from "../package.json";
 import { familyOf, guideNoteFor, hasDisplayProfile, obligationLabel, profileForDisplay, ruleLabels } from "../lib/recommend";
 import { candidateStatusLabels, evidenceLabels, guideMessage, outcomeLabels } from "../lib/guide-copy";
@@ -191,7 +191,7 @@ export default function LicenseStudio({ account, desktop = false, openUpdateUrl 
   const lastPersistedWorkspace = useRef("");
   const guideRecorded = useRef(false);
 
-  const checkForUpdates = useCallback(async (automatic = false) => {
+  async function checkForUpdates(automatic = false) {
     if (automatic && updateRequest.current) return;
     updateRequest.current?.abort();
     const controller = new AbortController();
@@ -224,13 +224,15 @@ export default function LicenseStudio({ account, desktop = false, openUpdateUrl 
       window.clearTimeout(timeout);
       if (updateRequest.current === controller) updateRequest.current = null;
     }
-  }, []);
+  }
+
+  const checkAtStartup = useEffectEvent(() => void checkForUpdates(true));
 
   useEffect(() => {
     // Wait until the local catalog has initialized. Starting offline must stay silent.
-    const timer = desktop && !loading ? window.setTimeout(() => void checkForUpdates(true), 0) : undefined;
+    const timer = desktop && !loading ? window.setTimeout(() => checkAtStartup(), 0) : undefined;
     return () => window.clearTimeout(timer);
-  }, [desktop, loading, checkForUpdates]);
+  }, [desktop, loading]);
 
   useEffect(() => () => {
     const controller = updateRequest.current;

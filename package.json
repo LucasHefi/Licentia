@@ -1,6 +1,6 @@
 {
   "name": "sites-project",
-  "version": "0.1.18",
+  "version": "0.1.19",
   "private": true,
   "license": "MIT",
   "engines": {
@@ -46,7 +46,7 @@
     "test:catalog-service": "node --experimental-strip-types --test scripts/catalog-service.test.ts",
     "test:workspace-state": "node --experimental-strip-types --test scripts/workspace-state.test.ts",
     "test:service-worker-policy": "node --test scripts/service-worker-policy.test.mjs",
-    "check": "npm run typecheck && npm run lint -- --max-warnings=0 && npm test && npm run data:validate:release && npm run data:profiles:check && npm run data:runtime:check && npm run data:guide:check && npm run data:reviews:check",
+    "check": "node scripts/check-app-version.mjs && npm run typecheck && npm run lint -- --max-warnings=0 && npm test && npm run data:validate:release && npm run data:profiles:check && npm run data:runtime:check && npm run data:guide:check && npm run data:reviews:check",
     "lint": "eslint .",
     "data:guide:report": "node --experimental-strip-types scripts/guide-inclusion-report.ts",
     "data:guide:check": "node --experimental-strip-types scripts/guide-inclusion-report.ts --check",
@@ -58,6 +58,7 @@
   },
   "dependencies": {
     "@better-auth/passkey": "^1.7.1",
+    "@tauri-apps/plugin-opener": "2.5.4",
     "better-auth": "^1.7.1",
     "next": "^16.3.4",
     "react": "^19.2.8",

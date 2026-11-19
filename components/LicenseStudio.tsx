@@ -1,13 +1,13 @@
 "use client";
 
-import { useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import packageJson from "../package.json";
 import { familyOf, guideNoteFor, hasDisplayProfile, obligationLabel, profileForDisplay, ruleLabels } from "../lib/recommend";
 import { candidateStatusLabels, evidenceLabels, guideMessage, outcomeLabels } from "../lib/guide-copy";
 import { buildGuideModel, recommendFromCatalog, runtimeSourceLockResolved, type GuideAnswers } from "../lib/recommendation-contract";
 import { safeStoredWorkspaceState } from "../lib/workspace-state";
 import { catalogTags, matchesCatalogTags, priorityTags, tagGroups, tagsById } from "../lib/catalog-tags";
-import { CatalogDetailOverview, CatalogTagList, safeExternalUrl } from "./CatalogDetailOverview";
+import { CatalogDetailOverview, CatalogTagList } from "./CatalogDetailOverview";
 import GithubSignals from "./GithubSignals";
 import AccountMenu from "./AccountMenu";
 import GuidePreview from "./GuidePreview";
@@ -34,7 +34,6 @@ const PAGE_SIZE = 48;
 const APP_VERSION = packageJson.version;
 const APP_REPOSITORY_URL = "https://github.com/LucasHefi/Licentia";
 const APP_RELEASES_API_URL = "https://api.github.com/repos/LucasHefi/Licentia/releases/latest";
-const APP_RELEASES_PAGE_URL = `${APP_REPOSITORY_URL}/releases`;
 const APP_LICENSE_URL = `${APP_REPOSITORY_URL}/blob/main/LICENSE`;
 const APP_AUTHOR = "Lukáš Hefner";
 
@@ -122,7 +121,7 @@ function includesLoose(value: string, query: string) {
 }
 
 function versionParts(value: string): [number, number, number] | null {
-  const match = value.trim().match(/^v?(\d+)\.(\d+)\.(\d+)(?:[-+].*)?$/i);
+  const match = value.trim().match(/^v?(\d+)\.(\d+)\.(\d+)$/i);
   return match ? [Number(match[1]), Number(match[2]), Number(match[3])] : null;
 }
 
@@ -147,7 +146,11 @@ function LicenseBadges({ license }: { license: LicenseSummary }) {
   );
 }
 
-export default function LicenseStudio({ account, desktop = false }: { account?: AppIdentity | null; desktop?: boolean }) {
+export default function LicenseStudio({ account, desktop = false, openUpdateUrl }: {
+  account?: AppIdentity | null;
+  desktop?: boolean;
+  openUpdateUrl?: (url: string) => Promise<void>;
+}) {
   const [view, setView] = useState<View>("catalog");
   const [catalog, setCatalog] = useState<LicenseSummary[]>([]);
   const [loading, setLoading] = useState(true);
@@ -182,10 +185,58 @@ export default function LicenseStudio({ account, desktop = false }: { account?: 
   const [history, setHistory] = useState<ActivityEntry[]>([]);
   const [workspaceReady, setWorkspaceReady] = useState(false);
   const [updateState, setUpdateState] = useState<UpdateState>({ status: "idle" });
+  const updateRequest = useRef<AbortController | null>(null);
   const [remoteSaveEnabled, setRemoteSaveEnabled] = useState(!account);
   const workspaceVersion = useRef<string | null>(null);
   const lastPersistedWorkspace = useRef("");
   const guideRecorded = useRef(false);
+
+  const checkForUpdates = useCallback(async (automatic = false) => {
+    if (automatic && updateRequest.current) return;
+    updateRequest.current?.abort();
+    const controller = new AbortController();
+    updateRequest.current = controller;
+    if (!automatic) setUpdateState({ status: "checking" });
+    const timeout = window.setTimeout(() => controller.abort(), 10000);
+    try {
+      const response = await fetch(APP_RELEASES_API_URL, {
+        headers: { Accept: "application/vnd.github+json" },
+        cache: "no-store",
+        signal: controller.signal,
+      });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      const release = await response.json() as { tag_name?: unknown } | null;
+      const tag = typeof release?.tag_name === "string" ? release.tag_name.trim() : "";
+      if (!versionParts(tag)) throw new Error("GitHub nevrátil platnou verzi.");
+      if (updateRequest.current !== controller) return;
+      const latestVersion = tag.replace(/^v/i, "");
+      if (isNewerVersion(APP_VERSION, latestVersion)) {
+        const url = `${APP_REPOSITORY_URL}/releases/tag/${encodeURIComponent(tag)}`;
+        setUpdateState({ status: "available", version: latestVersion, url });
+      } else if (!automatic) {
+        setUpdateState({ status: "up-to-date", version: APP_VERSION });
+      }
+    } catch (error) {
+      if (updateRequest.current === controller && !automatic) {
+        setUpdateState({ status: "error", message: error instanceof Error && error.name === "AbortError" ? "Kontrola trvá příliš dlouho." : "Aktualizace se nepodařilo ověřit." });
+      }
+    } finally {
+      window.clearTimeout(timeout);
+      if (updateRequest.current === controller) updateRequest.current = null;
+    }
+  }, []);
+
+  useEffect(() => {
+    // Wait until the local catalog has initialized. Starting offline must stay silent.
+    const timer = desktop && !loading ? window.setTimeout(() => void checkForUpdates(true), 0) : undefined;
+    return () => window.clearTimeout(timer);
+  }, [desktop, loading, checkForUpdates]);
+
+  useEffect(() => () => {
+    const controller = updateRequest.current;
+    updateRequest.current = null;
+    controller?.abort();
+  }, []);
 
   useEffect(() => {
     const wide = window.matchMedia("(min-width: 801px)");
@@ -389,31 +440,6 @@ export default function LicenseStudio({ account, desktop = false }: { account?: 
 
   function recordActivity(kind: ActivityEntry["kind"], label: string) {
     setHistory((current) => [{ id: crypto.randomUUID(), kind, label, createdAt: new Date().toISOString() }, ...current].slice(0, 100));
-  }
-
-  async function checkForUpdates() {
-    setUpdateState({ status: "checking" });
-    const controller = new AbortController();
-    const timeout = window.setTimeout(() => controller.abort(), 10000);
-    try {
-      const response = await fetch(APP_RELEASES_API_URL, {
-        headers: { Accept: "application/vnd.github+json" },
-        cache: "no-store",
-        signal: controller.signal,
-      });
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      const payload: unknown = await response.json();
-      if (!payload || typeof payload !== "object") throw new Error("Neplatná odpověď GitHubu.");
-      const release = payload as { tag_name?: unknown; html_url?: unknown };
-      if (typeof release.tag_name !== "string" || !versionParts(release.tag_name)) throw new Error("GitHub nevrátil platnou verzi.");
-      const latestVersion = release.tag_name.replace(/^v/i, "");
-      const releaseUrl = typeof release.html_url === "string" && safeExternalUrl(release.html_url) ? release.html_url : APP_RELEASES_PAGE_URL;
-      setUpdateState(isNewerVersion(APP_VERSION, latestVersion) ? { status: "available", version: latestVersion, url: releaseUrl } : { status: "up-to-date", version: APP_VERSION });
-    } catch (error) {
-      setUpdateState({ status: "error", message: error instanceof Error && error.name === "AbortError" ? "Kontrola trvá příliš dlouho." : "Aktualizace se nepodařilo ověřit." });
-    } finally {
-      window.clearTimeout(timeout);
-    }
   }
 
   function selectTag(id: string, action: "add" | "remove" | "toggle" = "add") {
@@ -828,10 +854,18 @@ export default function LicenseStudio({ account, desktop = false }: { account?: 
           <a href={APP_LICENSE_URL} target="_blank" rel="noreferrer">MIT licence ↗</a>
         </div>
         <div className="footer-update" aria-live="polite">
-          <button className="footer-update-button" type="button" onClick={checkForUpdates} disabled={updateState.status === "checking"}>
+          <button className="footer-update-button" type="button" onClick={() => void checkForUpdates()} disabled={updateState.status === "checking"}>
             {updateState.status === "checking" ? "Kontroluji aktualizace…" : "Zkontrolovat aktualizace"}
           </button>
-          {updateState.status === "available" && <a className="footer-update-link" href={updateState.url} target="_blank" rel="noreferrer">Nová verze v{updateState.version} ↗</a>}
+          {updateState.status === "available" && (
+            <a className="footer-update-link" href={updateState.url} target="_blank" rel="noreferrer" onClick={event => {
+              if (!openUpdateUrl) return;
+              event.preventDefault();
+              void openUpdateUrl(updateState.url).catch(() => {
+                setUpdateState({ status: "error", message: "Stránku vydání se nepodařilo otevřít." });
+              });
+            }}>Nová verze v{updateState.version} ↗</a>
+          )}
           {updateState.status === "up-to-date" && <span className="footer-update-status">Aktuální v{updateState.version}</span>}
           {updateState.status === "error" && <span className="footer-update-error">{updateState.message}</span>}
         </div>

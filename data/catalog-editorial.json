@@ -1,0 +1,1709 @@
+[
+  {
+    "kind": "license",
+    "id": "Apache-2.0",
+    "textHash": "sha256:535659213358d59ec9cfcec92c1761fa6dae4a607e733ddc8b26d211cf7dd7a5",
+    "research": "Vydání, vydavatel, účel a hlavní pravidlo jsou doložené. Další údaje uvádíme, pokud mají doklad.",
+    "release": {
+      "value": {
+        "date": "2004-01",
+        "precision": "month"
+      },
+      "source": {
+        "title": "Text licence ASF",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.html",
+        "locator": "Datovaná hlavička znění 2.0"
+      }
+    },
+    "approval": {
+      "value": {
+        "date": "2004-01-21",
+        "precision": "day"
+      },
+      "source": {
+        "title": "Historie Apache 2.0",
+        "url": "https://www.apache.org/licenses/license-history.html",
+        "locator": "Schválení ASF 21. ledna 2004"
+      }
+    },
+    "publisher": {
+      "value": "Apache Software Foundation",
+      "source": {
+        "title": "Historie Apache 2.0",
+        "url": "https://www.apache.org/licenses/license-history.html",
+        "locator": "Schválení ASF 21. ledna 2004"
+      }
+    },
+    "purposes": [
+      {
+        "value": "software",
+        "source": {
+          "title": "Historie Apache 2.0",
+          "url": "https://www.apache.org/licenses/license-history.html",
+          "locator": "Popis licence ASF pro její softwarové produkty"
+        }
+      }
+    ],
+    "summary": {
+      "value": "Při distribuci přiložte text licence. Je-li součástí distribuovaného díla soubor NOTICE, zachovejte příslušná oznámení v distribuované odvozenině.",
+      "source": {
+        "title": "Text licence ASF",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.html",
+        "locator": "§4(a), §4(d)"
+      }
+    },
+    "related": [
+      {
+        "value": {
+          "id": "Apache-1.1",
+          "relation": "previous"
+        },
+        "source": {
+          "title": "Historie Apache 2.0",
+          "url": "https://www.apache.org/licenses/license-history.html",
+          "locator": "Vývoj Apache License 1.1 a 2.0"
+        }
+      }
+    ]
+  },
+  {
+    "kind": "license",
+    "id": "MIT",
+    "textHash": "sha256:40baf755d3d2c5fce4d2d495e70809f8c08f44d361b650cd9be82c655f08c431",
+    "research": "Šablona má proměnného držitele práv a rok. Původní vydání tohoto přesného znění a jeho vydavatel zůstávají nedoložené.",
+    "purposes": [
+      {
+        "value": "software",
+        "source": {
+          "title": "Kanonické znění SPDX · MIT",
+          "url": "https://spdx.org/licenses/MIT.html",
+          "locator": "Grant pro Software, resp. distribuce zdrojového kódu a binárek"
+        }
+      }
+    ],
+    "summary": {
+      "value": "Ve všech kopiích nebo podstatných částech softwaru zachovejte oznámení o autorských právech a uděleném povolení.",
+      "source": {
+        "title": "Kanonické znění SPDX · MIT",
+        "url": "https://spdx.org/licenses/MIT.html",
+        "locator": "Grant a odstavec o copyright a permission notice"
+      }
+    }
+  },
+  {
+    "kind": "license",
+    "id": "BSD-2-Clause",
+    "textHash": "sha256:f0f765154e0c892195144c3bec3daf2a47905eeecfff2ad05b0bc519b9d725a2",
+    "research": "Rok a vydavatel tohoto přesného obecného znění zůstávají nedoložené. Údaje konkrétního projektu nejsou datem vydání šablony.",
+    "purposes": [
+      {
+        "value": "software",
+        "source": {
+          "title": "Kanonické znění SPDX · BSD se dvěma podmínkami",
+          "url": "https://spdx.org/licenses/BSD-2-Clause.html",
+          "locator": "Grant pro Software, resp. distribuce zdrojového kódu a binárek"
+        }
+      }
+    ],
+    "summary": {
+      "value": "Při distribuci zdrojů zachovejte autorské oznámení, podmínky a vyloučení záruk. U binární distribuce je přiložte v dokumentaci nebo jiných materiálech.",
+      "source": {
+        "title": "Kanonické znění SPDX · BSD se dvěma podmínkami",
+        "url": "https://spdx.org/licenses/BSD-2-Clause.html",
+        "locator": "Podmínky 1 a 2"
+      }
+    }
+  },
+  {
+    "kind": "license",
+    "id": "BSD-3-Clause",
+    "textHash": "sha256:9c6e4311dd00e0869ab384c29074dc3fe7889ebbc63f259e204963e7bc348f59",
+    "research": "Berkeley v roce 1999 doložitelně zrušilo reklamní klauzuli u svého kódu. Vydání a vydavatel obecného znění pod tímto SPDX ID zůstávají nedoložené.",
+    "purposes": [
+      {
+        "value": "software",
+        "source": {
+          "title": "Kanonické znění SPDX · BSD se třemi podmínkami",
+          "url": "https://spdx.org/licenses/BSD-3-Clause.html",
+          "locator": "Grant pro Software, resp. distribuce zdrojového kódu a binárek"
+        }
+      }
+    ],
+    "summary": {
+      "value": "Při redistribuci zachovejte oznámení, podmínky a vyloučení záruk. K propagaci odvozeného produktu potřebujete písemný souhlas k použití jmen držitelů práv či přispěvatelů.",
+      "source": {
+        "title": "Kanonické znění SPDX · BSD se třemi podmínkami",
+        "url": "https://spdx.org/licenses/BSD-3-Clause.html",
+        "locator": "Podmínky 1–3"
+      }
+    }
+  },
+  {
+    "kind": "license",
+    "id": "GPL-2.0-only",
+    "textHash": "sha256:c67dccb2c18b700b8eb4bd3d4c9bc25b871be29e0a1659eaccf96744cc9b107c",
+    "research": "Vydání, vydavatel, účel a hlavní pravidlo jsou doložené. Další údaje uvádíme, pokud mají doklad.",
+    "release": {
+      "value": {
+        "date": "1991-06",
+        "precision": "month"
+      },
+      "source": {
+        "title": "Znění GNU GPL-2.0",
+        "url": "https://www.gnu.org/licenses/old-licenses/gpl-2.0.html",
+        "locator": "Datovaná hlavička verze a identifikace FSF"
+      }
+    },
+    "publisher": {
+      "value": "Free Software Foundation",
+      "source": {
+        "title": "Znění GNU GPL-2.0",
+        "url": "https://www.gnu.org/licenses/old-licenses/gpl-2.0.html",
+        "locator": "Datovaná hlavička verze a identifikace FSF"
+      }
+    },
+    "purposes": [
+      {
+        "value": "software",
+        "source": {
+          "title": "Znění GNU GPL-2.0",
+          "url": "https://www.gnu.org/licenses/old-licenses/gpl-2.0.html",
+          "locator": "Preambule a vymezení licencovaného Programu, resp. Knihovny"
+        }
+      }
+    ],
+    "summary": {
+      "value": "Při šíření programu v objektové či spustitelné podobě zpřístupněte příjemcům úplný odpovídající zdrojový kód některým ze způsobů v §3.",
+      "source": {
+        "title": "Znění GNU GPL-2.0",
+        "url": "https://www.gnu.org/licenses/old-licenses/gpl-2.0.html",
+        "locator": "§3"
+      }
+    },
+    "properties": [
+      {
+        "value": {
+          "tag": "source-on-distribution",
+          "condition": "Distribuce objektového nebo spustitelného kódu."
+        },
+        "source": {
+          "title": "Znění GNU GPL-2.0",
+          "url": "https://www.gnu.org/licenses/old-licenses/gpl-2.0.html",
+          "locator": "§3"
+        }
+      }
+    ],
+    "related": [
+      {
+        "value": {
+          "id": "GPL-2.0-or-later",
+          "relation": "variant"
+        },
+        "source": {
+          "title": "GNU · výklad označení licencí",
+          "url": "https://www.gnu.org/licenses/identify-licenses-clearly.html",
+          "locator": "Příklady SPDX označení only a or-later"
+        }
+      },
+      {
+        "value": {
+          "id": "GPL-3.0-only",
+          "relation": "next"
+        },
+        "source": {
+          "title": "Archiv licencí GNU",
+          "url": "https://www.gnu.org/licenses/old-licenses/",
+          "locator": "Chronologie a odkazy na verze GPL a LGPL"
+        }
+      }
+    ]
+  },
+  {
+    "kind": "license",
+    "id": "GPL-2.0-or-later",
+    "textHash": "sha256:6faf24ac7cf002ab6c0bc7bcca8888dc302c50ebe63b9b309c45ab1c2f49e949",
+    "research": "Vydání, vydavatel, účel a hlavní pravidlo jsou doložené. Další údaje uvádíme, pokud mají doklad.",
+    "release": {
+      "value": {
+        "date": "1991-06",
+        "precision": "month"
+      },
+      "source": {
+        "title": "Znění GNU GPL-2.0",
+        "url": "https://www.gnu.org/licenses/old-licenses/gpl-2.0.html",
+        "locator": "Datovaná hlavička verze a identifikace FSF"
+      }
+    },
+    "publisher": {
+      "value": "Free Software Foundation",
+      "source": {
+        "title": "Znění GNU GPL-2.0",
+        "url": "https://www.gnu.org/licenses/old-licenses/gpl-2.0.html",
+        "locator": "Datovaná hlavička verze a identifikace FSF"
+      }
+    },
+    "purposes": [
+      {
+        "value": "software",
+        "source": {
+          "title": "Znění GNU GPL-2.0",
+          "url": "https://www.gnu.org/licenses/old-licenses/gpl-2.0.html",
+          "locator": "Preambule a vymezení licencovaného Programu, resp. Knihovny"
+        }
+      }
+    ],
+    "summary": {
+      "value": "Při šíření programu v objektové či spustitelné podobě zpřístupněte příjemcům úplný odpovídající zdrojový kód některým ze způsobů v §3.",
+      "source": {
+        "title": "Znění GNU GPL-2.0",
+        "url": "https://www.gnu.org/licenses/old-licenses/gpl-2.0.html",
+        "locator": "§3"
+      }
+    },
+    "properties": [
+      {
+        "value": {
+          "tag": "source-on-distribution",
+          "condition": "Distribuce objektového nebo spustitelného kódu."
+        },
+        "source": {
+          "title": "Znění GNU GPL-2.0",
+          "url": "https://www.gnu.org/licenses/old-licenses/gpl-2.0.html",
+          "locator": "§3"
+        }
+      }
+    ],
+    "related": [
+      {
+        "value": {
+          "id": "GPL-2.0-only",
+          "relation": "variant"
+        },
+        "source": {
+          "title": "GNU · výklad označení licencí",
+          "url": "https://www.gnu.org/licenses/identify-licenses-clearly.html",
+          "locator": "Příklady SPDX označení only a or-later"
+        }
+      },
+      {
+        "value": {
+          "id": "GPL-3.0-or-later",
+          "relation": "next"
+        },
+        "source": {
+          "title": "Archiv licencí GNU",
+          "url": "https://www.gnu.org/licenses/old-licenses/",
+          "locator": "Chronologie a odkazy na verze GPL a LGPL"
+        }
+      }
+    ]
+  },
+  {
+    "kind": "license",
+    "id": "GPL-3.0-only",
+    "textHash": "sha256:cdfcd62f98db2c84f724635bc5ad60a15825834f5c016534c2cd67b025a08ee1",
+    "research": "Vydání, vydavatel, účel a hlavní pravidlo jsou doložené. Další údaje uvádíme, pokud mají doklad.",
+    "release": {
+      "value": {
+        "date": "2007-06-29",
+        "precision": "day"
+      },
+      "source": {
+        "title": "Oznámení FSF o GPLv3",
+        "url": "https://lists.gnu.org/archive/html/info-gnu/2007-06/msg00021.html",
+        "locator": "První odstavec oznámení"
+      }
+    },
+    "publisher": {
+      "value": "Free Software Foundation",
+      "source": {
+        "title": "Oznámení FSF o GPLv3",
+        "url": "https://lists.gnu.org/archive/html/info-gnu/2007-06/msg00021.html",
+        "locator": "První odstavec oznámení"
+      }
+    },
+    "purposes": [
+      {
+        "value": "software",
+        "source": {
+          "title": "Znění GNU GPL-3.0",
+          "url": "https://www.gnu.org/licenses/gpl-3.0.html",
+          "locator": "Preambule a vymezení licencovaného Programu, resp. Knihovny"
+        }
+      }
+    ],
+    "summary": {
+      "value": "Při předání objektového kódu zpřístupněte úplný odpovídající zdroj. Podle způsobu šíření může licence vyžadovat i instalační informace pro uživatelský produkt.",
+      "source": {
+        "title": "Znění GNU GPL-3.0",
+        "url": "https://www.gnu.org/licenses/gpl-3.0.html",
+        "locator": "§6"
+      }
+    },
+    "properties": [
+      {
+        "value": {
+          "tag": "source-on-distribution",
+          "condition": "Předání objektového kódu krytého díla."
+        },
+        "source": {
+          "title": "Znění GNU GPL-3.0",
+          "url": "https://www.gnu.org/licenses/gpl-3.0.html",
+          "locator": "§6"
+        }
+      }
+    ],
+    "related": [
+      {
+        "value": {
+          "id": "GPL-3.0-or-later",
+          "relation": "variant"
+        },
+        "source": {
+          "title": "GNU · výklad označení licencí",
+          "url": "https://www.gnu.org/licenses/identify-licenses-clearly.html",
+          "locator": "Příklady SPDX označení only a or-later"
+        }
+      },
+      {
+        "value": {
+          "id": "GPL-2.0-only",
+          "relation": "previous"
+        },
+        "source": {
+          "title": "Archiv licencí GNU",
+          "url": "https://www.gnu.org/licenses/old-licenses/",
+          "locator": "Chronologie a odkazy na verze GPL a LGPL"
+        }
+      }
+    ]
+  },
+  {
+    "kind": "license",
+    "id": "GPL-3.0-or-later",
+    "textHash": "sha256:2c21d982f6b19032c43e8db83afcac836dc878f4c7ecd19f50d690728f52f6b6",
+    "research": "Vydání, vydavatel, účel a hlavní pravidlo jsou doložené. Další údaje uvádíme, pokud mají doklad.",
+    "release": {
+      "value": {
+        "date": "2007-06-29",
+        "precision": "day"
+      },
+      "source": {
+        "title": "Oznámení FSF o GPLv3",
+        "url": "https://lists.gnu.org/archive/html/info-gnu/2007-06/msg00021.html",
+        "locator": "První odstavec oznámení"
+      }
+    },
+    "publisher": {
+      "value": "Free Software Foundation",
+      "source": {
+        "title": "Oznámení FSF o GPLv3",
+        "url": "https://lists.gnu.org/archive/html/info-gnu/2007-06/msg00021.html",
+        "locator": "První odstavec oznámení"
+      }
+    },
+    "purposes": [
+      {
+        "value": "software",
+        "source": {
+          "title": "Znění GNU GPL-3.0",
+          "url": "https://www.gnu.org/licenses/gpl-3.0.html",
+          "locator": "Preambule a vymezení licencovaného Programu, resp. Knihovny"
+        }
+      }
+    ],
+    "summary": {
+      "value": "Při předání objektového kódu zpřístupněte úplný odpovídající zdroj. Podle způsobu šíření může licence vyžadovat i instalační informace pro uživatelský produkt.",
+      "source": {
+        "title": "Znění GNU GPL-3.0",
+        "url": "https://www.gnu.org/licenses/gpl-3.0.html",
+        "locator": "§6"
+      }
+    },
+    "properties": [
+      {
+        "value": {
+          "tag": "source-on-distribution",
+          "condition": "Předání objektového kódu krytého díla."
+        },
+        "source": {
+          "title": "Znění GNU GPL-3.0",
+          "url": "https://www.gnu.org/licenses/gpl-3.0.html",
+          "locator": "§6"
+        }
+      }
+    ],
+    "related": [
+      {
+        "value": {
+          "id": "GPL-3.0-only",
+          "relation": "variant"
+        },
+        "source": {
+          "title": "GNU · výklad označení licencí",
+          "url": "https://www.gnu.org/licenses/identify-licenses-clearly.html",
+          "locator": "Příklady SPDX označení only a or-later"
+        }
+      },
+      {
+        "value": {
+          "id": "GPL-2.0-or-later",
+          "relation": "previous"
+        },
+        "source": {
+          "title": "Archiv licencí GNU",
+          "url": "https://www.gnu.org/licenses/old-licenses/",
+          "locator": "Chronologie a odkazy na verze GPL a LGPL"
+        }
+      }
+    ]
+  },
+  {
+    "kind": "license",
+    "id": "LGPL-2.1-only",
+    "textHash": "sha256:6bac24d331f8c97f4cb4577734c244a62e5e3644c943f21cc0568763934db98f",
+    "research": "Vydání, vydavatel, účel a hlavní pravidlo jsou doložené. Další údaje uvádíme, pokud mají doklad.",
+    "release": {
+      "value": {
+        "date": "1999-02",
+        "precision": "month"
+      },
+      "source": {
+        "title": "Znění GNU LGPL-2.1",
+        "url": "https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html",
+        "locator": "Datovaná hlavička verze a identifikace FSF"
+      }
+    },
+    "publisher": {
+      "value": "Free Software Foundation",
+      "source": {
+        "title": "Znění GNU LGPL-2.1",
+        "url": "https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html",
+        "locator": "Datovaná hlavička verze a identifikace FSF"
+      }
+    },
+    "purposes": [
+      {
+        "value": "software",
+        "source": {
+          "title": "Znění GNU LGPL-2.1",
+          "url": "https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html",
+          "locator": "Preambule a vymezení licencovaného Programu, resp. Knihovny"
+        }
+      }
+    ],
+    "summary": {
+      "value": "Při šíření knihovny v binární podobě poskytněte její zdrojový kód. U díla linkovaného s knihovnou splňte některou z možností §6, aby uživatel mohl knihovnu nahradit nebo znovu připojit.",
+      "source": {
+        "title": "Znění GNU LGPL-2.1",
+        "url": "https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html",
+        "locator": "§4 a §6"
+      }
+    },
+    "properties": [
+      {
+        "value": {
+          "tag": "source-on-distribution",
+          "condition": "Distribuce objektové podoby samotné knihovny či odvozeniny. Pro linkovaná díla platí zvláštní možnosti v §6."
+        },
+        "source": {
+          "title": "Znění GNU LGPL-2.1",
+          "url": "https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html",
+          "locator": "§4 a §6"
+        }
+      }
+    ],
+    "related": [
+      {
+        "value": {
+          "id": "LGPL-2.1-or-later",
+          "relation": "variant"
+        },
+        "source": {
+          "title": "GNU · výklad označení licencí",
+          "url": "https://www.gnu.org/licenses/identify-licenses-clearly.html",
+          "locator": "Příklady SPDX označení only a or-later"
+        }
+      },
+      {
+        "value": {
+          "id": "LGPL-3.0-only",
+          "relation": "next"
+        },
+        "source": {
+          "title": "Archiv licencí GNU",
+          "url": "https://www.gnu.org/licenses/old-licenses/",
+          "locator": "Chronologie a odkazy na verze GPL a LGPL"
+        }
+      }
+    ]
+  },
+  {
+    "kind": "license",
+    "id": "LGPL-2.1-or-later",
+    "textHash": "sha256:36d50a2e15df700bbc46df608b04eca4fc812aa6cfa1c893c1766cf38bcc703e",
+    "research": "Vydání, vydavatel, účel a hlavní pravidlo jsou doložené. Další údaje uvádíme, pokud mají doklad.",
+    "release": {
+      "value": {
+        "date": "1999-02",
+        "precision": "month"
+      },
+      "source": {
+        "title": "Znění GNU LGPL-2.1",
+        "url": "https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html",
+        "locator": "Datovaná hlavička verze a identifikace FSF"
+      }
+    },
+    "publisher": {
+      "value": "Free Software Foundation",
+      "source": {
+        "title": "Znění GNU LGPL-2.1",
+        "url": "https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html",
+        "locator": "Datovaná hlavička verze a identifikace FSF"
+      }
+    },
+    "purposes": [
+      {
+        "value": "software",
+        "source": {
+          "title": "Znění GNU LGPL-2.1",
+          "url": "https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html",
+          "locator": "Preambule a vymezení licencovaného Programu, resp. Knihovny"
+        }
+      }
+    ],
+    "summary": {
+      "value": "Při šíření knihovny v binární podobě poskytněte její zdrojový kód. U díla linkovaného s knihovnou splňte některou z možností §6, aby uživatel mohl knihovnu nahradit nebo znovu připojit.",
+      "source": {
+        "title": "Znění GNU LGPL-2.1",
+        "url": "https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html",
+        "locator": "§4 a §6"
+      }
+    },
+    "properties": [
+      {
+        "value": {
+          "tag": "source-on-distribution",
+          "condition": "Distribuce objektové podoby samotné knihovny či odvozeniny. Pro linkovaná díla platí zvláštní možnosti v §6."
+        },
+        "source": {
+          "title": "Znění GNU LGPL-2.1",
+          "url": "https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html",
+          "locator": "§4 a §6"
+        }
+      }
+    ],
+    "related": [
+      {
+        "value": {
+          "id": "LGPL-2.1-only",
+          "relation": "variant"
+        },
+        "source": {
+          "title": "GNU · výklad označení licencí",
+          "url": "https://www.gnu.org/licenses/identify-licenses-clearly.html",
+          "locator": "Příklady SPDX označení only a or-later"
+        }
+      },
+      {
+        "value": {
+          "id": "LGPL-3.0-or-later",
+          "relation": "next"
+        },
+        "source": {
+          "title": "Archiv licencí GNU",
+          "url": "https://www.gnu.org/licenses/old-licenses/",
+          "locator": "Chronologie a odkazy na verze GPL a LGPL"
+        }
+      }
+    ]
+  },
+  {
+    "kind": "license",
+    "id": "LGPL-3.0-only",
+    "textHash": "sha256:6f4f31d90b4ab8b7ae0dfef6ef3acc5fa58e0effac0f39baa4fa05b44d2df072",
+    "research": "Vydání, vydavatel, účel a hlavní pravidlo jsou doložené. Další údaje uvádíme, pokud mají doklad.",
+    "release": {
+      "value": {
+        "date": "2007-06-29",
+        "precision": "day"
+      },
+      "source": {
+        "title": "Přehled vydání FSF",
+        "url": "https://gplv3.fsf.org/",
+        "locator": "Oznámení z 29. června 2007"
+      }
+    },
+    "publisher": {
+      "value": "Free Software Foundation",
+      "source": {
+        "title": "Přehled vydání FSF",
+        "url": "https://gplv3.fsf.org/",
+        "locator": "Oznámení z 29. června 2007"
+      }
+    },
+    "purposes": [
+      {
+        "value": "software",
+        "source": {
+          "title": "Znění GNU LGPL-3.0",
+          "url": "https://www.gnu.org/licenses/lgpl-3.0.html",
+          "locator": "Preambule a vymezení licencovaného Programu, resp. Knihovny"
+        }
+      }
+    ],
+    "summary": {
+      "value": "Při distribuci kombinovaného díla umožněte uživateli použít upravenou knihovnu, například vhodným sdíleným linkováním nebo poskytnutím podkladů k opětovnému linkování.",
+      "source": {
+        "title": "Znění GNU LGPL-3.0",
+        "url": "https://www.gnu.org/licenses/lgpl-3.0.html",
+        "locator": "§4(d) a §4(e), GPLv3 §6"
+      }
+    },
+    "properties": [
+      {
+        "value": {
+          "tag": "source-on-distribution",
+          "condition": "Distribuce knihovny v objektovém kódu podléhá GPLv3 §6. Pro kombinované dílo platí zvláštní alternativy v LGPLv3 §4."
+        },
+        "source": {
+          "title": "Znění GNU LGPL-3.0",
+          "url": "https://www.gnu.org/licenses/lgpl-3.0.html",
+          "locator": "§4(d) a §4(e), GPLv3 §6"
+        }
+      }
+    ],
+    "related": [
+      {
+        "value": {
+          "id": "LGPL-3.0-or-later",
+          "relation": "variant"
+        },
+        "source": {
+          "title": "GNU · výklad označení licencí",
+          "url": "https://www.gnu.org/licenses/identify-licenses-clearly.html",
+          "locator": "Příklady SPDX označení only a or-later"
+        }
+      },
+      {
+        "value": {
+          "id": "LGPL-2.1-only",
+          "relation": "previous"
+        },
+        "source": {
+          "title": "Archiv licencí GNU",
+          "url": "https://www.gnu.org/licenses/old-licenses/",
+          "locator": "Chronologie a odkazy na verze GPL a LGPL"
+        }
+      }
+    ]
+  },
+  {
+    "kind": "license",
+    "id": "LGPL-3.0-or-later",
+    "textHash": "sha256:bc273d72abc126787a703078152faacd1b5ad540b44448e81b684b25657bbcea",
+    "research": "Vydání, vydavatel, účel a hlavní pravidlo jsou doložené. Další údaje uvádíme, pokud mají doklad.",
+    "release": {
+      "value": {
+        "date": "2007-06-29",
+        "precision": "day"
+      },
+      "source": {
+        "title": "Přehled vydání FSF",
+        "url": "https://gplv3.fsf.org/",
+        "locator": "Oznámení z 29. června 2007"
+      }
+    },
+    "publisher": {
+      "value": "Free Software Foundation",
+      "source": {
+        "title": "Přehled vydání FSF",
+        "url": "https://gplv3.fsf.org/",
+        "locator": "Oznámení z 29. června 2007"
+      }
+    },
+    "purposes": [
+      {
+        "value": "software",
+        "source": {
+          "title": "Znění GNU LGPL-3.0",
+          "url": "https://www.gnu.org/licenses/lgpl-3.0.html",
+          "locator": "Preambule a vymezení licencovaného Programu, resp. Knihovny"
+        }
+      }
+    ],
+    "summary": {
+      "value": "Při distribuci kombinovaného díla umožněte uživateli použít upravenou knihovnu, například vhodným sdíleným linkováním nebo poskytnutím podkladů k opětovnému linkování.",
+      "source": {
+        "title": "Znění GNU LGPL-3.0",
+        "url": "https://www.gnu.org/licenses/lgpl-3.0.html",
+        "locator": "§4(d) a §4(e), GPLv3 §6"
+      }
+    },
+    "properties": [
+      {
+        "value": {
+          "tag": "source-on-distribution",
+          "condition": "Distribuce knihovny v objektovém kódu podléhá GPLv3 §6. Pro kombinované dílo platí zvláštní alternativy v LGPLv3 §4."
+        },
+        "source": {
+          "title": "Znění GNU LGPL-3.0",
+          "url": "https://www.gnu.org/licenses/lgpl-3.0.html",
+          "locator": "§4(d) a §4(e), GPLv3 §6"
+        }
+      }
+    ],
+    "related": [
+      {
+        "value": {
+          "id": "LGPL-3.0-only",
+          "relation": "variant"
+        },
+        "source": {
+          "title": "GNU · výklad označení licencí",
+          "url": "https://www.gnu.org/licenses/identify-licenses-clearly.html",
+          "locator": "Příklady SPDX označení only a or-later"
+        }
+      },
+      {
+        "value": {
+          "id": "LGPL-2.1-or-later",
+          "relation": "previous"
+        },
+        "source": {
+          "title": "Archiv licencí GNU",
+          "url": "https://www.gnu.org/licenses/old-licenses/",
+          "locator": "Chronologie a odkazy na verze GPL a LGPL"
+        }
+      }
+    ]
+  },
+  {
+    "kind": "license",
+    "id": "AGPL-3.0-only",
+    "textHash": "sha256:e0a5382c56c481b6541347c0977231d34f845772ebef481141ca45d7835a24ff",
+    "research": "Vydání, vydavatel, účel a hlavní pravidlo jsou doložené. Další údaje uvádíme, pokud mají doklad.",
+    "release": {
+      "value": {
+        "date": "2007-11-19",
+        "precision": "day"
+      },
+      "source": {
+        "title": "Oznámení FSF o AGPLv3",
+        "url": "https://www.fsf.org/news/agplv3-pr",
+        "locator": "První a druhý odstavec oznámení"
+      }
+    },
+    "publisher": {
+      "value": "Free Software Foundation",
+      "source": {
+        "title": "Oznámení FSF o AGPLv3",
+        "url": "https://www.fsf.org/news/agplv3-pr",
+        "locator": "První a druhý odstavec oznámení"
+      }
+    },
+    "purposes": [
+      {
+        "value": "software",
+        "source": {
+          "title": "Znění GNU AGPL-3.0",
+          "url": "https://www.gnu.org/licenses/agpl-3.0.html",
+          "locator": "Preambule a vymezení licencovaného Programu, resp. Knihovny"
+        }
+      }
+    ],
+    "summary": {
+      "value": "Pokud vaše upravená verze umožňuje interakci po síti, nabídněte všem takovým uživatelům bezplatný přístup k odpovídajícím zdrojům. Pro distribuci objektového kódu platí §6.",
+      "source": {
+        "title": "Znění GNU AGPL-3.0",
+        "url": "https://www.gnu.org/licenses/agpl-3.0.html",
+        "locator": "§6 a §13"
+      }
+    },
+    "properties": [
+      {
+        "value": {
+          "tag": "source-on-distribution",
+          "condition": "Předání objektového kódu krytého díla."
+        },
+        "source": {
+          "title": "Znění GNU AGPL-3.0",
+          "url": "https://www.gnu.org/licenses/agpl-3.0.html",
+          "locator": "§6 a §13"
+        }
+      },
+      {
+        "value": {
+          "tag": "source-on-network-use",
+          "condition": "Upravená verze musí podporovat vzdálenou interakci. Nabídka zdroje je určena všem uživatelům, kteří s ní takto interagují."
+        },
+        "source": {
+          "title": "Znění GNU AGPL-3.0",
+          "url": "https://www.gnu.org/licenses/agpl-3.0.html",
+          "locator": "§13 odst. 1"
+        }
+      }
+    ],
+    "related": [
+      {
+        "value": {
+          "id": "AGPL-3.0-or-later",
+          "relation": "variant"
+        },
+        "source": {
+          "title": "GNU · výklad označení licencí",
+          "url": "https://www.gnu.org/licenses/identify-licenses-clearly.html",
+          "locator": "Příklady SPDX označení only a or-later"
+        }
+      }
+    ]
+  },
+  {
+    "kind": "license",
+    "id": "AGPL-3.0-or-later",
+    "textHash": "sha256:1b7ae5bf7bc4b533262fa0ed92ed569e2ca4ef70d8287bcecc88b74239a50f19",
+    "research": "Vydání, vydavatel, účel a hlavní pravidlo jsou doložené. Další údaje uvádíme, pokud mají doklad.",
+    "release": {
+      "value": {
+        "date": "2007-11-19",
+        "precision": "day"
+      },
+      "source": {
+        "title": "Oznámení FSF o AGPLv3",
+        "url": "https://www.fsf.org/news/agplv3-pr",
+        "locator": "První a druhý odstavec oznámení"
+      }
+    },
+    "publisher": {
+      "value": "Free Software Foundation",
+      "source": {
+        "title": "Oznámení FSF o AGPLv3",
+        "url": "https://www.fsf.org/news/agplv3-pr",
+        "locator": "První a druhý odstavec oznámení"
+      }
+    },
+    "purposes": [
+      {
+        "value": "software",
+        "source": {
+          "title": "Znění GNU AGPL-3.0",
+          "url": "https://www.gnu.org/licenses/agpl-3.0.html",
+          "locator": "Preambule a vymezení licencovaného Programu, resp. Knihovny"
+        }
+      }
+    ],
+    "summary": {
+      "value": "Pokud vaše upravená verze umožňuje interakci po síti, nabídněte všem takovým uživatelům bezplatný přístup k odpovídajícím zdrojům. Pro distribuci objektového kódu platí §6.",
+      "source": {
+        "title": "Znění GNU AGPL-3.0",
+        "url": "https://www.gnu.org/licenses/agpl-3.0.html",
+        "locator": "§6 a §13"
+      }
+    },
+    "properties": [
+      {
+        "value": {
+          "tag": "source-on-distribution",
+          "condition": "Předání objektového kódu krytého díla."
+        },
+        "source": {
+          "title": "Znění GNU AGPL-3.0",
+          "url": "https://www.gnu.org/licenses/agpl-3.0.html",
+          "locator": "§6 a §13"
+        }
+      },
+      {
+        "value": {
+          "tag": "source-on-network-use",
+          "condition": "Upravená verze musí podporovat vzdálenou interakci. Nabídka zdroje je určena všem uživatelům, kteří s ní takto interagují."
+        },
+        "source": {
+          "title": "Znění GNU AGPL-3.0",
+          "url": "https://www.gnu.org/licenses/agpl-3.0.html",
+          "locator": "§13 odst. 1"
+        }
+      }
+    ],
+    "related": [
+      {
+        "value": {
+          "id": "AGPL-3.0-only",
+          "relation": "variant"
+        },
+        "source": {
+          "title": "GNU · výklad označení licencí",
+          "url": "https://www.gnu.org/licenses/identify-licenses-clearly.html",
+          "locator": "Příklady SPDX označení only a or-later"
+        }
+      }
+    ]
+  },
+  {
+    "kind": "license",
+    "id": "MPL-2.0",
+    "textHash": "sha256:a73715962e99654d9e803467836f1ef0cacaf72d8dc66995ec22fe64e8c752b8",
+    "research": "Text a FAQ Mozilla dokládají vydavatele, návaznost na verzi 1.1 a distribuční podmínku. Přesné vydání je vedeno podle dobového oznámení Mozilla.",
+    "release": {
+      "value": {
+        "date": "2012-01-03",
+        "precision": "day"
+      },
+      "source": {
+        "title": "Oznámení předsedkyně Mozilla",
+        "url": "https://mitchellbaker.net/2012/01/mozilla-public-license-version-2-0-released/",
+        "locator": "Datované oznámení vydání verze 2.0"
+      }
+    },
+    "publisher": {
+      "value": "Mozilla Foundation",
+      "source": {
+        "title": "Mozilla Public License 2.0",
+        "url": "https://www.mozilla.org/en-US/MPL/2.0/",
+        "locator": "§10.1: správce s výhradním právem vydávat nové verze"
+      }
+    },
+    "purposes": [
+      {
+        "value": "software",
+        "source": {
+          "title": "Mozilla Public License 2.0",
+          "url": "https://www.mozilla.org/en-US/MPL/2.0/",
+          "locator": "Definice Covered Software v §1.4"
+        }
+      }
+    ],
+    "summary": {
+      "value": "Při distribuci spustitelné podoby zpřístupněte příjemcům zdrojovou podobu souborů krytých MPL a sdělte jim, kde ji mohou získat.",
+      "source": {
+        "title": "Mozilla Public License 2.0",
+        "url": "https://www.mozilla.org/en-US/MPL/2.0/",
+        "locator": "§3.1 a §3.2"
+      }
+    },
+    "properties": [
+      {
+        "value": {
+          "tag": "source-on-distribution",
+          "condition": "Při distribuci spustitelné podoby zdroje jen k souborům krytým MPL."
+        },
+        "source": {
+          "title": "Mozilla Public License 2.0",
+          "url": "https://www.mozilla.org/en-US/MPL/2.0/",
+          "locator": "§3.2(a)"
+        }
+      }
+    ],
+    "related": [
+      {
+        "value": {
+          "id": "MPL-1.1",
+          "relation": "previous"
+        },
+        "source": {
+          "title": "Historický přehled Mozilla",
+          "url": "https://www.mozilla.org/en-US/MPL/historical/",
+          "locator": "Položka Mozilla Public License version 1.1"
+        }
+      }
+    ]
+  },
+  {
+    "kind": "license",
+    "id": "EUPL-1.2",
+    "textHash": "sha256:b7a20282c612cb973aa587e4bdb84138f674de5733bccee46099b812b439c524",
+    "research": "Vydání, vydavatel, účel a hlavní pravidlo jsou doložené. Další údaje uvádíme, pokud mají doklad.",
+    "release": {
+      "value": {
+        "date": "2017-05-19",
+        "precision": "day"
+      },
+      "source": {
+        "title": "Úřední věstník EU L 128/59",
+        "url": "https://eur-lex.europa.eu/eli/dec_impl/2017/863/oj",
+        "locator": "Datum vydání Úředního věstníku"
+      }
+    },
+    "approval": {
+      "value": {
+        "date": "2017-05-18",
+        "precision": "day"
+      },
+      "source": {
+        "title": "Úřední věstník EU L 128/59",
+        "url": "https://eur-lex.europa.eu/eli/dec_impl/2017/863/oj",
+        "locator": "Datum rozhodnutí 2017/863 a čl. 1"
+      }
+    },
+    "publisher": {
+      "value": "Evropská komise",
+      "source": {
+        "title": "Úřední věstník EU L 128/59",
+        "url": "https://eur-lex.europa.eu/eli/dec_impl/2017/863/oj",
+        "locator": "Nadpis rozhodnutí a čl. 1"
+      }
+    },
+    "purposes": [
+      {
+        "value": "software",
+        "source": {
+          "title": "Úřední věstník EU L 128/59",
+          "url": "https://eur-lex.europa.eu/eli/dec_impl/2017/863/oj",
+          "locator": "Nadpis rozhodnutí a odůvodnění bod 4"
+        }
+      }
+    ],
+    "summary": {
+      "value": "Při distribuci nebo sdělování uveďte potřebná oznámení a poskytněte zdroj nebo odkaz na místo, kde bude bezplatně dostupný.",
+      "source": {
+        "title": "Úřední věstník EU L 128/59",
+        "url": "https://eur-lex.europa.eu/eli/dec_impl/2017/863/oj",
+        "locator": "Příloha, čl. 5"
+      }
+    },
+    "properties": [
+      {
+        "value": {
+          "tag": "source-on-distribution",
+          "condition": "Při distribuci nebo sdělování díla poskytněte zdroj nebo odkažte na jeho dostupnost podle čl. 5."
+        },
+        "source": {
+          "title": "Úřední věstník EU L 128/59",
+          "url": "https://eur-lex.europa.eu/eli/dec_impl/2017/863/oj",
+          "locator": "Příloha, čl. 5"
+        }
+      }
+    ],
+    "related": [
+      {
+        "value": {
+          "id": "EUPL-1.1",
+          "relation": "previous"
+        },
+        "source": {
+          "title": "Úřední věstník EU L 128/59",
+          "url": "https://eur-lex.europa.eu/eli/dec_impl/2017/863/oj",
+          "locator": "Odůvodnění bod 3 a příloha"
+        }
+      }
+    ]
+  },
+  {
+    "kind": "license",
+    "id": "CC-BY-4.0",
+    "textHash": "sha256:5eba37d4de1b2e0beecc6949855b6a9a15b58e9d49effcc3ceb12e62e5229ede",
+    "research": "Vydání 25. 11. 2013 dokládá dobové oznámení a časová osa. Souhrnná historie CC má nadpis 2013, ale v navazujícím textu uvádí vydání v roce 2014. Přednost má datované oznámení vydání.",
+    "release": {
+      "value": {
+        "date": "2013-11-25",
+        "precision": "day"
+      },
+      "source": {
+        "title": "Oznámení Creative Commons o sadě 4.0",
+        "url": "https://creativecommons.org/2013/11/25/ccs-next-generation-licenses-welcome-version-4-0/",
+        "locator": "Datované oznámení dostupnosti verze 4.0"
+      }
+    },
+    "publisher": {
+      "value": "Creative Commons",
+      "source": {
+        "title": "Oznámení Creative Commons o sadě 4.0",
+        "url": "https://creativecommons.org/2013/11/25/ccs-next-generation-licenses-welcome-version-4-0/",
+        "locator": "Datované oznámení dostupnosti verze 4.0"
+      }
+    },
+    "summary": {
+      "value": "Při sdílení uveďte autorství, odkaz na licenci a případné změny.",
+      "source": {
+        "title": "Znění Creative Commons BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode.en",
+        "locator": "§3(a)"
+      }
+    },
+    "purposes": [
+      {
+        "value": "media",
+        "source": {
+          "title": "Oznámení Creative Commons o sadě 4.0",
+          "url": "https://creativecommons.org/2013/11/25/ccs-next-generation-licenses-welcome-version-4-0/",
+          "locator": "Úvod: užití pro kreativní díla"
+        }
+      },
+      {
+        "value": "data",
+        "source": {
+          "title": "Znění Creative Commons BY 4.0",
+          "url": "https://creativecommons.org/licenses/by/4.0/legalcode.en",
+          "locator": "§4: zvláštní databázová práva"
+        }
+      }
+    ],
+    "related": [
+      {
+        "value": {
+          "id": "CC-BY-3.0",
+          "relation": "previous"
+        },
+        "source": {
+          "title": "Přehled verzí Creative Commons",
+          "url": "https://wiki.creativecommons.org/License_Versions",
+          "locator": "Tabulka vydaných sad, řádky 3.0 a 4.0"
+        }
+      }
+    ]
+  },
+  {
+    "kind": "license",
+    "id": "CC-BY-SA-4.0",
+    "textHash": "sha256:e172cb60ffe7b8c027d72414b61254ffcc1e36df080000ca382106fb7f35046d",
+    "research": "Vydání 25. 11. 2013 dokládá dobové oznámení a časová osa. Souhrnná historie CC má nadpis 2013, ale v navazujícím textu uvádí vydání v roce 2014. Přednost má datované oznámení vydání.",
+    "release": {
+      "value": {
+        "date": "2013-11-25",
+        "precision": "day"
+      },
+      "source": {
+        "title": "Oznámení Creative Commons o sadě 4.0",
+        "url": "https://creativecommons.org/2013/11/25/ccs-next-generation-licenses-welcome-version-4-0/",
+        "locator": "Datované oznámení dostupnosti verze 4.0"
+      }
+    },
+    "publisher": {
+      "value": "Creative Commons",
+      "source": {
+        "title": "Oznámení Creative Commons o sadě 4.0",
+        "url": "https://creativecommons.org/2013/11/25/ccs-next-generation-licenses-welcome-version-4-0/",
+        "locator": "Datované oznámení dostupnosti verze 4.0"
+      }
+    },
+    "summary": {
+      "value": "Při sdílení uveďte autorství, odkaz na licenci a případné změny. Sdílené úpravy poskytněte pod odpovídající stejnou nebo kompatibilní licencí.",
+      "source": {
+        "title": "Znění Creative Commons BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/legalcode.en",
+        "locator": "§3(a), §3(b)"
+      }
+    },
+    "purposes": [
+      {
+        "value": "media",
+        "source": {
+          "title": "Oznámení Creative Commons o sadě 4.0",
+          "url": "https://creativecommons.org/2013/11/25/ccs-next-generation-licenses-welcome-version-4-0/",
+          "locator": "Úvod: užití pro kreativní díla"
+        }
+      },
+      {
+        "value": "data",
+        "source": {
+          "title": "Znění Creative Commons BY-SA 4.0",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/legalcode.en",
+          "locator": "§4: zvláštní databázová práva"
+        }
+      }
+    ],
+    "related": [
+      {
+        "value": {
+          "id": "CC-BY-SA-3.0",
+          "relation": "previous"
+        },
+        "source": {
+          "title": "Přehled verzí Creative Commons",
+          "url": "https://wiki.creativecommons.org/License_Versions",
+          "locator": "Tabulka vydaných sad, řádky 3.0 a 4.0"
+        }
+      }
+    ],
+    "properties": [
+      {
+        "value": {
+          "tag": "share-alike",
+          "condition": "Podmínky ShareAlike vznikají při sdílení adaptovaného materiálu."
+        },
+        "source": {
+          "title": "Znění Creative Commons BY-SA 4.0",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/legalcode.en",
+          "locator": "§3(b)"
+        }
+      }
+    ]
+  },
+  {
+    "kind": "license",
+    "id": "CC0-1.0",
+    "textHash": "sha256:a606cc2298bbe01df47bd1cde83c3d422c5833222e28a71bb2929ee716c659a6",
+    "research": "Vydání, vydavatel, účel a hlavní pravidlo jsou doložené. Další údaje uvádíme, pokud mají doklad.",
+    "release": {
+      "value": {
+        "date": "2009",
+        "precision": "year"
+      },
+      "source": {
+        "title": "Creative Commons · rešerše k CC0 1.0",
+        "url": "https://wiki.creativecommons.org/wiki/CC0_Jurisdictional_Survey_Responses",
+        "locator": "Summary: vydání finálního CC0 1.0 začátkem 2009; příprava oznámena 2007"
+      }
+    },
+    "publisher": {
+      "value": "Creative Commons",
+      "source": {
+        "title": "Creative Commons · rešerše k CC0 1.0",
+        "url": "https://wiki.creativecommons.org/wiki/CC0_Jurisdictional_Survey_Responses",
+        "locator": "Summary: vydání finálního CC0 1.0 začátkem 2009; příprava oznámena 2007"
+      }
+    },
+    "purposes": [
+      {
+        "value": "media",
+        "source": {
+          "title": "Znění CC0 1.0",
+          "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode.en",
+          "locator": "Statement of Purpose a §1: díla včetně databází"
+        }
+      },
+      {
+        "value": "data",
+        "source": {
+          "title": "Znění CC0 1.0",
+          "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode.en",
+          "locator": "Statement of Purpose a §1: díla včetně databází"
+        }
+      }
+    ],
+    "summary": {
+      "value": "CC0 umožňuje vzdát se autorských a souvisejících práv, případně je licencuje jako záložní řešení. Patentová práva a ochranné známky zůstávají mimo rozsah.",
+      "source": {
+        "title": "Znění CC0 1.0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode.en",
+        "locator": "§2, §3 a §4(a)"
+      }
+    }
+  },
+  {
+    "kind": "license",
+    "id": "OFL-1.1",
+    "textHash": "sha256:31049d5a5e0d25e26df5bd5a6553ea91ee10dbf724460e0c30931d3527258428",
+    "research": "Vydání, vydavatel, účel a hlavní pravidlo jsou doložené. Další údaje uvádíme, pokud mají doklad.",
+    "release": {
+      "value": {
+        "date": "2007-02-26",
+        "precision": "day"
+      },
+      "source": {
+        "title": "Historie SIL OFL",
+        "url": "https://openfontlicense.org/history/",
+        "locator": "2007, řádek 26. února"
+      }
+    },
+    "publisher": {
+      "value": "SIL (dnes SIL Global)",
+      "source": {
+        "title": "SIL OFL FAQ",
+        "url": "https://openfontlicense.org/ofl-faq/",
+        "locator": "Historie a autorství znění SIL"
+      }
+    },
+    "purposes": [
+      {
+        "value": "fonts",
+        "source": {
+          "title": "Oficiální znění SIL OFL",
+          "url": "https://openfontlicense.org/open-font-license-official-text/",
+          "locator": "Preambule a definice Font Software"
+        }
+      }
+    ],
+    "summary": {
+      "value": "Při redistribuci písma přiložte copyright a licenci OFL. Při distribuci upraveného písma nepoužijte vyhrazené názvy bez písemného souhlasu.",
+      "source": {
+        "title": "Oficiální znění SIL OFL",
+        "url": "https://openfontlicense.org/open-font-license-official-text/",
+        "locator": "Podmínky 2–3"
+      }
+    },
+    "related": [
+      {
+        "value": {
+          "id": "OFL-1.0",
+          "relation": "previous"
+        },
+        "source": {
+          "title": "Historie SIL OFL",
+          "url": "https://openfontlicense.org/history/",
+          "locator": "Vydání verzí 1.0 a 1.1"
+        }
+      }
+    ]
+  },
+  {
+    "kind": "license",
+    "id": "CC-BY-NC-4.0",
+    "textHash": "sha256:e34ea48a04b9d6564755415a4451d17663ed733d9fe8b61647648a36f0734d9b",
+    "research": "Vydání 25. 11. 2013 dokládá dobové oznámení a časová osa. Souhrnná historie CC má nadpis 2013, ale v navazujícím textu uvádí vydání v roce 2014. Přednost má datované oznámení vydání.",
+    "release": {
+      "value": {
+        "date": "2013-11-25",
+        "precision": "day"
+      },
+      "source": {
+        "title": "Oznámení Creative Commons o sadě 4.0",
+        "url": "https://creativecommons.org/2013/11/25/ccs-next-generation-licenses-welcome-version-4-0/",
+        "locator": "Datované oznámení dostupnosti verze 4.0"
+      }
+    },
+    "publisher": {
+      "value": "Creative Commons",
+      "source": {
+        "title": "Oznámení Creative Commons o sadě 4.0",
+        "url": "https://creativecommons.org/2013/11/25/ccs-next-generation-licenses-welcome-version-4-0/",
+        "locator": "Datované oznámení dostupnosti verze 4.0"
+      }
+    },
+    "summary": {
+      "value": "Při sdílení uveďte autorství, odkaz na licenci a případné změny. Udělená práva platí pro nekomerční použití.",
+      "source": {
+        "title": "Znění Creative Commons BY-NC 4.0",
+        "url": "https://creativecommons.org/licenses/by-nc/4.0/legalcode.en",
+        "locator": "§3(a), §2(a)(1)"
+      }
+    },
+    "purposes": [
+      {
+        "value": "media",
+        "source": {
+          "title": "Oznámení Creative Commons o sadě 4.0",
+          "url": "https://creativecommons.org/2013/11/25/ccs-next-generation-licenses-welcome-version-4-0/",
+          "locator": "Úvod: užití pro kreativní díla"
+        }
+      },
+      {
+        "value": "data",
+        "source": {
+          "title": "Znění Creative Commons BY-NC 4.0",
+          "url": "https://creativecommons.org/licenses/by-nc/4.0/legalcode.en",
+          "locator": "§4: zvláštní databázová práva"
+        }
+      }
+    ],
+    "related": [
+      {
+        "value": {
+          "id": "CC-BY-NC-3.0",
+          "relation": "previous"
+        },
+        "source": {
+          "title": "Přehled verzí Creative Commons",
+          "url": "https://wiki.creativecommons.org/License_Versions",
+          "locator": "Tabulka vydaných sad, řádky 3.0 a 4.0"
+        }
+      }
+    ],
+    "properties": [
+      {
+        "value": {
+          "tag": "non-commercial",
+          "condition": "Rozsah udělených práv je omezen na nekomerční účely."
+        },
+        "source": {
+          "title": "Znění Creative Commons BY-NC 4.0",
+          "url": "https://creativecommons.org/licenses/by-nc/4.0/legalcode.en",
+          "locator": "§1: definice NonCommercial, §2(a)(1)"
+        }
+      }
+    ]
+  },
+  {
+    "kind": "license",
+    "id": "CC-BY-NC-SA-4.0",
+    "textHash": "sha256:04bed6012cb65a33db61d25ca3f4d25d47cb0562c4fabfbc92fe2f1c966c4aa3",
+    "research": "Vydání 25. 11. 2013 dokládá dobové oznámení a časová osa. Souhrnná historie CC má nadpis 2013, ale v navazujícím textu uvádí vydání v roce 2014. Přednost má datované oznámení vydání.",
+    "release": {
+      "value": {
+        "date": "2013-11-25",
+        "precision": "day"
+      },
+      "source": {
+        "title": "Oznámení Creative Commons o sadě 4.0",
+        "url": "https://creativecommons.org/2013/11/25/ccs-next-generation-licenses-welcome-version-4-0/",
+        "locator": "Datované oznámení dostupnosti verze 4.0"
+      }
+    },
+    "publisher": {
+      "value": "Creative Commons",
+      "source": {
+        "title": "Oznámení Creative Commons o sadě 4.0",
+        "url": "https://creativecommons.org/2013/11/25/ccs-next-generation-licenses-welcome-version-4-0/",
+        "locator": "Datované oznámení dostupnosti verze 4.0"
+      }
+    },
+    "summary": {
+      "value": "Při sdílení uveďte autorství, odkaz na licenci a případné změny. Sdílené úpravy poskytněte pod odpovídající stejnou nebo kompatibilní licencí. Udělená práva platí pro nekomerční použití.",
+      "source": {
+        "title": "Znění Creative Commons BY-NC-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.en",
+        "locator": "§3(a), §3(b), §2(a)(1)"
+      }
+    },
+    "purposes": [
+      {
+        "value": "media",
+        "source": {
+          "title": "Oznámení Creative Commons o sadě 4.0",
+          "url": "https://creativecommons.org/2013/11/25/ccs-next-generation-licenses-welcome-version-4-0/",
+          "locator": "Úvod: užití pro kreativní díla"
+        }
+      },
+      {
+        "value": "data",
+        "source": {
+          "title": "Znění Creative Commons BY-NC-SA 4.0",
+          "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.en",
+          "locator": "§4: zvláštní databázová práva"
+        }
+      }
+    ],
+    "related": [
+      {
+        "value": {
+          "id": "CC-BY-NC-SA-3.0",
+          "relation": "previous"
+        },
+        "source": {
+          "title": "Přehled verzí Creative Commons",
+          "url": "https://wiki.creativecommons.org/License_Versions",
+          "locator": "Tabulka vydaných sad, řádky 3.0 a 4.0"
+        }
+      }
+    ],
+    "properties": [
+      {
+        "value": {
+          "tag": "share-alike",
+          "condition": "Podmínky ShareAlike vznikají při sdílení adaptovaného materiálu."
+        },
+        "source": {
+          "title": "Znění Creative Commons BY-NC-SA 4.0",
+          "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.en",
+          "locator": "§3(b)"
+        }
+      },
+      {
+        "value": {
+          "tag": "non-commercial",
+          "condition": "Rozsah udělených práv je omezen na nekomerční účely."
+        },
+        "source": {
+          "title": "Znění Creative Commons BY-NC-SA 4.0",
+          "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.en",
+          "locator": "§1: definice NonCommercial, §2(a)(1)"
+        }
+      }
+    ]
+  },
+  {
+    "kind": "license",
+    "id": "CC-BY-ND-4.0",
+    "textHash": "sha256:b14b9a6a7eff0353091d974c1284ad4c7bdea737a7d41d8ba79b72e2941e8272",
+    "research": "Vydání 25. 11. 2013 dokládá dobové oznámení a časová osa. Souhrnná historie CC má nadpis 2013, ale v navazujícím textu uvádí vydání v roce 2014. Přednost má datované oznámení vydání.",
+    "release": {
+      "value": {
+        "date": "2013-11-25",
+        "precision": "day"
+      },
+      "source": {
+        "title": "Oznámení Creative Commons o sadě 4.0",
+        "url": "https://creativecommons.org/2013/11/25/ccs-next-generation-licenses-welcome-version-4-0/",
+        "locator": "Datované oznámení dostupnosti verze 4.0"
+      }
+    },
+    "publisher": {
+      "value": "Creative Commons",
+      "source": {
+        "title": "Oznámení Creative Commons o sadě 4.0",
+        "url": "https://creativecommons.org/2013/11/25/ccs-next-generation-licenses-welcome-version-4-0/",
+        "locator": "Datované oznámení dostupnosti verze 4.0"
+      }
+    },
+    "summary": {
+      "value": "Při sdílení uveďte autorství, odkaz na licenci a případné změny. Licence nedovoluje sdílet adaptace.",
+      "source": {
+        "title": "Znění Creative Commons BY-ND 4.0",
+        "url": "https://creativecommons.org/licenses/by-nd/4.0/legalcode.en",
+        "locator": "§3(a), §2(a)(1)"
+      }
+    },
+    "purposes": [
+      {
+        "value": "media",
+        "source": {
+          "title": "Oznámení Creative Commons o sadě 4.0",
+          "url": "https://creativecommons.org/2013/11/25/ccs-next-generation-licenses-welcome-version-4-0/",
+          "locator": "Úvod: užití pro kreativní díla"
+        }
+      },
+      {
+        "value": "data",
+        "source": {
+          "title": "Znění Creative Commons BY-ND 4.0",
+          "url": "https://creativecommons.org/licenses/by-nd/4.0/legalcode.en",
+          "locator": "§4: zvláštní databázová práva"
+        }
+      }
+    ],
+    "related": [
+      {
+        "value": {
+          "id": "CC-BY-ND-3.0",
+          "relation": "previous"
+        },
+        "source": {
+          "title": "Přehled verzí Creative Commons",
+          "url": "https://wiki.creativecommons.org/License_Versions",
+          "locator": "Tabulka vydaných sad, řádky 3.0 a 4.0"
+        }
+      }
+    ],
+    "properties": [
+      {
+        "value": {
+          "tag": "no-derivatives",
+          "condition": "Licence dovoluje adaptaci vytvořit, její sdílení grant nepokrývá."
+        },
+        "source": {
+          "title": "Znění Creative Commons BY-ND 4.0",
+          "url": "https://creativecommons.org/licenses/by-nd/4.0/legalcode.en",
+          "locator": "§2(a)(1)(B)"
+        }
+      }
+    ]
+  },
+  {
+    "kind": "license",
+    "id": "CC-BY-NC-ND-4.0",
+    "textHash": "sha256:7baeeaa49b622fcb1d2a6ea116340a8e3b92bee4def82b8263b23d895850ee9f",
+    "research": "Vydání 25. 11. 2013 dokládá dobové oznámení a časová osa. Souhrnná historie CC má nadpis 2013, ale v navazujícím textu uvádí vydání v roce 2014. Přednost má datované oznámení vydání.",
+    "release": {
+      "value": {
+        "date": "2013-11-25",
+        "precision": "day"
+      },
+      "source": {
+        "title": "Oznámení Creative Commons o sadě 4.0",
+        "url": "https://creativecommons.org/2013/11/25/ccs-next-generation-licenses-welcome-version-4-0/",
+        "locator": "Datované oznámení dostupnosti verze 4.0"
+      }
+    },
+    "publisher": {
+      "value": "Creative Commons",
+      "source": {
+        "title": "Oznámení Creative Commons o sadě 4.0",
+        "url": "https://creativecommons.org/2013/11/25/ccs-next-generation-licenses-welcome-version-4-0/",
+        "locator": "Datované oznámení dostupnosti verze 4.0"
+      }
+    },
+    "summary": {
+      "value": "Při sdílení uveďte autorství, odkaz na licenci a případné změny. Udělená práva platí pro nekomerční použití. Licence nedovoluje sdílet adaptace.",
+      "source": {
+        "title": "Znění Creative Commons BY-NC-ND 4.0",
+        "url": "https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.en",
+        "locator": "§3(a), §2(a)(1)"
+      }
+    },
+    "purposes": [
+      {
+        "value": "media",
+        "source": {
+          "title": "Oznámení Creative Commons o sadě 4.0",
+          "url": "https://creativecommons.org/2013/11/25/ccs-next-generation-licenses-welcome-version-4-0/",
+          "locator": "Úvod: užití pro kreativní díla"
+        }
+      },
+      {
+        "value": "data",
+        "source": {
+          "title": "Znění Creative Commons BY-NC-ND 4.0",
+          "url": "https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.en",
+          "locator": "§4: zvláštní databázová práva"
+        }
+      }
+    ],
+    "related": [
+      {
+        "value": {
+          "id": "CC-BY-NC-ND-3.0",
+          "relation": "previous"
+        },
+        "source": {
+          "title": "Přehled verzí Creative Commons",
+          "url": "https://wiki.creativecommons.org/License_Versions",
+          "locator": "Tabulka vydaných sad, řádky 3.0 a 4.0"
+        }
+      }
+    ],
+    "properties": [
+      {
+        "value": {
+          "tag": "non-commercial",
+          "condition": "Rozsah udělených práv je omezen na nekomerční účely."
+        },
+        "source": {
+          "title": "Znění Creative Commons BY-NC-ND 4.0",
+          "url": "https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.en",
+          "locator": "§1: definice NonCommercial, §2(a)(1)"
+        }
+      },
+      {
+        "value": {
+          "tag": "no-derivatives",
+          "condition": "Licence dovoluje adaptaci vytvořit, její sdílení grant nepokrývá."
+        },
+        "source": {
+          "title": "Znění Creative Commons BY-NC-ND 4.0",
+          "url": "https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.en",
+          "locator": "§2(a)(1)(B)"
+        }
+      }
+    ]
+  },
+  {
+    "kind": "exception",
+    "id": "GCC-exception-3.1",
+    "textHash": "sha256:1369aebbf286a8f029d068d6bd708a2c11c383ea74e7c4b194114b5fe2bf313c",
+    "research": "Datum v záhlaví je specifické pro znění 3.1. Oznámení FSF z ledna 2009 se týká prvního vydání před revizí 3.1.",
+    "release": {
+      "value": {
+        "date": "2009-03-31",
+        "precision": "day"
+      },
+      "source": {
+        "title": "Znění GCC Runtime Library Exception 3.1",
+        "url": "https://www.gnu.org/licenses/gcc-exception-3.1.html",
+        "locator": "Datovaná hlavička verze 3.1"
+      }
+    },
+    "publisher": {
+      "value": "Free Software Foundation",
+      "source": {
+        "title": "Znění GCC Runtime Library Exception 3.1",
+        "url": "https://www.gnu.org/licenses/gcc-exception-3.1.html",
+        "locator": "Hlavička, autor a datum znění"
+      }
+    },
+    "summary": {
+      "value": "Při splnění podmínek způsobilého kompilačního procesu můžete šířit cílový kód vzniklý kombinací runtime knihovny a nezávislých modulů za zvolených podmínek.",
+      "source": {
+        "title": "Znění GCC Runtime Library Exception 3.1",
+        "url": "https://www.gnu.org/licenses/gcc-exception-3.1.html",
+        "locator": "§0 a §1"
+      }
+    },
+    "exceptionUse": {
+      "value": "GPL-3.0-only",
+      "source": {
+        "title": "Znění GCC Runtime Library Exception 3.1",
+        "url": "https://www.gnu.org/licenses/gcc-exception-3.1.html",
+        "locator": "Úvod a §1, dodatečné oprávnění podle §7 GPLv3"
+      }
+    }
+  }
+]

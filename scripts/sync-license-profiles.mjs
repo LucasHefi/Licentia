@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { baseRecord } from "./catalog-editorial.mjs";
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
@@ -15,7 +16,6 @@ function canonical(value) {
   return JSON.stringify(value);
 }
 function hash(value) { return `sha256:${crypto.createHash('sha256').update(canonical(value)).digest('hex')}`; }
-function sourceFingerprintValue(value) { const source = { ...value }; delete source.metadata; return source; }
 function readJson(file, label = file) {
   try { return JSON.parse(fs.readFileSync(file, 'utf8')); }
   catch (error) { fail(`${label}: invalid JSON (${error.message})`); }
@@ -46,7 +46,7 @@ export function enumerateSources(options = {}) {
       const previous = ids.get(source.id);
       if (previous) fail(`${file}.id: duplicate source ID ${JSON.stringify(source.id)} (also ${previous})`);
       ids.set(source.id, file);
-      records.push({ id: source.id, kind, source, file, filename: safeFilename(source.id), fingerprint: { sourceId: kind === 'license' ? 'spdx-license-list' : 'spdx-exception-list', revision, contentHash: hash(sourceFingerprintValue(source)) } });
+      records.push({ id: source.id, kind, source, file, filename: safeFilename(source.id), fingerprint: { sourceId: kind === 'license' ? 'spdx-license-list' : 'spdx-exception-list', revision, contentHash: hash(baseRecord(source)) } });
     }
   }
   for (const [kind, key] of [['license', 'licenses'], ['exception', 'exceptions']]) {

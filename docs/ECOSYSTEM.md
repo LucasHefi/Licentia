@@ -9,6 +9,16 @@ s.r.o.; externí zdroje a adaptéry uvedené níže nejsou licencí aplikace.
 
 Web i Apache balíček publikují REST API `/v1` a stateless Streamable HTTP MCP endpoint `/mcp`. Implementované jsou vyhledávání, detail a text licence, výjimky, snapshot verze, doporučení, validace SPDX výrazů, orientační kompatibilita a analýza JSON SBOM. Kanonický katalog je pevný snapshot SPDX 3.28.0; aktualizace probíhá reprodukovatelným generátorem.
 
+Položky katalogu a detailů mohou obsahovat `tags` se stabilními identifikátory
+ze [slovníku katalogu](../data/catalog-tags.json). Detail může navíc obsahovat
+`editorial` s datem vydání, vydavatelem, shrnutím, účelem a souvisejícími
+verzemi. Každé doložené pole má hodnotu `value` a zdroj `source` s názvem,
+URL a místem v prameni. `release`, `approval` a `spdxInclusion` jsou samostatné
+údaje s přesností `year`, `month` nebo `day`. Ve starších datech a u
+nedoložených údajů mohou tato pole chybět. Stejná volitelná pole předává
+MCP nástroji `get_license` a `search_licenses`.
+
+
 ## Co již existuje
 
 SPDX je vhodný centrální a autoritativní zdroj identifikátorů, úplných znění, výjimek a šablon textových variant. Publikuje aktuální JSON index na `https://spdx.org/licenses/licenses.json`, index výjimek na `https://spdx.org/licenses/exceptions.json` a detail licence na `https://spdx.org/licenses/{SPDX-ID}.json`. Historické verze jsou tagované v repozitáři `spdx/license-list-data`.

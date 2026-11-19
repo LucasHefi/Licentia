@@ -72,6 +72,13 @@ Na Linuxu lze sestavit ověřené balíčky bez aktuálně problematického AppI
 
 Instalátory se sestavují na cílovém systému. Linux potřebuje WebKitGTK 4.1, macOS Xcode Command Line Tools a Windows Microsoft C++ Build Tools plus WebView2. Přesné aktuální požadavky jsou v [oficiální dokumentaci Tauri](https://v2.tauri.app/start/prerequisites/).
 
+### Kontrola aktualizací
+
+Desktop zkontroluje GitHub po načtení místního katalogu. Dostupnou verzi
+zobrazí v patičce s odkazem na vydání a instalační balíčky. Při práci offline
+se katalog a uložený pracovní prostor načtou běžně. Ruční kontrola je
+dostupná tlačítkem „Zkontrolovat aktualizace“.
+
 ## Sdílený Apache hosting
 
 Požadavky: Apache 2.4 s `mod_rewrite`, HTTPS, PHP 8.2+, rozšíření PDO SQLite (nebo PDO MySQL), cURL a JSON.

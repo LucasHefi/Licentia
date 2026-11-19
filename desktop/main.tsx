@@ -1,5 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import { openUrl } from "@tauri-apps/plugin-opener";
 import LicenseStudio from "../components/LicenseStudio";
 import "../app/globals.css";
 
@@ -7,6 +8,6 @@ document.documentElement.dataset.licentiaStaticTarget = "true";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <LicenseStudio desktop />
+    <LicenseStudio desktop openUpdateUrl={openUrl} />
   </StrictMode>,
 );

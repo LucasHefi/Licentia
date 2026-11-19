@@ -1,0 +1,20 @@
+[
+  {"id":"permissive","group":"properties","label":"Permisivní","rule":"Doložená permisivní rodina."},
+  {"id":"strong-copyleft","group":"properties","label":"Silný copyleft","rule":"Doložená silná rodina a rozsah celého odvozeného díla."},
+  {"id":"file-copyleft","group":"properties","label":"Souborový copyleft","rule":"Doložený slabý copyleft na úrovni souboru."},
+  {"id":"library-copyleft","group":"properties","label":"Knihovní copyleft","rule":"Doložený slabý copyleft na úrovni knihovny."},
+  {"id":"network-copyleft","group":"properties","label":"Síťový copyleft","rule":"Doložená síťová rodina a síťový rozsah."},
+  {"id":"share-alike","group":"properties","label":"Sdílení za stejných podmínek","rule":"Znění licence výslovně podmiňuje sdílení úprav stejnou či kompatibilní licencí pro dokumentaci, média nebo data."},
+  {"id":"patent-grant","group":"properties","label":"Patentové oprávnění","rule":"Doložené výslovné patentové oprávnění v poli permissions."},
+  {"id":"source-on-distribution","group":"properties","label":"Zdrojový kód při distribuci","rule":"Konkrétní ustanovení váže zpřístupnění zdrojů na distribuci a určuje rozsah."},
+  {"id":"source-on-network-use","group":"properties","label":"Zdrojový kód při síťovém užití","rule":"Konkrétní ustanovení váže nabídku zdrojů na interakci uživatelů po síti a určuje případné další podmínky."},
+  {"id":"preserve-notices","group":"properties","label":"Zachovat oznámení","rule":"Doložená povinnost zachovat copyright nebo příslušné oznámení."},
+  {"id":"mark-changes","group":"properties","label":"Označit změny","rule":"Doložená povinnost označit úpravy."},
+  {"id":"non-commercial","group":"properties","label":"Omezené komerční užití","rule":"Konkrétní ustanovení omezuje udělená práva na nekomerční účely."},
+  {"id":"no-derivatives","group":"properties","label":"Zákaz sdílení úprav","rule":"Konkrétní ustanovení vylučuje sdílení adaptovaného materiálu."},
+  {"id":"software","group":"use","label":"Software","rule":"Znění nebo vydavatel výslovně uvádí software."},
+  {"id":"media","group":"use","label":"Dokumentace a média","rule":"Znění nebo vydavatel výslovně uvádí dokumentaci nebo tvůrčí obsah."},
+  {"id":"data","group":"use","label":"Data","rule":"Znění nebo vydavatel výslovně uvádí data nebo databáze."},
+  {"id":"fonts","group":"use","label":"Písma","rule":"Znění nebo vydavatel výslovně uvádí písma."},
+  {"id":"hardware","group":"use","label":"Hardware","rule":"Znění nebo vydavatel výslovně uvádí hardware."}
+]

@@ -1,11 +1,13 @@
 "use client";
 
-import { useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
+import { useDeferredValue, useEffect, useEffectEvent, useMemo, useRef, useState } from "react";
 import packageJson from "../package.json";
 import { familyOf, guideNoteFor, hasDisplayProfile, obligationLabel, profileForDisplay, ruleLabels } from "../lib/recommend";
 import { candidateStatusLabels, evidenceLabels, guideMessage, outcomeLabels } from "../lib/guide-copy";
 import { buildGuideModel, recommendFromCatalog, runtimeSourceLockResolved, type GuideAnswers } from "../lib/recommendation-contract";
 import { safeStoredWorkspaceState } from "../lib/workspace-state";
+import { catalogTags, matchesCatalogTags, priorityTags, tagGroups, tagsById } from "../lib/catalog-tags";
+import { CatalogDetailOverview, CatalogTagList } from "./CatalogDetailOverview";
 import GithubSignals from "./GithubSignals";
 import AccountMenu from "./AccountMenu";
 import GuidePreview from "./GuidePreview";
@@ -32,7 +34,6 @@ const PAGE_SIZE = 48;
 const APP_VERSION = packageJson.version;
 const APP_REPOSITORY_URL = "https://github.com/LucasHefi/Licentia";
 const APP_RELEASES_API_URL = "https://api.github.com/repos/LucasHefi/Licentia/releases/latest";
-const APP_RELEASES_PAGE_URL = `${APP_REPOSITORY_URL}/releases`;
 const APP_LICENSE_URL = `${APP_REPOSITORY_URL}/blob/main/LICENSE`;
 const APP_AUTHOR = "Lukáš Hefner";
 
@@ -119,17 +120,8 @@ function includesLoose(value: string, query: string) {
   return value.toLocaleLowerCase("cs").includes(query.toLocaleLowerCase("cs"));
 }
 
-function safeExternalUrl(value: string): string | null {
-  try {
-    const url = new URL(value);
-    return url.protocol === "https:" || url.protocol === "http:" ? url.href : null;
-  } catch {
-    return null;
-  }
-}
-
 function versionParts(value: string): [number, number, number] | null {
-  const match = value.trim().match(/^v?(\d+)\.(\d+)\.(\d+)(?:[-+].*)?$/i);
+  const match = value.trim().match(/^v?(\d+)\.(\d+)\.(\d+)$/i);
   return match ? [Number(match[1]), Number(match[2]), Number(match[3])] : null;
 }
 
@@ -143,29 +135,22 @@ function isNewerVersion(current: string, candidate: string): boolean {
   return false;
 }
 
-function RuleList({ title, values, tone }: { title: string; values: string[]; tone: string }) {
-  return (
-    <div className={`rule-group ${tone}`}>
-      <h4>{title}</h4>
-      {values.length ? (
-        <ul>{values.map((value) => <li key={value}>{ruleLabels[value] ?? value}</li>)}</ul>
-      ) : <p>Profil v této kategorii neuvádí žádné položky.</p>}
-    </div>
-  );
-}
-
 function LicenseBadges({ license }: { license: LicenseSummary }) {
   return (
     <div className="card-flags">
       {license.osi && <span className="positive">OSI</span>}
       {license.fsf && <span>FSF</span>}
-      <span>{license.type === "exception" ? "Výjimka" : familyOf(license)}</span>
+      {license.type === "exception" && <span>Výjimka</span>}
       {license.deprecated && <span className="danger">Historická</span>}
     </div>
   );
 }
 
-export default function LicenseStudio({ account, desktop = false }: { account?: AppIdentity | null; desktop?: boolean }) {
+export default function LicenseStudio({ account, desktop = false, openUpdateUrl }: {
+  account?: AppIdentity | null;
+  desktop?: boolean;
+  openUpdateUrl?: (url: string) => Promise<void>;
+}) {
   const [view, setView] = useState<View>("catalog");
   const [catalog, setCatalog] = useState<LicenseSummary[]>([]);
   const [loading, setLoading] = useState(true);
@@ -179,8 +164,15 @@ export default function LicenseStudio({ account, desktop = false }: { account?: 
   const [statusFilter, setStatusFilter] = useState<StatusFilter>("current");
   const [approvalFilter, setApprovalFilter] = useState<ApprovalFilter>("all");
   const [typeFilter, setTypeFilter] = useState<"all" | LicenseType>("license");
+  const [expandedByDefault, setExpandedByDefault] = useState(false);
+  const [selectedTags, setSelectedTags] = useState<ReadonlySet<string>>(() => new Set());
+  const activeTags = useRef<HTMLDivElement>(null);
+  const dialog = useRef<HTMLDialogElement>(null);
+  const detailOpener = useRef<HTMLElement | null>(null);
+  const detailRequest = useRef<AbortController | null>(null);
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   const [detail, setDetail] = useState<LicenseDetail | null>(null);
+  const hasDetail = detail !== null;
   const [detailLoading, setDetailLoading] = useState(false);
   const [detailTab, setDetailTab] = useState<"overview" | "text" | "template">("overview");
   const [copied, setCopied] = useState(false);
@@ -193,10 +185,68 @@ export default function LicenseStudio({ account, desktop = false }: { account?: 
   const [history, setHistory] = useState<ActivityEntry[]>([]);
   const [workspaceReady, setWorkspaceReady] = useState(false);
   const [updateState, setUpdateState] = useState<UpdateState>({ status: "idle" });
+  const updateRequest = useRef<AbortController | null>(null);
   const [remoteSaveEnabled, setRemoteSaveEnabled] = useState(!account);
   const workspaceVersion = useRef<string | null>(null);
   const lastPersistedWorkspace = useRef("");
   const guideRecorded = useRef(false);
+
+  async function checkForUpdates(automatic = false) {
+    if (automatic && updateRequest.current) return;
+    updateRequest.current?.abort();
+    const controller = new AbortController();
+    updateRequest.current = controller;
+    if (!automatic) setUpdateState({ status: "checking" });
+    const timeout = window.setTimeout(() => controller.abort(), 10000);
+    try {
+      const response = await fetch(APP_RELEASES_API_URL, {
+        headers: { Accept: "application/vnd.github+json" },
+        cache: "no-store",
+        signal: controller.signal,
+      });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      const release = await response.json() as { tag_name?: unknown } | null;
+      const tag = typeof release?.tag_name === "string" ? release.tag_name.trim() : "";
+      if (!versionParts(tag)) throw new Error("GitHub nevrátil platnou verzi.");
+      if (updateRequest.current !== controller) return;
+      const latestVersion = tag.replace(/^v/i, "");
+      if (isNewerVersion(APP_VERSION, latestVersion)) {
+        const url = `${APP_REPOSITORY_URL}/releases/tag/${encodeURIComponent(tag)}`;
+        setUpdateState({ status: "available", version: latestVersion, url });
+      } else if (!automatic) {
+        setUpdateState({ status: "up-to-date", version: APP_VERSION });
+      }
+    } catch (error) {
+      if (updateRequest.current === controller && !automatic) {
+        setUpdateState({ status: "error", message: error instanceof Error && error.name === "AbortError" ? "Kontrola trvá příliš dlouho." : "Aktualizace se nepodařilo ověřit." });
+      }
+    } finally {
+      window.clearTimeout(timeout);
+      if (updateRequest.current === controller) updateRequest.current = null;
+    }
+  }
+
+  const checkAtStartup = useEffectEvent(() => void checkForUpdates(true));
+
+  useEffect(() => {
+    // Wait until the local catalog has initialized. Starting offline must stay silent.
+    const timer = desktop && !loading ? window.setTimeout(() => checkAtStartup(), 0) : undefined;
+    return () => window.clearTimeout(timer);
+  }, [desktop, loading]);
+
+  useEffect(() => () => {
+    const controller = updateRequest.current;
+    updateRequest.current = null;
+    controller?.abort();
+  }, []);
+
+  useEffect(() => {
+    const wide = window.matchMedia("(min-width: 801px)");
+    const update = () => setExpandedByDefault(wide.matches);
+    update();
+    wide.addEventListener("change", update);
+    return () => wide.removeEventListener("change", update);
+  }, []);
 
   useEffect(() => {
     const load = async () => {
@@ -277,21 +327,26 @@ export default function LicenseStudio({ account, desktop = false }: { account?: 
 
   useEffect(() => {
     const focusSearch = (event: KeyboardEvent) => {
-      if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "k") {
+      if (!hasDetail && (event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "k") {
         event.preventDefault();
         setView("catalog");
         requestAnimationFrame(() => document.querySelector<HTMLInputElement>("#license-search")?.focus());
       }
-      if (event.key === "Escape" && detail) setDetail(null);
     };
     window.addEventListener("keydown", focusSearch);
     return () => window.removeEventListener("keydown", focusSearch);
-  }, [detail]);
+  }, [hasDetail]);
 
   useEffect(() => {
-    document.body.style.overflow = detail ? "hidden" : "";
-    return () => { document.body.style.overflow = ""; };
-  }, [detail]);
+    if (!hasDetail) return;
+    const modal = dialog.current;
+    modal?.showModal();
+    document.body.style.overflow = "hidden";
+    return () => {
+      modal?.close();
+      document.body.style.overflow = "";
+    };
+  }, [hasDetail]);
 
   useEffect(() => {
     if (!fullText || deferredQuery.length < 3 || searchIndex || searchRequested.current) return;
@@ -326,7 +381,7 @@ export default function LicenseStudio({ account, desktop = false }: { account?: 
     );
   }, [fullText, deferredQuery, searchIndex]);
 
-  const filtered = useMemo(() => catalog.filter((license) => {
+  const baseMatches = useMemo(() => catalog.filter((license) => {
     if (typeFilter !== "all" && license.type !== typeFilter) return false;
     if (statusFilter === "current" && license.deprecated) return false;
     if (statusFilter === "deprecated" && !license.deprecated) return false;
@@ -338,6 +393,20 @@ export default function LicenseStudio({ account, desktop = false }: { account?: 
     const textMatch = fullTextMatches?.has(`${license.type}:${license.id}`) ?? false;
     return metadataMatch || textMatch;
   }), [catalog, deferredQuery, fullTextMatches, statusFilter, approvalFilter, typeFilter]);
+
+  const filtered = useMemo(() => baseMatches.filter(license => matchesCatalogTags(license.tags, selectedTags)), [baseMatches, selectedTags]);
+  const tagCounts = useMemo(() => {
+    const counts = new Map<string, number>();
+    for (const license of baseMatches) {
+      for (const id of license.tags ?? []) {
+        const tag = tagsById.get(id);
+        if (tag && matchesCatalogTags(license.tags, selectedTags, tag.group)) {
+          counts.set(id, (counts.get(id) ?? 0) + 1);
+        }
+      }
+    }
+    return counts;
+  }, [baseMatches, selectedTags]);
 
   const recommendations = useMemo(
     () => {
@@ -375,45 +444,63 @@ export default function LicenseStudio({ account, desktop = false }: { account?: 
     setHistory((current) => [{ id: crypto.randomUUID(), kind, label, createdAt: new Date().toISOString() }, ...current].slice(0, 100));
   }
 
-  async function checkForUpdates() {
-    setUpdateState({ status: "checking" });
-    const controller = new AbortController();
-    const timeout = window.setTimeout(() => controller.abort(), 10000);
+  function selectTag(id: string, action: "add" | "remove" | "toggle" = "add") {
+    setSelectedTags(current => {
+      const next = new Set(current);
+      if (action === "remove" || (action === "toggle" && next.has(id))) next.delete(id);
+      else next.add(id);
+      return next;
+    });
+    setVisibleCount(PAGE_SIZE);
+  }
+
+  function clearTags() {
+    setSelectedTags(new Set());
+    setVisibleCount(PAGE_SIZE);
+    activeTags.current?.focus();
+  }
+
+  function closeDetail(focusFilters = false) {
+    detailRequest.current?.abort();
+    setDetailLoading(false);
+    dialog.current?.close();
+    setDetail(null);
+    const opener = detailOpener.current;
+    detailOpener.current = null;
+    requestAnimationFrame(() => {
+      if (focusFilters) activeTags.current?.focus();
+      else opener?.focus();
+    });
+  }
+
+  async function loadDetail(type: LicenseType, id: string) {
+    detailRequest.current?.abort();
+    const request = new AbortController();
+    detailRequest.current = request;
+    setDetailLoading(true);
     try {
-      const response = await fetch(APP_RELEASES_API_URL, {
-        headers: { Accept: "application/vnd.github+json" },
-        cache: "no-store",
-        signal: controller.signal,
-      });
+      const response = await fetch(detailUrl(type, id), { signal: request.signal });
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      const payload: unknown = await response.json();
-      if (!payload || typeof payload !== "object") throw new Error("Neplatná odpověď GitHubu.");
-      const release = payload as { tag_name?: unknown; html_url?: unknown };
-      if (typeof release.tag_name !== "string" || !versionParts(release.tag_name)) throw new Error("GitHub nevrátil platnou verzi.");
-      const latestVersion = release.tag_name.replace(/^v/i, "");
-      const releaseUrl = typeof release.html_url === "string" && safeExternalUrl(release.html_url) ? release.html_url : APP_RELEASES_PAGE_URL;
-      setUpdateState(isNewerVersion(APP_VERSION, latestVersion) ? { status: "available", version: latestVersion, url: releaseUrl } : { status: "up-to-date", version: APP_VERSION });
-    } catch (error) {
-      setUpdateState({ status: "error", message: error instanceof Error && error.name === "AbortError" ? "Kontrola trvá příliš dlouho." : "Aktualizace se nepodařilo ověřit." });
+      const record: LicenseDetail = await response.json();
+      if (request.signal.aborted) return;
+      setDetail(record);
+      setDetailTab("overview");
+      setCopied(false);
+      recordActivity("detail", `${record.id} · ${record.name}`);
+      dialog.current?.querySelector<HTMLButtonElement>(".close-button")?.focus();
+    } catch {
+      if (!request.signal.aborted) setError(`Detail ${id} se nepodařilo načíst.`);
     } finally {
-      window.clearTimeout(timeout);
+      if (detailRequest.current === request) {
+        detailRequest.current = null;
+        setDetailLoading(false);
+      }
     }
   }
 
-  async function openDetail(license: LicenseSummary) {
-    setDetailLoading(true);
-    setDetailTab("overview");
-    setCopied(false);
-    try {
-      const response = await fetch(detailUrl(license.type, license.id));
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      setDetail(await response.json());
-      recordActivity("detail", `${license.id} · ${license.name}`);
-    } catch {
-      setError(`Detail ${license.id} se nepodařilo načíst.`);
-    } finally {
-      setDetailLoading(false);
-    }
+  function openDetail(license: LicenseSummary, opener?: HTMLElement) {
+    detailOpener.current = opener ?? (document.activeElement instanceof HTMLElement ? document.activeElement : null);
+    return loadDetail(license.type, license.id);
   }
 
   function toggleCompare(id: string) {
@@ -514,46 +601,73 @@ export default function LicenseStudio({ account, desktop = false }: { account?: 
 
           <section className="catalog-workspace">
             <aside className="filters">
-              <div className="filter-heading"><span>Filtry</span><button onClick={() => { setStatusFilter("current"); setApprovalFilter("all"); setTypeFilter("license"); setFullText(false); setVisibleCount(PAGE_SIZE); }}>Obnovit</button></div>
-              <fieldset>
-                <legend>Typ záznamu</legend>
-                {[["license", "Licence"], ["exception", "Výjimky"], ["all", "Vše"]].map(([value, label]) => (
-                  <label key={value}><input type="radio" checked={typeFilter === value} onChange={() => { setTypeFilter(value as typeof typeFilter); setVisibleCount(PAGE_SIZE); }} /> {label}</label>
-                ))}
-              </fieldset>
-              <fieldset>
-                <legend>Stav</legend>
-                {[["current", "Aktuální"], ["all", "Všechny"], ["deprecated", "Historické"]].map(([value, label]) => (
-                  <label key={value}><input type="radio" checked={statusFilter === value} onChange={() => { setStatusFilter(value as StatusFilter); setVisibleCount(PAGE_SIZE); }} /> {label}</label>
-                ))}
-              </fieldset>
-              <fieldset>
-                <legend>Ověření a metadata</legend>
-                {[["all", "Bez omezení"], ["osi", "OSI schválené"], ["fsf", "FSF Free/Libre"], ["profiled", "Srozumitelný profil"]].map(([value, label]) => (
-                  <label key={value}><input type="radio" checked={approvalFilter === value} onChange={() => { setApprovalFilter(value as ApprovalFilter); setVisibleCount(PAGE_SIZE); }} /> {label}</label>
-                ))}
-              </fieldset>
-              <fieldset className="fulltext-toggle">
-                <legend>Rozsah hledání</legend>
-                <label><input type="checkbox" checked={fullText} onChange={(event) => { setFullText(event.target.checked); setVisibleCount(PAGE_SIZE); }} /> Prohledávat úplná znění</label>
-                <small>Index se načte až při prvním hledání.</small>
-              </fieldset>
+              <details className="record-filters" open={expandedByDefault}>
+              <summary>Další filtry</summary>
+                <div className="filter-heading"><button onClick={() => { setStatusFilter("current"); setApprovalFilter("all"); setTypeFilter("license"); setFullText(false); setSelectedTags(new Set()); setVisibleCount(PAGE_SIZE); }}>Obnovit</button></div>
+                <fieldset>
+                  <legend>Typ záznamu</legend>
+                  {[["license", "Licence"], ["exception", "Výjimky"], ["all", "Vše"]].map(([value, label]) => (
+                    <label key={value}><input type="radio" name="record-type" checked={typeFilter === value} onChange={() => { setTypeFilter(value as typeof typeFilter); setVisibleCount(PAGE_SIZE); }} /> {label}</label>
+                  ))}
+                </fieldset>
+                <fieldset>
+                  <legend>Stav</legend>
+                  {[["current", "Aktuální"], ["all", "Všechny"], ["deprecated", "Historické"]].map(([value, label]) => (
+                    <label key={value}><input type="radio" name="record-status" checked={statusFilter === value} onChange={() => { setStatusFilter(value as StatusFilter); setVisibleCount(PAGE_SIZE); }} /> {label}</label>
+                  ))}
+                </fieldset>
+                <fieldset>
+                  <legend>Ověření a metadata</legend>
+                  {[["all", "Bez omezení"], ["osi", "OSI schválené"], ["fsf", "FSF Free/Libre"], ["profiled", "Srozumitelný profil"]].map(([value, label]) => (
+                    <label key={value}><input type="radio" name="record-approval" checked={approvalFilter === value} onChange={() => { setApprovalFilter(value as ApprovalFilter); setVisibleCount(PAGE_SIZE); }} /> {label}</label>
+                  ))}
+                </fieldset>
+                <fieldset className="fulltext-toggle">
+                  <legend>Rozsah hledání</legend>
+                  <label><input type="checkbox" checked={fullText} onChange={(event) => { setFullText(event.target.checked); setVisibleCount(PAGE_SIZE); }} /> Prohledávat úplná znění</label>
+                  <small>Index se načte až při prvním hledání.</small>
+                </fieldset>
+              </details>
               <button className="guide-side-cta" onClick={() => navigate("guide")}><span>Nejsem si jistý/á</span><strong>Spustit průvodce →</strong></button>
             </aside>
 
             <div className="catalog-results" id="vse">
+              <div className="catalog-tag-filters">
+                {tagGroups.map(group => (
+                  <details key={group.id} open={expandedByDefault}>
+                    <summary>{group.label}</summary>
+                    <CatalogTagList ids={catalogTags.filter(tag => tag.group === group.id).map(tag => tag.id)}
+                      selected={selectedTags} onSelect={id => selectTag(id, "toggle")} counts={tagCounts} />
+                  </details>
+                ))}
+              </div>
+              <div className="active-tags" ref={activeTags} tabIndex={-1} role="group" aria-label="Aktivní tagy">
+                <strong>Aktivní tagy</strong>
+                {selectedTags.size === 0 && <span>Žádné</span>}
+                {catalogTags.filter(tag => selectedTags.has(tag.id)).map(tag => (
+                  <button key={tag.id} className="catalog-tag" data-group={tag.group}
+                    aria-label={`Odebrat tag ${tag.label}`} onClick={() => { selectTag(tag.id, "remove"); activeTags.current?.focus(); }}>
+                    {tag.label} <span aria-hidden="true">×</span>
+                  </button>
+                ))}
+                {selectedTags.size > 0 && <button className="clear-tags" onClick={clearTags}>Vymazat tagy</button>}
+              </div>
               <div className="result-heading">
-                <div><span className="section-kicker">Katalog SPDX</span><h2>{deferredQuery ? `Výsledky pro „${deferredQuery}“` : "Všechny dostupné položky"}</h2></div>
-                <span>{searchLoading ? "Načítám plný index…" : `${filtered.length} výsledků`}</span>
+                <h2>{deferredQuery ? `Výsledky pro „${deferredQuery}“` : "Katalog licencí"}</h2>
+                <span role="status" aria-live="polite">{loading ? "Načítám katalog…" : searchLoading ? "Načítám plný index…" : `Počet výsledků: ${filtered.length}`}</span>
               </div>
               {loading ? <div className="loading-state">Načítám katalog…</div> : error && catalog.length === 0 ? null : (
                 <div className="catalog-grid">
                   {filtered.slice(0, visibleCount).map((license) => (
                     <article className="catalog-card" key={`${license.type}:${license.id}`}>
-                      <div className="catalog-card-main" role="button" tabIndex={0} onClick={() => openDetail(license)} onKeyDown={(event) => { if (event.key === "Enter") openDetail(license); }}>
-                        <div className="card-topline"><code>{license.id}</code><span className="arrow">↗</span></div>
+                      <div className="catalog-card-main">
                         <h3>{license.name}</h3>
+                        <div className="card-topline"><code>{license.id}</code>
+                          <button className="open-license" aria-label={`Otevřít detail ${license.id}`}
+                            onClick={event => openDetail(license, event.currentTarget)}>Otevřít <span aria-hidden="true">↗</span></button>
+                        </div>
                         <LicenseBadges license={license} />
+                        <CatalogTagList ids={priorityTags(license.tags ?? [])} selected={selectedTags} onSelect={selectTag} />
                       </div>
                       <div className="card-actions">
                         <button className={`favorite-toggle ${favorites.includes(license.id) ? "selected" : ""}`} onClick={() => toggleFavorite(license.id)}>{favorites.includes(license.id) ? "★ Uloženo" : "☆ Uložit"}</button>
@@ -563,7 +677,12 @@ export default function LicenseStudio({ account, desktop = false }: { account?: 
                   ))}
                 </div>
               )}
-              {!loading && filtered.length === 0 && <div className="empty-state"><strong>Nic jsme nenašli.</strong><span>Zkuste kratší dotaz nebo zrušte některý filtr.</span></div>}
+              {!loading && !searchLoading && catalog.length > 0 && filtered.length === 0 && (
+                <div className="empty-state">
+                  <strong>Žádná položka neodpovídá vybraným filtrům</strong>
+                  {selectedTags.size > 0 ? <button className="clear-tags" onClick={clearTags}>Vymazat tagy</button> : <span>Zkuste kratší dotaz nebo zrušte některý filtr.</span>}
+                </div>
+              )}
               {visibleCount < filtered.length && <button className="load-more" onClick={() => setVisibleCount((count) => count + PAGE_SIZE)}>Načíst další ({filtered.length - visibleCount})</button>}
             </div>
           </section>
@@ -737,10 +856,18 @@ export default function LicenseStudio({ account, desktop = false }: { account?: 
           <a href={APP_LICENSE_URL} target="_blank" rel="noreferrer">MIT licence ↗</a>
         </div>
         <div className="footer-update" aria-live="polite">
-          <button className="footer-update-button" type="button" onClick={checkForUpdates} disabled={updateState.status === "checking"}>
+          <button className="footer-update-button" type="button" onClick={() => void checkForUpdates()} disabled={updateState.status === "checking"}>
             {updateState.status === "checking" ? "Kontroluji aktualizace…" : "Zkontrolovat aktualizace"}
           </button>
-          {updateState.status === "available" && <a className="footer-update-link" href={updateState.url} target="_blank" rel="noreferrer">Nová verze v{updateState.version} ↗</a>}
+          {updateState.status === "available" && (
+            <a className="footer-update-link" href={updateState.url} target="_blank" rel="noreferrer" onClick={event => {
+              if (!openUpdateUrl) return;
+              event.preventDefault();
+              void openUpdateUrl(updateState.url).catch(() => {
+                setUpdateState({ status: "error", message: "Stránku vydání se nepodařilo otevřít." });
+              });
+            }}>Nová verze v{updateState.version} ↗</a>
+          )}
           {updateState.status === "up-to-date" && <span className="footer-update-status">Aktuální v{updateState.version}</span>}
           {updateState.status === "error" && <span className="footer-update-error">{updateState.message}</span>}
         </div>
@@ -750,17 +877,23 @@ export default function LicenseStudio({ account, desktop = false }: { account?: 
 
       {detailLoading && <div className="detail-loading">Načítám detail…</div>}
       {detail && (
-        <div className="modal-backdrop" onMouseDown={(event) => { if (event.target === event.currentTarget) setDetail(null); }}>
-          <article className="detail-modal" role="dialog" aria-modal="true" aria-labelledby="detail-title">
-            <header><div><code>{detail.id}</code><h2 id="detail-title">{detail.name}</h2></div><button className="close-button" onClick={() => setDetail(null)} aria-label="Zavřít">×</button></header>
+        <dialog ref={dialog} className="detail-modal" aria-labelledby="detail-title"
+          onCancel={event => { event.preventDefault(); closeDetail(); }}
+          onClick={event => {
+            if (event.target !== event.currentTarget) return;
+            const bounds = event.currentTarget.getBoundingClientRect();
+            if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) closeDetail();
+          }}>
+            <header><div><code>{detail.id}</code><h2 id="detail-title">{detail.name}</h2></div><button className="close-button" onClick={() => closeDetail()} aria-label="Zavřít">×</button></header>
             <nav className="detail-tabs"><button className={detailTab === "overview" ? "active" : ""} onClick={() => setDetailTab("overview")}>Přehled</button><button className={detailTab === "text" ? "active" : ""} onClick={() => setDetailTab("text")}>Úplné znění</button><button className={detailTab === "template" ? "active" : ""} onClick={() => setDetailTab("template")}>Šablona variant</button></nav>
             <div className="detail-content">
-              {detailTab === "overview" && <div className="overview-content"><div className="detail-summary"><span className={detail.deprecated ? "status deprecated" : "status"}>{detail.deprecated ? "Historický identifikátor" : "Aktuální SPDX záznam"}</span><p>{profileForDisplay(detail)?.description ?? detail.comments ?? "SPDX poskytuje kanonické znění, ale pro tuto položku není k dispozici zjednodušený profil podmínek."}</p><div className="detail-meta"><span><small>Typ</small>{detail.type === "license" ? "Licence" : "Výjimka"}</span><span><small>OSI</small>{detail.osi ? "Schválená" : "Ne / neuvedeno"}</span><span><small>FSF</small>{detail.fsf ? "Free/Libre" : "Ne / neuvedeno"}</span></div></div>{profileForDisplay(detail) ? <div className="rules-grid"><RuleList title="Oprávnění" values={profileForDisplay(detail)!.permissions} tone="allow" /><RuleList title="Podmínky" values={profileForDisplay(detail)!.conditions} tone="condition" /><RuleList title="Omezení" values={profileForDisplay(detail)!.limitations} tone="limit" /></div> : <div className="unprofiled-note">Podrobnou právní klasifikaci nelze bezpečně automaticky odvodit pouze z textu. Prostudujte úplné znění.</div>}{detail.seeAlso.some((url) => safeExternalUrl(url)) && <div className="source-links"><h3>Další zdroje</h3>{detail.seeAlso.slice(0, 5).flatMap((url) => { const safeUrl = safeExternalUrl(url); return safeUrl ? [<a href={safeUrl} target="_blank" rel="noreferrer" key={safeUrl}>{safeUrl} ↗</a>] : []; })}</div>}</div>}
+              {detailTab === "overview" && <CatalogDetailOverview detail={detail} selected={selectedTags}
+                onTag={id => { selectTag(id); setView("catalog"); closeDetail(true); }}
+                onRelated={id => loadDetail(detail.type, id)} />}
               {detailTab === "text" && <div className="text-view"><div className="text-actions"><span>Doslovné znění ze SPDX 3.28.0</span><div><button onClick={copyText}>{copied ? "Zkopírováno ✓" : "Kopírovat"}</button><button onClick={downloadText}>Stáhnout .txt</button></div></div><pre>{detail.text}</pre></div>}
               {detailTab === "template" && <div className="text-view"><p className="template-note">SPDX šablona popisuje volitelné a proměnné části pro automatické rozpoznávání textových variant.</p><pre>{detail.template ?? "Pro tuto položku není samostatná šablona k dispozici."}</pre></div>}
             </div>
-          </article>
-        </div>
+        </dialog>
       )}
     </main>
   );

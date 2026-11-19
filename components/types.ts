@@ -1,5 +1,33 @@
 export type LicenseType = "license" | "exception";
 
+export interface EditorialSource {
+  title: string;
+  url: string;
+  locator: string;
+}
+
+interface EditorialFact<T> {
+  value: T;
+  source: EditorialSource;
+}
+
+export interface EditorialDate {
+  date: string;
+  precision: "year" | "month" | "day";
+}
+
+export interface LicenseEditorial {
+  release?: EditorialFact<EditorialDate>;
+  approval?: EditorialFact<EditorialDate>;
+  spdxInclusion?: EditorialFact<EditorialDate>;
+  publisher?: EditorialFact<string>;
+  summary?: EditorialFact<string>;
+  purposes?: EditorialFact<string>[];
+  properties?: EditorialFact<{ tag: string; condition: string }>[];
+  related?: EditorialFact<{ id: string; relation: "previous" | "next" | "variant" }>[];
+  exceptionUse?: EditorialFact<string>;
+}
+
 export interface LicenseSummary {
   id: string;
   name: string;
@@ -8,6 +36,7 @@ export interface LicenseSummary {
   osi: boolean;
   fsf: boolean;
   profiled: boolean;
+  tags?: string[];
   permissions: string[];
   conditions: string[];
   limitations: string[];
@@ -37,6 +66,8 @@ export interface LicenseDetail {
   headerTemplate?: string | null;
   comments?: string | null;
   seeAlso: string[];
+  tags?: string[];
+  editorial?: LicenseEditorial;
   profile?: LicenseProfile | null;
   metadata?: import("../lib/recommendation-contract").CatalogMetadataRecord["metadata"];
 }

@@ -4,16 +4,12 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { adaptRecord, joinCuratedProfiles } from "./runtime-metadata-adapter.mjs";
 
+import { addEditorial, baseRecord, defaultEditorialPath, loadEditorial } from "./catalog-editorial.mjs";
+
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const dataRoot = path.join(root, "public", "data");
 const catalogPath = path.join(dataRoot, "catalog.json");
 const profileRoot = path.join(root, "data", "profiles");
-
-function sourceRecord(record) {
-  const source = { ...record };
-  delete source.metadata;
-  return source;
-}
 
 function serialized(value) {
   return `${JSON.stringify(value)}\n`;
@@ -25,6 +21,7 @@ export async function syncRuntimeMetadata({ mode = "check" } = {}) {
   if (!Array.isArray(catalog)) throw new Error("public/data/catalog.json: expected array");
   const identities = catalog.map((record) => ({ kind: record.type, id: record.id }));
   const profiles = await joinCuratedProfiles(identities, profileRoot);
+  const editorial = await loadEditorial(defaultEditorialPath, profiles);
   const nextCatalog = [];
   const detailWrites = [];
   const stale = [];
@@ -33,12 +30,12 @@ export async function syncRuntimeMetadata({ mode = "check" } = {}) {
     const key = `${record.type}:${record.id}`;
     const profile = profiles.get(key);
     if (!profile) throw new Error(`${key}: curated profile was not joined`);
-    nextCatalog.push(adaptRecord(sourceRecord(record), profile));
+    nextCatalog.push(addEditorial(adaptRecord(baseRecord(record), profile), profile, editorial));
 
     const detailPath = path.join(dataRoot, `${record.type}s`, `${record.id}.json`);
     const detail = JSON.parse(await readFile(detailPath, "utf8"));
     if (detail.type !== record.type || detail.id !== record.id) throw new Error(`${detailPath}: catalog/detail identity mismatch`);
-    const nextDetail = adaptRecord(sourceRecord(detail), profile);
+    const nextDetail = addEditorial(adaptRecord(baseRecord(detail), profile), profile, editorial, true);
     const next = serialized(nextDetail);
     const current = await readFile(detailPath, "utf8");
     if (current !== next) stale.push(path.relative(root, detailPath));

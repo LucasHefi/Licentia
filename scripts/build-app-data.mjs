@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { addEditorial, defaultEditorialPath, loadEditorial } from "./catalog-editorial.mjs";
 
 import { mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
@@ -105,6 +106,7 @@ export async function buildAppData({
   chooserDir,
   outputDir,
   profilesDir = DEFAULT_PROFILES_DIR,
+  editorialPath = path.resolve(profilesDir) === DEFAULT_PROFILES_DIR ? defaultEditorialPath : null,
 }) {
   const catalogSource = await readJson(path.join(path.resolve(spdxDir), "json", "licenses.json"));
   const exceptionSource = await readJson(path.join(path.resolve(spdxDir), "json", "exceptions.json"));
@@ -137,6 +139,7 @@ export async function buildAppData({
   // This is deliberately before rm(outputDir): a missing or malformed join cannot destroy prior data.
   const curatedProfiles = await joinCuratedProfiles(sourceRecords, resolvedProfilesDir);
 
+  const editorial = await loadEditorial(editorialPath, curatedProfiles);
   const catalog = [];
   const searchIndex = [];
   const licenseRecords = [];
@@ -160,8 +163,8 @@ export async function buildAppData({
       seeAlso: item.seeAlso ?? [],
       profile,
     }, curated);
-    licenseRecords.push(detail);
-    catalog.push(adaptRecord({
+    licenseRecords.push(addEditorial(detail, curated, editorial, true));
+    catalog.push(addEditorial(adaptRecord({
       id: item.licenseId,
       name: item.name,
       type: "license",
@@ -172,7 +175,7 @@ export async function buildAppData({
       permissions: profile?.permissions ?? [],
       conditions: profile?.conditions ?? [],
       limitations: profile?.limitations ?? [],
-    }, curated));
+    }, curated), curated, editorial));
     searchIndex.push({
       id: item.licenseId,
       type: "license",
@@ -192,8 +195,8 @@ export async function buildAppData({
       comments: item.licenseComments ?? null,
       seeAlso: item.seeAlso ?? [],
     }, curated);
-    exceptionRecords.push(detail);
-    catalog.push(adaptRecord({
+    exceptionRecords.push(addEditorial(detail, curated, editorial, true));
+    catalog.push(addEditorial(adaptRecord({
       id: item.licenseExceptionId,
       name: item.name,
       type: "exception",
@@ -204,7 +207,7 @@ export async function buildAppData({
       permissions: [],
       conditions: [],
       limitations: [],
-    }, curated));
+    }, curated), curated, editorial));
     searchIndex.push({
       id: item.licenseExceptionId,
       type: "exception",
@@ -224,13 +227,13 @@ export async function buildAppData({
   await Promise.all([
     ...licenseRecords.map((record) => writeFile(
       path.join(licenseOutput, `${record.id}.json`),
-      JSON.stringify(record),
+      JSON.stringify(record) + "\n",
     )),
     ...exceptionRecords.map((record) => writeFile(
       path.join(exceptionOutput, `${record.id}.json`),
-      JSON.stringify(record),
+      JSON.stringify(record) + "\n",
     )),
-    writeFile(path.join(resolvedOutputDir, "catalog.json"), JSON.stringify(catalog)),
+    writeFile(path.join(resolvedOutputDir, "catalog.json"), JSON.stringify(catalog) + "\n"),
     writeFile(path.join(resolvedOutputDir, "search-index.json"), JSON.stringify(searchIndex)),
     writeFile(
       path.join(resolvedOutputDir, "manifest.json"),
